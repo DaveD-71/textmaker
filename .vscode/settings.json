@@ -1,0 +1,6 @@
+{
+    "powerquery.client.additionalSymbolsDirectories": [
+        "c:/Users/daved/OneDrive/Documents/Code/autotextstyle/.vscode/excel-pq-symbols"
+    ],
+    "python.terminal.activateEnvironment": false
+}

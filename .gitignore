@@ -1,0 +1,4 @@
+.autotext_temp.md
+.venv/
+__pycache__/
+reference.docx

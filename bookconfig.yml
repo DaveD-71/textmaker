@@ -1,0 +1,11 @@
+# Book configuration (A4, modern professional look)
+page_size: A4
+margins_mm:
+  top: 20
+  bottom: 20
+  left: 25
+  right: 25
+fonts:
+  body: "Libre Baskerville"
+  heading: "Inter"
+toc_depth: 2
