@@ -10,8 +10,6 @@ This unit develops learners’ ability to write clear, well‑structured explana
 - write change notifications suitable for internal, interagency, and international communication
 - communicate changes diplomatically and accurately, avoiding ambiguity or unnecessary detail
 
----
-
 ## Warm-Up
 
 ### Activity 1 — What Makes Change Communication Difficult?
@@ -21,8 +19,6 @@ Discuss:
 1. Why do procedural changes often cause confusion?
 2. What information is essential when communicating a change?
 3. What tone should be used for internal vs. external change notifications?
-
-
 
 ### Activity 2 — Identify Missing Information
 
@@ -36,8 +32,6 @@ Discuss: What is missing?
 - effective date?
 - required actions?
 - impact?
-
----
 
 ## Model Text
 
@@ -58,8 +52,6 @@ Identify improvements in:
 - instructions for required actions
 - level of detail and tone
 
----
-
 ## Noticing Task
 
 Highlight in the improved version:
@@ -72,83 +64,89 @@ Highlight in the improved version:
 
 Discuss: Why is each of these elements necessary?
 
----
-
 ## Language Focus
 
 ### 1. Introducing a Change
+
 **Writing goal:** Introduce the change clearly and formally, signalling that important information follows.
 
 **Example:**
 *Please note that the procedure for applicant submissions has been updated, effective 12 October.*
 
 Useful expressions:
+
 - *Please note that…*
 - *We would like to inform you that…*
 - *This is to notify you that…*
 - *Effective [date], the procedure has been updated…*
 
 ### Practice A — Rewrite the Introduction
+
 Rewrite using a more formal introductory phrase:
+
 1. *The rules changed on Monday.*
 2. *We updated the form last week.*
 
----
-
 ### 2. Explaining What Changed
+
 **Writing goal:** Specify exactly what has changed so the reader can understand the update without guessing.
 
 **Example:**
 *The revised steps now include an additional verification check in Step 3.*
 
 Useful structures:
+
 - *The revised steps now include…*
 - *The previous requirement for X has been removed…*
 - *Two major changes have been introduced…*
 
 ### Practice B — Strengthen the Explanation
+
 Rewrite for clarity:
+
 1. *Some parts are different now.*
 2. *The process is longer.*
 3. *They added a step.*
 
----
-
 ### 3. Explaining Why the Change Was Made
+
 **Writing goal:** Provide a clear rationale so the reader understands the purpose and benefits of the change.
 
 **Example:**
 *The revision was introduced to improve consistency across agencies and reduce processing time.*
 
 Useful rationale structures:
+
 - *to improve consistency…*
 - *to reduce administrative burden…*
 - *to reflect updated guidelines…*
 
 ### Practice C — Add Rationale
+
 Add a rationale to the following:
+
 1. *We removed the initial review step.*
 2. *We changed the deadline for submission.*
 
----
-
 ### 4. Required Actions & Next Steps
+
 **Writing goal:** Tell the reader exactly what they must do now that the change is in effect.
 
 **Example:**
 *We would appreciate it if you could begin using the updated form for all submissions starting 1 November.*
 
 Useful phrasing:
+
 - *We would appreciate it if you could begin using…*
 - *Please discontinue the previous version…*
 - *The updated form is attached…*
 
 ### Practice D — Specify Actions
+
 Rewrite to include clear required actions:
+
 1. *Use the new form.*
 2. *Stop using the old system.*
-
----
 
 ## Guided Writing
 
@@ -185,8 +183,6 @@ Write a paragraph comparing the old process and the new one using:
 - contrast markers (*previously, in the revised version, unlike before*)
 - clear structural organisation
 
----
-
 ## Freer Writing
 
 ### Task — Write a 10–14 Sentence Change Management Announcement
@@ -213,8 +209,6 @@ Your message must include:
 - Are required actions easy to understand?
 - Is the tone appropriate for the audience?
 
----
-
 ## Editing Skills
 
 ### Editing Checklist
@@ -240,8 +234,6 @@ Add:
 - rationale
 - required actions
 
----
-
 ## Extension Task
 
 Choose one:
@@ -249,8 +241,6 @@ Choose one:
 1. Rewrite an unclear change announcement you have received.
 2. Create a two‑column comparison: **Before / After** for a real procedure.
 3. Draft a change narrative explaining how and why a major policy area evolved over time.
-
----
 
 ## Homework
 
@@ -262,4 +252,3 @@ Write a **200–230 word** change management notice for an internal or interagen
 - required actions
 - optional support/contact information
 - diplomatic tone
-
