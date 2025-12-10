@@ -83,9 +83,9 @@ Useful patterns:
 
 Group the following:
 
-1. *Office A: unclear instructions* 
-2. *Office B: outdated file version* 
-3. *Office C: unclear instructions* 
+1. *Office A: unclear instructions*
+2. *Office B: outdated file version*
+3. *Office C: unclear instructions*
 4. *Office D: outdated file version*
 
 ### 2. Showing Contrast or Agreement

@@ -154,8 +154,8 @@ Write a 6–8 sentence explanation including:
 ### Activity 3. Reorganise for Clarity
 
 Reorganise the following into a clear sequence:
-A. *Several terms require clarification.* 
-B. *Before we proceed, these questions must be resolved.* 
+A. *Several terms require clarification.*
+B. *Before we proceed, these questions must be resolved.*
 C. *The revised guidelines contain ambiguous language.*
 
 ## Freer Writing
