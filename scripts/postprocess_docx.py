@@ -185,6 +185,90 @@ def insert_section_breaks_before_h1(doc, skip_first=True, restart_first=False):
     return sections_added
 
 
+def _build_num_format_map(doc):
+    """Map numId/ilvl to numFmt (e.g., bullet, decimal)."""
+    try:
+        num_part = doc.part.numbering_part.element
+    except Exception:
+        return {}
+    nsmap = num_part.nsmap
+    qn_attr = lambda attr: f'{{{nsmap.get(\"w\")}}}{attr}'
+
+    abstract_map = {}
+    for abs_num in num_part.findall('w:abstractNum', nsmap):
+        abs_id = abs_num.get(qn_attr('abstractNumId'))
+        lvl_map = {}
+        for lvl in abs_num.findall('w:lvl', nsmap):
+            ilvl = lvl.get(qn_attr('ilvl'))
+            numfmt_el = lvl.find('w:numFmt', nsmap)
+            if ilvl is not None and numfmt_el is not None:
+                lvl_map[ilvl] = numfmt_el.get(qn_attr('val'))
+        if abs_id is not None:
+            abstract_map[abs_id] = lvl_map
+
+    num_map = {}
+    for num in num_part.findall('w:num', nsmap):
+        num_id = num.get(qn_attr('numId'))
+        abs_el = num.find('w:abstractNumId', nsmap)
+        if num_id is None or abs_el is None:
+            continue
+        abs_id = abs_el.get(qn_attr('val'))
+        num_map[num_id] = abstract_map.get(abs_id, {})
+
+    return num_map
+
+
+def _get_style_by_name_or_id(styles, target):
+    """Fetch a style by name or style_id; returns None if missing."""
+    try:
+        return styles[target]
+    except Exception:
+        pass
+    for st in styles:
+        if getattr(st, 'name', None) == target or getattr(st, 'style_id', None) == target:
+            return st
+    return None
+
+
+def apply_list_styles(doc, bullet_style='List Bullet 2', number_style='List Number 2'):
+    """
+    Apply specific styles to bullet and numbered list paragraphs.
+
+    Bullets -> bullet_style; others with numbering -> number_style.
+    """
+    num_map = _build_num_format_map(doc)
+    styles = doc.styles
+    bullet = _get_style_by_name_or_id(styles, bullet_style) or _get_style_by_name_or_id(styles, bullet_style.replace(' ', ''))
+    number = _get_style_by_name_or_id(styles, number_style) or _get_style_by_name_or_id(styles, number_style.replace(' ', ''))
+    if not bullet and not number:
+        return 0
+
+    applied = 0
+    for para in doc.paragraphs:
+        pPr = para._p.find(qn('w:pPr'))
+        if pPr is None:
+            continue
+        numPr = pPr.find(qn('w:numPr'))
+        if numPr is None:
+            continue
+        numId_el = numPr.find(qn('w:numId'))
+        ilvl_el = numPr.find(qn('w:ilvl'))
+        if numId_el is None:
+            continue
+        num_id = numId_el.get(qn('w:val'))
+        ilvl = ilvl_el.get(qn('w:val')) if ilvl_el is not None else '0'
+        fmt = None
+        if num_id in num_map:
+            fmt = num_map[num_id].get(ilvl)
+        if fmt == 'bullet' and bullet:
+            para.style = bullet
+            applied += 1
+        elif fmt and fmt != 'bullet' and number:
+            para.style = number
+            applied += 1
+    return applied
+
+
 def insert_section_after_toc(docx_path, has_toc=True, insert_h1_sections=True):
     """
     Post-process `docx_path` to:
@@ -265,6 +349,15 @@ def insert_section_after_toc(docx_path, has_toc=True, insert_h1_sections=True):
                 made_change = True
         except Exception as e:
             print(f"Warning: Could not insert H1 section breaks: {e}")
+
+    # Apply list styles to bullets/numbers if available
+    try:
+        applied = apply_list_styles(doc)
+        if applied > 0:
+            print(f"Applied list styles to {applied} paragraph(s)")
+            made_change = True
+    except Exception as e:
+        print(f"Warning: Could not apply list styles: {e}")
 
     if made_change:
         doc.save(docx_path)
