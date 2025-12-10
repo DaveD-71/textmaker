@@ -110,8 +110,8 @@ Choose one scenario and write **both**:
 
 ### Options
 
-A. A document is submitted in the wrong file format.  
-B. The external office reports inconsistent applicant information.  
+A. A document is submitted in the wrong file format.
+B. The external office reports inconsistent applicant information.
 C. The review team needs clarification about a new submission rule.
 
 Write your two texts:

@@ -124,8 +124,8 @@ Choose **one** of the scenarios below and write all three documents:
 
 ### Options
 
-A. A system error prevented an applicant’s file from uploading correctly.  
-B. Two versions of a form were submitted; one is incomplete.  
+A. A system error prevented an applicant’s file from uploading correctly.
+B. Two versions of a form were submitted; one is incomplete.
 C. The applicant sent the correct file, but in the wrong format.
 
 Write your full set:

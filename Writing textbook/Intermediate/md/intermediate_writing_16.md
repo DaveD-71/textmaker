@@ -51,7 +51,7 @@ Write your corrections:
 
 ### Prepositions
 
-- The meeting is **on** Monday.  
+- The meeting is **on** Monday.
 - The update will be available **after** 3 p.m.
 
 ## 5. Practice A – Correct the Sentences
@@ -101,9 +101,9 @@ Choose two situations and write the **accurate, corrected version**.
 
 ### Options
 
-A. A short status update with verb tense errors.  
-B. A description of a problem with article/preposition errors.  
-C. A simple request email with spelling errors.  
+A. A short status update with verb tense errors.
+B. A description of a problem with article/preposition errors.
+C. A simple request email with spelling errors.
 D. A meeting summary with grammar errors.
 
 ## 9. Extended Writing Task – Editing a Paragraph

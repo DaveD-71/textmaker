@@ -106,9 +106,9 @@ Choose two situations and write your responses.
 
 ### Options
 
-A. A reviewer believes the system error has been fixed, but it is still under investigation.  
-B. A colleague thinks an applicant must redo the entire form, but only one page is incorrect.  
-C. Someone believes the new rule applies to all departments, but it applies only to one team.  
+A. A reviewer believes the system error has been fixed, but it is still under investigation.
+B. A colleague thinks an applicant must redo the entire form, but only one page is incorrect.
+C. Someone believes the new rule applies to all departments, but it applies only to one team.
 D. A colleague misunderstood the meeting location.
 
 Write your responses:

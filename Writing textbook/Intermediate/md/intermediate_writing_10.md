@@ -117,9 +117,9 @@ Choose two situations and write clear explanations.
 
 ### Options
 
-A. A deadline must be moved because information is missing.  
-B. A document uploaded by an applicant is corrupted.  
-C. Two systems are giving different results.  
+A. A deadline must be moved because information is missing.
+B. A document uploaded by an applicant is corrupted.
+C. Two systems are giving different results.
 D. A shared drive is not accessible this morning.
 
 Write your explanations:

@@ -96,10 +96,10 @@ Choose two situations and write meeting summaries.
 
 ### Options
 
-A. Discussion about unclear instructions in a new form.  
-B. Planning meeting for the next internal audit.  
-C. Review of applicant files before submission.  
-D. Discussion about solving a system access issue.  
+A. Discussion about unclear instructions in a new form.
+B. Planning meeting for the next internal audit.
+C. Review of applicant files before submission.
+D. Discussion about solving a system access issue.
 
 Write your summaries:
 

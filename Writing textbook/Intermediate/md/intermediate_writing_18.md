@@ -26,7 +26,7 @@ A poor tone may be:
 
 ### Example (Before → After)
 
-**Before:** You didn’t send the right file. Send the correct one now.  
+**Before:** You didn’t send the right file. Send the correct one now.
 **After:** Thank you for your message. The attached file appears to be a different version. Could you please send the correct version when available?
 
 ## 3. Warm-Up: Why Is the Tone Wrong?
@@ -48,13 +48,13 @@ Write the issues:
 
 ### Direct → Polite
 
-- You didn’t submit the file.  
+- You didn’t submit the file.
   → The file does not appear to have been submitted.
 
-- You need to fix this.  
+- You need to fix this.
   → This section may need correction.
 
-- That is wrong.  
+- That is wrong.
   → There seems to be an error in this section.
 
 ### Useful Softening Phrases
@@ -132,9 +132,9 @@ Choose two situations and write improved versions.
 
 ### Options
 
-A. Requesting missing information.  
-B. Informing someone about an inconsistency.  
-C. Explaining that a process will take longer.  
+A. Requesting missing information.
+B. Informing someone about an inconsistency.
+C. Explaining that a process will take longer.
 D. Clarifying a misunderstanding.
 
 Write your emails:

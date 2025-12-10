@@ -125,9 +125,9 @@ Write **two short update emails** (3–5 sentences each).
 
 ### Scenario Options
 
-A. A system update will take longer than planned.  
-B. A document will be reviewed later than the original schedule.  
-C. A change has been made to an internal rule.  
+A. A system update will take longer than planned.
+B. A document will be reviewed later than the original schedule.
+C. A change has been made to an internal rule.
 D. A meeting needs to be rescheduled.
 
 Write your emails:

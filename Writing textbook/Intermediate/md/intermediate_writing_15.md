@@ -124,9 +124,9 @@ Choose two situations and write emails using **consistent tone and structure**.
 
 ### Options
 
-A. Asking for clarification about a missing document.  
-B. Informing a colleague about a small change in schedule.  
-C. Requesting information from another team.  
+A. Asking for clarification about a missing document.
+B. Informing a colleague about a small change in schedule.
+C. Requesting information from another team.
 D. Sharing an update after reviewing a file.
 
 Write your emails:

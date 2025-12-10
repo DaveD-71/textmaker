@@ -13,13 +13,13 @@ In this unit, you will learn how to make **clear, polite, and appropriate reques
 
 Read each pair. Choose the request that sounds more professional.
 
-1. a) Send me the file.  
+1. a) Send me the file.
    b) Could you please send me the file?
 
-2. a) Tell me the deadline.  
+2. a) Tell me the deadline.
    b) Could you let me know the deadline?
 
-3. a) I need the applicant’s number.  
+3. a) I need the applicant’s number.
    b) Could you provide the applicant’s number?
 
 **Discussion:** What makes the (b) sentences more polite?

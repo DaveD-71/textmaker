@@ -116,8 +116,8 @@ Choose one situation and write a short professional email.
 
 ### Situations
 
-A. You need a colleague to check a document today.  
-B. You want to confirm the correct deadline.  
+A. You need a colleague to check a document today.
+B. You want to confirm the correct deadline.
 C. You need clarification about one part of an application.
 
 Write 3–4 sentences.

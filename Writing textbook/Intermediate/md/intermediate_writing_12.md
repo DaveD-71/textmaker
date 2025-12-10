@@ -23,7 +23,7 @@ It should:
 
 Subject: Inquiry Regarding Updated Application Guidelines  
 Dear Review Office Team,
-We are reviewing the updated guidelines and have a question about Section 4. Could you clarify whether the new requirement applies to applicants who submitted forms before March? Further information will help us complete our internal checks.  
+We are reviewing the updated guidelines and have a question about Section 4. Could you clarify whether the new requirement applies to applicants who submitted forms before March? Further information will help us complete our internal checks.
 Thank you.
 
 ## 3. Warm-Up: Which Inquiry Is Better?
@@ -125,9 +125,9 @@ Choose two situations below.
 
 ### Options
 
-A. You need clarification about a new applicant requirement.  
-B. Two different documents give different deadlines.  
-C. You have a question about the correct version of a form.  
+A. You need clarification about a new applicant requirement.
+B. Two different documents give different deadlines.
+C. You have a question about the correct version of a form.
 D. You need confirmation about the schedule for an external audit.
 
 Write your inquiry emails:

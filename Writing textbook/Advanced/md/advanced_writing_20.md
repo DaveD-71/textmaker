@@ -127,9 +127,9 @@ Add a benefit:
 
 **Example structure:**
 
-1. State the decision.  
-2. State the policy/evidence rationale.  
-3. Describe expected benefits.  
+1. State the decision.
+2. State the policy/evidence rationale.
+3. Describe expected benefits.
 4. Signal relevance for stakeholders.
 
 ### Practice D. Organise a Justification

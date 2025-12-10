@@ -20,7 +20,7 @@ Clarity refers to how easily the reader can understand your message. Clear writi
 
 ### Example (Before → After)
 
-**Before:** The document, which was previously reviewed and looked at by two people, seems like it maybe has some missing parts.  
+**Before:** The document, which was previously reviewed and looked at by two people, seems like it maybe has some missing parts.
 **After:** The document appears to be missing some parts.
 
 ## 3. Warm-Up: What Makes These Sentences Unclear?
@@ -89,8 +89,8 @@ Clear writing follows a **logical order**, often:
 Rewrite the sentences in a clear, logical order.
 
 Sentences:
-A. Two forms are incomplete.  
-B. We reviewed the applicant’s file this morning.  
+A. Two forms are incomplete.
+B. We reviewed the applicant’s file this morning.
 C. This will delay the next review stage.
 
 Write the best order:
@@ -113,9 +113,9 @@ Choose two situations and rewrite them clearly.
 
 ### Options
 
-A. A confusing explanation of a delay.  
-B. A long, unclear message about missing documents.  
-C. A vague status update.  
+A. A confusing explanation of a delay.
+B. A long, unclear message about missing documents.
+C. A vague status update.
 D. A meeting summary with poor organisation.
 
 Write your revised texts:

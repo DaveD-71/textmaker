@@ -167,8 +167,8 @@ Choose one situation and write a full email.
 
 ### Situations
 
-A. You need information about a new internal procedure.  
-B. You want to confirm the applicant’s deadline.  
+A. You need information about a new internal procedure.
+B. You want to confirm the applicant’s deadline.
 C. You have one question about a submitted file.
 
 Write your email:

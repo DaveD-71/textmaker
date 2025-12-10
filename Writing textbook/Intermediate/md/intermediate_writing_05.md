@@ -49,10 +49,10 @@ Rewrite the questions to make them specific and professional.
 1. What do you mean?  
    →
 
-2. I don’t understand this part.  
+2. I don’t understand this part.
    →
 
-3. Tell me the details.  
+3. Tell me the details.
    →
 
 4. What should I do?  
@@ -195,8 +195,8 @@ Choose one situation and write a short, clear email.
 
 ### Situations
 
-A. Two documents give different deadlines.  
-B. The applicant’s information is unclear.  
+A. Two documents give different deadlines.
+B. The applicant’s information is unclear.
 C. You don’t understand the instructions for the new system.
 
 Write your email:

@@ -64,8 +64,8 @@ A strong paragraph usually includes:
 
 ### Model Paragraph
 
-**Topic sentence:** We reviewed the applicant’s file yesterday.  
-**Supporting sentences:** During the review, we found that two pages were missing, and one form was incomplete. These gaps in the file may slow the preliminary assessment and will need to be noted before the next review stage.  
+**Topic sentence:** We reviewed the applicant’s file yesterday.
+**Supporting sentences:** During the review, we found that two pages were missing, and one form was incomplete. These gaps in the file may slow the preliminary assessment and will need to be noted before the next review stage.
 **Closing sentence:** This paragraph summarises the issues identified so far and leads into further discussion of required documentation in the next section.
 
 ## 6. Practice A – Identify the Parts
@@ -78,8 +78,8 @@ Label each sentence:
 
 ### Paragraph 1
 
-1. We processed your request this morning.  
-2. However, the attached form was incomplete.  
+1. We processed your request this morning.
+2. However, the attached form was incomplete.
 3. This information forms part of the initial review before we proceed to later steps.
 
 Your labels:
@@ -89,8 +89,8 @@ Your labels:
 
 ### Paragraph 2
 
-1. The system was updated last night.  
-2. Some users reported error messages after the update.  
+1. The system was updated last night.
+2. Some users reported error messages after the update.
 3. These observations will be included in the technical report that follows.
 
 Your labels:
@@ -111,8 +111,8 @@ A paragraph should follow a clear, logical order:
 Put these sentences in a logical order, then add **one more supporting sentence**.
 
 Sentences:
-A. Two forms were missing from the submission.  
-B. We checked the application yesterday.  
+A. Two forms were missing from the submission.
+B. We checked the application yesterday.
 C. These issues form part of the initial documentation review.
 
 Write the best order:
@@ -139,8 +139,8 @@ Write **one administrative paragraph** (5–7 sentences) that feels like part of
 
 ### Topics
 
-A. Describe a delay in a process and what caused it.  
-B. Describe a system problem and what your team observed.  
+A. Describe a delay in a process and what caused it.
+B. Describe a system problem and what your team observed.
 C. Describe an updated internal rule and why it was changed.
 
 Write your paragraph:

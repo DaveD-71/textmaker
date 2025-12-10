@@ -124,9 +124,9 @@ Choose two situations and write two internal notices.
 
 ### Options
 
-A. A scheduled meeting time has changed.  
-B. A new internal rule will begin next month.  
-C. An external office will conduct a short audit next week.  
+A. A scheduled meeting time has changed.
+B. A new internal rule will begin next month.
+C. An external office will conduct a short audit next week.
 D. Monthly reports will be reviewed later than usual.
 
 Write your notices:

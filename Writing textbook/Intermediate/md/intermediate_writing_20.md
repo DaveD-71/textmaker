@@ -44,7 +44,7 @@ Write your answers:
 
 ### Revision Message (External Office)
 
-Purpose: Correct previously shared information.  
+Purpose: Correct previously shared information.
 Tone: Polite, clear, concise.
 Useful phrases:
 
@@ -55,7 +55,7 @@ Useful phrases:
 
 ### Internal Notice (Colleagues)
 
-Purpose: Inform staff of the correction.  
+Purpose: Inform staff of the correction.
 Tone: Neutral, informative.
 Useful phrases:
 
@@ -125,8 +125,8 @@ Choose one and write both texts:
 
 ### Options
 
-A. A deadline was listed incorrectly.  
-B. A required document name was written incorrectly.  
+A. A deadline was listed incorrectly.
+B. A required document name was written incorrectly.
 C. An instruction in a previous email was unclear or incomplete.
 
 Write your two texts:
