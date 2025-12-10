@@ -57,22 +57,22 @@ Rewrite each sentence for the correct audience.
 
 ### 1. External Office → Make it polite
 
-"Send us the correct form."
+> "Send us the correct form."
 →
 
 ### 2. Internal Team → Make it neutral and concise
 
-"They said the applicant messed up the form again."
+> "They said the applicant messed up the form again."
 →
 
 ### 3. External Office → Make it complete and professional
 
-"What is the problem?"
+> "What is the problem?"
 →
 
 ### 4. Internal Team → Make it clear and factual
 
-"The form is wrong but they didn’t explain well."
+> "The form is wrong but they didn’t explain well."
 →
 
 ## 6. Guided Practice – Write the External Email

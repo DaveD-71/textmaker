@@ -31,11 +31,11 @@ Sort the following into categories: **Internal**, **Interagency**, **Internation
 ## Model Text
 
 ### Original Version (Too Informal and Disorganised)
->
+
 > *"Hi, we saw your message. Can you send the other file? Also, the translation had some issues so please check that too. By the way, we need to finish the review soon."*
 
 ### Improved Version (Structured and Diplomatic)
->
+
 > *"Thank you for your message. We would like to confirm whether the updated file is available, as the version received may not reflect the latest corrections. In addition, our team noted several inconsistencies in the translation and would appreciate your review of these points. Once the updated materials are received, we will proceed with the remaining steps of the review."*
 
 ### Activity. Compare the Two Versions
@@ -196,7 +196,8 @@ Check if your email:
 ### Editing Exercise. Improve Structure
 
 Rewrite the following email:
-*"We saw your message. Please send the corrected file. We also need you to check the translation. We want to finish the review soon."*
+
+> *"We saw your message. Please send the corrected file. We also need you to check the translation. We want to finish the review soon."*
 
 Add:
 

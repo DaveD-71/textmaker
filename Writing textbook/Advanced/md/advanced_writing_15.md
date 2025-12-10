@@ -207,7 +207,8 @@ Check whether your rationale:
 ### Editing Exercise. Strengthen a Weak Rationale
 
 Rewrite:
-*"We should change the form because it seems old and people don't like it."*
+
+> *"We should change the form because it seems old and people don't like it."*
 
 Add:
 

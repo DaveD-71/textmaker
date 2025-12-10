@@ -176,7 +176,8 @@ Look for:
 ### Editing Exercise
 
 Rewrite for structure:
-*"We need you to correct the dates, confirm which version is valid, and fix the terminology. Then we can proceed."*
+
+> *"We need you to correct the dates, confirm which version is valid, and fix the terminology. Then we can proceed."*
 
 Add:
 

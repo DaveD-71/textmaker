@@ -70,22 +70,22 @@ Rewrite each sentence for the appropriate audience.
 
 ### 1. External Office → Make it polite and clear
 
-"The schedule was wrong. Here is the real date."
+> "The schedule was wrong. Here is the real date."
 →
 
 ### 2. Internal Team → Make it neutral and concise
 
-"Someone made a mistake in the schedule."
+> "Someone made a mistake in the schedule."
 →
 
 ### 3. External Office → Make it complete
 
-"The day changed."
+> "The day changed."
 →
 
 ### 4. Internal Team → Make it professional
 
-"We told them the wrong date."
+> "We told them the wrong date."
 →
 
 ## 6. Guided Practice – Write the Revision Message

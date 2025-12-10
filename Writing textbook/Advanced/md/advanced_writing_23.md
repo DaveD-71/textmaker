@@ -48,7 +48,7 @@ Consider:
 Which type of communication best fits each?
 
 ## Model Text (Capstone Example)
->
+
 > *"This report summarises the current implementation challenges arising from the revised applicant communication guidelines. Offices A and C reported uncertainty regarding the updated terminology, while Office B noted delays due to continued use of outdated forms. Additionally, questions remain regarding the appropriate sequence for applicant communication steps. To address these issues, we propose circulating a clarification sheet summarising key terminology, confirming whether all offices have received the updated instructions, and revising the implementation schedule as needed. Once clarification is complete, offices will be better positioned to adopt the updated workflow uniformly."*
 
 ### Activity. Analyse the Model
@@ -189,7 +189,8 @@ Check:
 ### Editing Exercise. Refine the Capstone Output
 
 Rewrite:
-*"There are many problems in the offices and things are not working well. Someone needs to explain everything again."*
+
+> *"There are many problems in the offices and things are not working well. Someone needs to explain everything again."*
 
 Improve by:
 

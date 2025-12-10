@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Problem
 
 Read:
-*"A lot of things happened and we talked about many issues. We will continue next week."*
+
+> *"A lot of things happened and we talked about many issues. We will continue next week."*
 
 Discuss:
 
@@ -216,7 +217,8 @@ Check your writing:
 ### Editing Exercise. Condense for Executive Use
 
 Rewrite:
-*"A number of things were discussed in the meeting, including various parts of the instructions. People shared opinions and raised many issues. We need to revise the instructions, but first we must think about how to communicate with offices."*
+
+> *"A number of things were discussed in the meeting, including various parts of the instructions. People shared opinions and raised many issues. We need to revise the instructions, but first we must think about how to communicate with offices."*
 
 Condense to a 3–4 sentence executive brief.
 

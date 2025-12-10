@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Issue
 
 Read:
-*"The document is not good. Many parts are confusing and it doesn't follow the rules."*
+
+> *"The document is not good. Many parts are confusing and it doesn't follow the rules."*
 
 Discuss:
 
@@ -149,7 +150,8 @@ Include:
 ### Activity 2. Evaluate a Short Text
 
 Evaluate the following statement:
-*“Applicants must follow the instructions. The office will check for mistakes. The process must be completed quickly.”*
+
+> *“Applicants must follow the instructions. The office will check for mistakes. The process must be completed quickly.”*
 
 Write a balanced evaluation including clarity, structure, and usefulness.
 
@@ -199,7 +201,8 @@ Check your writing:
 ### Editing Exercise. Improve Tone
 
 Rewrite:
-*“The document is badly written and needs a lot of work.”*
+
+> *“The document is badly written and needs a lot of work.”*
 
 Add:
 

@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Problems
 
 Read:
-*"Many issues have come up and several offices are doing different things. We need to fix the problems and make sure everyone understands the instructions."*
+
+> *"Many issues have come up and several offices are doing different things. We need to fix the problems and make sure everyone understands the instructions."*
 
 Discuss:
 
@@ -235,7 +236,8 @@ Check:
 ### Editing Exercise. Improve the Report
 
 Rewrite:
-*"Many offices had problems and some actions were taken. We will meet again soon to discuss things."*
+
+> *"Many offices had problems and some actions were taken. We will meet again soon to discuss things."*
 
 Add:
 

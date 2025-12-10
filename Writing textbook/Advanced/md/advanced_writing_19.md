@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Problem
 
 Read the following:
-*"Under Section 12(4), the examining office shall apply the amended verification procedure as specified in Annex 3, paragraph 2(b)."*
+
+> *"Under Section 12(4), the examining office shall apply the amended verification procedure as specified in Annex 3, paragraph 2(b)."*
 
 Discuss:
 
@@ -186,7 +187,8 @@ Check your writing:
 ### Editing Exercise
 
 Rewrite:
-*"Offices shall ensure compliance with Section 9 according to the revised administrative schedule."*
+
+> *"Offices shall ensure compliance with Section 9 according to the revised administrative schedule."*
 
 Make it accessible for non-expert audiences.
 

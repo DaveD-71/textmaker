@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Issue
 
 Read the following:
-*"Check the applicant’s information. If anything is missing, follow the standard process. Send a confirmation. If necessary, update the timeline."*
+
+> *"Check the applicant’s information. If anything is missing, follow the standard process. Send a confirmation. If necessary, update the timeline."*
 
 What is unclear?
 
@@ -112,7 +113,8 @@ Procedures can be written as:
 ### Practice C. Improve Formatting
 
 Rewrite this in clear steps:
-*"Check the document. If something is missing, ask the applicant. Update the record after confirmation."*
+
+> *"Check the document. If something is missing, ask the applicant. Update the record after confirmation."*
 
 ## Guided Writing
 
@@ -126,7 +128,7 @@ Rewrite the following *different* poorly structured procedure into a clear, logi
 - improved verbs
 
 **Poorly structured example:**
-*"Look at the file first. Then if there is something wrong, maybe ask someone to check it. After that, send whatever message is needed. Update things when required, and make sure the guidelines are followed somehow."*
+> *"Look at the file first. Then if there is something wrong, maybe ask someone to check it. After that, send whatever message is needed. Update things when required, and make sure the guidelines are followed somehow."*
 
 ### Activity 2. Draft a New Procedure
 
@@ -145,7 +147,8 @@ Write a **6–8 step** procedure including:
 ### Activity 3. Identify Missing Information
 
 Read this procedural excerpt:
-*"Review the file and send a response. Update the internal record if necessary."*
+
+> *"Review the file and send a response. Update the internal record if necessary."*
 
 List missing details such as:
 
@@ -194,7 +197,8 @@ Check whether your procedure:
 ### Editing Exercise. Improve Clarity
 
 Rewrite:
-*"Check the document and send a reply. Update if needed. Follow the procedure."*
+
+> *"Check the document and send a reply. Update if needed. Follow the procedure."*
 
 Add structure, detail, sequencing, and conditions.
 

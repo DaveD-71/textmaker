@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Problem Identification
 
 Read the summary below:
-*"We had a meeting. People shared their opinions. Some things were discussed. We will meet again later."*
+
+> *"We had a meeting. People shared their opinions. Some things were discussed. We will meet again later."*
 
 Discuss:
 
@@ -213,7 +214,8 @@ Check whether your summary:
 ### Editing Exercise. Improve Structure
 
 Rewrite:
-*"People talked about some issues and we decided to check things again next week. Some offices had opinions and there were some disagreements."*
+
+> *"People talked about some issues and we decided to check things again next week. Some offices had opinions and there were some disagreements."*
 
 Add:
 

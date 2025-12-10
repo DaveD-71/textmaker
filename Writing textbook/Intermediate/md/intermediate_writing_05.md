@@ -96,7 +96,9 @@ Read each short scenario. Write **two clarification questions** for each one.
 
 ### Scenario 1
 
-The instructions say: "Submit the form as soon as possible."
+The instructions say:
+
+> "Submit the form as soon as possible."
 Your questions:
 1.
 2.
@@ -110,7 +112,10 @@ Your questions:
 
 ### Scenario 3
 
-A supervisor writes: "Please prepare the report." No details are given.
+A supervisor writes:
+
+> "Please prepare the report."
+No details are given.
 Your questions:
 1.
 2.

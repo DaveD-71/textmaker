@@ -34,11 +34,11 @@ Explain your choices.
 ## Model Text
 
 ### Original Version (Vague)
->
+
 > *"We have some questions about the document. Can you explain the parts that are unclear? Also, is the date correct?"*
 
 ### Improved Version (Precise & Structured)
->
+
 > *"Thank you for sharing the revised document. For our confirmation, we would appreciate clarification on two points. First, in Section 2.3, the date listed appears to differ from the timeline provided in Annex A; could you confirm which version is correct? Second, the term 'applicant request' is used in several places—could you clarify whether it refers specifically to written submission or includes verbal requests as well? Once confirmed, we will proceed with updating our internal explanation."*
 
 ### Activity. Compare the Two Versions
@@ -104,7 +104,8 @@ Clear multi-part questions typically follow this structure:
 
 **Practice B. Add Structure**
 Turn the following into a structured clarification request:
-*"We need you to confirm the meaning of 'amendment'. Also, we want to know if this applies to both forms. And did the revision change the timeline?"*
+
+> *"We need you to confirm the meaning of 'amendment'. Also, we want to know if this applies to both forms. And did the revision change the timeline?"*
 
 ### 3. Tone for Clarification Requests
 

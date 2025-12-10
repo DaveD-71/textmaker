@@ -218,7 +218,8 @@ Check whether your writing:
 ### Editing Exercise
 
 Rewrite:
-*"Everyone already knows about the changes, so use the new process and follow the updated instructions."*
+
+> *"Everyone already knows about the changes, so use the new process and follow the updated instructions."*
 
 Add:
 

@@ -194,7 +194,8 @@ Check whether your writing:
 ### Editing Exercise. Clarify Risk and Impact
 
 Rewrite:
-*"There are a lot of risks and people might misunderstand things. We should fix it somehow."*
+
+> *"There are a lot of risks and people might misunderstand things. We should fix it somehow."*
 
 Add:
 

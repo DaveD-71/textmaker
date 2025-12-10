@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Problem
 
 Read:
-*"We decided to change the form because we thought it would be better."*
+
+> *"We decided to change the form because we thought it would be better."*
 
 Discuss:
 
@@ -204,7 +205,8 @@ Check your writing:
 ### Editing Exercise
 
 Rewrite:
-*"We changed the workflow because the old one wasn’t very good, so this should be better."*
+
+> *"We changed the workflow because the old one wasn’t very good, so this should be better."*
 
 Add:
 

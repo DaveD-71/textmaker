@@ -23,7 +23,7 @@ Discuss the following questions:
 ### Activity 2. Spot the Disconnection
 
 Read the following paragraph:
->
+
 >*"The report was submitted last week. Several questions were raised by the review committee. The guidelines were updated recently. Some offices have not yet confirmed the changes. We must prepare a summary for Monday's meeting."*
 
 Discuss:
@@ -35,11 +35,11 @@ Discuss:
 ## Model Text
 
 ### Original (Disjointed)
->
+
 > *"The meeting was productive. Several issues were raised. The guidelines were unclear. The participants wanted clarification. We must revise the document."*
 
 ### Improved (Cohesive)
->
+
 > *"The meeting was productive, but several issues were raised regarding the clarity of the guidelines. Because participants requested further clarification, the team agreed that the document requires revision. The next step will be to prepare a revised draft reflecting the discussion."*
 
 ### Activity. Compare the Two Versions

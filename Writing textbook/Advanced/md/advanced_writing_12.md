@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Missing Information
 
 Read the following:
-*"Can you tell us what is happening with the application?"*
+
+> *"Can you tell us what is happening with the application?"*
 
 Discuss:
 
@@ -173,7 +174,8 @@ Write a 6–8 sentence inquiry including:
 ### Activity 3. Improve Precision and Tone
 
 Rewrite the following:
-*"Tell us what is going on and send us the correct documents."*
+
+> *"Tell us what is going on and send us the correct documents."*
 
 ## Freer Writing
 
@@ -215,7 +217,8 @@ Check whether your writing:
 ### Editing Exercise. Strengthen Tone and Structure
 
 Rewrite:
-*"What is the status? We need the information."*
+
+> *"What is the status? We need the information."*
 
 Add:
 

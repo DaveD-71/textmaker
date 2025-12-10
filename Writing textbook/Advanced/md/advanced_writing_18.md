@@ -196,7 +196,8 @@ Check your writing:
 ### Editing Exercise. Improve the Synthesis
 
 Rewrite:
-*"Office A said one thing, Office B said something else, and Office C also had comments. We need to think about these issues."*
+
+> *"Office A said one thing, Office B said something else, and Office C also had comments. We need to think about these issues."*
 
 Add:
 

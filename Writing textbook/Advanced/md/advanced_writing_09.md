@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify Missing Information
 
 Read the following message:
-*"We updated the procedure. Please use the new version from now on."*
+
+> *"We updated the procedure. Please use the new version from now on."*
 
 Discuss: What is missing?
 

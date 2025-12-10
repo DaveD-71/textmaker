@@ -41,7 +41,7 @@ Who needs communication?
 - all offices (multi-audience)
 
 ## Model Text (Integrated Response Example)
->
+
 > *"This message summarises the current implementation issues relating to the revised applicant communication guidelines. Several offices have reported difficulty applying the updated terminology in Section 3, and two offices have indicated that the new implementation timeline may not be feasible due to internal constraints. In addition, delays have been observed because some offices continue to use outdated forms. To address these issues, we recommend circulating a brief clarification sheet and confirming whether all offices have received the revised instructions issued on 7 November. Once confirmation is received, the next step will be to develop a revised implementation schedule."*
 
 ### Activity. Analyse the Model
@@ -98,7 +98,8 @@ Rewrite to include synthesis + request:
 **Writing goal:** Avoid blame, frustration, or emotional language.
 
 Example:
-*“Several offices require additional clarification regarding the revised terminology.”*
+
+> *“Several offices require additional clarification regarding the revised terminology.”*
 
 ### Practice C. Remove Emotion
 
@@ -173,7 +174,8 @@ Check:
 ### Editing Exercise
 
 Rewrite:
-*"These issues are happening because offices didn't read the instructions. Please fix everything quickly."*
+
+> *"These issues are happening because offices didn't read the instructions. Please fix everything quickly."*
 
 Improve by adding:
 

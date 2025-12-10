@@ -23,7 +23,8 @@ Discuss:
 ### Activity 2. Identify the Problem
 
 Read the following:
-*"The review is delayed because many things are unclear and we need more information."*
+
+> *"The review is delayed because many things are unclear and we need more information."*
 
 Discuss:
 
@@ -197,7 +198,8 @@ Check whether your writing:
 ### Editing Exercise. Improve Clarity
 
 Rewrite:
-*"There are many problems, so we cannot continue. Please fix everything first."*
+
+> *"There are many problems, so we cannot continue. Please fix everything first."*
 
 Add:
 
