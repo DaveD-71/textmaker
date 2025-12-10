@@ -1,4 +1,4 @@
-# Unit 10 — Explaining Complex Issues
+# Unit 10. Explaining Complex Issues
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to explain multi-factor issues clearly an
 
 ## Warm-Up
 
-### Activity 1 — Why Are Some Issues Hard to Explain?
+### Activity 1. Why Are Some Issues Hard to Explain?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What happens when explanations include too much or too little detail?
 3. How do you decide which information is essential for the reader?
 
-### Activity 2 — Identify the Problem
+### Activity 2. Identify the Problem
 
 Read the following:
 *"The review is delayed because many things are unclear and we need more information."*
@@ -40,7 +40,7 @@ Discuss:
 >
 > *"The completion of the report has been delayed due to two main factors. First, discrepancies were identified in the applicant data, requiring additional verification with the submitting office. Second, the updated instructions issued on 3 October contain several ambiguous points that need clarification before analysis can proceed. Once these issues are resolved, we will be able to finalise the report."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -76,7 +76,7 @@ Useful patterns:
 - *A second challenge concerns…*
 - *Additionally, it should be noted that…*
 
-### Practice A — Identify the Structure
+### Practice A. Identify the Structure
 
 Label each sentence as **Factor**, **Detail**, or **Impact**.
 
@@ -97,7 +97,7 @@ Useful expressions:
 - *Specifically…*
 - *In particular…*
 
-### Practice B — Add a Clarifying Detail
+### Practice B. Add a Clarifying Detail
 
 Add a clarifying detail:
 
@@ -117,7 +117,7 @@ Useful patterns:
 - *This will allow us to…*
 - *The next step is to…*
 
-### Practice C — Add an Impact Statement
+### Practice C. Add an Impact Statement
 
 Add an impact statement:
 
@@ -126,7 +126,7 @@ Add an impact statement:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Explanation
+### Activity 1. Rewrite the Original Explanation
 
 Rewrite the vague model using:
 
@@ -135,7 +135,7 @@ Rewrite the vague model using:
 - clear structure
 - a next-step conclusion
 
-### Activity 2 — Explain a Work-Related Problem
+### Activity 2. Explain a Work-Related Problem
 
 Choose one scenario:
 
@@ -150,7 +150,7 @@ Write a 6–8 sentence explanation including:
 - impact
 - next steps
 
-### Activity 3 — Reorganise for Clarity
+### Activity 3. Reorganise for Clarity
 
 Reorganise the following into a clear sequence:
 A. *Several terms require clarification.*  
@@ -159,7 +159,7 @@ C. *The revised guidelines contain ambiguous language.*
 
 ## Freer Writing
 
-### Task — Write a 10–12 Sentence Explanation of a Complex Issue
+### Task. Write a 10–12 Sentence Explanation of a Complex Issue
 
 Choose one:
 
@@ -194,7 +194,7 @@ Check whether your writing:
 - omits next-step information
 - uses emotional or evaluative tone
 
-### Editing Exercise — Improve Clarity
+### Editing Exercise. Improve Clarity
 
 Rewrite:
 *"There are many problems, so we cannot continue. Please fix everything first."*

@@ -1,4 +1,4 @@
-# Unit 12 — High‑Level External Inquiries
+# Unit 12. High‑Level External Inquiries
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write formal, diplomatic external inqu
 
 ## Warm-Up
 
-### Activity 1 — What Makes an Effective External Inquiry?
+### Activity 1. What Makes an Effective External Inquiry?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. Why is tone especially important with overseas offices?
 3. What information must be included so the recipient can respond efficiently?
 
-### Activity 2 — Missing Information
+### Activity 2. Missing Information
 
 Read the following:
 *"Can you tell us what is happening with the application?"*
@@ -40,7 +40,7 @@ Discuss:
 >
 > *"We would appreciate your assistance in confirming the current status of the applicant’s submission. For our internal processing, could you please clarify whether the revision submitted on 12 March has been reviewed and whether any additional documents are required at this stage? If available, we would also be grateful for an updated timeline for the next steps. Your support is appreciated, and please let us know if any further information is required on our side."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -77,7 +77,7 @@ Useful expressions:
 - *For our internal processing…*
 - *With regard to the applicant’s recent submission…*
 
-### Practice A — Add Context
+### Practice A. Add Context
 
 Add appropriate background context:
 
@@ -97,7 +97,7 @@ Useful structures:
 - *Would you be able to clarify whether…?*
 - *Could you advise if…?*
 
-### Practice B — Rewrite the Question
+### Practice B. Rewrite the Question
 
 Make the questions more precise:
 
@@ -117,7 +117,7 @@ Useful expressions:
 - *If convenient…*
 - *We would be grateful if you could…*
 
-### Practice C — Add Diplomatic Softening
+### Practice C. Add Diplomatic Softening
 
 Add softening to:
 
@@ -137,7 +137,7 @@ Useful phrasing:
 - *Once confirmed, we will…*
 - *This will allow us to…*
 
-### Practice D — Clarify Next Steps
+### Practice D. Clarify Next Steps
 
 Rewrite with clear next‑step information:
 
@@ -146,7 +146,7 @@ Rewrite with clear next‑step information:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Inquiry
+### Activity 1. Rewrite the Original Inquiry
 
 Rewrite the original text using:
 
@@ -155,7 +155,7 @@ Rewrite the original text using:
 - diplomatic softening
 - next‑step information
 
-### Activity 2 — Draft an External Inquiry
+### Activity 2. Draft an External Inquiry
 
 Choose one scenario:
 
@@ -170,14 +170,14 @@ Write a 6–8 sentence inquiry including:
 - softening expressions
 - next‑step information
 
-### Activity 3 — Improve Precision and Tone
+### Activity 3. Improve Precision and Tone
 
 Rewrite the following:
 *"Tell us what is going on and send us the correct documents."*
 
 ## Freer Writing
 
-### Task — Write a 10–12 Sentence External Inquiry
+### Task. Write a 10–12 Sentence External Inquiry
 
 Choose one:
 
@@ -212,7 +212,7 @@ Check whether your writing:
 - omits next‑step information
 - could cause misunderstanding or delays
 
-### Editing Exercise — Strengthen Tone and Structure
+### Editing Exercise. Strengthen Tone and Structure
 
 Rewrite:
 *"What is the status? We need the information."*

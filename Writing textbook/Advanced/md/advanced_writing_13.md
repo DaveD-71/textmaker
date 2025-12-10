@@ -1,4 +1,4 @@
-# Unit 13 — Writing for Risk & Impact Assessment
+# Unit 13. Writing for Risk & Impact Assessment
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to describe risks, impacts, implications,
 
 ## Warm-Up
 
-### Activity 1 — What Is “Risk” in Administrative Work?
+### Activity 1. What Is “Risk” in Administrative Work?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. Why is neutral, objective language important when describing risks?
 3. What information does a supervisor or partner office need in order to assess a risk?
 
-### Activity 2 — Identify the Risk Type
+### Activity 2. Identify the Risk Type
 
 Categorise each as **procedural**, **timeline**, **operational**, or **reputational**:
 
@@ -39,7 +39,7 @@ Categorise each as **procedural**, **timeline**, **operational**, or **reputatio
 >
 > *"The revised procedure presents two key risks. First, the removal of the preliminary verification step may increase the likelihood of incomplete submissions, resulting in additional processing time. Second, the updated terminology has not yet been standardised across agencies, which may lead to inconsistent interpretation during coordination. These risks may affect overall processing timelines; however, clear guidance and interagency briefing sessions can mitigate their impact."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -75,7 +75,7 @@ Useful structures:
 - *One concern is that…*
 - *A potential issue relates to…*
 
-### Practice A — Identify the Risk
+### Practice A. Identify the Risk
 
 Rewrite each sentence to clearly express a specific risk:
 
@@ -95,7 +95,7 @@ Useful patterns:
 - *This could lead to…*
 - *This may affect…*
 
-### Practice B — Add an Impact Statement
+### Practice B. Add an Impact Statement
 
 Add an impact statement:
 
@@ -115,7 +115,7 @@ Useful phrasing:
 - *To mitigate this issue…*
 - *A possible solution would be…*
 
-### Practice C — Add Mitigation
+### Practice C. Add Mitigation
 
 Add a mitigation step:
 
@@ -124,7 +124,7 @@ Add a mitigation step:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Text
+### Activity 1. Rewrite the Original Text
 
 Rewrite the vague model using:
 
@@ -133,7 +133,7 @@ Rewrite the vague model using:
 - mitigation measures
 - professional tone
 
-### Activity 2 — Write a Risk/Impact Description
+### Activity 2. Write a Risk/Impact Description
 
 Choose one scenario:
 
@@ -148,7 +148,7 @@ Write a 6–8 sentence risk/impact explanation including:
 - impact
 - mitigation
 
-### Activity 3 — Reorganise for Logic
+### Activity 3. Reorganise for Logic
 
 Reorganise into logical order:
 A. *The issue may delay the review timeline.*  
@@ -157,7 +157,7 @@ C. *Clearer explanation in the guidelines could prevent this.*
 
 ## Freer Writing
 
-### Task — Write a 10–14 Sentence Risk & Impact Assessment
+### Task. Write a 10–14 Sentence Risk & Impact Assessment
 
 Choose one:
 
@@ -191,7 +191,7 @@ Check whether your writing:
 - uses emotive or evaluative language
 - groups unrelated risks together
 
-### Editing Exercise — Clarify Risk and Impact
+### Editing Exercise. Clarify Risk and Impact
 
 Rewrite:
 *"There are a lot of risks and people might misunderstand things. We should fix it somehow."*

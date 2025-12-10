@@ -1,4 +1,4 @@
-# Unit 4 — Structuring High-Level Emails
+# Unit 4. Structuring High-Level Emails
 
 ## Unit Overview
 
@@ -11,7 +11,7 @@ This unit trains learners to structure multi-part, professional emails used in i
 
 ## Warm-Up
 
-### Activity 1 — What Makes a High-Level Email Effective?
+### Activity 1. What Makes a High-Level Email Effective?
 
 Discuss:
 
@@ -19,7 +19,7 @@ Discuss:
 2. How do tone and structure differ between internal, interagency, and international emails?
 3. Which email types are the most challenging for you to write?
 
-### Activity 2 — Email Scenario Sorting
+### Activity 2. Email Scenario Sorting
 
 Sort the following into categories: **Internal**, **Interagency**, **International**.
 
@@ -38,7 +38,7 @@ Sort the following into categories: **Internal**, **Interagency**, **Internation
 >
 > *"Thank you for your message. We would like to confirm whether the updated file is available, as the version received may not reflect the latest corrections. In addition, our team noted several inconsistencies in the translation and would appreciate your review of these points. Once the updated materials are received, we will proceed with the remaining steps of the review."*
 
-### Activity — Compare the Two Versions
+### Activity. Compare the Two Versions
 
 Identify:
 
@@ -98,7 +98,7 @@ High-level emails often follow this structure:
 - *Once we receive the updated file, we will…*
 - *We plan to proceed with…*
 
-### Practice A — Identify the Function
+### Practice A. Identify the Function
 
 Label each line as **context**, **purpose**, **explanation**, **request**, or **next step**.
 
@@ -107,7 +107,7 @@ Label each line as **context**, **purpose**, **explanation**, **request**, or **
 3. *Once confirmed, we will update the internal record.*
 4. *Our team noted inconsistencies in the attached document.*
 
-### Practice B — Reorder for Structure
+### Practice B. Reorder for Structure
 
 Reorder the sentences into a logical email:
 A. *We would appreciate your review of the translation inconsistencies noted below.*
@@ -117,7 +117,7 @@ D. *We would like to confirm whether an updated file is available.*
 
 ## Guided Writing
 
-### Activity 1 — Expand the Model
+### Activity 1. Expand the Model
 
 Add the following content to the improved model email:
 
@@ -125,7 +125,7 @@ Add the following content to the improved model email:
 - a polite request for a timeline
 - a closing sentence emphasising cooperation
 
-### Activity 2 — Write Using This Template
+### Activity 2. Write Using This Template
 
 **Template:**
 
@@ -141,7 +141,7 @@ Use this template to write an email requesting:
 - updated information from an interagency counterpart **OR**
 - clarification from an international office
 
-### Activity 3 — Tone Shift
+### Activity 3. Tone Shift
 
 Rewrite the same email in two versions:
 
@@ -156,7 +156,7 @@ Compare:
 
 ## Freer Writing
 
-### Task — Write a Full Multi-Part Email (8–12 sentences)
+### Task. Write a Full Multi-Part Email (8–12 sentences)
 
 Choose one scenario:
 
@@ -193,7 +193,7 @@ Check if your email:
 - avoids long, unstructured paragraphs
 - states next steps clearly
 
-### Editing Exercise — Improve Structure
+### Editing Exercise. Improve Structure
 
 Rewrite the following email:
 *"We saw your message. Please send the corrected file. We also need you to check the translation. We want to finish the review soon."*

@@ -1,4 +1,4 @@
-# Unit 16 — Writing Balanced Evaluations
+# Unit 16. Writing Balanced Evaluations
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write balanced, objective evaluations 
 
 ## Warm-Up
 
-### Activity 1 — What Makes an Evaluation “Balanced”?
+### Activity 1. What Makes an Evaluation “Balanced”?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What happens when an evaluation is too positive? Too negative?
 3. Why must evaluations avoid emotional or subjective language?
 
-### Activity 2 — Identify the Issue
+### Activity 2. Identify the Issue
 
 Read:
 *"The document is not good. Many parts are confusing and it doesn't follow the rules."*
@@ -52,7 +52,7 @@ Discuss:
 >
 > **Recommendation:** Clarifying key definitions and improving the logical flow between steps would enhance overall usability.
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -88,7 +88,7 @@ Useful expressions:
 - *One area that may require revision is…*
 - *The structure supports…*
 
-### Practice A — Remove Subjectivity
+### Practice A. Remove Subjectivity
 
 Rewrite:
 
@@ -110,7 +110,7 @@ Common criteria:
 - compliance with guidelines
 - usability
 
-### Practice B — Add Criteria
+### Practice B. Add Criteria
 
 Rewrite by adding a clear criterion:
 
@@ -129,7 +129,7 @@ Useful structures:
 - *We recommend clarifying…*
 - *A possible improvement would be…*
 
-### Practice C — Turn Criticism into a Recommendation
+### Practice C. Turn Criticism into a Recommendation
 
 Rewrite:
 
@@ -137,7 +137,7 @@ Rewrite:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Evaluation
+### Activity 1. Rewrite the Original Evaluation
 
 Include:
 
@@ -146,14 +146,14 @@ Include:
 - areas for improvement
 - a recommendation
 
-### Activity 2 — Evaluate a Short Text
+### Activity 2. Evaluate a Short Text
 
 Evaluate the following statement:
 *“Applicants must follow the instructions. The office will check for mistakes. The process must be completed quickly.”*
 
 Write a balanced evaluation including clarity, structure, and usefulness.
 
-### Activity 3 — Write Two Versions
+### Activity 3. Write Two Versions
 
 Produce:
 
@@ -162,7 +162,7 @@ Produce:
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Evaluation
+### Task. Write a 12–15 Sentence Evaluation
 
 Choose one:
 
@@ -196,7 +196,7 @@ Check your writing:
 - does it provide specific examples?
 - is the structure balanced?
 
-### Editing Exercise — Improve Tone
+### Editing Exercise. Improve Tone
 
 Rewrite:
 *“The document is badly written and needs a lot of work.”*

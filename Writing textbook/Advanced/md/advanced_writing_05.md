@@ -1,4 +1,4 @@
-# Unit 5 — Writing Precise Clarification Requests
+# Unit 5. Writing Precise Clarification Requests
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit trains learners to write clear, targeted, and professional clarificati
 
 ## Warm-Up
 
-### Activity 1 — What Makes a Clarification Request Effective?
+### Activity 1. What Makes a Clarification Request Effective?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What problems arise when a clarification request is too vague?
 3. What tone should clarification requests use? Why?
 
-### Activity 2 — Vague or Clear?
+### Activity 2. Vague or Clear?
 
 Decide whether each request is **vague** or **precise**.
 
@@ -41,7 +41,7 @@ Explain your choices.
 >
 > *"Thank you for sharing the revised document. For our confirmation, we would appreciate clarification on two points. First, in Section 2.3, the date listed appears to differ from the timeline provided in Annex A; could you confirm which version is correct? Second, the term 'applicant request' is used in several places—could you clarify whether it refers specifically to written submission or includes verbal requests as well? Once confirmed, we will proceed with updating our internal explanation."*
 
-### Activity — Compare the Two Versions
+### Activity. Compare the Two Versions
 
 Identify differences in:
 
@@ -84,7 +84,7 @@ Discuss: *Why are specific references essential in administrative communication?
 - *Could you clarify whether the date should match the revision dated…?*
 - *Could you specify which version is currently valid?*
 
-### Practice A — Strengthen the Precision
+### Practice A. Strengthen the Precision
 
 Rewrite the following to make them more precise:
 
@@ -102,7 +102,7 @@ Clear multi-part questions typically follow this structure:
 3. **Reference to documents or sections**
 4. **Next steps once clarification is received**
 
-**Practice B — Add Structure**
+**Practice B. Add Structure**
 Turn the following into a structured clarification request:
 *"We need you to confirm the meaning of 'amendment'. Also, we want to know if this applies to both forms. And did the revision change the timeline?"*
 
@@ -116,7 +116,7 @@ Maintain diplomacy and avoid implying fault.
 - *There may be a discrepancy regarding…*
 - *For our internal confirmation…*
 
-**Practice C — Add Softening**
+**Practice C. Add Softening**
 Add softening to the following:
 
 1. *You used the wrong term in Section 4.*
@@ -126,7 +126,7 @@ Add softening to the following:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Model
+### Activity 1. Rewrite the Original Model
 
 Rewrite the vague model text into a precise, structured clarification request. Include:
 
@@ -135,7 +135,7 @@ Rewrite the vague model text into a precise, structured clarification request. I
 - references to sections or terms
 - a next-step statement
 
-### Activity 2 — Write Clarification for a Sample Document
+### Activity 2. Write Clarification for a Sample Document
 
 Using the following scenario:
 *You received a revised explanation document, but several terms and dates differ from earlier correspondence.*
@@ -146,7 +146,7 @@ Write a message requesting clarification on:
 - one timeline inconsistency
 - one procedural uncertainty
 
-### Activity 3 — Document Referencing Practice
+### Activity 3. Document Referencing Practice
 
 Write 3 clarification questions referencing:
 
@@ -156,7 +156,7 @@ Write 3 clarification questions referencing:
 
 ## Freer Writing
 
-### Task — Write a Full Clarification Request (8–12 sentences)
+### Task. Write a Full Clarification Request (8–12 sentences)
 
 Choose one scenario:
 
@@ -193,7 +193,7 @@ Check whether your writing includes:
 - questions that imply blame
 - unclear next steps
 
-### Editing Exercise — Improve Precision
+### Editing Exercise. Improve Precision
 
 Rewrite the following:
 

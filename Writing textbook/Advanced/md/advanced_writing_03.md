@@ -1,4 +1,4 @@
-# Unit 3 — Cohesion & Logical Flow
+# Unit 3. Cohesion & Logical Flow
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to construct clear, logically organised p
 
 ## Warm-Up
 
-### Activity 1 — What Makes Paragraphs Hard to Read?
+### Activity 1. What Makes Paragraphs Hard to Read?
 
 Discuss the following questions:
 
@@ -20,7 +20,7 @@ Discuss the following questions:
 2. What makes a paragraph feel “disconnected” or "jumping around"?
 3. Which problems do you often see in English-language administrative writing?
 
-### Activity 2 — Spot the Disconnection
+### Activity 2. Spot the Disconnection
 
 Read the following paragraph:
 >
@@ -42,7 +42,7 @@ Discuss:
 >
 > *"The meeting was productive, but several issues were raised regarding the clarity of the guidelines. Because participants requested further clarification, the team agreed that the document requires revision. The next step will be to prepare a revised draft reflecting the discussion."*
 
-### Activity — Compare the Two Versions
+### Activity. Compare the Two Versions
 
 Identify:
 
@@ -82,7 +82,7 @@ Reflect: *How do these elements make the paragraph easier to read?*
 
 - *in particular, specifically, namely*
 
-**Practice A — Choose the Best Connector**
+**Practice A. Choose the Best Connector**
 Add logical connectors to the sentences:
 
 1. *The translation contains several inconsistencies. __________, we need to request clarification from the office.*
@@ -97,7 +97,7 @@ Using reference words helps maintain flow.
 
 - *this issue, these concerns, that step, such changes, the matter*
 
-**Practice B — Replace Repetition**
+**Practice B. Replace Repetition**
 Rewrite to avoid repeating the same nouns:
 
 1. *The document contains errors. The document must be corrected before submission.*
@@ -113,7 +113,7 @@ Good paragraphs start with known information, then move forward.
 - Sentence 2: Add detail about the topic
 - Sentence 3: Show implication or next step
 
-**Practice C — Reorder for Logical Flow**
+**Practice C. Reorder for Logical Flow**
 Arrange the sentences into a clear paragraph:
 A. *We will draft a revised explanation to ensure consistency across offices.*  
 B. *Several agencies reported confusion about the updated guidelines.*  
@@ -121,7 +121,7 @@ C. *To address these concerns, we agreed to prepare additional clarification.*
 
 ## Guided Writing
 
-### Activity 1 — Rebuild the Disjointed Model
+### Activity 1. Rebuild the Disjointed Model
 
 Rewrite the original model text into **one cohesive paragraph**.
 Include:
@@ -130,7 +130,7 @@ Include:
 - clear reference words
 - logical thematic progression
 
-### Activity 2 — Paragraph Templates
+### Activity 2. Paragraph Templates
 
 Use the following template to write a clear paragraph:
 
@@ -144,7 +144,7 @@ Write a paragraph based on one of the following:
 - summarising meeting outcomes
 - explaining a procedural challenge
 
-### Activity 3 — Connector Transformations
+### Activity 3. Connector Transformations
 
 Rewrite each sentence using the requested connector:
 
@@ -154,7 +154,7 @@ Rewrite each sentence using the requested connector:
 
 ## Freer Writing
 
-### Task — Write a 7–10 Sentence Paragraph with Full Cohesion
+### Task. Write a 7–10 Sentence Paragraph with Full Cohesion
 
 Choose one scenario:
 
@@ -188,7 +188,7 @@ Check your writing for:
 - unclear sentence relationships
 - weak or missing topic sentences
 
-### Editing Exercise — Improve Logical Flow
+### Editing Exercise. Improve Logical Flow
 
 Rewrite these paragraphs for better cohesion:
 

@@ -1,4 +1,4 @@
-# Unit 11 — Executive-Level Meeting Summaries
+# Unit 11. Executive-Level Meeting Summaries
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write clear, concise, and accurate exe
 
 ## Warm-Up
 
-### Activity 1 — What Makes a Meeting Summary Effective?
+### Activity 1. What Makes a Meeting Summary Effective?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What should *not* be included?
 3. What problems arise when summaries are too long or too short?
 
-### Activity 2 — Problem Identification
+### Activity 2. Problem Identification
 
 Read the summary below:
 *"We had a meeting. People shared their opinions. Some things were discussed. We will meet again later."*
@@ -38,7 +38,7 @@ Discuss:
 
 ### Improved (Executive-Level Summary)
 >
-> **Meeting Summary — Guideline Revision Discussion (12 October)**
+> **Meeting Summary. Guideline Revision Discussion (12 October)**
 >
 > **Overview:** Representatives from four offices met to review the proposed guideline revisions. The discussion focused on clarification needs, timeline alignment, and terminology inconsistencies.
 >
@@ -56,7 +56,7 @@ Discuss:
 >
 > **Next Steps:** Offices will share outstanding questions in advance of the next meeting.
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify differences in:
 
@@ -93,7 +93,7 @@ Useful organisational labels:
 - **Decisions / Action Items**
 - **Next Steps**
 
-### Practice A — Categorise the Information
+### Practice A. Categorise the Information
 
 Categorise each line as *Overview*, *Key Point*, *Decision/Action*, or *Next Step*.
 
@@ -115,7 +115,7 @@ Useful phrases:
 - *Participants noted that…*
 - *Clarification is required regarding…*
 
-### Practice B — Remove Subjective Language
+### Practice B. Remove Subjective Language
 
 Rewrite to remove subjectivity:
 
@@ -135,7 +135,7 @@ Useful structures:
 - *The group agreed to…*
 - *It was decided that…*
 
-### Practice C — Turn Discussion into Action Items
+### Practice C. Turn Discussion into Action Items
 
 Rewrite as formal action items:
 
@@ -144,7 +144,7 @@ Rewrite as formal action items:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Summary
+### Activity 1. Rewrite the Original Summary
 
 Rewrite the original summary using:
 
@@ -153,7 +153,7 @@ Rewrite the original summary using:
 - decisions and actions
 - next steps
 
-### Activity 2 — Draft a Meeting Summary from Notes
+### Activity 2. Draft a Meeting Summary from Notes
 
 Use the notes below:
 
@@ -165,7 +165,7 @@ Use the notes below:
 
 Write a structured executive-level summary.
 
-### Activity 3 — Create Summaries for Different Audiences
+### Activity 3. Create Summaries for Different Audiences
 
 Write two summaries of the same meeting:
 
@@ -176,7 +176,7 @@ Discuss differences in tone, detail, and framing.
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Executive Meeting Summary
+### Task. Write a 12–15 Sentence Executive Meeting Summary
 
 Choose one scenario:
 
@@ -210,7 +210,7 @@ Check whether your summary:
 - uses subjective or informal language
 - overwhelms the reader with information
 
-### Editing Exercise — Improve Structure
+### Editing Exercise. Improve Structure
 
 Rewrite:
 *"People talked about some issues and we decided to check things again next week. Some offices had opinions and there were some disagreements."*

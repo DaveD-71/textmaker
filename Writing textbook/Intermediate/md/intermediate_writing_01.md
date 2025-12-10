@@ -41,7 +41,7 @@ Examples:
 - **The applicant** (S) **submitted** (V) **the missing form** (O).
 - **Our office** (S) **is located in** (V) **Tokyo** (C).
 
-### Practice — Identify the Parts
+### Practice. Identify the Parts
 
 Identify the parts of each sentence using these actions:
 
@@ -55,7 +55,7 @@ Identify the parts of each sentence using these actions:
 4. The system shows an error message.
 5. The examiner requested more information.
 
-### Practice — Build Clear Sentences
+### Practice. Build Clear Sentences
 
 Rewrite the word groups as clear S–V–O or S-V-C sentences.
 

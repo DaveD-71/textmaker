@@ -1,4 +1,4 @@
-# Unit 18 — Synthesising Information from Multiple Sources
+# Unit 18. Synthesising Information from Multiple Sources
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to combine information from several docum
 
 ## Warm-Up
 
-### Activity 1 — What Is “Synthesis”?
+### Activity 1. What Is “Synthesis”?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. Why do government and interagency tasks often require synthesis?
 3. What problems occur when synthesis is incomplete or inaccurate?
 
-### Activity 2 — Identify the Issue
+### Activity 2. Identify the Issue
 
 Read the three statements:
 
@@ -43,7 +43,7 @@ Discuss:
 >
 > *"Across the three offices, two main concerns emerge: unclear terminology and an unrealistic implementation timeline. While Offices A and C noted confusion regarding terminology, Offices B and C emphasised the feasibility of the proposed timeline. These overlapping concerns indicate a need to revise both the terminology and the implementation schedule to ensure consistent understanding across all agencies."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -79,7 +79,7 @@ Useful patterns:
 - *A second theme concerns…*
 - *Several offices noted…*
 
-### Practice A — Group the Information
+### Practice A. Group the Information
 
 Group the following:
 
@@ -102,7 +102,7 @@ Useful structures:
 - *However…*
 - *On the other hand…*
 
-### Practice B — Add Contrast
+### Practice B. Add Contrast
 
 Rewrite:
 
@@ -121,7 +121,7 @@ Useful expressions:
 - *These points suggest that…*
 - *Overall, the information implies that…*
 
-### Practice C — Add an Insight
+### Practice C. Add an Insight
 
 Rewrite by adding an insight:
 
@@ -129,7 +129,7 @@ Rewrite by adding an insight:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Synthesis
+### Activity 1. Rewrite the Original Synthesis
 
 Include:
 
@@ -137,7 +137,7 @@ Include:
 - contrasts or agreement
 - concluding insight
 
-### Activity 2 — Synthesis from Three Short Texts
+### Activity 2. Synthesis from Three Short Texts
 
 Use the following information:
 
@@ -147,7 +147,7 @@ Use the following information:
 
 Write a 6–8 sentence synthesis.
 
-### Activity 3 — Multi-Source Comparison
+### Activity 3. Multi-Source Comparison
 
 Combine:
 
@@ -159,7 +159,7 @@ Write a synthetic paragraph clarifying the main issues.
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Synthesis
+### Task. Write a 12–15 Sentence Synthesis
 
 Choose one:
 
@@ -193,7 +193,7 @@ Check your writing:
 - Are contradictions identified?
 - Is the tone neutral?
 
-### Editing Exercise — Improve the Synthesis
+### Editing Exercise. Improve the Synthesis
 
 Rewrite:
 *"Office A said one thing, Office B said something else, and Office C also had comments. We need to think about these issues."*

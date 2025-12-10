@@ -1,4 +1,4 @@
-# Unit 1 — Controlling Sentence Complexity
+# Unit 1. Controlling Sentence Complexity
 
 ## Unit Overview
 
@@ -11,7 +11,7 @@ This unit helps learners produce clear, precise, and unambiguous sentences in ad
 
 ## Warm-Up
 
-### Activity 1 — Identifying Confusing Sentences
+### Activity 1. Identifying Confusing Sentences
 
 Read the following sentences. Discuss which parts are unclear and why.
 
@@ -19,7 +19,7 @@ Read the following sentences. Discuss which parts are unclear and why.
 2. *The meeting participants agreed to revise the guidelines which were noted by several offices to be inconsistent with previous instructions that require further study.*
 3. *Since the system update was completed last month but the manual was not updated, staff reported errors that made processing applications difficult which resulted in delays.*
 
-### Activity 2 — Spot the Main Idea
+### Activity 2. Spot the Main Idea
 
 For each sentence above, identify the SINGLE main idea. Then identify supporting or secondary ideas.
 
@@ -33,7 +33,7 @@ Below is an excerpt from an internal explanation memo (poorly structured on purp
 
 > *"Because we were unable to verify the applicant’s supporting documents during the initial review, and since the translation submitted last week contained several inconsistencies that require clarification, we will need to request an updated version; however, before doing so, we must confirm internally whether the missing information is essential for the current stage of examination. Additionally, the team noted that some details may have been omitted unintentionally, which could affect the accuracy of further processing if not corrected promptly."*
 
-### Activity — Understanding the Overload
+### Activity. Understanding the Overload
 
 Underline (or highlight):
 
@@ -67,7 +67,7 @@ Useful for linking parallel information without implying hierarchy.
 - *X; however, Y* (strong contrast)
 - *X; therefore, Y* (logical result)
 
-**Practice A — Add Coordinators**  
+**Practice A. Add Coordinators**  
 Choose the most appropriate connector.
 
 1. We need to confirm the applicant’s address, ___ we must check the original application form.
@@ -79,7 +79,7 @@ Choose the most appropriate connector.
 Indicates relationship and hierarchy between ideas.
 **Common subordinators:** *because, although, when, while, since, unless, even if, even though*
 
-**Practice B — Identify the Subordination Function**  
+**Practice B. Identify the Subordination Function**  
 State whether the subclause expresses **reason**, **contrast**, or **time**.
 
 1. *Because the file was corrupted, the attachments did not open.*
@@ -108,7 +108,7 @@ Use two or more shorter sentences when:
 - there are more than 2 logical relationships in one sentence
 - new information is introduced too quickly
 
-**Practice C — Apply the Patterns**  
+**Practice C. Apply the Patterns**  
 Rewrite the following using a different pattern:
 
 1. *Although we received the applicant’s correction, we still need to confirm whether the previous version remains valid because the internal database has not been updated.*
@@ -116,7 +116,7 @@ Rewrite the following using a different pattern:
 
 ## Guided Writing
 
-### Activity 1 — Break Down the Model Text
+### Activity 1. Break Down the Model Text
 
 Rewrite the model text in **three to four clear sentences**. Follow these steps:
 
@@ -125,7 +125,7 @@ Rewrite the model text in **three to four clear sentences**. Follow these steps:
 3. Remove unnecessary subordination.
 4. Add connectors to show clear relationships.
 
-### Activity 2 — Build Your Own Complex Sentence
+### Activity 2. Build Your Own Complex Sentence
 
 Write **three versions** of your own administrative sentence:
 
@@ -137,7 +137,7 @@ Explain which version is clearest and why.
 
 ## Freer Writing
 
-### Task — Explain a Multi-Cause Issue
+### Task. Explain a Multi-Cause Issue
 
 Write **6–8 sentences** explaining a real or realistic work-related issue with multiple causes. Include:
 
@@ -171,7 +171,7 @@ Look at your writing and check whether:
 - references such as *this*, *that*, *it*, *the issue* clearly refer to something
 - no sentence forces the reader to hold more than **two layers** of embedded information
 
-### Editing Exercise — Correct the Ambiguity
+### Editing Exercise. Correct the Ambiguity
 
 Rewrite the following sentences to eliminate ambiguity:
 

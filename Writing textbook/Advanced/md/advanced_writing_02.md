@@ -1,4 +1,4 @@
-# Unit 2 — Tone for Agency-Level Communication
+# Unit 2. Tone for Agency-Level Communication
 
 ## Unit Overview
 
@@ -11,7 +11,7 @@ This unit develops learners’ ability to use nuanced politeness, diplomatic phr
 
 ## Warm-Up
 
-### Activity 1 — Too Direct or Appropriate?
+### Activity 1. Too Direct or Appropriate?
 
 Read each sentence and discuss whether the tone is acceptable for interagency or international communication.
 
@@ -22,7 +22,7 @@ Read each sentence and discuss whether the tone is acceptable for interagency or
 
 Identify what makes each tone effective or problematic.
 
-### Activity 2 — Identifying Audience
+### Activity 2. Identifying Audience
 
 For each situation, decide whether the audience is:
 
@@ -47,7 +47,7 @@ Original version (too direct):
 Revised version (diplomatic):
 > *"It appears that the submitted document may not match the version required for this stage. To ensure accuracy in our review, we would appreciate it if you could confirm whether an updated file is available. Once received, we will be able to proceed with the next steps of the examination."*
 
-### Activity — Compare the Two Versions
+### Activity. Compare the Two Versions
 
 Identify the differences in:
 
@@ -83,7 +83,7 @@ Useful for avoiding blame, maintaining cooperation, and showing respect.
 - *To ensure accuracy...*
 - *For our internal confirmation...*
 
-**Practice A — Match the Function**
+**Practice A. Match the Function**
 Match the softening phrase to the function:
 A. *It appears that...*
 B. *We would appreciate it if you could...*
@@ -108,7 +108,7 @@ Used for gathering information without sounding accusatory.
 - *For consistency, may we ask if...*
 - *If available, could you share...*
 
-**Practice B — Rewrite Direct Questions**
+**Practice B. Rewrite Direct Questions**
 Rewrite the following into neutral clarification expressions:
 
 1. *Why did you change the format?*
@@ -122,7 +122,7 @@ Rewrite the following into neutral clarification expressions:
 **Interagency →** needs neutrality and objectivity  
 **International/Foreign office →** requires extra diplomacy and clarity
 
-**Practice C — Choose the Appropriate Version**
+**Practice C. Choose the Appropriate Version**
 Select the best version for each audience:
 
 1. *"Send the corrected file today."*  
@@ -135,7 +135,7 @@ C. Foreign IP office
 
 ## Guided Writing
 
-### Activity 1 — Revising the Model Text
+### Activity 1. Revising the Model Text
 
 Rewrite the original (direct) model text into a diplomatic version. Include:
 
@@ -144,7 +144,7 @@ Rewrite the original (direct) model text into a diplomatic version. Include:
 - a shared-goal framing
 - a polite request
 
-### Activity 2 — Tone Transformation
+### Activity 2. Tone Transformation
 
 Transform each sentence into a more professional, diplomatic alternative.
 
@@ -153,7 +153,7 @@ Transform each sentence into a more professional, diplomatic alternative.
 3. *You should have sent this earlier.*
 4. *Your explanation is unclear.*
 
-### Activity 3 — Controlled Writing
+### Activity 3. Controlled Writing
 
 Write **three versions** of the same request:
 
@@ -165,7 +165,7 @@ Compare how tone shifts across versions.
 
 ## Freer Writing
 
-### Task — Write a 6–8 Sentence Request Message
+### Task. Write a 6–8 Sentence Request Message
 
 Choose one scenario:
 
@@ -200,7 +200,7 @@ Check your writing for:
 - lack of audience adaptation
 - unclear purpose or reasoning
 
-### Editing Exercise — Reduce Directness
+### Editing Exercise. Reduce Directness
 
 Rewrite these to make them more diplomatic:
 

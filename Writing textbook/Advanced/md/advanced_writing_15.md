@@ -1,4 +1,4 @@
-# Unit 15 — Drafting Policy-Aligned Rationales
+# Unit 15. Drafting Policy-Aligned Rationales
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write clear, well-reasoned rationales 
 
 ## Warm-Up
 
-### Activity 1 — What Is a Rationale?
+### Activity 1. What Is a Rationale?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What information should a rationale include?
 3. Why must rationales remain consistent with policy and guidelines?
 
-### Activity 2 — Weak or Strong Rationale?
+### Activity 2. Weak or Strong Rationale?
 
 Identify whether the following are **weak** or **strong**, and explain why:
 
@@ -37,7 +37,7 @@ Identify whether the following are **weak** or **strong**, and explain why:
 >
 > *"Updating the form will improve alignment with the revised guidelines issued in August, which require clearer terminology and updated data fields. The new format will also reduce the likelihood of incomplete submissions, supporting the agency’s objective of improving processing efficiency. As a result, adopting the revised form is consistent with current policy and enhances overall workflow accuracy."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -72,7 +72,7 @@ Useful patterns:
 - *To comply with…*
 - *Consistent with the revised policy…*
 
-### Practice A — Add Policy Reference
+### Practice A. Add Policy Reference
 
 Rewrite adding a clear reference to policy:
 
@@ -91,7 +91,7 @@ Useful structures:
 - *This supports the objective of…*
 - *This reduces the risk of…*
 
-### Practice B — Strengthen the Reasoning
+### Practice B. Strengthen the Reasoning
 
 Rewrite with a clearer rationale:
 
@@ -110,7 +110,7 @@ Useful expressions:
 - *This enhances…*
 - *This contributes to…*
 
-### Practice C — Add Benefit Statement
+### Practice C. Add Benefit Statement
 
 Add a benefit:
 
@@ -127,7 +127,7 @@ Add a benefit:
 3. Provide rationale (reasoning)
 4. Describe benefits or positive outcomes
 
-### Practice D — Organise a Rationale
+### Practice D. Organise a Rationale
 
 Reorganise the following into a logical rationale:
 A. *This will improve coordination efficiency.*  
@@ -136,7 +136,7 @@ C. *We recommend adopting a shared tracking sheet.*
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Rationale
+### Activity 1. Rewrite the Original Rationale
 
 Rewrite the weak original rationale using:
 
@@ -144,7 +144,7 @@ Rewrite the weak original rationale using:
 - logical reasoning
 - benefit statement
 
-### Activity 2 — Draft a Policy-Aligned Rationale
+### Activity 2. Draft a Policy-Aligned Rationale
 
 Choose one scenario:
 
@@ -158,7 +158,7 @@ Write a 6–8 sentence rationale including:
 - reasoning
 - benefits
 
-### Activity 3 — Two Audience Versions
+### Activity 3. Two Audience Versions
 
 Write:
 
@@ -169,7 +169,7 @@ Discuss differences in detail and tone.
 
 ## Freer Writing
 
-### Task — Write a 10–14 Sentence Rationale for a Procedural or Policy Proposal
+### Task. Write a 10–14 Sentence Rationale for a Procedural or Policy Proposal
 
 Choose one:
 
@@ -204,7 +204,7 @@ Check whether your rationale:
 - fails to explain benefits
 - uses vague or emotional language
 
-### Editing Exercise — Strengthen a Weak Rationale
+### Editing Exercise. Strengthen a Weak Rationale
 
 Rewrite:
 *"We should change the form because it seems old and people don't like it."*

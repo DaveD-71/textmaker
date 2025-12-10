@@ -1,4 +1,4 @@
-# Unit 23 — Capstone: Full Administrative Writing Assessment
+# Unit 23. Capstone: Full Administrative Writing Assessment
 
 ## Unit Overview
 
@@ -25,7 +25,7 @@ You receive the following:
 
 ## Warm-Up
 
-### Activity 1 — Identify All Writing Tasks Hidden in the Scenario
+### Activity 1. Identify All Writing Tasks Hidden in the Scenario
 
 Discuss: What types of writing tasks are implied?
 
@@ -36,7 +36,7 @@ Discuss: What types of writing tasks are implied?
 - multi-audience message or report
 - next-step planning
 
-### Activity 2 — Who Are the Possible Audiences?
+### Activity 2. Who Are the Possible Audiences?
 
 Consider:
 
@@ -51,7 +51,7 @@ Which type of communication best fits each?
 >
 > *"This report summarises the current implementation challenges arising from the revised applicant communication guidelines. Offices A and C reported uncertainty regarding the updated terminology, while Office B noted delays due to continued use of outdated forms. Additionally, questions remain regarding the appropriate sequence for applicant communication steps. To address these issues, we propose circulating a clarification sheet summarising key terminology, confirming whether all offices have received the updated instructions, and revising the implementation schedule as needed. Once clarification is complete, offices will be better positioned to adopt the updated workflow uniformly."*
 
-### Activity — Analyse the Model
+### Activity. Analyse the Model
 
 Identify how it demonstrates:
 
@@ -75,7 +75,7 @@ Possible formats:
 - executive brief
 - clarification request
 
-### Practice A — Match Output to Purpose
+### Practice A. Match Output to Purpose
 
 Match:
 
@@ -91,7 +91,7 @@ Match:
 **Example:**
 *Two main issues are evident across all sources: unclear terminology and inconsistent use of forms.*
 
-### Practice B — Group Ideas into Themes
+### Practice B. Group Ideas into Themes
 
 Group:
 
@@ -108,7 +108,7 @@ Group:
 **Example:**
 *The next step is to confirm receipt of updated instructions and circulate clarifications.*
 
-### Practice C — Add Next-Step Information
+### Practice C. Add Next-Step Information
 
 Rewrite:
 
@@ -116,7 +116,7 @@ Rewrite:
 
 ## Guided Writing
 
-### Activity 1 — Produce a Structured Summary of the Entire Scenario
+### Activity 1. Produce a Structured Summary of the Entire Scenario
 
 Include:
 
@@ -126,7 +126,7 @@ Include:
 - needed actions
 - next steps
 
-### Activity 2 — Write One Full Administrative Output
+### Activity 2. Write One Full Administrative Output
 
 Choose one format:
 
@@ -143,7 +143,7 @@ Your output must:
 - identify next steps
 - maintain formal tone
 
-### Activity 3 — Write a Second Output for a Different Audience
+### Activity 3. Write a Second Output for a Different Audience
 
 Options:
 
@@ -156,7 +156,7 @@ Adapt tone, structure, and detail level accordingly.
 
 ## Freer Writing
 
-### Task — Capstone Output (15–20 sentences)
+### Task. Capstone Output (15–20 sentences)
 
 Write a fully integrated administrative document of your chosen type. It must:
 
@@ -186,7 +186,7 @@ Check:
 - Are next steps realistic and clear?
 - Is the document format appropriate for the chosen audience?
 
-### Editing Exercise — Refine the Capstone Output
+### Editing Exercise. Refine the Capstone Output
 
 Rewrite:
 *"There are many problems in the offices and things are not working well. Someone needs to explain everything again."*

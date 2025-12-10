@@ -1,4 +1,4 @@
-# Unit 6 — Communicating Errors Diplomatically
+# Unit 6. Communicating Errors Diplomatically
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit trains learners to communicate errors, inconsistencies, and corrective
 
 ## Warm-Up
 
-### Activity 1 — Direct or Diplomatic?
+### Activity 1. Direct or Diplomatic?
 
 Decide whether each message is **direct** or **diplomatic**.
 
@@ -23,7 +23,7 @@ Decide whether each message is **direct** or **diplomatic**.
 
 Discuss: What makes diplomatic communication essential in interagency and international work?
 
-### Activity 2 — Identifying the Purpose
+### Activity 2. Identifying the Purpose
 
 For each situation, identify what the message must achieve:
 
@@ -44,7 +44,7 @@ Discuss: How should tone differ in each scenario?
 >
 > *"Thank you for sharing the updated document. Upon review, it appears that the timeline in Section 3 may differ from the revised instructions circulated on 12 July. For consistency, we would appreciate it if you could confirm whether the dates should be updated. Once clarified, we will be able to proceed with the remaining steps in the review."*
 
-### Activity — Compare the Two Versions
+### Activity. Compare the Two Versions
 
 Identify improvements in:
 
@@ -77,7 +77,7 @@ Useful opening phrases:
 - *For our internal confirmation…*
 - *We noticed a difference between X and Y…*
 
-### Practice A — Add the Frame
+### Practice A. Add the Frame
 
 Add a diplomatic frame to the beginning of each:
 
@@ -96,7 +96,7 @@ Use neutral language to show why the correction is needed.
 - *For consistency across documents…*
 - *This may affect how the next stage is processed…*
 
-**Practice B — Explain the Impact**
+**Practice B. Explain the Impact**
 Add an impact explanation to each issue:
 
 1. *The applicant name differs between versions.*
@@ -111,7 +111,7 @@ Neutral request patterns:
 - *We would appreciate it if you could review…*
 - *Would it be possible to update…?*
 
-**Practice C — Rewrite the Direct Request**
+**Practice C. Rewrite the Direct Request**
 Rewrite these direct requests diplomatically:
 
 1. *Fix this section.*
@@ -121,7 +121,7 @@ Rewrite these direct requests diplomatically:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Model Email
+### Activity 1. Rewrite the Model Email
 
 Rewrite the original (too direct) model using:
 
@@ -130,7 +130,7 @@ Rewrite the original (too direct) model using:
 - one neutral request
 - one next-step statement
 
-### Activity 2 — Error Explanation Scenarios
+### Activity 2. Error Explanation Scenarios
 
 Rewrite the message for one of the following:
 
@@ -145,7 +145,7 @@ Include:
 - specific request for correction
 - next steps
 
-### Activity 3 — Structured Error Communication
+### Activity 3. Structured Error Communication
 
 Use this structure:
 
@@ -159,7 +159,7 @@ Write a short error-notification email using this structure.
 
 ## Freer Writing
 
-### Task — Write an 8–12 Sentence Diplomatic Error Notification
+### Task. Write an 8–12 Sentence Diplomatic Error Notification
 
 Choose one scenario:
 
@@ -195,7 +195,7 @@ Check your writing for:
 - absence of an impact explanation
 - overly vague correction requests
 
-### Editing Exercise — Improve Tone and Precision
+### Editing Exercise. Improve Tone and Precision
 
 Rewrite:
 

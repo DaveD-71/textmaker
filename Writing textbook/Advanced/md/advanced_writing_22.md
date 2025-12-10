@@ -1,4 +1,4 @@
-# Unit 22 — Integrated Writing Task: Complex Scenario Response
+# Unit 22. Integrated Writing Task: Complex Scenario Response
 
 ## Unit Overview
 
@@ -21,7 +21,7 @@ You receive:
 
 ## Warm-Up
 
-### Activity 1 — Identify the Writing Tasks Hidden in the Scenario
+### Activity 1. Identify the Writing Tasks Hidden in the Scenario
 
 Discuss: Which tasks are implied?
 
@@ -31,7 +31,7 @@ Discuss: Which tasks are implied?
 - multi-audience message?
 - consolidated report?
 
-### Activity 2 — Identify the Audiences
+### Activity 2. Identify the Audiences
 
 Who needs communication?
 
@@ -44,7 +44,7 @@ Who needs communication?
 >
 > *"This message summarises the current implementation issues relating to the revised applicant communication guidelines. Several offices have reported difficulty applying the updated terminology in Section 3, and two offices have indicated that the new implementation timeline may not be feasible due to internal constraints. In addition, delays have been observed because some offices continue to use outdated forms. To address these issues, we recommend circulating a brief clarification sheet and confirming whether all offices have received the revised instructions issued on 7 November. Once confirmation is received, the next step will be to develop a revised implementation schedule."*
 
-### Activity — Analyse the Model
+### Activity. Analyse the Model
 
 Identify how it integrates:
 
@@ -67,7 +67,7 @@ Possible formats:
 - clarification request
 - justification for action
 
-### Practice A — Match Purpose to Format
+### Practice A. Match Purpose to Format
 
 Match each purpose to the most appropriate format.
 
@@ -87,7 +87,7 @@ Useful transitions:
 - *To address this…*
 - *The next step is to…*
 
-### Practice B — Integrate the Functions
+### Practice B. Integrate the Functions
 
 Rewrite to include synthesis + request:
 
@@ -100,7 +100,7 @@ Rewrite to include synthesis + request:
 Example:
 *“Several offices require additional clarification regarding the revised terminology.”*
 
-### Practice C — Remove Emotion
+### Practice C. Remove Emotion
 
 Rewrite without emotional content:
 
@@ -108,7 +108,7 @@ Rewrite without emotional content:
 
 ## Guided Writing
 
-### Activity 1 — Write a Structured Summary of the Scenario
+### Activity 1. Write a Structured Summary of the Scenario
 
 Include:
 
@@ -117,7 +117,7 @@ Include:
 - needed actions
 - next steps
 
-### Activity 2 — Write One Communication Output
+### Activity 2. Write One Communication Output
 
 Choose one:
 
@@ -133,13 +133,13 @@ Your output must:
 - request or recommend actions
 - include next steps
 
-### Activity 3 — Write a Second Output for a Different Audience
+### Activity 3. Write a Second Output for a Different Audience
 
 Adapt tone, structure, and detail level accordingly.
 
 ## Freer Writing
 
-### Task — Full Integrated Writing Portfolio (12–18 sentences)
+### Task. Full Integrated Writing Portfolio (12–18 sentences)
 
 Produce **one comprehensive written document** that:
 

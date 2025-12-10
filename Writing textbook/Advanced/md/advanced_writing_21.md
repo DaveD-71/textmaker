@@ -1,4 +1,4 @@
-# Unit 21 — Drafting Consolidated Administrative Reports
+# Unit 21. Drafting Consolidated Administrative Reports
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This final core unit trains learners to bring together multiple skills from the 
 
 ## Warm-Up
 
-### Activity 1 — What Is a Consolidated Report?
+### Activity 1. What Is a Consolidated Report?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. Why must consolidated reports be neutral and factual?
 3. What makes poorly structured reports difficult to use?
 
-### Activity 2 — Identify the Problems
+### Activity 2. Identify the Problems
 
 Read:
 *"Many issues have come up and several offices are doing different things. We need to fix the problems and make sure everyone understands the instructions."*
@@ -62,7 +62,7 @@ Discuss:
 > - Offices will submit remaining questions by 22 November.
 > - A follow-up coordination meeting will be held on 29 November.
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -101,7 +101,7 @@ Common sections:
 - **Outstanding Questions**
 - **Next Steps**
 
-### Practice A — Categorise the Content
+### Practice A. Categorise the Content
 
 Assign each line below to a category above:
 
@@ -122,7 +122,7 @@ Useful phrasing:
 - *identified challenges with…*
 - *reported difficulty applying…*
 
-### Practice B — Rewrite for Clarity
+### Practice B. Rewrite for Clarity
 
 Rewrite:
 
@@ -141,7 +141,7 @@ Useful structures:
 - *A briefing session was conducted…*
 - *An updated version was circulated…*
 
-### Practice C — Clarify the Action
+### Practice C. Clarify the Action
 
 Rewrite:
 
@@ -160,7 +160,7 @@ Useful patterns:
 - *The next step is to…*
 - *Offices will submit…*
 
-### Practice D — Add Next Steps
+### Practice D. Add Next Steps
 
 Rewrite with a next-step statement:
 
@@ -168,7 +168,7 @@ Rewrite with a next-step statement:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Report
+### Activity 1. Rewrite the Original Report
 
 Include:
 
@@ -178,7 +178,7 @@ Include:
 - outstanding questions
 - next steps
 
-### Activity 2 — Draft a Consolidated Report
+### Activity 2. Draft a Consolidated Report
 
 Choose one scenario:
 
@@ -188,7 +188,7 @@ Choose one scenario:
 
 Write a 10–12 sentence consolidated report.
 
-### Activity 3 — Short vs. Detailed Versions
+### Activity 3. Short vs. Detailed Versions
 
 Write:
 
@@ -197,7 +197,7 @@ Write:
 
 ## Freer Writing
 
-### Task — Write a 15–18 Sentence Consolidated Administrative Report
+### Task. Write a 15–18 Sentence Consolidated Administrative Report
 
 Choose one:
 
@@ -232,7 +232,7 @@ Check:
 - Are next steps clearly stated?
 - Does tone remain neutral and administrative?
 
-### Editing Exercise — Improve the Report
+### Editing Exercise. Improve the Report
 
 Rewrite:
 *"Many offices had problems and some actions were taken. We will meet again soon to discuss things."*

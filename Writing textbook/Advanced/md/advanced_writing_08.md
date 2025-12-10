@@ -1,4 +1,4 @@
-# Unit 8 — Writing Clear Procedures (Advanced)
+# Unit 8. Writing Clear Procedures (Advanced)
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write clear, logically sequenced proce
 
 ## Warm-Up
 
-### Activity 1 — What Makes a Procedure Clear?
+### Activity 1. What Makes a Procedure Clear?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. Which elements are essential in a good procedure?
 3. What is the difference between a *step*, a *condition*, and an *exception*?
 
-### Activity 2 — Identify the Issue
+### Activity 2. Identify the Issue
 
 Read the following:
 *"Check the applicant’s information. If anything is missing, follow the standard process. Send a confirmation. If necessary, update the timeline."*
@@ -48,7 +48,7 @@ Procedure for Reviewing Applicant Submissions
 5. Notification: Send the appropriate notification to the applicant or relevant office.
 6. Reference to Guidelines: Ensure all steps comply with the latest procedural guidelines.
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -63,7 +63,7 @@ Highlight in the improved version:
 
 1. **steps**
 2. **conditions** (*if a revised document…*)
-3. **exceptions** (none in this example — discuss why)
+3. **exceptions** (none in this example. discuss why)
 4. **logical sequence**
 
 Discuss: How does numbering affect clarity and processing accuracy?
@@ -76,7 +76,7 @@ Common verbs for steps:
 
 - *review, verify, confirm, update, submit, notify, process, determine, cross-check*
 
-### Practice A — Replace Vague Verbs
+### Practice A. Replace Vague Verbs
 
 Rewrite using precise verbs:
 
@@ -92,7 +92,7 @@ Useful structures:
 - *If no revision is submitted, skip Step 4.*
 - *Unless the document is complete, the process cannot continue.*
 
-### Practice B — Add Conditions
+### Practice B. Add Conditions
 
 Add conditions to the following:
 
@@ -109,14 +109,14 @@ Procedures can be written as:
 - bullet points (for conditions or notes)
 - tables (for complex branching)
 
-### Practice C — Improve Formatting
+### Practice C. Improve Formatting
 
 Rewrite this in clear steps:
 *"Check the document. If something is missing, ask the applicant. Update the record after confirmation."*
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Procedure
+### Activity 1. Rewrite the Procedure
 
 Rewrite the following *different* poorly structured procedure into a clear, logically sequenced one with:
 
@@ -128,7 +128,7 @@ Rewrite the following *different* poorly structured procedure into a clear, logi
 **Poorly structured example:**
 *"Look at the file first. Then if there is something wrong, maybe ask someone to check it. After that, send whatever message is needed. Update things when required, and make sure the guidelines are followed somehow."*
 
-### Activity 2 — Draft a New Procedure
+### Activity 2. Draft a New Procedure
 
 Choose one process:
 
@@ -142,7 +142,7 @@ Write a **6–8 step** procedure including:
 - conditional branches
 - exceptions where appropriate
 
-### Activity 3 — Identify Missing Information
+### Activity 3. Identify Missing Information
 
 Read this procedural excerpt:
 *"Review the file and send a response. Update the internal record if necessary."*
@@ -155,7 +155,7 @@ List missing details such as:
 
 ## Freer Writing
 
-### Task — Write a Full Procedure (8–12 steps)
+### Task. Write a Full Procedure (8–12 steps)
 
 Choose one:
 
@@ -191,7 +191,7 @@ Check whether your procedure:
 - omits important conditions
 - includes unnecessary duplication
 
-### Editing Exercise — Improve Clarity
+### Editing Exercise. Improve Clarity
 
 Rewrite:
 *"Check the document and send a reply. Update if needed. Follow the procedure."*

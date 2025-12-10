@@ -1,4 +1,4 @@
-# Unit 14 — Writing Complex Multi-Audience Messages
+# Unit 14. Writing Complex Multi-Audience Messages
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write messages intended for multiple a
 
 ## Warm-Up
 
-### Activity 1 — Who Are the Audiences?
+### Activity 1. Who Are the Audiences?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. How much background knowledge does each audience have?
 3. What problems occur when a message assumes too much prior knowledge?
 
-### Activity 2 — Identify the Audience Gap
+### Activity 2. Identify the Audience Gap
 
 Read:
 >
@@ -41,7 +41,7 @@ Discuss:
 >
 > *"We would like to confirm that the updated instructions circulated on 3 October should now be used for all applicant submissions. For colleagues already familiar with the revision, the main change concerns the applicant communication timeline in Section 2.2. For partner offices, we note that the revision was introduced to resolve inconsistencies identified in the previous version. Should any questions arise regarding the updated process, please feel free to contact our office."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -76,7 +76,7 @@ Useful patterns:
 - *For partner offices…*
 - *For agencies not involved in earlier discussions…*
 
-### Practice A — Add Audience Signals
+### Practice A. Add Audience Signals
 
 Rewrite adding explicit audience references:
 
@@ -96,7 +96,7 @@ Useful structures:
 - *For those unfamiliar with…*
 - *This revision was introduced to…*
 
-### Practice B — Expand for Multiple Audiences
+### Practice B. Expand for Multiple Audiences
 
 Rewrite with layered explanation:
 
@@ -115,7 +115,7 @@ Useful phrasing:
 - *As background…*
 - *This change responds to…*
 
-### Practice C — Add Background Context
+### Practice C. Add Background Context
 
 Add background:
 
@@ -134,7 +134,7 @@ Useful tools:
 - numbered lists
 - transitional phrases
 
-### Practice D — Improve Structure
+### Practice D. Improve Structure
 
 Rewrite with clear structure:
 
@@ -142,7 +142,7 @@ Rewrite with clear structure:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Message
+### Activity 1. Rewrite the Original Message
 
 Rewrite the unclear original message using:
 
@@ -151,7 +151,7 @@ Rewrite the unclear original message using:
 - layered explanations
 - clear next steps
 
-### Activity 2 — Create a Multi-Audience Notice
+### Activity 2. Create a Multi-Audience Notice
 
 Choose one scenario:
 
@@ -167,7 +167,7 @@ Write an 8–10 sentence notice including:
 - required actions
 - next steps
 
-### Activity 3 — Two Versions of the Same Message
+### Activity 3. Two Versions of the Same Message
 
 Write:
 
@@ -182,7 +182,7 @@ Discuss differences in:
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Multi-Audience Message
+### Task. Write a 12–15 Sentence Multi-Audience Message
 
 Choose one:
 

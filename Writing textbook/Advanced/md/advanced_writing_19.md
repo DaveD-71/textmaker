@@ -1,4 +1,4 @@
-# Unit 19 — Writing Policy Summaries for Non-Expert Audiences
+# Unit 19. Writing Policy Summaries for Non-Expert Audiences
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to summarise policy content for readers w
 
 ## Warm-Up
 
-### Activity 1 — Who Is a “Non-Expert” Reader?
+### Activity 1. Who Is a “Non-Expert” Reader?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What background knowledge do they typically lack?
 3. What happens when policy summaries assume too much prior knowledge?
 
-### Activity 2 — Identify the Problem
+### Activity 2. Identify the Problem
 
 Read the following:
 *"Under Section 12(4), the examining office shall apply the amended verification procedure as specified in Annex 3, paragraph 2(b)."*
@@ -40,7 +40,7 @@ Discuss:
 >
 > *"A new step has been added to the document-checking process. From now on, offices must confirm that all key information is included before the application moves to the next stage. This change is intended to reduce errors and improve consistency across offices."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify differences in:
 
@@ -76,7 +76,7 @@ Useful patterns:
 - *In simple terms…*
 - *The key point is that…*
 
-### Practice A — Simplify the Statement
+### Practice A. Simplify the Statement
 
 Rewrite:
 
@@ -95,7 +95,7 @@ Useful structures:
 - *This is intended to…*
 - *This helps to…*
 
-### Practice B — Add Purpose
+### Practice B. Add Purpose
 
 Add a purpose statement:
 
@@ -114,7 +114,7 @@ Useful expressions:
 - *Readers must…*
 - *Please begin…*
 
-### Practice C — State the Action
+### Practice C. State the Action
 
 Rewrite to include required action:
 
@@ -122,7 +122,7 @@ Rewrite to include required action:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Text
+### Activity 1. Rewrite the Original Text
 
 Include:
 
@@ -131,7 +131,7 @@ Include:
 - required action
 - professional, neutral tone
 
-### Activity 2 — Draft a Policy Summary
+### Activity 2. Draft a Policy Summary
 
 Choose one scenario:
 
@@ -141,7 +141,7 @@ Choose one scenario:
 
 Write an 8–10 sentence summary for non-expert audiences.
 
-### Activity 3 — Two Versions
+### Activity 3. Two Versions
 
 Write:
 
@@ -150,7 +150,7 @@ Write:
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Policy Summary
+### Task. Write a 12–15 Sentence Policy Summary
 
 Choose one:
 

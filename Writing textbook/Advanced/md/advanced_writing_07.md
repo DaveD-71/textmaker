@@ -1,4 +1,4 @@
-# Unit 7 — Layered Requests: Managing Multi-Part Actions
+# Unit 7. Layered Requests: Managing Multi-Part Actions
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write layered, prioritised, and logica
 
 ## Warm-Up
 
-### Activity 1 — One Request or Multiple?
+### Activity 1. One Request or Multiple?
 
 Identify whether each message contains **one request**, **two requests**, or **three or more**.
 
@@ -20,7 +20,7 @@ Identify whether each message contains **one request**, **two requests**, or **t
 2. *Could you clarify the date in Section 3 and verify whether the term “submission period” aligns with the new guidelines?*
 3. *We would appreciate it if you could review the attached document.*
 
-### Activity 2 — Prioritise the Actions
+### Activity 2. Prioritise the Actions
 
 Rank the following actions from **highest** to **lowest** priority:
 
@@ -40,7 +40,7 @@ Discuss: How does order affect clarity?
 >
 > *"To proceed with the review, we would appreciate your support with the following points. First, could you confirm whether the date in Section 2.1 should align with the revision issued on 3 August? Once confirmed, we would be grateful if you could review the attached translation for consistency. Finally, if an updated version of the file is available, kindly share it at your convenience. These steps will allow us to complete the review accurately."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify differences in:
 
@@ -72,7 +72,7 @@ Useful phrases:
 - *After reviewing…*
 - *Finally, we would appreciate it if…*
 
-### Practice A — Add Sequencing
+### Practice A. Add Sequencing
 
 Rewrite with explicit order:
 
@@ -87,7 +87,7 @@ Examples:
 - *Once we receive clarification, we will…*
 - *After the timeline is confirmed, we can proceed with…*
 
-### Practice B — Add Dependencies
+### Practice B. Add Dependencies
 
 Rewrite by showing which action depends on another:
 
@@ -101,7 +101,7 @@ Useful expressions:
 - *If possible, could you…?*
 - *When convenient, would you be able to…?*
 
-### Practice C — Add Softening
+### Practice C. Add Softening
 
 Rewrite the following:
 
@@ -109,7 +109,7 @@ Rewrite the following:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Model
+### Activity 1. Rewrite the Original Model
 
 Rewrite the unstructured model into a layered, prioritised request message.
 Include:
@@ -120,7 +120,7 @@ Include:
 - diplomatic tone
 - next steps
 
-### Activity 2 — Create a Layered Request
+### Activity 2. Create a Layered Request
 
 Choose one scenario:
 
@@ -134,7 +134,7 @@ Write a structured message including:
 - dependency logic
 - reason for priorities
 
-### Activity 3 — Two Versions
+### Activity 3. Two Versions
 
 Write:
 
@@ -145,7 +145,7 @@ Discuss how tone and sequencing shift.
 
 ## Freer Writing
 
-### Task — Write a Multi-Part Request Message (8–12 sentences)
+### Task. Write a Multi-Part Request Message (8–12 sentences)
 
 Choose one:
 

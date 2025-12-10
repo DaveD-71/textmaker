@@ -1,4 +1,4 @@
-# Unit 17 — Drafting Executive Briefs
+# Unit 17. Drafting Executive Briefs
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ Executive briefs summarise high-level issues for decision‑makers who require c
 
 ## Warm-Up
 
-### Activity 1 — What Do Executives Need?
+### Activity 1. What Do Executives Need?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What is the difference between a meeting summary and an executive brief?
 3. Why must executive briefs be short?
 
-### Activity 2 — Identify the Problem
+### Activity 2. Identify the Problem
 
 Read:
 *"A lot of things happened and we talked about many issues. We will continue next week."*
@@ -49,7 +49,7 @@ Discuss:
 >
 > **Recommendation:** Proceed with targeted revisions to terminology and remove redundant verification steps.
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -84,7 +84,7 @@ Useful expressions:
 - *The purpose of this brief is to…*
 - *This document outlines…*
 
-### Practice A — Rewrite the Overview
+### Practice A. Rewrite the Overview
 
 Rewrite to create a clear overview:
 
@@ -103,7 +103,7 @@ Useful patterns:
 - *Stakeholders noted that…*
 - *The primary challenge is…*
 
-### Practice B — Reduce Detail
+### Practice B. Reduce Detail
 
 Rewrite concisely:
 
@@ -122,7 +122,7 @@ Useful patterns:
 - *This may result in…*
 - *This could affect…*
 
-### Practice C — Add an Implication
+### Practice C. Add an Implication
 
 Add an implication:
 
@@ -141,7 +141,7 @@ Useful structures:
 - *It would be advisable to…*
 - *We propose…*
 
-### Practice D — Propose a Recommendation
+### Practice D. Propose a Recommendation
 
 Rewrite as a recommendation:
 
@@ -149,7 +149,7 @@ Rewrite as a recommendation:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Brief
+### Activity 1. Rewrite the Original Brief
 
 Include:
 
@@ -158,7 +158,7 @@ Include:
 - implications
 - recommendation
 
-### Activity 2 — Draft an Executive Brief
+### Activity 2. Draft an Executive Brief
 
 Choose one scenario:
 
@@ -168,7 +168,7 @@ Choose one scenario:
 
 Write an 8–10 sentence brief.
 
-### Activity 3 — Short vs. Long Briefs
+### Activity 3. Short vs. Long Briefs
 
 Write:
 
@@ -179,7 +179,7 @@ Discuss differences in detail and tone.
 
 ## Freer Writing
 
-### Task — Write a 12–15 Sentence Executive Brief
+### Task. Write a 12–15 Sentence Executive Brief
 
 Choose one:
 
@@ -213,7 +213,7 @@ Check your writing:
 - are implications missing?
 - is the recommendation too vague?
 
-### Editing Exercise — Condense for Executive Use
+### Editing Exercise. Condense for Executive Use
 
 Rewrite:
 *"A number of things were discussed in the meeting, including various parts of the instructions. People shared opinions and raised many issues. We need to revise the instructions, but first we must think about how to communicate with offices."*

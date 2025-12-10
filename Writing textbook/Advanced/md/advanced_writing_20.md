@@ -1,4 +1,4 @@
-# Unit 20 — Writing Concise Justifications for Decisions
+# Unit 20. Writing Concise Justifications for Decisions
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write concise, logically structured ju
 
 ## Warm-Up
 
-### Activity 1 — Why Do We Justify Decisions?
+### Activity 1. Why Do We Justify Decisions?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What happens when a justification is missing or unclear?
 3. What level of detail is appropriate for a *concise* justification?
 
-### Activity 2 — Identify the Problem
+### Activity 2. Identify the Problem
 
 Read:
 *"We decided to change the form because we thought it would be better."*
@@ -40,7 +40,7 @@ Discuss:
 >
 > *"The process has been revised to align with the updated applicant communication guidelines issued in July. The new sequence removes duplicated checks and clarifies terminology, reducing the likelihood of inconsistent interpretation across offices. This adjustment supports more efficient review and ensures compliance with current interagency standards."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -76,7 +76,7 @@ Useful expressions:
 - *The office will…*
 - *It has been decided that…*
 
-### Practice A — Rewrite the Decision
+### Practice A. Rewrite the Decision
 
 Rewrite to make the decision clear:
 
@@ -95,7 +95,7 @@ Useful patterns:
 - *This change is necessary because…*
 - *To ensure consistency…*
 
-### Practice B — Strengthen the Rationale
+### Practice B. Strengthen the Rationale
 
 Rewrite to add a stronger rationale:
 
@@ -114,7 +114,7 @@ Useful expressions:
 - *This reduces the risk of…*
 - *This contributes to…*
 
-### Practice C — Add a Benefit
+### Practice C. Add a Benefit
 
 Add a benefit:
 
@@ -131,7 +131,7 @@ Add a benefit:
 3. Describe expected benefits.  
 4. Signal relevance for stakeholders.
 
-### Practice D — Organise a Justification
+### Practice D. Organise a Justification
 
 Reorganise into a logical paragraph:
 A. *This supports cross-office consistency.*  
@@ -140,7 +140,7 @@ C. *This aligns with the updated guidelines.*
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Justification
+### Activity 1. Rewrite the Original Justification
 
 Write a concise justification including:
 
@@ -149,7 +149,7 @@ Write a concise justification including:
 - benefits
 - clear, neutral tone
 
-### Activity 2 — Draft a Justification for One Scenario
+### Activity 2. Draft a Justification for One Scenario
 
 Choose:
 
@@ -159,7 +159,7 @@ Choose:
 
 Write a 5–7 sentence justification.
 
-### Activity 3 — Short vs. Expanded Version
+### Activity 3. Short vs. Expanded Version
 
 Write:
 
@@ -168,7 +168,7 @@ Write:
 
 ## Freer Writing
 
-### Task — Write a 10–12 Sentence Justification
+### Task. Write a 10–12 Sentence Justification
 
 Choose one:
 

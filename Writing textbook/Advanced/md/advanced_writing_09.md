@@ -1,4 +1,4 @@
-# Unit 9 — Change Management Writing
+# Unit 9. Change Management Writing
 
 ## Unit Overview
 
@@ -12,7 +12,7 @@ This unit develops learners’ ability to write clear, well‑structured explana
 
 ## Warm-Up
 
-### Activity 1 — What Makes Change Communication Difficult?
+### Activity 1. What Makes Change Communication Difficult?
 
 Discuss:
 
@@ -20,7 +20,7 @@ Discuss:
 2. What information is essential when communicating a change?
 3. What tone should be used for internal vs. external change notifications?
 
-### Activity 2 — Identify Missing Information
+### Activity 2. Identify Missing Information
 
 Read the following message:
 *"We updated the procedure. Please use the new version from now on."*
@@ -43,7 +43,7 @@ Discuss: What is missing?
 
 > *"Please note that the procedure for reviewing applicant submissions has been updated, effective 15 September. The revised steps introduce a new verification check in Step 2 and remove the requirement for applicants to provide supporting documents at the preliminary stage. These changes aim to improve processing efficiency and ensure consistency across agencies. We would appreciate it if you could begin using the updated form attached and discontinue use of the previous version. Should any questions arise, please feel free to contact our office."*
 
-### Activity — Compare the Versions
+### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -80,7 +80,7 @@ Useful expressions:
 - *This is to notify you that…*
 - *Effective [date], the procedure has been updated…*
 
-### Practice A — Rewrite the Introduction
+### Practice A. Rewrite the Introduction
 
 Rewrite using a more formal introductory phrase:
 
@@ -100,7 +100,7 @@ Useful structures:
 - *The previous requirement for X has been removed…*
 - *Two major changes have been introduced…*
 
-### Practice B — Strengthen the Explanation
+### Practice B. Strengthen the Explanation
 
 Rewrite for clarity:
 
@@ -121,7 +121,7 @@ Useful rationale structures:
 - *to reduce administrative burden…*
 - *to reflect updated guidelines…*
 
-### Practice C — Add Rationale
+### Practice C. Add Rationale
 
 Add a rationale to the following:
 
@@ -141,7 +141,7 @@ Useful phrasing:
 - *Please discontinue the previous version…*
 - *The updated form is attached…*
 
-### Practice D — Specify Actions
+### Practice D. Specify Actions
 
 Rewrite to include clear required actions:
 
@@ -150,7 +150,7 @@ Rewrite to include clear required actions:
 
 ## Guided Writing
 
-### Activity 1 — Rewrite the Original Model
+### Activity 1. Rewrite the Original Model
 
 Rewrite the original unclear message with:
 
@@ -160,7 +160,7 @@ Rewrite the original unclear message with:
 - required actions
 - supportive tone
 
-### Activity 2 — Draft a Change Management Notice
+### Activity 2. Draft a Change Management Notice
 
 Choose one scenario:
 
@@ -176,7 +176,7 @@ Write a structured notice including:
 - effective date
 - required actions
 
-### Activity 3 — Compare Old and New Processes
+### Activity 3. Compare Old and New Processes
 
 Write a paragraph comparing the old process and the new one using:
 
@@ -185,7 +185,7 @@ Write a paragraph comparing the old process and the new one using:
 
 ## Freer Writing
 
-### Task — Write a 10–14 Sentence Change Management Announcement
+### Task. Write a 10–14 Sentence Change Management Announcement
 
 Choose one:
 
@@ -221,7 +221,7 @@ Check whether your writing:
 - includes ambiguous or vague language
 - uses overly informal tone
 
-### Editing Exercise — Improve Change Communication
+### Editing Exercise. Improve Change Communication
 
 Rewrite:
 
