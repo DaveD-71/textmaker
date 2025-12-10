@@ -9,8 +9,6 @@ You will:
 - Practice writing short, clear sentences
 - Rewrite unclear or confusing sentences so that your reader can understand easily
 
----
-
 ## 2. Warm-Up: What Makes a Sentence Clear?
 
 Read the pairs of sentences. Choose the one that feels **clearer**.
@@ -25,8 +23,6 @@ Read the pairs of sentences. Choose the one that feels **clearer**.
    b) The application submitted last week has some missing information.
 
 **Discussion:** Why are the (b) sentences easier to read?
-
----
 
 ## 3. Language Focus 1: Basic Sentence Pattern (S–V–O / S–V–C)
 
@@ -45,8 +41,6 @@ Examples:
 - **The applicant** (S) **submitted** (V) **the missing form** (O).
 - **Our office** (S) **is located in** (V) **Tokyo** (C).
 
-
-
 ### Practice — Identify the Parts
 
 Identify the parts of each sentence using these actions:
@@ -61,8 +55,6 @@ Identify the parts of each sentence using these actions:
 4. The system shows an error message.
 5. The examiner requested more information.
 
-
-
 ### Practice — Build Clear Sentences
 
 Rewrite the word groups as clear S–V–O or S-V-C sentences.
@@ -72,8 +64,6 @@ Rewrite the word groups as clear S–V–O or S-V-C sentences.
 3. (we / send / confirmation email / tomorrow)
 4. (applicant / not / submit / fee / yet)
 5. (system / show / error message / this morning)
-
----
 
 ## 4. Language Focus 2: Avoiding Unnecessary Complexity
 
@@ -95,8 +85,6 @@ Rewrite each sentence in a clearer, shorter way.
 4. Original: In the situation where the applicant does not provide the required documents, we will not be able to continue the examination.\
    Clear:
 
----
-
 ## 5. Guided Practice: Rewrite for Clarity
 
 Rewrite each sentence so that it is easier to read.
@@ -113,8 +101,6 @@ Rewrite each sentence so that it is easier to read.
 4. It will be necessary for us to confirm the information with another department before a reply can be given.\
    →
 
----
-
 ## 6. Freer Practice: Write Clear Administrative Sentences
 
 Write 3–4 clear sentences based on the situation below.
@@ -126,17 +112,12 @@ Write 3–4 clear sentences based on the situation below.
 3.
 4.
 
----
-
 ## 7. Reflection
 
 1. What was difficult for you in this unit?
 2. Which point do you want to remember when you write emails at work?
 3. Choose one clear sentence you wrote today and rewrite it here.
 
----
-
 ## 8. Homework
 
 Choose one real email you sent at work (in Japanese). Translate the **main message** into 3–4 clear English sentences using S–V–O structure.
-

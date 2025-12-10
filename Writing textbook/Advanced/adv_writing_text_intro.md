@@ -10,7 +10,7 @@ The Upper-Intermediate Writing Textbook develops learners’ ability to produce 
 
 It shifts from basic structures to **complex, multi-layered communication**, requiring the learner to synthesise information, justify decisions, summarise meetings and reports, and communicate across multiple stakeholders.
 
----
+
 
 ## **b. Target Audience**
 
@@ -25,7 +25,7 @@ It shifts from basic structures to **complex, multi-layered communication**, req
   * professional persuasion
 * Learners preparing for roles requiring autonomous written communication
 
----
+
 
 ## **c. Learning Objectives**
 
@@ -54,7 +54,7 @@ By the end of the textbook, learners will:
 * Prepare multi-section reports combining narrative, explanation, and recommendations
 * Revise and refine a **professional writing portfolio**
 
----
+
 
 ## **d. Lesson Activities**
 

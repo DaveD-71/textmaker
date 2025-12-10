@@ -10,8 +10,6 @@ This unit develops learners’ ability to write clear, logically sequenced proce
 - write procedures using consistent structure and formal administrative style
 - revise procedural texts for clarity, accuracy, and usability
 
----
-
 ## Warm-Up
 
 ### Activity 1 — What Makes a Procedure Clear?
@@ -32,8 +30,6 @@ What is unclear?
 - order?
 - conditions?
 - missing details?
-
----
 
 ## Model Text
 
@@ -61,8 +57,6 @@ Identify improvements in:
 - grouping of steps
 - formatting and usability
 
----
-
 ## Noticing Task
 
 Highlight in the improved version:
@@ -73,8 +67,6 @@ Highlight in the improved version:
 4. **logical sequence**
 
 Discuss: How does numbering affect clarity and processing accuracy?
-
----
 
 ## Language Focus
 
@@ -91,8 +83,6 @@ Rewrite using precise verbs:
 1. *Do the review.*
 2. *Look at the changes.*
 3. *Deal with the applicant’s message.*
-
----
 
 ### 2. Conditions and Exceptions
 
@@ -111,8 +101,6 @@ Add conditions to the following:
 
 (Specify **when** these actions should occur.)
 
----
-
 ### 3. Formatting for Clarity
 
 Procedures can be written as:
@@ -125,8 +113,6 @@ Procedures can be written as:
 
 Rewrite this in clear steps:
 *"Check the document. If something is missing, ask the applicant. Update the record after confirmation."*
-
----
 
 ## Guided Writing
 
@@ -167,8 +153,6 @@ List missing details such as:
 - Who must review
 - What triggers an update
 
----
-
 ## Freer Writing
 
 ### Task — Write a Full Procedure (8–12 steps)
@@ -195,8 +179,6 @@ Partners identify:
 - opportunities for consolidation
 - inconsistent sequencing
 
----
-
 ## Editing Skills
 
 ### Editing Checklist
@@ -216,8 +198,6 @@ Rewrite:
 
 Add structure, detail, sequencing, and conditions.
 
----
-
 ## Extension Task
 
 Choose one:
@@ -225,8 +205,6 @@ Choose one:
 1. Rewrite a real procedure from your workplace.
 2. Convert a paragraph-style explanation into a numbered procedure.
 3. Analyse an unclear procedure and rewrite it for clarity.
-
----
 
 ## Homework
 
@@ -236,4 +214,3 @@ Write a **200–230 word** advanced procedure for an internal or interagency pro
 - at least one conditional branch
 - at least one exception
 - consistent formatting and tone.
-
