@@ -115,8 +115,8 @@ Good paragraphs start with known information, then move forward.
 
 **Practice C. Reorder for Logical Flow**
 Arrange the sentences into a clear paragraph:
-A. *We will draft a revised explanation to ensure consistency across offices.*  
-B. *Several agencies reported confusion about the updated guidelines.*  
+A. *We will draft a revised explanation to ensure consistency across offices.* 
+B. *Several agencies reported confusion about the updated guidelines.* 
 C. *To address these concerns, we agreed to prepare additional clarification.*
 
 ## Guided Writing

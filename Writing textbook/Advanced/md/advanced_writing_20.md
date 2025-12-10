@@ -135,8 +135,8 @@ Add a benefit:
 ### Practice D. Organise a Justification
 
 Reorganise into a logical paragraph:
-A. *This supports cross-office consistency.*  
-B. *The office will use the revised terminology list.*  
+A. *This supports cross-office consistency.* 
+B. *The office will use the revised terminology list.* 
 C. *This aligns with the updated guidelines.*
 
 ## Guided Writing

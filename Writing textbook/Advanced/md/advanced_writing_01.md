@@ -23,8 +23,8 @@ Read the following sentences. Discuss which parts are unclear and why.
 
 For each sentence above, identify the SINGLE main idea. Then identify supporting or secondary ideas.
 
-Consider the following question:  
-**When does a long sentence become unclear?**  
+Consider the following question: 
+**When does a long sentence become unclear?** 
 Discuss with a partner what makes administrative writing difficult to read.
 
 ## Model Text
@@ -50,8 +50,8 @@ Below is an excerpt from an internal explanation memo:
 
 Identify issues in the model text:
 
-1. Where does the sentence become difficult to follow?  
-2. How many ideas are packed into one sentence?  
+1. Where does the sentence become difficult to follow?
+2. How many ideas are packed into one sentence?
 3. Where could the writer introduce clearer subordination or separate clauses?
 
 ## Language Focus
@@ -68,7 +68,7 @@ Useful for linking parallel information without implying hierarchy.
 - *X. However, Y* (strong contrast)
 - *X. Therefore, Y* (logical result)
 
-**Practice A. Add Coordinators**  
+**Practice A. Add Coordinators** 
 Choose the most appropriate connector.
 
 1. We need to confirm the applicant’s address, ___ we must check the original application form.
@@ -80,7 +80,7 @@ Choose the most appropriate connector.
 Indicates relationship and hierarchy between ideas.
 **Common subordinators:** *because, although, when, while, since, unless, even if, even though*
 
-**Practice B. Identify the Subordination Function**  
+**Practice B. Identify the Subordination Function** 
 State whether the subclause expresses **reason**, **contrast**, or **time**.
 
 1. *Because the file was corrupted, the attachments did not open.*
@@ -91,13 +91,13 @@ State whether the subclause expresses **reason**, **contrast**, or **time**.
 
 #### Pattern 1: Main Idea → Reason
 
-**Example:**  
+**Example:** 
 
 - *We will request an updated version **because** several inconsistencies were found.*
 
 #### Pattern 2: Short Intro Clause → Main Action
 
-**Example:**  
+**Example:** 
 
 - *To ensure consistency, **please confirm the applicant’s name spelling.***
 
@@ -109,7 +109,7 @@ Use two or more shorter sentences when:
 - there are more than 2 logical relationships in one sentence
 - new information is introduced too quickly
 
-**Practice C. Apply the Patterns**  
+**Practice C. Apply the Patterns** 
 Rewrite the following using a different pattern:
 
 1. *Although we received the applicant’s correction, we still need to confirm whether the previous version remains valid because the internal database has not been updated.*

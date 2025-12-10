@@ -33,16 +33,16 @@ Compare the two emails. Identify inconsistencies in tone, format, structure, and
 
 ### Email A
 
-Subject: Info  
-Hi,  
-I saw it. What next?  
+Subject: Info 
+Hi, 
+I saw it. What next?
 Thx.
 
 ### Email B
 
-Subject: Information Required for Review  
-Dear Team,  
-We reviewed the application this morning and need confirmation about the submission date. Could you clarify this point?  
+Subject: Information Required for Review 
+Dear Team, 
+We reviewed the application this morning and need confirmation about the submission date. Could you clarify this point?
 Thank you.
 
 Write the inconsistencies you notice:
@@ -83,20 +83,20 @@ Write the inconsistencies you notice:
 Rewrite these sentences/emails to make them consistent with team standards.
 
 1. "Hi, I checked it. What should I do now?"
-   →
+  →
 
 2. "Hello, Please check. I think there is a problem."
-   →
+  →
 
 3. "Team, The file is wrong. Fix it."
-   →
+  →
 
 ## 6. Practice B – Standardise Format & Tone
 
 Rewrite the email with correct formatting, tone, and clarity.
 
 **Original:**
-Subject: Document  
+Subject: Document 
 Hey, I don’t think this is right. Check it and tell me.
 
 **Rewrite:**
@@ -145,8 +145,8 @@ Rewrite the following **three related messages** so they all follow a consistent
 
 ## 10. Reflection
 
-1. Which inconsistency do you see most often at work?  
-2. Which standard phrase is most useful for your team?  
+1. Which inconsistency do you see most often at work?
+2. Which standard phrase is most useful for your team?
 3. How can consistent writing reduce mistakes or confusion?
 
 ## 11. Homework

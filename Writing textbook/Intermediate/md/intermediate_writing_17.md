@@ -59,16 +59,16 @@ Write the problems (too vague? too long? unnecessary words?):
 Rewrite each sentence.
 
 1. "It looks like the file maybe has a few issues."
-   →
+  →
 
 2. "There are things missing from the form somewhere."
-   →
+  →
 
 3. "We think that it could possibly be delayed for some reason."
-   →
+  →
 
 4. "It would be appreciated if you could maybe check the document again."
-   →
+  →
 
 ## 6. Language Focus 2 – Improving Flow
 
@@ -131,8 +131,8 @@ We checked some things and there are maybe a few issues. The system did somethin
 
 ## 11. Reflection
 
-1. What clarity problems do you often see in your own writing?  
-2. Which strategies helped you the most today?  
+1. What clarity problems do you often see in your own writing?
+2. Which strategies helped you the most today?
 3. How will clear writing help your communication at work?
 
 ## 12. Homework

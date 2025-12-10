@@ -130,8 +130,8 @@ Add a benefit:
 ### Practice D. Organise a Rationale
 
 Reorganise the following into a logical rationale:
-A. *This will improve coordination efficiency.*  
-B. *The revised guidelines require agencies to share status updates.*  
+A. *This will improve coordination efficiency.* 
+B. *The revised guidelines require agencies to share status updates.* 
 C. *We recommend adopting a shared tracking sheet.*
 
 ## Guided Writing

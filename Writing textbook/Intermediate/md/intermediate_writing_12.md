@@ -21,7 +21,7 @@ It should:
 
 ### Example (Part of a Larger Message Chain)
 
-Subject: Inquiry Regarding Updated Application Guidelines  
+Subject: Inquiry Regarding Updated Application Guidelines 
 Dear Review Office Team,
 We are reviewing the updated guidelines and have a question about Section 4. Could you clarify whether the new requirement applies to applicants who submitted forms before March? Further information will help us complete our internal checks.
 Thank you.
@@ -32,13 +32,13 @@ Compare the two versions.
 
 ### Email A
 
-Subject: Question  
+Subject: Question 
 Hi,
 I don’t understand the guidelines. Please explain.
 
 ### Email B
 
-Subject: Question About Guidelines – Section 4  
+Subject: Question About Guidelines – Section 4 
 Dear Team,
 We are reviewing the updated guidelines and have one question about Section 4. Could you clarify how the new rule applies to applications submitted earlier this year? Thank you.
 
@@ -80,29 +80,29 @@ A clear inquiry email usually includes:
 Rewrite each inquiry to make it clearer, more polite, and more complete.
 
 1. "I don’t understand this part. Tell me."
-   →
+  →
 
 2. "What is the rule?"
-   →
+  →
 
 3. "When is the deadline?"
-   →
+  →
 
 4. "Explain Section 2."
-   →
+  →
 
 ## 7. Practice B – Add Background Information
 
 Add **one sentence of background** before each question.
 
 1. Could you clarify the new ID requirement?
-   →
+  →
 
 2. Could you confirm the review schedule?
-   →
+  →
 
 3. Could you explain how the updated rule applies?
-   →
+  →
 
 ## 8. Guided Practice – Write an External Inquiry Email
 
@@ -146,8 +146,8 @@ Write your paragraph:
 
 ## 11. Reflection
 
-1. What is difficult about writing external inquiries?  
-2. Do you sometimes write too much background or not enough?  
+1. What is difficult about writing external inquiries?
+2. Do you sometimes write too much background or not enough?
 3. Which question phrase do you find most helpful?
 
 ## 12. Homework

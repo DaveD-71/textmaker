@@ -14,13 +14,13 @@ In this unit, you will learn how to make **clear, polite, and appropriate reques
 Read each pair. Choose the request that sounds more professional.
 
 1. a) Send me the file.
-   b) Could you please send me the file?
+  b) Could you please send me the file?
 
 2. a) Tell me the deadline.
-   b) Could you let me know the deadline?
+  b) Could you let me know the deadline?
 
 3. a) I need the applicant’s number.
-   b) Could you provide the applicant’s number?
+  b) Could you provide the applicant’s number?
 
 **Discussion:** What makes the (b) sentences more polite?
 
@@ -70,23 +70,23 @@ Often a request is clearer when you add **one short context sentence**.
 Rewrite each message to make it **polite, clear, and complete**.
 
 1. "Send the updated file."
-   →
+  →
 
 2. "Tell me the deadline."
-   →
+  →
 
 3. "Check this."
-   →
+  →
 
 4. "Give me the information."
-   →
+  →
 
 ## 5. Language Focus 2 – Requests with Specific Details
 
 A good request includes:
 
-1. What you need  
-2. Any necessary details  
+1. What you need 
+2. Any necessary details 
 3. A polite expression
 
 ### Examples
@@ -100,16 +100,16 @@ A good request includes:
 Each message below is polite but **not specific**. Improve it.
 
 1. "Could you send the document?"
-   →
+  →
 
 2. "Could you check this?"
-   →
+  →
 
 3. "Could you confirm the information?"
-   →
+  →
 
 4. "Could you update me?"
-   →
+  →
 
 ## 7. Language Focus 3 – Requests Without Sounding Too Direct
 
@@ -130,16 +130,16 @@ Administrative English avoids:
 Rewrite each message so it is **polite but not weak**, using softening phrases.
 
 1. "Send this today."
-   →
+  →
 
 2. "Tell me the result now."
-   →
+  →
 
 3. "Check this immediately."
-   →
+  →
 
 4. "Give me the corrected file as soon as possible."
-   →
+  →
 
 ## 9. Guided Practice – Write a Request Email
 

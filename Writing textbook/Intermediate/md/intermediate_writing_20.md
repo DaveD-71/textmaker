@@ -29,9 +29,9 @@ Read the scenario and answer the questions.
 
 **Scenario:** The review schedule for May was shared last week. The date for "Document Verification – Stage 2" was listed as **24 May**, but the correct date is **27 May**.
 
-1. What information needs revision?  
-2. Who needs to receive the corrected date?  
-3. Should the tone be the same for external and internal communication? Why/why not?  
+1. What information needs revision?
+2. Who needs to receive the corrected date?
+3. Should the tone be the same for external and internal communication? Why/why not?
 4. What details must be included in each message?
 
 Write your answers:
@@ -150,12 +150,12 @@ Write your extended tasks:
 
 ## 10. Reflection
 
-1. Which was easier to write—revision or internal notice? Why?  
-2. What tone differences did you need to consider?  
+1. Which was easier to write—revision or internal notice? Why?
+2. What tone differences did you need to consider?
 3. How can clear revision messages reduce future confusion?
 
 ## 11. Homework
 
-Choose a message from a previous unit. Rewrite it as:  
-A) a revision email, or  
+Choose a message from a previous unit. Rewrite it as: 
+A) a revision email, or 
 B) an internal notice.

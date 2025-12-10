@@ -26,12 +26,12 @@ Consistency helps:
 
 ### Example – Inconsistent vs. Consistent
 
-**Inconsistent:**  
+**Inconsistent:** 
 Hi, I checked it. Please tell me what to do. Thanks.
 
-**Consistent:**  
+**Consistent:** 
 Dear Team,
-I reviewed the document and found that two sections require additional information. Could you clarify the details for Section 3?  
+I reviewed the document and found that two sections require additional information. Could you clarify the details for Section 3?
 Thank you.
 
 ## 3. Warm-Up: Identify the Inconsistencies
@@ -40,16 +40,16 @@ Read the two emails. What is inconsistent?
 
 ### Email A
 
-Subject: Info  
-Hi,  
-I saw it. What next?  
+Subject: Info 
+Hi, 
+I saw it. What next?
 Thx.
 
 ### Email B
 
-Subject: Information Required for Review  
-Dear Team,  
-We reviewed the application this morning and need confirmation about the submission date. Could you clarify this point?  
+Subject: Information Required for Review 
+Dear Team, 
+We reviewed the application this morning and need confirmation about the submission date. Could you clarify this point?
 Thank you.
 
 What is inconsistent in Email A? (tone, clarity, formatting, etc.)
@@ -81,13 +81,13 @@ Use standardised components to create consistency.
 Rewrite the emails to make them consistent in tone and structure.
 
 1. "Hi, I checked it. What should I do now?"
-   →
+  →
 
 2. "Hello, Please check. I think there is a problem."
-   →
+  →
 
 3. "Team, The file is wrong. Fix it."
-   →
+  →
 
 ## 6. Language Focus 2 – Formatting for Clarity and Consistency
 
@@ -103,7 +103,7 @@ Emails should use:
 Rewrite this email with clear formatting.
 
 **Original:**
-Subject: Question  
+Subject: Question 
 Hi, I saw the file. It looks wrong. Please explain. Thanks.
 
 Rewrite here:
@@ -113,7 +113,7 @@ Rewrite here:
 Rewrite the following email to make it consistent.
 
 **Original:**
-Subject: Form  
+Subject: Form 
 I checked it. The date is different from the one in the system. What should we do? Thx.
 
 **Rewrite:**

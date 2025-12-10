@@ -26,10 +26,10 @@ Accurate writing is easier for readers to understand and avoids mistakes in admi
 
 Correct the mistakes in each sentence.
 
-1. *The applicant have submit the form yesterday.*  
-2. *Please confirm the informations.*  
-3. *We checking the files now.*  
-4. *The review start next week.*  
+1. *The applicant have submit the form yesterday.* 
+2. *Please confirm the informations.* 
+3. *We checking the files now.* 
+4. *The review start next week.* 
 
 Write your corrections:
 1.
@@ -58,17 +58,17 @@ Write your corrections:
 
 Rewrite each sentence correctly.
 
-1. *The system under maintenance today.*  
-   →
+1. *The system under maintenance today.* 
+  →
 
-2. *We will checking the documents.*  
-   →
+2. *We will checking the documents.* 
+  →
 
-3. *Please send me information about the new procedure.*  
-   →
+3. *Please send me information about the new procedure.* 
+  →
 
-4. *The documents is complete.*  
-   →
+4. *The documents is complete.* 
+  →
 
 ## 6. Practice B – Edit for Accuracy
 
@@ -89,8 +89,8 @@ Corrected version:
 ## 7. Guided Practice – Edit a Short Administrative Email
 
 **Original Email:**
-Subject: Form  
-Hi,  
+Subject: Form 
+Hi, 
 I check the document yesterday and it have some mistake. The informations in section 2 is not correct and applicant no submit the signature. Please fix it. Thank you.
 
 **Rewrite the corrected, professional version:**
@@ -117,8 +117,8 @@ The review process start tomorrow. The team are preparing the documents now. The
 
 ## 10. Reflection
 
-1. Which grammar mistakes do you often make?  
-2. Which accuracy skill improved the most today?  
+1. Which grammar mistakes do you often make?
+2. Which accuracy skill improved the most today?
 3. What accuracy point do you want to focus on next?
 
 ## 11. Homework

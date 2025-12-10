@@ -49,13 +49,13 @@ Write the issues:
 ### Direct → Polite
 
 - You didn’t submit the file.
-  → The file does not appear to have been submitted.
+ → The file does not appear to have been submitted.
 
 - You need to fix this.
-  → This section may need correction.
+ → This section may need correction.
 
 - That is wrong.
-  → There seems to be an error in this section.
+ → There seems to be an error in this section.
 
 ### Useful Softening Phrases
 
@@ -69,16 +69,16 @@ Write the issues:
 Rewrite the sentences politely.
 
 1. "This is wrong."
-   →
+  →
 
 2. "You made a mistake."
-   →
+  →
 
 3. "Check it again."
-   →
+  →
 
 4. "This is not acceptable."
-   →
+  →
 
 ## 6. Language Focus 2 – Tone in Emails
 
@@ -103,14 +103,14 @@ Rewrite each short email to improve tone.
 
 ### Email 1
 
-Subject: Document  
+Subject: Document 
 You didn’t attach the correct file. Attach the right one now.
 
 Rewrite:
 
 ### Email 2
 
-Subject: Problem  
+Subject: Problem 
 Why didn’t you tell me about this earlier? Now we have a delay.
 
 Rewrite:
@@ -120,8 +120,8 @@ Rewrite:
 Rewrite the email to make the tone neutral and professional.
 
 **Original:**
-Subject: Form  
-Hi,  
+Subject: Form 
+Hi, 
 The applicant did not follow the instructions again. This is causing problems for us. Fix the form and send it back quickly.
 
 **Rewrite:**
@@ -150,8 +150,8 @@ We told the applicant many times, but they still submitted the wrong file. This 
 
 ## 11. Reflection
 
-1. What tone problems do you see most often in your writing?  
-2. What softening phrase do you want to practise more?  
+1. What tone problems do you see most often in your writing?
+2. What softening phrase do you want to practise more?
 3. How can improving tone help your professional communication?
 
 ## 12. Homework

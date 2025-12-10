@@ -147,8 +147,8 @@ Write your paragraph:
 
 ## 10. Reflection
 
-1. What is one thing you learned about paragraph structure?  
-2. When do you think you should start a new paragraph?  
+1. What is one thing you learned about paragraph structure?
+2. When do you think you should start a new paragraph?
 3. Which part (topic, support, closing) do you find most difficult?
 
 ## 11. Homework

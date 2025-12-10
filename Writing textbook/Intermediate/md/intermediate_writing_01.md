@@ -14,13 +14,13 @@ You will:
 Read the pairs of sentences. Choose the one that feels **clearer**.
 
 1. a) The document was, after some discussion in the meeting yesterday, finally checked by Mr. Sato.\
-   b) Mr. Sato finally checked the document after the meeting yesterday.
+  b) Mr. Sato finally checked the document after the meeting yesterday.
 
 2. a) It is requested that you will kindly send, as soon as it is convenient, the missing form.\
-   b) Please send the missing form as soon as possible.
+  b) Please send the missing form as soon as possible.
 
 3. a) The application which was submitted by the applicant last week has some missing information.\
-   b) The application submitted last week has some missing information.
+  b) The application submitted last week has some missing information.
 
 **Discussion:** Why are the (b) sentences easier to read?
 
@@ -74,32 +74,32 @@ Administrative English should be **short, direct, and clear**.
 Rewrite each sentence in a clearer, shorter way.
 
 1. Original: With reference to your email which was sent to our section yesterday afternoon, we are now in the process of checking the details.\
-   Clear:
+  Clear:
 
 2. Original: It has been decided by our department that the deadline for submission of the documents will be extended until 30 June.\
-   Clear:
+  Clear:
 
 3. Original: Due to the fact that the system is currently under maintenance, it is not possible for us to access your file at this moment in time.\
-   Clear:
+  Clear:
 
 4. Original: In the situation where the applicant does not provide the required documents, we will not be able to continue the examination.\
-   Clear:
+  Clear:
 
 ## 5. Guided Practice: Rewrite for Clarity
 
 Rewrite each sentence so that it is easier to read.
 
 1. We are now in the checking of your application and more time is needed by us.\
-   →
+  →
 
 2. The document which was attached to the email that you sent on Monday is not the same as the one discussed.\
-   →
+  →
 
 3. The guidelines of our office say that in the case that documents are missing, the applicant should be contacted by us.\
-   →
+  →
 
 4. It will be necessary for us to confirm the information with another department before a reply can be given.\
-   →
+  →
 
 ## 6. Freer Practice: Write Clear Administrative Sentences
 

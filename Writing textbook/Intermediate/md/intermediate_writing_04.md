@@ -72,16 +72,16 @@ A good subject line is:
 Rewrite each subject line so it sounds **natural and professional**. These examples show the kind of long SVO-style subjects many students write.
 
 1. Subject: I have a question about the document that you sent to me yesterday
-   →
+  →
 
 2. Subject: I want to ask you about when I should submit the missing form for the application
-   →
+  →
 
 3. Subject: I am writing this email because there is a problem with the online system today
-   →
+  →
 
 4. Subject: I need to know the reason why the applicant has not received the confirmation message yet
-   →
+  →
 
 **Goal:** Rewrite each one using a **short, compound-noun style** subject line, such as:
 
@@ -111,16 +111,16 @@ Rewrite each subject line so it sounds **natural and professional**. These examp
 Select an appropriate opening and closing for each situation.
 
 1. You are writing to a colleague about an internal document.
-   - Opening:
-   - Closing:
+  - Opening:
+  - Closing:
 
 2. You are writing to an applicant.
-   - Opening:
-   - Closing:
+  - Opening:
+  - Closing:
 
 3. You are writing to a foreign office.
-   - Opening:
-   - Closing:
+  - Opening:
+  - Closing:
 
 ## 6. Language Focus 3: Opening Sentences (Purpose)
 
@@ -138,13 +138,13 @@ The first sentence must tell the reader **why you are writing**.
 Write a clear opening sentence for each situation.
 
 1. You want to ask about a missing document.
-   →
+  →
 
 2. You want to confirm a deadline.
-   →
+  →
 
 3. You want to give information about a system update.
-   →
+  →
 
 ## 7. Guided Practice: Build a Complete Email
 
@@ -175,8 +175,8 @@ Write your email:
 
 ## 9. Reflection
 
-1. Which part of the email is easiest for you?  
-2. Which part is most difficult?  
+1. Which part of the email is easiest for you?
+2. Which part is most difficult?
 3. Which new phrase do you want to use in real emails?
 
 ## 10. Homework

@@ -20,7 +20,7 @@ An **internal notice** is a short message shared inside a department or organisa
 
 ### Example (Part of a Larger Internal Bulletin)
 
-Internal Notice – File System Update  
+Internal Notice – File System Update 
 The file system will be updated this weekend. Access may be limited during the update period. Further information will be provided once the update is complete.
 
 ## 3. Warm-Up: Which Notice Is Clearer?
@@ -33,7 +33,7 @@ There was a problem with the system today. Please be careful. We will check it. 
 
 ### Notice B
 
-System Notice – Temporary Error  
+System Notice – Temporary Error 
 A temporary system error occurred this morning. Some users may have experienced slow access. The issue is currently being reviewed by the IT team. An update will be provided later today.
 
 **Discussion:** Why is Notice B clearer and more useful?
@@ -49,7 +49,7 @@ A clear internal notice usually includes:
 
 ### Model Notice
 
-Internal Notice – Document Review Schedule  
+Internal Notice – Document Review Schedule 
 The document review for this month will begin on 16 April. Teams may receive requests for additional information during this period. A summary of the review results will be shared in early May.
 
 ## 5. Practice A – Identify the Parts
@@ -61,7 +61,7 @@ Label each part with: **H = Heading**, **B = Background**, **E = Essential infor
 3. Additional checks may be required for older files.
 4. More information will be shared after the review.
 
-Your answers:  
+Your answers: 
 1.
 2.
 3.
@@ -78,32 +78,32 @@ Internal notices use **neutral, factual language**. Avoid:
 ### Rewrite These to Make Them Neutral
 
 1. "The delay is very annoying."
-   →
+  →
 
 2. "Everyone MUST check the new files today!"
-   →
+  →
 
 3. "I think the system is acting strange again."
-   →
+  →
 
 4. "Sorry everyone, but the meeting is suddenly cancelled."
-   →
+  →
 
 ## 7. Practice B – Improve the Clarity
 
 Rewrite each notice so it is clearer and more professional.
 
 1. "The meeting will change."
-   →
+  →
 
 2. "There is something wrong with the file."
-   →
+  →
 
 3. "We are doing something with the system tomorrow."
-   →
+  →
 
 4. "The documents are not ready yet."
-   →
+  →
 
 ## 8. Guided Practice – Write a Short Internal Notice
 
@@ -145,8 +145,8 @@ Write your bulletin section:
 
 ## 11. Reflection
 
-1. What makes a notice effective or ineffective?  
-2. Which part of the notice structure do you find most difficult?  
+1. What makes a notice effective or ineffective?
+2. Which part of the notice structure do you find most difficult?
 3. Do you prefer short notices or longer bulletin-style notices? Why?
 
 ## 12. Homework

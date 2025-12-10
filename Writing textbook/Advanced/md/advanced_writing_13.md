@@ -151,8 +151,8 @@ Write a 6–8 sentence risk/impact explanation including:
 ### Activity 3. Reorganise for Logic
 
 Reorganise into logical order:
-A. *The issue may delay the review timeline.*  
-B. *A new requirement was introduced without prior notice.*  
+A. *The issue may delay the review timeline.* 
+B. *A new requirement was introduced without prior notice.* 
 C. *Clearer explanation in the guidelines could prevent this.*
 
 ## Freer Writing

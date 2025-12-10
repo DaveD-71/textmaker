@@ -63,29 +63,29 @@ What is missing?
 Rewrite the sentences to make the explanations clearer.
 
 1. "The schedule changed."
-   →
+  →
 
 2. "The file is wrong."
-   →
+  →
 
 3. "The review will take longer."
-   →
+  →
 
 4. "The system is slow."
-   →
+  →
 
 ## 6. Practice B – Add a Reason or Background
 
 Add **one sentence of background** and **one sentence of reason**.
 
 1. The applicant list is incomplete.
-   →
+  →
 
 2. The document cannot be accepted.
-   →
+  →
 
 3. The review must be rescheduled.
-   →
+  →
 
 ## 7. Guided Practice – Write a Clear Explanation
 
@@ -130,8 +130,8 @@ Write your paragraph:
 
 ## 10. Reflection
 
-1. What type of explanation do you find easiest to write?  
-2. Which part is most difficult—background, reason, or effect?  
+1. What type of explanation do you find easiest to write?
+2. Which part is most difficult—background, reason, or effect?
 3. Which phrases from this unit were new for you?
 
 ## 11. Homework

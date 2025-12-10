@@ -66,16 +66,16 @@ Write your answers:
 Rewrite each sentence for the appropriate audience.
 
 1. (Applicant) "You didn’t upload the file we need."
-   →
+  →
 
 2. (Colleague) "The applicant didn’t follow the instructions again."
-   →
+  →
 
 3. (Internal Notice) "The file is wrong and causing trouble."
-   →
+  →
 
 4. (Applicant) "Send the document quickly."
-   →
+  →
 
 ## 6. Guided Practice – Write the Applicant Reply
 
@@ -149,8 +149,8 @@ Write your communication pack:
 
 ## 11. Reflection
 
-1. Which audience was easiest to write for? Why?  
-2. Which audience was most difficult?  
+1. Which audience was easiest to write for? Why?
+2. Which audience was most difficult?
 3. How does changing tone and detail help communication?
 
 ## 12. Homework

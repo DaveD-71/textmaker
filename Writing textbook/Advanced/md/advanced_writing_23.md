@@ -95,10 +95,10 @@ Match:
 
 Group:
 
-1. *Terminology confusion*  
-2. *Old forms in use*  
-3. *Timeline questions*  
-4. *Terminology unclear in multiple emails*  
+1. *Terminology confusion* 
+2. *Old forms in use* 
+3. *Timeline questions* 
+4. *Terminology unclear in multiple emails* 
 5. *Timeline issues raised in meeting*
 
 ### 3. Signalling Next Steps Clearly
@@ -130,9 +130,9 @@ Include:
 
 Choose one format:
 
-1. Multi-audience notice  
-2. Executive brief  
-3. Consolidated administrative report  
+1. Multi-audience notice 
+2. Executive brief 
+3. Consolidated administrative report 
 4. Clarification request
 
 Your output must:

@@ -71,29 +71,29 @@ Write what information is missing:
 Rewrite each message to make it clearer and more complete.
 
 1. "There is a problem with the file."
-   →
+  →
 
 2. "The system is slow."
-   →
+  →
 
 3. "We can’t finish the work."
-   →
+  →
 
 4. "The document is wrong."
-   →
+  →
 
 ## 6. Practice B – Add Details
 
 Add **two additional sentences** to explain the situation more clearly.
 
 1. The application cannot be opened.
-   →
+  →
 
 2. The review is delayed.
-   →
+  →
 
 3. The uploaded form is incomplete.
-   →
+  →
 
 ## 7. Guided Practice – Write a Problem Explanation
 

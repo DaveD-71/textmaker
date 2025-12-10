@@ -46,17 +46,17 @@ Use these phrases when the information is not clear.
 
 Rewrite the questions to make them specific and professional.
 
-1. What do you mean?  
-   →
+1. What do you mean?
+  →
 
 2. I don’t understand this part.
-   →
+  →
 
 3. Tell me the details.
-   →
+  →
 
-4. What should I do?  
-   →
+4. What should I do?
+  →
 
 ## 5. Language Focus 2: Asking About Missing or Confusing Information
 
@@ -78,17 +78,17 @@ Rewrite the questions to make them specific and professional.
 
 Rewrite each sentence as a better clarification question.
 
-1. "This is different from what you said before."  
-   →
+1. "This is different from what you said before." 
+  →
 
-2. "The instructions are confusing."  
-   →
+2. "The instructions are confusing." 
+  →
 
-3. "I don’t know what to write in this part."  
-   →
+3. "I don’t know what to write in this part." 
+  →
 
-4. "The system doesn’t work."  
-   →
+4. "The system doesn’t work." 
+  →
 
 ## 6. Practice C – Clarification from Context
 
@@ -127,16 +127,16 @@ Your questions:
 Rewrite each unclear message into a **clear, polite clarification request**.
 
 1. "I don’t get this. Explain it."
-   →
+  →
 
 2. "Which one is correct? These files look different."
-   →
+  →
 
 3. "What am I supposed to do with this form?"
-   →
+  →
 
 4. "This part is wrong."
-   →
+  →
 
 ## 8. Guided Practice – Write a Clarification Email
 
@@ -201,8 +201,8 @@ C. You don’t understand the instructions for the new system.
 
 Write your email:
 
-1. Which clarification phrase is most useful for you?  
-2. Do you find it difficult to ask questions politely? Why or why not?  
+1. Which clarification phrase is most useful for you?
+2. Do you find it difficult to ask questions politely? Why or why not?
 3. Write one clarification question you can use in your work.
 
 ## 12. Homework

@@ -64,16 +64,16 @@ Common verbs used in procedures:
 Rewrite each instruction using a **clear action verb**.
 
 1. "Make sure the file is OK."
-   →
+  →
 
 2. "Put the name in the system."
-   →
+  →
 
 3. "Look at the form to see if something is missing."
-   →
+  →
 
 4. "Send it to the right place."
-   →
+  →
 
 ## 5. Language Focus 2 – Logical Order
 

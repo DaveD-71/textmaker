@@ -24,9 +24,9 @@ Read the scenario and answer the questions.
 
 **Scenario:** The external office reports that the applicant’s "Form B – Declaration" does not include a required signature. They ask your office to confirm whether a corrected version will be submitted.
 
-1. What is the problem?  
-2. What information does the external office need?  
-3. What information does your team need internally?  
+1. What is the problem?
+2. What information does the external office need?
+3. What information does your team need internally?
 4. What tone should you use in each message?
 
 Write your answers:
@@ -134,8 +134,8 @@ Write your extended tasks:
 
 ## 10. Reflection
 
-1. Which was easier to write—external or internal communication? Why?  
-2. What tone changes did you need to make between the two texts?  
+1. Which was easier to write—external or internal communication? Why?
+2. What tone changes did you need to make between the two texts?
 3. How can this skill help in real administrative work?
 
 ## 11. Homework

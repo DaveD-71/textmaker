@@ -128,9 +128,9 @@ Each item must:
 
 ## 10. Reflection
 
-1. Which portfolio item improved the most after revision?  
-2. Which skill area do you feel most confident about now?  
-3. What writing strategies will you continue using in your work?  
+1. Which portfolio item improved the most after revision?
+2. Which skill area do you feel most confident about now?
+3. What writing strategies will you continue using in your work?
 
 ## 11. Homework (Final Course Task)
 

@@ -14,15 +14,15 @@ Read each pair. Choose the sentence that sounds **more appropriate** for workpla
 
 1. a) Send me the file.
 
-   b) Could you please send me the file?
+  b) Could you please send me the file?
 
 2. a) I don’t understand this. Explain it.
 
-   b) I’m not sure I understand this part. Could you explain it?
+  b) I’m not sure I understand this part. Could you explain it?
 
 3. a) What do you want me to do?
 
-   b) Could you let me know what I should do next?
+  b) Could you let me know what I should do next?
 
 **Discussion:** Why do the (b) sentences sound more professional?
 
@@ -43,16 +43,16 @@ Administrative emails often use **softened, polite expressions**.
 Rewrite the message using a polite request phrase.
 
 1. Send the updated form.
-   →
+  →
 
 2. Tell me the deadline.
-   →
+  →
 
 3. Check the file.
-   →
+  →
 
 4. Give me the information.
-   →
+  →
 
 ## 4. Language Focus 2: Professional Tone in Explanations
 
@@ -67,16 +67,16 @@ Professional tone is:
 Rewrite each sentence to make it sound more professional.
 
 1. You didn’t send the document.
-   →
+  →
 
 2. I can’t do this because the system is broken.
-   →
+  →
 
 3. That information is wrong.
-   →
+  →
 
 4. I already told you this yesterday.
-   →
+  →
 
 ## 5. Common Useful Phrases for Professional Emails
 
@@ -105,7 +105,7 @@ You can use these phrases to make your tone more appropriate:
 Rewrite the email to make it more polite and professional.
 
 **Original email:**
-> Hi,  
+> Hi, 
 > You didn’t send the right file. Send the correct one today. I need it now.
 
 **Rewrite here:**

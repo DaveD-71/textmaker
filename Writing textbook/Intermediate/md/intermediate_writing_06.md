@@ -53,16 +53,16 @@ Write what is missing:
 Rewrite each message so it includes **clearer information**.
 
 1. "The meeting is delayed."
-   →
+  →
 
 2. "We changed the procedure."
-   →
+  →
 
 3. "The file will be late."
-   →
+  →
 
 4. "The system is slow."
-   →
+  →
 
 ## 5. Language Focus 2 – Logical Order for Update Messages
 
@@ -96,13 +96,13 @@ Write the best order:
 Expand each message to 2–3 sentences by adding supporting information.
 
 1. "The deadline has been extended."
-   →
+  →
 
 2. "The applicant’s file will be reviewed next week."
-   →
+  →
 
 3. "There has been a change in the procedure."
-   →
+  →
 
 ## 8. Guided Practice – Write an Update Email
 

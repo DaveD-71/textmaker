@@ -20,7 +20,7 @@ A meeting summary is a **brief record** of important points from a meeting. It:
 
 ### Example (Part of a Larger Report)
 
-Meeting Summary – Review Preparation Meeting  
+Meeting Summary – Review Preparation Meeting 
 The team discussed the schedule for next week’s review. Two documents still require confirmation from the external office. The IT team will prepare access to the shared folder by Monday. A follow-up meeting is planned for Wednesday.
 
 ## 3. Warm-Up: Which Summary Is Clearer?
@@ -74,13 +74,13 @@ Your answers:
 Rewrite each summary to make it clearer.
 
 1. "We talked about some documents. IT will do something."
-   →
+  →
 
 2. "The meeting was long. Many ideas were shared. We will do more later."
-   →
+  →
 
 3. "The form was discussed. Someone needs to fix it."
-   →
+  →
 
 ## 7. Guided Practice – Write a Short Meeting Summary
 
@@ -118,8 +118,8 @@ Write your report section:
 
 ## 10. Reflection
 
-1. What part of meeting summaries is easiest for you?  
-2. What part is the most difficult?  
+1. What part of meeting summaries is easiest for you?
+2. What part is the most difficult?
 3. Which phrases from this unit will you use in your work?
 
 ## 11. Homework

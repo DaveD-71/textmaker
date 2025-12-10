@@ -118,19 +118,19 @@ Rewrite the following into neutral clarification expressions:
 
 ### 3. Audience-Appropriate Tone
 
-**Internal →** can be slightly more direct  
-**Interagency →** needs neutrality and objectivity  
+**Internal →** can be slightly more direct 
+**Interagency →** needs neutrality and objectivity 
 **International/Foreign office →** requires extra diplomacy and clarity
 
 **Practice C. Choose the Appropriate Version**
 Select the best version for each audience:
 
-1. *"Send the corrected file today."*  
-2. *"Could you kindly share the corrected file when available?"*  
+1. *"Send the corrected file today."* 
+2. *"Could you kindly share the corrected file when available?"* 
 3. *"We would appreciate receiving the updated file at your earliest convenience."*
 
-A. Internal colleague  
-B. Domestic agency counterpart  
+A. Internal colleague 
+B. Domestic agency counterpart 
 C. Foreign IP office
 
 ## Guided Writing

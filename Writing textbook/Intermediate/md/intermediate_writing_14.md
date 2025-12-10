@@ -62,29 +62,29 @@ Write the point of confusion:
 Rewrite each response to make it clear and polite.
 
 1. "No, that’s wrong."
-   →
+  →
 
 2. "You misunderstood the instructions."
-   →
+  →
 
 3. "The other form is for something else."
-   →
+  →
 
 4. "Read the guidelines again."
-   →
+  →
 
 ## 6. Practice B – Add Clarifying Information
 
 Add **one sentence that acknowledges the confusion** and **one sentence that clarifies**.
 
 1. The applicant uploaded the wrong file.
-   →
+  →
 
 2. The deadline mentioned in the email is incorrect.
-   →
+  →
 
 3. The instructions refer to two different processes.
-   →
+  →
 
 ## 7. Guided Practice – Write a Clarification Response
 
@@ -127,8 +127,8 @@ Write your paragraph:
 
 ## 10. Reflection
 
-1. What is difficult about responding to confusion?  
-2. What language helps you sound polite and professional?  
+1. What is difficult about responding to confusion?
+2. What language helps you sound polite and professional?
 3. When do you usually need to clarify information at work?
 
 ## 11. Homework
