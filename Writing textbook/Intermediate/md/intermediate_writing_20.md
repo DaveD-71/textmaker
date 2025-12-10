@@ -1,6 +1,6 @@
-# Unit 20 – Integrated Task 2: Revision + Notice Writing
+# 20 – Integrated Task 2: Revision + Notice Writing
 
-## 1. Unit Focus
+## 1. Overview
 
 This unit develops your ability to respond to an administrative scenario by producing **two connected pieces of writing**:
 

@@ -1,6 +1,6 @@
-# Unit 10 – Explaining Problems Clearly
+# 10 – Explaining Problems Clearly
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to explain **problems and issues** clearly and professionally in administrative communication. You will:
 

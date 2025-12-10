@@ -1,6 +1,6 @@
-# Unit 15 – Maintaining Consistent Email Style
+# 15 – Maintaining Consistent Email Style
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to maintain a **consistent, professional email style** across different messages. You will:
 

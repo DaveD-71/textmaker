@@ -1,6 +1,6 @@
-# Unit 10. Explaining Complex Issues
+# 10. Explaining Complex Issues
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to explain multi-factor issues clearly and coherently for internal, interagency, and international communication. By the end of this lesson, learners will be able to:
 

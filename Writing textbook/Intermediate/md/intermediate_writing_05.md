@@ -1,6 +1,6 @@
-# Unit 5 – Requesting Clarification
+# 5 – Requesting Clarification
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to request clarification **clearly and politely** in administrative emails. You will:
 
@@ -100,6 +100,7 @@ The instructions say:
 
 > "Submit the form as soon as possible."
 Your questions:
+
 1.
 2.
 
@@ -117,6 +118,7 @@ A supervisor writes:
 > "Please prepare the report."
 No details are given.
 Your questions:
+
 1.
 2.
 

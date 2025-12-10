@@ -1,6 +1,6 @@
-# Unit 11. Executive-Level Meeting Summaries
+# 11. Executive-Level Meeting Summaries
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to write clear, concise, and accurate executive-level meeting summaries suitable for internal reporting, interagency coordination, and international engagement. By the end of this lesson, learners will be able to:
 

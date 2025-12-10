@@ -1,6 +1,6 @@
-# Unit 6. Communicating Errors Diplomatically
+# 6. Communicating Errors Diplomatically
 
-## Unit Overview
+## Overview
 
 This unit trains learners to communicate errors, inconsistencies, and corrective actions diplomatically in professional administrative and interagency contexts. By the end of the lesson, learners will be able to:
 

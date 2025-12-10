@@ -1,6 +1,6 @@
-# Unit 7 – Making Requests Politely
+# 7 – Making Requests Politely
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to make **clear, polite, and appropriate requests** in administrative communication. You will:
 

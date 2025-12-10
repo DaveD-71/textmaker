@@ -1,6 +1,6 @@
-# Unit 9. Change Management Writing
+# 9. Change Management Writing
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to write clear, well‑structured explanations related to policy updates, procedural changes, and administrative decisions. By the end of the lesson, learners will be able to:
 

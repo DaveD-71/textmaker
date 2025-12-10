@@ -1,6 +1,6 @@
-# Unit 18 – Editing for Tone
+# 18 – Editing for Tone
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to **edit writing to improve tone**, making your messages more polite, professional, and appropriate for administrative communication. You will:
 

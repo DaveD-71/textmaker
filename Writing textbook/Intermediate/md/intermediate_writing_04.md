@@ -1,6 +1,6 @@
-# Unit 4 – Email Layout and Standard Phrases
+# 4 – Email Layout and Standard Phrases
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn the **basic structure of a professional email** used in administrative communication. You will:
 

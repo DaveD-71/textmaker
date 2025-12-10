@@ -1,6 +1,6 @@
-# Unit 2 – Professional Tone Basics
+# 2 – Professional Tone Basics
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to write emails with a **professional and polite tone** suitable for administrative communication. You will:
 

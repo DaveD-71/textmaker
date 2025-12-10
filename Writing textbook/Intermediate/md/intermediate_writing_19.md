@@ -1,6 +1,6 @@
-# Unit 19 – Integrated Task 1: Combined Email + Internal Explanation
+# 19 – Integrated Task 1: Combined Email + Internal Explanation
 
-## 1. Unit Focus
+## 1. Overview
 
 This unit brings together skills from earlier lessons. Students practise responding to a scenario that requires **both an external-style email** and a **short internal explanation**. You will:
 

@@ -1,6 +1,6 @@
-# Unit 17 – Editing for Clarity
+# 17 – Editing for Clarity
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to **edit writing to make it clearer and easier to understand**. You will:
 

@@ -1,6 +1,6 @@
-# Unit 1. Controlling Sentence Complexity
+# 1. Controlling Sentence Complexity
 
-## Unit Overview
+## Overview
 
 This unit helps learners produce clear, precise, and unambiguous sentences in administrative and interagency writing. By the end of the lesson, learners will be able to:
 
@@ -59,13 +59,14 @@ Identify issues in the model text:
 ### 1. Coordination (joining equal ideas)
 
 Useful for linking parallel information without implying hierarchy.
+
 **Common patterns:**
 
 - *X and Y* (addition)
 - *X but Y* (contrast)
 - *X or Y* (choice)
-- *X; however, Y* (strong contrast)
-- *X; therefore, Y* (logical result)
+- *X. However, Y* (strong contrast)
+- *X. Therefore, Y* (logical result)
 
 **Practice A. Add Coordinators**  
 Choose the most appropriate connector.

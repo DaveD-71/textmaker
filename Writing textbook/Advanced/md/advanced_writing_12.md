@@ -1,6 +1,6 @@
-# Unit 12. High‑Level External Inquiries
+# 12. High‑Level External Inquiries
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to write formal, diplomatic external inquiries to domestic and international partners. By the end of the lesson, learners will be able to:
 

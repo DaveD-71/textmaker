@@ -1,6 +1,6 @@
-# Unit 22 – Multi-Document Communication Task
+# 22 – Multi-Document Communication Task
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will respond to a **single scenario** by producing **three different documents**, each for a different audience and purpose. You will:
 

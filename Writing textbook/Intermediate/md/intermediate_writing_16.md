@@ -1,6 +1,6 @@
-# Unit 16 – Editing for Accuracy
+# 16 – Editing for Accuracy
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to **edit writing for accuracy**, focusing on grammar, spelling, punctuation, and basic sentence structure. You will:
 

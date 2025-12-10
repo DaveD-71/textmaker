@@ -1,6 +1,6 @@
-# Unit 13 – Providing Simple Explanations
+# 13 – Providing Simple Explanations
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to provide **clear, simple explanations** in administrative contexts. You will:
 

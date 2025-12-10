@@ -1,6 +1,6 @@
-# Unit 14 – Responding to Confusion
+# 14 – Responding to Confusion
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to respond **clearly and professionally** when someone is confused or has misunderstood information. You will:
 

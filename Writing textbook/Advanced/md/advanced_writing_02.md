@@ -1,6 +1,6 @@
-# Unit 2. Tone for Agency-Level Communication
+# 2. Tone for Agency-Level Communication
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to use nuanced politeness, diplomatic phrasing, and audience-sensitive tone appropriate for communication across ministries, agencies, and foreign offices. By the end of the unit, learners will be able to:
 

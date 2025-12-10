@@ -1,6 +1,6 @@
-# Unit 1 – Clear Sentence Structure
+# 1 – Clear Sentence Structure
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to write **clear English sentences** for administrative communication.
 You will:

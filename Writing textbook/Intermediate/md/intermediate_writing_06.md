@@ -1,6 +1,6 @@
-# Unit 6 – Communicating Delays or Changes
+# 6 – Communicating Delays or Changes
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to communicate **delays, changes, or updates** in a clear and professional way. You will:
 

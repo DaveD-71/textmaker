@@ -1,6 +1,6 @@
-# Unit 3 – Paragraph Structure
+# 3 – Paragraph Structure
 
-## 1. Unit Focus
+## 1. Overview
 
 This unit teaches **what a paragraph is**, how to structure it clearly, and when to begin a new paragraph. You will:
 

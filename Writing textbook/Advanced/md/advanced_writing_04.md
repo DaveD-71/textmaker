@@ -1,6 +1,6 @@
-# Unit 4. Structuring High-Level Emails
+# 4. Structuring High-Level Emails
 
-## Unit Overview
+## Overview
 
 This unit trains learners to structure multi-part, professional emails used in interagency, ministerial, and international communication. By the end of the lesson, learners will be able to:
 

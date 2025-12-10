@@ -1,6 +1,6 @@
-# Unit 12 – Writing Simple External Inquiries
+# 12 – Writing Simple External Inquiries
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to write **simple, clear external inquiries** to other offices or organisations. You will:
 

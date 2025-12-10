@@ -1,16 +1,12 @@
-# 📗 **ADVANCED WRITING TEXTBOOK**
+# **ADVANCED WRITING TEXTBOOK**
 
 ### *(Administrative & Professional Communication Writing, Units 1–23)*
-
-*(Description based on planned progression.)*
 
 ## **a. Purpose of the Text**
 
 The Upper-Intermediate Writing Textbook develops learners’ ability to produce **independent, precise, coherent, and context-appropriate professional writing** suitable for mid-level administrative and operational roles.
 
 It shifts from basic structures to **complex, multi-layered communication**, requiring the learner to synthesise information, justify decisions, summarise meetings and reports, and communicate across multiple stakeholders.
-
-
 
 ## **b. Target Audience**
 
@@ -23,9 +19,6 @@ It shifts from basic structures to **complex, multi-layered communication**, req
   * stakeholder-sensitive communication
   * data-driven summaries
   * professional persuasion
-* Learners preparing for roles requiring autonomous written communication
-
-
 
 ## **c. Learning Objectives**
 
@@ -53,8 +46,6 @@ By the end of the textbook, learners will:
 * Write notices, memos, summaries, instructions, and justifications
 * Prepare multi-section reports combining narrative, explanation, and recommendations
 * Revise and refine a **professional writing portfolio**
-
-
 
 ## **d. Lesson Activities**
 

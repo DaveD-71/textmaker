@@ -1,6 +1,6 @@
-# Unit 23. Capstone: Full Administrative Writing Assessment
+# 23. Capstone: Full Administrative Writing Assessment
 
-## Unit Overview
+## Overview
 
 This capstone unit evaluates students’ ability to apply all skills from Units 1–22 in a comprehensive administrative writing task. Students demonstrate mastery in:
 

@@ -1,6 +1,6 @@
-# Unit 18. Synthesising Information from Multiple Sources
+# 18. Synthesising Information from Multiple Sources
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to combine information from several documents, emails, meetings, or data sources into a clear, coherent synthesis. This skill is essential for interagency reporting, briefing preparation, and correspondence that draws on multiple inputs. By the end of the lesson, learners will be able to:
 

@@ -1,6 +1,6 @@
-# Unit 8 – Writing Simple Procedures
+# 8 – Writing Simple Procedures
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to write **clear, simple, step-by-step procedures** for administrative tasks. You will:
 

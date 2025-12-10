@@ -1,6 +1,6 @@
-# Unit 17. Drafting Executive Briefs
+# 17. Drafting Executive Briefs
 
-## Unit Overview
+## Overview
 
 Executive briefs summarise high-level issues for decision‑makers who require clarity, relevance, and efficiency. This unit trains learners to:
 

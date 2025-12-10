@@ -1,6 +1,6 @@
-# Unit 21 – Writing for Consistency Across a Team
+# 21 – Writing for Consistency Across a Team
 
-## 1. Unit Focus
+## 1. Overview
 
 This unit focuses on **team-wide consistency** in administrative writing. You will learn how to:
 

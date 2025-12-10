@@ -1,6 +1,6 @@
-# Unit 3. Cohesion & Logical Flow
+# 3. Cohesion & Logical Flow
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to construct clear, logically organised paragraphs suitable for administrative communication, interagency coordination, and international correspondence. By the end of the lesson, learners will be able to:
 

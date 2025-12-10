@@ -1,6 +1,6 @@
-# Unit 8. Writing Clear Procedures (Advanced)
+# 8. Writing Clear Procedures (Advanced)
 
-## Unit Overview
+## Overview
 
 This unit develops learners’ ability to write clear, logically sequenced procedural explanations for internal, interagency, and international use. By the end of the lesson, learners will be able to:
 

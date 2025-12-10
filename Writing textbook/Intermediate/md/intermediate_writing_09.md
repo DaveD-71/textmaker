@@ -1,6 +1,6 @@
-# Unit 9 – Internal Notices
+# 9 – Internal Notices
 
-## 1. Unit Focus
+## 1. Overview
 
 In this unit, you will learn how to write **clear, concise internal notices** for colleagues within your organisation. You will:
 
