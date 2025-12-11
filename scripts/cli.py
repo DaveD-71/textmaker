@@ -24,7 +24,8 @@ def build_pandoc_cmd(input_path: Path, output_path: Path, reference: Path, toc: 
     cmd = [
         'pandoc',
         str(input_path),
-        '--from', 'markdown',
+        # Enable page breaks via the pagebreaks extension
+        '--from', 'markdown+pagebreaks',
         '--to', 'docx',
         '--output', str(output_path),
     ]
