@@ -1,18 +1,17 @@
 # MODULE 2. Essential Email Writing for Administrative Contexts
 
-## 6 窶・Communicating Delays or Changes
+## Unit 6 – Communicating Delays or Changes
 
-### 1. Overview
-
+### 1. Unit Focus
 In this unit, you will learn how to communicate **delays, changes, or updates** in a clear and professional way. You will:
-
 - Identify what information the reader needs when a delay or change occurs
 - Use polite and neutral language to explain delays
 - Write clear update messages and short emails
 - Practise structuring explanations logically
 
-### 2. Warm-Up: What Information Is Missing?
+---
 
+### 2. Warm-Up: What Information Is Missing?
 Read each message and identify what information a reader would still need.
 
 1. "The review will be delayed."
@@ -26,48 +25,48 @@ Write what is missing:
 3.
 4.
 
-### 3. Language Focus 1 窶・Useful Phrases for Delays and Changes
+---
 
+### 3. Language Focus 1 – Useful Phrases for Delays and Changes
 #### Neutral Phrases
-
-- There will be a delay in窶ｦ
+- There will be a delay in…
 - The schedule has been adjusted.
 - The process will take longer than expected.
-- There has been a change in窶ｦ
-- The update will affect窶ｦ
+- There has been a change in…
+- The update will affect…
 
 #### Explaining the Reason (Optional in admin English)
-
 - due to additional checks
 - because further review is required
 - because the system is under maintenance
 - due to missing information
 
 #### Giving Neutral Information About Next Steps
-
 - The next update will be provided when available.
 - Further details will follow.
 - The review will continue once all materials are ready.
 - The new schedule will be shared shortly.
 
-### 4. Practice A 窶・Improve the Clarity
+---
 
+### 4. Practice A – Improve the Clarity
 Rewrite each message so it includes **clearer information**.
 
 1. "The meeting is delayed."
-  竊・
+   →
 
 2. "We changed the procedure."
-  竊・
+   →
 
 3. "The file will be late."
-  竊・
+   →
 
 4. "The system is slow."
-  竊・
+   →
 
-### 5. Language Focus 2 窶・Logical Order for Update Messages
+---
 
+### 5. Language Focus 2 – Logical Order for Update Messages
 A clear update message usually follows this pattern:
 
 1. **Topic:** What is delayed or changed
@@ -76,11 +75,11 @@ A clear update message usually follows this pattern:
 4. **Next step / What will happen later:** Neutral, not a request
 
 #### Model Paragraph (Part of a Report or Update)
-
 The review process will take longer than expected. Additional checks are required because two documents were incomplete. This delay may affect the planned schedule for the next stage. Further updates will be provided once the remaining documents are ready.
 
-### 6. Practice B 窶・Reorder to Make a Clear Update
+---
 
+### 6. Practice B – Reorder to Make a Clear Update
 Put the sentences in a logical order.
 
 Sentences:
@@ -93,53 +92,54 @@ Write the best order:
 2.
 3.
 
-### 7. Practice C 窶・Add Supporting Information
+---
 
-Expand each message to 2窶・ sentences by adding supporting information.
+### 7. Practice C – Add Supporting Information
+Expand each message to 2–3 sentences by adding supporting information.
 
 1. "The deadline has been extended."
-  竊・
+   →
 
-2. "The applicant窶冱 file will be reviewed next week."
-  竊・
+2. "The applicant’s file will be reviewed next week."
+   →
 
 3. "There has been a change in the procedure."
-  竊・
+   →
 
-### 8. Guided Practice 窶・Write an Update Email
+---
 
+### 8. Guided Practice – Write an Update Email
 Write a clear and neutral email explaining a delay or change.
 
 **Situation:** A review that was planned for this week must be delayed because additional verification is required.
 
 Write your email:
-
 - **Subject:**
 - **Greeting:**
 - **Opening sentence:**
-- **Explanation (2窶・ sentences):**
+- **Explanation (2–3 sentences):**
 - **Neutral next step:**
 - **Sign-off:**
 
-### 9. Freer Practice 窶・Choose a Scenario and Write
+---
 
-Write **two short update emails** (3窶・ sentences each).
+### 9. Freer Practice – Choose a Scenario and Write
+Write **two short update emails** (3–5 sentences each).
 
-#### Scenario Options
-
-A. A system update will take longer than planned.
-B. A document will be reviewed later than the original schedule.
-C. A change has been made to an internal rule.
+#### Scenario Options:
+A. A system update will take longer than planned.  
+B. A document will be reviewed later than the original schedule.  
+C. A change has been made to an internal rule.  
 D. A meeting needs to be rescheduled.
 
 Write your emails:
 
-### 10. Extended Writing Task 窶・Update Summary Paragraph
+---
 
-Write a paragraph (5窶・ sentences) summarising a delay or change as part of a report or internal update.
+### 10. Extended Writing Task – Update Summary Paragraph
+Write a paragraph (5–7 sentences) summarising a delay or change as part of a report or internal update.
 
 Your paragraph should:
-
 - Describe the change or delay
 - Provide background
 - Explain the effect
@@ -147,12 +147,17 @@ Your paragraph should:
 
 Write your paragraph:
 
-### 11. Reflection
+---
 
+### 11. Reflection
 1. What phrases do you find most useful for explaining delays or changes?
 2. Is it difficult for you to give neutral explanations without sounding too direct?
 3. Which part of this unit was easiest or hardest for you?
 
-### 12. Homework
+---
 
+### 12. Homework
 Find an email or notice about a delay or change (English or Japanese). Rewrite it in English using the structure from this unit.
+
+---
+

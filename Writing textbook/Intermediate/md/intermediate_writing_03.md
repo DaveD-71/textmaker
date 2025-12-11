@@ -1,87 +1,81 @@
 # MODULE 1. Foundations of Clear Administrative Writing
 
-## 3 窶・Paragraph Structure
+## Unit 3 – Paragraph Structure
 
-### 1. Overview
-
+### 1. Unit Focus
 This unit teaches **what a paragraph is**, how to structure it clearly, and when to begin a new paragraph. You will:
-
 - Understand what a paragraph is and why it is useful
-- Learn the three key parts of a paragraph (topic 竊・support 竊・closing)
+- Learn the three key parts of a paragraph (topic → support → closing)
 - Practice grouping related ideas into paragraphs
 - Write longer, clearer administrative paragraphs
 
-### 2. What Is a Paragraph?
+---
 
+### 2. What Is a Paragraph?
 A **paragraph** is a group of sentences about **one main idea**. All sentences in the paragraph should connect to that idea.
 
-#### A paragraph should
-
+#### A paragraph should:
 - Have **one clear topic**
 - Contain **supporting information** about that topic
 - Include a **closing sentence** or a final point
 
-#### A paragraph is NOT
-
+#### A paragraph is NOT:
 - A list of unrelated sentences
 - A collection of short, disconnected statements
 - A single sentence (except in special cases)
 
+---
+
 ### 3. When Should You Start a New Paragraph?
-
 Start a new paragraph when:
-
 - The **topic changes**
 - The **purpose** of the message changes
 - You move from **background** to **action**, or **reason** to **result**
 - You begin addressing a **different reader** (less common in administrative writing)
 
 #### Examples of paragraph breaks
+1. Explaining the background → Asking for an action
+2. Describing an issue → Giving details → Explaining next steps
+3. Summarising a problem → Reporting what you did → What will happen next
 
-1. Explaining the background 竊・Asking for an action
-2. Describing an issue 竊・Giving details 竊・Explaining next steps
-3. Summarising a problem 竊・Reporting what you did 竊・What will happen next
+---
 
 ### 4. Warm-Up: Which Is a Better Paragraph?
-
 Read both paragraphs. Decide which one is **better organised**.
 
 #### Paragraph A
-
 We reviewed the updated guidelines yesterday. During the review, we found several sections that were unclear and inconsistent with earlier versions. These inconsistencies may cause confusion for staff who use the document. Additional notes will be compiled before we continue with the next stage of the review.
 
 #### Paragraph B
-
 We reviewed the updated guidelines yesterday. The office renovation will begin next month. Several sections in the document were unclear. Our team attended a training session last week.
 
 **Discussion:** Why is Paragraph A better?
 
-### 5. Language Focus 1: Three-Part Structure
+---
 
+### 5. Language Focus 1: Three-Part Structure
 A strong paragraph usually includes:
 
-1. **Topic sentence** 窶・the main idea of the paragraph
-2. **Supporting sentences** 窶・details, reasons, or examples
-3. **Closing sentence** 窶・summary, result, or next step
+1. **Topic sentence** – the main idea of the paragraph
+2. **Supporting sentences** – details, reasons, or examples
+3. **Closing sentence** – summary, result, or next step
 
 #### Model Paragraph
-
-**Topic sentence:** We reviewed the applicant窶冱 file yesterday.
-**Supporting sentences:** During the review, we found that two pages were missing, and one form was incomplete. These gaps in the file may slow the preliminary assessment and will need to be noted before the next review stage.
+**Topic sentence:** We reviewed the applicant’s file yesterday.  
+**Supporting sentences:** During the review, we found that two pages were missing, and one form was incomplete. These gaps in the file may slow the preliminary assessment and will need to be noted before the next review stage.  
 **Closing sentence:** This paragraph summarises the issues identified so far and leads into further discussion of required documentation in the next section.
 
-### 6. Practice A 窶・Identify the Parts
+---
 
+### 6. Practice A – Identify the Parts
 Label each sentence:
-
 - **T** = Topic sentence
 - **S** = Supporting detail
 - **C** = Closing sentence
 
 #### Paragraph 1
-
-1. We processed your request this morning.
-2. However, the attached form was incomplete.
+1. We processed your request this morning.  
+2. However, the attached form was incomplete.  
 3. This information forms part of the initial review before we proceed to later steps.
 
 Your labels:
@@ -90,9 +84,8 @@ Your labels:
 3.
 
 #### Paragraph 2
-
-1. The system was updated last night.
-2. Some users reported error messages after the update.
+1. The system was updated last night.  
+2. Some users reported error messages after the update.  
 3. These observations will be included in the technical report that follows.
 
 Your labels:
@@ -100,21 +93,20 @@ Your labels:
 2.
 3.
 
+---
+
 ### 7. Language Focus 2: Logical Flow Inside a Paragraph
-
 A paragraph should follow a clear, logical order:
+- Background → Details → Result
+- Topic → Explanation → Action
+- Issue → Impact → What happens next
 
-- Background 竊・Details 竊・Result
-- Topic 竊・Explanation 竊・Action
-- Issue 竊・Impact 竊・What happens next
-
-#### Practice B 窶・Reorder to Create a Clear Paragraph
-
+#### Practice B – Reorder to Create a Clear Paragraph
 Put these sentences in a logical order, then add **one more supporting sentence**.
 
 Sentences:
-A. Two forms were missing from the submission.
-B. We checked the application yesterday.
+A. Two forms were missing from the submission.  
+B. We checked the application yesterday.  
 C. These issues form part of the initial documentation review.
 
 Write the best order:
@@ -123,36 +115,42 @@ Write the best order:
 3.
 
 Add one more supporting sentence that continues the explanation without giving instructions:
-竊・
-竊・
+→
+→
 
-### 8. Guided Practice 窶・Write a Better Paragraph
+---
 
-Rewrite this paragraph so it has a clear **topic 竊・support 竊・closing** structure. Expand it to **5窶・ sentences**, and make sure it reads like part of a larger report or document窶馬ot a complete message.
+### 8. Guided Practice – Write a Better Paragraph
+Rewrite this paragraph so it has a clear **topic → support → closing** structure. Expand it to **5–6 sentences**, and make sure it reads like part of a larger report or document—not a complete message.
 
 **Original:**
 > We checked the application yesterday. One document was missing. The missing document is required for further review. It is essential for completing the examination process. The applicant sent the wrong version before.
 
 **Rewrite here:****
 
-### 9. Freer Practice 窶・Write a Full Paragraph
+---
 
-Write **one administrative paragraph** (5窶・ sentences) that feels like part of a longer document, such as a report or internal summary. Avoid requests or instructions. Focus on presenting information, background, and explanation.
+### 9. Freer Practice – Write a Full Paragraph
+Write **one administrative paragraph** (5–7 sentences) that feels like part of a longer document, such as a report or internal summary. Avoid requests or instructions. Focus on presenting information, background, and explanation.
 
-#### Topics
-
-A. Describe a delay in a process and what caused it.
-B. Describe a system problem and what your team observed.
+#### Topics:
+A. Describe a delay in a process and what caused it.  
+B. Describe a system problem and what your team observed.  
 C. Describe an updated internal rule and why it was changed.
 
 Write your paragraph:
 
-### 10. Reflection
+---
 
-1. What is one thing you learned about paragraph structure?
-2. When do you think you should start a new paragraph?
+### 10. Reflection
+1. What is one thing you learned about paragraph structure?  
+2. When do you think you should start a new paragraph?  
 3. Which part (topic, support, closing) do you find most difficult?
 
-### 11. Homework
+---
 
+### 11. Homework
 Find a real paragraph from a work email (English or Japanese). Rewrite it in English as a **strong, well-organised paragraph** using the structure from this unit.
+
+---
+

@@ -1,10 +1,10 @@
 # MODULE 3. Writing Complex Procedures & Internal Explanations
 
-## 9. Change Management Writing
+## Unit 9 — Change Management Writing
 
-### Overview
+### Unit Overview
 
-This unit develops learners窶・ability to write clear, well窶壮tructured explanations related to policy updates, procedural changes, and administrative decisions. By the end of the lesson, learners will be able to:
+This unit develops learners’ ability to write clear, well‑structured explanations related to policy updates, procedural changes, and administrative decisions. By the end of the lesson, learners will be able to:
 
 - explain the rationale behind changes in procedure
 - outline key differences between old and new processes
@@ -12,9 +12,11 @@ This unit develops learners窶・ability to write clear, well窶壮tructured exp
 - write change notifications suitable for internal, interagency, and international communication
 - communicate changes diplomatically and accurately, avoiding ambiguity or unnecessary detail
 
+---
+
 ### Warm-Up
 
-#### Activity 1. What Makes Change Communication Difficult?
+#### Activity 1 — What Makes Change Communication Difficult?
 
 Discuss:
 
@@ -22,11 +24,12 @@ Discuss:
 2. What information is essential when communicating a change?
 3. What tone should be used for internal vs. external change notifications?
 
-#### Activity 2. Identify Missing Information
+
+
+#### Activity 2 — Identify Missing Information
 
 Read the following message:
-
-> *"We updated the procedure. Please use the new version from now on."*
+*"We updated the procedure. Please use the new version from now on."*
 
 Discuss: What is missing?
 
@@ -35,6 +38,8 @@ Discuss: What is missing?
 - effective date?
 - required actions?
 - impact?
+
+---
 
 ### Model Text
 
@@ -46,7 +51,7 @@ Discuss: What is missing?
 
 > *"Please note that the procedure for reviewing applicant submissions has been updated, effective 15 September. The revised steps introduce a new verification check in Step 2 and remove the requirement for applicants to provide supporting documents at the preliminary stage. These changes aim to improve processing efficiency and ensure consistency across agencies. We would appreciate it if you could begin using the updated form attached and discontinue use of the previous version. Should any questions arise, please feel free to contact our office."*
 
-#### Activity. Compare the Versions
+#### Activity — Compare the Versions
 
 Identify improvements in:
 
@@ -54,6 +59,8 @@ Identify improvements in:
 - explanation of why the change was made
 - instructions for required actions
 - level of detail and tone
+
+---
 
 ### Noticing Task
 
@@ -67,93 +74,87 @@ Highlight in the improved version:
 
 Discuss: Why is each of these elements necessary?
 
+---
+
 ### Language Focus
 
 #### 1. Introducing a Change
-
 **Writing goal:** Introduce the change clearly and formally, signalling that important information follows.
 
 **Example:**
 *Please note that the procedure for applicant submissions has been updated, effective 12 October.*
 
 Useful expressions:
+- *Please note that…*
+- *We would like to inform you that…*
+- *This is to notify you that…*
+- *Effective [date], the procedure has been updated…*
 
-- *Please note that窶ｦ*
-- *We would like to inform you that窶ｦ*
-- *This is to notify you that窶ｦ*
-- *Effective [date], the procedure has been updated窶ｦ*
-
-#### Practice A. Rewrite the Introduction
-
+#### Practice A — Rewrite the Introduction
 Rewrite using a more formal introductory phrase:
-
 1. *The rules changed on Monday.*
 2. *We updated the form last week.*
 
-#### 2. Explaining What Changed
+---
 
+#### 2. Explaining What Changed
 **Writing goal:** Specify exactly what has changed so the reader can understand the update without guessing.
 
 **Example:**
 *The revised steps now include an additional verification check in Step 3.*
 
 Useful structures:
+- *The revised steps now include…*
+- *The previous requirement for X has been removed…*
+- *Two major changes have been introduced…*
 
-- *The revised steps now include窶ｦ*
-- *The previous requirement for X has been removed窶ｦ*
-- *Two major changes have been introduced窶ｦ*
-
-#### Practice B. Strengthen the Explanation
-
+#### Practice B — Strengthen the Explanation
 Rewrite for clarity:
-
 1. *Some parts are different now.*
 2. *The process is longer.*
 3. *They added a step.*
 
-#### 3. Explaining Why the Change Was Made
+---
 
+#### 3. Explaining Why the Change Was Made
 **Writing goal:** Provide a clear rationale so the reader understands the purpose and benefits of the change.
 
 **Example:**
 *The revision was introduced to improve consistency across agencies and reduce processing time.*
 
 Useful rationale structures:
+- *to improve consistency…*
+- *to reduce administrative burden…*
+- *to reflect updated guidelines…*
 
-- *to improve consistency窶ｦ*
-- *to reduce administrative burden窶ｦ*
-- *to reflect updated guidelines窶ｦ*
-
-#### Practice C. Add Rationale
-
+#### Practice C — Add Rationale
 Add a rationale to the following:
-
 1. *We removed the initial review step.*
 2. *We changed the deadline for submission.*
 
-#### 4. Required Actions & Next Steps
+---
 
+#### 4. Required Actions & Next Steps
 **Writing goal:** Tell the reader exactly what they must do now that the change is in effect.
 
 **Example:**
 *We would appreciate it if you could begin using the updated form for all submissions starting 1 November.*
 
 Useful phrasing:
+- *We would appreciate it if you could begin using…*
+- *Please discontinue the previous version…*
+- *The updated form is attached…*
 
-- *We would appreciate it if you could begin using窶ｦ*
-- *Please discontinue the previous version窶ｦ*
-- *The updated form is attached窶ｦ*
-
-#### Practice D. Specify Actions
-
+#### Practice D — Specify Actions
 Rewrite to include clear required actions:
-
 1. *Use the new form.*
 2. *Stop using the old system.*
 
+---
+
 ### Guided Writing
 
-#### Activity 1. Rewrite the Original Model
+#### Activity 1 — Rewrite the Original Model
 
 Rewrite the original unclear message with:
 
@@ -163,7 +164,7 @@ Rewrite the original unclear message with:
 - required actions
 - supportive tone
 
-#### Activity 2. Draft a Change Management Notice
+#### Activity 2 — Draft a Change Management Notice
 
 Choose one scenario:
 
@@ -179,16 +180,18 @@ Write a structured notice including:
 - effective date
 - required actions
 
-#### Activity 3. Compare Old and New Processes
+#### Activity 3 — Compare Old and New Processes
 
 Write a paragraph comparing the old process and the new one using:
 
 - contrast markers (*previously, in the revised version, unlike before*)
 - clear structural organisation
 
+---
+
 ### Freer Writing
 
-#### Task. Write a 10窶・4 Sentence Change Management Announcement
+#### Task — Write a 10–14 Sentence Change Management Announcement
 
 Choose one:
 
@@ -212,6 +215,8 @@ Your message must include:
 - Are required actions easy to understand?
 - Is the tone appropriate for the audience?
 
+---
+
 ### Editing Skills
 
 #### Editing Checklist
@@ -224,7 +229,7 @@ Check whether your writing:
 - includes ambiguous or vague language
 - uses overly informal tone
 
-#### Editing Exercise. Improve Change Communication
+#### Editing Exercise — Improve Change Communication
 
 Rewrite:
 
@@ -237,17 +242,21 @@ Add:
 - rationale
 - required actions
 
+---
+
 ### Extension Task
 
 Choose one:
 
 1. Rewrite an unclear change announcement you have received.
-2. Create a two窶祖olumn comparison: **Before / After** for a real procedure.
+2. Create a two‑column comparison: **Before / After** for a real procedure.
 3. Draft a change narrative explaining how and why a major policy area evolved over time.
+
+---
 
 ### Homework
 
-Write a **200窶・30 word** change management notice for an internal or interagency audience. Include:
+Write a **200–230 word** change management notice for an internal or interagency audience. Include:
 
 - effective date
 - detailed explanation of changes
@@ -255,3 +264,4 @@ Write a **200窶・30 word** change management notice for an internal or interag
 - required actions
 - optional support/contact information
 - diplomatic tone
+
