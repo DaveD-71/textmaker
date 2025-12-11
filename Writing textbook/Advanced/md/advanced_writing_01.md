@@ -1,6 +1,8 @@
-# 1. Controlling Sentence Complexity
+# MODULE 1. Advanced Foundations for Administrative Writing
 
-## Overview
+## 1. Controlling Sentence Complexity
+
+### Overview
 
 This unit helps learners produce clear, precise, and unambiguous sentences in administrative and interagency writing. By the end of the lesson, learners will be able to:
 
@@ -9,9 +11,9 @@ This unit helps learners produce clear, precise, and unambiguous sentences in ad
 - apply clarity-focused patterns common in professional administrative writing
 - analyse and revise authentic-style administrative text
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Identifying Confusing Sentences
+#### Activity 1. Identifying Confusing Sentences
 
 Read the following sentences. Discuss which parts are unclear and why.
 
@@ -19,21 +21,21 @@ Read the following sentences. Discuss which parts are unclear and why.
 2. *The meeting participants agreed to revise the guidelines which were noted by several offices to be inconsistent with previous instructions that require further study.*
 3. *Since the system update was completed last month but the manual was not updated, staff reported errors that made processing applications difficult which resulted in delays.*
 
-### Activity 2. Spot the Main Idea
+#### Activity 2. Spot the Main Idea
 
 For each sentence above, identify the SINGLE main idea. Then identify supporting or secondary ideas.
 
-Consider the following question: 
-**When does a long sentence become unclear?** 
+Consider the following question:
+**When does a long sentence become unclear?**
 Discuss with a partner what makes administrative writing difficult to read.
 
-## Model Text
+### Model Text
 
 Below is an excerpt from an internal explanation memo (poorly structured on purpose):
 
-> *"Because we were unable to verify the applicant’s supporting documents during the initial review, and since the translation submitted last week contained several inconsistencies that require clarification, we will need to request an updated version; however, before doing so, we must confirm internally whether the missing information is essential for the current stage of examination. Additionally, the team noted that some details may have been omitted unintentionally, which could affect the accuracy of further processing if not corrected promptly."*
+> *"Because we were unable to verify the applicant窶冱 supporting documents during the initial review, and since the translation submitted last week contained several inconsistencies that require clarification, we will need to request an updated version; however, before doing so, we must confirm internally whether the missing information is essential for the current stage of examination. Additionally, the team noted that some details may have been omitted unintentionally, which could affect the accuracy of further processing if not corrected promptly."*
 
-### Activity. Understanding the Overload
+#### Activity. Understanding the Overload
 
 Underline (or highlight):
 
@@ -44,9 +46,9 @@ Underline (or highlight):
 
 Below is an excerpt from an internal explanation memo:
 
-> *"Because we were unable to verify the applicant’s supporting documents during the initial review, and since the translation submitted last week contained several inconsistencies that require clarification, we will need to request an updated version; however, before doing so, we must confirm internally whether the missing information is essential for the current stage of examination."*
+> *"Because we were unable to verify the applicant窶冱 supporting documents during the initial review, and since the translation submitted last week contained several inconsistencies that require clarification, we will need to request an updated version; however, before doing so, we must confirm internally whether the missing information is essential for the current stage of examination."*
 
-## Noticing Task
+### Noticing Task
 
 Identify issues in the model text:
 
@@ -54,9 +56,9 @@ Identify issues in the model text:
 2. How many ideas are packed into one sentence?
 3. Where could the writer introduce clearer subordination or separate clauses?
 
-## Language Focus
+### Language Focus
 
-### 1. Coordination (joining equal ideas)
+#### 1. Coordination (joining equal ideas)
 
 Useful for linking parallel information without implying hierarchy.
 
@@ -68,40 +70,40 @@ Useful for linking parallel information without implying hierarchy.
 - *X. However, Y* (strong contrast)
 - *X. Therefore, Y* (logical result)
 
-**Practice A. Add Coordinators** 
+**Practice A. Add Coordinators**
 Choose the most appropriate connector.
 
-1. We need to confirm the applicant’s address, ___ we must check the original application form.
+1. We need to confirm the applicant窶冱 address, ___ we must check the original application form.
 2. The team attempted to submit the report, ___ the system outage prevented completion.
 3. The deadline is approaching, ___ we appreciate your prompt cooperation.
 
-### 2. Subordination (showing supporting or secondary ideas)
+#### 2. Subordination (showing supporting or secondary ideas)
 
 Indicates relationship and hierarchy between ideas.
 **Common subordinators:** *because, although, when, while, since, unless, even if, even though*
 
-**Practice B. Identify the Subordination Function** 
+**Practice B. Identify the Subordination Function**
 State whether the subclause expresses **reason**, **contrast**, or **time**.
 
 1. *Because the file was corrupted, the attachments did not open.*
 2. *While we understand the concern, the process cannot be changed at this stage.*
 3. *When the update is complete, the system will prompt users to log in again.*
 
-### 3. Clarity Patterns for Administrative Writing
+#### 3. Clarity Patterns for Administrative Writing
 
-#### Pattern 1: Main Idea → Reason
+##### Pattern 1: Main Idea 竊・Reason
 
-**Example:** 
+**Example:**
 
 - *We will request an updated version **because** several inconsistencies were found.*
 
-#### Pattern 2: Short Intro Clause → Main Action
+##### Pattern 2: Short Intro Clause 竊・Main Action
 
-**Example:** 
+**Example:**
 
-- *To ensure consistency, **please confirm the applicant’s name spelling.***
+- *To ensure consistency, **please confirm the applicant窶冱 name spelling.***
 
-#### Pattern 3: Segmenting Dense Content
+##### Pattern 3: Segmenting Dense Content
 
 Use two or more shorter sentences when:
 
@@ -109,15 +111,15 @@ Use two or more shorter sentences when:
 - there are more than 2 logical relationships in one sentence
 - new information is introduced too quickly
 
-**Practice C. Apply the Patterns** 
+**Practice C. Apply the Patterns**
 Rewrite the following using a different pattern:
 
-1. *Although we received the applicant’s correction, we still need to confirm whether the previous version remains valid because the internal database has not been updated.*
+1. *Although we received the applicant窶冱 correction, we still need to confirm whether the previous version remains valid because the internal database has not been updated.*
 2. *Since several offices raised concerns about the inconsistency, we will draft a revised explanation to ensure alignment.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Break Down the Model Text
+#### Activity 1. Break Down the Model Text
 
 Rewrite the model text in **three to four clear sentences**. Follow these steps:
 
@@ -126,7 +128,7 @@ Rewrite the model text in **three to four clear sentences**. Follow these steps:
 3. Remove unnecessary subordination.
 4. Add connectors to show clear relationships.
 
-### Activity 2. Build Your Own Complex Sentence
+#### Activity 2. Build Your Own Complex Sentence
 
 Write **three versions** of your own administrative sentence:
 
@@ -136,15 +138,15 @@ Write **three versions** of your own administrative sentence:
 
 Explain which version is clearest and why.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Explain a Multi-Cause Issue
+#### Task. Explain a Multi-Cause Issue
 
-Write **6–8 sentences** explaining a real or realistic work-related issue with multiple causes. Include:
+Write **6窶・ sentences** explaining a real or realistic work-related issue with multiple causes. Include:
 
 - one coordinated sentence
 - one subordinated sentence
-- one segmented explanation (2–3 sentences)
+- one segmented explanation (2窶・ sentences)
 
 Possible topics:
 
@@ -152,7 +154,7 @@ Possible topics:
 - challenges in preparing a meeting summary
 - difficulties verifying applicant data across agencies
 
-### Peer Review Option
+#### Peer Review Option
 
 Exchange drafts with a partner and answer:
 
@@ -160,9 +162,9 @@ Exchange drafts with a partner and answer:
 - Where could segmentation improve readability?
 - Did any sentence contain ambiguous references?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Look at your writing and check whether:
 
@@ -172,7 +174,7 @@ Look at your writing and check whether:
 - references such as *this*, *that*, *it*, *the issue* clearly refer to something
 - no sentence forces the reader to hold more than **two layers** of embedded information
 
-### Editing Exercise. Correct the Ambiguity
+#### Editing Exercise. Correct the Ambiguity
 
 Rewrite the following sentences to eliminate ambiguity:
 
@@ -180,7 +182,7 @@ Rewrite the following sentences to eliminate ambiguity:
 2. *They updated the database after reviewing the submitted documents that contained several errors.*
 3. *The revision was sent to the department because they requested clarification even though the previous version was approved.*
 
-## Extension Task
+### Extension Task
 
 Choose one of the following:
 
@@ -188,9 +190,9 @@ Choose one of the following:
 2. Convert a long procedural explanation into a step-by-step structure with clearer sequencing.
 3. Rewrite a confusing sentence from a real administrative document and explain the improvement.
 
-## Homework
+### Homework
 
-Write a **120–150 word** explanation of a procedural issue or administrative challenge. Use:
+Write a **120窶・50 word** explanation of a procedural issue or administrative challenge. Use:
 
 - at least 2 coordinated sentences
 - at least 2 subordinated sentences

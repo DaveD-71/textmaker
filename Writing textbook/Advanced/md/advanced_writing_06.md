@@ -1,6 +1,8 @@
-# 6. Communicating Errors Diplomatically
+# MODULE 2. Professional Email Writing for Interagency Contexts
 
-## Overview
+## 6. Communicating Errors Diplomatically
+
+### Overview
 
 This unit trains learners to communicate errors, inconsistencies, and corrective actions diplomatically in professional administrative and interagency contexts. By the end of the lesson, learners will be able to:
 
@@ -10,9 +12,9 @@ This unit trains learners to communicate errors, inconsistencies, and corrective
 - provide corrective guidance with tact and clarity
 - use structured, neutral phrasing suitable for domestic and international partners
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Direct or Diplomatic?
+#### Activity 1. Direct or Diplomatic?
 
 Decide whether each message is **direct** or **diplomatic**.
 
@@ -23,7 +25,7 @@ Decide whether each message is **direct** or **diplomatic**.
 
 Discuss: What makes diplomatic communication essential in interagency and international work?
 
-### Activity 2. Identifying the Purpose
+#### Activity 2. Identifying the Purpose
 
 For each situation, identify what the message must achieve:
 
@@ -34,17 +36,17 @@ For each situation, identify what the message must achieve:
 
 Discuss: How should tone differ in each scenario?
 
-## Model Text
+### Model Text
 
-### Original Version (Too Direct)
+#### Original Version (Too Direct)
 >
 > *"The timeline in your document is wrong. You didn't follow the updated instructions. Please correct it immediately so we can continue."*
 
-### Improved Version (Diplomatic)
+#### Improved Version (Diplomatic)
 >
 > *"Thank you for sharing the updated document. Upon review, it appears that the timeline in Section 3 may differ from the revised instructions circulated on 12 July. For consistency, we would appreciate it if you could confirm whether the dates should be updated. Once clarified, we will be able to proceed with the remaining steps in the review."*
 
-### Activity. Compare the Two Versions
+#### Activity. Compare the Two Versions
 
 Identify improvements in:
 
@@ -54,7 +56,7 @@ Identify improvements in:
 - reader support
 - reference to specific information
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -66,18 +68,18 @@ Highlight in the improved version:
 
 Discuss: How does this approach reduce the risk of miscommunication?
 
-## Language Focus
+### Language Focus
 
-### 1. Diplomatic Frames for Highlighting Errors
+#### 1. Diplomatic Frames for Highlighting Errors
 
 Useful opening phrases:
 
-- *It appears that…*
-- *There may be an inconsistency regarding…*
-- *For our internal confirmation…*
-- *We noticed a difference between X and Y…*
+- *It appears that窶ｦ*
+- *There may be an inconsistency regarding窶ｦ*
+- *For our internal confirmation窶ｦ*
+- *We noticed a difference between X and Y窶ｦ*
 
-### Practice A. Add the Frame
+#### Practice A. Add the Frame
 
 Add a diplomatic frame to the beginning of each:
 
@@ -86,15 +88,15 @@ Add a diplomatic frame to the beginning of each:
 3. *the term is used inconsistently.*
 4. *the translation contains errors.*
 
-### 2. Explaining Impact without Assigning Blame
+#### 2. Explaining Impact without Assigning Blame
 
 Use neutral language to show why the correction is needed.
 
 **Useful patterns:**
 
-- *To ensure accuracy in the review…*
-- *For consistency across documents…*
-- *This may affect how the next stage is processed…*
+- *To ensure accuracy in the review窶ｦ*
+- *For consistency across documents窶ｦ*
+- *This may affect how the next stage is processed窶ｦ*
 
 **Practice B. Explain the Impact**
 Add an impact explanation to each issue:
@@ -103,13 +105,13 @@ Add an impact explanation to each issue:
 2. *The dates in Section 4 do not match the annex.*
 3. *Two terms appear to refer to the same process.*
 
-### 3. Suggesting Corrections Diplomatically
+#### 3. Suggesting Corrections Diplomatically
 
 Neutral request patterns:
 
-- *Could you kindly confirm whether…*
-- *We would appreciate it if you could review…*
-- *Would it be possible to update…?*
+- *Could you kindly confirm whether窶ｦ*
+- *We would appreciate it if you could review窶ｦ*
+- *Would it be possible to update窶ｦ?*
 
 **Practice C. Rewrite the Direct Request**
 Rewrite these direct requests diplomatically:
@@ -119,9 +121,9 @@ Rewrite these direct requests diplomatically:
 3. *Change the dates.*
 4. *Explain this part again.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Model Email
+#### Activity 1. Rewrite the Model Email
 
 Rewrite the original (too direct) model using:
 
@@ -130,7 +132,7 @@ Rewrite the original (too direct) model using:
 - one neutral request
 - one next-step statement
 
-### Activity 2. Error Explanation Scenarios
+#### Activity 2. Error Explanation Scenarios
 
 Rewrite the message for one of the following:
 
@@ -145,7 +147,7 @@ Include:
 - specific request for correction
 - next steps
 
-### Activity 3. Structured Error Communication
+#### Activity 3. Structured Error Communication
 
 Use this structure:
 
@@ -157,13 +159,13 @@ Use this structure:
 
 Write a short error-notification email using this structure.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write an 8–12 Sentence Diplomatic Error Notification
+#### Task. Write an 8窶・2 Sentence Diplomatic Error Notification
 
 Choose one scenario:
 
-1. An applicant’s document includes conflicting explanations.
+1. An applicant窶冱 document includes conflicting explanations.
 2. The translated version differs from the original meaning.
 3. A collaborating office used an outdated version of the form.
 
@@ -176,16 +178,16 @@ Your message must include:
 - correction request
 - next-step information
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Does the message sound neutral and diplomatic?
 - Does it assign blame directly or indirectly?
 - Are requests clearly stated?
 - Does the structure help the reader understand the issue?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing for:
 
@@ -195,14 +197,14 @@ Check your writing for:
 - absence of an impact explanation
 - overly vague correction requests
 
-### Editing Exercise. Improve Tone and Precision
+#### Editing Exercise. Improve Tone and Precision
 
 Rewrite:
 
 1. *You used the wrong version.*
 2. *This error caused delays.*
-3. *We can’t continue until you fix the problem.*
-4. *Your explanation doesn’t make sense.*
+3. *We can窶冲 continue until you fix the problem.*
+4. *Your explanation doesn窶冲 make sense.*
 
 Add:
 
@@ -211,17 +213,17 @@ Add:
 - impact explanation
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
 1. Rewrite an error-notification email you previously sent.
-2. Compare two versions of the same message—direct vs. diplomatic.
+2. Compare two versions of the same message窶播irect vs. diplomatic.
 3. Analyse an error-related communication you received and evaluate its tone.
 
-## Homework
+### Homework
 
-Write a **170–200 word** diplomatic error-notification email to a domestic or foreign office. Include:
+Write a **170窶・00 word** diplomatic error-notification email to a domestic or foreign office. Include:
 
 - at least 3 diplomatic framing expressions
 - one clear impact explanation

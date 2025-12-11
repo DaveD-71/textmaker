@@ -1,8 +1,10 @@
-# 16. Writing Balanced Evaluations
+# MODULE 5. Advanced Editing & Revision Skills
 
-## Overview
+## 16. Writing Balanced Evaluations
 
-This unit develops learners’ ability to write balanced, objective evaluations of documents, proposals, processes, or actions. These skills are essential for internal reviews, interagency assessments, and international coordination. By the end of the lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to write balanced, objective evaluations of documents, proposals, processes, or actions. These skills are essential for internal reviews, interagency assessments, and international coordination. By the end of the lesson, learners will be able to:
 
 - identify strengths and weaknesses in a document or process
 - write evaluations using neutral, evidence-based language
@@ -10,9 +12,9 @@ This unit develops learners’ ability to write balanced, objective evaluations 
 - avoid subjective, emotional, or overly negative tone
 - provide constructive recommendations
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes an Evaluation “Balanced”?
+#### Activity 1. What Makes an Evaluation 窶廝alanced窶・
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What happens when an evaluation is too positive? Too negative?
 3. Why must evaluations avoid emotional or subjective language?
 
-### Activity 2. Identify the Issue
+#### Activity 2. Identify the Issue
 
 Read:
 
@@ -31,13 +33,13 @@ Discuss:
 - What makes this unprofessional?
 - What information is missing?
 
-## Model Text
+### Model Text
 
-### Original (Unbalanced and Vague)
+#### Original (Unbalanced and Vague)
 >
 > *"The revised document is not good. It has many problems and needs to be improved. Some parts are unclear."*
 
-### Improved (Balanced, Structured Evaluation)
+#### Improved (Balanced, Structured Evaluation)
 >
 > **Overall Assessment:** The revised document provides clearer guidance in several sections, particularly the updated chronology table. The structure is generally easier to follow than the previous version.
 >
@@ -53,7 +55,7 @@ Discuss:
 >
 > **Recommendation:** Clarifying key definitions and improving the logical flow between steps would enhance overall usability.
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -63,7 +65,7 @@ Identify improvements in:
 - balance (strengths + weaknesses)
 - professionalism
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -74,9 +76,9 @@ Highlight in the improved version:
 
 Discuss: Why is providing at least one strength essential in formal evaluations?
 
-## Language Focus
+### Language Focus
 
-### 1. Objective, Neutral Language
+#### 1. Objective, Neutral Language
 
 **Writing goal:** Describe strengths and weaknesses without judgmental language.
 
@@ -85,18 +87,18 @@ Discuss: Why is providing at least one strength essential in formal evaluations?
 
 Useful expressions:
 
-- *The document provides…*
-- *One area that may require revision is…*
-- *The structure supports…*
+- *The document provides窶ｦ*
+- *One area that may require revision is窶ｦ*
+- *The structure supports窶ｦ*
 
-### Practice A. Remove Subjectivity
+#### Practice A. Remove Subjectivity
 
 Rewrite:
 
 1. *This part is terrible.*
-2. *The writer obviously didn’t think about clarity.*
+2. *The writer obviously didn窶冲 think about clarity.*
 
-### 2. Using Clear Evaluation Criteria
+#### 2. Using Clear Evaluation Criteria
 
 **Writing goal:** Base evaluations on identifiable standards.
 
@@ -111,34 +113,34 @@ Common criteria:
 - compliance with guidelines
 - usability
 
-### Practice B. Add Criteria
+#### Practice B. Add Criteria
 
 Rewrite by adding a clear criterion:
 
 1. *The instructions are confusing.*
 
-### 3. Writing Constructive Recommendations
+#### 3. Writing Constructive Recommendations
 
 **Writing goal:** Suggest solutions rather than criticising.
 
 **Example:**
-*Providing a definition of “applicant request” would reduce potential confusion.*
+*Providing a definition of 窶彗pplicant request窶・would reduce potential confusion.*
 
 Useful structures:
 
-- *It may be helpful to…*
-- *We recommend clarifying…*
-- *A possible improvement would be…*
+- *It may be helpful to窶ｦ*
+- *We recommend clarifying窶ｦ*
+- *A possible improvement would be窶ｦ*
 
-### Practice C. Turn Criticism into a Recommendation
+#### Practice C. Turn Criticism into a Recommendation
 
 Rewrite:
 
 1. *This section is unclear.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Evaluation
+#### Activity 1. Rewrite the Original Evaluation
 
 Include:
 
@@ -147,24 +149,24 @@ Include:
 - areas for improvement
 - a recommendation
 
-### Activity 2. Evaluate a Short Text
+#### Activity 2. Evaluate a Short Text
 
 Evaluate the following statement:
 
-> *“Applicants must follow the instructions. The office will check for mistakes. The process must be completed quickly.”*
+> *窶廣pplicants must follow the instructions. The office will check for mistakes. The process must be completed quickly.窶・
 
 Write a balanced evaluation including clarity, structure, and usefulness.
 
-### Activity 3. Write Two Versions
+#### Activity 3. Write Two Versions
 
 Produce:
 
 - a **short evaluation** for internal use
 - a **detailed evaluation** for interagency discussion
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 12–15 Sentence Evaluation
+#### Task. Write a 12窶・5 Sentence Evaluation
 
 Choose one:
 
@@ -179,7 +181,7 @@ Your evaluation must include:
 - recommendations
 - neutral, structured tone
 
-### Peer Review
+#### Peer Review
 
 Partners assess:
 
@@ -187,9 +189,9 @@ Partners assess:
 - Are strengths and weaknesses clear?
 - Are recommendations constructive?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing:
 
@@ -198,11 +200,11 @@ Check your writing:
 - does it provide specific examples?
 - is the structure balanced?
 
-### Editing Exercise. Improve Tone
+#### Editing Exercise. Improve Tone
 
 Rewrite:
 
-> *“The document is badly written and needs a lot of work.”*
+> *窶弋he document is badly written and needs a lot of work.窶・
 
 Add:
 
@@ -210,7 +212,7 @@ Add:
 - criteria
 - recommendation
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -218,9 +220,9 @@ Choose one:
 2. Convert meeting notes into a structured evaluation.
 3. Rewrite a highly negative evaluation more professionally.
 
-## Homework
+### Homework
 
-Write a **220–260 word** balanced evaluation of a document or process. Include:
+Write a **220窶・60 word** balanced evaluation of a document or process. Include:
 
 - overall assessment
 - strengths

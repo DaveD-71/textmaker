@@ -1,8 +1,10 @@
-# 11. Executive-Level Meeting Summaries
+# MODULE 3. Writing Complex Procedures & Internal Explanations
 
-## Overview
+## 11. Executive-Level Meeting Summaries
 
-This unit develops learners’ ability to write clear, concise, and accurate executive-level meeting summaries suitable for internal reporting, interagency coordination, and international engagement. By the end of this lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to write clear, concise, and accurate executive-level meeting summaries suitable for internal reporting, interagency coordination, and international engagement. By the end of this lesson, learners will be able to:
 
 - identify essential vs. non-essential meeting information
 - combine paragraph and bullet-point structures for clarity
@@ -10,9 +12,9 @@ This unit develops learners’ ability to write clear, concise, and accurate exe
 - highlight decisions, action items, and outstanding issues
 - write summaries that support follow-up tasks and demonstrate accountability
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes a Meeting Summary Effective?
+#### Activity 1. What Makes a Meeting Summary Effective?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What should *not* be included?
 3. What problems arise when summaries are too long or too short?
 
-### Activity 2. Problem Identification
+#### Activity 2. Problem Identification
 
 Read the summary below:
 
@@ -31,13 +33,13 @@ Discuss:
 - Why is this not useful?
 - What key elements are missing?
 
-## Model Text
+### Model Text
 
-### Original (Incomplete and Unstructured)
+#### Original (Incomplete and Unstructured)
 >
 > *"The meeting was held on Monday. People discussed the guideline revisions and some offices had concerns. We decided to continue the discussion later."*
 
-### Improved (Executive-Level Summary)
+#### Improved (Executive-Level Summary)
 >
 > **Meeting Summary. Guideline Revision Discussion (12 October)**
 >
@@ -57,7 +59,7 @@ Discuss:
 >
 > **Next Steps:** Offices will share outstanding questions in advance of the next meeting.
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify differences in:
 
@@ -67,7 +69,7 @@ Identify differences in:
 - readability
 - usefulness for follow-up
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -78,9 +80,9 @@ Highlight in the improved version:
 
 Discuss: Why is the hybrid format (paragraph + bullets) effective?
 
-## Language Focus
+### Language Focus
 
-### 1. Structuring an Executive Summary
+#### 1. Structuring an Executive Summary
 
 **Writing goal:** Clearly separate meeting components for readability.
 
@@ -94,7 +96,7 @@ Useful organisational labels:
 - **Decisions / Action Items**
 - **Next Steps**
 
-### Practice A. Categorise the Information
+#### Practice A. Categorise the Information
 
 Categorise each line as *Overview*, *Key Point*, *Decision/Action*, or *Next Step*.
 
@@ -103,7 +105,7 @@ Categorise each line as *Overview*, *Key Point*, *Decision/Action*, or *Next Ste
 3. *The purpose of the meeting was to confirm the scope of revisions.*
 4. *Offices will submit outstanding comments before the next session.*
 
-### 2. Writing Neutral, Objective Summaries
+#### 2. Writing Neutral, Objective Summaries
 
 **Writing goal:** Avoid subjective language, personal opinions, or unnecessary detail.
 
@@ -112,18 +114,18 @@ Categorise each line as *Overview*, *Key Point*, *Decision/Action*, or *Next Ste
 
 Useful phrases:
 
-- *The group discussed…*
-- *Participants noted that…*
-- *Clarification is required regarding…*
+- *The group discussed窶ｦ*
+- *Participants noted that窶ｦ*
+- *Clarification is required regarding窶ｦ*
 
-### Practice B. Remove Subjective Language
+#### Practice B. Remove Subjective Language
 
 Rewrite to remove subjectivity:
 
 1. *Office A was obviously confused about the new terminology.*
 2. *The deadline is totally unrealistic.*
 
-### 3. Highlighting Decisions and Action Items
+#### 3. Highlighting Decisions and Action Items
 
 **Writing goal:** Clearly identify what has been agreed and who is responsible.
 
@@ -132,20 +134,20 @@ Rewrite to remove subjectivity:
 
 Useful structures:
 
-- *[Office/Person] will…*
-- *The group agreed to…*
-- *It was decided that…*
+- *[Office/Person] will窶ｦ*
+- *The group agreed to窶ｦ*
+- *It was decided that窶ｦ*
 
-### Practice C. Turn Discussion into Action Items
+#### Practice C. Turn Discussion into Action Items
 
 Rewrite as formal action items:
 
 1. *People said the document needs clarification.*
 2. *One office suggested reviewing the timeline.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Summary
+#### Activity 1. Rewrite the Original Summary
 
 Rewrite the original summary using:
 
@@ -154,11 +156,11 @@ Rewrite the original summary using:
 - decisions and actions
 - next steps
 
-### Activity 2. Draft a Meeting Summary from Notes
+#### Activity 2. Draft a Meeting Summary from Notes
 
 Use the notes below:
 
-- Confusion about definition of “applicant request”
+- Confusion about definition of 窶彗pplicant request窶・
 - Timeline for implementation unclear
 - Offices want revised communication template
 - Meeting scheduled again on 20 November
@@ -166,7 +168,7 @@ Use the notes below:
 
 Write a structured executive-level summary.
 
-### Activity 3. Create Summaries for Different Audiences
+#### Activity 3. Create Summaries for Different Audiences
 
 Write two summaries of the same meeting:
 
@@ -175,9 +177,9 @@ Write two summaries of the same meeting:
 
 Discuss differences in tone, detail, and framing.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 12–15 Sentence Executive Meeting Summary
+#### Task. Write a 12窶・5 Sentence Executive Meeting Summary
 
 Choose one scenario:
 
@@ -193,15 +195,15 @@ Your summary must include:
 - next steps
 - clear, formal tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Are key points separated clearly?
 - Are all important decisions included?
 - Does the summary allow a manager to understand the issue without attending?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check whether your summary:
 
@@ -211,7 +213,7 @@ Check whether your summary:
 - uses subjective or informal language
 - overwhelms the reader with information
 
-### Editing Exercise. Improve Structure
+#### Editing Exercise. Improve Structure
 
 Rewrite:
 
@@ -224,7 +226,7 @@ Add:
 - decisions
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -232,9 +234,9 @@ Choose one:
 2. Convert long meeting notes into a structured executive summary.
 3. Create two versions of a summary: detailed and condensed.
 
-## Homework
+### Homework
 
-Write a **200–240 word** executive-level summary of a high-level meeting. Include:
+Write a **200窶・40 word** executive-level summary of a high-level meeting. Include:
 
 - overview
 - key issues discussed

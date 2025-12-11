@@ -1,8 +1,10 @@
-# 17. Drafting Executive Briefs
+# MODULE 5. Advanced Editing & Revision Skills
 
-## Overview
+## 17. Drafting Executive Briefs
 
-Executive briefs summarise high-level issues for decision‑makers who require clarity, relevance, and efficiency. This unit trains learners to:
+### Overview
+
+Executive briefs summarise high-level issues for decision窶僧akers who require clarity, relevance, and efficiency. This unit trains learners to:
 
 - identify essential information for executives
 - structure briefs using standard components (overview, key points, implications, recommendations)
@@ -10,9 +12,9 @@ Executive briefs summarise high-level issues for decision‑makers who require c
 - write concise yet complete paragraphs
 - convey complex issues in a decision-ready format
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Do Executives Need?
+#### Activity 1. What Do Executives Need?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What is the difference between a meeting summary and an executive brief?
 3. Why must executive briefs be short?
 
-### Activity 2. Identify the Problem
+#### Activity 2. Identify the Problem
 
 Read:
 
@@ -30,13 +32,13 @@ Discuss:
 
 - What's missing for a decision-maker?
 
-## Model Text
+### Model Text
 
-### Original (Overly General)
+#### Original (Overly General)
 >
 > *"We discussed the form revision issue and people had different views. We need to talk more about it and decide later."*
 
-### Improved (Concise Executive Brief)
+#### Improved (Concise Executive Brief)
 >
 > **Overview:** The working group reviewed the proposed revision to the applicant communication form, focusing on clarity, consistency, and feasibility.
 >
@@ -50,7 +52,7 @@ Discuss:
 >
 > **Recommendation:** Proceed with targeted revisions to terminology and remove redundant verification steps.
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -59,7 +61,7 @@ Identify improvements in:
 - level of detail
 - usefulness for decision-making
 
-## Noticing Task
+### Noticing Task
 
 Highlight:
 
@@ -70,9 +72,9 @@ Highlight:
 
 Discuss: How does separating these components make decision-making easier?
 
-## Language Focus
+### Language Focus
 
-### 1. Writing Clear Overviews
+#### 1. Writing Clear Overviews
 
 **Writing goal:** Provide the executive with immediate context.
 
@@ -81,17 +83,17 @@ Discuss: How does separating these components make decision-making easier?
 
 Useful expressions:
 
-- *This brief summarises…*
-- *The purpose of this brief is to…*
-- *This document outlines…*
+- *This brief summarises窶ｦ*
+- *The purpose of this brief is to窶ｦ*
+- *This document outlines窶ｦ*
 
-### Practice A. Rewrite the Overview
+#### Practice A. Rewrite the Overview
 
 Rewrite to create a clear overview:
 
 1. *We talked about problems in the process.*
 
-### 2. Distilling Key Points
+#### 2. Distilling Key Points
 
 **Writing goal:** Present only essential information.
 
@@ -100,17 +102,17 @@ Rewrite to create a clear overview:
 
 Useful patterns:
 
-- *Key issues include…*
-- *Stakeholders noted that…*
-- *The primary challenge is…*
+- *Key issues include窶ｦ*
+- *Stakeholders noted that窶ｦ*
+- *The primary challenge is窶ｦ*
 
-### Practice B. Reduce Detail
+#### Practice B. Reduce Detail
 
 Rewrite concisely:
 
-1. *Many people mentioned various issues about the form and some people didn’t understand the changes, so they talked about many parts for a long time.*
+1. *Many people mentioned various issues about the form and some people didn窶冲 understand the changes, so they talked about many parts for a long time.*
 
-### 3. Describing Implications
+#### 3. Describing Implications
 
 **Writing goal:** Show why the issue matters.
 
@@ -119,38 +121,38 @@ Rewrite concisely:
 
 Useful patterns:
 
-- *If unaddressed…*
-- *This may result in…*
-- *This could affect…*
+- *If unaddressed窶ｦ*
+- *This may result in窶ｦ*
+- *This could affect窶ｦ*
 
-### Practice C. Add an Implication
+#### Practice C. Add an Implication
 
 Add an implication:
 
 1. *Offices are using different versions of the form.*
 
-### 4. Writing Recommendations
+#### 4. Writing Recommendations
 
-**Writing goal:** Suggest an action that directly supports decision‑making.
+**Writing goal:** Suggest an action that directly supports decision窶僧aking.
 
 **Example:**
 *We recommend standardising terminology before implementing the revised form.*
 
 Useful structures:
 
-- *We recommend…*
-- *It would be advisable to…*
-- *We propose…*
+- *We recommend窶ｦ*
+- *It would be advisable to窶ｦ*
+- *We propose窶ｦ*
 
-### Practice D. Propose a Recommendation
+#### Practice D. Propose a Recommendation
 
 Rewrite as a recommendation:
 
 1. *The form needs to be updated.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Brief
+#### Activity 1. Rewrite the Original Brief
 
 Include:
 
@@ -159,7 +161,7 @@ Include:
 - implications
 - recommendation
 
-### Activity 2. Draft an Executive Brief
+#### Activity 2. Draft an Executive Brief
 
 Choose one scenario:
 
@@ -167,9 +169,9 @@ Choose one scenario:
 2. Delays caused by translation inconsistencies
 3. A new interagency system rollout
 
-Write an 8–10 sentence brief.
+Write an 8窶・0 sentence brief.
 
-### Activity 3. Short vs. Long Briefs
+#### Activity 3. Short vs. Long Briefs
 
 Write:
 
@@ -178,9 +180,9 @@ Write:
 
 Discuss differences in detail and tone.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 12–15 Sentence Executive Brief
+#### Task. Write a 12窶・5 Sentence Executive Brief
 
 Choose one:
 
@@ -196,16 +198,16 @@ Your brief must include:
 - recommendation
 - formal, concise tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Does the brief support decision-making?
 - Are key points concise and specific?
 - Are implications clearly stated?
 - Is the recommendation actionable?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing:
 
@@ -214,25 +216,25 @@ Check your writing:
 - are implications missing?
 - is the recommendation too vague?
 
-### Editing Exercise. Condense for Executive Use
+#### Editing Exercise. Condense for Executive Use
 
 Rewrite:
 
 > *"A number of things were discussed in the meeting, including various parts of the instructions. People shared opinions and raised many issues. We need to revise the instructions, but first we must think about how to communicate with offices."*
 
-Condense to a 3–4 sentence executive brief.
+Condense to a 3窶・ sentence executive brief.
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
-1. Convert a long report into a one‑page executive brief.
+1. Convert a long report into a one窶叢age executive brief.
 2. Rewrite an unclear brief received from another office.
 3. Create two briefs from the same material: executive-level and staff-level.
 
-## Homework
+### Homework
 
-Write a **200–240 word** executive brief summarising a complex administrative issue. Include:
+Write a **200窶・40 word** executive brief summarising a complex administrative issue. Include:
 
 - overview
 - key points

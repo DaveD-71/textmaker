@@ -1,15 +1,17 @@
-# 1 – Clear Sentence Structure
+# MODULE 1. Foundations of Clear Administrative Writing
 
-## 1. Overview
+## 1 窶・Clear Sentence Structure
+
+### 1. Overview
 
 In this unit, you will learn how to write **clear English sentences** for administrative communication.
 You will:
 
-- Review basic sentence structure Subject–Verb–Object
+- Review basic sentence structure Subject窶天erb窶徹bject
 - Practice writing short, clear sentences
 - Rewrite unclear or confusing sentences so that your reader can understand easily
 
-## 2. Warm-Up: What Makes a Sentence Clear?
+### 2. Warm-Up: What Makes a Sentence Clear?
 
 Read the pairs of sentences. Choose the one that feels **clearer**.
 
@@ -24,7 +26,7 @@ Read the pairs of sentences. Choose the one that feels **clearer**.
 
 **Discussion:** Why are the b sentences easier to read?
 
-## 3. Language Focus 1: Basic Sentence Pattern S–V–O / S–V–C
+### 3. Language Focus 1: Basic Sentence Pattern S窶天窶徹 / S窶天窶鼎
 
 Most clear administrative English sentences follow this simple pattern:
 
@@ -41,7 +43,7 @@ Examples:
 - The applicant S submitted V the missing form O.
 - Our office S is located in V Tokyo C.
 
-### Practice. Identify the Parts
+#### Practice. Identify the Parts
 
 Identify the parts of each sentence using these actions:
 
@@ -55,9 +57,9 @@ Identify the parts of each sentence using these actions:
 4. The system shows an error message.
 5. The examiner requested more information.
 
-### Practice. Build Clear Sentences
+#### Practice. Build Clear Sentences
 
-Rewrite the word groups as clear S–V–O or S-V-C sentences.
+Rewrite the word groups as clear S窶天窶徹 or S-V-C sentences.
 
 1. application / our office / receive / yesterday
 2. examiner / request / more information
@@ -65,11 +67,11 @@ Rewrite the word groups as clear S–V–O or S-V-C sentences.
 4. applicant / not / submit / fee / yet
 5. system / show / error message / this morning
 
-## 4. Language Focus 2: Avoiding Unnecessary Complexity
+### 4. Language Focus 2: Avoiding Unnecessary Complexity
 
 Administrative English should be **short, direct, and clear**.
 
-### Simplify the Sentence
+#### Simplify the Sentence
 
 Rewrite each sentence in a clearer, shorter way.
 
@@ -89,25 +91,25 @@ Rewrite each sentence in a clearer, shorter way.
 
     Clear:
 
-## 5. Guided Practice: Rewrite for Clarity
+### 5. Guided Practice: Rewrite for Clarity
 
 Rewrite each sentence so that it is easier to read.
 
 1. We are now in the checking of your application and more time is needed by us.
-    →
+    竊・
 
 2. The document which was attached to the email that you sent on Monday is not the same as the one discussed.
-    →
+    竊・
 
 3. The guidelines of our office say that in the case that documents are missing, the applicant should be contacted by us.
-    →
+    竊・
 
 4. It will be necessary for us to confirm the information with another department before a reply can be given.
-    →
+    竊・
 
-## 6. Freer Practice: Write Clear Administrative Sentences
+### 6. Freer Practice: Write Clear Administrative Sentences
 
-Write 3–4 clear sentences based on the situation below.
+Write 3窶・ clear sentences based on the situation below.
 
 **Situation:** The applicant sent the wrong form. You need to contact the applicant and ask for the correct form. The deadline is next Friday.
 
@@ -116,12 +118,12 @@ Write 3–4 clear sentences based on the situation below.
 3.
 4.
 
-## 7. Reflection
+### 7. Reflection
 
 1. What was difficult for you in this unit?
 2. Which point do you want to remember when you write emails at work?
 3. Choose one clear sentence you wrote today and rewrite it here.
 
-## 8. Homework
+### 8. Homework
 
-Choose one real email you sent at work in Japanese. Translate the **main message** into 3–4 clear English sentences using S–V–O structure.
+Choose one real email you sent at work in Japanese. Translate the **main message** into 3窶・ clear English sentences using S窶天窶徹 structure.

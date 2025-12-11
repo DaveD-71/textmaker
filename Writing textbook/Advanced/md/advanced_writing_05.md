@@ -1,6 +1,8 @@
-# 5. Writing Precise Clarification Requests
+# MODULE 2. Professional Email Writing for Interagency Contexts
 
-## Overview
+## 5. Writing Precise Clarification Requests
+
+### Overview
 
 This unit trains learners to write clear, targeted, and professional clarification requests used in interagency, ministerial, and international communication. By the end of this lesson, learners will be able to:
 
@@ -10,9 +12,9 @@ This unit trains learners to write clear, targeted, and professional clarificati
 - use diplomatic language to request missing, unclear, or contradictory information
 - write concise but complete clarification messages suitable for high-level communication
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes a Clarification Request Effective?
+#### Activity 1. What Makes a Clarification Request Effective?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What problems arise when a clarification request is too vague?
 3. What tone should clarification requests use? Why?
 
-### Activity 2. Vague or Clear?
+#### Activity 2. Vague or Clear?
 
 Decide whether each request is **vague** or **precise**.
 
@@ -31,17 +33,17 @@ Decide whether each request is **vague** or **precise**.
 
 Explain your choices.
 
-## Model Text
+### Model Text
 
-### Original Version (Vague)
+#### Original Version (Vague)
 
 > *"We have some questions about the document. Can you explain the parts that are unclear? Also, is the date correct?"*
 
-### Improved Version (Precise & Structured)
+#### Improved Version (Precise & Structured)
 
-> *"Thank you for sharing the revised document. For our confirmation, we would appreciate clarification on two points. First, in Section 2.3, the date listed appears to differ from the timeline provided in Annex A; could you confirm which version is correct? Second, the term 'applicant request' is used in several places—could you clarify whether it refers specifically to written submission or includes verbal requests as well? Once confirmed, we will proceed with updating our internal explanation."*
+> *"Thank you for sharing the revised document. For our confirmation, we would appreciate clarification on two points. First, in Section 2.3, the date listed appears to differ from the timeline provided in Annex A; could you confirm which version is correct? Second, the term 'applicant request' is used in several places窶把ould you clarify whether it refers specifically to written submission or includes verbal requests as well? Once confirmed, we will proceed with updating our internal explanation."*
 
-### Activity. Compare the Two Versions
+#### Activity. Compare the Two Versions
 
 Identify differences in:
 
@@ -51,7 +53,7 @@ Identify differences in:
 - tone and formality
 - reader support
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -62,38 +64,38 @@ Highlight in the improved version:
 
 Discuss: *Why are specific references essential in administrative communication?*
 
-## Language Focus
+### Language Focus
 
-### 1. Useful Phrases for Precise Clarification
+#### 1. Useful Phrases for Precise Clarification
 
-#### Introducing Clarification
+##### Introducing Clarification
 
-- *For our confirmation, we would appreciate clarification on…*
-- *We would be grateful if you could clarify the following points…*
-- *To ensure accuracy, may we confirm whether…*
+- *For our confirmation, we would appreciate clarification on窶ｦ*
+- *We would be grateful if you could clarify the following points窶ｦ*
+- *To ensure accuracy, may we confirm whether窶ｦ*
 
-#### Referencing Documents
+##### Referencing Documents
 
-- *In Section 3.1 of the attached document…*
-- *According to the table in Annex B…*
-- *The term used on page 4…*
+- *In Section 3.1 of the attached document窶ｦ*
+- *According to the table in Annex B窶ｦ*
+- *The term used on page 4窶ｦ*
 
-#### Formulating Clear Questions
+##### Formulating Clear Questions
 
 - *Could you confirm whether X and Y refer to the same procedure?*
-- *Could you clarify whether the date should match the revision dated…?*
+- *Could you clarify whether the date should match the revision dated窶ｦ?*
 - *Could you specify which version is currently valid?*
 
-### Practice A. Strengthen the Precision
+#### Practice A. Strengthen the Precision
 
 Rewrite the following to make them more precise:
 
 1. *Can you explain the date issue?*
-2. *What does “response” mean here?*
+2. *What does 窶徨esponse窶・mean here?*
 3. *Is this correct?*
 4. *We have questions about the guidelines.*
 
-### 2. Structuring Multi-Part Questions
+#### 2. Structuring Multi-Part Questions
 
 Clear multi-part questions typically follow this structure:
 
@@ -107,15 +109,15 @@ Turn the following into a structured clarification request:
 
 > *"We need you to confirm the meaning of 'amendment'. Also, we want to know if this applies to both forms. And did the revision change the timeline?"*
 
-### 3. Tone for Clarification Requests
+#### 3. Tone for Clarification Requests
 
 Maintain diplomacy and avoid implying fault.
 
 **Softening patterns:**
 
-- *It appears that…*
-- *There may be a discrepancy regarding…*
-- *For our internal confirmation…*
+- *It appears that窶ｦ*
+- *There may be a discrepancy regarding窶ｦ*
+- *For our internal confirmation窶ｦ*
 
 **Practice C. Add Softening**
 Add softening to the following:
@@ -125,9 +127,9 @@ Add softening to the following:
 3. *This section contradicts the previous instruction.*
 4. *The attached file is not correct.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Model
+#### Activity 1. Rewrite the Original Model
 
 Rewrite the vague model text into a precise, structured clarification request. Include:
 
@@ -136,7 +138,7 @@ Rewrite the vague model text into a precise, structured clarification request. I
 - references to sections or terms
 - a next-step statement
 
-### Activity 2. Write Clarification for a Sample Document
+#### Activity 2. Write Clarification for a Sample Document
 
 Using the following scenario:
 *You received a revised explanation document, but several terms and dates differ from earlier correspondence.*
@@ -147,7 +149,7 @@ Write a message requesting clarification on:
 - one timeline inconsistency
 - one procedural uncertainty
 
-### Activity 3. Document Referencing Practice
+#### Activity 3. Document Referencing Practice
 
 Write 3 clarification questions referencing:
 
@@ -155,9 +157,9 @@ Write 3 clarification questions referencing:
 - a table
 - a specific term
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a Full Clarification Request (8–12 sentences)
+#### Task. Write a Full Clarification Request (8窶・2 sentences)
 
 Choose one scenario:
 
@@ -173,7 +175,7 @@ Your message must include:
 - references to document sections or terms
 - a next-step statement
 
-### Peer Review
+#### Peer Review
 
 Partners identify:
 
@@ -182,9 +184,9 @@ Partners identify:
 - whether the structure is clear
 - tone effectiveness
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check whether your writing includes:
 
@@ -194,7 +196,7 @@ Check whether your writing includes:
 - questions that imply blame
 - unclear next steps
 
-### Editing Exercise. Improve Precision
+#### Editing Exercise. Improve Precision
 
 Rewrite the following:
 
@@ -210,7 +212,7 @@ Add:
 - softening language
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -218,9 +220,9 @@ Choose one:
 2. Create a three-part clarification message for a hypothetical document.
 3. Analyse a clarification request you received and evaluate its clarity.
 
-## Homework
+### Homework
 
-Write a **160–190 word** clarification request to a foreign office regarding inconsistencies found in a revised procedural document. Include:
+Write a **160窶・90 word** clarification request to a foreign office regarding inconsistencies found in a revised procedural document. Include:
 
 - at least **three** structured clarification points
 - references to specific sections or terms

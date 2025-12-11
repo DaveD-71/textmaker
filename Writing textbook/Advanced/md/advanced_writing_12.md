@@ -1,18 +1,20 @@
-# 12. High‑Level External Inquiries
+# MODULE 4. Cross-Border & Interagency Communication
 
-## Overview
+## 12. High窶銑evel External Inquiries
 
-This unit develops learners’ ability to write formal, diplomatic external inquiries to domestic and international partners. By the end of the lesson, learners will be able to:
+### Overview
 
-- write clear, well‑structured inquiries requesting information or clarification
+This unit develops learners窶・ability to write formal, diplomatic external inquiries to domestic and international partners. By the end of the lesson, learners will be able to:
+
+- write clear, well窶壮tructured inquiries requesting information or clarification
 - identify and include essential background context
 - formulate precise, answerable questions
 - use diplomatic softening to avoid assigning blame or implying fault
 - signal next steps and required timeframes professionally
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes an Effective External Inquiry?
+#### Activity 1. What Makes an Effective External Inquiry?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. Why is tone especially important with overseas offices?
 3. What information must be included so the recipient can respond efficiently?
 
-### Activity 2. Missing Information
+#### Activity 2. Missing Information
 
 Read the following:
 
@@ -31,17 +33,17 @@ Discuss:
 - What essential information is missing?
 - Why is this difficult for the recipient to answer?
 
-## Model Text
+### Model Text
 
-### Original (Unclear and Imprecise)
+#### Original (Unclear and Imprecise)
 >
 > *"We want to know what is going on with the applicant. Please explain what is happening and send us the correct information."*
 
-### Improved (Diplomatic, Structured External Inquiry)
+#### Improved (Diplomatic, Structured External Inquiry)
 >
-> *"We would appreciate your assistance in confirming the current status of the applicant’s submission. For our internal processing, could you please clarify whether the revision submitted on 12 March has been reviewed and whether any additional documents are required at this stage? If available, we would also be grateful for an updated timeline for the next steps. Your support is appreciated, and please let us know if any further information is required on our side."*
+> *"We would appreciate your assistance in confirming the current status of the applicant窶冱 submission. For our internal processing, could you please clarify whether the revision submitted on 12 March has been reviewed and whether any additional documents are required at this stage? If available, we would also be grateful for an updated timeline for the next steps. Your support is appreciated, and please let us know if any further information is required on our side."*
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -51,7 +53,7 @@ Identify improvements in:
 - precision and structure
 - reader support
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -59,13 +61,13 @@ Highlight in the improved version:
 2. specific questions
 3. softening language
 4. references to earlier actions or dates
-5. next steps or follow‑up
+5. next steps or follow窶爽p
 
-Discuss: Why do international offices respond more quickly to well‑structured inquiries?
+Discuss: Why do international offices respond more quickly to well窶壮tructured inquiries?
 
-## Language Focus
+### Language Focus
 
-### 1. Providing Background Context
+#### 1. Providing Background Context
 
 **Writing goal:** Give the reader enough information to understand what you are asking about.
 
@@ -74,18 +76,18 @@ Discuss: Why do international offices respond more quickly to well‑structured 
 
 Useful expressions:
 
-- *We are writing to confirm…*
-- *For our internal processing…*
-- *With regard to the applicant’s recent submission…*
+- *We are writing to confirm窶ｦ*
+- *For our internal processing窶ｦ*
+- *With regard to the applicant窶冱 recent submission窶ｦ*
 
-### Practice A. Add Context
+#### Practice A. Add Context
 
 Add appropriate background context:
 
 1. *Could you confirm the meaning of the term?*
 2. *Can you send the updated file?*
 
-### 2. Asking Clear, Answerable Questions
+#### 2. Asking Clear, Answerable Questions
 
 **Writing goal:** Ask questions that are precise and easy for the recipient to answer.
 
@@ -94,18 +96,18 @@ Add appropriate background context:
 
 Useful structures:
 
-- *Could you confirm whether…?*
-- *Would you be able to clarify whether…?*
-- *Could you advise if…?*
+- *Could you confirm whether窶ｦ?*
+- *Would you be able to clarify whether窶ｦ?*
+- *Could you advise if窶ｦ?*
 
-### Practice B. Rewrite the Question
+#### Practice B. Rewrite the Question
 
 Make the questions more precise:
 
 1. *What is happening with the review?*
 2. *Is this correct?*
 
-### 3. Diplomatic Softening for External Inquiries
+#### 3. Diplomatic Softening for External Inquiries
 
 **Writing goal:** Maintain a respectful and cooperative tone.
 
@@ -114,18 +116,18 @@ Make the questions more precise:
 
 Useful expressions:
 
-- *We would appreciate your assistance…*
-- *If convenient…*
-- *We would be grateful if you could…*
+- *We would appreciate your assistance窶ｦ*
+- *If convenient窶ｦ*
+- *We would be grateful if you could窶ｦ*
 
-### Practice C. Add Diplomatic Softening
+#### Practice C. Add Diplomatic Softening
 
 Add softening to:
 
 1. *Send us the correct version.*
 2. *You did not review the file.*
 
-### 4. Requesting Next Steps or a Timeline
+#### 4. Requesting Next Steps or a Timeline
 
 **Writing goal:** Help the recipient understand how their response will be used.
 
@@ -134,29 +136,29 @@ Add softening to:
 
 Useful phrasing:
 
-- *If available, could you share…?*
-- *Once confirmed, we will…*
-- *This will allow us to…*
+- *If available, could you share窶ｦ?*
+- *Once confirmed, we will窶ｦ*
+- *This will allow us to窶ｦ*
 
-### Practice D. Clarify Next Steps
+#### Practice D. Clarify Next Steps
 
-Rewrite with clear next‑step information:
+Rewrite with clear next窶壮tep information:
 
 1. *Please answer soon.*
 2. *We need the file.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Inquiry
+#### Activity 1. Rewrite the Original Inquiry
 
 Rewrite the original text using:
 
 - context
 - specific, answerable questions
 - diplomatic softening
-- next‑step information
+- next窶壮tep information
 
-### Activity 2. Draft an External Inquiry
+#### Activity 2. Draft an External Inquiry
 
 Choose one scenario:
 
@@ -164,22 +166,22 @@ Choose one scenario:
 2. Requesting clarification regarding terminology in a report
 3. Requesting an update on a delayed applicant submission
 
-Write a 6–8 sentence inquiry including:
+Write a 6窶・ sentence inquiry including:
 
 - brief context
-- 2–3 clear questions
+- 2窶・ clear questions
 - softening expressions
-- next‑step information
+- next窶壮tep information
 
-### Activity 3. Improve Precision and Tone
+#### Activity 3. Improve Precision and Tone
 
 Rewrite the following:
 
 > *"Tell us what is going on and send us the correct documents."*
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 10–12 Sentence External Inquiry
+#### Task. Write a 10窶・2 Sentence External Inquiry
 
 Choose one:
 
@@ -192,29 +194,29 @@ Your inquiry must include:
 - background context
 - clearly formulated questions
 - diplomatic softening
-- timeline or next‑step references
+- timeline or next窶壮tep references
 - formal tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Are the questions answerable?
 - Does the inquiry sound diplomatic and professional?
 - Does the context support the reader?
 - Are next steps clear?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check whether your writing:
 
 - lacks context
 - contains vague or unanswerable questions
 - uses overly direct or informal language
-- omits next‑step information
+- omits next窶壮tep information
 - could cause misunderstanding or delays
 
-### Editing Exercise. Strengthen Tone and Structure
+#### Editing Exercise. Strengthen Tone and Structure
 
 Rewrite:
 
@@ -227,20 +229,20 @@ Add:
 - diplomatic tone
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
 1. Rewrite an unclear external inquiry you previously sent.
-2. Draft two versions of an inquiry: short form (3–4 sentences) and full form (8–10 sentences).
-3. Analyse an external inquiry you received and evaluate whether it was well‑structured.
+2. Draft two versions of an inquiry: short form (3窶・ sentences) and full form (8窶・0 sentences).
+3. Analyse an external inquiry you received and evaluate whether it was well窶壮tructured.
 
-## Homework
+### Homework
 
-Write a **200–230 word** external inquiry for an international or domestic partner. Include:
+Write a **200窶・30 word** external inquiry for an international or domestic partner. Include:
 
 - context
-- 2–3 clear questions
+- 2窶・ clear questions
 - diplomatic softening
-- timeline or next‑step information
+- timeline or next窶壮tep information
 - formal administrative tone

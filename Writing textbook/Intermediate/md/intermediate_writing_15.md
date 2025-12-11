@@ -1,6 +1,8 @@
-# 15 – Maintaining Consistent Email Style
+# MODULE 4. Communicating with Applicants & Foreign Offices
 
-## 1. Overview
+## 15 窶・Maintaining Consistent Email Style
+
+### 1. Overview
 
 In this unit, you will learn how to maintain a **consistent, professional email style** across different messages. You will:
 
@@ -9,7 +11,7 @@ In this unit, you will learn how to maintain a **consistent, professional email 
 - Practise revising and standardising email drafts
 - Write clearer and more professional email messages
 
-## 2. What Is Email Consistency?
+### 2. What Is Email Consistency?
 
 Consistency means:
 
@@ -24,72 +26,72 @@ Consistency helps:
 - Teams maintain a professional image
 - Prevent confusion caused by different writing styles
 
-### Example – Inconsistent vs. Consistent
+#### Example 窶・Inconsistent vs. Consistent
 
-**Inconsistent:** 
+**Inconsistent:**
 Hi, I checked it. Please tell me what to do. Thanks.
 
-**Consistent:** 
+**Consistent:**
 Dear Team,
 I reviewed the document and found that two sections require additional information. Could you clarify the details for Section 3?
 Thank you.
 
-## 3. Warm-Up: Identify the Inconsistencies
+### 3. Warm-Up: Identify the Inconsistencies
 
 Read the two emails. What is inconsistent?
 
-### Email A
+#### Email A
 
-Subject: Info 
-Hi, 
+Subject: Info
+Hi,
 I saw it. What next?
 Thx.
 
-### Email B
+#### Email B
 
-Subject: Information Required for Review 
-Dear Team, 
+Subject: Information Required for Review
+Dear Team,
 We reviewed the application this morning and need confirmation about the submission date. Could you clarify this point?
 Thank you.
 
 What is inconsistent in Email A? (tone, clarity, formatting, etc.)
 
-## 4. Language Focus 1 – Standard Email Elements
+### 4. Language Focus 1 窶・Standard Email Elements
 
 Use standardised components to create consistency.
 
-### Openings
+#### Openings
 
 - Dear Mr./Ms. [Name],
 - Dear Team,
 - Thank you for your email.
 
-### Purpose Statements
+#### Purpose Statements
 
-- I am writing to…
-- I would like to confirm…
-- We have a question regarding…
+- I am writing to窶ｦ
+- I would like to confirm窶ｦ
+- We have a question regarding窶ｦ
 
-### Closings
+#### Closings
 
 - Thank you.
 - Kind regards,
 - Please let me know if you need further information.
 
-## 5. Practice A – Improve Consistency
+### 5. Practice A 窶・Improve Consistency
 
 Rewrite the emails to make them consistent in tone and structure.
 
 1. "Hi, I checked it. What should I do now?"
-  →
+  竊・
 
 2. "Hello, Please check. I think there is a problem."
-  →
+  竊・
 
 3. "Team, The file is wrong. Fix it."
-  →
+  竊・
 
-## 6. Language Focus 2 – Formatting for Clarity and Consistency
+### 6. Language Focus 2 窶・Formatting for Clarity and Consistency
 
 Emails should use:
 
@@ -98,31 +100,31 @@ Emails should use:
 - Complete sentences
 - Professional spacing and layout
 
-### Practice B – Reformat the Email
+#### Practice B 窶・Reformat the Email
 
 Rewrite this email with clear formatting.
 
 **Original:**
-Subject: Question 
+Subject: Question
 Hi, I saw the file. It looks wrong. Please explain. Thanks.
 
 Rewrite here:
 
-## 7. Guided Practice – Standardise a Draft Email
+### 7. Guided Practice 窶・Standardise a Draft Email
 
 Rewrite the following email to make it consistent.
 
 **Original:**
-Subject: Form 
+Subject: Form
 I checked it. The date is different from the one in the system. What should we do? Thx.
 
 **Rewrite:**
 
-## 8. Freer Practice – Write Two Consistent Emails
+### 8. Freer Practice 窶・Write Two Consistent Emails
 
 Choose two situations and write emails using **consistent tone and structure**.
 
-### Options
+#### Options
 
 A. Asking for clarification about a missing document.
 B. Informing a colleague about a small change in schedule.
@@ -131,18 +133,18 @@ D. Sharing an update after reviewing a file.
 
 Write your emails:
 
-## 9. Extended Writing Task – Email Style Guide Paragraph
+### 9. Extended Writing Task 窶・Email Style Guide Paragraph
 
-Write a paragraph (6–8 sentences) explaining why your team should follow a consistent email style and what elements are important.
+Write a paragraph (6窶・ sentences) explaining why your team should follow a consistent email style and what elements are important.
 
 Write your paragraph:
 
-## 10. Reflection
+### 10. Reflection
 
 1. What inconsistencies do you often see in emails at work?
 2. Which part of email style is most difficult to control?
 3. How can consistent email style help your team?
 
-## 11. Homework
+### 11. Homework
 
 Find two emails you wrote recently. Rewrite them to follow a **consistent, standard format** based on this unit.

@@ -1,8 +1,10 @@
-# 19. Writing Policy Summaries for Non-Expert Audiences
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## Overview
+## 19. Writing Policy Summaries for Non-Expert Audiences
 
-This unit develops learners’ ability to summarise policy content for readers who do **not** have specialised knowledge. These summaries are common in briefing materials, explanatory notes, interagency updates, and communication with external partners. By the end of the lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to summarise policy content for readers who do **not** have specialised knowledge. These summaries are common in briefing materials, explanatory notes, interagency updates, and communication with external partners. By the end of the lesson, learners will be able to:
 
 - identify which policy elements are essential for non-expert audiences
 - simplify dense or technical policy language without losing accuracy
@@ -10,9 +12,9 @@ This unit develops learners’ ability to summarise policy content for readers w
 - maintain neutrality and avoid over-interpretation
 - highlight implications and actions plainly and professionally
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Who Is a “Non-Expert” Reader?
+#### Activity 1. Who Is a 窶廸on-Expert窶・Reader?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What background knowledge do they typically lack?
 3. What happens when policy summaries assume too much prior knowledge?
 
-### Activity 2. Identify the Problem
+#### Activity 2. Identify the Problem
 
 Read the following:
 
@@ -31,17 +33,17 @@ Discuss:
 - What makes this difficult for a non-expert reader?
 - What key ideas need simplification?
 
-## Model Text
+### Model Text
 
-### Original (Too Technical)
+#### Original (Too Technical)
 >
 > *"Offices must comply with Section 12(4) concerning the amended verification procedure in Annex 3(2)(b)."*
 
-### Improved (Simple, Accessible Summary)
+#### Improved (Simple, Accessible Summary)
 >
 > *"A new step has been added to the document-checking process. From now on, offices must confirm that all key information is included before the application moves to the next stage. This change is intended to reduce errors and improve consistency across offices."*
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify differences in:
 
@@ -51,7 +53,7 @@ Identify differences in:
 - level of assumed knowledge
 - relevance for non-expert audiences
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -62,9 +64,9 @@ Highlight in the improved version:
 
 Discuss: Why is clarity more important than precision when writing for non-expert readers?
 
-## Language Focus
+### Language Focus
 
-### 1. Simplifying Policy Language
+#### 1. Simplifying Policy Language
 
 **Writing goal:** Replace dense, legalistic, or technical phrasing with everyday administrative language.
 
@@ -73,17 +75,17 @@ Discuss: Why is clarity more important than precision when writing for non-exper
 
 Useful patterns:
 
-- *This means that…*
-- *In simple terms…*
-- *The key point is that…*
+- *This means that窶ｦ*
+- *In simple terms窶ｦ*
+- *The key point is that窶ｦ*
 
-### Practice A. Simplify the Statement
+#### Practice A. Simplify the Statement
 
 Rewrite:
 
 1. *"Section 7(3) requires procedural harmonisation across offices."*
 
-### 2. Explaining Purpose and Impact
+#### 2. Explaining Purpose and Impact
 
 **Writing goal:** Help non-expert readers understand *why* the policy exists.
 
@@ -92,17 +94,17 @@ Rewrite:
 
 Useful structures:
 
-- *This aims to…*
-- *This is intended to…*
-- *This helps to…*
+- *This aims to窶ｦ*
+- *This is intended to窶ｦ*
+- *This helps to窶ｦ*
 
-### Practice B. Add Purpose
+#### Practice B. Add Purpose
 
 Add a purpose statement:
 
 1. *A new reporting requirement has been introduced.*
 
-### 3. Writing Clear, Action-Focused Guidance
+#### 3. Writing Clear, Action-Focused Guidance
 
 **Writing goal:** Explicitly state what the reader needs to do.
 
@@ -111,19 +113,19 @@ Add a purpose statement:
 
 Useful expressions:
 
-- *Offices should…*
-- *Readers must…*
-- *Please begin…*
+- *Offices should窶ｦ*
+- *Readers must窶ｦ*
+- *Please begin窶ｦ*
 
-### Practice C. State the Action
+#### Practice C. State the Action
 
 Rewrite to include required action:
 
 1. *The guidelines have been revised.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Text
+#### Activity 1. Rewrite the Original Text
 
 Include:
 
@@ -132,7 +134,7 @@ Include:
 - required action
 - professional, neutral tone
 
-### Activity 2. Draft a Policy Summary
+#### Activity 2. Draft a Policy Summary
 
 Choose one scenario:
 
@@ -140,18 +142,18 @@ Choose one scenario:
 2. New terminology adopted in interagency guidelines
 3. A change to documentation requirements
 
-Write an 8–10 sentence summary for non-expert audiences.
+Write an 8窶・0 sentence summary for non-expert audiences.
 
-### Activity 3. Two Versions
+#### Activity 3. Two Versions
 
 Write:
 
 - a **simple version** for non-expert readers
 - a **more detailed version** for policy-literate readers
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 12–15 Sentence Policy Summary
+#### Task. Write a 12窶・5 Sentence Policy Summary
 
 Choose one:
 
@@ -167,15 +169,15 @@ Your writing must include:
 - required actions
 - neutral tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Is the summary accessible to non-expert readers?
 - Does it avoid unnecessary technical details?
 - Are actions and implications clear?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing:
 
@@ -184,7 +186,7 @@ Check your writing:
 - Are essential actions clearly stated?
 - Is the tone neutral and supportive?
 
-### Editing Exercise
+#### Editing Exercise
 
 Rewrite:
 
@@ -192,7 +194,7 @@ Rewrite:
 
 Make it accessible for non-expert audiences.
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -200,9 +202,9 @@ Choose one:
 2. Translate a dense legal paragraph into a plain-language summary.
 3. Produce a bilingual summary for a mixed-audience briefing.
 
-## Homework
+### Homework
 
-Write a **220–260 word** plain-language summary explaining a policy change to non-expert internal or interagency readers. Include:
+Write a **220窶・60 word** plain-language summary explaining a policy change to non-expert internal or interagency readers. Include:
 
 - what changed
 - why it changed

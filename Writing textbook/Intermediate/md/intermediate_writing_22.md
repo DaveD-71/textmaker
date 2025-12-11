@@ -1,6 +1,8 @@
-# 22 – Multi-Document Communication Task
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## 1. Overview
+## 22 窶・Multi-Document Communication Task
+
+### 1. Overview
 
 In this unit, you will respond to a **single scenario** by producing **three different documents**, each for a different audience and purpose. You will:
 
@@ -11,7 +13,7 @@ In this unit, you will respond to a **single scenario** by producing **three dif
 
 This is preparation for the final portfolio work in Unit 23.
 
-## 2. Scenario Overview
+### 2. Scenario Overview
 
 You receive an email from an **applicant** asking why their application status has not been updated. After reviewing the system, you discover:
 
@@ -25,7 +27,7 @@ You must produce **three documents**:
 2. A **colleague-to-colleague explanation** (horizontal/internal communication).
 3. A **short internal notice** for the team (vertical/internal communication).
 
-## 3. Warm-Up: Analyse the Situation
+### 3. Warm-Up: Analyse the Situation
 
 Answer the questions:
 
@@ -40,46 +42,46 @@ Write your answers:
 3.
 4.
 
-## 4. Language Focus – Three Audiences, Three Styles
+### 4. Language Focus 窶・Three Audiences, Three Styles
 
-### (A) Applicant Reply – Polite, supportive, clear
+#### (A) Applicant Reply 窶・Polite, supportive, clear
 
 - Thank you for your message.
 - We have checked your application status.
 - One document has not yet been received.
-- We will update the status once…
+- We will update the status once窶ｦ
 
-### (B) Colleague Message – Neutral, cooperative
+#### (B) Colleague Message 窶・Neutral, cooperative
 
-- I reviewed the applicant file and noticed…
-- The status has not been updated because…
-- Once the document is received, we can…
+- I reviewed the applicant file and noticed窶ｦ
+- The status has not been updated because窶ｦ
+- Once the document is received, we can窶ｦ
 
-### (C) Internal Notice – Concise, factual
+#### (C) Internal Notice 窶・Concise, factual
 
-- Please note the following update…
-- The applicant’s file remains incomplete.
+- Please note the following update窶ｦ
+- The applicant窶冱 file remains incomplete.
 - The review will continue once the missing document is submitted.
 
-## 5. Practice A – Match Tone to Audience
+### 5. Practice A 窶・Match Tone to Audience
 
 Rewrite each sentence for the appropriate audience.
 
-1. (Applicant) "You didn’t upload the file we need."
-  →
+1. (Applicant) "You didn窶冲 upload the file we need."
+  竊・
 
-2. (Colleague) "The applicant didn’t follow the instructions again."
-  →
+2. (Colleague) "The applicant didn窶冲 follow the instructions again."
+  竊・
 
 3. (Internal Notice) "The file is wrong and causing trouble."
-  →
+  竊・
 
 4. (Applicant) "Send the document quickly."
-  →
+  竊・
 
-## 6. Guided Practice – Write the Applicant Reply
+### 6. Guided Practice 窶・Write the Applicant Reply
 
-Write a **4–6 sentence** email replying to the applicant.
+Write a **4窶・ sentence** email replying to the applicant.
 Include:
 
 - Thank-you / acknowledgement
@@ -90,9 +92,9 @@ Include:
 
 Write your reply:
 
-## 7. Guided Practice – Write the Colleague Explanation
+### 7. Guided Practice 窶・Write the Colleague Explanation
 
-Write a **4–6 sentence** explanation for your colleague.
+Write a **4窶・ sentence** explanation for your colleague.
 Include:
 
 - What you checked
@@ -102,9 +104,9 @@ Include:
 
 Write your explanation:
 
-## 8. Guided Practice – Write the Internal Notice
+### 8. Guided Practice 窶・Write the Internal Notice
 
-Write a **3–5 sentence** notice for the team.
+Write a **3窶・ sentence** notice for the team.
 Include:
 
 - Heading/topic
@@ -114,29 +116,29 @@ Include:
 
 Write your notice:
 
-## 9. Freer Practice – Full Multi-Document Set
+### 9. Freer Practice 窶・Full Multi-Document Set
 
 Choose **one** of the scenarios below and write all three documents:
 
-1. Applicant reply (5–7 sentences)
-2. Colleague message (4–6 sentences)
-3. Internal notice (3–5 sentences)
+1. Applicant reply (5窶・ sentences)
+2. Colleague message (4窶・ sentences)
+3. Internal notice (3窶・ sentences)
 
-### Options
+#### Options
 
-A. A system error prevented an applicant’s file from uploading correctly.
+A. A system error prevented an applicant窶冱 file from uploading correctly.
 B. Two versions of a form were submitted; one is incomplete.
 C. The applicant sent the correct file, but in the wrong format.
 
 Write your full set:
 
-## 10. Extended Writing Task – Multi-Audience Communication Pack
+### 10. Extended Writing Task 窶・Multi-Audience Communication Pack
 
 From the original scenario (missing applicant document), write a polished communication set:
 
-- **Applicant email (8–10 sentences)**
-- **Colleague explanation (6–8 sentences)**
-- **Internal notice (4–6 sentences)**
+- **Applicant email (8窶・0 sentences)**
+- **Colleague explanation (6窶・ sentences)**
+- **Internal notice (4窶・ sentences)**
 
 All three must:
 
@@ -147,12 +149,12 @@ All three must:
 
 Write your communication pack:
 
-## 11. Reflection
+### 11. Reflection
 
 1. Which audience was easiest to write for? Why?
 2. Which audience was most difficult?
 3. How does changing tone and detail help communication?
 
-## 12. Homework
+### 12. Homework
 
 Choose one scenario from the freer practice section. Rewrite the three documents again using a different tone or structure.

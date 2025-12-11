@@ -1,8 +1,10 @@
-# 23. Capstone: Full Administrative Writing Assessment
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## Overview
+## 23. Capstone: Full Administrative Writing Assessment
 
-This capstone unit evaluates students’ ability to apply all skills from Units 1–22 in a comprehensive administrative writing task. Students demonstrate mastery in:
+### Overview
+
+This capstone unit evaluates students窶・ability to apply all skills from Units 1窶・2 in a comprehensive administrative writing task. Students demonstrate mastery in:
 
 - tone control and diplomatic phrasing
 - structure selection and coherence
@@ -13,7 +15,7 @@ This capstone unit evaluates students’ ability to apply all skills from Units 
 
 This unit functions as the final assessment for the Upper Intermediate Writing Course.
 
-## Assessment Scenario (Multi-Source Input)
+### Assessment Scenario (Multi-Source Input)
 
 You receive the following:
 
@@ -23,9 +25,9 @@ You receive the following:
 4. **Updated instructions (last week):** Introduced new terminology, updated steps, new verification requirements; unclear dissemination across offices.
 5. **Internal supervisor note:** Asks you to prepare a concise administrative output summarising issues and proposing next steps.
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Identify All Writing Tasks Hidden in the Scenario
+#### Activity 1. Identify All Writing Tasks Hidden in the Scenario
 
 Discuss: What types of writing tasks are implied?
 
@@ -36,7 +38,7 @@ Discuss: What types of writing tasks are implied?
 - multi-audience message or report
 - next-step planning
 
-### Activity 2. Who Are the Possible Audiences?
+#### Activity 2. Who Are the Possible Audiences?
 
 Consider:
 
@@ -47,11 +49,11 @@ Consider:
 
 Which type of communication best fits each?
 
-## Model Text (Capstone Example)
+### Model Text (Capstone Example)
 
 > *"This report summarises the current implementation challenges arising from the revised applicant communication guidelines. Offices A and C reported uncertainty regarding the updated terminology, while Office B noted delays due to continued use of outdated forms. Additionally, questions remain regarding the appropriate sequence for applicant communication steps. To address these issues, we propose circulating a clarification sheet summarising key terminology, confirming whether all offices have received the updated instructions, and revising the implementation schedule as needed. Once clarification is complete, offices will be better positioned to adopt the updated workflow uniformly."*
 
-### Activity. Analyse the Model
+#### Activity. Analyse the Model
 
 Identify how it demonstrates:
 
@@ -61,9 +63,9 @@ Identify how it demonstrates:
 - clear next steps
 - administrative usefulness
 
-## Language Focus
+### Language Focus
 
-### 1. Selecting the Most Appropriate Output Type
+#### 1. Selecting the Most Appropriate Output Type
 
 **Writing goal:** Match purpose, content, and audience to the most effective structure.
 
@@ -75,48 +77,48 @@ Possible formats:
 - executive brief
 - clarification request
 
-### Practice A. Match Output to Purpose
+#### Practice A. Match Output to Purpose
 
 Match:
 
-1. Need to summarise issues for a supervisor → ?
-2. Need to request clarification about terminology → ?
-3. Need to inform all offices about required next steps → ?
-4. Need to explain delays and propose solutions → ?
+1. Need to summarise issues for a supervisor 竊・?
+2. Need to request clarification about terminology 竊・?
+3. Need to inform all offices about required next steps 竊・?
+4. Need to explain delays and propose solutions 竊・?
 
-### 2. Demonstrating Complete Synthesis
+#### 2. Demonstrating Complete Synthesis
 
 **Writing goal:** Avoid listing; instead, combine inputs into themes.
 
 **Example:**
 *Two main issues are evident across all sources: unclear terminology and inconsistent use of forms.*
 
-### Practice B. Group Ideas into Themes
+#### Practice B. Group Ideas into Themes
 
 Group:
 
-1. *Terminology confusion* 
-2. *Old forms in use* 
-3. *Timeline questions* 
-4. *Terminology unclear in multiple emails* 
+1. *Terminology confusion*
+2. *Old forms in use*
+3. *Timeline questions*
+4. *Terminology unclear in multiple emails*
 5. *Timeline issues raised in meeting*
 
-### 3. Signalling Next Steps Clearly
+#### 3. Signalling Next Steps Clearly
 
 **Writing goal:** Ensure that the administrative output supports immediate follow-up.
 
 **Example:**
 *The next step is to confirm receipt of updated instructions and circulate clarifications.*
 
-### Practice C. Add Next-Step Information
+#### Practice C. Add Next-Step Information
 
 Rewrite:
 
 1. *Offices have many questions.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Produce a Structured Summary of the Entire Scenario
+#### Activity 1. Produce a Structured Summary of the Entire Scenario
 
 Include:
 
@@ -126,13 +128,13 @@ Include:
 - needed actions
 - next steps
 
-### Activity 2. Write One Full Administrative Output
+#### Activity 2. Write One Full Administrative Output
 
 Choose one format:
 
-1. Multi-audience notice 
-2. Executive brief 
-3. Consolidated administrative report 
+1. Multi-audience notice
+2. Executive brief
+3. Consolidated administrative report
 4. Clarification request
 
 Your output must:
@@ -143,7 +145,7 @@ Your output must:
 - identify next steps
 - maintain formal tone
 
-### Activity 3. Write a Second Output for a Different Audience
+#### Activity 3. Write a Second Output for a Different Audience
 
 Options:
 
@@ -154,9 +156,9 @@ Options:
 
 Adapt tone, structure, and detail level accordingly.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Capstone Output (15–20 sentences)
+#### Task. Capstone Output (15窶・0 sentences)
 
 Write a fully integrated administrative document of your chosen type. It must:
 
@@ -167,16 +169,16 @@ Write a fully integrated administrative document of your chosen type. It must:
 - use clear, professional structure
 - demonstrate mastery of the entire course skill set
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Does the writing integrate all sources without listing them?
 - Is the tone appropriately formal and diplomatic?
 - Are issues and actions presented clearly?
 - Does structure support readability and decision-making?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check:
 
@@ -186,7 +188,7 @@ Check:
 - Are next steps realistic and clear?
 - Is the document format appropriate for the chosen audience?
 
-### Editing Exercise. Refine the Capstone Output
+#### Editing Exercise. Refine the Capstone Output
 
 Rewrite:
 
@@ -199,7 +201,7 @@ Improve by:
 - adding next steps
 - adopting formal tone
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -207,9 +209,9 @@ Choose one:
 2. Rewrite your capstone document for an international audience.
 3. Expand your capstone into a full consolidated report.
 
-## Homework
+### Homework
 
-Write a **300–350 word** capstone administrative output using the scenario package. Your writing must:
+Write a **300窶・50 word** capstone administrative output using the scenario package. Your writing must:
 
 - synthesise the five inputs
 - present issues, impacts, and themes

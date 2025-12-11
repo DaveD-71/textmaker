@@ -1,8 +1,10 @@
-# 3. Cohesion & Logical Flow
+# MODULE 1. Advanced Foundations for Administrative Writing
 
-## Overview
+## 3. Cohesion & Logical Flow
 
-This unit develops learners’ ability to construct clear, logically organised paragraphs suitable for administrative communication, interagency coordination, and international correspondence. By the end of the lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to construct clear, logically organised paragraphs suitable for administrative communication, interagency coordination, and international correspondence. By the end of the lesson, learners will be able to:
 
 - identify weaknesses in cohesion at sentence and paragraph level
 - use cohesive devices (linguistic connectors) appropriately and effectively
@@ -10,17 +12,17 @@ This unit develops learners’ ability to construct clear, logically organised p
 - reorganise disconnected sentences into a coherent paragraph
 - write structured summaries and explanations with strong logical flow
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes Paragraphs Hard to Read?
+#### Activity 1. What Makes Paragraphs Hard to Read?
 
 Discuss the following questions:
 
 1. What is the difference between a group of sentences and a paragraph?
-2. What makes a paragraph feel “disconnected” or "jumping around"?
+2. What makes a paragraph feel 窶彭isconnected窶・or "jumping around"?
 3. Which problems do you often see in English-language administrative writing?
 
-### Activity 2. Spot the Disconnection
+#### Activity 2. Spot the Disconnection
 
 Read the following paragraph:
 
@@ -32,17 +34,17 @@ Discuss:
 - Where does the topic shift suddenly?
 - What information seems to be missing to create logical flow?
 
-## Model Text
+### Model Text
 
-### Original (Disjointed)
+#### Original (Disjointed)
 
 > *"The meeting was productive. Several issues were raised. The guidelines were unclear. The participants wanted clarification. We must revise the document."*
 
-### Improved (Cohesive)
+#### Improved (Cohesive)
 
 > *"The meeting was productive, but several issues were raised regarding the clarity of the guidelines. Because participants requested further clarification, the team agreed that the document requires revision. The next step will be to prepare a revised draft reflecting the discussion."*
 
-### Activity. Compare the Two Versions
+#### Activity. Compare the Two Versions
 
 Identify:
 
@@ -51,34 +53,34 @@ Identify:
 - how the improved version adds logical flow
 - how the improved version reduces abrupt topic shifts
 
-## Noticing Task
+### Noticing Task
 
 Highlight or underline examples of:
 
 1. **Cohesive devices** (e.g., *however, therefore, as a result, in addition*)
 2. **Reference words** (e.g., *these issues, the document, this point*)
-3. **Thematic progression** (old → new information)
-4. **Clear paragraph structure** (topic → support → implication/next step)
+3. **Thematic progression** (old 竊・new information)
+4. **Clear paragraph structure** (topic 竊・support 竊・implication/next step)
 
 Reflect: *How do these elements make the paragraph easier to read?*
 
-## Language Focus
+### Language Focus
 
-### 1. Cohesive Devices (Linking Words)
+#### 1. Cohesive Devices (Linking Words)
 
-#### a. Adding information
+##### a. Adding information
 
 - *in addition, furthermore, moreover, also*
 
-#### b. Showing result
+##### b. Showing result
 
 - *therefore, as a result, consequently, hence*
 
-#### c. Showing contrast
+##### c. Showing contrast
 
 - *however, on the other hand, although, nevertheless*
 
-#### d. Clarifying or specifying
+##### d. Clarifying or specifying
 
 - *in particular, specifically, namely*
 
@@ -89,7 +91,7 @@ Add logical connectors to the sentences:
 2. *The review was completed. __________, two errors remain.*
 3. *The instructions were updated. __________, some teams are still using the previous version.*
 
-### 2. Reference and Continuity
+#### 2. Reference and Continuity
 
 Using reference words helps maintain flow.
 
@@ -103,7 +105,7 @@ Rewrite to avoid repeating the same nouns:
 1. *The document contains errors. The document must be corrected before submission.*
 2. *The applicants raised several questions. The questions will be addressed at the next meeting.*
 
-### 3. Thematic Progression
+#### 3. Thematic Progression
 
 Good paragraphs start with known information, then move forward.
 
@@ -119,9 +121,9 @@ A. *We will draft a revised explanation to ensure consistency across offices.*
 B. *Several agencies reported confusion about the updated guidelines.*
 C. *To address these concerns, we agreed to prepare additional clarification.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rebuild the Disjointed Model
+#### Activity 1. Rebuild the Disjointed Model
 
 Rewrite the original model text into **one cohesive paragraph**.
 Include:
@@ -130,7 +132,7 @@ Include:
 - clear reference words
 - logical thematic progression
 
-### Activity 2. Paragraph Templates
+#### Activity 2. Paragraph Templates
 
 Use the following template to write a clear paragraph:
 
@@ -144,17 +146,17 @@ Write a paragraph based on one of the following:
 - summarising meeting outcomes
 - explaining a procedural challenge
 
-### Activity 3. Connector Transformations
+#### Activity 3. Connector Transformations
 
 Rewrite each sentence using the requested connector:
 
-1. *The office submitted the revision late.* → Use **however**.
-2. *We completed the review.* → Use **as a result** to connect to a second idea.
-3. *Several errors remain in the document.* → Use **in particular** to specify.
+1. *The office submitted the revision late.* 竊・Use **however**.
+2. *We completed the review.* 竊・Use **as a result** to connect to a second idea.
+3. *Several errors remain in the document.* 竊・Use **in particular** to specify.
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 7–10 Sentence Paragraph with Full Cohesion
+#### Task. Write a 7窶・0 Sentence Paragraph with Full Cohesion
 
 Choose one scenario:
 
@@ -169,16 +171,16 @@ Your paragraph must include:
 - clear thematic progression
 - a concluding implication or next step
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Is the topic clear from the first sentence?
 - Are transitions logical and smooth?
 - Does each sentence connect to the previous one?
 - Are connectors overused, underused, or misused?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing for:
 
@@ -188,14 +190,14 @@ Check your writing for:
 - unclear sentence relationships
 - weak or missing topic sentences
 
-### Editing Exercise. Improve Logical Flow
+#### Editing Exercise. Improve Logical Flow
 
 Rewrite these paragraphs for better cohesion:
 
 1. *"The applicant submitted the revised form. The guidelines were updated. The team is reviewing the change. We will send a confirmation."*
 2. *"There were delays in the translation process. Some information was missing. The office did not receive the updated version. We must check which version is correct."*
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -203,11 +205,11 @@ Choose one:
 2. Combine two short paragraphs into one cohesive paragraph.
 3. Analyse a report and highlight all cohesive devices used.
 
-## Homework
+### Homework
 
-Write a **150–180 word** cohesive explanation (internal or interagency) on one of the following:
+Write a **150窶・80 word** cohesive explanation (internal or interagency) on one of the following:
 
-- reasons for inconsistencies in an applicant’s documentation
+- reasons for inconsistencies in an applicant窶冱 documentation
 - a summary of meeting issues requiring follow-up
 - rationale for updating procedures
 
@@ -215,4 +217,4 @@ Use:
 
 - at least 5 cohesive devices
 - at least 4 reference words
-- clear paragraph structure (topic → support → implication)
+- clear paragraph structure (topic 竊・support 竊・implication)

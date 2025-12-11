@@ -1,8 +1,10 @@
-# 21. Drafting Consolidated Administrative Reports
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## Overview
+## 21. Drafting Consolidated Administrative Reports
 
-This final core unit trains learners to bring together multiple skills from the course—clarity, cohesion, synthesis, tone, rationale development, and structured explanation—to produce *consolidated administrative reports*. These reports integrate updates, issues, actions, and next steps into one coherent document. By the end of the lesson, learners will be able to:
+### Overview
+
+This final core unit trains learners to bring together multiple skills from the course窶把larity, cohesion, synthesis, tone, rationale development, and structured explanation窶杯o produce *consolidated administrative reports*. These reports integrate updates, issues, actions, and next steps into one coherent document. By the end of the lesson, learners will be able to:
 
 - consolidate multi-source information into a unified report
 - structure reports using standard administrative components
@@ -10,9 +12,9 @@ This final core unit trains learners to bring together multiple skills from the 
 - maintain professional, neutral tone throughout
 - write reports that support decision-making and interagency coordination
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Is a Consolidated Report?
+#### Activity 1. What Is a Consolidated Report?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. Why must consolidated reports be neutral and factual?
 3. What makes poorly structured reports difficult to use?
 
-### Activity 2. Identify the Problems
+#### Activity 2. Identify the Problems
 
 Read:
 
@@ -31,13 +33,13 @@ Discuss:
 - What essential details are missing?
 - How does vague wording reduce usefulness?
 
-## Model Text
+### Model Text
 
-### Original (Vague and Unstructured)
+#### Original (Vague and Unstructured)
 >
 > *"Some offices are confused about the new guidelines. Other offices have not used the new form. We need to send another message and explain everything again."*
 
-### Improved (Consolidated Administrative Report)
+#### Improved (Consolidated Administrative Report)
 >
 > **Summary:** This report consolidates updates from four offices regarding implementation of the revised applicant communication guidelines.
 >
@@ -63,7 +65,7 @@ Discuss:
 > - Offices will submit remaining questions by 22 November.
 > - A follow-up coordination meeting will be held on 29 November.
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -73,7 +75,7 @@ Identify improvements in:
 - tone and precision
 - identification of next steps
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -85,9 +87,9 @@ Highlight in the improved version:
 
 Discuss: Why does grouping information into standard categories improve readability and decision-making?
 
-## Language Focus
+### Language Focus
 
-### 1. Standard Administrative Report Structure
+#### 1. Standard Administrative Report Structure
 
 **Writing goal:** Use predictable headings to support efficient reading.
 
@@ -102,7 +104,7 @@ Common sections:
 - **Outstanding Questions**
 - **Next Steps**
 
-### Practice A. Categorise the Content
+#### Practice A. Categorise the Content
 
 Assign each line below to a category above:
 
@@ -110,7 +112,7 @@ Assign each line below to a category above:
 2. *The follow-up meeting will be held on 5 December.*
 3. *A training session was conducted to explain the changes.*
 
-### 2. Writing Clear Issue Descriptions
+#### 2. Writing Clear Issue Descriptions
 
 **Writing goal:** Explain issues specifically and without blame.
 
@@ -119,17 +121,17 @@ Assign each line below to a category above:
 
 Useful phrasing:
 
-- *expressed uncertainty regarding…*
-- *identified challenges with…*
-- *reported difficulty applying…*
+- *expressed uncertainty regarding窶ｦ*
+- *identified challenges with窶ｦ*
+- *reported difficulty applying窶ｦ*
 
-### Practice B. Rewrite for Clarity
+#### Practice B. Rewrite for Clarity
 
 Rewrite:
 
-1. *Some offices don’t understand the new instructions.*
+1. *Some offices don窶冲 understand the new instructions.*
 
-### 3. Describing Actions Taken
+#### 3. Describing Actions Taken
 
 **Writing goal:** Document completed steps clearly.
 
@@ -138,17 +140,17 @@ Rewrite:
 
 Useful structures:
 
-- *[Office] has completed…*
-- *A briefing session was conducted…*
-- *An updated version was circulated…*
+- *[Office] has completed窶ｦ*
+- *A briefing session was conducted窶ｦ*
+- *An updated version was circulated窶ｦ*
 
-### Practice C. Clarify the Action
+#### Practice C. Clarify the Action
 
 Rewrite:
 
 1. *We tried to explain things to everyone.*
 
-### 4. Listing Outstanding Questions and Next Steps
+#### 4. Listing Outstanding Questions and Next Steps
 
 **Writing goal:** Identify what remains unresolved and when action will occur.
 
@@ -157,19 +159,19 @@ Rewrite:
 
 Useful patterns:
 
-- *Further clarification is required regarding…*
-- *The next step is to…*
-- *Offices will submit…*
+- *Further clarification is required regarding窶ｦ*
+- *The next step is to窶ｦ*
+- *Offices will submit窶ｦ*
 
-### Practice D. Add Next Steps
+#### Practice D. Add Next Steps
 
 Rewrite with a next-step statement:
 
 1. *Some issues still need attention.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Report
+#### Activity 1. Rewrite the Original Report
 
 Include:
 
@@ -179,7 +181,7 @@ Include:
 - outstanding questions
 - next steps
 
-### Activity 2. Draft a Consolidated Report
+#### Activity 2. Draft a Consolidated Report
 
 Choose one scenario:
 
@@ -187,18 +189,18 @@ Choose one scenario:
 2. Interagency system rollout status
 3. Summary of guideline revision feedback
 
-Write a 10–12 sentence consolidated report.
+Write a 10窶・2 sentence consolidated report.
 
-### Activity 3. Short vs. Detailed Versions
+#### Activity 3. Short vs. Detailed Versions
 
 Write:
 
 - a **short report** (one paragraph)
 - a **full report** (four structured sections)
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 15–18 Sentence Consolidated Administrative Report
+#### Task. Write a 15窶・8 Sentence Consolidated Administrative Report
 
 Choose one:
 
@@ -215,16 +217,16 @@ Your report must include:
 - next steps
 - formal tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Are issues grouped clearly?
 - Are actions documented objectively?
 - Are outstanding questions specific?
 - Are next steps actionable?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check:
 
@@ -233,7 +235,7 @@ Check:
 - Are next steps clearly stated?
 - Does tone remain neutral and administrative?
 
-### Editing Exercise. Improve the Report
+#### Editing Exercise. Improve the Report
 
 Rewrite:
 
@@ -246,17 +248,17 @@ Add:
 - outstanding questions
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
 1. Convert raw meeting notes into a consolidated report.
-2. Rewrite a workplace report using this unit’s structure.
+2. Rewrite a workplace report using this unit窶冱 structure.
 3. Create two versions: a short executive summary and a detailed administrative report.
 
-## Homework
+### Homework
 
-Write a **250–300 word** consolidated administrative report for an internal or interagency audience. Include:
+Write a **250窶・00 word** consolidated administrative report for an internal or interagency audience. Include:
 
 - summary
 - grouped issues

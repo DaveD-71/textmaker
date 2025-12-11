@@ -1,6 +1,8 @@
-# 4. Structuring High-Level Emails
+# MODULE 2. Professional Email Writing for Interagency Contexts
 
-## Overview
+## 4. Structuring High-Level Emails
+
+### Overview
 
 This unit trains learners to structure multi-part, professional emails used in interagency, ministerial, and international communication. By the end of the lesson, learners will be able to:
 
@@ -9,9 +11,9 @@ This unit trains learners to structure multi-part, professional emails used in i
 - manage multi-part messages involving explanations, requests, and next steps
 - write emails that balance clarity, diplomacy, and efficiency
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. What Makes a High-Level Email Effective?
+#### Activity 1. What Makes a High-Level Email Effective?
 
 Discuss:
 
@@ -19,7 +21,7 @@ Discuss:
 2. How do tone and structure differ between internal, interagency, and international emails?
 3. Which email types are the most challenging for you to write?
 
-### Activity 2. Email Scenario Sorting
+#### Activity 2. Email Scenario Sorting
 
 Sort the following into categories: **Internal**, **Interagency**, **International**.
 
@@ -28,26 +30,26 @@ Sort the following into categories: **Internal**, **Interagency**, **Internation
 - Asking for updated documentation
 - Following up on an unanswered inquiry sent abroad
 
-## Model Text
+### Model Text
 
-### Original Version (Too Informal and Disorganised)
+#### Original Version (Too Informal and Disorganised)
 
 > *"Hi, we saw your message. Can you send the other file? Also, the translation had some issues so please check that too. By the way, we need to finish the review soon."*
 
-### Improved Version (Structured and Diplomatic)
+#### Improved Version (Structured and Diplomatic)
 
 > *"Thank you for your message. We would like to confirm whether the updated file is available, as the version received may not reflect the latest corrections. In addition, our team noted several inconsistencies in the translation and would appreciate your review of these points. Once the updated materials are received, we will proceed with the remaining steps of the review."*
 
-### Activity. Compare the Two Versions
+#### Activity. Compare the Two Versions
 
 Identify:
 
-- email structure (opening → purpose → details → action → closing)
+- email structure (opening 竊・purpose 竊・details 竊・action 竊・closing)
 - clarity of requests
 - tone differences
 - how each version supports the reader
 
-## Noticing Task
+### Noticing Task
 
 Highlight the following in the improved email:
 
@@ -58,9 +60,9 @@ Highlight the following in the improved email:
 
 Discuss: Which of these features is hardest to produce in your own writing?
 
-## Language Focus
+### Language Focus
 
-### 1. Structural Building Blocks
+#### 1. Structural Building Blocks
 
 High-level emails often follow this structure:
 
@@ -71,34 +73,34 @@ High-level emails often follow this structure:
 5. **Next steps or timeline**
 6. **Closing**
 
-### 2. Useful Phrases
+#### 2. Useful Phrases
 
-#### Providing Context
+##### Providing Context
 
-- *Thank you for your message regarding…*
-- *We would like to confirm the status of…*
+- *Thank you for your message regarding窶ｦ*
+- *We would like to confirm the status of窶ｦ*
 
-#### Stating Purpose
+##### Stating Purpose
 
-- *The purpose of this email is to…*
-- *We are writing to request clarification on…*
+- *The purpose of this email is to窶ｦ*
+- *We are writing to request clarification on窶ｦ*
 
-#### Explaining Issues
+##### Explaining Issues
 
-- *Our team noted the following points…*
-- *It appears that the attached file may not reflect…*
+- *Our team noted the following points窶ｦ*
+- *It appears that the attached file may not reflect窶ｦ*
 
-#### Making Requests
+##### Making Requests
 
-- *We would appreciate it if you could…*
-- *Could you kindly confirm whether…*
+- *We would appreciate it if you could窶ｦ*
+- *Could you kindly confirm whether窶ｦ*
 
-#### Presenting Next Steps
+##### Presenting Next Steps
 
-- *Once we receive the updated file, we will…*
-- *We plan to proceed with…*
+- *Once we receive the updated file, we will窶ｦ*
+- *We plan to proceed with窶ｦ*
 
-### Practice A. Identify the Function
+#### Practice A. Identify the Function
 
 Label each line as **context**, **purpose**, **explanation**, **request**, or **next step**.
 
@@ -107,17 +109,17 @@ Label each line as **context**, **purpose**, **explanation**, **request**, or **
 3. *Once confirmed, we will update the internal record.*
 4. *Our team noted inconsistencies in the attached document.*
 
-### Practice B. Reorder for Structure
+#### Practice B. Reorder for Structure
 
 Reorder the sentences into a logical email:
 A. *We would appreciate your review of the translation inconsistencies noted below.*
-B. *Thank you for your message regarding the applicant’s file.*
+B. *Thank you for your message regarding the applicant窶冱 file.*
 C. *Once we receive the corrected version, we will proceed with the review.*
 D. *We would like to confirm whether an updated file is available.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Expand the Model
+#### Activity 1. Expand the Model
 
 Add the following content to the improved model email:
 
@@ -125,7 +127,7 @@ Add the following content to the improved model email:
 - a polite request for a timeline
 - a closing sentence emphasising cooperation
 
-### Activity 2. Write Using This Template
+#### Activity 2. Write Using This Template
 
 **Template:**
 
@@ -141,7 +143,7 @@ Use this template to write an email requesting:
 - updated information from an interagency counterpart **OR**
 - clarification from an international office
 
-### Activity 3. Tone Shift
+#### Activity 3. Tone Shift
 
 Rewrite the same email in two versions:
 
@@ -154,9 +156,9 @@ Compare:
 - degree of softening
 - structural clarity
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a Full Multi-Part Email (8–12 sentences)
+#### Task. Write a Full Multi-Part Email (8窶・2 sentences)
 
 Choose one scenario:
 
@@ -172,7 +174,7 @@ Your email must include:
 - next steps
 - diplomatic closing
 
-### Peer Review
+#### Peer Review
 
 Partners answer:
 
@@ -181,9 +183,9 @@ Partners answer:
 - Does the tone fit the audience?
 - Are the next steps clear?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check if your email:
 
@@ -193,7 +195,7 @@ Check if your email:
 - avoids long, unstructured paragraphs
 - states next steps clearly
 
-### Editing Exercise. Improve Structure
+#### Editing Exercise. Improve Structure
 
 Rewrite the following email:
 
@@ -207,7 +209,7 @@ Add:
 - diplomatic tone
 - clear next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -215,9 +217,9 @@ Choose one:
 2. Draft two versions of a complex email: short-form and long-form.
 3. Analyse a high-level email you received and map its structure.
 
-## Homework
+### Homework
 
-Write a **170–200 word** high-level email requesting multiple actions related to an applicant file. Include:
+Write a **170窶・00 word** high-level email requesting multiple actions related to an applicant file. Include:
 
 - explicit purpose
 - clear explanation

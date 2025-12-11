@@ -1,15 +1,17 @@
-# 23 – Portfolio Writing & Final Revision
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## 1. Overview
+## 23 窶・Portfolio Writing & Final Revision
 
-This final unit brings together all skills from Units 1–22. You will create a **small writing portfolio** demonstrating your ability to produce clear, accurate, coherent, concise, and professionally toned administrative writing. You will:
+### 1. Overview
+
+This final unit brings together all skills from Units 1窶・2. You will create a **small writing portfolio** demonstrating your ability to produce clear, accurate, coherent, concise, and professionally toned administrative writing. You will:
 
 - Select and revise multiple documents based on earlier units
 - Produce polished final versions for assessment
 - Show your ability to adjust tone, structure, and clarity for different audiences
 - Demonstrate consistent writing across multiple tasks
 
-## 2. What Is a Writing Portfolio?
+### 2. What Is a Writing Portfolio?
 
 A writing portfolio is a collection of your **best revised work**, showing your full range of skills.
 
@@ -29,9 +31,9 @@ Your final submission should show:
 - Concise style
 - Consistency across documents
 
-## 3. Warm-Up: Select Your Drafts
+### 3. Warm-Up: Select Your Drafts
 
-Look back at your writing from Units 1–22.
+Look back at your writing from Units 1窶・2.
 Choose **three drafts** you want to improve:
 
 1. One email (internal or external)
@@ -43,35 +45,35 @@ Write the titles or sources of the drafts you chose:
 2.
 3.
 
-## 4. Language Focus – Advanced Editing Checklist
+### 4. Language Focus 窶・Advanced Editing Checklist
 
 Before revising your drafts, check for:
 
-### Accuracy
+#### Accuracy
 
 - Verb forms, articles, prepositions, plurals
 
-### Clarity
+#### Clarity
 
 - Simple, direct sentences
 - No vague language
 
-### Tone
+#### Tone
 
 - Polite, neutral, professional
 - Appropriate for audience (external, internal, colleague)
 
-### Coherence
+#### Coherence
 
 - Clear connections between ideas
 - Logical flow
 
-### Conciseness
+#### Conciseness
 
 - Remove unnecessary repetition
 - Avoid long or wordy expressions
 
-## 5. Practice A – Edit a Draft Email
+### 5. Practice A 窶・Edit a Draft Email
 
 Choose **one email** from your previous work.
 Rewrite it to meet portfolio standards.
@@ -80,7 +82,7 @@ Rewrite it to meet portfolio standards.
 
 **Revised email:**
 
-## 6. Practice B – Edit a Paragraph
+### 6. Practice B 窶・Edit a Paragraph
 
 Choose **one paragraph** from earlier units.
 Rewrite it using your full editing skills.
@@ -89,7 +91,7 @@ Rewrite it using your full editing skills.
 
 **Revised paragraph:**
 
-## 7. Practice C – Edit a Notice or Short Message
+### 7. Practice C 窶・Edit a Notice or Short Message
 
 Choose **one notice or message** from previous units.
 Rewrite it clearly and professionally.
@@ -98,19 +100,19 @@ Rewrite it clearly and professionally.
 
 **Revised message:**
 
-## 8. Guided Practice – Create a New Document
+### 8. Guided Practice 窶・Create a New Document
 
 Write **one new document** based on a scenario below.
 Choose ONE:
 
-- A clear update email (6–8 sentences)
-- A meeting summary (5–7 sentences)
-- A short external inquiry email (5–7 sentences)
-- A problem explanation for an internal report (6–8 sentences)
+- A clear update email (6窶・ sentences)
+- A meeting summary (5窶・ sentences)
+- A short external inquiry email (5窶・ sentences)
+- A problem explanation for an internal report (6窶・ sentences)
 
 Write your new document:
 
-## 9. Final Portfolio Submission
+### 9. Final Portfolio Submission
 
 Your final portfolio should contain **four items**:
 
@@ -126,12 +128,12 @@ Each item must:
 - Have professional tone
 - Show coherence and consistent formatting
 
-## 10. Reflection
+### 10. Reflection
 
 1. Which portfolio item improved the most after revision?
 2. Which skill area do you feel most confident about now?
 3. What writing strategies will you continue using in your work?
 
-## 11. Homework (Final Course Task)
+### 11. Homework (Final Course Task)
 
 Choose any earlier writing task and complete a **third revision**, focusing on perfecting tone, flow, and accuracy.

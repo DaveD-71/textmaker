@@ -1,8 +1,10 @@
-# 20. Writing Concise Justifications for Decisions
+# MODULE 6. Capstone & Applied Administrative Writing
 
-## Overview
+## 20. Writing Concise Justifications for Decisions
 
-This unit develops learners’ ability to write concise, logically structured justifications for administrative decisions. These short justifications appear in approval memos, interagency notes, email explanations, and procedural documentation. By the end of this lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to write concise, logically structured justifications for administrative decisions. These short justifications appear in approval memos, interagency notes, email explanations, and procedural documentation. By the end of this lesson, learners will be able to:
 
 - distinguish between a *decision* and a *justification*
 - identify essential elements of a concise justification
@@ -10,9 +12,9 @@ This unit develops learners’ ability to write concise, logically structured ju
 - align justifications with policy, procedures, or evidence
 - write short, clear paragraphs that support decision-making
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Why Do We Justify Decisions?
+#### Activity 1. Why Do We Justify Decisions?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. What happens when a justification is missing or unclear?
 3. What level of detail is appropriate for a *concise* justification?
 
-### Activity 2. Identify the Problem
+#### Activity 2. Identify the Problem
 
 Read:
 
@@ -31,17 +33,17 @@ Discuss:
 - Why is this not an adequate justification?
 - What information is missing?
 
-## Model Text
+### Model Text
 
-### Original (Insufficient and Vague)
+#### Original (Insufficient and Vague)
 >
 > *"We changed the process because the old one was confusing. The new one should be better."*
 
-### Improved (Concise, Policy-Aligned Justification)
+#### Improved (Concise, Policy-Aligned Justification)
 >
 > *"The process has been revised to align with the updated applicant communication guidelines issued in July. The new sequence removes duplicated checks and clarifies terminology, reducing the likelihood of inconsistent interpretation across offices. This adjustment supports more efficient review and ensures compliance with current interagency standards."*
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -51,7 +53,7 @@ Identify improvements in:
 - tone
 - persuasiveness
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -62,9 +64,9 @@ Highlight in the improved version:
 
 Discuss: Why do concise justifications help decision-makers work faster?
 
-## Language Focus
+### Language Focus
 
-### 1. Stating the Decision Clearly
+#### 1. Stating the Decision Clearly
 
 **Writing goal:** Provide a short, direct statement of what was decided.
 
@@ -73,17 +75,17 @@ Discuss: Why do concise justifications help decision-makers work faster?
 
 Useful expressions:
 
-- *We will…*
-- *The office will…*
-- *It has been decided that…*
+- *We will窶ｦ*
+- *The office will窶ｦ*
+- *It has been decided that窶ｦ*
 
-### Practice A. Rewrite the Decision
+#### Practice A. Rewrite the Decision
 
 Rewrite to make the decision clear:
 
 1. *We are thinking of changing the guideline.*
 
-### 2. Giving a Concise Rationale
+#### 2. Giving a Concise Rationale
 
 **Writing goal:** Explain *why* the decision was made, using policy, evidence, or process requirements.
 
@@ -92,17 +94,17 @@ Rewrite to make the decision clear:
 
 Useful patterns:
 
-- *This decision supports…*
-- *This change is necessary because…*
-- *To ensure consistency…*
+- *This decision supports窶ｦ*
+- *This change is necessary because窶ｦ*
+- *To ensure consistency窶ｦ*
 
-### Practice B. Strengthen the Rationale
+#### Practice B. Strengthen the Rationale
 
 Rewrite to add a stronger rationale:
 
 1. *We changed the form.*
 
-### 3. Explaining Expected Benefits
+#### 3. Explaining Expected Benefits
 
 **Writing goal:** State the practical or procedural advantages.
 
@@ -111,17 +113,17 @@ Rewrite to add a stronger rationale:
 
 Useful expressions:
 
-- *This will improve…*
-- *This reduces the risk of…*
-- *This contributes to…*
+- *This will improve窶ｦ*
+- *This reduces the risk of窶ｦ*
+- *This contributes to窶ｦ*
 
-### Practice C. Add a Benefit
+#### Practice C. Add a Benefit
 
 Add a benefit:
 
 1. *We updated the instructions.*
 
-### 4. Structuring a 3–4 Sentence Justification
+#### 4. Structuring a 3窶・ Sentence Justification
 
 **Writing goal:** Combine decision + rationale + benefit into a short paragraph.
 
@@ -132,16 +134,16 @@ Add a benefit:
 3. Describe expected benefits.
 4. Signal relevance for stakeholders.
 
-### Practice D. Organise a Justification
+#### Practice D. Organise a Justification
 
 Reorganise into a logical paragraph:
-A. *This supports cross-office consistency.* 
-B. *The office will use the revised terminology list.* 
+A. *This supports cross-office consistency.*
+B. *The office will use the revised terminology list.*
 C. *This aligns with the updated guidelines.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Justification
+#### Activity 1. Rewrite the Original Justification
 
 Write a concise justification including:
 
@@ -150,7 +152,7 @@ Write a concise justification including:
 - benefits
 - clear, neutral tone
 
-### Activity 2. Draft a Justification for One Scenario
+#### Activity 2. Draft a Justification for One Scenario
 
 Choose:
 
@@ -158,18 +160,18 @@ Choose:
 2. Change in applicant communication steps
 3. Adjustment of a review timeline
 
-Write a 5–7 sentence justification.
+Write a 5窶・ sentence justification.
 
-### Activity 3. Short vs. Expanded Version
+#### Activity 3. Short vs. Expanded Version
 
 Write:
 
 - a **three-sentence justification** for an executive
 - a **six-sentence justification** for interagency partners
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 10–12 Sentence Justification
+#### Task. Write a 10窶・2 Sentence Justification
 
 Choose one:
 
@@ -185,15 +187,15 @@ Your justification must include:
 - policy alignment
 - neutral, formal tone
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Is the decision clearly stated?
 - Is the rationale persuasive and policy-aligned?
 - Are benefits specific and realistic?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check your writing:
 
@@ -202,11 +204,11 @@ Check your writing:
 - are benefits clearly stated?
 - is policy alignment included?
 
-### Editing Exercise
+#### Editing Exercise
 
 Rewrite:
 
-> *"We changed the workflow because the old one wasn’t very good, so this should be better."*
+> *"We changed the workflow because the old one wasn窶冲 very good, so this should be better."*
 
 Add:
 
@@ -215,7 +217,7 @@ Add:
 - benefits
 - formal tone
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -223,9 +225,9 @@ Choose one:
 2. Analyse a policy decision and identify its underlying rationale.
 3. Convert a long explanation into a concise justification.
 
-## Homework
+### Homework
 
-Write a **200–230 word** concise justification supporting an administrative or interagency decision. Include:
+Write a **200窶・30 word** concise justification supporting an administrative or interagency decision. Include:
 
 - clear decision
 - rationale

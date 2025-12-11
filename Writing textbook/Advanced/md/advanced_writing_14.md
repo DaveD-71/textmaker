@@ -1,8 +1,10 @@
-# 14. Writing Complex Multi-Audience Messages
+# MODULE 4. Cross-Border & Interagency Communication
 
-## Overview
+## 14. Writing Complex Multi-Audience Messages
 
-This unit develops learners’ ability to write messages intended for multiple audiences with different levels of knowledge, authority, and responsibility. By the end of this lesson, learners will be able to:
+### Overview
+
+This unit develops learners窶・ability to write messages intended for multiple audiences with different levels of knowledge, authority, and responsibility. By the end of this lesson, learners will be able to:
 
 - identify the needs of internal, interagency, and international readers
 - structure messages so information is accessible to all audiences
@@ -10,9 +12,9 @@ This unit develops learners’ ability to write messages intended for multiple a
 - balance detail and conciseness appropriately
 - write layered explanations addressing multiple perspectives
 
-## Warm-Up
+### Warm-Up
 
-### Activity 1. Who Are the Audiences?
+#### Activity 1. Who Are the Audiences?
 
 Discuss:
 
@@ -20,7 +22,7 @@ Discuss:
 2. How much background knowledge does each audience have?
 3. What problems occur when a message assumes too much prior knowledge?
 
-### Activity 2. Identify the Audience Gap
+#### Activity 2. Identify the Audience Gap
 
 Read:
 >
@@ -31,17 +33,17 @@ Discuss:
 - What information is missing for an external or international audience?
 - What assumptions is the writer making?
 
-## Model Text
+### Model Text
 
-### Original (Assumes Too Much Knowledge)
+#### Original (Assumes Too Much Knowledge)
 >
 > *"We shared the new instructions last week, so please start using the updated timeline. As you know, this fixes the issues identified earlier."*
 
-### Improved (Clear Multi-Audience Message)
+#### Improved (Clear Multi-Audience Message)
 >
 > *"We would like to confirm that the updated instructions circulated on 3 October should now be used for all applicant submissions. For colleagues already familiar with the revision, the main change concerns the applicant communication timeline in Section 2.2. For partner offices, we note that the revision was introduced to resolve inconsistencies identified in the previous version. Should any questions arise regarding the updated process, please feel free to contact our office."*
 
-### Activity. Compare the Versions
+#### Activity. Compare the Versions
 
 Identify improvements in:
 
@@ -50,7 +52,7 @@ Identify improvements in:
 - assumptions
 - tone and clarity
 
-## Noticing Task
+### Noticing Task
 
 Highlight in the improved version:
 
@@ -61,9 +63,9 @@ Highlight in the improved version:
 
 Discuss: How does acknowledging multiple audiences improve clarity?
 
-## Language Focus
+### Language Focus
 
-### 1. Identifying Audience Needs
+#### 1. Identifying Audience Needs
 
 **Writing goal:** Include enough explanation so all audiences can interpret the message.
 
@@ -72,18 +74,18 @@ Discuss: How does acknowledging multiple audiences improve clarity?
 
 Useful patterns:
 
-- *For colleagues already familiar with…*
-- *For partner offices…*
-- *For agencies not involved in earlier discussions…*
+- *For colleagues already familiar with窶ｦ*
+- *For partner offices窶ｦ*
+- *For agencies not involved in earlier discussions窶ｦ*
 
-### Practice A. Add Audience Signals
+#### Practice A. Add Audience Signals
 
 Rewrite adding explicit audience references:
 
 1. *Please use the updated form.*
 2. *The instructions have changed.*
 
-### 2. Providing Layered Explanations
+#### 2. Providing Layered Explanations
 
 **Writing goal:** Present information that supports readers with different levels of knowledge.
 
@@ -92,17 +94,17 @@ Rewrite adding explicit audience references:
 
 Useful structures:
 
-- *The main change concerns…*
-- *For those unfamiliar with…*
-- *This revision was introduced to…*
+- *The main change concerns窶ｦ*
+- *For those unfamiliar with窶ｦ*
+- *This revision was introduced to窶ｦ*
 
-### Practice B. Expand for Multiple Audiences
+#### Practice B. Expand for Multiple Audiences
 
 Rewrite with layered explanation:
 
 1. *The process has been updated.*
 
-### 3. Avoiding Assumed Knowledge
+#### 3. Avoiding Assumed Knowledge
 
 **Writing goal:** Ensure that readers who did not attend meetings or receive earlier messages can still understand.
 
@@ -111,17 +113,17 @@ Rewrite with layered explanation:
 
 Useful phrasing:
 
-- *To provide context…*
-- *As background…*
-- *This change responds to…*
+- *To provide context窶ｦ*
+- *As background窶ｦ*
+- *This change responds to窶ｦ*
 
-### Practice C. Add Background Context
+#### Practice C. Add Background Context
 
 Add background:
 
 1. *Please follow the new timeline.*
 
-### 4. Structuring Messages for Mixed Audiences
+#### 4. Structuring Messages for Mixed Audiences
 
 **Writing goal:** Use structure to guide different readers through the message.
 
@@ -134,15 +136,15 @@ Useful tools:
 - numbered lists
 - transitional phrases
 
-### Practice D. Improve Structure
+#### Practice D. Improve Structure
 
 Rewrite with clear structure:
 
 1. *The new instructions should be used. The old version is no longer valid. We will send an explanation later.*
 
-## Guided Writing
+### Guided Writing
 
-### Activity 1. Rewrite the Original Message
+#### Activity 1. Rewrite the Original Message
 
 Rewrite the unclear original message using:
 
@@ -151,7 +153,7 @@ Rewrite the unclear original message using:
 - layered explanations
 - clear next steps
 
-### Activity 2. Create a Multi-Audience Notice
+#### Activity 2. Create a Multi-Audience Notice
 
 Choose one scenario:
 
@@ -159,7 +161,7 @@ Choose one scenario:
 2. Revised applicant communication guidelines for interagency use
 3. Updated terminology list for internal teams and partner agencies
 
-Write an 8–10 sentence notice including:
+Write an 8窶・0 sentence notice including:
 
 - explanation for experienced users
 - explanation for unfamiliar users
@@ -167,7 +169,7 @@ Write an 8–10 sentence notice including:
 - required actions
 - next steps
 
-### Activity 3. Two Versions of the Same Message
+#### Activity 3. Two Versions of the Same Message
 
 Write:
 
@@ -180,9 +182,9 @@ Discuss differences in:
 - tone
 - structure
 
-## Freer Writing
+### Freer Writing
 
-### Task. Write a 12–15 Sentence Multi-Audience Message
+#### Task. Write a 12窶・5 Sentence Multi-Audience Message
 
 Choose one:
 
@@ -198,15 +200,15 @@ Your message must include:
 - required actions
 - next steps
 
-### Peer Review Questions
+#### Peer Review Questions
 
 - Does the message support unfamiliar readers?
 - Does it avoid assumed knowledge?
 - Is the structure accessible to different audiences?
 
-## Editing Skills
+### Editing Skills
 
-### Editing Checklist
+#### Editing Checklist
 
 Check whether your writing:
 
@@ -215,7 +217,7 @@ Check whether your writing:
 - includes unnecessary detail for internal readers
 - mixes unrelated information in one paragraph
 
-### Editing Exercise
+#### Editing Exercise
 
 Rewrite:
 
@@ -228,7 +230,7 @@ Add:
 - layered explanation
 - next steps
 
-## Extension Task
+### Extension Task
 
 Choose one:
 
@@ -236,9 +238,9 @@ Choose one:
 2. Convert a long explanation into a layered multi-audience notice.
 3. Analyse an unclear multi-audience message and propose improvements.
 
-## Homework
+### Homework
 
-Write a **220–260 word** multi-audience notice for a procedural or policy change. Include:
+Write a **220窶・60 word** multi-audience notice for a procedural or policy change. Include:
 
 - background
 - layered explanation
