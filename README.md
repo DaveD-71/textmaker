@@ -28,6 +28,22 @@ python .\scripts\generate_reference_docx.py --out reference.docx
 python .\scripts\cli.py --input "..\path\to\your\file.md" --output "MyBook.docx"
 ```
 
+## Generate `reference.docx` (options)
+
+```powershell
+# write reference.docx to the current folder (default)
+python .\scripts\generate_reference_docx.py
+
+# choose a custom output path
+python .\scripts\generate_reference_docx.py --out ".\Writing textbook\Advanced\reference.docx"
+
+# show all flags
+python .\scripts\generate_reference_docx.py --help
+```
+
+- `--out <path>`: output path for the generated reference file (default `reference.docx`).
+- `-h, --help`: show the built-in help for the generator script.
+
 ## CLI usage and options
 
 ```powershell
