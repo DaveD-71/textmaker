@@ -1,0 +1,38 @@
+".\Writing textbook\Advanced\md"
+
+".\Writing textbook\Intermediate\md"
+
+python .\scripts\cli.py `
+  --input `
+  <file-or-folder> `
+  --output `
+  output.docx `
+  --reference reference.docx `
+  --toc `
+  --toc-depth 1
+
+
+Intermediate
+--------------
+
+python .\scripts\cli.py `
+  --input `
+  ".\Writing textbook\Intermediate\md" `
+  --output `
+   ".\Writing textbook\Intermediate\md\intW.docx" `
+  --reference reference.docx `
+  --toc `
+  --toc-depth 1
+
+
+Advanced
+----------
+
+python .\scripts\cli.py `
+  --input `
+  ".\Writing textbook\Advanced\md" `
+  --output `
+  ".\Writing textbook\Advanced\md\advW.docx" `
+  --reference reference.docx `
+  --toc `
+  --toc-depth 1
