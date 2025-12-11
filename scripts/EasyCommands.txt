@@ -36,3 +36,13 @@ python .\scripts\cli.py `
   --reference reference.docx `
   --toc `
   --toc-depth 1
+
+
+IP R&D_intermediate
+------------
+
+  python .\scripts\cli.py `
+  --input `
+  ".\IP_R&D\IP_R&D_intermediate.md" `
+  --output `
+  ".\IP_R&D\IP_R&D_intermediate.docx"
