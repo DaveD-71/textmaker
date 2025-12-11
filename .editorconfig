@@ -1,0 +1,5 @@
+# EditorConfig helps maintain consistent encoding/formatting across tools
+root = true
+
+[*]
+charset = utf-8
