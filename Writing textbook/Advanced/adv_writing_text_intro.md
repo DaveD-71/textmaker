@@ -1,6 +1,6 @@
-# **ADVANCED WRITING TEXTBOOK**
+# **Administrative Writing, Advanced**
 
-### *(Administrative & Professional Communication Writing, Units 1–23)*
+*(Administrative & Professional Communication Writing, Units 1–23)*
 
 ## **a. Purpose of the Text**
 

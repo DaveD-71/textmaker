@@ -32,6 +32,9 @@ def build_pandoc_cmd(input_path: Path, output_path: Path, reference: Path, toc: 
         '--to', 'docx',
         '--output', str(output_path),
     ]
+    pagebreak_filter = Path(__file__).parent / 'pagebreak.lua'
+    if pagebreak_filter.exists():
+        cmd += ['--lua-filter', str(pagebreak_filter)]
     if reference and reference.exists():
         cmd += ['--reference-doc', str(reference)]
     if toc:
