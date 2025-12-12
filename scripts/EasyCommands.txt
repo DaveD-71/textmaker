@@ -19,7 +19,7 @@ python .\scripts\cli.py `
   --input `
   ".\Writing textbook\Intermediate\md" `
   --output `
-   ".\Writing textbook\Intermediate\md\intW.docx" `
+   ".\Writing textbook\Intermediate\intW.docx" `
   --reference reference.docx `
   --toc `
   --toc-depth 1
@@ -32,7 +32,7 @@ python .\scripts\cli.py `
   --input `
   ".\Writing textbook\Advanced\md" `
   --output `
-  ".\Writing textbook\Advanced\md\advW.docx" `
+  ".\Writing textbook\Advanced\advW.docx" `
   --reference reference.docx `
   --toc `
   --toc-depth 1

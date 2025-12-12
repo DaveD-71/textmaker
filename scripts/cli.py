@@ -21,10 +21,14 @@ def check_pandoc():
 
 
 def build_pandoc_cmd(input_path: Path, output_path: Path, reference: Path, toc: bool, toc_depth: int):
+    # Disable YAML metadata blocks so in-document `---` separators are not parsed as YAML.
+    # This avoids errors like `Unknown alias "Source"` when source notes follow a horizontal rule.
+    pandoc_input_fmt = 'markdown-yaml_metadata_block'
+
     cmd = [
         'pandoc',
         str(input_path),
-        '--from', 'markdown',
+        '--from', pandoc_input_fmt,
         '--to', 'docx',
         '--output', str(output_path),
     ]
