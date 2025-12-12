@@ -27,6 +27,7 @@ Read the sentences below. Identify what is **unclear** or **missing**.
 4. "The deadline has changed."
 
 Write what you would need to know:
+
 1.
 2.
 3.
@@ -118,6 +119,7 @@ Read each short scenario. Write **two clarification questions** for each one.
 
 The instructions say: "Submit the form as soon as possible."
 Your questions:
+
 1.
 2.
 
@@ -125,6 +127,7 @@ Your questions:
 
 Two versions of a file are attached, both named "Application_Final".
 Your questions:
+
 1.
 2.
 
@@ -132,6 +135,7 @@ Your questions:
 
 A supervisor writes: "Please prepare the report." No details are given.
 Your questions:
+
 1.
 2.
 

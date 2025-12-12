@@ -44,6 +44,7 @@ Identify the problems.
 4. "The information is kind of different from the last version."
 
 Write the problems (too vague? too long? unnecessary words?):
+
 1.
 2.
 3.
@@ -109,6 +110,7 @@ B. We reviewed the applicant’s file this morning.
 C. This will delay the next review stage.
 
 Write the best order:
+
 1.
 2.
 3.

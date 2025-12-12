@@ -45,6 +45,7 @@ Read the scenario and answer the questions.
 4. What details must be included in each message?
 
 Write your answers:
+
 1.
 2.
 3.

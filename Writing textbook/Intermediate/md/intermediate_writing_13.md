@@ -45,6 +45,7 @@ Read each explanation. Identify what is missing.
 4. "The process will take longer."
 
 What is missing?
+
 1.
 2.
 3.

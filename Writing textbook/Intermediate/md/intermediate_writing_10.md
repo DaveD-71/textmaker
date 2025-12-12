@@ -43,6 +43,7 @@ Read the sentences. What is missing from each?
 4. "We cannot access the document."
 
 Write what information is missing:
+
 1.
 2.
 3.

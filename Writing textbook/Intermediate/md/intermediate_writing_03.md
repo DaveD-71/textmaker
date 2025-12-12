@@ -103,6 +103,7 @@ Label each sentence:
 3. This information forms part of the initial review before we proceed to later steps.
 
 Your labels:
+
 1.
 2.
 3.
@@ -116,6 +117,7 @@ Your labels:
 3. These observations will be included in the technical report that follows.
 
 Your labels:
+
 1.
 2.
 3.
@@ -140,6 +142,7 @@ B. We checked the application yesterday.
 C. These issues form part of the initial documentation review.
 
 Write the best order:
+
 1.
 2.
 3.

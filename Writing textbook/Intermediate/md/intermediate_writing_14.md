@@ -43,6 +43,7 @@ Identify what the reader is confused about.
 4. "The instructions say two things."
 
 Write the point of confusion:
+
 1.
 2.
 3.

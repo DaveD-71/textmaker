@@ -54,6 +54,7 @@ Choose **three drafts** you want to improve:
 3. One short notice or message
 
 Write the titles or sources of the drafts you chose:
+
 1.
 2.
 3.

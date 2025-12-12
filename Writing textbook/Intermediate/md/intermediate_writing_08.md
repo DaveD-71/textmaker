@@ -110,6 +110,7 @@ C. Enter the applicant’s information into the system.
 D. Confirm the submission date.
 
 Write the correct order:
+
 1.
 2.
 3.
@@ -142,6 +143,7 @@ Write a short procedure (4–6 steps) based on the situation.
 **Situation:** You need to explain how to save a document in the correct folder for your team.
 
 Write your procedure:
+
 1.
 2.
 3.
@@ -162,6 +164,7 @@ C. How to check and update applicant information.
 D. How to submit a form to another department.
 
 Procedure 1:
+
 1.
 2.
 3.
@@ -171,6 +174,7 @@ Procedure 1:
 7.
 
 Procedure 2:
+
 1.
 2.
 3.

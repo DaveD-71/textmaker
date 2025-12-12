@@ -27,6 +27,7 @@ Read each message and identify what information a reader would still need.
 4. "The system will be updated."
 
 Write what is missing:
+
 1.
 2.
 3.
@@ -108,6 +109,7 @@ B. The system will be under maintenance on Friday.
 C. Users may not be able to access certain functions.
 
 Write the best order:
+
 1.
 2.
 3.
