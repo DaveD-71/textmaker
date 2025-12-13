@@ -19,8 +19,9 @@ python .\scripts\cli.py `
   --input `
   ".\Writing textbook\Intermediate\md" `
   --output `
-   ".\Writing textbook\Intermediate\intW.docx" `
-  --reference reference.docx `
+   ".\Writing textbook\Intermediate\intW2.docx" `
+  --reference `
+    ".\Writing textbook\admin-writing-style-ref.docx" `
   --toc `
   --toc-depth 1
 
