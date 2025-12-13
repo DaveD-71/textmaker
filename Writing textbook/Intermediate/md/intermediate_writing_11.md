@@ -1,8 +1,8 @@
 # MODULE 3. Writing Procedures & Internal Explanations
 
-## Unit 11 – Writing Simple Meeting Summaries
+## 11. Writing Simple Meeting Summaries
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write **clear, simple summaries of meetings** for internal administrative use. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to write **clear, simple summaries of meetings*
 
 - Practise writing paragraphs and short summaries
 
-### 2. What Is a Meeting Summary?
+### What Is a Meeting Summary?
 
 A meeting summary is a **brief record** of important points from a meeting. It:
 
@@ -31,7 +31,7 @@ A meeting summary is a **brief record** of important points from a meeting. It:
 Meeting Summary – Review Preparation Meeting  
 The team discussed the schedule for next week’s review. Two documents still require confirmation from the external office. The IT team will prepare access to the shared folder by Monday. A follow-up meeting is planned for Wednesday.
 
-### 3. Warm-Up: Which Summary Is Clearer?
+### Warm-Up: Which Summary Is Clearer?
 
 Compare the two versions.
 
@@ -45,7 +45,7 @@ The team reviewed the preparation checklist. Two items still require confirmatio
 
 **Discussion:** Why is Summary B clearer?
 
-### 4. Language Focus 1 – Key Elements of a Meeting Summary
+### Language Focus 1 – Key Elements of a Meeting Summary
 
 A clear summary usually includes:
 
@@ -69,7 +69,7 @@ A clear summary usually includes:
 
 - The team will…
 
-### 5. Practice A – Identify the Elements
+### Practice A – Identify the Elements
 
 Label each sentence with: **T = Topic**, **M = Main point**, **D = Decision**, **A = Action item**.
 
@@ -87,7 +87,7 @@ Your answers:
 3.
 4.
 
-### 6. Practice B – Improve the Clarity
+### Practice B – Improve the Clarity
 
 Rewrite each summary to make it clearer.
 
@@ -100,7 +100,7 @@ Rewrite each summary to make it clearer.
 3. "The form was discussed. Someone needs to fix it."
    →
 
-### 7. Guided Practice – Write a Short Meeting Summary
+### Guided Practice – Write a Short Meeting Summary
 
 Write a short paragraph (4–6 sentences) summarising the meeting.
 
@@ -108,7 +108,7 @@ Write a short paragraph (4–6 sentences) summarising the meeting.
 
 Write your summary:
 
-### 8. Freer Practice – Write Two Summaries
+### Freer Practice – Write Two Summaries
 
 Choose two situations and write meeting summaries.
 
@@ -121,7 +121,7 @@ D. Discussion about solving a system access issue.
 
 Write your summaries:
 
-### 9. Extended Writing Task – Meeting Report Section
+### Extended Writing Task – Meeting Report Section
 
 Write a 6–8 sentence section for a formal report summarising a meeting.
 Include:
@@ -138,7 +138,7 @@ Include:
 
 Write your report section:
 
-### 10. Reflection
+### Reflection
 
 1. What part of meeting summaries is easiest for you?  
 
@@ -146,6 +146,6 @@ Write your report section:
 
 3. Which phrases from this unit will you use in your work?
 
-### 11. Homework
+### Homework
 
 Write a summary of a real meeting you attended this week. Keep it to 5–7 sentences.

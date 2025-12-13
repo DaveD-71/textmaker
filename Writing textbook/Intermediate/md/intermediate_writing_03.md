@@ -1,8 +1,8 @@
 # MODULE 1. Foundations of Clear Administrative Writing
 
-## Unit 3 – Paragraph Structure
+## 3. Paragraph Structure
 
-### 1. Unit Focus
+### Unit Focus
 
 This unit teaches **what a paragraph is**, how to structure it clearly, and when to begin a new paragraph. You will:
 
@@ -14,7 +14,7 @@ This unit teaches **what a paragraph is**, how to structure it clearly, and when
 
 - Write longer, clearer administrative paragraphs
 
-### 2. What Is a Paragraph?
+### What Is a Paragraph?
 
 A **paragraph** is a group of sentences about **one main idea**. All sentences in the paragraph should connect to that idea.
 
@@ -34,7 +34,7 @@ A **paragraph** is a group of sentences about **one main idea**. All sentences i
 
 - A single sentence (except in special cases)
 
-### 3. When Should You Start a New Paragraph?
+### When Should You Start a New Paragraph?
 
 Start a new paragraph when:
 
@@ -54,7 +54,7 @@ Start a new paragraph when:
 
 3. Summarising a problem → Reporting what you did → What will happen next
 
-### 4. Warm-Up: Which Is a Better Paragraph?
+### Warm-Up: Which Is a Better Paragraph?
 
 Read both paragraphs. Decide which one is **better organised**.
 
@@ -68,7 +68,7 @@ We reviewed the updated guidelines yesterday. The office renovation will begin n
 
 **Discussion:** Why is Paragraph A better?
 
-### 5. Language Focus 1: Three-Part Structure
+### Language Focus 1: Three-Part Structure
 
 A strong paragraph usually includes:
 
@@ -84,7 +84,7 @@ A strong paragraph usually includes:
 **Supporting sentences:** During the review, we found that two pages were missing, and one form was incomplete. These gaps in the file may slow the preliminary assessment and will need to be noted before the next review stage.  
 **Closing sentence:** This paragraph summarises the issues identified so far and leads into further discussion of required documentation in the next section.
 
-### 6. Practice A – Identify the Parts
+### Practice A – Identify the Parts
 
 Label each sentence:
 
@@ -120,7 +120,7 @@ Your labels:
 2.
 3.
 
-### 7. Language Focus 2: Logical Flow Inside a Paragraph
+### Language Focus 2: Logical Flow Inside a Paragraph
 
 A paragraph should follow a clear, logical order:
 
@@ -148,7 +148,7 @@ Add one more supporting sentence that continues the explanation without giving i
 →
 →
 
-### 8. Guided Practice – Write a Better Paragraph
+### Guided Practice – Write a Better Paragraph
 
 Rewrite this paragraph so it has a clear **topic → support → closing** structure. Expand it to **5–6 sentences**, and make sure it reads like part of a larger report or document—not a complete message.
 
@@ -157,7 +157,7 @@ Rewrite this paragraph so it has a clear **topic → support → closing** struc
 
 **Rewrite here:****
 
-### 9. Freer Practice – Write a Full Paragraph
+### Freer Practice – Write a Full Paragraph
 
 Write **one administrative paragraph** (5–7 sentences) that feels like part of a longer document, such as a report or internal summary. Avoid requests or instructions. Focus on presenting information, background, and explanation.
 
@@ -169,7 +169,7 @@ C. Describe an updated internal rule and why it was changed.
 
 Write your paragraph:
 
-### 10. Reflection
+### Reflection
 
 1. What is one thing you learned about paragraph structure?  
 
@@ -177,6 +177,6 @@ Write your paragraph:
 
 3. Which part (topic, support, closing) do you find most difficult?
 
-### 11. Homework
+### Homework
 
 Find a real paragraph from a work email (English or Japanese). Rewrite it in English as a **strong, well-organised paragraph** using the structure from this unit.

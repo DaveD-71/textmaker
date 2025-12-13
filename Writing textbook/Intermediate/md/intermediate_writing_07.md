@@ -1,8 +1,8 @@
 # MODULE 2. Essential Email Writing for Administrative Contexts
 
-## Unit 7 – Making Requests Politely
+## 7. Making Requests Politely
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to make **clear, polite, and appropriate requests** in administrative communication. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to make **clear, polite, and appropriate reques
 
 - Practise writing both short requests and full emails
 
-### 2. Warm-Up: Which Request Sounds More Appropriate?
+### Warm-Up: Which Request Sounds More Appropriate?
 
 Read each pair. Choose the request that sounds more professional.
 
@@ -32,7 +32,7 @@ Read each pair. Choose the request that sounds more professional.
 
 **Discussion:** What makes the (b) sentences more polite?
 
-### 3. Language Focus 1 – Levels of Politeness in Requests
+### Language Focus 1 – Levels of Politeness in Requests
 
 Different request forms sound **more or less polite**. In administrative writing, the level of politeness depends on:
 
@@ -89,7 +89,7 @@ Often a request is clearer when you add **one short context sentence**.
 
 - This will help us complete the process.
 
-### 4. Practice A – Rewrite the Request
+### Practice A – Rewrite the Request
 
 Rewrite each message to make it **polite, clear, and complete**.
 
@@ -105,7 +105,7 @@ Rewrite each message to make it **polite, clear, and complete**.
 4. "Give me the information."
    →
 
-### 5. Language Focus 2 – Requests with Specific Details
+### Language Focus 2 – Requests with Specific Details
 
 A good request includes:
 
@@ -123,7 +123,7 @@ A good request includes:
 
 - I would appreciate it if you could confirm **the applicant’s submission date**.
 
-### 6. Practice B – Make the Request More Specific
+### Practice B – Make the Request More Specific
 
 Each message below is polite but **not specific**. Improve it.
 
@@ -139,7 +139,7 @@ Each message below is polite but **not specific**. Improve it.
 4. "Could you update me?"
    →
 
-### 7. Language Focus 3 – Requests Without Sounding Too Direct
+### Language Focus 3 – Requests Without Sounding Too Direct
 
 Administrative English avoids:
 
@@ -157,7 +157,7 @@ Administrative English avoids:
 
 - when available
 
-### 8. Practice C – soften the request
+### Practice C – soften the request
 
 Rewrite each message so it is **polite but not weak**, using softening phrases.
 
@@ -173,7 +173,7 @@ Rewrite each message so it is **polite but not weak**, using softening phrases.
 4. "Give me the corrected file as soon as possible."
    →
 
-### 9. Guided Practice – Write a Request Email
+### Guided Practice – Write a Request Email
 
 Use the prompts to write a complete request email.
 
@@ -195,7 +195,7 @@ Write your email:
 
 - **Sign-off:**
 
-### 10. Freer Practice – Write Two Request Emails
+### Freer Practice – Write Two Request Emails
 
 Write **two short emails** (3–5 sentences each) requesting information or action.
 Choose two situations below:
@@ -209,7 +209,7 @@ D. You need clarification before finalising a report.
 
 Write your emails:
 
-### 11. Extended Writing Task – Request Paragraph
+### Extended Writing Task – Request Paragraph
 
 Write a **neutral paragraph** (5–6 sentences) explaining:
 
@@ -225,7 +225,7 @@ Write a **neutral paragraph** (5–6 sentences) explaining:
 
 Write your paragraph:
 
-### 12. Reflection
+### Reflection
 
 1. What polite request phrase do you prefer using?
 
@@ -233,6 +233,6 @@ Write your paragraph:
 
 3. Which softening phrase will you try in future emails?
 
-### 13. Homework
+### Homework
 
 Think of a real request you made at work this week. Rewrite it using **two different polite request structures** from this unit.

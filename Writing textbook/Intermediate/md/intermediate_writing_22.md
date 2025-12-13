@@ -1,8 +1,8 @@
 # MODULE 6. Capstone & Applied Administrative Writing
 
-## Unit 22 – Multi-Document Communication Task
+## 22. Multi-Document Communication Task
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will respond to a **single scenario** by producing **three different documents**, each for a different audience and purpose. You will:
 
@@ -16,7 +16,7 @@ In this unit, you will respond to a **single scenario** by producing **three dif
 
 This is preparation for the final portfolio work in Unit 23.
 
-### 2. Scenario Overview
+### Scenario Overview
 
 You receive an email from an **applicant** asking why their application status has not been updated. After reviewing the system, you discover:
 
@@ -34,7 +34,7 @@ You must produce **three documents**:
 
 3. A **short internal notice** for the team (vertical/internal communication).
 
-### 3. Warm-Up: Analyse the Situation
+### Warm-Up: Analyse the Situation
 
 Answer the questions:
 
@@ -52,7 +52,7 @@ Write your answers:
 3.
 4.
 
-### 4. Language Focus – Three Audiences, Three Styles
+### Language Focus – Three Audiences, Three Styles
 
 #### (A) Applicant Reply – Polite, supportive, clear
 
@@ -80,7 +80,7 @@ Write your answers:
 
 - The review will continue once the missing document is submitted.
 
-### 5. Practice A – Match Tone to Audience
+### Practice A – Match Tone to Audience
 
 Rewrite each sentence for the appropriate audience.
 
@@ -96,7 +96,7 @@ Rewrite each sentence for the appropriate audience.
 4. (Applicant) "Send the document quickly."
    →
 
-### 6. Guided Practice – Write the Applicant Reply
+### Guided Practice – Write the Applicant Reply
 
 Write a **4–6 sentence** email replying to the applicant.
 Include:
@@ -113,7 +113,7 @@ Include:
 
 Write your reply:
 
-### 7. Guided Practice – Write the Colleague Explanation
+### Guided Practice – Write the Colleague Explanation
 
 Write a **4–6 sentence** explanation for your colleague.
 Include:
@@ -128,7 +128,7 @@ Include:
 
 Write your explanation:
 
-### 8. Guided Practice – Write the Internal Notice
+### Guided Practice – Write the Internal Notice
 
 Write a **3–5 sentence** notice for the team.
 Include:
@@ -143,7 +143,7 @@ Include:
 
 Write your notice:
 
-### 9. Freer Practice – Full Multi-Document Set
+### Freer Practice – Full Multi-Document Set
 
 Choose **one** of the scenarios below and write all three documents:
 
@@ -161,7 +161,7 @@ C. The applicant sent the correct file, but in the wrong format.
 
 Write your full set:
 
-### 10. Extended Writing Task – Multi-Audience Communication Pack
+### Extended Writing Task – Multi-Audience Communication Pack
 
 From the original scenario (missing applicant document), write a polished communication set:
 
@@ -183,7 +183,7 @@ All three must:
 
 Write your communication pack:
 
-### 11. Reflection
+### Reflection
 
 1. Which audience was easiest to write for? Why?  
 
@@ -191,6 +191,6 @@ Write your communication pack:
 
 3. How does changing tone and detail help communication?
 
-### 12. Homework
+### Homework
 
 Choose one scenario from the freer practice section. Rewrite the three documents again using a different tone or structure.

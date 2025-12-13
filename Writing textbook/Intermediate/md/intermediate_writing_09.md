@@ -1,8 +1,8 @@
 # MODULE 3. Writing Procedures & Internal Explanations
 
-## Unit 9 – Internal Notices
+## 9. Internal Notices
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write **clear, concise internal notices** for colleagues within your organisation. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to write **clear, concise internal notices** fo
 
 - Use neutral, professional language
 
-### 2. What Is an Internal Notice?
+### What Is an Internal Notice?
 
 An **internal notice** is a short message shared inside a department or organisation. It:
 
@@ -31,7 +31,7 @@ An **internal notice** is a short message shared inside a department or organisa
 Internal Notice – File System Update  
 The file system will be updated this weekend. Access may be limited during the update period. Further information will be provided once the update is complete.
 
-### 3. Warm-Up: Which Notice Is Clearer?
+### Warm-Up: Which Notice Is Clearer?
 
 Read the two notices. Choose the clearer one.
 
@@ -46,7 +46,7 @@ A temporary system error occurred this morning. Some users may have experienced 
 
 **Discussion:** Why is Notice B clearer and more useful?
 
-### 4. Language Focus 1 – Structure of an Internal Notice
+### Language Focus 1 – Structure of an Internal Notice
 
 A clear internal notice usually includes:
 
@@ -63,7 +63,7 @@ A clear internal notice usually includes:
 Internal Notice – Document Review Schedule  
 The document review for this month will begin on 16 April. Teams may receive requests for additional information during this period. A summary of the review results will be shared in early May.
 
-### 5. Practice A – Identify the Parts
+### Practice A – Identify the Parts
 
 Label each part with: **H = Heading**, **B = Background**, **E = Essential information**, **N = Next step**.
 
@@ -81,7 +81,7 @@ Your answers:
 3.
 4.
 
-### 6. Language Focus 2 – Neutral Tone
+### Language Focus 2 – Neutral Tone
 
 Internal notices use **neutral, factual language**. Avoid:
 
@@ -105,7 +105,7 @@ Internal notices use **neutral, factual language**. Avoid:
 4. "Sorry everyone, but the meeting is suddenly cancelled."
    →
 
-### 7. Practice B – Improve the Clarity
+### Practice B – Improve the Clarity
 
 Rewrite each notice so it is clearer and more professional.
 
@@ -121,7 +121,7 @@ Rewrite each notice so it is clearer and more professional.
 4. "The documents are not ready yet."
    →
 
-### 8. Guided Practice – Write a Short Internal Notice
+### Guided Practice – Write a Short Internal Notice
 
 Write a notice based on the situation below.
 
@@ -137,7 +137,7 @@ Write your notice:
 
 - **Next step:**
 
-### 9. Freer Practice – Write Two Notices
+### Freer Practice – Write Two Notices
 
 Choose two situations and write two internal notices.
 
@@ -150,7 +150,7 @@ D. Monthly reports will be reviewed later than usual.
 
 Write your notices:
 
-### 10. Extended Writing Task – Internal Bulletin Section
+### Extended Writing Task – Internal Bulletin Section
 
 Write a section for an internal bulletin (6–8 sentences). Include:
 
@@ -166,7 +166,7 @@ Write a section for an internal bulletin (6–8 sentences). Include:
 
 Write your bulletin section:
 
-### 11. Reflection
+### Reflection
 
 1. What makes a notice effective or ineffective?  
 
@@ -174,6 +174,6 @@ Write your bulletin section:
 
 3. Do you prefer short notices or longer bulletin-style notices? Why?
 
-### 12. Homework
+### Homework
 
 Find an internal notice (English or Japanese). Rewrite it to follow the structure in this unit.

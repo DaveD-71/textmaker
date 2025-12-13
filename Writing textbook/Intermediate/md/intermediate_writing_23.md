@@ -1,8 +1,8 @@
 # MODULE 6. Capstone & Applied Administrative Writing
 
-## Unit 23 – Portfolio Writing & Final Revision
+## 23. Portfolio Writing & Final Revision
 
-### 1. Unit Focus
+### Unit Focus
 
 This final unit brings together all skills from Units 1–22. You will create a **small writing portfolio** demonstrating your ability to produce clear, accurate, coherent, concise, and professionally toned administrative writing. You will:
 
@@ -14,7 +14,7 @@ This final unit brings together all skills from Units 1–22. You will create a 
 
 - Demonstrate consistent writing across multiple tasks
 
-### 2. What Is a Writing Portfolio?
+### What Is a Writing Portfolio?
 
 A writing portfolio is a collection of your **best revised work**, showing your full range of skills.
 
@@ -42,7 +42,7 @@ Your final submission should show:
 
 - Consistency across documents
 
-### 3. Warm-Up: Select Your Drafts
+### Warm-Up: Select Your Drafts
 
 Look back at your writing from Units 1–22.
 Choose **three drafts** you want to improve:
@@ -58,7 +58,7 @@ Write the titles or sources of the drafts you chose:
 2.
 3.
 
-### 4. Language Focus – Advanced Editing Checklist
+### Language Focus – Advanced Editing Checklist
 
 Before revising your drafts, check for:
 
@@ -90,7 +90,7 @@ Before revising your drafts, check for:
 
 - Avoid long or wordy expressions
 
-### 5. Practice A – Edit a Draft Email
+### Practice A – Edit a Draft Email
 
 Choose **one email** from your previous work.
 Rewrite it to meet portfolio standards.
@@ -99,7 +99,7 @@ Rewrite it to meet portfolio standards.
 
 **Revised email:**
 
-### 6. Practice B – Edit a Paragraph
+### Practice B – Edit a Paragraph
 
 Choose **one paragraph** from earlier units.
 Rewrite it using your full editing skills.
@@ -108,7 +108,7 @@ Rewrite it using your full editing skills.
 
 **Revised paragraph:**
 
-### 7. Practice C – Edit a Notice or Short Message
+### Practice C – Edit a Notice or Short Message
 
 Choose **one notice or message** from previous units.
 Rewrite it clearly and professionally.
@@ -117,7 +117,7 @@ Rewrite it clearly and professionally.
 
 **Revised message:**
 
-### 8. Guided Practice – Create a New Document
+### Guided Practice – Create a New Document
 
 Write **one new document** based on a scenario below.
 Choose ONE:
@@ -132,7 +132,7 @@ Choose ONE:
 
 Write your new document:
 
-### 9. Final Portfolio Submission
+### Final Portfolio Submission
 
 Your final portfolio should contain **four items**:
 
@@ -154,7 +154,7 @@ Each item must:
 
 - Show coherence and consistent formatting
 
-### 10. Reflection
+### Reflection
 
 1. Which portfolio item improved the most after revision?  
 
@@ -162,6 +162,6 @@ Each item must:
 
 3. What writing strategies will you continue using in your work?  
 
-### 11. Homework (Final Course Task)
+### Homework (Final Course Task)
 
 Choose any earlier writing task and complete a **third revision**, focusing on perfecting tone, flow, and accuracy.

@@ -1,8 +1,8 @@
 # MODULE 2. Essential Email Writing for Administrative Contexts
 
-## Unit 5 – Requesting Clarification
+## 5. Requesting Clarification
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to request clarification **clearly and politely** in administrative emails. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to request clarification **clearly and politely
 
 - Practise writing short clarification emails
 
-### 2. Warm-Up: What Is Unclear?
+### Warm-Up: What Is Unclear?
 
 Read the sentences below. Identify what is **unclear** or **missing**.
 
@@ -32,7 +32,7 @@ Write what you would need to know:
 3.
 4.
 
-### 3. Language Focus 1: Useful Clarification Phrases
+### Language Focus 1: Useful Clarification Phrases
 
 Use these phrases when the information is not clear.
 
@@ -56,7 +56,7 @@ Use these phrases when the information is not clear.
 
 - Should I understand that…?
 
-### 4. Practice A – Make These Questions Clearer
+### Practice A – Make These Questions Clearer
 
 Rewrite the questions to make them specific and professional.
 
@@ -72,7 +72,7 @@ Rewrite the questions to make them specific and professional.
 4. What should I do?  
    →
 
-### 5. Language Focus 2: Asking About Missing or Confusing Information
+### Language Focus 2: Asking About Missing or Confusing Information
 
 #### Common Situations
 
@@ -94,7 +94,7 @@ Rewrite the questions to make them specific and professional.
 
 - Could you confirm whether the applicant needs to submit this document now or later?
 
-### 6. Practice B – Improve the Clarity
+### Practice B – Improve the Clarity
 
 Rewrite each sentence as a better clarification question.
 
@@ -110,7 +110,7 @@ Rewrite each sentence as a better clarification question.
 4. "The system doesn’t work."  
    →
 
-### 6. Practice C – Clarification from Context
+### Practice C – Clarification from Context
 
 Read each short scenario. Write **two clarification questions** for each one.
 
@@ -135,7 +135,7 @@ Your questions:
 1.
 2.
 
-### 7. Extended Guided Practice – Rewrite and Improve
+### Extended Guided Practice – Rewrite and Improve
 
 Rewrite each unclear message into a **clear, polite clarification request**.
 
@@ -151,7 +151,7 @@ Rewrite each unclear message into a **clear, polite clarification request**.
 4. "This part is wrong."
    →
 
-### 8. Guided Practice – Write a Clarification Email
+### Guided Practice – Write a Clarification Email
 
 Write an email asking for clarification.
 
@@ -171,7 +171,7 @@ Write your email:
 
 - **Sign-off:**
 
-### 9. Freer Practice – Write Several Clarification Emails
+### Freer Practice – Write Several Clarification Emails
 
 Write **three short emails**, each 3–5 sentences, asking for clarification. Keep each email focused on **one topic only**.
 
@@ -201,7 +201,7 @@ Write **three short emails**, each 3–5 sentences, asking for clarification. Ke
 
 Write your emails:
 
-### 10. Extended Writing Task – Clarification Summary Paragraph
+### Extended Writing Task – Clarification Summary Paragraph
 
 Write one **informational paragraph** (5–6 sentences) explaining a situation where clarification is needed.
 Your paragraph should:
@@ -216,7 +216,7 @@ Your paragraph should:
 
 Write your paragraph:
 
-### 11. Reflection
+### Reflection
 
 Choose one situation and write a short, clear email.
 
@@ -234,6 +234,6 @@ Write your email:
 
 3. Write one clarification question you can use in your work.
 
-### 12. Homework
+### Homework
 
 Find an email or set of instructions you received recently. Identify **one unclear point** and write a clarification question about it in English.

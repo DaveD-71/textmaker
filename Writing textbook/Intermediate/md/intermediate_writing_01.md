@@ -1,8 +1,8 @@
 # MODULE 1. Foundations of Clear Administrative Writing
 
-## Unit 1 – Clear Sentence Structure
+## 1. Clear Sentence Structure
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write **clear English sentences** for administrative communication.
 You will:
@@ -13,7 +13,7 @@ You will:
 
 - Rewrite unclear or confusing sentences so that your reader can understand easily
 
-### 2. Warm-Up: What Makes a Sentence Clear?
+### Warm-Up: What Makes a Sentence Clear?
 
 Read the pairs of sentences. Choose the one that feels **clearer**.
 
@@ -31,7 +31,7 @@ Read the pairs of sentences. Choose the one that feels **clearer**.
 
 **Discussion:** Why are the (b) sentences easier to read?
 
-### 3. Language Focus 1: Basic Sentence Pattern (S–V–O / S–V–C)
+### Language Focus 1: Basic Sentence Pattern (S–V–O / S–V–C)
 
 Most clear administrative English sentences follow this simple pattern:
 
@@ -89,7 +89,7 @@ Rewrite the word groups as clear S–V–O or S-V-C sentences.
 
 5. (system / show / error message / this morning)
 
-### 4. Language Focus 2: Avoiding Unnecessary Complexity
+### Language Focus 2: Avoiding Unnecessary Complexity
 
 Administrative English should be **short, direct, and clear**.
 
@@ -109,7 +109,7 @@ Rewrite each sentence in a clearer, shorter way.
 4. Original: In the situation where the applicant does not provide the required documents, we will not be able to continue the examination.\
    Clear:
 
-### 5. Guided Practice: Rewrite for Clarity
+### Guided Practice: Rewrite for Clarity
 
 Rewrite each sentence so that it is easier to read.
 
@@ -125,7 +125,7 @@ Rewrite each sentence so that it is easier to read.
 4. It will be necessary for us to confirm the information with another department before a reply can be given.\
    →
 
-### 6. Freer Practice: Write Clear Administrative Sentences
+### Freer Practice: Write Clear Administrative Sentences
 
 Write 3–4 clear sentences based on the situation below.
 
@@ -136,7 +136,7 @@ Write 3–4 clear sentences based on the situation below.
 3.
 4.
 
-### 7. Reflection
+### Reflection
 
 1. What was difficult for you in this unit?
 
@@ -144,6 +144,6 @@ Write 3–4 clear sentences based on the situation below.
 
 3. Choose one clear sentence you wrote today and rewrite it here.
 
-### 8. Homework
+### Homework
 
 Choose one real email you sent at work (in Japanese). Translate the **main message** into 3–4 clear English sentences using S–V–O structure.

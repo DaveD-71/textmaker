@@ -1,8 +1,8 @@
 # MODULE 4. Communicating with Applicants & Foreign Offices
 
-## Unit 15 – Maintaining Consistent Email Style
+## 15. Maintaining Consistent Email Style
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to maintain a **consistent, professional email style** across different messages. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to maintain a **consistent, professional email 
 
 - Write clearer and more professional email messages
 
-### 2. What Is Email Consistency?
+### What Is Email Consistency?
 
 Consistency means:
 
@@ -44,7 +44,7 @@ Dear Team,
 I reviewed the document and found that two sections require additional information. Could you clarify the details for Section 3?  
 Thank you.
 
-### 3. Warm-Up: Identify the Inconsistencies
+### Warm-Up: Identify the Inconsistencies
 
 Read the two emails. What is inconsistent?
 
@@ -64,7 +64,7 @@ Thank you.
 
 What is inconsistent in Email A? (tone, clarity, formatting, etc.)
 
-### 4. Language Focus 1 – Standard Email Elements
+### Language Focus 1 – Standard Email Elements
 
 Use standardised components to create consistency.
 
@@ -92,7 +92,7 @@ Use standardised components to create consistency.
 
 - Please let me know if you need further information.
 
-### 5. Practice A – Improve Consistency
+### Practice A – Improve Consistency
 
 Rewrite the emails to make them consistent in tone and structure.
 
@@ -105,7 +105,7 @@ Rewrite the emails to make them consistent in tone and structure.
 3. "Team, The file is wrong. Fix it."
    →
 
-### 6. Language Focus 2 – Formatting for Clarity and Consistency
+### Language Focus 2 – Formatting for Clarity and Consistency
 
 Emails should use:
 
@@ -127,7 +127,7 @@ Hi, I saw the file. It looks wrong. Please explain. Thanks.
 
 Rewrite here:
 
-### 7. Guided Practice – Standardise a Draft Email
+### Guided Practice – Standardise a Draft Email
 
 Rewrite the following email to make it consistent.
 
@@ -137,7 +137,7 @@ I checked it. The date is different from the one in the system. What should we d
 
 **Rewrite:**
 
-### 8. Freer Practice – Write Two Consistent Emails
+### Freer Practice – Write Two Consistent Emails
 
 Choose two situations and write emails using **consistent tone and structure**.
 
@@ -150,13 +150,13 @@ D. Sharing an update after reviewing a file.
 
 Write your emails:
 
-### 9. Extended Writing Task – Email Style Guide Paragraph
+### Extended Writing Task – Email Style Guide Paragraph
 
 Write a paragraph (6–8 sentences) explaining why your team should follow a consistent email style and what elements are important.
 
 Write your paragraph:
 
-### 10. Reflection
+### Reflection
 
 1. What inconsistencies do you often see in emails at work?
 
@@ -164,6 +164,6 @@ Write your paragraph:
 
 3. How can consistent email style help your team?
 
-### 11. Homework
+### Homework
 
 Find two emails you wrote recently. Rewrite them to follow a **consistent, standard format** based on this unit.

@@ -1,8 +1,8 @@
 # MODULE 2. Essential Email Writing for Administrative Contexts
 
-## Unit 6 – Communicating Delays or Changes
+## 6. Communicating Delays or Changes
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to communicate **delays, changes, or updates** in a clear and professional way. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to communicate **delays, changes, or updates** 
 
 - Practise structuring explanations logically
 
-### 2. Warm-Up: What Information Is Missing?
+### Warm-Up: What Information Is Missing?
 
 Read each message and identify what information a reader would still need.
 
@@ -32,7 +32,7 @@ Write what is missing:
 3.
 4.
 
-### 3. Language Focus 1 – Useful Phrases for Delays and Changes
+### Language Focus 1 – Useful Phrases for Delays and Changes
 
 #### Neutral Phrases
 
@@ -66,7 +66,7 @@ Write what is missing:
 
 - The new schedule will be shared shortly.
 
-### 4. Practice A – Improve the Clarity
+### Practice A – Improve the Clarity
 
 Rewrite each message so it includes **clearer information**.
 
@@ -82,7 +82,7 @@ Rewrite each message so it includes **clearer information**.
 4. "The system is slow."
    →
 
-### 5. Language Focus 2 – Logical Order for Update Messages
+### Language Focus 2 – Logical Order for Update Messages
 
 A clear update message usually follows this pattern:
 
@@ -98,7 +98,7 @@ A clear update message usually follows this pattern:
 
 The review process will take longer than expected. Additional checks are required because two documents were incomplete. This delay may affect the planned schedule for the next stage. Further updates will be provided once the remaining documents are ready.
 
-### 6. Practice B – Reorder to Make a Clear Update
+### Practice B – Reorder to Make a Clear Update
 
 Put the sentences in a logical order.
 
@@ -112,7 +112,7 @@ Write the best order:
 2.
 3.
 
-### 7. Practice C – Add Supporting Information
+### Practice C – Add Supporting Information
 
 Expand each message to 2–3 sentences by adding supporting information.
 
@@ -125,7 +125,7 @@ Expand each message to 2–3 sentences by adding supporting information.
 3. "There has been a change in the procedure."
    →
 
-### 8. Guided Practice – Write an Update Email
+### Guided Practice – Write an Update Email
 
 Write a clear and neutral email explaining a delay or change.
 
@@ -145,7 +145,7 @@ Write your email:
 
 - **Sign-off:**
 
-### 9. Freer Practice – Choose a Scenario and Write
+### Freer Practice – Choose a Scenario and Write
 
 Write **two short update emails** (3–5 sentences each).
 
@@ -158,7 +158,7 @@ D. A meeting needs to be rescheduled.
 
 Write your emails:
 
-### 10. Extended Writing Task – Update Summary Paragraph
+### Extended Writing Task – Update Summary Paragraph
 
 Write a paragraph (5–7 sentences) summarising a delay or change as part of a report or internal update.
 
@@ -174,7 +174,7 @@ Your paragraph should:
 
 Write your paragraph:
 
-### 11. Reflection
+### Reflection
 
 1. What phrases do you find most useful for explaining delays or changes?
 
@@ -182,6 +182,6 @@ Write your paragraph:
 
 3. Which part of this unit was easiest or hardest for you?
 
-### 12. Homework
+### Homework
 
 Find an email or notice about a delay or change (English or Japanese). Rewrite it in English using the structure from this unit.

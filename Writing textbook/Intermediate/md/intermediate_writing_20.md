@@ -1,8 +1,8 @@
 # MODULE 6. Capstone & Applied Administrative Writing
 
-## Unit 20 – Integrated Task 2: Revision + Notice Writing
+## 20. Integrated Task 2: Revision + Notice Writing
 
-### 1. Unit Focus
+### Unit Focus
 
 This unit develops your ability to respond to an administrative scenario by producing **two connected pieces of writing**:
 
@@ -20,7 +20,7 @@ You will:
 
 - Maintain accuracy, clarity, coherence, conciseness, and professional tone
 
-### 2. Scenario Overview
+### Scenario Overview
 
 Your office previously shared the monthly review schedule with an external office. A colleague later discovers that **one date in the schedule is incorrect**.
 
@@ -30,7 +30,7 @@ You must:
 
 2. Write an **internal notice** informing colleagues about the correction.
 
-### 3. Warm-Up: Understanding the Situation
+### Warm-Up: Understanding the Situation
 
 Read the scenario and answer the questions.
 
@@ -50,7 +50,7 @@ Write your answers:
 3.
 4.
 
-### 4. Language Focus – Revision vs. Notice
+### Language Focus – Revision vs. Notice
 
 #### Revision Message (External Office)
 
@@ -80,31 +80,31 @@ Useful phrases:
 
 - Further updates will follow.
 
-### 5. Practice A – Rewrite for Audience & Tone
+### Practice A – Rewrite for Audience & Tone
 
 Rewrite each sentence for the appropriate audience.
 
-#### 1. External Office → Make it polite and clear
+#### External Office → Make it polite and clear
 
 "The schedule was wrong. Here is the real date."
 →
 
-#### 2. Internal Team → Make it neutral and concise
+#### Internal Team → Make it neutral and concise
 
 "Someone made a mistake in the schedule."
 →
 
-#### 3. External Office → Make it complete
+#### External Office → Make it complete
 
 "The day changed."
 →
 
-#### 4. Internal Team → Make it professional
+#### Internal Team → Make it professional
 
 "We told them the wrong date."
 →
 
-### 6. Guided Practice – Write the Revision Message
+### Guided Practice – Write the Revision Message
 
 Write a **4–6 sentence** message to the external office.
 
@@ -124,7 +124,7 @@ Include:
 
 Write your message:
 
-### 7. Guided Practice – Write the Internal Notice
+### Guided Practice – Write the Internal Notice
 
 Write a **4–6 sentence** internal notice for colleagues.
 
@@ -140,7 +140,7 @@ Include:
 
 Write your notice:
 
-### 8. Freer Practice – Choose One Scenario
+### Freer Practice – Choose One Scenario
 
 Choose one and write both texts:
 
@@ -156,7 +156,7 @@ C. An instruction in a previous email was unclear or incomplete.
 
 Write your two texts:
 
-### 9. Extended Writing Task – Combined Communication Pack
+### Extended Writing Task – Combined Communication Pack
 
 Write:
 
@@ -178,7 +178,7 @@ each using:
 
 Write your extended tasks:
 
-### 10. Reflection
+### Reflection
 
 1. Which was easier to write—revision or internal notice? Why?  
 
@@ -186,7 +186,7 @@ Write your extended tasks:
 
 3. How can clear revision messages reduce future confusion?
 
-### 11. Homework
+### Homework
 
 Choose a message from a previous unit. Rewrite it as:  
 

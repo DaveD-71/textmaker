@@ -1,8 +1,8 @@
 # MODULE 3. Writing Procedures & Internal Explanations
 
-## Unit 8 – Writing Simple Procedures
+## 8. Writing Simple Procedures
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write **clear, simple, step-by-step procedures** for administrative tasks. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to write **clear, simple, step-by-step procedur
 
 - Practise writing short procedures used in office settings
 
-### 2. What Is a Procedure?
+### What Is a Procedure?
 
 A **procedure** is a set of steps that explains how to complete a task.
 It should:
@@ -39,7 +39,7 @@ Steps to create a new file record:
 
 4. Save the record and confirm the entry.
 
-### 3. Warm-Up: Which Procedure Is Better?
+### Warm-Up: Which Procedure Is Better?
 
 Compare the two versions. Choose the clearer one.
 
@@ -61,7 +61,7 @@ Compare the two versions. Choose the clearer one.
 
 **Discussion:** Why is Version B better?
 
-### 4. Language Focus 1 – Clear Instruction Verbs
+### Language Focus 1 – Clear Instruction Verbs
 
 Common verbs used in procedures:
 
@@ -97,7 +97,7 @@ Rewrite each instruction using a **clear action verb**.
 4. "Send it to the right place."
    →
 
-### 5. Language Focus 2 – Logical Order
+### Language Focus 2 – Logical Order
 
 Procedures must follow a logical sequence.
 
@@ -115,7 +115,7 @@ Write the correct order:
 3.
 4.
 
-### 6. Practice C – Add Missing Steps
+### Practice C – Add Missing Steps
 
 Each procedure below is incomplete. Add **one or two steps** to make it clearer.
 
@@ -135,7 +135,7 @@ Each procedure below is incomplete. Add **one or two steps** to make it clearer.
 3.
 4.
 
-### 7. Guided Practice – Write a Simple Procedure
+### Guided Practice – Write a Simple Procedure
 
 Write a short procedure (4–6 steps) based on the situation.
 
@@ -149,7 +149,7 @@ Write your procedure:
 5.
 6.
 
-### 8. Freer Practice – Write Two Procedures
+### Freer Practice – Write Two Procedures
 
 Write **two different procedures** (4–7 steps each).
 Choose any two situations below:
@@ -179,7 +179,7 @@ Procedure 2:
 6.
 7.
 
-### 9. Extended Writing Task – Write a Section of a Simple Manual
+### Extended Writing Task – Write a Section of a Simple Manual
 
 Write a **short manual section** (6–8 sentences + optional steps) explaining:
 
@@ -195,7 +195,7 @@ Write a **short manual section** (6–8 sentences + optional steps) explaining:
 
 Write your manual section:
 
-### 10. Reflection
+### Reflection
 
 1. What is difficult about writing procedures?
 
@@ -203,6 +203,6 @@ Write your manual section:
 
 3. Which instruction verbs are useful for your work?
 
-### 11. Homework
+### Homework
 
 Choose a routine task from your job. Write a 6–8 step procedure explaining how to complete it.

@@ -1,8 +1,8 @@
 # MODULE 1. Foundations of Clear Administrative Writing
 
-## Unit 2 – Professional Tone Basics
+## 2. Professional Tone Basics
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write emails with a **professional and polite tone** suitable for administrative communication. You will:
 
@@ -12,7 +12,7 @@ In this unit, you will learn how to write emails with a **professional and polit
 
 - Rewrite sentences to make them more professional
 
-### 2. Warm-Up: Which Sounds More Professional?
+### Warm-Up: Which Sounds More Professional?
 
 Read each pair. Choose the sentence that sounds **more appropriate** for workplace communication.
 
@@ -30,7 +30,7 @@ Read each pair. Choose the sentence that sounds **more appropriate** for workpla
 
 **Discussion:** Why do the (b) sentences sound more professional?
 
-### 3. Language Focus 1: Polite Request Phrases
+### Language Focus 1: Polite Request Phrases
 
 Administrative emails often use **softened, polite expressions**.
 
@@ -62,7 +62,7 @@ Rewrite the message using a polite request phrase.
 4. Give me the information.
    →
 
-### 4. Language Focus 2: Professional Tone in Explanations
+### Language Focus 2: Professional Tone in Explanations
 
 Professional tone is:
 
@@ -88,7 +88,7 @@ Rewrite each sentence to make it sound more professional.
 4. I already told you this yesterday.
    →
 
-### 5. Common Useful Phrases for Professional Emails
+### Common Useful Phrases for Professional Emails
 
 You can use these phrases to make your tone more appropriate:
 
@@ -116,7 +116,7 @@ You can use these phrases to make your tone more appropriate:
 
 - Thank you for your message regarding…
 
-### 6. Guided Practice: Rewrite the Email
+### Guided Practice: Rewrite the Email
 
 Rewrite the email to make it more polite and professional.
 
@@ -126,7 +126,7 @@ Rewrite the email to make it more polite and professional.
 
 **Rewrite here:**
 
-### 7. Freer Practice: Write Your Own Professional Email
+### Freer Practice: Write Your Own Professional Email
 
 Choose one situation and write a short professional email.
 
@@ -138,7 +138,7 @@ C. You need clarification about one part of an application.
 
 Write 3–4 sentences.
 
-### 8. Reflection
+### Reflection
 
 1. Which polite expression do you want to remember?
 
@@ -146,7 +146,7 @@ Write 3–4 sentences.
 
 3. Write one example of a polite request you can use at work.
 
-### 9. Homework
+### Homework
 
 Find one real English email you received that had a **very polite** or **not polite** tone. Bring it to the next class and explain:
 

@@ -1,8 +1,8 @@
 # MODULE 3. Writing Procedures & Internal Explanations
 
-## Unit 10 – Explaining Problems Clearly
+## 10. Explaining Problems Clearly
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to explain **problems and issues** clearly and professionally in administrative communication. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to explain **problems and issues** clearly and 
 
 - Practise writing short explanations and full problem descriptions
 
-### 2. What Makes a Clear Problem Explanation?
+### What Makes a Clear Problem Explanation?
 
 A good explanation of a problem includes:
 
@@ -30,7 +30,7 @@ A good explanation of a problem includes:
 
 This is not a request and not a complaint—only **neutral information**.
 
-### 3. Warm-Up: Identify the Missing Information
+### Warm-Up: Identify the Missing Information
 
 Read the sentences. What is missing from each?
 
@@ -48,7 +48,7 @@ Write what information is missing:
 3.
 4.
 
-### 4. Language Focus 1 – Useful Phrases
+### Language Focus 1 – Useful Phrases
 
 #### Describing the Issue
 
@@ -90,7 +90,7 @@ Write what information is missing:
 
 - Further updates will be provided.
 
-### 5. Practice A – Improve the Explanation
+### Practice A – Improve the Explanation
 
 Rewrite each message to make it clearer and more complete.
 
@@ -106,7 +106,7 @@ Rewrite each message to make it clearer and more complete.
 4. "The document is wrong."
    →
 
-### 6. Practice B – Add Details
+### Practice B – Add Details
 
 Add **two additional sentences** to explain the situation more clearly.
 
@@ -119,7 +119,7 @@ Add **two additional sentences** to explain the situation more clearly.
 3. The uploaded form is incomplete.
    →
 
-### 7. Guided Practice – Write a Problem Explanation
+### Guided Practice – Write a Problem Explanation
 
 Write a short explanation (4–6 sentences).
 
@@ -139,7 +139,7 @@ Include:
 
 Write your explanation:
 
-### 8. Freer Practice – Write Two Problem Descriptions
+### Freer Practice – Write Two Problem Descriptions
 
 Choose two situations and write clear explanations.
 
@@ -152,7 +152,7 @@ D. A shared drive is not accessible this morning.
 
 Write your explanations:
 
-### 9. Extended Writing Task – Report-Style Description
+### Extended Writing Task – Report-Style Description
 
 Write a paragraph (6–8 sentences) describing a problem as part of a formal internal report.
 
@@ -168,7 +168,7 @@ Your paragraph should:
 
 Write your paragraph:
 
-### 10. Reflection
+### Reflection
 
 1. What makes a problem explanation clear or unclear?
 
@@ -176,6 +176,6 @@ Write your paragraph:
 
 3. Which is the most difficult?
 
-### 11. Homework
+### Homework
 
 Find an example of unclear problem communication (from email or conversation). Rewrite it using the structure from this unit.

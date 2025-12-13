@@ -1,8 +1,8 @@
 # MODULE 5. Editing & Revision Skills (Basic)
 
-## Unit 18 – Editing for Tone
+## 18. Editing for Tone
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to **edit writing to improve tone**, making your messages more polite, professional, and appropriate for administrative communication. You will:
 
@@ -12,7 +12,7 @@ In this unit, you will learn how to **edit writing to improve tone**, making you
 
 - Practise rewriting sentences, paragraphs, and emails
 
-### 2. What Is “Tone” in Writing?
+### What Is “Tone” in Writing?
 
 Tone is **how your writing sounds** to the reader.
 A professional tone is:
@@ -38,7 +38,7 @@ A poor tone may be:
 **Before:** You didn’t send the right file. Send the correct one now.  
 **After:** Thank you for your message. The attached file appears to be a different version. Could you please send the correct version when available?
 
-### 3. Warm-Up: Why Is the Tone Wrong?
+### Warm-Up: Why Is the Tone Wrong?
 
 Identify what makes the tone inappropriate.
 
@@ -56,7 +56,7 @@ Write the issues:
 3.
 4.
 
-### 4. Language Focus 1 – Softening Direct Language
+### Language Focus 1 – Softening Direct Language
 
 #### Direct → Polite
 
@@ -79,7 +79,7 @@ Write the issues:
 
 - Thank you for checking…
 
-### 5. Practice A – Make the Tone Polite
+### Practice A – Make the Tone Polite
 
 Rewrite the sentences politely.
 
@@ -95,7 +95,7 @@ Rewrite the sentences politely.
 4. "This is not acceptable."
    →
 
-### 6. Language Focus 2 – Tone in Emails
+### Language Focus 2 – Tone in Emails
 
 Emails often need polite tone markers.
 
@@ -117,7 +117,7 @@ Emails often need polite tone markers.
 
 - Blaming language (“You didn’t…, You should have…”)
 
-### 7. Practice B – Improve the Email Tone
+### Practice B – Improve the Email Tone
 
 Rewrite each short email to improve tone.
 
@@ -135,7 +135,7 @@ Why didn’t you tell me about this earlier? Now we have a delay.
 
 Rewrite:
 
-### 8. Guided Practice – Edit a Full Email
+### Guided Practice – Edit a Full Email
 
 Rewrite the email to make the tone neutral and professional.
 
@@ -146,7 +146,7 @@ The applicant did not follow the instructions again. This is causing problems fo
 
 **Rewrite:**
 
-### 9. Freer Practice – Write Two Tone-Improved Emails
+### Freer Practice – Write Two Tone-Improved Emails
 
 Choose two situations and write improved versions.
 
@@ -159,7 +159,7 @@ D. Clarifying a misunderstanding.
 
 Write your emails:
 
-### 10. Extended Writing Task – Tone Revision Paragraph
+### Extended Writing Task – Tone Revision Paragraph
 
 Rewrite this paragraph (6–8 sentences) to improve tone while keeping the same information.
 
@@ -168,7 +168,7 @@ We told the applicant many times, but they still submitted the wrong file. This 
 
 **Rewrite:**
 
-### 11. Reflection
+### Reflection
 
 1. What tone problems do you see most often in your writing?  
 
@@ -176,6 +176,6 @@ We told the applicant many times, but they still submitted the wrong file. This 
 
 3. How can improving tone help your professional communication?
 
-### 12. Homework
+### Homework
 
 Find one email you wrote recently. Rewrite it using the tone strategies from this unit.

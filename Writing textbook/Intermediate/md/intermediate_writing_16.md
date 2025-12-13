@@ -1,8 +1,8 @@
 # MODULE 5. Editing & Revision Skills (Basic)
 
-## Unit 16 – Editing for Accuracy
+## 16. Editing for Accuracy
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to **edit writing for accuracy**, focusing on grammar, spelling, punctuation, and basic sentence structure. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to **edit writing for accuracy**, focusing on g
 
 - Improve clarity through accurate language use
 
-### 2. What Does “Accuracy” Mean in Writing?
+### What Does “Accuracy” Mean in Writing?
 
 Accuracy refers to the **correct use of language**, including:
 
@@ -32,7 +32,7 @@ Accuracy refers to the **correct use of language**, including:
 
 Accurate writing is easier for readers to understand and avoids mistakes in administrative processes.
 
-### 3. Warm-Up: Spot the Errors
+### Warm-Up: Spot the Errors
 
 Correct the mistakes in each sentence.
 
@@ -50,7 +50,7 @@ Write your corrections:
 3.
 4.
 
-### 4. Language Focus 1 – Common Accuracy Problems
+### Language Focus 1 – Common Accuracy Problems
 
 #### Verb Forms
 
@@ -70,7 +70,7 @@ Write your corrections:
 
 - The update will be available **after** 3 p.m.
 
-### 5. Practice A – Correct the Sentences
+### Practice A – Correct the Sentences
 
 Rewrite each sentence correctly.
 
@@ -86,7 +86,7 @@ Rewrite each sentence correctly.
 4. *The documents is complete.*  
    →
 
-### 6. Practice B – Edit for Accuracy
+### Practice B – Edit for Accuracy
 
 Each short text contains 4–6 errors. Rewrite the corrected version.
 
@@ -102,7 +102,7 @@ Corrected version:
 
 Corrected version:
 
-### 7. Guided Practice – Edit a Short Administrative Email
+### Guided Practice – Edit a Short Administrative Email
 
 **Original Email:**
 Subject: Form  
@@ -111,7 +111,7 @@ I check the document yesterday and it have some mistake. The informations in sec
 
 **Rewrite the corrected, professional version:**
 
-### 8. Freer Practice – Edit Two Short Texts
+### Freer Practice – Edit Two Short Texts
 
 Choose two situations and write the **accurate, corrected version**.
 
@@ -122,7 +122,7 @@ B. A description of a problem with article/preposition errors.
 C. A simple request email with spelling errors.  
 D. A meeting summary with grammar errors.
 
-### 9. Extended Writing Task – Editing a Paragraph
+### Extended Writing Task – Editing a Paragraph
 
 Rewrite this paragraph (6–7 sentences) to correct errors and improve clarity.
 
@@ -131,7 +131,7 @@ The review process start tomorrow. The team are preparing the documents now. The
 
 **Corrected paragraph:**
 
-### 10. Reflection
+### Reflection
 
 1. Which grammar mistakes do you often make?  
 
@@ -139,6 +139,6 @@ The review process start tomorrow. The team are preparing the documents now. The
 
 3. What accuracy point do you want to focus on next?
 
-### 11. Homework
+### Homework
 
 Find one email or document you wrote recently. Edit it for accuracy using the skills from this unit.

@@ -1,8 +1,8 @@
 # MODULE 4. Communicating with Applicants & Foreign Offices
 
-## Unit 14 – Responding to Confusion
+## 14. Responding to Confusion
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to respond **clearly and professionally** when someone is confused or has misunderstood information. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to respond **clearly and professionally** when 
 
 - Practise writing short clarification responses and longer explanations
 
-### 2. What Does It Mean to Respond to Confusion?
+### What Does It Mean to Respond to Confusion?
 
 When someone is confused, your response should:
 
@@ -30,7 +30,7 @@ When someone is confused, your response should:
 
 Thank you for your question. To clarify, the updated instructions apply only to applications submitted after 1 June. Applications from earlier months will follow the previous procedure. I hope this resolves the confusion.
 
-### 3. Warm-Up: What Is the Confusion?
+### Warm-Up: What Is the Confusion?
 
 Identify what the reader is confused about.
 
@@ -48,7 +48,7 @@ Write the point of confusion:
 3.
 4.
 
-### 4. Language Focus 1 – Useful Clarification Phrases
+### Language Focus 1 – Useful Clarification Phrases
 
 #### Acknowledging the Confusion
 
@@ -74,7 +74,7 @@ Write the point of confusion:
 
 - One important point is…
 
-### 5. Practice A – Improve the Response
+### Practice A – Improve the Response
 
 Rewrite each response to make it clear and polite.
 
@@ -90,7 +90,7 @@ Rewrite each response to make it clear and polite.
 4. "Read the guidelines again."
    →
 
-### 6. Practice B – Add Clarifying Information
+### Practice B – Add Clarifying Information
 
 Add **one sentence that acknowledges the confusion** and **one sentence that clarifies**.
 
@@ -103,7 +103,7 @@ Add **one sentence that acknowledges the confusion** and **one sentence that cla
 3. The instructions refer to two different processes.
    →
 
-### 7. Guided Practice – Write a Clarification Response
+### Guided Practice – Write a Clarification Response
 
 Write 4–6 sentences.
 
@@ -119,7 +119,7 @@ Write a response that:
 
 Write your response:
 
-### 8. Freer Practice – Write Two Responses
+### Freer Practice – Write Two Responses
 
 Choose two situations and write your responses.
 
@@ -132,7 +132,7 @@ D. A colleague misunderstood the meeting location.
 
 Write your responses:
 
-### 9. Extended Writing Task – Clarification Paragraph
+### Extended Writing Task – Clarification Paragraph
 
 Write a paragraph (6–8 sentences) explaining a misunderstanding as part of a report.
 Include:
@@ -147,7 +147,7 @@ Include:
 
 Write your paragraph:
 
-### 10. Reflection
+### Reflection
 
 1. What is difficult about responding to confusion?  
 
@@ -155,6 +155,6 @@ Write your paragraph:
 
 3. When do you usually need to clarify information at work?
 
-### 11. Homework
+### Homework
 
 Find an unclear message from a real situation. Write a clear, polite response to correct the misunderstanding.

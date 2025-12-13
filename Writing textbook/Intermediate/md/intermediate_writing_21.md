@@ -1,8 +1,8 @@
 # MODULE 6. Capstone & Applied Administrative Writing
 
-## Unit 21 – Writing for Consistency Across a Team
+## 21. Writing for Consistency Across a Team
 
-### 1. Unit Focus
+### Unit Focus
 
 This unit focuses on **team-wide consistency** in administrative writing. You will learn how to:
 
@@ -16,7 +16,7 @@ This unit focuses on **team-wide consistency** in administrative writing. You wi
 
 This unit prepares you for the multi-document tasks in Units 22–23.
 
-### 2. Why Team Consistency Matters
+### Why Team Consistency Matters
 
 When multiple team members write emails and notices, inconsistency can cause:
 
@@ -38,7 +38,7 @@ Clear team standards help:
 
 - Support smoother administrative procedures
 
-### 3. Warm-Up: Spot the Inconsistencies
+### Warm-Up: Spot the Inconsistencies
 
 Compare the two emails. Identify inconsistencies in tone, format, structure, and clarity.
 
@@ -66,7 +66,7 @@ Write the inconsistencies you notice:
 
 - Clarity:
 
-### 4. Language Focus – Standardising Team Writing
+### Language Focus – Standardising Team Writing
 
 #### Standard Openings
 
@@ -100,7 +100,7 @@ Write the inconsistencies you notice:
 
 - Consistent subject line format
 
-### 5. Practice A – Improve Team Consistency
+### Practice A – Improve Team Consistency
 
 Rewrite these sentences/emails to make them consistent with team standards.
 
@@ -113,7 +113,7 @@ Rewrite these sentences/emails to make them consistent with team standards.
 3. "Team, The file is wrong. Fix it."
    →
 
-### 6. Practice B – Standardise Format & Tone
+### Practice B – Standardise Format & Tone
 
 Rewrite the email with correct formatting, tone, and clarity.
 
@@ -123,7 +123,7 @@ Hey, I don’t think this is right. Check it and tell me.
 
 **Rewrite:**
 
-### 7. Guided Practice – Rewrite Three Short Messages
+### Guided Practice – Rewrite Three Short Messages
 
 Rewrite all three so they follow **the same team-wide style**.
 
@@ -141,7 +141,7 @@ The applicant file is strange. Please check.
 
 Rewrite all messages in a consistent style:
 
-### 8. Freer Practice – Create a Mini Style Guide
+### Freer Practice – Create a Mini Style Guide
 
 Write a short (6–8 sentence) style guide for your team.
 Include:
@@ -156,7 +156,7 @@ Include:
 
 Write your guide:
 
-### 9. Extended Writing Task – Rewrite a Set of Communications
+### Extended Writing Task – Rewrite a Set of Communications
 
 Rewrite the following **three related messages** so they all follow a consistent team style.
 
@@ -170,7 +170,7 @@ Rewrite the following **three related messages** so they all follow a consistent
 
 #### Rewrite all messages in a unified, professional style
 
-### 10. Reflection
+### Reflection
 
 1. Which inconsistency do you see most often at work?  
 
@@ -178,6 +178,6 @@ Rewrite the following **three related messages** so they all follow a consistent
 
 3. How can consistent writing reduce mistakes or confusion?
 
-### 11. Homework
+### Homework
 
 Find one email you wrote and one written by a colleague. Rewrite both so they follow the same writing standard.

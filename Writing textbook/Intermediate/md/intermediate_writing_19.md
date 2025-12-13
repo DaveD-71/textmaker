@@ -1,8 +1,8 @@
 # MODULE 6. Capstone & Applied Administrative Writing
 
-## Unit 19 – Integrated Task 1: Combined Email + Internal Explanation
+## 19. Integrated Task 1: Combined Email + Internal Explanation
 
-### 1. Unit Focus
+### Unit Focus
 
 This unit brings together skills from earlier lessons. Students practise responding to a scenario that requires **both an external-style email** and a **short internal explanation**. You will:
 
@@ -14,8 +14,7 @@ This unit brings together skills from earlier lessons. Students practise respond
 
 - Maintain accurate, clear, coherent, and concise writing in both tasks
 
-
-### 2. Scenario Overview
+### Scenario Overview
 
 You receive an update from an external office stating that one of the applicant’s documents cannot be accepted because a signature is missing. Your colleague has asked you to follow up and also explain the issue to your team.
 
@@ -25,8 +24,7 @@ In this unit, you will write:
 
 2. **An internal explanation** summarising the situation for colleagues.
 
-
-### 3. Warm-Up: Understanding the Situation
+### Warm-Up: Understanding the Situation
 
 Read the scenario and answer the questions.
 
@@ -46,8 +44,7 @@ Write your answers:
 3.
 4.
 
-
-### 4. Language Focus – Writing for Two Audiences
+### Language Focus – Writing for Two Audiences
 
 #### External Email (Polite, Clear, Concise)
 
@@ -69,33 +66,31 @@ Write your answers:
 
 - Further updates will follow once…
 
-
-### 5. Practice A – Rewrite for Audience & Tone
+### Practice A – Rewrite for Audience & Tone
 
 Rewrite each sentence for the correct audience.
 
-#### 1. External Office → Make it polite
+#### External Office → Make it polite
 
 "Send us the correct form."
 →
 
-#### 2. Internal Team → Make it neutral and concise
+#### Internal Team → Make it neutral and concise
 
 "They said the applicant messed up the form again."
 →
 
-#### 3. External Office → Make it complete and professional
+#### External Office → Make it complete and professional
 
 "What is the problem?"
 →
 
-#### 4. Internal Team → Make it clear and factual
+#### Internal Team → Make it clear and factual
 
 "The form is wrong but they didn’t explain well."
 →
 
-
-### 6. Guided Practice – Write the External Email
+### Guided Practice – Write the External Email
 
 Write a **4–6 sentence** external inquiry email based on the scenario.
 
@@ -113,8 +108,7 @@ Include:
 
 Write your email:
 
-
-### 7. Guided Practice – Write the Internal Explanation
+### Guided Practice – Write the Internal Explanation
 
 Write a **4–6 sentence** explanation for your colleagues.
 Include:
@@ -129,8 +123,7 @@ Include:
 
 Write your explanation:
 
-
-### 8. Freer Practice – Choose One Integrated Scenario
+### Freer Practice – Choose One Integrated Scenario
 
 Choose one scenario and write **both**:
 
@@ -146,8 +139,7 @@ C. The review team needs clarification about a new submission rule.
 
 Write your two texts:
 
-
-### 9. Extended Writing Task – Multi-Purpose Communication
+### Extended Writing Task – Multi-Purpose Communication
 
 Write:
 
@@ -167,8 +159,7 @@ Each should:
 
 Write your extended tasks:
 
-
-### 10. Reflection
+### Reflection
 
 1. Which was easier to write—external or internal communication? Why?  
 
@@ -176,7 +167,6 @@ Write your extended tasks:
 
 3. How can this skill help in real administrative work?
 
-
-### 11. Homework
+### Homework
 
 Choose one email you wrote in a previous unit. Rewrite it for an alternate audience (external → internal, or internal → external).

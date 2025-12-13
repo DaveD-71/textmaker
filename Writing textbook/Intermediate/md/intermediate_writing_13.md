@@ -1,8 +1,8 @@
 # MODULE 4. Communicating with Applicants & Foreign Offices
 
-## Unit 13 – Providing Simple Explanations
+## 13. Providing Simple Explanations
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to provide **clear, simple explanations** in administrative contexts. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to provide **clear, simple explanations** in ad
 
 - Write short explanatory paragraphs and emails
 
-### 2. What Is a Simple Explanation?
+### What Is a Simple Explanation?
 
 A simple explanation:
 
@@ -32,7 +32,7 @@ A simple explanation:
 
 The review process will take longer this month because several files require additional checks. These checks are necessary to confirm applicant information. A further update will be provided next week.
 
-### 3. Warm-Up: What Information Is Missing?
+### Warm-Up: What Information Is Missing?
 
 Read each explanation. Identify what is missing.
 
@@ -50,7 +50,7 @@ What is missing?
 3.
 4.
 
-### 4. Language Focus 1 – Useful Phrases for Explanations
+### Language Focus 1 – Useful Phrases for Explanations
 
 #### Giving Background
 
@@ -76,7 +76,7 @@ What is missing?
 
 - For this reason…
 
-### 5. Practice A – Improve the Explanation
+### Practice A – Improve the Explanation
 
 Rewrite the sentences to make the explanations clearer.
 
@@ -92,7 +92,7 @@ Rewrite the sentences to make the explanations clearer.
 4. "The system is slow."
    →
 
-### 6. Practice B – Add a Reason or Background
+### Practice B – Add a Reason or Background
 
 Add **one sentence of background** and **one sentence of reason**.
 
@@ -105,7 +105,7 @@ Add **one sentence of background** and **one sentence of reason**.
 3. The review must be rescheduled.
    →
 
-### 7. Guided Practice – Write a Clear Explanation
+### Guided Practice – Write a Clear Explanation
 
 Write 4–6 sentences.
 
@@ -125,7 +125,7 @@ Explain:
 
 Write your explanation:
 
-### 8. Freer Practice – Write Two Explanations
+### Freer Practice – Write Two Explanations
 
 Choose two situations and write explanations.
 
@@ -138,7 +138,7 @@ D. A required field was left blank.
 
 Write your explanations:
 
-### 9. Extended Writing Task – Explanatory Paragraph
+### Extended Writing Task – Explanatory Paragraph
 
 Write a paragraph (6–8 sentences) explaining an issue as part of a report.
 Include:
@@ -153,7 +153,7 @@ Include:
 
 Write your paragraph:
 
-### 10. Reflection
+### Reflection
 
 1. What type of explanation do you find easiest to write?  
 
@@ -161,6 +161,6 @@ Write your paragraph:
 
 3. Which phrases from this unit were new for you?
 
-### 11. Homework
+### Homework
 
 Find a real explanation you wrote or received. Rewrite it using the structure from this unit.

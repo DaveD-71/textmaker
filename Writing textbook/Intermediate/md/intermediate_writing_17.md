@@ -1,8 +1,8 @@
 # MODULE 5. Editing & Revision Skills (Basic)
 
-## Unit 17 – Editing for Clarity
+## 17. Editing for Clarity
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to **edit writing to make it clearer and easier to understand**. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to **edit writing to make it clearer and easier
 
 - Practise rewriting texts to improve logical flow
 
-### 2. What Does “Clarity” Mean in Writing?
+### What Does “Clarity” Mean in Writing?
 
 Clarity refers to how easily the reader can understand your message. Clear writing:
 
@@ -31,7 +31,7 @@ Clarity refers to how easily the reader can understand your message. Clear writi
 **Before:** The document, which was previously reviewed and looked at by two people, seems like it maybe has some missing parts.  
 **After:** The document appears to be missing some parts.
 
-### 3. Warm-Up: What Makes These Sentences Unclear?
+### Warm-Up: What Makes These Sentences Unclear?
 
 Identify the problems.
 
@@ -49,7 +49,7 @@ Write the problems (too vague? too long? unnecessary words?):
 3.
 4.
 
-### 4. Language Focus 1 – Common Clarity Problems
+### Language Focus 1 – Common Clarity Problems
 
 #### Vague Language
 
@@ -67,7 +67,7 @@ Write the problems (too vague? too long? unnecessary words?):
 
 - Unclear subject or action
 
-### 5. Practice A – Make the Sentences Clearer
+### Practice A – Make the Sentences Clearer
 
 Rewrite each sentence.
 
@@ -83,7 +83,7 @@ Rewrite each sentence.
 4. "It would be appreciated if you could maybe check the document again."
    →
 
-### 6. Language Focus 2 – Improving Flow
+### Language Focus 2 – Improving Flow
 
 Clear writing follows a **logical order**, often:
 
@@ -99,7 +99,7 @@ Clear writing follows a **logical order**, often:
 
 **After:** The review was delayed because some information is missing. A new schedule will be announced tomorrow.
 
-### 7. Practice B – Reorganise for Better Flow
+### Practice B – Reorganise for Better Flow
 
 Rewrite the sentences in a clear, logical order.
 
@@ -113,7 +113,7 @@ Write the best order:
 2.
 3.
 
-### 8. Guided Practice – Edit for Clarity
+### Guided Practice – Edit for Clarity
 
 Rewrite this paragraph (4–6 sentences) to make it clearer.
 
@@ -122,7 +122,7 @@ The system was slow today and we couldn’t do much because of it. Also, there w
 
 **Rewrite:**
 
-### 9. Freer Practice – Edit Two Texts for Clarity
+### Freer Practice – Edit Two Texts for Clarity
 
 Choose two situations and rewrite them clearly.
 
@@ -135,7 +135,7 @@ D. A meeting summary with poor organisation.
 
 Write your revised texts:
 
-### 10. Extended Writing Task – Clear Paragraph Revision
+### Extended Writing Task – Clear Paragraph Revision
 
 Rewrite this paragraph (6–8 sentences) to improve clarity and flow.
 
@@ -144,7 +144,7 @@ We checked some things and there are maybe a few issues. The system did somethin
 
 **Rewrite:**
 
-### 11. Reflection
+### Reflection
 
 1. What clarity problems do you often see in your own writing?  
 
@@ -152,6 +152,6 @@ We checked some things and there are maybe a few issues. The system did somethin
 
 3. How will clear writing help your communication at work?
 
-### 12. Homework
+### Homework
 
 Choose one paragraph you wrote in a previous unit. Rewrite it for clarity using today’s strategies.

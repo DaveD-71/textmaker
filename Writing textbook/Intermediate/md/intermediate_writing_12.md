@@ -1,8 +1,8 @@
 # MODULE 4. Communicating with Applicants & Foreign Offices
 
-## Unit 12 – Writing Simple External Inquiries
+## 12. Writing Simple External Inquiries
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn how to write **simple, clear external inquiries** to other offices or organisations. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn how to write **simple, clear external inquiries** t
 
 - Practise writing short inquiry emails
 
-### 2. What Is an External Inquiry?
+### What Is an External Inquiry?
 
 An external inquiry is a **polite email** sent to another organisation asking for information or clarification.
 It should:
@@ -34,7 +34,7 @@ Dear Review Office Team,
 We are reviewing the updated guidelines and have a question about Section 4. Could you clarify whether the new requirement applies to applicants who submitted forms before March? Further information will help us complete our internal checks.  
 Thank you.
 
-### 3. Warm-Up: Which Inquiry Is Better?
+### Warm-Up: Which Inquiry Is Better?
 
 Compare the two versions.
 
@@ -52,7 +52,7 @@ We are reviewing the updated guidelines and have one question about Section 4. C
 
 **Discussion:** Why is Email B more appropriate?
 
-### 4. Language Focus 1 – Structure of an External Inquiry
+### Language Focus 1 – Structure of an External Inquiry
 
 A clear inquiry email usually includes:
 
@@ -68,7 +68,7 @@ A clear inquiry email usually includes:
 
 6. **Sign-off**
 
-### 5. Useful Phrases for External Inquiries
+### Useful Phrases for External Inquiries
 
 #### Background
 
@@ -94,7 +94,7 @@ A clear inquiry email usually includes:
 
 - Further information will help us complete our review.
 
-### 6. Practice A – Improve the Inquiry
+### Practice A – Improve the Inquiry
 
 Rewrite each inquiry to make it clearer, more polite, and more complete.
 
@@ -110,7 +110,7 @@ Rewrite each inquiry to make it clearer, more polite, and more complete.
 4. "Explain Section 2."
    →
 
-### 7. Practice B – Add Background Information
+### Practice B – Add Background Information
 
 Add **one sentence of background** before each question.
 
@@ -123,7 +123,7 @@ Add **one sentence of background** before each question.
 3. Could you explain how the updated rule applies?
    →
 
-### 8. Guided Practice – Write an External Inquiry Email
+### Guided Practice – Write an External Inquiry Email
 
 Write a complete inquiry email.
 
@@ -143,7 +143,7 @@ Write your email:
 
 - **Sign-off:**
 
-### 9. Freer Practice – Write Two External Inquiry Emails
+### Freer Practice – Write Two External Inquiry Emails
 
 Choose two situations below.
 
@@ -156,7 +156,7 @@ D. You need confirmation about the schedule for an external audit.
 
 Write your inquiry emails:
 
-### 10. Extended Writing Task – Inquiry Paragraph
+### Extended Writing Task – Inquiry Paragraph
 
 Write a **neutral paragraph** (5–6 sentences) describing why an external inquiry is needed.
 Include:
@@ -171,7 +171,7 @@ Include:
 
 Write your paragraph:
 
-### 11. Reflection
+### Reflection
 
 1. What is difficult about writing external inquiries?  
 
@@ -179,6 +179,6 @@ Write your paragraph:
 
 3. Which question phrase do you find most helpful?
 
-### 12. Homework
+### Homework
 
 Find a real external instruction or notice. Write an inquiry email asking one clear question about it.

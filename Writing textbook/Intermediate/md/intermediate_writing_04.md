@@ -1,8 +1,8 @@
 # MODULE 2. Essential Email Writing for Administrative Contexts
 
-## Unit 4 – Email Layout and Standard Phrases
+## 4. Email Layout and Standard Phrases
 
-### 1. Unit Focus
+### Unit Focus
 
 In this unit, you will learn the **basic structure of a professional email** used in administrative communication. You will:
 
@@ -14,7 +14,7 @@ In this unit, you will learn the **basic structure of a professional email** use
 
 - Practise writing simple, well-structured emails
 
-### 2. What Does a Professional Email Look Like?
+### What Does a Professional Email Look Like?
 
 A professional email has a **clear structure** so that the reader can easily understand the purpose.
 
@@ -32,7 +32,7 @@ A professional email has a **clear structure** so that the reader can easily und
 
 6. **Sign-off** – polite closing phrase + name
 
-### 3. Warm-Up: Which Email Is Better?
+### Warm-Up: Which Email Is Better?
 
 Read the two emails and choose which one is clearer and more professional.
 
@@ -62,7 +62,7 @@ Thank you,
 
 **Discussion:** Why is Email B more professional?
 
-### 4. Language Focus 1: Subject Lines
+### Language Focus 1: Subject Lines
 
 A good subject line is:
 
@@ -108,7 +108,7 @@ Rewrite each subject line so it sounds **natural and professional**. These examp
 
 - Confirmation Notice Status
 
-### 5. Language Focus 2: Openings and Closings
+### Language Focus 2: Openings and Closings
 
 #### Common Openings
 
@@ -152,7 +152,7 @@ Select an appropriate opening and closing for each situation.
 
    - Closing:
 
-### 6. Language Focus 3: Opening Sentences (Purpose)
+### Language Focus 3: Opening Sentences (Purpose)
 
 The first sentence must tell the reader **why you are writing**.
 
@@ -179,7 +179,7 @@ Write a clear opening sentence for each situation.
 3. You want to give information about a system update.
    →
 
-### 7. Guided Practice: Build a Complete Email
+### Guided Practice: Build a Complete Email
 
 Use the prompts to write a simple, clear email.
 
@@ -199,7 +199,7 @@ Write your email:
 
 - **Sign-off:**
 
-### 8. Freer Practice: Write Your Own Email
+### Freer Practice: Write Your Own Email
 
 Choose one situation and write a full email.
 
@@ -211,7 +211,7 @@ C. You have one question about a submitted file.
 
 Write your email:
 
-### 9. Reflection
+### Reflection
 
 1. Which part of the email is easiest for you?  
 
@@ -219,6 +219,6 @@ Write your email:
 
 3. Which new phrase do you want to use in real emails?
 
-### 10. Homework
+### Homework
 
 Find one real email you sent recently (in Japanese or English). Rewrite it in English using the **email structure** from this unit.
