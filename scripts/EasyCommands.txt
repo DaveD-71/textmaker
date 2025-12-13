@@ -19,12 +19,11 @@ python .\scripts\cli.py `
   --input `
   ".\Writing textbook\Intermediate\md" `
   --output `
-   ".\Writing textbook\Intermediate\intW2.docx" `
+  "\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\02. Clients\(K) JPO\Specs\Proposal\(5) English Writing Course (Private)\Writing textbook\Intermediate\adminwritingint.docx" `
   --reference `
-    ".\Writing textbook\admin-writing-style-ref.docx" `
+  "\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\02. Clients\(K) JPO\Specs\Proposal\(5) English Writing Course (Private)\Writing textbook\Intermediate\adminwritingint-styleref.docx" `
   --toc `
-  --toc-depth 1
-
+  --toc-depth 2
 
 Advanced
 ----------
@@ -36,7 +35,7 @@ python .\scripts\cli.py `
   ".\Writing textbook\Advanced\advW.docx" `
   --reference reference.docx `
   --toc `
-  --toc-depth 1
+  --toc-depth 2
 
 
 IP R&D_intermediate

@@ -2,7 +2,7 @@
 
 ## 4. Email Layout and Standard Phrases
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn the **basic structure of a professional email** used in administrative communication. You will:
 
@@ -62,7 +62,7 @@ Thank you,
 
 **Discussion:** Why is Email B more professional?
 
-### Language Focus 1: Subject Lines
+### Language 1: Subject Lines
 
 A good subject line is:
 
@@ -108,7 +108,7 @@ Rewrite each subject line so it sounds **natural and professional**. These examp
 
 - Confirmation Notice Status
 
-### Language Focus 2: Openings and Closings
+### Language 2: Openings and Closings
 
 #### Common Openings
 
@@ -152,7 +152,7 @@ Select an appropriate opening and closing for each situation.
 
    - Closing:
 
-### Language Focus 3: Opening Sentences (Purpose)
+### Language 3: Opening Sentences (Purpose)
 
 The first sentence must tell the reader **why you are writing**.
 

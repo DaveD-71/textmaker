@@ -2,7 +2,7 @@
 
 ## 22. Multi-Document Communication Task
 
-### Unit Focus
+### Focus
 
 In this unit, you will respond to a **single scenario** by producing **three different documents**, each for a different audience and purpose. You will:
 
@@ -52,7 +52,7 @@ Write your answers:
 3.
 4.
 
-### Language Focus – Three Audiences, Three Styles
+### Language – Three Audiences, Three Styles
 
 #### (A) Applicant Reply – Polite, supportive, clear
 

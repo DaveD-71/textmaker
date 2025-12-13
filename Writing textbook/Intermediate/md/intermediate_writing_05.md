@@ -2,7 +2,7 @@
 
 ## 5. Requesting Clarification
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to request clarification **clearly and politely** in administrative emails. You will:
 
@@ -32,7 +32,7 @@ Write what you would need to know:
 3.
 4.
 
-### Language Focus 1: Useful Clarification Phrases
+### Language 1: Useful Clarification Phrases
 
 Use these phrases when the information is not clear.
 
@@ -72,7 +72,7 @@ Rewrite the questions to make them specific and professional.
 4. What should I do?  
    →
 
-### Language Focus 2: Asking About Missing or Confusing Information
+### Language 2: Asking About Missing or Confusing Information
 
 #### Common Situations
 

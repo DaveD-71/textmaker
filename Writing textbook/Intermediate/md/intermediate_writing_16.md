@@ -2,7 +2,7 @@
 
 ## 16. Editing for Accuracy
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to **edit writing for accuracy**, focusing on grammar, spelling, punctuation, and basic sentence structure. You will:
 
@@ -50,7 +50,7 @@ Write your corrections:
 3.
 4.
 
-### Language Focus 1 – Common Accuracy Problems
+### Language 1 – Common Accuracy Problems
 
 #### Verb Forms
 

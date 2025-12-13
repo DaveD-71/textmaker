@@ -2,7 +2,7 @@
 
 ## 8. Writing Simple Procedures
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write **clear, simple, step-by-step procedures** for administrative tasks. You will:
 
@@ -61,7 +61,7 @@ Compare the two versions. Choose the clearer one.
 
 **Discussion:** Why is Version B better?
 
-### Language Focus 1 – Clear Instruction Verbs
+### Language 1 – Clear Instruction Verbs
 
 Common verbs used in procedures:
 
@@ -97,7 +97,7 @@ Rewrite each instruction using a **clear action verb**.
 4. "Send it to the right place."
    →
 
-### Language Focus 2 – Logical Order
+### Language 2 – Logical Order
 
 Procedures must follow a logical sequence.
 

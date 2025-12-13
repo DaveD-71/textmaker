@@ -2,7 +2,7 @@
 
 ## 15. Maintaining Consistent Email Style
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to maintain a **consistent, professional email style** across different messages. You will:
 
@@ -64,7 +64,7 @@ Thank you.
 
 What is inconsistent in Email A? (tone, clarity, formatting, etc.)
 
-### Language Focus 1 – Standard Email Elements
+### Language 1 – Standard Email Elements
 
 Use standardised components to create consistency.
 
@@ -105,7 +105,7 @@ Rewrite the emails to make them consistent in tone and structure.
 3. "Team, The file is wrong. Fix it."
    →
 
-### Language Focus 2 – Formatting for Clarity and Consistency
+### Language 2 – Formatting for Clarity and Consistency
 
 Emails should use:
 

@@ -2,7 +2,7 @@
 
 ## 23. Portfolio Writing & Final Revision
 
-### Unit Focus
+### Focus
 
 This final unit brings together all skills from Units 1–22. You will create a **small writing portfolio** demonstrating your ability to produce clear, accurate, coherent, concise, and professionally toned administrative writing. You will:
 
@@ -58,7 +58,7 @@ Write the titles or sources of the drafts you chose:
 2.
 3.
 
-### Language Focus – Advanced Editing Checklist
+### Language – Advanced Editing Checklist
 
 Before revising your drafts, check for:
 

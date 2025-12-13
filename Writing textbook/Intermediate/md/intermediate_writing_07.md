@@ -2,7 +2,7 @@
 
 ## 7. Making Requests Politely
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to make **clear, polite, and appropriate requests** in administrative communication. You will:
 
@@ -32,7 +32,7 @@ Read each pair. Choose the request that sounds more professional.
 
 **Discussion:** What makes the (b) sentences more polite?
 
-### Language Focus 1 – Levels of Politeness in Requests
+### Language 1 – Levels of Politeness in Requests
 
 Different request forms sound **more or less polite**. In administrative writing, the level of politeness depends on:
 
@@ -105,7 +105,7 @@ Rewrite each message to make it **polite, clear, and complete**.
 4. "Give me the information."
    →
 
-### Language Focus 2 – Requests with Specific Details
+### Language 2 – Requests with Specific Details
 
 A good request includes:
 
@@ -139,7 +139,7 @@ Each message below is polite but **not specific**. Improve it.
 4. "Could you update me?"
    →
 
-### Language Focus 3 – Requests Without Sounding Too Direct
+### Language 3 – Requests Without Sounding Too Direct
 
 Administrative English avoids:
 

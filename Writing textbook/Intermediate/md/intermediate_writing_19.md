@@ -2,7 +2,7 @@
 
 ## 19. Integrated Task 1: Combined Email + Internal Explanation
 
-### Unit Focus
+### Focus
 
 This unit brings together skills from earlier lessons. Students practise responding to a scenario that requires **both an external-style email** and a **short internal explanation**. You will:
 
@@ -44,7 +44,7 @@ Write your answers:
 3.
 4.
 
-### Language Focus – Writing for Two Audiences
+### Language – Writing for Two Audiences
 
 #### External Email (Polite, Clear, Concise)
 

@@ -2,7 +2,7 @@
 
 ## 17. Editing for Clarity
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to **edit writing to make it clearer and easier to understand**. You will:
 
@@ -49,7 +49,7 @@ Write the problems (too vague? too long? unnecessary words?):
 3.
 4.
 
-### Language Focus 1 – Common Clarity Problems
+### Language 1 – Common Clarity Problems
 
 #### Vague Language
 
@@ -83,7 +83,7 @@ Rewrite each sentence.
 4. "It would be appreciated if you could maybe check the document again."
    →
 
-### Language Focus 2 – Improving Flow
+### Language 2 – Improving Flow
 
 Clear writing follows a **logical order**, often:
 

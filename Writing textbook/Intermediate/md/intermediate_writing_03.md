@@ -2,7 +2,7 @@
 
 ## 3. Paragraph Structure
 
-### Unit Focus
+### Focus
 
 This unit teaches **what a paragraph is**, how to structure it clearly, and when to begin a new paragraph. You will:
 
@@ -68,7 +68,7 @@ We reviewed the updated guidelines yesterday. The office renovation will begin n
 
 **Discussion:** Why is Paragraph A better?
 
-### Language Focus 1: Three-Part Structure
+### Language 1: Three-Part Structure
 
 A strong paragraph usually includes:
 
@@ -120,7 +120,7 @@ Your labels:
 2.
 3.
 
-### Language Focus 2: Logical Flow Inside a Paragraph
+### Language 2: Logical Flow Inside a Paragraph
 
 A paragraph should follow a clear, logical order:
 

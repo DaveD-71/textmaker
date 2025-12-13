@@ -2,7 +2,7 @@
 
 ## 18. Editing for Tone
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to **edit writing to improve tone**, making your messages more polite, professional, and appropriate for administrative communication. You will:
 
@@ -56,7 +56,7 @@ Write the issues:
 3.
 4.
 
-### Language Focus 1 – Softening Direct Language
+### Language 1 – Softening Direct Language
 
 #### Direct → Polite
 
@@ -95,7 +95,7 @@ Rewrite the sentences politely.
 4. "This is not acceptable."
    →
 
-### Language Focus 2 – Tone in Emails
+### Language 2 – Tone in Emails
 
 Emails often need polite tone markers.
 

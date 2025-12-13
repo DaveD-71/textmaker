@@ -2,7 +2,7 @@
 
 ## 13. Providing Simple Explanations
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to provide **clear, simple explanations** in administrative contexts. You will:
 
@@ -50,7 +50,7 @@ What is missing?
 3.
 4.
 
-### Language Focus 1 – Useful Phrases for Explanations
+### Language 1 – Useful Phrases for Explanations
 
 #### Giving Background
 

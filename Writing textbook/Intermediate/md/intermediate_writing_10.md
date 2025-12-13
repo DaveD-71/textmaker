@@ -2,7 +2,7 @@
 
 ## 10. Explaining Problems Clearly
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to explain **problems and issues** clearly and professionally in administrative communication. You will:
 
@@ -48,7 +48,7 @@ Write what information is missing:
 3.
 4.
 
-### Language Focus 1 – Useful Phrases
+### Language 1 – Useful Phrases
 
 #### Describing the Issue
 

@@ -2,7 +2,7 @@
 
 ## 2. Professional Tone Basics
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write emails with a **professional and polite tone** suitable for administrative communication. You will:
 
@@ -30,7 +30,7 @@ Read each pair. Choose the sentence that sounds **more appropriate** for workpla
 
 **Discussion:** Why do the (b) sentences sound more professional?
 
-### Language Focus 1: Polite Request Phrases
+### Language 1: Polite Request Phrases
 
 Administrative emails often use **softened, polite expressions**.
 
@@ -62,7 +62,7 @@ Rewrite the message using a polite request phrase.
 4. Give me the information.
    →
 
-### Language Focus 2: Professional Tone in Explanations
+### Language 2: Professional Tone in Explanations
 
 Professional tone is:
 

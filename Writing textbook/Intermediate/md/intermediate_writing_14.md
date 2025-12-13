@@ -2,7 +2,7 @@
 
 ## 14. Responding to Confusion
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to respond **clearly and professionally** when someone is confused or has misunderstood information. You will:
 
@@ -48,7 +48,7 @@ Write the point of confusion:
 3.
 4.
 
-### Language Focus 1 – Useful Clarification Phrases
+### Language 1 – Useful Clarification Phrases
 
 #### Acknowledging the Confusion
 

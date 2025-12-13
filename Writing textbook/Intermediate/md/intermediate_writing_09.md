@@ -2,7 +2,7 @@
 
 ## 9. Internal Notices
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write **clear, concise internal notices** for colleagues within your organisation. You will:
 
@@ -46,7 +46,7 @@ A temporary system error occurred this morning. Some users may have experienced 
 
 **Discussion:** Why is Notice B clearer and more useful?
 
-### Language Focus 1 – Structure of an Internal Notice
+### Language 1 – Structure of an Internal Notice
 
 A clear internal notice usually includes:
 
@@ -81,7 +81,7 @@ Your answers:
 3.
 4.
 
-### Language Focus 2 – Neutral Tone
+### Language 2 – Neutral Tone
 
 Internal notices use **neutral, factual language**. Avoid:
 

@@ -2,7 +2,7 @@
 
 ## 20. Integrated Task 2: Revision + Notice Writing
 
-### Unit Focus
+### Focus
 
 This unit develops your ability to respond to an administrative scenario by producing **two connected pieces of writing**:
 
@@ -50,7 +50,7 @@ Write your answers:
 3.
 4.
 
-### Language Focus – Revision vs. Notice
+### Language – Revision vs. Notice
 
 #### Revision Message (External Office)
 

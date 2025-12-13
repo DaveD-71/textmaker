@@ -2,7 +2,7 @@
 
 ## 1. Clear Sentence Structure
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write **clear English sentences** for administrative communication.
 You will:
@@ -31,7 +31,7 @@ Read the pairs of sentences. Choose the one that feels **clearer**.
 
 **Discussion:** Why are the (b) sentences easier to read?
 
-### Language Focus 1: Basic Sentence Pattern (S–V–O / S–V–C)
+### Language 1: Basic Sentence Pattern (S–V–O / S–V–C)
 
 Most clear administrative English sentences follow this simple pattern:
 
@@ -89,7 +89,7 @@ Rewrite the word groups as clear S–V–O or S-V-C sentences.
 
 5. (system / show / error message / this morning)
 
-### Language Focus 2: Avoiding Unnecessary Complexity
+### Language 2: Avoiding Unnecessary Complexity
 
 Administrative English should be **short, direct, and clear**.
 

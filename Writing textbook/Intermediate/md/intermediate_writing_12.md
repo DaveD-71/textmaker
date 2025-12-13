@@ -2,7 +2,7 @@
 
 ## 12. Writing Simple External Inquiries
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write **simple, clear external inquiries** to other offices or organisations. You will:
 
@@ -52,7 +52,7 @@ We are reviewing the updated guidelines and have one question about Section 4. C
 
 **Discussion:** Why is Email B more appropriate?
 
-### Language Focus 1 – Structure of an External Inquiry
+### Language 1 – Structure of an External Inquiry
 
 A clear inquiry email usually includes:
 

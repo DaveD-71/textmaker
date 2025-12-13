@@ -2,9 +2,9 @@
 
 ## 21. Writing for Consistency Across a Team
 
-### Unit Focus
+### Focus
 
-This unit focuses on **team-wide consistency** in administrative writing. You will learn how to:
+This Focuses on **team-wide consistency** in administrative writing. You will learn how to:
 
 - Identify inconsistent writing styles across different colleagues
 
@@ -66,7 +66,7 @@ Write the inconsistencies you notice:
 
 - Clarity:
 
-### Language Focus – Standardising Team Writing
+### Language – Standardising Team Writing
 
 #### Standard Openings
 

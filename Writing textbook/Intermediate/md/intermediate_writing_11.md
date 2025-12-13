@@ -2,7 +2,7 @@
 
 ## 11. Writing Simple Meeting Summaries
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to write **clear, simple summaries of meetings** for internal administrative use. You will:
 
@@ -45,7 +45,7 @@ The team reviewed the preparation checklist. Two items still require confirmatio
 
 **Discussion:** Why is Summary B clearer?
 
-### Language Focus 1 – Key Elements of a Meeting Summary
+### Language 1 – Key Elements of a Meeting Summary
 
 A clear summary usually includes:
 

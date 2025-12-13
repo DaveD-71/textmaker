@@ -2,7 +2,7 @@
 
 ## 6. Communicating Delays or Changes
 
-### Unit Focus
+### Focus
 
 In this unit, you will learn how to communicate **delays, changes, or updates** in a clear and professional way. You will:
 
@@ -32,7 +32,7 @@ Write what is missing:
 3.
 4.
 
-### Language Focus 1 – Useful Phrases for Delays and Changes
+### Language 1 – Useful Phrases for Delays and Changes
 
 #### Neutral Phrases
 
@@ -82,7 +82,7 @@ Rewrite each message so it includes **clearer information**.
 4. "The system is slow."
    →
 
-### Language Focus 2 – Logical Order for Update Messages
+### Language 2 – Logical Order for Update Messages
 
 A clear update message usually follows this pattern:
 
