@@ -66,6 +66,24 @@ python .\scripts\cli.py --input <file-or-folder> `
 - Each Heading 1 unit starts on its own page/section.
 - When merging multiple markdown files, each file boundary becomes a next-page section.
 
+## Reverse conversion: DOCX → Markdown (units) + assets + styles
+
+```powershell
+python .\scripts\docx_to_markdown.py `
+  --input ".\reference.docx" `
+  --output-dir ".\docx_export" `
+  --assets-dir "assets" `
+  --unit-heading-level 1 `
+  --reference-out ".\reference-from-source.docx" `
+  --preserve-headers
+```
+
+- Splits a DOCX into markdown files, one per Heading 1 section by default (`--unit-heading-level` can be changed).
+- Extracts embedded media to the chosen assets folder and rewrites markdown references accordingly.
+- Preserves elements pandoc normally drops by inserting/restoring markers: page/section breaks become `\pagebreak`, manual line breaks become `<br>`, cross-reference fields become textual markers, shapes/textboxes with alt text become placeholders, and merged/complex tables are left to pandoc but flagged via placeholders when applicable.
+- Optionally writes a `reference-out` DOCX that keeps the source document’s styles but strips the body content (add `--preserve-headers` to keep headers/footers), suitable for `--reference-doc` use in pandoc.
+- Uses pandoc under the hood; ensure it is installed and on PATH.
+
 ## Notes
 
 - This prototype uses `pandoc` for markdown → docx conversion and a generated `reference.docx` to control styles. Pandoc must be installed separately.
