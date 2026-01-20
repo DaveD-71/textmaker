@@ -1,0 +1,15 @@
+type,styleId,name,font,size_pt,bold,italic,underline,align,space_before_pt,space_after_pt,line_spacing_twips,firstLine_cm,hanging_cm,left_cm,right_cm,outline_level,prov_space_before,prov_space_after,prov_line_spacing,prov_firstLine,prov_hanging,prov_left,prov_right,prov_outline_level,basedOn
+P,Normal,Normal,,11.0,0,0,0,left,,8.0,259,,,,,,,default,default,,,,,,
+P,Heading1,heading 1,Sakkal Majalla,36.0,1,0,0,left,,12.0,240,,,,,,,explicit,explicit,,,,,explicit,Normal
+P,Header,header,,11.0,0,0,0,left,,,240,,,,,,,explicit,explicit,,,,,,Normal
+P,Footer,footer,,11.0,0,0,0,left,,,240,,,,,,,explicit,explicit,,,,,,Normal
+P,BalloonText,Balloon Text,Segoe UI,9.0,0,0,0,left,,,240,,,,,,,explicit,explicit,,,,,,Normal
+P,ListParagraph,List Paragraph,,11.0,0,0,0,left,,8.0,259,,,1.27,,,,default,default,,,explicit,,,Normal
+C,DefaultParagraphFont,Default Paragraph Font,,11.0,0,0,0,,,,,,,,,,,,,,,,
+C,HeaderChar,Header Char,,11.0,0,0,0,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,FooterChar,Footer Char,,11.0,0,0,0,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,BalloonTextChar,Balloon Text Char,Segoe UI,9.0,0,0,0,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,Hyperlink,Hyperlink,,11.0,0,0,1,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,UnresolvedMention,Unresolved Mention,,11.0,0,0,0,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,Heading1Char,Heading 1 Char,Sakkal Majalla,36.0,1,0,0,,,,,,,,,,,,,,,,DefaultParagraphFont
+C,FollowedHyperlink,FollowedHyperlink,,11.0,0,0,1,,,,,,,,,,,,,,,,DefaultParagraphFont

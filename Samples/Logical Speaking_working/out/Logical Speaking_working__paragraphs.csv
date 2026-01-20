@@ -1,0 +1,632 @@
+para_id,context,container_kind,table_index,row_index,col_index,paragraph_index,paragraph_index_in_cell,styleId,numId,ilvl,text
+p000001,body,body,,,,0,,Heading3,,,Objectives
+p000002,body,body,,,,1,,,,,The goals of this course are for students to:
+p000003,body,body,,,,2,,ListParagraph,33,0,Learn how to structure a logical argument. This includes:
+p000004,body,body,,,,3,,ListParagraph,33,1,Expressing a clear opinion.
+p000005,body,body,,,,4,,ListParagraph,33,1,Developing and expressing strongly connected reasons.
+p000006,body,body,,,,5,,ListParagraph,33,1,Presenting supporting evidence.
+p000007,body,body,,,,6,,ListParagraph,33,0,Identify bias in a news report.
+p000008,body,body,,,,7,,ListParagraph,33,0,Understand the difference between facts and fake news.
+p000009,body,body,,,,8,,ListParagraph,33,0,Apply the concepts of logical reasoning in a meeting simulation.
+p000010,body,body,,,,9,,,,,
+p000011,body,body,,,,10,,Heading3,,,Contents
+p000012,body,body,,,,11,,TOC2,,,
+p000013,body,body,,,,12,,TOC2,,,
+p000014,body,body,,,,13,,TOC2,,,
+p000015,body,body,,,,14,,TOC2,,,
+p000016,body,body,,,,15,,TOC2,,,
+p000017,body,body,,,,16,,TOC2,,,
+p000018,body,body,,,,17,,TOC2,,,
+p000019,body,body,,,,18,,TOC2,,,
+p000020,body,body,,,,19,,TOC2,,,
+p000021,body,body,,,,20,,TOC2,,,
+p000022,body,body,,,,21,,TOC2,,,
+p000023,body,body,,,,22,,TOC2,,,
+p000024,body,body,,,,23,,TOC2,,,
+p000025,body,body,,,,24,,,,,
+p000026,body,body,,,,25,,Heading2,,,
+p000027,body,body,,,,26,,Heading2,,,An Introduction to Logical Speaking
+p000028,body,body,,,,27,,,,,Here are some key concepts we will refer to throughout this course. Read and discuss them with your instructor so you can understand each of them clearly.
+p000029,body,body,,,,28,,ListParagraph,6,0,Logical speaking is the combination of two things: speaking clearly and reasoning logically.
+p000030,body,body,,,,29,,ListParagraph,6,0,Speaking clearly refers to the organization of your speech so that your ideas are clearly connected and easily understood by your audience.
+p000031,body,body,,,,30,,ListParagraph,6,0,Reasoning logically refers to the connection of your ideas and how cyou form your opinions. Reasoning is your thought process.
+p000032,body,body,,,,31,,ListParagraph,6,0,An opinion is an idea which is the result of your thinking process based on the evidence you have access to.
+p000033,body,body,,,,32,,ListParagraph,6,0,Evidence is the information you have which makes you believe something is true. There are many types of evidence. Some of them are more valuable than others.
+p000034,body,body,,,,33,,ListParagraph,6,0,"When you can speak logically, you can persuade your colleagues and your counterparts to accept your ideas. This process of persuading others is called argument. We use argument to show that something is true, or correct."
+p000035,body,body,,,,34,,ListParagraph,6,0,"Argument is not debate. Argument shows the depth of your understanding of a topic. The goal of argument is to persuade, not to win points by taking a strong position."
+p000036,body,body,,,,35,,,,,
+p000037,body,body,,,,36,,Heading3,,,The Parthenon: A Metaphor for Argument
+p000038,body,body,,,,37,,,,,
+p000039,body,body,,,,38,,,,,"Built in Greece between 447 and 438 BC, the Parthenon remains the most important surviving building of classical Greece. Because of its ability to endure for more than 2,500 years, the Parthenon is seen as an example of strength, durability and robustness and is often used to explain the concepts of argument. The idea of argument also came from classical Greece. Aristotle (384–322BC), often called ‘the father of logic’, described logical reasoning in his writings, and today we still refer to many of his ideas."
+p000040,body,body,,,,39,,Heading3,,,The ORE Framework
+p000041,body,body,,,,40,,Heading4,,,Activity 1
+p000042,body,body,,,,41,,ListParagraph,5,0,"The Parthenon has three main parts: the foundation, the columns, and the roof. Together, they form a commonly used model to represent argument. Which part of the Parthenon (the foundation, the columns or the roof) represents:"
+p000043,body,body,,,,42,,ListParagraph,2,0,Opinion?
+p000044,body,body,,,,43,,ListParagraph,2,0,Reasons?
+p000045,body,body,,,,44,,ListParagraph,2,0,Evidence?
+p000046,body,body,,,,45,,ListParagraph,5,0,"Using the Parthenon as a model, can you explain the process of logical argument? Think about the size and volume of the foundation and its purpose, the number of columns and how they support the roof. Also, think about the order in which the Parthenon was built. Is there a similarity between how the Parthenon was built, and how opinions, ideas and argument develop? Further, think about how important the connections are between the foundation and the columns, and the columns and the roof. What does that mean about argument?"
+p000047,body,body,,,,46,,Heading4,,,Activity 2
+p000048,body,body,,,,47,,ListParagraph,9,0,Read the example of an ORE argument below:
+p000049,body,body,,,,48,,,,,"As  far as I‘m concerned, the government should ban the use of single-use plastic shopping bags. The reason for this is clear: they cause serious environmental damage and harm to wildlife. Many animals mistake plastic for food, which can lead to injury or death. According to a United Nations report, over 100,000 marine animals die each year from plastic pollution. Plastic bags also break down into microplastics, which end up in the food chain and can affect human health. The only way to reduce this problem is to stop producing single-use bags and replace them with reusable alternatives."
+p000050,body,body,,,,49,,ListParagraph,9,0,Can you identify:
+p000051,body,body,,,,50,,ListParagraph,8,0,The opinion statement?
+p000052,body,body,,,,51,,ListParagraph,8,0,The reason?
+p000053,body,body,,,,52,,ListParagraph,8,0,The evidence?
+p000054,body,body,,,,53,,ListParagraph,9,0,Is the argument logical? Is it strong? Explain.
+p000055,body,body,,,,54,,Heading4,,,Activity 3
+p000056,body,body,,,,55,,,,,"Do you agree with the argument above? Why? Why not? Give your opinion with a reason, and if possible, provide evidence to support it."
+p000057,body,body,,,,56,,Heading2,,,Expressing Your Opinion
+p000058,body,body,,,,57,,,,,Opinion is defined in the Oxford Learner’s Dictionary as:
+p000059,body,body,,,,58,,ListParagraph,,,"Your feelings or thoughts about somebody/something, rather than a fact."
+p000060,body,body,,,,59,,ListParagraph,,,The beliefs or views of a group of people.
+p000061,body,body,,,,60,,ListParagraph,,,Advice from a professional person.
+p000062,body,body,,,,61,,,,,There are three important points we can learn from this:
+p000063,body,body,,,,62,,ListParagraph,4,0,"Opinion can be private or public – you can have your own opinion, or you can share an opinion with others."
+p000064,body,body,,,,63,,ListParagraph,4,0,Opinion is not fact.
+p000065,body,body,,,,64,,ListParagraph,4,0,"Opinion can be feelings, thoughts, beliefs, views or an expert’s advice."
+p000066,body,body,,,,65,,Heading4,,,Activity
+p000067,body,body,,,,66,,ListParagraph,7,0,What phrases do you commonly use to express your opinion in English?
+p000068,body,body,,,,67,,ListParagraph,7,0,"Read the following opinion phrases. Then, underline the part or parts of the sentences above which indicate the speaker is sharing an opinion. Give each phrase a rating from 1 to 5, where 1 is very weak and 5 is very strong."
+p000077,body,body,,,,68,,,,,
+p000078,body,body,,,,69,,ListParagraph,7,0,Choose from the following broad topics and practice making opinion statements. Try to make statements of varied strength.
+p000091,body,body,,,,70,,Heading4,,,Examples
+p000092,body,body,,,,71,,ListParagraph,38,0,"In my opinion, the managers (business leaders) need to communicate clearly with their staff. Otherwise, there can be misunderstandings."
+p000093,body,body,,,,72,,ListParagraph,38,0,"I was happy to see sports climbing included in the Tokyo 2020 Olympics. In my opinion, it’s one of the most challenging sports you can compete in."
+p000094,body,body,,,,73,,,,,
+p000095,body,body,,,,74,,Heading2,,,Reasoning 1
+p000096,body,body,,,,75,,,,,Reasoning is your thinking process. Logical reasoning makes clear and strong connections between evidence and opinions. It is an essential part of logical speaking.
+p000097,body,body,,,,76,,Heading3,,,Linking Words 1: Conjunctions
+p000098,body,body,,,,77,,,,,"Conjunctions are words which connect two ideas together: ‘and’, ‘but’ and ‘or’ are common conjunctions. We often use conjunctions for simple reasoning."
+p000107,body,body,,,,78,,Heading4,,,Activity
+p000108,body,body,,,,79,,ListParagraph,14,0,Use the conjunctions above to complete the sentences below. There could be more than one correct answer.
+p000109,body,body,,,,80,,ListParagraph,13,0,"We haven’t finished the report, ____________________ we should cancel our meeting on Monday."
+p000110,body,body,,,,81,,ListParagraph,13,0,"____________________ an accident on the highway, I missed the meeting."
+p000111,body,body,,,,82,,ListParagraph,13,0,The project had some unexpected delays. ____________________ we went over budget.
+p000112,body,body,,,,83,,ListParagraph,13,0,The plane was late arriving in Sydney. ____________________ I missed my connecting flight.
+p000113,body,body,,,,84,,ListParagraph,13,0,I had problems with my computer all day ____________________ I had to stay late on Friday.
+p000114,body,body,,,,85,,ListParagraph,13,0,I got into the office early this morning ____________________ finish my work on the sales report. 
+p000115,body,body,,,,86,,ListParagraph,13,0,I am late ____________________ my car broke down.
+p000116,body,body,,,,87,,ListParagraph,14,0,"With a partner, talk about some recent decisions you have made at work. Give reasons explaining your decisions using some of the conjunctions for reasoning."
+p000117,body,body,,,,88,,Heading3,,,Linking Words 2: Discourse Markers
+p000118,body,body,,,,89,,,,,"Discourse markers are words or phrases like anyway, right, okay, as I say, and to begin with. We use them to connect, organise and manage what we say or write, or to express attitude."
+p000146,body,body,,,,90,,Heading4,,,Activity
+p000147,body,body,,,,91,,ListParagraph,16,0,Write another discourse marker for each communication function in the table above.
+p000148,body,body,,,,92,,ListParagraph,16,0,Practice making sentences with the discourse markers. Choose from the topics below:
+p000161,body,body,,,,93,,,,,
+p000162,body,body,,,,94,,Heading2,,,Reasoning 2
+p000163,body,body,,,,95,,Heading3,,,Order and Organisation
+p000164,body,body,,,,96,,p,,,"As we learned above, linking words can be used to order or sequence what we say. This is very important in logical speaking because the information you share in your argument must be presented in a logical order."
+p000165,body,body,,,,97,,p,,,Some of the common words and phrases which we use for this are:
+p000186,body,body,,,,98,,p,,,* ‘firstly’ and ‘secondly’ are more formal than ‘first’ and ‘second’.
+p000187,body,body,,,,99,,Heading4,,,Activity 1
+p000188,body,body,,,,100,,,,,Use the vocabulary in the table above to add order and organisation in the activities below.
+p000189,body,body,,,,101,,ListParagraph,15,0,Look at your work schedule and explain what you did on a busy day last week.
+p000190,body,body,,,,102,,ListParagraph,15,0,"Explain a simple process in your office, for example, how to use the photocopier, or how to book a meeting room."
+p000191,body,body,,,,103,,Heading4,,,Activity 2
+p000192,body,body,,,,104,,,,,"Answer the following questions and think of reasons to support your answers. Share your answers and your reasons with a partner. Try to use conjunctions and discourse markers, and order your sentences to make clear and logical connections."
+p000193,body,body,,,,105,,ListParagraph,18,0,Why did you join your organization?
+p000194,body,body,,,,106,,ListParagraph,18,0,What do you like most about your job? Why?
+p000195,body,body,,,,107,,ListParagraph,18,0,Who do you admire at work? Why?
+p000196,body,body,,,,108,,ListParagraph,18,0,What do you want to achieve in the next three years? Why?
+p000197,body,body,,,,109,,ListParagraph,18,0,
+p000198,body,body,,,,110,,Heading2,,,Supporting Evidence 1
+p000199,body,body,,,,111,,,,,"Evidence is the information which causes us to believe something is true. The more evidence there is, the more likely it is to be true. Evidence is the foundation of logical speaking. The type and amount of evidence you use to support your opinions will determine how effective you will be at persuading others."
+p000236,body,body,,,,112,,,,,"When evaluating evidence, consider the following:"
+p000237,body,body,,,,113,,ListParagraph,37,0,What is the purpose of the source of the evidence? Who is the audience?
+p000238,body,body,,,,114,,ListParagraph,37,0,"Is the information credible? Who is the author, and what are her qualifications? Is the publisher reputable and reliable?"
+p000239,body,body,,,,115,,ListParagraph,37,0,Is the information current and relevant?
+p000240,body,body,,,,116,,ListParagraph,37,0,"Is the information objective, or is it biased to support an agenda (political, religious, social or commercial)?"
+p000241,body,body,,,,117,,ListParagraph,37,0,Is the information accurate and reliable? It is well researched and referenced? What is the data collection methodology? 
+p000242,body,body,,,,118,,Heading4,,,Activity 1
+p000243,body,body,,,,119,,,,,"For each opinion statement below, create a reason and supporting evidence."
+p000250,body,body,,,,120,,,,,
+p000257,body,body,,,,121,,,,,
+p000264,body,body,,,,122,,,,,
+p000271,body,body,,,,123,,,,,
+p000278,body,body,,,,124,,,,,
+p000285,body,body,,,,125,,,,,
+p000286,body,body,,,,126,,Heading3,,,Identifying Bias
+p000287,body,body,,,,127,,,,,A recent segment on Sky News Australia discussed electric-vehicle (EV) fires and described “thermal runaway” events as virtually impossible to put out. Watch the clip: “Thermal runaway: Electric vehicles catching fire are ‘virtually impossible to put out’” (Sky News Australia).
+p000288,body,body,,,,128,,,,,Here are two ways this information can be presented:
+p000292,body,body,,,,129,,,,,
+p000296,body,body,,,,130,,Heading4,,,Activity 2
+p000297,body,body,,,,131,,ListParagraph,31,0,What is bias in the media? Give two examples of framing choices that can bias how audiences interpret risk.
+p000298,body,body,,,,132,,ListParagraph,31,0,"Compare Data 1 and Data What’s the key difference in what is being measured? (Hint: severity of an event if it happens vs. how often it happens.) How could presenting these side-by-side, without context, lead viewers to an exaggerated conclusion?"
+p000299,body,body,,,,133,,ListParagraph,31,0,Rewrite the Sky News message so it presents both severity and base-rate context clearly in two sentences.
+p000300,body,body,,,,134,,ListParagraph,31,0,"What additional evidence would you ask for before forming an opinion (e.g., fleet size, exposure time, definitions of “fire,” regional differences, control for vehicle age)?"
+p000301,body,body,,,,135,,ListParagraph,31,0,"After watching the ABC Media Watch critique, identify one specific technique each clip uses (choice of language, visuals, statistics, anecdotes). Which is more persuasive to you, and why?"
+p000302,body,body,,,,136,,Heading2,,,Supporting Evidence 2
+p000303,body,body,,,,137,,,,,"Is the logical reasoning in these statements strong or weak? Read, discuss and decide with a partner."
+p000304,body,body,,,,138,,Heading3,,,Renewable Energy
+p000305,body,body,,,,139,,ListParagraph,23,0,I’m not supporting the move to wind and solar because I think it’s unreliable. The weather changes too much to depend on these sources for our electricity needs.
+p000306,body,body,,,,140,,ListParagraph,23,0,"According to the International Energy Agency, modern renewable energy systems can now provide consistent power through improved storage technologies, and many countries already generate more than 50% of their electricity from renewable sources without interruption."
+p000307,body,body,,,,141,,Heading3,,,Business Strategy
+p000308,body,body,,,,142,,ListParagraph,21,0,"We hired a market research company in 2018 to investigate customer’s motivations for buying our products. The company contacted around 10,000 customers to conduct the survey. 76% of respondents said they look first at price when making a purchase decision. Therefore, I think we need to think carefully about our pricing for next year’s sales strategy."
+p000309,body,body,,,,143,,ListParagraph,21,0,In my last company we were successful at increasing our sales by discounting our prices in a summer campaign. I think these short-term discounts can incentivize customers to commit to a purchase. We could have a lot of success if we do it here.
+p000310,body,body,,,,144,,Heading3,,,Economics
+p000311,body,body,,,,145,,ListParagraph,24,0,My boss used to work with an economist who says electricity prices will rise sharply if we move away from fossil fuels.
+p000312,body,body,,,,146,,ListParagraph,24,0,"The Bank of Japan’s Outlook for Economic Activity and Prices, released in June 2021, states that confidence in the markets will improve by the end of the year as long as the government can keep to its plan of having most people vaccinated by November."
+p000313,body,body,,,,147,,,,,
+p000314,body,body,,,,148,,Heading3,,,Lifestyle
+p000315,body,body,,,,149,,ListParagraph,25,0,"If I go to the same Pachinko place at the same time every day, I am sure to eventually win big and get my money back. I watched a YouTube video about how some university students won 3.5 million dollars on the lotto using math, so my system is guaranteed to succeed. With my system, I am sure to win."
+p000316,body,body,,,,150,,ListParagraph,25,0,"Most medical experts now agree that cardio exercise does little to help with weight loss. In fact, many scientific studies done over the last ten years show that weight training makes a greater contribution to weight loss than cardio activities. Therefore, if you want to lose weight at the gym, you should lift weights."
+p000317,body,body,,,,151,,Heading3,,,Travel
+p000318,body,body,,,,152,,ListParagraph,26,0,"A comprehensive study conducted by Cornell University in the US between 2010 and 2016 shows that students who did a study abroad year while completing their university degrees tested higher on psychological tests for empathy, flexibility and interpersonal communication."
+p000319,body,body,,,,153,,ListParagraph,26,0,"Many people say travel broadens the mind, so I believe I will become a better person from traveling."
+p000320,body,body,,,,154,,Heading4,,,Activity 2
+p000321,body,body,,,,155,,,,,"Think of a current issue and share your opinion. Support it with reasons and evidence, and then ask your partner to evaluate the logic in your argument."
+p000322,body,body,,,,156,,,,,
+p000323,body,body,,,,157,,Heading3,,,Facts vs. Fake News
+p000324,body,body,,,,158,,,,,"Traditionally, facts have been considered one of the strongest types of evidence and they are commonly researched and verified in order to support an argument. The Oxford Dictionary explains a fact is ‘a thing that is known to be true, especially when it can be proved’. Recently, in some parts of the world, factual evidence seems to be losing its ability to persuade people. Fake news has become a significant problem on social networking sites, and even some quasi-news organisations. Fake news is information on websites and other media which looks like real news, except it is not true, or it is partially true, but the information is incomplete."
+p000325,body,body,,,,159,,,,,"In many instances, fake news is purposely designed to confuse people and lead to misunderstanding. In the 2016 US Presidential election, fake news on Facebook and other social media sites was considered an important factor in the election result. However, fake news is usually easy to spot and counter."
+p000326,body,body,,,,160,,,,,"First, develop a healthily skeptical attitude. If you are looking at a website which has a history of distributing fake news, do not allow yourself to automatically accept the information you find on the site. Instead, try to confirm it in at least two or a few different and reliable sources. And before you share the information, make sure you have done your research to confirm it, otherwise you will be to blame for spreading untruths."
+p000327,body,body,,,,161,,Heading4,,,Activity: Discuss
+p000328,body,body,,,,162,,ListParagraph,32,0,Do you know any examples of fake news?
+p000329,body,body,,,,163,,ListParagraph,32,0,How do you know the information is fake?
+p000330,body,body,,,,164,,ListParagraph,32,0,How common is fake news in Japan? Do you think it will become a bigger issue in the future?
+p000331,body,body,,,,165,,,,,
+p000332,body,body,,,,166,,Heading2,,,Argument Model 1: PBSR
+p000333,body,body,,,,167,,,,,"In business, we most commonly use logical speaking to support proposals and to explain decision-making. It is a key part of problem solving and business reporting. There are a few different ways of presenting information to explain decisions, all of which involve logical reasoning."
+p000334,body,body,,,,168,,Heading3,,,Problem-Background-Solution-Result (PBSR)
+p000335,body,body,,,,169,,,,,PBSR is a simple model for reporting on problem solving. Here is an example:
+p000344,body,body,,,,170,,,,,Notes:
+p000345,body,body,,,,171,,ListParagraph,28,0,"In this model, your opinion and its supporting evidence become part of the solution."
+p000346,body,body,,,,172,,ListParagraph,28,0,"If you are giving a report on past events, then the result should reflect the outcome of the action and the current situation. However, if you are making a suggestion to deal with a current problem (as in the example above), then the result should indicate your expected outcomes."
+p000347,body,body,,,,173,,Heading3,,,PBSR: A Conversation
+p000348,body,body,,,,174,,,,,We can also use PBSR as a model for asking for and giving suggestions or advice. Look at the following example of a junior staff member talking with his more experienced senior colleague.
+p000349,body,body,,,,175,,,,,Shin:I’ve got a problem at work and I’m not sure how to deal with it.
+p000350,body,body,,,,176,,,,,Andre:What’s the problem?
+p000351,body,body,,,,177,,,,,"Shin:Well, I made a mistake with a customer’s invoice, and I sent the wrong amount. We overcharged him."
+p000352,body,body,,,,178,,,,,Andre:What’s the situation?
+p000353,body,body,,,,179,,,,,"Shin:This is a customer we have worked with for a long time, and I recently became responsible for their orders. Because they have been our customer for a long time, they get a special discount on their orders, but I didn’t know that, so I charged them the full amount."
+p000354,body,body,,,,180,,,,,"Andre:I see. Have you contacted them? They have been with your company a long time, and your mistake is understandable. I’m sure that if you contact the customer, explain your mistake and apologise, and then issue a corrected invoice, they will be fine with it. "
+p000355,body,body,,,,181,,,,,"Shin:Yes, you’re probably right. I’ll call them first thing tomorrow."
+p000356,body,body,,,,182,,Heading4,,,Activity
+p000357,body,body,,,,183,,ListParagraph,30,0,"In the conversation above, identify:"
+p000358,body,body,,,,184,,ListParagraph,29,0,The problem.
+p000359,body,body,,,,185,,ListParagraph,29,0,The background.
+p000360,body,body,,,,186,,ListParagraph,29,0,The solution.
+p000361,body,body,,,,187,,ListParagraph,29,0,The result.
+p000362,body,body,,,,188,,ListParagraph,30,0,Think of a problem you have had at work recently and ask your partner for advice. You need to explain the problem and the background. Your partner should suggest a solution and the expected result.
+p000363,body,body,,,,189,,,,,
+p000364,body,body,,,,190,,Heading2,,,Writing an Argument 1
+p000365,body,body,,,,191,,,,,"Choose from one of the following topics and write an argument expressing your opinion with reasons and evidence to support it. If you do not know any evidence, make it up for this practice activity (but in real life, always use real evidence!)."
+p000378,body,body,,,,192,,,,,
+p000388,body,body,,,,193,,,,,
+p000389,body,body,,,,194,,Heading2,,,Argument Model 2: PCAF
+p000390,body,body,,,,195,,Heading3,,,Point-Counterpoint-Against-For (PCAF)
+p000391,body,body,,,,196,,,,,The model introduced in this unit takes a balanced approach and looks at both sides of the argument but makes a final suggestion in favour of a preferred idea. This is useful when you know what both sides of the argument are as you can explain why your idea is better than the alternative.
+p000392,body,body,,,,197,,,,,In this model:
+p000393,body,body,,,,198,,ListParagraph,34,0,"Point is your idea, opinion or suggestion."
+p000394,body,body,,,,199,,ListParagraph,34,0,Counterpoint is a common but different (and sometimes opposing) idea to yours.
+p000395,body,body,,,,200,,ListParagraph,34,0,Against is your reasoning for rejecting the counterpoint.
+p000396,body,body,,,,201,,ListParagraph,34,0,For is your reasoning for supporting your point.
+p000397,body,body,,,,202,,,,,Look at the following example.
+p000406,body,body,,,,203,,Heading4,,,Activity
+p000407,body,body,,,,204,,,,,"Choose from the following topics. Brainstorm PCAF points for each one with a partner, and then present your ideas in teams."
+p000408,body,body,,,,205,,ListParagraph,35,0,Is the death penalty effective?
+p000409,body,body,,,,206,,ListParagraph,35,0,Is competition good for kids?
+p000410,body,body,,,,207,,ListParagraph,35,0,Is buying a lottery ticket a good idea?
+p000411,body,body,,,,208,,ListParagraph,35,0,Should companies be allowed to advertise to children?
+p000412,body,body,,,,209,,ListParagraph,35,0,Should companies hire SNS influencers to promote their products?
+p000413,body,body,,,,210,,ListParagraph,35,0,Are loyalty programs an effective marketing strategy?
+p000414,body,body,,,,211,,ListParagraph,35,0,Are chatbots effective tools for customer service?
+p000415,body,body,,,,212,,ListParagraph,35,0,Should companies allow employees to bring their pets to work?
+p000416,body,body,,,,213,,ListParagraph,35,0,
+p000417,body,body,,,,214,,Heading2,,,Writing an Argument 2
+p000418,body,body,,,,215,,,,,"Choose from one of the following topics and write an argument expressing your opinion with reasons and evidence to support it. If you do not know any evidence, make it up for this practice activity (but in real life, always use real evidence!)."
+p000431,body,body,,,,216,,,,,
+p000441,body,body,,,,217,,,,,
+p000442,body,body,,,,218,,Heading2,,,A Business Meeting 1
+p000443,body,body,,,,219,,Heading4,,,Activity
+p000444,body,body,,,,220,,ListParagraph,27,0,Read following situation.
+p000445,body,body,,,,221,,,,,"Your company sells frozen meals at convenience stores and supermarket chains across the country. Recently, you launched a new line of pre-packed frozen meals. Your company invested a lot of money on the promotion of the new line, including hiring a famous actor to endorse it. This new product line uses a new technology to flash freeze the product."
+p000446,body,body,,,,222,,,,,A recent paper published in a scientific journal claims that eating the food produced by the new technology may result in a higher risk of heart attack. This was shown in one six-month study of 30 lab mice.
+p000447,body,body,,,,223,,,,,A science news reporter has contacted you to talk about the research and how it impacts your new line. He wants to know what action you will take.
+p000448,body,body,,,,224,,,,,You will join an emergency meeting to discuss the issue. You need to answer the following questions:
+p000449,body,body,,,,225,,ListParagraph,10,0,"Is the study credible, and how could it influence the regular consumer?"
+p000450,body,body,,,,226,,ListParagraph,,,What is the real risk to the consumer? 
+p000451,body,body,,,,227,,ListParagraph,,,What could the impact be on the company? Consider different scenarios.
+p000452,body,body,,,,228,,ListParagraph,,,How should the company respond?
+p000453,body,body,,,,229,,ListParagraph,27,0,Think about each of the questions above and form your own opinion. Be ready to share your opinion in the meeting and support it with reasons and evidence.
+p000454,body,body,,,,230,,,,,
+p000455,body,body,,,,231,,Heading2,,,A Business Meeting 2
+p000456,body,body,,,,232,,,,,"Now, have the meeting and make arguments responding to each of the questions. Make decisions about how to address the problem."
+p000457,body,body,,,,233,,Heading4,,,Debrief
+p000458,body,body,,,,234,,,,,"Think about the meeting you just had, and answer the following questions. For each question, give yourself a score from 1 to 5, where 1 is ‘Not at all’, and 5 is ‘Definitely’."
+p000459,body,body,,,,235,,ListParagraph,36,0,Were you able to clearly share your opinion?
+p000460,body,body,,,,236,,ListParagraph,36,0,Did you provide reasons to support your opinions?
+p000461,body,body,,,,237,,ListParagraph,36,0,Could you support your opinions with credible evidence that was logically connected to both your reasons and your opinions?
+p000462,body,body,,,,238,,ListParagraph,36,0,Were you able to persuade others to accept your ideas?
+p000463,body,body,,,,239,,,,,"Share your answers with your classmates, and your instructor. Explain what you would do differently in your next meeting to improve the result of the meeting."
+p000464,body,body,,,,240,,,,,
+p000465,body,body,,,,241,,Heading2,,,Language Bank
+p000466,body,body,,,,242,,,,,
+p000467,body,body,,,,243,,,,,
+p000468,body,body,,,,244,,Heading5,,,Expressing an Opinion
+p000469,body,body,,,,245,,,,,In my opinion…
+p000470,body,body,,,,246,,,,,As far as I’m concerned…
+p000471,body,body,,,,247,,,,,From my point of view…
+p000472,body,body,,,,248,,,,,I believe…
+p000473,body,body,,,,249,,,,,It seems as though…
+p000474,body,body,,,,250,,,,,There is no doubt that…
+p000475,body,body,,,,251,,,,,I feel…
+p000476,body,body,,,,252,,,,,I’m sure that…
+p000477,body,body,,,,253,,,,,I was happy to see…
+p000478,body,body,,,,254,,,,,I think…
+p000479,body,body,,,,255,,,,,"Personally, I think…"
+p000480,body,body,,,,256,,,,,"To me, it’s clear that…"
+p000481,body,body,,,,257,,,,,My view is that…
+p000482,body,body,,,,258,,,,,The way I see it…
+p000483,body,body,,,,259,,,,,I’d say that…
+p000484,body,body,,,,260,,,,,In my view…
+p000485,body,body,,,,261,,,,,I’m convinced that…
+p000486,body,body,,,,262,,,,,It’s my belief that…
+p000487,body,body,,,,263,,,,,If you ask me…
+p000488,body,body,,,,264,,,,,Speaking for myself…
+p000489,body,body,,,,265,,Heading5,,,Giving Reasons
+p000490,body,body,,,,266,,,,,because
+p000491,body,body,,,,267,,,,,due to
+p000492,body,body,,,,268,,,,,as a result
+p000493,body,body,,,,269,,,,,that’s why
+p000494,body,body,,,,270,,,,,consequently
+p000495,body,body,,,,271,,,,,so
+p000496,body,body,,,,272,,,,,since
+p000497,body,body,,,,273,,,,,in order to
+p000498,body,body,,,,274,,,,,given that…
+p000499,body,body,,,,275,,,,,owing to
+p000500,body,body,,,,276,,,,,therefore
+p000501,body,body,,,,277,,,,,for this reason
+p000502,body,body,,,,278,,,,,seeing that…
+p000503,body,body,,,,279,,,,,considering that…
+p000504,body,body,,,,280,,,,,on the grounds that…
+p000505,body,body,,,,281,,Heading5,,,Discourse Markers
+p000506,body,body,,,,282,,,,,for instance
+p000507,body,body,,,,283,,,,,actually
+p000508,body,body,,,,284,,,,,on the other hand
+p000509,body,body,,,,285,,,,,what’s more
+p000510,body,body,,,,286,,,,,at least
+p000511,body,body,,,,287,,,,,that’s why
+p000512,body,body,,,,288,,,,,usually
+p000513,body,body,,,,289,,,,,in short
+p000514,body,body,,,,290,,,,,as I say
+p000515,body,body,,,,291,,,,,to begin with
+p000516,body,body,,,,292,,,,,in fact
+p000517,body,body,,,,293,,,,,even so
+p000518,body,body,,,,294,,,,,besides
+p000519,body,body,,,,295,,,,,in any case
+p000520,body,body,,,,296,,,,,at the same time
+p000521,body,body,,,,297,,,,,above all
+p000522,body,body,,,,298,,,,,after all
+p000523,body,body,,,,299,,,,,as a matter of fact
+p000524,body,body,,,,300,,Heading5,,,Organizing Ideas
+p000525,body,body,,,,301,,,,,first(ly)
+p000526,body,body,,,,302,,,,,second(ly)
+p000527,body,body,,,,303,,,,,third(ly)
+p000528,body,body,,,,304,,,,,and then
+p000529,body,body,,,,305,,,,,next
+p000530,body,body,,,,306,,,,,in the end
+p000531,body,body,,,,307,,,,,lastly
+p000532,body,body,,,,308,,,,,last of all
+p000533,body,body,,,,309,,,,,finally
+p000534,body,body,,,,310,,,,,for a start
+p000535,body,body,,,,311,,,,,on top of that
+p000536,body,body,,,,312,,,,,to sum up
+p000537,body,body,,,,313,,,,,in general
+p000538,body,body,,,,314,,,,,well…
+p000539,body,body,,,,315,,Heading5,,,Describing Evidence
+p000540,body,body,,,,316,,,,,According to…
+p000541,body,body,,,,317,,,,,The data shows…
+p000542,body,body,,,,318,,,,,Statistics indicate that…
+p000543,body,body,,,,319,,,,,Research suggests…
+p000544,body,body,,,,320,,,,,Studies have found…
+p000545,body,body,,,,321,,,,,Historical records show…
+p000546,body,body,,,,322,,,,,The figures reveal…
+p000547,body,body,,,,323,,,,,A recent survey found…
+p000548,body,body,,,,324,,,,,Experts agree that…
+p000549,body,body,,,,325,,,,,Based on case studies…
+p000550,body,body,,,,326,,,,,An eyewitness reported…
+p000551,body,body,,,,327,,,,,In my experience…
+p000552,body,body,,,,328,,,,,The facts are clear that…
+p000553,body,body,,,,329,,,,,Reports confirm that…
+p000554,body,body,,,,330,,,,,The results demonstrate…
+p000555,body,body,,,,331,,Heading5,,,Evaluating Evidence
+p000556,body,body,,,,332,,,,,Is the information credible?
+p000557,body,body,,,,333,,,,,Who is the source?
+p000558,body,body,,,,334,,,,,Is it objective?
+p000559,body,body,,,,335,,,,,Is it biased?
+p000560,body,body,,,,336,,,,,Does it support an agenda?
+p000561,body,body,,,,337,,,,,Is it current?
+p000562,body,body,,,,338,,,,,Is it relevant?
+p000563,body,body,,,,339,,,,,Is it accurate?
+p000564,body,body,,,,340,,,,,Is the source reputable?
+p000565,body,body,,,,341,,,,,What’s the author’s background?
+p000566,body,body,,,,342,,,,,The evidence is weak/strong.
+p000567,body,body,,,,343,,,,,This information is misleading.
+p000568,body,body,,,,344,,Heading5,,,PBSR Model
+p000569,body,body,,,,345,,,,,The problem is…
+p000570,body,body,,,,346,,,,,This is a big issue because…
+p000571,body,body,,,,347,,,,,The background is…
+p000572,body,body,,,,348,,,,,In the past…
+p000573,body,body,,,,349,,,,,The solution is…
+p000574,body,body,,,,350,,,,,I propose that…
+p000575,body,body,,,,351,,,,,We should…
+p000576,body,body,,,,352,,,,,One option is to…
+p000577,body,body,,,,353,,,,,We need to…
+p000578,body,body,,,,354,,,,,The expected result is…
+p000579,body,body,,,,355,,,,,This should lead to…
+p000580,body,body,,,,356,,,,,We can expect that…
+p000581,body,body,,,,357,,Heading5,,,PCAF Model
+p000582,body,body,,,,358,,,,,My point is…
+p000583,body,body,,,,359,,,,,Some people think…
+p000584,body,body,,,,360,,,,,A common view is…
+p000585,body,body,,,,361,,,,,The counterpoint is…
+p000586,body,body,,,,362,,,,,It’s true that… but…
+p000587,body,body,,,,363,,,,,I understand that… however…
+p000588,body,body,,,,364,,,,,"That may be so, but…"
+p000589,body,body,,,,365,,,,,The problem with that idea is…
+p000590,body,body,,,,366,,,,,For my point…
+p000591,body,body,,,,367,,,,,The reason for this is…
+p000592,body,body,,,,368,,,,,This will result in…
+p000593,body,body,,,,369,,,,,That’s why my idea is better.
+p000594,body,body,,,,370,,Heading5,,,Meeting Participation
+p000595,body,body,,,,371,,,,,I’d like to raise a point.
+p000596,body,body,,,,372,,,,,May I add something?
+p000597,body,body,,,,373,,,,,Let’s consider…
+p000598,body,body,,,,374,,,,,We should take into account…
+p000599,body,body,,,,375,,,,,One possibility is…
+p000600,body,body,,,,376,,,,,What impact will this have on…?
+p000601,body,body,,,,377,,,,,We need to decide whether…
+p000602,body,body,,,,378,,,,,I suggest we…
+p000603,body,body,,,,379,,,,,I recommend that…
+p000604,body,body,,,,380,,,,,How will this affect…?
+p000605,body,body,,,,381,,,,,That’s a valid point.
+p000606,body,body,,,,382,,,,,I agree/disagree because…
+p000607,body,body,,,,383,,Heading5,,,Questioning Validity
+p000608,body,body,,,,384,,,,,We need to verify this.
+p000609,body,body,,,,385,,,,,Check multiple sources.
+p000610,body,body,,,,386,,,,,Don’t accept it at face value.
+p000611,body,body,,,,387,,,,,This may be incomplete.
+p000612,body,body,,,,388,,,,,This is designed to mislead.
+p000613,body,body,,,,389,,,,,Can we confirm it?
+p000614,body,body,,,,390,,,,,The source has a history of…
+p000615,body,body,,,,391,,,,,Let’s fact-check this.
+p000616,body,body,,,,392,,,,,This information is unverified.
+p000617,body,body,,,,393,,Heading5,,,Closing an Argument
+p000618,body,body,,,,394,,,,,In conclusion…
+p000619,body,body,,,,395,,,,,To sum up…
+p000620,body,body,,,,396,,,,,As we’ve seen…
+p000621,body,body,,,,397,,,,,Given the evidence…
+p000622,body,body,,,,398,,,,,"Therefore, we should…"
+p000623,body,body,,,,399,,,,,The logical conclusion is…
+p000624,body,body,,,,400,,,,,This clearly shows that…
+p000625,body,body,,,,401,,,,,The facts speak for themselves.
+p000626,body,body,,,,402,,,,,All things considered…
+p000627,body,body,,,,403,,,,,"For these reasons, I believe…"
+p000628,body,body,,,,404,,,,,
+p000629,body,body,,,,405,,,,,
+p000630,body,body,,,,406,,,,,
+p000631,body,body,,,,407,,,,,
+p000069,body,table,0,0,0,,0,ListParagraph,22,0,"In my opinion, managers should let staff make mistakes. This is how people learn."
+p000070,body,table,0,1,0,,0,ListParagraph,22,0,"As far as I’m concerned, the best way to improve sales is to increase advertising."
+p000071,body,table,0,2,0,,0,ListParagraph,22,0,"From my point of view, we need to cut the number of staff to reduce costs."
+p000072,body,table,0,3,0,,0,ListParagraph,22,0,I believe the only option we have is to downsize if we want to survive this crisis.
+p000073,body,table,0,4,0,,0,ListParagraph,22,0,It seems as though we didn’t do enough to promote the product effectively.
+p000074,body,table,0,5,0,,0,ListParagraph,22,0,There is no doubt that we need to increase our product range to attract more customers.
+p000075,body,table,0,6,0,,0,ListParagraph,22,0,I feel the best option is to do nothing. Everything is going well so far.
+p000076,body,table,0,7,0,,0,ListParagraph,22,0,I’m sure that we will be successful if we follow through with my plan.
+p000079,body,table,1,0,0,,0,,,,Business Topics
+p000080,body,table,1,0,1,,0,,,,General Topics
+p000081,body,table,1,1,0,,0,ListParagraph,12,0,Business leaders
+p000082,body,table,1,1,1,,0,ListParagraph,11,0,Space exploration
+p000083,body,table,1,2,0,,0,ListParagraph,12,0,Recruiting new employees
+p000084,body,table,1,2,1,,0,ListParagraph,11,0,Pets
+p000085,body,table,1,3,0,,0,ListParagraph,12,0,Advertising
+p000086,body,table,1,3,1,,0,ListParagraph,11,0,Sports
+p000087,body,table,1,4,0,,0,ListParagraph,12,0,Sales strategies
+p000088,body,table,1,4,1,,0,ListParagraph,11,0,Entertainment
+p000089,body,table,1,5,0,,0,ListParagraph,12,0,Managing people
+p000090,body,table,1,5,1,,0,ListParagraph,11,0,Famous people
+p000099,body,table,2,0,0,,0,,,,because
+p000100,body,table,2,0,1,,0,,,,due to
+p000101,body,table,2,0,2,,0,,,,as a result
+p000102,body,table,2,0,3,,0,,,,that’s why
+p000103,body,table,2,1,0,,0,,,,consequently
+p000104,body,table,2,1,1,,0,,,,so
+p000105,body,table,2,1,2,,0,,,,since
+p000106,body,table,2,1,3,,0,,,,in order to
+p000119,body,table,3,0,0,,0,,,,Communication Function
+p000120,body,table,3,0,1,,0,,,,Example 1
+p000121,body,table,3,0,2,,0,,,,Example 2
+p000122,body,table,3,1,0,,0,ListParagraph,17,0,Explaining by giving an example
+p000123,body,table,3,1,1,,0,,,,for instance
+p000124,body,table,3,1,2,,0,,,,
+p000125,body,table,3,2,0,,0,ListParagraph,17,0,"Giving real, true or surprising information"
+p000126,body,table,3,2,1,,0,,,,actually
+p000127,body,table,3,2,2,,0,,,,
+p000128,body,table,3,3,0,,0,ListParagraph,17,0,Making a contrast
+p000129,body,table,3,3,1,,0,,,,on the other hand
+p000130,body,table,3,3,2,,0,,,,
+p000131,body,table,3,4,0,,0,ListParagraph,17,0,"Adding another, different idea"
+p000132,body,table,3,4,1,,0,,,,what’s more
+p000133,body,table,3,4,2,,0,,,,
+p000134,body,table,3,5,0,,0,ListParagraph,17,0,Defining more exactly
+p000135,body,table,3,5,1,,0,,,,at least
+p000136,body,table,3,5,2,,0,,,,
+p000137,body,table,3,6,0,,0,ListParagraph,17,0,Giving a result or consequence
+p000138,body,table,3,6,1,,0,,,,that’s why
+p000139,body,table,3,6,2,,0,,,,
+p000140,body,table,3,7,0,,0,ListParagraph,17,0,Talking generally
+p000141,body,table,3,7,1,,0,,,,usually
+p000142,body,table,3,7,2,,0,,,,
+p000143,body,table,3,8,0,,0,ListParagraph,17,0,Summarising
+p000144,body,table,3,8,1,,0,,,,in short
+p000145,body,table,3,8,2,,0,,,,
+p000149,body,table,4,0,0,,0,,,,Business Topics
+p000150,body,table,4,0,1,,0,,,,General Topics
+p000151,body,table,4,1,0,,0,ListParagraph,19,0,Communication at work
+p000152,body,table,4,1,1,,0,ListParagraph,20,0,The environment
+p000153,body,table,4,2,0,,0,ListParagraph,19,0,Work-life balance
+p000154,body,table,4,2,1,,0,ListParagraph,20,0,Video games
+p000155,body,table,4,3,0,,0,ListParagraph,19,0,Managing yourself
+p000156,body,table,4,3,1,,0,ListParagraph,20,0,Eating out
+p000157,body,table,4,4,0,,0,ListParagraph,19,0,Decision making
+p000158,body,table,4,4,1,,0,ListParagraph,20,0,Transportation
+p000159,body,table,4,5,0,,0,ListParagraph,19,0,International business
+p000160,body,table,4,5,1,,0,ListParagraph,20,0,Travel
+p000166,body,table,5,0,0,,0,p,,,and
+p000167,body,table,5,0,1,,0,p,,,in general
+p000168,body,table,5,0,2,,0,p,,,second
+p000169,body,table,5,0,3,,0,p,,,to sum up
+p000170,body,table,5,1,0,,0,p,,,and then
+p000171,body,table,5,1,1,,0,p,,,in the end
+p000172,body,table,5,1,2,,0,p,,,*secondly
+p000173,body,table,5,1,3,,0,p,,,what’s more
+p000174,body,table,5,2,0,,0,p,,,first (of all)
+p000175,body,table,5,2,1,,0,p,,,last of all
+p000176,body,table,5,2,2,,0,p,,,so
+p000177,body,table,5,2,3,,0,p,,,well
+p000178,body,table,5,3,0,,0,p,,,*firstly
+p000179,body,table,5,3,1,,0,p,,,next
+p000180,body,table,5,3,2,,0,p,,,lastly
+p000181,body,table,5,3,3,,0,p,,,a … b
+p000182,body,table,5,4,0,,0,p,,,for a start
+p000183,body,table,5,4,1,,0,p,,,on top of that
+p000184,body,table,5,4,2,,0,p,,,thirdly
+p000185,body,table,5,4,3,,0,,,,finally
+p000200,body,table,6,0,0,,0,,,,Category
+p000201,body,table,6,0,1,,0,,,,Type
+p000202,body,table,6,0,2,,0,,,,Validity
+p000203,body,table,6,0,3,,0,,,,Example
+p000204,body,table,6,1,0,,0,,,,Facts
+p000205,body,table,6,1,1,,0,,,,Statistics and data
+p000206,body,table,6,1,2,,0,,,,Very strong
+p000207,body,table,6,1,3,,0,,,,94% of all customer surveys collected in the last 12 months indicate customers are very satisfied with our service.
+p000208,body,table,6,2,0,,0,,,,
+p000209,body,table,6,2,1,,0,,,,Historical events
+p000210,body,table,6,2,2,,0,,,,Very strong
+p000211,body,table,6,2,3,,0,,,,"On March 11, 2011, Japan experienced a magnitude 9 earthquake and a 39-meter tsunami."
+p000212,body,table,6,3,0,,0,,,,
+p000213,body,table,6,3,1,,0,,,,Objective information
+p000214,body,table,6,3,2,,0,,,,Very strong
+p000215,body,table,6,3,3,,0,,,,The distance between Tokyo and Osaka is 498.9 km on the Tokaido Highway.
+p000216,body,table,6,4,0,,0,,,,
+p000217,body,table,6,4,1,,0,,,,Case studies and scientific research
+p000218,body,table,6,4,2,,0,,,,Strong to very strong
+p000219,body,table,6,4,3,,0,,,,"In 2016, the Avanti Staff staffing company participated in a study to investigate the current market situation and its growth factors. The study found…"
+p000220,body,table,6,5,0,,0,,,,Judgment
+p000221,body,table,6,5,1,,0,,,,Analogy
+p000222,body,table,6,5,2,,0,,,,Weak to moderate
+p000223,body,table,6,5,3,,0,,,,"We are in the same situation as the Osaka branch, and they had great success."
+p000224,body,table,6,6,0,,0,,,,Testimony
+p000225,body,table,6,6,1,,0,,,,Expert opinion
+p000226,body,table,6,6,2,,0,,,,Moderate
+p000227,body,table,6,6,3,,0,,,,"According to our CEO, the best way to grow the business is through an M&A strategy."
+p000228,body,table,6,7,0,,0,,,,
+p000229,body,table,6,7,1,,0,,,,Personal experience
+p000230,body,table,6,7,2,,0,,,,Weak
+p000231,body,table,6,7,3,,0,,,,"Last year, I went on a business trip to Brazil. I found Brazilians to be very friendly and open."
+p000232,body,table,6,8,0,,0,,,,
+p000233,body,table,6,8,1,,0,,,,Eyewitness accounts
+p000234,body,table,6,8,2,,0,,,,Weak to moderate
+p000235,body,table,6,8,3,,0,,,,I participated in a meeting last week in which the Department Manager said we need to cut costs greatly.
+p000244,body,table,7,0,0,,0,,,,Opinion
+p000245,body,table,7,0,1,,0,,,,I believe employees in our company work too much overtime.
+p000246,body,table,7,1,0,,0,,,,Reason
+p000247,body,table,7,1,1,,0,,,,This is because our staff always seem tired and recently many have called in sick.
+p000248,body,table,7,2,0,,0,,,,Evidence
+p000249,body,table,7,2,1,,0,,,,The company’s last quarterly report shows overtime costs are at almost 47% and use of sick leave has increased 12%.
+p000251,body,table,8,0,0,,0,,,,Opinion
+p000252,body,table,8,0,1,,0,,,,"In my opinion, our products are too expensive for the average customer."
+p000253,body,table,8,1,0,,0,,,,Reason
+p000254,body,table,8,1,1,,0,,,,
+p000255,body,table,8,2,0,,0,,,,Evidence
+p000256,body,table,8,2,1,,0,,,,
+p000258,body,table,9,0,0,,0,,,,Opinion
+p000259,body,table,9,0,1,,0,,,,I think staff in the office want to work remotely more often.
+p000260,body,table,9,1,0,,0,,,,Reason
+p000261,body,table,9,1,1,,0,,,,
+p000262,body,table,9,2,0,,0,,,,Evidence
+p000263,body,table,9,2,1,,0,,,,
+p000265,body,table,10,0,0,,0,,,,Opinion
+p000266,body,table,10,0,1,,0,,,,"From my point of view, customers want high quality products."
+p000267,body,table,10,1,0,,0,,,,Reason
+p000268,body,table,10,1,1,,0,,,,
+p000269,body,table,10,2,0,,0,,,,Evidence
+p000270,body,table,10,2,1,,0,,,,
+p000272,body,table,11,0,0,,0,,,,Opinion
+p000273,body,table,11,0,1,,0,,,,"In my opinion, celebrity endorsements are the best way to sell a product."
+p000274,body,table,11,1,0,,0,,,,Reason
+p000275,body,table,11,1,1,,0,,,,
+p000276,body,table,11,2,0,,0,,,,Evidence
+p000277,body,table,11,2,1,,0,,,,
+p000279,body,table,12,0,0,,0,,,,Opinion
+p000280,body,table,12,0,1,,0,,,,"As far as I’m concerned, (your choice.)"
+p000281,body,table,12,1,0,,0,,,,Reason
+p000282,body,table,12,1,1,,0,,,,
+p000283,body,table,12,2,0,,0,,,,Evidence
+p000284,body,table,12,2,1,,0,,,,
+p000289,body,table,13,0,0,,0,,,,Data 1 (Severity frame)
+p000290,body,table,13,0,0,,1,,,,"If an EV battery enters thermal runaway, the fire is extremely intense and difficult to extinguish. Crews may need massive amounts of water and vehicles can reignite. (Message emphasized in the Sky News segment.)"
+p000291,body,table,13,0,1,,0,,,,
+p000293,body,table,14,0,0,,0,,,,Data 2 (Base-rate frame)
+p000294,body,table,14,0,0,,1,,,,"According to data summarized by Kelley Blue Book from U.S. safety sources, EVs are involved in ~25 fires per 100,000 vehicles sold, compared with ~1,530 per 100,000 for gasoline vehicles and ~3,475 per 100,000 for hybrids. That’s about 0.025% of EVs versus 1.53% of gasoline cars—i.e., a 99.975% vs 98.47% chance of not having a fire."
+p000295,body,table,14,0,1,,0,,,,
+p000336,body,table,15,0,0,,0,,,,Problem
+p000337,body,table,15,0,1,,0,,,,"The sales of our language training service have dropped 50% on average for each quarter since a major competitor launched a new, heavily promoted online learning platform. This is a big problem for us because we are not making any profit. Therefore, the company will have to decide whether to restructure in order to cut costs."
+p000338,body,table,15,1,0,,0,,,,Background
+p000339,body,table,15,1,1,,0,,,,"Before the competitor’s launch, we were doing well. We achieved our sales targets, and our client feedback was very positive. Our language training business grew 20% in 2019. The market in general was growing at a rate of about 5% per quarter."
+p000340,body,table,15,2,0,,0,,,,Solution
+p000341,body,table,15,2,1,,0,,,,"I believe that in order to quickly return to a profitable business model, we have to take a two-pronged approach: First, we need to increase sales. Second, we need to cut costs. We should develop a sales strategy that emphasises our unique strengths and offer short-term promotional packages to attract clients who may be considering switching. At the same time, we need to do a thorough cost analysis of our expenditure and cut costs by at least 30 percent. All options for cost cutting must be considered. According to consulting agency Deloitte Tohmatsu Consulting, most organisations in Japan run with large overheads and can usually find ways to quickly cut costs by 20%. We will need to do a bit more than that."
+p000342,body,table,15,3,0,,0,,,,Result
+p000343,body,table,15,3,1,,0,,,,"The combination of reduced costs and increased sales volume, even at a lower cost per unit, should see us return to profitability within six months."
+p000366,body,table,16,0,0,,0,,,,The best company in the world is…
+p000367,body,table,16,0,1,,0,,,,The best way to attract great employees is…
+p000368,body,table,16,0,2,,0,,,,Companies should allow four-day work weeks.
+p000369,body,table,16,1,0,,0,,,,The best way to motivate staff is to pay them well.
+p000370,body,table,16,1,1,,0,,,,Companies need to pay more in taxes.
+p000371,body,table,16,1,2,,0,,,,The best managers lead by example.
+p000372,body,table,16,2,0,,0,,,,"Nowadays, we should be able to wear more casual clothes at work."
+p000373,body,table,16,2,1,,0,,,,English training should be provided and paid for by the company.
+p000374,body,table,16,2,2,,0,,,,Staff don’t get enough formal training.
+p000375,body,table,16,3,0,,0,,,,SNS is a valid form of business communication.
+p000376,body,table,16,3,1,,0,,,,Business meetings are usually a waste of time.
+p000377,body,table,16,3,2,,0,,,,Your choice
+p000379,body,table,17,0,0,,0,,,,
+p000380,body,table,17,1,0,,0,,,,
+p000381,body,table,17,2,0,,0,,,,
+p000382,body,table,17,3,0,,0,,,,
+p000383,body,table,17,4,0,,0,,,,
+p000384,body,table,17,5,0,,0,,,,
+p000385,body,table,17,6,0,,0,,,,
+p000386,body,table,17,7,0,,0,,,,
+p000387,body,table,17,8,0,,0,,,,
+p000398,body,table,18,0,0,,0,,,,Point
+p000399,body,table,18,0,1,,0,,,,"To become more profitable, we should invest in developing new products."
+p000400,body,table,18,1,0,,0,,,,Counterpoint
+p000401,body,table,18,1,1,,0,,,,Some people think we should just cut costs.
+p000402,body,table,18,2,0,,0,,,,Against
+p000403,body,table,18,2,1,,0,,,,"It’s true that cost-cutting is important, but it is really a temporary solution if we want to grow."
+p000404,body,table,18,3,0,,0,,,,For
+p000405,body,table,18,3,1,,0,,,,"However, investing in new products can lead to market growth and new sales revenue as we attract new customers. This will lead to profit."
+p000419,body,table,19,0,0,,0,,,,The best company in the world is…
+p000420,body,table,19,0,1,,0,,,,The best way to attract great employees is…
+p000421,body,table,19,0,2,,0,,,,Companies should allow four-day work weeks.
+p000422,body,table,19,1,0,,0,,,,The best way to motivate staff is to pay them well.
+p000423,body,table,19,1,1,,0,,,,Companies need to pay more in taxes.
+p000424,body,table,19,1,2,,0,,,,The best managers lead by example.
+p000425,body,table,19,2,0,,0,,,,"Nowadays, we should be able to wear more casual clothes at work."
+p000426,body,table,19,2,1,,0,,,,English training should be provided and paid for by the company.
+p000427,body,table,19,2,2,,0,,,,Staff don’t get enough formal training.
+p000428,body,table,19,3,0,,0,,,,SNS is a valid form of business communication.
+p000429,body,table,19,3,1,,0,,,,Business meetings are usually a waste of time.
+p000430,body,table,19,3,2,,0,,,,Your choice
+p000432,body,table,20,0,0,,0,,,,
+p000433,body,table,20,1,0,,0,,,,
+p000434,body,table,20,2,0,,0,,,,
+p000435,body,table,20,3,0,,0,,,,
+p000436,body,table,20,4,0,,0,,,,
+p000437,body,table,20,5,0,,0,,,,
+p000438,body,table,20,6,0,,0,,,,
+p000439,body,table,20,7,0,,0,,,,
+p000440,body,table,20,8,0,,0,,,,
