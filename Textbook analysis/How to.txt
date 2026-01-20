@@ -1,0 +1,1 @@
+python export_docx_package.py --input "W:\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\Design\Textbook style managment\Speak Up_working\Speak Up.docx" --outdir "W:\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\Design\Textbook style managment\Speak Up_working\out" --format json,csv
