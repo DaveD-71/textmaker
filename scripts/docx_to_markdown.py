@@ -19,13 +19,19 @@ from typing import Iterable, List, Optional, Tuple
 from zipfile import ZipFile
 
 try:
-    from docx import Document
+    from docx import Document  # type: ignore[reportMissingImports]
 except ImportError as exc:
     raise RuntimeError(
         'Missing dependency: python-docx is required. Install with `pip install python-docx`.'
     ) from exc
-from scripts.preprocess_docx import preprocess_docx
-from scripts.postprocess_markdown import postprocess_many
+
+try:
+    from scripts.preprocess_docx import preprocess_docx
+    from scripts.postprocess_markdown import postprocess_many
+except ModuleNotFoundError:
+    # Allow running as a script from the scripts/ directory.
+    from preprocess_docx import preprocess_docx
+    from postprocess_markdown import postprocess_many
 
 
 def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
@@ -48,21 +54,42 @@ def run_pandoc_to_markdown(
     assets_arg is passed directly to --extract-media; keep it relative to output_dir
     to ensure markdown references are relative.
     """
-    cmd = [
+    input_arg = input_docx.name if input_docx.parent == output_dir else str(input_docx)
+    output_arg = output_md.name if output_md.parent == output_dir else str(output_md)
+    base_cmd = [
         pandoc_bin,
-        str(input_docx),
+        input_arg,
         '--to',
         'gfm',
         '--wrap',
         'none',
-        '--atx-headers',
         '--extract-media',
         assets_arg,
         '--output',
-        str(output_md),
+        output_arg,
     ]
-    print('Running pandoc:', ' '.join(map(str, cmd)))
-    subprocess.run(cmd, check=True, cwd=output_dir)
+    header_flags = ['--markdown-headings=atx']
+    last_exc: Optional[subprocess.CalledProcessError] = None
+
+    for header_flag in header_flags + [None]:
+        cmd = base_cmd.copy()
+        if header_flag:
+            cmd.insert(6, header_flag)
+        print('Running pandoc:', ' '.join(map(str, cmd)))
+        try:
+            subprocess.run(cmd, check=True, cwd=output_dir, capture_output=True, text=True)
+            return
+        except subprocess.CalledProcessError as exc:
+            last_exc = exc
+            stderr = exc.stderr or ''
+            if stderr:
+                print('Pandoc error output:\n', stderr.strip(), file=sys.stderr)
+            if header_flag and f'Unknown option {header_flag}' in stderr:
+                continue
+            raise
+
+    if last_exc:
+        raise last_exc
 
 
 def slugify(title: Optional[str]) -> str:
@@ -150,8 +177,8 @@ def main() -> None:
     parser.add_argument('--input', required=True, help='Input DOCX file to split.')
     parser.add_argument(
         '--output-dir',
-        default='docx_export',
-        help='Folder to write markdown files and assets (default: docx_export).',
+        default=None,
+        help='Folder to write markdown files and assets (default: "<input basename> out").',
     )
     parser.add_argument(
         '--assets-dir',
@@ -166,7 +193,8 @@ def main() -> None:
     )
     parser.add_argument(
         '--reference-out',
-        help='Optional path to write a reference DOCX that reuses styles from the input.',
+        default=None,
+        help='Path to write a reference DOCX (default: "<output-dir>\\reference.docx").',
     )
     parser.add_argument(
         '--keep-temp-md',
@@ -190,7 +218,11 @@ def main() -> None:
         print(f'Input DOCX not found: {source_docx}')
         sys.exit(1)
 
-    output_dir = Path(args.output_dir)
+    if args.output_dir:
+        output_dir = Path(args.output_dir).expanduser().resolve()
+    else:
+        output_dir = source_docx.parent / f'{source_docx.stem} out'
+        output_dir = output_dir.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     assets_arg = Path(args.assets_dir)
@@ -224,8 +256,8 @@ def main() -> None:
         temp_md.unlink(missing_ok=True)
         temp_docx.unlink(missing_ok=True)
 
-    if args.reference_out:
-        ref_path = Path(args.reference_out)
+    ref_path = Path(args.reference_out) if args.reference_out else (output_dir / 'reference.docx')
+    if ref_path:
         create_reference_docx(source_docx, ref_path, keep_headers=args.preserve_headers)
         print(f'Wrote reference styles to {ref_path}')
 

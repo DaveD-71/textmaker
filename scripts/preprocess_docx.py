@@ -16,25 +16,32 @@ Sentinels are simple text markers that survive pandoc and are later replaced:
 """
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 
 try:
-    from docx import Document
-    from docx.oxml import OxmlElement
-    from docx.oxml.ns import qn
+    from docx import Document  # type: ignore[reportMissingImports]
+    from docx.oxml import OxmlElement  # type: ignore[reportMissingImports]
+    from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
+    from docx.text.paragraph import Paragraph  # type: ignore[reportMissingImports]
 except ImportError as exc:
     raise RuntimeError('python-docx is required. Install with `pip install python-docx`.') from exc
 
 
-NS = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+NS = {
+    'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+    'wp': 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing',
+}
 
 
 def _add_paragraph_after(paragraph, text: str):
     """Insert a paragraph immediately after the given paragraph."""
-    p = paragraph.insert_paragraph_after(text)
-    return p
+    new_p = OxmlElement('w:p')
+    paragraph._p.addnext(new_p)
+    new_para = Paragraph(new_p, paragraph._parent)
+    if text:
+        new_para.add_run(text)
+    return new_para
 
 
 def _paragraph_has_section_break(paragraph) -> bool:
@@ -113,9 +120,13 @@ def _add_shape_placeholders(paragraph):
     """
     drawings = paragraph._p.findall('.//w:drawing', NS)
     for drawing in drawings:
-        desc = drawing.xpath('.//wp:docPr/@descr', namespaces=drawing.nsmap)
-        title = drawing.xpath('.//wp:docPr/@title', namespaces=drawing.nsmap)
-        alt = (desc[0] if desc else '') or (title[0] if title else '')
+        doc_prs = drawing.findall('.//wp:docPr', NS)
+        desc = ''
+        title = ''
+        if doc_prs:
+            desc = doc_prs[0].get('descr') or ''
+            title = doc_prs[0].get('title') or ''
+        alt = desc or title
         alt = alt.strip()
         if alt:
             paragraph.add_run(f'[[SHAPE:{alt}]]')
@@ -146,7 +157,9 @@ def preprocess_docx(src: Path, dest: Path) -> Path:
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser(description='Insert sentinel markers into a DOCX before pandoc.')
+    parser = argparse.ArgumentParser(
+        description='Insert sentinel markers into a DOCX before pandoc.'
+    )
     parser.add_argument('input', help='Source DOCX')
     parser.add_argument('output', help='Destination DOCX with markers')
     args = parser.parse_args()

@@ -3,7 +3,8 @@ Post-process markdown produced by docx_to_markdown to restore sentinel markers.
 
 Transforms:
 - [[PAGEBREAK]] -> \\pagebreak
-- [[SECTIONBREAK]] -> \\pagebreak (section semantics are not in markdown; page break is the closest analogue)
+- [[SECTIONBREAK]] -> \\pagebreak (section semantics are not in markdown; page break is the closest
+  analogue)
 - [[LINEBREAK]] -> <br>
 - [[REF:id|label]] or [[REF:id]] -> textual reference placeholder
 - [[SHAPE:alt]] -> italic placeholder to note missing shape
@@ -41,12 +42,14 @@ def _replace_markers(text: str) -> str:
 
 
 def postprocess_markdown_file(path: Path) -> None:
+    """Replace sentinel markers for a single markdown file."""
     text = path.read_text(encoding='utf-8')
     new_text = _replace_markers(text)
     path.write_text(new_text, encoding='utf-8')
 
 
 def postprocess_many(paths: Iterable[Path]) -> None:
+    """Replace sentinel markers for multiple markdown files."""
     for p in paths:
         postprocess_markdown_file(p)
 

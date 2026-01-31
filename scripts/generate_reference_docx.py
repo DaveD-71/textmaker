@@ -3,23 +3,25 @@ Generate a `reference.docx` with basic modern professional styles.
 This uses `python-docx` to set Normal and Heading styles and A4 page size.
 Run: python scripts/generate_reference_docx.py --out reference.docx
 """
+# pylint: disable=protected-access,broad-exception-caught
 import argparse
 try:
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx import Document
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx.shared import Mm, Pt, RGBColor
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx.enum.style import WD_STYLE_TYPE
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx.oxml import OxmlElement
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx.oxml.ns import qn
-    # type: ignore
+    # type: ignore[reportMissingImports]
     from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 except ModuleNotFoundError as _err:
     # Only convert missing-docx into a helpful message; bubble up other missing deps.
-    if _err.name and _err.name.startswith('docx'):
+    missing_name = getattr(_err, 'name', '') or ''
+    if isinstance(missing_name, str) and missing_name.startswith('docx'):
         raise RuntimeError(
             "Missing dependency: python-docx is required. Install with `pip install python-docx` and retry."
         ) from _err

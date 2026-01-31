@@ -7,20 +7,29 @@ Simple CLI wrapper that calls `pandoc` to convert Markdown to DOCX using a `refe
 Usage example:
 python scripts/cli.py --input "chapter1.md" --output "Book.docx" --reference reference.docx --toc
 """
+from __future__ import annotations
+
 import argparse
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Iterable, List
 
 
-def check_pandoc():
+def check_pandoc() -> None:
     if shutil.which('pandoc') is None:
         print('Error: pandoc binary not found on PATH. Install from https://pandoc.org/installing.html')
         sys.exit(2)
 
 
-def build_pandoc_cmd(input_path: Path, output_path: Path, reference: Path, toc: bool, toc_depth: int):
+def build_pandoc_cmd(
+    input_path: Path,
+    output_path: Path,
+    reference: Path,
+    toc: bool,
+    toc_depth: int,
+) -> List[str]:
     # Disable YAML metadata blocks so in-document `---` separators are not parsed as YAML.
     # This avoids errors like `Unknown alias "Source"` when source notes follow a horizontal rule.
     pandoc_input_fmt = 'markdown-yaml_metadata_block'
@@ -42,9 +51,9 @@ def build_pandoc_cmd(input_path: Path, output_path: Path, reference: Path, toc: 
     return cmd
 
 
-def merge_markdown_files(files, dest: Path):
+def merge_markdown_files(files: Iterable[Path], dest: Path) -> None:
     with dest.open('w', encoding='utf-8') as out:
-        for idx, f in enumerate(files):
+        for f in files:
             out.write(f.read_text(encoding='utf-8'))
             out.write('\n\n')
             # Removed: section breaks are now added in post-processing
@@ -60,27 +69,42 @@ if __name__ == '__main__':
 
     check_pandoc()
 
-    input_path = Path(args.input)
-    output_path = Path(args.output)
-    reference = Path(args.reference)
+    src_path = Path(args.input)
+    dest_path = Path(args.output)
+    reference_path = Path(args.reference)
 
-    if input_path.is_dir():
-        md_files = sorted([p for p in input_path.glob('*.md')])
+    if src_path.is_dir():
+        md_files = sorted([p for p in src_path.glob('*.md')])
         if not md_files:
             print('No markdown files found in directory')
             sys.exit(1)
-        temp = Path('.autotext_temp.md')
-        merge_markdown_files(md_files, temp)
-        cmd = build_pandoc_cmd(temp, output_path, reference, args.toc, args.toc_depth)
+        temp_md = Path('.autotext_temp.md')
+        merge_markdown_files(md_files, temp_md)
+        pandoc_cmd = build_pandoc_cmd(
+            temp_md,
+            dest_path,
+            reference_path,
+            args.toc,
+            args.toc_depth,
+        )
     else:
-        cmd = build_pandoc_cmd(input_path, output_path, reference, args.toc, args.toc_depth)
+        pandoc_cmd = build_pandoc_cmd(
+            src_path,
+            dest_path,
+            reference_path,
+            args.toc,
+            args.toc_depth,
+        )
 
-    print('Running:', ' '.join(map(str, cmd)))
-    subprocess.run(cmd, check=True)
+    print('Running:', ' '.join(map(str, pandoc_cmd)))
+    subprocess.run(pandoc_cmd, check=True)
     # Post-process: add section breaks for TOC/units/file boundaries
     try:
         from scripts.postprocess_docx import insert_section_after_toc
-        insert_section_after_toc(output_path, has_toc=args.toc)
-    except Exception:
+    except ModuleNotFoundError:
+        from postprocess_docx import insert_section_after_toc
+    try:
+        insert_section_after_toc(dest_path, has_toc=args.toc)
+    except (OSError, RuntimeError, ValueError):
         pass
-    print('Wrote', output_path)
+    print('Wrote', dest_path)

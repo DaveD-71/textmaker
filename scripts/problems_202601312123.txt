@@ -1,0 +1,2584 @@
+[{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "E1101:no-member",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/error/no-member.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 8,
+	"message": "Class 'name' has no 'startswith' member",
+	"source": "Pylint",
+	"startLineNumber": 22,
+	"startColumn": 22,
+	"endLineNumber": 22,
+	"endColumn": 42,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0621:redefined-outer-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/redefined-outer-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Redefining name 'input_path' from outer scope (line 72)",
+	"source": "Pylint",
+	"startLineNumber": 27,
+	"startColumn": 5,
+	"endLineNumber": 27,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0621:redefined-outer-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/redefined-outer-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Redefining name 'output_path' from outer scope (line 73)",
+	"source": "Pylint",
+	"startLineNumber": 28,
+	"startColumn": 5,
+	"endLineNumber": 28,
+	"endColumn": 22,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0621:redefined-outer-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/redefined-outer-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Redefining name 'reference' from outer scope (line 74)",
+	"source": "Pylint",
+	"startLineNumber": 29,
+	"startColumn": 5,
+	"endLineNumber": 29,
+	"endColumn": 20,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0621:redefined-outer-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/redefined-outer-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Redefining name 'cmd' from outer scope (line 83)",
+	"source": "Pylint",
+	"startLineNumber": 37,
+	"startColumn": 5,
+	"endLineNumber": 37,
+	"endColumn": 8,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 96,
+	"startColumn": 12,
+	"endLineNumber": 96,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 22,
+	"startColumn": 10,
+	"endLineNumber": 22,
+	"endColumn": 14,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 9,
+	"startColumn": 10,
+	"endLineNumber": 9,
+	"endColumn": 14,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.shared\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 11,
+	"startColumn": 10,
+	"endLineNumber": 11,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.enum.style\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 13,
+	"startColumn": 10,
+	"endLineNumber": 13,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 15,
+	"startColumn": 10,
+	"endLineNumber": 15,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml.ns\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 17,
+	"startColumn": 10,
+	"endLineNumber": 17,
+	"endColumn": 22,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.enum.text\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 19,
+	"startColumn": 10,
+	"endLineNumber": 19,
+	"endColumn": 24,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 67,
+	"startColumn": 18,
+	"endLineNumber": 67,
+	"endColumn": 32,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 77,
+	"startColumn": 16,
+	"endLineNumber": 77,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 166,
+	"startColumn": 14,
+	"endLineNumber": 166,
+	"endColumn": 28,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 302,
+	"startColumn": 5,
+	"endLineNumber": 302,
+	"endColumn": 11,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 10,
+	"startColumn": 10,
+	"endLineNumber": 10,
+	"endColumn": 14,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 11,
+	"startColumn": 10,
+	"endLineNumber": 11,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml.ns\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 12,
+	"startColumn": 10,
+	"endLineNumber": 12,
+	"endColumn": 22,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 28,
+	"startColumn": 19,
+	"endLineNumber": 28,
+	"endColumn": 37,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 32,
+	"startColumn": 42,
+	"endLineNumber": 32,
+	"endColumn": 60,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 53,
+	"startColumn": 16,
+	"endLineNumber": 53,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 74,
+	"startColumn": 12,
+	"endLineNumber": 74,
+	"endColumn": 24,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 77,
+	"startColumn": 9,
+	"endLineNumber": 77,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 83,
+	"startColumn": 16,
+	"endLineNumber": 83,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 106,
+	"startColumn": 28,
+	"endLineNumber": 106,
+	"endColumn": 40,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 129,
+	"startColumn": 17,
+	"endLineNumber": 129,
+	"endColumn": 30,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _element of a client class",
+	"source": "Pylint",
+	"startLineNumber": 129,
+	"startColumn": 38,
+	"endLineNumber": 129,
+	"endColumn": 50,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 130,
+	"startColumn": 12,
+	"endLineNumber": 130,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 173,
+	"startColumn": 20,
+	"endLineNumber": 173,
+	"endColumn": 29,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 183,
+	"startColumn": 12,
+	"endLineNumber": 183,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "Ruff",
+	"code": {
+		"value": "E731",
+		"target": {
+			"$mid": 1,
+			"path": "/ruff/rules/lambda-assignment",
+			"scheme": "https",
+			"authority": "docs.astral.sh"
+		}
+	},
+	"severity": 4,
+	"message": "Do not assign a `lambda` expression, use a `def`",
+	"source": "Ruff",
+	"startLineNumber": 186,
+	"startColumn": 5,
+	"endLineNumber": 186,
+	"endColumn": 57,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 216,
+	"startColumn": 12,
+	"endLineNumber": 216,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 239,
+	"startColumn": 15,
+	"endLineNumber": 239,
+	"endColumn": 22,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 279,
+	"startColumn": 27,
+	"endLineNumber": 279,
+	"endColumn": 31,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 285,
+	"startColumn": 25,
+	"endLineNumber": 285,
+	"endColumn": 29,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 287,
+	"startColumn": 31,
+	"endLineNumber": 287,
+	"endColumn": 35,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 302,
+	"startColumn": 16,
+	"endLineNumber": 302,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "Ruff",
+	"code": {
+		"value": "E722",
+		"target": {
+			"$mid": 1,
+			"path": "/ruff/rules/bare-except",
+			"scheme": "https",
+			"authority": "docs.astral.sh"
+		}
+	},
+	"severity": 4,
+	"message": "Do not use bare `except`",
+	"source": "Ruff",
+	"startLineNumber": 320,
+	"startColumn": 17,
+	"endLineNumber": 320,
+	"endColumn": 23,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0702:bare-except",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/bare-except.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "No exception type(s) specified",
+	"source": "Pylint",
+	"startLineNumber": 320,
+	"startColumn": 17,
+	"endLineNumber": 321,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 325,
+	"startColumn": 16,
+	"endLineNumber": 325,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 341,
+	"startColumn": 16,
+	"endLineNumber": 341,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0718:broad-exception-caught",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/broad-exception-caught.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Catching too general exception Exception",
+	"source": "Pylint",
+	"startLineNumber": 350,
+	"startColumn": 12,
+	"endLineNumber": 350,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 23,
+	"startColumn": 10,
+	"endLineNumber": 23,
+	"endColumn": 14,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 24,
+	"startColumn": 10,
+	"endLineNumber": 24,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.oxml.ns\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 25,
+	"startColumn": 10,
+	"endLineNumber": 25,
+	"endColumn": 22,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "Pylance12",
+	"code": {
+		"value": "reportMissingImports",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pylance-release/blob/main/docs/diagnostics/reportMissingImports.md",
+			"scheme": "https",
+			"authority": "github.com"
+		}
+	},
+	"severity": 4,
+	"message": "Import \"docx.text.paragraph\" could not be resolved",
+	"source": "Pylance",
+	"startLineNumber": 26,
+	"startColumn": 10,
+	"endLineNumber": 26,
+	"endColumn": 29,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 40,
+	"startColumn": 5,
+	"endLineNumber": 40,
+	"endColumn": 17,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _parent of a client class",
+	"source": "Pylint",
+	"startLineNumber": 41,
+	"startColumn": 33,
+	"endLineNumber": 41,
+	"endColumn": 50,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 48,
+	"startColumn": 12,
+	"endLineNumber": 48,
+	"endColumn": 24,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _r of a client class",
+	"source": "Pylint",
+	"startLineNumber": 64,
+	"startColumn": 15,
+	"endLineNumber": 64,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _r of a client class",
+	"source": "Pylint",
+	"startLineNumber": 75,
+	"startColumn": 27,
+	"endLineNumber": 75,
+	"endColumn": 33,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _r of a client class",
+	"source": "Pylint",
+	"startLineNumber": 83,
+	"startColumn": 27,
+	"endLineNumber": 83,
+	"endColumn": 33,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _r of a client class",
+	"source": "Pylint",
+	"startLineNumber": 84,
+	"startColumn": 13,
+	"endLineNumber": 84,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _r of a client class",
+	"source": "Pylint",
+	"startLineNumber": 86,
+	"startColumn": 13,
+	"endLineNumber": 86,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 91,
+	"startColumn": 16,
+	"endLineNumber": 91,
+	"endColumn": 28,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 103,
+	"startColumn": 19,
+	"endLineNumber": 103,
+	"endColumn": 31,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "W0212:protected-access",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/warning/protected-access.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 4,
+	"message": "Access to a protected member _p of a client class",
+	"source": "Pylint",
+	"startLineNumber": 121,
+	"startColumn": 16,
+	"endLineNumber": 121,
+	"endColumn": 28,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 20,
+	"startColumn": 1,
+	"endLineNumber": 20,
+	"endColumn": 17,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (104/100)",
+	"source": "Pylint",
+	"startLineNumber": 22,
+	"startColumn": 1,
+	"endLineNumber": 22,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 26,
+	"startColumn": 1,
+	"endLineNumber": 26,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/cli.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 54,
+	"startColumn": 1,
+	"endLineNumber": 54,
+	"endColumn": 25,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (104/100)",
+	"source": "Pylint",
+	"startLineNumber": 40,
+	"startColumn": 1,
+	"endLineNumber": 40,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (105/100)",
+	"source": "Pylint",
+	"startLineNumber": 127,
+	"startColumn": 1,
+	"endLineNumber": 127,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (102/100)",
+	"source": "Pylint",
+	"startLineNumber": 139,
+	"startColumn": 1,
+	"endLineNumber": 139,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 171,
+	"startColumn": 1,
+	"endLineNumber": 171,
+	"endColumn": 9,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/docx_to_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (104/100)",
+	"source": "Pylint",
+	"startLineNumber": 172,
+	"startColumn": 1,
+	"endLineNumber": 172,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (108/100)",
+	"source": "Pylint",
+	"startLineNumber": 24,
+	"startColumn": 1,
+	"endLineNumber": 24,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Variable name \"rPr\" doesn't conform to snake_case naming style",
+	"source": "Pylint",
+	"startLineNumber": 68,
+	"startColumn": 13,
+	"endLineNumber": 68,
+	"endColumn": 16,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Variable name \"rPr\" doesn't conform to snake_case naming style",
+	"source": "Pylint",
+	"startLineNumber": 70,
+	"startColumn": 17,
+	"endLineNumber": 70,
+	"endColumn": 20,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (131/100)",
+	"source": "Pylint",
+	"startLineNumber": 220,
+	"startColumn": 1,
+	"endLineNumber": 220,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (109/100)",
+	"source": "Pylint",
+	"startLineNumber": 221,
+	"startColumn": 1,
+	"endLineNumber": 221,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (134/100)",
+	"source": "Pylint",
+	"startLineNumber": 222,
+	"startColumn": 1,
+	"endLineNumber": 222,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (133/100)",
+	"source": "Pylint",
+	"startLineNumber": 223,
+	"startColumn": 1,
+	"endLineNumber": 223,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (114/100)",
+	"source": "Pylint",
+	"startLineNumber": 226,
+	"startColumn": 1,
+	"endLineNumber": 226,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (109/100)",
+	"source": "Pylint",
+	"startLineNumber": 238,
+	"startColumn": 1,
+	"endLineNumber": 238,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (102/100)",
+	"source": "Pylint",
+	"startLineNumber": 263,
+	"startColumn": 1,
+	"endLineNumber": 263,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/generate_reference_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (102/100)",
+	"source": "Pylint",
+	"startLineNumber": 271,
+	"startColumn": 1,
+	"endLineNumber": 271,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (119/100)",
+	"source": "Pylint",
+	"startLineNumber": 14,
+	"startColumn": 1,
+	"endLineNumber": 14,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 30,
+	"startColumn": 1,
+	"endLineNumber": 30,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 35,
+	"startColumn": 1,
+	"endLineNumber": 35,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 39,
+	"startColumn": 1,
+	"endLineNumber": 39,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 42,
+	"startColumn": 1,
+	"endLineNumber": 42,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 48,
+	"startColumn": 1,
+	"endLineNumber": 48,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 55,
+	"startColumn": 1,
+	"endLineNumber": 55,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 61,
+	"startColumn": 1,
+	"endLineNumber": 61,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 67,
+	"startColumn": 1,
+	"endLineNumber": 67,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 78,
+	"startColumn": 1,
+	"endLineNumber": 78,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 85,
+	"startColumn": 1,
+	"endLineNumber": 85,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 90,
+	"startColumn": 1,
+	"endLineNumber": 90,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 95,
+	"startColumn": 1,
+	"endLineNumber": 95,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 110,
+	"startColumn": 1,
+	"endLineNumber": 110,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 126,
+	"startColumn": 1,
+	"endLineNumber": 126,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 157,
+	"startColumn": 1,
+	"endLineNumber": 157,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 161,
+	"startColumn": 1,
+	"endLineNumber": 161,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 165,
+	"startColumn": 1,
+	"endLineNumber": 165,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 168,
+	"startColumn": 1,
+	"endLineNumber": 168,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (111/100)",
+	"source": "Pylint",
+	"startLineNumber": 170,
+	"startColumn": 1,
+	"endLineNumber": 170,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 175,
+	"startColumn": 1,
+	"endLineNumber": 175,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C3001:unnecessary-lambda-assignment",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/unnecessary-lambda-assignment.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Lambda expression assigned to a variable. Define a function using the \"def\" keyword instead.",
+	"source": "Pylint",
+	"startLineNumber": 186,
+	"startColumn": 15,
+	"endLineNumber": 186,
+	"endColumn": 57,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (126/100)",
+	"source": "Pylint",
+	"startLineNumber": 232,
+	"startColumn": 1,
+	"endLineNumber": 232,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (126/100)",
+	"source": "Pylint",
+	"startLineNumber": 233,
+	"startColumn": 1,
+	"endLineNumber": 233,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Variable name \"pPr\" doesn't conform to snake_case naming style",
+	"source": "Pylint",
+	"startLineNumber": 239,
+	"startColumn": 9,
+	"endLineNumber": 239,
+	"endColumn": 12,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Variable name \"numPr\" doesn't conform to snake_case naming style",
+	"source": "Pylint",
+	"startLineNumber": 242,
+	"startColumn": 9,
+	"endLineNumber": 242,
+	"endColumn": 14,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Variable name \"numId_el\" doesn't conform to snake_case naming style",
+	"source": "Pylint",
+	"startLineNumber": 245,
+	"startColumn": 9,
+	"endLineNumber": 245,
+	"endColumn": 17,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (108/100)",
+	"source": "Pylint",
+	"startLineNumber": 266,
+	"startColumn": 1,
+	"endLineNumber": 266,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 296,
+	"startColumn": 1,
+	"endLineNumber": 296,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 304,
+	"startColumn": 1,
+	"endLineNumber": 304,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 311,
+	"startColumn": 1,
+	"endLineNumber": 311,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 316,
+	"startColumn": 1,
+	"endLineNumber": 316,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 322,
+	"startColumn": 1,
+	"endLineNumber": 322,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 334,
+	"startColumn": 21,
+	"endLineNumber": 334,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 355,
+	"startColumn": 1,
+	"endLineNumber": 355,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (113/100)",
+	"source": "Pylint",
+	"startLineNumber": 364,
+	"startColumn": 1,
+	"endLineNumber": 364,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 366,
+	"startColumn": 1,
+	"endLineNumber": 366,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0103:invalid-name",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/invalid-name.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Constant name \"ok\" doesn't conform to UPPER_CASE naming style",
+	"source": "Pylint",
+	"startLineNumber": 367,
+	"startColumn": 5,
+	"endLineNumber": 367,
+	"endColumn": 7,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 368,
+	"startColumn": 19,
+	"endLineNumber": 368,
+	"endColumn": 19,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0303:trailing-whitespace",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/trailing-whitespace.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Trailing whitespace",
+	"source": "Pylint",
+	"startLineNumber": 372,
+	"startColumn": 1,
+	"endLineNumber": 372,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (109/100)",
+	"source": "Pylint",
+	"startLineNumber": 6,
+	"startColumn": 1,
+	"endLineNumber": 6,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 43,
+	"startColumn": 1,
+	"endLineNumber": 43,
+	"endColumn": 30,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/postprocess_markdown.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0116:missing-function-docstring",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/missing-function-docstring.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Missing function or method docstring",
+	"source": "Pylint",
+	"startLineNumber": 49,
+	"startColumn": 1,
+	"endLineNumber": 49,
+	"endColumn": 21,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+},{
+	"resource": "/c:/Users/daved/OneDrive/Documents/Code/autotextstyle/scripts/preprocess_docx.py",
+	"owner": "_generated_diagnostic_collection_name_#7",
+	"code": {
+		"value": "C0301:line-too-long",
+		"target": {
+			"$mid": 1,
+			"path": "/en/latest/user_guide/messages/convention/line-too-long.html",
+			"scheme": "https",
+			"authority": "pylint.readthedocs.io"
+		}
+	},
+	"severity": 2,
+	"message": "Line too long (102/100)",
+	"source": "Pylint",
+	"startLineNumber": 160,
+	"startColumn": 1,
+	"endLineNumber": 160,
+	"endColumn": 1,
+	"modelVersionId": 1,
+	"origin": "extHost1"
+}]
