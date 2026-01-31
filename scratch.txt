@@ -1,0 +1,11 @@
+# split_docx_units with defaults
+python .\scripts\split_docx_units.py `
+
+
+# docx_to_markdown with defaults (md files go into "<input basename> out\.md")
+python .\scripts\docx_to_markdown.py --input `
+
+
+#textbooks
+".\Samples\Meetings\Business Meetings Essentials for Businesspeople.docx"
+".\Samples\Meetings\Facilitation Skills for International Meetings (AS Online).docx"

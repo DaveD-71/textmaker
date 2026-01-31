@@ -229,6 +229,9 @@ def main() -> None:
     assets_dir = assets_arg if assets_arg.is_absolute() else (output_dir / assets_arg)
     assets_dir.mkdir(parents=True, exist_ok=True)
 
+    md_dir = output_dir / '.md'
+    md_dir.mkdir(parents=True, exist_ok=True)
+
     temp_md = output_dir / '_full.md'
     temp_docx = output_dir / '_preprocessed.docx'
 
@@ -247,7 +250,7 @@ def main() -> None:
 
     md_text = temp_md.read_text(encoding='utf-8')
     sections = split_markdown_by_heading(md_text, level=args.unit_heading_level)
-    written_files = write_sections_to_files(sections, output_dir)
+    written_files = write_sections_to_files(sections, md_dir)
 
     # Replace sentinel markers in all written markdown files
     postprocess_many(written_files)
@@ -261,7 +264,7 @@ def main() -> None:
         create_reference_docx(source_docx, ref_path, keep_headers=args.preserve_headers)
         print(f'Wrote reference styles to {ref_path}')
 
-    print(f'Wrote {len(written_files)} markdown file(s) to {output_dir}')
+    print(f'Wrote {len(written_files)} markdown file(s) to {md_dir}')
     print(f'Assets extracted to {assets_dir}')
 
 

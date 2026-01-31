@@ -42,30 +42,29 @@ def sanitize_title(title: str) -> str:
     return ascii_title
 
 
-def find_units(blocks):
-    unit_starts = []
-    colon_pattern = re.compile(r"^\s*(\d+)\s*:\s*(.+)$")
-    number_pattern = re.compile(r"^\s*(\d+)\s*$")
+def _is_heading_level(paragraph, level: int) -> bool:
+    try:
+        style = paragraph.style
+    except Exception:
+        return False
+    if not style:
+        return False
+    name = getattr(style, "name", "") or ""
+    style_id = getattr(style, "style_id", "") or ""
+    if name.strip().lower() == f"heading {level}".lower():
+        return True
+    if style_id.replace(" ", "").lower() == f"heading{level}".lower():
+        return True
+    return False
 
-    for idx, (_, text) in enumerate(blocks):
-        lines = [line.strip() for line in text.splitlines() if line.strip()]
-        for i, line in enumerate(lines):
-            colon_match = colon_pattern.match(line)
-            if colon_match:
-                unit_number = colon_match.group(1)
-                unit_title = colon_match.group(2).strip()
-                unit_starts.append((idx, unit_number, unit_title))
-                break
-            number_match = number_pattern.match(line)
-            if number_match:
-                unit_number = number_match.group(1)
-                unit_title = None
-                for j in range(i + 1, len(lines)):
-                    if lines[j] != unit_number:
-                        unit_title = lines[j]
-                        break
-                unit_starts.append((idx, unit_number, unit_title or f"Unit {unit_number}"))
-                break
+
+def find_units(blocks, heading_level: int):
+    unit_starts = []
+    for idx, (block, text) in enumerate(blocks):
+        if isinstance(block, Paragraph) and _is_heading_level(block, heading_level):
+            unit_number = str(len(unit_starts) + 1)
+            unit_title = text.strip() or f"Unit {unit_number}"
+            unit_starts.append((idx, unit_number, unit_title))
     return unit_starts
 
 
@@ -76,12 +75,17 @@ def remove_images(doc_to_clean):
                 element.remove(child)
 
 
-def split_docx(input_path: str, output_dir: str) -> list[tuple[str, str]]:
+def split_docx(
+    input_path: str,
+    output_dir: str,
+    ext_dir: str,
+    heading_level: int,
+) -> list[tuple[str, str]]:
     doc = docx.Document(input_path)
     blocks = [(block, block_text(block)) for block in iter_block_items(doc)]
-    unit_starts = find_units(blocks)
+    unit_starts = find_units(blocks, heading_level)
     if not unit_starts:
-        raise ValueError(f"No unit markers found in {input_path}")
+        raise ValueError(f"No unit headings found in {input_path}")
 
     unit_ranges = []
     for i, (start_idx, unit_num, unit_title) in enumerate(unit_starts):
@@ -92,13 +96,11 @@ def split_docx(input_path: str, output_dir: str) -> list[tuple[str, str]]:
     if first_start > 0:
         unit_ranges[0] = (first_unit_num, first_unit_title, 0, first_end)
 
-    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(ext_dir, exist_ok=True)
 
     created = []
     for unit_num, unit_title, start_idx, end_idx in unit_ranges:
         safe_title = sanitize_title(unit_title)
-        unit_dir = os.path.join(output_dir, f"Unit {unit_num} - {safe_title}")
-        os.makedirs(unit_dir, exist_ok=True)
         unit_doc = docx.Document()
         if unit_doc.paragraphs:
             p = unit_doc.paragraphs[0]._element
@@ -106,7 +108,7 @@ def split_docx(input_path: str, output_dir: str) -> list[tuple[str, str]]:
         for block, _text in blocks[start_idx:end_idx]:
             unit_doc.element.body.append(deepcopy(block._element))
         remove_images(unit_doc)
-        out_path = os.path.join(unit_dir, f"Unit {unit_num} - {safe_title}.docx")
+        out_path = os.path.join(ext_dir, f"Unit {unit_num} - {safe_title}.docx")
         unit_doc.save(out_path)
         created.append((unit_num, safe_title))
     return created
@@ -117,10 +119,29 @@ def main():
         description="Split a DOCX into unit-level DOCX files, removing images."
     )
     parser.add_argument("input", help="Path to the source DOCX")
-    parser.add_argument("output", help="Output directory for unit folders")
+    parser.add_argument(
+        "output",
+        nargs="?",
+        default=None,
+        help='Output directory (default: "<input basename> out")',
+    )
+    parser.add_argument(
+        "--unit-heading-level",
+        type=int,
+        default=1,
+        help="Heading level that marks the start of a unit (default: 1).",
+    )
     args = parser.parse_args()
 
-    created = split_docx(args.input, args.output)
+    input_path = os.path.abspath(args.input)
+    input_dir = os.path.dirname(input_path)
+    input_stem, input_ext = os.path.splitext(os.path.basename(input_path))
+    output_dir = os.path.abspath(
+        args.output if args.output else os.path.join(input_dir, f"{input_stem} out")
+    )
+    ext_dir = os.path.join(output_dir, input_ext)
+
+    created = split_docx(input_path, output_dir, ext_dir, args.unit_heading_level)
     for unit_num, title in created:
         print(f"Unit {unit_num} - {title}")
 
