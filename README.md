@@ -20,13 +20,14 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 # install Python dependencies
-pip install -r requirements.txt
+pip install -r .\docs\requirements.txt
 
 # generate a style reference document (creates reference.docx)
-python .\scripts\generate_reference_docx.py --out reference.docx
+python .\scripts\generate_reference_docx.py --out ".\style-ref\reference.docx"
 
 # convert a markdown file (or multiple) to docx using pandoc and the reference
-python .\scripts\cli.py --input "..\path\to\your\file.md" --output "MyBook.docx"
+python .\scripts\cli.py --input "..\path\to\your\file.md" --output "MyBook.docx" `
+  --reference ".\style-ref\reference.docx"
 ```
 
 ## Generate `reference.docx` (options)
@@ -36,7 +37,7 @@ python .\scripts\cli.py --input "..\path\to\your\file.md" --output "MyBook.docx"
 python .\scripts\generate_reference_docx.py
 
 # choose a custom output path
-python .\scripts\generate_reference_docx.py --out ".\Writing textbook\Advanced\reference.docx"
+python .\scripts\generate_reference_docx.py --out ".\style-ref\reference.docx"
 
 # show all flags
 python .\scripts\generate_reference_docx.py --help
@@ -50,7 +51,7 @@ python .\scripts\generate_reference_docx.py --help
 ```powershell
 python .\scripts\cli.py --input <file-or-folder> `
   --output output.docx `
-  --reference reference.docx `
+  --reference ".\style-ref\reference.docx" `
   --toc `
   --toc-depth 2
 ```
@@ -71,11 +72,11 @@ python .\scripts\cli.py --input <file-or-folder> `
 
 ```powershell
 python .\scripts\docx_to_markdown.py `
-  --input ".\reference.docx" `
-  --output-dir ".\docx_export" `
+  --input ".\style-ref\reference.docx" `
+  --output-dir ".\textbooks\testing\docx_export" `
   --assets-dir "assets" `
   --unit-heading-level 1 `
-  --reference-out ".\reference-from-source.docx" `
+  --reference-out ".\textbooks\testing\docx_export\reference.docx" `
   --preserve-headers
 ```
 
@@ -135,10 +136,20 @@ Output behavior:
 - Removes images from unit outputs.
 - Titles are slugified (ASCII, lowercase, hyphenated, max 60 chars).
 
+Example output structure:
+```
+<input basename> out/
+  .docx/
+    00-front-matter.docx
+    01-introduction.docx
+    02-meeting-structure-and-the-chairperson.docx
+    03-staff-meeting-transcript.docx
+```
+
 ## Notes
 
 - This prototype uses `pandoc` for markdown → docx conversion and a generated `reference.docx` to control styles. Pandoc must be installed separately.
-- See `bookconfig.yml` to change page size, fonts and TOC depth.
+- See `style-ref\bookconfig.yml` to change page size, fonts and TOC depth.
 
 ## Next steps
 

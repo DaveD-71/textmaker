@@ -10,6 +10,8 @@
 # - Fields: PAGE/NUMPAGES/DATE/... (simple + complex) with locations
 # - CSVs: styles_summary, sections, paragraphs (incl. table cell paragraphs), tables, table_cells (with first_para_id), assets, fields
 
+# - This older module has largely been replaced but is kept for reference and backward compatibility.
+
 import argparse, csv, json, os, zipfile
 from pathlib import Path
 from collections import OrderedDict
