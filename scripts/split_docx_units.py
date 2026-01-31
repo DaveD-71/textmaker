@@ -30,16 +30,13 @@ def block_text(block):
     return "\n".join(texts)
 
 
-def sanitize_title(title: str) -> str:
+def slugify(title: str) -> str:
     normalized = unicodedata.normalize("NFKD", title)
     ascii_title = normalized.encode("ascii", "ignore").decode("ascii")
-    ascii_title = ascii_title.replace(":", " - ")
-    ascii_title = ascii_title.replace("/", " - ")
-    ascii_title = ascii_title.replace("&", "and")
-    ascii_title = re.sub(r"[\'\"“”‘’]", "", ascii_title)
-    ascii_title = re.sub(r"[^A-Za-z0-9\s\-]", " ", ascii_title)
-    ascii_title = re.sub(r"\s+", " ", ascii_title).strip()
-    return ascii_title
+    slug = re.sub(r'[^A-Za-z0-9]+', '-', ascii_title).strip('-').lower()
+    if not slug:
+        return 'section'
+    return slug[:60]
 
 
 def _is_heading_level(paragraph, level: int) -> bool:
@@ -80,6 +77,7 @@ def split_docx(
     output_dir: str,
     ext_dir: str,
     heading_level: int,
+    include_front_matter: bool,
 ) -> list[tuple[str, str]]:
     doc = docx.Document(input_path)
     blocks = [(block, block_text(block)) for block in iter_block_items(doc)]
@@ -92,15 +90,31 @@ def split_docx(
         end_idx = unit_starts[i + 1][0] if i + 1 < len(unit_starts) else len(blocks)
         unit_ranges.append((unit_num, unit_title, start_idx, end_idx))
 
+    front_range = None
     first_unit_num, first_unit_title, first_start, first_end = unit_ranges[0]
     if first_start > 0:
-        unit_ranges[0] = (first_unit_num, first_unit_title, 0, first_end)
+        if include_front_matter:
+            front_range = (0, first_start)
+        else:
+            unit_ranges[0] = (first_unit_num, first_unit_title, 0, first_end)
 
     os.makedirs(ext_dir, exist_ok=True)
 
     created = []
+    if front_range:
+        start_idx, end_idx = front_range
+        front_doc = docx.Document()
+        if front_doc.paragraphs:
+            p = front_doc.paragraphs[0]._element
+            p.getparent().remove(p)
+        for block, _text in blocks[start_idx:end_idx]:
+            front_doc.element.body.append(deepcopy(block._element))
+        remove_images(front_doc)
+        front_path = os.path.join(ext_dir, "00-front-matter.docx")
+        front_doc.save(front_path)
+        created.append(("00", "front-matter"))
     for unit_num, unit_title, start_idx, end_idx in unit_ranges:
-        safe_title = sanitize_title(unit_title)
+        safe_title = slugify(unit_title)
         unit_doc = docx.Document()
         if unit_doc.paragraphs:
             p = unit_doc.paragraphs[0]._element
@@ -108,7 +122,7 @@ def split_docx(
         for block, _text in blocks[start_idx:end_idx]:
             unit_doc.element.body.append(deepcopy(block._element))
         remove_images(unit_doc)
-        out_path = os.path.join(ext_dir, f"Unit {unit_num} - {safe_title}.docx")
+        out_path = os.path.join(ext_dir, f"{int(unit_num):02d}-{safe_title}.docx")
         unit_doc.save(out_path)
         created.append((unit_num, safe_title))
     return created
@@ -131,6 +145,11 @@ def main():
         default=1,
         help="Heading level that marks the start of a unit (default: 1).",
     )
+    parser.add_argument(
+        "--no-front-matter",
+        action="store_true",
+        help="Include front matter in the first unit instead of a separate file.",
+    )
     args = parser.parse_args()
 
     input_path = os.path.abspath(args.input)
@@ -141,9 +160,18 @@ def main():
     )
     ext_dir = os.path.join(output_dir, input_ext)
 
-    created = split_docx(input_path, output_dir, ext_dir, args.unit_heading_level)
+    created = split_docx(
+        input_path,
+        output_dir,
+        ext_dir,
+        args.unit_heading_level,
+        include_front_matter=not args.no_front_matter,
+    )
     for unit_num, title in created:
-        print(f"Unit {unit_num} - {title}")
+        if unit_num == "00":
+            print(f"{unit_num}-front-matter")
+        else:
+            print(f"{int(unit_num):02d}-{slugify(title)}")
 
 
 if __name__ == "__main__":

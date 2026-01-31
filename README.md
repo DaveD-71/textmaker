@@ -129,10 +129,11 @@ How it decides split points:
 
 Output behavior:
 - Creates an extension subfolder inside the output directory (e.g., `.docx`, `.docm`, `.dotx`, `.dotm`).
-- Creates one folder per unit inside the extension subfolder, named `Unit <number> - <title>`.
-- Writes a DOCX into each folder with the same name.
+- Writes one DOCX per unit directly into that extension subfolder.
+- Filenames follow the markdown-style convention: `01-<slug>.docx`, `02-<slug>.docx`, ...
+- If front matter exists, it is written as `00-front-matter.docx` by default (use `--no-front-matter` to include it in Unit 1).
 - Removes images from unit outputs.
-- Unit titles are sanitized to ASCII‑safe filenames.
+- Titles are slugified (ASCII, lowercase, hyphenated, max 60 chars).
 
 ## Notes
 

@@ -102,7 +102,10 @@ def slugify(title: Optional[str]) -> str:
     return slug[:60]
 
 
-def split_markdown_by_heading(md_text: str, level: int = 1) -> List[Tuple[Optional[str], str]]:
+def split_markdown_by_heading(
+    md_text: str,
+    level: int = 1,
+) -> Tuple[Optional[str], List[Tuple[Optional[str], str]]]:
     """Split markdown content into sections keyed by heading level."""
     if level < 1:
         raise ValueError('Heading level must be >= 1')
@@ -112,26 +115,37 @@ def split_markdown_by_heading(md_text: str, level: int = 1) -> List[Tuple[Option
 
     current_title: Optional[str] = None
     current_lines: List[str] = []
+    front_matter: Optional[str] = None
 
     for line in md_text.splitlines():
         if line.startswith(heading_prefix) and not line.startswith(deeper_prefix):
             if current_lines:
-                sections.append((current_title, '\n'.join(current_lines).strip('\n')))
+                if current_title is None and front_matter is None:
+                    front_matter = '\n'.join(current_lines).strip('\n')
+                else:
+                    sections.append((current_title, '\n'.join(current_lines).strip('\n')))
             current_title = line[len(heading_prefix) :].strip()
             current_lines = [line]
         else:
             current_lines.append(line)
 
     if current_lines:
-        sections.append((current_title, '\n'.join(current_lines).strip('\n')))
+        if current_title is None and front_matter is None:
+            front_matter = '\n'.join(current_lines).strip('\n')
+        else:
+            sections.append((current_title, '\n'.join(current_lines).strip('\n')))
 
-    return sections
+    return front_matter, sections
 
 
-def write_sections_to_files(sections: Iterable[Tuple[Optional[str], str]], dest_dir: Path) -> List[Path]:
+def write_sections_to_files(
+    sections: Iterable[Tuple[Optional[str], str]],
+    dest_dir: Path,
+    start_index: int = 1,
+) -> List[Path]:
     """Write split sections to numbered markdown files."""
     written: List[Path] = []
-    for idx, (title, content) in enumerate(sections, start=1):
+    for idx, (title, content) in enumerate(sections, start=start_index):
         slug = slugify(title or 'section')
         filename = f'{idx:02d}-{slug}.md'
         path = dest_dir / filename
@@ -249,8 +263,16 @@ def main() -> None:
     )
 
     md_text = temp_md.read_text(encoding='utf-8')
-    sections = split_markdown_by_heading(md_text, level=args.unit_heading_level)
-    written_files = write_sections_to_files(sections, md_dir)
+    front_matter, sections = split_markdown_by_heading(
+        md_text,
+        level=args.unit_heading_level,
+    )
+    written_files: List[Path] = []
+    if front_matter:
+        front_path = md_dir / '00-front-matter.md'
+        front_path.write_text((front_matter.strip('\n') + '\n'), encoding='utf-8')
+        written_files.append(front_path)
+    written_files.extend(write_sections_to_files(sections, md_dir, start_index=1))
 
     # Replace sentinel markers in all written markdown files
     postprocess_many(written_files)
