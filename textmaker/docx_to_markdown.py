@@ -183,7 +183,8 @@ def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description='Split a DOCX into markdown units and extract assets.')
-    parser.add_argument('--input', required=True, help='Input DOCX file to split.')
+    parser.add_argument('input', nargs='?', help='Input DOCX file to split.')
+    parser.add_argument('--input', dest='input_arg', help='Input DOCX file to split.')
     parser.add_argument(
         '--output-dir',
         default=None,
@@ -222,7 +223,11 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    source_docx = Path(args.input).expanduser().resolve()
+    input_value = args.input_arg or args.input
+    if not input_value:
+        print('Input DOCX is required.')
+        sys.exit(1)
+    source_docx = Path(input_value).expanduser().resolve()
     if not source_docx.exists():
         print(f'Input DOCX not found: {source_docx}')
         sys.exit(1)

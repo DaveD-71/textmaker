@@ -1,8 +1,37 @@
 {
-    "powerquery.client.additionalSymbolsDirectories": [
-        "c:/Users/daved/OneDrive/Documents/Code/autotextstyle/.vscode/excel-pq-symbols"
-    ],
-    "python.terminal.activateEnvironment": false,
-    "files.encoding": "utf8",
-    "terminal.integrated.defaultEncoding": "utf8"
+  "window.confirmSaveUntitledWorkspace": false,
+  "files.autoSave": "afterDelay",
+  "security.allowedUNCHosts": ["prod-fs-gen01", "prod-fs-sec01"],
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "json.validate.enable": true,
+  "vscode-office.chromiumPath": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"",
+  "editor.minimap.showSlider": "always",
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "git.enableSmartCommit": true,
+  "chat.mcp.gallery.enabled": true,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pdf": "pdf.preview"
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "–": true
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode-office.openOutline": false,
+  "terminal.integrated.fontFamily": "Cascadia Mono, 'Yu Gothic UI', Meiryo, Consolas",
+  "git.confirmSync": false,
+  "vscode-office.editorTheme": "Warm Light",
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "scm.repositories.selectionMode": "single"
 }
