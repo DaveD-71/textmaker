@@ -17,6 +17,7 @@ import tempfile
 from pathlib import Path
 from typing import Iterable, List, Optional, Tuple
 from zipfile import ZipFile
+from xml.etree import ElementTree
 
 try:
     from docx import Document  # type: ignore[reportMissingImports]
@@ -27,6 +28,16 @@ except ImportError as exc:
 
 from .preprocess_docx import preprocess_docx
 from .postprocess_markdown import postprocess_many
+
+
+SHAPE_NS = {
+    'a': 'http://schemas.openxmlformats.org/drawingml/2006/main',
+    'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships',
+    'v': 'urn:schemas-microsoft-com:vml',
+    'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+    'wp': 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing',
+    'wps': 'http://schemas.microsoft.com/office/word/2010/wordprocessingShape',
+}
 
 
 def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
@@ -181,6 +192,109 @@ def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: 
     return reference_out
 
 
+class ShapeAsset:
+    def __init__(self, index: int, alt_text: str, text: str, asset_path: Path, link_path: str) -> None:
+        self.index = index
+        self.alt_text = alt_text
+        self.text = text
+        self.asset_path = asset_path
+        self.link_path = link_path
+
+
+def _extract_text_from_txbx(txbx) -> str:
+    paragraphs = []
+    for p in txbx.findall('.//w:p', SHAPE_NS):
+        chunks = [t.text for t in p.findall('.//w:t', SHAPE_NS) if t.text]
+        if chunks:
+            paragraphs.append(''.join(chunks).strip())
+    return '\n'.join(line for line in paragraphs if line)
+
+
+def _get_shape_alt_text(shape_elem) -> str:
+    doc_pr = shape_elem.find('.//wp:docPr', SHAPE_NS)
+    if doc_pr is None:
+        return ''
+    desc = doc_pr.get('descr') or ''
+    title = doc_pr.get('title') or ''
+    return (desc or title).strip()
+
+
+def extract_shapes(docx_path: Path, assets_dir: Path, assets_arg: Path) -> List[ShapeAsset]:
+    shapes: List[ShapeAsset] = []
+    shape_assets_dir = assets_dir / 'shapes'
+
+    with ZipFile(docx_path, 'r') as docx_zip:
+        try:
+            document_xml = docx_zip.read('word/document.xml')
+        except KeyError:
+            return shapes
+
+    root = ElementTree.fromstring(document_xml)
+    shape_elements = [
+        elem
+        for elem in root.iter()
+        if elem.tag in {
+            f"{{{SHAPE_NS['w']}}}drawing",
+            f"{{{SHAPE_NS['w']}}}pict",
+        }
+    ]
+
+    if not shape_elements:
+        return shapes
+
+    shape_assets_dir.mkdir(parents=True, exist_ok=True)
+
+    for idx, shape in enumerate(shape_elements, start=1):
+        alt_text = _get_shape_alt_text(shape)
+        text_chunks = []
+        for txbx in shape.findall('.//w:txbxContent', SHAPE_NS):
+            text_chunks.append(_extract_text_from_txbx(txbx))
+        text = '\n'.join(chunk for chunk in text_chunks if chunk).strip()
+
+        asset_name = f'shape-{idx:03d}.xml'
+        asset_path = shape_assets_dir / asset_name
+        xml_payload = ElementTree.tostring(shape, encoding='unicode')
+        asset_path.write_text(xml_payload, encoding='utf-8')
+
+        link_path = (assets_arg / 'shapes' / asset_name).as_posix()
+        shapes.append(ShapeAsset(idx, alt_text, text, asset_path, link_path))
+
+    return shapes
+
+
+def _format_shape_text(text: str) -> str:
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    if not lines:
+        return ''
+    prefixed = ['Shape text: ' + lines[0]]
+    prefixed.extend(lines[1:])
+    return '\n'.join(f'> {line}' for line in prefixed)
+
+
+def replace_shape_markers(paths: Iterable[Path], shapes: List[ShapeAsset]) -> None:
+    if not shapes:
+        return
+    shape_iter = iter(shapes)
+    pattern = re.compile(r'\[\[SHAPE:([^\]]*)\]\]')
+
+    for path in paths:
+        text = path.read_text(encoding='utf-8')
+
+        def _replace(match: re.Match) -> str:
+            shape = next(shape_iter, None)
+            if shape is None:
+                return match.group(0)
+            label = shape.alt_text or match.group(1).strip() or f'shape-{shape.index:03d}'
+            link = f'[{label}]({shape.link_path})'
+            blockquote = _format_shape_text(shape.text)
+            if blockquote:
+                return f'{link}\n\n{blockquote}'
+            return link
+
+        new_text = pattern.sub(_replace, text)
+        path.write_text(new_text, encoding='utf-8')
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description='Split a DOCX into markdown units and extract assets.')
     parser.add_argument('input', nargs='?', help='Input DOCX file to split.')
@@ -276,6 +390,9 @@ def main() -> None:
         front_path.write_text((front_matter.strip('\n') + '\n'), encoding='utf-8')
         written_files.append(front_path)
     written_files.extend(write_sections_to_files(sections, md_dir, start_index=1))
+
+    shapes = extract_shapes(temp_docx, assets_dir, assets_arg)
+    replace_shape_markers(written_files, shapes)
 
     # Replace sentinel markers in all written markdown files
     postprocess_many(written_files)
