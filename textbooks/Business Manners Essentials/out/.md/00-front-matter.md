@@ -1,0 +1,79 @@
+<img src="assets/media/image2.png" style="width:1.06181in;height:1.53125in" />
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: left;"><blockquote>
+<p>Business Manners</p>
+<p><em>Essentials</em></p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+> Contents
+>
+> Introduction 3
+
+1.  Meeting for the First Time 4
+
+2.  Visiting a Client 6
+
+3.  Taking Care of a Guest 8
+
+4.  Introducing a Colleague 10
+
+5.  Basic Telephone Skills 12
+
+6.  Taking a Message 14
+
+7.  Making an Appointment 16
+
+8.  Handling a Problem 18
+
+<img src="assets/media/image3.png" style="width:1.5in;height:0.43472in" />
+
+\[\[SECTIONBREAK\]\]
+
+Introduction
+
+> Business language & protocol
+>
+> About *Business English*
+
+- The Content
+
+> *Business Manners* is composed of the language and protocol that you need in order to handle standard business situations in English.
+
+- What is Protocol?
+
+> Protocol consists of the social rules for communication: What to do and say, and when to do and say it.
+>
+> The rules of protocol vary across cultures and different social situations within cultures but the purpose of protocol is always the same – to create and maintain respectful and effective communication.
+>
+> About Learning from *Business Manners*
+
+- Target: Fluency in the target skills
+
+> The goal of studying with *Business Manners* is to be able to reproduce the target skills and target language *perfectly* and *with confidence*.
+
+- Step 1: Read and Practice
+
+> Read and practice the expressions in the dialogs and vocabulary lists until you can say them easily and fluently, just as you need to in business situations.
+
+- Step 2: Demonstrate
+
+> Demonstrate particular skills in one-on-one role-plays with other students and the instructor.
+
+- Role-plays and Simulations
+
+> *Business Manners* can be used as a platform for business role-plays and simulations prepared, practiced, and performed by the students.
+
+<img src="assets/media/image4.png" style="width:0.47717in;height:0.68701in" />

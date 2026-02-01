@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 import re
 import unicodedata
 from copy import deepcopy
@@ -153,6 +154,9 @@ def main():
     args = parser.parse_args()
 
     input_path = os.path.abspath(args.input)
+    if not os.path.isfile(input_path):
+        print(f"Input DOCX not found: {input_path}")
+        sys.exit(1)
     input_dir = os.path.dirname(input_path)
     input_stem, input_ext = os.path.splitext(os.path.basename(input_path))
     parent_name = os.path.basename(input_dir)
