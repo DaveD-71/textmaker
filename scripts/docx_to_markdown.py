@@ -192,7 +192,7 @@ def main() -> None:
     parser.add_argument(
         '--output-dir',
         default=None,
-        help='Folder to write markdown files and assets (default: "<input basename> out").',
+        help='Folder to write markdown files and assets (default: "<input folder>\\out").',
     )
     parser.add_argument(
         '--assets-dir',
@@ -232,11 +232,14 @@ def main() -> None:
         print(f'Input DOCX not found: {source_docx}')
         sys.exit(1)
 
+    base_dir = source_docx.parent
+    desired_parent = base_dir if base_dir.name == source_docx.stem else (base_dir / source_docx.stem)
+    desired_parent.mkdir(parents=True, exist_ok=True)
+
     if args.output_dir:
         output_dir = Path(args.output_dir).expanduser().resolve()
     else:
-        output_dir = source_docx.parent / f'{source_docx.stem} out'
-        output_dir = output_dir.resolve()
+        output_dir = (desired_parent / 'out').resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     assets_arg = Path(args.assets_dir)
@@ -288,6 +291,12 @@ def main() -> None:
 
     print(f'Wrote {len(written_files)} markdown file(s) to {md_dir}')
     print(f'Assets extracted to {assets_dir}')
+
+    # Move the source DOCX into the same-named folder last, after all processing.
+    if source_docx.parent != desired_parent:
+        moved_path = desired_parent / source_docx.name
+        if moved_path != source_docx:
+            source_docx.replace(moved_path)
 
 
 if __name__ == '__main__':

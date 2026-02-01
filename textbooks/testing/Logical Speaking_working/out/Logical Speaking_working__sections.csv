@@ -1,5 +1,0 @@
-index,orientation,page_width_cm,page_height_cm,margin_top_cm,margin_bottom_cm,margin_left_cm,margin_right_cm,header_distance_cm,footer_distance_cm,different_first,even_and_odd,page_num_format,page_num_start
-1,PORTRAIT,21.001,29.7,3.0,3.0,3.0,3.0,1.251,1.251,True,,,1
-2,PORTRAIT,21.001,29.7,3.0,3.0,3.0,3.0,1.251,1.251,True,,,1
-3,PORTRAIT,21.001,29.7,3.0,3.0,3.0,3.0,1.251,1.251,True,,,1
-4,PORTRAIT,21.001,29.7,3.0,3.0,3.0,3.0,1.251,1.251,True,,,1

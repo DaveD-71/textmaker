@@ -137,7 +137,7 @@ def main():
         "output",
         nargs="?",
         default=None,
-        help='Output directory (default: "<input basename> out")',
+        help='Output directory (default: "<input folder>\\out")',
     )
     parser.add_argument(
         "--unit-heading-level",
@@ -155,8 +155,12 @@ def main():
     input_path = os.path.abspath(args.input)
     input_dir = os.path.dirname(input_path)
     input_stem, input_ext = os.path.splitext(os.path.basename(input_path))
+    parent_name = os.path.basename(input_dir)
+    desired_parent = os.path.join(input_dir, input_stem) if parent_name != input_stem else input_dir
+    if not os.path.isdir(desired_parent):
+        os.makedirs(desired_parent, exist_ok=True)
     output_dir = os.path.abspath(
-        args.output if args.output else os.path.join(input_dir, f"{input_stem} out")
+        args.output if args.output else os.path.join(desired_parent, "out")
     )
     ext_dir = os.path.join(output_dir, input_ext)
 
@@ -172,6 +176,12 @@ def main():
             print(f"{unit_num}-front-matter")
         else:
             print(f"{int(unit_num):02d}-{slugify(title)}")
+
+    # Move the source DOCX into the same-named folder last, after all processing.
+    if parent_name != input_stem:
+        moved_path = os.path.join(desired_parent, os.path.basename(input_path))
+        if os.path.normcase(moved_path) != os.path.normcase(input_path):
+            os.replace(input_path, moved_path)
 
 
 if __name__ == "__main__":

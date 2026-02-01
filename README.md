@@ -72,16 +72,15 @@ python .\scripts\cli.py --input <file-or-folder> `
 
 ```powershell
 python .\scripts\docx_to_markdown.py `
-  --input ".\style-ref\reference.docx" `
-  --output-dir ".\textbooks\testing\docx_export" `
+  --input ".\textbooks\testing\Business Meetings Essentials for Businesspeople.docx" `
   --assets-dir "assets" `
   --unit-heading-level 1 `
-  --reference-out ".\textbooks\testing\docx_export\reference.docx" `
   --preserve-headers
 ```
 
 Default behavior (no extra flags required):
-- Output folder: `<input basename> out` (created next to the input DOCX).
+- The DOCX is moved (if needed) into a folder named after the file stem.
+- Output folder: `<input folder>\out`.
 - Markdown output folder: `.md` inside the output folder.
 - Assets folder: `assets` inside the output folder.
 - Reference DOCX: `reference.docx` inside the output folder.
@@ -114,7 +113,7 @@ Sentinel markers:
 The `split_docx_units.py` utility splits a DOCX into per-unit DOCX files based on simple unit markers.
 
 ```powershell
-# default output folder: "<input basename> out"
+# default output folder: "<input folder>\out"
 python .\scripts\split_docx_units.py ".\path\to\source.docx"
 
 # optional custom output folder
@@ -129,7 +128,9 @@ How it decides split points:
 - If the first unit marker is not at the start of the document, the first unit includes everything before it.
 
 Output behavior:
-- Creates an extension subfolder inside the output directory (e.g., `.docx`, `.docm`, `.dotx`, `.dotm`).
+- Ensures the DOCX sits inside a same‑named folder (file stem).
+- Creates an `out` subfolder inside that folder (or uses the custom output path).
+- Creates an extension subfolder inside `out` (e.g., `.docx`, `.docm`, `.dotx`, `.dotm`).
 - Writes one DOCX per unit directly into that extension subfolder.
 - Filenames follow the markdown-style convention: `01-<slug>.docx`, `02-<slug>.docx`, ...
 - If front matter exists, it is written as `00-front-matter.docx` by default (use `--no-front-matter` to include it in Unit 1).
@@ -138,12 +139,14 @@ Output behavior:
 
 Example output structure:
 ```
-<input basename> out/
-  .docx/
-    00-front-matter.docx
-    01-introduction.docx
-    02-meeting-structure-and-the-chairperson.docx
-    03-staff-meeting-transcript.docx
+<input basename>/
+  <input basename>.docx
+  out/
+    .docx/
+      00-front-matter.docx
+      01-introduction.docx
+      02-meeting-structure-and-the-chairperson.docx
+      03-staff-meeting-transcript.docx
 ```
 
 ## Notes

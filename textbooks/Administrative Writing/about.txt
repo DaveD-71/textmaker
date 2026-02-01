@@ -1,0 +1,3 @@
+The two textbooks in this folder were prepared as part of the 2026 proposal submisstion for the Japan Patent Office's administrative writing course.
+
+As of January 2026, the text exists in .md files only. The first unit of both books were formatted in MS Word. The remaining units have not yet been formatted.
