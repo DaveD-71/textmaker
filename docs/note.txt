@@ -1,7 +1,7 @@
 Commands
 ---
-python .\scripts\split_docx_units.py 
-python .\scripts\docx_to_markdown.py --input 
+python -m textmaker split-docx-units 
+python -m textmaker docx-to-markdown --input 
 
 To Do
 ---

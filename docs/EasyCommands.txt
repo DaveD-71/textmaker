@@ -2,7 +2,7 @@
 
 ".\Writing textbook\Intermediate\md"
 
-python .\scripts\cli.py `
+python -m textmaker markdown-to-docx `
   --input `
   <file-or-folder> `
   --output `
@@ -15,7 +15,7 @@ python .\scripts\cli.py `
 Intermediate
 --------------
 
-python .\scripts\cli.py `
+python -m textmaker markdown-to-docx `
   --input `
   ".\Writing textbook\Intermediate\md" `
   --output `
@@ -28,7 +28,7 @@ python .\scripts\cli.py `
 Advanced
 ----------
 
-python .\scripts\cli.py `
+python -m textmaker markdown-to-docx `
   --input `
   ".\Writing textbook\Advanced\md" `
   --output `
@@ -41,7 +41,7 @@ python .\scripts\cli.py `
 IP R&D_intermediate
 ------------
 
-  python .\scripts\cli.py `
+  python -m textmaker markdown-to-docx `
   --input `
   ".\IP_R&D\IP_R&D_intermediate.md" `
   --output `

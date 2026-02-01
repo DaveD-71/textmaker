@@ -99,10 +99,7 @@ if __name__ == '__main__':
     print('Running:', ' '.join(map(str, pandoc_cmd)))
     subprocess.run(pandoc_cmd, check=True)
     # Post-process: add section breaks for TOC/units/file boundaries
-    try:
-        from scripts.postprocess_docx import insert_section_after_toc
-    except ModuleNotFoundError:
-        from postprocess_docx import insert_section_after_toc
+    from .postprocess_docx import insert_section_after_toc
     try:
         insert_section_after_toc(dest_path, has_toc=args.toc)
     except (OSError, RuntimeError, ValueError):

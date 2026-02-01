@@ -25,13 +25,8 @@ except ImportError as exc:
         'Missing dependency: python-docx is required. Install with `pip install python-docx`.'
     ) from exc
 
-try:
-    from scripts.preprocess_docx import preprocess_docx
-    from scripts.postprocess_markdown import postprocess_many
-except ModuleNotFoundError:
-    # Allow running as a script from the scripts/ directory.
-    from preprocess_docx import preprocess_docx
-    from postprocess_markdown import postprocess_many
+from .preprocess_docx import preprocess_docx
+from .postprocess_markdown import postprocess_many
 
 
 def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
