@@ -46,11 +46,11 @@ cefr_target:
   - category_en: Greetings
     category_ja: 挨拶
     items:
-    - '"Welcome to the Japanese Embassy."'
+    - Welcome to the Japanese Embassy.
   - category_en: Giving directions
     category_ja: 案内する
     items:
-    - '"The men’s bathroom is down the hall, on the right."'
+    - The men’s bathroom is down the hall, on the right.
   roleplay_model:
   - role: Student
     utterance: Hello. Welcome to the Japanese Embassy. Do you have an appointment?
@@ -82,12 +82,12 @@ cefr_target:
   - category_en: Explaining location clearly
     category_ja: 場所を明確に説明する
     items:
-    - '"Go up the stairs, then turn right. Walk straight, and you will see the bathrooms
-      on your left."'
+    - Go up the stairs, then turn right. Walk straight, and you will see the bathrooms
+      on your left.
   - category_en: Encouraging visitors to ask for help
     category_ja: 援助を申し出る
     items:
-    - '"If you need help, please ask the staff at reception."'
+    - If you need help, please ask the staff at reception.
   writing_task_model:
     subject: ''
     body: 'Welcome to the Japanese Consulate in Sydney.
@@ -162,15 +162,15 @@ cefr_target:
   - category_en: Requesting assistance
     category_ja: 支援を求める
     items:
-    - '"I need your help."'
+    - I need your help.
   - category_en: Giving instructions
     category_ja: 指示を与える
     items:
-    - '"Please go to the airport tomorrow and meet Mr. Saito."'
+    - Please go to the airport tomorrow and meet Mr. Saito.
   - category_en: Exchanging information
     category_ja: 情報交換をする
     items:
-    - '"He will come from Tokyo. He will arrive on flight UA880."'
+    - He will come from Tokyo. He will arrive on flight UA880.
   roleplay_model:
   - role: Student
     utterance: Hello, John?
@@ -223,11 +223,11 @@ cefr_target:
   - category_en: Clearly instructing on meeting arrangements
     category_ja: 詳細な指示を伝える
     items:
-    - '"Please meet him at the airport. After that, take him to his hotel."'
+    - Please meet him at the airport. After that, take him to his hotel.
   - category_en: Clearly inviting questions
     category_ja: 更なる支援を申し出る
     items:
-    - '"Do you have any questions? Please email or call me anytime."'
+    - Do you have any questions? Please email or call me anytime.
   writing_task_model:
     subject: Mr. Saito's visit
     body: 'Hello John,
@@ -307,15 +307,15 @@ cefr_target:
   - category_en: Making a reservation
     category_ja: ご予約
     items:
-    - '"Can I make a reservation, please?"'
+    - Can I make a reservation, please?
   - category_en: Giving a phone number
     category_ja: 電話番号の通知
     items:
-    - '"Sure. It’s 03-5706-7878."'
+    - Sure. It’s 03-5706-7878.
   - category_en: Confirming information
     category_ja: 情報の確認
     items:
-    - '"Yes, that’s right."'
+    - Yes, that’s right.
   roleplay_model:
   - role: Teacher
     utterance: Hello. Asian Fusion. How can I help you.
@@ -383,12 +383,12 @@ cefr_target:
   - category_en: Clearly stating reservation details
     category_ja: 予約内容を明確に伝える
     items:
-    - '"I made a reservation for lunch tomorrow. The restaurant is The Green Garden.
-      The time is 12:00 pm."'
+    - I made a reservation for lunch tomorrow. The restaurant is The Green Garden.
+      The time is 12:00 pm.
   - category_en: Clearly addressing dietary restrictions
     category_ja: 特別な配慮を明確に伝える
     items:
-    - '"They do not have seafood. I remember you cannot eat seafood."'
+    - They do not have seafood. I remember you cannot eat seafood.
   writing_task_model:
     subject: Lunch reservation details
     body: 'Hello Mr. Jones,
@@ -473,15 +473,15 @@ cefr_target:
   - category_en: Introducing yourself on the phone
     category_ja: 電話で自己紹介をする
     items:
-    - '"This is James from Office Goods"'
+    - This is James from Office Goods
   - category_en: Stating appreciation
     category_ja: 感謝の気持ちを伝える
     items:
-    - '"Thank you. This helps us a lot."'
+    - Thank you. This helps us a lot.
   - category_en: Ending conversation positively
     category_ja: 良い印象を与え会話を終了する
     items:
-    - '"Have a great day."'
+    - Have a great day.
   roleplay_model:
   - role: Teacher
     utterance: Hello, Mr. Suzuki?
@@ -537,11 +537,11 @@ cefr_target:
   - category_en: Clearly thanking someone for prompt service
     category_ja: 明確に感謝を伝える
     items:
-    - '"Thank you very much for bringing the printer ink today. It was very fast."'
+    - Thank you very much for bringing the printer ink today. It was very fast.
   - category_en: Clearly stating future intent
     category_ja: 今後の協力意向を明確に伝える
     items:
-    - '"Next time we need supplies, we will call you again."'
+    - Next time we need supplies, we will call you again.
   writing_task_model:
     subject: Thank you for your quick help
     body: 'Hello James,
@@ -636,15 +636,15 @@ cefr_target:
   - category_en: Stating the purpose
     category_ja: 目的を述べる
     items:
-    - '"I want to check a bank account statement."'
+    - I want to check a bank account statement.
   - category_en: Giving a polite command
     category_ja: 丁寧な命令
     items:
-    - '"Please tell me what time and where it happened."'
+    - Please tell me what time and where it happened.
   - category_en: Checking information
     category_ja: 情報の確認
     items:
-    - '"Can I check? You said .... Is that right?"'
+    - Can I check? You said .... Is that right?
   roleplay_model:
   - role: Teacher
     utterance: Hello. Bank of Hawaii. How can I help you?
@@ -703,11 +703,11 @@ cefr_target:
   - category_en: Clearly explaining a financial issue
     category_ja: 金融上の問題を明確に説明する
     items:
-    - '"I called the bank about the $500 withdrawal from our account."'
+    - I called the bank about the $500 withdrawal from our account.
   - category_en: Clearly advising next steps
     category_ja: 次の対応を明確に提案する
     items:
-    - '"To fix this, we must check who used the ATM card on March 1."'
+    - To fix this, we must check who used the ATM card on March 1.
   writing_task_model:
     subject: Problem with our bank account
     body: 'Dear Mr. Jones,
@@ -795,16 +795,16 @@ cefr_target:
   - category_en: Introducing yourself on the phone
     category_ja: 電話での自己紹介
     items:
-    - '"Taro Suzuki speaking."'
+    - Taro Suzuki speaking.
   - category_en: Making an offer to meet
     category_ja: 会う約束をする
     items:
-    - '"Do you want me to meet you at the airport?"'
+    - Do you want me to meet you at the airport?
   - category_en: Giving street directions
     category_ja: 道案内をする
     items:
-    - '"When you come to our office, take Exit 8 from Kasumigaseki Station. Then,
-      walk straight for about 100 meters."'
+    - When you come to our office, take Exit 8 from Kasumigaseki Station. Then, walk
+      straight for about 100 meters.
   roleplay_model:
   - role: Student
     utterance: Hello. Taro Suzuki speaking.
@@ -861,11 +861,11 @@ cefr_target:
   - category_en: Clearly giving itinerary details
     category_ja: 旅行日程を明確に伝える
     items:
-    - '"You will arrive in Tokyo on Tuesday, March 25."'
+    - You will arrive in Tokyo on Tuesday, March 25.
   - category_en: Clearly explaining how to reach a place
     category_ja: 場所への行き方を明確に説明する
     items:
-    - '"Take Exit 8, then walk straight for 100 meters."'
+    - Take Exit 8, then walk straight for 100 meters.
   writing_task_model:
     subject: ''
     body: ''
@@ -934,15 +934,15 @@ cefr_target:
   - category_en: Ordering food
     category_ja: 料理の注文
     items:
-    - '"Can I have the spaghetti carbonara, please?"'
+    - Can I have the spaghetti carbonara, please?
   - category_en: Confirming an order
     category_ja: ご注文の確認
     items:
-    - '"Yes, that’s correct."'
+    - Yes, that’s correct.
   - category_en: Inquiring about payment procedures
     category_ja: お支払い方法についてのお問い合わせ
     items:
-    - '"Also, can I pay by credit card and get a receipt?"'
+    - Also, can I pay by credit card and get a receipt?
   roleplay_model:
   - role: Teacher
     utterance: Good afternoon, welcome to Trattoria Italiana. How can I assist you?
@@ -994,11 +994,11 @@ cefr_target:
   - category_en: Clearly describing an enjoyable experience
     category_ja: 良い体験を明確に伝える
     items:
-    - '"The food was tasty, and I liked it very much."'
+    - The food was tasty, and I liked it very much.
   - category_en: Clearly recommending a venue
     category_ja: 場所を明確に推奨する
     items:
-    - '"I think it is a good place for lunch. I hope you can go there soon."'
+    - I think it is a good place for lunch. I hope you can go there soon.
   writing_task_model:
     subject: Lunch at the Italian restaurant
     body: 'Hi Bob,
@@ -1087,15 +1087,15 @@ cefr_target:
   - category_en: Responding by asking the same question
     category_ja: 同じ質問で返す
     items:
-    - '"How about you?"'
+    - How about you?
   - category_en: Inquiring about someone’s job
     category_ja: 相手の仕事について尋ねる
     items:
-    - '"What do you do at the embassy?"'
+    - What do you do at the embassy?
   - category_en: Responding by making a comment
     category_ja: コメントをして答える
     items:
-    - '"It sounds interesting."'
+    - It sounds interesting.
   roleplay_model:
   - role: Teacher
     utterance: Hello, welcome to Toronto! I'm Emily, one of the local staff members
@@ -1146,11 +1146,11 @@ cefr_target:
   - category_en: Clearly reporting conversations
     category_ja: 社交的交流を明確に伝える
     items:
-    - '"I sat next to Emily. She works at the consulate."'
+    - I sat next to Emily. She works at the consulate.
   - category_en: Clearly conveying enjoyment
     category_ja: 楽しさを明確に表現する
     items:
-    - '"The dinner was very good, too. It was a nice evening."'
+    - The dinner was very good, too. It was a nice evening.
   writing_task_model:
     subject: Welcome dinner in Toronto
     body: 'Hi Michael,
@@ -1244,15 +1244,15 @@ cefr_target:
   - category_en: Asking for information
     category_ja: 情報を求める
     items:
-    - '"Can you help me with directions using public transportation?"'
+    - Can you help me with directions using public transportation?
   - category_en: Giving directions
     category_ja: 案内する
     items:
-    - '"You''ll need to take the FlyAway bus from Terminal 2 to Union Station."'
+    - You'll need to take the FlyAway bus from Terminal 2 to Union Station.
   - category_en: Confirming understanding
     category_ja: 理解の確認
     items:
-    - '"Does that help?"'
+    - Does that help?
   roleplay_model:
   - role: Student
     utterance: Good morning, Japanese Consulate in Los Angeles. How can I assist you?
@@ -1306,12 +1306,12 @@ cefr_target:
   - category_en: Clearly giving practical information
     category_ja: 実用的な情報を明確に提供する
     items:
-    - '"You can buy tickets online for Universal Studios. A ticket costs about $100
-      each."'
+    - You can buy tickets online for Universal Studios. A ticket costs about $100
+      each.
   - category_en: Clearly offering help
     category_ja: 援助を申し出る
     items:
-    - '"Do you need help buying tickets? Please email me. I am happy to help you."'
+    - Do you need help buying tickets? Please email me. I am happy to help you.
   writing_task_model:
     subject: Tickets for Universal Studios
     body: 'Dear Mr. Addams,
@@ -1409,16 +1409,16 @@ cefr_target:
   - category_en: Understanding a message
     category_ja: メッセージを理解する
     items:
-    - '"I''m calling to let you know that the delegation''s flight from Tokyo is delayed
-      due to bad weather."'
+    - I'm calling to let you know that the delegation's flight from Tokyo is delayed
+      due to bad weather.
   - category_en: Confirming details
     category_ja: 詳細を確認する
     items:
-    - '"Did you say the new arrival time is 10 o''clock?"'
+    - Did you say the new arrival time is 10 o'clock?
   - category_en: Relaying information
     category_ja: 情報の伝達
     items:
-    - '"Alright, I''ll pass this information on to the consul-general."'
+    - Alright, I'll pass this information on to the consul-general.
   roleplay_model:
   - role: Student
     utterance: Japanese Consulate in Chicago. How can I assist you?
@@ -1455,11 +1455,11 @@ cefr_target:
   - category_en: Clearly informing of delays
     category_ja: 日程の変更を明確に伝える
     items:
-    - '"The flight from Tokyo is late. The delegation will now arrive at 10:00 am."'
+    - The flight from Tokyo is late. The delegation will now arrive at 10:00 am.
   - category_en: Clearly promising further information
     category_ja: 引き続き情報提供を約束する
     items:
-    - '"I will tell you if there is more news."'
+    - I will tell you if there is more news.
   writing_task_model:
     subject: Flight delay from Tokyo
     body: 'Dear Colleagues,
@@ -1538,15 +1538,15 @@ cefr_target:
   - category_en: Answering the phone
     category_ja: 電話に出る
     items:
-    - '"Hello. First North America Division. Ryuta Sakamoto speaking."'
+    - Hello. First North America Division. Ryuta Sakamoto speaking.
   - category_en: Exchanging information
     category_ja: 情報交換をする
     items:
-    - '"Mr. Addams is on a business trip."'
+    - Mr. Addams is on a business trip.
   - category_en: Offering to take a message
     category_ja: メッセージを受け取ることを提案する
     items:
-    - '"Can I take a message?"'
+    - Can I take a message?
   roleplay_model:
   - role: ''
     utterance: (The telephone rings.)
@@ -1596,11 +1596,11 @@ cefr_target:
   - category_en: Relaying a message clearly
     category_ja: 伝言を明確に伝える
     items:
-    - '"Mr. John Anderson from The Free Water Project called today."'
+    - Mr. John Anderson from The Free Water Project called today.
   - category_en: Offering help if needed
     category_ja: 支援を申し出る
     items:
-    - '"Please let me know if I can help."'
+    - Please let me know if I can help.
   writing_task_model:
     subject: Phone Call from Mr. Anderson
     body: 'Dear Mr. Addams,
@@ -1700,15 +1700,15 @@ cefr_target:
   - category_en: Stating your purpose
     category_ja: 目的を述べる
     items:
-    - '"I want to book two rooms, please."'
+    - I want to book two rooms, please.
   - category_en: Exchanging information
     category_ja: 情報交換をする
     items:
-    - '"The guests will arrive around 10 p.m. on the 17th."'
+    - The guests will arrive around 10 p.m. on the 17th.
   - category_en: Confirming a request
     category_ja: 要望を確認する
     items:
-    - '"Is that okay?"'
+    - Is that okay?
   roleplay_model:
   - role: Teacher
     utterance: Good morning. Hilton Midtown Hotel. This is Shawna speaking. How may
@@ -1793,11 +1793,11 @@ cefr_target:
   - category_en: Clearly confirming arrangements
     category_ja: 予約内容を明確に伝える
     items:
-    - '"You will stay at the Hilton Midtown Hotel."'
+    - You will stay at the Hilton Midtown Hotel.
   - category_en: Encouraging contact if needed
     category_ja: 追加の支援を申し出る
     items:
-    - '"If you have any questions or there are any changes, please contact me."'
+    - If you have any questions or there are any changes, please contact me.
   writing_task_model:
     subject: Hotel Reservation, September 17
     body: 'Dear Watanabe-san and Michael-san,
@@ -1892,11 +1892,11 @@ cefr_target:
   - category_en: Introducing yourself on the phone
     category_ja: 電話での自己紹介
     items:
-    - '"This is Taro Suzuki at the Japanese embassy."'
+    - This is Taro Suzuki at the Japanese embassy.
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"We thought the food would come yesterday. But it didn’t."'
+    - We thought the food would come yesterday. But it didn’t.
   roleplay_model:
   - role: Teacher
     utterance: Good afternoon. Jennings Catering. This is Chris Jennings.
@@ -1963,12 +1963,12 @@ cefr_target:
   - category_en: Inviting guests clearly
     category_ja: 招待を明確に伝える
     items:
-    - '"We invite you to a gathering at the Japanese Consulate in London on Saturday,
-      June 5."'
+    - We invite you to a gathering at the Japanese Consulate in London on Saturday,
+      June 5.
   - category_en: Asking clearly for responses
     category_ja: 出席の返事を明確に求める
     items:
-    - '"Please let us know by Friday if you would like to come."'
+    - Please let us know by Friday if you would like to come.
   writing_task_model:
     subject: ''
     body: 'Join Us This Saturday!
@@ -2071,16 +2071,16 @@ cefr_target:
   - category_en: Asking someone the purpose of their visit
     category_ja: 訪問の目的を尋ねる
     items:
-    - '"Are you here for the reception?"'
+    - Are you here for the reception?
   - category_en: Giving a polite direction
     category_ja: 丁寧な案内をする
     items:
-    - '"Please take the stairs."'
+    - Please take the stairs.
   - category_en: Describing physical traits
     category_ja: 身体的特徴を説明する
     items:
-    - '"He is about 175 centimeters tall. He has grey hair and wears glasses. He will
-      be wearing a name tag."'
+    - He is about 175 centimeters tall. He has grey hair and wears glasses. He will
+      be wearing a name tag.
   roleplay_model:
   - role: Student
     utterance: Hello. Are you here for the reception?
@@ -2123,12 +2123,12 @@ cefr_target:
   - category_en: Clearly giving contact details
     category_ja: 要求された情報を明確に提供する
     items:
-    - '"Her name is Emily Thompson. If you have any questions, you can email her at
-      e-thompson@mofa.go.jp."'
+    - Her name is Emily Thompson. If you have any questions, you can email her at
+      e-thompson@mofa.go.jp.
   - category_en: Offering additional help
     category_ja: 更なる支援を申し出る
     items:
-    - '"Let me know if you need any more information."'
+    - Let me know if you need any more information.
   writing_task_model:
     subject: Event Organizer Contact Info
     body: 'Dear John,
@@ -2212,15 +2212,15 @@ cefr_target:
   - category_en: Giving an order
     category_ja: 注文を出す
     items:
-    - '"I need you to pick up a guest."'
+    - I need you to pick up a guest.
   - category_en: Asking for options
     category_ja: オプションを求める
     items:
-    - '"What’s the fastest way?"'
+    - What’s the fastest way?
   - category_en: Giving directions based on conditions
     category_ja: 状況に応じた指示を出す
     items:
-    - '"If you have any problems, please call here."'
+    - If you have any problems, please call here.
   roleplay_model:
   - role: Teacher
     utterance: Hello. This is Joel.
@@ -2287,11 +2287,11 @@ cefr_target:
   - category_en: Providing step-by-step instructions
     category_ja: 明確な指示を与える
     items:
-    - '"Please pick up Mr. Taro Saito from his hotel and bring him to the consulate."'
+    - Please pick up Mr. Taro Saito from his hotel and bring him to the consulate.
   - category_en: Offering alternative plans clearly
     category_ja: 代替案や緊急時対応を伝える
     items:
-    - '"If you have any problems, please call me."'
+    - If you have any problems, please call me.
   writing_task_model:
     subject: Guest Pickup Details
     body: 'Dear Joel,
@@ -2387,15 +2387,15 @@ cefr_target:
   - category_en: Confirming someone’s identity
     category_ja: 身元を確認する
     items:
-    - '"Hello, Mr. Andrews?"'
+    - Hello, Mr. Andrews?
   - category_en: Showing appreciation
     category_ja: 感謝の意を示す
     items:
-    - '"Thank you for coming to the embassy today."'
+    - Thank you for coming to the embassy today.
   - category_en: Confirming information
     category_ja: 情報の確認
     items:
-    - '"Your office is on the other side of town, right?"'
+    - Your office is on the other side of town, right?
   roleplay_model:
   - role: Student
     utterance: Hello, Mr. Andrews?
@@ -2433,11 +2433,11 @@ cefr_target:
   - category_en: Clearly thanking someone
     category_ja: 感謝を明確に伝える
     items:
-    - '"Thank you for our meeting about the embassy party. Your ideas were very helpful."'
+    - Thank you for our meeting about the embassy party. Your ideas were very helpful.
   - category_en: Clearly stating event arrangements
     category_ja: イベントの詳細を明確に伝える
     items:
-    - '"The party is on Thursday, March 3, at 1:00 p.m. at the embassy."'
+    - The party is on Thursday, March 3, at 1:00 p.m. at the embassy.
   writing_task_model:
     subject: Thank You for Your Help
     body: 'Dear Mr. Andrews,
@@ -2516,15 +2516,15 @@ cefr_target:
   - category_en: Asking about current location
     category_ja: 現在地について尋ねる
     items:
-    - '"Where are you now?"'
+    - Where are you now?
   - category_en: Asking about future events
     category_ja: 将来の出来事について尋ねる
     items:
-    - '"When will you get to the hotel?"'
+    - When will you get to the hotel?
   - category_en: Giving directions based on events
     category_ja: 出来事に基づいた道順を教える
     items:
-    - '"Please call me again when you arrive at the hotel."'
+    - Please call me again when you arrive at the hotel.
   roleplay_model:
   - role: Teacher
     utterance: Hello Tomo. This is Andre.
@@ -2566,11 +2566,11 @@ cefr_target:
   - category_en: Clearly providing reassurance and advice
     category_ja: 安心させ、具体的な助言を伝える
     items:
-    - '"Please do not worry and please find another way to the hotel."'
+    - Please do not worry and please find another way to the hotel.
   - category_en: Clearly instructing about manners
     category_ja: 礼儀正しい行動を明確に指示する
     items:
-    - '"When you get to the hotel, please apologize to Ms Sato."'
+    - When you get to the hotel, please apologize to Ms Sato.
   writing_task_model:
     subject: Heavy Traffic
     body: 'Hi John,
@@ -2578,7 +2578,7 @@ cefr_target:
       Thanks for your call about the traffic. I called Ms Sato. I explained the heavy
       traffic situation. She can wait for you.
 
-      Please do not worry and please find another way to the hotel. Apple Maps  may
+      Please do not worry and please find another way to the hotel. Apple Maps may
       have a faster way. If you cannot move, please call me again. I will call Ms.
       Sato to explain the situation.
 
@@ -2655,15 +2655,15 @@ cefr_target:
   - category_en: Asking someone about their employment history
     category_ja: 職歴を聞く
     items:
-    - '"How long have you worked with Direct Relief, Mr. Anderson?"'
+    - How long have you worked with Direct Relief, Mr. Anderson?
   - category_en: Confirming listening comprehension
     category_ja: リスニングの理解度を確認する
     items:
-    - '"5 years?"'
+    - 5 years?
   - category_en: Commenting
     category_ja: コメントする
     items:
-    - '"It sounds like hard work."'
+    - It sounds like hard work.
   roleplay_model:
   - role: Student
     utterance: How long have you worked with Direct Relief, Mr. Anderson?
@@ -2722,11 +2722,11 @@ cefr_target:
   - category_en: Clearly showing appreciation
     category_ja: 感謝を明確に伝える
     items:
-    - '"Thank you for inviting me to the charity dinner."'
+    - Thank you for inviting me to the charity dinner.
   - category_en: Expressing willingness to continue support
     category_ja: 今後も関与したい意思を示す
     items:
-    - '"Please let me know how I can help. I would like to stay involved."'
+    - Please let me know how I can help. I would like to stay involved.
   writing_task_model:
     subject: Thank You for the Charity Dinner
     body: 'Dear Mr. Anderson,
@@ -2814,15 +2814,15 @@ cefr_target:
   - category_en: Asking questions
     category_ja: 質問する
     items:
-    - '"Can you tell me about your typical workday?"'
+    - Can you tell me about your typical workday?
   - category_en: Providing information
     category_ja: 情報の提供
     items:
-    - '"I usually start my day by checking emails and handling administrative tasks."'
+    - I usually start my day by checking emails and handling administrative tasks.
   - category_en: Offering assistance
     category_ja: 支援の提供
     items:
-    - '"Let me know if you need more information."'
+    - Let me know if you need more information.
   roleplay_model:
   - role: Student
     utterance: Japanese Consulate in Houston, how may I help you?
@@ -2880,11 +2880,11 @@ cefr_target:
   - category_en: Explaining daily activities clearly
     category_ja: 日常業務を明確に説明する
     items:
-    - '"In the morning, I check emails and do paperwork."'
+    - In the morning, I check emails and do paperwork.
   - category_en: Encouraging further inquiries
     category_ja: 追加の質問を促す
     items:
-    - '"Let me know if you need more information."'
+    - Let me know if you need more information.
   writing_task_model:
     subject: My Workday
     body: 'Dear John,
@@ -2981,17 +2981,15 @@ cefr_target:
   - category_en: Asking questions
     category_ja: 質問する
     items:
-    - '"Can you share some insights about your pastimes and past activities during
-      weekends?"'
+    - Can you share some insights about your pastimes and past activities during weekends?
   - category_en: Providing information
     category_ja: 情報の提供
     items:
-    - '"I enjoy spending time outdoors, so I often go to the beach for swimming or
-      sunbathing."'
+    - I enjoy spending time outdoors, so I often go to the beach for swimming or sunbathing.
   - category_en: Offering assistance
     category_ja: 支援の提供
     items:
-    - '"Let me know if you need more recommendations."'
+    - Let me know if you need more recommendations.
   roleplay_model:
   - role: Student
     utterance: Japanese Consulate in Miami, how can I assist you?
@@ -3046,11 +3044,11 @@ cefr_target:
   - category_en: Clearly recommending activities
     category_ja: 活動を明確に提案する
     items:
-    - '"I often go to the beach to swim or take a walk."'
+    - I often go to the beach to swim or take a walk.
   - category_en: Clearly conveying enjoyment
     category_ja: 楽しさを明確に表現する
     items:
-    - '"I enjoy trying new dishes, especially Cuban food."'
+    - I enjoy trying new dishes, especially Cuban food.
   writing_task_model:
     subject: Fun Things to Do in Miami
     body: 'Hi John,
@@ -3155,17 +3153,16 @@ cefr_target:
   - category_en: Making requests
     category_ja: 依頼をする
     items:
-    - '"I’d like to arrange an appointment to see the apartment."'
+    - I’d like to arrange an appointment to see the apartment.
   - category_en: Describing a place
     category_ja: 場所を説明する
     items:
-    - '"I am looking for a one-bedroom apartment close to a train station. I want
-      a place close to the city centre. I can spend around two thousand dollars a
-      month."'
+    - I am looking for a one-bedroom apartment close to a train station. I want a
+      place close to the city centre. I can spend around two thousand dollars a month.
   - category_en: Expressing a preference
     category_ja: 好みを伝える
     items:
-    - '"Preferably (I would like to be) close to the city centre."'
+    - Preferably (I would like to be) close to the city centre.
   roleplay_model:
   - role: Teacher
     utterance: Sydney Real Estate. Bob Jones speaking. How may I help you?
@@ -3215,12 +3212,12 @@ cefr_target:
   - category_en: Arranging a viewing
     category_ja: 見学の日時を依頼する
     items:
-    - '"I would like to schedule an appointment at a convenient time."'
+    - I would like to schedule an appointment at a convenient time.
   - category_en: Stating requirements clearly
     category_ja: 希望条件を明確に述べる
     items:
-    - '"I am looking for a one-bedroom apartment close to a train station, preferably
-      near the city center."'
+    - I am looking for a one-bedroom apartment close to a train station, preferably
+      near the city center.
   writing_task_model:
     subject: Request to View Apartment
     body: 'Dear Mr. Jones,
@@ -3306,16 +3303,16 @@ cefr_target:
   - category_en: Requesting to speak to someone
     category_ja: 誰かと話すことを要望する
     items:
-    - '"May I speak to Ms. Malone, please?"'
+    - May I speak to Ms. Malone, please?
   - category_en: Giving a reason for making contact
     category_ja: 連絡を取る理由を述べる
     items:
-    - '"We are calling all the schools in the area to make a report of the educational
-      costs for Japanese children last year."'
+    - We are calling all the schools in the area to make a report of the educational
+      costs for Japanese children last year.
   - category_en: Confirming an e-mail address
     category_ja: メールアドレスを確認する
     items:
-    - '"Ok, please let me confirm. That’s h dot s-a-t-o-at-mofa-dot-m-b-dot-g-o-dot-jp."'
+    - Ok, please let me confirm. That’s h dot s-a-t-o-at-mofa-dot-m-b-dot-g-o-dot-jp.
   roleplay_model:
   - role: Teacher
     utterance: Hello, Myrtle High School.
@@ -3381,11 +3378,11 @@ cefr_target:
   - category_en: Asking detailed questions
     category_ja: 詳細な情報を求める
     items:
-    - '"Can you tell me the tuition fee for this year?"'
+    - Can you tell me the tuition fee for this year?
   - category_en: Giving the reason for the request
     category_ja: 目的を明確に説明する
     items:
-    - '"We are making a report."'
+    - We are making a report.
   writing_task_model:
     subject: School Fees and Student Numbers
     body: 'Dear Ms. Malone,
@@ -3487,17 +3484,17 @@ cefr_target:
   - category_en: Inviting someone to an event
     category_ja: 誰かをイベントに招待する
     items:
-    - '"Ambassador Takahashi wants to invite your General Manager, Mr. Lee, to a dinner
-      party."'
+    - Ambassador Takahashi wants to invite your General Manager, Mr. Lee, to a dinner
+      party.
   - category_en: Expressing a reason
     category_ja: 理由を述べる
     items:
-    - '"The Ambassador wants to have good relationships with local business leaders.
-      He wants to meet local businesspeople."'
+    - The Ambassador wants to have good relationships with local business leaders.
+      He wants to meet local businesspeople.
   - category_en: Sharing an event schedule
     category_ja: イベントのスケジュールを共有する
     items:
-    - '"It will be on the fourth of August at 7 p.m."'
+    - It will be on the fourth of August at 7 p.m.
   roleplay_model:
   - role: Student
     utterance: Hello, this is Misaki Takahashi from the Japanese Embassy. I work in
@@ -3560,12 +3557,12 @@ cefr_target:
   - category_en: Informing about a date change clearly
     category_ja: 日程変更を伝える
     items:
-    - '"The event was planned for August 4th at 7:00 PM, but it will now be held on
-      September 4th."'
+    - The event was planned for August 4th at 7:00 PM, but it will now be held on
+      September 4th.
   - category_en: Expressing regret
     category_ja: 不便をかけたことを謝罪する
     items:
-    - '"I am sorry for this change and any trouble it may cause."'
+    - I am sorry for this change and any trouble it may cause.
   writing_task_model:
     subject: Change of Date for Dinner at the Japanese Embassy
     body: 'Dear Mr. Lee,
@@ -3662,15 +3659,15 @@ cefr_target:
   - category_en: Expressing thanks
     category_ja: 感謝の気持ちを伝える
     items:
-    - '"Thank you very much for coming to this interview today."'
+    - Thank you very much for coming to this interview today.
   - category_en: Requesting information
     category_ja: 情報を求める
     items:
-    - '"Please give me a brief summary of your career experience."'
+    - Please give me a brief summary of your career experience.
   - category_en: Asking for more detail
     category_ja: より詳しい情報を求める
     items:
-    - '"What exactly did you do there?"'
+    - What exactly did you do there?
   roleplay_model:
   - role: Student
     utterance: Hello Mr. Adams. Thank you very much for coming to this interview today.
@@ -3739,11 +3736,11 @@ cefr_target:
   - category_en: Describing strengths and weaknesses
     category_ja: 長所と短所を詳しく説明する
     items:
-    - '"He does not have much office experience and may need training."'
+    - He does not have much office experience and may need training.
   - category_en: Suggesting the best candidate
     category_ja: 推薦を述べる
     items:
-    - '"I think Ms. Igorov is the best choice."'
+    - I think Ms. Igorov is the best choice.
   writing_task_model:
     subject: Feedback on Staff Interviews
     body: 'Dear Watanabe-san,
@@ -3857,15 +3854,15 @@ cefr_target:
   - category_en: Giving directions
     category_ja: 案内する
     items:
-    - '"First, please make an appointment at your local Japanese consulate."'
+    - First, please make an appointment at your local Japanese consulate.
   - category_en: Explaining costs
     category_ja: 費用を説明する
     items:
-    - '"Yes, there is a small fee. It’s 3,000 Japanese yen. About 30 US dollars."'
+    - Yes, there is a small fee. It’s 3,000 Japanese yen. About 30 US dollars.
   - category_en: Giving extra information
     category_ja: 追加情報を与える
     items:
-    - '"There is also a helpful FAQ."'
+    - There is also a helpful FAQ.
   roleplay_model:
   - role: Teacher
     utterance: Hello. I would like to know how to apply for a tourist visa.
@@ -3903,11 +3900,11 @@ cefr_target:
   - category_en: Explaining step-by-step process
     category_ja: 手順を明確に説明する
     items:
-    - '"To apply, please follow these steps:"'
+    - 'To apply, please follow these steps:'
   - category_en: Encouraging follow-up questions
     category_ja: 追加の質問を促す
     items:
-    - '"If you have questions, please contact us."'
+    - If you have questions, please contact us.
   writing_task_model:
     subject: Tourist Visa Application Process
     body: 'Dear Sir or Madam,
@@ -3990,15 +3987,15 @@ cefr_target:
   - category_en: Making a request
     category_ja: 依頼をする
     items:
-    - '"Can you do me a favor?"'
+    - Can you do me a favor?
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"This morning’s newspaper hasn’t arrived yet."'
+    - This morning’s newspaper hasn’t arrived yet.
   - category_en: Giving directions
     category_ja: 案内する
     items:
-    - '"Please call the news agency."'
+    - Please call the news agency.
   roleplay_model:
   - role: Student
     utterance: Excuse me, John.
@@ -4032,12 +4029,12 @@ cefr_target:
   - category_en: Informing clearly about repeated issues
     category_ja: 繰り返される問題を報告する
     items:
-    - '"This is the third time in two weeks that it has not arrived."'
+    - This is the third time in two weeks that it has not arrived.
   - category_en: Asking clearly for immediate action
     category_ja: 迅速な解決を求める
     items:
-    - '"Please check why this problem is happening and let us know what you will do
-      to fix it."'
+    - Please check why this problem is happening and let us know what you will do
+      to fix it.
   writing_task_model:
     subject: Newspaper Delivery Problem
     body: 'Dear Newspaper Agent,
@@ -4118,15 +4115,15 @@ cefr_target:
   - category_en: Introducing yourself on the phone
     category_ja: 電話で自己紹介をする
     items:
-    - '"This is Taro Suzuki at the Japanese embassy."'
+    - This is Taro Suzuki at the Japanese embassy.
   - category_en: Declining an invitation
     category_ja: 招待を断る
     items:
-    - '"I’m sorry but Mr. Hashimoto cannot attend."'
+    - I’m sorry but Mr. Hashimoto cannot attend.
   - category_en: Giving a reason
     category_ja: 理由を説明する
     items:
-    - '"He is away on business."'
+    - He is away on business.
   roleplay_model:
   - role: Teacher
     utterance: Hello. This is Alexsandr Adamovich.
@@ -4165,11 +4162,11 @@ cefr_target:
   - category_en: Clearly and politely refusing
     category_ja: 丁寧に招待を断る
     items:
-    - '"He already has another plan on that day, so he cannot attend."'
+    - He already has another plan on that day, so he cannot attend.
   - category_en: Showing interest in future invitations
     category_ja: 今後の招待に関心を示す
     items:
-    - '"Please let us know about any future events. He would be happy to join if possible."'
+    - Please let us know about any future events. He would be happy to join if possible.
   writing_task_model:
     subject: Apologies - Unable to Attend Dinner
     body: 'Dear Mr. Adamovich,
@@ -4259,17 +4256,17 @@ cefr_target:
   - category_en: Discussing options
     category_ja: 選択肢について話し合う
     items:
-    - '"There are just four staff in the consulate section. So, the three of us will
-      have to take on his work."'
+    - There are just four staff in the consulate section. So, the three of us will
+      have to take on his work.
   - category_en: Offering support
     category_ja: 支援を提供する
     items:
-    - '"Well, I can do the back-end visa processing."'
+    - Well, I can do the back-end visa processing.
   - category_en: Expressing limitations
     category_ja: 制限を述べる
     items:
-    - '"However, I already have a lot of appointments over the next week. So, I can’t
-      meet the visa applicants."'
+    - However, I already have a lot of appointments over the next week. So, I can’t
+      meet the visa applicants.
   roleplay_model:
   - role: Teacher
     utterance: Hello Taro. Thanks for joining me this morning.
@@ -4338,12 +4335,11 @@ cefr_target:
   - category_en: Providing detailed schedule updates
     category_ja: 詳細なスケジュールを伝える
     items:
-    - '"Monday: Morning: Akiko, Afternoon: Emily."'
+    - 'Monday: Morning: Akiko, Afternoon: Emily.'
   - category_en: Asking clearly for quick updates on issues
     category_ja: 問題があれば迅速な連絡を求める
     items:
-    - '"If you have any problems or need to change shifts, let me know as soon as
-      possible."'
+    - If you have any problems or need to change shifts, let me know as soon as possible.
   writing_task_model:
     subject: Staff Schedule Update
     body: 'Dear Team,
@@ -4464,16 +4460,16 @@ cefr_target:
   - category_en: Stating the problem
     category_ja: 問題を述べる
     items:
-    - '"Well, we were told the paper would be delivered yesterday, but it still hasn’t
-      arrived."'
+    - Well, we were told the paper would be delivered yesterday, but it still hasn’t
+      arrived.
   - category_en: Giving detailed background information
     category_ja: 詳しい背景を説明する
     items:
-    - '"This is the third time we have had a late delivery in the last six months."'
+    - This is the third time we have had a late delivery in the last six months.
   - category_en: Stating possible consequences
     category_ja: 起こりうる結果を述べる
     items:
-    - '"If it happens again, I think we will look for another supplier."'
+    - If it happens again, I think we will look for another supplier.
   roleplay_model:
   - role: Teacher
     utterance: Good morning. Thank you for calling Paper Supplies. This is John. How
@@ -4544,11 +4540,11 @@ cefr_target:
   - category_en: Explaining why the situation is problematic
     category_ja: 不満の原因を説明する
     items:
-    - '"Late deliveries make it difficult for us to do our work."'
+    - Late deliveries make it difficult for us to do our work.
   - category_en: Asking clearly for steps to avoid repetition
     category_ja: 再発防止策を明確に求める
     items:
-    - '"What steps will your company take to make sure this does not happen again?"'
+    - What steps will your company take to make sure this does not happen again?
   writing_task_model:
     subject: Late Delivery Issue
     body: 'Dear Mr. Allen,
@@ -4641,16 +4637,16 @@ cefr_target:
   - category_en: Expressing wants
     category_ja: 要望を伝える
     items:
-    - '"We are looking for a new paper supplier."'
+    - We are looking for a new paper supplier.
   - category_en: Asking for detailed information
     category_ja: 詳細な情報を求める
     items:
-    - '"I want to know what your terms of payment are. / How about your delivery schedule?
-      / Where do you get your paper from?"'
+    - I want to know what your terms of payment are. / How about your delivery schedule?
+      / Where do you get your paper from?
   - category_en: Stating a condition
     category_ja: 条件を述べる
     items:
-    - '"If we can work with you, I will contact you again."'
+    - If we can work with you, I will contact you again.
   roleplay_model:
   - role: Teacher
     utterance: Good afternoon. Thank you for calling Papers and Pens. How can I help
@@ -4743,11 +4739,11 @@ cefr_target:
   - category_en: Asking for detailed product information
     category_ja: 商品の詳細情報を求める
     items:
-    - '"What paper sizes and types do you have?"'
+    - What paper sizes and types do you have?
   - category_en: Proposing a discussion
     category_ja: 会議や話し合いを提案する
     items:
-    - '"If possible, I would like to have a meeting to talk more about this."'
+    - If possible, I would like to have a meeting to talk more about this.
   writing_task_model:
     subject: Questions About Paper Products
     body: 'Dear Mr. Sanders,
@@ -4865,16 +4861,16 @@ cefr_target:
   - category_en: Requesting goods or services
     category_ja: 物やサービスを依頼する
     items:
-    - '"I’d like to book a meeting room at your hotel."'
+    - I’d like to book a meeting room at your hotel.
   - category_en: Exchanging detailed information
     category_ja: 詳細な情報を交換する
     items:
-    - '"We need eight long tables and twenty-four office chairs. We also need two
-      copy machines, four printers and eight phones."'
+    - We need eight long tables and twenty-four office chairs. We also need two copy
+      machines, four printers and eight phones.
   - category_en: Confirming an order
     category_ja: 依頼事項を確認する
     items:
-    - '"Could you also send me an estimate with all the details?"'
+    - Could you also send me an estimate with all the details?
   roleplay_model:
   - role: Teacher
     utterance: Good morning. Thank you for calling the Grand Hyatt Hotel, Melbourne.
@@ -4939,11 +4935,11 @@ cefr_target:
   - category_en: Clearly stating arrangements
     category_ja: 詳細を確認する
     items:
-    - '"I want to confirm our reservation for office space at your hotel."'
+    - I want to confirm our reservation for office space at your hotel.
   - category_en: Asking clearly for specifics
     category_ja: 詳細な情報を求める
     items:
-    - '"Could you please send a clear list of the rental cost for each item?"'
+    - Could you please send a clear list of the rental cost for each item?
   writing_task_model:
     subject: Confirming Reservation and Request for Prices
     body: 'Dear Maria san,
@@ -5054,15 +5050,15 @@ cefr_target:
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"The photocopier in our office is broken."'
+    - The photocopier in our office is broken.
   - category_en: Requesting a service
     category_ja: サービスを依頼する
     items:
-    - '"Can you send someone to fix it?"'
+    - Can you send someone to fix it?
   - category_en: Enquiring about the cost
     category_ja: 費用について問い合わせる
     items:
-    - '"How much will it cost?"'
+    - How much will it cost?
   roleplay_model:
   - role: Teacher
     utterance: Hello, Ricoh Support Centre. This is Miriam. How may I help you?
@@ -5111,11 +5107,11 @@ cefr_target:
   - category_en: Describing equipment problems
     category_ja: 問題を明確に報告する
     items:
-    - '"It often gets jammed, and the copies have lines on them."'
+    - It often gets jammed, and the copies have lines on them.
   - category_en: Asking for quick service
     category_ja: 迅速な対応を求める
     items:
-    - '"Could you please send someone to fix it soon?"'
+    - Could you please send someone to fix it soon?
   writing_task_model:
     subject: Photocopier Repair Request
     body: 'Dear Support Centre,
@@ -5204,15 +5200,15 @@ cefr_target:
   - category_en: Asking to speak to someone
     category_ja: 誰かと話すことを求める
     items:
-    - '"May I speak to Mr. Ron James from the Repair Division?"'
+    - May I speak to Mr. Ron James from the Repair Division?
   - category_en: Making a request for action
     category_ja: 行動を要請する
     items:
-    - '"Can you call a plumber?"'
+    - Can you call a plumber?
   - category_en: Giving directions
     category_ja: 案内する
     items:
-    - '"Please get an estimate first?"'
+    - Please get an estimate first?
   roleplay_model:
   - role: Student
     utterance: Hello. May I speak to Mr. Ron James from the Repair Division?
@@ -5250,11 +5246,11 @@ cefr_target:
   - category_en: Alerting about a possible issue
     category_ja: 潜在的な問題を報告する
     items:
-    - '"The residence staff thinks it might be caused by a water leak."'
+    - The residence staff thinks it might be caused by a water leak.
   - category_en: Asking clearly for costs and timelines
     category_ja: 費用や日程を明確に求める
     items:
-    - '"Before any repairs begin, ask them to send a price estimate."'
+    - Before any repairs begin, ask them to send a price estimate.
   writing_task_model:
     subject: Plumber Request for Water Leak
     body: 'Dear Repair Team,
@@ -5343,15 +5339,15 @@ cefr_target:
   - category_en: Offering assistance
     category_ja: 支援を提供する
     items:
-    - '"What can I do for you?"'
+    - What can I do for you?
   - category_en: Stating standard procedure
     category_ja: 標準的な手続きを述べる
     items:
-    - '"Student visa applications take about four weeks."'
+    - Student visa applications take about four weeks.
   - category_en: Giving advice
     category_ja: アドバイスを与える
     items:
-    - '"Please wait a few more days."'
+    - Please wait a few more days.
   roleplay_model:
   - role: Student
     utterance: Hello. This is the consular section.
@@ -5412,11 +5408,11 @@ cefr_target:
   - category_en: Giving current information
     category_ja: 現状を伝える
     items:
-    - '"Your application is still in process."'
+    - Your application is still in process.
   - category_en: Offering further help
     category_ja: 支援を申し出る
     items:
-    - '"If you have questions, feel free to ask."'
+    - If you have questions, feel free to ask.
   writing_task_model:
     subject: Update on Your Student Visa
     body: 'Dear Mr. Potgeiter,
@@ -5520,15 +5516,15 @@ cefr_target:
   - category_en: Initiating conversation
     category_ja: 会話を始める
     items:
-    - '"Are you interested in Japanese summer festivals?"'
+    - Are you interested in Japanese summer festivals?
   - category_en: Introducing a topic
     category_ja: トピックを紹介する
     items:
-    - '"Fireworks displays are common across Japan."'
+    - Fireworks displays are common across Japan.
   - category_en: Adding details
     category_ja: 詳細を追加する
     items:
-    - '"The event takes about an hour."'
+    - The event takes about an hour.
   roleplay_model:
   - role: Student
     utterance: Hello. Are you interested in Japanese summer festivals?
@@ -5588,11 +5584,11 @@ cefr_target:
   - category_en: Explaining traditions clearly
     category_ja: 文化行事を説明する
     items:
-    - '"Summer in Japan is a time for exciting festivals called matsuri."'
+    - Summer in Japan is a time for exciting festivals called matsuri.
   - category_en: Encouraging engagement
     category_ja: 参加を促す
     items:
-    - '"Plan your visit and enjoy the celebrations!"'
+    - Plan your visit and enjoy the celebrations!
   writing_task_model:
     subject: ''
     body: 'Title: Enjoy Japanese Summer Festivals
@@ -5701,15 +5697,15 @@ cefr_target:
   - category_en: Asking for help
     category_ja: 助けを求める
     items:
-    - '"I need your help with something."'
+    - I need your help with something.
   - category_en: Asking for opinions
     category_ja: 意見を求める
     items:
-    - '"Where do you think is best?"'
+    - Where do you think is best?
   - category_en: Giving detailed information
     category_ja: 詳細な情報を与える
     items:
-    - '"There will be two visitors staying in separate rooms."'
+    - There will be two visitors staying in separate rooms.
   roleplay_model:
   - role: Student
     utterance: Excuse me, Rosario?
@@ -5781,11 +5777,11 @@ cefr_target:
   - category_en: Clearly informing colleagues
     category_ja: 取り決めを明確に伝える
     items:
-    - '"We have selected The Hilton Midtown."'
+    - We have selected The Hilton Midtown.
   - category_en: Clarifying advantages
     category_ja: 利点を説明する
     items:
-    - '"It is near many restaurants, cafes, and shops."'
+    - It is near many restaurants, cafes, and shops.
   writing_task_model:
     subject: Hotel for Conference Visitors
     body: 'Dear Colleagues,
@@ -5899,15 +5895,15 @@ cefr_target:
   - category_en: Making a summary statement
     category_ja: 要点を述べる
     items:
-    - '"All of them were promising."'
+    - All of them were promising.
   - category_en: Stating ability
     category_ja: 能力を述べる
     items:
-    - '"It’s okay, but he needs more practice."'
+    - It’s okay, but he needs more practice.
   - category_en: Expressing a decision
     category_ja: 決定事項を述べる
     items:
-    - '"The committee decided we should offer him the position."'
+    - The committee decided we should offer him the position.
   roleplay_model:
   - role: Teacher
     utterance: Okay, Taro. Please share the result of the committee meeting.
@@ -5977,13 +5973,13 @@ cefr_target:
   - category_en: Giving congratulations
     category_ja: 良い知らせを伝える
     items:
-    - '"I am happy to tell you that you have been chosen for the Japan-Australia Study
-      Program."'
+    - I am happy to tell you that you have been chosen for the Japan-Australia Study
+      Program.
   - category_en: Providing support and motivation
     category_ja: 激励・支援を伝える
     items:
-    - '"We hope you will study hard, make new friends, and enjoy learning about Japan’s
-      culture."'
+    - We hope you will study hard, make new friends, and enjoy learning about Japan’s
+      culture.
   writing_task_model:
     subject: Congratulations on Your Study Program
     body: 'Dear Mr. McDermott,
@@ -6093,15 +6089,15 @@ cefr_target:
   - category_en: Giving a general statement
     category_ja: 一般的な事実を述べる
     items:
-    - '"It’s a Buddhist custom and it’s a time for family to come together."'
+    - It’s a Buddhist custom and it’s a time for family to come together.
   - category_en: Making a personal statement
     category_ja: 個人的なことを述べる
     items:
-    - '"For my family, it usually means we all get together for a few days."'
+    - For my family, it usually means we all get together for a few days.
   - category_en: Giving a personal opinion
     category_ja: 個人的な意見を述べる
     items:
-    - '"I think it’s one of my favorite holidays."'
+    - I think it’s one of my favorite holidays.
   roleplay_model:
   - role: Teacher
     utterance: Hello, Taro. It’s good to see you.
@@ -6184,11 +6180,11 @@ cefr_target:
   - category_en: Explaining personal connection
     category_ja: 個人的な意義を伝える
     items:
-    - '"For me, Obon is important because I can see my family and join in old traditions."'
+    - For me, Obon is important because I can see my family and join in old traditions.
   - category_en: Clearly describing customs
     category_ja: 伝統や習慣を明確に説明する
     items:
-    - '"During Obon, families visit the graves of their ancestors."'
+    - During Obon, families visit the graves of their ancestors.
   writing_task_model:
     subject: ''
     body: 'Title: Obon - A Time to Remember
@@ -6295,16 +6291,16 @@ cefr_target:
   - category_en: Introducing a topic
     category_ja: トピックを紹介する
     items:
-    - '"Listen, I’m calling about the trip to Cape Town on Friday."'
+    - Listen, I’m calling about the trip to Cape Town on Friday.
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"Well, you have asked to delay the meeting."'
+    - Well, you have asked to delay the meeting.
   - category_en: Giving reasons
     category_ja: 理由を述べる
     items:
-    - '"This meeting is important because we will decide much of the report content.
-      Delaying the meeting will mean we have to rush the report to get it in on time."'
+    - This meeting is important because we will decide much of the report content.
+      Delaying the meeting will mean we have to rush the report to get it in on time.
   roleplay_model:
   - role: Teacher
     utterance: Hello. This is Adam Sanders speaking.
@@ -6378,12 +6374,11 @@ cefr_target:
   - category_en: Keeping to the original arrangements
     category_ja: 当初の予定通り進めることを希望する
     items:
-    - '"I understand there are some issues, but I would like to keep the original
-      plan."'
+    - I understand there are some issues, but I would like to keep the original plan.
   - category_en: Providing clear justification
     category_ja: 理由を明確に説明する
     items:
-    - '"This meeting is important because we need to discuss key points for the report."'
+    - This meeting is important because we need to discuss key points for the report.
   writing_task_model:
     subject: ''
     body: ''
@@ -6463,15 +6458,15 @@ cefr_target:
   - category_en: Giving instructions
     category_ja: 指示を与える
     items:
-    - '"All the information is on our website. So please check it."'
+    - All the information is on our website. So please check it.
   - category_en: Confirming understanding
     category_ja: 理解度を確認する
     items:
-    - '"What do you know about visa applications?"'
+    - What do you know about visa applications?
   - category_en: Giving a reason
     category_ja: 理由を説明する
     items:
-    - '"Because of COVID, it’s important to have correct information. It often changes."'
+    - Because of COVID, it’s important to have correct information. It often changes.
   roleplay_model:
   - role: Student
     utterance: Good morning Fiona.
@@ -6540,11 +6535,11 @@ cefr_target:
   - category_en: Explaining step-by-step clearly
     category_ja: 手順を明確に説明する
     items:
-    - '"To apply, they need: A valid passport with blank pages."'
+    - 'To apply, they need: A valid passport with blank pages.'
   - category_en: Encouraging additional questions
     category_ja: 追加の質問を促す
     items:
-    - '"Let me know if you have any questions!"'
+    - Let me know if you have any questions!
   writing_task_model:
     subject: Visa Application Process for US Citizens
     body: 'Dear Fiona,
@@ -6643,12 +6638,12 @@ cefr_target:
   - category_en: Declining a request
     category_ja: 要望を断る
     items:
-    - '"I’m sorry but that’s just not possible."'
+    - I’m sorry but that’s just not possible.
   - category_en: Explaining a policy
     category_ja: 方針を説明する
     items:
-    - '"Our policy requires all local staff’s insurance premiums to be directly deducted
-      from their salary and paid directly to the appropriate authorities."'
+    - Our policy requires all local staff’s insurance premiums to be directly deducted
+      from their salary and paid directly to the appropriate authorities.
   roleplay_model:
   - role: Teacher
     utterance: Mr. Sakamoto? Could I have a word?
@@ -6688,13 +6683,13 @@ cefr_target:
   - category_en: Explaining rules clearly
     category_ja: 規則を明確に説明する
     items:
-    - '"According to our policy, social insurance premiums for local staff must be
-      deducted directly from salaries."'
+    - According to our policy, social insurance premiums for local staff must be deducted
+      directly from salaries.
   - category_en: Offering additional help
     category_ja: 更なる支援を申し出る
     items:
-    - '"If you have any further questions or need clarification, please feel free
-      to contact me."'
+    - If you have any further questions or need clarification, please feel free to
+      contact me.
   writing_task_model:
     subject: Social Insurance Premium - Request Clarification
     body: 'Dear Juan san,
@@ -6780,16 +6775,15 @@ cefr_target:
   - category_en: Requesting basic information
     category_ja: 基本的な情報を求める
     items:
-    - '"May I ask for the name of the person arrested and the reason for the arrest?"'
+    - May I ask for the name of the person arrested and the reason for the arrest?
   - category_en: Suggesting a schedule
     category_ja: スケジュールを提案する
     items:
-    - '"Is tomorrow morning at 9 a.m. okay?"'
+    - Is tomorrow morning at 9 a.m. okay?
   - category_en: Repeating information to confirm
     category_ja: 確認のために情報を繰り返す
     items:
-    - '"So just to confirm, that’s Mr. Yusuke Kobayashi and he was arrested for a
-      DUI."'
+    - So just to confirm, that’s Mr. Yusuke Kobayashi and he was arrested for a DUI.
   roleplay_model:
   - role: Student
     utterance: Hello, Consulate General of Japan. This is Yuki Sakamoto speaking.
@@ -6834,12 +6828,12 @@ cefr_target:
   - category_en: Confirming agreed details
     category_ja: 取り決めた詳細を確認する
     items:
-    - '"I am writing to confirm our meeting details as discussed."'
+    - I am writing to confirm our meeting details as discussed.
   - category_en: Asking for details or instructions
     category_ja: 具体的な情報を求める
     items:
-    - '"Could you please let me know if there are any specific procedures or documents
-      we need to bring?"'
+    - Could you please let me know if there are any specific procedures or documents
+      we need to bring?
   writing_task_model:
     subject: Confirmation of Meeting - Mr. Yusuke Kobayashi
     body: 'Dear Sergeant Ruina,
@@ -6929,15 +6923,15 @@ cefr_target:
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"It looks like one of my bags has not arrived."'
+    - It looks like one of my bags has not arrived.
   - category_en: Describing objects
     category_ja: 物を描写する
     items:
-    - '"I had a larger bag and a smaller bag."'
+    - I had a larger bag and a smaller bag.
   - category_en: Requesting help
     category_ja: 助けを求める
     items:
-    - '"Can you help me with that?"'
+    - Can you help me with that?
   roleplay_model:
   - role: Teacher
     utterance: Hello, sir. How may I help you.
@@ -7028,12 +7022,12 @@ cefr_target:
   - category_en: Informing clearly about a problem
     category_ja: 問題を明確に報告する
     items:
-    - '"I am writing to report that one of my suitcases did not arrive at New York''s
-      airport today."'
+    - I am writing to report that one of my suitcases did not arrive at New York's
+      airport today.
   - category_en: Asking for quick help
     category_ja: 迅速な支援を求める
     items:
-    - '"Could you please help locate it as soon as possible?"'
+    - Could you please help locate it as soon as possible?
   writing_task_model:
     subject: Missing Luggage Report
     body: 'Dear Airline Staff,
@@ -7137,16 +7131,15 @@ cefr_target:
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"I’ve just arrived at the airport only to find out that my flight has been
-      cancelled."'
+    - I’ve just arrived at the airport only to find out that my flight has been cancelled.
   - category_en: Asking about solutions
     category_ja: 解決策を問う
     items:
-    - '"Do you not have any other option?"'
+    - Do you not have any other option?
   - category_en: Requesting a discount
     category_ja: 割引を要求する
     items:
-    - '"Can you provide a discount?"'
+    - Can you provide a discount?
   roleplay_model:
   - role: Student
     utterance: Excuse me.
@@ -7225,13 +7218,12 @@ cefr_target:
   - category_en: Describing inconvenience or issue
     category_ja: 不便な状況や問題を説明する
     items:
-    - '"Unfortunately, it was canceled. I have an important meeting in Sydney tomorrow
-      morning."'
+    - Unfortunately, it was canceled. I have an important meeting in Sydney tomorrow
+      morning.
   - category_en: Requesting special consideration
     category_ja: 特別な配慮を要請する
     items:
-    - '"Could you please let me take the business class seat tonight at a reduced
-      price?"'
+    - Could you please let me take the business class seat tonight at a reduced price?
   writing_task_model:
     subject: Request for New Flight Arrangement
     body: 'Dear Airline Customer Service,
@@ -7319,16 +7311,16 @@ cefr_target:
   - category_en: Explaining a procedure
     category_ja: 手順を説明する
     items:
-    - '"Every month, usually at the beginning of the month, I first check the inventory
-      and prepare an order based on what we have in stock."'
+    - Every month, usually at the beginning of the month, I first check the inventory
+      and prepare an order based on what we have in stock.
   - category_en: Sharing helpful information
     category_ja: 役に立つ情報を共有する
     items:
-    - '"Our paper supplies, and ink, are kept in the cabinet next to the printer."'
+    - Our paper supplies, and ink, are kept in the cabinet next to the printer.
   - category_en: Referring to another source
     category_ja: 別の情報源を参照する
     items:
-    - '"Beth also knows how to do it, so you can check with her."'
+    - Beth also knows how to do it, so you can check with her.
   roleplay_model:
   - role: Student
     utterance: Hello John. Are you ready for today?
@@ -7418,12 +7410,12 @@ cefr_target:
   - category_en: Providing step-by-step guidance
     category_ja: 明確な手順を示す
     items:
-    - '"Order enough paper to have 20 boxes of A4 and 15 boxes of A3 at the start
-      of each month."'
+    - Order enough paper to have 20 boxes of A4 and 15 boxes of A3 at the start of
+      each month.
   - category_en: Giving extra practical advice
     category_ja: 追加の実用的アドバイスをする
     items:
-    - '"Keep a few extra boxes as a backup to avoid shortages."'
+    - Keep a few extra boxes as a backup to avoid shortages.
   writing_task_model:
     subject: Instructions for Ordering Office Supplies
     body: 'Dear John,
@@ -7527,16 +7519,16 @@ cefr_target:
   - category_en: Confirming your understanding
     category_ja: 理解度を確認する
     items:
-    - '"Is my understanding correct?"'
+    - Is my understanding correct?
   - category_en: Sharing your opinion
     category_ja: 自分の意見を共有する
     items:
-    - '"Okay, in my opinion, that’s already quite a lot."'
+    - Okay, in my opinion, that’s already quite a lot.
   - category_en: Making a suggestion
     category_ja: 提案をする
     items:
-    - '"Well, how about we see if we can borrow some staff from some departments which
-      are not as busy at this time of year."'
+    - Well, how about we see if we can borrow some staff from some departments which
+      are not as busy at this time of year.
   roleplay_model:
   - role: Teacher
     utterance: Okay, let’s begin. Thanks for coming everyone. As you would have read
@@ -7602,12 +7594,12 @@ cefr_target:
   - category_en: Politely disagreeing with a suggestion
     category_ja: 丁寧に不同意を示す
     items:
-    - '"I understand why this solution is being considered, but I believe increasing
-      overtime is not the best idea."'
+    - I understand why this solution is being considered, but I believe increasing
+      overtime is not the best idea.
   - category_en: Suggesting another option
     category_ja: 代替案を提案する
     items:
-    - '"I suggest borrowing staff temporarily from other departments."'
+    - I suggest borrowing staff temporarily from other departments.
   writing_task_model:
     subject: Opinion on Increasing Overtime Hours
     body: 'Dear Mr. Jones,
@@ -7711,15 +7703,15 @@ cefr_target:
   - category_en: Stating a problem
     category_ja: 問題を述べる
     items:
-    - '"We’re having problems with the printer."'
+    - We’re having problems with the printer.
   - category_en: Stating uncertainty
     category_ja: 不確実性を述べる
     items:
-    - '"I’m not sure what’s causing it."'
+    - I’m not sure what’s causing it.
   - category_en: Stating desired action
     category_ja: 望ましい行動を述べる
     items:
-    - '"I think it’s a problem with just this printer, so I’m happy to replace it."'
+    - I think it’s a problem with just this printer, so I’m happy to replace it.
   roleplay_model:
   - role: Teacher
     utterance: Office Goods. This is James speaking. How may I help you?
@@ -7802,11 +7794,11 @@ cefr_target:
   - category_en: Explaining clearly the problem encountered
     category_ja: 具体的な問題を説明する
     items:
-    - '"First, it often jams when we try to print addresses on envelopes."'
+    - First, it often jams when we try to print addresses on envelopes.
   - category_en: Seeking confirmation of planned actions
     category_ja: 今後の対応の確認を求める
     items:
-    - '"Could you please confirm the date when the new printer will arrive?"'
+    - Could you please confirm the date when the new printer will arrive?
   writing_task_model:
     subject: Confirmation of Printer Return and Request for Replacement
     body: 'Dear James,
@@ -7908,18 +7900,18 @@ cefr_target:
   - category_en: Expressing a problem
     category_ja: 問題を述べる
     items:
-    - '"I understand that the restaurant has made a double-booking, and they want
-      us to reschedule the dinner party. Is that right?"'
+    - I understand that the restaurant has made a double-booking, and they want us
+      to reschedule the dinner party. Is that right?
   - category_en: Suggesting solutions
     category_ja: 解決策を提案する
     items:
-    - '"So, we need to talk about options… I think we could change the time of the
-      dinner to either an hour earlier or an hour later, so 6:30pm or 8:30pm."'
+    - So, we need to talk about options… I think we could change the time of the dinner
+      to either an hour earlier or an hour later, so 6:30pm or 8:30pm.
   - category_en: Asking for concessions
     category_ja: 譲歩を求める
     items:
-    - '"Please let the manager know that if we cannot find a restaurant of roughly
-      equal value, then he should cover some of the additional cost."'
+    - Please let the manager know that if we cannot find a restaurant of roughly equal
+      value, then he should cover some of the additional cost.
   roleplay_model:
   - role: Teacher
     utterance: Good morning. John Anderson speaking.
@@ -7998,12 +7990,12 @@ cefr_target:
   - category_en: Advising steps clearly
     category_ja: 問題解決の手順を伝える
     items:
-    - '"Please speak to the restaurant manager about this."'
+    - Please speak to the restaurant manager about this.
   - category_en: Clearly stating expectations
     category_ja: 期待を明確に伝える
     items:
-    - '"If the new restaurant costs more, please tell them we expect them to cover
-      any extra costs."'
+    - If the new restaurant costs more, please tell them we expect them to cover any
+      extra costs.
   writing_task_model:
     subject: Double Booking Issue - Instructions
     body: 'Dear John,
@@ -8099,17 +8091,17 @@ cefr_target:
   - category_en: Asking about costs
     category_ja: 費用について尋ねる
     items:
-    - '"Well the most important thing of course is the cost. I understand what the
-      monthly rental fee is, but I’d like to know about the setup costs."'
+    - Well the most important thing of course is the cost. I understand what the monthly
+      rental fee is, but I’d like to know about the setup costs.
   - category_en: Asking about procedures
     category_ja: 手順について尋ねる
     items:
-    - '"So, how do I go about making the payment? / And what about the monthly rent?
-      How do I make the rent payment?"'
+    - So, how do I go about making the payment? / And what about the monthly rent?
+      How do I make the rent payment?
   - category_en: Stating a requirement
     category_ja: 必要条件を述べる
     items:
-    - '"I’ll need to move in the weekend before that, on Saturday, the 13th."'
+    - I’ll need to move in the weekend before that, on Saturday, the 13th.
   roleplay_model:
   - role: Teacher
     utterance: So, Mr. Suzuki, what did you think of the apartment?
@@ -8229,12 +8221,12 @@ cefr_target:
   - category_en: Requesting detailed information
     category_ja: 詳細な情報を尋ねる
     items:
-    - '"How much exactly do I need to pay to secure the apartment?"'
+    - How much exactly do I need to pay to secure the apartment?
   - category_en: Requesting information about possibilities
     category_ja: 仮定的な状況について尋ねる
     items:
-    - '"If I suddenly have to return to Japan, will there be any fees for ending the
-      contract early?"'
+    - If I suddenly have to return to Japan, will there be any fees for ending the
+      contract early?
   writing_task_model:
     subject: Questions About Renting the Apartment
     body: 'Dear Real Estate Agent,
@@ -8340,15 +8332,15 @@ cefr_target:
   - category_en: Making a suggestion
     category_ja: 提案をする
     items:
-    - '"I think the best option then is the Novotel at South Wharf."'
+    - I think the best option then is the Novotel at South Wharf.
   - category_en: Stating positive attributes
     category_ja: 肯定的な点を述べる
     items:
-    - '"Certainly, the Pan Pacific is closer. "'
+    - 'Certainly, the Pan Pacific is closer. '
   - category_en: Stating negative attributes
     category_ja: 否定的な点を述べる
     items:
-    - '"But it’s also more expensive"'
+    - But it’s also more expensive
   roleplay_model:
   - role: Teacher
     utterance: Hello Taro.
@@ -8397,12 +8389,11 @@ cefr_target:
   - category_en: Advising strongly on best choice
     category_ja: 明確に推奨する
     items:
-    - '"I''d like to clearly recommend the Novotel at South Wharf."'
+    - I'd like to clearly recommend the Novotel at South Wharf.
   - category_en: Explaining clearly the advantages of one choice over another
     category_ja: 選択肢の利点を比較して説明する
     items:
-    - '"The Novotel is a little further away but offers better access to the city
-      centre."'
+    - The Novotel is a little further away but offers better access to the city centre.
   writing_task_model:
     subject: Hotel Suggestion for Conference Guests
     body: 'Dear Susan,
@@ -8484,18 +8475,18 @@ cefr_target:
   - category_en: Sharing detailed information
     category_ja: 詳細な情報を共有する
     items:
-    - '"Well, he has a meeting with Ms Sherman, the Deputy Secretary of State at 2pm.
+    - Well, he has a meeting with Ms Sherman, the Deputy Secretary of State at 2pm.
       He is planning to review his speaking points in the morning and attend the meeting
-      in the afternoon."'
+      in the afternoon.
   - category_en: Sequencing
     category_ja: 順序を説明する
     items:
-    - '"Then, on Friday, he will…"'
+    - Then, on Friday, he will…
   - category_en: Expressing doubt
     category_ja: 疑念を表明する
     items:
-    - '"Ambassador Tomita has been invited, but I do not know if he has confirmed
-      yet or not."'
+    - Ambassador Tomita has been invited, but I do not know if he has confirmed yet
+      or not.
   roleplay_model:
   - role: Teacher
     utterance: Okay, so we’re here today to talk about the schedule for Mr. Ando,
@@ -8570,12 +8561,12 @@ cefr_target:
   - category_en: Giving specific details
     category_ja: 詳細な情報を伝える
     items:
-    - '"Date: June 15, 2024 – Time: 10:00 AM – Location: Washington Dulles International
-      Airport."'
+    - 'Date: June 15, 2024 – Time: 10:00 AM – Location: Washington Dulles International
+      Airport.'
   - category_en: Advising about requirements
     category_ja: 要求事項を伝える
     items:
-    - '"Formal attire required."'
+    - Formal attire required.
   writing_task_model:
     subject: ''
     body: 'Summary of Schedule for Assistant to the Minister of Foreign Affairs:
@@ -8721,16 +8712,16 @@ cefr_target:
   - category_en: Introducing a topic
     category_ja: トピックを紹介する
     items:
-    - '"I’m going to talk a little about…"'
+    - I’m going to talk a little about…
   - category_en: Expressing an objective
     category_ja: 目的を述べる
     items:
-    - '"For our Ambassador, Mr. Suzuki, one of his main goals has been…"'
+    - For our Ambassador, Mr. Suzuki, one of his main goals has been…
   - category_en: Talking about plans
     category_ja: 計画について話す
     items:
-    - '"I know he plans on continuing to develop this close relationship with industry
-      leaders well into next year."'
+    - I know he plans on continuing to develop this close relationship with industry
+      leaders well into next year.
   roleplay_model:
   - role: Teacher
     utterance: Today, we are going to hear from Mr. Suzuki who has come from the Embassy
@@ -8788,11 +8779,11 @@ cefr_target:
   - category_en: Introducing yourself
     category_ja: 自己紹介をする
     items:
-    - '"My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi."'
+    - My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi.
   - category_en: Thanking
     category_ja: 感謝を述べる
     items:
-    - '"Thank you very much for inviting us to BizFest 2024."'
+    - Thank you very much for inviting us to BizFest 2024.
   writing_task_model:
     subject: ''
     body: 'Announcement Script:
@@ -8910,18 +8901,18 @@ cefr_target:
   - category_en: Asking for ideas
     category_ja: アイデアを求める
     items:
-    - '"What were you thinking?"'
+    - What were you thinking?
   - category_en: Making a suggestion
     category_ja: 提案をする
     items:
-    - '"Well, we haven’t done any Japanese crafts in a while, so I thought we could
-      consider something like bonsai, or ikebana, or shuji."'
+    - Well, we haven’t done any Japanese crafts in a while, so I thought we could
+      consider something like bonsai, or ikebana, or shuji.
   - category_en: Considering costs
     category_ja: 費用を考慮する
     items:
-    - '"Well, I think bonsai can be quite expensive if we have to buy plants for each
+    - Well, I think bonsai can be quite expensive if we have to buy plants for each
       participant and the gardening tools. If we do shuji the traditional Japanese
-      way, the sumi… the ink and the brushes can be expensive."'
+      way, the sumi… the ink and the brushes can be expensive.
   roleplay_model:
   - role: Teacher
     utterance: Okay. So, thanks Taro for coming to this meeting.
@@ -9014,11 +9005,11 @@ cefr_target:
   - category_en: Suggesting an idea
     category_ja: 提案をする
     items:
-    - '"We propose hosting an event focused on Japanese crafts, specifically ikebana."'
+    - We propose hosting an event focused on Japanese crafts, specifically ikebana.
   - category_en: Justifying recommendations
     category_ja: 理由を説明する
     items:
-    - '"We believe a craft event will be more appealing to local citizens in Sydney."'
+    - We believe a craft event will be more appealing to local citizens in Sydney.
   writing_task_model:
     subject: Japanese Cultural Event Proposal
     body: 'Dear John san,
@@ -9137,21 +9128,21 @@ cefr_target:
   - category_en: Expressing polite disagreement
     category_ja: 意見の相違を丁寧に表現する
     items:
-    - '"I’m sorry to hear that. However, I am surprised. On the last day of the conference
+    - I’m sorry to hear that. However, I am surprised. On the last day of the conference
       as we left, an inspection of the room was done by the manager on duty at the
-      time."'
+      time.
   - category_en: Asking for detailed information
     category_ja: 詳細な情報を求める
     items:
-    - '"As for the printer, what exactly is the damage?"'
+    - As for the printer, what exactly is the damage?
   - category_en: Using logical reasoning to negate a claim against you
     category_ja: 論理的な推論を用いて、自分に対する主張を否定する
     items:
-    - '"Okay, but we didn’t have any problems with it. If we had, we would have needed
+    - Okay, but we didn’t have any problems with it. If we had, we would have needed
       to ask for repairs because we used it the entire time. It was important for
       us to be able to print and distribute regular updates to the conference attendees.
       If it had broken and become unusable during the conference, it would have been
-      a big problem for us that would have needed to be addressed promptly."'
+      a big problem for us that would have needed to be addressed promptly.
   roleplay_model:
   - role: Student
     utterance: Hello. Taro Suzuki speaking.
@@ -9245,12 +9236,12 @@ cefr_target:
   - category_en: Expressing disbelief
     category_ja: 驚き・不同意を示す
     items:
-    - '"We were surprised to hear about this issue because the room was checked carefully
-      by your staff."'
+    - We were surprised to hear about this issue because the room was checked carefully
+      by your staff.
   - category_en: Offering a solution
     category_ja: 解決策を提案する
     items:
-    - '"I suggest meeting at the hotel soon. We can review the reported damage together."'
+    - I suggest meeting at the hotel soon. We can review the reported damage together.
   writing_task_model:
     subject: Damaged Equipment Issue
     body: 'Dear Mr. Brown,
@@ -9369,21 +9360,21 @@ cefr_target:
   - category_en: Expressing a clear opinion with strong supporting evidence
     category_ja: 強力な裏付けとともに、明確な意見を述べる
     items:
-    - '"I was thinking we should use Best Foods again. They always give us good quality
+    - I was thinking we should use Best Foods again. They always give us good quality
       food at a reasonable price, and they have always been reliable. Last year they
       really helped us out when we had that unexpected visit from the American delegation.
-      They were fast and professional and really very helpful."'
+      They were fast and professional and really very helpful.
   - category_en: Responding to alternative suggestions
     category_ja: 代替案に反応する
     items:
-    - '"That’s an interesting idea. I hadn’t thought of that. Would they help us promote
-      the event through their social media?"'
+    - That’s an interesting idea. I hadn’t thought of that. Would they help us promote
+      the event through their social media?
   - category_en: Stating conditions and outcomes
     category_ja: 条件と結果を述べる
     items:
-    - '"Well. I think that would be the deciding factor. I am willing to give them
-      a go if they will promote the event. Otherwise, I think we’d be better off going
-      with Best Foods."'
+    - Well. I think that would be the deciding factor. I am willing to give them a
+      go if they will promote the event. Otherwise, I think we’d be better off going
+      with Best Foods.
   roleplay_model:
   - role: Student
     utterance: Hi Mary. Thanks for coming today.
@@ -9457,11 +9448,11 @@ cefr_target:
   - category_en: Advising strongly
     category_ja: 強く推奨する
     items:
-    - '"I strongly recommend choosing Best Foods again."'
+    - I strongly recommend choosing Best Foods again.
   - category_en: Stating what matters most
     category_ja: 優先事項を述べる
     items:
-    - '"I believe the success and smooth management of the event are most important."'
+    - I believe the success and smooth management of the event are most important.
   writing_task_model:
     subject: Catering for Upcoming Event
     body: 'Dear Mary san,
@@ -9572,13 +9563,13 @@ cefr_target:
   - category_en: Stating conditions when granting permission
     category_ja: 許可を与える際に条件を述べる
     items:
-    - '"We do have a provision for this type of situation, and we can provide you
-      with an advance on your salary. However, there are some limitations and conditions
-      that you will have to agree to in writing before the payment can be processed…"'
+    - We do have a provision for this type of situation, and we can provide you with
+      an advance on your salary. However, there are some limitations and conditions
+      that you will have to agree to in writing before the payment can be processed…
   - category_en: Expressing reluctance
     category_ja: 不本意であること述べる
     items:
-    - '"I am always reluctant to approve these types of requests."'
+    - I am always reluctant to approve these types of requests.
   roleplay_model:
   - role: Student
     utterance: Hello Paul.
@@ -9679,11 +9670,11 @@ cefr_target:
   - category_en: Clarifying conditions
     category_ja: 条件を明確にする
     items:
-    - '"The maximum amount you can request is one-third of your next monthly salary."'
+    - The maximum amount you can request is one-third of your next monthly salary.
   - category_en: Offering help or information
     category_ja: 支援やさらなる説明を申し出る
     items:
-    - '"If you have further questions, feel free to contact me."'
+    - If you have further questions, feel free to contact me.
   writing_task_model:
     subject: Personal Loan Request - Summary
     body: 'Dear Paul san,
@@ -9794,17 +9785,17 @@ cefr_target:
   - category_en: Explaining what has come before
     category_ja: これまでの経緯を説明する
     items:
-    - '"We have already taken a look at your application and resume, and today we
-      will conduct the initial interview."'
+    - We have already taken a look at your application and resume, and today we will
+      conduct the initial interview.
   - category_en: Stating future actions based on conditions
     category_ja: 条件に基づいた将来の行動を述べる
     items:
-    - '"Assuming you are successful, we will ask you to complete a personality profile,
-      and following that, you’ll participate in a second interview with my boss."'
+    - Assuming you are successful, we will ask you to complete a personality profile,
+      and following that, you’ll participate in a second interview with my boss.
   - category_en: Referring to other documents & sources
     category_ja: 他の資料&情報源を参照する
     items:
-    - '"I see you have worked in admin for quite some time."'
+    - I see you have worked in admin for quite some time.
   roleplay_model:
   - role: Student
     utterance: Okay Ms Andrews. Please have a seat.
@@ -9896,12 +9887,11 @@ cefr_target:
   - category_en: Praising or giving compliments
     category_ja: 良い評価を伝える
     items:
-    - '"We were very impressed with your knowledge of Japan and your professional
-      background."'
+    - We were very impressed with your knowledge of Japan and your professional background.
   - category_en: Outlining next steps
     category_ja: 次の手順を説明する
     items:
-    - '"The next step will involve reviewing all candidate interviews."'
+    - The next step will involve reviewing all candidate interviews.
   writing_task_model:
     subject: Administrative Position - Next Steps
     body: 'Dear Ms. Andrews,
@@ -10014,15 +10004,15 @@ cefr_target:
   - category_en: Indicating purpose on the telephone
     category_ja: 電話で目的を伝える
     items:
-    - '"I’m calling in regard to an email I received from your store earlier today."'
+    - I’m calling in regard to an email I received from your store earlier today.
   - category_en: Disagreeing with a claim
     category_ja: 主張に対して反対する
     items:
-    - '"However, I’m unable to understand how that is possible."'
+    - However, I’m unable to understand how that is possible.
   - category_en: Rejecting a proposal
     category_ja: 提案を拒否する
     items:
-    - '"However, I don’t consider that a reasonable solution to this problem."'
+    - However, I don’t consider that a reasonable solution to this problem.
   roleplay_model:
   - role: Teacher
     utterance: Good morning. Thank you for calling David Jones, Chadstone. How may
@@ -10104,11 +10094,11 @@ cefr_target:
   - category_en: Showing disappointment or unhappiness
     category_ja: 不満を表す
     items:
-    - '"I am not satisfied with your proposal to repair the laptop and charge me."'
+    - I am not satisfied with your proposal to repair the laptop and charge me.
   - category_en: Asking to review a decision again
     category_ja: 再考を求める
     items:
-    - '"I kindly ask you to reconsider your decision and offer a fair solution."'
+    - I kindly ask you to reconsider your decision and offer a fair solution.
   writing_task_model:
     subject: 'Re: Return of Toshiba Laptop - Proposed Solution'
     body: 'Dear John,
@@ -10219,17 +10209,16 @@ cefr_target:
   - category_en: Rejecting a claim
     category_ja: 主張を却下する
     items:
-    - '"That’s just not true."'
+    - That’s just not true.
   - category_en: Stating a position
     category_ja: 立場を述べる
     items:
-    - '"I don’t think I should have to pay anything for an accident that is not my
-      fault."'
+    - I don’t think I should have to pay anything for an accident that is not my fault.
   - category_en: Stating a desire with supporting reasons
     category_ja: 裏付けとなる理由とともに願望を述べる
     items:
-    - '"I’d like to get the car fixed asap. I don’t think it’s roadworthy in its current
-      condition."'
+    - I’d like to get the car fixed asap. I don’t think it’s roadworthy in its current
+      condition.
   roleplay_model:
   - role: Teacher
     utterance: Good morning. Thank you for calling RACV Car insurance. This is Andrew.
@@ -10319,12 +10308,12 @@ cefr_target:
   - category_en: Describing an event clearly
     category_ja: 出来事を明確に伝える
     items:
-    - '"The accident occurred at around 8:30 a.m. on Centre Road."'
+    - The accident occurred at around 8:30 a.m. on Centre Road.
   - category_en: Clarifying incorrect information
     category_ja: 誤った情報を正す
     items:
-    - '"The other driver said I slowed down suddenly, causing the accident. However,
-      this is not correct."'
+    - The other driver said I slowed down suddenly, causing the accident. However,
+      this is not correct.
   writing_task_model:
     subject: Accident Report and Insurance Claim
     body: 'Dear RACV Claims Department,
@@ -10427,20 +10416,20 @@ cefr_target:
   - category_en: Stating an action and a result
     category_ja: 行動と結果を述べる
     items:
-    - '"I’ve been considering how we can cut costs, and I’ve come up with, I think,
-      three possible ways of doing so."'
+    - I’ve been considering how we can cut costs, and I’ve come up with, I think,
+      three possible ways of doing so.
   - category_en: Indicating a desirable outcome based on conditions
     category_ja: 条件に基づいた望ましい結果を述べる
     items:
-    - '"If our document processing systems can be aligned with the systems in Tokyo,
+    - If our document processing systems can be aligned with the systems in Tokyo,
       and we move towards digitization of documents, then with a secure network we
       should be able to quickly and easily transfer documents and rapidly increase
-      processing times."'
+      processing times.
   - category_en: Stating the cause of a problem
     category_ja: 問題の原因を述べる
     items:
-    - '"I often think our systems are currently overly bureaucratic and are slowed
-      down by the excessive level of checking required."'
+    - I often think our systems are currently overly bureaucratic and are slowed down
+      by the excessive level of checking required.
   roleplay_model:
   - role: Teacher
     utterance: Okay, so as you know from the email I sent you all last week, we’re
@@ -10513,11 +10502,11 @@ cefr_target:
   - category_en: Offering practical solutions
     category_ja: 実用的な提案をする
     items:
-    - '"Change regular lights to energy-saving LED bulbs."'
+    - Change regular lights to energy-saving LED bulbs.
   - category_en: Clarifying advantages
     category_ja: 利益や利点を説明する
     items:
-    - '"Bulk buying will help us save money on everyday office supplies."'
+    - Bulk buying will help us save money on everyday office supplies.
   writing_task_model:
     subject: Cost Reduction Ideas for Next Quarter
     body: 'Dear Mr. Addams,
