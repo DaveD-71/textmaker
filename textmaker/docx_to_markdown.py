@@ -220,11 +220,7 @@ def _get_shape_alt_text(shape_elem) -> str:
     return (desc or title).strip()
 
 
-<<<<<<< ours
-def extract_shapes(docx_path: Path, assets_dir: Path, assets_arg: Path) -> List[ShapeAsset]:
-=======
 def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) -> List[ShapeAsset]:
->>>>>>> theirs
     shapes: List[ShapeAsset] = []
     shape_assets_dir = assets_dir / 'shapes'
 
@@ -261,11 +257,7 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
         xml_payload = ElementTree.tostring(shape, encoding='unicode')
         asset_path.write_text(xml_payload, encoding='utf-8')
 
-<<<<<<< ours
-        link_path = (assets_arg / 'shapes' / asset_name).as_posix()
-=======
         link_path = (assets_link_base / 'shapes' / asset_name).as_posix()
->>>>>>> theirs
         shapes.append(ShapeAsset(idx, alt_text, text, asset_path, link_path))
 
     return shapes
@@ -304,8 +296,6 @@ def replace_shape_markers(paths: Iterable[Path], shapes: List[ShapeAsset]) -> No
         path.write_text(new_text, encoding='utf-8')
 
 
-<<<<<<< ours
-=======
 def rewrite_asset_links(paths: Iterable[Path], assets_arg: Path, assets_link_base: Path) -> None:
     assets_token = assets_arg.as_posix().rstrip('/')
     link_base = assets_link_base.as_posix().rstrip('/')
@@ -320,9 +310,6 @@ def rewrite_asset_links(paths: Iterable[Path], assets_arg: Path, assets_link_bas
         if needle not in text:
             continue
         path.write_text(text.replace(needle, replacement), encoding='utf-8')
-
-
->>>>>>> theirs
 def main() -> None:
     parser = argparse.ArgumentParser(description='Split a DOCX into markdown units and extract assets.')
     parser.add_argument('input', nargs='?', help='Input DOCX file to split.')
@@ -420,13 +407,9 @@ def main() -> None:
         written_files.append(front_path)
     written_files.extend(write_sections_to_files(sections, md_dir, start_index=1))
 
-<<<<<<< ours
-    shapes = extract_shapes(temp_docx, assets_dir, assets_arg)
-=======
     rewrite_asset_links(written_files, assets_arg, assets_link_base)
 
     shapes = extract_shapes(temp_docx, assets_dir, assets_link_base)
->>>>>>> theirs
     replace_shape_markers(written_files, shapes)
 
     # Replace sentinel markers in all written markdown files
