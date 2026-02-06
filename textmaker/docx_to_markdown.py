@@ -48,12 +48,22 @@ def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
         sys.exit(2)
 
 
+def check_tesseract() -> None:
+    if shutil.which('tesseract') is None:
+        print(
+            'Error: tesseract binary not found on PATH. Install from '
+            'https://tesseract-ocr.github.io/tessdoc/Installation.html'
+        )
+        sys.exit(2)
+
+
 def run_pandoc_to_markdown(
     input_docx: Path,
     output_dir: Path,
     output_md: Path,
     assets_arg: str,
     pandoc_bin: str = 'pandoc',
+    ocr_lang: Optional[str] = None,
 ) -> None:
     """
     Run pandoc to convert DOCX to markdown and extract media.
@@ -75,6 +85,8 @@ def run_pandoc_to_markdown(
         '--output',
         output_arg,
     ]
+    if ocr_lang:
+        base_cmd += ['--ocr-lang', ocr_lang]
     header_flags = ['--markdown-headings=atx']
     last_exc: Optional[subprocess.CalledProcessError] = None
 
@@ -310,6 +322,8 @@ def rewrite_asset_links(paths: Iterable[Path], assets_arg: Path, assets_link_bas
         if needle not in text:
             continue
         path.write_text(text.replace(needle, replacement), encoding='utf-8')
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description='Split a DOCX into markdown units and extract assets.')
     parser.add_argument('input', nargs='?', help='Input DOCX file to split.')
@@ -344,6 +358,10 @@ def main() -> None:
         '--pandoc-bin',
         default='pandoc',
         help='Pandoc executable to invoke (default: pandoc).',
+    )
+    parser.add_argument(
+        '--ocr-lang',
+        help='Enable OCR during conversion with the provided Tesseract languages (e.g. "eng+jpn").',
     )
     parser.add_argument(
         '--preserve-headers',
@@ -383,6 +401,8 @@ def main() -> None:
     temp_docx = output_dir / '_preprocessed.docx'
 
     check_pandoc(args.pandoc_bin)
+    if args.ocr_lang:
+        check_tesseract()
 
     # Preprocess DOCX to add sentinel markers for unsupported elements
     preprocess_docx(source_docx, temp_docx)
@@ -393,6 +413,7 @@ def main() -> None:
         output_md=temp_md,
         assets_arg=str(assets_arg),
         pandoc_bin=args.pandoc_bin,
+        ocr_lang=args.ocr_lang,
     )
 
     md_text = temp_md.read_text(encoding='utf-8')
