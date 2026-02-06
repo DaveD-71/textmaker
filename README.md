@@ -72,6 +72,8 @@ Commands:
 - `postprocess-docx`: Post-process a DOCX to insert section breaks and list styles.
 - `postprocess-markdown`: Replace sentinel markers in markdown outputs.
 - `export-docx-package`: Export a DOCX into JSON/CSV analysis package.
+- `pdf-to-markdown`: Convert a PDF to markdown with extracted images.
+- `image-to-markdown`: Convert a single image to markdown via OCR.
 
 Optional convenience wrapper (Windows):
 ```powershell
@@ -117,6 +119,7 @@ Options:
 - `--preserve-headers`: keep headers/footers in the reference DOCX.
 - `--keep-temp-md`: keep `_full.md` and `_preprocessed.docx` intermediates.
 - `--pandoc-bin`: override pandoc executable name/path.
+- `--ocr-lang`: enable OCR with the given Tesseract language(s) (e.g., `eng+jpn`).
 
 Conversion details:
 - Pandoc converts the DOCX to a single `_full.md`, then the script splits it into numbered files
@@ -175,6 +178,33 @@ Example output structure:
 
 - This prototype uses `pandoc` for markdown → docx conversion and a generated `reference.docx` to control styles. Pandoc must be installed separately.
 - See `style-ref\bookconfig.yml` to change page size, fonts and TOC depth.
+
+## PDF → Markdown (with assets + OCR)
+
+```powershell
+python -m textmaker pdf-to-markdown --input ".\path\to\file.pdf"
+```
+
+Options:
+- `--output-dir`: output folder (default: `<input folder>\out`).
+- `--assets-dir`: assets folder name (default: `assets`).
+- `--output`: output markdown file path (default: `<output-dir>\<input stem>.md`).
+- `--ocr-lang`: Tesseract language(s) for OCR (default: `eng+jpn`).
+- `--no-ocr`: disable OCR and use `pdftotext` instead.
+
+Dependencies:
+- `pdftotext`, `pdfimages`, `pdftoppm` (Poppler).
+- `tesseract` for OCR.
+
+## Image → Markdown (OCR)
+
+```powershell
+python -m textmaker image-to-markdown --input ".\path\to\scan.png" --ocr-lang "eng+jpn"
+```
+
+Options:
+- `--output`: output markdown file (default: `<input stem>.md`).
+- `--ocr-lang`: Tesseract language(s) (default: `eng+jpn`).
 
 ## Next steps
 
