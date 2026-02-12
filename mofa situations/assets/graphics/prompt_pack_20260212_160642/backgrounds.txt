@@ -1,0 +1,26 @@
+Generate ONE background image only.
+
+Use the attached scene image as COLOR/TONE REFERENCE ONLY.
+Do not include any people, objects, flags, desks, buildings, symbols, or scene details from the reference.
+
+Create a mild, text-friendly A4 background for document layout:
+- Size: A4 landscape ONLY, exactly 3508 x 2480 px (300 dpi)
+- Aspect ratio must be ISO A-series ratio (1.414), not 3:2
+- Do not output 1536x1024, 1792x1024, or any postcard-like ratio
+- Style: soft, minimal, professional, low-contrast painterly gradient wash
+- Palette: derived from the attached reference image, but desaturated and lighter
+- Brightness: keep overall light value for readability
+- Contrast: subtle only (no harsh dark/light jumps)
+- Texture: very gentle paper/wash texture, non-distracting
+- Composition: clean open space for text; no focal subject
+- Optional depth: very soft abstract shapes only, large and blurred
+
+Readability constraints:
+- Keep at least 70% of the page in light-mid tones
+- Avoid busy patterns behind text areas
+- No strong edges, no vignettes, no heavy noise
+
+Output constraints:
+- PNG
+- No text, no logos, no watermark, no icons, no borders
+- Return only the image
