@@ -27,6 +27,7 @@ except ImportError as exc:
         'Missing dependency: python-docx is required. Install with `pip install python-docx`.'
     ) from exc
 
+from .ocr_utils import check_tesseract
 from .preprocess_docx import preprocess_docx
 from .postprocess_markdown import postprocess_many
 
@@ -45,15 +46,6 @@ def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
     """Ensure pandoc is on PATH."""
     if shutil.which(pandoc_bin) is None:
         print('Error: pandoc binary not found on PATH. Install from https://pandoc.org/installing.html')
-        sys.exit(2)
-
-
-def check_tesseract() -> None:
-    if shutil.which('tesseract') is None:
-        print(
-            'Error: tesseract binary not found on PATH. Install from '
-            'https://tesseract-ocr.github.io/tessdoc/Installation.html'
-        )
         sys.exit(2)
 
 

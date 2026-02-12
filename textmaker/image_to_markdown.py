@@ -7,35 +7,10 @@ Image → Markdown converter with OCR.
 from __future__ import annotations
 
 import argparse
-import shutil
-import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
-
-def check_tesseract() -> None:
-    if shutil.which('tesseract') is None:
-        print(
-            'Error: tesseract binary not found on PATH. Install from '
-            'https://tesseract-ocr.github.io/tessdoc/Installation.html'
-        )
-        sys.exit(2)
-
-
-def run_tesseract(input_image: Path, lang: str) -> str:
-    with tempfile.TemporaryDirectory() as tmpdir:
-        output_base = Path(tmpdir) / 'ocr'
-        cmd = [
-            'tesseract',
-            str(input_image),
-            str(output_base),
-            '-l',
-            lang,
-        ]
-        print('Running OCR:', ' '.join(cmd))
-        subprocess.run(cmd, check=True)
-        return (output_base.with_suffix('.txt')).read_text(encoding='utf-8')
+from .ocr_utils import run_tesseract
 
 
 def main() -> None:
@@ -52,7 +27,6 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    check_tesseract()
 
     input_path = Path(args.input)
     if not input_path.exists():

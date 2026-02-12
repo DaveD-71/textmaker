@@ -14,15 +14,13 @@ import sys
 import tempfile
 from pathlib import Path
 
+from .ocr_utils import check_tesseract, run_tesseract_many
+
 
 def check_binary(name: str, install_url: str) -> None:
     if shutil.which(name) is None:
         print(f'Error: {name} binary not found on PATH. Install from {install_url}')
         sys.exit(2)
-
-
-def check_tesseract() -> None:
-    check_binary('tesseract', 'https://tesseract-ocr.github.io/tessdoc/Installation.html')
 
 
 def run_pdftotext(input_pdf: Path, output_txt: Path) -> None:
@@ -65,26 +63,6 @@ def run_pdftoppm(input_pdf: Path, output_dir: Path, prefix: str) -> list[Path]:
     print('Running:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
     return sorted(output_dir.glob(f'{prefix}-*.png'))
-
-
-def run_tesseract(images: list[Path], lang: str) -> str:
-    check_tesseract()
-    chunks: list[str] = []
-    with tempfile.TemporaryDirectory() as tmpdir:
-        tmpdir_path = Path(tmpdir)
-        for index, image_path in enumerate(images, start=1):
-            output_base = tmpdir_path / f'ocr-{index:03d}'
-            cmd = [
-                'tesseract',
-                str(image_path),
-                str(output_base),
-                '-l',
-                lang,
-            ]
-            print('Running OCR:', ' '.join(cmd))
-            subprocess.run(cmd, check=True)
-            chunks.append(output_base.with_suffix('.txt').read_text(encoding='utf-8'))
-    return '\n'.join(chunk.strip() for chunk in chunks if chunk.strip())
 
 
 def build_markdown(text: str, image_paths: list[Path], assets_rel: Path) -> str:
@@ -146,7 +124,7 @@ def main() -> None:
 
     if args.ocr_lang and not args.no_ocr:
         page_images = run_pdftoppm(input_path, output_dir / '_pages', prefix='page')
-        text = run_tesseract(page_images, args.ocr_lang)
+        text = run_tesseract_many(page_images, args.ocr_lang)
     else:
         with tempfile.TemporaryDirectory() as tmpdir:
             tmp_txt = Path(tmpdir) / f'{input_path.stem}.txt'

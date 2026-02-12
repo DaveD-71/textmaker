@@ -13,6 +13,7 @@ import argparse
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import Iterable, List
 
@@ -73,35 +74,41 @@ if __name__ == '__main__':
     dest_path = Path(args.output)
     reference_path = Path(args.reference)
 
-    if src_path.is_dir():
-        md_files = sorted([p for p in src_path.glob('*.md')])
-        if not md_files:
-            print('No markdown files found in directory')
-            sys.exit(1)
-        temp_md = Path('.autotext_temp.md')
-        merge_markdown_files(md_files, temp_md)
-        pandoc_cmd = build_pandoc_cmd(
-            temp_md,
-            dest_path,
-            reference_path,
-            args.toc,
-            args.toc_depth,
-        )
-    else:
-        pandoc_cmd = build_pandoc_cmd(
-            src_path,
-            dest_path,
-            reference_path,
-            args.toc,
-            args.toc_depth,
-        )
-
-    print('Running:', ' '.join(map(str, pandoc_cmd)))
-    subprocess.run(pandoc_cmd, check=True)
-    # Post-process: add section breaks for TOC/units/file boundaries
-    from .postprocess_docx import insert_section_after_toc
+    temp_dir = None
     try:
-        insert_section_after_toc(dest_path, has_toc=args.toc)
-    except (OSError, RuntimeError, ValueError):
-        pass
-    print('Wrote', dest_path)
+        if src_path.is_dir():
+            md_files = sorted([p for p in src_path.glob('*.md')])
+            if not md_files:
+                print('No markdown files found in directory')
+                sys.exit(1)
+            temp_dir = tempfile.TemporaryDirectory()
+            temp_md = Path(temp_dir.name) / 'merged.md'
+            merge_markdown_files(md_files, temp_md)
+            pandoc_cmd = build_pandoc_cmd(
+                temp_md,
+                dest_path,
+                reference_path,
+                args.toc,
+                args.toc_depth,
+            )
+        else:
+            pandoc_cmd = build_pandoc_cmd(
+                src_path,
+                dest_path,
+                reference_path,
+                args.toc,
+                args.toc_depth,
+            )
+
+        print('Running:', ' '.join(map(str, pandoc_cmd)))
+        subprocess.run(pandoc_cmd, check=True)
+        # Post-process: add section breaks for TOC/units/file boundaries
+        from .postprocess_docx import insert_section_after_toc
+        try:
+            insert_section_after_toc(dest_path, has_toc=args.toc)
+        except (OSError, RuntimeError, ValueError):
+            pass
+        print('Wrote', dest_path)
+    finally:
+        if temp_dir:
+            temp_dir.cleanup()
