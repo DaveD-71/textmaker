@@ -1,0 +1,46 @@
+Generate ONE image only.
+
+If reference images are attached, they are STYLE-ONLY references.
+Hard anti-copy constraints:
+- create a completely new composition from scratch
+- do NOT copy camera angle, character placement, poses, framing, or prop arrangement from references
+- do NOT replicate faces or identity details from reference photos
+- do NOT reproduce any text, marks, numbering, borders, or watermarks from references
+- if output resembles a reference composition, regenerate with a clearly different layout and angle
+
+Priority constraints (must satisfy all):
+1) LOCATION: Office or reception
+2) ACTION: Explaining how to get somewhere
+3) PROPS: Desk; paper map
+4) BODY LANGUAGE: Gesture toward map or route
+5) NEGATIVE SPACE: Upper-right
+6) MUST NOT INCLUDE: Vehicles; arrows; written signs
+
+Global style lock:
+- semi-realistic painterly editorial illustration for institutional textbook use
+- soft edges and brush-like blending, realistic anatomy, calm neutral expressions
+- evenly lit scene, no dramatic cinematic contrast, not photorealistic, not anime/cartoon
+- layout-ready composition with negative space at: Upper-right
+
+Scene brief:
+- Scene ID: S26
+- Title: Travel Information: Directions & Transport
+- Applies to: H09, G02, G04, F03, F05, F07, E05, E10
+- Core interaction: Explaining how to get somewhere
+- Location: Office or reception
+- Furniture/props: Desk; paper map
+- Body language: Gesture toward map or route
+- Cultural notes: Gesture must indicate space
+- Japanese staff: Kenji Tanaka - male, Japanese, late 30s
+- Local person: Anna Weiss - female, white, early 40s
+- Perspective/composition: Standing angled toward map
+- Dominant palette/accent: Cool grey / muted blue
+- Design notes: Map-centered explanation
+
+Output requirements:
+- PNG, landscape postcard-like ratio (3:2), target 1536x1024 or closest available
+- no text, no labels, no readable signage, no numbers, no logos, no watermark
+- no embedded arrows, captions, symbols, icons, or instructional graphics
+- keep a clean white outer border region; interior scene content should appear fully opaque
+
+Return only the image.

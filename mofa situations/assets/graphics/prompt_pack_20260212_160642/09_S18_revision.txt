@@ -1,0 +1,15 @@
+Revise this image to match scene S18 exactly.
+
+Fix these non-negotiables:
+- Location must be: Small meeting room
+- Core interaction must be: Interview questions and responses
+- Required props: Table; folder
+- Required body language: Formal, attentive posture
+- Keep negative space at: Upper-right
+- Remove forbidden content: Whiteboards; branding
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+
+Preserve image quality and output one revised image only.

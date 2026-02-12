@@ -1,0 +1,23 @@
+Revise this image to match scene S23 exactly.
+
+Fix these non-negotiables:
+- Location must be: Office desk (in person or phone)
+- Core interaction must be: Requesting housing information
+- Required props: Desk; apartment list
+- Required body language: Agent indicating list; neutral posture
+- Keep negative space at: Right margin
+- Remove forbidden content: Detailed interiors; city-specific cues
+
+Correct role direction (critical):
+- Japanese person is the customer/client and must be on the visitor side of the desk.
+- Non-Japanese person is the housing agent and must be behind the desk.
+- Non-Japanese agent must hold and show the apartment list.
+- Japanese customer must NOT point at, hold up, or present the apartment list.
+- If needed, swap their positions so agent-presenter vs customer-listener is visually obvious.
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+- no old desk phone or dated technology
+
+Preserve image quality and output one revised image only.

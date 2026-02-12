@@ -1,0 +1,19 @@
+Revise this image to match scene S24 exactly.
+
+Fix these non-negotiables:
+- Location must be: Embassy office (phone or desk)
+- Core interaction must be: Raising complaint; requesting correction
+- Required props: Desk; delivery slip
+- Required body language: Calm but firm; listening posture
+- Keep negative space at: Upper-right
+- Remove forbidden content: Warning symbols; exaggeration
+- Keep split-screen style fully consistent: same painterly treatment in both halves
+- Left and right halves must have matching brush texture, sharpness, and realism level
+- Right half must NOT appear photorealistic or more detailed than left half
+- If consistency cannot be maintained in split-screen, convert to one unified single-scene composition
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+
+Preserve image quality and output one revised image only.

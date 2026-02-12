@@ -1,0 +1,11 @@
+order,scene_id,title,target_filename
+1,S26,"Travel Information: Directions & Transport",01_S26.png
+2,S03,"Airport Pickup Coordination",02_S03.png
+3,S17,"Hotel Selection Discussion",03_S17.png
+4,S08,"Office Supplies / Delivery Coordination",04_S08.png
+5,S22,"Accounting / Payroll Rule Explanation",05_S22.png
+6,S23,"Apartment / Housing Inquiry",06_S23.png
+7,S24,"Vendor Complaint / Service Failure",07_S24.png
+8,S06,"Dinner or Event: Professional Small Talk",08_S06.png
+9,S18,"Job Interview",09_S18.png
+10,S26-R,"Reception: Giving Directions Inside Facility",10_S26-R.png

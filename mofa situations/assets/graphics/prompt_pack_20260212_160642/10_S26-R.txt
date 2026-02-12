@@ -1,0 +1,46 @@
+Generate ONE image only.
+
+If reference images are attached, they are STYLE-ONLY references.
+Hard anti-copy constraints:
+- create a completely new composition from scratch
+- do NOT copy camera angle, character placement, poses, framing, or prop arrangement from references
+- do NOT replicate faces or identity details from reference photos
+- do NOT reproduce any text, marks, numbering, borders, or watermarks from references
+- if output resembles a reference composition, regenerate with a clearly different layout and angle
+
+Priority constraints (must satisfy all):
+1) LOCATION: Embassy reception
+2) ACTION: Visitor asks where something is
+3) PROPS: Counter; icon signage only
+4) BODY LANGUAGE: Pointing toward corridor
+5) NEGATIVE SPACE: Right or top-right
+6) MUST NOT INCLUDE: Pointing at people; notes
+
+Global style lock:
+- semi-realistic painterly editorial illustration for institutional textbook use
+- soft edges and brush-like blending, realistic anatomy, calm neutral expressions
+- evenly lit scene, no dramatic cinematic contrast, not photorealistic, not anime/cartoon
+- layout-ready composition with negative space at: Right or top-right
+
+Scene brief:
+- Scene ID: S26-R
+- Title: Reception: Giving Directions Inside Facility
+- Applies to: H01
+- Core interaction: Visitor asks where something is
+- Location: Embassy reception
+- Furniture/props: Counter; icon signage only
+- Body language: Pointing toward corridor
+- Cultural notes: Avoid rude gestures
+- Japanese staff: Kenji Tanaka - male, Japanese, late 30s
+- Local person: Mark Lewis - male, white, early 40s
+- Perspective/composition: Standing side-by-side
+- Dominant palette/accent: Cool grey / slate
+- Design notes: Directional clarity
+
+Output requirements:
+- PNG, landscape postcard-like ratio (3:2), target 1536x1024 or closest available
+- no text, no labels, no readable signage, no numbers, no logos, no watermark
+- no embedded arrows, captions, symbols, icons, or instructional graphics
+- keep a clean white outer border region; interior scene content should appear fully opaque
+
+Return only the image.

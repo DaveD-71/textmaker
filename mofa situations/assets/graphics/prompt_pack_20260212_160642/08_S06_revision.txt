@@ -1,0 +1,20 @@
+Revise this image to match scene S06 exactly.
+
+Fix these non-negotiables:
+- Location must be: Restaurant or event venue
+- Core interaction must be: Polite professional conversation during meal/event
+- Required props: Table; minimal tableware
+- Required body language: Relaxed, attentive; equal eye level
+- Keep negative space at: Upper area
+- Remove forbidden content: Phones; documents; café cues
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+- correct style drift from previous output: remove anime/cartoon/comic appearance
+- remove glossy digital concept-art look and heavy outline rendering
+- natural proportions and restrained expressions (no oversized eyes or stylized facial proportions)
+- soft brush blending, matte painterly finish, moderate detail, uniform texture across entire image
+- avoid high-gloss skin, dramatic cinematic lighting, and exaggerated bokeh
+
+Preserve image quality and output one revised image only.

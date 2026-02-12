@@ -1,0 +1,50 @@
+Generate ONE image only.
+
+If reference images are attached, they are STYLE-ONLY references.
+Hard anti-copy constraints:
+- create a completely new composition from scratch
+- do NOT copy camera angle, character placement, poses, framing, or prop arrangement from references
+- do NOT replicate faces or identity details from reference photos
+- do NOT reproduce any text, marks, numbering, borders, or watermarks from references
+- if output resembles a reference composition, regenerate with a clearly different layout and angle
+
+Priority constraints (must satisfy all):
+1) LOCATION: Embassy office (phone or desk)
+2) ACTION: Raising complaint; requesting correction
+3) PROPS: Desk; delivery slip
+4) BODY LANGUAGE: Calm but firm; listening posture
+5) NEGATIVE SPACE: Upper-right
+6) MUST NOT INCLUDE: Warning symbols; exaggeration
+
+Global style lock:
+- semi-realistic painterly editorial illustration for institutional textbook use
+- soft edges and brush-like blending, realistic anatomy, calm neutral expressions
+- evenly lit scene, no dramatic cinematic contrast, not photorealistic, not anime/cartoon
+- layout-ready composition with negative space at: Upper-right
+- split-screen must use ONE unified rendering style across both halves
+- both halves must match brush texture, edge softness, contrast, and detail density
+- do not render either half more realistic, sharper, or more photographic than the other
+- if split-screen causes style mismatch, use a single continuous scene instead
+
+Scene brief:
+- Scene ID: S24
+- Title: Vendor Complaint / Service Failure
+- Applies to: F09, E04
+- Core interaction: Raising complaint; requesting correction
+- Location: Embassy office (phone or desk)
+- Furniture/props: Desk; delivery slip
+- Body language: Calm but firm; listening posture
+- Cultural notes: Professional restraint
+- Japanese staff: Yumi Kuroda - female, Japanese, early 40s
+- Local person: David Okoye - male, Black, mid 30s
+- Perspective/composition: Split-screen, frontal
+- Dominant palette/accent: Charcoal / blue vs industrial grey
+- Design notes: Split layout reinforces phone language
+
+Output requirements:
+- PNG, landscape postcard-like ratio (3:2), target 1536x1024 or closest available
+- no text, no labels, no readable signage, no numbers, no logos, no watermark
+- no embedded arrows, captions, symbols, icons, or instructional graphics
+- keep a clean white outer border region; interior scene content should appear fully opaque
+
+Return only the image.

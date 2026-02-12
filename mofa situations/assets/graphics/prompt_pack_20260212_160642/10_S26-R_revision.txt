@@ -1,0 +1,15 @@
+Revise this image to match scene S26-R exactly.
+
+Fix these non-negotiables:
+- Location must be: Embassy reception
+- Core interaction must be: Visitor asks where something is
+- Required props: Counter; icon signage only
+- Required body language: Pointing toward corridor
+- Keep negative space at: Right or top-right
+- Remove forbidden content: Pointing at people; notes
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+
+Preserve image quality and output one revised image only.

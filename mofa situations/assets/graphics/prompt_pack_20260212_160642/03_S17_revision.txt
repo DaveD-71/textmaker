@@ -1,0 +1,15 @@
+Revise this image to match scene S17 exactly.
+
+Fix these non-negotiables:
+- Location must be: Embassy / consulate meeting area
+- Core interaction must be: Discussing and comparing hotel options
+- Required props: Small meeting table; brochures
+- Required body language: Alternating gestures indicating options
+- Keep negative space at: Upper-left or right
+- Remove forbidden content: Sales pitch tone
+
+Keep style:
+- semi-realistic painterly editorial illustration, calm professional tone
+- no text, no numbers, no logos, no signage text, no watermark
+
+Preserve image quality and output one revised image only.
