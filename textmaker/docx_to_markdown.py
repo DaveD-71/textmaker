@@ -48,12 +48,22 @@ def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
         sys.exit(2)
 
 
+def check_tesseract() -> None:
+    if shutil.which('tesseract') is None:
+        print(
+            'Error: tesseract binary not found on PATH. Install from '
+            'https://tesseract-ocr.github.io/tessdoc/Installation.html'
+        )
+        sys.exit(2)
+
+
 def run_pandoc_to_markdown(
     input_docx: Path,
     output_dir: Path,
     output_md: Path,
     assets_arg: str,
     pandoc_bin: str = 'pandoc',
+    ocr_lang: Optional[str] = None,
 ) -> None:
     """
     Run pandoc to convert DOCX to markdown and extract media.
@@ -75,6 +85,8 @@ def run_pandoc_to_markdown(
         '--output',
         output_arg,
     ]
+    if ocr_lang:
+        base_cmd += ['--ocr-lang', ocr_lang]
     header_flags = ['--markdown-headings=atx']
     last_exc: Optional[subprocess.CalledProcessError] = None
 
@@ -220,11 +232,7 @@ def _get_shape_alt_text(shape_elem) -> str:
     return (desc or title).strip()
 
 
-<<<<<<< ours
-def extract_shapes(docx_path: Path, assets_dir: Path, assets_arg: Path) -> List[ShapeAsset]:
-=======
 def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) -> List[ShapeAsset]:
->>>>>>> theirs
     shapes: List[ShapeAsset] = []
     shape_assets_dir = assets_dir / 'shapes'
 
@@ -261,11 +269,7 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
         xml_payload = ElementTree.tostring(shape, encoding='unicode')
         asset_path.write_text(xml_payload, encoding='utf-8')
 
-<<<<<<< ours
-        link_path = (assets_arg / 'shapes' / asset_name).as_posix()
-=======
         link_path = (assets_link_base / 'shapes' / asset_name).as_posix()
->>>>>>> theirs
         shapes.append(ShapeAsset(idx, alt_text, text, asset_path, link_path))
 
     return shapes
@@ -304,8 +308,6 @@ def replace_shape_markers(paths: Iterable[Path], shapes: List[ShapeAsset]) -> No
         path.write_text(new_text, encoding='utf-8')
 
 
-<<<<<<< ours
-=======
 def rewrite_asset_links(paths: Iterable[Path], assets_arg: Path, assets_link_base: Path) -> None:
     assets_token = assets_arg.as_posix().rstrip('/')
     link_base = assets_link_base.as_posix().rstrip('/')
@@ -322,7 +324,6 @@ def rewrite_asset_links(paths: Iterable[Path], assets_arg: Path, assets_link_bas
         path.write_text(text.replace(needle, replacement), encoding='utf-8')
 
 
->>>>>>> theirs
 def main() -> None:
     parser = argparse.ArgumentParser(description='Split a DOCX into markdown units and extract assets.')
     parser.add_argument('input', nargs='?', help='Input DOCX file to split.')
@@ -357,6 +358,10 @@ def main() -> None:
         '--pandoc-bin',
         default='pandoc',
         help='Pandoc executable to invoke (default: pandoc).',
+    )
+    parser.add_argument(
+        '--ocr-lang',
+        help='Enable OCR during conversion with the provided Tesseract languages (e.g. "eng+jpn").',
     )
     parser.add_argument(
         '--preserve-headers',
@@ -396,6 +401,8 @@ def main() -> None:
     temp_docx = output_dir / '_preprocessed.docx'
 
     check_pandoc(args.pandoc_bin)
+    if args.ocr_lang:
+        check_tesseract()
 
     # Preprocess DOCX to add sentinel markers for unsupported elements
     preprocess_docx(source_docx, temp_docx)
@@ -406,6 +413,7 @@ def main() -> None:
         output_md=temp_md,
         assets_arg=str(assets_arg),
         pandoc_bin=args.pandoc_bin,
+        ocr_lang=args.ocr_lang,
     )
 
     md_text = temp_md.read_text(encoding='utf-8')
@@ -420,13 +428,9 @@ def main() -> None:
         written_files.append(front_path)
     written_files.extend(write_sections_to_files(sections, md_dir, start_index=1))
 
-<<<<<<< ours
-    shapes = extract_shapes(temp_docx, assets_dir, assets_arg)
-=======
     rewrite_asset_links(written_files, assets_arg, assets_link_base)
 
     shapes = extract_shapes(temp_docx, assets_dir, assets_link_base)
->>>>>>> theirs
     replace_shape_markers(written_files, shapes)
 
     # Replace sentinel markers in all written markdown files

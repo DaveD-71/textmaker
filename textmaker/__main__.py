@@ -12,6 +12,8 @@ _COMMANDS = {
     "postprocess-docx": "postprocess_docx",
     "postprocess-markdown": "postprocess_markdown",
     "export-docx-package": "export_docx_package",
+    "pdf-to-markdown": "pdf_to_markdown",
+    "image-to-markdown": "image_to_markdown",
 }
 
 
