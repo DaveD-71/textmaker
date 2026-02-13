@@ -5871,7 +5871,7 @@ situations:
           text: |-
             Subject: Missing Luggage Report
             Dear Airline Staff,
-            I am writing to report that one of my suitcases did not arrive at New York's airport today, after my flight from Narita Airport on March 15, 2024 (Flight NH010).
+            I am writing to report that one of my suitcases did not arrive at New York's airport today, after my flight from Narita Airport on March 15, 2026 (Flight NH010).
             I checked in two suitcases at Narita Airport around 11:00 AM. Upon arrival at JFK Airport in New York at approximately 10:30 AM local time, only one suitcase arrived.
             The missing suitcase is a large black suitcase, approximately 75 cm in height, with four wheels and a blue luggage strap around it. It also has a small white name tag with my contact details attached to the handle. I have attached a copy of my luggage check-in slip for your reference.
             I am very concerned as the suitcase contains important documents and personal items needed urgently. Could you please help locate it as soon as possible?
@@ -6007,7 +6007,7 @@ situations:
           text: |-
             Subject: Request for New Flight Arrangement
             Dear Airline Customer Service,
-            I am writing about my flight from Brisbane to Sydney (Flight QA62) today, March 15, 2024, at 7:00 PM. Unfortunately, it was canceled.
+            I am writing about my flight from Brisbane to Sydney (Flight QA62) today, March 15, 2026, at 7:00 PM. Unfortunately, it was canceled.
             I have an important meeting in Sydney tomorrow morning. Your staff said the next economy flight available is tomorrow morning, but this would make me late for my meeting. They also said there is a business class seat on tonight's flight at 8:00 PM.
             Could you please let me take the business class seat tonight at a reduced price because of this inconvenience?
             - Thank you very much for your help. Please let me know your decision soon.
@@ -6956,7 +6956,7 @@ situations:
         - function:
             en: Giving specific details
             ja: 詳細な情報を伝える
-          example: 'Date: June 15, 2024 – Time: 10:00 AM – Location: Washington Dulles International Airport.'
+          example: 'Date: June 15, 2026 – Time: 10:00 AM – Location: Washington Dulles International Airport.'
         - function:
             en: Advising about requirements
             ja: 要求事項を伝える
@@ -6978,12 +6978,12 @@ situations:
           text: |-
             Summary of Schedule for Assistant to the Minister of Foreign Affairs:
             - Day 1: Arrival in Washington DC
-            - Date: June 15, 2024
+            - Date: June 15, 2026
             - Time: 10:00 AM
             - Location: Washington Dulles International Airport
             - Details: Embassy staff will welcome Mr. Ando at the airport and take him to the Jefferson Hotel in downtown Washington DC.
             - Day 2: Meetings and Dinner
-            - Date: June 16, 2024
+            - Date: June 16, 2026
             - Morning:
             - Event: Briefing meeting at the embassy
             - Time: 9:00 AM
@@ -6998,7 +6998,7 @@ situations:
             - Location: The Capital Grille, Washington DC
             - Note: Formal attire required
             - Day 3: Cultural Visit and Departure
-            - Date: June 17, 2024
+            - Date: June 17, 2026
             - Morning:
             - Event: Visit to Smithsonian National Air and Space Museum
             - Time: 10:00 AM
@@ -7118,7 +7118,7 @@ situations:
         - function:
             en: Thanking
             ja: 感謝を述べる
-          example: Thank you very much for inviting us to BizFest 2024.
+          example: Thank you very much for inviting us to BizFest 2026.
 
         target_vocabulary:
         - term: billion
@@ -7149,11 +7149,11 @@ situations:
         model:
           text: |-
             Announcement Script:
-            - Date: March 15, 2024
+            - Date: March 15, 2026
             - Venue: Delhi University, Business Department, Auditorium
             - Time: 10:00 AM
             - Good morning, everyone.
-            - My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi. Thank you very much for inviting us to BizFest 2024. We are pleased to join you today.
+            - My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi. Thank you very much for inviting us to BizFest 2026. We are pleased to join you today.
             - The Embassy of Japan aims to build stronger relationships between Japan and India. Our main focus includes education, culture, and business cooperation. We understand how important universities, like Delhi University, are for developing future business leaders and entrepreneurs.
             - We work closely with universities to build strong connections between Japan and India. Events like BizFest are very important because they allow students and businesses from both countries to share ideas and work together.
             - I am looking forward to talking with you and answering your questions about our embassy and Japan's relationship with your university.
