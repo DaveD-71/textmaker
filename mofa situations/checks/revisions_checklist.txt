@@ -21,7 +21,6 @@ H05
 H06
 - [Roleplay 1 Translation] Minor issue: Japanese has a typo ("伝えてださい" missing く), but meaning is clear.
 - [Roleplay 1 Model vs Task] Major issue: Colleague asks where the office is; model does not provide directions.
-- [Writing Task Model vs Task] Major issue: Writing task model is missing.
 
 H07
 - No revisions flagged.
@@ -125,7 +124,7 @@ E08
 - No revisions flagged.
 
 E09
-- [Writing Task Model vs Task] Major issue: Writing task model is missing.
+- No revisions flagged.
 
 E10
 - No revisions flagged.

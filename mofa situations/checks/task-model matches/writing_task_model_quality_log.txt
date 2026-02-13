@@ -9,7 +9,7 @@ H02 | Minor issue | Model does not explicitly mention the recent phone conversat
 H03 | Good | No issues noted.
 H04 | Good | No issues noted.
 H05 | Good | No issues noted.
-H06 | Major issue | Writing task model is missing.
+H06 | Good | No issues noted.
 H07 | Good | No issues noted.
 H08 | Good | No issues noted.
 H09 | Good | No issues noted.
@@ -42,7 +42,7 @@ E05 | Good | No issues noted.
 E06 | Good | No issues noted.
 E07 | Good | No issues noted.
 E08 | Good | No issues noted.
-E09 | Major issue | Writing task model is missing.
+E09 | Good | No issues noted.
 E10 | Good | No issues noted.
 D01 | Good | No issues noted.
 D02 | Good | No issues noted.

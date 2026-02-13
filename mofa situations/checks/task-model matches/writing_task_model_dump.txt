@@ -75,7 +75,17 @@ Write an email that:
 - proposes a date, time, and location for your first meeting,
 - includes simple directions to your office if needed,
 - is clear, friendly, and easy to understand.
-MODEL: 
+MODEL: Subject: Your visit to Japan
+Hi John,
+I'm happy you are coming to Japan soon.
+Here are the details of your trip:
+- You will arrive in Tokyo on Tuesday, March 25.
+- Your flight is JK456. It arrives at 10:00 am.
+- We can meet at my office the same day at 3:00 pm. My office is near Kasumigaseki Station. Take Exit 8, then walk straight for 100 meters. You will see our building.
+If you have any questions, please email me anytime.
+Have a good flight and see you soon!
+Best regards,
+Taro Suzuki
 
 H07
 PROMPT_EN: Based on Role Play 1, write an email reporting your lunch experience at an Italian restaurant in Brisbane to a colleague.
@@ -671,7 +681,14 @@ Write an email that:
 - explains why the meeting should proceed as planned,
 - highlights the consequences of postponing and the urgency of the topics,
 - maintains a diplomatic, respectful, and persuasive tone.
-MODEL: 
+MODEL: Subject: Friday Meeting Schedule Change
+Dear Adam,
+I hope you are well. I am writing about our meeting in Cape Town this Friday. I understand there are some issues, but I would like to keep the original plan.
+This meeting is important because we need to discuss key points for the report. If we delay, it may be hard to finish on time. Also, I have already booked my flight and hotel, and canceling now could be difficult.
+I understand your situation, but I hope we can go ahead as planned. Please let me know if this is possible.
+Best regards,
+Taro Suzuki
+Japanese Consulate in Johannesburg
 
 E10
 PROMPT_EN: Following Roleplay 1, a newly hired local staff member has asked about the visa application process.

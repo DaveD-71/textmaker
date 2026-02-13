@@ -780,7 +780,18 @@ situations:
           cefr: A2
 
         model:
-          text: ""
+          text: |-
+            Subject: Your visit to Japan
+            Hi John,
+            I'm happy you are coming to Japan soon.
+            Here are the details of your trip:
+            - You will arrive in Tokyo on Tuesday, March 25.
+            - Your flight is JK456. It arrives at 10:00 am.
+            - We can meet at my office the same day at 3:00 pm. My office is near Kasumigaseki Station. Take Exit 8, then walk straight for 100 meters. You will see our building.
+            If you have any questions, please email me anytime.
+            Have a good flight and see you soon!
+            Best regards,
+            Taro Suzuki
 
   H07:
     details:
@@ -5351,7 +5362,15 @@ situations:
           cefr: B2
 
         model:
-          text: ""
+          text: |-
+            Subject: Friday Meeting Schedule Change
+            Dear Adam,
+            I hope you are well. I am writing about our meeting in Cape Town this Friday. I understand there are some issues, but I would like to keep the original plan.
+            This meeting is important because we need to discuss key points for the report. If we delay, it may be hard to finish on time. Also, I have already booked my flight and hotel, and canceling now could be difficult.
+            I understand your situation, but I hope we can go ahead as planned. Please let me know if this is possible.
+            Best regards,
+            Taro Suzuki
+            Japanese Consulate in Johannesburg
 
   E10:
     details:
