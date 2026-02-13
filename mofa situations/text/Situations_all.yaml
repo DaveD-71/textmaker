@@ -4931,7 +4931,7 @@ situations:
       - id: 2
         prompt:
           en: >-
-            You work at the embassy in London. Each year, the Japanese government sponsors one UK citizen to study in Japan to promote Japan–UK relations. A committee was held to choose this year's student. The final two candidates were: one who did a homestay in Japan four years ago during her last year of high school and studied Japanese at university, and another who has never been to Japan but passed JLPT Level 2 and is a fan of Japanese culture. The first candidate was selected.
+            You work at the embassy in London. Each year, the Japanese government sponsors one UK citizen to study in Japan to promote Japan–UK relations. A committee was held to choose this year's student. The final two candidates were someone who did a homestay in Japan four years ago during her last year of high school and studied Japanese at university, and another who has never been to Japan but passed JLPT Level 2 and is a fan of Japanese culture. The first candidate was selected.
           ja: あなたはロンドンの大使館に勤務しています。日本政府は毎年、日英関係促進のため、英国人を1名、日本へ留学させる後援をしています。今年の留学生を選考する委員会が開かれました。最終候補者は2名。一番目の候補者は、4年前、高校3年生のときに日本にホームステイし、大学で日本語を勉強しました。二番目の候補者は、日本を訪れたことはありませんが、日本語能力試験で2級に合格し、日本のアニメや文化が大好きです。委員会では、一番目の候補者が選ばれました。
 
       writing_task:
