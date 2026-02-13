@@ -1,0 +1,395 @@
+F05 (text):
+YAML:
+  Subject: Tourist Visa Application Process
+  Dear Sir or Madam,
+  Thank you for your question about getting a tourist visa for Japan.
+  To apply, please follow these steps:
+  - Check if you can apply online: Some travelers can use the eVISA system. See the list of eligible countries here: www.mofa.go.jp/j_info/visit/visa.
+  - Prepare your documents: You need a valid passport, a visa application form, and a recent passport photo.
+  - Make an appointment: If you cannot apply online, visit the nearest Japanese Embassy or Consulate.
+  - Pay the fee: The visa costs 3,000 yen (about 30 USD). You must pay when submitting your application.
+  - Submit your application: Give your documents to the consulate and wait for processing. Processing time may vary.
+  - For more details, visit: www.mofa.go.jp/j_info/visit/visa. If you have questions, please contact us.
+  - Best regards,
+  - Taro Suzuki
+  - Japanese Embassy in Sydney
+DOCM (closest block):
+  Subject: Tourist Visa Application Process
+  Dear Sir or Madam,
+  Thank you for your question about getting a tourist visa for Japan.
+  To apply, please follow these steps:
+  Check if you can apply online: Some travelers can use the eVISA system. See the list of eligible countries here: www.mofa.go.jp/j_info/visit/visa.
+  Prepare your documents: You need a valid passport, a visa application form, and a recent passport photo.
+  Make an appointment: If you cannot apply online, visit the nearest Japanese Embassy or Consulate.
+  Pay the fee: The visa costs 3,000 yen (about 30 USD). You must pay when submitting your application.
+  Submit your application: Give your documents to the consulate and wait for processing. Processing time may vary.
+  For more details, visit: www.mofa.go.jp/j_info/visit/visa. If you have questions, please contact us.
+  Best regards,
+  Taro Suzuki
+  Japanese Embassy in Sydney
+
+F08 (text):
+YAML:
+  Subject: Staff Schedule Update
+  Dear Team,
+  I hope you are doing well.
+  As we discussed in our meeting today, we need to adjust the schedule while John is away. Since we have a small team, we all need to help with his work. After thinking about the options, we decided on this plan for the next few days.
+  Monday:
+  - Morning: Akiko
+  - Afternoon: Emily
+  - Tuesday:
+  - Morning: David
+  - Afternoon: Emily
+  - Wednesday:
+  - Morning: Akiko
+  - Afternoon: David
+  - Thursday:
+  - Morning: Emily
+  - Afternoon: Akiko
+  - Friday:
+  - Morning: David
+  - Afternoon: Emily
+  - Please arrive on time for your shifts and check if anything needs to be done. If you have any problems or need to change shifts, let me know as soon as possible.
+  ...
+DOCM (closest block):
+  Subject: Staff Schedule Update
+  Dear Team,
+  I hope you are doing well.
+  As we discussed in our meeting today, we need to adjust the schedule while John is away. Since we have a small team, we all need to help with his work. After thinking about the options, we decided on this plan for the next few days.
+  Monday:
+  - Morning: Akiko
+  - Afternoon: Emily
+  Tuesday:
+  - Morning: David
+  - Afternoon: Emily
+  Wednesday:
+  - Morning: Akiko
+  - Afternoon: David
+  Thursday:
+  - Morning: Emily
+  - Afternoon: Akiko
+  Friday:
+  - Morning: David
+  - Afternoon: Emily
+  Please arrive on time for your shifts and check if anything needs to be done. If you have any problems or need to change shifts, let me know as soon as possible.
+  ...
+
+F10 (text):
+YAML:
+  Subject: Questions About Paper Products
+  Dear Mr. Sanders,
+  I hope you are well.
+  I am writing to ask for more details about your paper products. Thank you for the information you gave me on the phone today. I have some more questions:
+  - What paper sizes and types do you have?
+  - When do you deliver?
+  - What are the payment rules?
+  - What are your prices?
+  - Do you offer discounts for large orders?
+  - If possible, I would like to have a meeting to talk more about this. Please tell me when you are available.
+  - I look forward to your reply.
+  - Best regards,
+  - Taro Suzuki
+  - Administration Section
+  - Japanese Consulate
+DOCM (closest block):
+  Subject: Questions About Paper Products
+  Dear Mr. Sanders,
+  I hope you are well.
+  I am writing to ask for more details about your paper products. Thank you for the information you gave me on the phone today. I have some more questions:
+  1. What paper sizes and types do you have?
+  2. When do you deliver?
+  3. What are the payment rules?
+  4. What are your prices?
+  5. Do you offer discounts for large orders?
+  If possible, I would like to have a meeting to talk more about this. Please tell me when you are available.
+  I look forward to your reply.
+  Best regards,
+  Taro Suzuki
+  Administration Section
+  Japanese Consulate
+
+E01 (text):
+YAML:
+  Subject: Confirming Reservation and Request for Prices
+  Dear Maria san,
+  I want to confirm our reservation for office space at your hotel. We need this for preparing a conference.
+  We will need the following items from September 2 to September 20 (three weeks):
+  - 8 tables
+  - 24 chairs
+  - 2 photocopiers
+  - 4 printers
+  - 8 telephones
+  - Could you please send a clear list of the rental cost for each item? Also, please confirm the dates for renting each item.
+  - If you think of other useful items, please add them to your list too.
+  - Thank you very much. Let me know if you have questions.
+  - Best regards,
+  - Taro Suzuki
+  - Japanese Consulate
+DOCM (closest block):
+  Subject: Confirming Reservation and Request for Prices
+  Dear Maria san,
+  I want to confirm our reservation for office space at your hotel. We need this for preparing a conference.
+  We will need the following items from September 2 to September 20 (three weeks):
+  - 8 tables
+  - 24 chairs
+  - 2 photocopiers
+  - 4 printers
+  - 8 telephones
+  Could you please send a clear list of the rental cost for each item? Also, please confirm the dates for renting each item.
+  If you think of other useful items, please add them to your list too.
+  Thank you very much. Let me know if you have questions.
+  Best regards,
+  Taro Suzuki
+  Japanese Consulate
+
+E10 (text):
+YAML:
+  Subject: Visa Application Process for US Citizens
+  Dear Fiona,
+  Welcome to the consulate! As part of your training, I want to explain the visa application process for US citizens.
+  There are different types of visas, such as tourist visas, business visas, and student visas. People must apply at our consulate if they live in certain states, including Illinois, Indiana, and Wisconsin.
+  To apply, they need:
+  - A valid passport with blank pages.
+  - A visa application form, which they can get online or at our office.
+  - A recent passport photo.
+  - Extra documents based on the visa type (for example, a company letter for a business visa).
+  - They can apply in person, by mail, or send someone for them.
+  - Visa rules change sometimes, so always check the consulate's website for updates. Let me know if you have any questions!
+  - Best regards,
+  - Taro Suzuki
+  - Japanese Consulate in Chicago
+DOCM (closest block):
+  Subject: Visa Application Process for US Citizens
+  Dear Fiona,
+  Welcome to the consulate! As part of your training, I want to explain the visa application process for US citizens.
+  There are different types of visas, such as tourist visas, business visas, and student visas. People must apply at our consulate if they live in certain states, including Illinois, Indiana, and Wisconsin.
+  To apply, they need:
+  - A valid passport with blank pages.
+  - A visa application form, which they can get online or at our office.
+  - A recent passport photo.
+  - Extra documents based on the visa type (for example, a company letter for a business visa).
+  They can apply in person, by mail, or send someone for them.
+  Visa rules change sometimes, so always check the consulate’s website for updates. Let me know if you have any questions!
+  Best regards,
+  Taro Suzuki
+  Japanese Consulate in Chicago
+
+D05 (text):
+YAML:
+  Subject: Instructions for Ordering Office Supplies
+  Dear John,
+  I hope you're doing well. Since I'll be moving to a new department next month, you'll be taking over the task of ordering office supplies. I'd like to give you clear instructions on how to handle this responsibility:
+  - At the beginning of each month, check our inventory in the cabinet near the printer.
+  - Order enough paper to have 20 boxes of A4 and 15 boxes of A3 at the start of each month.
+  - Place your order online using our Office Goods Pty Ltd account. The login details are on the order form in the cabinet. Delivery usually takes about three days.
+  - Extra advice: Keep a few extra boxes as a backup to avoid shortages. If you ever have questions, Beth is also familiar with this procedure.
+  - I'm sure you'll do great. Feel free to contact me if you have any questions.
+  - Best regards,
+  - Taro Suzuki
+DOCM (closest block):
+  Subject: Instructions for Ordering Office Supplies
+  Dear John,
+  I hope you're doing well. Since I'll be moving to a new department next month, you'll be taking over the task of ordering office supplies. I'd like to give you clear instructions on how to handle this responsibility:
+  1. At the beginning of each month, check our inventory in the cabinet near the printer.
+  2. Order enough paper to have 20 boxes of A4 and 15 boxes of A3 at the start of each month.
+  3. Place your order online using our Office Goods Pty Ltd account. The login details are on the order form in the cabinet. Delivery usually takes about three days.
+  Extra advice: Keep a few extra boxes as a backup to avoid shortages. If you ever have questions, Beth is also familiar with this procedure.
+  I'm sure you'll do great. Feel free to contact me if you have any questions.
+  Best regards,
+  Taro Suzuki
+
+D06 (text):
+YAML:
+  Subject: Opinion on Increasing Overtime Hours
+  Dear Mr. Jones,
+  Thank you for discussing the possibility of increasing overtime hours due to our current staff shortage.
+  I understand why this solution is being considered, but I believe increasing overtime is not the best idea. Here are my reasons:
+  - Working too many extra hours can make staff tired and less productive.
+  - Tired employees might make mistakes, affecting the quality of our work.
+  - Instead, I suggest borrowing staff temporarily from other departments that aren't busy right now. This could help manage our workload without causing additional stress on our current staff.
+  - Thank you for considering my opinion. I'm happy to discuss this further.
+  - Best regards,
+  - Taro Suzuki
+DOCM (closest block):
+  Subject: Opinion on Increasing Overtime Hours
+  Dear Mr. Jones,
+  Thank you for discussing the possibility of increasing overtime hours due to our current staff shortage.
+  I understand why this solution is being considered, but I believe increasing overtime is not the best idea. Here are my reasons:
+  1. Working too many extra hours can make staff tired and less productive.
+  2. Tired employees might make mistakes, affecting the quality of our work.
+  Instead, I suggest borrowing staff temporarily from other departments that aren't busy right now. This could help manage our workload without causing additional stress on our current staff.
+  Thank you for considering my opinion. I'm happy to discuss this further.
+  Best regards,
+  Taro Suzuki
+
+D09 (text):
+YAML:
+  Subject: Questions About Renting the Apartment
+  Dear Real Estate Agent,
+  Thank you for showing me the apartment in Canberra. I liked it and would like to rent it. Before signing the contract, I have a few questions:
+  - How much exactly do I need to pay to secure the apartment? Also, how can I make this payment?
+  - After payment, when can I receive the keys to the apartment?
+  - If I suddenly have to return to Japan, will there be any fees for ending the contract early?
+  - Thank you for your assistance. I look forward to hearing from you soon.
+  - Best regards,
+  - Taro Suzuki
+DOCM (closest block):
+  Subject: Questions About Renting the Apartment
+  Dear Real Estate Agent,
+  Thank you for showing me the apartment in Canberra. I liked it and would like to rent it. Before signing the contract, I have a few questions:
+  1. How much exactly do I need to pay to secure the apartment? Also, how can I make this payment?
+  2. After payment, when can I receive the keys to the apartment?
+  3. If I suddenly have to return to Japan, will there be any fees for ending the contract early?
+  Thank you for your assistance. I look forward to hearing from you soon.
+  Best regards,
+  Taro Suzuki
+
+C01 (text):
+YAML:
+  Summary of Schedule for Assistant to the Minister of Foreign Affairs:
+  - Day 1: Arrival in Washington DC
+  - Date: June 15, 2026
+  - Time: 10:00 AM
+  - Location: Washington Dulles International Airport
+  - Details: Embassy staff will welcome Mr. Ando at the airport and take him to the Jefferson Hotel in downtown Washington DC.
+  - Day 2: Meetings and Dinner
+  - Date: June 16, 2026
+  - Morning:
+  - Event: Briefing meeting at the embassy
+  - Time: 9:00 AM
+  - Location: Embassy in Washington DC
+  - Afternoon:
+  - Event: Meeting with US counterpart
+  - Time: 2:00 PM
+  - Location: US State Department, Washington DC
+  - Evening:
+  - Event: Diplomatic dinner with US counterpart
+  - Time: 7:00 PM
+  - Location: The Capital Grille, Washington DC
+  ...
+DOCM (closest block):
+  Summary of Schedule for Assistant to the Minister of Foreign Affairs:
+  Day 1: Arrival in Washington DC
+  - Date: June 15, 2024
+  - Time: 10:00 AM
+  - Location: Washington Dulles International Airport
+  - Details: Embassy staff will welcome Mr. Ando at the airport and take him to the Jefferson Hotel in downtown Washington DC.
+  Day 2: Meetings and Dinner
+  - Date: June 16, 2024
+  Morning:
+  - Event: Briefing meeting at the embassy
+  - Time: 9:00 AM
+  - Location: Embassy in Washington DC
+  Afternoon:
+  - Event: Meeting with US counterpart
+  - Time: 2:00 PM
+  - Location: US State Department, Washington DC
+  Evening:
+  - Event: Diplomatic dinner with US counterpart
+  - Time: 7:00 PM
+  - Location: The Capital Grille, Washington DC
+  ...
+
+C02 (text):
+YAML:
+  Announcement Script:
+  - Date: March 15, 2026
+  - Venue: Delhi University, Business Department, Auditorium
+  - Time: 10:00 AM
+  - Good morning, everyone.
+  - My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi. Thank you very much for inviting us to BizFest 2026. We are pleased to join you today.
+  - The Embassy of Japan aims to build stronger relationships between Japan and India. Our main focus includes education, culture, and business cooperation. We understand how important universities, like Delhi University, are for developing future business leaders and entrepreneurs.
+  - We work closely with universities to build strong connections between Japan and India. Events like BizFest are very important because they allow students and businesses from both countries to share ideas and work together.
+  - I am looking forward to talking with you and answering your questions about our embassy and Japan's relationship with your university.
+  - Thank you.
+  - Taro Suzuki
+  - Embassy of Japan, New Delhi
+DOCM (closest block):
+  Announcement Script:
+  Date: March 15, 2024
+  Venue: Delhi University, Business Department, Auditorium
+  Time: 10:00 AM
+  Good morning, everyone.
+  My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi. Thank you very much for inviting us to BizFest 2024. We are pleased to join you today.
+  The Embassy of Japan aims to build stronger relationships between Japan and India. Our main focus includes education, culture, and business cooperation. We understand how important universities, like Delhi University, are for developing future business leaders and entrepreneurs.
+  We work closely with universities to build strong connections between Japan and India. Events like BizFest are very important because they allow students and businesses from both countries to share ideas and work together.
+  I am looking forward to talking with you and answering your questions about our embassy and Japan's relationship with your university.
+  Thank you.
+  Taro Suzuki
+  Embassy of Japan, New Delhi
+
+C06 (text):
+YAML:
+  Subject: Personal Loan Request - Summary
+  Dear Paul san,
+  Thank you for our discussion about your request for a salary advance. I'd like to summarize the key points clearly:
+  - The embassy can approve an advance payment, but there are important conditions.
+  - The maximum amount you can request is one-third of your next monthly salary.
+  - This advance payment means your next salary payment will be reduced accordingly.
+  - Such an advance can only be provided once during your employment.
+  - Approval from our head office in Tokyo is required, which usually takes a few days.
+  - Please consider these conditions carefully. Let me know if you wish to proceed, and I'll start the approval process immediately.
+  - If you have further questions, feel free to contact me.
+  - Best regards,
+  - Taro Suzuki
+  - Japanese Consulate in Sydney
+DOCM (closest block):
+  Subject: Personal Loan Request - Summary
+  Dear Paul san,
+  Thank you for our discussion about your request for a salary advance. I’d like to summarize the key points clearly:
+  - The embassy can approve an advance payment, but there are important conditions.
+  - The maximum amount you can request is one-third of your next monthly salary.
+  - This advance payment means your next salary payment will be reduced accordingly.
+  - Such an advance can only be provided once during your employment.
+  - Approval from our head office in Tokyo is required, which usually takes a few days.
+  Please consider these conditions carefully. Let me know if you wish to proceed, and I'll start the approval process immediately.
+  If you have further questions, feel free to contact me.
+  Best regards,
+  Taro Suzuki
+  Japanese Consulate in Sydney
+
+C10 (text):
+YAML:
+  Subject: Cost Reduction Ideas for Next Quarter
+  Dear Mr. Addams,
+  Thank you for our recent budget meeting. Based on our discussion, I've put together the following proposals to help reduce costs next quarter:
+  - Energy-Saving Actions:
+  - Change regular lights to energy-saving LED bulbs.
+  - Set clear rules for turning off lights and equipment when not in use.
+  - Reason: This will lower our electricity bills and support our environmental goals.
+  - Better Purchasing Practices:
+  - Buy office supplies in bulk to get discounts.
+  - Review current suppliers to find better prices.
+  - Reason: Bulk buying will help us save money on everyday office supplies.
+  - Review Travel Costs:
+  - Require advance approval for all business trips.
+  - Encourage using less expensive travel options.
+  - Reason: Careful planning will help reduce unnecessary travel expenses.
+  - Use More Virtual Meetings:
+  - Hold meetings online instead of traveling.
+  - Improve our current technology to support better virtual meetings.
+  - Reason: Reducing travel saves money and time, making our work more efficient.
+  - Thank you for considering these suggestions. I look forward to discussing them further at our next meeting.
+  ...
+DOCM (closest block):
+  Subject: Cost Reduction Ideas for Next Quarter
+  Dear Mr. Addams,
+  Thank you for our recent budget meeting. Based on our discussion, I've put together the following proposals to help reduce costs next quarter:
+  1. Energy-Saving Actions:
+  - Change regular lights to energy-saving LED bulbs.
+  - Set clear rules for turning off lights and equipment when not in use.
+  Reason: This will lower our electricity bills and support our environmental goals.
+  2. Better Purchasing Practices:
+  - Buy office supplies in bulk to get discounts.
+  - Review current suppliers to find better prices.
+  Reason: Bulk buying will help us save money on everyday office supplies.
+  3. Review Travel Costs:
+  - Require advance approval for all business trips.
+  - Encourage using less expensive travel options.
+  Reason: Careful planning will help reduce unnecessary travel expenses.
+  4. Use More Virtual Meetings:
+  - Hold meetings online instead of traveling.
+  - Improve our current technology to support better virtual meetings.
+  Reason: Reducing travel saves money and time, making our work more efficient.
+  Thank you for considering these suggestions. I look forward to discussing them further at our next meeting.
+  ...
