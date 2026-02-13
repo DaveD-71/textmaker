@@ -1894,7 +1894,8 @@ situations:
         ja: 案内する。
 
       objectives:
-        en: 'With a driver, you can: direct the dispatch of a vehicle to a destination, discuss the route, receive multiple suggestions from the driver, ask questions about each route, and then decide and give instructions.'
+        en: >-
+          With a driver, you can: direct the dispatch of a vehicle to a destination, discuss the route, receive multiple suggestions from the driver, ask questions about each route, and then decide and give instructions.
         ja: 一人のドライバーと、目的地への配車を指示し、ルートの相談をし、ドライバーの複数の提案を受け、各ルートについて質問した上で、決定、指示することができる。（提案したり、出された提案に応じたり、指示を求めたり出したりしながら、次にすることを検討できる。）
 
     instructions:
@@ -4925,11 +4926,12 @@ situations:
       roleplays:
       - id: 1
         prompt:
-          en: 'You work at the embassy in Canberra. Each year, the Japanese government sponsors one Australian to study in Japan to promote Japan-Australia exchange. A selection committee was held to choose this year's student. There were three final candidates: Candidate 1 visited Japan briefly with family five years ago and studied Japanese in high school. Candidate 2 also studied Japanese in high school and has an aunt in Kumamoto married to a Japanese man. Candidate 3 has not studied Japanese formally, but her grandmother is Japanese, and she has family in Ishikawa. The committee selected Candidate 2.'
+          en: You work at the embassy in Canberra. Each year, the Japanese government sponsors one Australian to study in Japan to promote Japan-Australia exchange. A selection committee was held to choose this year's student. There were three final candidates. Candidate 1 visited Japan briefly with family five years ago and studied Japanese in high school. Candidate 2 also studied Japanese in high school and has an aunt in Kumamoto married to a Japanese man. Candidate 3 has not studied Japanese formally, but her grandmother is Japanese, and she has family in Ishikawa. The committee selected Candidate 2.
           ja: あなたはキャンベラの大使館に勤務しています。日本政府は毎年、日豪交流促進を目的に、オーストラリア人を1名、日本へ留学させる後援をしています。今年の留学生を選考する委員会が開かれました。最終候補者は3名。一番目の候補者は、日本に強い関心を持っており、5年前に家族で短期間日本を訪れ、また高校で日本語を勉強しました。二番目の候補者は、高校で日本語を学び、日本人と結婚している叔母が熊本に住んでいて、家族ぐるみの付き合いがあります。三番目の候補者は、日本語を正式に勉強したことはありませんが、祖母が日本人で、石川県に家族がいます。委員会では、二番目の候補者が選ばれました。
       - id: 2
         prompt:
-          en: 'You work at the embassy in London. Each year, the Japanese government sponsors one UK citizen to study in Japan to promote Japan–UK relations. A committee was held to choose this year's student. The final two candidates were: one who did a homestay in Japan four years ago during her last year of high school and studied Japanese at university, and another who has never been to Japan but passed JLPT Level 2 and is a fan of Japanese culture. The first candidate was selected.'
+          en: >-
+            You work at the embassy in London. Each year, the Japanese government sponsors one UK citizen to study in Japan to promote Japan–UK relations. A committee was held to choose this year's student. The final two candidates were: one who did a homestay in Japan four years ago during her last year of high school and studied Japanese at university, and another who has never been to Japan but passed JLPT Level 2 and is a fan of Japanese culture. The first candidate was selected.
           ja: あなたはロンドンの大使館に勤務しています。日本政府は毎年、日英関係促進のため、英国人を1名、日本へ留学させる後援をしています。今年の留学生を選考する委員会が開かれました。最終候補者は2名。一番目の候補者は、4年前、高校3年生のときに日本にホームステイし、大学で日本語を勉強しました。二番目の候補者は、日本を訪れたことはありませんが、日本語能力試験で2級に合格し、日本のアニメや文化が大好きです。委員会では、一番目の候補者が選ばれました。
 
       writing_task:
@@ -6323,11 +6325,11 @@ situations:
       roleplays:
       - id: 1
         prompt:
-          en: 'Recently your office ordered a small laser jet printer. However, since it arrived it has had problems: It jams almost every time you try to print an address on an envelope, and sometimes the ink smudges after it is printed. You want to return the printer. Contact the vendor, explain the situation. Request to return to the printer and negotiate a solution to the problem.'
+          en: Recently your office ordered a small laser jet printer. However, since it arrived it has had problems. It jams almost every time you try to print an address on an envelope, and sometimes the ink smudges after it is printed. You want to return the printer. Contact the vendor, explain the situation. Request to return to the printer and negotiate a solution to the problem.
           ja: 最近、あなたのオフィスでは、小型のレーザージェットプリンターを注文しました。しかし、それが届いてから、問題が発生しています。封筒に宛先を印刷しようとすると必ず詰まり、印刷後にインクがにじむこともあります。このプリンターを返品したいと思います。業者に連絡し、状況を説明してください。プリンターの返却を依頼し、問題の解決策を交渉してください。
       - id: 2
         prompt:
-          en: 'Recently your office ordered a combined microphone and speaker for video conferences. It was expensive. However, since it arrived it has had problems: Sometimes the audio cuts out and you cannot hear what is being said. Also, the overall sound quality is not great. You want to return the device. Contact the vendor, explain the situation. Request to return to the device and negotiate a solution to the problem.'
+          en: Recently your office ordered a combined microphone and speaker for video conferences. It was expensive. However, since it arrived it has had problems. Sometimes the audio cuts out and you cannot hear what is being said. Also, the overall sound quality is not great. You want to return the device. Contact the vendor, explain the situation. Request to return to the device and negotiate a solution to the problem.
           ja: 最近、あなたのオフィスでは、ビデオ会議用にマイクとスピーカーを組み合わせたものを注文しました。高価なものでした。しかし、それが届いてから、問題が発生しています。時々、音声が途切れ、何を言っているのか聞こえなくなります。また、全体的な音質もよくありません。購入品を返品したいと思います。業者に連絡し、状況を説明してください。購入品の返却を依頼し、問題の解決策を交渉してください。
 
       writing_task:
@@ -6596,11 +6598,13 @@ situations:
       roleplays:
       - id: 1
         prompt:
-          en: 'You have been assigned to the consulate in Canberra. You will be moving to an apartment in Canberra next month. You found the apartment online, and you have just returned from visiting the apartment. You like it, want to move in. Before signing the contract, you need to check the following with the real estate agent: (1) the exact payment necessary to secure the apartment and the payment procedure; (2) when you can get the keys to the apartment; (3) any contract cancellation fees which would apply should you need to suddenly return to Japan.'
+          en: >-
+            You have been assigned to the consulate in Canberra. You will be moving to an apartment in Canberra next month. You found the apartment online, and you have just returned from visiting the apartment. You like it, want to move in. Before signing the contract, you need to check the following with the real estate agent: (1) the exact payment necessary to secure the apartment and the payment procedure; (2) when you can get the keys to the apartment; (3) any contract cancellation fees which would apply should you need to suddenly return to Japan.
           ja: あなたはキャンベラの領事館に赴任することになりました。来月、キャンベラのアパートに引っ越す予定です。あなたはそのアパートをインターネットで見つけ、見学から帰ってきたところです。気に入ったので、入居を希望しています。契約前に不動産会社に、(1)アパートを確保するために必要な支払額と支払方法、(2)アパートの鍵をいつ受け取れるか、(3)突然日本に帰国しなければならなくなった場合の契約解除料などを確認する必要があります。
       - id: 2
         prompt:
-          en: 'You were assigned to London for a 2-year placement. You have worked at the consulate for the last 18 months. Due to a family emergency, you need to end your placement early and return to Japan. Contact your real estate agent and explain the situation. Find out the following: (1) what are the costs for ending the apartment contract early; (2) can the agent assist you with selling the furniture you bought; (3) when do you need to return the apartment key.'
+          en: >-
+            You were assigned to London for a 2-year placement. You have worked at the consulate for the last 18 months. Due to a family emergency, you need to end your placement early and return to Japan. Contact your real estate agent and explain the situation. Find out the following: (1) what are the costs for ending the apartment contract early; (2) can the agent assist you with selling the furniture you bought; (3) when do you need to return the apartment key.
           ja: あなたは2年間の予定でロンドンに配属されました。これまでに18ヶ月間、領事館に勤務しています。家族の緊急事態のため、派遣を早期に終了し、日本に帰国する必要があります。不動産会社に連絡し、状況を説明してください。次のことを確認してください。(1) 契約の早期終了にかかる費用はどのくらいか (2) 購入した家具の売却を手伝ってもらえるか (3) 鍵はいつまでに返せばよいか。
 
       writing_task:
@@ -7638,7 +7642,8 @@ situations:
       roleplays:
       - id: 1
         prompt:
-          en: 'You work at the consulate in Sydney and have a meeting with a local staff member. He wants to request a personal loan from the embassy to cover unexpected expenses. The embassy can approve this as an advance on his salary. However, you need to make the following clear: (1) You are reluctant to approve it, as it means his salary—paid in five weeks (two weeks after the end of the calendar-month pay period)—will be reduced. (2) He must agree to the conditions: the advance is limited to one-third of the monthly salary and can only be granted once. (3) Approval requires a special request to the head office in Tokyo, and a response may take several days.'
+          en: >-
+            You work at the consulate in Sydney and have a meeting with a local staff member. He wants to request a personal loan from the embassy to cover unexpected expenses. The embassy can approve this as an advance on his salary. However, you need to make the following clear: (1) You are reluctant to approve it, as it means his salary—paid in five weeks (two weeks after the end of the calendar-month pay period)—will be reduced. (2) He must agree to the conditions: the advance is limited to one-third of the monthly salary and can only be granted once. (3) Approval requires a special request to the head office in Tokyo, and a response may take several days.
           ja: あなたはシドニーの領事館に勤務しています。あなたは現地の職員と打ち合わせをすることになりました。その職員は、予期せぬ支払いが発生したため、大使館に給料の個人ローンを依頼したいとのことです。大使館は、彼の給与の前払いとしてその要求を承諾することができます。しかし、その職員に以下のことを明確にする必要があります。 (1) 5週間後（暦月である給与計算期間の終了から2週間後）の給与支給時に支給額が減少することになるため、本来、この要求は許可したくないこと。(2) 前払いに関する条件を承諾すること（前払いできる上限は月給総額の3分の1、前払いできるのは1回のみ）。(3) 融資を受けるには、あなたが東京のオフィスに特別な依頼をする必要があり、回答が得られるまで数日かかること。
       - id: 2
         prompt:
