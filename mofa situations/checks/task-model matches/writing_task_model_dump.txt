@@ -1,0 +1,1100 @@
+H01
+PROMPT_EN: After Roleplay 1, you need to create a notice for visitors near the lobby.
+Write a notice that:
+- clearly informs visitors where the bathrooms are located,
+- uses polite and simple language,
+- is suitable for being posted on a public wall near the lobby.
+MODEL: Welcome to the Japanese Consulate in Sydney.
+The bathrooms are on the second floor. Go up the stairs, then turn right. Walk straight, and you will see the bathrooms on your left. There are signs on the wall. The men's bathroom is first, and the women's bathroom is next to it.
+If you need help, please ask the staff at reception. They are happy to help you.
+We hope you have a nice visit.
+Thank you very much for your cooperation.
+
+H02
+PROMPT_EN: Following Roleplay 1, write an email to the staff member you spoke with by phone.
+Your email should:
+- mention your recent phone conversation,
+- confirm that the itinerary is attached,
+- be polite and clear.
+MODEL: Subject: Mr. Saito's visit
+Hello John,
+Mr. Saito from MOFA will come on Saturday. His plane arrives at 11:00 am. The flight number is UA880 from Tokyo.
+Please meet him at the airport. After that, take him to his hotel. I attached his plan with this email. Please check it.
+Do you have any questions? Please email or call me anytime. Thank you very much for your help.
+See you soon and have a nice day.
+Taro Suzuki
+
+H03
+PROMPT_EN: Following Roleplay 1, write a short email to the visitor with details of the reservation.
+Your email should:
+- confirm the reservation,
+- provide the relevant details (e.g., location, time, and any booking reference),
+- be polite and easy to understand.
+MODEL: Subject: Lunch reservation details
+Hello Mr. Jones,
+I made a reservation for lunch tomorrow. The restaurant is The Green Garden. The time is 12:00 pm. It is near the consulate. You can walk there in about ten minutes.
+They serve many kinds of food. They do not have seafood. I remember you cannot eat seafood. The restaurant knows about this. They will be careful. If you need help finding it, please ask me. I can show you the way.
+Please email me if you have questions. I hope you enjoy your meal.
+Thank you and have a nice day.
+Taro Suzuki
+
+H04
+PROMPT_EN: Following Roleplay 1, you need to thank the vendor for their quick delivery of printer ink.
+Write an email that:
+- expresses your appreciation for the same-day delivery,
+- thanks them for responding quickly to your urgent request,
+- is polite and professional.
+MODEL: Subject: Thank you for your quick help
+Hello James,
+Thank you very much for bringing the printer ink today. It was very fast. We needed it quickly for our work. Now we can print important papers again. Your quick help was very important to us. We are very happy with your service.
+Next time we need supplies, we will call you again. Thank you again for your help today.
+Have a good day, and see you soon.
+Taro Suzuki
+Japanese Consulate, New York
+
+H05
+PROMPT_EN: Based on Role Play 1, report to your supervisor at the Honolulu Consulate the results of your check with the bank regarding the $500 withdrawal.
+Write an email that:
+- reports when and how the withdrawal occurred (ATM or in-person),
+- shares any additional details provided by the bank,
+- suggests steps to fix the issue and prevent future problems,
+- is brief and polite.
+MODEL: Subject: Problem with our bank account
+Dear Mr. Jones,
+I called the bank about the $500 withdrawal from our account. The bank said it happened on March 1 at 1:05 pm. It was an ATM withdrawal. They did not have any more information about who took the money.
+To fix this, we must check who used the ATM card on March 1. Also, we can ask the bank to make our account safer. I will check our account again soon.
+If you have questions, please tell me. Thank you very much for your help.
+Best regards,
+Taro Suzuki
+Consulate staff, Honolulu
+
+H06
+PROMPT_EN: Based on Role Play 1, write a confirmation email to a colleague who will be traveling to Japan regarding the itinerary and initial meeting.
+Write an email that:
+- confirms their arrival date, time, and flight number,
+- proposes a date, time, and location for your first meeting,
+- includes simple directions to your office if needed,
+- is clear, friendly, and easy to understand.
+MODEL: 
+
+H07
+PROMPT_EN: Based on Role Play 1, write an email reporting your lunch experience at an Italian restaurant in Brisbane to a colleague.
+Write an email that:
+- describes what you ordered for food and drink,
+- explains how you paid for the meal,
+- mentions whether you received a receipt,
+- is clear and simple.
+MODEL: Subject: Lunch at the Italian restaurant
+Hi Bob,
+Today, I had lunch at the Italian restaurant near the consulate. I ordered spaghetti and sparkling water. The food was tasty, and I liked it very much.
+I paid by credit card. It was easy. After I paid, I asked the waiter for a receipt. He gave it to me right away.
+The staff at the restaurant were friendly. The restaurant was not busy. It was clean, and the chairs were comfortable. I think it is a good place for lunch. I hope you can go there soon.
+Please email me if you have any questions. Have a nice day!
+Best regards,
+Taro Suzuki
+
+H08
+PROMPT_EN: Following Roleplay 1, you attended a welcoming dinner hosted by the Toronto consulate.
+Write a short email to a non-Japanese colleague that:
+- describes your experience at the dinner,
+- shares your conversation with Emily, a local staff member,
+- explains what you learned about her role and her work with Japanese businesses in Toronto,
+- uses simple and clear language.
+MODEL: Subject: Welcome dinner in Toronto
+Hi Michael,
+I went to a welcome dinner in Toronto. I sat next to Emily. She works at the consulate. She helps people with visas. She also helps Japanese businesses in Toronto. Emily likes her job. On weekends, she enjoys walking and biking. She also likes to eat at restaurants. She said Toronto is a nice city. I enjoyed talking with her.
+The dinner was very good, too. It was a nice evening. I liked meeting new people here.
+Please email me if you have any questions.
+Best regards,
+Taro Suzuki
+
+H09
+PROMPT_EN: Based on Role Play 1, write an email reply to a visitor requesting advice on purchasing tickets to Universal Studios.
+Write an email that:
+- provides clear instructions on how to buy tickets,
+- includes details such as ticket prices, opening hours, and location,
+- is helpful, polite, and easy to follow.
+MODEL: Subject: Tickets for Universal Studios
+Dear Mr. Addams,
+Thank you for your email.
+You can buy tickets online for Universal Studios. Go to their website. A ticket costs about $100 each. The park opens at 9:00 am and closes at 8:00 pm. Universal Studios is near downtown Los Angeles. You can take a taxi or the metro. It is easy to get there.
+Do you need help buying tickets? Please email me. I am happy to help you.
+Enjoy your visit and have a nice day.
+Best,
+Taro Suzuki
+Japanese Consulate, Los Angeles
+
+H10
+PROMPT_EN: Based on Role Play 1, write an email to inform your colleagues in San Francisco that the flight of the delegation from Japan has been delayed.
+Write an email that:
+- informs them of the delay,
+- provides the updated arrival time,
+- includes any other relevant details about the flight change,
+- is clear, concise, and informative.
+MODEL: Subject: Flight delay from Tokyo
+Dear Colleagues,
+The flight from Tokyo is late. The delegation will now arrive at 10:00 am. First, they planned to arrive at 9:00 am. The weather is bad, so the flight is late. Please check your schedules.
+If you have questions, please email me. I will tell you if there is more news.
+Thank you very much for your help. Have a nice day.
+Best regards,
+Taro Suzuki
+Japanese Consulate, San Francisco
+
+G01
+PROMPT_EN: Following the phone call in Roleplay 1, write an email to Mr. Addams about the message from Mr. Anderson.
+Your email should:
+- state when you received the call,
+- pass on any important information shared during the call,
+- ensure clarity and accuracy in relaying the message.
+MODEL: Subject: Phone Call from Mr. Anderson
+Dear Mr. Addams,
+I hope you are well.
+Mr. John Anderson from The Free Water Project called today. You were not in the office, so I told him you will be back tomorrow. He wants to talk with you soon about his proposal.
+He will send you an email. He asked you to check it soon. He did not leave any other message.
+Please let me know if I can help. I can send him a quick reply if you need more time.
+Best regards,
+Ryuta Sakamoto
+
+G02
+PROMPT_EN: Following Roleplay 1, you need to confirm hotel reservations for a business trip to New York.
+Write an email to your boss and colleague that:
+- confirms the reservation,
+- mentions that both rooms are non-smoking,
+- states that rooms have been arranged on different floors as requested,
+- includes the check-in time.
+- Keep the message polite, clear, and professional.
+MODEL: Subject: Hotel Reservation, September 17
+Dear Watanabe-san and Michael-san,
+I hope you are well.
+I booked your hotel in New York. You will stay at the Hilton Midtown Hotel.
+Please go there on September 17 after 10 p.m. The reception is open 24 hours. You can go there anytime. You have non-smoking rooms on different floors.
+Also, breakfast is included. It is served in the hotel restaurant every morning.
+If you have any questions or there are any changes, please contact me.
+I hope you have a good trip.
+Best regards,
+Taro Suzuki
+
+G03
+PROMPT_EN: Based on Role Play 1, write an announcement to be posted on the local bulletin board about the embassy's exchange event being held this Saturday.
+Include the following:
+- the name, date, time, and location of the event,
+- the purpose and main attractions of the event,
+- an invitation to community participation,
+- use a friendly, easy-to-understand style appropriate for a public bulletin board.
+MODEL: Join Us This Saturday!
+Dear Neighbors,
+You are invited to a gathering at the Japanese Consulate in London on Saturday, June 5, at 6 p.m. This is a good chance to meet new people and have a fun evening together.
+There will be food, music, and games for everyone. You can try different dishes, listen to music, and take part in activities. It will be a fun and easy-going time for all guests.
+Please let us know by Friday if you would like to come. If you have any questions, you can ask us anytime.
+We look forward to seeing you!
+Best wishes,
+Japanese Consulate in London
+
+G04
+PROMPT_EN: Following Roleplay 1, a guest has requested contact information for the staff who arranged a reception.
+Write an email to the guest that:
+- thanks them for attending the event,
+- provides the name of the staff member responsible for the reception,
+- shares that staff member’s email address,
+- is polite, helpful, and easy to understand.
+MODEL: Subject: Event Organizer Contact Info
+Dear John,
+Thank you for coming to the reception at the embassy in Boston. It was great to meet you, and I hope you had a good time.
+You asked about the person who organized the event. Her name is Emily Thompson. She planned the reception and made the guest list. If you have any questions, you can email her at e-thompson@mofa.go.jp.
+Let me know if you need any more information. I hope to see you again soon.
+Best,
+Taro Suzuki
+
+G05
+PROMPT_EN: Following Roleplay 1, you need to instruct the driver picking up a guest for a meeting.
+Write an email that:
+- confirms the meeting time,
+- provides directions from the hotel to the consulate,
+- includes alternative routes in case of traffic or road closures,
+- is brief, clear, and easy to follow.
+MODEL: Subject: Guest Pickup Details
+Dear Joel,
+I hope you are doing well.
+Please pick up Mr. Taro Saito from his hotel and bring him to the consulate. His meeting starts at 1:00 p.m., so he should be here by 12:45 p.m.
+He is staying at the Intercontinental Hotel in Room 405. The hotel is at 123 Oak Road.
+To save time, please take the highway. If you have any problems, please call me.
+Let me know if you have any questions. Thanks for your help.
+Best,
+Taro Suzuki
+
+G06
+PROMPT_EN: Following Roleplay 1, you met with a catering company about an upcoming embassy event.
+Write an email that:
+- thanks them for the meeting and their time,
+- summarizes the key points discussed and decisions made,
+- outlines any agreed-upon next steps or required follow-up actions,
+- is polite, clear, and professional.
+MODEL: Subject: Thank You for Your Help
+Dear Mr. Andrews,
+Thank you for our meeting about the embassy party. Your ideas were very helpful.
+We planned the menu and chose some dishes. We will have canapés and bruschetta for appetizers. The main course will be chicken, fish, or a vegetarian dish. We will have small cakes for dessert.
+The party is on Thursday, March 3, at 1:00 p.m. at the embassy. We also discussed the delivery time and setup. You will send the food three days before the party. I will send another message soon with the final details.
+Please let me know if you have any questions.
+Best,
+Taro Suzuki
+
+G07
+PROMPT_EN: Following Roleplay 1, a driver has contacted you about being stuck in traffic while picking up a visitor.
+Write a response (email or message) that:
+- acknowledges the situation,
+- gives clear advice on how to proceed,
+- includes next steps (e.g., notify the visitor, take an alternate route, or contact the office),
+- is concise, clear, and helpful.
+MODEL: Subject: Heavy Traffic
+Hi John,
+Thanks for your call about the traffic. I called Ms Sato. I explained the heavy traffic situation. She can wait for you.
+Please do not worry and please find another way to the hotel. Apple Maps may have a faster way. If you cannot move, please call me again. I will call Ms. Sato to explain the situation.
+When you get to the hotel, please apologize to Ms Sato. Please help her with her luggage and bring her to the consulate.
+Let me know if I can help you.
+Best,
+Taro Suzuki
+
+G08
+PROMPT_EN: Following Roleplay 1, you met a charity organizer during a dinner in Miami.
+Write an email that:
+- thanks them for organizing the event and for the opportunity to attend,
+- expresses appreciation for their work,
+- asks questions about the charity’s goals and plans for the next year,
+- maintains a polite, respectful, and engaging tone.
+MODEL: Subject: Thank You for the Charity Dinner
+Dear Mr. Anderson,
+I hope you are well.
+Thank you for inviting me to the charity dinner. I enjoyed meeting you and learning about your work. I appreciate what you and your team do for the community.
+Can you tell me about your plans for next year? What are the charity's goals? Are there any events coming up?
+- Please let me know how I can help. I would like to stay involved.
+- Best regards,
+- Taro Suzuki
+
+G09
+PROMPT_EN: Following Roleplay 1, your colleague in Los Angeles has asked for details about your work routine.
+Write an email that:
+- describes your typical workday in detail,
+- includes specific routines or habits you follow,
+- highlights anything that contributes to your productivity or organization.
+MODEL: Subject: My Workday
+Dear John,
+I hope you are well.
+Thank you for your email. Here is a simple outline of my daily work.
+In the morning, I check emails and do paperwork. After that, I help visitors and answer questions. In the afternoon, I join meetings and write reports. I finish work at 5 p.m.
+To stay on track, I write a to-do list every morning. I also take short breaks to stay fresh.
+I hope this helps. Let me know if you need more information.
+Best,
+Taro Suzuki
+
+G10
+PROMPT_EN: Following Roleplay 1, you discussed your weekend activities with a colleague from another consulate.
+Write an email that:
+- summarizes the pastimes and activities you mentioned,
+- offers additional suggestions for things to do during their upcoming trip to Miami,
+- is friendly and helpful in tone.
+MODEL: Subject: Fun Things to Do in Miami
+Hi John,
+I hope you are doing well.
+It was great talking about your trip. Here are some fun things I like to do in Miami.
+I love doing outside activities. I often go to the beach to swim or take a walk. Miami also has many parks. I like to run or just relax.
+Sometimes, I visit the Miami Art Museum. I also tried a salsa dance class. It was fun. It was a great way to experience local culture.
+Miami has great food. I enjoy trying new dishes, especially Cuban food. There are also many nice cafes to check out.
+I hope this helps. Let me know if you want more ideas!
+Best,
+Taro Suzuki
+
+F01
+PROMPT_EN: Following Roleplay 1, you found a listing online and want to schedule a viewing.
+Write an email to the real estate agent that:
+- expresses interest in viewing the specific apartment,
+- requests a viewing appointment,
+- describes the type of apartment you are looking for,
+- asks for recommendations for other suitable properties.
+- Keep your message polite, clear, and detailed.
+MODEL: Subject: Request to View Apartment
+Dear Mr. Jones,
+I hope you are well. I saw your listing for the apartment at 113 Oak Road on your website, and I am very interested in viewing it. I would like to schedule an appointment at a convenient time.
+I am looking for a one-bedroom apartment close to a train station, preferably near the city center. My budget is around two thousand dollars per month. I would also like a place with a kitchen and good natural light.
+If you have any other apartments that match my needs, please let me know. I would like to compare a few options before making a decision.
+Please let me know a suitable time for the viewing. Thank you for your help.
+Best regards,
+Taro Suzuki
+
+F02
+PROMPT_EN: Following Roleplay 1, you need to report on local school options to the Japan head office.
+Write an email to a local school that:
+- inquiries about the cost of child education,
+- requests detailed information on tuition fees and any additional expenses,
+- asks about the number or percentage of Japanese students enrolled.
+- Keep your tone polite, professional, and specific.
+MODEL: Subject: School Fees and Student Numbers
+Dear Ms. Malone,
+I hope you are well. My name is Hikari Sato, and I work at the Consulate-General of Japan. I am writing to ask about school fees and the number of Japanese students at your school.
+We are making a report. Can you tell me the tuition fee for this year? Also, are there extra costs for books, uniforms, or school activities?
+- I would also like to know how many Japanese students are studying at your school. If possible, please tell me what part of the total student number they make up.
+- Thank you for your help. I look forward to your reply.
+- Best regards,
+- Hikari Sato
+- Consulate-General of Japan
+
+F03
+PROMPT_EN: Following Roleplay 1, you need to notify dinner party guests of a schedule change.
+Write an email that:
+- informs them of the new date,
+- apologizes for any inconvenience caused by the rescheduling,
+- provides any additional relevant information.
+- Keep your message polite and professional.
+MODEL: Subject: Change of Date for Dinner at the Japanese Embassy
+Dear Mr. Lee,
+I hope you are doing well. I am writing to let you know that the date for the dinner at the Japanese Embassy has changed.
+The event was planned for August 4th at 7:00 PM, but it will now be held on September 4th at the same time. The location and program will stay the same.
+I am sorry for this change and any trouble it may cause. We hope that you and your guest can still attend.
+Please let us know if you can join us. If you have any questions, feel free to ask.
+We look forward to seeing you at the event.
+Best regards,
+Misaki Takahashi
+Public Diplomacy Department
+Japanese Embassy
+
+F04
+PROMPT_EN: Following Roleplay 1, you conducted interviews for a new local staff member.
+Write an email to the hiring manager that:
+- summarizes the interviews,
+- provides feedback on each candidate’s strengths, weaknesses, and qualifications,
+- recommends the most suitable candidate for the position.
+- Keep your message clear, concise, and professional.
+MODEL: Subject: Feedback on Staff Interviews
+Dear Watanabe-san,
+I hope you are well. I am writing to share my thoughts on the interviews for the local staff position.
+Candidate 1: Mr. David Jones
+- He has experience in customer service and speaks well with others.
+- He is friendly and had a good attitude in the interview.
+- He does not have much office experience and may need training.
+- With support, he could improve and do well.
+Candidate 2: Ms. Suzuan Igorov
+- She has worked in office jobs and can manage tasks well.
+- She is organized and careful with details.
+- She was a little nervous and not very confident when speaking.
+- Even so, she has strong experience for this job.
+I think Ms. Igorov is the best choice. Her skills and past work fit the role well.
+Thank you for reading my feedback. Let me know if you need more details.
+Best regards,
+Taro Suzuki
+Administration Section
+Japanese Consulate
+
+F05
+PROMPT_EN: Following Roleplay 1, you need to confirm the visa application process.
+Write an email that:
+- summarizes the key steps in the application process,
+- includes a link to the official website containing the full procedure,
+- offers to answer any follow-up questions.
+MODEL: Subject: Tourist Visa Application Process
+Dear Sir or Madam,
+Thank you for your question about getting a tourist visa for Japan.
+To apply, please follow these steps:
+- Check if you can apply online: Some travelers can use the eVISA system. See the list of eligible countries here: www.mofa.go.jp/j_info/visit/visa.
+- Prepare your documents: You need a valid passport, a visa application form, and a recent passport photo.
+- Make an appointment: If you cannot apply online, visit the nearest Japanese Embassy or Consulate.
+- Pay the fee: The visa costs 3,000 yen (about 30 USD). You must pay when submitting your application.
+- Submit your application: Give your documents to the consulate and wait for processing. Processing time may vary.
+- For more details, visit: www.mofa.go.jp/j_info/visit/visa. If you have questions, please contact us.
+- Best regards,
+- Taro Suzuki
+- Japanese Embassy in Sydney
+
+F06
+PROMPT_EN: Following Roleplay 1, you need to follow up on newspaper delivery issues.
+Write an email to the local newspaper agent that:
+- explains you have not received the newspaper for the third time in two weeks,
+- politely requests an explanation for the recurring problem,
+- asks for a solution to ensure reliable delivery.
+MODEL: Subject: Newspaper Delivery Problem
+Dear Newspaper Agent,
+I am writing from the Japanese Embassy in Sydney. We have a subscription to your newspaper, but we did not receive it this morning. This is the third time in two weeks that it has not arrived.
+We need the newspaper every day for local news and updates. Please check why this problem is happening and let us know what you will do to fix it.
+We hope for a quick solution so we can receive the newspaper on time.
+Thank you for your help.
+Best regards,
+Taro Suzuki
+Administration Section
+Japanese Embassy
+
+F07
+PROMPT_EN: Following Roleplay 1, your boss is unable to attend a dinner party invitation.
+Write an email to the local businessman that:
+- politely declines the invitation on behalf of your boss,
+- expresses sincere apologies for not being able to attend,
+- provides a valid reason for the absence,
+- maintains a professional and courteous tone.
+MODEL: Subject: Apologies - Unable to Attend Dinner
+Dear Mr. Adamovich,
+I hope you are doing well.
+I am writing to Mr. Hashimoto about your invitation to dinner next Saturday. Thank you for inviting him. He is grateful for the invitation and appreciates your kindness.
+However, he already has another plan on that day, so he cannot attend. He is sorry to miss this chance to meet you. He hopes there will be another opportunity to talk in the future.
+We are thankful for your invitation. Please let us know about any future events. He would be happy to join if possible.
+Thank you for your understanding.
+Best regards,
+Taro Suzuki
+Japanese Embassy
+
+F08
+PROMPT_EN: Following Roleplay 1, you are responsible for communicating staff coverage for a sick colleague.
+Write an email to consulate staff that:
+- explains the situation and the need for coverage,
+- briefly outlines the options discussed during the meeting,
+- presents the final agreed-upon schedule,
+- lists the shifts assigned to each staff member,
+- includes any additional instructions.
+- Keep your message clear, organized, and professional.
+MODEL: Subject: Staff Schedule Update
+Dear Team,
+I hope you are doing well.
+As we discussed in our meeting today, we need to adjust the schedule while John is away. Since we have a small team, we all need to help with his work. After thinking about the options, we decided on this plan for the next few days.
+Monday:
+- Morning: Akiko
+- Afternoon: Emily
+- Tuesday:
+- Morning: David
+- Afternoon: Emily
+- Wednesday:
+- Morning: Akiko
+- Afternoon: David
+- Thursday:
+- Morning: Emily
+- Afternoon: Akiko
+- Friday:
+- Morning: David
+- Afternoon: Emily
+- Please arrive on time for your shifts and check if anything needs to be done. If you have any problems or need to change shifts, let me know as soon as possible.
+- Thank you for your help. I appreciate your support.
+- Best regards,
+- Taro Suzuki
+- Administration Section
+- Japanese Consulate
+
+F09
+PROMPT_EN: Based on role play 1, you need to send an email to the vendor complaining about the late delivery of copy paper for your office.
+Write an email that:
+- expresses dissatisfaction with the late delivery,
+- states that this is the third late delivery,
+- requests an explanation for the repeated delays,
+- maintains a polite, assertive, and professional tone.
+MODEL: Subject: Late Delivery Issue
+Dear Mr. Allen,
+I hope you are doing well.
+I am writing about our recent order. The office paper was supposed to arrive last Wednesday, but it came a week late. This has happened three times in the last six months. Late deliveries make it difficult for us to do our work because we rely on these supplies.
+Can you tell us why the order was delayed? Also, what steps will your company take to make sure this does not happen again? We want to continue working with you, but we need deliveries to be on time.
+Please let me know as soon as possible. I look forward to your reply.
+Best regards,
+Taro Suzuki
+Administration Section
+Japanese Consulate
+
+F10
+PROMPT_EN: Following Roleplay 1, you previously contacted a local supplier about paper products.
+Write a follow-up email that:
+- requests more information about product specifications, pricing, and delivery schedules,
+- expresses interest in a potential business relationship,
+- inquires about arranging a meeting to discuss further,
+- remains polite, professional, and specific.
+MODEL: Subject: Questions About Paper Products
+Dear Mr. Sanders,
+I hope you are well.
+I am writing to ask for more details about your paper products. Thank you for the information you gave me on the phone today. I have some more questions:
+- What paper sizes and types do you have?
+- When do you deliver?
+- What are the payment rules?
+- What are your prices?
+- Do you offer discounts for large orders?
+- If possible, I would like to have a meeting to talk more about this. Please tell me when you are available.
+- I look forward to your reply.
+- Best regards,
+- Taro Suzuki
+- Administration Section
+- Japanese Consulate
+
+E01
+PROMPT_EN: Following Roleplay 1, you need to confirm a hotel room reservation for office space preparation ahead of an upcoming conference.
+Write an email to the hotel staff that:
+- confirms the reservation,
+- specifies the required items, including long tables, office chairs, photocopiers, printers, and telephones,
+- requests a detailed estimate listing each item,
+- confirms the rental duration,
+- mentions any additional items you may need for the preparation.
+MODEL: Subject: Confirming Reservation and Request for Prices
+Dear Maria san,
+I want to confirm our reservation for office space at your hotel. We need this for preparing a conference.
+We will need the following items from September 2 to September 20 (three weeks):
+- 8 tables
+- 24 chairs
+- 2 photocopiers
+- 4 printers
+- 8 telephones
+- Could you please send a clear list of the rental cost for each item? Also, please confirm the dates for renting each item.
+- If you think of other useful items, please add them to your list too.
+- Thank you very much. Let me know if you have questions.
+- Best regards,
+- Taro Suzuki
+- Japanese Consulate
+
+E02
+PROMPT_EN: Following Roleplay 1, you contacted the support center about a faulty office photocopier.
+Write an email that:
+- explains the issues (frequent paper jams and unnecessary lines when copying),
+- requests a repair technician,
+- asks for an estimated cost and time required for the repair,
+- inquires about the availability of a temporary replacement if needed.
+- Your message should be clear, concise, and polite.
+MODEL: Subject: Photocopier Repair Request
+Dear Support Centre,
+Our office photocopier is not working properly. It often gets jammed, and the copies have lines on them. This makes it hard to print clear documents.
+Could you please send someone to fix it soon? Also, let us know how much the repair will cost and how long it will take.
+If the repair takes a long time, is there a way for us to borrow another photocopier for free?
+- Thank you for your help. Please let me know if you need more information.
+- Best regards,
+- Taro Suzuki
+- Japanese Embassy
+
+E03
+PROMPT_EN: Following Roleplay 1, you contacted the Repair Division about a potential water-seepage issue.
+Write an email to the local staff that:
+- explains the issue with water seepage in the building,
+- requests that a plumber be sent to investigate and fix the problem,
+- asks the plumber to provide a repair estimate before beginning any work.
+- Ensure your message is polite, clear, and professional.
+MODEL: Subject: Plumber Request for Water Leak
+Dear Repair Team,
+There is a stain on the wall in one of the buildings. The residence staff thinks it might be caused by a water leak from a pipe inside the wall. If this is true, it could cause more damage.
+Please ask a plumber to check the problem soon. Before any repairs begin, ask them to send a price estimate. Also, let me know how long the repairs will take.
+It is important to fix this quickly to prevent further problems. Please confirm when the plumber can visit.
+Thank you for your help. Let me know if you need more information.
+Best regards,
+Taro Suzuki
+
+E04
+PROMPT_EN: Following Roleplay 1, you received a complaint from an applicant waiting for their student visa.
+Write an email to the applicant that:
+- apologizes for the inconvenience caused by the delay,
+- assures them that steps are being taken to expedite the process,
+- provides an update on the current status of their application,
+- outlines any further steps they need to take.
+- Keep your tone polite, empathetic, and informative.
+MODEL: Subject: Update on Your Student Visa
+Dear Mr. Potgeiter,
+I hope you are well.
+I am writing with an update about your student visa. First, I am sorry for the delay. I understand this is important.
+Your application is still in process. The immigration office is reviewing your documents. We are trying to get your result asap. We will contact you as soon as there is news.
+Right now, you do not need to do anything. But if your travel plans change, please tell us soon.
+Thank you for waiting. If you have questions, feel free to ask.
+Best regards,
+Taro Suzuki
+Consular Section
+Japanese Consulate
+
+E05
+PROMPT_EN: Following Roleplay 1, write a blog post introducing Japanese summer festivals.
+Include:
+- their cultural meaning and appeal,
+- types such as matsuri, fireworks, and bon odori,
+- popular festivals held across Japan,
+- vivid descriptions to help tourists imagine the experience.
+- Use an engaging and informative tone.
+MODEL: Title: Enjoy Japanese Summer Festivals
+Summer in Japan is a time for exciting festivals called matsuri. These events bring people together to celebrate with music, dancing, and food. If you visit Japan in summer, you can see these wonderful traditions.
+One famous festival is Gion Matsuri in Kyoto. It has big, colorful floats and a fun parade. Another exciting festival is Nebuta Matsuri in Aomori, where large lanterns light up the streets.
+At festivals, people wear yukata (light cotton kimono) and enjoy street food like takoyaki (octopus balls) and yakisoba (fried noodles). At night, hanabi (fireworks) fill the sky with beautiful colors.
+If you like dancing, you can join a bon odori festival. People of all ages dance in a circle to traditional music. It is a great way to have fun and meet new people.
+Japanese summer festivals are full of culture, music, and delicious food. Plan your visit and enjoy the celebrations!
+Taro Suzuki
+Japanese Consulate in Chicago
+
+E06
+PROMPT_EN: Following Roleplay 1, you are informing colleagues about hotel arrangements for visitors attending an international conference in New York.
+Write an email that:
+- names the chosen hotel,
+- lists its key amenities, including accommodation quality, proximity to public transportation, and nearby restaurants and shops,
+- includes any other relevant facilities,
+- expresses confidence that it will meet the visitors’ needs.
+- Keep the message clear and informative.
+MODEL: Subject: Hotel for Conference Visitors
+Dear Colleagues,
+I want to share details about the hotel chosen for our visitors from Japan who will attend the international conference in New York.
+We have selected The Hilton Midtown. This hotel is in a central area with easy access to public transport. It is also near many restaurants, cafes, and shops.
+The hotel offers comfortable rooms, free Wi-Fi, and a business center. There is also a gym and a restaurant inside. These features will help our visitors have a good stay.
+We believe this hotel is the best choice. Let me know if you have any questions.
+Best regards,
+Taro Suzuki
+Administration Section
+Japanese Consulate in New York
+
+E07
+PROMPT_EN: Following Roleplay 1, Candidate 2 has been selected for a sponsorship to study in Japan.
+Write an email that:
+- congratulates them on their selection,
+- provides details about the sponsorship program, including the study duration and financial support,
+- outlines expectations during their time in Japan,
+- expresses confidence in their ability to represent Australia and support Japan-Australia relations.
+- Keep your tone positive, informative, and encouraging.
+MODEL: Subject: Congratulations on Your Study Program
+Dear Mr. McDermott,
+I am happy to tell you that you have been chosen for the Japan-Australia Study Program this year. Congratulations! This is a great chance to study in Japan and experience life there.
+You will study in Japan for one year with support from the Japanese government. They will pay for your school fees, place to stay, and daily costs, so you can focus on your learning and new experiences.
+Your aunt in Kumamoto and your Japanese language skills will help you feel comfortable and settle quickly. We hope you will study hard, make new friends, and enjoy learning about Japan’s culture and way of life.
+We will send more details soon, including information about your travel and where you will stay. If you have any questions, please ask.
+Once again, congratulations! We hope you have a great experience in Japan.
+Best regards,
+Taro Suzuki
+Office Team
+Japanese Embassy in Canberra
+
+E08
+PROMPT_EN: Following Roleplay 1, you explained the concept of obon at an embassy event.
+Write a blog post that:
+- describes obon and its cultural traditions,
+- shares your understanding and the significance of the holiday,
+- includes personal experiences or memories,
+- expresses your opinion about its meaning to you.
+- Keep your post informative, engaging, and reflective.
+MODEL: Title: Obon - A Time to Remember
+Obon is a special time in Japan. It is when families remember and honor their ancestors. Many believe that the spirits of loved ones return during this time. Obon takes place in July or August, depending on the region.
+During Obon, families visit the graves of their ancestors. They clean the graves and leave food, flowers, and incense. There are also summer festivals called bon matsuri. People enjoy bon odori (a traditional dance) and fireworks.
+For me, Obon is important because I can see my family and join in old traditions. I enjoy dancing bon odori and eating festival food like yakitori and shaved ice.
+I think Obon is a special holiday because it brings families together and helps us remember the past.
+Taro Suzuki
+Japanese Consulate in Melbourne
+
+E09
+PROMPT_EN: Following Roleplay 1, a colleague in Cape Town has proposed delaying an important meeting.
+Write an email that:
+- expresses your concern about the proposed delay,
+- explains why the meeting should proceed as planned,
+- highlights the consequences of postponing and the urgency of the topics,
+- maintains a diplomatic, respectful, and persuasive tone.
+MODEL: 
+
+E10
+PROMPT_EN: Following Roleplay 1, a newly hired local staff member has asked about the visa application process.
+Write an email that:
+- explains the visa application procedure for US citizens,
+- includes types of visas, required documents, application forms, and relevant steps or guidelines,
+- keeps the explanation simple and easy to understand,
+- encourages them to ask questions or request help if needed.
+MODEL: Subject: Visa Application Process for US Citizens
+Dear Fiona,
+Welcome to the consulate! As part of your training, I want to explain the visa application process for US citizens.
+There are different types of visas, such as tourist visas, business visas, and student visas. People must apply at our consulate if they live in certain states, including Illinois, Indiana, and Wisconsin.
+To apply, they need:
+- A valid passport with blank pages.
+- A visa application form, which they can get online or at our office.
+- A recent passport photo.
+- Extra documents based on the visa type (for example, a company letter for a business visa).
+- They can apply in person, by mail, or send someone for them.
+- Visa rules change sometimes, so always check the consulate’s website for updates. Let me know if you have any questions!
+- Best regards,
+- Taro Suzuki
+- Japanese Consulate in Chicago
+
+D01
+PROMPT_EN: Following Roleplay 1, you need to respond to a local staff member’s request about paying his social insurance premium separately.
+Write an email that:
+- explains the request cannot be approved,
+- clearly outlines the policy stating that social insurance premiums for local staff must be paid by the diplomatic mission to the authorities,
+- expresses understanding for the staff member’s situation,
+- offers further assistance or clarification if needed.
+MODEL: Subject: Social Insurance Premium - Request Clarification
+Dear Juan san,
+Thank you for discussing your request regarding social insurance premium payments.
+I understand you would prefer to pay your social insurance premium yourself. Unfortunately, this is not possible. According to our policy, social insurance premiums for local staff must be deducted directly from salaries and paid by our diplomatic mission to the authorities.
+This policy ensures that everyone receives reliable social insurance coverage. If you have any further questions or need clarification, please feel free to contact me.
+Thank you for your understanding.
+Best regards,
+Taro Suzuki
+Accounting Department
+
+D02
+PROMPT_EN: Following Roleplay 1, write an email to Sergeant Ruina from the New York Police Department confirming the meeting regarding the arrest of Mr. Yusuke Kobayashi.
+Your email should:
+- confirm the date, time, and location of the meeting as discussed during the phone call,
+- inquire about any specific procedures or documents required,
+- maintain a polite and professional tone.
+MODEL: Subject: Confirmation of Meeting - Mr. Yusuke Kobayashi
+Dear Sergeant Ruina,
+Thank you for speaking with me today regarding the arrest of Mr. Yusuke Kobayashi. I am writing to confirm our meeting details as discussed.
+Date: Thursday, June 18
+Time: 9:00 a.m.
+Location: New York Police Department, 1 Police Plaza Path, Civic Center, Manhattan
+Could you please let me know if there are any specific procedures or documents we need to bring for the meeting?
+- Thank you very much for your assistance. I look forward to your reply.
+- Best regards,
+- Taro Suzuki
+- Consulate General of Japan
+
+D03
+PROMPT_EN: Following Roleplay 1, you are the passenger whose checked-in suitcase did not arrive at New York’s airport.
+Write a report to the airline staff that:
+- explains the situation clearly,
+- describes your suitcase in detail, including color, size, and distinctive features,
+- provides the luggage check-in slip,
+- expresses concern about the missing luggage and requests assistance in locating it,
+- is ready to answer any further questions from the staff.
+MODEL: Subject: Missing Luggage Report
+Dear Airline Staff,
+I am writing to report that one of my suitcases did not arrive at New York's airport today, after my flight from Narita Airport on March 15, 2024 (Flight NH010).
+I checked in two suitcases at Narita Airport around 11:00 AM. Upon arrival at JFK Airport in New York at approximately 10:30 AM local time, only one suitcase arrived.
+The missing suitcase is a large black suitcase, approximately 75 cm in height, with four wheels and a blue luggage strap around it. It also has a small white name tag with my contact details attached to the handle. I have attached a copy of my luggage check-in slip for your reference.
+I am very concerned as the suitcase contains important documents and personal items needed urgently. Could you please help locate it as soon as possible?
+- Thank you very much for your assistance. Please let me know if you need any further information.
+- Best regards,
+- Taro Suzuki
+
+D04
+PROMPT_EN: Write an email to the airline about your cancelled flight and request a seat on the evening’s business class flight at a reduced cost.
+Your email should:
+- explain the urgency of attending your meeting in Sydney,
+- describe the inconvenience caused by the cancellation,
+- explain why a business class seat is necessary to arrive on time,
+- be polite yet assertive in tone.
+MODEL: Subject: Request for New Flight Arrangement
+Dear Airline Customer Service,
+I am writing about my flight from Brisbane to Sydney (Flight QA62) today, March 15, 2024, at 7:00 PM. Unfortunately, it was canceled.
+I have an important meeting in Sydney tomorrow morning. Your staff said the next economy flight available is tomorrow morning, but this would make me late for my meeting. They also said there is a business class seat on tonight's flight at 8:00 PM.
+Could you please let me take the business class seat tonight at a reduced price because of this inconvenience?
+- Thank you very much for your help. Please let me know your decision soon.
+- Best regards,
+- Taro Suzuki
+- Consulate of Japan, Brisbane
+
+D05
+PROMPT_EN: You are moving to a new department and need to explain one of your current duties to a colleague who will be taking it over.
+Write an email that:
+- explains the duty in detail,
+- provides clear instructions on how to perform it effectively,
+- includes advice to help your colleague excel in this responsibility,
+- is thorough, supportive, and encouraging.
+MODEL: Subject: Instructions for Ordering Office Supplies
+Dear John,
+I hope you're doing well. Since I'll be moving to a new department next month, you'll be taking over the task of ordering office supplies. I'd like to give you clear instructions on how to handle this responsibility:
+- At the beginning of each month, check our inventory in the cabinet near the printer.
+- Order enough paper to have 20 boxes of A4 and 15 boxes of A3 at the start of each month.
+- Place your order online using our Office Goods Pty Ltd account. The login details are on the order form in the cabinet. Delivery usually takes about three days.
+- Extra advice: Keep a few extra boxes as a backup to avoid shortages. If you ever have questions, Beth is also familiar with this procedure.
+- I'm sure you'll do great. Feel free to contact me if you have any questions.
+- Best regards,
+- Taro Suzuki
+
+D06
+PROMPT_EN: Write an email to your supervisor expressing your opinion on the proposal to increase overtime hours due to a staff shortage.
+Your email should:
+- clearly state your position,
+- provide reasons and examples to support your view,
+- include any relevant evidence,
+- be professional and persuasive in tone.
+MODEL: Subject: Opinion on Increasing Overtime Hours
+Dear Mr. Jones,
+Thank you for discussing the possibility of increasing overtime hours due to our current staff shortage.
+I understand why this solution is being considered, but I believe increasing overtime is not the best idea. Here are my reasons:
+- Working too many extra hours can make staff tired and less productive.
+- Tired employees might make mistakes, affecting the quality of our work.
+- Instead, I suggest borrowing staff temporarily from other departments that aren't busy right now. This could help manage our workload without causing additional stress on our current staff.
+- Thank you for considering my opinion. I'm happy to discuss this further.
+- Best regards,
+- Taro Suzuki
+
+D07
+PROMPT_EN: Following Roleplay 1, write an email to the vendor confirming your discussion about returning a faulty printer.
+Your email should:
+- describe the problems you experienced (e.g., paper jamming, ink smudging),
+- confirm the agreement to return the product and discuss compensation,
+- express appreciation for their cooperation,
+- request written confirmation of the agreed-upon solution,
+- maintain a polite and professional tone.
+MODEL: Subject: Confirmation of Printer Return and Request for Replacement
+Dear James,
+Thank you very much for speaking with me earlier today about the problems we've had with the laser printer we bought from your company.
+We have experienced several issues with this printer. First, it often jams when we try to print addresses on envelopes, which has delayed important office tasks. Secondly, we've also noticed that the ink sometimes smudges, making documents difficult to read.
+We appreciate your understanding and your quick agreement to replace the printer. Could you please confirm the date when the new printer will arrive and when the faulty one will be collected?
+- Thank you once again for your help and cooperation. Please let me know if you need any further details from our side.
+- Best regards,
+- Taro Suzuki
+
+D08
+PROMPT_EN: You are organizing a dinner party for a visiting dignitary, and the restaurant has reported a double-booking.
+Write an email to the local staff member responsible for the booking that:
+- instructs them to maintain the original date while being flexible with time or location,
+- outlines how to negotiate with the restaurant to find an alternative solution,
+- emphasizes the importance of minimizing inconvenience to guests and the dignitary,
+- directs them to ensure the restaurant covers any additional costs due to the change.
+MODEL: Subject: Double Booking Issue - Instructions
+Dear John,
+Thank you for letting me know about the double booking issue at the restaurant for our dinner party in three weeks.
+Since we have already sent out invitations and arranged the dignitary's schedule around this event, it is very important that we keep the original date. However, we are willing to hold the dinner an hour or two earlier if needed.
+Please speak to the restaurant manager about this. If changing the time is not possible, ask if they can find another restaurant for us that is similar in quality and price. If the new restaurant costs more, please tell them we expect them to cover any extra costs.
+Thanks again for your help. Please let me know what the restaurant says.
+Best regards,
+Taro Suzuki
+
+D09
+PROMPT_EN: You are relocating to Canberra and have found a suitable apartment.
+Write a polite, clear email to the real estate agent that:
+- confirms any details you need before signing the contract (e.g., rent, payment method),
+- asks about the payment procedure,
+- confirms when you will receive the keys,
+- inquires about cancellation fees in case of an unexpected return to Japan.
+MODEL: Subject: Questions About Renting the Apartment
+Dear Real Estate Agent,
+Thank you for showing me the apartment in Canberra. I liked it and would like to rent it. Before signing the contract, I have a few questions:
+- How much exactly do I need to pay to secure the apartment? Also, how can I make this payment?
+- After payment, when can I receive the keys to the apartment?
+- If I suddenly have to return to Japan, will there be any fees for ending the contract early?
+- Thank you for your assistance. I look forward to hearing from you soon.
+- Best regards,
+- Taro Suzuki
+
+D10
+PROMPT_EN: Following Roleplay 1, write an email to your boss summarizing your hotel recommendation.
+Your email should:
+- outline the advantages of the hotel, including location, pricing, and service quality,
+- address concerns raised during the discussion,
+- reaffirm why the recommended hotel is the best choice for the visiting dignitaries,
+- use persuasive and articulate language.
+MODEL: Subject: Hotel Suggestion for Conference Guests
+Dear Susan,
+Thank you for talking about hotel options with me today. I'd like to clearly recommend the Novotel at South Wharf for the dignitaries visiting Melbourne next month for the conference.
+The Novotel is a good choice because it is close to the conference centre and easy to get to. It offers comfortable rooms, friendly service, and good prices, making it very good value.
+The Pan Pacific is closer to the centre but costs more. The Novotel is a little further away but offers better access to the city centre and our consulate, making it more convenient overall.
+I believe the Novotel is the best choice considering location, cost, and quality.
+Please let me know if you have any questions.
+Best regards,
+Taro Suzuki
+
+C01
+PROMPT_EN: Following Roleplay 1, write a detailed 3-day schedule summary.
+Your email must include:
+- key events, including the meeting with his U.S. counterpart and other significant engagements,
+- the date, time, and location of each event,
+- any other relevant details.
+MODEL: Summary of Schedule for Assistant to the Minister of Foreign Affairs:
+- Day 1: Arrival in Washington DC
+- Date: June 15, 2024
+- Time: 10:00 AM
+- Location: Washington Dulles International Airport
+- Details: Embassy staff will welcome Mr. Ando at the airport and take him to the Jefferson Hotel in downtown Washington DC.
+- Day 2: Meetings and Dinner
+- Date: June 16, 2024
+- Morning:
+- Event: Briefing meeting at the embassy
+- Time: 9:00 AM
+- Location: Embassy in Washington DC
+- Afternoon:
+- Event: Meeting with US counterpart
+- Time: 2:00 PM
+- Location: US State Department, Washington DC
+- Evening:
+- Event: Diplomatic dinner with US counterpart
+- Time: 7:00 PM
+- Location: The Capital Grille, Washington DC
+- Note: Formal attire required
+- Day 3: Cultural Visit and Departure
+- Date: June 17, 2024
+- Morning:
+- Event: Visit to Smithsonian National Air and Space Museum
+- Time: 10:00 AM
+- Location: Smithsonian Museum, Washington DC
+- Afternoon:
+- Event: Farewell lunch with embassy staff
+- Time: 12:30 PM
+- Location: Embassy in Washington DC
+- Departure:
+- Event: Departure from Washington DC
+- Time: 3:00 PM
+- Location: Washington Dulles International Airport
+- Please note the schedule might change due to unexpected events or adjustments. Contact the embassy for questions or additional details.
+- Best regards,
+- Taro Suzuki
+- Embassy in Washington DC
+
+C02
+PROMPT_EN: Write a brief announcement for the attendees of BizFest 202X.
+In your announcement:
+- introduce yourself as a representative of the Embassy of Japan,
+- explain the embassy’s mission in relation to the Business Department,
+- prepare to answer any questions about the embassy’s involvement with the university or related topics.
+- Your response should be clear, concise, and professional.
+MODEL: Announcement Script:
+- Date: March 15, 2024
+- Venue: Delhi University, Business Department, Auditorium
+- Time: 10:00 AM
+- Good morning, everyone.
+- My name is Taro Suzuki. I represent the Embassy of Japan in New Delhi. Thank you very much for inviting us to BizFest 2024. We are pleased to join you today.
+- The Embassy of Japan aims to build stronger relationships between Japan and India. Our main focus includes education, culture, and business cooperation. We understand how important universities, like Delhi University, are for developing future business leaders and entrepreneurs.
+- We work closely with universities to build strong connections between Japan and India. Events like BizFest are very important because they allow students and businesses from both countries to share ideas and work together.
+- I am looking forward to talking with you and answering your questions about our embassy and Japan's relationship with your university.
+- Thank you.
+- Taro Suzuki
+- Embassy of Japan, New Delhi
+
+C03
+PROMPT_EN: Following the discussion in Roleplay 1, your boss has asked you to summarize the proposed Japanese cultural event at the embassy. The suggestion was to focus on Japanese crafts.
+Write an email to your boss that:
+- summarizes the proposed event about Japanese crafts,
+- explains why this theme was chosen, highlighting its feasibility, relevance to the local audience, and cost-effectiveness within the allocated budget,
+- addresses any concerns raised during the discussion,
+- reaffirms why this is the best option for the embassy.
+MODEL: Subject: Japanese Cultural Event Proposal
+Dear John san,
+I hope you are well.
+I'm writing to summarize our plan for the next Japanese cultural event, as discussed today.
+We propose hosting an event focused on Japanese crafts, specifically ikebana (flower arranging). We considered other ideas like Sports Day, but we believe a craft event will be more appealing to local citizens in Sydney. Last year's sports-related event did not attract many visitors, so we think a craft activity will be more popular.
+Ikebana is an excellent choice because it's interesting and cost-effective. We can keep costs low by using seasonal flowers from the embassy garden. We will only need to pay for an ikebana teacher to lead the session.
+We believe this plan is very achievable and appealing to local people interested in Japanese culture. This event will be a good way to build connections and share Japanese culture in Sydney while staying within our budget.
+Please let me know your thoughts or if you have any questions.
+Best regards,
+Taro Suzuki
+Embassy of Japan, Sydney
+
+C04
+PROMPT_EN: After receiving an email from the hotel manager about damaged equipment, you scheduled a meeting to discuss the issue and negotiate a resolution.
+Write an email to the hotel manager that:
+- expresses your concern about the damaged equipment,
+- outlines your reasons for disputing the claim of damages,
+- proposes a solution that protects the consulate from liability while maintaining a positive relationship with the hotel,
+- suggests alternative ways to resolve the issue amicably.
+MODEL: Subject: Damaged Equipment Issue
+Dear Mr. Brown,
+Thank you for your email about the equipment in the conference room we used at the Continental Hotel last week.
+We were surprised to hear about this issue because the room was checked carefully by your staff immediately after our event, and no damage was reported at that time. We always make sure to leave the rooms in good condition, so this claim was unexpected.
+To resolve this quickly and keep our good relationship, I suggest meeting at the hotel soon. We can review the reported damage together and discuss possible solutions. I believe this will help clear up any misunderstandings.
+We greatly value our ongoing relationship with your hotel and look forward to using your facilities again in the future.
+Please let me know a suitable time for this meeting.
+Thank you for your understanding.
+Best regards,
+Taro Suzuki
+Consulate of Japan, New York
+
+C05
+PROMPT_EN: Following a meeting about catering for an upcoming event, you need to write an email to your counterpart.
+Your email should:
+- summarize the main points discussed during the meeting,
+- present persuasive arguments in favor of continuing with the reliable caterer you have worked with before,
+- address concerns raised about the popularity of the new caterer on Instagram,
+- provide evidence to support your position.
+- Use clear, persuasive language throughout.
+MODEL: Subject: Catering for Upcoming Event
+Dear Mary san,
+I hope you're well.
+Thank you for the discussion today regarding catering for our upcoming event.
+I understand the appeal of using a caterer popular on social media for promoting our event. However, I strongly recommend choosing Best Foods again. We have worked with them several times, and they have always provided reliable service and excellent food quality.
+Best Foods has proven their reliability and professionalism, especially during our last event when they successfully managed unexpected situations smoothly. Using them again will ensure the event runs without any issues, avoiding the risks involved with trying a new and untested caterer.
+While social media exposure can be beneficial, I believe the success and smooth management of the event are most important. If necessary, we could explore other ways to promote the event online without risking service quality.
+I hope we can agree on using Best Foods. Please let me know your thoughts.
+Best regards,
+Taro Suzuki
+Consulate of Japan, Auckland
+
+C06
+PROMPT_EN: After meeting with a local staff member about a personal loan request, you need to send a follow-up email.
+Your email should:
+- summarize the discussion,
+- explain the conditions and implications of granting the loan, including the maximum advance amount and the reduction in the next salary,
+- outline the process for submitting the request to the head office in Tokyo.
+MODEL: Subject: Personal Loan Request - Summary
+Dear Paul san,
+Thank you for our discussion about your request for a salary advance. I’d like to summarize the key points clearly:
+- The embassy can approve an advance payment, but there are important conditions.
+- The maximum amount you can request is one-third of your next monthly salary.
+- This advance payment means your next salary payment will be reduced accordingly.
+- Such an advance can only be provided once during your employment.
+- Approval from our head office in Tokyo is required, which usually takes a few days.
+- Please consider these conditions carefully. Let me know if you wish to proceed, and I'll start the approval process immediately.
+- If you have further questions, feel free to contact me.
+- Best regards,
+- Taro Suzuki
+- Japanese Consulate in Sydney
+
+C07
+PROMPT_EN: Following the interview for the administrative position at the consulate in New York, you need to send a follow-up email to the candidate.
+Your email should:
+- thank her for her time,
+- express interest in her qualifications and suitability for the role,
+- provide information about the next steps in the hiring process.
+- Use professional and courteous language throughout.
+MODEL: Subject: Administrative Position - Next Steps
+Dear Ms. Andrews,
+Thank you for taking the time to attend the interview for the administrative position at the Japanese consulate in New York. It was great meeting you and learning more about your experience and background.
+We were very impressed with your knowledge of Japan and your professional background. Your experience matches well with the skills we are looking for in this position.
+The next step will involve reviewing all candidate interviews. If you move forward, we will ask you to complete a personality profile and attend a second interview.
+We will contact you again within the next week to inform you of our decision.
+Thank you again for your interest in joining our team. If you have any questions in the meantime, please feel free to reach out to me.
+Best regards,
+Taro Suzuki
+Administration Manager
+Japanese Consulate in New York
+
+C08
+PROMPT_EN: Following Roleplay 1, draft an email to the vendor from whom you purchased a faulty product.
+Your email should:
+- address the concerns discussed during the phone call,
+- express your dissatisfaction with the proposed solutions,
+- request a fair and reasonable solution to the problem.
+- Maintain a professional tone throughout.
+MODEL: Subject: Re: Return of Toshiba Laptop - Proposed Solution
+Dear John,
+Thank you for your quick response regarding the Toshiba laptop issue. I appreciate your efforts to investigate this matter.
+However, I am not satisfied with your proposal to repair the laptop and charge me for replacing the damaged case. When I returned the laptop, it was carefully packaged and in good condition, apart from the original fault.
+As the damage appears to have occurred during shipping, I believe it is unfair to expect me to pay for repairs, especially since the laptop was returned under warranty for an existing problem.
+I kindly ask you to reconsider your decision and offer a fair solution according to the warranty terms. I trust we can resolve this issue quickly and amicably.
+Thank you for your understanding. I look forward to your reply.
+Best regards,
+Taro Suzuki
+Consulate of Japan in Melbourne
+
+C09
+PROMPT_EN: Following the phone call in Roleplay 1, you need to send an email to the insurance company formally reporting the accident and requesting compensation.
+Your email should:
+- clearly explain the sequence of events that led to the accident,
+- emphasize that you were not at fault and that the other party is responsible for the full cost of repairs,
+- provide relevant details such as the location, time, and extent of the damage to your vehicle,
+- use persuasive language to assert your case for full compensation.
+MODEL: Subject: Accident Report and Insurance Claim
+Dear RACV Claims Department,
+I am writing to report a car accident that happened earlier today and to request your assistance with my claim.
+The accident occurred at around 8:30 a.m. on Centre Road, close to Bentleigh Station. I was driving in the left lane when another driver suddenly merged from the right lane without checking for traffic. His vehicle hit mine, causing damage to the right side of my car.
+The other driver said I slowed down suddenly, causing the accident. However, this is not correct. I was driving safely and at a steady speed. He merged without properly checking if the lane was clear. Therefore, I believe his insurance should cover the full repair costs.
+I've already completed the accident report form online. Please process this claim as soon as possible because my car is not safe to drive in its current condition.
+Thank you very much for your assistance. Please contact me if you need any additional information.
+Best regards,
+Taro Suzuki
+Consulate of Japan, Melbourne
+
+C10
+PROMPT_EN: Following the budget meeting, your boss has asked you to submit a written proposal.
+Your proposal should:
+- outline your ideas for reducing costs next quarter,
+- provide clear explanations and supporting statements,
+- address concerns raised during the meeting,
+- suggest practical, realistic solutions.
+MODEL: Subject: Cost Reduction Ideas for Next Quarter
+Dear Mr. Addams,
+Thank you for our recent budget meeting. Based on our discussion, I've put together the following proposals to help reduce costs next quarter:
+- Energy-Saving Actions:
+- Change regular lights to energy-saving LED bulbs.
+- Set clear rules for turning off lights and equipment when not in use.
+- Reason: This will lower our electricity bills and support our environmental goals.
+- Better Purchasing Practices:
+- Buy office supplies in bulk to get discounts.
+- Review current suppliers to find better prices.
+- Reason: Bulk buying will help us save money on everyday office supplies.
+- Review Travel Costs:
+- Require advance approval for all business trips.
+- Encourage using less expensive travel options.
+- Reason: Careful planning will help reduce unnecessary travel expenses.
+- Use More Virtual Meetings:
+- Hold meetings online instead of traveling.
+- Improve our current technology to support better virtual meetings.
+- Reason: Reducing travel saves money and time, making our work more efficient.
+- Thank you for considering these suggestions. I look forward to discussing them further at our next meeting.
+- Best regards,
+- Taro Suzuki
+- Financial Analyst
+- Consulate of Japan, New York

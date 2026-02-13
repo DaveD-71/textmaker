@@ -1,0 +1,839 @@
+H01
+EN: After Roleplay 1, you need to create a notice for visitors near the lobby.
+Write a notice that:
+- clearly informs visitors where the bathrooms are located,
+- uses polite and simple language,
+- is suitable for being posted on a public wall near the lobby.
+JA: ロールプレイ1に基づき、ロビー付近に掲示する案内文を作成してください。
+以下を明記してください：
+- トイレの場所、
+- 誰でも理解できるよう、簡潔で丁寧な表現を使用すること、
+- 公共の場に適したレイアウトや語調を意識すること。
+
+H02
+EN: Following Roleplay 1, write an email to the staff member you spoke with by phone.
+Your email should:
+- mention your recent phone conversation,
+- confirm that the itinerary is attached,
+- be polite and clear.
+JA: ロールプレイ1に基づき、電話で話した職員に旅程表を送付するメールを作成してください。
+以下を含めてください：
+- 先ほどの電話のやり取りについて触れる、
+- 旅程表を添付ファイルとして送付したことの明記、
+- 丁寧で明確な文体を用いること。
+
+H03
+EN: Following Roleplay 1, write a short email to the visitor with details of the reservation.
+Your email should:
+- confirm the reservation,
+- provide the relevant details (e.g., location, time, and any booking reference),
+- be polite and easy to understand.
+JA: ロールプレイ1に基づき、予約の詳細を来訪者に共有するための短いメールを作成してください。
+以下を含めてください：
+- 予約の確認、
+- 日時、場所、予約番号などの詳細、
+- 丁寧でわかりやすい表現を使用してください。
+
+H04
+EN: Following Roleplay 1, you need to thank the vendor for their quick delivery of printer ink.
+Write an email that:
+- expresses your appreciation for the same-day delivery,
+- thanks them for responding quickly to your urgent request,
+- is polite and professional.
+JA: ロールプレイ1に基づき、緊急対応にもかかわらずプリンター用インクを即日で納品してくれた業者に感謝のメールを送ってください。
+以下を含めてください：
+- 迅速な対応への感謝、
+- 効率的なサービスに対する感謝の意、
+- 丁寧で礼儀正しい表現を使用してください。
+
+H05
+EN: Based on Role Play 1, report to your supervisor at the Honolulu Consulate the results of your check with the bank regarding the $500 withdrawal.
+Write an email that:
+- reports when and how the withdrawal occurred (ATM or in-person),
+- shares any additional details provided by the bank,
+- suggests steps to fix the issue and prevent future problems,
+- is brief and polite.
+JA: ロールプレイ1に基づき、500ドルの引き出しについて銀行に確認した結果をホノルル領事館の上司に報告してください。
+以下を含めてください：
+- 引き出しが行われた日時と方法（ATMか対面か）、
+- 銀行から提供された追加情報、
+- 問題解決と再発防止に向けた提案、
+- 簡潔かつ丁寧な表現を用いてください。
+
+H06
+EN: Based on Role Play 1, write a confirmation email to a colleague who will be traveling to Japan regarding the itinerary and initial meeting.
+Write an email that:
+- confirms their arrival date, time, and flight number,
+- proposes a date, time, and location for your first meeting,
+- includes simple directions to your office if needed,
+- is clear, friendly, and easy to understand.
+JA: ロールプレイ1に基づき、日本に出張予定の同僚に向けて、旅程と初回ミーティングについての確認メールを作成してください。
+以下を含めてください：
+- 到着日、時間、フライト番号の確認、
+- 最初のミーティングの日付・時間・場所の提案、
+- 必要に応じてオフィスへの簡単な行き方の案内、
+- わかりやすく、親しみやすいトーンで書いてください。
+
+H07
+EN: Based on Role Play 1, write an email reporting your lunch experience at an Italian restaurant in Brisbane to a colleague.
+Write an email that:
+- describes what you ordered for food and drink,
+- explains how you paid for the meal,
+- mentions whether you received a receipt,
+- is clear and simple.
+JA: ロールプレイ1に基づき、ブリスベンのイタリアンレストランでのランチ体験を同僚に報告するメールを作成してください。
+以下を含めてください：
+- 注文した食事と飲み物、
+- 支払い方法、
+- 領収書を受け取れたかどうか、
+- 簡潔でわかりやすい表現を使用してください。
+
+H08
+EN: Following Roleplay 1, you attended a welcoming dinner hosted by the Toronto consulate.
+Write a short email to a non-Japanese colleague that:
+- describes your experience at the dinner,
+- shares your conversation with Emily, a local staff member,
+- explains what you learned about her role and her work with Japanese businesses in Toronto,
+- uses simple and clear language.
+JA: ロールプレイ1に基づき、トロントの領事館が主催した歓迎ディナーでの体験について、非日本人の同僚にメールを書いてください。
+以下を含めてください：
+- ディナーの概要と印象、
+- 現地職員エミリーとの会話内容、
+- 彼女の仕事内容や日本企業との関わりで学んだこと、
+- 簡潔で親しみやすい日本語で書いてください。
+
+H09
+EN: Based on Role Play 1, write an email reply to a visitor requesting advice on purchasing tickets to Universal Studios.
+Write an email that:
+- provides clear instructions on how to buy tickets,
+- includes details such as ticket prices, opening hours, and location,
+- is helpful, polite, and easy to follow.
+JA: ロールプレイ1に基づき、ユニバーサル・スタジオのチケット購入についてアドバイスを求められた訪問者に、返信のメールを書いてください。
+以下を含めてください：
+- チケットの購入方法の説明、
+- チケット料金、営業時間、所在地の詳細、
+- わかりやすく親切な文体で記述してください。
+
+H10
+EN: Based on Role Play 1, write an email to inform your colleagues in San Francisco that the flight of the delegation from Japan has been delayed.
+Write an email that:
+- informs them of the delay,
+- provides the updated arrival time,
+- includes any other relevant details about the flight change,
+- is clear, concise, and informative.
+JA: ロールプレイ1に基づき、日本からの代表団のフライトが遅延したことをサンフランシスコの同僚に知らせるメールを作成してください。
+以下を含めてください：
+- 遅延の発生と理由（わかれば）、
+- 新しい到着時刻、
+- その他必要な情報（ゲート変更、便名など）、
+- 明確で簡潔な表現で書いてください。
+
+G01
+EN: Following the phone call in Roleplay 1, write an email to Mr. Addams about the message from Mr. Anderson.
+Your email should:
+- state when you received the call,
+- pass on any important information shared during the call,
+- ensure clarity and accuracy in relaying the message.
+JA: ロールプレイ1に基づき、アンダーソン氏からの電話について、アダムズ氏に報告するメールを作成してください。
+以下を含めてください：
+- 電話を受けた日時、
+- 電話の内容および重要事項の伝達、
+- 情報を正確かつ明確に伝えること。
+
+G02
+EN: Following Roleplay 1, you need to confirm hotel reservations for a business trip to New York.
+Write an email to your boss and colleague that:
+- confirms the reservation,
+- mentions that both rooms are non-smoking,
+- states that rooms have been arranged on different floors as requested,
+- includes the check-in time.
+- Keep the message polite, clear, and professional.
+JA: ロールプレイ1に基づき、上司と同僚のニューヨーク出張に関するホテル予約の確認メールを作成してください。
+メールには以下を含めてください：
+- 予約の確認、
+- 両室が禁煙であることの確認、
+- リクエスト通り別々のフロアでの部屋割り、
+- チェックイン時間の明記。
+- 丁寧で明確、かつプロフェッショナルな文体を使用してください。
+
+G03
+EN: Based on Role Play 1, write an announcement to be posted on the local bulletin board about the embassy's exchange event being held this Saturday.
+Include the following:
+- the name, date, time, and location of the event,
+- the purpose and main attractions of the event,
+- an invitation to community participation,
+- use a friendly, easy-to-understand style appropriate for a public bulletin board.
+JA: ロールプレイ1に基づき、今週土曜日に開催される大使館の交流イベントを地域の掲示板に告知するための案内文を作成してください。
+以下の内容を含めてください：
+- イベント名、日時、場所、
+- イベントの目的や主な見どころ、
+- 地域住民への参加呼びかけ、
+- 公共の掲示板にふさわしい、親しみやすくわかりやすい文体を使うこと。
+
+G04
+EN: Following Roleplay 1, a guest has requested contact information for the staff who arranged a reception.
+Write an email to the guest that:
+- thanks them for attending the event,
+- provides the name of the staff member responsible for the reception,
+- shares that staff member’s email address,
+- is polite, helpful, and easy to understand.
+JA: ロールプレイ1に基づき、ゲストがレセプションを手配したスタッフの連絡先を求めてきました。
+ゲストに次の内容を含むメールを書いてください：
+- イベントへの参加に対するお礼、
+- レセプション担当スタッフの氏名、
+- そのスタッフのメールアドレス、
+- 礼儀正しく、親切で、わかりやすい文面にすること。
+
+G05
+EN: Following Roleplay 1, you need to instruct the driver picking up a guest for a meeting.
+Write an email that:
+- confirms the meeting time,
+- provides directions from the hotel to the consulate,
+- includes alternative routes in case of traffic or road closures,
+- is brief, clear, and easy to follow.
+JA: ロールプレイ1に基づき、ホテルのゲストを迎えに行くドライバーに送るメールを作成してください。
+以下を含めてください：
+- ピックアップ時間の確認、
+- ホテルから領事館までの道順、
+- 渋滞や通行止めの場合の代替ルート、
+- 明確で簡潔な指示を記述すること。
+
+G06
+EN: Following Roleplay 1, you met with a catering company about an upcoming embassy event.
+Write an email that:
+- thanks them for the meeting and their time,
+- summarizes the key points discussed and decisions made,
+- outlines any agreed-upon next steps or required follow-up actions,
+- is polite, clear, and professional.
+JA: ロールプレイ1に基づき、大使館イベントのケータリングについてケータリング会社と打ち合わせを行いました。
+以下の内容を含めたフォローアップメールを作成してください：
+- 会議に参加してくれたことと、時間を割いてくれたことへの感謝、
+- 会議中に話し合われた主なポイントと決定事項の要約、
+- 合意された次のステップや必要なフォローアップ事項の説明、
+- 丁寧で明確、かつプロフェッショナルな文体で書くこと。
+
+G07
+EN: Following Roleplay 1, a driver has contacted you about being stuck in traffic while picking up a visitor.
+Write a response (email or message) that:
+- acknowledges the situation,
+- gives clear advice on how to proceed,
+- includes next steps (e.g., notify the visitor, take an alternate route, or contact the office),
+- is concise, clear, and helpful.
+JA: ロールプレイ1に基づき、ホテルへゲストを迎えに向かっている途中で渋滞に巻き込まれたドライバーに返信します。
+以下を含む返信（メールまたはテキストメッセージ）を書いてください：
+- 状況の確認と理解の表明、
+- 今後取るべき行動に関する指示（訪問者への連絡、代替ルートなど）、
+- 簡潔で分かりやすく、親切な表現を用いること。
+
+G08
+EN: Following Roleplay 1, you met a charity organizer during a dinner in Miami.
+Write an email that:
+- thanks them for organizing the event and for the opportunity to attend,
+- expresses appreciation for their work,
+- asks questions about the charity’s goals and plans for the next year,
+- maintains a polite, respectful, and engaging tone.
+JA: ロールプレイ1に基づき、マイアミでのディナーイベントで出会ったチャリティー主催者にフォローアップのメールを送ってください。
+以下の内容を含めてください：
+- イベントを主催してくれたこと、参加の機会を与えてくれたことへの感謝、
+- 主催者の活動やチャリティーへの取り組みに対する敬意の表明、
+- チャリティーの目標や来年の活動計画についての質問、
+- 丁寧で親しみやすく、関心の伝わる文体で書くこと。
+
+G09
+EN: Following Roleplay 1, your colleague in Los Angeles has asked for details about your work routine.
+Write an email that:
+- describes your typical workday in detail,
+- includes specific routines or habits you follow,
+- highlights anything that contributes to your productivity or organization.
+JA: ロールプレイ1に基づき、ロサンゼルスの同僚から日々の業務内容についての情報提供依頼を受けました。
+以下を含むメールを作成してください：
+- 典型的な一日の業務内容の説明、
+- 実施しているルーティンや習慣の共有、
+- 生産性向上に役立つ工夫などがあれば記載。
+
+G10
+EN: Following Roleplay 1, you discussed your weekend activities with a colleague from another consulate.
+Write an email that:
+- summarizes the pastimes and activities you mentioned,
+- offers additional suggestions for things to do during their upcoming trip to Miami,
+- is friendly and helpful in tone.
+JA: ロールプレイ1に基づき、別の領事館の同僚との会話で週末の過ごし方について話しました。
+以下を含むメールを書いてください：
+- 共有した趣味やアクティビティの要約、
+- 相手のマイアミ旅行に役立つ追加の提案、
+- 親しみやすく、前向きなトーンで記述してください。
+
+F01
+EN: Following Roleplay 1, you found a listing online and want to schedule a viewing.
+Write an email to the real estate agent that:
+- expresses interest in viewing the specific apartment,
+- requests a viewing appointment,
+- describes the type of apartment you are looking for,
+- asks for recommendations for other suitable properties.
+- Keep your message polite, clear, and detailed.
+JA: ロールプレイ1に基づき、オンラインで見つけたアパートの内覧を希望する内容で不動産業者に連絡する必要があります。
+以下を含むメールを書いてください：
+- 特定の物件に対する内覧希望の表明、
+- 内覧希望日時の提案、
+- 希望しているアパートの条件の説明、
+- 希望に合う他の物件の推薦依頼。
+- 丁寧でわかりやすい文章にしてください。
+
+F02
+EN: Following Roleplay 1, you need to report on local school options to the Japan head office.
+Write an email to a local school that:
+- inquiries about the cost of child education,
+- requests detailed information on tuition fees and any additional expenses,
+- asks about the number or percentage of Japanese students enrolled.
+- Keep your tone polite, professional, and specific.
+JA: ロールプレイ1に基づき、日本の本部に現地の学校事情について報告する必要があります。
+以下を含めて、現地の学校に問い合わせるメールを作成してください：
+- 子どもの教育にかかる費用についての質問、
+- 学費およびその他の関連費用に関する詳細な情報の依頼、
+- 日本人学生の在籍人数または割合についての確認。
+- 文体は丁寧かつ専門的で、質問内容を明確にしてください。
+
+F03
+EN: Following Roleplay 1, you need to notify dinner party guests of a schedule change.
+Write an email that:
+- informs them of the new date,
+- apologizes for any inconvenience caused by the rescheduling,
+- provides any additional relevant information.
+- Keep your message polite and professional.
+JA: ロールプレイ1に基づき、ディナーパーティーの出席者にスケジュール変更を知らせる必要があります。
+以下の内容を含めたメールを作成してください：
+- 新しい日程のお知らせ、
+- 日程変更に伴うご不便へのお詫び、
+- その他必要な情報があればそれを記載。
+- 文体は丁寧かつ専門的にしてください。
+
+F04
+EN: Following Roleplay 1, you conducted interviews for a new local staff member.
+Write an email to the hiring manager that:
+- summarizes the interviews,
+- provides feedback on each candidate’s strengths, weaknesses, and qualifications,
+- recommends the most suitable candidate for the position.
+- Keep your message clear, concise, and professional.
+JA: ロールプレイ1に基づき、新規の現地職員採用に関する面接を実施しました。
+以下の内容を含めて、採用責任者に送るメールを作成してください：
+- 面接内容の概要、
+- 各候補者の長所・短所・資格に関するフィードバック、
+- 最も適任と考えられる候補者の推薦。
+- メールは明確・簡潔・専門的に仕上げてください。
+
+F05
+EN: Following Roleplay 1, you need to confirm the visa application process.
+Write an email that:
+- summarizes the key steps in the application process,
+- includes a link to the official website containing the full procedure,
+- offers to answer any follow-up questions.
+JA: ロールプレイ1に基づき、ビザ申請手続きについて確認する必要があります。
+以下の内容を含めたメールを作成してください：
+- ビザ申請手続きの主なステップの要約、
+- 手続きの全体的な流れが記載された公式ウェブサイトのリンクの提示、
+- 質問があれば対応する旨の申し出。
+
+F06
+EN: Following Roleplay 1, you need to follow up on newspaper delivery issues.
+Write an email to the local newspaper agent that:
+- explains you have not received the newspaper for the third time in two weeks,
+- politely requests an explanation for the recurring problem,
+- asks for a solution to ensure reliable delivery.
+JA: ロールプレイ1に基づき、最近の新聞配達に関する問題についてフォローアップする必要があります。
+以下の内容を含めて、新聞販売店に送るメールを作成してください：
+- ここ2週間で3回新聞が配達されていないことの説明、
+- このような問題が繰り返されている理由について丁寧に説明を求める、
+- 今後確実に配達されるような対応策の依頼。
+
+F07
+EN: Following Roleplay 1, your boss is unable to attend a dinner party invitation.
+Write an email to the local businessman that:
+- politely declines the invitation on behalf of your boss,
+- expresses sincere apologies for not being able to attend,
+- provides a valid reason for the absence,
+- maintains a professional and courteous tone.
+JA: ロールプレイ1に基づき、上司がディナーパーティーへの招待を辞退しなければならなくなりました。
+以下の内容を含めて、地元の実業家に送るメールを作成してください：
+- 上司に代わって招待を辞退すること、
+- 出席できないことへの丁寧なお詫び、
+- 欠席の正当な理由の説明、
+- 専門的かつ礼儀正しい文体を保つこと。
+
+F08
+EN: Following Roleplay 1, you are responsible for communicating staff coverage for a sick colleague.
+Write an email to consulate staff that:
+- explains the situation and the need for coverage,
+- briefly outlines the options discussed during the meeting,
+- presents the final agreed-upon schedule,
+- lists the shifts assigned to each staff member,
+- includes any additional instructions.
+- Keep your message clear, organized, and professional.
+JA: ロールプレイ1に基づき、同僚の病欠に伴う勤務対応について、領事館のスタッフに連絡する必要があります。
+以下の内容を含めたメールを作成してください：
+- 病欠の状況と勤務対応が必要であることの説明、
+- 会議で話し合われた対応案の概要、
+- 最終的に合意された勤務スケジュール、
+- 各スタッフに割り当てられた勤務シフトの一覧、
+- その他の指示事項があればそれも記載。
+
+F09
+EN: Based on role play 1, you need to send an email to the vendor complaining about the late delivery of copy paper for your office.
+Write an email that:
+- expresses dissatisfaction with the late delivery,
+- states that this is the third late delivery,
+- requests an explanation for the repeated delays,
+- maintains a polite, assertive, and professional tone.
+JA: ロールプレイ1に基づき、事務所用コピー用紙の納品が遅れた件について、業者に苦情のメールを送る必要があります。
+以下の内容を含めてください：
+- 納品遅延への不満の表明、
+- 過去にも同様の遅延が3回あったことの指摘、
+- 遅延の理由に関する説明の要請、
+- 文体は丁寧かつ主張のある、専門的なものにすること。
+
+F10
+EN: Following Roleplay 1, you previously contacted a local supplier about paper products.
+Write a follow-up email that:
+- requests more information about product specifications, pricing, and delivery schedules,
+- expresses interest in a potential business relationship,
+- inquires about arranging a meeting to discuss further,
+- remains polite, professional, and specific.
+JA: ロールプレイ1に基づき、紙製品の業者に初回問い合わせを行った後のフォローアップメールを作成してください。
+以下を含めてください：
+- 製品仕様、価格、納期に関する追加情報の依頼、
+- 業務提携への関心表明、
+- 打ち合わせの可能性についての問い合わせ、
+- 丁寧で具体的な表現を使用すること。
+
+E01
+EN: Following Roleplay 1, you need to confirm a hotel room reservation for office space preparation ahead of an upcoming conference.
+Write an email to the hotel staff that:
+- confirms the reservation,
+- specifies the required items, including long tables, office chairs, photocopiers, printers, and telephones,
+- requests a detailed estimate listing each item,
+- confirms the rental duration,
+- mentions any additional items you may need for the preparation.
+JA: ロールプレイ1に基づき、会議の準備のためホテルの部屋をオフィススペースとして予約しました。その予約内容をホテルスタッフに確認するメールを作成してください。
+以下を含めてください：
+- 予約の確認、
+- 必要な備品（長机、オフィスチェア、コピー機、プリンター、電話）の明記、
+- 各備品の見積書の依頼、
+- レンタル期間の確認、
+- その他必要な物品があれば記載。
+
+E02
+EN: Following Roleplay 1, you contacted the support center about a faulty office photocopier.
+Write an email that:
+- explains the issues (frequent paper jams and unnecessary lines when copying),
+- requests a repair technician,
+- asks for an estimated cost and time required for the repair,
+- inquires about the availability of a temporary replacement if needed.
+- Your message should be clear, concise, and polite.
+JA: ロールプレイ1に基づき、事務所のコピー機の不具合についてサポートセンターに連絡しました。
+以下を含むメールを作成してください：
+- コピー機の問題点（頻繁な紙詰まり、不明な線の出現）の説明、
+- 修理技師の派遣依頼、
+- 修理にかかる見積もりと所要時間の確認、
+- 修理に時間がかかる場合の代替機の利用可否についての問い合わせ。
+- 簡潔かつ丁寧な文体で書いてください。
+
+E03
+EN: Following Roleplay 1, you contacted the Repair Division about a potential water-seepage issue.
+Write an email to the local staff that:
+- explains the issue with water seepage in the building,
+- requests that a plumber be sent to investigate and fix the problem,
+- asks the plumber to provide a repair estimate before beginning any work.
+- Ensure your message is polite, clear, and professional.
+JA: ロールプレイ1に基づき、建物内の水漏れの可能性について修理担当の現地職員に連絡する必要があります。
+以下を含むメールを作成してください：
+- 水漏れの詳細な状況説明、
+- 配管業者の派遣依頼、
+- 修理開始前に見積書を提出するよう依頼。
+- 文面は丁寧で、明確かつ専門的にしてください。
+
+E04
+EN: Following Roleplay 1, you received a complaint from an applicant waiting for their student visa.
+Write an email to the applicant that:
+- apologizes for the inconvenience caused by the delay,
+- assures them that steps are being taken to expedite the process,
+- provides an update on the current status of their application,
+- outlines any further steps they need to take.
+- Keep your tone polite, empathetic, and informative.
+JA: ロールプレイ1に基づき、学生ビザの遅延に関して苦情を申し立てた申請者への返信メールを作成します。
+以下を含めてください：
+- 遅延による不便についての謝罪、
+- 手続きの迅速化に向けた対応策の説明、
+- 現在の申請状況の共有、
+- 申請者が取るべき追加手続きがあれば案内。
+- 丁寧で共感のある文章にしてください。
+
+E05
+EN: Following Roleplay 1, write a blog post introducing Japanese summer festivals.
+Include:
+- their cultural meaning and appeal,
+- types such as matsuri, fireworks, and bon odori,
+- popular festivals held across Japan,
+- vivid descriptions to help tourists imagine the experience.
+- Use an engaging and informative tone.
+JA: ロールプレイ1に基づき、日本の夏祭りを紹介するブログ投稿を書いてください。
+以下を含めてください：
+- 夏祭りの文化的意義や魅力、
+- 代表的な祭りの種類（例：祭り、花火大会、盆踊り）、
+- 日本各地で開催される人気の夏祭り、
+- 観光客に伝える魅力や臨場感のある描写。
+- 魅力的で情報豊富な文体で書いてください。
+
+E06
+EN: Following Roleplay 1, you are informing colleagues about hotel arrangements for visitors attending an international conference in New York.
+Write an email that:
+- names the chosen hotel,
+- lists its key amenities, including accommodation quality, proximity to public transportation, and nearby restaurants and shops,
+- includes any other relevant facilities,
+- expresses confidence that it will meet the visitors’ needs.
+- Keep the message clear and informative.
+JA: ロールプレイ1に基づき、国際会議に出席する来賓のためのホテル予約について、領事館内の同僚に知らせるメールを作成してください。
+以下を含めてください：
+- 選定したホテル名、
+- 宿泊施設の快適さ、交通アクセス、周辺のレストランや施設などの利便性、
+- その他の関連施設の情報、
+- 来賓の滞在が快適になることへの自信の表明。
+- 明確で読みやすい文章にしてください。
+
+E07
+EN: Following Roleplay 1, Candidate 2 has been selected for a sponsorship to study in Japan.
+Write an email that:
+- congratulates them on their selection,
+- provides details about the sponsorship program, including the study duration and financial support,
+- outlines expectations during their time in Japan,
+- expresses confidence in their ability to represent Australia and support Japan-Australia relations.
+- Keep your tone positive, informative, and encouraging.
+JA: ロールプレイ1に基づき、日本留学の奨学金に選ばれた候補者2へ、祝意を込めたメールを書いてください。
+メールには以下を含めてください：
+- 選出されたことへの祝辞、
+- 留学期間や経済的支援など奨学金の概要、
+- 日本滞在中に求められる期待や責任、
+- オーストラリア代表としての活躍への期待の表明。
+- 前向きで励ましのある文体を心がけてください。
+
+E08
+EN: Following Roleplay 1, you explained the concept of obon at an embassy event.
+Write a blog post that:
+- describes obon and its cultural traditions,
+- shares your understanding and the significance of the holiday,
+- includes personal experiences or memories,
+- expresses your opinion about its meaning to you.
+- Keep your post informative, engaging, and reflective.
+JA: ロールプレイ1に基づき、あなたは大使館のイベントでお盆について説明しました。
+以下の内容を含めたブログ投稿を書いてください：
+- お盆の概要とその文化的な伝統について、
+- あなた自身の理解とお盆の意義、
+- お盆にまつわる個人的な経験や思い出、
+- お盆があなたにとってどんな意味を持つかという意見。
+- 読みやすく、親しみやすく、かつ振り返りを含んだ内容にしてください。
+
+E09
+EN: Following Roleplay 1, a colleague in Cape Town has proposed delaying an important meeting.
+Write an email that:
+- expresses your concern about the proposed delay,
+- explains why the meeting should proceed as planned,
+- highlights the consequences of postponing and the urgency of the topics,
+- maintains a diplomatic, respectful, and persuasive tone.
+JA: ロールプレイ1に基づき、ケープタウンの同僚が重要な会議の延期を提案してきました。
+以下の内容を含めたメールを作成してください：
+- 会議の延期に対する懸念の表明、
+- 会議を予定通り実施すべき理由の説明、
+- 延期によって生じる問題や、会議で取り上げるべき課題の緊急性、
+- 丁寧で敬意を持ちつつも説得力のある文体を用いること。
+
+E10
+EN: Following Roleplay 1, a newly hired local staff member has asked about the visa application process.
+Write an email that:
+- explains the visa application procedure for US citizens,
+- includes types of visas, required documents, application forms, and relevant steps or guidelines,
+- keeps the explanation simple and easy to understand,
+- encourages them to ask questions or request help if needed.
+JA: ロールプレイ1に基づき、新たに雇用された現地職員から、米国市民のビザ申請手続きについて質問がありました。
+以下の内容を含めたメールを作成してください：
+- 米国市民向けのビザ申請手続きの概要（ビザの種類、必要書類、申請用紙、手順、ガイドラインなど）、
+- 複雑な情報を分かりやすく簡潔に伝えること、
+- 質問やサポートを気軽に求められるよう促すこと、
+- 明確で親切な文体を心がけること。
+
+D01
+EN: Following Roleplay 1, you need to respond to a local staff member’s request about paying his social insurance premium separately.
+Write an email that:
+- explains the request cannot be approved,
+- clearly outlines the policy stating that social insurance premiums for local staff must be paid by the diplomatic mission to the authorities,
+- expresses understanding for the staff member’s situation,
+- offers further assistance or clarification if needed.
+JA: ロールプレイ1に基づき、現地職員からの社会保険料支払いに関する要望に対して返信する必要があります。
+以下を含めたメールを作成してください：
+- 要望が承認できない旨の説明、
+- 現地職員の社会保険料は在外公館が当局に直接支払う必要があるという方針の明示、
+- 要望への理解を示すこと、
+- 必要に応じて支援や追加説明の申し出を行うこと。
+
+D02
+EN: Following Roleplay 1, write an email to Sergeant Ruina from the New York Police Department confirming the meeting regarding the arrest of Mr. Yusuke Kobayashi.
+Your email should:
+- confirm the date, time, and location of the meeting as discussed during the phone call,
+- inquire about any specific procedures or documents required,
+- maintain a polite and professional tone.
+JA: ロールプレイ1に基づき、明朝に予定されている小林祐介氏の逮捕に関する会議について、ニューヨーク市警のルイナ巡査と連絡を取る必要があります。
+以下を含むメールを作成してください：
+- 会議の日時、場所の確認（電話で話し合った内容に基づく）、
+- 会議に必要な手続きや書類についての問い合わせ、
+- 丁寧かつ専門的な表現を用いること。
+
+D03
+EN: Following Roleplay 1, you are the passenger whose checked-in suitcase did not arrive at New York’s airport.
+Write a report to the airline staff that:
+- explains the situation clearly,
+- describes your suitcase in detail, including color, size, and distinctive features,
+- provides the luggage check-in slip,
+- expresses concern about the missing luggage and requests assistance in locating it,
+- is ready to answer any further questions from the staff.
+JA: ロールプレイ1に基づき、到着地の空港で預け入れたスーツケースが届かなかった件について航空会社に報告します。
+以下を含めた報告書を書いてください：
+- 状況の簡潔な説明、
+- スーツケースの詳細（色、サイズ、特徴）、
+- 手荷物預かり証の提示、
+- 荷物が見つかるよう協力を要請すること、
+- スタッフからの追加質問に対応する意思を伝えること。
+
+D04
+EN: Write an email to the airline about your cancelled flight and request a seat on the evening’s business class flight at a reduced cost.
+Your email should:
+- explain the urgency of attending your meeting in Sydney,
+- describe the inconvenience caused by the cancellation,
+- explain why a business class seat is necessary to arrive on time,
+- be polite yet assertive in tone.
+JA: フライトのキャンセルにより、今晩のビジネスクラスの便への搭乗を要望する内容のメールを航空会社に送ります。
+以下を含めてください：
+- シドニーでの会議の重要性と緊急性、
+- フライトキャンセルによる不都合の説明、
+- 会議に間に合うためにビジネスクラスが必要な理由、
+- 丁寧だが主張のあるトーンで書くこと。
+
+D05
+EN: You are moving to a new department and need to explain one of your current duties to a colleague who will be taking it over.
+Write an email that:
+- explains the duty in detail,
+- provides clear instructions on how to perform it effectively,
+- includes advice to help your colleague excel in this responsibility,
+- is thorough, supportive, and encouraging.
+JA: 部署異動に伴い、自分の業務の一部を引き継ぐ同僚に向けて、詳細な引き継ぎメールを送ります。
+以下を含めてください：
+- 業務内容の詳細な説明、
+- 効率的に業務を遂行するための明確な手順、
+- より良く遂行するための助言やヒント、
+- 支援的かつ丁寧な口調を心がけてください。
+
+D06
+EN: Write an email to your supervisor expressing your opinion on the proposal to increase overtime hours due to a staff shortage.
+Your email should:
+- clearly state your position,
+- provide reasons and examples to support your view,
+- include any relevant evidence,
+- be professional and persuasive in tone.
+JA: 人手不足による残業時間増加案について、自身の意見を上司に伝えるメールを作成します。
+以下を含めてください：
+- 賛成または反対の立場を明確にすること、
+- 自身の意見を支持する理由や具体例の提示、
+- 関連するデータや根拠があれば示すこと、
+- 専門的で説得力のある文体を使用すること。
+
+D07
+EN: Following Roleplay 1, write an email to the vendor confirming your discussion about returning a faulty printer.
+Your email should:
+- describe the problems you experienced (e.g., paper jamming, ink smudging),
+- confirm the agreement to return the product and discuss compensation,
+- express appreciation for their cooperation,
+- request written confirmation of the agreed-upon solution,
+- maintain a polite and professional tone.
+JA: ロールプレイ1での電話を受け、故障したプリンターの返品と補償についての合意内容を業者にメールで確認します。
+メールには以下を含めてください：
+- プリンターの問題点（例：紙詰まり、インクのにじみ）の記述、
+- 返品と補償に関する合意内容の確認、
+- 協力への感謝の表明、
+- 書面による確認の依頼、
+- 丁寧で専門的な文体を使用すること。
+
+D08
+EN: You are organizing a dinner party for a visiting dignitary, and the restaurant has reported a double-booking.
+Write an email to the local staff member responsible for the booking that:
+- instructs them to maintain the original date while being flexible with time or location,
+- outlines how to negotiate with the restaurant to find an alternative solution,
+- emphasizes the importance of minimizing inconvenience to guests and the dignitary,
+- directs them to ensure the restaurant covers any additional costs due to the change.
+JA: 日本からの来賓の夕食会について、予約先のレストランが二重予約のため日程変更を要請してきました。
+担当の現地職員に送るメールに、以下を含めてください：
+- 日付の変更は不可であることを明確にし、時間や場所には柔軟に対応可能であること、
+- レストラン側との交渉方法、代替案の提案、
+- 来賓および招待客への影響を最小限に抑えるように指示、
+- 費用の追加負担が発生した場合は、レストラン側が負担するよう求めるこ
+
+D09
+EN: You are relocating to Canberra and have found a suitable apartment.
+Write a polite, clear email to the real estate agent that:
+- confirms any details you need before signing the contract (e.g., rent, payment method),
+- asks about the payment procedure,
+- confirms when you will receive the keys,
+- inquires about cancellation fees in case of an unexpected return to Japan.
+JA: キャンベラの新任地での勤務に伴い、住居として適した物件を見つけました。
+契約前に以下の内容を不動産会社に確認する必要があります：
+- 契約前に確認したい事項（例：契約金額、支払い方法など）
+- 支払い方法や金額を含む手続きの詳細
+- 鍵の受け渡し時期の確認
+- 急な帰国による契約キャンセル時の費用についての問い合わせ
+
+D10
+EN: Following Roleplay 1, write an email to your boss summarizing your hotel recommendation.
+Your email should:
+- outline the advantages of the hotel, including location, pricing, and service quality,
+- address concerns raised during the discussion,
+- reaffirm why the recommended hotel is the best choice for the visiting dignitaries,
+- use persuasive and articulate language.
+JA: ロールプレイ1での会話に基づき、ホテルの提案内容について上司に要約を報告するメールを作成してください。
+以下を含めてください：
+- 推薦ホテルの利点（立地、価格、サービス品質）、
+- 会議中に挙げられた懸念への対応、
+- 来賓の宿泊先としてそのホテルが最良の選択である理由、
+- 明確で説得力のある表現を用いること。
+
+C01
+EN: Following Roleplay 1, write a detailed 3-day schedule summary.
+Your email must include:
+- key events, including the meeting with his U.S. counterpart and other significant engagements,
+- the date, time, and location of each event,
+- any other relevant details.
+JA: ロールプレイ1に基づき、3日間の訪問スケジュールを詳しくまとめてください。
+メールには以下を含めてください：
+- 米国のカウンターパートとの会談を含む主要なイベント
+- 各イベントの日時と場所
+- その他関連する情報
+
+C02
+EN: Write a brief announcement for the attendees of BizFest 202X.
+In your announcement:
+- introduce yourself as a representative of the Embassy of Japan,
+- explain the embassy’s mission in relation to the Business Department,
+- prepare to answer any questions about the embassy’s involvement with the university or related topics.
+- Your response should be clear, concise, and professional.
+JA: 「BizFest 202X」の参加者に向けた短い案内文を作成してください。
+案内文には以下を含めてください：
+- 在インド日本国大使館の代表として自己紹介をすること
+- ビジネス学部との関わりにおける大使館の使命を説明すること
+- 大使館と大学の関係や関連する話題についての質問に対応できるよう準備すること
+- 内容は明確で簡潔、かつ丁寧な文体で書いてください。
+
+C03
+EN: Following the discussion in Roleplay 1, your boss has asked you to summarize the proposed Japanese cultural event at the embassy. The suggestion was to focus on Japanese crafts.
+Write an email to your boss that:
+- summarizes the proposed event about Japanese crafts,
+- explains why this theme was chosen, highlighting its feasibility, relevance to the local audience, and cost-effectiveness within the allocated budget,
+- addresses any concerns raised during the discussion,
+- reaffirms why this is the best option for the embassy.
+JA: ロールプレイ1の会話を受けて、上司から次回の日本文化イベントの提案内容をまとめるよう依頼されました。提案されたテーマは「日本の工芸品」です。
+上司に宛てて、以下の内容を含むメールを書いてください：
+- 日本の工芸品イベントの概要、
+- このテーマを選んだ理由（実現可能性、現地との関連性、予算内での実施可能性）、
+- 会議で出た懸念点への対応、
+- なぜこのイベントが最良の選択であるかの再確認。
+
+C04
+EN: After receiving an email from the hotel manager about damaged equipment, you scheduled a meeting to discuss the issue and negotiate a resolution.
+Write an email to the hotel manager that:
+- expresses your concern about the damaged equipment,
+- outlines your reasons for disputing the claim of damages,
+- proposes a solution that protects the consulate from liability while maintaining a positive relationship with the hotel,
+- suggests alternative ways to resolve the issue amicably.
+JA: ホテルマネージャーから備品の破損に関するメールを受け、対面で話し合うために面会を設定しました。
+ホテルマネージャーに宛てたメールを作成し、以下を含めてください：
+- 備品破損についての懸念を表明すること、
+- 損傷の責任に関する異議の理由を明確にすること、
+- 領事館の責任を回避しつつ、ホテルとの良好な関係を維持する解決策を提案すること、
+- 友好的な解決のための代替案を示すこと。
+
+C05
+EN: Following a meeting about catering for an upcoming event, you need to write an email to your counterpart.
+Your email should:
+- summarize the main points discussed during the meeting,
+- present persuasive arguments in favor of continuing with the reliable caterer you have worked with before,
+- address concerns raised about the popularity of the new caterer on Instagram,
+- provide evidence to support your position.
+- Use clear, persuasive language throughout.
+JA: イベントのケータリングについての会議後、あなたの担当する業者を推す内容で、同僚にメールを書く必要があります。
+以下を含めてください：
+- 会議で話し合われた主なポイントの要約
+- 以前利用した信頼できるケータラーを継続することの利点と理由
+- 新しい業者のInstagramでの人気に関する懸念への対応
+- 自身の立場を支持する証拠の提示
+- 明確で説得力のある表現を用いてください。
+
+C06
+EN: After meeting with a local staff member about a personal loan request, you need to send a follow-up email.
+Your email should:
+- summarize the discussion,
+- explain the conditions and implications of granting the loan, including the maximum advance amount and the reduction in the next salary,
+- outline the process for submitting the request to the head office in Tokyo.
+JA: 現地職員からの個人ローンの相談を受けた後、その要点をまとめたメールを送る必要があります。
+以下を含めてください：
+- 面談内容の要約、
+- 最大貸付額や翌月の給与控除など、ローン提供条件と影響の説明、
+- 東京本部への申請手続きについて。
+
+C07
+EN: Following the interview for the administrative position at the consulate in New York, you need to send a follow-up email to the candidate.
+Your email should:
+- thank her for her time,
+- express interest in her qualifications and suitability for the role,
+- provide information about the next steps in the hiring process.
+- Use professional and courteous language throughout.
+JA: ニューヨーク領事館の事務職面接を受けた候補者にフォローアップのメールを送ってください。
+メールには以下を含めてください：
+- 面接に時間を割いてくれたことへの感謝、
+- 資格や適性に対する関心、
+- 今後の採用プロセスについての情報。
+- 丁寧かつ専門的な表現を使用してください。
+
+C08
+EN: Following Roleplay 1, draft an email to the vendor from whom you purchased a faulty product.
+Your email should:
+- address the concerns discussed during the phone call,
+- express your dissatisfaction with the proposed solutions,
+- request a fair and reasonable solution to the problem.
+- Maintain a professional tone throughout.
+JA: ロールプレイ1での電話の内容を受けて、問題のある製品を購入した業者にメールを書いてください。
+以下を含めてください：
+- 電話で話し合われた内容への対応、
+- 提案された解決策への不満の表明、
+- 公平な解決策の要望。
+- 文体は丁寧で、かつプロフェッショナルにしてください。
+
+C09
+EN: Following the phone call in Roleplay 1, you need to send an email to the insurance company formally reporting the accident and requesting compensation.
+Your email should:
+- clearly explain the sequence of events that led to the accident,
+- emphasize that you were not at fault and that the other party is responsible for the full cost of repairs,
+- provide relevant details such as the location, time, and extent of the damage to your vehicle,
+- use persuasive language to assert your case for full compensation.
+JA: ロールプレイ1での電話を受けて、事故について保険会社に正式に報告し、補償を求めるメールを作成してください。
+メールには以下を含めてください：
+- 事故に至るまでの経緯を明確に説明すること
+- 自身に責任がないこと、また修理費用は相手側が全額負担すべきであることを主張すること
+- 発生場所、時間、車両の損傷状況などの詳細を記載すること
+- 修理費全額の補償を求めるための説得力のある表現を用いること
+
+C10
+EN: Following the budget meeting, your boss has asked you to submit a written proposal.
+Your proposal should:
+- outline your ideas for reducing costs next quarter,
+- provide clear explanations and supporting statements,
+- address concerns raised during the meeting,
+- suggest practical, realistic solutions.
+JA: 予算会議を受けて、上司から書面による提案を求められました。
+提案書には以下を含めてください：
+- 来四半期のコスト削減に関するアイデアの提示
+- 各提案に対する明確な説明と根拠
+- 会議中に出された懸念への対応
+- 実現可能で現実的な解決策の提示

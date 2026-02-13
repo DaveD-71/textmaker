@@ -1,0 +1,66 @@
+Roleplay 1 Model Quality Log
+Source: mofa situations/Situations_all.yaml
+Scope: instructions.roleplays (id: 1) prompt.en vs language.roleplay_1.model
+
+Format: ID | Quality | Notes
+
+H01 | Minor issue | Model gives bathroom directions but does not provide any additional information, which the prompt allows for.
+H02 | Minor issue | Model uses "tomorrow" instead of the specified arrival on Saturday.
+H03 | Major issue | Model makes a reservation but never mentions the visitor’s seafood allergy.
+H04 | Good | No issues noted.
+H05 | Good | No issues noted.
+H06 | Major issue | Colleague asks where the office is; model does not provide directions.
+H07 | Good | No issues noted.
+H08 | Minor issue | Prompt asks about her free time; model shifts to asking what the visitor can do on the weekend.
+H09 | Good | No issues noted.
+H10 | Good | No issues noted.
+G01 | Major issue | Prompt says boss returns the day after tomorrow; model says he returns tomorrow.
+G02 | Good | No issues noted.
+G03 | Good | No issues noted.
+G04 | Good | No issues noted.
+G05 | Good | No issues noted.
+G06 | Good | No issues noted.
+G07 | Minor issue | Model does not really discuss options; it decides to call the visitor and reschedule.
+G08 | Minor issue | Model does not ask about plans for next year.
+G09 | Good | No issues noted.
+G10 | Good | No issues noted.
+F01 | Good | No issues noted.
+F02 | Good | No issues noted.
+F03 | Good | No issues noted.
+F04 | Good | No issues noted.
+F05 | Minor issue | Model does not explicitly mention submitting additional visa documents beyond the form (aside from passport).
+F06 | Good | No issues noted.
+F07 | Good | No issues noted.
+F08 | Good | No issues noted.
+F09 | Good | No issues noted.
+F10 | Good | No issues noted.
+E01 | Good | No issues noted.
+E02 | Good | No issues noted.
+E03 | Good | No issues noted.
+E04 | Good | No issues noted.
+E05 | Good | No issues noted.
+E06 | Good | No issues noted.
+E07 | Good | No issues noted.
+E08 | Good | No issues noted.
+E09 | Good | No issues noted.
+E10 | Good | No issues noted.
+D01 | Good | No issues noted.
+D02 | Minor issue | Model does not ask about required procedures.
+D03 | Minor issue | Model does not describe the missing suitcase’s color/size/features.
+D04 | Major issue | Model does not secure a reduced-cost business seat; it resolves via points instead.
+D05 | Good | No issues noted.
+D06 | Good | No issues noted.
+D07 | Good | No issues noted.
+D08 | Good | No issues noted.
+D09 | Good | No issues noted.
+D10 | Major issue | Prompt requires reaffirming your hotel choice; model accepts counterpart’s choice instead.
+C01 | Major issue | Prompt specifies key events on Day 2; model places the meeting and dinner on the arrival day.
+C02 | Good | No issues noted.
+C03 | Good | No issues noted.
+C04 | Good | No issues noted.
+C05 | Good | No issues noted.
+C06 | Good | No issues noted.
+C07 | Minor issue | Model does not ask directly about fit with office colleagues.
+C08 | Minor issue | Model does not clearly assert that the product was undamaged when shipped or push for a resolution.
+C09 | Good | No issues noted.
+C10 | Good | No issues noted.

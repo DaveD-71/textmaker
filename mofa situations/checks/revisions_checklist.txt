@@ -1,0 +1,197 @@
+Revisions Checklist (Collated)
+Source logs: translations/*_quality_log.txt, task-model matches/*_quality_log.txt
+
+H01
+- [Roleplay 1 Translation] Minor issue: English mentions "consulate" but also says the visitor arrived at the "embassy"; Japanese uses "embassy" only, so the institution type is inconsistent.
+- [Roleplay 1 Model vs Task] Minor issue: Model gives bathroom directions but does not provide any additional information, which the prompt allows for.
+
+H02
+- [Roleplay 1 Model vs Task] Minor issue: Model uses "tomorrow" instead of the specified arrival on Saturday.
+- [Writing Task Model vs Task] Minor issue: Model does not explicitly mention the recent phone conversation.
+
+H03
+- [Roleplay 1 Model vs Task] Major issue: Model makes a reservation but never mentions the visitor’s seafood allergy.
+
+H04
+- [Roleplay 1 Translation] Minor issue: Japanese omits the location (New York consulate) present in English.
+
+H05
+- [Purpose Objectives Translation] Minor issue: English is slightly awkward: "incorrect statement amount"; meaning still clear.
+
+H06
+- [Roleplay 1 Translation] Minor issue: Japanese has a typo ("伝えてださい" missing く), but meaning is clear.
+- [Roleplay 1 Model vs Task] Major issue: Colleague asks where the office is; model does not provide directions.
+- [Writing Task Model vs Task] Major issue: Writing task model is missing.
+
+H07
+- No revisions flagged.
+
+H08
+- [Roleplay 1 Translation] Minor issue: Japanese omits "from Japan" and "on business" details.
+- [Roleplay 1 Model vs Task] Minor issue: Prompt asks about her free time; model shifts to asking what the visitor can do on the weekend.
+
+H09
+- No revisions flagged.
+
+H10
+- No revisions flagged.
+
+G01
+- [Roleplay 1 Model vs Task] Major issue: Prompt says boss returns the day after tomorrow; model says he returns tomorrow.
+- [Writing Task Model vs Task] Minor issue: Model does not state when the call was received.
+
+G02
+- No revisions flagged.
+
+G03
+- [Writing Task Model vs Task] Minor issue: Model does not include a specific event name.
+
+G04
+- No revisions flagged.
+
+G05
+- [Purpose Objectives Translation] Minor issue: Japanese adds an extra parenthetical elaboration not present in English; scope slightly expanded.
+- [Writing Task Model vs Task] Minor issue: Model provides a route but no alternative route as requested.
+
+G06
+- No revisions flagged.
+
+G07
+- [Roleplay 1 Model vs Task] Minor issue: Model does not really discuss options; it decides to call the visitor and reschedule.
+
+G08
+- [Roleplay 1 Model vs Task] Minor issue: Model does not ask about plans for next year.
+
+G09
+- No revisions flagged.
+
+G10
+- No revisions flagged.
+
+F01
+- No revisions flagged.
+
+F02
+- No revisions flagged.
+
+F03
+- [Roleplay 1 Translation] Minor issue: Japanese adds "by phone or in writing"; English specifies only calling.
+
+F04
+- No revisions flagged.
+
+F05
+- [Roleplay 1 Model vs Task] Minor issue: Model does not explicitly mention submitting additional visa documents beyond the form (aside from passport).
+
+F06
+- [Roleplay 1 Translation] Minor issue: Japanese omits the location (Sydney embassy) present in English.
+
+F07
+- No revisions flagged.
+
+F08
+- [Purpose Objectives Translation] Major issue: English line appears truncated (ends with "sol"), so content is incomplete vs Japanese.
+- [Writing Task Model vs Task] Minor issue: Model does not briefly outline the options discussed during the meeting.
+
+F09
+- No revisions flagged.
+
+F10
+- No revisions flagged.
+
+E01
+- [Roleplay 2 Translation] Minor issue: Japanese adds "next year" (来年) while English does not specify the year.
+
+E02
+- No revisions flagged.
+
+E03
+- No revisions flagged.
+
+E04
+- No revisions flagged.
+
+E05
+- No revisions flagged.
+
+E06
+- No revisions flagged.
+
+E07
+- [Roleplay 1 Translation] Minor issue: Japanese adds that Candidate 1 has a strong interest in Japan; not stated in English.
+- [Roleplay 2 Translation] Minor issue: Japanese adds that the second candidate loves Japanese anime; English says fan of Japanese culture only.
+
+E08
+- No revisions flagged.
+
+E09
+- [Writing Task Model vs Task] Major issue: Writing task model is missing.
+
+E10
+- No revisions flagged.
+
+D01
+- No revisions flagged.
+
+D02
+- [Purpose Objectives Translation] Minor issue: Japanese "事件性の高い問題" suggests more serious incidents than English "incidental issues".
+- [Writing Task Translation] Minor issue: Japanese adds that the meeting is scheduled for "tomorrow morning" (明朝), which is not specified in English.
+- [Roleplay 1 Model vs Task] Minor issue: Model does not ask about required procedures.
+
+D03
+- [Purpose Objectives Translation] Major issue: English line appears truncated (ends with "by c"), so content is incomplete vs Japanese.
+- [Writing Task Translation] Minor issue: Japanese omits the specific location ("New York’s airport") and generalizes to "arrival airport."
+- [Roleplay 1 Model vs Task] Minor issue: Model does not describe the missing suitcase’s color/size/features.
+
+D04
+- [Roleplay 1 Model vs Task] Major issue: Model does not secure a reduced-cost business seat; it resolves via points instead.
+
+D05
+- No revisions flagged.
+
+D06
+- [Writing Task Model vs Task] Minor issue: Model gives reasons but no concrete evidence as requested.
+
+D07
+- [Writing Task Model vs Task] Minor issue: Model does not explicitly request written confirmation of the agreed-upon solution.
+
+D08
+- [Roleplay 2 Translation] Major issue: Japanese line is truncated and missing the end of the prompt (taxi cost detail).
+- [Writing Task Translation] Major issue: Japanese line is truncated and missing the end of the prompt.
+
+D09
+- No revisions flagged.
+
+D10
+- [Roleplay 1 Model vs Task] Major issue: Prompt requires reaffirming your hotel choice; model accepts counterpart’s choice instead.
+
+C01
+- [Roleplay 1 Model vs Task] Major issue: Prompt specifies key events on Day 2; model places the meeting and dinner on the arrival day.
+
+C02
+- No revisions flagged.
+
+C03
+- [Purpose Objectives Translation] Major issue: English line appears truncated (ends with "taking i"), so content is incomplete vs Japanese.
+
+C04
+- [Roleplay 1 Translation] Major issue: Japanese line is truncated and missing the final sentence about wanting to use the hotel again.
+
+C05
+- [Roleplay 1 Translation] Major issue: Japanese line is truncated and missing the remainder of the prompt.
+- [Roleplay 2 Translation] Major issue: Japanese line is truncated and missing the remainder of the prompt.
+
+C06
+- No revisions flagged.
+
+C07
+- [Roleplay 1 Model vs Task] Minor issue: Model does not ask directly about fit with office colleagues.
+
+C08
+- [Roleplay 1 Model vs Task] Minor issue: Model does not clearly assert that the product was undamaged when shipped or push for a resolution.
+
+C09
+- No revisions flagged.
+
+C10
+- No revisions flagged.
