@@ -6,11 +6,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: Visitors can be guided at reception, etc., by explaining the location of the toilet.
         ja: レセプション等で、トイレの場所の説明等、来訪者の案内をすることができる。
 
@@ -115,11 +115,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: In order to welcome business travelers, you can instruct local staff and exchange questions about simple information such as business trip schedules and transfers.
         ja: 出張者を迎えるために、出張日程や送迎などの簡単な情報について、現地職員に指示したり、質問のやりとりをすることができる。
 
@@ -242,11 +242,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: When attending to a business traveler, you can call the restaurant, make a reservation, change or cancel it.
         ja: 出張者のアテンドに際して、レストランに電話し、予約をしたり、変更やキャンセルしたりすることができる。
 
@@ -384,11 +384,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Showing appreciation.
         ja: 感謝の気持ちを伝える。
 
-      purpose_objectives:
+      objectives:
         en: In response to a vendor or subordinate, you can use short, simple words to specifically thank or apologize for the situation.
         ja: 業者や部下の対応に対し、状況に応じたお礼や謝罪などを、短い簡単な言葉で具体的に伝えることができる。
 
@@ -525,11 +525,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Making inquiries.
         ja: 問い合わせをする。
 
-      purpose_objectives:
+      objectives:
         en: You can ask questions about the transaction details of the embassy's bank account and complete simple matters (such as incorrect statement amount).
         ja: 大使館の銀行口座の取引内容に関し、疑問点を質問し、簡単な用件を済ますことができる（ステートメントの金額の記載誤りなど）。
 
@@ -661,11 +661,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Using telecommunications.
         ja: 電気通信を利用する。
 
-      purpose_objectives:
+      objectives:
         en: Can, given repetition and clarifications, participate in a short, simple phone conversation with a known person on a predictable topic, e.g., arrival times, arrangements to meet, etc.
         ja: 繰り返し説明することで、到着時間や会う約束など、予測可能なトピックについて、既知の相手と短く簡単な電話での会話を行うことができる。
 
@@ -797,11 +797,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Obtaining goods and services.
         ja: 商品やサービスを入手する。
 
-      purpose_objectives:
+      objectives:
         en: Can order a meal.
         ja: 食事の注文ができる。
 
@@ -930,11 +930,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Information exchange.
         ja: 情報交換をする。
 
-      purpose_objectives:
+      objectives:
         en: Can ask and answer questions about what they do at work and in their free time.
         ja: 仕事と余暇の過ごし方について質問し、答えることができる。
 
@@ -1068,11 +1068,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Obtaining goods and services.
         ja: 商品やサービスを入手する。
 
-      purpose_objectives:
+      objectives:
         en: Can get simple information about travel, use public transport (e.g., buses, trains, taxis), ask and give directions, and buy tickets.
         ja: 旅行に関する簡単な情報を入手し、公共交通機関（バス、電車、タクシーなど）を利用し、道を尋ねたり教えたり、切符を買うことができる。
 
@@ -1208,11 +1208,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Using telecommunications.
         ja: テレコミュニケーションの利用。
 
-      purpose_objectives:
+      objectives:
         en: Can understand a simple message (e.g., “My flight is late. I will arrive at ten o'clock.”), confirm details of the message and pass it on by phone to other people concerned.
         ja: 簡単なメッセージ（例：飛行機が遅れているので、10時に到着します。）を理解し、メッセージの詳細を確認し、関係者に電話で伝えることができる。
 
@@ -1327,11 +1327,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Take a message on the phone.
         ja: 電話で伝言を受ける。
 
-      purpose_objectives:
+      objectives:
         en: Take a call from someone asking to speak to your supervisor or colleague while they are away, explain the reason for their absence, confirm the caller's affiliation, answer the caller's questions, and leave a brief message.
         ja: 上司や同僚の不在中にかかってきた電話を受け、不在の理由を説明し、相手の所属等を確認の上、相手の質問に答え、簡単なメッセージを預かることができる。
 
@@ -1461,11 +1461,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: On a business trip, you can call a hotel, tell them about your specific needs, confirm the conditions, etc., and then make a reservation.
         ja: 出張に際してホテルに電話をして、具体的な要望を伝えて、条件等を確認した上で、予約をすることができる。
 
@@ -1622,11 +1622,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: If a product or other item does not arrive as scheduled, you can check the status of the shipment and request that it be re-delivered.
         ja: 予定どおりに商品などが到着しなかった場合に、運送状況の確認をしたり、その後の対処を依頼したりすることができる（再配達など) 。
 
@@ -1768,11 +1768,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: At receptions and other events, you can answer inquiries, give brief introductions and directions (location, characteristics, etc.) about specific people to invited guests, and exchange questions with them.
         ja: レセプション会場などで、招待客に対し、照会に答えて、特定の人物について、簡単な紹介や案内（居場所や特徴など）をし、質問のやりとりをすることができる。
 
@@ -1889,11 +1889,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: 'With a driver, you can: direct the dispatch of a vehicle to a destination, discuss the route, receive multiple suggestions from the driver, ask questions about each route, and then decide and give instructions.'
         ja: 一人のドライバーと、目的地への配車を指示し、ルートの相談をし、ドライバーの複数の提案を受け、各ルートについて質問した上で、決定、指示することができる。（提案したり、出された提案に応じたり、指示を求めたり出したりしながら、次にすることを検討できる。）
 
@@ -2040,11 +2040,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Showing appreciation.
         ja: 感謝の気持ちを伝える。
 
-      purpose_objectives:
+      objectives:
         en: Can establish social contact (e.g., greetings and farewells, introductions, giving thanks).
         ja: 社会的関係を構築する（挨拶や別れ、自己紹介、感謝を伝えるなど）。
 
@@ -2152,11 +2152,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: Can discuss what to do next, making and responding to suggestions, and asking for and giving directions.
         ja: 次に何をすべきかを話し合い、提案したり、提案に応えたり、指示を求めたり与えたりすることができる。
 
@@ -2273,11 +2273,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Making inquiries.
         ja: 問い合わせをする。
 
-      purpose_objectives:
+      objectives:
         en: Can ask and answer questions about plans and intentions.
         ja: 計画や意図について質問し、答えることができる。
 
@@ -2418,11 +2418,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Information exchange.
         ja: 情報交換をする。
 
-      purpose_objectives:
+      objectives:
         en: Can ask and answer questions about habits and routines.
         ja: 習慣や日課について質問し、答えることができる。
 
@@ -2566,11 +2566,11 @@ situations:
     details:
       cefr: A2
 
-      function:
+      purpose:
         en: Information exchange.
         ja: 情報交換をする。
 
-      purpose_objectives:
+      objectives:
         en: Can ask and answer questions about pastimes and activities.
         ja: 娯楽や活動について質問し、答えることができる。
 
@@ -2708,11 +2708,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: When searching for a place to live, you can request a viewing, explain your decision after comparing several housing options.
         ja: 住居探しにおいて内見の希望を伝え、複数の候補の条件等を確認した上で、検討結果を伝えることができる。
 
@@ -2830,11 +2830,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Interviewing.
         ja: 面談する。
 
-      purpose_objectives:
+      objectives:
         en: While conducting a field survey, you can contact the other party and ask for the details of the specific information related to the survey.
         ja: 現地調査に際して、相手先と連絡を取り、調査に係る具体的な情報の詳細を尋ねることができる。
 
@@ -2979,11 +2979,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Inviting a guest to an event.
         ja: イベントにゲストを招待する。
 
-      purpose_objectives:
+      objectives:
         en: In organizing a formal dinner, you can contact the invited guests, adjust the schedule, etc., and exchange necessary procedures, and then contact the relevant departments, etc.
         ja: フォーマルな会食の開催にあたって、招待客に連絡をし、日程等の調整や必要な手続きのやり取りを行った上で、関連諸部署などへの連絡をすることができる。
 
@@ -3122,11 +3122,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Making decisions.
         ja: 意思決定をする。
 
-      purpose_objectives:
+      objectives:
         en: In order to hire a new local staff member, you can discuss and decide who to hire on the spot after exchanging questions to confirm the information needed for the hiring interview.
         ja: 新たに現地職員を雇うために、採用面接で必要な情報の確認のための質問のやりとりを行った上で、その場で協議して採用者を決定することができる。
 
@@ -3287,11 +3287,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Explaining procedures.
         ja: 手順を説明する。
 
-      purpose_objectives:
+      objectives:
         en: In response to inquiries about tourist visas and other applications, explain specific information and answer additional questions.
         ja: 観光ビザなどの申請についての問い合わせに対し、具体的な情報を説明し、追加での質問に回答することができる。
 
@@ -3398,11 +3398,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: When a problem arises in your work, you can give instructions or make a request to the older local staff member in charge of that work without being rude.
         ja: 業務上で問題が生じた際に、その業務担当の年上の現地職員へ失礼のないよう業務の指示や依頼を行うことができる。
 
@@ -3505,11 +3505,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Responding to invitations.
         ja: 招待に応じる。
 
-      purpose_objectives:
+      objectives:
         en: When a counterpart invites you or your boss to dinner, you can simply give the reason for your absence without being rude. (For example, if the invitation is from an interested party.)
         ja: カウンターパートからの上司や自分への会食の招待に対し、簡単に理由を伝えて失礼のないようにことわることができる。（例えば利害関係者からの招待の場合等）
 
@@ -3613,11 +3613,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Can take part in routine formal discussion of familiar subjects which is clearly articulated in the standard form of the language or a familiar variety and which involves the exchange of factual information, receiving instructions or the discussion of sol
         ja: 身近な話題について、日常行われる公式の話し合いに参加できる。その話し合いは、標準的、もしくはイディオム等を含む言語で明確に表現され、事実関係の情報交換、指示の受領、または実際的な問題を解決するための議論が行われる。
 
@@ -3773,11 +3773,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Making complaints.
         ja: 苦情を申し立てる。
 
-      purpose_objectives:
+      objectives:
         en: Can make a complaint.
         ja: 不満や苦情を言うことができる。
 
@@ -3914,11 +3914,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Making inquiries.
         ja: 問い合わせをする。
 
-      purpose_objectives:
+      objectives:
         en: Can obtain more detailed information.
         ja: より詳細な情報を得ることができる。
 
@@ -4079,11 +4079,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: Able to make necessary arrangements with vendors and deal with problems in setting up a large conference administrative office.
         ja: 大きな会議の事務局立ち上げにあたり、業者等への必要な手配を行い、問題への対処を行うことができる。
 
@@ -4228,11 +4228,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: In the event of equipment failure, communicate the status of the problem and negotiate solutions to the various problems involved in repairing the equipment.
         ja: 機材の不具合に際して、トラブルの状況を伝え、修理にかかる様々な問題解決の交渉を行うことができる。
 
@@ -4358,11 +4358,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Collaborate with local staff to request local vendors to respond to sudden, everyday problems that occur on a daily level.
         ja: 突発的に発生した日常レベルの問題に対して、現地職員と協力し、現地業者への対応依頼をすることができる。
 
@@ -4475,11 +4475,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: When a problem such as loss of a visitor's baggage occurs at the airport counter, the visitor's complaint can be heard, understood, and apologized for the time being.
         ja: 空港のカウンターで、来訪者の手荷物の紛失などの問題が生じたとき、来訪者の苦情を聞いて理解し、謝るなどの当座の対処をすることができる。
 
@@ -4622,11 +4622,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Explaining cultural events.
         ja: 文化イベントを説明する。
 
-      purpose_objectives:
+      objectives:
         en: You can exchange supplementary explanations about the background, values, spiritual culture, etc. of the exhibition contents at the Japanese cultural event in response to questions from visitors.
         ja: 日本文化イベントにおける展示内容について、来訪者からの質問を受けて背景や価値観・精神文化などについて補足説明のやりとりをすることができる。
 
@@ -4760,11 +4760,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Making decisions.
         ja: 意思決定をする。
 
-      purpose_objectives:
+      objectives:
         en: For visiting dignitaries from Japan, you can discuss with local officials which hotel to choose when there are several candidates and compare and contrast the convenience of using each hotel (e.g., distance to the embassy for transportation, restaurant options, availability of appropriate rooms and meeting rooms, ease of security, etc.).
         ja: 日本からの要人来訪において、使用するホテルの候補が複数ある場合に、どれを選べばよいかを現地職員と議論し、それぞれのホテルを使用した場合の、利便性（例えば移動を考慮した際の大使館との距離やレストランの選択肢、適切な部屋・会議室の有無、警備のしやすさ等）を比較対照できる。
 
@@ -4913,11 +4913,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Reporting a decision.
         ja: 決定事項を報告する。
 
-      purpose_objectives:
+      objectives:
         en: In the selection of government-sponsored international students, based on the opinions of each selection committee member, the opinions summarized by the person in charge of selection at the embassy can be conveyed.
         ja: 国費留学生の選考において、各選考委員の意見を踏まえ、大使館における選考担当としてとりまとめた意見を伝えることができる。
 
@@ -5065,11 +5065,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Giving opinions.
         ja: 意見を述べる。
 
-      purpose_objectives:
+      objectives:
         en: Can express their thoughts about abstract or cultural topics such as music or films.
         ja: 音楽や映画など、抽象的・文化的なテーマについて自分の考えを述べることができる。
 
@@ -5225,11 +5225,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Can explain why something is a problem.
         ja: なぜそれが問題なのかを説明できる。
 
@@ -5376,11 +5376,11 @@ situations:
     details:
       cefr: B1
 
-      function:
+      purpose:
         en: Giving directions.
         ja: 案内する。
 
-      purpose_objectives:
+      objectives:
         en: Can describe how to do something, giving detailed instructions.
         ja: 何かをする方法を詳しく説明できる。
 
@@ -5510,11 +5510,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Explaining procedures.
         ja: 手順を説明する。
 
-      purpose_objectives:
+      objectives:
         en: When handing over pay slips to local staff, you can decline unrealizable requests from the other party with specific reasons.
         ja: 現地職員に給与明細を渡す際に、相手からの実現可能でない要望を具体的な理由とともに断ることができる。
 
@@ -5625,11 +5625,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Interviewing.
         ja: 面談する。
 
-      purpose_objectives:
+      objectives:
         en: Dealing with communications from the local police and other authorities regarding local incidental issues and hearing details of future actions.
         ja: 現地での事件性の高い問題に関して、現地警察等からの連絡に対処し、今後の措置の詳細を聞くことができる。
 
@@ -5734,11 +5734,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: When a passenger's checked baggage is broken or lost by the driver of a rented car, for example, the passenger can explain in detail about the condition and current status of the baggage at the time of boarding, and discuss how to resolve the problem by c
         ja: 乗客が借り上げ車のドライバーに預けた手荷物が壊れたり紛失したりしたときなど、乗車時の状態や現状について詳しく説明し、責任の所在を明らかにしたり、金銭的補償を要求したりして、問題解決のための話し合いをすることができる。
 
@@ -5881,11 +5881,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: When you are at an airline counter and your scheduled flight is cancelled, you can negotiate by showing the impact you will suffer and by stating alternatives and concessions.
         ja: 航空会社のカウンターで、予定していた飛行機が欠航になったときなど、自分が被る被害を示したり、代案や譲歩案などを述べたりしながら交渉することができる。
 
@@ -6017,11 +6017,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Explaining procedures.
         ja: 手順を説明する。
 
-      purpose_objectives:
+      objectives:
         en: Clearly and in detail explain to newcomers or successors the detailed procedures, tips for efficient handling, and points to watch out for in the workplace, and answer their questions to resolve their misunderstandings.
         ja: 職場で担当業務の細かい手順や手際よく処理するコツ、注意すべき点などについて、新しく入った人や後任者に明確に詳しく説明したり、相手の誤解を解決するように質問に答えたりすることができる。
 
@@ -6173,11 +6173,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Presenting an argument.
         ja: 論点を提示する。
 
-      purpose_objectives:
+      objectives:
         en: In workplace meetings, clarify one's own position on agenda items such as the introduction of telework, taking into account the advantages and disadvantages, and reinforce one's own opinions while presenting new arguments in response to the opinions of other meeting participants.
         ja: 職場内の会議において、テレワークの導入等の議題について、利点と欠点を踏まえて、自分の立場を明らかにし、他の会議参加者の意見に対し、新たな論点を示しつつ自己の意見を補強することができる。
 
@@ -6311,11 +6311,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Explain the failure of a product purchased for the workplace to the vendor, demand satisfactory compensation in a convincing manner, and negotiate based on the vendor's arguments.
         ja: 職場が購入した製品の故障について、販売業者に対し説明し、満足が得られるような補償を説得力ある言葉で要求し、業者側の言い分を踏まえ、交渉することができる。
 
@@ -6447,11 +6447,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Can explain a problem which has arisen and make it clear that the provider of the service/customer must make a concession.
         ja: 問題があることを説明し、サービスを提供する側、または受ける側が譲歩しなければならないことを明確にできる。
 
@@ -6584,11 +6584,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: Can state requirements and ask detailed questions regarding more complex services, e.g., rental agreements.
         ja: 賃貸契約など、より複雑なサービスに関して、要件を述べたり、詳細な質問をすることができる。
 
@@ -6751,11 +6751,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Giving opinions.
         ja: 意見を述べる。
 
-      purpose_objectives:
+      objectives:
         en: Can contribute, account for, and sustain their opinion, evaluate alternative proposals, and make and respond to hypotheses.
         ja: 自分の意見を述べ、説明し、維持することができる。また、代替案を評価し、仮説を立て、それに対応することができる。
 
@@ -6862,11 +6862,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Explaining a schedule.
         ja: スケジュールを説明する。
 
-      purpose_objectives:
+      objectives:
         en: In a meeting to discuss the schedule of a visit by a Japanese dignitary, be able to explain the entire schedule in a logical manner, emphasize key points and relevant details in a supplementary manner, and respond flexibly to questions from the participants.
         ja: 日本からの要人来訪日程についての打ち合わせにおいて、日程全体について筋道を立てて説明し、要点や関連する詳細事項を補足的に強調することができ、出席者からの質問に対し、臨機応変に応答することができる。
 
@@ -7016,11 +7016,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Making announcements.
         ja: 告知する。
 
-      purpose_objectives:
+      objectives:
         en: At Japanese cultural events, I can make clear, fluent, and natural announcements about the contents of the embassy booths I am in charge of, such as introductions and precautions, and respond flexibly in conversations with visitors about matters of interest that they have raised.
         ja: 日本の文化イベントで、担当する大使館ブースの展示内容の紹介や注意事項など、明快に流暢にごく自然にアナウンスをし、来客との会話の中で、来客が喚起した興味ある事柄に対応し、臨機応変に応答することができる。
 
@@ -7161,11 +7161,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Making suggestions.
         ja: 提案する。
 
-      purpose_objectives:
+      objectives:
         en: In planning a Japanese cultural event, be able to express one's own opinion on what kind of planning would be best, taking into account local needs, budgetary constraints, and feasibility. To be able to propose a plan for a better cultural event, taking i
         ja: 日本の文化イベントを企画する際、現地のニーズ、予算の制約、実現可能性などを考慮し、どのような企画が良いのか自分の意見を述べることができる。現地スタッフの意見を取り入れながら、よりよい文化イベントの企画を提案することができる。
 
@@ -7321,11 +7321,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: In response to an unwarranted complaint from a hotel about damaged equipment in a conference room rented for an event, you can negotiate with the hotel to avoid conflict while avoiding liability.
         ja: イベント用に借用したホテルの会議室において、破損した備品についてのホテル側からのいわれのないクレームに対し、責任を回避しつつ相手と対立しないようにうまく交渉の話し合いができる。
 
@@ -7480,11 +7480,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Giving opinions.
         ja: 意見を述べる。
 
-      purpose_objectives:
+      objectives:
         en: Can express their ideas and opinions with precision, and present and respond to complex lines of argument convincingly.
         ja: 自分の考えや意見を正確に表現することができ、複雑な議論にも説得力を持って対応することができる。
 
@@ -7626,11 +7626,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Making decisions.
         ja: 意思決定をする。
 
-      purpose_objectives:
+      objectives:
         en: Can indicate reservations and reluctance, state conditions when agreeing to requests or granting permission, and ask for understanding of their own position.
         ja: 依頼に同意したり許可を与える際に、保留や消極的な態度を示したり、条件を述べたり、自分の立場を理解するよう求めることができる。
 
@@ -7783,11 +7783,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Interviewing.
         ja: 面談する。
 
-      purpose_objectives:
+      objectives:
         en: Can carry out an effective, fluent interview, departing spontaneously from prepared questions, following up and probing interesting replies.
         ja: 効果的で円滑な面接を行うことができ、予め用意された質問からスムーズに会話を進め、フォローアップしながら興味深い回答を引き出すことができる。
 
@@ -7946,11 +7946,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Dealing with problems.
         ja: トラブルに対処する。
 
-      purpose_objectives:
+      objectives:
         en: Can cope linguistically to negotiate a solution to a dispute like an undeserved traffic ticket, financial responsibility for damage in a flat, or blame regarding an accident.
         ja: 交通違反の取り締まり、アパートの損害賠償、事故の責任追及などの問題を解決するために、口頭で交渉することができる。
 
@@ -8099,11 +8099,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Requesting goods and services.
         ja: 商品やサービスを依頼する。
 
-      purpose_objectives:
+      objectives:
         en: Can outline a case for compensation, using persuasive language to demand satisfaction and state clearly the limits to any concession they are prepared to make.
         ja: 満足のいく結果を得るために説得力のある言葉を使って、補償を受けるべき根拠を説明するとともに、いかなる条件に対してもその上限を明確に述べることができる。
 
@@ -8252,11 +8252,11 @@ situations:
     details:
       cefr: B2
 
-      function:
+      purpose:
         en: Making suggestions.
         ja: 提案する。
 
-      purpose_objectives:
+      objectives:
         en: Can understand and exchange complex information and advice on the full range of matters related to their occupational role.
         ja: 自分の職業上の役割に関連するあらゆる事項について、複雑な情報やアドバイスを理解し、やり取りすることができる。
 
