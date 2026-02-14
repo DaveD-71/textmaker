@@ -9,9 +9,14 @@ from pathlib import Path
 from typing import Iterable
 
 
+def tesseract_available() -> bool:
+    """Return True when Tesseract is available on PATH."""
+    return shutil.which('tesseract') is not None
+
+
 def check_tesseract() -> None:
     """Exit with an actionable message if Tesseract is unavailable."""
-    if shutil.which('tesseract') is None:
+    if not tesseract_available():
         print(
             'Error: tesseract binary not found on PATH. Install from '
             'https://tesseract-ocr.github.io/tessdoc/Installation.html'

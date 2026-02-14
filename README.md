@@ -193,7 +193,17 @@ Options:
 - `--assets-dir`: assets folder name (default: `assets`).
 - `--output`: output markdown file path (default: `<output-dir>\<input stem>.md`).
 - `--ocr-lang`: Tesseract language(s) for OCR (default: `eng+jpn`).
-- `--no-ocr`: disable OCR and use `pdftotext` instead.
+- `--ocr-mode`: OCR mode: `auto` (default, quality-gated fallback), `always`, or `never`.
+- `--layout-mode`: layout reconstruction mode: `auto` (default), `structured` (table/textbox recovery), or `plain`.
+- `--no-ocr`: legacy alias for `--ocr-mode never`.
+- `--fallback-min-nonspace-chars`: auto mode OCR fallback threshold for minimum extracted non-space chars.
+- `--fallback-max-garble-ratio`: auto mode OCR fallback threshold for maximum garble ratio.
+- `--fallback-min-japanese-ratio`: auto mode OCR fallback threshold for minimum Japanese ratio (when `jpn` is in `--ocr-lang`).
+- `--no-asset-markers`: disable explicit `[[ASSET:...]]` marker lines next to inline image references.
+
+Output behavior:
+- Extracted PDF assets are referenced inline in markdown as HTML `<img ... />` tags (DOCX-style), not appended as a bottom image gallery.
+- In `--layout-mode structured`, detected layout blocks are emitted with markers such as `[[TABLE:...]]`, `[[TEXTBOX:...]]`, and `[[SHAPE:...]]`.
 
 Dependencies:
 - `pdftotext`, `pdfimages`, `pdftoppm` (Poppler).
