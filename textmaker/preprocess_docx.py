@@ -5,14 +5,14 @@ Approach:
 - Mark page/section breaks with sentinel paragraphs.
 - Preserve manual line breaks inside paragraphs.
 - Expand common fields (REF, PAGEREF, HYPERLINK) into textual markers.
-- Add placeholders for shapes/textboxes with alt text.
+- Add placeholders for shapes/textboxes.
 
 Sentinels are simple text markers that survive pandoc and are later replaced:
 - [[PAGEBREAK]]
 - [[SECTIONBREAK]]
 - [[LINEBREAK]] inside paragraphs
 - [[REF:id|label]] for cross-references
-- [[SHAPE:alt text]] for shapes/text boxes carrying text or alt text
+- [[SHAPE:index|alt text]] for shapes/text boxes (alt text optional)
 """
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ except ImportError as exc:
 
 NS = {
     'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+    'v': 'urn:schemas-microsoft-com:vml',
     'wp': 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing',
 }
 
@@ -112,49 +113,70 @@ def _expand_fields(paragraph):
             paragraph.add_run(marker)
 
 
-def _add_shape_placeholders(paragraph):
+def _shape_alt_text(shape_elem) -> str:
+    """Extract human-readable shape label from DrawingML or legacy VML."""
+    doc_prs = shape_elem.findall('.//wp:docPr', NS)
+    if doc_prs:
+        desc = (doc_prs[0].get('descr') or '').strip()
+        title = (doc_prs[0].get('title') or '').strip()
+        if desc or title:
+            return desc or title
+
+    v_shapes = shape_elem.findall('.//v:shape', NS)
+    if v_shapes:
+        attrs = v_shapes[0].attrib
+        for key in ('alt', 'title', 'alttext'):
+            val = (attrs.get(key) or '').strip()
+            if val:
+                return val
+
+    return ''
+
+
+def _add_shape_placeholders(paragraph, start_index: int) -> int:
     """
     Add placeholders for drawing elements that might otherwise be dropped.
 
-    If the paragraph contains drawing/anchor elements with alt text, add [[SHAPE:alt]].
+    Marker IDs are deterministic and aligned with docx_to_markdown.extract_shapes().
     """
-    drawings = paragraph._p.findall('.//w:drawing', NS)
-    for drawing in drawings:
-        doc_prs = drawing.findall('.//wp:docPr', NS)
-        desc = ''
-        title = ''
-        if doc_prs:
-            desc = doc_prs[0].get('descr') or ''
-            title = doc_prs[0].get('title') or ''
-        alt = desc or title
-        alt = alt.strip()
+    shape_elements = paragraph._p.findall('.//w:drawing', NS) + paragraph._p.findall('.//w:pict', NS)
+    shape_index = start_index
+
+    for shape_elem in shape_elements:
+        shape_index += 1
+        alt = _shape_alt_text(shape_elem)
         if alt:
-            paragraph.add_run(f'[[SHAPE:{alt}]]')
+            paragraph.add_run(f'[[SHAPE:{shape_index}|{alt}]]')
+        else:
+            paragraph.add_run(f'[[SHAPE:{shape_index}]]')
+    return shape_index
 
 
 def preprocess_docx(src: Path, dest: Path) -> Path:
     """Write a preprocessed copy of src to dest with sentinel markers inserted."""
     doc = Document(src)
+    shape_index = 0
 
-    for p in list(doc.paragraphs):
+    for p in list(doc._element.findall('.//w:p', NS)):
+        paragraph = Paragraph(p, doc)
         # Mark section breaks and page breaks
-        has_section = _paragraph_has_section_break(p)
-        has_page_break = _paragraph_has_page_break(p)
+        has_section = _paragraph_has_section_break(paragraph)
+        has_page_break = _paragraph_has_page_break(paragraph)
 
-        _replace_line_breaks(p)
-        _expand_fields(p)
-        _add_shape_placeholders(p)
+        _replace_line_breaks(paragraph)
+        _expand_fields(paragraph)
+        shape_index = _add_shape_placeholders(paragraph, shape_index)
 
         if has_section:
-            _add_paragraph_after(p, '[[SECTIONBREAK]]')
+            _add_paragraph_after(paragraph, '[[SECTIONBREAK]]')
         elif has_page_break:
-            _add_paragraph_after(p, '[[PAGEBREAK]]')
+            _add_paragraph_after(paragraph, '[[PAGEBREAK]]')
 
     doc.save(dest)
     return dest
 
 
-if __name__ == '__main__':
+def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(
@@ -166,3 +188,7 @@ if __name__ == '__main__':
 
     preprocess_docx(Path(args.input), Path(args.output))
     print(f'Wrote preprocessed DOCX to {args.output}')
+
+
+if __name__ == '__main__':
+    main()

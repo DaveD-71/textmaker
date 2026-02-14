@@ -9,6 +9,7 @@ DOCX → Markdown splitter with media extraction and reference style export.
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import shutil
@@ -16,8 +17,8 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
-from zipfile import ZipFile
+from typing import Dict, Iterable, List, Optional, Set, Tuple
+from zipfile import ZipFile, ZIP_DEFLATED
 from xml.etree import ElementTree
 
 try:
@@ -185,25 +186,94 @@ def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: 
         with ZipFile(blank_path, 'r') as zf_blank:
             blank_document_xml = zf_blank.read('word/document.xml')
 
-    shutil.copyfile(source_docx, reference_out)
-    with ZipFile(reference_out, 'a') as zf_out:
-        zf_out.writestr('word/document.xml', blank_document_xml)
-        if keep_headers:
-            with ZipFile(source_docx, 'r') as zf_src:
-                for name in zf_src.namelist():
-                    if name.startswith('word/header') or name.startswith('word/footer'):
-                        zf_out.writestr(name, zf_src.read(name))
+    # Rebuild the zip package instead of appending entries. This avoids duplicate
+    # word/document.xml records and keeps the output package deterministic.
+    with tempfile.TemporaryDirectory() as tmpdir:
+        rebuilt_path = Path(tmpdir) / 'reference_rebuilt.docx'
+        with ZipFile(source_docx, 'r') as zf_src, ZipFile(
+            rebuilt_path, 'w', compression=ZIP_DEFLATED
+        ) as zf_out:
+            for name in zf_src.namelist():
+                if name == 'word/document.xml':
+                    zf_out.writestr(name, blank_document_xml)
+                    continue
+                if not keep_headers and (name.startswith('word/header') or name.startswith('word/footer')):
+                    continue
+                zf_out.writestr(name, zf_src.read(name))
+
+        shutil.copyfile(rebuilt_path, reference_out)
 
     return reference_out
 
 
 class ShapeAsset:
-    def __init__(self, index: int, alt_text: str, text: str, asset_path: Path, link_path: str) -> None:
+    def __init__(
+        self,
+        index: int,
+        alt_text: str,
+        text: str,
+        asset_path: Optional[Path],
+        link_path: str,
+        paragraph_index: int,
+        kind: str,
+        hidden: bool,
+        canonical_index: int,
+        duplicate_of: Optional[int] = None,
+    ) -> None:
         self.index = index
         self.alt_text = alt_text
         self.text = text
         self.asset_path = asset_path
         self.link_path = link_path
+        self.paragraph_index = paragraph_index
+        self.kind = kind
+        self.hidden = hidden
+        self.canonical_index = canonical_index
+        self.duplicate_of = duplicate_of
+
+
+def _shape_kind(shape_elem) -> str:
+    if shape_elem.tag == f"{{{SHAPE_NS['w']}}}drawing":
+        return 'drawing'
+    if shape_elem.tag == f"{{{SHAPE_NS['w']}}}pict":
+        return 'pict'
+    return 'unknown'
+
+
+def _shape_is_hidden(shape_elem) -> bool:
+    doc_pr = shape_elem.find('.//wp:docPr', SHAPE_NS)
+    if doc_pr is not None:
+        hidden = (doc_pr.get('hidden') or '').strip().lower()
+        if hidden in {'1', 'true', 'on'}:
+            return True
+    v_shape = shape_elem.find('.//v:shape', SHAPE_NS)
+    if v_shape is not None:
+        style = (v_shape.get('style') or '').replace(' ', '').lower()
+        if 'visibility:hidden' in style:
+            return True
+    return False
+
+
+def _shape_rel_ids(shape_elem) -> Tuple[str, ...]:
+    rel_ids: Set[str] = set()
+    for blip in shape_elem.findall('.//a:blip', SHAPE_NS):
+        embed = blip.get(f"{{{SHAPE_NS['r']}}}embed")
+        link = blip.get(f"{{{SHAPE_NS['r']}}}link")
+        if embed:
+            rel_ids.add(embed)
+        if link:
+            rel_ids.add(link)
+    return tuple(sorted(rel_ids))
+
+
+def _shape_extent_key(shape_elem) -> str:
+    extent = shape_elem.find('.//wp:extent', SHAPE_NS)
+    if extent is not None:
+        return f"{extent.get('cx') or ''}x{extent.get('cy') or ''}"
+    v_shape = shape_elem.find('.//v:shape', SHAPE_NS)
+    if v_shape is not None:
+        return (v_shape.get('style') or '').replace(' ', '').lower()
+    return ''
 
 
 def _extract_text_from_txbx(txbx) -> str:
@@ -217,11 +287,20 @@ def _extract_text_from_txbx(txbx) -> str:
 
 def _get_shape_alt_text(shape_elem) -> str:
     doc_pr = shape_elem.find('.//wp:docPr', SHAPE_NS)
-    if doc_pr is None:
-        return ''
-    desc = doc_pr.get('descr') or ''
-    title = doc_pr.get('title') or ''
-    return (desc or title).strip()
+    if doc_pr is not None:
+        desc = (doc_pr.get('descr') or '').strip()
+        title = (doc_pr.get('title') or '').strip()
+        if desc or title:
+            return desc or title
+
+    v_shape = shape_elem.find('.//v:shape', SHAPE_NS)
+    if v_shape is not None:
+        for key in ('alt', 'title', 'alttext'):
+            val = (v_shape.get(key) or '').strip()
+            if val:
+                return val
+
+    return ''
 
 
 def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) -> List[ShapeAsset]:
@@ -235,34 +314,107 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
             return shapes
 
     root = ElementTree.fromstring(document_xml)
-    shape_elements = [
-        elem
-        for elem in root.iter()
-        if elem.tag in {
-            f"{{{SHAPE_NS['w']}}}drawing",
-            f"{{{SHAPE_NS['w']}}}pict",
-        }
-    ]
+    shape_elements: List[Tuple[int, int, object]] = []
+    raw_index = 0
+    for para_idx, para in enumerate(root.findall('.//w:p', SHAPE_NS), start=1):
+        for elem in para.findall('.//w:drawing', SHAPE_NS):
+            raw_index += 1
+            shape_elements.append((raw_index, para_idx, elem))
+        for elem in para.findall('.//w:pict', SHAPE_NS):
+            raw_index += 1
+            shape_elements.append((raw_index, para_idx, elem))
 
     if not shape_elements:
         return shapes
 
     shape_assets_dir.mkdir(parents=True, exist_ok=True)
 
-    for idx, shape in enumerate(shape_elements, start=1):
+    canonical_by_signature: Dict[Tuple, ShapeAsset] = {}
+    canonical_by_raw_index: Dict[int, ShapeAsset] = {}
+
+    for idx, para_idx, shape in shape_elements:
         alt_text = _get_shape_alt_text(shape)
+        hidden = _shape_is_hidden(shape)
+        kind = _shape_kind(shape)
         text_chunks = []
         for txbx in shape.findall('.//w:txbxContent', SHAPE_NS):
             text_chunks.append(_extract_text_from_txbx(txbx))
         text = '\n'.join(chunk for chunk in text_chunks if chunk).strip()
 
-        asset_name = f'shape-{idx:03d}.xml'
-        asset_path = shape_assets_dir / asset_name
-        xml_payload = ElementTree.tostring(shape, encoding='unicode')
-        asset_path.write_text(xml_payload, encoding='utf-8')
+        signature = (
+            para_idx,
+            alt_text.strip().lower(),
+            text.strip(),
+            _shape_rel_ids(shape),
+            _shape_extent_key(shape),
+        )
 
-        link_path = (assets_link_base / 'shapes' / asset_name).as_posix()
-        shapes.append(ShapeAsset(idx, alt_text, text, asset_path, link_path))
+        duplicate_of: Optional[int] = None
+        canonical = canonical_by_signature.get(signature)
+        if canonical is not None:
+            duplicate_of = canonical.index
+        elif hidden:
+            # Hidden shapes are often fallback copies; alias to canonical when possible.
+            fallback_signature = signature[:-1]
+            for sig, candidate in canonical_by_signature.items():
+                if sig[:-1] == fallback_signature:
+                    canonical = candidate
+                    duplicate_of = candidate.index
+                    break
+
+        if canonical is not None:
+            shape_record = ShapeAsset(
+                index=idx,
+                alt_text=alt_text,
+                text=text,
+                asset_path=canonical.asset_path,
+                link_path=canonical.link_path,
+                paragraph_index=para_idx,
+                kind=kind,
+                hidden=hidden,
+                canonical_index=canonical.canonical_index,
+                duplicate_of=duplicate_of,
+            )
+            shapes.append(shape_record)
+            canonical_by_raw_index[idx] = canonical
+        else:
+            asset_name = f'shape-{idx:03d}.xml'
+            asset_path = shape_assets_dir / asset_name
+            xml_payload = ElementTree.tostring(shape, encoding='unicode')
+            asset_path.write_text(xml_payload, encoding='utf-8')
+            link_path = (assets_link_base / 'shapes' / asset_name).as_posix()
+
+            shape_record = ShapeAsset(
+                index=idx,
+                alt_text=alt_text,
+                text=text,
+                asset_path=asset_path,
+                link_path=link_path,
+                paragraph_index=para_idx,
+                kind=kind,
+                hidden=hidden,
+                canonical_index=idx,
+            )
+            shapes.append(shape_record)
+            canonical_by_signature[signature] = shape_record
+            canonical_by_raw_index[idx] = shape_record
+
+        meta_name = f'shape-{idx:03d}.json'
+        meta_path = shape_assets_dir / meta_name
+        record = shapes[-1]
+        metadata = {
+            'shape_index': idx,
+            'canonical_shape_index': record.canonical_index,
+            'duplicate_of': record.duplicate_of,
+            'kind': kind,
+            'hidden': hidden,
+            'paragraph_index': para_idx,
+            'alt_text': alt_text,
+            'text_excerpt': text[:200],
+            'xml_link_path': record.link_path,
+            'source_part': 'word/document.xml',
+        }
+        meta_path.write_text(json.dumps(metadata, ensure_ascii=True, indent=2), encoding='utf-8')
 
     return shapes
 
@@ -276,22 +428,40 @@ def _format_shape_text(text: str) -> str:
     return '\n'.join(f'> {line}' for line in prefixed)
 
 
-def replace_shape_markers(paths: Iterable[Path], shapes: List[ShapeAsset]) -> None:
+def _format_shape_inline_text(text: str) -> str:
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    if not lines:
+        return ''
+    joined = '; '.join(lines)
+    return f'Shape text: {joined}'
+
+
+def replace_shape_markers(paths: Iterable[Path], shapes: List[ShapeAsset], mode: str = 'link') -> None:
     if not shapes:
         return
-    shape_iter = iter(shapes)
-    pattern = re.compile(r'\[\[SHAPE:([^\]]*)\]\]')
+    shape_by_index = {shape.index: shape for shape in shapes}
+    pattern = re.compile(r'\[\[SHAPE:(\d+)(?:\|([^\]]*))?\]\]')
 
     for path in paths:
         text = path.read_text(encoding='utf-8')
 
         def _replace(match: re.Match) -> str:
-            shape = next(shape_iter, None)
+            shape_idx = int(match.group(1))
+            marker_label = (match.group(2) or '').strip()
+            shape = shape_by_index.get(shape_idx)
             if shape is None:
                 return match.group(0)
-            label = shape.alt_text or match.group(1).strip() or f'shape-{shape.index:03d}'
-            link = f'[{label}]({shape.link_path})'
+            label = shape.alt_text or marker_label or f'shape-{shape.index:03d}'
             blockquote = _format_shape_text(shape.text)
+            if mode == 'placeholder':
+                return f'*[shape: {label}]*'
+            if mode == 'inline-text-only':
+                inline_text = _format_shape_inline_text(shape.text)
+                if inline_text:
+                    return inline_text
+                return f'*[shape: {label}]*'
+
+            link = f'[{label}]({shape.link_path})'
             if blockquote:
                 return f'{link}\n\n{blockquote}'
             return link
@@ -360,6 +530,12 @@ def main() -> None:
         action='store_true',
         help='When writing reference-out, keep headers/footers from the source.',
     )
+    parser.add_argument(
+        '--shape-output',
+        choices=['link', 'placeholder', 'inline-text-only'],
+        default='link',
+        help='How shape markers render in markdown: link (default), placeholder, inline-text-only.',
+    )
     args = parser.parse_args()
 
     input_value = args.input_arg or args.input
@@ -423,7 +599,9 @@ def main() -> None:
     rewrite_asset_links(written_files, assets_arg, assets_link_base)
 
     shapes = extract_shapes(temp_docx, assets_dir, assets_link_base)
-    replace_shape_markers(written_files, shapes)
+    replace_shape_markers(written_files, shapes, mode=args.shape_output)
+    duplicate_shapes = sum(1 for s in shapes if s.duplicate_of is not None)
+    hidden_shapes = sum(1 for s in shapes if s.hidden)
 
     # Replace sentinel markers in all written markdown files
     postprocess_many(written_files)
@@ -439,6 +617,11 @@ def main() -> None:
 
     print(f'Wrote {len(written_files)} markdown file(s) to {md_dir}')
     print(f'Assets extracted to {assets_dir}')
+    print(
+        f'Processed {len(shapes)} shape marker(s); '
+        f'{duplicate_shapes} duplicate fallback shape(s) aliased; '
+        f'{hidden_shapes} hidden shape(s) detected.'
+    )
 
     # Move the source DOCX into the same-named folder last, after all processing.
     if source_docx.parent != desired_parent:
