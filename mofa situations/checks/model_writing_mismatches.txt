@@ -1,0 +1,13 @@
+Model writing tasks with dash-heavy formatting that differ from DOCM:
+F05 (text): Formatting differs (dash/whitespace)
+F08 (text): Formatting differs (dash/whitespace)
+F10 (text): Model text differs from DOCM
+E01 (text): Formatting differs (dash/whitespace)
+E10 (text): Model text differs from DOCM
+D05 (text): Model text differs from DOCM
+D06 (text): Model text differs from DOCM
+D09 (text): Model text differs from DOCM
+C01 (text): Model text differs from DOCM
+C02 (text): Model text differs from DOCM
+C06 (text): Model text differs from DOCM
+C10 (text): Model text differs from DOCM

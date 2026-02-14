@@ -5,11 +5,11 @@ situations:
     details:
       cefr: <string>
 
-      function:
+      purpose:
         en: <text>
         ja: <text>
 
-      purpose_objectives:
+      objectives:
         en: <text>
         ja: <text>
 

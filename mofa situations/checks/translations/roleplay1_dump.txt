@@ -1,0 +1,239 @@
+H01
+EN: You work at the Japanese consulate in Sydney. A visitor has arrived at the embassy and has asked if he can use the bathroom. Give him directions to the bathroom, and any other information he may need to know.
+JA: あなたはシドニーの日本大使館に勤務しています。訪問者が大使館に到着し、トイレを使いたいと言っています。トイレへの行き方と、その他必要な情報を伝えてください。
+
+H02
+EN: You work in the embassy in Belgium. A staff member from MOFA will arrive on Saturday. Ask local staff to go to the airport to meet him. Give information about his arrival schedule and answer any questions the staff asks.
+JA: あなたはベルギーの大使館に勤務しています。外務省の職員が土曜日に到着します。現地スタッフに空港に出迎えに行くよう依頼してください。外務省職員の到着予定を伝え、現地スタッフからの質問に答えてください。
+
+H03
+EN: You work in the consulate in Brisbane. A visitor from MOFA has come to Brisbane to meet with staff at the consulate. They have asked you to make a reservation at a local restaurant. The visitor has an allergy to seafood.
+JA: あなたはブリスベンの領事館に勤務しています。外務省からの訪問者が領事館の職員と会うためにブリスベンにやってきました。彼らはあなたに地元のレストランを予約するよう依頼してきました。この訪問者には魚介類アレルギーがあります。
+
+H04
+EN: You work at the Japanese consulate in New York. You are responsible for ordering office supplies. The office printer ran out of ink and you had to order it urgently. The vendor changed his delivery schedule so he can bring the printer ink to your office the same day. Thank him for his quick service.
+JA: あなたは事務用品の発注を担当しています。オフィスのプリンターのインクが切れてしまい、早急に注文する必要がありました。業者は納品スケジュールを変更し、その日のうちにプリンターインクをあなたのオフィスに届けることができるようになりました。迅速なサービスにお礼を言ってください。
+
+H05
+EN: You work in the consulate in Honolulu. You are responsible for checking the consulate’s accounts each month. You received a bank statement for an account held at a local bank. The statement shows a withdrawal of $500 that you have no record of. Call the bank and ask what time the transaction happened, and whether it was an ATM withdrawal or over the counter.
+JA: あなたはホノルルの領事館に勤務しています。あなたは毎月領事館の口座をチェックする責任者です。あなたは、地元の銀行から口座の明細書を受け取りました。その明細には覚えのない500ドルの引き出しが記載されています。銀行に電話して、その取引があった時間と、ATMでの引き出しか窓口での引き出しか尋ねてください。
+
+H06
+EN: You receive a phone call from a colleague in the US. He is planning a trip to Japan and will visit you. In the phone call, confirm his travel information, and the schedule for your first meeting. If necessary, give directions to your office.
+JA: アメリカの同僚から電話がかかってきました。その同僚は、日本への旅行を計画しており、あなたを訪問する予定です。その電話で、その同僚の渡航情報とあなたとの面会のスケジュールを確認し、必要であれば、あなたのオフィスへの道順を伝えてださい。
+
+H07
+EN: You are visiting the consulate in Brisbane. It’s lunchtime and you are in a local Italian restaurant. Order your lunch, and a drink. Also, ask the waiter if you can pay by credit card and get a receipt.
+JA: あなたはブリスベンの領事館を訪れています。昼時、あなたは地元のイタリアンレストランにいます。ランチと飲み物を注文してください。また、ウェイターにクレジットカードで支払えるかどうか尋ね、領収書をもらってください。
+
+H08
+EN: You are visiting the consulate in Toronto from Japan, on business. The staff in the consulate have arranged a small welcoming dinner for you at a nearby restaurant. You are sitting next to one of the local staff. Ask her about her job, and what she does in her free time.
+JA: あなたはトロントの領事館を訪問しています。領事館のスタッフが、近くのレストランであなたのために小さな歓迎の夕食を用意してくれました。あなたは現地スタッフの一人の隣に座っています。彼女の仕事について、また自由な時間に何をしているのか尋ねてみてください。
+
+H09
+EN: You work at the Japanese consulate in Los Angeles. A visitor calls to inquire about transportation options from the airport to their hotel in downtown LA. They need clear instructions on how to reach their destination using public transportation. Provide them with the necessary information. The visitor has come to Los Angeles for a meeting at the consulate.
+JA: あなたはロサンゼルスの日本領事館に勤務しています。訪問者から電話で、空港からロサンゼルスのダウンタウンにあるホテルまでの交通手段についての問い合わせがありました。公共交通機関を利用した目的地への行き方を明確に伝える必要があります。必要な情報を提供してください。その訪問者は領事館での打ち合わせのためにロサンゼルスを訪れています。
+
+H10
+EN: You work at the Japanese consulate in Chicago. Your colleague calls to inform you that a scheduled meeting with a delegation from Japan is delayed due to flight delays. You need to receive the message, confirm the new arrival time, and relay this information to the consul general.
+JA: あなたはシカゴの日本領事館で働いています。同僚から電話があり、予定されていた日本からの代表団との面会が、飛行機の遅れにより遅れるとのことです。あなたはメッセージを理解し、新しい到着時間を確認し、この情報を総領事に伝える必要があります。
+
+G01
+EN: You received a phone call for your boss. Your boss is on a business trip overseas and coming back to the office the day after tomorrow. Let the caller know and ask if he or she would like to leave a message.
+JA: あなたの上司宛に電話がかかってきました。上司は海外出張中で戻りは明後日になります。電話を掛けてきた相手にその旨を伝え、伝言を残すかどうか聞いてください。
+
+G02
+EN: Your boss and one other staff member are going to New York on a business trip. Contact a travel agent and reserve a hotel room. You want a non-smoking room for each person, and they prefer to have rooms on different floors. They will check in to the hotel around 10 p.m. as they need to go to a business dinner directly from the airport. Tell the staff their check-in time will be around 10 p.m.
+JA: あなたの上司とスタッフ一人がニューヨークに出張するため、旅行会社に連絡をとって、ホテルを予約してください。2室とも禁煙で、異なる階の部屋を手配してください。到着日は空港から直接会食に向かうため、ホテル到着は夜10時頃になる予定です。チェックインが夜10時ごろになることをホテルに伝えてください。
+
+G03
+EN: You work in the consulate in London. You ordered food for a social event on Saturday (it’s now Wednesday). You expected the food to arrive yesterday. Call the vendor and inquire about the delivery schedule.
+JA: あなたはロンドンの領事館に勤務しています。あなたは土曜日の社交イベントのために食料品を注文しました。（今日は水曜日です。）昨日届く予定だった食料品がまだ届いていません。業者に電話し、配達スケジュールを問い合わせてください。
+
+G04
+EN: You work in the embassy in Boston. You are supporting a reception for local businesspeople. Your role is to greet guests at the door, guide them to the reception room, and answer any questions. A guest arrives and asks you where he can find the staff member responsible for arranging the reception. Give the guest the name of the person, a brief physical description, and his or her current location.
+JA: あなたはボストンの大使館に勤務しています。地元のビジネスマンを招いたレセプションのサポートをしています。あなたの役割は、ゲストを玄関で出迎え、レセプションルームに案内し、質問に答えることです。あるゲストが到着し、レセプションの手配を担当するスタッフはどこにいるかと尋ねてきました。そのゲストに、その人の名前と現在いる場所を伝えてください。身体的な特徴も簡単に伝えましょう。
+
+G05
+EN: You work in the consulate in Los Angeles. A guest from Japan arrived yesterday. Call a driver and ask him to pick up the guest from his hotel and bring him back to the consulate for a meeting. Answer any questions the driver may have about the route to the hotel and back to the consulate.
+JA: あなたはロサンゼルスの領事館に勤務しています。昨日、日本からお客様が到着しました。運転手に電話をして、そのゲストをホテルまで迎えに行き、会議のため領事館まで連れてくるよう依頼してください。運転手がホテルまでの道程と領事館までの帰路について質問してきたら答えてください。
+
+G06
+EN: You will meet with a local catering company about catering an embassy event. It is your first time to meet. Before the meeting starts, greet your counterparts, introduce yourself and thank them for attending the meeting.
+JA: 大使館のイベントのケータリングについて、地元のケータリング会社と初めて打ち合わせをします。打合せが始まる前に、相手に挨拶と自己紹介をし、打合せに参加してくれたことに感謝していることを伝えてください。
+
+G07
+EN: You work in the consulate in Calgary. You asked a driver to pick up a visitor from her hotel, but the driver is now stuck in traffic and will be late. He is calling you to ask for advice. Discuss the options with the driver and tell him what he must do.
+JA: あなたはカルガリーの領事館に勤務しています。あなたは運転手に訪問者をホテルへ迎えにいくよう依頼しましたが、運転手は現在、渋滞に巻き込まれ、到着が遅れそうです。運転手はあなたに電話をかけてきて助言を求めました。運転手と選択肢について話し合い、運転手が何をすべきかを伝えてください。
+
+G08
+EN: You work in the consulate in Miami. You and other consulate staff are attending a dinner for a local charity. One of the charity organizers sits next to you during the meal. Ask him questions about the charity, and the plan for the next year.
+JA: あなたはマイアミの領事館に勤務しています。あなたと他の領事館の職員は地元のチャリティーのための夕食会に出席しています。食事中、チャリティーの主催者の一人があなたの隣に座った。このチャリティーについて、また、来年度の計画について質問してください。
+
+G09
+EN: You work at the Japanese consulate in Houston. A colleague from another consulate calls to inquire about your daily routine and habits. Answer their questions about your typical workday, including tasks you handle and your regular schedule.
+JA: あなたはヒューストンの日本領事館で働いています。他の領事館の同僚から、あなたの日常業務や習慣について尋ねる電話がかかってきました。あなたが担当する業務や普段のスケジュールなど、通常の勤務について質問に答えてください。
+
+G10
+EN: You work at the Japanese consulate in Miami. A colleague from another consulate calls to inquire about your pastimes and past activities during weekends. Answer their questions about your hobbies, interests, and any activities you've done recently.
+JA: あなたはマイアミの日本領事館で働いています。他の領事館の同僚から電話があり、あなたの趣味や週末の活動について尋ねられました。あなたの趣味や興味、最近行った活動について質問に答えてください。
+
+F01
+EN: You are looking for an apartment. You found a place you are interested in on a real estate agent’s website. Contact the real estate agent and tell him or her that you would like to see the apartment. You want to see a couple of other apartments, too. Tell the agent what kind of apartment you are looking for and ask for his or her recommendations.
+JA: あなたはアパートを探しています。不動産業者のウェブサイトで気になる物件を見つけました。不動産業者に連絡し、その物件の内見を希望することを伝えてください。他にもいくつかの物件を見たいと思っています。どのような物件を希望するかを伝え、おすすめの物件を紹介してもらってください。
+
+F02
+EN: You work in the Accounting Department at a diplomatic mission abroad. You have been asked to report the cost of child education costs to the Japan head office. You need to contact both international schools and local schools to check the education costs and the number of Japanese students at the schools.
+JA: あなたは在外公館で会計を担当しています。本省から子女教育費について報告するよう依頼されました。赴任先のインターナショナルスクールと現地校に連絡をとり、学校で教育を受けるために必要な費用、また日本人生徒の人数を確認してください。
+
+F03
+EN: You work in the Public Diplomacy Department at a diplomatic mission abroad. You are arranging a dinner party on behalf of the ambassador who wants to develop ties with local business leaders. Call and invite local business leaders to the party. Get any additional necessary information.
+JA: あなたは在外公館で広報外交を担当しています。現地のビジネスリーダーとの関係を発展させるため、大使から、ディナ―パーティーの手配を依頼されました。電話、もしくは書面で、現地のビジネスリーダーをパーティーに招待してください。その他、必要な情報を入手してください。
+
+F04
+EN: A new local staff member will be hired. You will interview the applicants. Conduct an interview.
+JA: 新たに現地スタッフを雇うことになりました。応募者の面接を行ってください。
+
+F05
+EN: You work in the Japanese embassy in Sydney. You have received an enquiry asking how to apply for a tourist visa. Tell the person she needs to submit visa application documents along with her application form. Answer any questions she may ask.
+JA: あなたは在シドニー日本大使館に勤務しています。観光ビザ申請に関する問い合わせを受けました。申請書の他に提出が必要な書類がある旨を伝えてください。また、追加の質問があれば対応してください。
+
+F06
+EN: You work at the Japanese embassy in Sydney. A newspaper wasn’t delivered this morning. Ask a senior local staff member to have it delivered as soon as possible.
+JA: 今朝、朝刊が届きませんでした。至急届けてもらうよう、現地のシニア・スタッフに依頼してください。
+
+F07
+EN: You work at the embassy in Belarus. A local businessman has invited your boss to a dinner party next Saturday. Your boss already has a commitment on the date of the party. Call the businessman and politely reject his invitation.
+JA: あなたはベラルーシの大使館に勤務しています。地元のビジネスマンがあなたの上司を次の土曜日のディナーパーティーに招待しています。あなたの上司はパーティーの日、すでに別の約束があります。そのビジネスマンに電話をして、丁重に招待を断ってください。
+
+F08
+EN: You work in the consulate in Seattle. You are having a meeting about the staff schedule. A local staff is sick, and his work for the next few days needs to be covered by the other staff. Discuss the schedule options and choose the best one.
+JA: あなたはシアトルの領事館に勤務しています。あなたはスタッフのスケジュールについて会議をしています。現地スタッフが病気で、今後数日間、そのスタッフの仕事を他のスタッフがカバーする必要があります。スケジュールについて話し合い、最も良いオプションを選んでください。
+
+F09
+EN: You ordered paper for the office photocopier from a local vendor but the delivery is a week late. This is the third time the vendor has not delivered on time. Contact them and complain about the late delivery.
+JA: オフィスのコピー機用の紙を地元の業者に注文しましたが、納品が1週間遅れています。この業者が期日通りに納品しないのはこれで3度目です。業者に連絡し、配達の遅れについて苦情を言ってください。
+
+F10
+EN: You are looking for a new supplier of paper products for your office. You have looked online at local suppliers. Contact one of them and ask some questions about their products, prices, and delivery schedules.
+JA: あなたは、オフィスで使用する紙製品の新しいサプライヤーを探しています。地元のサプライヤーをオンラインで探しました。そのうちの1社に連絡し、製品、価格、納期について質問してください。
+
+E01
+EN: A big conference is going to be held soon. You need office space for preparation. Reserve a hotel room for this purpose and ask the staff to prepare 8 long tables, 24 office chairs, 2 photocopiers, 4 printers, and 8 telephones. If there are other things you think you will need, ask the hotel staff to prepare them too. You need to rent these items for three weeks. Ask the staff to list each item in the estimate.
+JA: 大きな会議が間もなく開催されるため、ホテルの一室を借りて事務局を立ち上げます。部屋を予約し、長机8台、事務椅子24脚、コピー機2台、プリンター4台、電話8機、他必要な機材をホテルのスタッフに依頼してください。借りる期間は3週間です。見積書には、すべてのアイテムを記載するよう依頼してください。
+
+E02
+EN: A photocopier in the office jams very often. In addition, there are unnecessary lines when copying. Contact the support centre and ask them to send a repairman. Ask for an estimated cost to repair the machine, and how long it will take to repair. If the repair will take some time, ask if you can use an alternative photocopier for free.
+JA: 最近、コピー機がよく詰まります。またコピーした紙に線が入ってしまいます。サポート・センターにコピー機の点検を依頼してください。修理が必要な場合は、見積りを入手してください。また、修理にかかる時間と、代替機を無償で提供してもらえるか確認してください。
+
+E03
+EN: You were informed by residence staff that there is a stain on a wall in one of the buildings. It is possible that water is seeping from a pipe inside the wall. Ask the local staff in the Repair Division to contact a plumber. Ask him or her to make sure the plumber sends you an estimate first.
+JA: 大使公邸のスタッフから、壁にしみが出来ているとの報告がありました。壁内で漏水している可能性があります。営繕担当の現地スタッフに、配管工に連絡するよう依頼してください。また、まず見積書を入手するよう、依頼してください。
+
+E04
+EN: You work at the consulate in Cape Town. You have received a phone call from someone who has applied for a student visa. They were told it will take four weeks to process the visa, but it is now six weeks and the visa has not arrived. Listen to the complaint, apologize, and tell them what you can do.
+JA: あなたはケープタウンの領事館に勤務しています。学生ビザを申請した人から電話がかかってきました。彼らは、ビザの手続きに4週間かかると言われましたが、6週間経ってもビザが届いていません。苦情を聞き、謝罪し、あなたにできることを伝えてください。
+
+E05
+EN: You work in the consulate in Chicago. In an effort to increase tourism to Japan, you are participating in an expo to promote travel to Japan during summer. Your booth focuses on summer festivals across Japan. Answer questions about Japanese summer festivals.
+JA: あなたはシカゴの領事館に勤務しています。日本への観光客を増やすため、夏の日本旅行を促進する博覧会に参加することになりました。あなたのブースは日本各地の夏祭りに焦点をあてています。日本の夏祭りに関する質問に答えてください。
+
+E06
+EN: You work in the consulate in New York. Next month some visitors will come from Japan to attend an international conference. You need to choose a convenient and comfortable hotel for them. Discuss the options with a local staff member and consider the priorities (access to public transportation, restaurants and shops, hotel facilities, etc.). At the end of the discussion, choose the best hotel.
+JA: あなたはニューヨークの領事館に勤務しています。来月、国際会議に出席するために日本から何人かの訪問者がやってきます。その人たちのために、便利で快適なホテルを選ぶ必要があります。現地スタッフと選択肢について話し合い、優先順位（公共交通機関へのアクセス、レストランやショップ、ホテルの設備など）を検討してください。話し合いの結果、最適なホテルを選びましょう。
+
+E07
+EN: You work at the embassy in Canberra. Each year, the Japanese government sponsors one Australian to study in Japan to promote Japan-Australia exchange. A selection committee was held to choose this year’s student. There were three final candidates: Candidate 1 visited Japan briefly with family five years ago and studied Japanese in high school. Candidate 2 also studied Japanese in high school and has an aunt in Kumamoto married to a Japanese man. Candidate 3 has not studied Japanese formally, but her grandmother is Japanese, and she has family in Ishikawa. The committee selected Candidate 2.
+JA: あなたはキャンベラの大使館に勤務しています。日本政府は毎年、日豪交流促進を目的に、オーストラリア人を1名、日本へ留学させる後援をしています。今年の留学生を選考する委員会が開かれました。最終候補者は3名。一番目の候補者は、日本に強い関心を持っており、5年前に家族で短期間日本を訪れ、また高校で日本語を勉強しました。二番目の候補者は、高校で日本語を学び、日本人と結婚している叔母が熊本に住んでいて、家族ぐるみの付き合いがあります。三番目の候補者は、日本語を正式に勉強したことはありませんが、祖母が日本人で、石川県に家族がいます。委員会では、二番目の候補者が選ばれました。
+
+E08
+EN: You work in the embassy in Melbourne. You are attending an embassy party celebrating obon. One of the party guests, an Australian citizen, asks you to tell her what obon is. Explain your own understanding of obon. Make sure to include a general statement describing obon, and your own experience. Importantly, give your own opinion about the holiday.
+JA: あなたはメルボルンの大使館に勤務しています。あなたはお盆を祝う大使館のパーティーに出席しています。パーティーの招待客の一人であるオーストラリア市民が、あなたにお盆とは何か教えてほしいと頼んできました。あなた自身のお盆に対する理解を説明してください。お盆についての一般的な説明と、あなた自身の経験を必ず含めてください。重要なのは、この祝日についてあなた自身の意見を述べることです。
+
+E09
+EN: You work in the consulate in Johannesburg. You have planned a trip to the consulate in Cape Town to attend an important meeting there this coming Friday. However, your counterpart in Cape Town has asked to delay the meeting due to other internal issues. Explain to your counterpart why you think the meeting should not be delayed. Make sure you point out the reasons why any delay would be problematic.
+JA: あなたはヨハネスブルグの領事館に勤務しています。あなたは今週金曜日ケープタウンの領事館で行われる重要な会議に出席するために出張を予定しています。しかし、ケープタウンのあなたのカウンターパートが、内部の他の問題に対応するために会議を延期したいと言ってきました。この会議を延期すべきではないとあなたが考える理由を、カウンターパートに説明してください。その際、延期が問題となる理由を必ず指摘してください。
+
+E10
+EN: You work at the consulate in Chicago. The consulate has recently hired a new local staff member. As part of her training, you need to explain the visa application procedure so she can answer basic questions about visa applications to US citizens over the telephone.
+JA: あなたはシカゴの領事館に勤務しています。領事館は最近、新しい現地スタッフを採用しました。彼女のトレーニングの一環として、米国市民へのビザ申請に関する基本的な質問に電話で答えられるよう、ビザ申請手続きについて説明する必要があります。
+
+D01
+EN: You work in the Accounting Department at a diplomatic mission abroad. A local staff member has requested his social insurance premium not to be deducted from his salary as he wants to pay it separately by himself. You need to tell him that you can’t approve his request as local staff social insurance premium must be paid by the mission to the authorities.
+JA: あなたは在外公館で会計を担当しています。現地スタッフから、社会保険料は自分で払うので、給与から天引きしないで欲しいと依頼されました。社会保険料は、雇用している現地スタッフ全員分をまとめて納める必要があるので、それはできないと説明してください。
+
+D02
+EN: You work in the consular office of a diplomatic mission abroad. The local police contacted you because they have arrested a Japanese national. Ask the police who they arrested, where and why he was arrested, and any required procedures. You will also need to arrange a meeting with the arrested Japanese national.
+JA: あなたは在外公館の領事事務所に勤務しています。現地警察から、日本人を逮捕したと連絡がありました。警察に、誰を逮捕したのか、どこで、なぜ逮捕したのか、必要な手続きは何かを尋ねてください。また、逮捕された日本人との面会も手配してください。
+
+D03
+EN: You are flying from Tokyo to New York. When you arrive at New York, one of your checked-in suitcases does not arrive. Go to the counter and explain that your suitcase has not arrived, describe the case and provide the luggage check-in slip to the staff. Answer any other necessary questions.
+JA: あなたは東京からニューヨークまで飛行機で移動しました。ニューヨークに到着したとき、預けたスーツケースのうちの1つが届いていませんでした。カウンターでスーツケースが届いていないことを説明し、どのようなケースか説明し、荷物預かり証を係員に渡してください。その他、必要な質問に答えてください。
+
+D04
+EN: You work for the consulate in Brisbane. You have booked a flight to Sydney to attend an important meeting that starts tomorrow. The booking is for an economy class seat. When you arrive at the airport, you are informed that your flight has been cancelled. The staff tell you that the next available flight with an economy seat of equal value is tomorrow morning, which means you will miss the meeting. However, there is another flight this evening with a business class seat available. Explain your situation and request the seat on this evening’s flight but for a reduced cost.
+JA: あなたはブリスベンの領事館に勤務しています。明日から始まる重要な会議に出席するため、シドニー行きのフライトを予約しました。予約はエコノミークラスの座席です。空港に着くと、フライトがキャンセルされたことが告げられました。係員から、次に利用可能な同価格のエコノミー席のフライトは明日の朝であることを告げられましたが、それは会議に間に合わないことを意味します。しかし、今晩、ビジネスクラスの座席が空いている便があります。状況を説明し、その便の座席を割引料金で利用できるよう要請してください。
+
+D05
+EN: Next month you will change departments. You will have a meeting with your colleague who will take on one of your duties. Explain the duty in detail and give clear instructions. At the end, give extra advice on how to do the job well.
+JA: 来月、あなたは部署を異動することになりました。あなたは、あなたの業務の一つを引き継ぐ同僚と打合せを行います。その業務について詳しく説明し、明確な指示を与えてください。打合せを終える前、その仕事をうまくこなすためのアドバイスを更に行ってください。
+
+D06
+EN: You will participate in a meeting about working overtime. The management want to increase the number of overtime hours because there are fewer staff in the office. Give your opinion in the meeting, and clearly support it with reasons and when possible, strong supporting evidence.
+JA: 残業についての会議に参加することになりました。経営陣は、職場の人員が少ないため、残業時間を増やしたいと考えています。会議であなたの意見を述べ、その意見を支持する明確な理由と、可能であれば強力な裏付けとなる証拠を示してください。
+
+D07
+EN: Recently your office ordered a small laser jet printer. However, since it arrived it has had problems: It jams almost every time you try to print an address on an envelope, and sometimes the ink smudges after it is printed. You want to return the printer. Contact the vendor, explain the situation. Request to return to the printer and negotiate a solution to the problem.
+JA: 最近、あなたのオフィスでは、小型のレーザージェットプリンターを注文しました。しかし、それが届いてから、問題が発生しています。封筒に宛先を印刷しようとすると必ず詰まり、印刷後にインクがにじむこともあります。このプリンターを返品したいと思います。業者に連絡し、状況を説明してください。プリンターの返却を依頼し、問題の解決策を交渉してください。
+
+D08
+EN: You work at the consulate in Sydney and are organizing a dinner party for 30 people for a visiting Japanese dignitary. The event is scheduled for three weeks from now. Last week, a local staff member booked a restaurant at your request. Today, that staff member informed you that the restaurant has double booked and is asking to change the date. However, you have already sent invitations, and the dignitary’s schedule has been arranged around the dinner. Changing the date would cause significant inconvenience. Instruct the staff member to contact the restaurant and explore options. You are willing to adjust the time by an hour or two earlier, but not the date. You are also open to changing the location if the restaurant can help find an alternative of equal quality and price. If the new venue costs more, tell the restaurant they are expected to cover the difference.
+JA: あなたはシドニーの領事館に勤務しており、日本からの来賓のために30名規模の夕食会を企画しています。イベントは3週間後に予定されています。先週、あなたの依頼で現地職員がレストランを予約しましたが、今日、その職員から「レストラン側がダブルブッキングをしてしまい、日程の変更を求めてきた」と報告がありました。 しかし、すでに招待状は送付済みで、来賓のスケジュールも夕食会を中心に調整されています。日程の変更は大きな支障となります。 現地職員に、レストランに連絡を取り、どのような対応が可能か確認させてください。時間の変更（予定より1〜2時間早める）には応じられますが、日程の変更は不可です。また、同等の品質と価格の別のレストランをレストラン側が紹介してくれるのであれば、場所の変更にも応じられます。もし新しいレストランの費用が当初の見積もりより高い場合は、差額をレストラン側が負担するよう伝えてください。
+
+D09
+EN: You have been assigned to the consulate in Canberra. You will be moving to an apartment in Canberra next month. You found the apartment online, and you have just returned from visiting the apartment. You like it, want to move in. Before signing the contract, you need to check the following with the real estate agent: (1) the exact payment necessary to secure the apartment and the payment procedure; (2) when you can get the keys to the apartment; (3) any contract cancellation fees which would apply should you need to suddenly return to Japan.
+JA: あなたはキャンベラの領事館に赴任することになりました。来月、キャンベラのアパートに引っ越す予定です。あなたはそのアパートをインターネットで見つけ、見学から帰ってきたところです。気に入ったので、入居を希望しています。契約前に不動産会社に、(1)アパートを確保するために必要な支払額と支払方法、(2)アパートの鍵をいつ受け取れるか、(3)突然日本に帰国しなければならなくなった場合の契約解除料などを確認する必要があります。
+
+D10
+EN: You work at the consulate in Melbourne. You have been asked by your boss to choose a hotel for a group of dignitaries visiting Melbourne next month. The dignitaries will be attending a conference at the Melbourne Conference and Exhibition Centre. They will be in Melbourne for three days. Suggest a hotel and give reasons to support it. In the role play, your counterpart will make a counter suggestion for a different hotel. You need to explain the pros and cons of the counter suggestion and reaffirm why your hotel is the better choice.
+JA: あなたはメルボルンの領事館に勤務しています。あなたは上司から、来月メルボルンを訪れる高官グループのためにホテルを選ぶよう依頼されました。高官たちは、メルボルン会議展示センターで開催される会議に出席する予定です。彼らは 3 日間メルボルンに滞在する予定です。ホテルの候補を挙げ、そのホテルを勧める理由を述べてください。ロールプレイでは、あなたのパートナーが別のホテルを提案します。あなたは、相手の提案の長所と短所を説明し、自分のホテルがより良い選択である理由を明確にする必要があります。
+
+C01
+EN: You work in the Embassy in Washington DC. The assistant to the Minister of Foreign Affairs will visit the States to meet with his US counterpart. In the meeting, explain the schedule (it’s a 3-day trip), point out the important events (his meeting with his counterpart in the afternoon on Day 2, and dinner afterwards), and answer any questions that may come up in the meeting.
+JA: あなたはワシントンDCの大使館に勤務しています。外務大臣補佐官が米国を訪問し、米国のカウンターパートと会談します。打ち合わせで、訪問スケジュール（3日間の訪問であること）と、重要な予定（2日目の午後にカウンターパートと会談し、その後夕食会）について説明し、打ち合わせの出席者からの質問に答えてください。
+
+C02
+EN: You work at the Embassy of Japan in New Delhi. The Business Department of a local university has invited you to a university festival. Make a brief announcement about the mission of the embassy in relation to the department and answer any questions.
+JA: あなたはニューデリーの日本大使館に勤務しています。地元の大学の経営学部から大学祭に招待されました。その学部に関わる大使館が果たすべき役割について簡潔に発表し、質問に答えてください。
+
+C03
+EN: You work at the consulate in Sydney. You are attending a meeting to plan the next Japanese cultural event at the embassy. You want to suggest an event about Japanese crafts. A local staff member suggests Sports Day as Australian’s love of sport is renowned. Discuss and decide which type of event to choose, taking into account budget limitations, the feasibility of holding the event (season, cost, attendance by local citizens), and of course, the opinions of your counterpart.
+JA: あなたはシドニーにある領事館に勤務しています。あなたは大使館で行われる次の日本文化イベントを計画するための会議に出席しています。あなたは日本の工芸品に関するイベントを提案したいと思っています。現地スタッフは、オーストラリア人のスポーツ好きは有名なので、スポーツデイを提案しました。予算の制限、開催可能性（季節、費用、地元市民の参加）、そしてもちろん相手の意見も考慮して、どのようなイベントを実施するか話し合って決めましょう。
+
+C04
+EN: You work at the consulate in New York. You recently rented a conference room for three days at a hotel for an event. The hotel is one you use often. It is near a train station hub, and the staff there are usually very friendly and supportive of Japanese guests. After the event, you received an email from the hotel manager claiming some equipment in the conference room was damaged. Now, the hotel staff is calling to follow up. You must negotiate with the hotel to avoid liability for the damaged goods, while also sustaining a positive relationship with the manager and the hotel. You would like to be able to use the hotel again in the future.
+JA: あなたはニューヨークの領事館に勤務しています。あなたは最近、あるイベントのためにホテルの会議室を3日間借りました。そのホテルは、あなたがよく利用するホテルで、駅の近くにあり、スタッフはいつも日本人客にとても親切で協力的です。イベント終了後、ホテルのマネージャーから、会議室の備品が破損しているとのメールが届きました。今、ホテルのスタッフがフォローアップの電話をかけている。あなたはホテル側と交渉し、破損品の責任を回避すると同時に、マネージャーやホテル側と良好な関係を維持しなければなりません。あなたは、将来この
+
+C05
+EN: You work at the consulate in Melbourne. You are participating in a meeting about catering an upcoming event. You favor a local caterer you have worked with before. They have always been reliable and provided high quality food. However, your counterpart wants to use a new caterer who is popular on Instagram. They feel their social media presence would help promote the activities of the embassy. You need to argue in favor of your preferred caterer in detail giving reasons and evidence to support your preferred choice. You also need to listen and respond to the arguments presented by your counterpart.
+JA: あなたはメルボルンの領事館に勤務しています。あなたは今度のイベントのケータリングについてのミーティングに参加しています。あなたは、以前一緒に仕事をしたことのある地元のケータリ ング会社を推薦しました。彼らはいつも信頼でき、質の高い料理を提供してくれます。しかし、あなたのカウンターパートは、Instagramで人気のある新しいケータリングを使いたいと言っています。彼らは、彼らのソーシャルメディアでの存在が、大使館の広報活動に役立つと考えています。あなたは、自身が選んだケータリングを支持する理由と証拠を詳細に
+
+C06
+EN: You work at the consulate in Sydney and have a meeting with a local staff member. He wants to request a personal loan from the embassy to cover unexpected expenses. The embassy can approve this as an advance on his salary. However, you need to make the following clear: (1) You are reluctant to approve it, as it means his salary—paid in five weeks (two weeks after the end of the calendar-month pay period)—will be reduced. (2) He must agree to the conditions: the advance is limited to one-third of the monthly salary and can only be granted once. (3) Approval requires a special request to the head office in Tokyo, and a response may take several days.
+JA: あなたはシドニーの領事館に勤務しています。あなたは現地の職員と打ち合わせをすることになりました。その職員は、予期せぬ支払いが発生したため、大使館に給料の個人ローンを依頼したいとのことです。大使館は、彼の給与の前払いとしてその要求を承諾することができます。しかし、その職員に以下のことを明確にする必要があります。 (1) 5週間後（暦月である給与計算期間の終了から2週間後）の給与支給時に支給額が減少することになるため、本来、この要求は許可したくないこと。(2) 前払いに関する条件を承諾すること（前払いできる上限は月給総額の3分の1、前払いできるのは1回のみ）。(3) 融資を受けるには、あなたが東京のオフィスに特別な依頼をする必要があり、回答が得られるまで数日かかること。
+
+C07
+EN: You work at the consulate in New York. You are going to interview a candidate for an administrative position in the embassy. You want to know about her education and work history, her experience with Japan and Japanese people, and whether she would be a good match with the people in the office. Make sure you ask follow-up questions to responses to get more detailed information. During the interview, the candidate will provide additional information. Make sure to ask follow-up questions about that too.
+JA: あなたはニューヨークの領事館に勤務しています。あなたは大使館の事務職の候補者を面接する予定です。あなたは、候補者の学歴や職歴、日本や日本人との付き合い方、職場の人たちとうまくやっていけるかどうかなどを知りたいと考えています。より詳細な情報を得るために、候補者の回答に対してフォローアップの質問をするようにしましょう。面接では、候補者がさらに情報を提供します。それについてもフォローアップの質問をするようにしましょう。
+
+C08
+EN: You work at the consulate in Melbourne. You recently purchased a product for your office (e.g., a printer, a desk lamp, an office chair). You had problems with the product and returned it to the vendor within the warranty period. However, the vendor has contacted you because the product was returned damaged. The damage is in addition to the original fault. When you shipped the product, you believed it was in good condition. You received an email from the vendor. They are now saying they cannot accept the return of the product because of the damage that was not reported when you made the claim. Call the vendor and resolve the situation.
+JA: あなたはメルボルンの領事館に勤務しています。あなたは最近オフィス用の製品（例：プリンター、机上用照明、オフィスチェア）を購入しました。あなたは製品に問題があり、保証期間内にベンダーに返送しました。しかし、製品が破損して返送されたため、ベンダーからあなたに連絡が入りました。この損傷は、もともとの不具合に加えてのものです。製品を返送したとき、あなたはその製品が良い状態で返送されたと信じています。ベンダーからEメールが届きました。彼らは今、あなたがクレームを出したときに報告されなかった損傷があるため、製品の返品を受け入れることができないと言っています。ベンダーに電話をして、状況を解決してください。
+
+C09
+EN: You work at the consulate in Sydney. You were involved in a minor car accident this morning. There was some damage to your vehicle. There are some bents and scratches on one of the panels. You believe you were driving safely and appropriately, and the other party was responsible for the collision. At the accident site, you exchanged insurance details with the other driver. You have now arrived at work. Call your insurance company, explain the situation, and make it clear that the other party needs to pay the full cost of the repairs.
+JA: あなたはシドニーの領事館に勤務しています。今朝、軽い交通事故に遭いました。あなたの車には多少の損傷があります。パネルの1つが少し曲がり、傷がついています。あなたは自分の運転は安全かつ適切であり、衝突したのは相手の責任であると考えています。事故現場で、あなたは相手の運転手と保険の詳細を交換しました。あなたは今、職場に到着しています。保険会社に電話し、状況を説明し、相手が修理費を全額負担する必要があることを明確に伝えてください。
+
+C10
+EN: You work at the consulate in New York. You are participating in a budget meeting. Your boss has asked for ideas on how to reduce costs for the next quarter. Share your ideas with detailed reasons and supporting statements.
+JA: あなたはニューヨークの領事館に勤務しています。あなたは予算会議に参加しています。あなたの上司は、次の四半期のコストを削減する方法について意見を求めています。詳細な理由と裏付けとなる記述を添えて、あなたの考えを述べてください。

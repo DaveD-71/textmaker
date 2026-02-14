@@ -1,0 +1,74 @@
+Auckland. A: H02
+Auckland. The: F06
+Auckland. You: C05, C08, D10
+Australia. Answer: E05
+Australia. Call: F02
+Belarus. A: F07
+Belgium. A: H02
+Boston. You: G04, H08
+Brisbane: H03
+Brisbane. A: H03
+Brisbane. However: H03
+Brisbane. It: H07
+Brisbane. You: D04
+Calgary: D04
+Calgary. You: G07
+Canberra. A: E01
+Canberra. Each: E07
+Canberra. Next: E06
+Canberra. You: F02
+Cape Town: E09
+Cape Town. You: E04, E08
+Chiang Mai. A: C01
+Chicago. In: E05
+Chicago. The: E10
+Chicago. Your: H10
+Edinburgh. You: F08
+Fiji. There: E02
+Hong Kong. The: G06
+Honolulu. You: F03, H05
+Houston. A: G09
+Houston. This: E09
+Houston. You: E04, E09
+Ishikawa. The: E07
+Israel. A: G05
+Japan. Answer: E05
+Johannesburg. You: E09
+Kumamoto: E07
+London: E10
+London. You: C04, C07, G03, H07
+London. Your: C10
+Los Angeles: H09
+Los Angeles. A: G05, H09
+Los Angeles. You: F05, H05
+MOFA: C01, H02, H03
+Melbourne: D10
+Melbourne. You: C05, C08, D10, E08, G08
+Miami. A: G10
+Miami. The: D02
+Miami. You: G08
+Myanmar. When: D01
+New York: D03, G02
+New York City. A: H09
+New York. Next: E06
+New York. When: D03
+New York. You: C04, C07, C10, H04
+New Zealand. You: G04
+Ontario. The: C02
+Perth. A: F07
+Rio: G03
+Rome: E03
+Seattle. You: F08
+Singapore. You: G07
+Sydney: D03, D04, D08
+Sydney. A: F06, H01
+Sydney. When: D03
+Sydney. You: C03, C09, F05, H06
+Tokyo: C06, D03, E09
+Toronto: H08
+Toronto. A: C06, H01
+Toronto. You: C03, C09, D04, D08
+US: E10
+Vancouver: D08
+Vancouver. One: F04
+Washington DC. The: C01
