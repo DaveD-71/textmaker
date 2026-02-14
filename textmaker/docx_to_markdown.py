@@ -29,6 +29,7 @@ except ImportError as exc:
     ) from exc
 
 from .ocr_utils import check_tesseract
+from .local_io import stage_input_file, sync_dir, sync_file
 from .preprocess_docx import preprocess_docx
 from .postprocess_markdown import postprocess_many
 
@@ -536,6 +537,11 @@ def main() -> None:
         default='link',
         help='How shape markers render in markdown: link (default), placeholder, inline-text-only.',
     )
+    parser.add_argument(
+        '--no-local-staging',
+        action='store_true',
+        help='Disable default behavior that stages conversion in a local temp folder before syncing outputs.',
+    )
     args = parser.parse_args()
 
     input_value = args.input_arg or args.input
@@ -546,6 +552,7 @@ def main() -> None:
     if not source_docx.exists():
         print(f'Input DOCX not found: {source_docx}')
         sys.exit(1)
+    original_source_docx = source_docx
 
     base_dir = source_docx.parent
     desired_parent = base_dir if base_dir.name == source_docx.stem else (base_dir / source_docx.stem)
@@ -565,19 +572,36 @@ def main() -> None:
     md_dir.mkdir(parents=True, exist_ok=True)
     assets_link_base = Path(os.path.relpath(assets_dir, md_dir))
 
-    temp_md = output_dir / '_full.md'
-    temp_docx = output_dir / '_preprocessed.docx'
+    run_source_docx = source_docx
+    run_output_dir = output_dir
+    run_assets_dir = assets_dir
+    run_md_dir = md_dir
+    staging_ctx: tempfile.TemporaryDirectory[str] | None = None
+    if not args.no_local_staging:
+        staging_ctx = tempfile.TemporaryDirectory(prefix='textmaker-docx-')
+        staging_root = Path(staging_ctx.name)
+        run_source_docx = stage_input_file(source_docx, staging_root / 'input')
+        run_output_dir = staging_root / 'out'
+        run_output_dir.mkdir(parents=True, exist_ok=True)
+        run_assets_dir = (run_output_dir / assets_arg) if not assets_arg.is_absolute() else (staging_root / 'assets')
+        run_assets_dir.mkdir(parents=True, exist_ok=True)
+        run_md_dir = run_output_dir / '.md'
+        run_md_dir.mkdir(parents=True, exist_ok=True)
+        print(f'Local staging enabled: {run_source_docx}')
+
+    temp_md = run_output_dir / '_full.md'
+    temp_docx = run_output_dir / '_preprocessed.docx'
 
     check_pandoc(args.pandoc_bin)
     if args.ocr_lang:
         check_tesseract()
 
     # Preprocess DOCX to add sentinel markers for unsupported elements
-    preprocess_docx(source_docx, temp_docx)
+    preprocess_docx(run_source_docx, temp_docx)
 
     run_pandoc_to_markdown(
         input_docx=temp_docx,
-        output_dir=output_dir,
+        output_dir=run_output_dir,
         output_md=temp_md,
         assets_arg=str(assets_arg),
         pandoc_bin=args.pandoc_bin,
@@ -591,14 +615,14 @@ def main() -> None:
     )
     written_files: List[Path] = []
     if front_matter:
-        front_path = md_dir / '00-front-matter.md'
+        front_path = run_md_dir / '00-front-matter.md'
         front_path.write_text((front_matter.strip('\n') + '\n'), encoding='utf-8')
         written_files.append(front_path)
-    written_files.extend(write_sections_to_files(sections, md_dir, start_index=1))
+    written_files.extend(write_sections_to_files(sections, run_md_dir, start_index=1))
 
     rewrite_asset_links(written_files, assets_arg, assets_link_base)
 
-    shapes = extract_shapes(temp_docx, assets_dir, assets_link_base)
+    shapes = extract_shapes(temp_docx, run_assets_dir, assets_link_base)
     replace_shape_markers(written_files, shapes, mode=args.shape_output)
     duplicate_shapes = sum(1 for s in shapes if s.duplicate_of is not None)
     hidden_shapes = sum(1 for s in shapes if s.hidden)
@@ -612,8 +636,18 @@ def main() -> None:
 
     ref_path = Path(args.reference_out) if args.reference_out else (output_dir / 'reference.docx')
     if ref_path:
-        create_reference_docx(source_docx, ref_path, keep_headers=args.preserve_headers)
+        run_ref_path = ref_path
+        if staging_ctx is not None:
+            run_ref_path = run_output_dir / 'reference.docx'
+        create_reference_docx(run_source_docx, run_ref_path, keep_headers=args.preserve_headers)
+        if staging_ctx is not None:
+            sync_file(run_ref_path, ref_path)
         print(f'Wrote reference styles to {ref_path}')
+
+    if staging_ctx is not None:
+        sync_dir(run_md_dir, md_dir)
+        sync_dir(run_assets_dir, assets_dir)
+        staging_ctx.cleanup()
 
     print(f'Wrote {len(written_files)} markdown file(s) to {md_dir}')
     print(f'Assets extracted to {assets_dir}')
@@ -624,10 +658,10 @@ def main() -> None:
     )
 
     # Move the source DOCX into the same-named folder last, after all processing.
-    if source_docx.parent != desired_parent:
-        moved_path = desired_parent / source_docx.name
-        if moved_path != source_docx:
-            source_docx.replace(moved_path)
+    if original_source_docx.parent != desired_parent:
+        moved_path = desired_parent / original_source_docx.name
+        if moved_path != original_source_docx:
+            original_source_docx.replace(moved_path)
 
 
 if __name__ == '__main__':

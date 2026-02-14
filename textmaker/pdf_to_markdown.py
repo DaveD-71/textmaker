@@ -16,7 +16,8 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-from .ocr_utils import check_tesseract, run_tesseract_many, tesseract_available
+from .ocr_utils import check_tesseract, run_tesseract, run_tesseract_many, tesseract_available
+from .local_io import stage_input_file, sync_dir, sync_file
 
 
 class PdfImageAsset:
@@ -35,6 +36,59 @@ class PdfImageAsset:
         self.height_px = height_px
         self.x_ppi = x_ppi
         self.y_ppi = y_ppi
+
+
+_CIRCLED_NUM_MAP = {chr(0x2460 + i): str(i + 1) for i in range(20)}  # ①..⑳
+_FULLWIDTH_DIGITS = str.maketrans('０１２３４５６７８９', '0123456789')
+
+
+def _normalize_leading_list_marker(text: str) -> str:
+    s = text.strip()
+    if not s:
+        return s
+
+    # Normalize common full-width punctuation first.
+    s = s.replace('（', '(').replace('）', ')')
+    s = s.replace('［', '[').replace('］', ']')
+
+    # ① / (②) / [③] -> (1) / (2) / (3)
+    m = re.match(r'^[\(\[\{]?\s*([①-⑳])\s*[\)\]\}]?\s*', s)
+    if m:
+        n = _CIRCLED_NUM_MAP.get(m.group(1), '')
+        rest = s[m.end() :].lstrip()
+        return f'({n}) {rest}'.rstrip()
+
+    # (４) / [7] / （10） -> (4) / (7) / (10)
+    m = re.match(r'^[\(\[\{]?\s*([0-9０-９]+)\s*[\)\]\}]?\s*', s)
+    if m:
+        n = m.group(1).translate(_FULLWIDTH_DIGITS)
+        rest = s[m.end() :].lstrip()
+        return f'({n}) {rest}'.rstrip()
+
+    return s
+
+
+def _normalize_ocr_english_artifacts(text: str) -> str:
+    s = text
+    # Common OCR joins for small English words.
+    replacements = {
+        r'\batleast\b': 'at least',
+        r'\binfact\b': 'in fact',
+        r'\balot\b': 'a lot',
+        r'\bacold\b': 'a cold',
+        r'\bacheckup\b': 'a checkup',
+        r'\bata\b': 'at a',
+        r'\bona\b': 'on a',
+        r'\byouexercise\b': 'you exercise',
+    }
+    for pat, repl in replacements.items():
+        s = re.sub(pat, repl, s, flags=re.IGNORECASE)
+
+    # Normalize item markers like "16.(D)" -> "16. (D)"
+    s = re.sub(r'^(\d+)\.\s*\(([A-Za-z])\)', r'\1. (\2)', s)
+    # Normalize malformed parenthesized option marker at start "(O" -> "(C)" when line starts with item number.
+    s = re.sub(r'^(\d+)\.\s*\(O([^\)])', r'\1. (C)\2', s)
+    return s
 
 
 def _bbox_overlap(a: tuple[float, float, float, float], b: tuple[float, float, float, float]) -> float:
@@ -82,6 +136,8 @@ def _normalize_extracted_text(text: str) -> str:
         i = j
     normalized = ''.join(out)
     normalized = re.sub(r'\s{2,}', ' ', normalized).strip()
+    normalized = _normalize_leading_list_marker(normalized)
+    normalized = _normalize_ocr_english_artifacts(normalized)
     return normalized
 
 
@@ -172,9 +228,18 @@ def extract_structured_pages(input_pdf: Path) -> list[str] | None:
             for t_idx, table in enumerate(tables, start=1):
                 bbox = (float(table.bbox[0]), float(table.bbox[1]), float(table.bbox[2]), float(table.bbox[3]))
                 md_table = _rows_to_markdown_table(table.extract())
-                if not md_table:
-                    continue
-                blocks.append((bbox[1], f'[[TABLE:page-{page_no:03d}-table-{t_idx:03d}]]\n{md_table}'))
+                if md_table:
+                    blocks.append((bbox[1], f'[[TABLE:page-{page_no:03d}-table-{t_idx:03d}]]\n{md_table}'))
+                else:
+                    blocks.append(
+                        (
+                            bbox[1],
+                            (
+                                f'[[TABLE:page-{page_no:03d}-table-{t_idx:03d}|'
+                                f'bbox={bbox[0]:.1f},{bbox[1]:.1f},{bbox[2]:.1f},{bbox[3]:.1f}]]'
+                            ),
+                        )
+                    )
                 masked_bboxes.append(bbox)
 
             # Textboxes: detect larger rectangles carrying text that are not table regions.
@@ -358,7 +423,9 @@ def run_pdftoppm(input_pdf: Path, output_dir: Path, prefix: str) -> list[Path]:
     ]
     print('Running:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
-    return sorted(output_dir.glob(f'{prefix}-*.png'))
+    pages = sorted(output_dir.glob(f'{prefix}-*.png'))
+    print(f'Rendered pages: {len(pages)}')
+    return pages
 
 
 def _asset_ref_html(asset: PdfImageAsset, assets_rel: Path) -> str:
@@ -469,6 +536,14 @@ def analyze_text_quality(text: str) -> dict[str, float | int]:
         '\u873f',  # "蜿"
         '\uff7f',  # half-width katakana fragment often seen in mojibake
         '\ufffd',  # replacement character
+        '縺',  # common mojibake lead glyph in JP text
+        '繧',
+        '繝',
+        '縲',
+        '荳',
+        '螟',
+        '譁',
+        '隧',
     )
     for ch in nonspace_chars:
         code = ord(ch)
@@ -538,6 +613,12 @@ def main() -> None:
         help='Tesseract language(s) for OCR (default: "eng+jpn").',
     )
     parser.add_argument(
+        '--ocr-psm',
+        type=int,
+        default=3,
+        help='Tesseract page segmentation mode (default: 3).',
+    )
+    parser.add_argument(
         '--ocr-mode',
         choices=['auto', 'always', 'never'],
         default='auto',
@@ -577,18 +658,23 @@ def main() -> None:
         action='store_true',
         help='Disable explicit [[ASSET:...]] marker lines next to inline image references.',
     )
+    parser.add_argument(
+        '--no-local-staging',
+        action='store_true',
+        help='Disable default behavior that stages conversion in a local temp folder before syncing outputs.',
+    )
     args = parser.parse_args()
 
     ocr_mode = args.ocr_mode
     if args.no_ocr:
         ocr_mode = 'never'
 
-    input_path = Path(args.input).expanduser().resolve()
-    if not input_path.exists():
-        print(f'Error: input PDF not found: {input_path}')
+    source_input_path = Path(args.input).expanduser().resolve()
+    if not source_input_path.exists():
+        print(f'Error: input PDF not found: {source_input_path}')
         sys.exit(1)
 
-    base_dir = input_path.parent
+    base_dir = source_input_path.parent
     output_dir = Path(args.output_dir).expanduser().resolve() if args.output_dir else (base_dir / 'out').resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -596,10 +682,26 @@ def main() -> None:
     assets_dir = assets_arg if assets_arg.is_absolute() else (output_dir / assets_arg)
     assets_dir.mkdir(parents=True, exist_ok=True)
 
-    output_md = Path(args.output) if args.output else (output_dir / f'{input_path.stem}.md')
+    output_md = Path(args.output) if args.output else (output_dir / f'{source_input_path.stem}.md')
     output_md.parent.mkdir(parents=True, exist_ok=True)
 
-    extracted_images = run_pdfimages(input_path, assets_dir, prefix='image')
+    staging_ctx: tempfile.TemporaryDirectory[str] | None = None
+    run_input_path = source_input_path
+    run_output_dir = output_dir
+    run_assets_dir = assets_dir
+    run_output_md = output_md
+    if not args.no_local_staging:
+        staging_ctx = tempfile.TemporaryDirectory(prefix='textmaker-pdf-')
+        staging_root = Path(staging_ctx.name)
+        run_input_path = stage_input_file(source_input_path, staging_root / 'input')
+        run_output_dir = staging_root / 'out'
+        run_output_dir.mkdir(parents=True, exist_ok=True)
+        run_assets_dir = (run_output_dir / assets_arg) if not assets_arg.is_absolute() else (staging_root / 'assets')
+        run_assets_dir.mkdir(parents=True, exist_ok=True)
+        run_output_md = run_output_dir / output_md.name
+        print(f'Local staging enabled: {run_input_path}')
+
+    extracted_images = run_pdfimages(run_input_path, run_assets_dir, prefix='image')
 
     text = ''
     text_source = 'pdftotext'
@@ -608,13 +710,18 @@ def main() -> None:
 
     if ocr_mode == 'always':
         check_tesseract()
-        page_images = run_pdftoppm(input_path, output_dir / '_pages', prefix='page')
-        text = run_tesseract_many(page_images, args.ocr_lang)
+        page_images = run_pdftoppm(run_input_path, run_output_dir / '_pages', prefix='page')
+        text = run_tesseract_many(
+            page_images,
+            args.ocr_lang,
+            psm=args.ocr_psm,
+            extra_configs=['preserve_interword_spaces=1'],
+        )
         text_source = 'ocr'
     else:
         with tempfile.TemporaryDirectory() as tmpdir:
-            tmp_txt = Path(tmpdir) / f'{input_path.stem}.txt'
-            run_pdftotext(input_path, tmp_txt)
+            tmp_txt = Path(tmpdir) / f'{source_input_path.stem}.txt'
+            run_pdftotext(run_input_path, tmp_txt)
             text = tmp_txt.read_text(encoding='utf-8')
 
         if ocr_mode == 'auto':
@@ -636,15 +743,51 @@ def main() -> None:
             if should_fallback:
                 if tesseract_available():
                     print('Auto OCR fallback triggered:', '; '.join(reasons))
-                    page_images = run_pdftoppm(input_path, output_dir / '_pages', prefix='page')
-                    text = run_tesseract_many(page_images, args.ocr_lang)
-                    text_source = 'ocr'
+                    page_images = run_pdftoppm(run_input_path, run_output_dir / '_pages', prefix='page')
+
+                    extracted_pages = text.split('\f')
+                    if len(extracted_pages) < len(page_images):
+                        extracted_pages.extend([''] * (len(page_images) - len(extracted_pages)))
+                    elif len(extracted_pages) > len(page_images):
+                        extracted_pages = extracted_pages[: len(page_images)]
+
+                    fallback_pages: list[int] = []
+                    for idx, page_text in enumerate(extracted_pages, start=1):
+                        page_metrics = analyze_text_quality(page_text)
+                        page_should_fallback, _ = should_fallback_to_ocr(
+                            page_metrics,
+                            min_nonspace_chars=max(120, args.fallback_min_nonspace_chars // 4),
+                            max_garble_ratio=args.fallback_max_garble_ratio,
+                            min_japanese_ratio=args.fallback_min_japanese_ratio,
+                            expect_japanese=expect_japanese,
+                        )
+                        if page_should_fallback:
+                            fallback_pages.append(idx)
+
+                    if fallback_pages:
+                        print(
+                            f'Auto OCR per-page fallback: {len(fallback_pages)}/{len(page_images)} pages '
+                            f'({", ".join(str(p) for p in fallback_pages[:12])}'
+                            f'{"..." if len(fallback_pages) > 12 else ""})'
+                        )
+                        for page_idx in fallback_pages:
+                            print(f'Running OCR page replacement: {page_idx}/{len(page_images)}')
+                            extracted_pages[page_idx - 1] = run_tesseract(
+                                page_images[page_idx - 1],
+                                args.ocr_lang,
+                                psm=args.ocr_psm,
+                                extra_configs=['preserve_interword_spaces=1'],
+                            ).strip()
+                        text = '\f\n'.join(extracted_pages)
+                        text_source = 'mixed'
+                    else:
+                        print('Auto OCR fallback requested, but page-level quality looked acceptable; keeping pdftotext output.')
                 else:
                     print('Auto OCR fallback requested but Tesseract is unavailable; using pdftotext output.')
                     print('Fallback reasons:', '; '.join(reasons))
 
-    if args.layout_mode in {'auto', 'structured'} and text_source == 'pdftotext':
-        structured_pages = extract_structured_pages(input_path)
+    if args.layout_mode in {'auto', 'structured'}:
+        structured_pages = extract_structured_pages(run_input_path)
         if structured_pages is None and args.layout_mode == 'structured':
             print('Structured layout mode requested, but pdfplumber is unavailable; using plain layout text.')
 
@@ -667,7 +810,13 @@ def main() -> None:
             include_asset_markers=not args.no_asset_markers,
         )
         print('Layout source: plain')
-    output_md.write_text(markdown, encoding='utf-8')
+    run_output_md.write_text(markdown, encoding='utf-8')
+    if staging_ctx is not None:
+        sync_dir(run_assets_dir, assets_dir)
+        sync_file(run_output_md, output_md)
+        staging_ctx.cleanup()
+    else:
+        output_md = run_output_md
     print('Text source:', text_source)
     print('Wrote', output_md)
 

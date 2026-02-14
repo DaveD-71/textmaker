@@ -193,6 +193,7 @@ Options:
 - `--assets-dir`: assets folder name (default: `assets`).
 - `--output`: output markdown file path (default: `<output-dir>\<input stem>.md`).
 - `--ocr-lang`: Tesseract language(s) for OCR (default: `eng+jpn`).
+- `--ocr-psm`: Tesseract page segmentation mode (default: `3`).
 - `--ocr-mode`: OCR mode: `auto` (default, quality-gated fallback), `always`, or `never`.
 - `--layout-mode`: layout reconstruction mode: `auto` (default), `structured` (table/textbox recovery), or `plain`.
 - `--no-ocr`: legacy alias for `--ocr-mode never`.

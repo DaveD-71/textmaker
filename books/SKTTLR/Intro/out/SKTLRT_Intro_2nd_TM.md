@@ -2,7 +2,7 @@
 > ®
 > SUCCESSFUL KEYS TO THE TOEIC
 > LISTENING AND READING TEST INTRO
-> [2nd Edition]
+> (2) nd Edition]
 
 教授用書
 
@@ -27,11 +27,11 @@ SUCCESSFUL KEYS TO THE TOEIC LISTENING AND READING TEST Introでは，以下の�
 
 http://w.kirihara.co.jp/
 
-1. 音声スクリプトの文字データ
+(1) . 音声スクリプトの文字データ
 
 本冊子に掲載されているスクリプトの文字データを提供しています。音声内容の確認をさせる際などにご利用ください。
 
-2. ワークシートおよび実践演習問題
+(2) . ワークシートおよび実践演習問題
 
 ワークシートでは，TOEIC® LISTENING AND READING TESTのPart 5またはPart 7の形式の問題を15ユニット分用意し
 
@@ -43,7 +43,7 @@ http://w.kirihara.co.jp/
 
 問題冊子はPDFファイルで，リスニングセクションの音声はmp3ファイルで提供しています。
 
-3. Words Review音声ファイル
+(3) . Words Review音声ファイル
 
 テキストに掲載しているWords Reviewの問題をmp3の音声ファイルで提供しています。
 
@@ -145,11 +145,11 @@ Part 1 Photographs (p. 8)
 
 [[SHAPE:page-004-shape-001|bbox=411.2,431.5,556.0,526.9]]
 
-1. (B)
+(1) . (B)
 
-A_02
+[[TABLE:page-004-table-001|bbox=42.8,444.2,72.2,469.9]]
 
-米 (A) The people are in a ( store ). この人たちは店の中にいる。
+(A) The people are in a ( store ). この人たちは店の中にいる。
 
 (B) The car’s door is ( open ). 車のドアは開いている。
 
@@ -157,13 +157,13 @@ A_02
 
 (D) The man is ( driving ) a car. 男性は車を運転している。
 
-2. (A)
+(2) . (A)
 
 [[SHAPE:page-004-shape-002|bbox=411.2,548.5,556.0,644.0]]
 
-A_03
+[[TABLE:page-004-table-002|bbox=42.8,548.8,72.2,574.6]]
 
-英 (A) They are doing the ( laundry ). 彼らは洗濯をしている。
+(A) They are doing the ( laundry ). 彼らは洗濯をしている。
 
 (B) They are ( cooking ) a meal. 彼らは食事を作っている。
 
@@ -171,13 +171,13 @@ A_03
 
 (D) They are washing the ( dishes ). 彼らは食器を洗っている。
 
-3. (C)
+(3) . (C)
 
 [[SHAPE:page-004-shape-003|bbox=411.2,665.5,556.0,761.0]]
 
-A_04
+[[TABLE:page-004-table-003|bbox=42.8,665.9,72.2,691.8]]
 
-加 (A) The dishwasher is ( empty ). 食器洗い機の中には何もない。
+(A) The dishwasher is ( empty ). 食器洗い機の中には何もない。
 
 (B) The door of the dishwasher is ( closed ). 食器洗い機の扉は閉まっ
 
@@ -207,47 +207,47 @@ Unit 1 Daily Life
 
 Part 2 Question-Response (p. 9)
 
-4. (B)
+(4) . (B)
 
-A_05
+[[TABLE:page-005-table-001|bbox=42.7,93.0,72.2,132.2]]
 
-米 ( How ) are you today? 今日はご機嫌いかがですか。
+How ) are you today? 今日はご機嫌いかがですか。
 
-英 (A) I’m 17 (years) old. 私は 17 歳です。
+(A) I’m 17 (years) old. 私は 17 歳です。
 
 (B) ( Fine ), thanks. いですよ，ありがとう。
 
 (C) ( It ) will be fine tomorrow. 明日は晴れるでしょう。
 
-5. (A)
+(5) . (A)
 
-A_06
+[[TABLE:page-005-table-002|bbox=42.7,184.9,72.2,224.3]]
 
-加 ( When ) did Mike go home? マイクはいつ家に帰ったのですか。
+When ) did Mike go home? マイクはいつ家に帰ったのですか。
 
-豪 (A) ( At ) about five p.m. 午後 5 時頃です。
+(A) ( At ) about five p.m. 午後 5 時頃です。
 
 (B) Yes, he ( went ) home. はい，彼は家に帰りました。
 
 (C) To his ( apartment ). 彼のアパートにです。
 
-6. (B)
+(6) . (B)
 
-A_07
+[[TABLE:page-005-table-003|bbox=42.7,277.0,72.2,316.2]]
 
-米 ( What ) will you do tomorrow? あなたは明日，何をする予定ですか。
+What ) will you do tomorrow? あなたは明日，何をする予定ですか。
 
-豪 (A) I ( went ) to the park. 私は公園へ行きました。
+(A) I ( went ) to the park. 私は公園へ行きました。
 
 (B) I’ll ( go ) to school. 私は学校に行く予定です。
 
 (C) I ( cooked ) a meal. 私は食事を作りました。
 
-7. (C)
+(7) . (C)
 
-A_08
+[[TABLE:page-005-table-004|bbox=42.7,369.0,72.2,394.6]]
 
-加 ( Who ) will come to your party on Friday night? 金曜日の夜，あなたのパーティーには誰が来るの
+Who ) will come to your party on Friday night? 金曜日の夜，あなたのパーティーには誰が来るの
 
 でしょうか。
 
@@ -257,25 +257,25 @@ A_08
 
 (C) Some ( friends ) from college. 大学の友人たちです。
 
-8. (A)
+(8) . (A)
 
-A_09
+[[TABLE:page-005-table-005|bbox=42.7,474.6,72.2,513.8]]
 
-英 ( Where ) is the vacuum cleaner? 掃除機はどこにありますか。
+Where ) is the vacuum cleaner? 掃除機はどこにありますか。
 
-米 (A) ( Under ) the stairs. 階段の下です。
+(A) ( Under ) the stairs. 階段の下です。
 
 (B) It was on ( sale ) for $90. それは特売で 90 ドルでした。
 
 (C) That’s a good ( idea ). それはい考えです。
 
-9. (C)
+(9) . (C)
 
-A_10
+[[TABLE:page-005-table-006|bbox=42.7,566.5,72.2,605.9]]
 
-豪 ( Why ) did Sandy go home early? なぜサンディは早く家に帰ったのですか。
+Why ) did Sandy go home early? なぜサンディは早く家に帰ったのですか。
 
-加 (A) Because she went home ( early ). 彼女が早く帰ったからです。
+(A) Because she went home ( early ). 彼女が早く帰ったからです。
 
 (B) No, she wasn’t ( late ). いえ，彼女は遅刻しませんでした。
 
@@ -289,7 +289,7 @@ Unit 1 Daily Life
 
 Part 3 Conversations (p. 10)
 
-10. (C) 男性の発言中の疑問詞 where と女性の返事の中の restaurant が解答のためのキーワード。
+(10) . (C) 男性の発言中の疑問詞 where と女性の返事の中の restaurant が解答のためのキーワード。
 
 What are they talking about? 2 人は何について話をしていますか。
 
@@ -303,9 +303,11 @@ What are they talking about? 2 人は何について話をしていますか。
 
 A_11
 
-米 M: ( Where ) would you like to go for dinner tonight?
+[[TABLE:page-006-table-001|bbox=42.7,175.2,62.6,202.0]]
 
-英 W: I would like to go to the new Chinese ( restaurant ) around the corner.
+M: ( Where ) would you like to go for dinner tonight?
+
+W: I would like to go to the new Chinese ( restaurant ) around the corner.
 
 【訳】
 
@@ -315,7 +317,7 @@ A_11
 
 ―
 
-11. (A) living room は家の中にあるので Working in the house を選ぶ。
+(11) . (A) living room は家の中にあるので Working in the house を選ぶ。
 
 What is the man doing right now? 男性は今，何をしていますか。
 
@@ -329,9 +331,11 @@ What is the man doing right now? 男性は今，何をしていますか。
 
 A_12
 
-豪 W: Can you help me water the plants in the ( garden )?
+[[TABLE:page-006-table-002|bbox=42.7,351.5,62.6,378.2]]
 
-加 M: I’m busy cleaning the ( living ) room right now. But I can help you later.
+W: Can you help me water the plants in the ( garden )?
+
+M: I’m busy cleaning the ( living ) room right now. But I can help you later.
 
 【訳】
 
@@ -341,7 +345,7 @@ A_12
 
 ―
 
-12. (A) 女性の希望はお金を節約できるいちばん安い部屋。それは 7 番街の 580 ドルの物件。
+(12) . (A) 女性の希望はお金を節約できるいちばん安い部屋。それは 7 番街の 580 ドルの物件。
 
 Look at the graphic. Where will the woman live? 図を見てください。女性はどこに住むことになるでし
 
@@ -357,18 +361,20 @@ Look at the graphic. Where will the woman live? 図を見てください。女�
 
 A_13
 
-米 M: Among these three apartments, (which ) one do you want to rent?
+[[TABLE:page-006-table-003|bbox=42.7,553.0,62.6,579.7]]
 
-英 W: Well, I will probably choose the ( cheapest ) one to save money.
+M: Among these three apartments, (which ) one do you want to rent?
+
+W: Well, I will probably choose the ( cheapest ) one to save money.
 
 【訳】
 
 [[TABLE:page-006-table-004]]
 | アパート | 家賃 |
 | --- | --- |
-| 1部屋 / 800平方フィート 7番街 | 580ドル |
-| 1部屋 / 850平方フィート メインストリート | 600ドル |
-| 2寝室 / 920平方フィート パークアベニュー | 800ドル |
+| (1) 部屋 / 800平方フィート 7番街 | (580) ドル |
+| (1) 部屋 / 850平方フィート メインストリート | (600) ドル |
+| (2) 寝室 / 920平方フィート パークアベニュー | (800) ドル |
 
 男：こにある 3 つのアパートのうち，どれを借りたいですか。
 
@@ -382,27 +388,27 @@ Unit 1 Daily Life
 
 Part 5 Incomplete Sentences (p. 11)
 
-13. (B) 主語となる名詞が必要。cook は名詞（コック）と動詞（料理する）の両方の意味がある。
+(13) . (B) 主語となる名詞が必要。cook は名詞(コック)と動詞(料理する)の両方の意味がある。
 
-14. (A) bill（請求金額）という名詞を修飾する形容詞を選ぶ。「電気料金」と言う場合は，electric を使う。
+(14) . (A) bill(請求金額)という名詞を修飾する形容詞を選ぶ。「電気料金」と言う場合は，electric を使う。
 
-15. (D) 副詞 enough（十分に）が後ろから修飾する形容詞を選ぶ。比較の文ではないので，(A)と(B)は誤
+(15) . (D) 副詞 enough(十分に)が後ろから修飾する形容詞を選ぶ。比較の文ではないので，(A)と(B)は誤
 
 り。
 
-16. (C) be 動詞 is と形容詞 quiet の間なので，副詞を入れるのが適当。
+(16) . (C) be 動詞 is と形容詞 quiet の間なので，副詞を入れるのが適当。
 
-17. (D) 数詞の three に続くのは複数形の名詞 days。
+(17) . (D) 数詞の three に続くのは複数形の名詞 days。
 
-18. (C) 何かを丁寧に依頼するときは副詞 please をつけ加える。
+(18) . (C) 何かを丁寧に依頼するときは副詞 please をつけ加える。
 
-19. (A)「慎重に」という意味の副詞 carefully を選ぶ。
+(19) . (A)「慎重に」という意味の副詞 carefully を選ぶ。
 
 Part 7 Reading Comprehension (p. 12)
 
-20. (C) 本文の第 1 文に closed for maintenance due to an electric problem（電気系統の問題による保守作
+(20) . (C) 本文の第 1 文に closed for maintenance due to an electric problem(電気系統の問題による保守作
 
-業のため閉鎖される）とあるので repairs（修理）が妥当。
+業のため閉鎖される)とあるので repairs(修理)が妥当。
 
 (A) Rent payment 家賃の支払い
 
@@ -412,7 +418,7 @@ Part 7 Reading Comprehension (p. 12)
 
 (D) Apartment rentals アパートの賃貸
 
-21. (C) 水曜日の朝から木曜日の夕方にかけてということなので，約 2 日間と判断できる。
+(21) . (C) 水曜日の朝から木曜日の夕方にかけてということなので，約 2 日間と判断できる。
 
 (A) For nine hours 9 時間
 
@@ -422,9 +428,9 @@ Part 7 Reading Comprehension (p. 12)
 
 (D) For three days 3 日間
 
-22. (B) 日付の数字を見れば，4 月 5 日から 6 日までとわかる。from A to B（A から B まで）は between A
+(22) . (B) 日付の数字を見れば，4 月 5 日から 6 日までとわかる。from A to B(A から B まで)は between A
 
-and B（A と B の間）とも表現できる。
+and B(A と B の間)とも表現できる。
 
 (A) Before Wednesday, April 5 4 月 5 日の水曜日より前
 
@@ -457,17 +463,17 @@ Check Your Vocabulary!
 
 (1) mall ショッピングセンター
 
-(2) closet （作り付けの）たんす，収納庫
+(2) closet (作り付けの)たんす，収納庫
 
-(3) terminal （交通機関の）発着場
+(3) terminal (交通機関の)発着場
 
-(4) stop （バスの）停留所
+(4) stop (バスの)停留所
 
 (5) grocery 日用雑貨，食料品
 
 (6) lobby ロビー，待合室
 
-(7) lot 駐車場（=parking lot）
+(7) lot 駐車場(=parking lot)
 
 (8) site 現場，場所
 
@@ -485,7 +491,7 @@ Word Asociation
 
 (4) park a car 車を駐車する
 
-(5) play a game ゲーム［試合］をする
+(5) play a game ゲーム[試合]をする
 
 (6) recommend a restaurant レストランをすめる
 
@@ -497,11 +503,11 @@ Part 1 Photographs (p. 14)
 
 [[SHAPE:page-008-shape-001|bbox=411.2,431.6,556.0,526.9]]
 
-1. (B)
+(1) . (B)
 
-A_14
+[[TABLE:page-008-table-001|bbox=42.8,448.6,72.2,474.2]]
 
-豪 (A) They are ( playing ) a game. 彼らはゲームをしている。
+(A) They are ( playing ) a game. 彼らはゲームをしている。
 
 (B) They are ( walking ) in a park. 彼らは公園の中を歩いている。
 
@@ -509,13 +515,13 @@ A_14
 
 (D) They are ( cutting ) trees. 彼らは木を切っている。
 
-2. (C)
+(2) . (C)
 
 [[SHAPE:page-008-shape-002|bbox=411.2,539.6,556.0,636.4]]
 
-A_15
+[[TABLE:page-008-table-002|bbox=42.8,540.2,72.2,566.2]]
 
-米 (A) The floor is being ( cleaned ). 床は掃除されているところだ。
+(A) The floor is being ( cleaned ). 床は掃除されているところだ。
 
 (B) People are ( sitting ) on chairs. 人々が椅子に座っている。
 
@@ -527,11 +533,11 @@ A_15
 
 てある。
 
-3. (A)
+(3) . (A)
 
-A_16
+[[TABLE:page-008-table-003|bbox=42.8,659.8,72.2,685.4]]
 
-英 (A) She is coming through an ( entrance ). 彼女は入口から入ってくるところだ。
+(A) She is coming through an ( entrance ). 彼女は入口から入ってくるところだ。
 
 (B) She is sitting in a ( mall ). 彼女はショッピングセンターで腰を下ろしている。
 
@@ -555,35 +561,35 @@ Unit 2 Places
 
 Part 2 Question-Response (p. 15)
 
-4. (B)
+(4) . (B)
 
-A_17
+[[TABLE:page-009-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-豪 ( Where ) do you want to go? どこに行きたいですか。
+Where ) do you want to go? どこに行きたいですか。
 
-米 (A) Sounds ( good ). それはいですね。
+(A) Sounds ( good ). それはいですね。
 
 (B) To a ( restaurant ). レストランに。
 
 (C) I ( went ) to a grocery store. 私は食料品店へ行きました。
 
-5. (C)
+(5) . (C)
 
-A_18
+[[TABLE:page-009-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-英 ( Who ) drove to the theater? 誰が劇場まで運転したのですか。
+Who ) drove to the theater? 誰が劇場まで運転したのですか。
 
-加 (A) OK, I ( will ). わかりました，私がやりましょう。
+(A) OK, I ( will ). わかりました，私がやりましょう。
 
 (B) The ( concert ) was great. そのコンサートはすばらしかったです。
 
 (C) Mike ( did ). マイクがしました。
 
-6. (A)
+(6) . (A)
 
-A_19
+[[TABLE:page-009-table-003|bbox=42.7,279.4,72.2,305.0]]
 
-米 What ( kind ) of restaurant do you recommend for the party? そのパーティーにはどのようなレス
+What ( kind ) of restaurant do you recommend for the party? そのパーティーにはどのようなレス
 
 トランがおすめですか。
 
@@ -593,37 +599,37 @@ A_19
 
 (C) Sorry, I ( forgot ) to tell you. すみません，あなたに言うのを忘れていました。
 
-7. (C)
+(7) . (C)
 
-A_20
+[[TABLE:page-009-table-004|bbox=42.7,385.1,72.2,424.3]]
 
-加 Where can I ( park ) my car? 私の車はどこに駐車できますか。
+Where can I ( park ) my car? 私の車はどこに駐車できますか。
 
-豪 (A) You can ( take ) the subway. 地下鉄で行くことができます。
+(A) You can ( take ) the subway. 地下鉄で行くことができます。
 
 (B) Kids often ( play ) at the park. 子どもたちはよくその公園で遊びます。
 
 (C) In the ( lot ) across the street. 通りの向こう側にある駐車場です。
 
-8. (A)
+(8) . (A)
 
-A_21
+[[TABLE:page-009-table-005|bbox=42.7,477.0,72.2,516.4]]
 
-米 ( When ) should I meet you? いつあなたにお会いしたらいのでしょうか。
+When ) should I meet you? いつあなたにお会いしたらいのでしょうか。
 
-豪 (A) At 3:00 on ( Thursday ). 木曜日の 3 時です。
+(A) At 3:00 on ( Thursday ). 木曜日の 3 時です。
 
 (B) At the ( station ). 駅です。
 
 (C) I ( met ) her this morning. 私は彼女に今朝会いました。
 
-9. (B)
+(9) . (B)
 
-A_22
+[[TABLE:page-009-table-006|bbox=42.7,569.0,72.2,608.3]]
 
-加 What ( type ) of place are you living in? あなたは，どのようなところにお住まいですか。
+What ( type ) of place are you living in? あなたは，どのようなところにお住まいですか。
 
-英 (A) I live ( with ) my younger brother. 弟と一緒に住んでいます。
+(A) I live ( with ) my younger brother. 弟と一緒に住んでいます。
 
 (B) I live in an apartment with four (bedrooms). 寝室が 4 つあるアパートに住んでいます。
 
@@ -637,7 +643,7 @@ Unit 2 Places
 
 Part 4 Talks (p. 16)
 
-10. (B) miss は「（チャンスなどを）逃す」という意味。否定の命令形で用いると「～を逃さないで」と
+(10) . (B) miss は「(チャンスなどを)逃す」という意味。否定の命令形で用いると「～を逃さないで」と
 
 いう勧誘の表現になる。
 
@@ -673,7 +679,7 @@ get a copy here and have her ( sign ) it. The event starts in the ( lobby ) at 5
 
 ―
 
-11. (C) ほとんどの文が命令文なので，何かの規則についての話だと推定できる。city pool（市営プール）
+(11) . (C) ほとんどの文が命令文なので，何かの規則についての話だと推定できる。city pool(市営プール)
 
 は公共施設の 1 つ。
 
@@ -717,39 +723,39 @@ Unit 2 Places
 
 Part 5 Incomplete Sentences (p. 17)
 
-12. (D) lot には「土地の一区画」という一般的な意味と「駐車場」という意味がある。parking lot は駐車
+(12) . (D) lot には「土地の一区画」という一般的な意味と「駐車場」という意味がある。parking lot は駐車
 
 場のこと。
 
-13. (C)「（作り付けの）たんす」を意味する closet「クロゼット」は日本語でもよく使われている。
+(13) . (C)「(作り付けの)たんす」を意味する closet「クロゼット」は日本語でもよく使われている。
 
-14. (B) site には「場所，現場」という意味があり，construction site で「工事現場」。
+(14) . (B) site には「場所，現場」という意味があり，construction site で「工事現場」。
 
-15. (C)「ロビー」も日本語になっている。
+(15) . (C)「ロビー」も日本語になっている。
 
-16. (C)「アパート」は日本式の表現で，英語では apartment となることに注意。
+(16) . (C)「アパート」は日本式の表現で，英語では apartment となることに注意。
 
-17. (D)「バス停」はバスが止まるところだから bus stop と覚えておくとよい。
+(17) . (D)「バス停」はバスが止まるところだから bus stop と覚えておくとよい。
 
-18. (A) 「部屋」は room。〈want＋物・事＋過去分詞〉で，「物・事を～（な状態）にしてほしい」という
+(18) . (A) 「部屋」は room。〈want＋物・事＋過去分詞〉で，「物・事を～(な状態)にしてほしい」という
 
 意味。
 
 Part 6 Text Completion (p. 18)
 
-19. (A) would like ～ to do は「～（人）に…してほしい」という構文。to do は不定詞なので動詞は原形
+(19) . (A) would like ～ to do は「～(人)に…してほしい」という構文。to do は不定詞なので動詞は原形
 
 となる。
 
-20. (D) rent（家賃，賃貸料）は，この手紙の受け取り人であるアダムズ氏（文中では you）が支払うべき
+(20) . (D) rent(家賃，賃貸料)は，この手紙の受け取り人であるアダムズ氏(文中では you)が支払うべき
 
 ものなので，your とするのが正しい。
 
-21. (C) enjoy living in such a wonderful house という肯定的な表現が続くので，really（本当に，きっと）
+(21) . (C) enjoy living in such a wonderful house という肯定的な表現が続くので，really(本当に，きっと)
 
 という副詞を選ぶ。
 
-22. (B) Please let me know if .「もし…でしたら，私までご連絡ください」は，ビジネスレターの最後の
+(22) . (B) Please let me know if .「もし…でしたら，私までご連絡ください」は，ビジネスレターの最後の
 
 部分でよく使われる常用表現。
 
@@ -759,7 +765,7 @@ Part 6 Text Completion (p. 18)
 > ALT 不動産管理
 > ホワイトレーン 66 番地，23 号室
 > カリフォルニア州シスコ 96584
-> 11 月 23 日
+> (11) 月 23 日
 > マイケル・アダムズ
 > ハーパー・ストリート 264 番地
 > カリフォルニア州シスコ 96583
@@ -803,9 +809,9 @@ Check Your Vocabulary!
 
 (8) secretary 秘書
 
-(9) teller 銀行の窓口［出納］係
+(9) teller 銀行の窓口[出納]係
 
-(10) agent 代理店（の従業員）
+(10) agent 代理店(の従業員)
 
 Word Asociation
 
@@ -827,13 +833,13 @@ Word Asociation
 
 Part 1 Photographs (p. 20)
 
-1. (D)
+(1) . (D)
 
 [[SHAPE:page-012-shape-001|bbox=411.2,440.6,556.0,535.9]]
 
-A_25
+[[TABLE:page-012-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-加 (A) They are ( serving ) a meal to customers. 彼らはお客に食事を出
+(A) They are ( serving ) a meal to customers. 彼らはお客に食事を出
 
 している。
 
@@ -845,13 +851,13 @@ A_25
 
 (D) They are working in a ( kitchen ). 彼らは厨房で働いている。
 
-2. (B)
+(2) . (B)
 
 [[SHAPE:page-012-shape-002|bbox=411.2,557.6,556.0,652.9]]
 
-A_26
+[[TABLE:page-012-table-002|bbox=42.8,565.9,72.2,591.6]]
 
-豪 (A) The receptionist is ( standing ). 受付係は立っている。
+(A) The receptionist is ( standing ). 受付係は立っている。
 
 (B) The receptionist is ( sitting ). 受付係は座っている。
 
@@ -859,11 +865,11 @@ A_26
 
 (D) The businessman is ( sitting ). ビジネスマンは座っている。
 
-3. (D)
+(3) . (D)
 
-A_27
+[[TABLE:page-012-table-003|bbox=42.8,658.0,72.2,683.6]]
 
-米 (A) She is ( teaching ) someone how to dive. 彼女は誰かにダイビン
+(A) She is ( teaching ) someone how to dive. 彼女は誰かにダイビン
 
 [[SHAPE:page-012-shape-003|bbox=411.2,674.6,556.0,770.6]]
 
@@ -895,71 +901,71 @@ Unit 3 People
 
 Part 2 Question-Response (p. 21)
 
-4. (C)
+(4) . (C)
 
-A_28
+[[TABLE:page-013-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-英 ( Who ) can help me open a bank account? 私が銀行口座を開くのを誰が手伝ってくれますか。
+Who ) can help me open a bank account? 私が銀行口座を開くのを誰が手伝ってくれますか。
 
-米 (A) A ( cashier ) can. レジ係です。
+(A) A ( cashier ) can. レジ係です。
 
 (B) A ( mechanic ) can. 機械工です。
 
 (C) A ( teller) can. 銀行の窓口係です。
 
-5. (A)
+(5) . (A)
 
-A_29
+[[TABLE:page-013-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-豪 (Where’s) the receptionist’s desk? 受付係のデスクはどこにありますか。
+(Where’s) the receptionist’s desk? 受付係のデスクはどこにありますか。
 
-加 (A) In the ( lobby ). ロビーにあります。
+(A) In the ( lobby ). ロビーにあります。
 
 (B) The ( woman ) over there. あちらの女性です。
 
 (C) She is not here ( today ). 彼女は今日，不在です。
 
-6. (C)
+(6) . (C)
 
-A_30
+[[TABLE:page-013-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-豪 Can I speak to a ( secretary )? 秘書の方と話すことができますか。
+Can I speak to a ( secretary )? 秘書の方と話すことができますか。
 
-米 (A) That’s too ( bad ). それはとても残念です。
+(A) That’s too ( bad ). それはとても残念です。
 
 (B) ( At ) about three o’clock. 3 時頃に。
 
 (C) Sure, just a ( moment ). はい，ちょっとお待ちください。
 
-7. (B)
+(7) . (B)
 
-A_31
+[[TABLE:page-013-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-英 ( When ) is Professor White’s final test? ホワイト教授の最後の試験はいつですか。
+When ) is Professor White’s final test? ホワイト教授の最後の試験はいつですか。
 
-加 (A) In his ( classroom ). 彼の教室です。
+(A) In his ( classroom ). 彼の教室です。
 
 (B) On ( May ) 20th. 5 月 20 日です。
 
 (C) ( Because ) he wasn’t feeling well. 彼は気分が優れなかったのです。
 
-8. (A)
+(8) . (A)
 
-A_32
+[[TABLE:page-013-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-米 ( Should ) I pay the parking attendant? 駐車場係に払えばいのですか。
+Should ) I pay the parking attendant? 駐車場係に払えばいのですか。
 
-英 (A) No, use the ( machine ). いえ，機械を使ってください。
+(A) No, use the ( machine ). いえ，機械を使ってください。
 
 (B) I ( didn’t ) attend yesterday’s class. 私は昨日の授業に出席しませんでした。
 
 (C) You can ( park ) over there. あなたは，向こうに駐車してもいですよ。
 
-9. (B)
+(9) . (B)
 
-A_33
+[[TABLE:page-013-table-006|bbox=42.7,555.4,72.2,581.0]]
 
-加 ( What ) can the travel agent do for me? その旅行代理店の人は，私のために何をしてくれるので
+What ) can the travel agent do for me? その旅行代理店の人は，私のために何をしてくれるので
 
 すか。
 
@@ -977,7 +983,7 @@ Unit 3 People
 
 Part 3 Conversations (p. 22)
 
-10. (C) 2 番目の女性は荷物をシルビアの机の上に置いたと言っているので，シルビアはそこに荷物を取り
+(10) . (C) 2 番目の女性は荷物をシルビアの机の上に置いたと言っているので，シルビアはそこに荷物を取り
 
 に行くと思われる。
 
@@ -993,11 +999,13 @@ What will Sylvia probably do next? シルビアはおそらく次に何をしま
 
 A_34
 
-加 W1: Hi, guys, did you see a ( package ) for me today? I need it immediately.
+[[TABLE:page-014-table-001|bbox=47.6,190.3,57.6,230.3]]
 
-豪 M: Yes, I think it’s at the receptionist’s ( desk ).
+W1: Hi, guys, did you see a ( package ) for me today? I need it immediately.
 
-英 W2: No, it’s not there. I (put) it on your desk a few minutes ago, Sylvia.
+M: Yes, I think it’s at the receptionist’s ( desk ).
+
+W2: No, it’s not there. I (put) it on your desk a few minutes ago, Sylvia.
 
 【訳】
 
@@ -1009,7 +1017,7 @@ A_34
 
 ―
 
-11. (A) レジ係がレシートをくれたかという質問に，女性は Yes と答えている。
+(11) . (A) レジ係がレシートをくれたかという質問に，女性は Yes と答えている。
 
 What did the cashier give the woman? レジ係は女性に何を渡しましたか。
 
@@ -1023,9 +1031,11 @@ What did the cashier give the woman? レジ係は女性に何を渡しました�
 
 A_35
 
-米 M: Did the cashier give you a receipt for your purchase?
+[[TABLE:page-014-table-002|bbox=42.7,405.1,62.6,431.8]]
 
-豪 W: ( Yes ), she did. But I didn’t get my ( change ).
+M: Did the cashier give you a receipt for your purchase?
+
+W: ( Yes ), she did. But I didn’t get my ( change ).
 
 【訳】
 
@@ -1035,7 +1045,7 @@ A_35
 
 ―
 
-12. (B) account（口座）と teller（銀行の窓口係）が解答のためのキーワード。
+(12) . (B) account(口座)と teller(銀行の窓口係)が解答のためのキーワード。
 
 Where are the people probably speaking? この人たちは，おそらくどこで話をしていますか。
 
@@ -1049,9 +1059,11 @@ Where are the people probably speaking? この人たちは，おそらくどこ�
 
 A_36
 
-英 W: How can I open an ( account )?
+[[TABLE:page-014-table-003|bbox=42.7,580.4,62.6,607.1]]
 
-加 M: Fill out this form and give it to the ( teller ).
+W: How can I open an ( account )?
+
+M: Fill out this form and give it to the ( teller ).
 
 【訳】
 
@@ -1067,27 +1079,27 @@ Unit 3 People
 
 Part 5 Incomplete Sentences (p. 23)
 
-13. (C) 名詞 keys（カギ）について，「彼の」と言い表す場合は he の所有格 his を使う。
+(13) . (C) 名詞 keys(カギ)について，「彼の」と言い表す場合は he の所有格 his を使う。
 
-14. (B) 人称代名詞を目的語として使う場合は目的格を使う。この場合，「私に」なので 1 人称の目的格 me
+(14) . (B) 人称代名詞を目的語として使う場合は目的格を使う。この場合，「私に」なので 1 人称の目的格 me
 
 を使う。
 
-15. (D) Ms. Kim は女性なので，こでは主語となれる代名詞 she を使う。
+(15) . (D) Ms. Kim は女性なので，こでは主語となれる代名詞 she を使う。
 
-16. (B) The employees を示す代名詞で主語になっているので they を使う。
+(16) . (B) The employees を示す代名詞で主語になっているので they を使う。
 
-17. (C) 前置詞 of のあとに来る人称代名詞は目的格なので us が正解。
+(17) . (C) 前置詞 of のあとに来る人称代名詞は目的格なので us が正解。
 
-18. (A)「私たちの～」と言う場合の代名詞は所有格の Our を使う。
+(18) . (A)「私たちの～」と言う場合の代名詞は所有格の Our を使う。
 
-19. (D) the report に相当する代名詞が必要なので，it が正解。
+(19) . (D) the report に相当する代名詞が必要なので，it が正解。
 
 Part 7 Reading Comprehension (p. 24)
 
-20. (C) 広告のタイトルにある Help は「仕事を手伝ってくれる人」のことなので，これが求人広告だとわ
+(20) . (C) 広告のタイトルにある Help は「仕事を手伝ってくれる人」のことなので，これが求人広告だとわ
 
-かる。本文 1 行目の looking for the following people（次の人材を求めている）という表現もヒントに
+かる。本文 1 行目の looking for the following people(次の人材を求めている)という表現もヒントに
 
 なる。
 
@@ -1101,7 +1113,7 @@ Part 7 Reading Comprehension (p. 24)
 
 (D) To ask people to send their opinion by email 人々に E メールで意見を送るよう頼むこと
 
-21. (D) Pastry Chef とは「パティシエ＝菓子職人」のこと。文中に「フランスの焼き菓子作りの経験が必
+(21) . (D) Pastry Chef とは「パティシエ＝菓子職人」のこと。文中に「フランスの焼き菓子作りの経験が必
 
 要」とあるので，それが仕事であると考えられる。
 
@@ -1113,9 +1125,9 @@ Part 7 Reading Comprehension (p. 24)
 
 (D) Make French pastries フランスの焼き菓子を作る
 
-22. (C) 選択肢(B)の train は「列車」のこと。本文中の train（訓練する）に近い意味を持つ単語は teach
+(22) . (C) 選択肢(B)の train は「列車」のこと。本文中の train(訓練する)に近い意味を持つ単語は teach
 
-（教える）。
+(教える)。
 
 (A) They must have experience. 経験が必要である。
 
@@ -1125,9 +1137,9 @@ Part 7 Reading Comprehension (p. 24)
 
 (D) They must be accurate. 何事にも正確でなければならない。
 
-23. (D) メールの件名（Subject:）の欄に Employment（雇用）とあり，メールの最後に how I can apply for
+(23) . (D) メールの件名(Subject:)の欄に Employment(雇用)とあり，メールの最後に how I can apply for
 
-that type of job（そのような種類の仕事に応募するには，どうすればよいのか）とあるので，仕事につ
+that type of job(そのような種類の仕事に応募するには，どうすればよいのか)とあるので，仕事につ
 
 いて問い合わせているとわかる。
 
@@ -1139,9 +1151,9 @@ that type of job（そのような種類の仕事に応募するには，どう�
 
 (D) To ask about work 仕事について尋ねるため
 
-24. (B) E メールに I am very interested in restaurant management とあり，求人広告では restaurant
+(24) . (B) E メールに I am very interested in restaurant management とあり，求人広告では restaurant
 
-management に関わる仕事として Assistant Manager（副支配人）が掲載されていることから，そ
+management に関わる仕事として Assistant Manager(副支配人)が掲載されていることから，そ
 
 の仕事につきたいと思っていると考えられる。
 
@@ -1164,10 +1176,10 @@ Unit 3 People
 [[TEXTBOX:page-016-box-001]]
 > 従業員募集
 > ダレンズ・レストラン・チェーンでは，次の人材を求めています：
-> 1. パティシエ。フランスの焼き菓子作りで少なくとも 3 年の経験があることが必要。
-> 2. 副支配人。レストラン経営の日常業務で総支配人を補佐。
-> 3. ウエイター。経験のあることが好ましいが，当方で研修を行う。
-> 4. レジ係。何事にも正確で，協調性がある人。
+> (1) . パティシエ。フランスの焼き菓子作りで少なくとも 3 年の経験があることが必要。
+> (2) . 副支配人。レストラン経営の日常業務で総支配人を補佐。
+> (3) . ウエイター。経験のあることが好ましいが，当方で研修を行う。
+> (4) . レジ係。何事にも正確で，協調性がある人。
 > 詳しくは，b-hayes@darrens.net でバーバラ・ヘイズまでご連絡ください。
 
 [[TEXTBOX:page-016-box-002]]
@@ -1194,13 +1206,13 @@ Warm-up (p. 27)
 
 Check Your Vocabulary!
 
-(1) accommodation 宿泊（施設）
+(1) accommodation 宿泊(施設)
 
 (2) flight 航空便
 
-(3) run （交通機関が）運行する
+(3) run (交通機関が)運行する
 
-(4) cabin （航空機の）客室，船室
+(4) cabin (航空機の)客室，船室
 
 (5) fare 運賃，料金
 
@@ -1210,7 +1222,7 @@ Check Your Vocabulary!
 
 (8) tourist 旅行者，旅行客
 
-(9) transportation 輸送手段，輸送（機関）
+(9) transportation 輸送手段，輸送(機関)
 
 (10) cancel 解約する，中止する
 
@@ -1220,9 +1232,9 @@ Word Asociation
 
 (2) board a plane 飛行機に搭乗する
 
-(3) The hotel is full. そのホテルは満室［予約でいっぱい］である。
+(3) The hotel is full. そのホテルは満室[予約でいっぱい]である。
 
-(4) check in 搭乗［宿泊］手続きをする *〈check in＋もの〉で「～を預け入れる」という意味になる。
+(4) check in 搭乗[宿泊]手続きをする *〈check in＋もの〉で「～を預け入れる」という意味になる。
 
 (5) get on a bus バスに乗る *バスや列車に乗る場合は get on，車などの場合は get in を使う。
 
@@ -1236,11 +1248,11 @@ Part 1 Photographs (p. 28)
 
 [[SHAPE:page-017-shape-001|bbox=468.2,413.6,558.6,549.4]]
 
-1. (A)
+(1) . (A)
 
-A_37
+[[TABLE:page-017-table-001|bbox=42.8,443.4,72.2,469.1]]
 
-英 (A) They are ( checking ) in. 彼らは搭乗手続きをしている。
+(A) They are ( checking ) in. 彼らは搭乗手続きをしている。
 
 (B) They are ( shopping ) for presents. 彼らはプレゼントの買い物をしている。
 
@@ -1248,13 +1260,13 @@ A_37
 
 (D) They are on an ( airplane ). 彼らは飛行機の中にいる。
 
-2. (D)
+(2) . (D)
 
-A_38
+[[TABLE:page-017-table-002|bbox=42.8,549.8,72.2,575.6]]
 
 [[SHAPE:page-017-shape-002|bbox=411.2,557.6,555.1,654.4]]
 
-加 (A) People are getting on a ( bus ). 人々はバスに乗り込んでいる。
+(A) People are getting on a ( bus ). 人々はバスに乗り込んでいる。
 
 (B) People are driving ( cars ). 人々は車を運転している。
 
@@ -1262,13 +1274,13 @@ A_38
 
 (D) People are on a ( train ). 人々は列車に乗っている。
 
-3. (C)
+(3) . (C)
 
-A_39
+[[TABLE:page-017-table-003|bbox=42.8,654.5,72.2,680.3]]
 
 [[SHAPE:page-017-shape-003|bbox=411.2,665.6,556.0,760.1]]
 
-豪 (A) The man is in a ( taxi ). 男性はタクシーの中にいる。
+(A) The man is in a ( taxi ). 男性はタクシーの中にいる。
 
 (B) The man is ( driving ) a bus. 男性はバスを運転している。
 
@@ -1292,73 +1304,73 @@ Unit 4 Travel
 
 Part 2 Question-Response (p. 29)
 
-4. (C)
+(4) . (C)
 
-A_40
+[[TABLE:page-018-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-米 How many ( tickets ) would you like? チケットは何枚ご希望ですか。
+How many ( tickets ) would you like? チケットは何枚ご希望ですか。
 
-豪 (A) I want to ( cancel ) them. それは解約したいと思います。
+(A) I want to ( cancel ) them. それは解約したいと思います。
 
 (B) No, ( thank ) you. いえ，結構です。
 
 (C) Three, ( please ). 3 枚お願いします。
 
-5. (B)
+(5) . (B)
 
-A_41
+[[TABLE:page-018-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-加 ( Where ) will you stay? あなたはどこに滞在するのですか。
+Where ) will you stay? あなたはどこに滞在するのですか。
 
-英 (A) I’ll stay four ( days ). 私は 4 日間滞在します。
+(A) I’ll stay four ( days ). 私は 4 日間滞在します。
 
 (B) I’ll stay at the Metro ( Hotel ). 私はメトロホテルに泊まります。
 
 (C) I ( stayed ) at my friend’s house. 私は友人の家に泊まりました。
 
-6. (C)
+(6) . (C)
 
-A_42
+[[TABLE:page-018-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-英 ( How ) will you go to Los Angeles? ロサンゼルスには，どのようにして行くのですか。
+How ) will you go to Los Angeles? ロサンゼルスには，どのようにして行くのですか。
 
-米 (A) By three ( o’clock ). 3 時までにです。
+(A) By three ( o’clock ). 3 時までにです。
 
 (B) It was very ( nice ). とてもよかったです。
 
 (C) By ( bus ). バスで行きます。
 
-7. (A)
+(7) . (A)
 
-A_43
+[[TABLE:page-018-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-豪 Sorry, but the hotel is ( full ) today. 申し訳ありませんが，今日，ホテルは満室です。
+Sorry, but the hotel is ( full ) today. 申し訳ありませんが，今日，ホテルは満室です。
 
-加 (A) Oh, that’s too ( bad ). あ，それは残念だ。
+(A) Oh, that’s too ( bad ). あ，それは残念だ。
 
 (B) The rooms are ( taken ). 部屋はふさがっています。
 
 (C) I ( prefer ) a single room. 私はシングルームがいです。
 
-8. (B)
+(8) . (B)
 
-A_44
+[[TABLE:page-018-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-豪 How ( many ) bags will you check in? 荷物はいくつ預けますか。
+How ( many ) bags will you check in? 荷物はいくつ預けますか。
 
-米 (A) Three ( people ). 3 人です。
+(A) Three ( people ). 3 人です。
 
 (B) Just ( one ). 1 つだけです。
 
 (C) I checked my ( flight ). 私は自分の航空便を確認しました。
 
-9. (A)
+(9) . (A)
 
-A_45
+[[TABLE:page-018-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-英 Where ( did ) you go during summer vacation? 夏休みの間にどこへ行きましたか。
+Where ( did ) you go during summer vacation? 夏休みの間にどこへ行きましたか。
 
-加 (A) I ( went ) to Hawaii. 私はハワイに行きました。
+(A) I ( went ) to Hawaii. 私はハワイに行きました。
 
 (B) ( I’ll ) go to Bali. 私はバリに行くつもりです。
 
@@ -1372,7 +1384,7 @@ Unit 4 Travel
 
 Part 4 Talks (p. 30)
 
-10. (C) a very cheap fare for two passengers（2 名の格安料金）という表現から判断できる。
+(10) . (C) a very cheap fare for two passengers(2 名の格安料金)という表現から判断できる。
 
 Look at the graphic. Which travel package is Amy Carlson speaking about? 図を見てください。エイミ
 
@@ -1380,9 +1392,9 @@ Look at the graphic. Which travel package is Amy Carlson speaking about? 図を�
 
 (A) Regular Traveler 一般旅行客用
 
-(B) Business Discount (single traveler) ビジネス割引（1 人の場合）
+(B) Business Discount (single traveler) ビジネス割引(1 人の場合)
 
-(C) Business Discount (2+ travelers, each) ビジネス割引（2 人以上の場合，1 人につき）
+(C) Business Discount (2+ travelers, each) ビジネス割引(2 人以上の場合，1 人につき)
 
 【英文スクリプト】
 
@@ -1402,9 +1414,9 @@ reservations. I can ( book ) a flight with a very cheap fare for two passengers.
 | 旅行商品 |  |
 | --- | --- |
 | 種類 | 航空料金 |
-| 一般旅行客用 | 525ドル |
-| ビジネス割引（1人の場合） | 426ドル |
-| ビジネス割引（2人以上の場合，１人につき） | 394ドル |
+| 一般旅行客用 | (525) ドル |
+| ビジネス割引(1人の場合) | (426) ドル |
+| ビジネス割引(2人以上の場合，１人につき) | (394) ドル |
 
 こんにちは，BIG 旅行代理店のエイミー・カールソンですが，あなたの出張旅行の予約についてお電話を
 
@@ -1416,7 +1428,7 @@ reservations. I can ( book ) a flight with a very cheap fare for two passengers.
 
 ―
 
-11. (B) 2:30 のあとの p.m.（午後）が聞き取れば判断できる。
+(11) . (B) 2:30 のあとの p.m.(午後)が聞き取れば判断できる。
 
 When will the flight arrive? この航空便はいつ到着しますか。
 
@@ -1454,31 +1466,31 @@ Unit 4 Travel
 
 Part 5 Incomplete Sentences (p. 31)
 
-12. (D)「…は自分（自身）で～する」という主語を強調する表現では，主語に対応した再帰代名詞を使う。
+(12) . (D)「…は自分(自身)で～する」という主語を強調する表現では，主語に対応した再帰代名詞を使う。
 
-13. (A) 人称代名詞を目的語に使う場合は，その目的格を使う。
+(13) . (A) 人称代名詞を目的語に使う場合は，その目的格を使う。
 
-14. (D) 空所には，文の後半にある buses に対応する代名詞の所有格が入る。
+(14) . (D) 空所には，文の後半にある buses に対応する代名詞の所有格が入る。
 
-15. (B) The tourists（旅行者たち）を再び主語として使う場合は，they を使う。
+(15) . (B) The tourists(旅行者たち)を再び主語として使う場合は，they を使う。
 
-16. (A) 〈book＋人＋もの〉で「…（人）に～（もの）を予約する」という意味。「人」は目的語なので，
+(16) . (A) 〈book＋人＋もの〉で「…(人)に～(もの)を予約する」という意味。「人」は目的語なので，
 
 代名詞の場合は目的格になる。
 
-17. (D) The ferry（フェリー）は単数名詞なので，それを指し示して主語となる代名詞は it。
+(17) . (D) The ferry(フェリー)は単数名詞なので，それを指し示して主語となる代名詞は it。
 
-18. (B) Ms. Lee は女性なので，代名詞を使った場合の所有格は her。
+(18) . (B) Ms. Lee は女性なので，代名詞を使った場合の所有格は her。
 
 Part 6 Text Completion (p. 32)
 
-19. (A) make one’s travel arrangements で「旅行の手配をする」という意味になる。
+(19) . (A) make one’s travel arrangements で「旅行の手配をする」という意味になる。
 
-20. (D) 支払いなどの期限を表すには前置詞の by を使う。
+(20) . (D) 支払いなどの期限を表すには前置詞の by を使う。
 
-21. (B) 日帰りの観光ツアーの話なので，そこできることを述べている(B)が正解。
+(21) . (B) 日帰りの観光ツアーの話なので，そこできることを述べている(B)が正解。
 
-22. (C) 丁寧な依頼の表現は，〈Please＋動詞の原形〉という命令形を使う。
+(22) . (C) 丁寧な依頼の表現は，〈Please＋動詞の原形〉という命令形を使う。
 
 【訳】
 
@@ -1512,15 +1524,15 @@ Check Your Vocabulary!
 
 (1) advertise 広告を出す，宣伝する
 
-(2) sales 売り上げ（高），販売 *形容詞として使う場合は「販売の，営業の」などの意味。
+(2) sales 売り上げ(高)，販売 *形容詞として使う場合は「販売の，営業の」などの意味。
 
 (3) briefcase ブリーフケース，書類かばん
 
-(4) contract 契約（書）
+(4) contract 契約(書)
 
 (5) contact 〜に連絡を取る
 
-(6) order 注文（品），発注
+(6) order 注文(品)，発注
 
 (7) meeting 会議，打ち合わせ
 
@@ -1534,7 +1546,7 @@ Word Asociation
 
 (1) make a presentation プレゼンテーションを行う
 
-(2) start one’s business 事業［会社］を始める
+(2) start one’s business 事業[会社]を始める
 
 (3) sign the contract 契約書に署名する
 
@@ -1552,11 +1564,11 @@ Part 1 Photographs (p. 34)
 
 [[SHAPE:page-021-shape-001|bbox=420.2,422.6,565.0,517.1]]
 
-1. (B)
+(1) . (B)
 
-A_48
+[[TABLE:page-021-table-001|bbox=42.8,443.4,72.2,469.1]]
 
-米 (A) The ( door ) is open. ドアは開いている。
+(A) The ( door ) is open. ドアは開いている。
 
 (B) ( Papers ) are on the table. 書類がテーブルの上にある。
 
@@ -1564,13 +1576,13 @@ A_48
 
 (D) They are preparing ( coffee ). 彼らはコーヒーを準備している。
 
-2. (D)
+(2) . (D)
 
 [[SHAPE:page-021-shape-002|bbox=420.2,525.4,565.0,621.4]]
 
-A_49
+[[TABLE:page-021-table-002|bbox=42.8,535.4,72.2,561.0]]
 
-英 (A) An ( actor ) is on stage. 役者が舞台にいる。
+(A) An ( actor ) is on stage. 役者が舞台にいる。
 
 (B) A woman is making a ( presentation ). 女性がプレゼンテーション
 
@@ -1580,13 +1592,13 @@ A_49
 
 (D) A man is ( pointing ) at a graph. 男性がグラフを指し示している。
 
-3. (A)
+(3) . (A)
 
 [[SHAPE:page-021-shape-003|bbox=420.2,634.1,565.0,729.2]]
 
-A_50
+[[TABLE:page-021-table-003|bbox=42.8,641.0,72.2,666.6]]
 
-加 (A) He is ( holding ) a briefcase. 彼は書類かばんを手につかんでいる。
+(A) He is ( holding ) a briefcase. 彼は書類かばんを手につかんでいる。
 
 (B) He is ( closing ) his bag. 彼はかばんを閉じようとしている。
 
@@ -1610,47 +1622,47 @@ Unit 5 Business
 
 Part 2 Question-Response (p. 35)
 
-4. (B)
+(4) . (B)
 
-A_51
+[[TABLE:page-022-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-米 ( What ) was the meeting about? 会議の議題は何に関するものでしたか。
+What ) was the meeting about? 会議の議題は何に関するものでしたか。
 
-英 (A) About ten ( minutes ). 10 分くらいです。
+(A) About ten ( minutes ). 10 分くらいです。
 
 (B) The new advertising ( plan ). 新しい広告計画です。
 
 (C) I ( met ) him a year ago. 彼には 1 年前に会いました。
 
-5. (A)
+(5) . (A)
 
-A_52
+[[TABLE:page-022-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-加 ( How ) were last month’s sales? 先月の売り上げはどうでしたか。
+How ) were last month’s sales? 先月の売り上げはどうでしたか。
 
-豪 (A) Not so ( bad ). それほど悪くありません。
+(A) Not so ( bad ). それほど悪くありません。
 
 (B) It ( sold ) already. それはもう売れました。
 
 (C) It’s a ( bargain ). それは特価品です。
 
-6. (B)
+(6) . (B)
 
-A_53
+[[TABLE:page-022-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 How do you want to ( advertise ) the spring clothing line? 春用の衣料品はどう宣伝したいですか。
+How do you want to ( advertise ) the spring clothing line? 春用の衣料品はどう宣伝したいですか。
 
-豪 (A) I don’t ( need ) any new clothes. 私は新しい服は何もいりません。
+(A) I don’t ( need ) any new clothes. 私は新しい服は何もいりません。
 
 (B) On the ( Internet ). インターネット上です。
 
 (C) I want to go in the ( summer ). 私は夏に行きたいのです。
 
-7. (A)
+(7) . (A)
 
-A_54
+[[TABLE:page-022-table-004|bbox=42.7,371.4,72.2,397.1]]
 
-加 How ( often ) do you meet your regular customers? あなたは，常連客にどれくらいの頻度で会いま
+How ( often ) do you meet your regular customers? あなたは，常連客にどれくらいの頻度で会いま
 
 すか。
 
@@ -1660,25 +1672,25 @@ A_54
 
 (C) ( I’m ) not a regular customer. 私は常連客ではありません。
 
-8. (C)
+(8) . (C)
 
-A_55
+[[TABLE:page-022-table-005|bbox=42.7,477.0,72.2,516.4]]
 
-英 ( Where ) will you make your presentation? あなたは，どこでプレゼンテーションをするのですか。
+Where ) will you make your presentation? あなたは，どこでプレゼンテーションをするのですか。
 
-米 (A) Next Friday ( afternoon ). 来週の金曜日の午後です。
+(A) Next Friday ( afternoon ). 来週の金曜日の午後です。
 
 (B) John Casey ( did ) it. それはジョン・ケーシーがやりました。
 
 (C) In the ( meeting ) room. 会議室です。
 
-9. (B)
+(9) . (B)
 
-A_56
+[[TABLE:page-022-table-006|bbox=42.7,569.0,72.2,608.3]]
 
-豪 When can we ( sign ) the new contract? 私たちは，いつ新しい契約書に署名できますか。
+When can we ( sign ) the new contract? 私たちは，いつ新しい契約書に署名できますか。
 
-加 (A) The sign ( says ), “Keep out.” その看板には「立入禁止」と書いてあります。
+(A) The sign ( says ), “Keep out.” その看板には「立入禁止」と書いてあります。
 
 (B) ( How ) about tomorrow morning? 明日の朝ではどうですか。
 
@@ -1692,7 +1704,7 @@ Unit 5 Business
 
 Part 3 Conversations (p. 36)
 
-10. (A) presentation（プレゼンテーション）を行う場所は，常識的には会社の会議室などである。
+(10) . (A) presentation(プレゼンテーション)を行う場所は，常識的には会社の会議室などである。
 
 Where are the people probably speaking? 2 人はどこで話をしていると思われますか。
 
@@ -1706,9 +1718,11 @@ Where are the people probably speaking? 2 人はどこで話をしていると�
 
 A_57
 
-米 M: I would like to start my ( presentation ). Can you please close the ( door )?
+[[TABLE:page-023-table-001|bbox=42.7,177.7,62.6,204.4]]
 
-英 W: Sure, I’ll do it right away.
+M: I would like to start my ( presentation ). Can you please close the ( door )?
+
+W: Sure, I’ll do it right away.
 
 【訳】
 
@@ -1718,7 +1732,7 @@ A_57
 
 ―
 
-11. (B) 男性は女性に電話番号を教えると言っている。
+(11) . (B) 男性は女性に電話番号を教えると言っている。
 
 How can the woman contact Mr. Brown? 女性はどうすればブラウン氏に連絡を取れますか。
 
@@ -1732,9 +1746,11 @@ How can the woman contact Mr. Brown? 女性はどうすればブラウン氏に�
 
 A_58
 
-豪 W: How can I ( contact ) Mr. Brown, the sales manager?
+[[TABLE:page-023-table-002|bbox=42.7,354.0,62.6,380.6]]
 
-加 M: I’ll give you his ( phone ) number right now.
+W: How can I ( contact ) Mr. Brown, the sales manager?
+
+M: I’ll give you his ( phone ) number right now.
 
 【訳】
 
@@ -1744,7 +1760,7 @@ A_58
 
 ―
 
-12. (B) 今月の売れ行きは去年の 10 月よりもよいと言っている。
+(12) . (B) 今月の売れ行きは去年の 10 月よりもよいと言っている。
 
 Look at the graphic. What are this month’s sales? 図を見てください。今月の売れ行きはどれくらいです
 
@@ -1760,9 +1776,11 @@ Look at the graphic. What are this month’s sales? 図を見てください。�
 
 A_59
 
-米 M: Our sales this month are great. They’re ( better ) than last October.
+[[TABLE:page-023-table-003|bbox=42.7,530.2,62.6,556.9]]
 
-豪 W: That’s ( good ) news. Let’s keep up the good work.
+M: Our sales this month are great. They’re ( better ) than last October.
+
+W: That’s ( good ) news. Let’s keep up the good work.
 
 【訳】
 
@@ -1782,27 +1800,27 @@ Unit 5 Business
 
 Part 5 Incomplete Sentences (p. 37)
 
-13. (D)「契約書に署名する」と言う場合の動詞は，sign を使う。
+(13) . (D)「契約書に署名する」と言う場合の動詞は，sign を使う。
 
-14. (C)「（人）に連絡する」と言う場合には contact を使う。communicate の場合は前置詞 with が必要。
+(14) . (C)「(人)に連絡する」と言う場合には contact を使う。communicate の場合は前置詞 with が必要。
 
-15. (B) 会議やイベントを「開催する」と言う場合は，hold を使う。
+(15) . (B) 会議やイベントを「開催する」と言う場合は，hold を使う。
 
-16. (D)「～を準備する」と言う場合は prepare を使う。was ready はその人自身の準備ができているとい
+(16) . (D)「～を準備する」と言う場合は prepare を使う。was ready はその人自身の準備ができているとい
 
 う意味。
 
-17. (B) 「（人）と～について話し合う」と言う場合には discuss を使う。これは他動詞なので，直後に目
+(17) . (B) 「(人)と～について話し合う」と言う場合には discuss を使う。これは他動詞なので，直後に目
 
 的語が置かれることもヒントになる。
 
-18. (C) go on～で「～に出かける」という意味になる。
+(18) . (C) go on～で「～に出かける」という意味になる。
 
-19. (A)「（価格など）を引き上げる」と言う場合には raise を使う。
+(19) . (A)「(価格など)を引き上げる」と言う場合には raise を使う。
 
 Part 7 Reading Comprehension (p. 38)
 
-20. (C) 冒頭の宛名に「すべての営業部員へ」とある。salespeople は salesperson の複数形。
+(20) . (C) 冒頭の宛名に「すべての営業部員へ」とある。salespeople は salesperson の複数形。
 
 (A) A company president 会社の社長
 
@@ -1812,7 +1830,7 @@ Part 7 Reading Comprehension (p. 38)
 
 (D) An advertiser 広告主
 
-21. (A) exceed（超える）や set a new record（新記録を打ち立てる）などの語句から，目標は達成された
+(21) . (A) exceed(超える)や set a new record(新記録を打ち立てる)などの語句から，目標は達成された
 
 とわかる。
 
@@ -1824,7 +1842,7 @@ Part 7 Reading Comprehension (p. 38)
 
 (D) It was too high. それは高すぎた。
 
-22. (C) I am very satisfied . や I am happy .とあることから，うれしく思っていることがわかる。
+(22) . (C) I am very satisfied . や I am happy .とあることから，うれしく思っていることがわかる。
 
 (A) Disappointed がっかりしている
 
@@ -1860,7 +1878,7 @@ Check Your Vocabulary!
 
 (1) break 休憩
 
-(2) repair 修理（する）
+(2) repair 修理(する)
 
 (3) extension 内線
 
@@ -1900,11 +1918,11 @@ Part 1 Photographs (p. 40)
 
 [[SHAPE:page-025-shape-001|bbox=411.2,422.6,556.0,517.9]]
 
-1. (D)
+(1) . (D)
 
-A_60
+[[TABLE:page-025-table-001|bbox=42.8,443.8,72.2,469.4]]
 
-豪 (A) She is drinking ( coffee ). 彼女はコーヒーを飲んでいる。
+(A) She is drinking ( coffee ). 彼女はコーヒーを飲んでいる。
 
 (B) She is on the ( phone ). 彼女は電話に出ている。
 
@@ -1912,13 +1930,13 @@ A_60
 
 (D) She is using a ( copy ) machine. 彼女はコピー機を使っている。
 
-2. (A)
+(2) . (A)
 
 [[SHAPE:page-025-shape-002|bbox=411.2,530.6,556.0,625.9]]
 
-A_61
+[[TABLE:page-025-table-002|bbox=42.8,535.8,72.2,561.4]]
 
-米 (A) There is a ( plant ) on the table. テーブルの上には植物がある。
+(A) There is a ( plant ) on the table. テーブルの上には植物がある。
 
 (B) The ( window ) is open. 窓は開いている。
 
@@ -1926,13 +1944,13 @@ A_61
 
 (D) They are taking a ( break ). 彼らは休憩をとっている。
 
-3. (D)
+(3) . (D)
 
-A_62
+[[TABLE:page-025-table-003|bbox=42.8,627.1,72.2,653.4]]
 
 [[SHAPE:page-025-shape-003|bbox=411.2,638.8,556.0,734.0]]
 
-英 (A) The man is ( holding ) a pen. 男性はペンを持っている。
+(A) The man is ( holding ) a pen. 男性はペンを持っている。
 
 (B) They are ( walking ) side by side. 彼らは並んで歩いている。
 
@@ -1958,71 +1976,71 @@ Unit 6 Office
 
 Part 2 Question-Response (p. 41)
 
-4. (A)
+(4) . (A)
 
-A_63
+[[TABLE:page-026-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-豪 Have you ( seen ) Amy? あなたはエイミーを見かけましたか。
+Have you ( seen ) Amy? あなたはエイミーを見かけましたか。
 
-米 (A) She’s in the ( supply ) room. 彼女は備品室にいます。
+(A) She’s in the ( supply ) room. 彼女は備品室にいます。
 
 (B) Oh, now I ( see ). あ，やっとわかりました。
 
 (C) I was ( glad ) to see you again. またあなたに会えてうれしかったです。
 
-5. (A)
+(5) . (A)
 
-A_64
+[[TABLE:page-026-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-英 What’s ( wrong ) with the ( copy ) machine? コピー機がどうかしたのですか。
+What’s ( wrong ) with the ( copy ) machine? コピー機がどうかしたのですか。
 
-加 (A) It’s ( broken ). 壊れているんです。
+(A) It’s ( broken ). 壊れているんです。
 
 (B) Yes, ( thank ) you. はい，ありがとうございます。
 
 (C) In about five ( hours ). およそ５時間後です。
 
-6. (B)
+(6) . (B)
 
-A_65
+[[TABLE:page-026-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 Do we ( need ) more paper? もっと用紙が必要ですか。
+Do we ( need ) more paper? もっと用紙が必要ですか。
 
-英 (A) No, I don’t ( know ) where it is. いえ，それがどこにあるのか知りません。
+(A) No, I don’t ( know ) where it is. いえ，それがどこにあるのか知りません。
 
 (B) Yes, we’re ( running ) low. はい，残り少なくなっています。
 
 (C) No, I’ll ( check ) it. いえ，確認してみます。
 
-7. (C)
+(7) . (C)
 
-A_66
+[[TABLE:page-026-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-加 ( Where ) can I find Mr. Carson? カーソン氏にはどこで会えますか。
+Where ) can I find Mr. Carson? カーソン氏にはどこで会えますか。
 
-豪 (A) I’ll ( leave ) soon. 私はすぐに出発します。
+(A) I’ll ( leave ) soon. 私はすぐに出発します。
 
 (B) Please ( close ) the door. ドアを閉めてください。
 
 (C) ( Ask ) the receptionist. 受付係に聞いてください。
 
-8. (A)
+(8) . (A)
 
-A_67
+[[TABLE:page-026-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-米 ( Why ) will the office be closed? なぜオフィスは閉まるのですか。
+Why ) will the office be closed? なぜオフィスは閉まるのですか。
 
-豪 (A) For ( repairs ). 補修（工事）のためです。
+(A) For ( repairs ). 補修(工事)のためです。
 
 (B) It ( opens ) Monday. 月曜日に開きます。
 
 (C) I ( bought ) some new clothes. 私はいくつか新しい衣服を買いました。
 
-9. (B)
+(9) . (B)
 
-A_68
+[[TABLE:page-026-table-006|bbox=42.7,555.4,72.2,581.0]]
 
-加 ( When ) will we ( get ) the new computers? 私たちはいつ新しいコンピューターを入手できるので
+When ) will we ( get ) the new computers? 私たちはいつ新しいコンピューターを入手できるので
 
 すか。
 
@@ -2040,7 +2058,7 @@ Unit 6 Office
 
 Part 4 Talks (p. 42)
 
-10. (A) 話者は複数の相手に語りかけており，社内の書類の取り扱い方を説明しているので，会社側から社
+(10) . (A) 話者は複数の相手に語りかけており，社内の書類の取り扱い方を説明しているので，会社側から社
 
 員へのアナウンスだと考えられる。
 
@@ -2074,7 +2092,7 @@ Then please put them in the new file ( cabinet ) in the corner of the main offic
 
 ―
 
-11. (B) special event（特別の催し），party（パーティー），join（参加する）などの言葉から，出席を求
+(11) . (B) special event(特別の催し)，party(パーティー)，join(参加する)などの言葉から，出席を求
 
 めるアナウンスだと判断できる。
 
@@ -2122,23 +2140,23 @@ Unit 6 Office
 
 Part 5 Incomplete Sentences (p. 43)
 
-12. (D) 届くものを主語にした能動態の文では，arrive at（～に届く）という表現を使う。
+(12) . (D) 届くものを主語にした能動態の文では，arrive at(～に届く)という表現を使う。
 
-13. (D) 助動詞 will の後ろに続く動詞は原形となるので be を選ぶ。
+(13) . (D) 助動詞 will の後ろに続く動詞は原形となるので be を選ぶ。
 
-14. (C)「（電話などで人に）連絡をつける」と言う場合には reach を使う。
+(14) . (C)「(電話などで人に)連絡をつける」と言う場合には reach を使う。
 
-15. (B) hand は動詞として使う場合には「手渡す」という意味になる。
+(15) . (B) hand は動詞として使う場合には「手渡す」という意味になる。
 
-16. (C) 既存のオフィス（the office）に対して行う作業としては remodel「改装する」が適当。
+(16) . (C) 既存のオフィス(the office)に対して行う作業としては remodel「改装する」が適当。
 
-17. (A) 人と約束をして会う場合には，meet を使う。
+(17) . (A) 人と約束をして会う場合には，meet を使う。
 
-18. (C) speak to ～で「（人）と話をする」という意味。
+(18) . (C) speak to ～で「(人)と話をする」という意味。
 
 Part 7 Reading Comprehension (p. 44)
 
-19. (B) この回覧の宛先は，冒頭の To 以下にある all sales office employees である。これを言い換えたの
+(19) . (B) この回覧の宛先は，冒頭の To 以下にある all sales office employees である。これを言い換えたの
 
 が salespeople。
 
@@ -2150,7 +2168,7 @@ Part 7 Reading Comprehension (p. 44)
 
 (D) Construction workers 建設作業員
 
-20. (A) 文中に seven days（7 日）とあるので，正解はこれを言い換えた One week（１週間）である。
+(20) . (A) 文中に seven days(7 日)とあるので，正解はこれを言い換えた One week(１週間)である。
 
 (A) One week 1 週間
 
@@ -2160,7 +2178,7 @@ Part 7 Reading Comprehension (p. 44)
 
 (D) One month 1 カ月
 
-21. (D) 挿入する文中の extension とは「内線」のことなので，「質問があれば連絡を」という言葉のあと
+(21) . (D) 挿入する文中の extension とは「内線」のことなので，「質問があれば連絡を」という言葉のあと
 
 に続けるのが自然である。
 
@@ -2215,7 +2233,7 @@ Check Your Vocabulary!
 
 (9) fix 修理する *同義語は repair。
 
-(10) service （機械などを）整備する，整備
+(10) service (機械などを)整備する，整備
 
 Word Asociation
 
@@ -2237,13 +2255,13 @@ Word Asociation
 
 Part 1 Photographs (p. 46)
 
-1. (B)
+(1) . (B)
 
 [[SHAPE:page-029-shape-003|bbox=411.2,440.5,556.0,535.7]]
 
-A_71
+[[TABLE:page-029-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-加 (A) The woman is working ( alone ). 女性は 1 人で仕事をしている。
+(A) The woman is working ( alone ). 女性は 1 人で仕事をしている。
 
 (B) The woman is ( working ) in a laboratory. 女性は研究所で働いて
 
@@ -2255,13 +2273,13 @@ A_71
 
 いる。
 
-2. (C)
+(2) . (C)
 
 [[SHAPE:page-029-shape-002|bbox=411.2,557.5,556.0,652.7]]
 
-A_72
+[[TABLE:page-029-table-002|bbox=42.8,565.9,72.2,591.6]]
 
-豪 (A) He’s using a ( telescope ). 彼は望遠鏡を使っている。
+(A) He’s using a ( telescope ). 彼は望遠鏡を使っている。
 
 (B) He’s talking on the ( phone ). 彼は電話で話をしている。
 
@@ -2271,13 +2289,13 @@ A_72
 
 (D) He’s watching ( TV ). 彼はテレビを見ている。
 
-3. (B)
+(3) . (B)
 
-A_73
+[[TABLE:page-029-table-003|bbox=42.8,672.5,72.2,697.2]]
 
 [[SHAPE:page-029-shape-001|bbox=411.2,674.5,556.0,769.7]]
 
-米 (A) People are ( using ) computers. 人々はコンピューターを使って
+(A) People are ( using ) computers. 人々はコンピューターを使って
 
 いる。
 
@@ -2307,73 +2325,73 @@ Unit 7 Technology
 
 Part 2 Question-Response (p. 47)
 
-4. (A)
+(4) . (A)
 
-A_74
+[[TABLE:page-030-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-英 ( When ) will the new model be ready? いつ新しい機種の用意ができるのですか。
+When ) will the new model be ready? いつ新しい機種の用意ができるのですか。
 
-米 (A) Next ( spring ). 来春です。
+(A) Next ( spring ). 来春です。
 
 (B) Yes, I ( think ) so. はい，私はそう思います。
 
 (C) No, it’s not ( ready ). いえ，それは用意できていません。
 
-5. (B)
+(5) . (B)
 
-A_75
+[[TABLE:page-030-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-豪 ( Where ) is your computer? あなたのコンピューターはどこにありますか。
+Where ) is your computer? あなたのコンピューターはどこにありますか。
 
-加 (A) I bought it at a local electronics ( store ). 私はそれを地元の電器店で買いました。
+(A) I bought it at a local electronics ( store ). 私はそれを地元の電器店で買いました。
 
 (B) It’s at a ( repair ) shop. それは修理工場にあります。
 
 (C) It’s a ( laptop ) computer. それはラップトップ型のコンピューターです。
 
-6. (C)
+(6) . (C)
 
-A_76
+[[TABLE:page-030-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-豪 ( What’s ) that machine? その機械は何ですか。
+What’s ) that machine? その機械は何ですか。
 
-米 (A) I’m a computer ( technician ). 私はコンピューターの技術者です。
+(A) I’m a computer ( technician ). 私はコンピューターの技術者です。
 
 (B) It’s very ( useful ). それはとても役に立ちます。
 
 (C) It’s a ( scanner ). それはスキャナーです。
 
-7. (B)
+(7) . (B)
 
-A_77
+[[TABLE:page-030-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-英 How do you ( start ) this machine? この機械はどうやって起動するのですか。
+How do you ( start ) this machine? この機械はどうやって起動するのですか。
 
-豪 (A) It should be ( OK ). それは問題ないはずです。
+(A) It should be ( OK ). それは問題ないはずです。
 
 (B) ( Push ) this button. このボタンを押してください。
 
 (C) I ( haven’t ) started yet. 私はまだ始めていません。
 
-8. (A)
+(8) . (A)
 
-A_78
+[[TABLE:page-030-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-米 I ( bought ) a new smartphone. 私は新しいスマートフォンを買いました。
+( bought ) a new smartphone. 私は新しいスマートフォンを買いました。
 
-英 (A) That’s ( great ). それはすばらしいわ。
+(A) That’s ( great ). それはすばらしいわ。
 
 (B) When ( will ) you buy it? それをいつ買うのですか。
 
 (C) I ( brought ) it to him. 私はそれを彼のところに運びました。
 
-9. (C)
+(9) . (C)
 
-A_79
+[[TABLE:page-030-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-加 My air conditioner is ( broken ). 私のエアコンは壊れています。
+My air conditioner is ( broken ). 私のエアコンは壊れています。
 
-豪 (A) I’ll ( leave ) on Tuesday. 私は火曜日に出発します。
+(A) I’ll ( leave ) on Tuesday. 私は火曜日に出発します。
 
 (B) That’s good to ( hear ). それはよかったですね。
 
@@ -2387,7 +2405,7 @@ Unit 7 Technology
 
 Part 3 Conversations (p. 48)
 
-10. (C) My microscope（私の顕微鏡）がある確率が高い場所は実験室や研究室など。
+(10) . (C) My microscope(私の顕微鏡)がある確率が高い場所は実験室や研究室など。
 
 Where are the people most likely speaking? この人たちはどこで話をしていると思われますか。
 
@@ -2401,9 +2419,11 @@ Where are the people most likely speaking? この人たちはどこで話をし�
 
 A_80
 
-英 W: My ( microscope ) isn’t working very well. Can you help me?
+[[TABLE:page-031-table-001|bbox=42.7,176.7,62.6,203.4]]
 
-米 M: Sure. Oh, I see. You need to ( turn ) on this switch.
+W: My ( microscope ) isn’t working very well. Can you help me?
+
+M: Sure. Oh, I see. You need to ( turn ) on this switch.
 
 【訳】
 
@@ -2413,7 +2433,7 @@ A_80
 
 ―
 
-11. (A) 女性の最初の言葉が解答となる。two dollars（2 ドル）は some money（いくらかのお金）で置き
+(11) . (A) 女性の最初の言葉が解答となる。two dollars(2 ドル)は some money(いくらかのお金)で置き
 
 換えられる。
 
@@ -2429,9 +2449,11 @@ What should the man do first? 男性は最初に何をすべきですか。
 
 A_81
 
-加 M: I’ve never used this laundry ( machine ) before.
+[[TABLE:page-031-table-002|bbox=42.7,365.6,62.6,392.3]]
 
-豪 W: Just put in two ( dollars ), pour in some soap, and then push this button.
+M: I’ve never used this laundry ( machine ) before.
+
+W: Just put in two ( dollars ), pour in some soap, and then push this button.
 
 【訳】
 
@@ -2441,7 +2463,7 @@ A_81
 
 ―
 
-12. (B) Mike が「彼（修理業者）は 1 時よりも遅れそうだ」と言っているのに対し，Jennifer は「時間通
+(12) . (B) Mike が「彼(修理業者)は 1 時よりも遅れそうだ」と言っているのに対し，Jennifer は「時間通
 
 りに来る」と訂正している。
 
@@ -2457,9 +2479,11 @@ When will the repairman arrive? 修理業者は，いつやって来るのです
 
 A_82
 
-加 W1: Mike, do you know when the ( copier ) repairman will come?
+[[TABLE:page-031-table-003|bbox=42.7,554.5,62.6,581.2]]
 
-米 M: Well, he was supposed to come at one o’clock. But this morning he called to say he will be
+W1: Mike, do you know when the ( copier ) repairman will come?
+
+M: Well, he was supposed to come at one o’clock. But this morning he called to say he will be
 
 ( late ). Jennifer, you also contacted him, right?
 
@@ -2483,25 +2507,25 @@ Unit 7 Technology
 
 Part 5 Incomplete Sentences (p. 49)
 
-13. (D) 「紛失する」は lose で，その過去形は lost。「見つける」の find とペアで覚えるとよい。
+(13) . (D) 「紛失する」は lose で，その過去形は lost。「見つける」の find とペアで覚えるとよい。
 
-14. (B) cord（コード）は日本語にもなっているが，そのスペルを正しく覚えておきたい。
+(14) . (B) cord(コード)は日本語にもなっているが，そのスペルを正しく覚えておきたい。
 
-15. (B) 温度や時間，期日，位置などを「設定する」と言う場合には set という動詞がよく使われる。
+(15) . (B) 温度や時間，期日，位置などを「設定する」と言う場合には set という動詞がよく使われる。
 
-16. (A) keep A (away) from B で「A を B から離しておく」という意味。
+(16) . (A) keep A (away) from B で「A を B から離しておく」という意味。
 
-17. (D) 「運転する」は drive。ちなみに，warm up は人の場合は「準備運動をする」という意味になる。
+(17) . (D) 「運転する」は drive。ちなみに，warm up は人の場合は「準備運動をする」という意味になる。
 
-18. (C) 「～する時間を節約する」は〈save time＋動名詞〉という形を使う。
+(18) . (C) 「～する時間を節約する」は〈save time＋動名詞〉という形を使う。
 
-19. (A) security cameras（防犯カメラ）は決まった表現なので，覚えておこう。
+(19) . (A) security cameras(防犯カメラ)は決まった表現なので，覚えておこう。
 
 Part 7 Reading Comprehension (p. 50)
 
-20. (D) 本文の 1 文目に「車のエンジンオイルを交換してもらってほしい」とあるので，(D)の Servicing a
+(20) . (D) 本文の 1 文目に「車のエンジンオイルを交換してもらってほしい」とあるので，(D)の Servicing a
 
-car（車を整備すること）が正解。
+car(車を整備すること)が正解。
 
 (A) Buying a new car 新しい車を買うこと
 
@@ -2511,7 +2535,7 @@ car（車を整備すること）が正解。
 
 (D) Servicing a car 車を整備すること
 
-21. (B) 本文の 3 文目にある company credit card（会社のクレジットカード）と business credit card は同
+(21) . (B) 本文の 3 文目にある company credit card(会社のクレジットカード)と business credit card は同
 
 義。
 
@@ -2523,7 +2547,7 @@ car（車を整備すること）が正解。
 
 (D) With his credit card 彼のクレジットカードで
 
-22. (D) Ken Davis は依頼されたこと（車のエンジンオイルの交換）をすることになる。(D)の〈have＋も
+(22) . (D) Ken Davis は依頼されたこと(車のエンジンオイルの交換)をすることになる。(D)の〈have＋も
 
 の＋過去分詞〉は「…を～してもらう」という表現。
 
@@ -2569,9 +2593,9 @@ Check Your Vocabulary!
 
 (4) hire 〜を雇う
 
-(5) assistant 補助（の），助手
+(5) assistant 補助(の)，助手
 
-(6) interview 面接（する） *「就職面接」と明確にしたい場合は job interview を使う。
+(6) interview 面接(する) *「就職面接」と明確にしたい場合は job interview を使う。
 
 (7) personnel 人事に関する，人材
 
@@ -2603,11 +2627,11 @@ Part 1 Photographs (p. 52)
 
 [[SHAPE:page-033-shape-001|bbox=420.2,431.6,565.0,526.1]]
 
-1. (D)
+(1) . (D)
 
-A_83
+[[TABLE:page-033-table-001|bbox=42.8,459.4,72.2,485.0]]
 
-英 (A) The woman is ( sitting ) ( down ). 女性は座っている。
+(A) The woman is ( sitting ) ( down ). 女性は座っている。
 
 (B) They are ( getting ) ( in ) a car. 彼らは車に乗り込むところだ。
 
@@ -2617,11 +2641,11 @@ A_83
 
 [[SHAPE:page-033-shape-002|bbox=420.2,539.4,564.1,634.7]]
 
-2. (B)
+(2) . (B)
 
-A_84
+[[TABLE:page-033-table-002|bbox=42.8,551.4,72.2,577.0]]
 
-加 (A) They are ( looking ) ( up ). 彼らは上を向いている。
+(A) They are ( looking ) ( up ). 彼らは上を向いている。
 
 (B) They are ( looking ) ( down ). 彼らは下を向いている。
 
@@ -2629,13 +2653,13 @@ A_84
 
 (D) They are ( using ) a copier. 彼らはコピー機を使っている。
 
-3. (C)
+(3) . (C)
 
-A_85
+[[TABLE:page-033-table-003|bbox=42.8,643.3,72.2,669.0]]
 
 [[SHAPE:page-033-shape-003|bbox=420.2,647.4,565.0,742.6]]
 
-豪 (A) They are ( folding ) their arms. 彼らは腕組みをしている。
+(A) They are ( folding ) their arms. 彼らは腕組みをしている。
 
 (B) They are making a ( speech ). 彼らはスピーチをしている。
 
@@ -2659,73 +2683,73 @@ Unit 8 Personnel
 
 Part 2 Question-Response (p. 53)
 
-4. (A)
+(4) . (A)
 
-A_86
+[[TABLE:page-034-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-米 ( Who ) is the new sales manager? 誰が新しい営業部長なのですか。
+Who ) is the new sales manager? 誰が新しい営業部長なのですか。
 
-英 (A) Karen White ( is ). カレン・ホワイトです。
+(A) Karen White ( is ). カレン・ホワイトです。
 
 (B) Two ( days ) ago. 2 日前です。
 
 (C) I ( sold ) ten already. 私はすでに 10 個販売しました。
 
-5. (B)
+(5) . (B)
 
-A_87
+[[TABLE:page-034-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-加 Can I please ( speak ) to the advertising director? 広告部長と話させてもらえますか。
+Can I please ( speak ) to the advertising director? 広告部長と話させてもらえますか。
 
-豪 (A) She ( spoke ) at a meeting. 彼女は会議で発言しました。
+(A) She ( spoke ) at a meeting. 彼女は会議で発言しました。
 
 (B) ( Sure ), just a moment. もちろんです，ちょっとお待ちください。
 
 (C) He ( speaks ) very fast. 彼はとても早口です。
 
-6. (C)
+(6) . (C)
 
-A_88
+[[TABLE:page-034-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 How ( many ) people will you hire? あなたは何人を雇うつもりですか。
+How ( many ) people will you hire? あなたは何人を雇うつもりですか。
 
-豪 (A) The ( fire ) was terrible. その火事はひどいものでした。
+(A) The ( fire ) was terrible. その火事はひどいものでした。
 
 (B) At the end of next ( month ). 来月末です。
 
 (C) ( Five ) new employees. 新規採用者を 5 人です。
 
-7. (A)
+(7) . (A)
 
-A_89
+[[TABLE:page-034-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-加 May I please have an application ( form )? 応募用紙をいただけますか。
+May I please have an application ( form )? 応募用紙をいただけますか。
 
-英 (A) ( Here ) you are. はい，どうぞ。
+(A) ( Here ) you are. はい，どうぞ。
 
 (B) I don’t ( want ) anything. 私は何もいりません。
 
 (C) Yes, Mike ( applied ). はい，マイクが応募しました。
 
-8. (A)
+(8) . (A)
 
-A_90
+[[TABLE:page-034-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-英 Did Ms. Ames get a ( promotion )? エームズさんは昇進したのですか。
+Did Ms. Ames get a ( promotion )? エームズさんは昇進したのですか。
 
-米 (A) Yes, she’s a ( manager ) now. はい，彼女は今，部長です。
+(A) Yes, she’s a ( manager ) now. はい，彼女は今，部長です。
 
 (B) Yes, she ( retired ) last year. はい，彼女は昨年，退職しました。
 
 (C) No, she hasn’t ( arrived ) yet. いえ，彼女はまだ着いていません。
 
-9. (C)
+(9) . (C)
 
-A_91
+[[TABLE:page-034-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-豪 ( Should ) I give you my résumé? あなたに私の履歴書をお渡したらいですか。
+Should ) I give you my résumé? あなたに私の履歴書をお渡したらいですか。
 
-加 (A) I ( gave ) it to him. 私はそれを彼に渡しました。
+(A) I ( gave ) it to him. 私はそれを彼に渡しました。
 
 (B) No, I don’t ( have ) one. いえ，私は持っていません。
 
@@ -2739,7 +2763,7 @@ Unit 8 Personnel
 
 Part 4 Talks (p. 54)
 
-10. (C) 話し手は Pamela Brown と名乗っていて，会社に着いた人には自分に電話をするように言っ
+(10) . (C) 話し手は Pamela Brown と名乗っていて，会社に着いた人には自分に電話をするように言っ
 
 ているので，表の中から該当するものを選べばよい。
 
@@ -2770,10 +2794,10 @@ next Tuesday. Please ( call ) me when you arrive at our office. Good luck!
 [[TABLE:page-035-table-001]]
 | 社 員 | 内線番号 |
 | --- | --- |
-| マイケル・ホン | 5795 |
-| ローラ・ワトキンズ | 4692 |
-| パメラ・ブラウン | 3456 |
-| ジェリー・チャベス | 6946 |
+| マイケル・ホン | (5795) |
+| ローラ・ワトキンズ | (4692) |
+| パメラ・ブラウン | (3456) |
+| ジェリー・チャベス | (6946) |
 
 こんにちは。こちらはコンウェイ社の人事部のパメラ・ブラウンです。来週火曜日の面接には高校の卒業
 
@@ -2783,9 +2807,9 @@ next Tuesday. Please ( call ) me when you arrive at our office. Good luck!
 
 ―
 
-11. (B) fourteen days（14 日間）を言い換えたものが Two weeks（2 週間）。up to ～で，「～まで（の範
+(11) . (B) fourteen days(14 日間)を言い換えたものが Two weeks(2 週間)。up to ～で，「～まで(の範
 
-囲内で）」という意味。
+囲内で)」という意味。
 
 How many vacation days can people take each year? 毎年，何日の休暇を取ることができますか。
 
@@ -2823,25 +2847,25 @@ Unit 8 Personnel
 
 Part 5 Incomplete Sentences (p. 55)
 
-12. (D) get a promotion で「昇進する」という意味になる。
+(12) . (D) get a promotion で「昇進する」という意味になる。
 
-13. (B)「人事部」は personnel department と覚えておくこと。personal（個人の）と紛らわしいので注意。
+(13) . (B)「人事部」は personnel department と覚えておくこと。personal(個人の)と紛らわしいので注意。
 
-14. (B) résumé（履歴書）は頻出単語。
+(14) . (B) résumé(履歴書)は頻出単語。
 
-15. (C) 役職名の前に assistant という形容詞をつけると「副～」「助～」「～補」「次席～」という役職名に
+(15) . (C) 役職名の前に assistant という形容詞をつけると「副～」「助～」「～補」「次席～」という役職名に
 
 なる。
 
-16. (B) interview には，報道などでの「インタビュー」のほかに「（就職）面接」という意味もある。
+(16) . (B) interview には，報道などでの「インタビュー」のほかに「(就職)面接」という意味もある。
 
-17. (D)「～を添付する」と言う場合には attach を使う。
+(17) . (D)「～を添付する」と言う場合には attach を使う。
 
-18. (C)「（会社などから）退職する，（現役を）引退する」という意味で使えるのは retire だけ。
+(18) . (C)「(会社などから)退職する，(現役を)引退する」という意味で使えるのは retire だけ。
 
 Part 7 Reading Comprehension (p. 56)
 
-19. (B) 本文の 2 文目に「自分の履歴書を送る前にいくつか質問がある」と書いてある。
+(19) . (B) 本文の 2 文目に「自分の履歴書を送る前にいくつか質問がある」と書いてある。
 
 (A) To advertise her goods 彼女の商品を宣伝するため
 
@@ -2851,19 +2875,19 @@ Part 7 Reading Comprehension (p. 56)
 
 (D) To sell him something 彼に何かを売るため
 
-20. (D) 彼女は 2 番目の質問で diploma（卒業証書）のコピーを同封するべきかどうか尋ねているので，そ
+(20) . (D) 彼女は 2 番目の質問で diploma(卒業証書)のコピーを同封するべきかどうか尋ねているので，そ
 
-れを言い換えた(D) Including graduation certificates（学校の卒業証書を同封すること）が正解。
+れを言い換えた(D) Including graduation certificates(学校の卒業証書を同封すること)が正解。
 
 (A) Sending family pictures 家族の写真を送ること
 
 (B) When she will get paid いつ支払ってもらえるのか
 
-(C) Making an appointment （人と会う）約束をすること
+(C) Making an appointment (人と会う)約束をすること
 
 (D) Including graduation certificates 学校の卒業証書を同封すること
 
-21. (A) 本文の最後に Please reply to me at this address（このアドレスで私にご返事ください）と書いて
+(21) . (A) 本文の最後に Please reply to me at this address(このアドレスで私にご返事ください)と書いて
 
 ある。
 
@@ -2910,7 +2934,7 @@ Check Your Vocabulary!
 
 (5) complaint 苦情，不満
 
-(6) needs 必要（なもの）
+(6) needs 必要(なもの)
 
 (7) production 生産
 
@@ -2918,7 +2942,7 @@ Check Your Vocabulary!
 
 (9) explain 説明する
 
-(10) schedule 予定（に入れる），スケジュール（に組む）
+(10) schedule 予定(に入れる)，スケジュール(に組む)
 
 Word Asociation
 
@@ -2930,7 +2954,7 @@ Word Asociation
 
 (4) deal with a problem 問題に対処する
 
-(5) get along with〜 〜とうまくやっていく（仲良くする）
+(5) get along with〜 〜とうまくやっていく(仲良くする)
 
 (6) Don’t hesitate to contact me. 遠慮せずに私に連絡してください。
 
@@ -2940,13 +2964,13 @@ Word Asociation
 
 Part 1 Photographs (p. 58)
 
-1. (A)
+(1) . (A)
 
 [[SHAPE:page-037-shape-001|bbox=411.2,436.2,556.0,531.4]]
 
-B_01
+[[TABLE:page-037-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-米 (A) They are holding a meeting. 彼らは会議を開いている。
+(A) They are holding a meeting. 彼らは会議を開いている。
 
 (B) They are walking around the table. 彼らはテーブルの回りを歩
 
@@ -2956,11 +2980,11 @@ B_01
 
 (D) They are looking out of the windows. 彼らは窓の外を見ている。
 
-2. (D)
+(2) . (D)
 
-B_02
+[[TABLE:page-037-table-002|bbox=42.8,552.4,72.2,578.0]]
 
-英 (A) The man is moving the desk. 男性は机を移動させている。
+(A) The man is moving the desk. 男性は机を移動させている。
 
 (B) The woman is in front of the man. 女性は男性の正面にいる。
 
@@ -2968,13 +2992,13 @@ B_02
 
 (D) The woman is next to the man. 女性は男性の横にいる。
 
-3. (A)
+(3) . (A)
 
-B_03
+[[TABLE:page-037-table-003|bbox=42.8,668.5,72.2,695.3]]
 
 [[SHAPE:page-037-shape-002|bbox=411.2,674.6,556.0,769.9]]
 
-加 (A) A man is giving a presentation. 男性がプレゼンテーションをし
+(A) A man is giving a presentation. 男性がプレゼンテーションをし
 
 ている。
 
@@ -3002,11 +3026,11 @@ Unit 9 Management
 
 Part 2 Question-Response (p. 59)
 
-4. (B)
+(4) . (B)
 
-B_04
+[[TABLE:page-038-table-001|bbox=42.7,95.4,72.2,121.1]]
 
-豪 Can you please ask Mike Green to call me? マイク・グリーンに私に電話をくれるよう頼んでもら
+Can you please ask Mike Green to call me? マイク・グリーンに私に電話をくれるよう頼んでもら
 
 えますか。
 
@@ -3016,35 +3040,35 @@ B_04
 
 (C) Yes, I was happy about it. はい，私はそのことでうれしくなりました。
 
-5. (A)
+(5) . (A)
 
-B_05
+[[TABLE:page-038-table-002|bbox=42.7,201.0,72.2,240.4]]
 
-英 When can we talk about your proposal? あなたの提案について，いつ話ができますか。
+When can we talk about your proposal? あなたの提案について，いつ話ができますか。
 
-加 (A) Right now is good for me. 今すぐだと私の都合がいです。
+(A) Right now is good for me. 今すぐだと私の都合がいです。
 
 (B) My proposal was accepted. 私の提案は承認されました。
 
 (C) Yes, I can explain. はい，私は説明できます。
 
-6. (B)
+(6) . (B)
 
-B_06
+[[TABLE:page-038-table-003|bbox=42.7,293.0,72.2,332.3]]
 
-米 What time do you want to close the shop on Saturdays? 土曜日は何時に店を閉めたいですか。
+What time do you want to close the shop on Saturdays? 土曜日は何時に店を閉めたいですか。
 
-英 (A) It’s closed Sundays. 日曜日は閉まっています。
+(A) It’s closed Sundays. 日曜日は閉まっています。
 
 (B) How about at seven o’clock? 7 時ではどうですか。
 
 (C) I want to go shopping on Saturday. 私は土曜日には買い物に行きたいです。
 
-7. (B)
+(7) . (B)
 
-B_07
+[[TABLE:page-038-table-004|bbox=42.7,385.1,72.2,410.6]]
 
-加 I would like to make a report about the problem tomorrow. 私はその問題についての報告を明日行
+would like to make a report about the problem tomorrow. 私はその問題についての報告を明日行
 
 いたいと思います。
 
@@ -3054,25 +3078,25 @@ B_07
 
 (C) No, I didn’t like it. いえ，私はそれが好きではなかったです。
 
-8. (A)
+(8) . (A)
 
-B_08
+[[TABLE:page-038-table-005|bbox=42.7,490.7,72.2,529.9]]
 
-米 Where can I find the manager’s office? 部長のオフィスはどこにありますか。
+Where can I find the manager’s office? 部長のオフィスはどこにありますか。
 
-豪 (A) Down the hall on the left. 廊下の先の左側です。
+(A) Down the hall on the left. 廊下の先の左側です。
 
 (B) The manager is Mike White. 部長はマイク・ホワイトです。
 
 (C) I couldn’t find any. 私はひとつも見つけられませんでした。
 
-9. (C)
+(9) . (C)
 
-B_09
+[[TABLE:page-038-table-006|bbox=42.7,582.6,72.2,622.0]]
 
-加 What should I do at the meeting? その会議で私は何をしたらいですか。
+What should I do at the meeting? その会議で私は何をしたらいですか。
 
-英 (A) She said it was great. 彼女は，それはすばらしいと言いました。
+(A) She said it was great. 彼女は，それはすばらしいと言いました。
 
 (B) Nice to meet you, too. こちらこそ，よろしくお願いします。
 
@@ -3090,13 +3114,13 @@ Part 3 Conversations (p. 60)
 | 会議予定表：9月 |  |  |  |  |
 | --- | --- | --- | --- | --- |
 | 月曜 | 火曜 | 水曜 | 木曜 | 金曜 |
-|  |  |  |  | 1 |
-| 4 | 5 | 6 | 7 | 8 |
-| 11 | 12 | 13 | 14 | 15 販売部 |
-| 18 人事部 | 19 部長 | 20 | 21 広告部 | 22 |
-| 25 | 26 | 27 | 28 | 29 |
+|  |  |  |  | (1) |
+| (4) | (5) | (6) | (7) | (8) |
+| (11) | (12) | (13) | (14) | (15) 販売部 |
+| (18) 人事部 | (19) 部長 | (20) | (21) 広告部 | (22) |
+| (25) | (26) | (27) | (28) | (29) |
 
-10. (B) 男性の最初の発言の第 2 文に sales meeting とある。
+(10) . (B) 男性の最初の発言の第 2 文に sales meeting とある。
 
 Which type of meeting needs to be rescheduled? どのような種類の会議が予定を変更される必要があり
 
@@ -3110,7 +3134,7 @@ Which type of meeting needs to be rescheduled? どのような種類の会議が
 
 (D) Department 部署
 
-11. (C) 男性の 2 回目の発言で「部長会議が同じ日に予定されていた」とある。
+(11) . (C) 男性の 2 回目の発言で「部長会議が同じ日に予定されていた」とある。
 
 Why does the meeting have to be rescheduled? 会議はなぜ予定を変更されなければならないのですか。
 
@@ -3122,7 +3146,7 @@ Why does the meeting have to be rescheduled? 会議はなぜ予定を変更さ�
 
 (D) The man and the woman will go on a business trip. 男性と女性が出張することになっている。
 
-12. (D) 予定されていた日が department managers’ meeting（部長会議）と重なっため，女性がその翌
+(12) . (D) 予定されていた日が department managers’ meeting(部長会議)と重なっため，女性がその翌
 
 日にすることを提案している。
 
@@ -3146,9 +3170,11 @@ B_10
 
 month.
 
-英 W: Oh, really? I thought everything was OK. What’s the problem?
+[[TABLE:page-039-table-002|bbox=42.7,582.0,62.6,608.5]]
 
-米 M: Somebody scheduled a department managers’ meeting for the ( same ) day. It seems they
+W: Oh, really? I thought everything was OK. What’s the problem?
+
+M: Somebody scheduled a department managers’ meeting for the ( same ) day. It seems they
 
 ( picked ) that day before we did.
 
@@ -3174,33 +3200,33 @@ Unit 9 Management
 
 Part 5 Incomplete Sentences (p. 61)
 
-13. (A) both を使い 2 つのものを並べて，「A と B の両方」と言う場合は，接続詞 and を使って both A and
+(13) . (A) both を使い 2 つのものを並べて，「A と B の両方」と言う場合は，接続詞 and を使って both A and
 
 B と表現する。
 
 【訳】私は，営業部長とマーケティング部長の両者と会談したいと思っている。
 
-14. (D) 前の文につなげて，「だが」と文をつなげる場合は接続詞 but を使う。
+(14) . (D) 前の文につなげて，「だが」と文をつなげる場合は接続詞 but を使う。
 
 【訳】スーザンは顧客と連絡をとろうとしたが，そのうちの何人かは返答しなかった。
 
-15. (C)「A か B」と選択を示す場合は，接続詞 or を使う。
+(15) . (C)「A か B」と選択を示す場合は，接続詞 or を使う。
 
 【訳】私たちは，こか，あるいは会議場で会合を開くことができる。
 
-16. (D) 前の文の結果を受けて，「だから」とその理由を示す文をつなげる場合は接続詞 so を使う。
+(16) . (D) 前の文の結果を受けて，「だから」とその理由を示す文をつなげる場合は接続詞 so を使う。
 
 【訳】時間が遅くなっていたので，私たちは会合を中止した。
 
-17. (B) あることの原因を「～なので」と述べる場合は接続詞 because を使う。
+(17) . (B) あることの原因を「～なので」と述べる場合は接続詞 because を使う。
 
 【訳】トニーは，生産ラインの問題に対応しなければならなかったので，今日は忙しかった。
 
-18. (D)「もし～ならば」という仮定を表すには接続詞 if を使う。
+(18) . (D)「もし～ならば」という仮定を表すには接続詞 if を使う。
 
 【訳】明日もしあなたが出勤できなければ，必ず私に電話してください。
 
-19. (B)「…が～するまで」と動作や状態の継続を表す場合は接続詞 until を使う。
+(19) . (B)「…が～するまで」と動作や状態の継続を表す場合は接続詞 until を使う。
 
 【訳】部長たちは，仕事を終えるまでとどまった。
 
@@ -3212,7 +3238,7 @@ Unit 9 Management
 
 Part 7 Reading Comprehension (p. 62)
 
-20. (B) これは Summer Camp（サマーキャンプ）からの手紙で，Dear parents（保護者の皆様へ）と書
+(20) . (B) これは Summer Camp(サマーキャンプ)からの手紙で，Dear parents(保護者の皆様へ)と書
 
 き出していることから，手紙の送り主はこのサマーキャンプの管理者だと思われる。
 
@@ -3226,7 +3252,7 @@ Who most likely is Nick Hammond? ニック・ハモンドは，おそらくど�
 
 (D) A cook コック
 
-21. (C) 本文の第 2 文に how to get along with others（他人とのつき合い方）とある。
+(21) . (C) 本文の第 2 文に how to get along with others(他人とのつき合い方)とある。
 
 What can children probably learn about at Sunny View Summer Camp? 子どもたちはサニービュ
 
@@ -3240,9 +3266,9 @@ What can children probably learn about at Sunny View Summer Camp? 子どもた�
 
 (D) Sports スポーツ
 
-22. (D) 本文の最後に if your child has any special needs（あなたのお子さまに何か特別な配慮が必要であ
+(22) . (D) 本文の最後に if your child has any special needs(あなたのお子さまに何か特別な配慮が必要であ
 
-れば）とある。
+れば)とある。
 
 What can parents contact Nick Hammond about? 保護者は，ニック・ハモンドにどのようなことに
 
@@ -3288,7 +3314,7 @@ Check Your Vocabulary!
 
 (4) shopper 買い物客
 
-(5) shelf （陳列）棚 *複数形は shelves。
+(5) shelf (陳列)棚 *複数形は shelves。
 
 (6) receipt レシート，領収書，受け取り
 
@@ -3296,7 +3322,7 @@ Check Your Vocabulary!
 
 (8) courier 宅配便業者
 
-(9) delivery 配達（物）
+(9) delivery 配達(物)
 
 (10) tax 税金
 
@@ -3320,11 +3346,11 @@ Word Asociation
 
 Part 1 Photographs (p. 64)
 
-1. (D)
+(1) . (D)
 
-B_11
+[[TABLE:page-042-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-豪 (A) She is closing a window. 彼女は窓を閉めている。
+(A) She is closing a window. 彼女は窓を閉めている。
 
 (B) She is holding a bag. 彼女はバッグを持っている。
 
@@ -3332,13 +3358,13 @@ B_11
 
 (D) She is trying on clothes. 彼女は服を試着している。
 
-2. (A)
+(2) . (A)
+
+[[TABLE:page-042-table-002|bbox=42.8,539.0,72.2,564.4]]
 
 [[SHAPE:page-042-shape-001|bbox=420.2,539.6,556.0,628.9]]
 
-B_12
-
-米 (A) Someone is writing a check. 誰かが小切手を書いている。
+(A) Someone is writing a check. 誰かが小切手を書いている。
 
 (B) Someone has filled out a check. 誰かが小切手に記入し終えた。
 
@@ -3346,13 +3372,13 @@ B_12
 
 (D) Someone is writing a letter. 誰かが手紙を書いている。
 
-3. (C)
+(3) . (C)
 
-B_13
+[[TABLE:page-042-table-003|bbox=42.8,630.1,72.2,656.4]]
 
 [[SHAPE:page-042-shape-002|bbox=420.2,638.6,557.4,729.5]]
 
-英 (A) Books are on shelves. 本が棚に置かれている。
+(A) Books are on shelves. 本が棚に置かれている。
 
 (B) The register is broken. レジは壊れている。
 
@@ -3378,73 +3404,73 @@ Unit 10 Purchasing
 
 Part 2 Question-Response (p. 65)
 
-4. (C)
+(4) . (C)
 
-B_14
+[[TABLE:page-043-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-英 Do you want to go shopping today? あなたは今日，買い物に出かけたい？
+Do you want to go shopping today? あなたは今日，買い物に出かけたい？
 
-米 (A) I don’t feel like bowling. 僕はボウリングがしたい気分じゃないよ。
+(A) I don’t feel like bowling. 僕はボウリングがしたい気分じゃないよ。
 
 (B) I didn’t buy anything. 僕は何も買わなかった。
 
 (C) That’s a good idea. それはい考えだ。
 
-5. (A)
+(5) . (A)
 
-B_15
+[[TABLE:page-043-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-豪 How did you pay for your jacket? ジャケットの代金はどうやって払ったのですか。
+How did you pay for your jacket? ジャケットの代金はどうやって払ったのですか。
 
-加 (A) By credit card. クレジットカードで。
+(A) By credit card. クレジットカードで。
 
 (B) About fifty dollars. およそ 50 ドルです。
 
 (C) Please send me the bill. 請求書を私に送ってください。
 
-6. (B)
+(6) . (B)
 
-B_16
+[[TABLE:page-043-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-豪 Where can I pay for this? この支払いはどこできますか。
+Where can I pay for this? この支払いはどこできますか。
 
-米 (A) By cash only. 現金だけです。
+(A) By cash only. 現金だけです。
 
 (B) At that cashier. あそこのレジです。
 
 (C) I took it home. 私はそれを家に持って帰りました。
 
-7. (B)
+(7) . (B)
 
-B_17
+[[TABLE:page-043-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-英 How much is the tax on these shoes? この靴にかる税金はいくらですか。
+How much is the tax on these shoes? この靴にかる税金はいくらですか。
 
-加 (A) I’ll take a taxi. 私はタクシーに乗るつもりです。
+(A) I’ll take a taxi. 私はタクシーに乗るつもりです。
 
 (B) It’s eight percent. 8 パーセントです。
 
 (C) Be sure they fit. サイズが合うことを確かめてください。
 
-8. (A)
+(8) . (A)
 
-B_18
+[[TABLE:page-043-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-米 Can I get a shopping cart for you? ショッピングカートをお持ちしましょうか。
+Can I get a shopping cart for you? ショッピングカートをお持ちしましょうか。
 
-英 (A) Yes, thank you. はい，ありがとうございます。
+(A) Yes, thank you. はい，ありがとうございます。
 
 (B) My car is over there. 私の車は向こうにあります。
 
 (C) I’ll pay with a check. 私は小切手で支払います。
 
-9. (C)
+(9) . (C)
 
-B_19
+[[TABLE:page-043-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-加 There’s a new clothing store in the mall. ショッピングセンターには，新しい衣料品店があります。
+There’s a new clothing store in the mall. ショッピングセンターには，新しい衣料品店があります。
 
-豪 (A) They are walking down the hall. 彼らは廊下を歩いています。
+(A) They are walking down the hall. 彼らは廊下を歩いています。
 
 (B) I already closed the door. もうドアは閉めました。
 
@@ -3458,7 +3484,7 @@ Unit 10 Purchasing
 
 Part 4 Talks (p. 66)
 
-10. (B) 宣伝のアナウンスでは，最初にその目的が述べられることが多い。こでは第 1 文の the biggest
+(10) . (B) 宣伝のアナウンスでは，最初にその目的が述べられることが多い。こでは第 1 文の the biggest
 
 bargain of the year がそれに当たる。
 
@@ -3472,7 +3498,7 @@ What is the purpose of the advertisement? この宣伝の目的は何ですか�
 
 (D) To announce business hours 営業時間を告知すること
 
-11. (D) 第2文のfashions for young peopleという語句から，若者向けの商品を主に扱っているとわかる。
+(11) . (D) 第2文のfashions for young peopleという語句から，若者向けの商品を主に扱っているとわかる。
 
 What kind of customers does Smart Mart usually sell to? スマートマートは，通常どのような顧客に商
 
@@ -3486,7 +3512,7 @@ What kind of customers does Smart Mart usually sell to? スマートマートは
 
 (D) Young people 若者
 
-12. (C) 特売は今週末に行われるが，週末の営業時間は午後 9 時までなので(C)が正解。
+(12) . (C) 特売は今週末に行われるが，週末の営業時間は午後 9 時までなので(C)が正解。
 
 Look at the graphic. When could someone take advantage of the sale? 図を見てください。今回の特売
 
@@ -3521,7 +3547,7 @@ Theater complex.
 [[TABLE:page-044-table-001]]
 | スマートマートの営業時間 |  |
 | --- | --- |
-| 平日（金曜日を除く） | 午前10:00 – 午後6:00 |
+| 平日(金曜日を除く) | 午前10:00 – 午後6:00 |
 | 金曜日 | 午前10:00 – 午後10:00 |
 | 週末 | 午前10:00 – 午後9:00 |
 | 祝日 | 午前10:00 – 午後2:00 |
@@ -3538,15 +3564,15 @@ Theater complex.
 
 Part 5 Incomplete Sentences (p. 67)
 
-13. (B) 二者択一で「A か B」と言う場合，either A or B を使う。
+(13) . (B) 二者択一で「A か B」と言う場合，either A or B を使う。
 
 【訳】私は茶色か黒の靴が欲しい。
 
-14. (D)「～でなければ」という仮定の文なので，接続詞 unless を使う。
+(14) . (D)「～でなければ」という仮定の文なので，接続詞 unless を使う。
 
 【訳】もし雨が降らなければ，今週末に屋外マーケットへ行きましょう。
 
-15. (B) ２つの文を as soon as でつなげると，「…するとすぐに」という意味になる。
+(15) . (B) ２つの文を as soon as でつなげると，「…するとすぐに」という意味になる。
 
 【訳】サムは，最後のお客が出て行くとすぐに店を閉めた。
 
@@ -3556,35 +3582,35 @@ Part 5 Incomplete Sentences (p. 67)
 
 Unit 10 Purchasing
 
-16. (C) 過去のある時点からの継続を表せる接続詞は since。
+(16) . (C) 過去のある時点からの継続を表せる接続詞は since。
 
 【訳】その店は私が生まれて以来ずっと営業している。
 
-17. (A) 接続詞 If を使って，「～ならば，～の場合は」などと条件を表すことができる。
+(17) . (A) 接続詞 If を使って，「～ならば，～の場合は」などと条件を表すことができる。
 
 【訳】小切手で支払いたい場合は，身分証明書を提示しなければなりません。
 
-18. (D)「A と B の両方」と言う場合は，both A and B を使う。
+(18) . (D)「A と B の両方」と言う場合は，both A and B を使う。
 
 【訳】スーザンは赤いコートと黒い靴の両方を買った。
 
-19. (D)「～のときは」という表現には，接続詞 when を使う。
+(19) . (D)「～のときは」という表現には，接続詞 when を使う。
 
 【訳】何か高額のものを買ったときは，必ず領収書を保管しておきなさい。
 
 Part 6 Text Completion (p. 68)
 
-20. (A) E メールの冒頭には，その目的が述べられていることが多い。「件名」を意味する Re:の欄にある
+(20) . (A) E メールの冒頭には，その目的が述べられていることが多い。「件名」を意味する Re:の欄にある
 
 Your order がヒント。
 
-21. (C) 注文した品物の発送についての話に続くのは，その確認方法の説明が適切。
+(21) . (C) 注文した品物の発送についての話に続くのは，その確認方法の説明が適切。
 
-22. (B) 空所の直前の should は「～のはず」という意味の助動詞で，その直後には動詞の原形が置かれる。
+(22) . (B) 空所の直前の should は「～のはず」という意味の助動詞で，その直後には動詞の原形が置かれる。
 
-23. (C) 空所の後に questions と名詞の複数形があるので，a と one は不適当。そして questions は具体的
+(23) . (C) 空所の後に questions と名詞の複数形があるので，a と one は不適当。そして questions は具体的
 
-に特定されていないので the（その）ではなく any（何か）を選ぶ。
+に特定されていないので the(その)ではなく any(何か)を選ぶ。
 
 【訳】
 
@@ -3621,21 +3647,21 @@ Check Your Vocabulary!
 
 (2) insurance 保険
 
-(3) deposit 預金（する），手付金
+(3) deposit 預金(する)，手付金
 
 (4) pension 年金
 
-(5) fund 資金（を出す）
+(5) fund 資金(を出す)
 
 (6) interest 利子
 
 (7) count 数える
 
-(8) loan ローン，貸し付け（る）
+(8) loan ローン，貸し付け(る)
 
 (9) ATM 現金自動預け払い機 *Automatic Teller Machine の略
 
-(10) withdraw （預金を）引き出す
+(10) withdraw (預金を)引き出す
 
 Word Asociation
 
@@ -3657,13 +3683,13 @@ Word Asociation
 
 Part 1 Photographs (p. 70)
 
-1. (C)
+(1) . (C)
 
 [[SHAPE:page-046-shape-001|bbox=420.2,440.6,562.9,535.0]]
 
-B_21
+[[TABLE:page-046-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-加 (A) She is reading a newspaper. 彼女は新聞を読んでいる。
+(A) She is reading a newspaper. 彼女は新聞を読んでいる。
 
 (B) She is viewing a magazine. 彼女は雑誌を見ている。
 
@@ -3671,13 +3697,13 @@ B_21
 
 (D) She is writing something. 彼女は何かを書いている。
 
-2. (D)
+(2) . (D)
+
+[[TABLE:page-046-table-002|bbox=42.8,552.0,72.2,577.0]]
 
 [[SHAPE:page-046-shape-002|bbox=420.2,553.3,562.9,648.4]]
 
-B_22
-
-豪 (A) Customers are waiting in line. お客が列を作って待っている。
+(A) Customers are waiting in line. お客が列を作って待っている。
 
 (B) The bank is busy. 銀行は混雑している。
 
@@ -3685,17 +3711,17 @@ B_22
 
 (D) A woman is behind a desk. 1 人の女性は机の後ろにいる。
 
-3. (B)
+(3) . (B)
 
-B_23
+[[TABLE:page-046-table-003|bbox=42.8,655.9,72.2,681.6]]
 
 [[SHAPE:page-046-shape-003|bbox=420.2,665.6,565.0,761.4]]
 
-米 (A) A woman is speaking to a teller. 女性は窓口係と話をしている。
+(A) A woman is speaking to a teller. 女性は窓口係と話をしている。
 
-(B) A woman is standing at an ATM. 女性は ATM（現金自動預け払い
+(B) A woman is standing at an ATM. 女性は ATM(現金自動預け払い
 
-機）のところに立っている。
+機)のところに立っている。
 
 (C) A woman is borrowing a book. 女性は本を借りている。
 
@@ -3719,73 +3745,73 @@ Unit 11 Finances
 
 Part 2 Question-Response (p. 71)
 
-4. (A)
+(4) . (A)
 
-B_24
+[[TABLE:page-047-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-米 Did you pay your water bill? あなたは水道料金を支払いましたか。
+Did you pay your water bill? あなたは水道料金を支払いましたか。
 
-英 (A) I did it yesterday. 私は昨日，そうしました。
+(A) I did it yesterday. 私は昨日，そうしました。
 
 (B) I’m drinking some now. 私は今，飲んでいます。
 
 (C) I don’t like swimming. 私は水泳が好きではありません。
 
-5. (A)
+(5) . (A)
 
-B_25
+[[TABLE:page-047-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-加 Can I withdraw some money? 私はお金をいくらか引き出すことはできますか。
+Can I withdraw some money? 私はお金をいくらか引き出すことはできますか。
 
-豪 (A) Yes, up to five hundred dollars. はい，500 ドルまでなら。
+(A) Yes, up to five hundred dollars. はい，500 ドルまでなら。
 
 (B) No, you can’t deposit money here. いえ，こではお金を預けられません。
 
 (C) Yes, I can lend you some money. はい，いくらかあなたにお金を貸すことができます。
 
-6. (B)
+(6) . (B)
 
-B_26
+[[TABLE:page-047-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 How can I pay for the delivery? その配達料はどう支払えばいですか。
+How can I pay for the delivery? その配達料はどう支払えばいですか。
 
-豪 (A) Check the delivery. 配達物を確認してください。
+(A) Check the delivery. 配達物を確認してください。
 
 (B) Please send a check. 小切手をお送りください。
 
 (C) It will cost fifty-five dollars. それは 55 ドルかるでしょう。
 
-7. (C)
+(7) . (C)
 
-B_27
+[[TABLE:page-047-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-加 Can you loan me some money? 私にいくらかお金を貸してもらえますか。
+Can you loan me some money? 私にいくらかお金を貸してもらえますか。
 
-英 (A) The car was expensive. その車は高価でした。
+(A) The car was expensive. その車は高価でした。
 
 (B) Yes, I need it. はい，私にはそれが必要です。
 
 (C) Sure, how much? いですよ，いくらですか。
 
-8. (A)
+(8) . (A)
 
-B_28
+[[TABLE:page-047-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-英 Do you save money for retirement? あなたは退職後に備えて貯金をしていますか。
+Do you save money for retirement? あなたは退職後に備えて貯金をしていますか。
 
-米 (A) Yes, every month. はい，毎月。
+(A) Yes, every month. はい，毎月。
 
 (B) I’ll retire in five years. 私は 5 年後に退職します。
 
 (C) Yes, I’ve been tired recently. はい，私は最近，疲れています。
 
-9. (C)
+(9) . (C)
 
-B_29
+[[TABLE:page-047-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-豪 Is it important to have health insurance? 健康保険に入るのは大事ですか。
+Is it important to have health insurance? 健康保険に入るのは大事ですか。
 
-加 (A) Car insurance is pretty cheap. 自動車保険はとても安いです。
+(A) Car insurance is pretty cheap. 自動車保険はとても安いです。
 
 (B) I’m usually very healthy. 私は普段はとても健康です。
 
@@ -3799,7 +3825,7 @@ Unit 11 Finances
 
 Part 3 Conversations (p. 72)
 
-10. (B) 女性の最初の発言に「預金をしたが金額が間違っている」とある。
+(10) . (B) 女性の最初の発言に「預金をしたが金額が間違っている」とある。
 
 Why is the woman at the bank? 女性はなぜ銀行にいるのですか。
 
@@ -3811,7 +3837,7 @@ Why is the woman at the bank? 女性はなぜ銀行にいるのですか。
 
 (D) She wants to open an account. 彼女は口座を開きたい。
 
-11. (C) 女性の 2 回目の発言の中に，「通帳の金額が 400 ドルのはずなのに 40 ドルになっている」とある。
+(11) . (C) 女性の 2 回目の発言の中に，「通帳の金額が 400 ドルのはずなのに 40 ドルになっている」とある。
 
 bankbook と account book はどちらも「通帳」という意味。
 
@@ -3825,7 +3851,7 @@ What is the matter? 何が問題ですか。
 
 (D) The bank will close soon. 銀行が間もなく閉まる。
 
-12. (B) 金額が間違っていると女性は言っているので，銀行側は記録を詳しく調べることになる。
+(12) . (B) 金額が間違っていると女性は言っているので，銀行側は記録を詳しく調べることになる。
 
 What will the man probably do next? 男性は，次に何をすると思われますか。
 
@@ -3841,11 +3867,13 @@ What will the man probably do next? 男性は，次に何をすると思われ�
 
 B_30
 
-米 M: Hello. How can I help you today?
+[[TABLE:page-048-table-001|bbox=42.7,392.6,62.6,432.5]]
 
-豪 W: Well, I (made) a deposit earlier today but the amount is (wrong).
+M: Hello. How can I help you today?
 
-米 M: OK. Let’s see what we can do about it. Can you show me your account (book),
+W: Well, I (made) a deposit earlier today but the amount is (wrong).
+
+M: OK. Let’s see what we can do about it. Can you show me your account (book),
 
 please?
 
@@ -3869,35 +3897,35 @@ Unit 11 Finances
 
 Part 5 Incomplete Sentences (p. 73)
 
-13. (D) 助動詞の can が使われている疑問文なので，それに続く動詞は原形となる。
+(13) . (D) 助動詞の can が使われている疑問文なので，それに続く動詞は原形となる。
 
 【訳】金曜日までに電気料金を払ってもらえますか。
 
-14. (A) 文末に yesterday があり，動詞 leave の過去形を使う必要があるので left が正解。
+(14) . (A) 文末に yesterday があり，動詞 leave の過去形を使う必要があるので left が正解。
 
 【訳】あなたは昨日，保険証をテーブルの上に置き忘れていきました。
 
-15. (C) これは過去のことを尋ねる疑問文。すでに did という助動詞の過去形が使われているので，それに
+(15) . (C) これは過去のことを尋ねる疑問文。すでに did という助動詞の過去形が使われているので，それに
 
 続く動詞は原形となる。
 
-【訳】あなたは，ATM（現金自動預け払い機）からいくら引き出したのですか。
+【訳】あなたは，ATM(現金自動預け払い機)からいくら引き出したのですか。
 
-16. (A) 助動詞 will を使った未来のことについての質問文。will に続く動詞は原形となる。
+(16) . (A) 助動詞 will を使った未来のことについての質問文。will に続く動詞は原形となる。
 
 【訳】あなたの自動車ローンでは，利子がどれくらいになりますか。
 
-17. (B) 〈be sure to＋動詞の原形〉で「必ず～するようにする」という意味になる。
+(17) . (B) 〈be sure to＋動詞の原形〉で「必ず～するようにする」という意味になる。
 
 【訳】いつも家賃は期限通りに必ず払うようにしなさい。
 
-18. (D) 「いつも～する」のように現在の習慣を表す場合は，動詞の現在形を使う。そして，主語の Carl
+(18) . (D) 「いつも～する」のように現在の習慣を表す場合は，動詞の現在形を使う。そして，主語の Carl
 
 は 3 人称単数なので goes となる。
 
 【訳】カールは，請求書の支払いをするのに，いつも銀行へ行く。
 
-19. (D) start を使って「～し始める」と表現する場合は，後ろに動名詞（-ing）もしくは to 不定詞を使う。
+(19) . (D) start を使って「～し始める」と表現する場合は，後ろに動名詞(-ing)もしくは to 不定詞を使う。
 
 こでは選択肢の中にある動名詞 getting を選ぶ。
 
@@ -3911,7 +3939,7 @@ Unit 11 Finances
 
 Part 7 Reading Comprehension (p. 74)
 
-20. (B) 最初の E メールの冒頭で「カウンティ・バンクのヘレン・ミラーと申します」と名乗っているので
+(20) . (B) 最初の E メールの冒頭で「カウンティ・バンクのヘレン・ミラーと申します」と名乗っているので
 
 銀行関係者だとわかる。
 
@@ -3925,7 +3953,7 @@ Who most likely is Helen Miller? ヘレン・ミラーは，どのような人�
 
 (D) A tax officer 税務署員
 
-21. (B) 最初の E メールの I’m writing to（私は～するために書いています）以下に，その用件が書いてあ
+(21) . (B) 最初の E メールの I’m writing to(私は～するために書いています)以下に，その用件が書いてあ
 
 る。
 
@@ -3941,7 +3969,7 @@ Why did Helen Miller write to Jeffery Krantz? ヘレン・ミラーは，なぜ�
 
 (D) To suggest opening an account 口座を開設するよう提案するため
 
-22. (D) 最初の E メールの日付が May 26（5 月 26 日）で，お金は tomorrow morning（明日の朝）に引き
+(22) . (D) 最初の E メールの日付が May 26(5 月 26 日)で，お金は tomorrow morning(明日の朝)に引き
 
 出せるとあるので，May 27 が正解。
 
@@ -3957,7 +3985,7 @@ When will Jeffery Krantz be able to take money out of his account? ジェフリ�
 
 (D) May 27 5 月 27 日
 
-23. (A) 返信の E メールに「deposit fee（入金手数料）が不明なので，教えてほしい」とある。
+(23) . (A) 返信の E メールに「deposit fee(入金手数料)が不明なので，教えてほしい」とある。
 
 What is the purpose of Jeffery Kranz’s email? ジェフリー・クランツの E メールの目的は何ですか。
 
@@ -3969,7 +3997,7 @@ What is the purpose of Jeffery Kranz’s email? ジェフリー・クランツ�
 
 (D) To open a new account 新しい口座を開くこと
 
-24. (C) 最初の E メールでは「4,0 ドルを入金した」とあり，返信の E メールでは「入金の手数料が入金
+(24) . (C) 最初の E メールでは「4,0 ドルを入金した」とあり，返信の E メールでは「入金の手数料が入金
 
 額から差し引かれるのを理解している」とあるので，4,0 ドルよりも少なくなると考えられる。
 
@@ -4048,7 +4076,7 @@ Check Your Vocabulary!
 
 (9) terrible ひどく嫌な，ひどく悪い
 
-(10) forecast （天気）予報 *weather forecast あるいは weather report とも言う。
+(10) forecast (天気)予報 *weather forecast あるいは weather report とも言う。
 
 Word Asociation
 
@@ -4064,19 +4092,19 @@ Word Asociation
 
 (6) be finished with～ ～を終える，済ませる
 
-(7) see a movie （劇場で）映画を見る *テレビで見るときは watch a movie。
+(7) see a movie (劇場で)映画を見る *テレビで見るときは watch a movie。
 
 (8) be broadcast live 生中継される *live は[láiv]と発音する。
 
 Part 1 Photographs (p. 78)
 
-1. (B)
+(1) . (B)
 
 [[SHAPE:page-052-shape-001|bbox=429.2,440.6,574.0,535.9]]
 
-B_31
+[[TABLE:page-052-table-001|bbox=42.8,448.6,72.2,474.2]]
 
-英 (A) A woman is interviewing a man. 女性が男性にインタビューをして
+(A) A woman is interviewing a man. 女性が男性にインタビューをして
 
 いる。
 
@@ -4088,13 +4116,13 @@ B_31
 
 (D) A woman is filming a man. 女性が男性を撮影している。
 
-2. (D)
+(2) . (D)
 
 [[SHAPE:page-052-shape-002|bbox=429.2,557.6,573.1,652.1]]
 
-B_32
+[[TABLE:page-052-table-002|bbox=42.8,567.7,72.2,593.4]]
 
-加 (A) A man is watching a video. 男性がビデオを見ている。
+(A) A man is watching a video. 男性がビデオを見ている。
 
 (B) A woman is taking a picture. 女性が写真を撮っている。
 
@@ -4102,13 +4130,13 @@ B_32
 
 (D) A camera is pointed at a man. カメラが男性に向けられている。
 
-3. (A)
+(3) . (A)
 
 [[SHAPE:page-052-shape-003|bbox=430.0,665.6,574.0,762.4]]
 
-B_33
+[[TABLE:page-052-table-003|bbox=42.8,672.4,72.2,698.0]]
 
-豪 (A) Magazines are on display. 雑誌が陳列されている。
+(A) Magazines are on display. 雑誌が陳列されている。
 
 (B) People are buying some magazines. 人々が雑誌を買っている。
 
@@ -4134,23 +4162,23 @@ Unit 12 Media
 
 Part 2 Question-Response (p. 79)
 
-4. (B)
+(4) . (B)
 
-B_34
+[[TABLE:page-053-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-豪 Do you watch the news on TV every day? あなたは毎日，テレビでニュースを見ますか。
+Do you watch the news on TV every day? あなたは毎日，テレビでニュースを見ますか。
 
-米 (A) Yes, please. はい，お願いします。
+(A) Yes, please. はい，お願いします。
 
 (B) No, not really. いえ，あまり見ません。
 
 (C) No, thank you. いえ，結構です。
 
-5. (A)
+(5) . (A)
 
-B_35
+[[TABLE:page-053-table-002|bbox=42.7,187.4,72.2,213.1]]
 
-英 The forecast said it’s going to rain later today. 天気予報は，今日これからの時間に雨が降ると言っ
+The forecast said it’s going to rain later today. 天気予報は，今日これからの時間に雨が降ると言っ
 
 ていました。
 
@@ -4160,23 +4188,23 @@ B_35
 
 (C) No, I usually don’t care about the weather. いえ，私は普段，天気を気にしません。
 
-6. (B)
+(6) . (B)
 
-B_36
+[[TABLE:page-053-table-003|bbox=42.7,293.0,72.2,332.3]]
 
-米 I’ve been reading a really good book. 私は，とてもおもしろい本を読んでいます。
+I’ve been reading a really good book. 私は，とてもおもしろい本を読んでいます。
 
-英 (A) I really want to book a nice hotel. 私は，よいホテルをぜひ予約したいです。
+(A) I really want to book a nice hotel. 私は，よいホテルをぜひ予約したいです。
 
 (B) Can I borrow it when you’re finished with it? あなたが終わったら，それをお借りできますか。
 
 (C) But aren’t tickets expensive now? でも，今，チケットは高いのではないですか。
 
-7. (C)
+(7) . (C)
 
-B_37
+[[TABLE:page-053-table-004|bbox=42.7,385.1,72.2,410.6]]
 
-加 Did you hear about the big traffic accident yesterday? 昨日の大きな交通事故のことを聞きました
+Did you hear about the big traffic accident yesterday? 昨日の大きな交通事故のことを聞きました
 
 か。
 
@@ -4186,23 +4214,23 @@ B_37
 
 (C) Yes, it was terrible. はい，ひどかったです。
 
-8. (C)
+(8) . (C)
 
-B_38
+[[TABLE:page-053-table-005|bbox=42.7,490.7,72.2,529.9]]
 
-米 How do you usually contact your friends? あなたは普段，友達にどうやって連絡をしますか。
+How do you usually contact your friends? あなたは普段，友達にどうやって連絡をしますか。
 
-豪 (A) About once a week. だいたい週に１回です。
+(A) About once a week. だいたい週に１回です。
 
 (B) I have lots of friends. 私にはたくさんの友達がいます。
 
 (C) I use my cellphone. 私は携帯電話を使います。
 
-9. (B)
+(9) . (B)
 
-B_39
+[[TABLE:page-053-table-006|bbox=42.7,582.6,72.2,608.3]]
 
-加 The photographer takes really nice pictures of animals. その写真家は，動物のとてもよい写真を
+The photographer takes really nice pictures of animals. その写真家は，動物のとてもよい写真を
 
 撮ります。
 
@@ -4220,7 +4248,7 @@ Unit 12 Media
 
 Part 4 Talks (p. 80)
 
-10. (B) これは天気予報の番組であることはすぐにわかる。さらに as you can see from this satellite
+(10) . (B) これは天気予報の番組であることはすぐにわかる。さらに as you can see from this satellite
 
 photo という言葉から，衛星写真の画像が表示されるメディア，すなわちテレビでの天気予報だとわか
 
@@ -4236,7 +4264,7 @@ Where can this weather report most likely be heard? この天気予報は，ど�
 
 (D) At an outdoor concert 野外コンサートで
 
-11. (C) 天気予報で言われている stay(ing) indoors（屋内にとどまる）を言い換えると Stay inside
+(11) . (C) 天気予報で言われている stay(ing) indoors(屋内にとどまる)を言い換えると Stay inside
 
 buildings となる。
 
@@ -4250,7 +4278,7 @@ What do police suggest people do? 警察は何をすることを勧告してい�
 
 (D) Call them for more information 警察に電話してより多くの情報を求める
 
-12. (B) これは近づいてくる嵐に警戒することを呼びかけている放送である。
+(12) . (B) これは近づいてくる嵐に警戒することを呼びかけている放送である。
 
 Why does the speaker say, “Be careful and be safe”?
 
@@ -4300,23 +4328,23 @@ Unit 12 Media
 
 Part 5 Incomplete Sentences (p. 81)
 
-13. (D) seen という動詞の過去分詞の形から，相手に経験を尋ねる疑問文とわかるので助動詞の Have を文
+(13) . (D) seen という動詞の過去分詞の形から，相手に経験を尋ねる疑問文とわかるので助動詞の Have を文
 
 頭に置く。
 
 【訳】あなたは最近，何かい映画を見ましたか。
 
-14. (A) next（次の）と this evening（今日の夕方）から，未来のことを話していると考えられるので，助
+(14) . (A) next(次の)と this evening(今日の夕方)から，未来のことを話していると考えられるので，助
 
 動詞 will を使っている(A)を選ぶ。
 
 【訳】次の天気予報は，今日の夕方の５時半にあるだろう。
 
-15. (C) last night（昨夜）と過去のことを話しているので，過去形の動詞 saw（見た）を選ぶ。
+(15) . (C) last night(昨夜)と過去のことを話しているので，過去形の動詞 saw(見た)を選ぶ。
 
 【訳】私は昨夜，あなたがすめてくれたテレビ番組を見ました。
 
-16. (D) 主語は sales（売り上げ）という複数名詞であること，接続詞 as 以下で使われている動詞が現在
+(16) . (D) 主語は sales(売り上げ)という複数名詞であること，接続詞 as 以下で使われている動詞が現在
 
 形なので，対応する be 動詞には are を選ぶ。
 
@@ -4324,19 +4352,19 @@ Part 5 Incomplete Sentences (p. 81)
 
 とが予想される。
 
-17. (B) when 以下を見ると，過去についての文だとわかる。過去のある時点で進行中の動作（～していた）
+(17) . (B) when 以下を見ると，過去についての文だとわかる。過去のある時点で進行中の動作(～していた)
 
 には，過去進行形が使われる。
 
 【訳】そのテレビ局は，そのイベントが生中継されたときに新型カメラを使っていた。
 
-18. (D) 助動詞 should ともに使われる動詞は原形になる。この文では be と give がそれにあたる。
+(18) . (D) 助動詞 should ともに使われる動詞は原形になる。この文では be と give がそれにあたる。
 
 【訳】よいジャーナリストは中立で，人々にできるだけ多くの情報を提供すべきだ。
 
-19. (D) この文の主語は The ad（広告）だが，それに対応する述語動詞が見当たらないので，それに該当
+(19) . (D) この文の主語は The ad(広告)だが，それに対応する述語動詞が見当たらないので，それに該当
 
-する形を選ぶ。says to～（～するようにと書いてある）となるよう says を選ぶ。
+する形を選ぶ。says to～(～するようにと書いてある)となるよう says を選ぶ。
 
 【訳】その広告には，その製品についてさらによく知るには彼らのウェブサイトを訪問するようにと書い
 
@@ -4344,17 +4372,17 @@ Part 5 Incomplete Sentences (p. 81)
 
 Part 6 Text Completion (p. 82)
 
-20. (B) different（異なる）という形容詞に修飾される名詞が必要。feature は可算名詞なので，冠詞の a
+(20) . (B) different(異なる)という形容詞に修飾される名詞が必要。feature は可算名詞なので，冠詞の a
 
 がついた単数形か複数形のどちらかとなる。選択肢にあるのは複数形。
 
-21. (B) 「写真をたくさん撮る」→「保存容量の大きいものを選ぶべきだ」と考えるのが自然。
+(21) . (B) 「写真をたくさん撮る」→「保存容量の大きいものを選ぶべきだ」と考えるのが自然。
 
-22. (C) 〈so . that～〉という構文で「あまりにも…なので～だ」という意味になる。大きすぎると不便
+(22) . (C) 〈so . that～〉という構文で「あまりにも…なので～だ」という意味になる。大きすぎると不便
 
-になるのは持ち運ぶ（carry）場合。carry～around は「～をあちこちに持ち運ぶ」というイディオム。
+になるのは持ち運ぶ(carry)場合。carry～around は「～をあちこちに持ち運ぶ」というイディオム。
 
-23. (D) 形容詞の最上級（この場合は best）の前には定冠詞の the が必要。
+(23) . (D) 形容詞の最上級(この場合は best)の前には定冠詞の the が必要。
 
 【訳】
 
@@ -4415,7 +4443,7 @@ Word Asociation
 
 (4) finish by～ ～までに終わる
 
-(5) be prepared to do ～する準備［覚悟］ができている *be ready to doも同じ意味。
+(5) be prepared to do ～する準備[覚悟]ができている *be ready to doも同じ意味。
 
 (6) last until～ ～まで続く
 
@@ -4425,13 +4453,13 @@ Word Asociation
 
 Part 1 Photographs (p. 84)
 
-1. (C)
+(1) . (C)
 
-B_41
+[[TABLE:page-056-table-001|bbox=42.8,447.7,72.2,472.4]]
 
 [[SHAPE:page-056-shape-003|bbox=411.2,449.6,556.0,545.6]]
 
-米 (A) The woman is playing the piano. 女性はピアノを弾いている。
+(A) The woman is playing the piano. 女性はピアノを弾いている。
 
 (B) The woman is playing with a band. 女性はバンドと一緒に演奏
 
@@ -4443,13 +4471,13 @@ B_41
 
 (D) The woman is in front of an audience. 女性は聴衆の前にいる。
 
-2. (C)
+(2) . (C)
 
 [[SHAPE:page-056-shape-002|bbox=411.2,561.4,554.4,657.4]]
 
-B_42
+[[TABLE:page-056-table-002|bbox=42.8,565.9,72.2,591.6]]
 
-英 (A) Fans are buying tickets. ファンの人たちがチケットを買ってい
+(A) Fans are buying tickets. ファンの人たちがチケットを買ってい
 
 る。
 
@@ -4459,13 +4487,13 @@ B_42
 
 (D) People are watching a movie. 人々は映画を見ている。
 
-3. (D)
+(3) . (D)
 
-B_43
+[[TABLE:page-056-table-003|bbox=42.8,672.6,72.2,697.2]]
 
 [[SHAPE:page-056-shape-001|bbox=411.2,674.6,556.7,769.9]]
 
-加 (A) They are watching a match. 彼らは試合を見ている。
+(A) They are watching a match. 彼らは試合を見ている。
 
 (B) They are standing on the table. 彼らはテーブルの上に立ってい
 
@@ -4493,59 +4521,59 @@ Unit 13 Entertainment
 
 Part 2 Question-Response (p. 85)
 
-4. (B)
+(4) . (B)
 
-B_44
+[[TABLE:page-057-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-英 Do you want to see a movie this weekend? あなたは，今週末に映画を見たいですか。
+Do you want to see a movie this weekend? あなたは，今週末に映画を見たいですか。
 
-米 (A) I saw one. 私は映画を見ました。
+(A) I saw one. 私は映画を見ました。
 
 (B) Good idea. いですね。
 
 (C) I haven’t seen it. 私はそれをまだ見ていません。
 
-5. (A)
+(5) . (A)
 
-B_45
+[[TABLE:page-057-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-豪 How was the soccer game yesterday? 昨日のサッカーの試合はどうでしたか。
+How was the soccer game yesterday? 昨日のサッカーの試合はどうでしたか。
 
-加 (A) Really exciting. 本当に興奮しました。
+(A) Really exciting. 本当に興奮しました。
 
 (B) No, I don’t play games. いえ，私はゲームをしません。
 
 (C) I’ll go soon. 私はすぐに行きます。
 
-6. (A)
+(6) . (A)
 
-B_46
+[[TABLE:page-057-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-豪 Let’s go see a play this weekend. 今週末は演劇を見に行きましょう。
+Let’s go see a play this weekend. 今週末は演劇を見に行きましょう。
 
-米 (A) Sorry, I’ll be busy. ごめんなさい，私は忙しくなるんです。
+(A) Sorry, I’ll be busy. ごめんなさい，私は忙しくなるんです。
 
 (B) I played tennis. 私はテニスをしました。
 
 (C) The playground is near. 遊び場は近くにあります。
 
-7. (B)
+(7) . (B)
 
-B_47
+[[TABLE:page-057-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-英 How much were the tickets to the concert? そのコンサートのチケットはいくらでしたか。
+How much were the tickets to the concert? そのコンサートのチケットはいくらでしたか。
 
-加 (A) I bought five. 私は 5 枚買いました。
+(A) I bought five. 私は 5 枚買いました。
 
 (B) About fifteen dollars each. 1 枚およそ 15 ドルでした。
 
 (C) It took an hour. 1 時間かりました。
 
-8. (C)
+(8) . (C)
 
-B_48
+[[TABLE:page-057-table-005|bbox=42.7,463.4,72.2,489.1]]
 
-米 What kind of movie do you want to see, a comedy or a drama? どのような映画を見たいですか，
+What kind of movie do you want to see, a comedy or a drama? どのような映画を見たいですか，
 
 コメディー，それともドラマ？
 
@@ -4555,13 +4583,13 @@ B_48
 
 (C) I prefer comedies. 私はコメディーのほうが好きです。
 
-9. (C)
+(9) . (C)
 
-B_49
+[[TABLE:page-057-table-006|bbox=42.7,569.0,72.2,608.3]]
 
-加 There’s a really good program on TV tonight. 今夜，テレビで本当におもしろい番組があります。
+There’s a really good program on TV tonight. 今夜，テレビで本当におもしろい番組があります。
 
-豪 (A) I’ll show you tomorrow. 私は明日，あなたにお見せしましょう。
+(A) I’ll show you tomorrow. 私は明日，あなたにお見せしましょう。
 
 (B) But the theater is too far. でも，その劇場は遠すぎます。
 
@@ -4575,7 +4603,7 @@ Unit 13 Entertainment
 
 Part 3 Conversations (p. 86)
 
-10. (B) 男性の最初の発言にある「一緒にショッピングセンターで過ごすのはどう？」という提案をめぐっ
+(10) . (B) 男性の最初の発言にある「一緒にショッピングセンターで過ごすのはどう？」という提案をめぐっ
 
 て会話が進み，最後に女性が「靴を見るのにつき合って」と言っている。
 
@@ -4591,7 +4619,7 @@ What are the man and the woman mainly talking about? 男性と女性は，主に
 
 (D) Buying a present for a friend 友達のためにプレゼントを買うこと
 
-11. (D) That’s not a bad idea.は相手の提案への同意を表すときによく使われる表現。
+(11) . (D) That’s not a bad idea.は相手の提案への同意を表すときによく使われる表現。
 
 Why does the woman say, “That’s not a bad idea”? 女性はなぜ“That’s not a bad idea”と言っているので
 
@@ -4605,7 +4633,7 @@ Why does the woman say, “That’s not a bad idea”? 女性はなぜ“That’
 
 (D) She agrees with the man’s suggestion. 彼女は男性の提案に賛成している。
 
-12. (A) 男性が最初に「土曜日の午後」と言っているが，女性は午後に仕事があるため，結局 10 時に会う
+(12) . (A) 男性が最初に「土曜日の午後」と言っているが，女性は午後に仕事があるため，結局 10 時に会う
 
 ことになっている。
 
@@ -4623,15 +4651,19 @@ When will the man and the woman meet? 男性と女性はいつ会うのでしょ
 
 B_50
 
-米 M: What do you think about ( spending ) Saturday afternoon at the shopping center with me?
+[[TABLE:page-058-table-001|bbox=42.7,434.4,62.6,461.2]]
 
-英 W: That’s not a bad idea. But I have to do some work in the ( afternoon ). How about going a bit
+M: What do you think about ( spending ) Saturday afternoon at the shopping center with me?
+
+W: That’s not a bad idea. But I have to do some work in the ( afternoon ). How about going a bit
 
 earlier, say at nine o’clock?
 
-米 M: Oh, I don’t think the mall is open that ( early ). Why don’t I ( pick ) you up at your house at ten?
+[[TABLE:page-058-table-002|bbox=42.7,473.8,62.6,500.3]]
 
-英 W: OK. ( Sounds ) good to me. But be prepared to look at shoes with me!
+M: Oh, I don’t think the mall is open that ( early ). Why don’t I ( pick ) you up at your house at ten?
+
+W: OK. ( Sounds ) good to me. But be prepared to look at shoes with me!
 
 【訳】
 
@@ -4655,37 +4687,37 @@ Unit 13 Entertainment
 
 Part 5 Incomplete Sentences (p. 87)
 
-13. (D)「インターネットで」と言う場合に使われる前置詞は on。
+(13) . (D)「インターネットで」と言う場合に使われる前置詞は on。
 
 【訳】私は，インターネットでおかしなビデオを見るのがとても好きだ。
 
-14. (D)「～の代金」と言う場合には，その品物やサービスの前に前置詞 for をつける。
+(14) . (D)「～の代金」と言う場合には，その品物やサービスの前に前置詞 for をつける。
 
 【訳】チケットの代金はどのように支払いたいですか。
 
-15. (A)「～までに」という期限を表す場合には，前置詞 by を使う。
+(15) . (A)「～までに」という期限を表す場合には，前置詞 by を使う。
 
 【訳】そのコンサートは午後 8 時までには終わるはずだ。
 
-16. (B) be full of～（～でいっぱいになっている）をフレーズとして覚えておくとよい。
+(16) . (B) be full of～(～でいっぱいになっている)をフレーズとして覚えておくとよい。
 
 【訳】競技場は，興奮したファンたちですっかりいっぱいになっていた。
 
-17. (B) 「舞台で」は on stage というフレーズを使う。
+(17) . (B) 「舞台で」は on stage というフレーズを使う。
 
 【訳】そのコメディアンは，テレビよりも舞台で演じるほうを好んでいる。
 
-18. (A) 一定の期間を表す場合は，前置詞 for を使う。
+(18) . (A) 一定の期間を表す場合は，前置詞 for を使う。
 
 【訳】エイミー・ホワイトは，過去 3 年間，ライブコンサートを開いていない。
 
-19. (D)「～にある～，～に属する～」と言う場合は，前置詞 of を使う。
+(19) . (D)「～にある～，～に属する～」と言う場合は，前置詞 of を使う。
 
 【訳】劇場の 2 階で食べ物や飲み物を買うことができます。
 
 Part 7 Reading Comprehension (p. 88)
 
-20. (B) County Fair とはアメリカの county（郡）で開催されるお祭りのことで，この広告はその案内。
+(20) . (B) County Fair とはアメリカの county(郡)で開催されるお祭りのことで，この広告はその案内。
 
 What is this advertisement for? この広告は何のためのものですか。
 
@@ -4697,11 +4729,11 @@ What is this advertisement for? この広告は何のためのものですか。
 
 (D) A new event site 新しいイベント会場
 
-21. (C) 文中の Ride（乗り物）は Roller coasters（ジェットコースター），concert（コンサート）は Country
+(21) . (C) 文中の Ride(乗り物)は Roller coasters(ジェットコースター)，concert(コンサート)は Country
 
-music（カントリーミュージック），food competitions（食品の競技会）は A cooking contest（料理コ
+music(カントリーミュージック)，food competitions(食品の競技会)は A cooking contest(料理コ
 
-ンテスト）にそれぞれ対応すると考えられるが，Horse racing に当てはまるものは文中にない。
+ンテスト)にそれぞれ対応すると考えられるが，Horse racing に当てはまるものは文中にない。
 
 According to the advertisement, which might NOT be available at the fair? この広告によると，こ
 
@@ -4715,11 +4747,11 @@ According to the advertisement, which might NOT be available at the fair? この
 
 (D) A cooking contest 料理コンテスト
 
-22. (A) イベントについて，日付と期間，場所，内容，チケット情報の順に説明されていると考えられる。
+(22) . (A) イベントについて，日付と期間，場所，内容，チケット情報の順に説明されていると考えられる。
 
-[1]，[2]，[3]，[4]と記載された箇所のうち，次の文が入るのに最もふさわしいところはどこですか。
+(1) ，[2]，[3]，[4]と記載された箇所のうち，次の文が入るのに最もふさわしいところはどこですか。
 
-“A full two weeks of fun!”（楽しさが続く 2 週間！）
+“A full two weeks of fun!”(楽しさが続く 2 週間！)
 
 (A) [1]
 
@@ -4733,7 +4765,7 @@ According to the advertisement, which might NOT be available at the fair? この
 
 [[TEXTBOX:page-059-box-001]]
 > ミッドランド・カウンティフェアにお越しください
-> 7 月 1 日から 7 月 14 日まで開催。楽しさが続く 2 週間！
+> (7) 月 1 日から 7 月 14 日まで開催。楽しさが続く 2 週間！
 > ミッドランド・カウンティ博覧会場にて。郡内でも最高のロケーション。
 > 子どもから大人にまで，たくさんの食べ物とお楽しみを用意しています。
 > 乗り物，コンサート，料理コンテストもあります。ご家族連れでお越しください！
@@ -4758,9 +4790,9 @@ Check Your Vocabulary!
 
 (3) physician 内科医
 
-(4) X-ray レントゲン（写真）
+(4) X-ray レントゲン(写真)
 
-(5) exercise 運動（する）
+(5) exercise 運動(する)
 
 (6) healthcare 医療，健康管理
 
@@ -4794,11 +4826,11 @@ Part 1 Photographs (p. 90)
 
 [[SHAPE:page-060-shape-001|bbox=420.2,413.6,565.0,508.9]]
 
-1. (D)
+(1) . (D)
 
-B_51
+[[TABLE:page-060-table-001|bbox=42.8,447.0,72.2,472.7]]
 
-豪 (A) The doctor is standing up. 医師は立っている。
+(A) The doctor is standing up. 医師は立っている。
 
 (B) The patient is lying down. 患者は横になっている。
 
@@ -4808,11 +4840,11 @@ B_51
 
 (D) The doctor is smiling at a patient. 医師は患者にほ笑んでいる。
 
-2. (A)
+(2) . (A)
 
-B_52
+[[TABLE:page-060-table-002|bbox=42.8,552.6,72.2,578.3]]
 
-米 (A) They are using machines at a gym. 彼らはスポーツジムで器具を使っている。
+(A) They are using machines at a gym. 彼らはスポーツジムで器具を使っている。
 
 (B) They are exercising outdoors. 彼らは屋外で運動をしている。
 
@@ -4820,11 +4852,11 @@ B_52
 
 (D) They are lifting some boxes. 彼らはいくつかの箱を持ち上げている。
 
-3. (B)
+(3) . (B)
 
-B_53
+[[TABLE:page-060-table-003|bbox=42.8,644.6,72.2,670.2]]
 
-英 (A) A doctor is writing on a chart. 医師が図表に書き込んでいる。
+(A) A doctor is writing on a chart. 医師が図表に書き込んでいる。
 
 [[SHAPE:page-060-shape-002|bbox=420.2,661.3,565.0,756.5]]
 
@@ -4854,73 +4886,73 @@ Unit 14 Health
 
 Part 2 Question-Response (p. 91)
 
-4. (C)
+(4) . (C)
 
-B_54
+[[TABLE:page-061-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-米 Do you have a health insurance card? あなたは健康保険証を持っていますか。
+Do you have a health insurance card? あなたは健康保険証を持っていますか。
 
-英 (A) Yes, I’m usually healthy. はい，私はいつもは健康です。
+(A) Yes, I’m usually healthy. はい，私はいつもは健康です。
 
 (B) No, I don’t have a license. いえ，私は免許証を持っていません。
 
 (C) Yes, here it is. はい，これです。
 
-5. (B)
+(5) . (B)
 
-B_55
+[[TABLE:page-061-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-加 How often do you exercise? あなたは，どれくらいの頻度で運動をしますか。
+How often do you exercise? あなたは，どれくらいの頻度で運動をしますか。
 
-豪 (A) I usually run in the park. 私は，たいてい公園で走ります。
+(A) I usually run in the park. 私は，たいてい公園で走ります。
 
 (B) About three times a week. 週に 3 回くらいです。
 
 (C) Yes, I’m very excited. はい，私はとてもわくわくしています。
 
-6. (C)
+(6) . (C)
 
-B_56
+[[TABLE:page-061-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 I’ve had a high fever for three days. 私はこの 3 日間，高い熱が出ています。
+I’ve had a high fever for three days. 私はこの 3 日間，高い熱が出ています。
 
-豪 (A) Yes, it’s been hot recently. はい，最近は暑かったです。
+(A) Yes, it’s been hot recently. はい，最近は暑かったです。
 
 (B) Healthcare costs are high. 医療費は高額です。
 
 (C) You should see a doctor. あなたは医者に診てもらうべきです。
 
-7. (B)
+(7) . (B)
 
-B_57
+[[TABLE:page-061-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-加 What’s the best way to lose weight? 体重を減らす一番よい方法は何ですか。
+What’s the best way to lose weight? 体重を減らす一番よい方法は何ですか。
 
-英 (A) I lost about three pounds last year. 私は去年，およそ３ポンド減らしました。
+(A) I lost about three pounds last year. 私は去年，およそ３ポンド減らしました。
 
 (B) Exercise and eat healthy food. 運動をして，健康によい食品を食べなさい。
 
 (C) It’s best to wait here. こで待つのが一番です。
 
-8. (A)
+(8) . (A)
 
-B_58
+[[TABLE:page-061-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-英 Can you recommend a good dentist? よい歯科医をすめてもらえますか。
+Can you recommend a good dentist? よい歯科医をすめてもらえますか。
 
-米 (A) Dr. North is very good. ノース先生がとてもいです。
+(A) Dr. North is very good. ノース先生がとてもいです。
 
 (B) I think that dentist is bad. その歯科医はひどいと思います。
 
 (C) I see him about twice a year. 私は彼とは年に２回ほど会います。
 
-9. (C)
+(9) . (C)
 
-B_59
+[[TABLE:page-061-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-豪 Do you need more medicine? あなたはもっと薬が必要ですか。
+Do you need more medicine? あなたはもっと薬が必要ですか。
 
-加 (A) Yes, the medicine will work for you. はい，その薬はあなたに効くでしょう。
+(A) Yes, the medicine will work for you. はい，その薬はあなたに効くでしょう。
 
 (B) Sure, I’ll give you some. わかりました，あなたにいくつかお渡します。
 
@@ -4934,7 +4966,7 @@ Unit 14 Health
 
 Part 4 Talks (p. 92)
 
-10. (A) 話し手は自分のことを physician（内科医）と言っているので医者である。
+(10) . (A) 話し手は自分のことを physician(内科医)と言っているので医者である。
 
 Who most likely is the speaker? 話し手はおそらくどのような人物ですか。
 
@@ -4946,7 +4978,7 @@ Who most likely is the speaker? 話し手はおそらくどのような人物で
 
 (D) A receptionist 受付係
 
-11. (A) medicine [drug]（薬）の話はまったく出てこない。
+(11) . (A) medicine [drug](薬)の話はまったく出てこない。
 
 What does the speaker NOT mention in the announcement? 話し手がこのお知らせの中で触れていな
 
@@ -4960,9 +4992,9 @@ What does the speaker NOT mention in the announcement? 話し手がこのお知�
 
 (D) Getting regular exercise 定期的に運動をすること
 
-12. (D) website（ウェブサイト）にある article（記事）は，Access the Internet（インターネットにアク
+(12) . (D) website(ウェブサイト)にある article(記事)は，Access the Internet(インターネットにアク
 
-セスする）と読むことができる。
+セスする)と読むことができる。
 
 What does the speaker say you can do to get more information? 話し手は，もっと情報を手に入れるに
 
@@ -5012,33 +5044,33 @@ Unit 14 Health
 
 Part 5 Incomplete Sentences (p. 93)
 
-13. (B)「～の一番下に」という意味で bottom を使う場合は at the bottom of～という表現を使う。
+(13) . (B)「～の一番下に」という意味で bottom を使う場合は at the bottom of～という表現を使う。
 
 【訳】その用紙の一番下に，ご署名ください。
 
-14. (D) his sickness（彼の病気）は名詞句なので，その前には文をつなげる接続詞ではなく２語からなる
+(14) . (D) his sickness(彼の病気)は名詞句なので，その前には文をつなげる接続詞ではなく２語からなる
 
-前置詞句 because of ～（～のために）を使う。
+前置詞句 because of ～(～のために)を使う。
 
 【訳】マイクは病気のために１週間，出勤しなかった。
 
-15. (C)「～までに」という期限を表す前置詞は by。
+(15) . (C)「～までに」という期限を表す前置詞は by。
 
 【訳】あなたは今年の末までに健康診断を受けるべきです。
 
-16. (D)「A と B の間に」という表現は，between A and B を使う。
+(16) . (D)「A と B の間に」という表現は，between A and B を使う。
 
 【訳】その歯科医院は銀行とレストランの間にある。
 
-17. (A) 2 語からなる前置詞句 According to ～は「～によると」という意味。
+(17) . (A) 2 語からなる前置詞句 According to ～は「～によると」という意味。
 
 【訳】その指示書によると，あなたは 1 日 3 回，2 錠を服用すべきです。
 
-18. (D) at least（少なくとも）はよく使われるフレーズ。at best（せいぜい）ともに覚えておこう。
+(18) . (D) at least(少なくとも)はよく使われるフレーズ。at best(せいぜい)ともに覚えておこう。
 
 【訳】あなたは毎晩，少なくとも 7 時間の睡眠をとるべきです。
 
-19. (C)「～だけれども」という譲歩を表す接続詞 Although を選ぶ。
+(19) . (C)「～だけれども」という譲歩を表す接続詞 Although を選ぶ。
 
 【訳】彼女は風邪を引いていたけれども，買い物に出かけた。
 
@@ -5050,9 +5082,9 @@ Unit 14 Health
 
 Part 7 Reading Comprehension (p. 94)
 
-20. (B) 差出人の From:に Dr.（医師）とあり，文書の内容からも，これが医師から患者に宛てたものだと
+(20) . (B) 差出人の From:に Dr.(医師)とあり，文書の内容からも，これが医師から患者に宛てたものだと
 
-わかる。本文中の最後の文にある make an appointment（面談の約束をする）が主な用件。
+わかる。本文中の最後の文にある make an appointment(面談の約束をする)が主な用件。
 
 What is this message mainly about? このメッセージは主に何についてのものですか。
 
@@ -5064,7 +5096,7 @@ What is this message mainly about? このメッセージは主に何について
 
 (D) Hiring a new secretary 新しい秘書を雇うこと
 
-21. (A) 血液検査の結果，「薬を変えたい」ということは，前の薬が合っていないと考えられる。
+(21) . (A) 血液検査の結果，「薬を変えたい」ということは，前の薬が合っていないと考えられる。
 
 What can be said about George Hill’s present medicine? ジョージ・ヒルの現在の薬についてどのよ
 
@@ -5078,7 +5110,7 @@ What can be said about George Hill’s present medicine? ジョージ・ヒル�
 
 (D) It is good for him. それは彼に効いている。
 
-22. (A) 本文中の最後の文に Please phone my secretary（私の秘書に電話をしてください）とある。
+(22) . (A) 本文中の最後の文に Please phone my secretary(私の秘書に電話をしてください)とある。
 
 What should George Hill do next? ジョージ・ヒルは，次に何をするべきでしょうか。
 
@@ -5120,11 +5152,11 @@ Check Your Vocabulary!
 
 (3) complain 苦情を言う
 
-(4) buffet ビュッフェ，バイキング，立食（の食事）
+(4) buffet ビュッフェ，バイキング，立食(の食事)
 
 (5) meal 食事，食べ物
 
-(6) discount 割引（する）
+(6) discount 割引(する)
 
 (7) reservation 予約
 
@@ -5154,13 +5186,13 @@ Word Asociation
 
 Part 1 Photographs (p. 96)
 
-1. (B)
+(1) . (B)
 
 [[SHAPE:page-065-shape-001|bbox=420.2,440.6,565.0,535.9]]
 
-B_61
+[[TABLE:page-065-table-001|bbox=42.8,446.8,72.2,472.4]]
 
-加 (A) The restaurant is full of people. レストランは満員だ。
+(A) The restaurant is full of people. レストランは満員だ。
 
 (B) Glasses are set on the tables. グラスがテーブルの上に置かれてい
 
@@ -5170,13 +5202,13 @@ B_61
 
 (D) A chef is cooking in the kitchen. シェフが厨房で調理している。
 
-2. (C)
+(2) . (C)
 
 [[SHAPE:page-065-shape-002|bbox=420.2,548.6,565.0,643.9]]
 
-B_62
+[[TABLE:page-065-table-002|bbox=42.8,552.4,72.2,578.0]]
 
-豪 (A) They are dining indoors. 彼らは屋内で食事している。
+(A) They are dining indoors. 彼らは屋内で食事している。
 
 (B) Two women are serving a man. 2 人の女性が男性に給仕している。
 
@@ -5184,13 +5216,13 @@ B_62
 
 (D) The women are paying their bill. 女性たちは勘定を支払っている。
 
-3. (D)
+(3) . (D)
 
-B_63
+[[TABLE:page-065-table-003|bbox=42.8,644.2,72.2,670.0]]
 
 [[SHAPE:page-065-shape-003|bbox=420.2,656.6,565.0,751.9]]
 
-米 (A) Customers are waiting in line. お客たちが列を作って待っている。
+(A) Customers are waiting in line. お客たちが列を作って待っている。
 
 (B) The restaurant is closed. レストランは閉まっている。
 
@@ -5216,73 +5248,73 @@ Unit 15 Restaurants
 
 Part 2 Question-Response (p. 97)
 
-4. (A)
+(4) . (A)
 
-B_64
+[[TABLE:page-066-table-001|bbox=42.7,95.4,72.2,134.8]]
 
-豪 Are you going to cook dinner tonight? 今夜は，あなたが夕飯を作るのですか。
+Are you going to cook dinner tonight? 今夜は，あなたが夕飯を作るのですか。
 
-米 (A) No, let’s eat out. いえ，外食しましょう。
+(A) No, let’s eat out. いえ，外食しましょう。
 
 (B) Sure, the food was great. もちろんです，食事はすばらしかったです。
 
 (C) Yes, I made reservations. はい，私が予約しました。
 
-5. (C)
+(5) . (C)
 
-B_65
+[[TABLE:page-066-table-002|bbox=42.7,187.4,72.2,226.7]]
 
-英 I’m disappointed with the service. 私はサービスにがっかりしています。
+I’m disappointed with the service. 私はサービスにがっかりしています。
 
-加 (A) Yes, it was great. はい，それはすばらしかったです。
+(A) Yes, it was great. はい，それはすばらしかったです。
 
 (B) No, it wasn’t so good. いえ，それはあまりよくありませんでした。
 
 (C) Yes, we should complain. そうですね，私たちは苦情を言うべきです。
 
-6. (B)
+(6) . (B)
 
-B_66
+[[TABLE:page-066-table-003|bbox=42.7,279.4,72.2,318.7]]
 
-米 Would you like a salad with your steak? ステーキと一緒にサラダはいかがですか。
+Would you like a salad with your steak? ステーキと一緒にサラダはいかがですか。
 
-英 (A) I don’t like soup. 私はスープが好きではありません。
+(A) I don’t like soup. 私はスープが好きではありません。
 
 (B) That would be nice. それはいですね。
 
 (C) I won’t have dessert. 私はデザートを食べません。
 
-7. (A)
+(7) . (A)
 
-B_67
+[[TABLE:page-066-table-004|bbox=42.7,371.4,72.2,410.6]]
 
-加 What do you want to eat for lunch? ランチには何を食べたいですか。
+What do you want to eat for lunch? ランチには何を食べたいですか。
 
-豪 (A) How about Chinese? 中華料理はどうですか。
+(A) How about Chinese? 中華料理はどうですか。
 
 (B) Let’s eat at about noon. 正午頃に食べましょう。
 
 (C) I’ll call the restaurant. 私がレストランに電話しましょう。
 
-8. (C)
+(8) . (C)
 
-B_68
+[[TABLE:page-066-table-005|bbox=42.7,463.4,72.2,502.7]]
 
-米 Excuse me, where’s the cashier? すみません，レジ係はどこですか。
+Excuse me, where’s the cashier? すみません，レジ係はどこですか。
 
-豪 (A) Cash and credit cards are both OK. 現金かクレジットカードのどちらも大丈夫です。
+(A) Cash and credit cards are both OK. 現金かクレジットカードのどちらも大丈夫です。
 
 (B) Your waiter is coming soon. 担当のウエイターが間もなく参ります。
 
 (C) Next to the entrance. 入り口の横です。
 
-9. (B)
+(9) . (B)
 
-B_69
+[[TABLE:page-066-table-006|bbox=42.7,555.4,72.2,594.7]]
 
-加 Do you want me to make reservations? 私が予約しましょうか。
+Do you want me to make reservations? 私が予約しましょうか。
 
-英 (A) Everybody can come. 誰でも来ることができます。
+(A) Everybody can come. 誰でも来ることができます。
 
 (B) No, I’ll do it. いえ，私がやります。
 
@@ -5296,7 +5328,7 @@ Unit 15 Restaurants
 
 Part 3 Conversations (p. 98)
 
-10. (D) この会話では，レストランでのサービスが主なトピックとなっている。
+(10) . (D) この会話では，レストランでのサービスが主なトピックとなっている。
 
 What are the women complaining about? 女性たちは何について苦情を伝えていますか。
 
@@ -5308,7 +5340,7 @@ What are the women complaining about? 女性たちは何について苦情を伝
 
 (D) Service at a restaurant レストランのサービス
 
-11. (B) 2 人目の女性 Cathy の発言に our food was cold とある。
+(11) . (B) 2 人目の女性 Cathy の発言に our food was cold とある。
 
 What can be said about the women’s food? 女性たちの食事について，どのようなことが言えますか。
 
@@ -5320,7 +5352,7 @@ What can be said about the women’s food? 女性たちの食事について，�
 
 (D) It was tasteless. まずかった。
 
-12. (A) free meal の free は「無料の」という意味になる。
+(12) . (A) free meal の free は「無料の」という意味になる。
 
 What does the man offer the women? 男性は女性たちに何を提供しますか。
 
@@ -5336,19 +5368,21 @@ What does the man offer the women? 男性は女性たちに何を提供します
 
 B_70
 
-加 W1: I would like to make a complaint about our ( dinner ) tonight. The ( service ) was terrible.
+[[TABLE:page-067-table-001|bbox=42.7,379.0,62.6,471.8]]
 
-米 M: I’m sorry to hear that. Could you tell me about the problem?
+W1: I would like to make a complaint about our ( dinner ) tonight. The ( service ) was terrible.
 
-加 W1: Yes. The ( waiter ) took a ( long ) time to serve our meals. Right, Cathy?
+M: I’m sorry to hear that. Could you tell me about the problem?
 
-英 W2: Yes. And our food was cold when he brought it to us.
+W1: Yes. The ( waiter ) took a ( long ) time to serve our meals. Right, Cathy?
 
-米 M: Oh, I’m very sorry. I’ll give you a coupon for a ( free ) meal the next time you visit us.
+W2: Yes. And our food was cold when he brought it to us.
 
-英 W2: That sounds fine. Do you agree, Amy?
+M: Oh, I’m very sorry. I’ll give you a coupon for a ( free ) meal the next time you visit us.
 
-加 W1: Sure. And please tell the waiter to be more careful next time.
+W2: That sounds fine. Do you agree, Amy?
+
+W1: Sure. And please tell the waiter to be more careful next time.
 
 【訳】
 
@@ -5372,23 +5406,23 @@ B_70
 
 Part 5 Incomplete Sentences (p. 99)
 
-13. (D)「予約をする」は make a reservation と表現する。
+(13) . (D)「予約をする」は make a reservation と表現する。
 
 【訳】私は，そのレストランに電話をして予約をした。
 
-14. (A)「すぐに」の慣用表現は in just a minute。
+(14) . (A)「すぐに」の慣用表現は in just a minute。
 
 【訳】お客様の担当のウエイターがすぐに参ります。
 
-15. (D) special は「おすめ料理」という意味の名詞。
+(15) . (D) special は「おすめ料理」という意味の名詞。
 
 【訳】今日のおすめ料理をいただきたいと思います。
 
-16. (A) go well with～は，食べ物などが「～によく合う」という意味のイディオム。
+(16) . (A) go well with～は，食べ物などが「～によく合う」という意味のイディオム。
 
 【訳】この赤ワインは，ステーキによく合います。
 
-17. (B)「勘定を支払う」は pay one’s bill。
+(17) . (B)「勘定を支払う」は pay one’s bill。
 
 【訳】お勘定は入口の近くのレジで支払えます。
 
@@ -5398,11 +5432,11 @@ Part 5 Incomplete Sentences (p. 99)
 
 Unit 15 Restaurants
 
-18. (C)「チップ」は日本語にもなっている。
+(18) . (C)「チップ」は日本語にもなっている。
 
-【訳】サービスがよければ，担当のウエイターに（勘定の）15 パーセントのチップを渡すのが普通だ。
+【訳】サービスがよければ，担当のウエイターに(勘定の)15 パーセントのチップを渡すのが普通だ。
 
-19. (D)「～に満足する」は〈be 動詞＋satisfied with＋もの・こと〉という表現を使う。
+(19) . (D)「～に満足する」は〈be 動詞＋satisfied with＋もの・こと〉という表現を使う。
 
 【訳】ロキシーズ・レストランでは，お客様がいつもお食事にご満足いただけることを願っております。
 
@@ -5414,7 +5448,7 @@ Unit 15 Restaurants
 
 Part 7 Reading Comprehension (p. 100)
 
-20. (B) 広告を見ると，食事代については割引率が述べられているだけで，高いのか安いのかはわからない。
+(20) . (B) 広告を見ると，食事代については割引率が述べられているだけで，高いのか安いのかはわからない。
 
 Which is NOT mentioned about Granny’s Homestyle Restaurant in the advertisement? 広告の中
 
@@ -5426,11 +5460,11 @@ Which is NOT mentioned about Granny’s Homestyle Restaurant in the advertisemen
 
 (C) The restaurant’s mood レストランの雰囲気
 
-(D) A special deal 特別サービス（割引）
+(D) A special deal 特別サービス(割引)
 
-21. (D) 広告の冒頭にある Homestyle（家庭風の）と homey atmosphere（家庭的な雰囲気），Come with the
+(21) . (D) 広告の冒頭にある Homestyle(家庭風の)と homey atmosphere(家庭的な雰囲気)，Come with the
 
-kids（お子さま連れでご来店ください）という言葉から，家族向きのレストランだと判断できる。
+kids(お子さま連れでご来店ください)という言葉から，家族向きのレストランだと判断できる。
 
 What type of restaurant most likely is Granny’s? グラニーズは，どのような種類のレストランです
 
@@ -5444,7 +5478,7 @@ What type of restaurant most likely is Granny’s? グラニーズは，どの�
 
 (D) A family-style restaurant 家族向きのレストラン
 
-22. (A) E メールの内容から，レストランのサービスと料理に不満があることがわかる。
+(22) . (A) E メールの内容から，レストランのサービスと料理に不満があることがわかる。
 
 Why did Mr. Seeger write to the manager of Granny’s? シーガー氏は，なぜグラニーズの支配人にメ
 
@@ -5458,7 +5492,7 @@ Why did Mr. Seeger write to the manager of Granny’s? シーガー氏は，な�
 
 (D) He saw an advertisement. 広告を見たから。
 
-23. (C) E メール中の We usually like your restaurant and go there often.という文から判断できる。
+(23) . (C) E メール中の We usually like your restaurant and go there often.という文から判断できる。
 
 What can be said about Mr. Seeger? シーガー氏について，どのようなことが言えますか。
 
@@ -5470,7 +5504,7 @@ What can be said about Mr. Seeger? シーガー氏について，どのような
 
 (D) He lives near Granny’s. グラニーズの近くに住んでいる。
 
-24. (D) E メールの宛先は Manager（支配人）となっているだけだが，クーポンを見るとスミス氏がその支
+(24) . (D) E メールの宛先は Manager(支配人)となっているだけだが，クーポンを見るとスミス氏がその支
 
 配人だとわかる。
 
@@ -5532,94 +5566,94 @@ Words Review 解答 (pp. 109～123)
 
 Unit 1 Unit 6 Unit 1
 
-1. do 1. on 1. make
+(1) . do 1. on 1. make
 
-2. meals 2. running 2. take
+(2) . meals 2. running 2. take
 
-3. wash 3. service 3. open
+(3) . wash 3. service 3. open
 
-4. apologize 4. remodel [renovate] 4. solve
+(4) . apologize 4. remodel [renovate] 4. solve
 
-5. cleaned 5. reach 5. retirement
+(5) . cleaned 5. reach 5. retirement
 
-6. on 6. contact 6. received
+(6) . on 6. contact 6. received
 
-7. drive 7. corner 7. pay
+(7) . drive 7. corner 7. pay
 
-8. take 8. break 8. line
+(8) . take 8. break 8. line
 
 Unit 2 Unit 7 Unit 12
 
-1. move 1. fix 1. take
+(1) . move 1. fix 1. take
 
-2. through 2. start 2. pointed
+(2) . through 2. start 2. pointed
 
-3. get 3. hire 3. watched
+(3) . get 3. hire 3. watched
 
-4. park 4. set 4. learn
+(4) . park 4. set 4. learn
 
-5. playing 5. Keep 5. expected
+(5) . playing 5. Keep 5. expected
 
-6. recommend 6. monitored 6. finished
+(6) . recommend 6. monitored 6. finished
 
-7. let 7. save 7. see
+(7) . let 7. save 7. see
 
-8. living 8. turned 8. live
+(8) . living 8. turned 8. live
 
 Unit 3 Unit 8 Unit 13
 
-1. book 1. replied 1. pick
+(1) . book 1. replied 1. pick
 
-2. clean [tidy] 2. promotion 2. play
+(2) . clean [tidy] 2. promotion 2. play
 
-3. experience 3. include [enclose] 3. sounds
+(3) . experience 3. include [enclose] 3. sounds
 
-4. preferred 4. attach 4. by
+(4) . preferred 4. attach 4. by
 
-5. Just 5. apply 5. prepared
+(5) . Just 5. apply 5. prepared
 
-6. serves 6. convenience 6. last
+(6) . serves 6. convenience 6. last
 
-7. well 7. appointment 7. Why
+(7) . well 7. appointment 7. Why
 
-8. over [on] 8. thank 8. stage
+(8) . over [on] 8. thank 8. stage
 
 Unit 4 Unit 9 Unit 14
 
-1. packing 1. make 1. catch
+(1) . packing 1. make 1. catch
 
-2. board 2. great 2. fever
+(2) . board 2. great 2. fever
 
-3. full 3. draw 3. see
+(3) . full 3. draw 3. see
 
-4. check 4. deal 4. weight
+(4) . check 4. deal 4. weight
 
-5. get 5. along 5. work
+(5) . get 5. along 5. work
 
-6. popular 6. hesitate 6. feel
+(6) . popular 6. hesitate 6. feel
 
-7. on 7. right 7. checkup
+(7) . on 7. right 7. checkup
 
-8. flight 8. sure 8. take
+(8) . flight 8. sure 8. take
 
 Unit 5 Unit 10 Unit 15
 
-1. make 1. try 1. out
+(1) . make 1. try 1. out
 
-2. start 2. display 2. satisfied
+(2) . start 2. display 2. satisfied
 
-3. contract 3. business 3. preparing
+(3) . contract 3. business 3. preparing
 
-4. hold 4. fill 4. off
+(4) . hold 4. fill 4. off
 
-5. lower 5. show 5. disappointed
+(5) . lower 5. show 5. disappointed
 
-6. raise 6. feel 6. full
+(6) . raise 6. feel 6. full
 
-7. target 7. expensive 7. go
+(7) . target 7. expensive 7. go
 
-8. set 8. wrote 8. common
+(8) . set 8. wrote 8. common
 
-2017.2.28
+(2017) .2.28
 
 - 71 -
