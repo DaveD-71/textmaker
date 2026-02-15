@@ -19,7 +19,7 @@
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "pdf.preview"
   },
-  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.enabled": false,
   "editor.unicodeHighlight.allowedCharacters": {
     "–": true
   },

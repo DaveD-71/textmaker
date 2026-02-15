@@ -7,7 +7,7 @@ Transforms:
   analogue)
 - [[LINEBREAK]] -> <br>
 - [[REF:id|label]] or [[REF:id]] -> textual reference placeholder
-- [[SHAPE:alt]] -> italic placeholder to note missing shape
+- [[SHAPE:index|alt]] or [[SHAPE:index]] -> italic placeholder to note missing shape
 """
 from __future__ import annotations
 
@@ -34,10 +34,13 @@ def _replace_markers(text: str) -> str:
     text = re.sub(r'\[\[REF:([^\]|]+)\|?([^\]]*)\]\]', _ref_repl, text)
 
     def _shape_repl(match):
-        alt = match.group(1).strip()
-        return f'*[shape: {alt}]*' if alt else '*[shape]*'
+        alt = (match.group(2) or '').strip()
+        shape_idx = match.group(1)
+        if alt:
+            return f'*[shape: {alt}]*'
+        return f'*[shape: {shape_idx}]*' if shape_idx else '*[shape]*'
 
-    text = re.sub(r'\[\[SHAPE:([^\]]*)\]\]', _shape_repl, text)
+    text = re.sub(r'\[\[SHAPE:(\d+)(?:\|([^\]]*))?\]\]', _shape_repl, text)
     return text
 
 
@@ -54,7 +57,7 @@ def postprocess_many(paths: Iterable[Path]) -> None:
         postprocess_markdown_file(p)
 
 
-if __name__ == '__main__':
+def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(description='Replace sentinel markers in markdown outputs.')
@@ -62,3 +65,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     postprocess_many([Path(p) for p in args.files])
+
+
+if __name__ == '__main__':
+    main()

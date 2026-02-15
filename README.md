@@ -120,6 +120,7 @@ Options:
 - `--keep-temp-md`: keep `_full.md` and `_preprocessed.docx` intermediates.
 - `--pandoc-bin`: override pandoc executable name/path.
 - `--ocr-lang`: enable OCR with the given Tesseract language(s) (e.g., `eng+jpn`).
+- `--shape-output`: shape rendering mode in markdown: `link` (default), `placeholder`, or `inline-text-only`.
 
 Conversion details:
 - Pandoc converts the DOCX to a single `_full.md`, then the script splits it into numbered files
@@ -127,7 +128,9 @@ Conversion details:
 - Headings are detected by markdown syntax (e.g., `#` for level 1). If the DOCX uses Heading 2/3 styles, you may need `--unit-heading-level 2` or `3`.
 - Embedded images are extracted via `--extract-media` and referenced in the markdown.
 - Tables may be emitted as HTML when they are too complex for pipe-table syntax.
-- Word shapes are not preserved by pandoc; the preprocessor inserts placeholders using alt text where possible.
+- Word shapes are not preserved as native markdown by pandoc; textmaker inserts stable shape markers, extracts each unique shape as XML under `assets/shapes/`, and links/prints marker content according to `--shape-output`.
+- Hidden/fallback duplicates are de-duplicated and aliased to a canonical shape asset when possible.
+- Shape source metadata sidecars are written as `assets/shapes/shape-###.json` (paragraph index, hidden/duplicate flags, canonical index, XML link path).
 
 Sentinel markers:
 - Preprocess inserts markers like `[[PAGEBREAK]]`, `[[SECTIONBREAK]]`, `[[LINEBREAK]]`.
@@ -190,7 +193,18 @@ Options:
 - `--assets-dir`: assets folder name (default: `assets`).
 - `--output`: output markdown file path (default: `<output-dir>\<input stem>.md`).
 - `--ocr-lang`: Tesseract language(s) for OCR (default: `eng+jpn`).
-- `--no-ocr`: disable OCR and use `pdftotext` instead.
+- `--ocr-psm`: Tesseract page segmentation mode (default: `3`).
+- `--ocr-mode`: OCR mode: `auto` (default, quality-gated fallback), `always`, or `never`.
+- `--layout-mode`: layout reconstruction mode: `auto` (default), `structured` (table/textbox recovery), or `plain`.
+- `--no-ocr`: legacy alias for `--ocr-mode never`.
+- `--fallback-min-nonspace-chars`: auto mode OCR fallback threshold for minimum extracted non-space chars.
+- `--fallback-max-garble-ratio`: auto mode OCR fallback threshold for maximum garble ratio.
+- `--fallback-min-japanese-ratio`: auto mode OCR fallback threshold for minimum Japanese ratio (when `jpn` is in `--ocr-lang`).
+- `--no-asset-markers`: disable explicit `[[ASSET:...]]` marker lines next to inline image references.
+
+Output behavior:
+- Extracted PDF assets are referenced inline in markdown as HTML `<img ... />` tags (DOCX-style), not appended as a bottom image gallery.
+- In `--layout-mode structured`, detected layout blocks are emitted with markers such as `[[TABLE:...]]`, `[[TEXTBOX:...]]`, and `[[SHAPE:...]]`.
 
 Dependencies:
 - `pdftotext`, `pdfimages`, `pdftoppm` (Poppler).
