@@ -2,3 +2,23 @@ python-docx>=0.8.11
 pyyaml>=6.0
 click>=8.0
 python-pptx>=0.6.23
+
+# Required external downloads for audio generation (not pip-installable):
+# - Install the Piper binary and make `piper` available on PATH.
+# - Download each model file (.onnx) and its matching config (.onnx.json)
+#   into `textmaker/piper_voices/`.
+# - These are required by `yaml-to-audio` and `generate_roleplay_audio`.
+#
+# Required voice models:
+# - en_GB-alan-medium
+# - en_GB-cori-high
+# - en_GB-jenny_dioco-medium
+# - en_GB-semaine-medium
+# - en_US-amy-medium
+# - en_US-hfc_female-medium
+# - en_US-hfc_male-medium
+# - en_US-joe-medium
+# - en_US-lessac-high
+# - en_US-lessac-medium
+# - en_US-libritts-high
+# - en_US-ryan-high
