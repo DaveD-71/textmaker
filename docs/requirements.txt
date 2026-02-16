@@ -7,7 +7,7 @@ python-pptx>=0.6.23
 # - Install the Piper binary and make `piper` available on PATH.
 # - Install `ffmpeg` and make `ffmpeg` available on PATH (used for MP3 encoding).
 # - Download each model file (.onnx) and matching config (.onnx.json) into
-#   `textmaker/piper_voices/`.
+#   `scripts/piper_voices/`.
 # - These are required by `yaml-to-audio` and `generate_roleplay_audio`.
 #
 # Required model files (current and future):

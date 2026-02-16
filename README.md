@@ -149,12 +149,6 @@ Sentinel markers:
 python -m textmaker pptx-to-package --input ".\path\to\slides.pptx" --output-dir ".\out"
 ```
 
-Alternative direct script entry point:
-
-```powershell
-python .\pptx_converter.py ".\path\to\slides.pptx" --output-dir ".\out"
-```
-
 Output behavior:
 - Creates one folder per presentation (sanitized title or filename).
 - Writes:

@@ -39,7 +39,8 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     module_name = _COMMANDS[command]
-    module = __import__(f"textmaker.{module_name}", fromlist=["main"])
+    package_name = __package__ or "scripts"
+    module = __import__(f"{package_name}.{module_name}", fromlist=["main"])
     sys.argv = [module_name] + argv[1:]
     module.main()
     return 0
