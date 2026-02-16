@@ -85,7 +85,7 @@ A complete e-mail message has eight essential parts.
 <p>I am writing to request a progress report for the Three Rivers project for the period April 1 to June 30, 2021. I have attached the previous report for your reference.</p>
 <p>We would appreciate receiving the report no later than Monday, July 14. Our board members need the report to prepare for the next board meeting scheduled for Monday, July 21.</p>
 <p>Thank you very much. I appreciate your assistance.</p>
-<p>Best regards,</p>
+<p>Best regards,[shape-159](../assets/shapes/shape-159.xml)[shape-160](../assets/shapes/shape-160.xml)</p>
 <p>Alisa Matsuo</p>
 </blockquote></td>
 </tr>
@@ -176,9 +176,9 @@ The e-mail message below needs to be reorganized. **Reorganize the e-mail messag
 
 \[\[SECTIONBREAK\]\]
 
-## 2. Email Do’s and Don’ts
+## 2. Email Do’s and Don’ts\[\[SHAPE:161\]\]\[\[SHAPE:162\]\]
 
-Make sure your emails are free of errors by paying attention to the details.
+Make sure your emails are free of errors by paying attention to the details.\[\[SHAPE:163\]\]\[\[SHAPE:164\]\]
 
 ### Tone, Style and Organization
 

@@ -1,5 +1,6 @@
 {
   "window.confirmSaveUntitledWorkspace": false,
+  "files.enableTrash": true,
   "files.autoSave": "afterDelay",
   "security.allowedUNCHosts": ["prod-fs-gen01", "prod-fs-sec01"],
   "editor.formatOnSave": true,

@@ -105,6 +105,34 @@ def run_pandoc_to_markdown(
         raise last_exc
 
 
+def extract_all_media_assets(docx_path: Path, assets_dir: Path) -> int:
+    """
+    Copy every media payload from the DOCX package into assets/media.
+
+    This supplements pandoc's --extract-media output, which may omit media used
+    only in headers/footers.
+    """
+    media_out_dir = assets_dir / 'media'
+    media_out_dir.mkdir(parents=True, exist_ok=True)
+    copied = 0
+
+    with ZipFile(docx_path, 'r') as docx_zip:
+        for name in docx_zip.namelist():
+            if not name.startswith('word/media/'):
+                continue
+            rel_path = Path(name[len('word/media/') :])
+            if not rel_path.name:
+                continue
+            target = media_out_dir / rel_path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if target.exists():
+                continue
+            target.write_bytes(docx_zip.read(name))
+            copied += 1
+
+    return copied
+
+
 def slugify(title: Optional[str]) -> str:
     """Create a filesystem-friendly slug from a heading."""
     if not title:
@@ -307,23 +335,28 @@ def _get_shape_alt_text(shape_elem) -> str:
 def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) -> List[ShapeAsset]:
     shapes: List[ShapeAsset] = []
     shape_assets_dir = assets_dir / 'shapes'
+    shape_elements: List[Tuple[int, str, int, object]] = []
 
     with ZipFile(docx_path, 'r') as docx_zip:
-        try:
-            document_xml = docx_zip.read('word/document.xml')
-        except KeyError:
-            return shapes
+        part_names = ['word/document.xml']
+        for name in docx_zip.namelist():
+            if re.match(r'word/(header|footer)\d+\.xml$', name):
+                part_names.append(name)
 
-    root = ElementTree.fromstring(document_xml)
-    shape_elements: List[Tuple[int, int, object]] = []
-    raw_index = 0
-    for para_idx, para in enumerate(root.findall('.//w:p', SHAPE_NS), start=1):
-        for elem in para.findall('.//w:drawing', SHAPE_NS):
-            raw_index += 1
-            shape_elements.append((raw_index, para_idx, elem))
-        for elem in para.findall('.//w:pict', SHAPE_NS):
-            raw_index += 1
-            shape_elements.append((raw_index, para_idx, elem))
+        raw_index = 0
+        for part_name in sorted(set(part_names)):
+            try:
+                part_xml = docx_zip.read(part_name)
+            except KeyError:
+                continue
+            root = ElementTree.fromstring(part_xml)
+            for para_idx, para in enumerate(root.findall('.//w:p', SHAPE_NS), start=1):
+                for elem in para.findall('.//w:drawing', SHAPE_NS):
+                    raw_index += 1
+                    shape_elements.append((raw_index, part_name, para_idx, elem))
+                for elem in para.findall('.//w:pict', SHAPE_NS):
+                    raw_index += 1
+                    shape_elements.append((raw_index, part_name, para_idx, elem))
 
     if not shape_elements:
         return shapes
@@ -333,7 +366,7 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
     canonical_by_signature: Dict[Tuple, ShapeAsset] = {}
     canonical_by_raw_index: Dict[int, ShapeAsset] = {}
 
-    for idx, para_idx, shape in shape_elements:
+    for idx, source_part, para_idx, shape in shape_elements:
         alt_text = _get_shape_alt_text(shape)
         hidden = _shape_is_hidden(shape)
         kind = _shape_kind(shape)
@@ -343,6 +376,7 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
         text = '\n'.join(chunk for chunk in text_chunks if chunk).strip()
 
         signature = (
+            source_part,
             para_idx,
             alt_text.strip().lower(),
             text.strip(),
@@ -413,7 +447,7 @@ def extract_shapes(docx_path: Path, assets_dir: Path, assets_link_base: Path) ->
             'alt_text': alt_text,
             'text_excerpt': text[:200],
             'xml_link_path': record.link_path,
-            'source_part': 'word/document.xml',
+            'source_part': source_part,
         }
         meta_path.write_text(json.dumps(metadata, ensure_ascii=True, indent=2), encoding='utf-8')
 
@@ -552,6 +586,12 @@ def main() -> None:
     if not source_docx.exists():
         print(f'Input DOCX not found: {source_docx}')
         sys.exit(1)
+    if not source_docx.is_file():
+        print(f'Input path must be a DOCX file, not a directory: {source_docx}')
+        sys.exit(1)
+    if source_docx.suffix.lower() != '.docx':
+        print(f'Input file must have .docx extension: {source_docx}')
+        sys.exit(1)
     original_source_docx = source_docx
 
     base_dir = source_docx.parent
@@ -607,6 +647,7 @@ def main() -> None:
         pandoc_bin=args.pandoc_bin,
         ocr_lang=args.ocr_lang,
     )
+    copied_media_assets = extract_all_media_assets(temp_docx, run_assets_dir)
 
     md_text = temp_md.read_text(encoding='utf-8')
     front_matter, sections = split_markdown_by_heading(
@@ -651,6 +692,8 @@ def main() -> None:
 
     print(f'Wrote {len(written_files)} markdown file(s) to {md_dir}')
     print(f'Assets extracted to {assets_dir}')
+    if copied_media_assets:
+        print(f'Added {copied_media_assets} package media asset(s) from DOCX parts (including headers/footers).')
     print(
         f'Processed {len(shapes)} shape marker(s); '
         f'{duplicate_shapes} duplicate fallback shape(s) aliased; '

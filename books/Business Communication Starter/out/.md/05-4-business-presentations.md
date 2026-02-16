@@ -2,7 +2,7 @@
 
 ## 1. Presentation Structure
 
-Speeches and presentations have three standard parts, and each part has a specific purpose.
+Speeches and presentations have three standard parts, and each part has a specific purpose.\[\[SHAPE:149\]\]\[\[SHAPE:150\]\]\[\[SHAPE:151\]\]\[\[SHAPE:152\]\]
 
 #### The Introduction
 
@@ -10,7 +10,7 @@ Speeches and presentations have three standard parts, and each part has a specif
 
 2.  Greet your audience. Introduce your theme and your main points.
 
-3.  Get your audience interested!
+3.  Get your audience interested\![\[SHAPE:153\]\]\[\[SHAPE:154\]\]
 
 #### The Body
 
@@ -20,7 +20,7 @@ Speeches and presentations have three standard parts, and each part has a specif
 
 3.  You must select what you say. You cannot say everything about your theme, so choose the most important ideas.
 
-4.  Keep your audience interested!
+4.  Keep your audience interested\![\[SHAPE:155\]\]\[\[SHAPE:156\]\]
 
 #### The Conclusion
 
@@ -137,7 +137,7 @@ Flag expressions are fixed expressions that explain each step in the structure o
 
 ## 3. Presentation Delivery
 
-![](assets/media/image2.png)Good delivery skills are essential for a good presentation. They build your confidence and win the attention of your audience.
+![](../assets/media/image2.png)Good delivery skills are essential for a good presentation. They build your confidence and win the attention of your audience.\[\[SHAPE:157\]\]\[\[SHAPE:158\]\]
 
 In a presentation, the most important element is the speaker. Use delivery skills to keep the audience’s attention on you.
 

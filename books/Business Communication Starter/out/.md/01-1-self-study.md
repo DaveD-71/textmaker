@@ -10,7 +10,7 @@ To develop an effective self-study plan, you need to:
 
 ## 1. The Self-Study SWOT
 
-For learners near the beginning of their study, or even mid-way and wanting to reassess their situation, a SWOT assessment can help set you on the right path to achieving your learning goals.
+For learners near the beginning of their study, or even mid-way and wanting to reassess their situation, a SWOT assessment can help set you on the right path to achieving your learning goals.\[\[SHAPE:1\]\]\[\[SHAPE:2\]\]\[\[SHAPE:3\]\]\[\[SHAPE:4\]\]
 
 |  S  | trengths     |    What are your strong points?     |
 |:---:|--------------|:-----------------------------------:|
@@ -24,7 +24,9 @@ Think about your own ability to study and achieve your learning goals and comple
 
 \[\[PAGEBREAK\]\]
 
-## 2. My SWOT
+## 2. My SWOT\[\[SHAPE:5\]\]\[\[SHAPE:6\]\]\[\[SHAPE:7\]\]\[\[SHAPE:8\]\]
+
+\[\[SHAPE:9\]\]\[\[SHAPE:10\]\]\[\[SHAPE:11\]\]\[\[SHAPE:12\]\]
 
 \[\[PAGEBREAK\]\]
 
@@ -118,13 +120,13 @@ I will learn 30 new words each week for the next six months.
 
 ### My Self-Study Goals
 
-#####  Long-term
+#####  Long-term\[\[SHAPE:19\]\]\[\[SHAPE:20\]\]
 
-#####  Mid-term
+#####  Mid-term\[\[SHAPE:21\]\]\[\[SHAPE:22\]\]
 
-#####  Short-term \#1
+#####  Short-term \#1\[\[SHAPE:23\]\]\[\[SHAPE:24\]\]
 
-#####  Short-term \#2
+#####  Short-term \#2\[\[SHAPE:25\]\]\[\[SHAPE:26\]\]
 
 \[\[PAGEBREAK\]\]
 
@@ -158,7 +160,7 @@ Each time you do the activity, **record your progress** by crossing off one of t
 
 \[\[PAGEBREAK\]\]
 
-Study Activity
+Study Activity \[\[SHAPE:27\]\]\[\[SHAPE:28\]\]
 
 > **What** is the activity?
 
@@ -198,7 +200,7 @@ Study Activity
 
 10
 
-Study Activity
+Study Activity \[\[SHAPE:57\]\]\[\[SHAPE:58\]\]
 
 > **What** is the activity?
 
@@ -238,7 +240,7 @@ Study Activity
 
 10
 
-Study Activity
+Study Activity \[\[SHAPE:87\]\]\[\[SHAPE:88\]\]
 
 > **What** is the activity?
 
@@ -278,7 +280,7 @@ Study Activity
 
 10
 
-Study Activity
+Study Activity \[\[SHAPE:117\]\]\[\[SHAPE:118\]\]
 
 > **What** is the activity?
 

@@ -163,7 +163,7 @@ Mary meets Satoko, a friend. They have not seen each other in a while. They have
 
 #### Responding Appropriately
 
-When having a conversation, it is important to understand the situation and appropriately match your responses to the questions and comments. How can you respond appropriately to the following statements?
+When having a conversation, it is important to understand the situation and appropriately match your responses to the questions and comments. How can you respond appropriately to the following statements?\[\[SHAPE:147\]\]\[\[SHAPE:148\]\]
 
 With a partner, **practice making comments** similar to those above and respond to them.
 
