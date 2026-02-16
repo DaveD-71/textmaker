@@ -74,6 +74,7 @@ Commands:
 - `export-docx-package`: Export a DOCX into JSON/CSV analysis package.
 - `pdf-to-markdown`: Convert a PDF to markdown with extracted images.
 - `image-to-markdown`: Convert a single image to markdown via OCR.
+- `pptx-to-package`: Convert a PowerPoint (.pptx) into a structured YAML/JSON package.
 
 Windows wrapper:
 ```powershell
@@ -137,6 +138,43 @@ Conversion details:
 Sentinel markers:
 - Preprocess inserts markers like `[[PAGEBREAK]]`, `[[SECTIONBREAK]]`, `[[LINEBREAK]]`.
 - Pandoc may escape them (e.g., `\[\[PAGEBREAK\]\]`), and post-processing restores them to `\pagebreak` or `<br>`.
+
+
+## PPTX → Structured package (YAML/JSON + assets)
+
+```powershell
+python -m textmaker pptx-to-package --input ".\path\to\slides.pptx" --output-dir ".\out"
+```
+
+Alternative direct script entry point:
+
+```powershell
+python .\pptx_converter.py ".\path\to\slides.pptx" --output-dir ".\out"
+```
+
+Output behavior:
+- Creates one folder per presentation (sanitized title or filename).
+- Writes:
+  - `content.yaml`
+  - `slide_properties.json`
+  - `object_properties.json`
+  - `text_formatting.json`
+  - `shape_styling.json`
+  - `animations.json`
+  - `embedded_objects.json`
+  - `images/` extracted image assets
+
+Key details:
+- Object IDs are stable per slide (`tb_*`, `img_*`, `table_*`, `chart_*`, `video_*`, `shape_*`) and are reused across output files.
+- Coordinates are converted from EMU to pixels using `pixels = emus // 9525`.
+- Includes first-run text formatting defaults, object geometry/z-order/hyperlinks, and table/chart embedded data when available.
+- Transition/animation extraction is currently emitted as an MVP placeholder (`transition: null`, empty animations map) for future XML-level enhancement.
+
+CLI options:
+- `--input`: source `.pptx` file.
+- `--output-dir`: parent folder for generated package (default: current directory).
+- `--overwrite`: replace an existing generated presentation folder.
+- `--verbose`: enable debug logging.
 
 ## Split DOCX into unit files (docx → docx)
 
