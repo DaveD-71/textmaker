@@ -10,6 +10,8 @@
 
 - Python 3.9+ installed
 - Pandoc binary installed and available on PATH (<https://pandoc.org/installing.html>)
+- Piper installed and available on PATH (`piper`) for audio synthesis
+- ffmpeg installed and available on PATH (`ffmpeg`) for MP3 encoding
 - Optional: Microsoft Office/Word to open the generated `.docx` or LibreOffice.
 
 ## Quick start (PowerShell)
@@ -74,11 +76,8 @@ Commands:
 - `export-docx-package`: Export a DOCX into JSON/CSV analysis package.
 - `pdf-to-markdown`: Convert a PDF to markdown with extracted images.
 - `image-to-markdown`: Convert a single image to markdown via OCR.
-<<<<<<< HEAD
-- `yaml-to-audio`: Convert YAML dialogue/text fields into WAV files via Piper.
-=======
+- `yaml-to-audio`: Convert YAML dialogue/text fields into MP3 files via Piper.
 - `pptx-to-package`: Convert a PowerPoint (.pptx) into a structured YAML/JSON package.
->>>>>>> 58be8ce087bfa707dda3859129c32da31631ebbf
 
 Windows wrapper:
 ```powershell
@@ -264,12 +263,12 @@ Options:
 - `--output`: output markdown file (default: `<input stem>.md`).
 - `--ocr-lang`: Tesseract language(s) (default: `eng+jpn`).
 
-## YAML -> Audio (Piper TTS)
+## YAML -> Audio (Piper TTS, MP3)
 
 ```powershell
 python -m textmaker yaml-to-audio `
   --input "mofa situations/text/Situations_all.yaml" `
-  --voice-map "docs/examples/voice_map.example.json" `
+  --voice-map "mofa situations/audio/voice_map.example.json" `
   --output-dir "mofa situations/audio/out" `
   --path-filter "^situations\\..*\\.language\\.roleplay_\\d+\\.model\\.dialogue$"
 ```
@@ -279,13 +278,13 @@ Useful options:
 - `--path-filter`: regex on dotted YAML paths to target a schema subset.
 - `--split-mode`: `speaker` (default, parses `S: ...`) or `line`.
 - `--speaker-line-regex`: custom regex for speaker parsing (2 groups).
-- `--dry-run`: write manifest/transcripts only, no WAV synthesis.
+- `--dry-run`: write manifest/transcripts only, no MP3 synthesis.
 - `--list-accents`: print locale codes inferred from model filenames in voice map.
 
 Output behavior:
-- Writes WAV files under `<output-dir>/...`, one file per line.
-- Writes `<output-dir>/manifest.csv` with source path, line text, voice model, and WAV path.
-- Writes a `transcript.txt` beside each WAV group.
+- Writes MP3 files under `<output-dir>/...`, one file per line.
+- Writes `<output-dir>/manifest.csv` with source path, line text, voice model, and MP3 path.
+- Writes a `transcript.txt` beside each MP3 group.
 
 ## Next steps
 

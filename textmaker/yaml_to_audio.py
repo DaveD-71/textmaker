@@ -1,8 +1,8 @@
 """
-YAML -> WAV converter using Piper.
+YAML -> MP3 converter using Piper.
 
 Scans a YAML file for text leaves (for example, dialogue/text fields), then
-generates WAV files with optional normalization and chunking for better rhythm.
+generates MP3 files with optional normalization and chunking for better rhythm.
 """
 from __future__ import annotations
 
@@ -309,17 +309,44 @@ def synthesize_line(
     sentence_silence: float | None,
     volume: float | None,
 ) -> None:
-    cmd = build_piper_command(piper_bin, voice, output_file, sentence_silence, volume)
-    proc = subprocess.run(
-        cmd,
-        input=text,
-        text=True,
-        capture_output=True,
-        check=False,
-    )
-    if proc.returncode != 0:
-        stderr = (proc.stderr or "").strip()
-        raise RuntimeError(f"Piper failed ({output_file.name}): {stderr}")
+    temp_wav = output_file.with_suffix(".tmp.wav")
+    cmd = build_piper_command(piper_bin, voice, temp_wav, sentence_silence, volume)
+    try:
+        proc = subprocess.run(
+            cmd,
+            input=text,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if proc.returncode != 0:
+            stderr = (proc.stderr or "").strip()
+            raise RuntimeError(f"Piper failed ({output_file.name}): {stderr}")
+
+        ffmpeg_cmd = [
+            "ffmpeg",
+            "-y",
+            "-loglevel",
+            "error",
+            "-i",
+            str(temp_wav),
+            "-codec:a",
+            "libmp3lame",
+            "-q:a",
+            "2",
+            str(output_file),
+        ]
+        ffmpeg_proc = subprocess.run(
+            ffmpeg_cmd,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if ffmpeg_proc.returncode != 0:
+            stderr = (ffmpeg_proc.stderr or "").strip()
+            raise RuntimeError(f"ffmpeg failed ({output_file.name}): {stderr}")
+    finally:
+        temp_wav.unlink(missing_ok=True)
 
 
 def scan_accents(voice_map_path: Path) -> list[str]:
@@ -360,7 +387,7 @@ def scan_accents(voice_map_path: Path) -> list[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate WAV files from YAML text fields using Piper."
+        description="Generate MP3 files from YAML text fields using Piper."
     )
     parser.add_argument("--input", required=True, help="Input YAML file path.")
     parser.add_argument(
@@ -371,7 +398,7 @@ def main() -> None:
     parser.add_argument(
         "--output-dir",
         default="audio_out",
-        help="Output root for generated WAV files (default: audio_out).",
+        help="Output root for generated MP3 files (default: audio_out).",
     )
     parser.add_argument(
         "--piper-bin",
@@ -468,6 +495,12 @@ def main() -> None:
             "Install Piper or pass --piper-bin with a full path."
         )
         sys.exit(2)
+    if not args.dry_run and shutil.which("ffmpeg") is None:
+        print(
+            "Error: ffmpeg executable not found on PATH. "
+            "Install ffmpeg to enable MP3 output."
+        )
+        sys.exit(2)
 
     text_keys = {k.strip() for k in args.text_keys.split(",") if k.strip()}
     if not text_keys:
@@ -501,7 +534,7 @@ def main() -> None:
                 "chunk_index",
                 "speaker",
                 "chunk_text",
-                "wav_path",
+                "mp3_path",
                 "model_path",
                 "chunk_mode",
                 "normalized",
@@ -529,15 +562,15 @@ def main() -> None:
                         block_index,
                         chunk_index,
                     )
-                    filename = f"{chunk_index:03d}_{sanitize_filename(speaker)}.wav"
-                    wav_path = pair_dir / filename
+                    filename = f"{chunk_index:03d}_{sanitize_filename(speaker)}.mp3"
+                    mp3_path = pair_dir / filename
 
                     if not args.dry_run:
                         synthesize_line(
                             args.piper_bin,
                             voice,
                             tts_text,
-                            wav_path,
+                            mp3_path,
                             args.sentence_silence,
                             args.volume,
                         )
@@ -551,7 +584,7 @@ def main() -> None:
                             chunk_index,
                             speaker,
                             tts_text,
-                            str(wav_path),
+                            str(mp3_path),
                             str(voice.model),
                             args.chunk_mode,
                             str(bool(args.normalize_text)).lower(),
@@ -563,7 +596,7 @@ def main() -> None:
     print(f"Processed {total_chunks} chunks.")
     print(f"Manifest: {manifest_path}")
     if args.dry_run:
-        print("Dry run complete. No WAV files were generated.")
+        print("Dry run complete. No MP3 files were generated.")
 
 
 if __name__ == "__main__":

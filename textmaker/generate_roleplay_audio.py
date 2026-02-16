@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate roleplay WAV files from Situations_all.yaml using Piper."""
+"""Generate roleplay MP3 files from Situations_all.yaml using Piper."""
 
 from __future__ import annotations
 
@@ -156,17 +156,44 @@ def synthesize_line(
     text: str,
     output_file: Path,
 ) -> None:
-    cmd = build_piper_command(piper_bin, voice, output_file)
-    proc = subprocess.run(
-        cmd,
-        input=text,
-        text=True,
-        capture_output=True,
-        check=False,
-    )
-    if proc.returncode != 0:
-        stderr = (proc.stderr or "").strip()
-        raise RuntimeError(f"Piper failed ({output_file.name}): {stderr}")
+    temp_wav = output_file.with_suffix(".tmp.wav")
+    cmd = build_piper_command(piper_bin, voice, temp_wav)
+    try:
+        proc = subprocess.run(
+            cmd,
+            input=text,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if proc.returncode != 0:
+            stderr = (proc.stderr or "").strip()
+            raise RuntimeError(f"Piper failed ({output_file.name}): {stderr}")
+
+        ffmpeg_cmd = [
+            "ffmpeg",
+            "-y",
+            "-loglevel",
+            "error",
+            "-i",
+            str(temp_wav),
+            "-codec:a",
+            "libmp3lame",
+            "-q:a",
+            "2",
+            str(output_file),
+        ]
+        ffmpeg_proc = subprocess.run(
+            ffmpeg_cmd,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if ffmpeg_proc.returncode != 0:
+            stderr = (ffmpeg_proc.stderr or "").strip()
+            raise RuntimeError(f"ffmpeg failed ({output_file.name}): {stderr}")
+    finally:
+        temp_wav.unlink(missing_ok=True)
 
 
 def scan_accents(voice_map_path: Path) -> list[str]:
@@ -195,7 +222,7 @@ def scan_accents(voice_map_path: Path) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Generate WAV files for roleplay dialogues from Situations_all.yaml using Piper."
+        description="Generate MP3 files for roleplay dialogues from Situations_all.yaml using Piper."
     )
     parser.add_argument(
         "--input",
@@ -210,7 +237,7 @@ def main() -> int:
     parser.add_argument(
         "--output-dir",
         default="mofa situations/audio/out",
-        help="Output root for generated WAV files.",
+        help="Output root for generated MP3 files.",
     )
     parser.add_argument(
         "--piper-bin",
@@ -259,6 +286,10 @@ def main() -> int:
             f"Piper executable not found: {args.piper_bin}. "
             "Install Piper or pass --piper-bin with a full path."
         )
+    if not args.dry_run and shutil.which("ffmpeg") is None:
+        raise FileNotFoundError(
+            "ffmpeg executable not found on PATH. Install ffmpeg to enable MP3 output."
+        )
 
     data = load_yaml(input_path)
     default_voice, speaker_map = load_voice_map(voice_map_path)
@@ -279,7 +310,7 @@ def main() -> int:
                 "line_index",
                 "speaker",
                 "text",
-                "wav_path",
+                "mp3_path",
                 "model_path",
             ]
         )
@@ -293,11 +324,11 @@ def main() -> int:
             with transcript_path.open("w", encoding="utf-8") as transcript_file:
                 for line_index, (speaker, text) in enumerate(lines, start=1):
                     voice = resolve_voice(speaker, default_voice, speaker_map)
-                    filename = f"{line_index:03d}_{sanitize_filename(speaker)}.wav"
-                    wav_path = pair_dir / filename
+                    filename = f"{line_index:03d}_{sanitize_filename(speaker)}.mp3"
+                    mp3_path = pair_dir / filename
 
                     if not args.dry_run:
-                        synthesize_line(args.piper_bin, voice, text, wav_path)
+                        synthesize_line(args.piper_bin, voice, text, mp3_path)
 
                     transcript_file.write(f"{line_index:03d} {speaker}: {text}\n")
                     writer.writerow(
@@ -307,7 +338,7 @@ def main() -> int:
                             line_index,
                             speaker,
                             text,
-                            str(wav_path),
+                            str(mp3_path),
                             str(voice.model),
                         ]
                     )
@@ -317,7 +348,7 @@ def main() -> int:
     print(f"Processed {total_lines} lines.")
     print(f"Manifest: {manifest_path}")
     if args.dry_run:
-        print("Dry run complete. No WAV files were generated.")
+        print("Dry run complete. No MP3 files were generated.")
     return 0
 
 
