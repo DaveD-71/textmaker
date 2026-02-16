@@ -9,7 +9,7 @@
   },
   "json.validate.enable": true,
   "vscode-office.chromiumPath": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"",
-  "editor.minimap.showSlider": "mouseover",
+  "editor.minimap.showSlider": "always",
   "breadcrumbs.enabled": false,
   "editor.stickyScroll.enabled": false,
   "git.enableSmartCommit": true,
@@ -18,7 +18,9 @@
   "workbench.colorTheme": "Default Light Modern",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.pdf": "pdf.preview"
+    "*.pdf": "pdf.preview",
+    "*.log": "default",
+    "*.csv": "syncfusion-csv-viewer"
   },
   "terminal.integrated.tabs.enabled": false,
   "editor.unicodeHighlight.allowedCharacters": {

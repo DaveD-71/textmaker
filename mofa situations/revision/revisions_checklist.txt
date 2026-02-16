@@ -1,5 +1,5 @@
 Revisions Checklist (Collated)
-Source logs: translations/*_quality_log.txt, task-model matches/*_quality_log.txt
+Source logs: translations/*_quality_log.txt, task-model matches/*_quality_log.txt, instruction_verbosity_linkage_check.txt
 
 H01
 - [Roleplay 1 Translation] Minor issue: English mentions "consulate" but also says the visitor arrived at the "embassy"; Japanese uses "embassy" only, so the institution type is inconsistent.
@@ -144,6 +144,7 @@ D03
 
 D04
 - [Roleplay 1 Model vs Task] Major issue: Model does not secure a reduced-cost business seat; it resolves via points instead.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 1 and Roleplay 2 prompts are each 100 words with weak purpose/objective alignment (0.093, 0.091).
 
 D05
 - No revisions flagged.
@@ -157,6 +158,7 @@ D07
 D08
 - [Roleplay 2 Translation] Major issue: Japanese line is truncated and missing the end of the prompt (taxi cost detail).
 - [Writing Task Translation] Major issue: Japanese line is truncated and missing the end of the prompt.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 1 (149 words) and Roleplay 2 (120 words) have very weak purpose/objective alignment (0.014, 0.026).
 
 D09
 - No revisions flagged.
@@ -179,18 +181,20 @@ C04
 C05
 - [Roleplay 1 Translation] Major issue: Japanese line is truncated and missing the remainder of the prompt.
 - [Roleplay 2 Translation] Major issue: Japanese line is truncated and missing the remainder of the prompt.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 1 (101 words) and Roleplay 2 (107 words) have weak purpose/objective alignment (0.042, 0.043).
 
 C06
-- No revisions flagged.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 1 (122 words) and Roleplay 2 (117 words) have weak purpose/objective alignment (0.019, 0.067).
 
 C07
 - [Roleplay 1 Model vs Task] Minor issue: Model does not ask directly about fit with office colleagues.
 
 C08
 - [Roleplay 1 Model vs Task] Minor issue: Model does not clearly assert that the product was undamaged when shipped or push for a resolution.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 1 prompt is 113 words with weak purpose/objective alignment (0.043).
 
 C09
-- No revisions flagged.
+- [Instruction Verbosity] Likely unnecessary length: Roleplay 2 prompt is 105 words with very weak purpose/objective alignment (0.000).
 
 C10
 - No revisions flagged.

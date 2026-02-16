@@ -14,7 +14,11 @@ _COMMANDS = {
     "export-docx-package": "export_docx_package",
     "pdf-to-markdown": "pdf_to_markdown",
     "image-to-markdown": "image_to_markdown",
+<<<<<<< HEAD
+    "yaml-to-audio": "yaml_to_audio",
+=======
     "pptx-to-package": "pptx_converter",
+>>>>>>> 58be8ce087bfa707dda3859129c32da31631ebbf
 }
 
 
