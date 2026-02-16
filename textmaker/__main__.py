@@ -14,6 +14,7 @@ _COMMANDS = {
     "export-docx-package": "export_docx_package",
     "pdf-to-markdown": "pdf_to_markdown",
     "image-to-markdown": "image_to_markdown",
+    "pptx-to-package": "pptx_converter",
 }
 
 
