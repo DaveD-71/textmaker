@@ -41,11 +41,19 @@ pip install -r .\docs\requirements.txt
 # choose a custom output path
 .\textmaker.cmd generate-reference --out ".\style-ref\reference.docx"
 
+# extract styles from an existing DOCX (no markdown output)
+.\textmaker.cmd generate-reference `
+  --input ".\path\to\source.docx" `
+  --out ".\style-ref\reference.docx" `
+  --preserve-headers
+
 # show all flags
 .\textmaker.cmd generate-reference --help
 ```
 
+- `--input <path>`: optional source `.docx` to extract styles/themes/numbering from.
 - `--out <path>`: output path for the generated reference file (default `reference.docx`).
+- `--preserve-headers`: when `--input` is used, keep source header/footer parts in the reference DOCX.
 - `-h, --help`: show the built-in help for the generator script.
 
 ## Markdown → DOCX CLI usage and options
@@ -69,7 +77,7 @@ Commands:
 - `docx-to-markdown`: Convert DOCX to markdown units with assets and reference styles.
 - `split-docx-units`: Split a DOCX into unit-level DOCX files.
 - `markdown-to-docx`: Convert markdown to DOCX using pandoc and a reference file.
-- `generate-reference`: Generate a reference DOCX with project styles.
+- `generate-reference`: Generate a reference DOCX from project defaults or from a source DOCX.
 - `preprocess-docx`: Insert sentinel markers into a DOCX before conversion.
 - `postprocess-docx`: Post-process a DOCX to insert section breaks and list styles.
 - `postprocess-markdown`: Replace sentinel markers in markdown outputs.

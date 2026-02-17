@@ -1,11 +1,13 @@
 """
 Generate a `reference.docx` with basic modern professional styles.
 This uses `python-docx` to set Normal and Heading styles and A4 page size.
-Run: python scripts/generate_reference_docx.py --out reference.docx
+Run default: python scripts/generate_reference_docx.py --out reference.docx
+Run from source: python scripts/generate_reference_docx.py --input source.docx --out reference.docx
 """
 # pylint: disable=protected-access,broad-exception-caught
 import argparse
 import sys
+from pathlib import Path
 try:
     # type: ignore[reportMissingImports]
     from docx import Document
@@ -302,17 +304,63 @@ def create_reference(path: str):
     doc.save(path)
 
 
+def _load_create_reference_docx():
+    """
+    Resolve create_reference_docx in both invocation modes:
+    - package mode: python -m textmaker ...
+    - script mode:  python scripts/generate_reference_docx.py ...
+    """
+    try:
+        from .docx_to_markdown import create_reference_docx  # type: ignore[reportMissingImports]
+    except ImportError:
+        from scripts.docx_to_markdown import create_reference_docx  # type: ignore[reportMissingImports]
+    return create_reference_docx
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--input',
+        default=None,
+        help='Optional source DOCX to extract styles from. When omitted, built-in defaults are used.',
+    )
     parser.add_argument('--out', default='reference.docx', help='Output path for reference DOCX')
+    parser.add_argument(
+        '--preserve-headers',
+        action='store_true',
+        help='When using --input, keep header/footer parts from the source DOCX.',
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
-    create_reference(args.out)
-    print(f'Wrote reference docx to {args.out}')
+    out_path = Path(args.out).expanduser()
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if args.input:
+        source_path = Path(args.input).expanduser().resolve()
+        if not source_path.exists():
+            print(f'Input DOCX not found: {source_path}', file=sys.stderr)
+            return 1
+        if not source_path.is_file():
+            print(f'Input path must be a file: {source_path}', file=sys.stderr)
+            return 1
+        if source_path.suffix.lower() != '.docx':
+            print(f'Input file must have .docx extension: {source_path}', file=sys.stderr)
+            return 1
+
+        create_reference_docx = _load_create_reference_docx()
+        create_reference_docx(source_path, out_path.resolve(), keep_headers=args.preserve_headers)
+        print(f'Wrote reference docx to {out_path} (source styles from {source_path})')
+        return 0
+
+    if args.preserve_headers:
+        print('Warning: --preserve-headers is ignored unless --input is provided.', file=sys.stderr)
+
+    create_reference(str(out_path))
+    print(f'Wrote reference docx to {out_path}')
     return 0
 
 
