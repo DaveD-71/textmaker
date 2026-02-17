@@ -41,9 +41,17 @@ def main(argv: list[str] | None = None) -> int:
     module_name = _COMMANDS[command]
     package_name = __package__ or "scripts"
     module = __import__(f"{package_name}.{module_name}", fromlist=["main"])
+    entrypoint = getattr(module, "main", None)
+    if not callable(entrypoint):
+        print(
+            f"error: command '{command}' is mapped to '{package_name}.{module_name}', "
+            "but no callable main() was found.",
+            file=sys.stderr,
+        )
+        return 1
     sys.argv = [module_name] + argv[1:]
-    module.main()
-    return 0
+    result = entrypoint()
+    return result if isinstance(result, int) else 0
 
 
 if __name__ == "__main__":

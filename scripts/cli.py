@@ -59,14 +59,19 @@ def merge_markdown_files(files: Iterable[Path], dest: Path) -> None:
             out.write('\n\n')
             # Removed: section breaks are now added in post-processing
 
-if __name__ == '__main__':
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', required=True, help='Input file or folder containing markdown')
     parser.add_argument('--output', default='output.docx', help='Output DOCX filename')
     parser.add_argument('--reference', default='reference.docx', help='Reference DOCX for styles')
     parser.add_argument('--toc', action='store_true', help='Include Table of Contents')
     parser.add_argument('--toc-depth', type=int, default=2, help='TOC depth')
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
 
     check_pandoc()
 
@@ -103,7 +108,10 @@ if __name__ == '__main__':
         print('Running:', ' '.join(map(str, pandoc_cmd)))
         subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
-        from .postprocess_docx import insert_section_after_toc
+        try:
+            from .postprocess_docx import insert_section_after_toc
+        except ImportError:
+            from postprocess_docx import insert_section_after_toc
         try:
             insert_section_after_toc(dest_path, has_toc=args.toc)
         except (OSError, RuntimeError, ValueError):
@@ -112,3 +120,8 @@ if __name__ == '__main__':
     finally:
         if temp_dir:
             temp_dir.cleanup()
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

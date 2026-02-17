@@ -5,6 +5,7 @@ Run: python scripts/generate_reference_docx.py --out reference.docx
 """
 # pylint: disable=protected-access,broad-exception-caught
 import argparse
+import sys
 try:
     # type: ignore[reportMissingImports]
     from docx import Document
@@ -307,9 +308,19 @@ def create_reference(path: str):
     doc.save(path)
 
 
-if __name__ == '__main__':
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', default='reference.docx', help='Output path for reference DOCX')
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
     create_reference(args.out)
     print(f'Wrote reference docx to {args.out}')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

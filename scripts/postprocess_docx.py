@@ -7,6 +7,9 @@ Post-process a DOCX produced by Pandoc to ensure:
 - section breaks (nextPage) are inserted before each H1 heading
 """
 # pylint: disable=protected-access,broad-exception-caught
+import argparse
+import sys
+
 try:
     from docx import Document  # type: ignore[reportMissingImports]
     from docx.oxml import OxmlElement  # type: ignore[reportMissingImports]
@@ -373,8 +376,7 @@ def insert_section_after_toc(docx_path, has_toc=True, insert_h1_sections=True):
     return made_change
 
 
-if __name__ == '__main__':
-    import argparse
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('docx', help='DOCX file to postprocess')
     parser.add_argument('--toc', action='store_true', default=True, help='Document has TOC')
@@ -383,7 +385,12 @@ if __name__ == '__main__':
         action='store_true',
         help='Skip inserting section breaks before H1s',
     )
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
 
     did_update = insert_section_after_toc(
         args.docx,
@@ -395,3 +402,8 @@ if __name__ == '__main__':
         print('Post-processing complete.')
     else:
         print('No changes made.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
