@@ -22,13 +22,12 @@ A **professional ELT textbook** for workplace learners, currently in the plannin
 
 | Module | Theme | Units |
 |---|---|---|
-| Module 1 | Advanced Foundations for Administrative Writing | 1–5 |
-| Module 2 | Professional Email Writing for Interagency Contexts | 6–8 |
-| Module 3 | Writing Complex Procedures & Internal Explanations | 9–12 (approx.) |
-| Module 4 | Cross-Border & Interagency Communication | 13–17 (approx.) |
-| Module 5 | Advanced Editing & Revision Skills | 18–23 |
-
-*Note: Module boundaries are approximate. Confirm against the current module file before editing.*
+| Module 1 | Advanced Foundations for Administrative Writing | 1–3 |
+| Module 2 | Professional Email Writing for Interagency Contexts | 4–7 |
+| Module 3 | Writing Complex Procedures & Internal Explanations | 8–11 |
+| Module 4 | Cross-Border & Interagency Communication | 12–15 |
+| Module 5 | Advanced Editing & Revision Skills | 16–18 |
+| Module 6 | Capstone & Applied Administrative Writing | 19–23 |
 
 **Unit topics (in order):**
 1. Controlling Sentence Complexity
@@ -66,7 +65,7 @@ A **professional ELT textbook** for workplace learners, currently in the plannin
 | **Workflow** | Major content creation done collaboratively in Claude. Minor edits may be made independently between sessions. GitHub used for versioning. |
 | **Planning-first approach** | Structure and activity variety are being planned before any unit-level editing begins. The unit structural profiles (planning table) must be completed before drafting starts. |
 | **Group vs. self-study** | Dual-framing convention established once in a *How to Use This Book* section. Not duplicated in every activity instruction. "Discuss" activities are for class use; self-study learners are directed to write their response before continuing. |
-| **Sentence counts → word counts** | All Freer Writing and Homework tasks currently use sentence-count targets. These will be replaced with word counts throughout. Progression: ~150w (Module 1) → ~200w (Modules 2–3) → ~250w (Modules 4–5) → ~300–350w (Units 22–23). |
+| **Sentence counts → word counts** | All Freer Writing and Homework tasks currently use sentence-count targets. These will be replaced with word counts throughout. Progression: ~150w (Module 1) → ~200w (Modules 2–3) → ~250w (Modules 4–5) → ~300–350w (Module 6 / Units 22–23). |
 | **Encoding** | The main unit file has been verified as clean UTF-8. Introduction files should be checked when next updated. |
 
 ---
@@ -126,4 +125,4 @@ These are agreed improvements to be addressed during or after drafting. Do not a
 
 ---
 
-*Document version: 1.0 — created during initial planning session. Update version number when substantive changes are made.*
+*Document version: 1.1 — module structure corrected to 6 modules; unit-module assignments verified against source file.*

@@ -1,4 +1,4 @@
-﻿{
+{
   "window.confirmSaveUntitledWorkspace": false,
   "files.encoding": "utf8",
   "files.autoGuessEncoding": false,
@@ -16,7 +16,7 @@
   "editor.stickyScroll.enabled": false,
   "git.enableSmartCommit": true,
   "chat.mcp.gallery.enabled": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "workbench.colorTheme": "Default Light Modern",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
