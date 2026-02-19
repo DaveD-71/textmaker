@@ -154,7 +154,7 @@ Sentinel markers:
 ## PPTX → Structured package (YAML/JSON + assets)
 
 ```powershell
-python -m textmaker pptx-to-package --input ".\path\to\slides.pptx" --output-dir ".\out"
+python -m scripts pptx-to-package --input ".\path\to\slides.pptx" --output-dir ".\out"
 ```
 
 Output behavior:
@@ -268,7 +268,7 @@ Options:
 ## YAML -> Audio (Piper TTS, MP3)
 
 ```powershell
-python -m textmaker yaml-to-audio `
+python -m scripts yaml-to-audio `
   --input "mofa situations/text/Situations_all.yaml" `
   --voice-map "mofa situations/audio/voice_map.example.json" `
   --output-dir "mofa situations/audio/out" `

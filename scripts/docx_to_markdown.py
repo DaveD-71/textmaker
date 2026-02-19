@@ -43,6 +43,17 @@ SHAPE_NS = {
     'wps': 'http://schemas.microsoft.com/office/word/2010/wordprocessingShape',
 }
 
+W_NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+XML_NS = 'http://www.w3.org/XML/1998/namespace'
+
+
+def _w_tag(local_name: str) -> str:
+    return f'{{{W_NS}}}{local_name}'
+
+
+ElementTree.register_namespace('w', W_NS)
+ElementTree.register_namespace('xml', XML_NS)
+
 
 def check_pandoc(pandoc_bin: str = 'pandoc') -> None:
     """Ensure pandoc is on PATH."""
@@ -195,6 +206,145 @@ def write_sections_to_files(
     return written
 
 
+def _iter_style_refs_from_content(root: ElementTree.Element) -> Set[str]:
+    """Collect style ids referenced by content XML nodes."""
+    refs: Set[str] = set()
+    for tag_name in ('pStyle', 'rStyle', 'tblStyle'):
+        for elem in root.findall(f'.//w:{tag_name}', {'w': W_NS}):
+            style_id = (elem.get(_w_tag('val')) or '').strip()
+            if style_id:
+                refs.add(style_id)
+    return refs
+
+
+def _collect_referenced_style_ids(docx_zip: ZipFile, keep_headers: bool) -> Set[str]:
+    """
+    Gather style ids actively referenced by document content parts.
+
+    We always include the main document body. Header/footer style refs are included
+    only when --preserve-headers is enabled.
+    """
+    style_ids: Set[str] = set()
+    part_names = {'word/document.xml'}
+    if keep_headers:
+        for name in docx_zip.namelist():
+            if re.match(r'word/(header|footer)\d+\.xml$', name):
+                part_names.add(name)
+
+    for part_name in sorted(part_names):
+        try:
+            root = ElementTree.fromstring(docx_zip.read(part_name))
+        except (KeyError, ElementTree.ParseError):
+            continue
+        style_ids.update(_iter_style_refs_from_content(root))
+
+    return style_ids
+
+
+def _build_blank_document_xml_preserving_layout(source_document_xml: bytes) -> bytes:
+    """
+    Create a minimal document.xml that preserves source section/page settings.
+
+    If source section properties are missing, fall back to explicit A4 settings.
+    """
+    root = ElementTree.fromstring(source_document_xml)
+    body = root.find(_w_tag('body'))
+    if body is None:
+        raise RuntimeError('Invalid DOCX package: word/document.xml missing w:body')
+
+    source_sectpr = body.find(_w_tag('sectPr'))
+
+    for child in list(body):
+        body.remove(child)
+
+    para = ElementTree.Element(_w_tag('p'))
+    run = ElementTree.SubElement(para, _w_tag('r'))
+    text = ElementTree.SubElement(run, _w_tag('t'))
+    text.text = ''
+    body.append(para)
+
+    if source_sectpr is not None:
+        body.append(source_sectpr)
+    else:
+        sectpr = ElementTree.Element(_w_tag('sectPr'))
+        # A4 in twips; default to A4 rather than Letter.
+        ElementTree.SubElement(
+            sectpr,
+            _w_tag('pgSz'),
+            {_w_tag('w'): '11906', _w_tag('h'): '16838'},
+        )
+        ElementTree.SubElement(
+            sectpr,
+            _w_tag('pgMar'),
+            {
+                _w_tag('top'): '1440',
+                _w_tag('right'): '1440',
+                _w_tag('bottom'): '1440',
+                _w_tag('left'): '1440',
+                _w_tag('header'): '720',
+                _w_tag('footer'): '720',
+                _w_tag('gutter'): '0',
+            },
+        )
+        body.append(sectpr)
+
+    return ElementTree.tostring(root, encoding='utf-8', xml_declaration=True)
+
+
+def _prune_styles_xml(styles_xml: bytes, used_style_ids: Set[str]) -> bytes:
+    """
+    Remove unused style definitions from styles.xml.
+
+    Keep:
+    - styles referenced by content
+    - default styles
+    - mandatory baseline styles
+    - transitive style dependencies (basedOn/next/link)
+    """
+    root = ElementTree.fromstring(styles_xml)
+    styles = root.findall(_w_tag('style'))
+    style_by_id: Dict[str, ElementTree.Element] = {}
+    for style in styles:
+        style_id = (style.get(_w_tag('styleId')) or '').strip()
+        if style_id:
+            style_by_id[style_id] = style
+
+    keep_ids: Set[str] = set(used_style_ids)
+    keep_ids.update({'Normal', 'DefaultParagraphFont', 'TableNormal', 'NoList'})
+
+    for style in styles:
+        is_default = (style.get(_w_tag('default')) or '').strip()
+        if is_default in {'1', 'true', 'on'}:
+            style_id = (style.get(_w_tag('styleId')) or '').strip()
+            if style_id:
+                keep_ids.add(style_id)
+
+    changed = True
+    while changed:
+        changed = False
+        for style_id in list(keep_ids):
+            style = style_by_id.get(style_id)
+            if style is None:
+                continue
+            for dep_tag in ('basedOn', 'next', 'link'):
+                dep = style.find(_w_tag(dep_tag))
+                dep_id = (dep.get(_w_tag('val')) or '').strip() if dep is not None else ''
+                if dep_id and dep_id not in keep_ids:
+                    keep_ids.add(dep_id)
+                    changed = True
+
+    for style in styles:
+        style_id = (style.get(_w_tag('styleId')) or '').strip()
+        if style_id and style_id not in keep_ids:
+            root.remove(style)
+
+    latent = root.find(_w_tag('latentStyles'))
+    if latent is not None:
+        root.remove(latent)
+
+    return ElementTree.tostring(root, encoding='utf-8', xml_declaration=True)
+
+
 def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: bool = False) -> Path:
     """
     Create a reference DOCX that preserves styles from the source document but has no body content.
@@ -206,14 +356,19 @@ def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: 
     """
     reference_out.parent.mkdir(parents=True, exist_ok=True)
 
-    # Build a blank document.xml once for reuse
-    with tempfile.TemporaryDirectory() as tmpdir:
-        blank_path = Path(tmpdir) / 'blank.docx'
-        doc = Document()
-        doc.add_paragraph('Reference styles extracted from source document.')
-        doc.save(blank_path)
-        with ZipFile(blank_path, 'r') as zf_blank:
-            blank_document_xml = zf_blank.read('word/document.xml')
+    with ZipFile(source_docx, 'r') as zf_src:
+        source_document_xml = zf_src.read('word/document.xml')
+        blank_document_xml = _build_blank_document_xml_preserving_layout(source_document_xml)
+        used_style_ids = _collect_referenced_style_ids(zf_src, keep_headers=keep_headers)
+        pruned_styles_xml = None
+        pruned_styles_with_effects_xml = None
+        if 'word/styles.xml' in zf_src.namelist():
+            pruned_styles_xml = _prune_styles_xml(zf_src.read('word/styles.xml'), used_style_ids)
+        if 'word/stylesWithEffects.xml' in zf_src.namelist():
+            pruned_styles_with_effects_xml = _prune_styles_xml(
+                zf_src.read('word/stylesWithEffects.xml'),
+                used_style_ids,
+            )
 
     # Rebuild the zip package instead of appending entries. This avoids duplicate
     # word/document.xml records and keeps the output package deterministic.
@@ -225,6 +380,12 @@ def create_reference_docx(source_docx: Path, reference_out: Path, keep_headers: 
             for name in zf_src.namelist():
                 if name == 'word/document.xml':
                     zf_out.writestr(name, blank_document_xml)
+                    continue
+                if name == 'word/styles.xml' and pruned_styles_xml is not None:
+                    zf_out.writestr(name, pruned_styles_xml)
+                    continue
+                if name == 'word/stylesWithEffects.xml' and pruned_styles_with_effects_xml is not None:
+                    zf_out.writestr(name, pruned_styles_with_effects_xml)
                     continue
                 if not keep_headers and (name.startswith('word/header') or name.startswith('word/footer')):
                     continue

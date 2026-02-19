@@ -10,6 +10,7 @@ python scripts/cli.py --input "chapter1.md" --output "Book.docx" --reference ref
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -52,10 +53,37 @@ def build_pandoc_cmd(
     return cmd
 
 
+_HTML_ONLY_LINE_RE = re.compile(r'^\s*(?:<[^>]+>\s*)+$')
+
+
+def normalize_html_block_spacing(md_text: str) -> str:
+    """
+    Insert a blank line after standalone HTML-only lines when immediately
+    followed by non-blank markdown content.
+
+    Pandoc can otherwise treat the following markdown as part of the HTML block,
+    e.g. '<a id="x"></a>' followed by '## Heading' on the next line.
+    """
+    lines = md_text.splitlines()
+    out: list[str] = []
+    for idx, line in enumerate(lines):
+        out.append(line)
+        if idx + 1 >= len(lines):
+            continue
+        next_line = lines[idx + 1]
+        if not _HTML_ONLY_LINE_RE.match(line):
+            continue
+        if next_line.strip() == '':
+            continue
+        out.append('')
+    return '\n'.join(out) + ('\n' if md_text.endswith('\n') else '')
+
+
 def merge_markdown_files(files: Iterable[Path], dest: Path) -> None:
     with dest.open('w', encoding='utf-8') as out:
         for f in files:
-            out.write(f.read_text(encoding='utf-8'))
+            source = f.read_text(encoding='utf-8')
+            out.write(normalize_html_block_spacing(source))
             out.write('\n\n')
             # Removed: section breaks are now added in post-processing
 
@@ -97,8 +125,12 @@ def main(argv: list[str] | None = None) -> int:
                 args.toc_depth,
             )
         else:
+            temp_dir = tempfile.TemporaryDirectory()
+            temp_md = Path(temp_dir.name) / src_path.name
+            source = src_path.read_text(encoding='utf-8')
+            temp_md.write_text(normalize_html_block_spacing(source), encoding='utf-8')
             pandoc_cmd = build_pandoc_cmd(
-                src_path,
+                temp_md,
                 dest_path,
                 reference_path,
                 args.toc,
