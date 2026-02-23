@@ -5,20 +5,21 @@ python -m textmaker docx-to-markdown --input
 
 To Do
 ---
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Speak Up.docx
+C:\Dev\Code\autotextstyle\textbooks\Speak Up.docx
 
 Done
 ---
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Manners Essentials.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Facilitation Skills for International Meetings.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Manners for Businesspeople\Business Manners for Businesspeople.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Manners for Government Officials.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Meetings Essentials for Government Officials.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Presentations Essentials for Businesspeople.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Business Presentations Essentials for Government Officials.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Communication Skills for Problem Solving.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\In Company.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Making Speeches.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Skills for International Meetings.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Speaking with PowerPoint.docx
-C:\Users\daved\OneDrive\Documents\Code\autotextstyle\textbooks\Logical Speaking.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Manners Essentials.docx
+C:\Dev\Code\autotextstyle\textbooks\Facilitation Skills for International Meetings.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Manners for Businesspeople\Business Manners for Businesspeople.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Manners for Government Officials.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Meetings Essentials for Government Officials.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Presentations Essentials for Businesspeople.docx
+C:\Dev\Code\autotextstyle\textbooks\Business Presentations Essentials for Government Officials.docx
+C:\Dev\Code\autotextstyle\textbooks\Communication Skills for Problem Solving.docx
+C:\Dev\Code\autotextstyle\textbooks\In Company.docx
+C:\Dev\Code\autotextstyle\textbooks\Making Speeches.docx
+C:\Dev\Code\autotextstyle\textbooks\Skills for International Meetings.docx
+C:\Dev\Code\autotextstyle\textbooks\Speaking with PowerPoint.docx
+C:\Dev\Code\autotextstyle\textbooks\Logical Speaking.docx
+
