@@ -10,6 +10,7 @@ python scripts/cli.py --input "chapter1.md" --output "Book.docx" --reference ref
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -52,21 +53,53 @@ def build_pandoc_cmd(
     return cmd
 
 
+_HTML_ONLY_LINE_RE = re.compile(r'^\s*(?:<[^>]+>\s*)+$')
+
+
+def normalize_html_block_spacing(md_text: str) -> str:
+    """
+    Insert a blank line after standalone HTML-only lines when immediately
+    followed by non-blank markdown content.
+
+    Pandoc can otherwise treat the following markdown as part of the HTML block,
+    e.g. '<a id="x"></a>' followed by '## Heading' on the next line.
+    """
+    lines = md_text.splitlines()
+    out: list[str] = []
+    for idx, line in enumerate(lines):
+        out.append(line)
+        if idx + 1 >= len(lines):
+            continue
+        next_line = lines[idx + 1]
+        if not _HTML_ONLY_LINE_RE.match(line):
+            continue
+        if next_line.strip() == '':
+            continue
+        out.append('')
+    return '\n'.join(out) + ('\n' if md_text.endswith('\n') else '')
+
+
 def merge_markdown_files(files: Iterable[Path], dest: Path) -> None:
     with dest.open('w', encoding='utf-8') as out:
         for f in files:
-            out.write(f.read_text(encoding='utf-8'))
+            source = f.read_text(encoding='utf-8')
+            out.write(normalize_html_block_spacing(source))
             out.write('\n\n')
             # Removed: section breaks are now added in post-processing
 
-if __name__ == '__main__':
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', required=True, help='Input file or folder containing markdown')
     parser.add_argument('--output', default='output.docx', help='Output DOCX filename')
     parser.add_argument('--reference', default='reference.docx', help='Reference DOCX for styles')
     parser.add_argument('--toc', action='store_true', help='Include Table of Contents')
     parser.add_argument('--toc-depth', type=int, default=2, help='TOC depth')
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
 
     check_pandoc()
 
@@ -92,8 +125,12 @@ if __name__ == '__main__':
                 args.toc_depth,
             )
         else:
+            temp_dir = tempfile.TemporaryDirectory()
+            temp_md = Path(temp_dir.name) / src_path.name
+            source = src_path.read_text(encoding='utf-8')
+            temp_md.write_text(normalize_html_block_spacing(source), encoding='utf-8')
             pandoc_cmd = build_pandoc_cmd(
-                src_path,
+                temp_md,
                 dest_path,
                 reference_path,
                 args.toc,
@@ -103,7 +140,10 @@ if __name__ == '__main__':
         print('Running:', ' '.join(map(str, pandoc_cmd)))
         subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
-        from .postprocess_docx import insert_section_after_toc
+        try:
+            from .postprocess_docx import insert_section_after_toc
+        except ImportError:
+            from postprocess_docx import insert_section_after_toc
         try:
             insert_section_after_toc(dest_path, has_toc=args.toc)
         except (OSError, RuntimeError, ValueError):
@@ -112,3 +152,8 @@ if __name__ == '__main__':
     finally:
         if temp_dir:
             temp_dir.cleanup()
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

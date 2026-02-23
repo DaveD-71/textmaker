@@ -8,7 +8,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-python -m textmaker %*
+python -m scripts %*
 set "EXIT_CODE=%ERRORLEVEL%"
 
 popd

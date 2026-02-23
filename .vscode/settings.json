@@ -1,5 +1,7 @@
 {
   "window.confirmSaveUntitledWorkspace": false,
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
   "files.enableTrash": true,
   "files.autoSave": "afterDelay",
   "security.allowedUNCHosts": ["prod-fs-gen01", "prod-fs-sec01"],
@@ -14,7 +16,7 @@
   "editor.stickyScroll.enabled": false,
   "git.enableSmartCommit": true,
   "chat.mcp.gallery.enabled": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "workbench.colorTheme": "Default Light Modern",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
@@ -24,7 +26,7 @@
   },
   "terminal.integrated.tabs.enabled": false,
   "editor.unicodeHighlight.allowedCharacters": {
-    "–": true
+    "\\u2014": true
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
   "git.autofetch": true,
