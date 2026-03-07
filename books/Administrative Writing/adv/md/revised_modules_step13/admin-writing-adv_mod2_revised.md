@@ -187,14 +187,6 @@ Your email must include:
 - a targeted clarification request
 - a next-step statement
 
-Your email must include:
-
-- a clear opening and statement of purpose
-- an explanation of the relevant issue
-- at least two distinct requests
-- a next-step statement
-- a diplomatic closing
-
 ---
 
 #### F1. Peer Review
@@ -667,15 +659,6 @@ Your message must include:
 - a clear correction request
 - a next-step statement
 
-Your message must include:
-
-- diplomatic framing throughout
-- specific references to sections, terms, or documents
-- a neutral explanation of the issue
-- an impact statement
-- a clear correction request
-- a next-step statement
-
 ---
 
 #### F1. Peer Review
@@ -895,14 +878,6 @@ Choose one scenario:
 Write a multi-part request message of 190–220 words. Your message must include:
 - three to four clearly sequenced requests
 - explicit dependency logic between at least two of the requests
-- a stated rationale for the sequence
-- diplomatic phrasing throughout
-- a next-step statement
-
-Your message must include:
-
-- three to four sequenced requests
-- clear dependency logic between at least two of the requests
 - a stated rationale for the sequence
 - diplomatic phrasing throughout
 - a next-step statement

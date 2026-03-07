@@ -827,15 +827,6 @@ Your summary must include:
 
 **Word count: 200–230 words**
 
-Your summary must include:
-
-- all four sections: Overview, Key Points Discussed, Decisions / Action Items, Next Steps
-- at least three bullet points in the Key Points section
-- specific, attributed action items where relevant
-- clear, formal, neutral tone
-
-**Word count: 200–230 words**
-
 ---
 
 ### F. Review & Self-Edit

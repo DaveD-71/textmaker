@@ -457,15 +457,6 @@ Write a risk and impact assessment for internal circulation. Your assessment mus
 - mitigation proposals
 - analytical, objective tone
 
-Your assessment must include:
-
-- 2–3 clearly identified risks
-- causes and impacts for each
-- mitigation proposals
-- analytical, objective tone
-
-**Word count: 180–220 words**
-
 ---
 
 ### F. Review & Self-Assessment
@@ -930,16 +921,6 @@ Write a policy-aligned rationale of 180–220 words. Your rationale must include
 - objective reasoning and evidence of the problem
 - benefits of the proposed change
 - neutral, formal tone
-
-Your rationale must include:
-
-- a clear recommendation
-- alignment with existing policy or guidelines
-- objective reasoning and evidence of the problem
-- benefits of the proposed change
-- neutral, formal tone
-
-**Word count: 180–220 words**
 
 ---
 
