@@ -28,15 +28,15 @@ These items are agreed and should be addressed before or during the unit plannin
 
 These items are agreed and will be addressed after content is planned and drafted. They are not in question — only deferred until the appropriate stage.
 
-| # | Task | Detail | Depends on | Status |
-|---|---|---|---|---|
-| P1 | Reduce formulaic unit structure repetition | All 23 units currently follow an identical sequence. Once structural profiles are assigned (N5), variety will be built in by design. | N5 | ⏳ Deferred |
-| P2 | Add data interpretation tasks | At least 4–5 units (esp. 11, 13, 17, 18) should include a table or simple data set as writing input. Activity type B7 in the menu. | N5, drafting | ✅ Done — B7 present in Units 11, 13, 17, 21 (Step 13) |
-| P3 | Expand Language Focus practice items | Several units have only 1–2 sentences per practice activity. Minimum of 4 items per practice agreed. Address unit by unit during drafting. | Drafting | ✅ Done — all practice activities meet 4-item minimum (Step 12) |
-| P4 | Develop answer key / sample responses | To be written after all content is finalised. One answer key document per module, or an integrated teacher's guide. | All content finalised | ⏳ Deferred |
-| P5 | Replace sentence-count targets with word counts | All Freer Writing and Homework tasks currently specify sentence counts (e.g., "Write 10–14 sentences"). Replace with word count targets throughout. Word count progression: ~150 words (Module 1) → ~350 words (Units 22–23). | Drafting | ✅ Done — all Freer Writing and Homework tasks use word counts (Step 12; D2 sentence counts retained as appropriate scaffold) |
-| P6 | Add reading-to-write tasks | At least 4–5 units should include source document(s) that learners read before writing a response. Activity type B6 in the menu. | N5, drafting | ✅ Done — B6 present in Units 15, 18, 19, 22 (Step 13) |
-| P7 | Write Unit 23 capstone assessment rubric | The capstone functions as a final assessment but currently has no rubric or marking criteria. A rubric for both self-assessment and teacher use is needed. | Unit 23 draft finalised | ⏳ Deferred |
+| # | Task | Detail | Depends on |
+|---|---|---|---|
+| P1 | Reduce formulaic unit structure repetition | All 23 units currently follow an identical sequence. Once structural profiles are assigned (N5), variety will be built in by design. | N5 |
+| P2 | Add data interpretation tasks | At least 4–5 units (esp. 11, 13, 17, 18) should include a table or simple data set as writing input. Activity type B7 in the menu. | N5, drafting |
+| P3 | Expand Language Focus practice items | Several units have only 1–2 sentences per practice activity. Minimum of 4 items per practice agreed. Address unit by unit during drafting. | Drafting |
+| P4 | Develop answer key / sample responses | To be written after all content is finalised. One answer key document per module, or an integrated teacher's guide. | All content finalised |
+| P5 | Replace sentence-count targets with word counts | All Freer Writing and Homework tasks currently specify sentence counts (e.g., "Write 10–14 sentences"). Replace with word count targets throughout. Word count progression: ~150 words (Module 1) → ~350 words (Units 22–23). | Drafting |
+| P6 | Add reading-to-write tasks | At least 4–5 units should include source document(s) that learners read before writing a response. Activity type B6 in the menu. | N5, drafting |
+| P7 | Write Unit 23 capstone assessment rubric | The capstone functions as a final assessment but currently has no rubric or marking criteria. A rubric for both self-assessment and teacher use is needed. | Unit 23 draft finalised |
 
 ---
 
@@ -50,9 +50,7 @@ These items are agreed and will be addressed after content is planned and drafte
 | Unit planning order | Structure and activity variety planned first (module by module, then unit by unit) before any editing begins |
 | Group vs. self-study | Dual-framing convention established once in *How to Use This Book*; not duplicated in every activity |
 | Activity menu | 44 activity types across 8 sections; 24 are new additions. Master Activity Menu document is the reference for all planning. |
-| JPO customisation | JPO scenario variants embedded as option 4 in E (Freer Writing) and H (Homework) sections across 10 units (Steps 11); no separate supplement |
-| Learning goals mapping | 14 improvement recommendations identified (Step 11); deferred — requires sign-off before implementation |
 
 ---
 
-*Document version: Updated after Steps 11–13 — JPO scenarios, P3/P5 practice edits, and P2/P6 activity insertions complete. All six module files verified clean.*
+*Document version: Draft 1 — created following planning session. Update as tasks are completed or new items are added.*
