@@ -312,7 +312,6 @@ Each sentence below is a bare statement of fact. Expand each one into 2–3 sent
 1. *The submission deadline has changed.* [Add: effective date + reason for change]
 2. *Staff should use the updated form.* [Add: what the form replaces + where to find it]
 3. *The previous process is no longer valid.* [Add: what the new process involves + what staff should do now]
-4. *The coordinating office has revised its communication procedure.* [Add: what specifically has changed + the benefit this brings to partner offices]
 
 ---
 
@@ -816,11 +815,10 @@ Choose one scenario and write a complete executive-level meeting summary.
 1. An interagency coordination meeting to discuss implementation of new processing guidelines
 2. A policy update briefing attended by representatives from three offices
 3. A working group session to review progress on a joint interagency project
-4. Write an executive-level summary of a trilateral technical meeting attended by representatives from the JPO, USPTO, and EPO. The meeting was convened to discuss harmonisation of patent classification procedures for a specific technical field. Key issues raised included inconsistencies in how the three offices assign classification codes to overlapping technical disclosures, a proposal to develop a shared reference list, and a question about whether the proposed harmonisation timeline is feasible given current staffing constraints at two of the offices. One action item was assigned; the broader question of the timeline was deferred to the next meeting.
 
 Your summary must include:
-- all four standard sections: Overview, Key Points Discussed, Decisions / Action Items, Next Steps
-- an overview naming the participants, date (you may use a realistic invented date), and purpose
+
+- all four sections: Overview, Key Points Discussed, Decisions / Action Items, Next Steps
 - at least three bullet points in the Key Points section
 - specific, attributed action items where relevant
 - clear, formal, neutral tone
@@ -892,4 +890,3 @@ Suggested topics:
 - A working group meeting to review a joint interagency procedure
 - A briefing session following the introduction of a new administrative policy
 - A coordination meeting to address a processing backlog affecting multiple offices
-- Write a 200–240 word executive-level summary of a high-level international IP meeting. Suggested context: a working group session involving JPO, USPTO, and EPO representatives to review progress on a joint procedural harmonisation project. Your summary must include all four standard sections, attributed action items with deadlines, and formal, neutral tone throughout.

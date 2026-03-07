@@ -178,14 +178,14 @@ Choose one scenario:
 1. Requesting updated translation files from a foreign office while explaining why the existing version cannot be used
 2. Following up on a pending approval required before your team can submit a joint report
 3. Confirming whether an earlier procedural instruction remains valid following a recent policy revision
+4. You have received an email from a counterpart at the USPTO International Affairs Division noting that two sections of a jointly produced procedural document appear to contain conflicting instructions. The discrepancy was flagged during an internal review on their side. You need to respond: acknowledge the issue, confirm that your office will review the relevant sections, request clarification on one specific point, and explain what your office will do once the review is complete.
 
 Your email must include:
-
-- a clear opening and statement of purpose
-- an explanation of the relevant issue
-- at least two distinct requests
+- a professional opening that acknowledges the counterpart's message
+- a clear statement of purpose
+- a specific explanation of how your office will address the issue
+- a targeted clarification request
 - a next-step statement
-- a diplomatic closing
 
 ---
 
@@ -233,6 +233,13 @@ Write a **190–220 word** high-level email to an interagency counterpart reques
 - a professional opening and explicit statement of purpose
 - a clear explanation of why action is needed
 - at least two separately stated requests
+- next-step information
+- a diplomatic closing
+
+4. Write a 190–220 word high-level email to a counterpart at a foreign IP office (USPTO, EPO, or WIPO) responding to a notification that a jointly produced procedural document contains a section that may require revision. Your email must include:
+- a professional opening and explicit statement of purpose
+- a clear explanation of how your office will review the issue
+- at least two separately stated actions or requests
 - next-step information
 - a diplomatic closing
 
@@ -409,6 +416,16 @@ Write a clarification request of **190–220 words**. Your message must include:
 - appropriate diplomatic softening throughout
 - a next-step statement explaining what your office will do once clarification is received
 
+*Alternatively, use the following scenario:*
+
+4. You are a JPO examiner who has received a search report from the EPO Search Division. Two of the prior art documents cited in the report appear to refer to the same technical disclosure but have been listed under different international patent classification codes. Before updating your internal records, you need to request clarification from the EPO on which classification is considered authoritative and whether the two citations should be treated as a single reference or as distinct documents.
+
+Write a clarification request of 190–220 words. Your message must include:
+- a professional opening identifying your role and the purpose of the message
+- at least two structured clarification points, each with a specific reference to the search report (e.g., citation number, section, or classification code)
+- appropriate diplomatic softening throughout
+- a next-step statement explaining what your office will do once clarification is received
+
 ---
 
 #### F1. Peer Review
@@ -458,6 +475,12 @@ Write a **190–220 word** clarification request to a foreign office regarding i
 
 - at least three structured clarification points
 - a specific reference (section, term, or date) for each point
+- diplomatic softening throughout
+- a clear next-step statement once clarification is received
+
+4. Write a 190–220 word clarification request to a foreign IP office (EPO or USPTO) regarding inconsistencies found in a shared examination or search document. Include:
+- at least three structured clarification points
+- a specific reference (section, citation, classification code, or date) for each point
 - diplomatic softening throughout
 - a clear next-step statement once clarification is received
 
@@ -627,13 +650,12 @@ Choose one scenario:
 1. An applicant's supporting document contains conflicting explanations across two sections — the discrepancy must be resolved before the file can be progressed.
 2. A translated version of an official notice differs from the source document in a way that may affect how recipients interpret their obligations.
 3. A collaborating office used an outdated version of a registration form; the current version contains updated eligibility criteria.
+4. During a routine review of a joint search report prepared for trilateral circulation, your team identified that a classification code used in Section 2 does not match the agreed terminology list established at last year's trilateral technical meeting. The discrepancy is minor but could cause inconsistencies if the document is distributed without correction. You need to notify the relevant contact at the EPO diplomatically, explain the issue clearly, and request that the relevant section be reviewed before the document is finalised.
 
 Your message must include:
-
 - diplomatic framing throughout
-- specific references to sections, terms, or documents
-- a neutral explanation of the issue
-- an impact statement
+- a specific reference to the section and classification code in question
+- a neutral explanation of the discrepancy and its potential impact
 - a clear correction request
 - a next-step statement
 
@@ -703,6 +725,13 @@ Write a **190–220 word** diplomatic error-notification email to a domestic or 
 - at least two specific references (sections, terms, or dates)
 - a next-step statement
 - a tone appropriate for interagency or international communication
+
+4. Write a 190–220 word diplomatic error-notification email to a counterpart at a foreign IP office (EPO or USPTO). A shared document — such as a search report, procedural guideline, or terminology list — contains a discrepancy that needs to be corrected before circulation. Include:
+- at least three diplomatic framing expressions
+- one clear impact explanation
+- at least two specific references (sections, codes, or dates)
+- a next-step statement
+- a tone appropriate for trilateral or international IP office communication
 
 ---
 
@@ -844,11 +873,11 @@ Choose one scenario:
 1. Coordinating several clarifications needed before your team can finalise a procedural document for publication
 2. Requesting multiple updates from a partner agency that are needed in a specific sequence before a submission deadline
 3. Preparing a joint announcement that requires input and confirmation from two separate offices before drafting can begin
+4. Your office is preparing a position paper for an upcoming trilateral technical meeting. Before drafting can begin, you need a counterpart at WIPO to complete three actions in sequence: first, confirm which version of the relevant procedural guideline is currently in force; second, once confirmed, provide the sections of that guideline that relate to examination result reporting; and third, confirm whether your office's current interpretation of those sections is consistent with WIPO's understanding. The second and third actions cannot proceed until the first is resolved.
 
-Your message must include:
-
-- three to four sequenced requests
-- clear dependency logic between at least two of the requests
+Write a multi-part request message of 190–220 words. Your message must include:
+- three to four clearly sequenced requests
+- explicit dependency logic between at least two of the requests
 - a stated rationale for the sequence
 - diplomatic phrasing throughout
 - a next-step statement
@@ -904,6 +933,12 @@ Choose one:
 
 Write a **190–220 word** layered request message to a domestic or foreign office. Include:
 
+- three to four sequenced actions
+- explicit dependency relationships between at least two of the requests
+- diplomatic softening throughout
+- a clear next-step statement
+
+4. Write a 190–220 word layered request message to a counterpart at WIPO or a foreign IP office. You need multiple actions completed in a specific sequence before your office can proceed with a joint document or meeting preparation task. Include:
 - three to four sequenced actions
 - explicit dependency relationships between at least two of the requests
 - diplomatic softening throughout

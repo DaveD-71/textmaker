@@ -14,12 +14,12 @@ These items are agreed and should be addressed before or during the unit plannin
 
 | # | Task | Detail | Status |
 |---|---|---|---|
-| N1 | Fix level label in introduction | Change "Upper-Intermediate Writing Textbook" in Section (a) to language consistent with the Advanced / B2–B2+ descriptor. One-line fix but important for internal consistency. | ✅ Done |
-| N2 | Check encoding in introduction files | The unit file (`admin-writing-adv-all.md`) is now clean. The two introduction files (`int_writing_text_intro.md` and `adv_writing_text_intro.md`) have not yet been verified in their latest versions. Check and correct encoding artifacts. | ✅ Done — file clean, no artifacts found |
-| N3 | Write *How to Use This Book* section | Must establish: (a) the dual-framing convention for group vs. self-study activities, (b) notation system for activity types, (c) how to use the peer review sections independently. | ✅ Done — added as Section (e) in intro file |
-| N4 | Review and finalise Master Activity Menu | Current version is Draft 1. Review, revise, and sign off before unit planning begins. | ✅ Done |
-| N5 | Build unit structural profiles (planning table) | Using the finalised activity menu, assign a structural profile to each of the 23 units — module by module. This is the master blueprint for all drafting. | ✅ Done — all 23 units profiled |
-| N6 | Split content into module files | Once planning is complete, divide `admin-writing-adv-all.md` into one file per module (approx. 5 files). These become the working documents for editing. | ✅ Done — Modules 1–6 exist as separate files |
+| N1 | Fix level label in introduction | Change "Upper-Intermediate Writing Textbook" in Section (a) to language consistent with the Advanced / B2–B2+ descriptor. One-line fix but important for internal consistency. | ⬜ To do |
+| N2 | Check encoding in introduction files | The unit file (`admin-writing-adv-all.md`) is now clean. The two introduction files (`int_writing_text_intro.md` and `adv_writing_text_intro.md`) have not yet been verified in their latest versions. Check and correct encoding artifacts. | ⬜ To do |
+| N3 | Write *How to Use This Book* section | Must establish: (a) the dual-framing convention for group vs. self-study activities, (b) notation system for activity types, (c) how to use the peer review sections independently. | ⬜ To do |
+| N4 | Review and finalise Master Activity Menu | Current version is Draft 1. Review, revise, and sign off before unit planning begins. | 🔄 In progress |
+| N5 | Build unit structural profiles (planning table) | Using the finalised activity menu, assign a structural profile to each of the 23 units — module by module. This is the master blueprint for all drafting. | ⬜ To do — depends on N4 |
+| N6 | Split content into module files | Once planning is complete, divide `admin-writing-adv-all.md` into one file per module (approx. 5 files). These become the working documents for editing. | ⬜ To do — depends on N5 |
 | N7 | Ongoing: unit-level issue checking | As each unit is drafted or edited, continuously check and correct: duplicate model texts, thin practice items, inconsistent instructions, scenario repetition, etc. This is a standing task throughout the project. | 🔄 Ongoing |
 
 ---

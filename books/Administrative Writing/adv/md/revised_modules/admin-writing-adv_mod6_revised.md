@@ -46,6 +46,17 @@ Read the following extract from an internal policy circular.
 
 ---
 
+**Writing task:** Using only the information in the extract above, write a plain-language version of this policy requirement for a general staff audience. Your version should:
+
+- state what is changing and when
+- explain why the change is being made
+- describe what staff in affected offices are required to do
+- avoid all technical references (circular numbers, article codes) unless you explain them in plain terms
+
+Aim for 60–80 words. You will compare your version with the model text in the next activity.
+
+---
+
 #### Compare the Versions
 
 **Original (Too Technical)**
@@ -597,6 +608,29 @@ Discuss: Why does a predictable report structure help readers process informatio
 
 ---
 
+#### B7. Data Interpretation Input
+
+The table below shows status update data submitted by five offices following the distribution of Circular 2024/09.
+
+| Office | Briefing completed | Updated form in use | Outstanding queries submitted | Implementation status |
+|---|---|---|---|---|
+| Office A | Yes | Yes | 2 | On track |
+| Office B | Yes | No | 4 | Delayed |
+| Office C | No | No | 7 | Not started |
+| Office D | Yes | Yes | 0 | On track |
+| Office E | Yes | Yes | 1 | On track |
+
+**Writing task:** Using the data above, write the *Issues Identified* and *Outstanding Questions* sections of a consolidated administrative report. Your writing should:
+
+- group offices by implementation status (do not list them one by one)
+- identify the main concern(s) and how widespread they are
+- summarise the outstanding queries as a pattern, not a count
+- use the five-section report format from Section B as your structural guide
+
+Write in formal, complete sentences. Aim for 60–80 words across both sections combined.
+
+---
+
 ### C. Language Focus
 
 #### 1. Writing a Summary Opening
@@ -620,6 +654,7 @@ Write an appropriate opening sentence for each situation.
 1. A report consolidating feedback from three regional offices on a new procedural requirement
 2. A quarterly update summarising progress on six action points from the previous coordination meeting
 3. A report on implementation issues submitted by four partner offices following a system update
+4. A status report drawing on input from five offices regarding compliance with revised interagency communication standards
 
 ---
 
@@ -746,6 +781,7 @@ Choose one scenario:
 1. Implementation status of revised applicant communication guidelines across four partner offices
 2. Progress on action points from the previous interagency coordination meeting, as reported by five units
 3. Summary of feedback received on a proposed new interagency data-sharing protocol
+4. Write a consolidated administrative report summarising implementation feedback received from three JPO regional examination teams following the rollout of updated Patent Cooperation Treaty processing procedures. Team A has completed the transition and reports no significant issues. Team B has encountered difficulties because the updated procedures require a verification step that their current database system does not support. Team C has raised a question about how the new procedures apply to filings that were already in progress at the time of the rollout; this question has not yet been formally answered.
 
 **Part A:** Write the Summary and Issues Identified sections (approximately 80–100 words combined).
 
@@ -754,6 +790,16 @@ Choose one scenario:
 **Part C:** Write the Next Steps section and a one-sentence closing statement (approximately 40–50 words).
 
 Your complete report should total approximately **250–300 words**. Use the five-section format. Maintain formal, neutral tone throughout.
+
+Your report must include:
+- summary / overview
+- grouped issues identified
+- actions taken to date
+- outstanding questions
+- next steps
+- formal tone
+
+**Word count: 220–260 words**
 
 ---
 
@@ -808,6 +854,7 @@ Write a **270–310 word** consolidated administrative report on one of the foll
 1. Implementation updates from four offices following the introduction of a new interagency communication standard
 2. Progress reports on five outstanding action points from a coordination meeting held six weeks ago
 3. Feedback from three offices on a proposed revision to the applicant processing timeline
+4. Write a 250–300 word consolidated administrative report for an internal or interagency audience. Suggested context: a summary of feedback from multiple JPO teams or partner offices following a procedural update related to international examination or PCT processing. Include: summary, grouped issues, actions taken, outstanding questions, next steps, and professional tone.
 
 Your report must use the five-section format (Summary / Issues Identified / Actions Taken / Outstanding Questions / Next Steps) and maintain a formal, neutral tone throughout.
 

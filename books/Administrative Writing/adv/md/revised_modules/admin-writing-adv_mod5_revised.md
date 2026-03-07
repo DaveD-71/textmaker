@@ -382,6 +382,7 @@ Write a **200–240 word** executive brief. Choose one scenario:
 1. A procedural change has been proposed that would affect how applicant files are assessed across three offices. Senior management must approve the change before it can be implemented.
 2. An ongoing coordination challenge between two partner agencies is causing inconsistent outcomes for applicants. A decision is needed on how to proceed.
 3. A new interagency data-sharing system has been piloted for six weeks. Early results are mixed, and a decision on full rollout is required.
+4. Draft an executive brief for a senior JPO official who is attending a bilateral coordination meeting with the USPTO next week. The meeting will address a pending issue regarding the handling of divisional applications submitted under the Patent Cooperation Treaty. The key problem is that the two offices are currently applying different procedural interpretations to the same type of filing, which has resulted in inconsistent outcomes for applicants. A working-level proposal for harmonisation has been prepared but has not yet been reviewed at senior level. The official needs to understand the issue, its implications, and the proposed next steps before the meeting.
 
 Your brief must include:
 - overview
@@ -443,6 +444,8 @@ Write a **200–240 word** executive brief summarising a complex administrative 
 - implications
 - recommendation
 - neutral, concise, formal tone
+
+4. Write a 200–240 word executive brief summarising a coordination issue between the JPO and a foreign IP office (USPTO, EPO, or WIPO). A senior official needs the brief before an international meeting or decision point. Your brief must include: overview, key points, implications, recommendation, and neutral, concise, formal tone.
 
 ---
 ---

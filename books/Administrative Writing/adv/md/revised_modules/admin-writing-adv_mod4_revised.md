@@ -197,6 +197,17 @@ Write a formal external inquiry to the partner office. Your inquiry must include
 - diplomatic softening throughout
 - a timeline or next-step reference
 
+*Alternatively, use the following scenario:*
+
+4. You are a coordination officer at the JPO International Affairs Division. Three weeks ago, your office submitted a formal request for information to the USPTO International Affairs Division regarding the examination results for a trilateral filing. The request included a specific reference number and asked for confirmation of the current processing status and expected timeline. No response has been received, and your office's internal reporting deadline is approaching.
+
+Write a formal external inquiry to the USPTO. Your inquiry must include:
+- your role and office (stated or implied in the opening)
+- background context including the original request date and reference information
+- two to three clear, answerable questions
+- diplomatic softening throughout
+- a timeline or next-step reference
+
 **Word count: 160–200 words**
 
 ---
@@ -266,6 +277,13 @@ Write a **220–250 word** external inquiry to an interagency or international p
 - diplomatic softening throughout
 - a timeline or next-step reference
 - formal administrative tone
+
+4. Write a 220–250 word external inquiry to a counterpart office at the USPTO, EPO, or WIPO. Your office submitted documents or a request for information several weeks ago and has not yet received a response. Include:
+- background context and relevant reference information
+- two to three clear, specific questions
+- diplomatic softening throughout
+- a timeline or next-step reference
+- formal administrative tone appropriate for trilateral or international IP office correspondence
 
 ---
 
@@ -431,15 +449,13 @@ Choose one of the following scenarios and write a risk and impact assessment.
 1. A new procedural update is being rolled out across four regional offices simultaneously.
 2. An interagency guideline has been revised but not yet distributed to all partner organisations.
 3. A key staff member responsible for applicant communication has left without a formal handover.
+4. The JPO is transitioning to a new international search report filing system that will be used for submissions to the USPTO and EPO under the Patent Cooperation Treaty. The new system is due to go live in six weeks. However, compatibility testing with the USPTO's receiving platform has not yet been completed, and three of the JPO's regional examination teams have not yet received system training. A decision is needed on whether to proceed with the planned launch date or request a short extension.
 
-Your assessment must include:
-
-- 2–3 clearly identified risks
+Write a risk and impact assessment for internal circulation. Your assessment must include:
+- two to three clearly identified risks
 - causes and impacts for each
 - mitigation proposals
 - analytical, objective tone
-
-**Word count: 180–220 words**
 
 ---
 
@@ -505,6 +521,12 @@ Risk and impact writing relies heavily on conditional and hedging language to ex
 Write a **200–240 word** risk and impact assessment describing a procedural or operational issue in an administrative context. Include:
 
 - 2–3 clearly identified risks
+- causes and impacts for each
+- mitigation proposals
+- neutral, analytical tone
+
+4. Write a 200–240 word risk and impact assessment describing a procedural or operational issue related to international IP office coordination — for example, a system update, a procedural change, or a transition to new documentation standards. Include:
+- two to three clearly identified risks
 - causes and impacts for each
 - mitigation proposals
 - neutral, analytical tone
@@ -851,6 +873,7 @@ Expand each bare sentence into 2–3 sentences that include a policy reference, 
 1. *The term should be changed.*
 2. *We should revise the communication process.*
 3. *The timeline needs to be updated.*
+4. *A new verification step has been introduced.*
 
 ---
 
@@ -890,16 +913,14 @@ Choose one scenario and write a policy-aligned rationale.
 1. Revising an interagency coordination process that has caused recurring delays
 2. Updating a guideline or standard form following a policy change
 3. Introducing a new quality-check step into an existing submission workflow
+4. Your office is proposing the adoption of a standardised terminology framework for use in trilateral examination reports shared between the JPO, USPTO, and EPO. The proposal has been drafted at working level but now requires a formal policy-aligned rationale before it can be submitted for senior approval. The current situation — where each office uses its own terminology conventions — has led to misunderstandings during joint review sessions and required additional clarification exchanges. The proposed framework is consistent with the terminology standards recommended in the most recent WIPO coordination guidelines.
 
-Your rationale must include:
-
+Write a policy-aligned rationale of 180–220 words. Your rationale must include:
 - a clear recommendation
-- alignment with existing policy or guidelines
+- alignment with existing policy or guidelines (reference the WIPO guidelines or equivalent)
 - objective reasoning and evidence of the problem
 - benefits of the proposed change
 - neutral, formal tone
-
-**Word count: 180–220 words**
 
 ---
 
@@ -962,6 +983,13 @@ For each decision: state whether you accept or reject the change, and explain in
 
 Write a **220–260 word** policy-aligned rationale supporting an administrative or procedural change. Include:
 
+- a clear recommendation
+- a reference to a specific policy, guideline, or organisational objective
+- objective reasoning
+- expected benefits
+- formal, neutral tone
+
+4. Write a 220–260 word policy-aligned rationale supporting an administrative or procedural change relevant to international IP office coordination — for example, adopting a shared terminology standard, revising a joint procedural guideline, or introducing a new coordination step before trilateral document submission. Include:
 - a clear recommendation
 - a reference to a specific policy, guideline, or organisational objective
 - objective reasoning
