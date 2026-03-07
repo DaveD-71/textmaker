@@ -457,6 +457,8 @@ Write a risk and impact assessment for internal circulation. Your assessment mus
 - mitigation proposals
 - analytical, objective tone
 
+**Word count: 180–220 words**
+
 ---
 
 ### F. Review & Self-Assessment
@@ -518,7 +520,7 @@ Risk and impact writing relies heavily on conditional and hedging language to ex
 
 #### H3 — Homework Writing Task
 
-Write a **200–240 word** risk and impact assessment describing a procedural or operational issue in an administrative context. Include:
+Write a **220–260 word** risk and impact assessment describing a procedural or operational issue in an administrative context. Include:
 
 - 2–3 clearly identified risks
 - causes and impacts for each
