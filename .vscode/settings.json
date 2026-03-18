@@ -4,7 +4,10 @@
   "files.autoGuessEncoding": false,
   "files.enableTrash": true,
   "files.autoSave": "afterDelay",
-  "security.allowedUNCHosts": ["prod-fs-gen01", "prod-fs-sec01"],
+  "security.allowedUNCHosts": [
+    "prod-fs-gen01",
+    "prod-fs-sec01"
+  ],
   "editor.formatOnSave": true,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -16,8 +19,8 @@
   "editor.stickyScroll.enabled": false,
   "git.enableSmartCommit": true,
   "chat.mcp.gallery.enabled": true,
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Default Light Modern",
+  "editor.minimap.enabled": true,
+  "workbench.colorTheme": "Visual Studio Dark",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "pdf.preview",
