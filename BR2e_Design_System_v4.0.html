@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Result 2e — Publisher Design System v3.0</title>
+<title>Business Result 2e — Publisher Design System v4.0</title>
 <style>
 :root {
   /* ── Confirmed exact CMYK→RGB values from native vector PDF ── */
@@ -51,7 +51,7 @@ a:hover{text-decoration:underline}
 
 /* ── COVER ── */
 .sg-cover{background:var(--vp-dark);color:#fff;padding:40px 52px 36px;border-top:6px solid var(--teal);margin-bottom:40px;position:relative}
-.sg-cover::after{content:'v3.5 — complete font inventory';position:absolute;top:16px;right:24px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--teal);color:#fff;padding:3px 10px}
+.sg-cover::after{content:'v4.0';position:absolute;top:16px;right:24px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--teal);color:#fff;padding:3px 10px}
 .sg-cover-eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#7AAFB2;margin-bottom:10px}
 .sg-cover h1{font-size:30px;font-weight:400;line-height:1.2;margin-bottom:6px;font-family:var(--font-sans)}
 .sg-cover h1 strong{font-weight:700}
@@ -314,7 +314,7 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
 <section class="sg-section" id="s1">
   <div class="sg-section-hdr"><div class="sg-section-num">01</div><h2>Page Dimensions &amp; Grid</h2></div>
 
-  <div class="notice blue">The OUP sample PDF wraps each book page inside a larger A4 (210×297mm) promotional document with a black border. The actual book page content area — confirmed from the position of the white background rectangle in the vector data — is <strong>174.6 × 247mm</strong>, which corresponds to a standard ELT trim size of approximately <strong>175 × 250mm</strong>. This corrects the earlier incorrect identification of A4.</div>
+  <div class="notice blue">The OUP sample PDF wraps each book page inside a larger A4 (210×297mm) promotional document with a black border. The actual book page content area — confirmed from the position of the white background rectangle in the vector data — is <strong>174.6 × 247.0mm</strong>, which corresponds to a standard ELT trim size of approximately <strong>174.6 × 247.0mm</strong>. This corrects the earlier incorrect identification of A4.</div>
 
   <div class="sg-sub">
     <h3>Page Geometry</h3>
@@ -331,7 +331,7 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
       <tr><td class="lbl">Starting Point box height</td><td class="val">126.40mm</td><td class="val">51.17% H</td><td class="src-v">VECTOR</td><td class="note">y=109.0–235.4mm</td></tr>
       <tr><td class="lbl">Sidebar (Key Expr) width</td><td class="val">48.20mm</td><td class="val">27.61% W</td><td class="src-v">VECTOR</td><td class="note">Always on gutter side; same column as Language Point box</td></tr>
       <tr><td class="lbl">Sidebar internal left padding</td><td class="val">9.90mm</td><td class="val">5.67% W</td><td class="src-v">VECTOR</td><td class="note">All sidebar text starts at 9.9mm from box left edge</td></tr>
-      <tr><td class="lbl">Section heading y from content top</td><td class="val">16.50mm</td><td class="val">6.68% H</td><td class="src-v">VECTOR</td><td class="note">Consistent across all interior pages</td></tr>
+      <tr><td class="lbl">Section heading y from content top</td><td class="val">16.50mm</td><td class="val">6.68% from top</td><td class="src-v">VECTOR</td><td class="note">Consistent across all interior pages</td></tr>
       <tr><td class="lbl">Outer margin</td><td class="val">~10.00mm</td><td class="val">~5.73% W</td><td class="src-v">VECTOR</td><td class="note">Away from gutter side</td></tr>
       <tr><td class="lbl">Inner gutter margin (verso)</td><td class="val">35.40mm</td><td class="val">20.27% W</td><td class="src-v">VECTOR</td><td class="note">Gap before sidebar on verso pages — reserved for binding</td></tr>
     </table>
@@ -370,16 +370,16 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
           <h4>Measured structure</h4>
           <div class="pg-leg-item"><div class="pg-leg-sw" style="background:var(--hdr-band)"></div>Running header band (22.1mm)</div>
           <div class="pg-leg-item"><div class="pg-leg-sw" style="background:#C8D8E8"></div>Photo bleed (0–44.5mm)</div>
-          <div class="pg-leg-item"><div class="pg-leg-sw" style="background:var(--vp-dark)"></div>Unit number block (38.3×68.6mm)</div>
+          <div class="pg-leg-item"><div class="pg-leg-sw" style="background:var(--vp-dark)"></div>Unit number block (38.3×68.7mm)</div>
           <div class="pg-leg-item"><div class="pg-leg-sw" style="background:var(--int)"></div>2mm accent stripe (left of unit num)</div>
           <div class="pg-leg-item"><div class="pg-leg-sw" style="background:var(--blue-lt);border-top:2px solid var(--teal)"></div>Starting Point sidebar (107×126mm)</div>
         </div>
         <div class="pg-dims">
-          Content area: 174.6 × 247mm<br>
+          Content area: 174.6 × 247.0mm<br>
           Photo bleed:  0–44.5mm from top<br>
           Header band:  40.3–62.4mm (22.1mm)<br>
           Unit num blk: 9.9–48.2mm wide<br>
-                        40.3–109mm tall (68.6mm)<br>
+                        40.3–109mm tall (68.7mm)<br>
           Accent stripe: 2mm wide, left edge<br>
           Sidebar start: x=53.2mm, y=109mm
         </div>
@@ -451,16 +451,16 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
       <tr><td class="lbl">Viewpoint "Viewpoint N" (bold)</td><td>NewsGothicMTStd-<strong>Bold</strong></td><td class="val">24.12pt</td><td>#FFFFFF on #3C4C4C</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Viewpoint topic text (regular)</td><td>NewsGothicMTStd (regular)</td><td class="val">24.12pt</td><td>#FFFFFF on #3C4C4C</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Viewpoint pipe separator "|"</td><td>NewsGothicMTStd (regular)</td><td class="val">24.12pt</td><td>#FFA526 (amber)</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point title</td><td>CaeciliaLTStd-Bold</td><td class="val">17.5pt</td><td>#CC0051</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Section header (WwW | Topic)</td><td>NewsGothicMTStd-Bold</td><td class="val">11.6pt</td><td>#0097B2</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Running header unit name</td><td>NewsGothicMTStd-Bold</td><td class="val">10.8pt</td><td>#FFFFFF</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point title</td><td>CaeciliaLTStd-Bold</td><td class="val">17.46pt</td><td>#CC0051</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Section header (WwW | Topic)</td><td>NewsGothicMTStd-Bold</td><td class="val">11.64pt</td><td>#0097B2</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Running header unit name</td><td>NewsGothicMTStd-Bold</td><td class="val">10.81pt</td><td>#FFFFFF</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Activity numbers</td><td>NewsGothicMTStd-Bold</td><td class="val">10.4pt</td><td>#3C4C4C</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Tip label / Key Expr title</td><td>NewsGothicMTStd-Bold</td><td class="val">9.1pt</td><td>#0097B2</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Crossref / Practice file</td><td>NewsGothicMTStd-Bold</td><td class="val">8.7pt</td><td>#CC0051</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Tip label / Key Expr title</td><td>NewsGothicMTStd-Bold</td><td class="val">9.15pt</td><td>#0097B2</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Crossref / Practice file</td><td>NewsGothicMTStd-Bold</td><td class="val">8.73pt</td><td>#CC0051</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Body text (reading)</td><td>PalatinoLTStd-Roman</td><td class="val">7.9pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Activity instructions</td><td>PalatinoLTStd-Medium</td><td class="val">8.1pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Key expressions lines</td><td>NewsGothicMTStd</td><td class="val">7.1pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point body</td><td>CaeciliaLTStd-Roman</td><td class="val">7.5pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Activity instructions</td><td>PalatinoLTStd-Medium</td><td class="val">8.11pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Key expressions lines</td><td>NewsGothicMTStd</td><td class="val">7.07pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point body</td><td>CaeciliaLTStd-Roman</td><td class="val">7.48pt</td><td>#000000</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Language Point header</td><td>NewsGothicMTStd-Bold</td><td class="val">7.9pt</td><td>#536666</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Page number</td><td>TheSerifBold-Plain</td><td class="val">14pt</td><td>#FFFFFF (in band)</td><td class="src-v">VECTOR</td></tr>
       <tr><td colspan="5" style="background:#F0F4F8;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#555;padding:6px 12px;">Contents Table — additional sizes</td></tr>
@@ -503,17 +503,17 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
 
     <div class="type-row">
       <div><div class="t-tp-title">Upside down management</div></div>
-      <div class="type-meta"><strong>T3 · Talking Point Title</strong>CaeciliaLTStd-Bold · 17.5pt · #CC0051<code>font: 700 17.5px 'Rokkitt', 'PMN Caecilia', Rockwell, serif; color:#CC0051;</code><span class="src-badge src-v">● VECTOR — confirmed Caecilia slab serif</span></div>
+      <div class="type-meta"><strong>T3 · Talking Point Title</strong>CaeciliaLTStd-Bold · 17.46pt · #CC0051<code>font: 700 17.5px 'Rokkitt', 'PMN Caecilia', Rockwell, serif; color:#CC0051;</code><span class="src-badge src-v">● VECTOR — confirmed Caecilia slab serif</span></div>
     </div>
 
     <div class="type-row">
       <div><div class="t-section-head">Working with words<span class="pipe"> | </span><span class="topic">Customer service</span></div><div class="c-section-rule" style="height:3.9px;background:var(--teal);margin-top:4px;"></div></div>
-      <div class="type-meta"><strong>T4 · Section Header</strong>NewsGothicMTStd-Bold · 11.6pt · #0097B2 · underline rule 3.9pt<code>font: 700 11.6px 'Barlow Condensed', 'News Gothic MT'; color:#0097B2;</code><span class="src-badge src-v">● VECTOR</span></div>
+      <div class="type-meta"><strong>T4 · Section Header</strong>NewsGothicMTStd-Bold · 11.64pt · #0097B2 · underline rule 3.9pt<code>font: 700 11.6px 'Barlow Condensed', 'News Gothic MT'; color:#0097B2;</code><span class="src-badge src-v">● VECTOR</span></div>
     </div>
 
     <div class="type-row">
       <div><span class="t-activity-num">1 </span><span class="t-activity-instr">Read this quote. How true is it for your type of business?</span></div>
-      <div class="type-meta"><strong>T5 · Activity Number + Instruction</strong>Number: News Gothic Bold 10.4pt #3C4C4C · Instruction: Palatino Medium 8.1pt black<code>num: font:700 10.4px NewsGothic; color:#3C4C4C;</code><span class="src-badge src-v">● VECTOR</span></div>
+      <div class="type-meta"><strong>T5 · Activity Number + Instruction</strong>Number: News Gothic Bold 10.4pt #3C4C4C · Instruction: Palatino Medium 8.11pt black<code>num: font:700 10.4px NewsGothic; color:#3C4C4C;</code><span class="src-badge src-v">● VECTOR</span></div>
     </div>
 
     <div class="type-row">
@@ -523,7 +523,7 @@ pre{background:#1A1A2A;color:#D0D8E8;padding:16px 18px;font-size:10.5px;font-fam
 
     <div class="type-row">
       <div><div class="t-crossref">For more exercises, go to <strong>Practice file 5</strong> on page 114.</div></div>
-      <div class="type-meta"><strong>T7 · Cross-reference</strong>NewsGothicMTStd-Bold · 8.7pt · #CC0051 · ❯❯ Zapf Dingbats<code>font: 700 8.7px NewsGothic; color:#CC0051;</code><span class="src-badge src-v">● VECTOR</span></div>
+      <div class="type-meta"><strong>T7 · Cross-reference</strong>NewsGothicMTStd-Bold · 8.73pt · #CC0051 · ❯❯ Zapf Dingbats<code>font: 700 8.7px NewsGothic; color:#CC0051;</code><span class="src-badge src-v">● VECTOR</span></div>
     </div>
 
     <div class="type-row">
@@ -649,7 +649,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="swatch"><div class="swatch-color" style="background:#5C4A85"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Starter</span><span class="swatch-hex">#5C4A85 · C70 M80 Y0 K10</span></div></div>
         <div class="swatch"><div class="swatch-color" style="background:#BF5E3B"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Elementary</span><span class="swatch-hex">#BF5E3B · C0 M80 Y100 K10</span></div></div>
         <div class="swatch"><div class="swatch-color" style="background:#3C7964"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Pre-intermediate</span><span class="swatch-hex">#3C7964 · C90 M20 Y70 K20</span></div></div>
-        <div class="swatch"><div class="swatch-color" style="background:#D1A624"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Intermediate</span><span class="swatch-hex">#D1A624 (screen) · #CEAA00 (naive) · C15 M30 Y100 K5</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#D1A624"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Intermediate</span><span class="swatch-hex">#D1A624 · C15 M30 Y100 K5</span></div></div>
         <div class="swatch"><div class="swatch-color" style="background:#458B99"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Upper-intermediate</span><span class="swatch-hex">#458B99 · C100 M0 Y30 K20</span></div></div>
         <div class="swatch"><div class="swatch-color" style="background:#973478"><span class="badge-v">VECTOR</span></div><div class="swatch-info"><span class="swatch-name">Advanced</span><span class="swatch-hex">#973478 · C35 M100 Y15 K0</span></div></div>
       </div>
@@ -769,7 +769,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="c-unit-title-block"><div class="c-unit-title">Customers</div><div class="c-running-sub">Business Result Intermediate · Unit 5</div></div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Header band bg:</strong> #6C7F7F (C15 M0 Y0 K50). <strong>Unit number block bg:</strong> #3C4C4C. <strong>Accent stripe:</strong> 2mm wide, level colour (#D1A624 for Intermediate). <strong>Unit number:</strong> News Gothic Bold 34pt white. <strong>Title:</strong> News Gothic Bold 26pt white. <strong>Band height:</strong> 22.1mm (measured from vector). Full page-width bleed.</div>
+    <div class="sg-comp-notes"><strong>Header band bg:</strong> #6C7F7F (C15 M0 Y0 K50). <strong>Unit number block bg:</strong> #3C4C4C. <strong>Accent stripe:</strong> 2mm wide, level colour (#D1A624 for Intermediate). <strong>Unit number:</strong> News Gothic Bold 34.10pt white. <strong>Title:</strong> News Gothic Bold 26pt white. <strong>Band height:</strong> 22.1mm (measured from vector). Full page-width bleed.</div>
   </div>
 
   <div class="sg-comp">
@@ -780,7 +780,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <span class="title">Unit 5 | Customers</span>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Bg:</strong> #6C7F7F. <strong>Text:</strong> News Gothic MT 10.8pt white. "Unit N" bold. Page number in a separate TheSerifBold band/tab, 14pt white.</div>
+    <div class="sg-comp-notes"><strong>Bg:</strong> #6C7F7F. <strong>Text:</strong> News Gothic MT 10.81pt white. "Unit N" bold. Page number in a separate TheSerifBold band/tab, 14pt white.</div>
   </div>
 
   <div class="sg-comp">
@@ -791,7 +791,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="c-section-rule"></div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Text:</strong> News Gothic Bold 11.6pt #0097B2. Bold label + " | " + regular italic topic. <strong>Rule:</strong> 3.9pt solid #0097B2 (confirmed from line width in vector data). Full column width. 8pt space below.</div>
+    <div class="sg-comp-notes"><strong>Text:</strong> News Gothic Bold 11.64pt #0097B2. Bold label + " | " + regular italic topic. <strong>Rule:</strong> 3.9pt solid #0097B2 (confirmed from line width in vector data). Full column width. 8pt space below.</div>
   </div>
 
   <div class="sg-comp">
@@ -802,7 +802,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <li class="c-act-item"><span class="c-act-n">3</span><div class="c-act-body"><strong>Read</strong> the article again. What do these numbers refer to?</div></li>
       </ul>
     </div>
-    <div class="sg-comp-notes"><strong>Number:</strong> News Gothic Bold 10.4pt #3C4C4C. <strong>Instruction:</strong> Palatino Medium 8.1pt. <strong>Task verb:</strong> bold (Palatino Bold or Medium). <strong>Sub-items (a,b,c):</strong> Palatino 7.9pt, indent 6mm, alpha in News Gothic.</div>
+    <div class="sg-comp-notes"><strong>Number:</strong> News Gothic Bold 10.4pt #3C4C4C. <strong>Instruction:</strong> Palatino Medium 8.11pt. <strong>Task verb:</strong> bold (Palatino Bold or Medium). <strong>Sub-items (a,b,c):</strong> Palatino 7.9pt, indent 6mm, alpha in News Gothic.</div>
   </div>
 
   <div class="sg-comp">
@@ -819,7 +819,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="c-key-line">Does … suit you?</div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Bg:</strong> #DEF3F7 (C10 M1 Y0 K3). <strong>Title:</strong> News Gothic Bold 9.1pt #0097B2. <strong>Category labels:</strong> News Gothic Bold 7.9pt #3C4C4C, all-caps, letter-spaced. <strong>Expression lines:</strong> News Gothic Regular 7.1pt #000. Padding: 12pt. Category gap: 7pt top.</div>
+    <div class="sg-comp-notes"><strong>Bg:</strong> #DEF3F7 (C10 M1 Y0 K3). <strong>Title:</strong> News Gothic Bold 9.15pt #0097B2. <strong>Category labels:</strong> News Gothic Bold 7.9pt #3C4C4C, all-caps, letter-spaced. <strong>Expression lines:</strong> News Gothic Regular 7.07pt #000. Padding: 12pt. Category gap: 7pt top.</div>
   </div>
 
   <div class="sg-comp">
@@ -833,7 +833,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         </div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Border:</strong> 0.8pt solid #A2DDE8. <strong>Header bg:</strong> #BFE8EF. <strong>Header text:</strong> News Gothic Bold 7.9pt #536666 (C19 M0 Y0 K60). <strong>Body:</strong> Palatino 8.1pt. Grammar terms bold + italic Palatino. No solid amber border — this level uses blue, not amber.</div>
+    <div class="sg-comp-notes"><strong>Border:</strong> 0.8pt solid #A2DDE8. <strong>Header bg:</strong> #BFE8EF. <strong>Header text:</strong> News Gothic Bold 7.9pt #536666 (C19 M0 Y0 K60). <strong>Body:</strong> Palatino 8.11pt. Grammar terms bold + italic Palatino. No solid amber border — this level uses blue, not amber.</div>
   </div>
 
   <div class="sg-comp">
@@ -844,7 +844,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="c-tip-body">Verbs used to talk about states (e.g. <em>understand, know, like, mean, need</em>) are not usually used in the present continuous.</div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Top rule:</strong> 3.9pt solid #0097B2 (level teal — or level accent for other levels). <strong>Label:</strong> News Gothic Bold 9.1pt #0097B2. <strong>Body:</strong> Palatino 7.9pt black. White bg. No other borders.</div>
+    <div class="sg-comp-notes"><strong>Top rule:</strong> 3.9pt solid #0097B2 (level teal — or level accent for other levels). <strong>Label:</strong> News Gothic Bold 9.15pt #0097B2. <strong>Body:</strong> Palatino 7.9pt black. White bg. No other borders.</div>
   </div>
 
   <div class="sg-comp">
@@ -852,7 +852,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <div class="sg-comp-demo">
       <div><span class="c-tp-lbl">Talking Point</span><div class="c-tp-title">Upside down management</div><div class="c-tp-body"><p>Timpson is a family business with a £150 million plus turnover. Timpson shops offer a variety of services including shoe repair and key cutting…</p><div class="c-tp-sub">Discussion</div><p>1 Why do you think 'upside down management' has been successful at Timpson?</p><div class="c-tp-sub">Task</div><p>1 Work in groups of four. Imagine your company is thinking of introducing 'upside down management'…</p></div></div>
     </div>
-    <div class="sg-comp-notes"><strong>"Talking Point" label:</strong> News Gothic Bold 8.7pt white on #FFA526. <strong>Title:</strong> CaeciliaLTStd-Bold 17.5pt #CC0051 — a slab serif, NOT Helvetica or Palatino. <strong>Body:</strong> CaeciliaLTStd-Roman 7.5pt. <strong>Discussion/Task sub-heads:</strong> News Gothic Bold 10.4pt #FFA526.</div>
+    <div class="sg-comp-notes"><strong>"Talking Point" label:</strong> News Gothic Bold 8.73pt white on #FFA526. <strong>Title:</strong> CaeciliaLTStd-Bold 17.46pt #CC0051 — a slab serif, NOT Helvetica or Palatino. <strong>Body:</strong> CaeciliaLTStd-Roman 7.48pt. <strong>Discussion/Task sub-heads:</strong> News Gothic Bold 10.4pt #FFA526.</div>
   </div>
 
   <div class="sg-comp">
@@ -860,7 +860,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <div class="sg-comp-demo">
       <div class="c-crossref"><span class="c-crossref-arr">❯❯</span>For more exercises, go to <strong>Practice file 5</strong> on page 114.</div>
     </div>
-    <div class="sg-comp-notes"><strong>❯❯ arrows:</strong> ZapfDingbatsStd 10pt #CC0051. <strong>Text:</strong> News Gothic Bold 8.7pt #CC0051. File name bold. Top border 0.8pt #A2B2B2. Note: colour is crimson #CC0051, not blue as previously stated.</div>
+    <div class="sg-comp-notes"><strong>❯❯ arrows:</strong> ZapfDingbatsStd 10pt #CC0051. <strong>Text:</strong> News Gothic Bold 8.73pt #CC0051. File name bold. Top border 0.8pt #A2B2B2. Note: colour is crimson #CC0051, not blue as previously stated.</div>
   </div>
 
   <div class="sg-comp">
@@ -873,7 +873,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
         <div class="c-start-q"><span class="c-start-qn">3</span>What percentage of your company's business is online?</div>
       </div>
     </div>
-    <div class="sg-comp-notes"><strong>Bg:</strong> #DEF3F7. <strong>Top rule:</strong> 3.9pt #0097B2. <strong>Label:</strong> News Gothic Bold 11.6pt #0097B2. <strong>Questions:</strong> Palatino 7.9pt black, numbered. Sits in lower-right of unit opening page (107.3×126.4mm, content-relative x=53.2–160.5mm, y=109–235mm). Note: this is a wide information box on the opening page, not the narrow Key Expressions sidebar (which is 48.2mm wide).</div>
+    <div class="sg-comp-notes"><strong>Bg:</strong> #DEF3F7. <strong>Top rule:</strong> 3.9pt #0097B2. <strong>Label:</strong> News Gothic Bold 11.64pt #0097B2. <strong>Questions:</strong> Palatino 7.9pt black, numbered. Sits in lower-right of unit opening page (107.3×126.4mm, content-relative x=53.2–160.5mm, y=109–235mm). Note: this is a wide information box on the opening page, not the narrow Key Expressions sidebar (which is 48.2mm wide).</div>
   </div>
 
   <div class="sg-comp">
@@ -922,10 +922,10 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <table class="sg-table">
       <tr><th>Context</th><th>mm</th><th>% of H</th><th>pt</th><th>Source</th></tr>
       <tr><td class="lbl">Body reading text (Palatino 7.9pt)</td><td class="val">4.37mm</td><td class="val">1.77%</td><td class="val">12.4pt</td><td class="src-v">VECTOR — measured from consecutive line y-positions</td></tr>
-      <tr><td class="lbl">Activity instructions (Palatino Medium 8.1pt)</td><td class="val">3.50mm</td><td class="val">1.42%</td><td class="val">9.9pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point body (Caecilia 7.5pt)</td><td class="val">3.75mm</td><td class="val">1.52%</td><td class="val">10.6pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Key Expressions lines (News Gothic 7.1pt)</td><td class="val">3.25mm</td><td class="val">1.32%</td><td class="val">9.2pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Running header text (News Gothic 10.8pt)</td><td colspan="2">Centred in 11.6mm band</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Activity instructions (Palatino Medium 8.11pt)</td><td class="val">3.50mm</td><td class="val">1.42%</td><td class="val">9.9pt</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point body (Caecilia 7.48pt)</td><td class="val">3.75mm</td><td class="val">1.52%</td><td class="val">10.6pt</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Key Expressions lines (News Gothic 7.07pt)</td><td class="val">3.25mm</td><td class="val">1.32%</td><td class="val">9.2pt</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Running header text (News Gothic 10.81pt)</td><td colspan="2">Centred in 11.6mm band</td><td class="src-v">VECTOR</td></tr>
     </table>
     <div class="notice amber" style="margin-top:8px;">No extra paragraph spacing is used in body or reading text — the leading alone carries the vertical rhythm. Paragraph breaks are only implied by activity numbering.</div>
   </div>
@@ -935,14 +935,14 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <table class="sg-table">
       <tr><th>From → To</th><th>mm</th><th>% of H</th><th>pt</th><th>Source</th></tr>
       <tr><td class="lbl">Running header bottom → Section heading</td><td class="val">4.9mm</td><td class="val">1.98%</td><td class="val">13.9pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Section heading → Activity 1 number</td><td class="val">2.7–8.3mm</td><td class="val">7.7–23.5pt</td><td class="note src-v">VECTOR — varies by section; larger gaps where photo or schedule precedes</td></tr>
+      <tr><td class="lbl">Section heading → Activity 1 number</td><td class="val">2.7–8.3mm</td><td class="val">1.08–3.37%</td><td class="val">7.7–23.5pt</td><td class="src-v">VECTOR — varies by section; larger gaps where photo or schedule precedes</td></tr>
       <tr><td class="lbl">Between consecutive activity items</td><td class="val">1.9–2.2mm</td><td class="val">0.78–0.88%</td><td class="val">5.4–6.2pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Activity instruction → continuation line</td><td class="val">0.6–0.9mm</td><td class="val">1.7–2.5pt</td><td class="note src-v">VECTOR — tight, same leading as body</td></tr>
+      <tr><td class="lbl">Activity instruction → continuation line</td><td class="val">0.6–0.9mm</td><td class="val">0.24–0.37%</td><td class="val">1.7–2.5pt</td><td class="src-v">VECTOR — tight, same leading as body</td></tr>
       <tr><td class="lbl">Last activity body → Crossref (❯❯) line</td><td class="val">3.5–4.2mm</td><td class="val">1.42–1.69%</td><td class="val">9.9–11.9pt</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Before Language Point box</td><td class="val">4.35mm</td><td class="val">1.76%</td><td class="val">12.3pt</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">After Language Point box → next activity</td><td class="val">5.7mm</td><td class="val">2.31%</td><td class="val">16.2pt</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Running header → Talking Point label bar</td><td class="val">7.5mm</td><td class="val">3.04%</td><td class="val">21.3pt</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point label bar → TP title</td><td class="val">14.7mm</td><td class="val">41.7pt</td><td class="note src-v">VECTOR — large gap accommodates photo on TP page</td></tr>
+      <tr><td class="lbl">Talking Point label bar → TP title</td><td class="val">14.7mm</td><td class="val">5.95%</td><td class="val">41.7pt</td><td class="src-v">VECTOR — large gap accommodates photo on TP page</td></tr>
     </table>
   </div>
 
@@ -951,19 +951,19 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <div class="notice blue">All x values are content-relative (wrapper offset applied). These positions are consistent across all unit pages of the same orientation.</div>
     <table class="sg-table">
       <tr><th>Element</th><th>x recto</th><th>x verso</th><th>% of W</th><th>Source</th></tr>
-      <tr><td class="lbl">Activity number</td><td class="val">59.0mm</td><td class="val">33.79%</td><td class="src-v">VECTOR — identical on both</td></tr>
-      <tr><td class="lbl">Activity instruction (first line)</td><td class="val">61.4mm</td><td class="val">35.17%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Activity instruction (continuation)</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Body / reading text</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Sub-item bullet (•)</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Sub-item text (after bullet)</td><td class="val">66.5mm</td><td class="val">38.09%</td><td class="src-v">VECTOR — 3.3mm indent</td></tr>
-      <tr><td class="lbl">Crossref ❯❯ marker</td><td class="val">59.0mm</td><td class="val">59.00mm</td><td class="val">33.79%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Crossref text "For more…"</td><td class="val">67.0mm</td><td class="val">36.09%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Section heading text</td><td class="val">57.4mm</td><td class="val">30.47%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Key Expr box text (all levels)</td><td class="val">9.9mm</td><td class="val">5.67%</td><td class="src-v">VECTOR — 9.9mm padding inside 48.2mm sidebar box</td></tr>
-      <tr><td class="lbl">Talking Point title + body</td><td class="val">16.6mm</td><td class="val">9.51%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point Discussion/Task sub-heads</td><td class="val">82.3mm</td><td class="val">47.14%</td><td class="src-v">VECTOR — right column of TP two-column layout</td></tr>
-      <tr><td class="lbl">Talking Point activity numbers (right col)</td><td class="val">82.3mm</td><td class="val">47.14%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Activity number</td><td class="val">59.0mm</td><td class="val">59.0mm</td><td class="val">33.79%</td><td class="src-v">VECTOR — identical on both</td></tr>
+      <tr><td class="lbl">Activity instruction (first line)</td><td class="val">61.4mm</td><td class="val">61.4mm</td><td class="val">35.17%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Activity instruction (continuation)</td><td class="val">63.2mm</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Body / reading text</td><td class="val">63.2mm</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Sub-item bullet (•)</td><td class="val">63.2mm</td><td class="val">63.2mm</td><td class="val">36.20%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Sub-item text (after bullet)</td><td class="val">66.5mm</td><td class="val">66.5mm</td><td class="val">38.09%</td><td class="src-v">VECTOR — 3.3mm indent</td></tr>
+      <tr><td class="lbl">Crossref ❯❯ marker</td><td class="val">59.0mm</td><td class="val">63.2mm</td><td class="val">33.79% / 36.20%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Crossref text "For more…"</td><td class="val">67.0mm</td><td class="val">67.0mm</td><td class="val">36.09%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Section heading text</td><td class="val">53.2mm</td><td class="val">57.4mm</td><td class="val">30.47% / 32.87%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Key Expr box text (all levels)</td><td class="val">9.9mm</td><td class="val">9.9mm</td><td class="val">5.67%</td><td class="src-v">VECTOR — 9.9mm padding inside 48.2mm sidebar box</td></tr>
+      <tr><td class="lbl">Talking Point title + body</td><td class="val">16.6mm</td><td class="val">16.6mm</td><td class="val">9.51%</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point Discussion/Task sub-heads</td><td class="val">82.3mm</td><td class="val">82.3mm</td><td class="val">47.14%</td><td class="src-v">VECTOR — right column of TP two-column layout</td></tr>
+      <tr><td class="lbl">Talking Point activity numbers (right col)</td><td class="val">82.3mm</td><td class="val">82.3mm</td><td class="val">47.14%</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Talking Point activity instructions (right col)</td><td class="val">84.7mm / 86.5mm</td><td class="val">84.7mm / 86.5mm</td><td class="val">48.52% / 49.54%</td><td class="src-v">VECTOR — first line / continuation</td></tr>
     </table>
   </div>
@@ -971,17 +971,17 @@ Also included: <strong>card tint</strong> — the light background colour of eac
   <div class="sg-sub">
     <h3>Component Positions (y from content top)</h3>
     <table class="sg-table">
-      <tr><th>Component</th><th>y top</th><th>y bottom</th><th>Height</th><th>% of H</th><th>Source</th></tr>
-      <tr><td class="lbl">Running header band (interior)</td><td class="val">0.0mm</td><td class="val">11.6mm</td><td class="val">11.6mm</td><td class="val">4.70%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Running header band (unit opening)</td><td class="val">40.3mm</td><td class="val">62.4mm</td><td class="val">22.1mm</td><td class="val">8.95%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Photo bleed (unit opening)</td><td class="val">0.0mm</td><td class="val">44.5mm</td><td class="val">44.5mm</td><td class="val">18.02%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Unit number block (unit opening)</td><td class="val">40.3mm</td><td class="val">109.0mm</td><td class="val">68.7mm</td><td class="val">27.81%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Accent stripe (unit opening)</td><td class="val">40.3mm</td><td class="val">109.0mm</td><td class="val">68.7mm</td><td class="val">27.81%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Starting Point box (unit opening)</td><td class="val">109.0mm</td><td class="val">235.4mm</td><td class="val">126.4mm</td><td class="val">51.17%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Section heading (all interior pages)</td><td class="val">16.5mm</td><td class="val">—</td><td class="val">—</td><td class="val">6.68%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point label bar</td><td class="val">19.1mm</td><td class="val">25.8mm</td><td class="val">6.7mm</td><td class="val">2.71%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Talking Point title</td><td class="val">40.5mm</td><td class="val">—</td><td class="val">—</td><td class="val">16.40%</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Page number</td><td class="val">239.25mm</td><td class="val">—</td><td class="val">—</td><td class="val">96.86%</td><td class="src-v">VECTOR</td></tr>
+      <tr><th>Component</th><th>y top</th><th>y bottom</th><th>Height</th><th>% of H</th><th>Note</th><th>Source</th></tr>
+      <tr><td class="lbl">Running header band (interior)</td><td class="val">0.0mm</td><td class="val">11.6mm</td><td class="val">11.6mm</td><td class="val">4.70% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Running header band (unit opening)</td><td class="val">40.3mm</td><td class="val">62.4mm</td><td class="val">22.1mm</td><td class="val">8.95% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Photo bleed (unit opening)</td><td class="val">0.0mm</td><td class="val">44.5mm</td><td class="val">44.5mm</td><td class="val">18.02% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Unit number block (unit opening)</td><td class="val">40.3mm</td><td class="val">109.0mm</td><td class="val">68.7mm</td><td class="val">27.81% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Accent stripe (unit opening)</td><td class="val">40.3mm</td><td class="val">109.0mm</td><td class="val">68.7mm</td><td class="val">27.81% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Starting Point box (unit opening)</td><td class="val">109.0mm</td><td class="val">235.4mm</td><td class="val">126.4mm</td><td class="val">51.17% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Section heading (all interior pages)</td><td class="val">16.5mm</td><td class="val">—</td><td class="val">—</td><td class="val">6.68% from top</td><td class="note">y-position only — not a height</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point label bar</td><td class="val">19.1mm</td><td class="val">25.8mm</td><td class="val">6.7mm</td><td class="val">2.71% height</td><td></td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Talking Point title</td><td class="val">40.5mm</td><td class="val">—</td><td class="val">—</td><td class="val">16.40% from top</td><td class="note">y-position only — not a height</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Page number</td><td class="val">239.25mm</td><td class="val">—</td><td class="val">—</td><td class="val">96.86% from top</td><td class="note">y-position — sits near bottom of content area (247.0mm total)</td><td class="src-v">VECTOR</td></tr>
     </table>
   </div>
 
@@ -992,9 +992,9 @@ Also included: <strong>card tint</strong> — the light background colour of eac
       <tr><td class="lbl">Box width</td><td class="val">48.2mm</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Box left edge (gutter side)</td><td class="val">x=0mm (recto) / x=35.4mm from gutter (verso)</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Internal left padding</td><td class="val">9.9mm</td><td class="src-v">VECTOR — all text starts at x=9.9mm from box edge</td></tr>
-      <tr><td class="lbl">"Key expressions" title</td><td class="val">News Gothic Bold 9.1pt #0097B2</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Category labels</td><td class="val">News Gothic Bold 7.1pt #3C4C4C</td><td class="src-v">VECTOR</td></tr>
-      <tr><td class="lbl">Expression lines</td><td class="val">News Gothic Regular 7.1pt black</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">"Key expressions" title</td><td class="val">News Gothic Bold 9.15pt #0097B2</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Category labels</td><td class="val">News Gothic Bold 7.07pt #3C4C4C</td><td class="src-v">VECTOR</td></tr>
+      <tr><td class="lbl">Expression lines</td><td class="val">News Gothic Regular 7.07pt black</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Line spacing within box</td><td class="val">3.25mm = 9.2pt</td><td class="src-v">VECTOR</td></tr>
       <tr><td class="lbl">Category-to-category gap</td><td class="val">~3.5mm</td><td class="src-v">VECTOR</td></tr>
     </table>
@@ -1028,7 +1028,8 @@ Also included: <strong>card tint</strong> — the light background colour of eac
 
 </section>
 
-<section class="sg-section" id="s7">on-hdr"><div class="sg-section-num">07</div><h2>Visual Elements — Photos, Rules &amp; Icons</h2></div>
+<section class="sg-section" id="s7">
+  <div class="sg-section-hdr"><div class="sg-section-num">07</div><h2>Visual Elements — Photos, Rules &amp; Icons</h2></div>
 
   <div class="notice green">All measurements confirmed from vector PDF. Image pixel dimensions and DPI from embedded JPEG data. Rule weights from path linewidth values.</div>
 
@@ -1312,25 +1313,25 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <h3>Paragraph Styles</h3>
     <table class="sg-table">
       <tr><th>Style Name</th><th>Font</th><th>Size</th><th>Colour</th><th>Spacing B/A</th><th>Other</th></tr>
-      <tr><td class="lbl">BR_Unit_Title</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td>34pt</td><td>White on #6C7F7F</td><td>0/0</td><td class="note">Page break before; shading #6C7F7F</td></tr>
-      <tr><td class="lbl">BR_Section_Head</td><td>News Gothic MT Bold</td><td>11.6pt</td><td>#0097B2</td><td>20/8</td><td class="note">Border bottom 3.9pt #0097B2; keep with next</td></tr>
-      <tr><td class="lbl">BR_Body_Text</td><td>Palatino Linotype / <em>Lora</em></td><td>7.9pt</td><td>Black</td><td>0/8</td><td class="note">Line spacing exactly 11pt</td></tr>
-      <tr><td class="lbl">BR_Activity_Instr</td><td>Palatino Linotype Medium / <em>Lora Medium</em></td><td>8.1pt</td><td>Black</td><td>12/4</td><td class="note">Hanging 6mm</td></tr>
-      <tr><td class="lbl">BR_Activity_Num</td><td>News Gothic MT Bold</td><td>10.4pt</td><td>#3C4C4C</td><td>12/4</td><td class="note">Bold; hanging 6mm; inline with BR_Activity_Instr</td></tr>
-      <tr><td class="lbl">BR_Activity_Sub</td><td>Palatino Linotype</td><td>7.9pt</td><td>#444444</td><td>4/4</td><td class="note">Left 6mm; alpha label News Gothic</td></tr>
-      <tr><td class="lbl">BR_Key_Expr_Title</td><td>News Gothic MT Bold</td><td>9.1pt</td><td>#0097B2</td><td>0/7</td><td class="note">Shading #DEF3F7</td></tr>
-      <tr><td class="lbl">BR_Key_Expr_Cat</td><td>News Gothic MT Bold</td><td>7.9pt</td><td>#3C4C4C</td><td>7/2</td><td class="note">All-caps; letter-spacing; shading #DEF3F7</td></tr>
-      <tr><td class="lbl">BR_Key_Expr_Line</td><td>News Gothic MT / <em>Barlow Condensed</em></td><td>7.1pt</td><td>Black</td><td>0/3</td><td class="note">Shading #DEF3F7</td></tr>
-      <tr><td class="lbl">BR_Lang_Point_Body</td><td>Palatino Linotype</td><td>8.1pt</td><td>Black</td><td>0/8</td><td class="note">Shading #BFE8EF; border 0.8pt #A2DDE8</td></tr>
-      <tr><td class="lbl">BR_Lang_Point_Hdr</td><td>News Gothic MT Bold</td><td>7.9pt</td><td>#536666</td><td>4/4</td><td class="note">All-caps; shading #BFE8EF</td></tr>
-      <tr><td class="lbl">BR_Tip_Label</td><td>News Gothic MT Bold</td><td>9.1pt</td><td>#0097B2</td><td>0/3</td><td class="note">Border top 3.9pt #0097B2</td></tr>
-      <tr><td class="lbl">BR_Tip_Body</td><td>Palatino Linotype</td><td>7.9pt</td><td>Black</td><td>0/6</td><td class="note">Regular</td></tr>
-      <tr><td class="lbl">BR_Talking_Title</td><td>Caecilia / Rockwell Bold / <em>Rokkitt Bold</em></td><td>17.5pt</td><td>#CC0051</td><td>14/6</td><td class="note">Slab serif bold — NOT News Gothic or Palatino</td></tr>
-      <tr><td class="lbl">BR_Talking_Body</td><td>Caecilia / Rockwell / <em>Rokkitt</em></td><td>7.5pt</td><td>Black</td><td>0/8</td><td class="note">Slab serif regular</td></tr>
-      <tr><td class="lbl">BR_Talking_Sub</td><td>News Gothic MT Bold</td><td>10.4pt</td><td>#FFA526</td><td>12/4</td><td class="note">Discussion / Task sub-heads</td></tr>
-      <tr><td class="lbl">BR_Crossref</td><td>News Gothic MT Bold</td><td>8.7pt</td><td>#CC0051</td><td>12/0</td><td class="note">❯❯ prefix; border top 0.8pt #A2B2B2</td></tr>
-      <tr><td class="lbl">BR_Running_Head</td><td>News Gothic MT</td><td>10.8pt</td><td>White</td><td>0/0</td><td class="note">Shading #6C7F7F</td></tr>
-      <tr><td class="lbl">BR_Page_Number</td><td>TheSerif Bold / Georgia Bold</td><td>14pt</td><td>White</td><td>0/0</td><td class="note">In footer/header band</td></tr>
+      <tr><td class="lbl">BR_Unit_Title</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">34.10pt</td><td class="val">White on #6C7F7F</td><td class="val">0/0</td><td class="note">Page break before; shading #6C7F7F full width</td></tr>
+      <tr><td class="lbl">BR_Section_Head</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">11.64pt</td><td class="val">#0097B2</td><td class="val">20/8</td><td class="note">Border bottom 3.9pt #0097B2; keep with next</td></tr>
+      <tr><td class="lbl">BR_Body_Text</td><td>Palatino Linotype / <em>Lora</em></td><td class="val">7.90pt</td><td class="val">#000000</td><td class="val">0/8</td><td class="note">Line spacing exactly 12pt (vector: 4.37mm = 12.4pt)</td></tr>
+      <tr><td class="lbl">BR_Activity_Instr</td><td>Palatino Linotype Medium / <em>Lora Medium</em></td><td class="val">8.11pt</td><td class="val">#000000</td><td class="val">12/4</td><td class="note">Hanging 1.8mm (vector: first line 61.4mm, continuation 63.2mm)</td></tr>
+      <tr><td class="lbl">BR_Activity_Num</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">10.40pt</td><td class="val">#3C4C4C</td><td class="val">12/4</td><td class="note">Inline with BR_Activity_Instr; tab at 1.8mm</td></tr>
+      <tr><td class="lbl">BR_Activity_Sub</td><td>Palatino Linotype / <em>Lora</em></td><td class="val">7.90pt</td><td class="val">#000000</td><td class="val">4/4</td><td class="note">Left indent 1.8mm; alpha label in News Gothic</td></tr>
+      <tr><td class="lbl">BR_Key_Expr_Title</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">9.15pt</td><td class="val">#0097B2</td><td class="val">0/7</td><td class="note">Shading #DEF3F7</td></tr>
+      <tr><td class="lbl">BR_Key_Expr_Cat</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">7.90pt</td><td class="val">#3C4C4C</td><td class="val">7/2</td><td class="note">All-caps; letter-spacing 0.07em; shading #DEF3F7</td></tr>
+      <tr><td class="lbl">BR_Key_Expr_Line</td><td>News Gothic MT / <em>Barlow Condensed</em></td><td class="val">7.07pt</td><td class="val">#000000</td><td class="val">0/3</td><td class="note">Shading #DEF3F7</td></tr>
+      <tr><td class="lbl">BR_Lang_Point_Body</td><td>Palatino Linotype / <em>Lora</em></td><td class="val">8.11pt</td><td class="val">#000000</td><td class="val">0/8</td><td class="note">Shading #BFE8EF; border 0.8pt #A2DDE8</td></tr>
+      <tr><td class="lbl">BR_Lang_Point_Hdr</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">7.90pt</td><td class="val">#536666</td><td class="val">4/4</td><td class="note">All-caps; letter-spacing; shading #BFE8EF</td></tr>
+      <tr><td class="lbl">BR_Tip_Label</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">9.15pt</td><td class="val">#0097B2</td><td class="val">0/3</td><td class="note">Border top 3.9pt #0097B2</td></tr>
+      <tr><td class="lbl">BR_Tip_Body</td><td>News Gothic MT / <em>Barlow Condensed</em></td><td class="val">7.07pt</td><td class="val">#000000</td><td class="val">0/6</td><td class="note">Regular weight — text inside Tip boxes (vector: NewsGothicMTStd 7.07pt)</td></tr>
+      <tr><td class="lbl">BR_Talking_Title</td><td>PMN Caecilia / <em>Rokkitt Bold</em> / Rockwell Bold</td><td class="val">17.46pt</td><td class="val">#CC0051</td><td class="val">14/6</td><td class="note">Slab serif bold — NOT News Gothic or Palatino</td></tr>
+      <tr><td class="lbl">BR_Talking_Body</td><td>PMN Caecilia / <em>Rokkitt</em> / Rockwell</td><td class="val">7.48pt</td><td class="val">#000000</td><td class="val">0/8</td><td class="note">Slab serif regular</td></tr>
+      <tr><td class="lbl">BR_Talking_Sub</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">10.40pt</td><td class="val">#FFA526</td><td class="val">12/4</td><td class="note">Discussion / Task sub-heads in Talking Point pages</td></tr>
+      <tr><td class="lbl">BR_Crossref</td><td>News Gothic MT Bold / <em>Barlow Condensed Bold</em></td><td class="val">8.73pt</td><td class="val">#CC0051</td><td class="val">12/0</td><td class="note">❯❯ prefix (ZapfDingbats 9.98pt); border top 0.8pt #A2B2B2</td></tr>
+      <tr><td class="lbl">BR_Running_Head</td><td>News Gothic MT Bold+Regular / <em>Barlow Condensed</em></td><td class="val">10.81pt</td><td class="val">White on #6C7F7F</td><td class="val">0/0</td><td class="note">Bold for "Unit N", Regular for topic name, both 10.81pt white; pipe in #FFA526</td></tr>
+      <tr><td class="lbl">BR_Page_Number</td><td>TheSerif Bold / Georgia Bold</td><td class="val">14.00pt</td><td class="val">White on #6C7F7F</td><td class="val">0/0</td><td class="note">In footer band; centred</td></tr>
     </table>
   </div>
 
@@ -1355,70 +1356,58 @@ Also included: <strong>card tint</strong> — the light background colour of eac
 
   <div class="sg-sub">
     <h3>Design Tokens</h3>
-    <pre><span class="cm">/* Business Result 2e — Design Tokens v3.0 — all values vector-confirmed */</span>
-<span class="ck">:root</span> {
-  <span class="cm">/* ── Structural colours — exact CMYK→RGB from vector PDF ── */</span>
-  <span class="cv">--br-teal</span>:        <span class="cs">#0097B2</span>;  <span class="cm">/* C100 M15 Y0 K30  — col headers, section text, tips */</span>
-  <span class="cv">--br-amber</span>:       <span class="cs">#FFA526</span>;  <span class="cm">/* C0 M35 Y85 K0   — outcomes header, TP sub-heads */</span>
+    <pre><span class="cm">/* Business Result 2e — Design Tokens v4.0
+   All CMYK values exact from vector PDF. Screen hex pixel-sampled from OUP PDF on iPhone.
+   Google Fonts alternatives: Lora (body), Barlow Condensed (sans), Rokkitt (slab)
+*/</span>
+:root {
+  <span class="cm">/* ── Structural colours — exact CMYK from vector PDF ── */</span>
+  <span class="cv">--br-teal</span>:        <span class="cs">#0097B2</span>;  <span class="cm">/* C100 M15 Y0 K30 — col headers, section text, 3.9pt rules */</span>
+  <span class="cv">--br-amber</span>:       <span class="cs">#FFA526</span>;  <span class="cm">/* C0 M35 Y85 K0   — outcomes header, TP sub-heads, audio refs */</span>
+  <span class="cv">--br-amber-mid</span>:   <span class="cs">#FFC97C</span>;  <span class="cm">/* C0 M21 Y51 K0   — alt outcomes rows, TP rules */</span>
   <span class="cv">--br-amber-lt</span>:    <span class="cs">#FFE4BD</span>;  <span class="cm">/* C0 M10 Y26 K0   — outcomes body cells */</span>
-  <span class="cv">--br-amber-mid</span>:   <span class="cs">#FFC97C</span>;  <span class="cm">/* C0 M21 Y51 K0   — alt outcomes rows */</span>
-  <span class="cv">--br-blue-lt</span>:     <span class="cs">#DEF3F7</span>;  <span class="cm">/* C10 M1 Y0 K3    — primary table row, Key Expr bg */</span>
-  <span class="cv">--br-blue-mid</span>:    <span class="cs">#BFE8EF</span>;  <span class="cm">/* C20 M3 Y0 K6    — secondary table row, Lang Pt bg */</span>
+  <span class="cv">--br-amber-bg</span>:    <span class="cs">#FFE8C8</span>;  <span class="cm">/* C0 M9 Y21 K0    — TP large background panel */</span>
+  <span class="cv">--br-blue-lt</span>:     <span class="cs">#DEF3F7</span>;  <span class="cm">/* C10 M1 Y0 K3    — primary table row bg, Key Expr bg */</span>
+  <span class="cv">--br-blue-mid</span>:    <span class="cs">#BFE8EF</span>;  <span class="cm">/* C20 M3 Y0 K6    — secondary row bg, Language Point bg */</span>
+  <span class="cv">--br-blue-sp</span>:     <span class="cs">#D4EBF3</span>;  <span class="cm">/* C17 M7 Y4 K0    — Starting Point sidebar bg */</span>
   <span class="cv">--br-hdr-band</span>:    <span class="cs">#6C7F7F</span>;  <span class="cm">/* C15 M0 Y0 K50   — running header band */</span>
-  <span class="cv">--br-charcoal</span>:    <span class="cs">#3C4C4C</span>;  <span class="cm">/* C21 M0 Y0 K70   — Viewpoint band, unit num block */</span>
-  <span class="cv">--br-crimson</span>:     <span class="cs">#CC0051</span>;  <span class="cm">/* C0 M100 Y60 K20 — TP title, crossref ❯❯ */</span>
+  <span class="cv">--br-charcoal</span>:    <span class="cs">#3C4C4C</span>;  <span class="cm">/* C21 M0 Y0 K70   — Viewpoint band, unit number block bg */</span>
+  <span class="cv">--br-crimson</span>:     <span class="cs">#CC0051</span>;  <span class="cm">/* C0 M100 Y60 K20 — TP title, ❯❯ crossrefs, Practice file refs */</span>
   <span class="cv">--br-slate</span>:       <span class="cs">#536666</span>;  <span class="cm">/* C19 M0 Y0 K60   — Language Point header text */</span>
-  <span class="cv">--br-rule-teal</span>:   <span class="cs">#A2DDE8</span>;  <span class="cm">/* table cell hairline rules 0.8pt */</span>
-  <span class="cv">--br-rule-grey</span>:   <span class="cs">#A2B2B2</span>;  <span class="cm">/* crossref rule 0.8pt */</span>
+  <span class="cv">--br-rule-teal</span>:   <span class="cs">#A2DDE8</span>;  <span class="cm">/* C30 M4 Y0 K9    — table cell hairline rules 0.8pt */</span>
+  <span class="cv">--br-rule-grey</span>:   <span class="cs">#A2B2B2</span>;  <span class="cm">/* table rules / crossref underline */</span>
+  <span class="cv">--br-teal-55</span>:     <span class="cs">#72BFD8</span>;  <span class="cm">/* C55 M25 Y15 K0  — 0.4pt decorative rules */</span>
 
-  <span class="cm">/* ── Level accent colours ── */</span>
-  <span class="cv">--br-lvl-starter</span>: <span class="cs">#5C4A85</span>;  <span class="cm">/* ESTIMATE — awaiting source file */</span>
-  <span class="cv">--br-lvl-elem</span>:    <span class="cs">#BF5E3B</span>;  <span class="cm">/* C90 M20 Y70 K20 — VECTOR confirmed */</span>
-  <span class="cv">--br-lvl-preint</span>:  <span class="cs">#3C7964</span>;  <span class="cm">/* C0 M82 Y100 K10 — VECTOR confirmed */</span>
-  <span class="cv">--br-lvl-int</span>:     <span class="cs">#D1A624</span>;  <span class="cm">/* C15 M30 Y100 K5 — VECTOR confirmed */</span>
-  <span class="cv">--br-lvl-ui</span>:      <span class="cs">#458B99</span>;  <span class="cm">/* PIXEL sampled — requires vector confirmation */</span>
-  <span class="cv">--br-lvl-adv</span>:     <span class="cs">#973478</span>;  <span class="cm">/* ESTIMATE — awaiting source file */</span>
+  <span class="cm">/* ── Level accent colours — screen hex, pixel-sampled from OUP PDF ── */</span>
+  <span class="cv">--br-lvl-starter</span>: <span class="cs">#5C4A85</span>;  <span class="cm">/* C70 M80 Y0 K10   — Starter A1   — pixel-sampled IMG_5827 */</span>
+  <span class="cv">--br-lvl-elem</span>:    <span class="cs">#BF5E3B</span>;  <span class="cm">/* C0 M80 Y100 K10  — Elementary A2 — pixel-sampled IMG_5827 */</span>
+  <span class="cv">--br-lvl-preint</span>:  <span class="cs">#3C7964</span>;  <span class="cm">/* C90 M20 Y70 K20  — Pre-int B1   — pixel-sampled IMG_5827 */</span>
+  <span class="cv">--br-lvl-int</span>:     <span class="cs">#D1A624</span>;  <span class="cm">/* C15 M30 Y100 K5  — Intermediate B1+ — pixel-sampled IMG_5825 cover band */</span>
+  <span class="cv">--br-lvl-ui</span>:      <span class="cs">#458B99</span>;  <span class="cm">/* C100 M0 Y30 K20  — Upper-int B2  — pixel-sampled IMG_5827 */</span>
+  <span class="cv">--br-lvl-adv</span>:     <span class="cs">#973478</span>;  <span class="cm">/* C35 M100 Y15 K0  — Advanced C1   — pixel-sampled IMG_5827 */</span>
+  <span class="cv">--br-accent</span>:      <span class="cs">#5C4A85</span>;  <span class="cm">/* set to desired level var, e.g. var(--br-lvl-int) for Intermediate */</span>
 
-  <span class="cm">/* ── Typography — confirmed from PDF fontname fields ── */
-  /* Google Fonts alternatives (free, no licence required):       */
-  /*   Lora            → substitute for PalatinoLTStd             */
-  /*   Barlow Condensed → substitute for NewsGothicMTStd          */
-  /*   Rokkitt         → substitute for CaeciliaLTStd             */
-  /* Install from: https://fonts.google.com                        */</span>
-  <span class="cv">--br-font-body</span>:  <span class="cs">'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif</span>;
-  <span class="cv">--br-font-sans</span>:  <span class="cs">'News Gothic MT', 'News Gothic BT', 'Arial Narrow', Arial, sans-serif</span>;
-  <span class="cv">--br-font-slab</span>:  <span class="cs">'PMN Caecilia', Caecilia, Rockwell, Georgia, serif</span>;
-  <span class="cm">/* Talking Point title: --br-font-slab Bold */</span>
-  <span class="cm">/* All headings/labels: --br-font-sans */</span>
-  <span class="cm">/* All body/reading text: --br-font-body */</span>
+  <span class="cm">/* ── Typography ── */</span>
+  <span class="cm">/* OUP originals: PalatinoLTStd · NewsGothicMTStd · CaeciliaLTStd */</span>
+  <span class="cm">/* Google Fonts alternatives (free): Lora · Barlow Condensed · Rokkitt */</span>
+  <span class="cv">--br-font-body</span>:  <span class="cs">'Lora', 'Palatino Linotype', Palatino, Georgia, serif</span>;
+  <span class="cv">--br-font-sans</span>:  <span class="cs">'Barlow Condensed', 'News Gothic MT', 'Arial Narrow', Arial, sans-serif</span>;
+  <span class="cv">--br-font-slab</span>:  <span class="cs">'Rokkitt', 'PMN Caecilia', Caecilia, Rockwell, Georgia, serif</span>;
 
-  <span class="cm">/* ── Type scale (pt = print points; 1pt ≈ 0.353mm) ── */</span>
-  <span class="cv">--br-fs-unit-title</span>:    <span class="cn">34.1px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-vp-title</span>:     <span class="cn">24.12px</span>;  <span class="cm">/* NewsGothicMTStd-Bold (Viewpoint N) AND NewsGothicMTStd Regular (topic) — same size */</span>
-  <span class="cv">--br-fs-tp-title</span>:      <span class="cn">17.5px</span>;  <span class="cm">/* Caecilia Bold */</span>
-  <span class="cv">--br-fs-section-head</span>:  <span class="cn">11.6px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-running-head</span>:  <span class="cn">10.8px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-act-num</span>:       <span class="cn">10.4px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-tip-label</span>:      <span class="cn">9.1px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-crossref</span>:       <span class="cn">8.7px</span>;  <span class="cm">/* News Gothic Bold */</span>
-  <span class="cv">--br-fs-act-instr</span>:      <span class="cn">8.1px</span>;  <span class="cm">/* Palatino Medium */</span>
-  <span class="cv">--br-fs-body</span>:           <span class="cn">7.9px</span>;  <span class="cm">/* Palatino Roman */</span>
-  <span class="cv">--br-fs-tp-body</span>:        <span class="cn">7.5px</span>;  <span class="cm">/* Caecilia Roman */</span>
-  <span class="cv">--br-fs-key-expr</span>:       <span class="cn">7.1px</span>;  <span class="cm">/* News Gothic Regular */</span>
-  <span class="cv">--br-fs-pg-num</span>:        <span class="cn">14.0px</span>;  <span class="cm">/* TheSerif Bold */</span>
-
-  <span class="cm">/* ── Geometry (measured from vector PDF) ── */</span>
-  <span class="cv">--br-page-w</span>:         <span class="cn">175mm</span>;
-  <span class="cv">--br-page-h</span>:         <span class="cn">250mm</span>;
-  <span class="cv">--br-hdr-h</span>:         <span class="cn">22.1mm</span>;  <span class="cm">/* running header band */</span>
-  <span class="cv">--br-photo-h</span>:        <span class="cn">44.5mm</span>;  <span class="cm">/* top photo bleed on unit page */</span>
-  <span class="cv">--br-unit-num-w</span>:     <span class="cn">38.3mm</span>;
-  <span class="cv">--br-unit-num-h</span>:     <span class="cn">68.6mm</span>;
-  <span class="cv">--br-accent-stripe-w</span>: <span class="cn">2mm</span>;
-  <span class="cv">--br-contents-hdr-h</span>: <span class="cn">11.1mm</span>;
-  <span class="cv">--br-vp-row-h</span>:        <span class="cn">8.3mm</span>;
-  <span class="cv">--br-rule-w</span>:          <span class="cn">3.9px</span>;   <span class="cm">/* section underline rule */</span>
-  <span class="cv">--br-hairline-w</span>:      <span class="cn">0.8px</span>;   <span class="cm">/* table cell rules */</span>
+  <span class="cm">/* ── Type scale — exact from PDF vector layer (1pt = 0.353mm) ── */</span>
+  <span class="cv">--br-fs-unit-title</span>:    <span class="cs">34.10px</span>;  <span class="cm">/* News Gothic Bold — unit section header */</span>
+  <span class="cv">--br-fs-vp-title</span>:     <span class="cs">24.12px</span>;  <span class="cm">/* News Gothic Bold (Viewpoint N) + Regular (topic) — same size */</span>
+  <span class="cv">--br-fs-tp-title</span>:      <span class="cs">17.46px</span>;  <span class="cm">/* Caecilia Bold — Talking Point title */</span>
+  <span class="cv">--br-fs-section-head</span>:  <span class="cs">11.64px</span>;  <span class="cm">/* News Gothic Bold — section headings */</span>
+  <span class="cv">--br-fs-running-head</span>:  <span class="cs">10.81px</span>;  <span class="cm">/* News Gothic Bold/Regular — running header */</span>
+  <span class="cv">--br-fs-act-num</span>:       <span class="cs">10.40px</span>;  <span class="cm">/* News Gothic Bold — activity numbers */</span>
+  <span class="cv">--br-fs-tip-label</span>:      <span class="cs">9.15px</span>;  <span class="cm">/* News Gothic Bold — Tip label, Key Expressions title */</span>
+  <span class="cv">--br-fs-crossref</span>:       <span class="cs">8.73px</span>;  <span class="cm">/* News Gothic Bold — crossref / Practice file */</span>
+  <span class="cv">--br-fs-act-instr</span>:      <span class="cs">8.11px</span>;  <span class="cm">/* Palatino Medium — activity instructions */</span>
+  <span class="cv">--br-fs-body</span>:           <span class="cs">7.90px</span>;  <span class="cm">/* Palatino Roman — body / reading text */</span>
+  <span class="cv">--br-fs-key-expr</span>:       <span class="cs">7.07px</span>;  <span class="cm">/* News Gothic Regular — Key Expressions lines */</span>
+  <span class="cv">--br-fs-tp-body</span>:        <span class="cs">7.48px</span>;  <span class="cm">/* Caecilia Roman — Talking Point body */</span>
+  <span class="cv">--br-fs-page-num</span>:      <span class="cs">14.00px</span>;  <span class="cm">/* TheSerif Bold — page number */</span>
 }</pre>
     <h3>Colour Family Variables</h3>
     <pre><span class="cm">/* ── Family A: Amber UI — identical across ALL levels ── */</span>
@@ -1580,45 +1569,50 @@ Also included: <strong>card tint</strong> — the light background colour of eac
     <h3>Slide Size &amp; Fonts</h3>
     <table class="sg-table">
       <tr><th>Setting</th><th>Value</th><th>Notes</th></tr>
-      <tr><td class="lbl">Slide size (print)</td><td class="val">175 × 250 mm</td><td class="note">Matches measured book trim</td></tr>
+      <tr><td class="lbl">Slide size (print)</td><td class="val">174.6 × 247.0 mm</td><td class="note">Exact content area from vector PDF white background rect</td></tr>
       <tr><td class="lbl">Slide size (screen)</td><td class="val">Widescreen 16:9</td><td class="note">Scale mm values proportionally</td></tr>
-      <tr><td class="lbl">Major font (headings)</td><td class="val">News Gothic MT</td><td class="note">All labels, headings, UI elements</td></tr>
-      <tr><td class="lbl">Minor font (body)</td><td class="val">Palatino Linotype</td><td class="note">All body text, activity instructions</td></tr>
-      <tr><td class="lbl">Accent font (Talking Point)</td><td class="val">Rockwell Bold</td><td class="note">Best PPT substitute for Caecilia — use for TP title only</td></tr>
+      <tr><td class="lbl">Major font (headings)</td><td class="val">News Gothic MT / <em>Barlow Condensed</em></td><td class="note">All labels, headings, UI elements</td></tr>
+      <tr><td class="lbl">Minor font (body)</td><td class="val">Palatino Linotype / <em>Lora</em></td><td class="note">All body text, activity instructions</td></tr>
+      <tr><td class="lbl">Accent font (Talking Point)</td><td class="val">Rockwell Bold / <em>Rokkitt Bold</em></td><td class="note">Best PPT substitute for Caecilia LT Std — use for TP title only</td></tr>
     </table>
   </div>
 
   <div class="sg-sub">
     <h3>Theme Colour Slots (PPT XML — Intermediate level)</h3>
-    <pre><span class="cm">&lt;!-- All values confirmed from vector PDF. Swap accent1 per level. --&gt;</span>
+    <pre><span class="cm">/* ── Business Result 2e — PowerPoint Theme Colour Slots ──
+   All screen hex values pixel-sampled from OUP PDF on iPhone.
+   CMYK values exact from vector PDF layer.
+   Swap accent1 only when changing level. All other slots fixed.
+*/</span>
+
 <span class="cv">dk1</span>  (dark text)          = <span class="cs">#000000</span>
 <span class="cv">lt1</span>  (page background)    = <span class="cs">#FFFFFF</span>
-<span class="cv">dk2</span>  (charcoal)           = <span class="cs">#3C4C4C</span>  <span class="cm">/* Viewpoint bands, unit num block */</span>
-<span class="cv">lt2</span>  (blue-light)         = <span class="cs">#DEF3F7</span>
-<span class="cv">accent1</span>  (level accent)   = <span class="cs">#D1A624</span>  <span class="cm">/* Intermediate — swap per level */</span>
-<span class="cv">accent2</span>  (teal)           = <span class="cs">#0097B2</span>  <span class="cm">/* col headers, section heads */</span>
-<span class="cv">accent3</span>  (amber)          = <span class="cs">#FFA526</span>  <span class="cm">/* outcomes, TP sub-heads */</span>
-<span class="cv">accent4</span>  (crimson)        = <span class="cs">#CC0051</span>  <span class="cm">/* TP title, crossref arrows */</span>
-<span class="cv">accent5</span>  (header grey)    = <span class="cs">#6C7F7F</span>  <span class="cm">/* running header band */</span>
-<span class="cv">accent6</span>  (blue-mid)       = <span class="cs">#BFE8EF</span>  <span class="cm">/* Lang Point bg, alt row */</span>
-<span class="cv">hyperlink</span>                 = <span class="cs">#0097B2</span>
+<span class="cv">dk2</span>  (charcoal)           = <span class="cs">#3C4C4C</span>  <span class="cm">/* C21 M0 Y0 K70 — Viewpoint bands, unit num block */</span>
+<span class="cv">lt2</span>  (blue-light)         = <span class="cs">#DEF3F7</span>  <span class="cm">/* C10 M1 Y0 K3  — primary table row bg */</span>
+<span class="cv">accent1</span>  (level accent)   = <span class="cs">#D1A624</span>  <span class="cm">/* Intermediate B1+ — swap per level (see below) */</span>
+<span class="cv">accent2</span>  (teal)           = <span class="cs">#0097B2</span>  <span class="cm">/* C100 M15 Y0 K30 — col headers, section heads */</span>
+<span class="cv">accent3</span>  (amber)          = <span class="cs">#FFA526</span>  <span class="cm">/* C0 M35 Y85 K0  — outcomes, TP sub-heads */</span>
+<span class="cv">accent4</span>  (crimson)        = <span class="cs">#CC0051</span>  <span class="cm">/* C0 M100 Y60 K20 — TP title, crossref ❯❯ */</span>
+<span class="cv">accent5</span>  (header grey)    = <span class="cs">#6C7F7F</span>  <span class="cm">/* C15 M0 Y0 K50 — running header band */</span>
+<span class="cv">accent6</span>  (blue-mid)       = <span class="cs">#BFE8EF</span>  <span class="cm">/* C20 M3 Y0 K6  — Language Point bg, alt row */</span>
+<span class="cv">hyperlink</span>                 = <span class="cs">#0097B2</span>  <span class="cm">/* same as teal */</span>
 
-<span class="cm">/* Level accent1 values (swap only this slot): */</span>
-<span class="cm">/* Starter:         #5C4A85  (screen hex — confirm from source) */</span>
-<span class="cm">/* Elementary:      #BF5E3B  C0 M80 Y100 K20 */</span>
-<span class="cm">/* Pre-intermediate: #3C7964 C90 M20 Y70 K10 */</span>
-<span class="cm">/* Intermediate:    #D1A624  (screen) · #CEAA00 (naive) · C15 M30 Y100 K5  (screen) · CMYK C15 M30 Y100 K5  */</span>
-<span class="cm">/* Upper-int:       #458B99  (pixel-sampled — confirm from source) */</span>
-<span class="cm">/* Advanced:        #973478  (screen hex — confirm from source) */</span></pre>
+<span class="cm">/* ── Level accent1 values — pixel-sampled from OUP PDF on iPhone ── */</span>
+<span class="cm">/* Starter:          #5C4A85  C70 M80 Y0 K10   — A1  — pixel-sampled IMG_5827 */</span>
+<span class="cm">/* Elementary:       #BF5E3B  C0 M80 Y100 K10  — A2  — pixel-sampled IMG_5827 */</span>
+<span class="cm">/* Pre-intermediate: #3C7964  C90 M20 Y70 K20  — B1  — pixel-sampled IMG_5827 */</span>
+<span class="cm">/* Intermediate:     #D1A624  C15 M30 Y100 K5  — B1+ — pixel-sampled IMG_5825 cover band */</span>
+<span class="cm">/* Upper-int:        #458B99  C100 M0 Y30 K20  — B2  — pixel-sampled IMG_5827 */</span>
+<span class="cm">/* Advanced:         #973478  C35 M100 Y15 K0  — C1  — pixel-sampled IMG_5827 */</span></pre>
   </div>
 
   <div class="sg-sub">
     <h3>Slide Layouts</h3>
     <table class="sg-table">
       <tr><th>Layout</th><th>Key elements</th></tr>
-      <tr><td class="lbl">BR_Unit_Opening</td><td class="note">Photo placeholder top 44.5mm; #6C7F7F header band overlapping lower photo (22.1mm); #3C4C4C unit num block left (38.3×68.6mm) with 2mm level-accent stripe; Starting Point box lower-right (107×126mm, bg #DEF3F7, top rule 3.9pt teal)</td></tr>
+      <tr><td class="lbl">BR_Unit_Opening</td><td class="note">Photo placeholder top 44.5mm; #6C7F7F header band overlapping lower photo (22.1mm); #3C4C4C unit num block left (38.3×68.7mm) with 2mm level-accent stripe; Starting Point box lower-right (107×126mm, bg #DEF3F7, top rule 3.9pt teal)</td></tr>
       <tr><td class="lbl">BR_Activity_Page</td><td class="note">#6C7F7F header band top; main column; Key Expressions sidebar; section header with 3.9pt teal underline</td></tr>
-      <tr><td class="lbl">BR_Talking_Point</td><td class="note">Full photo top; #FFA526 "TALKING POINT" label; Caecilia Bold 17.5pt #CC0051 title; Discussion/Task sub-heads News Gothic Bold 10.4pt #FFA526</td></tr>
+      <tr><td class="lbl">BR_Talking_Point</td><td class="note">Full photo top; #FFA526 "TALKING POINT" label; Caecilia Bold 17.46pt #CC0051 title; Discussion/Task sub-heads News Gothic Bold 10.40pt #FFA526</td></tr>
       <tr><td class="lbl">BR_Viewpoint</td><td class="note">#3C4C4C bg full-width · "Viewpoint N": News Gothic Bold 24.12pt white · Pipe "|": Regular 24.12pt #FFA526 · Topic: Regular 24.12pt white (same size as "Viewpoint N", bold vs regular weight only)</td></tr>
       <tr><td class="lbl">BR_Contents</td><td class="note">#0097B2 col headers 11.1mm; #FFA526 outcomes header; #DEF3F7/#BFE8EF alt rows; #3C4C4C Viewpoint dividers 8.3mm; cell rules 0.8pt #A2DDE8</td></tr>
     </table>
@@ -1626,7 +1620,7 @@ Also included: <strong>card tint</strong> — the light background colour of eac
 </section>
 
 <div class="sg-footer">
-  <span>Business Result 2e · Publisher Design System · v3.0 · All Levels</span>
+  <span>Business Result 2e · Publisher Design System · v4.0</span>
   <span>Typography and colours confirmed from OUP native vector PDF · <span class="src-v">VECTOR</span> values exact · <span class="src-m">PIXEL</span> sampled · <span class="src-e">ESTIMATE</span> requires confirmation</span>
 </div>
 
