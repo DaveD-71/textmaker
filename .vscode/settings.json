@@ -20,7 +20,7 @@
   "git.enableSmartCommit": true,
   "chat.mcp.gallery.enabled": true,
   "editor.minimap.enabled": true,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Visual Studio Light",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.pdf": "pdf.preview",
