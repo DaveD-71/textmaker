@@ -22,6 +22,10 @@ try:
     from docx import Document  # type: ignore[reportMissingImports]
     from docx.oxml import OxmlElement  # type: ignore[reportMissingImports]
     from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
+    from docx.oxml.table import CT_Tbl  # type: ignore[reportMissingImports]
+    from docx.oxml.text.paragraph import CT_P  # type: ignore[reportMissingImports]
+    from docx.table import Table  # type: ignore[reportMissingImports]
+    from docx.text.paragraph import Paragraph  # type: ignore[reportMissingImports]
 except ImportError as exc:
     raise RuntimeError(
         'Missing dependency: python-docx is required. Install with `pip install python-docx`.'
@@ -70,6 +74,7 @@ WORD_COUNT_RE = re.compile(
     re.IGNORECASE,
 )
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)\s+[-\u2013\u2014]\s+(.+)$')
+ALPHA_ORDINAL_RE = re.compile(r'^[A-Z]\.\s+\S+')
 
 DEFAULT_BUILDING_BLOCK_TEMPLATE = (
     Path(os.environ.get('APPDATA', str(Path.home() / 'AppData' / 'Roaming')))
@@ -81,6 +86,7 @@ BUILDING_BLOCK_NAMES = {'unit': ('Call Out - Unit Title', 'Unit Tile')}
 
 WORD_COLLAPSE_START = 1
 WORD_COLLAPSE_END = 0
+WORD_PAGE_BREAK = 7
 WORD_ALERTS_NONE = 0
 WORD_DO_NOT_SAVE_CHANGES = 0
 WORD_SAVE_CHANGES = -1
@@ -349,11 +355,74 @@ def _apply_style_if_available(paragraph, style_name: str) -> bool:
     return True
 
 
+def _iter_body_blocks(doc):
+    for child in doc.element.body.iterchildren():
+        if isinstance(child, CT_P):
+            yield Paragraph(child, doc)
+        elif isinstance(child, CT_Tbl):
+            yield Table(child, doc)
+
+
+def _is_unit_title_table(table) -> bool:
+    try:
+        first_row = table.rows[0]
+        first_cell = _clean_word_text(first_row.cells[0].text)
+    except Exception:
+        return False
+    return bool(re.match(r'^U\d+$', first_cell))
+
+
+def restore_unit_overview_headings_after_unit_tiles(doc) -> int:
+    """
+    After unit title Quick Parts are inserted, ensure the following
+    `Unit Overview` paragraph keeps its heading style.
+    """
+    changed = 0
+    blocks = list(_iter_body_blocks(doc))
+    for index, block in enumerate(blocks[:-1]):
+        if not isinstance(block, Table) or not _is_unit_title_table(block):
+            continue
+        next_block = blocks[index + 1]
+        if not isinstance(next_block, Paragraph):
+            continue
+        if _normalize_text(next_block.text) != 'Unit Overview':
+            continue
+        if _apply_style_if_available(next_block, 'Heading 3'):
+            changed += 1
+    return changed
+
+
+def _can_apply_after_list_to_paragraph(paragraph) -> bool:
+    """
+    Only apply After List to paragraphs that are still body-like.
+
+    This must not override heading styles or other already-semantic paragraph
+    styles coming from Pandoc/reference.docx.
+    """
+    if _is_heading(paragraph):
+        return False
+    style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
+    return style_name in {'Normal', 'Body Text', 'Block Text', 'After List'}
+
+
 def _is_short_follow_on_context(paragraph) -> bool:
     if _is_heading(paragraph) or _is_list_paragraph(paragraph):
         return False
     style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
     return style_name in {'Normal', 'Body Text', 'Block Text', 'After List'}
+
+
+def _is_module_homework_target(paragraphs, index, text: str) -> bool:
+    lowered = text.lower()
+    if 'homework target:' not in lowered:
+        return False
+    if not WORD_COUNT_RE.search(text):
+        return False
+    prev_para = _find_previous_text_paragraph(paragraphs, index)
+    if prev_para is None or not _is_heading(prev_para):
+        return False
+    style_name = getattr(prev_para.style, 'name', '') if prev_para.style else ''
+    return style_name == 'Heading 2'
 
 
 def apply_semantic_styles(doc):
@@ -394,7 +463,10 @@ def apply_semantic_styles(doc):
             model_mode = None
             continue
 
-        if WORD_COUNT_RE.search(text) and _apply_style_if_available(para, 'Homework Words'):
+        if _is_module_homework_target(paragraphs, idx, text) and _apply_style_if_available(
+            para,
+            'Homework Words',
+        ):
             changed += 1
             continue
 
@@ -406,7 +478,11 @@ def apply_semantic_styles(doc):
             elif _is_short_follow_on_context(prev_para) and _is_candidate_after_text_block(text):
                 should_apply_after_list = True
 
-            if should_apply_after_list and _apply_style_if_available(para, 'After List'):
+            if (
+                should_apply_after_list
+                and _can_apply_after_list_to_paragraph(para)
+                and _apply_style_if_available(para, 'After List')
+            ):
                 changed += 1
 
     return changed
@@ -429,27 +505,33 @@ def apply_list_styles(doc, bullet_style='List Bullet 2', number_style='List Numb
 
     applied = 0
     for para in doc.paragraphs:
+        normalized_text = _normalize_text(para.text)
         p_pr = para._p.find(qn('w:pPr'))
-        if p_pr is None:
-            continue
-        num_pr = p_pr.find(qn('w:numPr'))
-        if num_pr is None:
-            continue
-        num_id_el = num_pr.find(qn('w:numId'))
-        ilvl_el = num_pr.find(qn('w:ilvl'))
-        if num_id_el is None:
-            continue
-        num_id = num_id_el.get(qn('w:val'))
-        ilvl = ilvl_el.get(qn('w:val')) if ilvl_el is not None else '0'
-        fmt = None
-        if num_id in num_map:
-            fmt = num_map[num_id].get(ilvl)
-        if fmt == 'bullet' and bullet:
-            para.style = bullet
-            applied += 1
-        elif fmt and fmt != 'bullet' and number:
-            para.style = number
-            applied += 1
+        num_pr = p_pr.find(qn('w:numPr')) if p_pr is not None else None
+        if num_pr is not None:
+            num_id_el = num_pr.find(qn('w:numId'))
+            ilvl_el = num_pr.find(qn('w:ilvl'))
+            if num_id_el is None:
+                continue
+            num_id = num_id_el.get(qn('w:val'))
+            ilvl = ilvl_el.get(qn('w:val')) if ilvl_el is not None else '0'
+            fmt = None
+            if num_id in num_map:
+                fmt = num_map[num_id].get(ilvl)
+            if fmt == 'bullet' and bullet:
+                para.style = bullet
+                applied += 1
+                continue
+            if fmt and fmt != 'bullet' and number:
+                para.style = number
+                applied += 1
+                continue
+
+        if number and ALPHA_ORDINAL_RE.match(normalized_text):
+            style_name = getattr(para.style, 'name', '') if para.style else ''
+            if not style_name.startswith('Heading'):
+                para.style = number
+                applied += 1
     return applied
 
 
@@ -506,10 +588,20 @@ def _replace_cell_text(cell, text: str) -> None:
     cell.Range.Text = text
 
 
-def _insert_building_block_after_paragraph(entry, paragraph):
+def _insert_building_block_after_paragraph(entry, paragraph, add_page_break=False):
     target_range = paragraph.Range.Duplicate
     target_range.Collapse(WORD_COLLAPSE_END)
     target_range.InsertParagraphAfter()
+    try:
+        target_range.Style = paragraph.Application.ActiveDocument.Styles('Normal')
+    except Exception:
+        pass
+    if add_page_break:
+        try:
+            target_range.InsertBreak(WORD_PAGE_BREAK)
+            target_range.Style = paragraph.Application.ActiveDocument.Styles('Normal')
+        except Exception:
+            pass
     target_range.Collapse(WORD_COLLAPSE_END)
     before_start = target_range.Start
     entry.Insert(Where=target_range, RichText=True)
@@ -534,7 +626,7 @@ def _insert_unit_tile_building_block(paragraph, template_path: Path) -> bool:
         template_path,
         BUILDING_BLOCK_NAMES['unit'],
     )
-    insert_start = _insert_building_block_after_paragraph(entry, paragraph)
+    insert_start = _insert_building_block_after_paragraph(entry, paragraph, add_page_break=True)
     table = _find_table_inserted_after_position(paragraph.Application.ActiveDocument, insert_start)
     if table is None:
         return False
@@ -709,6 +801,13 @@ def insert_section_after_toc(
             if quick_part_changes > 0:
                 print(f'Inserted {quick_part_changes} Quick Part block(s)')
                 made_change = True
+                doc = Document(docx_path)
+                restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
+                if restored_headings > 0:
+                    doc.save(docx_path)
+                    print(
+                        f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
+                    )
         except Exception as exc:
             print(f'Warning: Could not insert Quick Parts: {exc}')
 

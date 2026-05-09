@@ -160,7 +160,7 @@ def build_pandoc_cmd(
 ) -> List[str]:
     # Disable YAML metadata blocks so in-document `---` separators are not parsed as YAML.
     # This avoids errors like `Unknown alias "Source"` when source notes follow a horizontal rule.
-    pandoc_input_fmt = 'markdown-yaml_metadata_block'
+    pandoc_input_fmt = 'markdown-yaml_metadata_block+fancy_lists'
 
     cmd = [
         'pandoc',
