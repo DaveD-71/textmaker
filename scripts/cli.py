@@ -10,6 +10,7 @@ python scripts/cli.py --input "chapter1.md" --output "Book.docx" --reference ref
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -19,10 +20,135 @@ from pathlib import Path
 from typing import Iterable, List
 
 
+WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
+
+
 def check_pandoc() -> None:
     if shutil.which('pandoc') is None:
         print('Error: pandoc binary not found on PATH. Install from https://pandoc.org/installing.html')
         sys.exit(2)
+
+
+def get_caller_cwd() -> Path:
+    raw_cwd = os.environ.get('TEXTMAKER_CALLER_CWD')
+    if raw_cwd:
+        return Path(raw_cwd)
+    return Path.cwd()
+
+
+def is_windows_fallback_cwd(path: Path) -> bool:
+    windows_dir = Path(os.environ.get('WINDIR', r'C:\Windows')).resolve()
+    try:
+        resolved = path.resolve()
+    except OSError:
+        return False
+    return resolved == windows_dir or resolved == windows_dir / 'System32'
+
+
+def resolve_user_path(raw_path: str, *, base_dir: Path) -> Path:
+    path = Path(raw_path)
+    if path.is_absolute():
+        return path.resolve(strict=False)
+    return (base_dir / path).resolve(strict=False)
+
+
+def path_suffix_parts(raw_path: str) -> tuple[str, ...]:
+    parts = []
+    for part in Path(raw_path).parts:
+        if part in ('.', ''):
+            continue
+        parts.append(part.lower())
+    return tuple(parts)
+
+
+def match_path_suffix(candidate: Path, suffix_parts: tuple[str, ...]) -> bool:
+    candidate_parts = tuple(part.lower() for part in candidate.parts)
+    if len(candidate_parts) < len(suffix_parts):
+        return False
+    return candidate_parts[-len(suffix_parts):] == suffix_parts
+
+
+def infer_base_dir(raw_path: str, matched_path: Path) -> Path | None:
+    suffix_parts = path_suffix_parts(raw_path)
+    if not suffix_parts:
+        return matched_path.parent
+    parent = matched_path
+    for _ in suffix_parts:
+        parent = parent.parent
+    return parent
+
+
+def iter_candidate_base_dirs() -> Iterable[Path]:
+    roots = [WORKSPACE_ROOT.parent, WORKSPACE_ROOT]
+    seen: set[str] = set()
+    for root in roots:
+        root_key = str(root).lower()
+        if root_key in seen or not root.exists():
+            continue
+        seen.add(root_key)
+        yield root
+
+        try:
+            children = [child for child in root.iterdir() if child.is_dir()]
+        except OSError:
+            continue
+
+        for child in children:
+            child_key = str(child).lower()
+            if child_key not in seen:
+                seen.add(child_key)
+                yield child
+
+            try:
+                grandchildren = [grandchild for grandchild in child.iterdir() if grandchild.is_dir()]
+            except OSError:
+                continue
+
+            for grandchild in grandchildren:
+                grandchild_key = str(grandchild).lower()
+                if grandchild_key in seen:
+                    continue
+                seen.add(grandchild_key)
+                yield grandchild
+
+
+def search_for_existing_path(raw_path: str) -> tuple[Path | None, Path | None]:
+    relative_path = Path(raw_path)
+    if not relative_path.name:
+        return None, None
+
+    matches: list[Path] = []
+    for base_dir in iter_candidate_base_dirs():
+        candidate = base_dir / relative_path
+        if candidate.exists():
+            matches.append(candidate)
+    if len(matches) == 1:
+        match = matches[0].resolve(strict=False)
+        return match, infer_base_dir(raw_path, match)
+    return None, None
+
+
+def resolve_existing_path(raw_path: str, *, base_dir: Path) -> tuple[Path, Path | None]:
+    path = Path(raw_path)
+    if path.is_absolute():
+        normalized = path.resolve(strict=False)
+        return normalized, normalized.parent
+
+    direct = base_dir / path
+    if direct.exists():
+        normalized = direct.resolve(strict=False)
+        return normalized, base_dir.resolve(strict=False)
+
+    cwd_path = Path.cwd() / path
+    if cwd_path.exists():
+        normalized = cwd_path.resolve(strict=False)
+        return normalized, Path.cwd().resolve(strict=False)
+
+    searched, inferred_base = search_for_existing_path(raw_path)
+    if searched is not None:
+        return searched, inferred_base
+
+    return direct, None
 
 
 def build_pandoc_cmd(
@@ -54,12 +180,38 @@ def build_pandoc_cmd(
 
 
 _HTML_ONLY_LINE_RE = re.compile(r'^\s*(?:<[^>]+>\s*)+$')
+_HORIZONTAL_RULE_RE = re.compile(r'^\s{0,3}(?:-{3,}|\*{3,}|_{3,})\s*$')
+_BULLET_LIST_RE = re.compile(r'^\s*[-+*]\s+')
+_ORDERED_LIST_RE = re.compile(r'^\s*\d+[.)]\s+')
+_HEADING_RE = re.compile(r'^\s*#{1,6}\s+')
 
 
-def normalize_html_block_spacing(md_text: str) -> str:
+def _is_list_item(line: str) -> bool:
+    return bool(_BULLET_LIST_RE.match(line) or _ORDERED_LIST_RE.match(line))
+
+
+def _needs_blank_line_before_list(prev_line: str, current_line: str) -> bool:
+    if not _is_list_item(current_line):
+        return False
+    stripped_prev = prev_line.strip()
+    if not stripped_prev:
+        return False
+    if _is_list_item(prev_line):
+        return False
+    if _HEADING_RE.match(prev_line):
+        return False
+    if _HORIZONTAL_RULE_RE.match(prev_line):
+        return False
+    return True
+
+
+def normalize_markdown(md_text: str, *, ignore_horizontal_rules: bool = False) -> str:
     """
-    Insert a blank line after standalone HTML-only lines when immediately
-    followed by non-blank markdown content.
+    Normalize markdown for Pandoc by:
+    - optionally removing standalone horizontal-rule lines
+    - inserting a blank line before a list that directly follows prose
+    - inserting a blank line after standalone HTML-only lines when immediately
+      followed by non-blank markdown content
 
     Pandoc can otherwise treat the following markdown as part of the HTML block,
     e.g. '<a id="x"></a>' followed by '## Heading' on the next line.
@@ -67,10 +219,18 @@ def normalize_html_block_spacing(md_text: str) -> str:
     lines = md_text.splitlines()
     out: list[str] = []
     for idx, line in enumerate(lines):
+        if ignore_horizontal_rules and _HORIZONTAL_RULE_RE.match(line):
+            continue
+
+        if out and _needs_blank_line_before_list(out[-1], line):
+            out.append('')
+
         out.append(line)
         if idx + 1 >= len(lines):
             continue
         next_line = lines[idx + 1]
+        if ignore_horizontal_rules and _HORIZONTAL_RULE_RE.match(next_line):
+            continue
         if not _HTML_ONLY_LINE_RE.match(line):
             continue
         if next_line.strip() == '':
@@ -79,11 +239,21 @@ def normalize_html_block_spacing(md_text: str) -> str:
     return '\n'.join(out) + ('\n' if md_text.endswith('\n') else '')
 
 
-def merge_markdown_files(files: Iterable[Path], dest: Path) -> None:
+def merge_markdown_files(
+    files: Iterable[Path],
+    dest: Path,
+    *,
+    ignore_horizontal_rules: bool = False,
+) -> None:
     with dest.open('w', encoding='utf-8') as out:
         for f in files:
             source = f.read_text(encoding='utf-8')
-            out.write(normalize_html_block_spacing(source))
+            out.write(
+                normalize_markdown(
+                    source,
+                    ignore_horizontal_rules=ignore_horizontal_rules,
+                )
+            )
             out.write('\n\n')
             # Removed: section breaks are now added in post-processing
 
@@ -94,6 +264,20 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument('--reference', default='reference.docx', help='Reference DOCX for styles')
     parser.add_argument('--toc', action='store_true', help='Include Table of Contents')
     parser.add_argument('--toc-depth', type=int, default=2, help='TOC depth')
+    parser.add_argument(
+        '--ignore-horizontal-rules',
+        action='store_true',
+        help='Drop standalone markdown horizontal-rule lines such as --- before conversion.',
+    )
+    parser.add_argument(
+        '--no-semantic-formatting',
+        action='store_true',
+        help='Skip semantic postprocessing rules for custom styles and callout blocks.',
+    )
+    parser.add_argument(
+        '--building-block-template',
+        help='Word template containing Quick Parts to insert during postprocessing.',
+    )
     return parser
 
 
@@ -103,9 +287,22 @@ def main(argv: list[str] | None = None) -> int:
 
     check_pandoc()
 
-    src_path = Path(args.input)
-    dest_path = Path(args.output)
-    reference_path = Path(args.reference)
+    caller_cwd = get_caller_cwd()
+    preferred_base = caller_cwd
+    if is_windows_fallback_cwd(preferred_base):
+        preferred_base = WORKSPACE_ROOT
+
+    src_path, src_base = resolve_existing_path(args.input, base_dir=preferred_base)
+    reference_path, reference_base = resolve_existing_path(args.reference, base_dir=preferred_base)
+
+    output_base = preferred_base
+    if src_base and reference_base and src_base == reference_base:
+        output_base = src_base
+    elif src_base:
+        output_base = src_base
+    elif reference_base:
+        output_base = reference_base
+    dest_path = resolve_user_path(args.output, base_dir=output_base)
 
     temp_dir = None
     try:
@@ -116,7 +313,11 @@ def main(argv: list[str] | None = None) -> int:
                 sys.exit(1)
             temp_dir = tempfile.TemporaryDirectory()
             temp_md = Path(temp_dir.name) / 'merged.md'
-            merge_markdown_files(md_files, temp_md)
+            merge_markdown_files(
+                md_files,
+                temp_md,
+                ignore_horizontal_rules=args.ignore_horizontal_rules,
+            )
             pandoc_cmd = build_pandoc_cmd(
                 temp_md,
                 dest_path,
@@ -128,7 +329,13 @@ def main(argv: list[str] | None = None) -> int:
             temp_dir = tempfile.TemporaryDirectory()
             temp_md = Path(temp_dir.name) / src_path.name
             source = src_path.read_text(encoding='utf-8')
-            temp_md.write_text(normalize_html_block_spacing(source), encoding='utf-8')
+            temp_md.write_text(
+                normalize_markdown(
+                    source,
+                    ignore_horizontal_rules=args.ignore_horizontal_rules,
+                ),
+                encoding='utf-8',
+            )
             pandoc_cmd = build_pandoc_cmd(
                 temp_md,
                 dest_path,
@@ -138,6 +345,7 @@ def main(argv: list[str] | None = None) -> int:
             )
 
         print('Running:', ' '.join(map(str, pandoc_cmd)))
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
         try:
@@ -145,7 +353,13 @@ def main(argv: list[str] | None = None) -> int:
         except ImportError:
             from postprocess_docx import insert_section_after_toc
         try:
-            insert_section_after_toc(dest_path, has_toc=args.toc)
+            insert_section_after_toc(
+                dest_path,
+                has_toc=args.toc,
+                reference_doc_path=reference_path,
+                semantic_formatting=not args.no_semantic_formatting,
+                building_block_template=args.building_block_template,
+            )
         except (OSError, RuntimeError, ValueError):
             pass
         print('Wrote', dest_path)
