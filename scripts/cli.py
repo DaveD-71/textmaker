@@ -157,6 +157,8 @@ def build_pandoc_cmd(
     reference: Path,
     toc: bool,
     toc_depth: int,
+    lua_filters: Iterable[Path] = (),
+    use_pagebreak_filter: bool = True,
 ) -> List[str]:
     # Disable YAML metadata blocks so in-document `---` separators are not parsed as YAML.
     # This avoids errors like `Unknown alias "Source"` when source notes follow a horizontal rule.
@@ -170,8 +172,10 @@ def build_pandoc_cmd(
         '--output', str(output_path),
     ]
     pagebreak_filter = Path(__file__).parent / 'pagebreak.lua'
-    if pagebreak_filter.exists():
+    if use_pagebreak_filter and pagebreak_filter.exists():
         cmd += ['--lua-filter', str(pagebreak_filter)]
+    for lua_filter in lua_filters:
+        cmd += ['--lua-filter', str(lua_filter)]
     if reference and reference.exists():
         cmd += ['--reference-doc', str(reference)]
     if toc:
@@ -278,6 +282,17 @@ def _build_parser() -> argparse.ArgumentParser:
         '--building-block-template',
         help='Word template containing Quick Parts to insert during postprocessing.',
     )
+    parser.add_argument(
+        '--lua-filter',
+        action='append',
+        default=[],
+        help='Additional Pandoc Lua filter path. Can be supplied multiple times.',
+    )
+    parser.add_argument(
+        '--no-pagebreak-filter',
+        action='store_true',
+        help='Do not apply textmaker built-in pagebreak.lua during Pandoc conversion.',
+    )
     return parser
 
 
@@ -294,6 +309,10 @@ def main(argv: list[str] | None = None) -> int:
 
     src_path, src_base = resolve_existing_path(args.input, base_dir=preferred_base)
     reference_path, reference_base = resolve_existing_path(args.reference, base_dir=preferred_base)
+    lua_filter_paths = [
+        resolve_existing_path(raw_filter, base_dir=preferred_base)[0]
+        for raw_filter in args.lua_filter
+    ]
 
     output_base = preferred_base
     if src_base and reference_base and src_base == reference_base:
@@ -324,6 +343,8 @@ def main(argv: list[str] | None = None) -> int:
                 reference_path,
                 args.toc,
                 args.toc_depth,
+                lua_filter_paths,
+                not args.no_pagebreak_filter,
             )
         else:
             temp_dir = tempfile.TemporaryDirectory()
@@ -342,6 +363,8 @@ def main(argv: list[str] | None = None) -> int:
                 reference_path,
                 args.toc,
                 args.toc_depth,
+                lua_filter_paths,
+                not args.no_pagebreak_filter,
             )
 
         print('Running:', ' '.join(map(str, pandoc_cmd)))
@@ -352,16 +375,13 @@ def main(argv: list[str] | None = None) -> int:
             from .postprocess_docx import insert_section_after_toc
         except ImportError:
             from postprocess_docx import insert_section_after_toc
-        try:
-            insert_section_after_toc(
-                dest_path,
-                has_toc=args.toc,
-                reference_doc_path=reference_path,
-                semantic_formatting=not args.no_semantic_formatting,
-                building_block_template=args.building_block_template,
-            )
-        except (OSError, RuntimeError, ValueError):
-            pass
+        insert_section_after_toc(
+            dest_path,
+            has_toc=args.toc,
+            reference_doc_path=reference_path,
+            semantic_formatting=not args.no_semantic_formatting,
+            building_block_template=args.building_block_template,
+        )
         print('Wrote', dest_path)
     finally:
         if temp_dir:

@@ -9,6 +9,7 @@ Post-process a DOCX produced by Pandoc to ensure:
 """
 # pylint: disable=protected-access,broad-exception-caught
 import argparse
+import copy
 import csv
 import ctypes
 import os
@@ -20,6 +21,7 @@ from typing import Iterable
 
 try:
     from docx import Document  # type: ignore[reportMissingImports]
+    from docx.enum.text import WD_ALIGN_PARAGRAPH  # type: ignore[reportMissingImports]
     from docx.oxml import OxmlElement  # type: ignore[reportMissingImports]
     from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
     from docx.oxml.table import CT_Tbl  # type: ignore[reportMissingImports]
@@ -74,7 +76,43 @@ WORD_COUNT_RE = re.compile(
     re.IGNORECASE,
 )
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)\s+[-\u2013\u2014]\s+(.+)$')
+MODULE_HEADING_RE = re.compile(r'^Module\s+\d+\s+[-\u2013\u2014]\s+.+$')
 ALPHA_ORDINAL_RE = re.compile(r'^[A-Z]\.\s+\S+')
+ACTIVITY_CODE_SUFFIX_RE = re.compile(r'\s+\(([A-H]\d)(?:[^)]*)\)\s*(?:[★*])?\s*$')
+MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
+    r'\s+\(Units?\s+\d+\s*[-\u2013\u2014]\s*\d+\)\s*$',
+    re.IGNORECASE,
+)
+
+SEMANTIC_DIV_EMOJI = {
+    'LearnProcess': '🔍',
+    'LearnLanguage': '💬',
+    'LearnPrinciple': '💡',
+    'LearnTransfer': '🔁',
+    'LearnTeaching': '🎓',
+    'LearnNote': '📝',
+    'ModelBad': '⚠️',
+    'ModelGood': '✅',
+    'WorkedExample': '🧭',
+    'Example': '📌',
+    'Placeholder': '✏️',
+    'SelfStudy': '📖',
+}
+
+SEMANTIC_DIV_LABEL_STYLES = {
+    'LearnProcess': 'Learn Label Process',
+    'LearnLanguage': 'Learn Label Language',
+    'LearnPrinciple': 'Learn Label Principle',
+    'LearnTransfer': 'Learn Label Transfer',
+    'LearnTeaching': 'Learn Label Teaching',
+    'LearnNote': 'Learn Label Note',
+    'ModelBad': 'Model Label Bad',
+    'ModelGood': 'Model Label Good',
+    'WorkedExample': 'Label Worked Example',
+    'Example': 'Example Char',
+    'Placeholder': 'Placeholder Char',
+    'SelfStudy': 'Label Self Study',
+}
 
 DEFAULT_BUILDING_BLOCK_TEMPLATE = (
     Path(os.environ.get('APPDATA', str(Path.home() / 'AppData' / 'Roaming')))
@@ -278,6 +316,13 @@ def _get_style_by_name_or_id(styles, target):
     return None
 
 
+def _require_style(styles, target):
+    style = _get_style_by_name_or_id(styles, target)
+    if not style:
+        raise RuntimeError(f'Required style is missing from the reference DOCX: {target}')
+    return style
+
+
 def _normalize_text(text: str) -> str:
     return ' '.join(text.split())
 
@@ -308,6 +353,8 @@ def _is_list_paragraph(paragraph) -> bool:
 def _is_candidate_after_list(text: str) -> bool:
     if not text:
         return False
+    if len(text) <= 220:
+        return True
     lowered = text.lower()
     return (
         lowered.startswith('then discuss:')
@@ -328,6 +375,8 @@ def _is_candidate_after_list(text: str) -> bool:
 def _is_candidate_after_text_block(text: str) -> bool:
     if not text:
         return False
+    if len(text) <= 160 and not text.endswith('.'):
+        return True
     lowered = text.lower()
     return (
         lowered.startswith('practice ')
@@ -348,11 +397,788 @@ def _find_previous_text_paragraph(paragraphs, index):
 
 
 def _apply_style_if_available(paragraph, style_name: str) -> bool:
-    style = _get_style_by_name_or_id(paragraph.part.styles, style_name)
-    if not style:
-        return False
+    style = _require_style(paragraph.part.styles, style_name)
     paragraph.style = style
     return True
+
+
+def _paragraph_style_id(paragraph) -> str:
+    style = paragraph.style
+    return getattr(style, 'style_id', '') if style else ''
+
+
+def _paragraph_style_name(paragraph) -> str:
+    style = paragraph.style
+    return getattr(style, 'name', '') if style else ''
+
+
+def _has_explicit_paragraph_style(paragraph) -> bool:
+    p_pr = paragraph._p.find(qn('w:pPr'))
+    return bool(p_pr is not None and p_pr.find(qn('w:pStyle')) is not None)
+
+
+def _iter_all_paragraphs(parent) -> Iterable[Paragraph]:
+    """Yield paragraphs in the document body and inside tables."""
+    for paragraph in parent.paragraphs:
+        yield paragraph
+    for table in parent.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                yield from _iter_all_paragraphs(cell)
+
+
+def _iter_story_paragraphs(doc) -> Iterable[Paragraph]:
+    yield from _iter_all_paragraphs(doc)
+    for section in doc.sections:
+        yield from _iter_all_paragraphs(section.header)
+        yield from _iter_all_paragraphs(section.first_page_header)
+        yield from _iter_all_paragraphs(section.even_page_header)
+        yield from _iter_all_paragraphs(section.footer)
+        yield from _iter_all_paragraphs(section.first_page_footer)
+        yield from _iter_all_paragraphs(section.even_page_footer)
+
+
+def _set_run_font(run, font_name: str) -> None:
+    r_pr = run._r.get_or_add_rPr()
+    r_fonts = r_pr.rFonts
+    if r_fonts is None:
+        r_fonts = OxmlElement('w:rFonts')
+        r_pr.insert(0, r_fonts)
+    for attr in ('w:ascii', 'w:hAnsi', 'w:eastAsia', 'w:cs'):
+        r_fonts.set(qn(attr), font_name)
+
+
+def _set_run_color(run, color_value: str | None) -> None:
+    if not color_value:
+        return
+    r_pr = run._r.get_or_add_rPr()
+    color = r_pr.find(qn('w:color'))
+    if color is None:
+        color = OxmlElement('w:color')
+        r_pr.append(color)
+    color.set(qn('w:val'), color_value)
+
+
+def _style_color_value(style) -> str | None:
+    if style is None:
+        return None
+    style_el = getattr(style, '_element', None)
+    if style_el is None:
+        return None
+    color = style_el.find('.//w:rPr/w:color', NS)
+    if color is None:
+        color = style_el.find('.//w:color', NS)
+    if color is None:
+        return None
+    return color.get(qn('w:val'))
+
+
+def _run_color_value(run) -> str | None:
+    color = run._r.find('.//w:color', NS)
+    if color is None:
+        return None
+    return color.get(qn('w:val'))
+
+
+def _trim_leading_space_from_following_runs(runs, start_index: int) -> None:
+    for run in runs[start_index:]:
+        if not run.text:
+            continue
+        stripped = run.text.lstrip()
+        if stripped != run.text:
+            run.text = stripped
+        return
+
+
+def _trim_leading_space_run(run) -> None:
+    if run.text:
+        run.text = run.text.lstrip()
+
+
+def _set_paragraph_after_spacing(paragraph, points: int) -> None:
+    p_pr = paragraph._p.get_or_add_pPr()
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        p_pr.append(spacing)
+    spacing.set(qn('w:after'), str(points * 20))
+
+
+def _set_paragraph_before_spacing(paragraph, points: int) -> None:
+    p_pr = paragraph._p.get_or_add_pPr()
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        p_pr.append(spacing)
+    spacing.set(qn('w:before'), str(points * 20))
+
+
+def _insert_run_after_properties(paragraph, run) -> None:
+    paragraph._p.remove(run._r)
+    p_pr = paragraph._p.find(qn('w:pPr'))
+    if p_pr is None:
+        paragraph._p.insert(0, run._r)
+    else:
+        paragraph._p.insert(list(paragraph._p).index(p_pr) + 1, run._r)
+
+
+def _run_has_break(run) -> bool:
+    return bool(run._r.findall(qn('w:br')))
+
+
+def _set_run_non_italic(run) -> None:
+    run.font.italic = False
+    r_pr = run._r.get_or_add_rPr()
+    for tag in ('w:i', 'w:iCs'):
+        italic = r_pr.find(qn(tag))
+        if italic is None:
+            italic = OxmlElement(tag)
+            r_pr.append(italic)
+        italic.set(qn('w:val'), '0')
+
+
+def _set_run_non_bold(run) -> None:
+    run.font.bold = False
+    r_pr = run._r.get_or_add_rPr()
+    for tag in ('w:b', 'w:bCs'):
+        bold = r_pr.find(qn(tag))
+        if bold is not None:
+            r_pr.remove(bold)
+
+
+def _remove_run_style(run) -> bool:
+    r_pr = run._r.find(qn('w:rPr'))
+    if r_pr is None:
+        return False
+    r_style = r_pr.find(qn('w:rStyle'))
+    if r_style is None:
+        return False
+    r_pr.remove(r_style)
+    return True
+
+
+def _font_weight_upgrade(font_name: str | None) -> str | None:
+    if not font_name:
+        return None
+    font_name = font_name.strip()
+    upgrades = {
+        'Roboto Condensed Light': 'Roboto Condensed',
+        'Roboto Condensed': 'Roboto Condensed Medium',
+        'Noto Serif Light': 'Noto Serif',
+        'Noto Serif Condensed Light': 'Noto Serif Condensed',
+        'Noto Serif Condensed': 'Noto Serif Condensed Medium',
+        'Noto Sans Light': 'Noto Sans',
+        'Noto Sans': 'Noto Sans Medium',
+        'Noto Serif': 'Noto Serif Medium',
+    }
+    if font_name in upgrades:
+        return upgrades[font_name]
+    if font_name.endswith(' Light'):
+        return font_name[:-6]
+    return None
+
+
+def _run_font_name(run) -> str | None:
+    r_fonts = run._r.find('.//w:rFonts', NS)
+    if r_fonts is None:
+        return None
+    return (
+        r_fonts.get(qn('w:ascii'))
+        or r_fonts.get(qn('w:hAnsi'))
+        or r_fonts.get(qn('w:cs'))
+    )
+
+
+def _style_font_name(style, seen: set[int] | None = None) -> str | None:
+    style_el = getattr(style, '_element', None)
+    if style_el is None:
+        return None
+    seen = seen or set()
+    style_identity = id(style_el)
+    if style_identity in seen:
+        return None
+    seen.add(style_identity)
+    r_fonts = style_el.find('.//w:rPr/w:rFonts', NS)
+    if r_fonts is None:
+        r_fonts = style_el.find('.//w:rFonts', NS)
+    if r_fonts is not None:
+        font_name = (
+            r_fonts.get(qn('w:ascii'))
+            or r_fonts.get(qn('w:hAnsi'))
+            or r_fonts.get(qn('w:cs'))
+        )
+        if font_name:
+            return font_name
+    return _style_font_name(getattr(style, 'base_style', None), seen)
+
+
+def _effective_run_font_name(paragraph, run) -> str | None:
+    return (
+        _run_font_name(run)
+        or _style_font_name(getattr(run, 'style', None))
+        or _style_font_name(getattr(paragraph, 'style', None))
+    )
+
+
+def _apply_heavier_font_to_run(paragraph, run) -> bool:
+    upgraded_font = _font_weight_upgrade(_effective_run_font_name(paragraph, run))
+    if not upgraded_font:
+        return False
+    _set_run_font(run, upgraded_font)
+    return True
+
+
+def _is_strong_label_run(run) -> bool:
+    r_pr = run._r.find(qn('w:rPr'))
+    if r_pr is None:
+        return False
+    r_style = r_pr.find(qn('w:rStyle'))
+    if r_style is None:
+        return False
+    return r_style.get(qn('w:val')) in {'Strong', 'StrongChar'}
+
+
+def _label_base_paragraph_style(styles):
+    return _get_style_by_name_or_id(styles, 'Label Base Para') or _require_style(
+        styles,
+        'Label Para',
+    )
+
+
+def _find_semantic_label_run(paragraph):
+    for index, run in enumerate(paragraph.runs):
+        if not run.text or not run.text.strip():
+            continue
+        if _is_strong_label_run(run):
+            return index, run
+    return None, None
+
+
+def _find_run_index(paragraph, target_run) -> int | None:
+    target_el = target_run._r
+    for index, run in enumerate(paragraph.runs):
+        if run._r is target_el:
+            return index
+    return None
+
+
+def _normalize_learn_label_text(style_id: str, run) -> bool:
+    updated = run.text
+    if style_id.startswith('Learn'):
+        updated = updated.replace(' — ', ' • ').replace(' – ', ' • ')
+    updated = updated.rstrip()
+    if updated.endswith(':'):
+        updated = updated[:-1].rstrip()
+    if updated == run.text:
+        return False
+    run.text = updated
+    return True
+
+
+def _ensure_label_leading_space(run) -> bool:
+    updated = ' ' + run.text.lstrip()
+    if updated == run.text:
+        return False
+    run.text = updated
+    return True
+
+
+def _insert_break_after_label(paragraph, label_run) -> bool:
+    label_index = _find_run_index(paragraph, label_run)
+    if label_index is None:
+        return False
+
+    content_runs = paragraph.runs[label_index + 1:]
+    if not any(run.text.strip() for run in content_runs):
+        return False
+    if _run_has_break(label_run):
+        return False
+    label_run.add_break()
+    _trim_leading_space_from_following_runs(paragraph.runs, label_index + 1)
+    return True
+
+
+def _move_label_content_to_semantic_paragraph(
+    paragraph,
+    label_run,
+    semantic_style_id: str,
+) -> Paragraph | None:
+    label_index = _find_run_index(paragraph, label_run)
+    if label_index is None:
+        return None
+
+    content_runs = paragraph.runs[label_index + 1:]
+    if not any(run.text.strip() for run in content_runs):
+        return None
+
+    new_p = OxmlElement('w:p')
+    p_pr = OxmlElement('w:pPr')
+    p_style = OxmlElement('w:pStyle')
+    p_style.set(qn('w:val'), semantic_style_id)
+    p_pr.append(p_style)
+    new_p.append(p_pr)
+
+    paragraph._p.addnext(new_p)
+    for run in content_runs:
+        paragraph._p.remove(run._r)
+        new_p.append(run._r)
+
+    moved_para = Paragraph(new_p, paragraph._parent)
+    if moved_para.runs:
+        _trim_leading_space_run(moved_para.runs[0])
+    return moved_para
+
+
+def apply_semantic_div_labels(doc) -> int:
+    """
+    Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
+    """
+    changed = 0
+    for para in doc.paragraphs:
+        style_id = _paragraph_style_id(para)
+        emoji = SEMANTIC_DIV_EMOJI.get(style_id)
+        if not emoji:
+            continue
+
+        runs = para.runs
+        if not runs:
+            continue
+
+        label_index, label_run = _find_semantic_label_run(para)
+        if label_run is None:
+            continue
+
+        if _normalize_learn_label_text(style_id, label_run):
+            changed += 1
+
+        if _ensure_label_leading_space(label_run):
+            changed += 1
+
+        label_style_name = SEMANTIC_DIV_LABEL_STYLES.get(style_id)
+        label_color = _run_color_value(label_run)
+        if label_style_name:
+            label_style = _require_style(para.part.styles, label_style_name)
+            label_color = label_color or _style_color_value(label_style)
+            if label_style and getattr(label_run.style, 'name', None) != label_style.name:
+                label_run.style = label_style
+                changed += 1
+        _set_run_non_italic(label_run)
+
+        first_text = ''.join(run.text for run in para.runs[:2]).lstrip()
+        if not first_text.startswith(emoji):
+            emoji_run = para.add_run()
+            emoji_run.text = emoji
+            _set_run_font(emoji_run, 'Noto Emoji')
+            _set_run_color(emoji_run, label_color)
+            _set_run_non_italic(emoji_run)
+            _set_run_non_bold(emoji_run)
+            _insert_run_after_properties(para, emoji_run)
+            changed += 1
+
+        moved_para = _move_label_content_to_semantic_paragraph(para, label_run, style_id)
+        if moved_para is not None:
+            _set_paragraph_before_spacing(moved_para, 0)
+            changed += 1
+        elif _insert_break_after_label(para, label_run):
+            changed += 1
+
+        if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
+            para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            changed += 1
+        _set_paragraph_after_spacing(para, 4)
+
+    return changed
+
+
+def apply_body_text_to_normal_paragraphs(doc) -> int:
+    """Make ordinary prose explicit Body Text instead of implicit/explicit Normal."""
+    body_text = _require_style(doc.styles, 'Body Text')
+
+    changed = 0
+    for para in doc.paragraphs:
+        if not _normalize_text(para.text):
+            continue
+        if _is_heading(para) or _is_list_paragraph(para):
+            continue
+        style_id = _paragraph_style_id(para)
+        if style_id in SEMANTIC_DIV_EMOJI:
+            continue
+        style_name = _paragraph_style_name(para)
+        if style_name == 'Body Text':
+            continue
+        if style_name == 'Normal' or not _has_explicit_paragraph_style(para):
+            para.style = body_text
+            changed += 1
+    return changed
+
+
+def strip_activity_codes_from_headings(doc) -> int:
+    """Remove activity-code suffixes from visible heading/title rows."""
+    changed = 0
+    for para in doc.paragraphs:
+        if not _is_heading(para):
+            continue
+        text = _normalize_text(para.text)
+        updated = ACTIVITY_CODE_SUFFIX_RE.sub('', text).strip()
+        if updated == text:
+            continue
+        for run in para.runs:
+            run.text = ''
+        if para.runs:
+            para.runs[0].text = updated
+        else:
+            para.add_run(updated)
+        changed += 1
+    return changed
+
+
+def remove_strong_and_direct_bold(doc) -> int:
+    """
+    Remove Strong/Emphasis run styles. Where possible, increase the font family
+    weight instead of using Word bold; if the font family cannot be resolved,
+    preserve emphasis with direct bold.
+    """
+    changed = 0
+    for para in _iter_story_paragraphs(doc):
+        for run in para.runs:
+            r_pr = run._r.find(qn('w:rPr'))
+            r_style = r_pr.find(qn('w:rStyle')) if r_pr is not None else None
+            style_id = r_style.get(qn('w:val')) if r_style is not None else ''
+            if style_id in {'Strong', 'StrongChar'}:
+                upgraded = _apply_heavier_font_to_run(para, run)
+                if upgraded:
+                    changed += 1
+                if _remove_run_style(run):
+                    changed += 1
+                if not upgraded and run.font.bold is not True:
+                    run.font.bold = True
+                    changed += 1
+            elif style_id in {
+                'Emphasis',
+                'EmphasisChar',
+                'SubtleEmphasis',
+                'SubtleEmphasisChar',
+                'IntenseEmphasis',
+                'IntenseEmphasisChar',
+            }:
+                upgraded = _apply_heavier_font_to_run(para, run)
+                if upgraded:
+                    changed += 1
+                if _remove_run_style(run):
+                    changed += 1
+                if not upgraded and run.font.bold is not True:
+                    run.font.bold = True
+                    changed += 1
+            if run._r.find('.//w:b', NS) is not None or run._r.find('.//w:bCs', NS) is not None:
+                if _apply_heavier_font_to_run(para, run):
+                    changed += 1
+                    _set_run_non_bold(run)
+                    changed += 1
+    return changed
+
+
+def remove_pandoc_generated_styles(doc) -> int:
+    """Replace Pandoc fallback styles that are not part of the reference DOCX."""
+    body_text = _require_style(doc.styles, 'Body Text')
+    body_text_char = _require_style(doc.styles, 'Body Text Char')
+    changed = 0
+
+    for para in _iter_all_paragraphs(doc):
+        p_pr = para._p.find(qn('w:pPr'))
+        p_style = p_pr.find(qn('w:pStyle')) if p_pr is not None else None
+        if p_style is not None and p_style.get(qn('w:val')) == 'Compact':
+            para.style = body_text
+            changed += 1
+
+        for run in para.runs:
+            r_pr = run._r.find(qn('w:rPr'))
+            r_style = r_pr.find(qn('w:rStyle')) if r_pr is not None else None
+            if r_style is not None and r_style.get(qn('w:val')) == 'VerbatimChar':
+                run.style = body_text_char
+                changed += 1
+
+    return changed
+
+
+def _style_ids(styles) -> set[str]:
+    return {
+        getattr(style, 'style_id', '')
+        for style in styles
+        if getattr(style, 'style_id', '')
+    }
+
+
+def purge_styles_not_in_reference(doc, reference_doc_path) -> int:
+    """
+    Remove generated DOCX style references and style definitions that are not
+    present in the reference DOCX.
+    """
+    if not reference_doc_path:
+        return 0
+    reference_doc = Document(reference_doc_path)
+    allowed_style_ids = _style_ids(reference_doc.styles)
+    body_text = _require_style(doc.styles, 'Body Text')
+    changed = 0
+
+    for para in _iter_story_paragraphs(doc):
+        para_style_id = _paragraph_style_id(para)
+        if para_style_id and para_style_id not in allowed_style_ids:
+            para.style = body_text
+            changed += 1
+
+        for run in para.runs:
+            r_pr = run._r.find(qn('w:rPr'))
+            r_style = r_pr.find(qn('w:rStyle')) if r_pr is not None else None
+            style_id = r_style.get(qn('w:val')) if r_style is not None else ''
+            if style_id and style_id not in allowed_style_ids:
+                r_pr.remove(r_style)
+                changed += 1
+
+    for style in list(doc.styles):
+        style_id = getattr(style, 'style_id', '')
+        if style_id and style_id not in allowed_style_ids:
+            style.delete()
+            changed += 1
+
+    return changed
+
+
+def apply_page_breaks_before_modules_and_units(doc) -> int:
+    """Start every Module and Unit heading on a new page."""
+    changed = 0
+    for para in doc.paragraphs:
+        if _paragraph_style_name(para) not in {'Heading 1', 'Heading 2'}:
+            continue
+        text = _normalize_text(para.text)
+        if not (MODULE_HEADING_RE.match(text) or UNIT_HEADING_RE.match(text)):
+            continue
+        p_pr = para._p.get_or_add_pPr()
+        if p_pr.find(qn('w:pageBreakBefore')) is not None:
+            continue
+        p_pr.append(OxmlElement('w:pageBreakBefore'))
+        changed += 1
+    return changed
+
+
+def normalize_module_headings(doc) -> int:
+    """Strip unit ranges from module titles and promote modules to Heading 1."""
+    heading_1 = _require_style(doc.styles, 'Heading 1')
+    changed = 0
+    for para in doc.paragraphs:
+        text = _normalize_text(para.text)
+        if not MODULE_HEADING_RE.match(text):
+            continue
+        if _paragraph_style_name(para) != 'Heading 1':
+            para.style = heading_1
+            changed += 1
+        cleaned = MODULE_UNIT_RANGE_SUFFIX_RE.sub('', text)
+        if cleaned != text and _replace_paragraph_text_preserve_format(para, cleaned):
+            changed += 1
+    return changed
+
+
+def _find_unit_tile_prototype(reference_doc_path) -> object | None:
+    if not reference_doc_path:
+        return None
+    ref_path = Path(reference_doc_path)
+    if not ref_path.exists():
+        return None
+    try:
+        ref_doc = Document(ref_path)
+    except Exception:
+        return None
+    for table in ref_doc.tables:
+        try:
+            first = _clean_word_text(table.cell(0, 0).text)
+            second = _clean_word_text(table.cell(0, 1).text)
+        except Exception:
+            continue
+        if first == 'U0' and 'Unit Title' in second:
+            return copy.deepcopy(table._tbl)
+    return None
+
+
+def _clear_paragraph(paragraph) -> None:
+    for child in list(paragraph._p):
+        paragraph._p.remove(child)
+
+
+def _make_page_break_paragraph_like(paragraph) -> None:
+    _clear_paragraph(paragraph)
+    p_pr = paragraph._p.get_or_add_pPr()
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        p_pr.append(spacing)
+    spacing.set(qn('w:before'), '0')
+    spacing.set(qn('w:after'), '0')
+    if p_pr.find(qn('w:pageBreakBefore')) is None:
+        p_pr.append(OxmlElement('w:pageBreakBefore'))
+
+
+def _hide_heading_paragraph_keep_for_styleref(paragraph) -> None:
+    """Hide a heading visually while keeping its text available to STYLEREF."""
+    p_pr = paragraph._p.get_or_add_pPr()
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        p_pr.append(spacing)
+    spacing.set(qn('w:before'), '0')
+    spacing.set(qn('w:after'), '0')
+    if p_pr.find(qn('w:pageBreakBefore')) is None:
+        p_pr.append(OxmlElement('w:pageBreakBefore'))
+
+    r_pr = p_pr.find(qn('w:rPr'))
+    if r_pr is None:
+        r_pr = OxmlElement('w:rPr')
+        p_pr.append(r_pr)
+    for tag in ('w:vanish', 'w:specVanish'):
+        if r_pr.find(qn(tag)) is None:
+            r_pr.append(OxmlElement(tag))
+
+    for run in paragraph.runs:
+        run_pr = run._r.get_or_add_rPr()
+        for tag in ('w:vanish', 'w:specVanish'):
+            if run_pr.find(qn(tag)) is None:
+                run_pr.append(OxmlElement(tag))
+
+
+def _new_unit_tile_table(doc, prototype_tbl):
+    if prototype_tbl is None:
+        raise RuntimeError(
+            'Unit title table prototype was not found in the reference DOCX.'
+        )
+    return copy.deepcopy(prototype_tbl)
+
+
+def _replace_cell_text_preserve_format(cell, text: str) -> None:
+    """
+    Replace visible text without rebuilding the cell content, preserving the
+    cloned prototype's table, cell, paragraph, and run formatting.
+    """
+    text_nodes = cell._tc.findall('.//w:t', NS)
+    if not text_nodes:
+        cell.paragraphs[0].add_run(text)
+        return
+    text_nodes[0].text = text
+    for node in text_nodes[1:]:
+        node.text = ''
+
+
+def _replace_paragraph_text_preserve_format(paragraph, text: str) -> bool:
+    text_nodes = paragraph._p.findall('.//w:t', NS)
+    if not text_nodes:
+        paragraph.add_run(text)
+        return True
+    old_text = ''.join(node.text or '' for node in text_nodes)
+    if old_text == text:
+        return False
+    text_nodes[0].text = text
+    for node in text_nodes[1:]:
+        node.text = ''
+    return True
+
+
+def _set_header_text(header, text: str) -> bool:
+    if not text:
+        return False
+    changed = False
+    target = None
+    for paragraph in header.paragraphs:
+        paragraph_text = _normalize_text(paragraph.text)
+        if paragraph_text in {'Module X Title', 'Unit Y Title'}:
+            target = paragraph
+            break
+        if target is None and paragraph_text:
+            target = paragraph
+    if target is None:
+        target = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+    if _replace_paragraph_text_preserve_format(target, text):
+        changed = True
+    return changed
+
+
+def _set_header_styleref(header, style_name: str = 'Heading 2') -> bool:
+    target = None
+    for paragraph in header.paragraphs:
+        if _normalize_text(paragraph.text):
+            target = paragraph
+            break
+    if target is None:
+        target = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+
+    p_pr = target._p.find(qn('w:pPr'))
+    saved_p_pr = copy.deepcopy(p_pr) if p_pr is not None else None
+    for child in list(target._p):
+        target._p.remove(child)
+    if saved_p_pr is not None:
+        target._p.append(saved_p_pr)
+
+    fld = OxmlElement('w:fldSimple')
+    fld.set(qn('w:instr'), f'STYLEREF  "{style_name}"  \\* MERGEFORMAT')
+    run = OxmlElement('w:r')
+    text = OxmlElement('w:t')
+    text.text = style_name
+    run.append(text)
+    fld.append(run)
+    target._p.append(fld)
+    return True
+
+
+def _module_unit_contexts(doc) -> list[tuple[str, str]]:
+    contexts: list[tuple[str, str]] = []
+    current_module = ''
+    current_unit = ''
+    for para in doc.paragraphs:
+        if _paragraph_style_name(para) != 'Heading 2':
+            continue
+        text = _normalize_text(para.text)
+        if text.startswith('Module '):
+            current_module = text
+            current_unit = ''
+            contexts.append((current_module, current_unit))
+        elif text.startswith('Unit '):
+            current_unit = text
+            contexts.append((current_module, current_unit))
+    return contexts
+
+
+def update_running_headers(doc) -> int:
+    """Use separate STYLEREF fields for module and unit running headers."""
+    changed = 0
+    for section in doc.sections:
+        section.header.is_linked_to_previous = False
+        section.even_page_header.is_linked_to_previous = False
+        section.first_page_header.is_linked_to_previous = False
+        if _set_header_styleref(section.header, 'Heading 1'):
+            changed += 1
+        if _set_header_styleref(section.first_page_header, 'Heading 1'):
+            changed += 1
+        if _set_header_styleref(section.even_page_header, 'Heading 2'):
+            changed += 1
+    return changed
+
+
+def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int:
+    """
+    Replace `Unit N - Title` Heading 2 paragraphs with the reference unit-title
+    table prototype. This avoids slow Word COM Quick Part insertion.
+    """
+    prototype_tbl = _find_unit_tile_prototype(reference_doc_path)
+    changed = 0
+    for para in list(doc.paragraphs):
+        match = UNIT_HEADING_RE.match(_normalize_text(para.text))
+        if not match:
+            continue
+
+        tbl = _new_unit_tile_table(doc, prototype_tbl)
+        para._p.addnext(tbl)
+        table = Table(tbl, para._parent)
+        _replace_cell_text_preserve_format(table.cell(0, 0), f'U{int(match.group(1))}')
+        _replace_cell_text_preserve_format(table.cell(0, 1), match.group(2))
+        _make_page_break_paragraph_like(para)
+        changed += 1
+    return changed
 
 
 def _iter_body_blocks(doc):
@@ -453,12 +1279,12 @@ def apply_semantic_styles(doc):
             model_mode = None
             continue
 
-        if model_mode == 'bad' and _apply_style_if_available(para, 'Block Text Bad'):
+        if model_mode == 'bad' and _apply_style_if_available(para, 'Model Bad'):
             changed += 1
             model_mode = None
             continue
 
-        if model_mode == 'good' and _apply_style_if_available(para, 'Block Text Good'):
+        if model_mode == 'good' and _apply_style_if_available(para, 'Model Good'):
             changed += 1
             model_mode = None
             continue
@@ -488,7 +1314,12 @@ def apply_semantic_styles(doc):
     return changed
 
 
-def apply_list_styles(doc, bullet_style='List Bullet 2', number_style='List Number 2'):
+def apply_list_styles(
+    doc,
+    bullet_style='List Bullet 2',
+    number_style='List Number 2',
+    alpha_style='List Number 3',
+):
     """Apply specific styles to bullet and numbered list paragraphs."""
     num_map = _build_num_format_map(doc)
     styles = doc.styles
@@ -500,8 +1331,16 @@ def apply_list_styles(doc, bullet_style='List Bullet 2', number_style='List Numb
         styles,
         number_style.replace(' ', ''),
     )
-    if not bullet and not number:
-        return 0
+    alpha = _get_style_by_name_or_id(styles, alpha_style) or _get_style_by_name_or_id(
+        styles,
+        alpha_style.replace(' ', ''),
+    )
+    if not bullet:
+        raise RuntimeError(f'Required style is missing from the reference DOCX: {bullet_style}')
+    if not number:
+        raise RuntimeError(f'Required style is missing from the reference DOCX: {number_style}')
+    if not alpha:
+        raise RuntimeError(f'Required style is missing from the reference DOCX: {alpha_style}')
 
     applied = 0
     for para in doc.paragraphs:
@@ -522,17 +1361,72 @@ def apply_list_styles(doc, bullet_style='List Bullet 2', number_style='List Numb
                 para.style = bullet
                 applied += 1
                 continue
+            if fmt in {'upperLetter', 'lowerLetter', 'upperAlpha', 'lowerAlpha'}:
+                para.style = alpha
+                applied += 1
+                continue
             if fmt and fmt != 'bullet' and number:
                 para.style = number
                 applied += 1
                 continue
 
-        if number and ALPHA_ORDINAL_RE.match(normalized_text):
+        if alpha and ALPHA_ORDINAL_RE.match(normalized_text):
             style_name = getattr(para.style, 'name', '') if para.style else ''
             if not style_name.startswith('Heading'):
-                para.style = number
+                para.style = alpha
                 applied += 1
     return applied
+
+
+def _remove_prefix_from_runs(paragraph, prefix_len: int) -> bool:
+    remaining = prefix_len
+    changed = False
+    for run in paragraph.runs:
+        if remaining <= 0:
+            break
+        text = run.text
+        if not text:
+            continue
+        if len(text) <= remaining:
+            run.text = ''
+            remaining -= len(text)
+            changed = True
+            continue
+        run.text = text[remaining:]
+        remaining = 0
+        changed = True
+        break
+    return changed and remaining == 0
+
+
+def strip_literal_alpha_markers(doc, alpha_style='List Number 3') -> int:
+    """Remove source-text A./B. markers after alphabetic list styling is applied."""
+    alpha = _get_style_by_name_or_id(doc.styles, alpha_style) or _get_style_by_name_or_id(
+        doc.styles,
+        alpha_style.replace(' ', ''),
+    )
+    if not alpha:
+        raise RuntimeError(f'Required style is missing from the reference DOCX: {alpha_style}')
+
+    changed = 0
+    alpha_style_id = getattr(alpha, 'style_id', None)
+    alpha_style_name = getattr(alpha, 'name', None)
+    marker_re = re.compile(r'^\s*[A-Z]\.\s+')
+    for para in doc.paragraphs:
+        para_style = para.style
+        if para_style is None:
+            continue
+        if (
+            getattr(para_style, 'style_id', None) != alpha_style_id
+            and getattr(para_style, 'name', None) != alpha_style_name
+        ):
+            continue
+        match = marker_re.match(para.text)
+        if not match:
+            continue
+        if _remove_prefix_from_runs(para, len(match.group(0))):
+            changed += 1
+    return changed
 
 
 def _list_winword_pids() -> set[int]:
@@ -714,7 +1608,6 @@ def insert_section_after_toc(
     3. Apply semantic paragraph styles with python-docx
     4. Insert Quick Parts with Word COM when available
     """
-    del reference_doc_path
     doc = Document(docx_path)
     paragraphs = list(doc.paragraphs)
 
@@ -759,6 +1652,11 @@ def insert_section_after_toc(
         except Exception as exc:
             print(f'Warning: Could not remove page numbers from TOC: {exc}')
 
+    module_heading_changes = normalize_module_headings(doc)
+    if module_heading_changes > 0:
+        print(f'Normalized {module_heading_changes} module heading item(s)')
+        made_change = True
+
     if insert_h1_sections:
         try:
             sections_added = insert_section_breaks_before_h1(
@@ -772,44 +1670,83 @@ def insert_section_after_toc(
         except Exception as exc:
             print(f'Warning: Could not insert H1 section breaks: {exc}')
 
-    try:
-        applied = apply_list_styles(doc)
-        if applied > 0:
-            print(f'Applied list styles to {applied} paragraph(s)')
-            made_change = True
-    except Exception as exc:
-        print(f'Warning: Could not apply list styles: {exc}')
+    applied = apply_list_styles(doc)
+    if applied > 0:
+        print(f'Applied list styles to {applied} paragraph(s)')
+        made_change = True
+
+    alpha_marker_changes = strip_literal_alpha_markers(doc)
+    if alpha_marker_changes > 0:
+        print(f'Removed literal alphabetic markers from {alpha_marker_changes} list paragraph(s)')
+        made_change = True
 
     if semantic_formatting:
-        try:
-            semantic_changes = apply_semantic_styles(doc)
-            if semantic_changes > 0:
-                print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
-                made_change = True
-        except Exception as exc:
-            print(f'Warning: Could not apply semantic paragraph styles: {exc}')
+        semantic_changes = apply_semantic_styles(doc)
+        if semantic_changes > 0:
+            print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
+            made_change = True
+
+        div_label_changes = apply_semantic_div_labels(doc)
+        if div_label_changes > 0:
+            print(f'Updated semantic Div labels in {div_label_changes} place(s)')
+            made_change = True
+
+    body_text_changes = apply_body_text_to_normal_paragraphs(doc)
+    if body_text_changes > 0:
+        print(f'Applied Body Text to {body_text_changes} normal paragraph(s)')
+        made_change = True
+
+    heading_code_changes = strip_activity_codes_from_headings(doc)
+    if heading_code_changes > 0:
+        print(f'Removed activity codes from {heading_code_changes} heading(s)')
+        made_change = True
+
+    strong_changes = remove_strong_and_direct_bold(doc)
+    if strong_changes > 0:
+        print(f'Removed Strong/direct bold formatting from {strong_changes} run(s)')
+        made_change = True
+
+    pandoc_style_changes = remove_pandoc_generated_styles(doc)
+    if pandoc_style_changes > 0:
+        print(f'Replaced Pandoc fallback styles in {pandoc_style_changes} place(s)')
+        made_change = True
+
+    purged_style_changes = purge_styles_not_in_reference(doc, reference_doc_path)
+    if purged_style_changes > 0:
+        print(f'Removed non-reference style usage/definitions in {purged_style_changes} place(s)')
+        made_change = True
+
+    page_break_changes = apply_page_breaks_before_modules_and_units(doc)
+    if page_break_changes > 0:
+        print(f'Applied page breaks before {page_break_changes} module/unit heading(s)')
+        made_change = True
+        doc.save(docx_path)
+        doc = Document(docx_path)
+
+    header_changes = update_running_headers(doc)
+    if header_changes > 0:
+        print(f'Updated running headers in {header_changes} place(s)')
+        made_change = True
 
     if made_change:
         doc.save(docx_path)
 
     if semantic_formatting:
-        try:
-            quick_part_changes = apply_quick_parts(
-                docx_path,
-                template_path=Path(building_block_template) if building_block_template else DEFAULT_BUILDING_BLOCK_TEMPLATE,
-            )
-            if quick_part_changes > 0:
-                print(f'Inserted {quick_part_changes} Quick Part block(s)')
-                made_change = True
-                doc = Document(docx_path)
-                restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
-                if restored_headings > 0:
-                    doc.save(docx_path)
-                    print(
-                        f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
-                    )
-        except Exception as exc:
-            print(f'Warning: Could not insert Quick Parts: {exc}')
+        unit_tile_changes = replace_unit_headings_with_title_tables(
+            doc,
+            reference_doc_path=reference_doc_path,
+        )
+        if unit_tile_changes > 0:
+            doc.save(docx_path)
+            print(f'Inserted {unit_tile_changes} unit title table(s)')
+            made_change = True
+            doc = Document(docx_path)
+            restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
+            if restored_headings > 0:
+                doc.save(docx_path)
+                print(
+                    f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
+                )
 
     return made_change
 

@@ -23,3 +23,20 @@
 "2026-05-12T10:32:42.5571163+09:00","//prod-fs-gen01/workfile/04_在宅勤務/★グローバルビジネス推進部（在宅）/ランゲージサービス課/Dobson（在宅）/04. Projects/code/textmaker","repo","\\prod-fs-gen01\workfile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\user-learning-mirror.md","startup read"
 "2026-05-12T10:32:42.5571163+09:00","//prod-fs-gen01/workfile/04_在宅勤務/★グローバルビジネス推進部（在宅）/ランゲージサービス課/Dobson（在宅）/04. Projects/code/textmaker","repo","\\prod-fs-gen01\workfile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\project-learning.md","startup read"
 "2026-05-12T10:32:42.5571163+09:00","//prod-fs-gen01/workfile/04_在宅勤務/★グローバルビジネス推進部（在宅）/ランゲージサービス課/Dobson（在宅）/04. Projects/code/textmaker","repo","\\prod-fs-gen01\workfile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\project-journal.md","startup read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","user-level","C:\Users\daved\.codex\AGENTS.md","post-sync-read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","repo-level","C:\Dev\Code\textmaker\AGENTS.md","post-sync-read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","user-level","C:\Users\daved\.codex\memories\user-learning.md","post-sync-read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","repo-level","C:\Dev\Code\textmaker\user-learning-mirror.md","post-sync-read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","repo-level","C:\Dev\Code\textmaker\project-learning.md","post-sync-read"
+"2026-05-12T14:34:28.2536050+09:00","C:/Dev/Code/textmaker","repo-level","C:\Dev\Code\textmaker\project-journal.md","post-sync-read"
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\AGENTS.md,startup read
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\AGENTS.md,startup read
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\memories\user-learning.md,startup read
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\user-learning-mirror.md,startup read
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-learning.md,startup read
+2026-05-12T19:02:34.7632916+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-journal.md,startup read
+"2026-05-12T20:42:19+09:00","C:\Dev\Code\textmaker","user","C:\Users\daved\.codex\AGENTS.md","startup bootstrap read after context resume"
+"2026-05-12T20:42:19+09:00","C:\Dev\Code\textmaker","project","C:\Dev\Code\textmaker\AGENTS.md","startup bootstrap read after context resume"
+"2026-05-12T20:42:19+09:00","C:\Dev\Code\textmaker","user-memory","C:\Users\daved\.codex\memories\user-learning.md","startup memory read after context resume"
+"2026-05-12T20:42:19+09:00","C:\Dev\Code\textmaker","project-memory","C:\Dev\Code\textmaker\project-learning.md","project memory read after context resume"
+"2026-05-12T20:42:19+09:00","C:\Dev\Code\textmaker","project-memory","C:\Dev\Code\textmaker\project-journal.md","project journal read after context resume"
