@@ -68,6 +68,7 @@ Current durable project facts, constraints, and decisions for this workspace.
 - Treat Pandoc fallback styles such as `Compact` and `VerbatimChar` as cleanup targets in postprocess when they are not present in the reference DOCX; map them to approved reference styles rather than allowing generated-only styles to remain in output.
 - For Advanced Administrative Writing alphabetic option lists, use the reference style `List Number 3`; after applying it in postprocess, remove literal source markers such as `A. ` from the paragraph text so Word supplies the list label exactly once.
 - For Advanced Administrative Writing semantic Div labels, preserve the semantic paragraph style on the label/title line; do not replace it with `Label Base Para`/`Label Para`. Set label paragraph spacing after to 4pt and moved content paragraph spacing before to 0pt.
+- For semantic Divs that contain lists, keep the list paragraph style (`List Bullet 2`, `List Number 2`, or `List Number 3`) and copy Div block-level paragraph formatting such as borders/shading onto the list paragraphs as direct paragraph formatting. A Word paragraph cannot hold both the semantic paragraph style and the list paragraph style at once.
 
 ## Roadmap From README
 

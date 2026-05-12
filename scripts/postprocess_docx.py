@@ -114,6 +114,15 @@ SEMANTIC_DIV_LABEL_STYLES = {
     'SelfStudy': 'Label Self Study',
 }
 
+SEMANTIC_DIV_STYLE_IDS = set(SEMANTIC_DIV_EMOJI)
+SEMANTIC_LIST_PPR_ELEMENTS = {
+    'w:keepLines',
+    'w:keepNext',
+    'w:pBdr',
+    'w:shd',
+    'w:framePr',
+}
+
 DEFAULT_BUILDING_BLOCK_TEMPLATE = (
     Path(os.environ.get('APPDATA', str(Path.home() / 'AppData' / 'Roaming')))
     / 'Microsoft'
@@ -511,6 +520,35 @@ def _set_paragraph_before_spacing(paragraph, points: int) -> None:
         spacing = OxmlElement('w:spacing')
         p_pr.append(spacing)
     spacing.set(qn('w:before'), str(points * 20))
+
+
+def _replace_ppr_child(paragraph, source_child) -> bool:
+    p_pr = paragraph._p.get_or_add_pPr()
+    existing = p_pr.find(source_child.tag)
+    if existing is not None:
+        if existing.xml == source_child.xml:
+            return False
+        p_pr.remove(existing)
+    p_pr.append(copy.deepcopy(source_child))
+    return True
+
+
+def _copy_semantic_block_format_to_paragraph(paragraph, semantic_style) -> bool:
+    style_el = getattr(semantic_style, '_element', None)
+    if style_el is None:
+        return False
+    style_p_pr = style_el.find(qn('w:pPr'))
+    if style_p_pr is None:
+        return False
+
+    changed = False
+    for child in style_p_pr:
+        local_name = child.tag.split('}')[-1]
+        if f'w:{local_name}' not in SEMANTIC_LIST_PPR_ELEMENTS:
+            continue
+        if _replace_ppr_child(paragraph, child):
+            changed = True
+    return changed
 
 
 def _insert_run_after_properties(paragraph, run) -> None:
@@ -1429,6 +1467,37 @@ def strip_literal_alpha_markers(doc, alpha_style='List Number 3') -> int:
     return changed
 
 
+def apply_semantic_format_to_nested_lists(doc) -> int:
+    """
+    Preserve semantic Div block formatting on list paragraphs inside Divs.
+
+    A Word paragraph can only have one paragraph style. List items inside a
+    semantic Div need the list style for numbering/bullets, so copy the Div's
+    border/shading-style paragraph properties onto those list paragraphs as
+    direct paragraph formatting.
+    """
+    changed = 0
+    current_semantic_style = None
+    for para in doc.paragraphs:
+        text = _normalize_text(para.text)
+        style_id = _paragraph_style_id(para)
+
+        if style_id in SEMANTIC_DIV_STYLE_IDS:
+            current_semantic_style = para.style
+            continue
+
+        if _is_list_paragraph(para):
+            if current_semantic_style is not None:
+                if _copy_semantic_block_format_to_paragraph(para, current_semantic_style):
+                    changed += 1
+            continue
+
+        if text:
+            current_semantic_style = None
+
+    return changed
+
+
 def _list_winword_pids() -> set[int]:
     try:
         result = subprocess.run(
@@ -1689,6 +1758,13 @@ def insert_section_after_toc(
         div_label_changes = apply_semantic_div_labels(doc)
         if div_label_changes > 0:
             print(f'Updated semantic Div labels in {div_label_changes} place(s)')
+            made_change = True
+
+        nested_list_changes = apply_semantic_format_to_nested_lists(doc)
+        if nested_list_changes > 0:
+            print(
+                f'Applied semantic Div formatting to {nested_list_changes} nested list paragraph(s)'
+            )
             made_change = True
 
     body_text_changes = apply_body_text_to_normal_paragraphs(doc)
