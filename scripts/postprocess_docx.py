@@ -71,13 +71,19 @@ GOOD_MODEL_HEADINGS = {
     'Revised Version (diplomatic)',
     'Revised (Cohesive)',
 }
+NEUTRAL_MODEL_SOURCE_STYLES = {
+    'Block Text',
+    'Quote',
+    'Intense Quote',
+}
+QUOTED_MODEL_RE = re.compile(r'^[\u201c"].+[\u201d"]$')
 WORD_COUNT_RE = re.compile(
     r'\b(?:approximately|about|around)?\s*\d+\s*(?:[-\u2013\u2014]\s*\d+)?\s*words?\b',
     re.IGNORECASE,
 )
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)\s+[-\u2013\u2014]\s+(.+)$')
 MODULE_HEADING_RE = re.compile(r'^Module\s+\d+\s+[-\u2013\u2014]\s+.+$')
-ALPHA_ORDINAL_RE = re.compile(r'^[A-Z]\.\s+\S+')
+ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])\.\s+\S+')
 ACTIVITY_CODE_SUFFIX_RE = re.compile(r'\s+\(([A-H]\d)(?:[^)]*)\)\s*(?:[★*])?\s*$')
 MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
     r'\s+\(Units?\s+\d+\s*[-\u2013\u2014]\s*\d+\)\s*$',
@@ -100,28 +106,30 @@ SEMANTIC_DIV_EMOJI = {
 }
 
 SEMANTIC_DIV_LABEL_STYLES = {
-    'LearnProcess': 'Learn Label Process',
-    'LearnLanguage': 'Learn Label Language',
-    'LearnPrinciple': 'Learn Label Principle',
-    'LearnTransfer': 'Learn Label Transfer',
-    'LearnTeaching': 'Learn Label Teaching',
-    'LearnNote': 'Learn Label Note',
-    'ModelBad': 'Model Label Bad',
-    'ModelGood': 'Model Label Good',
-    'WorkedExample': 'Label Worked Example',
-    'Example': 'Example Char',
-    'Placeholder': 'Placeholder Char',
-    'SelfStudy': 'Label Self Study',
+    'LearnProcess': 'Div Label Process',
+    'LearnLanguage': 'Div Label Language',
+    'LearnPrinciple': 'Div Label Principle',
+    'LearnTransfer': 'Div Label Transfer',
+    'LearnTeaching': 'Div Label Teaching',
+    'LearnNote': 'Div Label Note',
+    'ModelBad': 'Div Label Bad',
+    'ModelGood': 'Div Label Good',
+    'WorkedExample': 'Div Label Worked Example',
+    'Example': 'Div Label Example',
+    'Placeholder': 'Div Label Placeholder',
+    'SelfStudy': 'Div Label Self-Stuy',
+}
+
+LEARN_SEMANTIC_STYLE_IDS = {
+    'LearnProcess',
+    'LearnLanguage',
+    'LearnPrinciple',
+    'LearnTransfer',
+    'LearnTeaching',
+    'LearnNote',
 }
 
 SEMANTIC_DIV_STYLE_IDS = set(SEMANTIC_DIV_EMOJI)
-SEMANTIC_LIST_PPR_ELEMENTS = {
-    'w:keepLines',
-    'w:keepNext',
-    'w:pBdr',
-    'w:shd',
-    'w:framePr',
-}
 
 DEFAULT_BUILDING_BLOCK_TEMPLATE = (
     Path(os.environ.get('APPDATA', str(Path.home() / 'AppData' / 'Roaming')))
@@ -313,6 +321,99 @@ def _build_num_format_map(doc):
     return num_map
 
 
+def _numbering_element(doc):
+    try:
+        return doc.part.numbering_part.element
+    except Exception:
+        return None
+
+
+def _num_id_from_style(style) -> str | None:
+    style_el = getattr(style, '_element', None)
+    if style_el is None:
+        return None
+    num_id_el = style_el.find('.//w:numPr/w:numId', NS)
+    return num_id_el.get(qn('w:val')) if num_id_el is not None else None
+
+
+def _paragraph_num_id(paragraph) -> str | None:
+    p_pr = paragraph._p.find(qn('w:pPr'))
+    num_pr = p_pr.find(qn('w:numPr')) if p_pr is not None else None
+    if num_pr is None:
+        return None
+    num_id_el = num_pr.find(qn('w:numId'))
+    return num_id_el.get(qn('w:val')) if num_id_el is not None else None
+
+
+def _abstract_num_id_for_num(numbering, num_id: str) -> str | None:
+    nsmap = numbering.nsmap
+    for num in numbering.findall('w:num', nsmap):
+        if num.get(_qn_attr(nsmap, 'numId')) != str(num_id):
+            continue
+        abstract_el = num.find('w:abstractNumId', nsmap)
+        if abstract_el is not None:
+            return abstract_el.get(_qn_attr(nsmap, 'val'))
+    return None
+
+
+def _next_num_id(numbering) -> str:
+    nsmap = numbering.nsmap
+    used = []
+    for num in numbering.findall('w:num', nsmap):
+        num_id = num.get(_qn_attr(nsmap, 'numId'))
+        if num_id and num_id.isdigit():
+            used.append(int(num_id))
+    return str((max(used) if used else 0) + 1)
+
+
+def _create_restarted_num_id(doc, base_num_id: str, start_value: int, ilvl: str = '0') -> str | None:
+    numbering = _numbering_element(doc)
+    if numbering is None:
+        return None
+    abstract_num_id = _abstract_num_id_for_num(numbering, base_num_id)
+    if abstract_num_id is None:
+        return None
+
+    new_num_id = _next_num_id(numbering)
+    num = OxmlElement('w:num')
+    num.set(qn('w:numId'), new_num_id)
+
+    abstract = OxmlElement('w:abstractNumId')
+    abstract.set(qn('w:val'), abstract_num_id)
+    num.append(abstract)
+
+    lvl_override = OxmlElement('w:lvlOverride')
+    lvl_override.set(qn('w:ilvl'), ilvl)
+    start_override = OxmlElement('w:startOverride')
+    start_override.set(qn('w:val'), str(start_value))
+    lvl_override.append(start_override)
+    num.append(lvl_override)
+
+    numbering.append(num)
+    return new_num_id
+
+
+def _apply_direct_num_id(paragraph, num_id: str, ilvl: str = '0') -> bool:
+    p_pr = paragraph._p.get_or_add_pPr()
+    existing = p_pr.find(qn('w:numPr'))
+    if existing is not None:
+        p_pr.remove(existing)
+
+    num_pr = OxmlElement('w:numPr')
+    ilvl_el = OxmlElement('w:ilvl')
+    ilvl_el.set(qn('w:val'), ilvl)
+    num_id_el = OxmlElement('w:numId')
+    num_id_el.set(qn('w:val'), str(num_id))
+    num_pr.append(ilvl_el)
+    num_pr.append(num_id_el)
+    p_pr.append(num_pr)
+    return True
+
+
+def _alpha_marker_start_value(marker: str) -> int:
+    return ord(marker.upper()) - ord('A') + 1
+
+
 def _get_style_by_name_or_id(styles, target):
     """Fetch a style by name or style_id; returns None if missing."""
     try:
@@ -489,68 +590,6 @@ def _run_color_value(run) -> str | None:
     return color.get(qn('w:val'))
 
 
-def _trim_leading_space_from_following_runs(runs, start_index: int) -> None:
-    for run in runs[start_index:]:
-        if not run.text:
-            continue
-        stripped = run.text.lstrip()
-        if stripped != run.text:
-            run.text = stripped
-        return
-
-
-def _trim_leading_space_run(run) -> None:
-    if run.text:
-        run.text = run.text.lstrip()
-
-
-def _set_paragraph_after_spacing(paragraph, points: int) -> None:
-    p_pr = paragraph._p.get_or_add_pPr()
-    spacing = p_pr.find(qn('w:spacing'))
-    if spacing is None:
-        spacing = OxmlElement('w:spacing')
-        p_pr.append(spacing)
-    spacing.set(qn('w:after'), str(points * 20))
-
-
-def _set_paragraph_before_spacing(paragraph, points: int) -> None:
-    p_pr = paragraph._p.get_or_add_pPr()
-    spacing = p_pr.find(qn('w:spacing'))
-    if spacing is None:
-        spacing = OxmlElement('w:spacing')
-        p_pr.append(spacing)
-    spacing.set(qn('w:before'), str(points * 20))
-
-
-def _replace_ppr_child(paragraph, source_child) -> bool:
-    p_pr = paragraph._p.get_or_add_pPr()
-    existing = p_pr.find(source_child.tag)
-    if existing is not None:
-        if existing.xml == source_child.xml:
-            return False
-        p_pr.remove(existing)
-    p_pr.append(copy.deepcopy(source_child))
-    return True
-
-
-def _copy_semantic_block_format_to_paragraph(paragraph, semantic_style) -> bool:
-    style_el = getattr(semantic_style, '_element', None)
-    if style_el is None:
-        return False
-    style_p_pr = style_el.find(qn('w:pPr'))
-    if style_p_pr is None:
-        return False
-
-    changed = False
-    for child in style_p_pr:
-        local_name = child.tag.split('}')[-1]
-        if f'w:{local_name}' not in SEMANTIC_LIST_PPR_ELEMENTS:
-            continue
-        if _replace_ppr_child(paragraph, child):
-            changed = True
-    return changed
-
-
 def _insert_run_after_properties(paragraph, run) -> None:
     paragraph._p.remove(run._r)
     p_pr = paragraph._p.find(qn('w:pPr'))
@@ -558,10 +597,6 @@ def _insert_run_after_properties(paragraph, run) -> None:
         paragraph._p.insert(0, run._r)
     else:
         paragraph._p.insert(list(paragraph._p).index(p_pr) + 1, run._r)
-
-
-def _run_has_break(run) -> bool:
-    return bool(run._r.findall(qn('w:br')))
 
 
 def _set_run_non_italic(run) -> None:
@@ -582,88 +617,6 @@ def _set_run_non_bold(run) -> None:
         bold = r_pr.find(qn(tag))
         if bold is not None:
             r_pr.remove(bold)
-
-
-def _remove_run_style(run) -> bool:
-    r_pr = run._r.find(qn('w:rPr'))
-    if r_pr is None:
-        return False
-    r_style = r_pr.find(qn('w:rStyle'))
-    if r_style is None:
-        return False
-    r_pr.remove(r_style)
-    return True
-
-
-def _font_weight_upgrade(font_name: str | None) -> str | None:
-    if not font_name:
-        return None
-    font_name = font_name.strip()
-    upgrades = {
-        'Roboto Condensed Light': 'Roboto Condensed',
-        'Roboto Condensed': 'Roboto Condensed Medium',
-        'Noto Serif Light': 'Noto Serif',
-        'Noto Serif Condensed Light': 'Noto Serif Condensed',
-        'Noto Serif Condensed': 'Noto Serif Condensed Medium',
-        'Noto Sans Light': 'Noto Sans',
-        'Noto Sans': 'Noto Sans Medium',
-        'Noto Serif': 'Noto Serif Medium',
-    }
-    if font_name in upgrades:
-        return upgrades[font_name]
-    if font_name.endswith(' Light'):
-        return font_name[:-6]
-    return None
-
-
-def _run_font_name(run) -> str | None:
-    r_fonts = run._r.find('.//w:rFonts', NS)
-    if r_fonts is None:
-        return None
-    return (
-        r_fonts.get(qn('w:ascii'))
-        or r_fonts.get(qn('w:hAnsi'))
-        or r_fonts.get(qn('w:cs'))
-    )
-
-
-def _style_font_name(style, seen: set[int] | None = None) -> str | None:
-    style_el = getattr(style, '_element', None)
-    if style_el is None:
-        return None
-    seen = seen or set()
-    style_identity = id(style_el)
-    if style_identity in seen:
-        return None
-    seen.add(style_identity)
-    r_fonts = style_el.find('.//w:rPr/w:rFonts', NS)
-    if r_fonts is None:
-        r_fonts = style_el.find('.//w:rFonts', NS)
-    if r_fonts is not None:
-        font_name = (
-            r_fonts.get(qn('w:ascii'))
-            or r_fonts.get(qn('w:hAnsi'))
-            or r_fonts.get(qn('w:cs'))
-        )
-        if font_name:
-            return font_name
-    return _style_font_name(getattr(style, 'base_style', None), seen)
-
-
-def _effective_run_font_name(paragraph, run) -> str | None:
-    return (
-        _run_font_name(run)
-        or _style_font_name(getattr(run, 'style', None))
-        or _style_font_name(getattr(paragraph, 'style', None))
-    )
-
-
-def _apply_heavier_font_to_run(paragraph, run) -> bool:
-    upgraded_font = _font_weight_upgrade(_effective_run_font_name(paragraph, run))
-    if not upgraded_font:
-        return False
-    _set_run_font(run, upgraded_font)
-    return True
 
 
 def _is_strong_label_run(run) -> bool:
@@ -702,8 +655,10 @@ def _find_run_index(paragraph, target_run) -> int | None:
 
 def _normalize_learn_label_text(style_id: str, run) -> bool:
     updated = run.text
-    if style_id.startswith('Learn'):
-        updated = updated.replace(' — ', ' • ').replace(' – ', ' • ')
+    if style_id in LEARN_SEMANTIC_STYLE_IDS:
+        match = re.match(r'^\s*Learn(?:\s*[-\u2013\u2014:]\s*|\s+)(.+?)\s*$', updated)
+        if match:
+            updated = match.group(1)
     updated = updated.rstrip()
     if updated.endswith(':'):
         updated = updated[:-1].rstrip()
@@ -713,65 +668,12 @@ def _normalize_learn_label_text(style_id: str, run) -> bool:
     return True
 
 
-def _ensure_label_leading_space(run) -> bool:
-    updated = ' ' + run.text.lstrip()
-    if updated == run.text:
-        return False
-    run.text = updated
-    return True
-
-
-def _insert_break_after_label(paragraph, label_run) -> bool:
-    label_index = _find_run_index(paragraph, label_run)
-    if label_index is None:
-        return False
-
-    content_runs = paragraph.runs[label_index + 1:]
-    if not any(run.text.strip() for run in content_runs):
-        return False
-    if _run_has_break(label_run):
-        return False
-    label_run.add_break()
-    _trim_leading_space_from_following_runs(paragraph.runs, label_index + 1)
-    return True
-
-
-def _move_label_content_to_semantic_paragraph(
-    paragraph,
-    label_run,
-    semantic_style_id: str,
-) -> Paragraph | None:
-    label_index = _find_run_index(paragraph, label_run)
-    if label_index is None:
-        return None
-
-    content_runs = paragraph.runs[label_index + 1:]
-    if not any(run.text.strip() for run in content_runs):
-        return None
-
-    new_p = OxmlElement('w:p')
-    p_pr = OxmlElement('w:pPr')
-    p_style = OxmlElement('w:pStyle')
-    p_style.set(qn('w:val'), semantic_style_id)
-    p_pr.append(p_style)
-    new_p.append(p_pr)
-
-    paragraph._p.addnext(new_p)
-    for run in content_runs:
-        paragraph._p.remove(run._r)
-        new_p.append(run._r)
-
-    moved_para = Paragraph(new_p, paragraph._parent)
-    if moved_para.runs:
-        _trim_leading_space_run(moved_para.runs[0])
-    return moved_para
-
-
 def apply_semantic_div_labels(doc) -> int:
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
     """
     changed = 0
+    learn_base = _get_style_by_name_or_id(doc.styles, 'Learn Base')
     for para in doc.paragraphs:
         style_id = _paragraph_style_id(para)
         emoji = SEMANTIC_DIV_EMOJI.get(style_id)
@@ -787,9 +689,6 @@ def apply_semantic_div_labels(doc) -> int:
             continue
 
         if _normalize_learn_label_text(style_id, label_run):
-            changed += 1
-
-        if _ensure_label_leading_space(label_run):
             changed += 1
 
         label_style_name = SEMANTIC_DIV_LABEL_STYLES.get(style_id)
@@ -813,17 +712,16 @@ def apply_semantic_div_labels(doc) -> int:
             _insert_run_after_properties(para, emoji_run)
             changed += 1
 
-        moved_para = _move_label_content_to_semantic_paragraph(para, label_run, style_id)
-        if moved_para is not None:
-            _set_paragraph_before_spacing(moved_para, 0)
-            changed += 1
-        elif _insert_break_after_label(para, label_run):
-            changed += 1
-
         if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
             para.alignment = WD_ALIGN_PARAGRAPH.LEFT
             changed += 1
-        _set_paragraph_after_spacing(para, 4)
+
+        if style_id in LEARN_SEMANTIC_STYLE_IDS:
+            if learn_base is None:
+                raise RuntimeError('Required style is missing from the reference DOCX: Learn Base')
+            if getattr(para.style, 'name', None) != learn_base.name:
+                para.style = learn_base
+                changed += 1
 
     return changed
 
@@ -867,51 +765,6 @@ def strip_activity_codes_from_headings(doc) -> int:
         else:
             para.add_run(updated)
         changed += 1
-    return changed
-
-
-def remove_strong_and_direct_bold(doc) -> int:
-    """
-    Remove Strong/Emphasis run styles. Where possible, increase the font family
-    weight instead of using Word bold; if the font family cannot be resolved,
-    preserve emphasis with direct bold.
-    """
-    changed = 0
-    for para in _iter_story_paragraphs(doc):
-        for run in para.runs:
-            r_pr = run._r.find(qn('w:rPr'))
-            r_style = r_pr.find(qn('w:rStyle')) if r_pr is not None else None
-            style_id = r_style.get(qn('w:val')) if r_style is not None else ''
-            if style_id in {'Strong', 'StrongChar'}:
-                upgraded = _apply_heavier_font_to_run(para, run)
-                if upgraded:
-                    changed += 1
-                if _remove_run_style(run):
-                    changed += 1
-                if not upgraded and run.font.bold is not True:
-                    run.font.bold = True
-                    changed += 1
-            elif style_id in {
-                'Emphasis',
-                'EmphasisChar',
-                'SubtleEmphasis',
-                'SubtleEmphasisChar',
-                'IntenseEmphasis',
-                'IntenseEmphasisChar',
-            }:
-                upgraded = _apply_heavier_font_to_run(para, run)
-                if upgraded:
-                    changed += 1
-                if _remove_run_style(run):
-                    changed += 1
-                if not upgraded and run.font.bold is not True:
-                    run.font.bold = True
-                    changed += 1
-            if run._r.find('.//w:b', NS) is not None or run._r.find('.//w:bCs', NS) is not None:
-                if _apply_heavier_font_to_run(para, run):
-                    changed += 1
-                    _set_run_non_bold(run)
-                    changed += 1
     return changed
 
 
@@ -1041,8 +894,17 @@ def _clear_paragraph(paragraph) -> None:
         paragraph._p.remove(child)
 
 
+def _make_paragraph_normal(paragraph) -> None:
+    try:
+        paragraph.style = paragraph.part.styles['Normal']
+    except Exception:
+        pass
+
+
 def _make_page_break_paragraph_like(paragraph) -> None:
+    _make_paragraph_normal(paragraph)
     _clear_paragraph(paragraph)
+    _make_paragraph_normal(paragraph)
     p_pr = paragraph._p.get_or_add_pPr()
     spacing = p_pr.find(qn('w:spacing'))
     if spacing is None:
@@ -1212,7 +1074,7 @@ def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int
         tbl = _new_unit_tile_table(doc, prototype_tbl)
         para._p.addnext(tbl)
         table = Table(tbl, para._parent)
-        _replace_cell_text_preserve_format(table.cell(0, 0), f'U{int(match.group(1))}')
+        _replace_cell_text_preserve_format(table.cell(0, 0), str(int(match.group(1))))
         _replace_cell_text_preserve_format(table.cell(0, 1), match.group(2))
         _make_page_break_paragraph_like(para)
         changed += 1
@@ -1233,7 +1095,7 @@ def _is_unit_title_table(table) -> bool:
         first_cell = _clean_word_text(first_row.cells[0].text)
     except Exception:
         return False
-    return bool(re.match(r'^U\d+$', first_cell))
+    return bool(re.match(r'^(?:U)?\d+$', first_cell))
 
 
 def restore_unit_overview_headings_after_unit_tiles(doc) -> int:
@@ -1289,6 +1151,18 @@ def _is_module_homework_target(paragraphs, index, text: str) -> bool:
     return style_name == 'Heading 2'
 
 
+def _is_neutral_model_example(para, text: str) -> bool:
+    """Neutral writing examples arrive from Pandoc as built-in quote styles."""
+    if _is_heading(para) or _is_list_paragraph(para):
+        return False
+    style_name = _paragraph_style_name(para)
+    if style_name in NEUTRAL_MODEL_SOURCE_STYLES:
+        return True
+    if style_name in {'Model', 'Model Bad', 'Model Good'}:
+        return False
+    return bool(QUOTED_MODEL_RE.match(text))
+
+
 def apply_semantic_styles(doc):
     """
     Apply semantic paragraph styles that do not require Word COM.
@@ -1325,6 +1199,10 @@ def apply_semantic_styles(doc):
         if model_mode == 'good' and _apply_style_if_available(para, 'Model Good'):
             changed += 1
             model_mode = None
+            continue
+
+        if _is_neutral_model_example(para, text) and _apply_style_if_available(para, 'Model'):
+            changed += 1
             continue
 
         if _is_module_homework_target(paragraphs, idx, text) and _apply_style_if_available(
@@ -1381,8 +1259,12 @@ def apply_list_styles(
         raise RuntimeError(f'Required style is missing from the reference DOCX: {alpha_style}')
 
     applied = 0
+    alpha_base_num_id = _num_id_from_style(alpha)
+    current_alpha_num_id = None
+    expected_alpha_value = None
     for para in doc.paragraphs:
         normalized_text = _normalize_text(para.text)
+        alpha_marker = ALPHA_ORDINAL_RE.match(normalized_text)
         p_pr = para._p.find(qn('w:pPr'))
         num_pr = p_pr.find(qn('w:numPr')) if p_pr is not None else None
         if num_pr is not None:
@@ -1402,17 +1284,39 @@ def apply_list_styles(
             if fmt in {'upperLetter', 'lowerLetter', 'upperAlpha', 'lowerAlpha'}:
                 para.style = alpha
                 applied += 1
+                current_alpha_num_id = num_id
+                expected_alpha_value = None
                 continue
             if fmt and fmt != 'bullet' and number:
                 para.style = number
                 applied += 1
+                current_alpha_num_id = None
+                expected_alpha_value = None
                 continue
 
-        if alpha and ALPHA_ORDINAL_RE.match(normalized_text):
+        if alpha and alpha_marker:
             style_name = getattr(para.style, 'name', '') if para.style else ''
             if not style_name.startswith('Heading'):
                 para.style = alpha
                 applied += 1
+                marker_value = _alpha_marker_start_value(alpha_marker.group(1))
+                if (
+                    alpha_base_num_id
+                    and (current_alpha_num_id is None or expected_alpha_value != marker_value)
+                ):
+                    current_alpha_num_id = _create_restarted_num_id(
+                        doc,
+                        alpha_base_num_id,
+                        marker_value,
+                    )
+                if current_alpha_num_id:
+                    _apply_direct_num_id(para, current_alpha_num_id)
+                expected_alpha_value = marker_value + 1
+                continue
+
+        if normalized_text:
+            current_alpha_num_id = None
+            expected_alpha_value = None
     return applied
 
 
@@ -1464,37 +1368,6 @@ def strip_literal_alpha_markers(doc, alpha_style='List Number 3') -> int:
             continue
         if _remove_prefix_from_runs(para, len(match.group(0))):
             changed += 1
-    return changed
-
-
-def apply_semantic_format_to_nested_lists(doc) -> int:
-    """
-    Preserve semantic Div block formatting on list paragraphs inside Divs.
-
-    A Word paragraph can only have one paragraph style. List items inside a
-    semantic Div need the list style for numbering/bullets, so copy the Div's
-    border/shading-style paragraph properties onto those list paragraphs as
-    direct paragraph formatting.
-    """
-    changed = 0
-    current_semantic_style = None
-    for para in doc.paragraphs:
-        text = _normalize_text(para.text)
-        style_id = _paragraph_style_id(para)
-
-        if style_id in SEMANTIC_DIV_STYLE_IDS:
-            current_semantic_style = para.style
-            continue
-
-        if _is_list_paragraph(para):
-            if current_semantic_style is not None:
-                if _copy_semantic_block_format_to_paragraph(para, current_semantic_style):
-                    changed += 1
-            continue
-
-        if text:
-            current_semantic_style = None
-
     return changed
 
 
@@ -1593,7 +1466,7 @@ def _insert_unit_tile_building_block(paragraph, template_path: Path) -> bool:
     table = _find_table_inserted_after_position(paragraph.Application.ActiveDocument, insert_start)
     if table is None:
         return False
-    _replace_cell_text(table.Cell(1, 1), f'U{int(match.group(1))}')
+    _replace_cell_text(table.Cell(1, 1), str(int(match.group(1))))
     _replace_cell_text(table.Cell(1, 2), match.group(2))
     paragraph_range.Delete()
     return True
@@ -1760,13 +1633,6 @@ def insert_section_after_toc(
             print(f'Updated semantic Div labels in {div_label_changes} place(s)')
             made_change = True
 
-        nested_list_changes = apply_semantic_format_to_nested_lists(doc)
-        if nested_list_changes > 0:
-            print(
-                f'Applied semantic Div formatting to {nested_list_changes} nested list paragraph(s)'
-            )
-            made_change = True
-
     body_text_changes = apply_body_text_to_normal_paragraphs(doc)
     if body_text_changes > 0:
         print(f'Applied Body Text to {body_text_changes} normal paragraph(s)')
@@ -1775,11 +1641,6 @@ def insert_section_after_toc(
     heading_code_changes = strip_activity_codes_from_headings(doc)
     if heading_code_changes > 0:
         print(f'Removed activity codes from {heading_code_changes} heading(s)')
-        made_change = True
-
-    strong_changes = remove_strong_and_direct_bold(doc)
-    if strong_changes > 0:
-        print(f'Removed Strong/direct bold formatting from {strong_changes} run(s)')
         made_change = True
 
     pandoc_style_changes = remove_pandoc_generated_styles(doc)

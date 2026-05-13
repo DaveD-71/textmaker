@@ -47,3 +47,14 @@
 - Updated semantic Div title postprocessing so title lines retain their semantic paragraph styles, with 4pt space after on the label paragraph and 0pt space before on the moved content paragraph.
 - Updated unit-title table postprocessing so the original unit heading text is cleared after the reference table is inserted, preventing visible duplicate unit headings.
 - Added a nested-list semantic Div pass so list paragraphs inside semantic Div blocks keep their list style while receiving the Div's block-level paragraph formatting. Regenerated the Advanced DOCX/PDF and validated that the nested list items have both list styling and Div border formatting.
+
+## 2026-05-13
+
+- Simplified `scripts/postprocess_docx.py` by rolling back two recent postprocess behaviors:
+  - removed the run-level cleanup pass that stripped `Strong`/`Emphasis` styles and rewrote bold handling through heavier font substitution
+  - removed the nested-list semantic Div formatting pass that copied Div block formatting directly onto list paragraphs
+- Kept the broader semantic paragraph formatting, unit-title handling, heading cleanup, and fallback-style cleanup intact.
+- Updated the Learn semantic-style model to support a reduced reference-style set:
+  - keep the emoji insertion and per-label Learn label styles
+  - stop relying on multiple `Learn XXX` paragraph styles surviving postprocess
+  - convert Learn semantic paragraphs to `Learn Base` during postprocess
