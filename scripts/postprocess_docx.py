@@ -21,6 +21,7 @@ from typing import Iterable
 
 try:
     from docx import Document  # type: ignore[reportMissingImports]
+    from docx.enum.style import WD_STYLE_TYPE  # type: ignore[reportMissingImports]
     from docx.enum.text import WD_ALIGN_PARAGRAPH  # type: ignore[reportMissingImports]
     from docx.oxml import OxmlElement  # type: ignore[reportMissingImports]
     from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
@@ -106,18 +107,18 @@ SEMANTIC_DIV_EMOJI = {
 }
 
 SEMANTIC_DIV_LABEL_STYLES = {
-    'LearnProcess': 'Div Label Process',
-    'LearnLanguage': 'Div Label Language',
-    'LearnPrinciple': 'Div Label Principle',
-    'LearnTransfer': 'Div Label Transfer',
-    'LearnTeaching': 'Div Label Teaching',
-    'LearnNote': 'Div Label Note',
-    'ModelBad': 'Div Label Bad',
-    'ModelGood': 'Div Label Good',
-    'WorkedExample': 'Div Label Worked Example',
-    'Example': 'Div Label Example',
-    'Placeholder': 'Div Label Placeholder',
-    'SelfStudy': 'Div Label Self-Stuy',
+    'LearnProcess': 'Div Label Process Char',
+    'LearnLanguage': 'Div Label Language Char',
+    'LearnPrinciple': 'Div Label Principle Char',
+    'LearnTransfer': 'Div Label Transfer Char',
+    'LearnTeaching': 'Div Label Teaching Char',
+    'LearnNote': 'Div Label Note Char',
+    'ModelBad': 'Div Label Bad Char',
+    'ModelGood': 'Div Label Good Char',
+    'WorkedExample': 'Div Label Worked Example Char',
+    'Example': 'Div Label Base Char',
+    'Placeholder': 'Div Label Base Char',
+    'SelfStudy': 'Div Label Self-Study Char',
 }
 
 LEARN_SEMANTIC_STYLE_IDS = {
@@ -414,14 +415,18 @@ def _alpha_marker_start_value(marker: str) -> int:
     return ord(marker.upper()) - ord('A') + 1
 
 
-def _get_style_by_name_or_id(styles, target):
+def _get_style_by_name_or_id(styles, target, style_type=None):
     """Fetch a style by name or style_id; returns None if missing."""
     try:
-        return styles[target]
+        style = styles[target]
+        if style_type is None or getattr(style, 'type', None) == style_type:
+            return style
     except Exception:
         pass
     for st in styles:
         if getattr(st, 'name', None) == target or getattr(st, 'style_id', None) == target:
+            if style_type is not None and getattr(st, 'type', None) != style_type:
+                continue
             return st
     return None
 
@@ -430,6 +435,13 @@ def _require_style(styles, target):
     style = _get_style_by_name_or_id(styles, target)
     if not style:
         raise RuntimeError(f'Required style is missing from the reference DOCX: {target}')
+    return style
+
+
+def _require_character_style(styles, target):
+    style = _get_style_by_name_or_id(styles, target, WD_STYLE_TYPE.CHARACTER)
+    if not style:
+        raise RuntimeError(f'Required character style is missing from the reference DOCX: {target}')
     return style
 
 
@@ -620,9 +632,13 @@ def _set_run_non_bold(run) -> None:
 
 
 def _is_strong_label_run(run) -> bool:
+    if run.bold is True:
+        return True
     r_pr = run._r.find(qn('w:rPr'))
     if r_pr is None:
         return False
+    if r_pr.find(qn('w:b')) is not None:
+        return True
     r_style = r_pr.find(qn('w:rStyle'))
     if r_style is None:
         return False
@@ -694,7 +710,7 @@ def apply_semantic_div_labels(doc) -> int:
         label_style_name = SEMANTIC_DIV_LABEL_STYLES.get(style_id)
         label_color = _run_color_value(label_run)
         if label_style_name:
-            label_style = _require_style(para.part.styles, label_style_name)
+            label_style = _require_character_style(para.part.styles, label_style_name)
             label_color = label_color or _style_color_value(label_style)
             if label_style and getattr(label_run.style, 'name', None) != label_style.name:
                 label_run.style = label_style
@@ -717,9 +733,7 @@ def apply_semantic_div_labels(doc) -> int:
             changed += 1
 
         if style_id in LEARN_SEMANTIC_STYLE_IDS:
-            if learn_base is None:
-                raise RuntimeError('Required style is missing from the reference DOCX: Learn Base')
-            if getattr(para.style, 'name', None) != learn_base.name:
+            if learn_base is not None and getattr(para.style, 'name', None) != learn_base.name:
                 para.style = learn_base
                 changed += 1
 
@@ -852,15 +866,15 @@ def apply_page_breaks_before_modules_and_units(doc) -> int:
 
 
 def normalize_module_headings(doc) -> int:
-    """Strip unit ranges from module titles and promote modules to Heading 1."""
-    heading_1 = _require_style(doc.styles, 'Heading 1')
+    """Strip unit ranges from module titles while preserving Heading 2 level."""
+    heading_2 = _require_style(doc.styles, 'Heading 2')
     changed = 0
     for para in doc.paragraphs:
         text = _normalize_text(para.text)
         if not MODULE_HEADING_RE.match(text):
             continue
-        if _paragraph_style_name(para) != 'Heading 1':
-            para.style = heading_1
+        if _paragraph_style_name(para) != 'Heading 2':
+            para.style = heading_2
             changed += 1
         cleaned = MODULE_UNIT_RANGE_SUFFIX_RE.sub('', text)
         if cleaned != text and _replace_paragraph_text_preserve_format(para, cleaned):
@@ -884,7 +898,7 @@ def _find_unit_tile_prototype(reference_doc_path) -> object | None:
             second = _clean_word_text(table.cell(0, 1).text)
         except Exception:
             continue
-        if first == 'U0' and 'Unit Title' in second:
+        if re.match(r'^(?:U0|U#|#|\d+)$', first) and 'Unit Title' in second:
             return copy.deepcopy(table._tbl)
     return None
 
