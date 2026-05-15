@@ -4,8 +4,11 @@ Post-process a DOCX produced by Pandoc to ensure:
 - page numbering restarts at 1 for the following section
 - page numbers are removed from TOC pages
 - section breaks (nextPage) are inserted before each H1 heading
-- semantic course formatting is applied consistently using custom styles
 - Quick Parts are inserted through Word COM from a real template when available
+
+Semantic label rendering (emoji, character styles, unit title tables) is opt-in;
+pass --apply-semantic-labels to enable it. Style definitions are never created or
+redefined here — all style management belongs in manage_docx_styles.py.
 """
 # pylint: disable=protected-access,broad-exception-caught
 import argparse
@@ -1612,7 +1615,7 @@ def insert_section_after_toc(
     has_toc=True,
     insert_h1_sections=True,
     reference_doc_path=None,
-    semantic_formatting=True,
+    apply_semantic_labels=False,
     building_block_template=None,
 ):
     """
@@ -1620,7 +1623,7 @@ def insert_section_after_toc(
     1. If has_toc: insert section break after TOC, restart page numbering at 1,
        remove page numbers from TOC
     2. Insert section breaks before H1 headings
-    3. Apply semantic paragraph styles with python-docx
+    3. Apply semantic label rendering when apply_semantic_labels=True
     4. Insert Quick Parts with Word COM when available
     """
     doc = Document(docx_path)
@@ -1695,7 +1698,7 @@ def insert_section_after_toc(
         print(f'Removed literal alphabetic markers from {alpha_marker_changes} list paragraph(s)')
         made_change = True
 
-    if semantic_formatting:
+    if apply_semantic_labels:
         semantic_changes = apply_semantic_styles(doc)
         if semantic_changes > 0:
             print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
@@ -1741,7 +1744,7 @@ def insert_section_after_toc(
     if made_change:
         doc.save(docx_path)
 
-    if semantic_formatting:
+    if apply_semantic_labels:
         unit_tile_changes = replace_unit_headings_with_title_tables(
             doc,
             reference_doc_path=reference_doc_path,
@@ -1779,9 +1782,18 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Skip inserting section breaks before H1s',
     )
     parser.add_argument(
+        '--apply-semantic-labels',
+        action='store_true',
+        help=(
+            'Apply semantic Div label rendering: insert emoji, set label character styles, '
+            'normalize label text, and replace unit headings with title tables (Phase C). '
+            'Off by default — structural cleanup runs regardless.'
+        ),
+    )
+    parser.add_argument(
         '--no-semantic-formatting',
         action='store_true',
-        help='Skip semantic textbook formatting rules.',
+        help='Deprecated. Semantic formatting is off by default; use --apply-semantic-labels to enable it.',
     )
     return parser
 
@@ -1795,7 +1807,7 @@ def main(argv: list[str] | None = None) -> int:
         has_toc=args.toc,
         insert_h1_sections=not args.no_h1_sections,
         reference_doc_path=args.reference_doc,
-        semantic_formatting=not args.no_semantic_formatting,
+        apply_semantic_labels=args.apply_semantic_labels,
         building_block_template=args.building_block_template,
     )
 

@@ -274,9 +274,17 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Drop standalone markdown horizontal-rule lines such as --- before conversion.',
     )
     parser.add_argument(
+        '--apply-semantic-labels',
+        action='store_true',
+        help=(
+            'Apply semantic Div label rendering during postprocessing '
+            '(emoji, character styles, unit title tables). Off by default.'
+        ),
+    )
+    parser.add_argument(
         '--no-semantic-formatting',
         action='store_true',
-        help='Skip semantic postprocessing rules for custom styles and callout blocks.',
+        help='Deprecated. Semantic formatting is off by default; use --apply-semantic-labels to enable it.',
     )
     parser.add_argument(
         '--building-block-template',
@@ -375,13 +383,13 @@ def main(argv: list[str] | None = None) -> int:
             from .postprocess_docx import insert_section_after_toc
         except ImportError:
             from postprocess_docx import insert_section_after_toc
-            insert_section_after_toc(
-                dest_path,
-                has_toc=args.toc,
-                reference_doc_path=reference_path,
-                semantic_formatting=not args.no_semantic_formatting,
-                building_block_template=args.building_block_template
-            )
+        insert_section_after_toc(
+            dest_path,
+            has_toc=args.toc,
+            reference_doc_path=reference_path,
+            apply_semantic_labels=args.apply_semantic_labels,
+            building_block_template=args.building_block_template,
+        )
         print('Wrote', dest_path)
     finally:
         if temp_dir:

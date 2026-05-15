@@ -66,9 +66,29 @@ Current durable project facts, constraints, and decisions for this workspace.
 - For Advanced Administrative Writing DOCX generation, run the intended Textmaker CLI pipeline with `--reference` passed through to Pandoc as `--reference-doc` and the course Lua Div filter supplied with `--lua-filter`; do not repair generated DOCX style packages by copying XML parts from the reference after conversion.
 - For Advanced Administrative Writing DOCX generation, pass `--no-pagebreak-filter`; the Advanced Lua filter suppresses standalone `---` separators, while Textmaker's built-in `pagebreak.lua` incorrectly turns them into page breaks.
 - Treat Pandoc fallback styles such as `Compact` and `VerbatimChar` as cleanup targets in postprocess when they are not present in the reference DOCX; map them to approved reference styles rather than allowing generated-only styles to remain in output.
-- For Advanced Administrative Writing alphabetic option lists, use the reference style `List Number 3`; after applying it in postprocess, remove literal source markers such as `A. ` from the paragraph text so Word supplies the list label exactly once.
+- For Advanced Administrative Writing alphabetic option lists, use the reference style `List Number 3`; after applying it in postprocess, remove literal source markers such as `A.` from the paragraph text so Word supplies the list label exactly once.
 - For Advanced Administrative Writing semantic Div labels, preserve the semantic paragraph style on the label/title line; do not replace it with `Label Base Para`/`Label Para`. Set label paragraph spacing after to 4pt and moved content paragraph spacing before to 0pt.
 - For semantic Divs that contain lists, keep the list paragraph style (`List Bullet 2`, `List Number 2`, or `List Number 3`) and copy Div block-level paragraph formatting such as borders/shading onto the list paragraphs as direct paragraph formatting. A Word paragraph cannot hold both the semantic paragraph style and the list paragraph style at once.
+
+## Style-Safe DOCX Pipeline (added 2026-05-15)
+
+The `markdown-to-docx` pipeline for content books now follows a strict style-safety model:
+
+**Single source of truth**: the reference DOCX file is the canonical source for all style definitions. The build pipeline never creates or redefines styles.
+
+**Responsibilities:**
+
+- `style_bridge.lua` — generic Lua filter that reads `style_map` from Pandoc YAML front matter and maps fenced Div classes to `custom-style` attributes. No hardcoded style names.
+- `postprocess_docx.py` — structural cleanup only by default. Semantic label rendering (emoji, character styles, unit title tables) requires `--apply-semantic-labels`.
+- `manage_docx_styles.py` — explicit manual maintenance tool for updating reference DOCX styles from a YAML spec (`adv/style_specs/aw-div-label-styles.yaml`). **Not part of the automated build.**
+- `audit_docx_styles.py` — read-only style inspector; reports style definitions, colors, linked-style pairs, and color-mismatch validation.
+- `validate_docx_against_reference.py` — post-build validator; checks that all styles used in generated DOCX exist in the reference DOCX. Hard-fails on mismatch.
+
+**Three-location color rule**: Div label paragraph styles must keep `w:rPr/w:color/@w:val`, `w:rPr/w14:srgbClr/@w14:val`, and the linked character style `w:rPr/w:color/@w:val` in sync. `manage_docx_styles.py` updates all three atomically.
+
+**postprocess_docx.py `--apply-semantic-labels` flag**: added 2026-05-15. Previously `semantic_formatting=True` was the default. The old `--no-semantic-formatting` flag is kept as a deprecated no-op for backward compatibility.
+
+**cli.py bug fixed 2026-05-15**: `insert_section_after_toc()` call was indented inside the `except ImportError` block and never ran when invoked as a package. Now correctly called after the try/except.
 
 ## Roadmap From README
 
