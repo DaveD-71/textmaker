@@ -92,34 +92,78 @@ MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
 )
 
 SEMANTIC_DIV_EMOJI = {
-    'LearnProcess': '🔍',
+    'LearnProcess': '🧭',
     'LearnLanguage': '💬',
     'LearnPrinciple': '💡',
     'LearnTransfer': '🔁',
-    'LearnTeaching': '🎓',
-    'LearnNote': '📝',
-    'ModelBad': '⚠️',
+    'LearnTeaching': '📘',
+    'LearnNote': '🗒️',
+    'GuidanceStep': '🔷',
+    'ReferenceSupport': '📎',
+    'RubricAssessment': '📋',
+    'CourseMeta': 'ℹ️',
+    'ActivityInput': '📥',
+    'ActivityAnalysis': '🔎',
+    'ActivityLanguageControl': '🔤',
+    'ActivityRewrite': '🔄',
+    'ActivityEdit': '✏️',
+    'ActivityDraft': '📝',
+    'Model': '📄',
+    'ModelBad': '❌',
     'ModelGood': '✅',
-    'WorkedExample': '🧭',
+    'WorkedExample': '🧩',
     'Example': '📌',
-    'Placeholder': '✏️',
-    'SelfStudy': '📖',
+    'Placeholder': '⬜',
+    'SelfStudy': '📚',
+    'Annotation': '🏷️',
 }
 
-SEMANTIC_DIV_LABEL_STYLES = {
-    'LearnProcess': 'Div Label Process Char',
-    'LearnLanguage': 'Div Label Language Char',
-    'LearnPrinciple': 'Div Label Principle Char',
-    'LearnTransfer': 'Div Label Transfer Char',
-    'LearnTeaching': 'Div Label Teaching Char',
-    'LearnNote': 'Div Label Note Char',
-    'ModelBad': 'Div Label Bad Char',
-    'ModelGood': 'Div Label Good Char',
-    'WorkedExample': 'Div Label Worked Example Char',
-    'Example': 'Div Label Base Char',
-    'Placeholder': 'Div Label Base Char',
-    'SelfStudy': 'Div Label Self-Study Char',
-}
+def build_semantic_div_label_styles(reference_doc_path=None):
+    """Build the mapping from style_id to label style name based on the reference DOCX."""
+    if reference_doc_path:
+        ref_doc = Document(reference_doc_path)
+        styles = ref_doc.styles
+    else:
+        # Fallback to hardcoded if no reference
+        return {
+            'LearnProcess': 'Div Label Process',
+            'LearnLanguage': 'Div Label Language',
+            'LearnPrinciple': 'Div Label Principle',
+            'LearnTransfer': 'Div Label Transfer',
+            'LearnTeaching': 'Div Label Teaching',
+            'LearnNote': 'Div Label Note',
+            'GuidanceStep': 'Div Label Guidance Step',
+            'ReferenceSupport': 'Div Label Reference Support',
+            'RubricAssessment': 'Div Label Rubric Assessment',
+            'CourseMeta': 'Div Label Course Meta',
+            'ActivityInput': 'Div Label Activity Input',
+            'ActivityAnalysis': 'Div Label Activity Analysis',
+            'ActivityLanguageControl': 'Div Label Activity Language Control',
+            'ActivityRewrite': 'Div Label Activity Rewrite',
+            'ActivityEdit': 'Div Label Activity Edit',
+            'ActivityDraft': 'Div Label Activity Draft',
+            'Model': 'Div Label Model',
+            'ModelBad': 'Div Label Bad',
+            'ModelGood': 'Div Label Good',
+            'WorkedExample': 'Div Label Worked Example',
+            'Example': 'Div Label Base',
+            'Placeholder': 'Div Label Base',
+            'SelfStudy': 'Div Label Self-Study',
+            'Annotation': 'Div Label Annotation',
+        }
+    
+    mapping = {}
+    for style in styles:
+        if style.type == WD_STYLE_TYPE.CHARACTER and style.name.startswith('Div Label '):
+            suffix = style.name[len('Div Label '):]
+            # Remove ' Char' suffix if present (e.g., 'Model Char' -> 'Model')
+            if suffix.endswith(' Char'):
+                suffix = suffix[:-5]
+            mapping[suffix] = style.name
+    return mapping
+
+
+# SEMANTIC_DIV_LABEL_STYLES will be set in apply_semantic_div_labels
 
 LEARN_SEMANTIC_STYLE_IDS = {
     'LearnProcess',
@@ -684,12 +728,21 @@ def _normalize_learn_label_text(style_id: str, run) -> bool:
     return True
 
 
-def apply_semantic_div_labels(doc) -> int:
+def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
     """
     changed = 0
     learn_base = _get_style_by_name_or_id(doc.styles, 'Learn Base')
+    # Use reference styles if available
+    if reference_doc_path:
+        ref_doc = Document(reference_doc_path)
+        styles = ref_doc.styles
+    else:
+        styles = doc.styles
+    
+    # Build the mapping from reference styles
+    semantic_div_label_styles = build_semantic_div_label_styles(reference_doc_path)
     for para in doc.paragraphs:
         style_id = _paragraph_style_id(para)
         emoji = SEMANTIC_DIV_EMOJI.get(style_id)
@@ -707,10 +760,13 @@ def apply_semantic_div_labels(doc) -> int:
         if _normalize_learn_label_text(style_id, label_run):
             changed += 1
 
-        label_style_name = SEMANTIC_DIV_LABEL_STYLES.get(style_id)
+        label_style_name = semantic_div_label_styles.get(style_id)
         label_color = _run_color_value(label_run)
         if label_style_name:
-            label_style = _require_character_style(para.part.styles, label_style_name)
+            label_style = _get_style_by_name_or_id(styles, label_style_name, WD_STYLE_TYPE.CHARACTER)
+            if label_style is None:
+                print(f'Warning: Character style "{label_style_name}" not found in reference DOCX, skipping.')
+                continue
             label_color = label_color or _style_color_value(label_style)
             if label_style and getattr(label_run.style, 'name', None) != label_style.name:
                 label_run.style = label_style
@@ -1221,7 +1277,7 @@ def apply_semantic_styles(doc):
 
         if _is_module_homework_target(paragraphs, idx, text) and _apply_style_if_available(
             para,
-            'Homework Words',
+            'Homework Target',
         ):
             changed += 1
             continue
@@ -1505,7 +1561,9 @@ def apply_quick_parts(docx_path, template_path: Path | None = None) -> int:
         return 0
 
     preexisting_pids = _list_winword_pids()
-    pythoncom.CoInitialize()
+    assert pythoncom is not None
+    assert win32com is not None
+    pythoncom.CoInitialize()  # pylint: disable=no-member
     word = None
     doc = None
     owned_pid = None
@@ -1545,7 +1603,8 @@ def apply_quick_parts(docx_path, template_path: Path | None = None) -> int:
             doc.Close(SaveChanges=WORD_DO_NOT_SAVE_CHANGES)
         if word is not None:
             word.Quit(SaveChanges=WORD_DO_NOT_SAVE_CHANGES)
-        pythoncom.CoUninitialize()
+        if pythoncom is not None:
+            getattr(pythoncom, 'CoUninitialize', lambda: None)()
 
 
 def insert_section_after_toc(
@@ -1642,7 +1701,7 @@ def insert_section_after_toc(
             print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
             made_change = True
 
-        div_label_changes = apply_semantic_div_labels(doc)
+        div_label_changes = apply_semantic_div_labels(doc, reference_doc_path)
         if div_label_changes > 0:
             print(f'Updated semantic Div labels in {div_label_changes} place(s)')
             made_change = True

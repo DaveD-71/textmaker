@@ -375,13 +375,13 @@ def main(argv: list[str] | None = None) -> int:
             from .postprocess_docx import insert_section_after_toc
         except ImportError:
             from postprocess_docx import insert_section_after_toc
-        insert_section_after_toc(
-            dest_path,
-            has_toc=args.toc,
-            reference_doc_path=reference_path,
-            semantic_formatting=not args.no_semantic_formatting,
-            building_block_template=args.building_block_template,
-        )
+            insert_section_after_toc(
+                dest_path,
+                has_toc=args.toc,
+                reference_doc_path=reference_path,
+                semantic_formatting=not args.no_semantic_formatting,
+                building_block_template=args.building_block_template
+            )
         print('Wrote', dest_path)
     finally:
         if temp_dir:
