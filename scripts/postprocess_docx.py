@@ -95,87 +95,58 @@ MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
 )
 
 SEMANTIC_DIV_EMOJI = {
-    'LearnProcess': '🧭',
-    'LearnLanguage': '💬',
-    'LearnPrinciple': '💡',
-    'LearnTransfer': '🔁',
-    'LearnTeaching': '📘',
-    'LearnNote': '🗒️',
-    'GuidanceStep': '🔷',
-    'ReferenceSupport': '📎',
-    'RubricAssessment': '📋',
-    'CourseMeta': 'ℹ️',
-    'ActivityInput': '📥',
-    'ActivityAnalysis': '🔎',
-    'ActivityLanguageControl': '🔤',
-    'ActivityRewrite': '🔄',
-    'ActivityEdit': '✏️',
-    'ActivityDraft': '📝',
-    'Model': '📄',
-    'ModelBad': '❌',
-    'ModelGood': '✅',
-    'WorkedExample': '🧩',
-    'Example': '📌',
-    'Placeholder': '⬜',
-    'SelfStudy': '📚',
-    'Annotation': '🏷️',
+    # Style IDs match reference DOCX "Div Label *" paragraph styles
+    'DivLabelProcess': '🧭',
+    'DivLabelLanguage': '💬',
+    'DivLabelPrinciple': '💡',
+    'DivLabelTransfer': '🔁',
+    'DivLabelTeaching': '📘',
+    'DivLabelNote': '🗒️',
+    'DivLabelBase': 'ℹ️',           # fallback for guidance-step, reference-support, etc.
+    'DivLabelActivityInput': '📥',
+    'DivLabelActivityAnalysis': '🔎',
+    'DivLabelActivityLanguageControl': '🔤',
+    'DivLabelActivityRewrite': '🔄',
+    'DivLabelActivityEdit': '✏️',
+    'DivLabelActivityDraft': '📝',
+    'DivLabelWorkedExample': '🧩',
+    'DivLabelExample': '📌',
+    'DivLabelPlaceholder': '⬜',
+    'DivLabelSelfStudy': '📚',
+    'DivLabelAnnotation': '🏷️',
+    'DivLabelModel': '📄',
+    'DivLabelBad': '❌',
+    'DivLabelGood': '✅',
 }
 
 def build_semantic_div_label_styles(reference_doc_path=None):
-    """Build the mapping from style_id to label style name based on the reference DOCX."""
-    if reference_doc_path:
-        ref_doc = Document(reference_doc_path)
-        styles = ref_doc.styles
-    else:
-        # Fallback to hardcoded if no reference
-        return {
-            'LearnProcess': 'Div Label Process',
-            'LearnLanguage': 'Div Label Language',
-            'LearnPrinciple': 'Div Label Principle',
-            'LearnTransfer': 'Div Label Transfer',
-            'LearnTeaching': 'Div Label Teaching',
-            'LearnNote': 'Div Label Note',
-            'GuidanceStep': 'Div Label Guidance Step',
-            'ReferenceSupport': 'Div Label Reference Support',
-            'RubricAssessment': 'Div Label Rubric Assessment',
-            'CourseMeta': 'Div Label Course Meta',
-            'ActivityInput': 'Div Label Activity Input',
-            'ActivityAnalysis': 'Div Label Activity Analysis',
-            'ActivityLanguageControl': 'Div Label Activity Language Control',
-            'ActivityRewrite': 'Div Label Activity Rewrite',
-            'ActivityEdit': 'Div Label Activity Edit',
-            'ActivityDraft': 'Div Label Activity Draft',
-            'Model': 'Div Label Model',
-            'ModelBad': 'Div Label Bad',
-            'ModelGood': 'Div Label Good',
-            'WorkedExample': 'Div Label Worked Example',
-            'Example': 'Div Label Base',
-            'Placeholder': 'Div Label Base',
-            'SelfStudy': 'Div Label Self-Study',
-            'Annotation': 'Div Label Annotation',
-        }
-    
+    """
+    Build a mapping from paragraph style ID to character style name for semantic Div label runs.
+
+    Keys are paragraph style IDs (e.g. 'DivLabelProcess'); values are the linked character
+    style names (e.g. 'Div Label Process Char') used to colour the label run.
+    """
+    if not reference_doc_path:
+        return {}
+
+    ref_doc = Document(reference_doc_path)
+    styles = ref_doc.styles
     mapping = {}
     for style in styles:
-        if style.type == WD_STYLE_TYPE.CHARACTER and style.name.startswith('Div Label '):
-            suffix = style.name[len('Div Label '):]
-            # Remove ' Char' suffix if present (e.g., 'Model Char' -> 'Model')
-            if suffix.endswith(' Char'):
-                suffix = suffix[:-5]
-            mapping[suffix] = style.name
+        if style.type != WD_STYLE_TYPE.PARAGRAPH:
+            continue
+        if not style.name.startswith('Div Label '):
+            continue
+        char_style_name = style.name + ' Char'
+        char_style = _get_style_by_name_or_id(styles, char_style_name, WD_STYLE_TYPE.CHARACTER)
+        if char_style is not None:
+            mapping[style.style_id] = char_style_name
     return mapping
 
 
 # SEMANTIC_DIV_LABEL_STYLES will be set in apply_semantic_div_labels
 
-LEARN_SEMANTIC_STYLE_IDS = {
-    'LearnProcess',
-    'LearnLanguage',
-    'LearnPrinciple',
-    'LearnTransfer',
-    'LearnTeaching',
-    'LearnNote',
-}
+LEARN_SEMANTIC_STYLE_IDS: set[str] = set()  # Learn base conversion removed
 
 SEMANTIC_DIV_STYLE_IDS = set(SEMANTIC_DIV_EMOJI)
 
@@ -758,6 +729,12 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
 
         label_index, label_run = _find_semantic_label_run(para)
         if label_run is None:
+            # No bold run found — take the first non-empty run (plain label text)
+            for idx, run in enumerate(para.runs):
+                if run.text and run.text.strip():
+                    label_index, label_run = idx, run
+                    break
+        if label_run is None:
             continue
 
         if _normalize_learn_label_text(style_id, label_run):
@@ -785,6 +762,12 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
             _set_run_non_italic(emoji_run)
             _set_run_non_bold(emoji_run)
             _insert_run_after_properties(para, emoji_run)
+
+            tab_run = para.add_run()
+            tab_run.text = '\t'
+            emoji_idx = list(para._p).index(emoji_run._r)
+            para._p.remove(tab_run._r)
+            para._p.insert(emoji_idx + 1, tab_run._r)
             changed += 1
 
         if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:

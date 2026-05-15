@@ -150,6 +150,74 @@ def update_fonts(style_el, font_spec: dict, report: list) -> None:
             report.append(f"  {style_name}: font {attr}  {old_val!r} → {new_val!r}")
 
 
+def apply_paragraph_format_to_div_labels(styles_xml, report: list) -> None:
+    """Apply uniform paragraph formatting to all 'Div Label *' paragraph styles.
+
+    Font size 11pt, left indent -0.6cm, hanging 0.6cm, space before 14pt,
+    space after 3pt, tab stop at 0.6cm left-aligned.
+    All values in twips (1pt = 20 twips, 1cm ≈ 567 twips).
+    """
+    for style_el in styles_xml.findall(_qn("w:style")):
+        if style_el.get(_qn("w:type")) != "paragraph":
+            continue
+        name_el = style_el.find(_qn("w:name"))
+        if name_el is None:
+            continue
+        style_name = name_el.get(_qn("w:val"), "")
+        if not style_name.startswith("Div Label "):
+            continue
+
+        p_pr = style_el.find(_qn("w:pPr"))
+        if p_pr is None:
+            p_pr = etree.SubElement(style_el, _qn("w:pPr"))
+
+        r_pr = style_el.find(_qn("w:rPr"))
+        if r_pr is None:
+            r_pr = etree.SubElement(style_el, _qn("w:rPr"))
+
+        # Font size: 11pt = 22 half-points
+        for sz_tag in (_qn("w:sz"), _qn("w:szCs")):
+            sz_el = r_pr.find(sz_tag)
+            if sz_el is None:
+                sz_el = etree.SubElement(r_pr, sz_tag)
+            old_val = sz_el.get(_qn("w:val"))
+            if old_val != "22":
+                sz_el.set(_qn("w:val"), "22")
+                report.append(f"  {style_name}: {sz_tag.split('}')[1]}  {old_val!r} → '22' (11pt)")
+
+        # Indentation: left -340 twips (-0.6cm), hanging 340 twips (0.6cm)
+        ind_el = p_pr.find(_qn("w:ind"))
+        if ind_el is None:
+            ind_el = etree.SubElement(p_pr, _qn("w:ind"))
+        for attr, val in ((_qn("w:left"), "-340"), (_qn("w:hanging"), "340")):
+            old_val = ind_el.get(attr)
+            if old_val != val:
+                ind_el.set(attr, val)
+                report.append(f"  {style_name}: ind {attr.split('}')[1]}  {old_val!r} → {val!r}")
+
+        # Spacing: before 280 twips (14pt), after 60 twips (3pt)
+        spacing_el = p_pr.find(_qn("w:spacing"))
+        if spacing_el is None:
+            spacing_el = etree.SubElement(p_pr, _qn("w:spacing"))
+        for attr, val in ((_qn("w:before"), "280"), (_qn("w:after"), "60")):
+            old_val = spacing_el.get(attr)
+            if old_val != val:
+                spacing_el.set(attr, val)
+                report.append(f"  {style_name}: spacing {attr.split('}')[1]}  {old_val!r} → {val!r}")
+
+        # Tab stop: 340 twips (0.6cm), left-aligned
+        tabs_el = p_pr.find(_qn("w:tabs"))
+        if tabs_el is None:
+            tabs_el = etree.SubElement(p_pr, _qn("w:tabs"))
+        for existing in list(tabs_el.findall(_qn("w:tab"))):
+            if existing.get(_qn("w:pos")) == "340":
+                tabs_el.remove(existing)
+        tab_el = etree.SubElement(tabs_el, _qn("w:tab"))
+        tab_el.set(_qn("w:val"), "left")
+        tab_el.set(_qn("w:pos"), "340")
+        report.append(f"  {style_name}: tab stop set at 340 twips (0.6cm, left)")
+
+
 def fix_div_label_base_next(styles_xml, report: list) -> None:
     """Ensure Div Label Base next style points to DivContent, not Code."""
     style_el = find_style_by_name(styles_xml, "Div Label Base")
@@ -200,6 +268,9 @@ def apply_spec(styles_xml, spec: dict, group_filter: str | None = None) -> list:
     report.append("\nKnown-issue fixes:")
     fix_div_label_base_next(styles_xml, report)
 
+    report.append("\nDiv Label paragraph formatting:")
+    apply_paragraph_format_to_div_labels(styles_xml, report)
+
     return report
 
 
@@ -246,10 +317,12 @@ def main() -> int:
         print(f"Error: input file not found: {input_path}", file=sys.stderr)
         return 1
 
+    read_path = input_path
     if args.in_place:
         output_path = input_path
         bak_path = input_path.with_suffix(".bak")
         shutil.copy2(input_path, bak_path)
+        read_path = bak_path  # Avoid simultaneous read/write on the same file
         print(f"Backup created: {bak_path}")
     elif args.output:
         output_path = Path(args.output).resolve()
@@ -267,7 +340,7 @@ def main() -> int:
         return 1
 
     try:
-        _, styles_xml = read_styles_xml(str(input_path))
+        _, styles_xml = read_styles_xml(str(read_path))
     except Exception as exc:
         print(f"Error reading DOCX: {exc}", file=sys.stderr)
         return 1
@@ -276,7 +349,7 @@ def main() -> int:
 
     try:
         updated_bytes = serialize_styles_xml(styles_xml)
-        write_updated_docx(str(input_path), str(output_path), updated_bytes)
+        write_updated_docx(str(read_path), str(output_path), updated_bytes)
     except Exception as exc:
         print(f"Error writing output DOCX: {exc}", file=sys.stderr)
         return 1
