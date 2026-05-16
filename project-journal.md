@@ -58,19 +58,57 @@
   - stop relying on multiple `Learn XXX` paragraph styles surviving postprocess
   - convert Learn semantic paragraphs to `Learn Base` during postprocess
 
-## 2026-05-16 (session 2 — div cleanup and reclassification)
-
-### Status at session end
-
-Active working file: `book_administrative-writing/adv/md/working/aw-adv-all_0516.md` (8,361 lines, 595 div instances)
-
-Reclassification review document: `book_administrative-writing/adv/edits & guides/style edits/div_reclassification_review_0516.md` (597-row detail table, verified totals)
-
-Design reference: `book_administrative-writing/adv/edits & guides/style edits/div_class_reclassification_0515.md`
-
-Build guide: `book_administrative-writing/adv/README-build.md`
+## 2026-05-16 (session 3 — content-based div reclassification pass)
 
 ### Completed this session
+
+- Generated a full 595-row content-based reclassification review (`div_reclassification_full_0516.md`) with an explicit one-sentence reason for every div classification.
+- Reviewed all 595 rows independently (not label-swapping — reading actual content against the 9-class guide).
+- Applied 74 reclassifications to `aw-adv-all_0516.md` via Python script; 0 skipped.
+- Verified div balance: 595 open, 595 close, 0 unclosed, 0 orphan closes.
+- Verified total count: 595 divs (unchanged — no divs added or removed).
+
+### Key reclassification decisions and reasons
+
+- **edit → rewrite (18 cases):** Tasks labelled `edit` whose instruction was to transform/rewrite given text, not to find errors or apply checklists. The `edit` class is reserved for error-finding, peer review, and self-editing checklists.
+- **language → rewrite (8 cases):** Divs where the learner performs a sentence-transformation, completion, or expansion task on given text — not a reference list of language forms.
+- **notice → write (9 cases):** Prediction, data-interpretation, and reflection tasks where the learner produces original text from given scenario information.
+- **language → learn (6 cases):** Teaching explanation divs (notes on but/however, thematic progression panels, section wrappers) — no task, pure explanation, not a reference list.
+- **language → structure (3 cases):** Phrase-bank sorting tasks where the learner classifies given phrases under headings — no new text produced.
+- **notice → learn (4 cases):** Outer wrapper divs containing explanatory content or reference panels — no observation task.
+- **rewrite → structure (4 cases):** Tasks where the learner orders/sequences given jumbled sentences into a paragraph, not rewrites prose.
+- **notice → structure (2 cases):** Sorting/sequencing tasks on given items.
+- **rewrite → learn (2 cases):** Outer wrapper divs containing teaching explanation with no rewrite task in the wrapper itself.
+- **write → structure (3 cases):** Template-guided tasks where the learner fills a given structural framework — not original production from scratch.
+- **edit → revise (4 cases):** Revision chains where learner improves their OWN previously drafted text from an earlier unit.
+- **edit → notice (2 cases):** Track-change simulation tasks where learner evaluates proposed edits and decides accept/reject.
+- **write → rewrite (1 case):** Two-audience adaptation task with given source text to transform.
+- **write → revise (1 case):** Self-revision of own earlier writing using self-diagnosis questions.
+
+### Final div class distribution (session 3 result)
+
+| Class | Before | After | Delta | Word style |
+| --- | --- | --- | --- | --- |
+| `example` | 127 | 127 | 0 | Div Label Example |
+| `learn` | 114 | 126 | +12 | Div Label Learn |
+| `write` | 89 | 95 | +6 | Div Label Write |
+| `rewrite` | 57 | 83 | +26 | Div Label Rewrite |
+| `notice` | 79 | 65 | −14 | Div Label Notice |
+| `edit` | 75 | 48 | −27 | Div Label Edit |
+| `language` | 54 | 34 | −20 | Div Label Language |
+| `structure` | 0 | 13 | +13 | Div Label Structure |
+| `revise` | 0 | 4 | +4 | Div Label Revise |
+| **Total** | **595** | **595** | **0** | |
+
+### Remaining work (pending)
+
+- The reference DOCX (`adv/md/working/aw-adv-styleref.docx`) still has the OLD style names (e.g. `Div Label Activity Analysis`, `Div Label Process`, etc.) — it needs to be updated to define the 9 new `Div Label *` styles before a DOCX build can be run. Use `manage_docx_styles.py` with a YAML spec, or update manually.
+- The `adv/style_specs/aw-div-label-styles.yaml` spec file will also need updating to match the new 9-class system before `manage_docx_styles.py` can be used.
+- A full DOCX build and validation pass has not been run against the 0516 file yet.
+
+## 2026-05-16 (session 2 — div cleanup and reclassification)
+
+### Work completed
 
 - Fixed 52 missing blank lines between consecutive `:::` close / `:::` open fences (Pandoc parse risk)
 - Removed BOM character (U+FEFF) that was on its own line after the YAML front matter
@@ -79,30 +117,8 @@ Build guide: `book_administrative-writing/adv/README-build.md`
 - Removed `reference-support` div at Unit 9 D (template content absorbed into surrounding `activity-draft`)
 - Removed `reference-support` div at line ~7267 (continuation of model report, absorbed as plain prose)
 - Restructured Unit 23 B section (lines 8036–8089): removed empty `activity-analysis` shell, removed `reference-support` scenario wrapper, replaced `model-bad`/`model-good` with neutral `model` divs labelled "Response A" / "Response B"
-- Completed full div reclassification: all 595 div open fences renamed from 18 old classes to 9 new classes per the reclassification guide
+- Completed initial div reclassification: all 595 div open fences renamed from 18 old classes to 9 new classes per the reclassification guide
 - Updated YAML `style_map` to the 9 new classes with `Div Label *` Word style targets
-
-### New div class system (9 classes, 595 instances)
-
-| Class | Count | Word style |
-| --- | --- | --- |
-| `example` | 127 | Div Label Example |
-| `learn` | 114 | Div Label Learn |
-| `write` | 89 | Div Label Write |
-| `notice` | 79 | Div Label Notice |
-| `edit` | 75 | Div Label Edit |
-| `rewrite` | 57 | Div Label Rewrite |
-| `language` | 54 | Div Label Language |
-| `structure` | 0 | Div Label Structure |
-| `revise` | 0 | Div Label Revise |
-
-### Remaining work (pending)
-
-- The reference DOCX (`adv/md/working/aw-adv-styleref.docx`) still has the OLD style names (e.g. `Div Label Activity Analysis`, `Div Label Process`, etc.) — it needs to be updated to define the 9 new `Div Label *` styles before a DOCX build can be run. Use `manage_docx_styles.py` with a YAML spec, or update manually.
-- The `adv/style_specs/aw-div-label-styles.yaml` spec file will also need updating to match the new 9-class system before `manage_docx_styles.py` can be used.
-- Review and update `aw-adv-all_0516_div_issues.md` to close out resolved items.
-- Remaining div issues from the original to-do list that may still need attention: heading-to-div gap pattern review (24+ instances), heading/Focus redundancy pattern (8 cases) — these were deprioritised in favour of the reclassification pass.
-- A full DOCX build and validation pass has not been run against the 0516 file yet.
 
 ## 2026-05-16 (session 1 — bootstrap and pipeline setup)
 
