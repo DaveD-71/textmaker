@@ -5,13 +5,12 @@
 --     remove_horizontal_rules: true
 --     preserve_div_line_breaks: true
 --   style_map:
---     activity-analysis: "Div Label Activity Analysis"
---     learn-process: "Div Label Process"
---     model: "Model"
+--     learn: "Div Label Learn"
+--     write: "Div Label Write"
 --     ...
 --
--- "Div Label *" styles: first Para gets the label style; subsequent Paras get "Div Content".
--- All other styles (Model, Model Bad, Model Good, etc.): applied to every paragraph in the Div.
+-- "Div Label *" styles: first Para gets the label style; remaining blocks left unstyled.
+-- All other styles: applied to every paragraph in the Div.
 --
 -- Two-pass approach: Meta is read first, then Div/HorizontalRule use the loaded values.
 
@@ -77,7 +76,7 @@ return {
         if style and style ~= "" then
 
           if not is_div_label_style(style) then
-            -- Content styles (Model, Model Bad, etc.): apply to all paragraphs
+            -- Content styles: apply to all paragraphs in the Div
             el.attributes["custom-style"] = style
             if preserve_lb then
               el = softbreak_to_linebreak(el)
