@@ -380,19 +380,15 @@ def main(argv: list[str] | None = None) -> int:
         subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
         try:
-            from .postprocess_docx import insert_section_after_toc, read_source_yaml, resolve_body_text_styles
+            from .postprocess_docx import insert_section_after_toc
         except ImportError:
-            from postprocess_docx import insert_section_after_toc, read_source_yaml, resolve_body_text_styles
-        source_yaml = read_source_yaml(str(src_path))
-        body_text_style, body_text_char_style = resolve_body_text_styles(source_yaml)
+            from postprocess_docx import insert_section_after_toc
         insert_section_after_toc(
             dest_path,
             has_toc=args.toc,
             reference_doc_path=reference_path,
             apply_semantic_labels=args.apply_semantic_labels,
             building_block_template=args.building_block_template,
-            body_text_style=body_text_style,
-            body_text_char_style=body_text_char_style,
         )
         print('Wrote', dest_path)
     finally:
