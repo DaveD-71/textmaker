@@ -23,6 +23,11 @@ from pathlib import Path
 from typing import Iterable
 
 try:
+    import yaml  # type: ignore[reportMissingImports]
+except ImportError:
+    yaml = None  # type: ignore[assignment]
+
+try:
     from docx import Document  # type: ignore[reportMissingImports]
     from docx.enum.style import WD_STYLE_TYPE  # type: ignore[reportMissingImports]
     from docx.enum.text import WD_ALIGN_PARAGRAPH  # type: ignore[reportMissingImports]
@@ -46,6 +51,35 @@ except ImportError:
 
 
 NS = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+
+# Resolved at startup from source Markdown YAML; functions that cannot easily
+# receive the name as a parameter read it here.
+_BODY_TEXT_STYLE = 'Body Text'
+_BODY_TEXT_CHAR_STYLE = 'Body Text Char'
+
+_YAML_FENCE_RE = re.compile(r'\A---\r?\n(.*?\r?\n)---\r?\n', re.DOTALL)
+
+
+def read_source_yaml(source_md: str | None) -> dict:
+    """Parse YAML front matter from a Markdown source file. Returns {} on any failure."""
+    if not source_md or yaml is None:
+        return {}
+    try:
+        text = Path(source_md).read_text(encoding='utf-8-sig')  # strips BOM if present
+        m = _YAML_FENCE_RE.match(text)
+        if not m:
+            return {}
+        return yaml.safe_load(m.group(1)) or {}
+    except Exception:
+        return {}
+
+
+def resolve_body_text_styles(source_yaml: dict) -> tuple[str, str]:
+    """Return (body_text_style, body_text_char_style) from YAML style_bridge config."""
+    bridge = source_yaml.get('style_bridge', {}) if source_yaml else {}
+    para = bridge.get('body_text', 'Body Text')
+    char = bridge.get('body_text_char', para + ' Char')
+    return para, char
 
 WHY_LABEL = 'Why this works:'
 CHECK_LABELS = ('Before you write:',)
@@ -782,9 +816,9 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
     return changed
 
 
-def apply_body_text_to_normal_paragraphs(doc) -> int:
-    """Make ordinary prose explicit Body Text instead of implicit/explicit Normal."""
-    body_text = _require_style(doc.styles, 'Body Text')
+def apply_body_text_to_normal_paragraphs(doc, body_text_style: str = 'Body Text') -> int:
+    """Make ordinary prose explicit body-text style instead of implicit/explicit Normal."""
+    body_text = _require_style(doc.styles, body_text_style)
 
     changed = 0
     for para in doc.paragraphs:
@@ -796,7 +830,7 @@ def apply_body_text_to_normal_paragraphs(doc) -> int:
         if style_id in SEMANTIC_DIV_EMOJI:
             continue
         style_name = _paragraph_style_name(para)
-        if style_name == 'Body Text':
+        if style_name == body_text_style:
             continue
         if style_name == 'Normal' or not _has_explicit_paragraph_style(para):
             para.style = body_text
@@ -824,10 +858,10 @@ def strip_activity_codes_from_headings(doc) -> int:
     return changed
 
 
-def remove_pandoc_generated_styles(doc) -> int:
+def remove_pandoc_generated_styles(doc, body_text_style: str = 'Body Text', body_text_char_style: str = 'Body Text Char') -> int:
     """Replace Pandoc fallback styles that are not part of the reference DOCX."""
-    body_text = _require_style(doc.styles, 'Body Text')
-    body_text_char = _require_style(doc.styles, 'Body Text Char')
+    body_text = _require_style(doc.styles, body_text_style)
+    body_text_char = _require_style(doc.styles, body_text_char_style)
     changed = 0
 
     for para in _iter_all_paragraphs(doc):
@@ -855,7 +889,7 @@ def _style_ids(styles) -> set[str]:
     }
 
 
-def purge_styles_not_in_reference(doc, reference_doc_path) -> int:
+def purge_styles_not_in_reference(doc, reference_doc_path, body_text_style: str = 'Body Text') -> int:
     """
     Remove generated DOCX style references and style definitions that are not
     present in the reference DOCX.
@@ -864,7 +898,7 @@ def purge_styles_not_in_reference(doc, reference_doc_path) -> int:
         return 0
     reference_doc = Document(reference_doc_path)
     allowed_style_ids = _style_ids(reference_doc.styles)
-    body_text = _require_style(doc.styles, 'Body Text')
+    body_text = _require_style(doc.styles, body_text_style)
     changed = 0
 
     for para in _iter_story_paragraphs(doc):
@@ -1184,14 +1218,14 @@ def _can_apply_after_list_to_paragraph(paragraph) -> bool:
     if _is_heading(paragraph):
         return False
     style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
-    return style_name in {'Normal', 'Body Text', 'Block Text', 'After List'}
+    return style_name in {'Normal', _BODY_TEXT_STYLE, 'Block Text', 'After List'}
 
 
 def _is_short_follow_on_context(paragraph) -> bool:
     if _is_heading(paragraph) or _is_list_paragraph(paragraph):
         return False
     style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
-    return style_name in {'Normal', 'Body Text', 'Block Text', 'After List'}
+    return style_name in {'Normal', _BODY_TEXT_STYLE, 'Block Text', 'After List'}
 
 
 def _is_module_homework_target(paragraphs, index, text: str) -> bool:
@@ -1600,6 +1634,8 @@ def insert_section_after_toc(
     reference_doc_path=None,
     apply_semantic_labels=False,
     building_block_template=None,
+    body_text_style: str = 'Body Text',
+    body_text_char_style: str = 'Body Text Char',
 ):
     """
     Post-process `docx_path` to:
@@ -1609,6 +1645,10 @@ def insert_section_after_toc(
     3. Apply semantic label rendering when apply_semantic_labels=True
     4. Insert Quick Parts with Word COM when available
     """
+    global _BODY_TEXT_STYLE, _BODY_TEXT_CHAR_STYLE
+    _BODY_TEXT_STYLE = body_text_style
+    _BODY_TEXT_CHAR_STYLE = body_text_char_style
+
     doc = Document(docx_path)
     paragraphs = list(doc.paragraphs)
 
@@ -1692,9 +1732,9 @@ def insert_section_after_toc(
             print(f'Updated semantic Div labels in {div_label_changes} place(s)')
             made_change = True
 
-    body_text_changes = apply_body_text_to_normal_paragraphs(doc)
+    body_text_changes = apply_body_text_to_normal_paragraphs(doc, body_text_style)
     if body_text_changes > 0:
-        print(f'Applied Body Text to {body_text_changes} normal paragraph(s)')
+        print(f'Applied {body_text_style!r} to {body_text_changes} normal paragraph(s)')
         made_change = True
 
     heading_code_changes = strip_activity_codes_from_headings(doc)
@@ -1702,12 +1742,12 @@ def insert_section_after_toc(
         print(f'Removed activity codes from {heading_code_changes} heading(s)')
         made_change = True
 
-    pandoc_style_changes = remove_pandoc_generated_styles(doc)
+    pandoc_style_changes = remove_pandoc_generated_styles(doc, body_text_style, body_text_char_style)
     if pandoc_style_changes > 0:
         print(f'Replaced Pandoc fallback styles in {pandoc_style_changes} place(s)')
         made_change = True
 
-    purged_style_changes = purge_styles_not_in_reference(doc, reference_doc_path)
+    purged_style_changes = purge_styles_not_in_reference(doc, reference_doc_path, body_text_style)
     if purged_style_changes > 0:
         print(f'Removed non-reference style usage/definitions in {purged_style_changes} place(s)')
         made_change = True
@@ -1750,6 +1790,14 @@ def insert_section_after_toc(
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('docx', help='DOCX file to postprocess')
+    parser.add_argument(
+        '--source-md',
+        help=(
+            'Source Markdown file whose YAML front matter defines style names '
+            '(e.g. style_bridge.body_text). Used as the single source of truth '
+            'for any style name that the postprocessor needs to reference.'
+        ),
+    )
     parser.add_argument('--toc', action='store_true', default=True, help='Document has TOC')
     parser.add_argument(
         '--reference-doc',
@@ -1785,6 +1833,9 @@ def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
 
+    source_yaml = read_source_yaml(args.source_md)
+    body_text_style, body_text_char_style = resolve_body_text_styles(source_yaml)
+
     did_update = insert_section_after_toc(
         args.docx,
         has_toc=args.toc,
@@ -1792,6 +1843,8 @@ def main(argv: list[str] | None = None) -> int:
         reference_doc_path=args.reference_doc,
         apply_semantic_labels=args.apply_semantic_labels,
         building_block_template=args.building_block_template,
+        body_text_style=body_text_style,
+        body_text_char_style=body_text_char_style,
     )
 
     if did_update:
