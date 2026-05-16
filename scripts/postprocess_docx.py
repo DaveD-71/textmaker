@@ -1593,6 +1593,135 @@ def apply_quick_parts(docx_path, template_path: Path | None = None) -> int:
             getattr(pythoncom, 'CoUninitialize', lambda: None)()
 
 
+def apply_checklist_style(doc) -> int:
+    """Apply Checklist style to bullet list items inside Self-Editing Checklist edit divs.
+
+    Detects the DivLabelEdit paragraph whose text is 'Self-Editing Checklist', then
+    applies the Checklist style to immediately following List Bullet 2 paragraphs.
+    """
+    checklist_style = _get_style_by_name_or_id(doc.styles, 'Checklist')
+    if not checklist_style:
+        return 0
+
+    paragraphs = list(doc.paragraphs)
+    changed = 0
+    in_checklist = False
+
+    for para in paragraphs:
+        style_id = _paragraph_style_id(para)
+        text = _normalize_text(para.text)
+
+        if style_id == 'DivLabelEdit' and text == 'Self-Editing Checklist':
+            in_checklist = True
+            continue
+
+        if in_checklist:
+            style_name = getattr(para.style, 'name', '') if para.style else ''
+            if style_name in ('List Bullet 2', 'List Bullet', 'List Bullet 3'):
+                para.style = checklist_style
+                changed += 1
+            elif _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
+                in_checklist = False
+            elif text and not _is_list_paragraph(para):
+                in_checklist = False
+
+    return changed
+
+
+def apply_example_block_styles(doc) -> int:
+    """Apply AW Example Good / AW Example Bad body styles to content after div label paragraphs.
+
+    When a DivLabelExampleGood or DivLabelExampleBad label paragraph is found,
+    apply the corresponding AW Example Good / AW Example Bad style to immediately
+    following Block Text / Body Text paragraphs until the next heading or div label.
+    """
+    good_style = _get_style_by_name_or_id(doc.styles, 'AW Example Good')
+    bad_style = _get_style_by_name_or_id(doc.styles, 'AW Example Bad')
+    neutral_style = _get_style_by_name_or_id(doc.styles, 'AW Example')
+    if not good_style and not bad_style:
+        return 0
+
+    paragraphs = list(doc.paragraphs)
+    changed = 0
+    target_style = None
+
+    for para in paragraphs:
+        style_id = _paragraph_style_id(para)
+
+        if style_id == 'DivLabelExampleGood':
+            target_style = good_style
+            continue
+        if style_id == 'DivLabelExampleBad':
+            target_style = bad_style
+            continue
+        if style_id == 'DivLabelExample':
+            target_style = neutral_style
+            continue
+
+        if target_style is not None:
+            style_name = getattr(para.style, 'name', '') if para.style else ''
+            if style_name in NEUTRAL_MODEL_SOURCE_STYLES or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
+                para.style = target_style
+                changed += 1
+            elif _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
+                target_style = None
+            elif _normalize_text(para.text) and style_name not in ('Body Text', 'Normal'):
+                target_style = None
+
+    return changed
+
+
+def apply_spacing_after_lists(doc, space_after_twips: int = 120) -> int:
+    """Add spacing after prose paragraphs that follow list paragraphs.
+
+    Replaces the deleted 'After List' style by injecting w:spacing/@w:after directly.
+    Only applies to Body Text / Normal paragraphs that immediately follow a list.
+    """
+    paragraphs = list(doc.paragraphs)
+    changed = 0
+
+    for idx, para in enumerate(paragraphs):
+        if not _is_candidate_after_list(_normalize_text(para.text)):
+            continue
+        if not _can_apply_after_list_to_paragraph(para):
+            continue
+        prev = _find_previous_text_paragraph(paragraphs, idx)
+        if prev is None or not _is_list_paragraph(prev):
+            continue
+
+        p_pr = para._p.find(qn('w:pPr'))
+        if p_pr is None:
+            p_pr = OxmlElement('w:pPr')
+            para._p.insert(0, p_pr)
+        spacing = p_pr.find(qn('w:spacing'))
+        if spacing is None:
+            spacing = OxmlElement('w:spacing')
+            p_pr.append(spacing)
+        current = spacing.get(qn('w:after'))
+        if current != str(space_after_twips):
+            spacing.set(qn('w:after'), str(space_after_twips))
+            changed += 1
+
+    return changed
+
+
+def apply_table_styles(doc, default_style: str = 'AW Standard Table') -> int:
+    """Apply AW Standard Table style to all tables that have no custom style set."""
+    table_style = _get_style_by_name_or_id(doc.styles, default_style)
+    if not table_style:
+        return 0
+    changed = 0
+    for table in doc.tables:
+        try:
+            current = table.style.name if table.style else None
+            if current in (None, 'Table Normal', 'Normal Table'):
+                table.style = table_style
+                changed += 1
+        except Exception:
+            pass
+    return changed
+
+
 def insert_section_after_toc(
     docx_path,
     has_toc=True,
@@ -1681,6 +1810,26 @@ def insert_section_after_toc(
         print(f'Removed literal alphabetic markers from {alpha_marker_changes} list paragraph(s)')
         made_change = True
 
+    checklist_changes = apply_checklist_style(doc)
+    if checklist_changes > 0:
+        print(f'Applied Checklist style to {checklist_changes} item(s)')
+        made_change = True
+
+    example_block_changes = apply_example_block_styles(doc)
+    if example_block_changes > 0:
+        print(f'Applied example block styles to {example_block_changes} paragraph(s)')
+        made_change = True
+
+    spacing_changes = apply_spacing_after_lists(doc)
+    if spacing_changes > 0:
+        print(f'Applied post-list spacing to {spacing_changes} paragraph(s)')
+        made_change = True
+
+    table_style_changes = apply_table_styles(doc)
+    if table_style_changes > 0:
+        print(f'Applied table styles to {table_style_changes} table(s)')
+        made_change = True
+
     if apply_semantic_labels:
         semantic_changes = apply_semantic_styles(doc)
         if semantic_changes > 0:
@@ -1727,22 +1876,23 @@ def insert_section_after_toc(
     if made_change:
         doc.save(docx_path)
 
-    if apply_semantic_labels:
-        unit_tile_changes = replace_unit_headings_with_title_tables(
-            doc,
-            reference_doc_path=reference_doc_path,
-        )
-        if unit_tile_changes > 0:
+    # Unit title table substitution — runs whenever reference_doc is available,
+    # independent of apply_semantic_labels.
+    unit_tile_changes = replace_unit_headings_with_title_tables(
+        doc,
+        reference_doc_path=reference_doc_path,
+    )
+    if unit_tile_changes > 0:
+        doc.save(docx_path)
+        print(f'Inserted {unit_tile_changes} unit title table(s)')
+        made_change = True
+        doc = Document(docx_path)
+        restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
+        if restored_headings > 0:
             doc.save(docx_path)
-            print(f'Inserted {unit_tile_changes} unit title table(s)')
-            made_change = True
-            doc = Document(docx_path)
-            restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
-            if restored_headings > 0:
-                doc.save(docx_path)
-                print(
-                    f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
-                )
+            print(
+                f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
+            )
 
     return made_change
 

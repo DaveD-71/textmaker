@@ -90,6 +90,21 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 
 **cli.py bug fixed 2026-05-15**: `insert_section_after_toc()` call was indented inside the `except ImportError` block and never ran when invoked as a package. Now correctly called after the try/except.
 
+**postprocess_docx.py additions (2026-05-17)**:
+
+- `apply_checklist_style()` — applies `Checklist` style to bullet items inside `Self-Editing Checklist` edit divs.
+- `apply_example_block_styles()` — applies `AW Example Good`/`AW Example Bad`/`AW Example` to body paragraphs after matching Div Label paragraph.
+- `apply_spacing_after_lists()` — adds 120-twip `w:spacing/@w:after` to prose paragraphs following list paragraphs (replaces deleted `After List` style).
+- `apply_table_styles()` — applies `AW Standard Table` to all unstyled tables.
+- `replace_unit_headings_with_title_tables()` ungated from `apply_semantic_labels` — now runs whenever `--reference-doc` is supplied.
+- Duplicate `apply_semantic_div_labels` call removed from flow.
+
+**Div style naming convention (2026-05-17)**: all Div paragraph/character style pairs in the reference DOCX are named `Div Label *` (10-char prefix). `style_bridge.lua` `is_div_label_style()` checks `style_name:sub(1, 10) == "Div Label "`. Any new Div styles must follow this prefix.
+
+**Reference DOCX `Div Label Example Good/Bad` (2026-05-17)**: added paragraph styles (`2C9167` green for Good, `E36C0A` orange for Bad) and linked character styles. `apply_example_block_styles()` applies body text to content paragraphs after the label.
+
+**`Body Text` style name**: reference DOCX uses `Body Text` (styleId `BodyText`). Any source that generates `Body Text1` or `AW Body Text` must be corrected; postprocessor maps normal paragraphs to this style by name.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

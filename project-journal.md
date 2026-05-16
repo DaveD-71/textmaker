@@ -139,3 +139,38 @@
 - The `adv/style_specs/aw-div-label-styles.yaml` spec file will also need updating to match the new 9-class system before `manage_docx_styles.py` can be used.
 - A full DOCX build and validation pass has not been run against the 0516 file yet.
 
+## 2026-05-17 (session 4 — overnight fix batch)
+
+### Reference DOCX style repairs
+
+- Renamed all 22 `Div *` styles to `Div Label *` in `aw-adv-styleref.docx` via direct XML edit (`rename_div_styles.py`). Required for `style_bridge.lua` `is_div_label_style()` prefix check (`"Div Label "`, 10 chars).
+- Added `Div Label Example Good` / `Div Label Example Good Char` (color `2C9167`) and `Div Label Example Bad` / `Div Label Example Bad Char` (color `E36C0A`) to reference DOCX.
+- Updated `Div Label Example` color from `9CCF78` to `4F81BD` (steel blue, matching AW Example body style border).
+- Renamed `Body Text1` → `Body Text` (styleId `BodyText`) in reference DOCX; postprocessor and Word both require the canonical name.
+- Updated `aw-div-label-styles.yaml` to match all 9 new `Div Label *` names and add `example-good`/`example-bad` entries.
+
+### Source markdown fixes (`aw-adv-all_0516.md`)
+
+- Replaced 44 `model` → `example` occurrences, 23 heading renames (`### B. Model Text` → `### B. Example Text`), 59 div title renames (`Model Text` → `Example Text`).
+- Fixed arrow paragraph: instructional note ("The arrow (→)…") moved outside `learn` div and given heading "Clarity Patterns".
+- Fixed "Tone by Audience" section: added title to Internal/Interagency/International wrapper div.
+- Wrapped Unit 4 Useful Phrases table in a `language` div.
+- Renamed 28 "Extension Task" div titles → "Homework Task".
+- Updated YAML `style_map` to 9 new `Div Label *` style names.
+
+### Postprocessor additions (`postprocess_docx.py`)
+
+- Added `apply_checklist_style()`: applies `Checklist` style to bullet items inside `Self-Editing Checklist` edit divs.
+- Added `apply_example_block_styles()`: applies `AW Example Good` / `AW Example Bad` / `AW Example` body styles after matching Div Label paragraphs.
+- Added `apply_spacing_after_lists()`: adds 120-twip space-after to prose paragraphs that follow list paragraphs (replaces deleted `After List` style).
+- Added `apply_table_styles()`: applies `AW Standard Table` style to all unstyled tables.
+- Moved `replace_unit_headings_with_title_tables()` outside the `apply_semantic_labels` gate — now always runs when reference_doc is available.
+- Fixed duplicate `apply_semantic_div_labels` call (was called twice in the updated flow; second call removed).
+
+### Build result (2026-05-17)
+
+- Pandoc: clean, no warnings.
+- Postprocess: 1666 list styles, 19 alpha markers stripped, 10 checklist items, 85 example block paragraphs, 179 post-list spacing, 41 table styles, 241 body text, 529 Pandoc fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings restored.
+- Validation: exit 0, all styles consistent with reference DOCX.
+- PDF: exported via LibreOffice soffice, 3.3 MB.
+
