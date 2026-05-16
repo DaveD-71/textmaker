@@ -11,6 +11,19 @@ Sync rule:
 
 ## Entries
 
+### 2026-05-16 - Temporary Multi-Root VS Code Workspaces Are Used To Combine Tool And Content Repos
+
+- Status: `resolved`
+- Scope: user/workflow
+- Pattern: VS Code `.code-workspace` files that pair a tool repo with a content repo for a specific task
+- Example: `C:\Dev\Code\workspace\textmaker-admin_writing\textmaker-admin_writing.code-workspace` pairs `textmaker` (scripts) and `book_administrative-writing` (content)
+- Key rules:
+  - The `.code-workspace` file is the authoritative workspace scope — it defines all active roots, not just the shell cwd
+  - The shell cwd defaults to the first listed folder (e.g. `textmaker`) but that is incidental, not authoritative
+  - Temporary workspace folders (e.g. `C:\Dev\Code\workspace\...`) must never receive AGENTS.md, project memory scaffold, or instruction-read-log files
+  - Each constituent repo keeps its own project memory independently
+- Preferred behavior: at startup in a multi-root workspace, read each repo's AGENTS.md and project memory separately; do not conflate the shell cwd repo with the full workspace scope
+
 ### ISSUE 2026-05-09-WORKFLOW-UNC-01 - `cmd.exe` On UNC Working Directories Can Silently Rebase Relative Paths To `C:\Windows`
 
 - Issue type: `workflow`

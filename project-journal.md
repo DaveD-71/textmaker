@@ -58,6 +58,59 @@
   - stop relying on multiple `Learn XXX` paragraph styles surviving postprocess
   - convert Learn semantic paragraphs to `Learn Base` during postprocess
 
+## 2026-05-16 (session 2 — div cleanup and reclassification)
+
+### Status at session end
+
+Active working file: `book_administrative-writing/adv/md/working/aw-adv-all_0516.md` (8,361 lines, 595 div instances)
+
+Reclassification review document: `book_administrative-writing/adv/edits & guides/style edits/div_reclassification_review_0516.md` (597-row detail table, verified totals)
+
+Design reference: `book_administrative-writing/adv/edits & guides/style edits/div_class_reclassification_0515.md`
+
+Build guide: `book_administrative-writing/adv/README-build.md`
+
+### Completed this session
+
+- Fixed 52 missing blank lines between consecutive `:::` close / `:::` open fences (Pandoc parse risk)
+- Removed BOM character (U+FEFF) that was on its own line after the YAML front matter
+- Stripped all `rubric-assessment` and `course-meta` div wrappers (8 total) — no distinctive rendering, content preserved as plain prose
+- Removed 4 stale style_map entries: `guidance-step`, `annotation`, `example`, `placeholder`
+- Removed `reference-support` div at Unit 9 D (template content absorbed into surrounding `activity-draft`)
+- Removed `reference-support` div at line ~7267 (continuation of model report, absorbed as plain prose)
+- Restructured Unit 23 B section (lines 8036–8089): removed empty `activity-analysis` shell, removed `reference-support` scenario wrapper, replaced `model-bad`/`model-good` with neutral `model` divs labelled "Response A" / "Response B"
+- Completed full div reclassification: all 595 div open fences renamed from 18 old classes to 9 new classes per the reclassification guide
+- Updated YAML `style_map` to the 9 new classes with `Div Label *` Word style targets
+
+### New div class system (9 classes, 595 instances)
+
+| Class | Count | Word style |
+| --- | --- | --- |
+| `example` | 127 | Div Label Example |
+| `learn` | 114 | Div Label Learn |
+| `write` | 89 | Div Label Write |
+| `notice` | 79 | Div Label Notice |
+| `edit` | 75 | Div Label Edit |
+| `rewrite` | 57 | Div Label Rewrite |
+| `language` | 54 | Div Label Language |
+| `structure` | 0 | Div Label Structure |
+| `revise` | 0 | Div Label Revise |
+
+### Remaining work (pending)
+
+- The reference DOCX (`adv/md/working/aw-adv-styleref.docx`) still has the OLD style names (e.g. `Div Label Activity Analysis`, `Div Label Process`, etc.) — it needs to be updated to define the 9 new `Div Label *` styles before a DOCX build can be run. Use `manage_docx_styles.py` with a YAML spec, or update manually.
+- The `adv/style_specs/aw-div-label-styles.yaml` spec file will also need updating to match the new 9-class system before `manage_docx_styles.py` can be used.
+- Review and update `aw-adv-all_0516_div_issues.md` to close out resolved items.
+- Remaining div issues from the original to-do list that may still need attention: heading-to-div gap pattern review (24+ instances), heading/Focus redundancy pattern (8 cases) — these were deprioritised in favour of the reclassification pass.
+- A full DOCX build and validation pass has not been run against the 0516 file yet.
+
+## 2026-05-16 (session 1 — bootstrap and pipeline setup)
+
+- Set up Claude Code (claude-sonnet-4-6) to use the shared Codex memory bootstrap system.
+- Created `C:\Users\daved\.claude\CLAUDE.md` (global) — imports `%USERPROFILE%\.codex\AGENTS.md` and `%USERPROFILE%\.codex\memories\user-learning.md` at every session start via `@filepath` directives.
+- Created `c:\Dev\Code\textmaker\CLAUDE.md` (project) — imports `AGENTS.md`, `user-learning-mirror.md`, `project-learning.md`, and `project-journal.md` via relative `@filepath` directives.
+- Decision: Claude Code will write durable decisions and events to the shared repo-level memory files rather than the Claude-specific `~/.claude/projects/` memory system, so memory remains shared with Codex and any other AI assistant.
+
 ## 2026-05-15
 
 - Implemented the full style-safe DOCX pipeline for the Administrative Writing advanced book, based on a ChatGPT-authored plan at `book_administrative-writing/adv/edits & guides/style edits/step2-stylereference/Instructions_from_ChatGPT_0515.md`. GitHub CoPilot began the work but lost context mid-task; Claude Code completed all 10 tasks.
