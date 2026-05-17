@@ -119,6 +119,39 @@ SEMANTIC_DIV_EMOJI = {
     'DivLabelGood': '✅',
 }
 
+# Maps paragraph style ID → tag_filled_*.png filename stem.
+# example-good and example-bad share the example tag image.
+DIV_TAG_ICON_STEMS = {
+    'DivLabelLearn':       'tag_filled_learn',
+    'DivLabelLanguage':    'tag_filled_language',
+    'DivLabelStructure':   'tag_filled_structure',
+    'DivLabelNotice':      'tag_filled_notice',
+    'DivLabelWrite':       'tag_filled_write',
+    'DivLabelRewrite':     'tag_filled_rewrite',
+    'DivLabelRevise':      'tag_filled_revise',
+    'DivLabelEdit':        'tag_filled_edit',
+    'DivLabelExample':     'tag_filled_example',
+    'DivLabelExampleGood': 'tag_filled_example',
+    'DivLabelExampleBad':  'tag_filled_example',
+}
+
+# Height (in EMU) at which to render the tag icon inline.
+# 457200 EMU = 36pt — tall enough to be readable, short enough not to dominate.
+DIV_TAG_ICON_HEIGHT_EMU = 457200
+
+def _resolve_div_tag_icon(style_id: str, reference_doc_path) -> 'Path | None':
+    """Return the Path to the filled tag icon PNG for style_id, or None if not found.
+
+    Looks for div-tags-icons-2_assets/ as a sibling of the reference DOCX file.
+    """
+    stem = DIV_TAG_ICON_STEMS.get(style_id)
+    if not stem or not reference_doc_path:
+        return None
+    ref_dir = Path(reference_doc_path).parent
+    icon_path = ref_dir / 'div-tags-icons-2_assets' / f'{stem}.png'
+    return icon_path if icon_path.exists() else None
+
+
 def build_semantic_div_label_styles(reference_doc_path=None):
     """
     Build a mapping from paragraph style ID to character style name for semantic Div label runs.
@@ -722,7 +755,8 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
     for para in doc.paragraphs:
         style_id = _paragraph_style_id(para)
         emoji = SEMANTIC_DIV_EMOJI.get(style_id)
-        if not emoji:
+        has_icon = style_id in DIV_TAG_ICON_STEMS
+        if not emoji and not has_icon:
             continue
 
         runs = para.runs
@@ -755,21 +789,44 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
                 changed += 1
         _set_run_non_italic(label_run)
 
-        first_text = ''.join(run.text for run in para.runs[:2]).lstrip()
-        if not first_text.startswith(emoji):
-            emoji_run = para.add_run()
-            emoji_run.text = emoji
-            _set_run_font(emoji_run, 'Noto Emoji')
-            _set_run_color(emoji_run, label_color)
-            _set_run_non_italic(emoji_run)
-            _set_run_non_bold(emoji_run)
-            _insert_run_after_properties(para, emoji_run)
+        # Insert tag icon + NBSP before the label text, if not already present.
+        # Detection: first child <w:r> after <w:pPr> contains a <w:drawing> → icon present.
+        p_children = list(para._p)
+        first_run_el = next((el for el in p_children if el.tag == qn('w:r')), None)
+        already_has_icon = (
+            first_run_el is not None
+            and first_run_el.find(qn('w:drawing')) is not None
+        )
 
-            tab_run = para.add_run()
-            tab_run.text = '\t'
-            emoji_idx = list(para._p).index(emoji_run._r)
-            para._p.remove(tab_run._r)
-            para._p.insert(emoji_idx + 1, tab_run._r)
+        if not already_has_icon:
+            icon_path = _resolve_div_tag_icon(style_id, reference_doc_path)
+            if icon_path:
+                # Image run — add_picture appends <w:drawing> inside a new <w:r>
+                img_run = para.add_run()
+                img_run.add_picture(str(icon_path), height=DIV_TAG_ICON_HEIGHT_EMU)
+                _insert_run_after_properties(para, img_run)
+
+                # Non-breaking space run immediately after the image
+                nbsp_run = para.add_run()
+                nbsp_run.text = ' '
+                img_idx = list(para._p).index(img_run._r)
+                para._p.remove(nbsp_run._r)
+                para._p.insert(img_idx + 1, nbsp_run._r)
+            else:
+                # Fallback to emoji + tab when no icon file is available
+                emoji_run = para.add_run()
+                emoji_run.text = emoji
+                _set_run_font(emoji_run, 'Noto Emoji')
+                _set_run_color(emoji_run, label_color)
+                _set_run_non_italic(emoji_run)
+                _set_run_non_bold(emoji_run)
+                _insert_run_after_properties(para, emoji_run)
+
+                tab_run = para.add_run()
+                tab_run.text = '\t'
+                emoji_idx = list(para._p).index(emoji_run._r)
+                para._p.remove(tab_run._r)
+                para._p.insert(emoji_idx + 1, tab_run._r)
             changed += 1
 
         if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
