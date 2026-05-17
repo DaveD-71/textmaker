@@ -201,3 +201,31 @@ All items completed in session 4 and session 5 — see below.
 - Validation: exit 0.
 - PDF: 3.3 MB. Both repos committed and pushed.
 
+## 2026-05-17 (session 6 — icon colors, alignment, and pipeline fixes)
+
+### Reference DOCX color updates
+
+- Updated `w:color/@w:val` on all 8 non-Example Div Label paragraph styles and their linked character styles to match the dominant fill color of each tag icon PNG:
+  - Learn=`541F69`, Language=`722566`, Structure=`A72D61`, Notice=`DB4351`
+  - Write=`CA7032`, Rewrite=`E09F1E`, Revise=`75B04C`, Edit=`0BA286`
+- Example Div Label styles left at their original colors (no icon, no color change needed).
+
+### Postprocessor changes (`postprocess_docx.py`)
+
+- Removed `DivLabelExample`, `DivLabelExampleGood`, `DivLabelExampleBad` from `DIV_TAG_ICON_STEMS` — Example divs get no tag icon.
+- Reduced `DIV_TAG_ICON_HEIGHT_EMU` from 152400 (12pt) to 133350 (10.5pt) to match font height exactly.
+- Added `DIV_TAG_ICON_DIST_T_EMU = 38100` (3pt) and applied `distT` on `wp:inline` element to shift icon bottom toward text baseline.
+- Increased NBSP after icon from 1 to 2 non-breaking spaces.
+- Fixed intermediate save+reload: replaced `doc.save(path); doc = Document(path)` with a temp-file save+move to prevent corrupt DOCX on large icon-embedded files.
+
+### CLI fix (`cli.py`)
+
+- Fixed critical bug: `pandoc_input_fmt` had `-yaml_metadata_block` which disabled YAML front matter parsing, causing `style_bridge.lua` to never receive the `style_map` and silently produce zero Div Label styles. Restored to `markdown+fancy_lists`.
+
+### Build result (session 6)
+
+- Pandoc: clean, no warnings.
+- Postprocess: 1676 list styles, 21 alpha markers, 145 checklist items, 85 example block paragraphs, 180 post-list spacing, 39 table styles, 589 div labels (469 with icons), 243 body text, 513 Pandoc fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
+- Validation: exit 0.
+- Both repos committed and pushed. PDF not exported (LibreOffice not installed on current machine).
+
