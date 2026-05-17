@@ -130,14 +130,16 @@ DIV_TAG_ICON_STEMS = {
     'DivLabelRewrite':     'tag_filled_rewrite',
     'DivLabelRevise':      'tag_filled_revise',
     'DivLabelEdit':        'tag_filled_edit',
-    'DivLabelExample':     'tag_filled_example',
-    'DivLabelExampleGood': 'tag_filled_example',
-    'DivLabelExampleBad':  'tag_filled_example',
 }
 
 # Height (in EMU) at which to render the tag icon inline.
-# 152400 EMU = 12pt — matches single-spaced 10.5pt body text line height.
-DIV_TAG_ICON_HEIGHT_EMU = 152400
+# 133350 EMU = 10.5pt — matches the Div Label font size exactly.
+DIV_TAG_ICON_HEIGHT_EMU = 133350
+
+# distT (EMU) added above the inline image to shift it downward toward the baseline.
+# Word centers inline images in the line box; this value pushes the bottom of the icon
+# toward the text baseline. 38100 EMU ≈ 3pt — tune if alignment looks off in Word.
+DIV_TAG_ICON_DIST_T_EMU = 38100
 
 # Which tag row to use: 'filled' or 'outline'.
 DIV_TAG_ICON_STYLE = 'filled'
@@ -817,9 +819,22 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
                 img_run.add_picture(str(icon_path), height=DIV_TAG_ICON_HEIGHT_EMU)
                 _insert_run_after_properties(para, img_run)
 
-                # Non-breaking space run immediately after the image
+                # Set distT on wp:inline to align the icon bottom with the text baseline.
+                # Word centers inline images in the line box; distT adds space above,
+                # pushing the image bottom toward the text baseline.
+                wp_ns = 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing'
+                drawing_el = img_run._r.find(qn('w:drawing'))
+                if drawing_el is not None:
+                    inline_el = drawing_el.find(f'{{{wp_ns}}}inline')
+                    if inline_el is not None:
+                        inline_el.set('distT', str(DIV_TAG_ICON_DIST_T_EMU))
+                        inline_el.set('distB', '0')
+                        inline_el.set('distL', '0')
+                        inline_el.set('distR', '0')
+
+                # Two non-breaking spaces after the image for consistent separation.
                 nbsp_run = para.add_run()
-                nbsp_run.text = ' '
+                nbsp_run.text = '  '
                 img_idx = list(para._p).index(img_run._r)
                 para._p.remove(nbsp_run._r)
                 para._p.insert(img_idx + 1, nbsp_run._r)
@@ -1936,8 +1951,6 @@ def insert_section_after_toc(
     if page_break_changes > 0:
         print(f'Applied page breaks before {page_break_changes} module/unit heading(s)')
         made_change = True
-        doc.save(docx_path)
-        doc = Document(docx_path)
 
     header_changes = update_running_headers(doc)
     if header_changes > 0:
@@ -1945,7 +1958,19 @@ def insert_section_after_toc(
         made_change = True
 
     if made_change:
-        doc.save(docx_path)
+        import tempfile, shutil
+        tmp_fd, tmp_path = tempfile.mkstemp(suffix='.docx', dir=Path(docx_path).parent)
+        os.close(tmp_fd)
+        try:
+            doc.save(tmp_path)
+            doc = Document(tmp_path)
+            shutil.move(tmp_path, docx_path)
+        except Exception:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+            raise
 
     # Unit title table substitution — runs whenever reference_doc is available,
     # independent of apply_semantic_labels.
