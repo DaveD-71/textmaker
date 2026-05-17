@@ -136,17 +136,28 @@ DIV_TAG_ICON_STEMS = {
 }
 
 # Height (in EMU) at which to render the tag icon inline.
-# 457200 EMU = 36pt — tall enough to be readable, short enough not to dominate.
-DIV_TAG_ICON_HEIGHT_EMU = 457200
+# 152400 EMU = 12pt — matches single-spaced 10.5pt body text line height.
+DIV_TAG_ICON_HEIGHT_EMU = 152400
 
-def _resolve_div_tag_icon(style_id: str, reference_doc_path) -> 'Path | None':
-    """Return the Path to the filled tag icon PNG for style_id, or None if not found.
+# Which tag row to use: 'filled' or 'outline'.
+DIV_TAG_ICON_STYLE = 'filled'
+
+
+def _resolve_div_tag_icon(
+    style_id: str,
+    reference_doc_path,
+    tag_style: str = DIV_TAG_ICON_STYLE,
+) -> 'Path | None':
+    """Return the Path to the tag icon PNG for style_id, or None if not found.
 
     Looks for div-tags-icons-2_assets/ as a sibling of the reference DOCX file.
+    tag_style is 'filled' or 'outline'.
     """
     stem = DIV_TAG_ICON_STEMS.get(style_id)
     if not stem or not reference_doc_path:
         return None
+    # Replace 'tag_filled_' prefix with the requested style variant.
+    stem = stem.replace('tag_filled_', f'tag_{tag_style}_')
     ref_dir = Path(reference_doc_path).parent
     icon_path = ref_dir / 'div-tags-icons-2_assets' / f'{stem}.png'
     return icon_path if icon_path.exists() else None
@@ -737,7 +748,7 @@ def _normalize_learn_label_text(style_id: str, run) -> bool:
     return True
 
 
-def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
+def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV_TAG_ICON_STYLE) -> int:
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
     """
@@ -799,7 +810,7 @@ def apply_semantic_div_labels(doc, reference_doc_path=None) -> int:
         )
 
         if not already_has_icon:
-            icon_path = _resolve_div_tag_icon(style_id, reference_doc_path)
+            icon_path = _resolve_div_tag_icon(style_id, reference_doc_path, tag_style)
             if icon_path:
                 # Image run — add_picture appends <w:drawing> inside a new <w:r>
                 img_run = para.add_run()
@@ -1788,6 +1799,7 @@ def insert_section_after_toc(
     reference_doc_path=None,
     apply_semantic_labels=False,
     building_block_template=None,
+    tag_style: str = DIV_TAG_ICON_STYLE,
 ):
     """
     Post-process `docx_path` to:
@@ -1895,7 +1907,7 @@ def insert_section_after_toc(
             print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
             made_change = True
 
-        div_label_changes = apply_semantic_div_labels(doc, reference_doc_path)
+        div_label_changes = apply_semantic_div_labels(doc, reference_doc_path, tag_style)
         if div_label_changes > 0:
             print(f'Updated semantic Div labels in {div_label_changes} place(s)')
             made_change = True
@@ -1987,6 +1999,12 @@ def _build_parser() -> argparse.ArgumentParser:
         action='store_true',
         help='Deprecated. Semantic formatting is off by default; use --apply-semantic-labels to enable it.',
     )
+    parser.add_argument(
+        '--tag-style',
+        choices=['filled', 'outline'],
+        default=DIV_TAG_ICON_STYLE,
+        help='Which tag icon variant to insert before Div label text (default: filled).',
+    )
     return parser
 
 
@@ -2001,6 +2019,7 @@ def main(argv: list[str] | None = None) -> int:
         reference_doc_path=args.reference_doc,
         apply_semantic_labels=args.apply_semantic_labels,
         building_block_template=args.building_block_template,
+        tag_style=args.tag_style,
     )
 
     if did_update:

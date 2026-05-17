@@ -19,6 +19,9 @@ H_PADDING = 4
 # Vertical padding added above and below the row band.
 V_PADDING = 4
 
+# Padding kept around the tight content crop (pixels, each side).
+TIGHT_CROP_PADDING = 1
+
 CATEGORIES = [
     "learn",
     "language",
@@ -45,6 +48,16 @@ def parse_args() -> argparse.Namespace:
         description="Split an icon asset sheet into individual white-background PNGs."
     )
     parser.add_argument("input_png", help="Path to the source PNG file.")
+    parser.add_argument(
+        "--tight-crop",
+        action="store_true",
+        default=False,
+        help=(
+            f"Trim each output image to its content bounds "
+            f"(+{TIGHT_CROP_PADDING}px padding each side) "
+            "after the row/column crop. Removes outer white space."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -91,6 +104,23 @@ def composite_on_white(img_rgba: Image.Image) -> Image.Image:
     bg = Image.new("RGB", img_rgba.size, (255, 255, 255))
     bg.paste(img_rgba, mask=img_rgba.split()[3])
     return bg
+
+
+def tight_crop(img_rgb: Image.Image, padding: int = TIGHT_CROP_PADDING) -> Image.Image:
+    """Crop an RGB image to its non-white content bounds plus padding pixels each side."""
+    arr = np.array(img_rgb)
+    white = (arr[:, :, 0] > WHITE_THRESHOLD) & (arr[:, :, 1] > WHITE_THRESHOLD) & (arr[:, :, 2] > WHITE_THRESHOLD)
+    content = ~white
+    rows = np.where(np.any(content, axis=1))[0]
+    cols = np.where(np.any(content, axis=0))[0]
+    if rows.size == 0 or cols.size == 0:
+        return img_rgb  # nothing to crop
+    h, w = arr.shape[:2]
+    top  = max(0, int(rows[0])  - padding)
+    bot  = min(h, int(rows[-1]) + 1 + padding)
+    left = max(0, int(cols[0])  - padding)
+    right = min(w, int(cols[-1]) + 1 + padding)
+    return img_rgb.crop((left, top, right, bot))
 
 
 def main() -> None:
@@ -166,12 +196,14 @@ def main() -> None:
             # Composite onto white — no transparency, no edge erosion.
             cropped_rgb = composite_on_white(cropped_rgba)
 
+            if args.tight_crop:
+                cropped_rgb = tight_crop(cropped_rgb)
+
             output_path = output_dir / filename
             cropped_rgb.save(output_path, format="PNG")
 
-            w = crop_x1 - crop_x0
-            h = crop_y1 - crop_y0
-            print(f"  {filename}  ({w}×{h})")
+            w, h_out = cropped_rgb.size
+            print(f"  {filename}  ({w}×{h_out})")
             saved += 1
 
     print(f"\nDone — {saved} file(s) written.")
