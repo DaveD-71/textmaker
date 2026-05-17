@@ -133,13 +133,13 @@ DIV_TAG_ICON_STEMS = {
 }
 
 # Height (in EMU) at which to render the tag icon inline.
-# 133350 EMU = 10.5pt — matches the Div Label font size exactly.
-DIV_TAG_ICON_HEIGHT_EMU = 133350
+# 685800 EMU = 0.6 cm ≈ 17pt — visually proportionate to 12pt Div Label text.
+DIV_TAG_ICON_HEIGHT_EMU = 685800
 
 # distT (EMU) added above the inline image to shift it downward toward the baseline.
-# Word centers inline images in the line box; this value pushes the bottom of the icon
-# toward the text baseline. 38100 EMU ≈ 3pt — tune if alignment looks off in Word.
-DIV_TAG_ICON_DIST_T_EMU = 38100
+# Word centers inline images in the line box; distT pushes the icon downward so its
+# bottom sits closer to the text baseline. 76200 EMU = 6pt for a 17pt icon over 12pt text.
+DIV_TAG_ICON_DIST_T_EMU = 76200
 
 # Which tag row to use: 'filled' or 'outline'.
 DIV_TAG_ICON_STYLE = 'filled'
@@ -802,44 +802,61 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
                 changed += 1
         _set_run_non_italic(label_run)
 
-        # Insert tag icon + NBSP before the label text, if not already present.
-        # Detection: first child <w:r> after <w:pPr> contains a <w:drawing> → icon present.
-        p_children = list(para._p)
-        first_run_el = next((el for el in p_children if el.tag == qn('w:r')), None)
-        already_has_icon = (
-            first_run_el is not None
-            and first_run_el.find(qn('w:drawing')) is not None
+        # Icon paragraph: insert a new paragraph immediately before the label paragraph
+        # containing only the icon image. The label text stays on its own line below.
+        # Detection: preceding sibling paragraph is already an icon-only paragraph.
+        icon_path = _resolve_div_tag_icon(style_id, reference_doc_path, tag_style)
+        body_el = para._p.getparent()
+        para_idx = list(body_el).index(para._p)
+        prev_el = body_el[para_idx - 1] if para_idx > 0 else None
+        already_has_icon_para = (
+            prev_el is not None
+            and prev_el.tag == qn('w:p')
+            and prev_el.find(f'.//{qn("w:drawing")}') is not None
         )
 
-        if not already_has_icon:
-            icon_path = _resolve_div_tag_icon(style_id, reference_doc_path, tag_style)
+        if not already_has_icon_para:
             if icon_path:
-                # Image run — add_picture appends <w:drawing> inside a new <w:r>
-                img_run = para.add_run()
-                img_run.add_picture(str(icon_path), height=DIV_TAG_ICON_HEIGHT_EMU)
-                _insert_run_after_properties(para, img_run)
+                # Add a temp paragraph at the end of the doc, add the picture there
+                # (so python-docx has proper part context), then move its XML before label.
+                tmp_para = doc.add_paragraph()
+                tmp_run = tmp_para.add_run()
+                tmp_run.add_picture(str(icon_path), height=DIV_TAG_ICON_HEIGHT_EMU)
 
-                # Set distT on wp:inline to align the icon bottom with the text baseline.
-                # Word centers inline images in the line box; distT adds space above,
-                # pushing the image bottom toward the text baseline.
-                wp_ns = 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing'
-                drawing_el = img_run._r.find(qn('w:drawing'))
-                if drawing_el is not None:
-                    inline_el = drawing_el.find(f'{{{wp_ns}}}inline')
-                    if inline_el is not None:
-                        inline_el.set('distT', str(DIV_TAG_ICON_DIST_T_EMU))
-                        inline_el.set('distB', '0')
-                        inline_el.set('distL', '0')
-                        inline_el.set('distR', '0')
+                # Set up pPr on the icon paragraph: same style as label, zero spacing
+                icon_p = tmp_para._p
+                icon_pPr = icon_p.get_or_add_pPr()
+                label_pPr = para._p.find(qn('w:pPr'))
+                if label_pPr is not None:
+                    pStyle_el = label_pPr.find(qn('w:pStyle'))
+                    if pStyle_el is not None:
+                        new_pStyle = OxmlElement('w:pStyle')
+                        new_pStyle.set(qn('w:val'), pStyle_el.get(qn('w:val')))
+                        existing = icon_pPr.find(qn('w:pStyle'))
+                        if existing is not None:
+                            icon_pPr.remove(existing)
+                        icon_pPr.insert(0, new_pStyle)
+                sp_el = OxmlElement('w:spacing')
+                sp_el.set(qn('w:before'), '0')
+                sp_el.set(qn('w:after'), '0')
+                existing_sp = icon_pPr.find(qn('w:spacing'))
+                if existing_sp is not None:
+                    icon_pPr.remove(existing_sp)
+                icon_pPr.append(sp_el)
 
-                # Two non-breaking spaces after the image for consistent separation.
-                nbsp_run = para.add_run()
-                nbsp_run.text = '  '
-                img_idx = list(para._p).index(img_run._r)
-                para._p.remove(nbsp_run._r)
-                para._p.insert(img_idx + 1, nbsp_run._r)
+                # Move the icon paragraph from end of body to just before label para
+                body_el.remove(icon_p)
+                body_el.insert(para_idx, icon_p)
+
+                # Zero spacing before the label text paragraph
+                p_pr = para._p.get_or_add_pPr()
+                sp2 = p_pr.find(qn('w:spacing'))
+                if sp2 is None:
+                    sp2 = OxmlElement('w:spacing')
+                    p_pr.append(sp2)
+                sp2.set(qn('w:before'), '0')
             else:
-                # Fallback to emoji + tab when no icon file is available
+                # Fallback: emoji inline before label text
                 emoji_run = para.add_run()
                 emoji_run.text = emoji
                 _set_run_font(emoji_run, 'Noto Emoji')
