@@ -537,7 +537,9 @@ def _find_previous_text_paragraph(paragraphs, index):
 
 
 def _apply_style_if_available(paragraph, style_name: str) -> bool:
-    style = _require_style(paragraph.part.styles, style_name)
+    style = _get_style_by_name_or_id(paragraph.part.styles, style_name)
+    if not style:
+        return False
     paragraph.style = style
     return True
 
@@ -1594,10 +1596,12 @@ def apply_quick_parts(docx_path, template_path: Path | None = None) -> int:
 
 
 def apply_checklist_style(doc) -> int:
-    """Apply Checklist style to bullet list items inside Self-Editing Checklist edit divs.
+    """Apply Checklist style to list bullet items inside any edit div.
 
-    Detects the DivLabelEdit paragraph whose text is 'Self-Editing Checklist', then
-    applies the Checklist style to immediately following List Bullet 2 paragraphs.
+    When Pandoc converts '- [ ]' task list syntax with a reference DOCX that defines
+    List Bullet 2, the output is identical to plain '- ' bullets (List Bullet 2 style,
+    no checkbox glyph). We therefore apply Checklist style to all List Bullet 2 / List
+    Bullet paragraphs that follow any DivLabelEdit paragraph.
     """
     checklist_style = _get_style_by_name_or_id(doc.styles, 'Checklist')
     if not checklist_style:
@@ -1605,25 +1609,22 @@ def apply_checklist_style(doc) -> int:
 
     paragraphs = list(doc.paragraphs)
     changed = 0
-    in_checklist = False
+    in_edit = False
 
     for para in paragraphs:
         style_id = _paragraph_style_id(para)
-        text = _normalize_text(para.text)
 
-        if style_id == 'DivLabelEdit' and text == 'Self-Editing Checklist':
-            in_checklist = True
+        if style_id == 'DivLabelEdit':
+            in_edit = True
             continue
 
-        if in_checklist:
+        if in_edit:
             style_name = getattr(para.style, 'name', '') if para.style else ''
             if style_name in ('List Bullet 2', 'List Bullet', 'List Bullet 3'):
                 para.style = checklist_style
                 changed += 1
             elif _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
-                in_checklist = False
-            elif text and not _is_list_paragraph(para):
-                in_checklist = False
+                in_edit = False
 
     return changed
 
@@ -1671,10 +1672,11 @@ def apply_example_block_styles(doc) -> int:
     return changed
 
 
-def apply_spacing_after_lists(doc, space_after_twips: int = 120) -> int:
-    """Add spacing after prose paragraphs that follow list paragraphs.
+def apply_spacing_after_lists(doc, space_before_twips: int = 120) -> int:
+    """Add space-before to prose paragraphs that immediately follow list paragraphs.
 
-    Replaces the deleted 'After List' style by injecting w:spacing/@w:after directly.
+    Replaces the deleted 'After List' style by injecting w:spacing/@w:before directly,
+    creating a visual gap between the last list item and the first prose paragraph.
     Only applies to Body Text / Normal paragraphs that immediately follow a list.
     """
     paragraphs = list(doc.paragraphs)
@@ -1697,9 +1699,9 @@ def apply_spacing_after_lists(doc, space_after_twips: int = 120) -> int:
         if spacing is None:
             spacing = OxmlElement('w:spacing')
             p_pr.append(spacing)
-        current = spacing.get(qn('w:after'))
-        if current != str(space_after_twips):
-            spacing.set(qn('w:after'), str(space_after_twips))
+        current = spacing.get(qn('w:before'))
+        if current != str(space_before_twips):
+            spacing.set(qn('w:before'), str(space_before_twips))
             changed += 1
 
     return changed
