@@ -135,9 +135,7 @@
 
 ### Remaining work (pending)
 
-- The reference DOCX (`adv/md/working/aw-adv-styleref.docx`) still has the OLD style names (e.g. `Div Label Activity Analysis`, `Div Label Process`, etc.) — it needs to be updated to define the 9 new `Div Label *` styles before a DOCX build can be run. Use `manage_docx_styles.py` with a YAML spec, or update manually.
-- The `adv/style_specs/aw-div-label-styles.yaml` spec file will also need updating to match the new 9-class system before `manage_docx_styles.py` can be used.
-- A full DOCX build and validation pass has not been run against the 0516 file yet.
+All items completed in session 4 and session 5 — see below.
 
 ## 2026-05-17 (session 4 — overnight fix batch)
 
@@ -173,4 +171,33 @@
 - Postprocess: 1666 list styles, 19 alpha markers stripped, 10 checklist items, 85 example block paragraphs, 179 post-list spacing, 41 table styles, 241 body text, 529 Pandoc fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings restored.
 - Validation: exit 0, all styles consistent with reference DOCX.
 - PDF: exported via LibreOffice soffice, 3.3 MB.
+
+## 2026-05-17 (session 5 — checklist consistency and example-good/bad reclassification)
+
+### Checklist consistency
+
+- Converted all 151 plain `- ` (dash-space) bullet items inside edit divs to `- [ ]` for source consistency across all edit div types.
+- Discovered that Pandoc with `--reference-doc` renders `- [ ]` as `List Bullet 2` (not `Compact` + checkbox glyph) — the checkbox is stripped when a reference DOCX defines the list style.
+- Fixed `apply_checklist_style()`: now matches `List Bullet 2` inside any `DivLabelEdit` div (not just "Self-Editing Checklist" divs). 145 items converted in this build.
+- Fixed `_apply_style_if_available()`: was calling `_require_style` (hard-fail on missing style). Changed to `_get_style_by_name_or_id` so legacy style references in `apply_semantic_styles()` (Model Bad, Homework Target, After List) degrade gracefully instead of crashing.
+
+### Reference DOCX Body Text name regression
+
+- Discovered `Body Text1`/`BodyText1` had regressed (the w14 strip script from session 4 serialized an older XML state). Fixed by direct XML patch — 17 cross-references updated. Style is now `Body Text` / `BodyText`.
+
+### Example div reclassification
+
+- Audited all 127 `example` divs by their title lines. Pattern confirmed 100%:
+  - "Original Text" titles (23) → `example-bad`
+  - "Revised Text" / "Worked Example" titles (43 total) → `example-good`
+  - "Example Text" and others (61) → remain neutral `example`
+- Added `example-good` and `example-bad` to YAML `style_map` targeting `Div Label Example Good` and `Div Label Example Bad`.
+- Applied `apply_example_block_styles()` in postprocessor — 85 body paragraphs styled as `AW Example Good` / `AW Example Bad` / `AW Example`.
+
+### Build result (session 5)
+
+- Pandoc: clean, no warnings.
+- Postprocess: 1666 list styles, 19 alpha markers, 145 checklist items, 85 example block paragraphs, 179 post-list spacing, 41 table styles, 267 div labels, 241 body text, 529 Pandoc fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
+- Validation: exit 0.
+- PDF: 3.3 MB. Both repos committed and pushed.
 
