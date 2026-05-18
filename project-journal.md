@@ -340,3 +340,22 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Pandoc: clean, no warnings.
 - Postprocess: 1678 list styles, 21 alpha markers, 145 checklist items, 244 example block paragraphs, 395 post-list spacing, 39 table styles, 127 placeholders, 458 icon labels + 61 emoji labels, 595 div label updates, 219 body text, 513 fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
 
+## 2026-05-18 (session 9 — style cleanup, table fixes, icon crops, CLI fix)
+
+### Reference DOCX changes
+
+- Removed `w:autoRedefine` from all 10 DivLabel paragraph styles that had it (`DivLabelBase` + 9 child styles). Child styles now rely on normal Word style inheritance. `DivLabelExampleGood` and `DivLabelExampleBad` already lacked it.
+- Set cell margins on all 4 AW Table styles: top/bottom = 57 twips (0.1 cm), left/right = 113 twips (0.2 cm).
+
+### Postprocessor fixes (`postprocess_docx.py`)
+
+- `apply_table_styles()`: added direct enforcement of `tblW` (5000 pct = 100%) and `tblLayout` (autofit) on each table element after applying the style. Pandoc writes explicit `tblW` on generated tables which overrides style-level defaults — direct element patching is required.
+
+### CLI fix (`cli.py`)
+
+- Added `--tag-style` argument (`filled`/`outline`, default `filled`) to the `markdown-to-docx` CLI parser and wired it through to the postprocess call. Was previously only available when running `postprocess_docx.py` directly.
+
+### Icon assets
+
+- Tight-cropped all 9 `tag_outline_*` PNGs in `adv/md/working/div-tags-icons-2_assets/` to content bounds + 1px padding (matching the existing `tag_filled_*` treatment). Height reduced from 59px to ~55px.
+

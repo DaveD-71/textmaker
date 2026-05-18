@@ -122,7 +122,13 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 
 **DivTag style (2026-05-18)**: `DivTag` must be a character style (not paragraph) with `w:position w:val="-8"` so Word applies the 4pt baseline lowering to icon runs via `w:rStyle`. Defining it as a paragraph style causes `w:rStyle` references to be silently ignored.
 
-**AW Table styles (2026-05-18)**: all 4 AW Table styles (`AWStandardTable`, `AWComparisonTable`, `AWPhraseBankTable`, `AWRubricTable`) use 100% width (`pct`), `autofit` layout, left-aligned paragraphs, `suppressAutoHyphens`, and first-row bold/white/`2D4155` fill.
+**AW Table styles (2026-05-18)**: all 4 AW Table styles (`AWStandardTable`, `AWComparisonTable`, `AWPhraseBankTable`, `AWRubricTable`) use 100% width (`pct`), `autofit` layout, left-aligned paragraphs, `suppressAutoHyphens`, first-row bold/white/`2D4155` fill, and cell margins top/bottom=57 twips (0.1 cm), left/right=113 twips (0.2 cm). Width and layout must also be enforced directly on each table element by the postprocessor — Pandoc's generated `tblW` overrides style-level defaults.
+
+**`autoRedefine` removed from DivLabel styles (2026-05-18)**: `w:autoRedefine` has been removed from all DivLabel paragraph styles. It is no longer needed now that child styles carry only `w:color` in their `rPr` — Word's normal inheritance cascades font/size/spacing from `Div Label Base` correctly. `autoRedefine` caused silent style corruption in output files.
+
+**`--tag-style` CLI flag (2026-05-18)**: `markdown-to-docx` now accepts `--tag-style filled|outline` (default `filled`) to select the icon variant inserted before Div label text. Was previously only available when running `postprocess_docx.py` directly.
+
+**Tag icon assets (2026-05-18)**: all `tag_filled_*` and `tag_outline_*` PNGs in the working assets folder are tight-cropped to content bounds + 1px padding. `tag_filled_*` was done in session 6; `tag_outline_*` cropped in session 9.
 
 **Pipe table `<br>` tags (2026-05-18)**: `markdown+fancy_lists` does not process raw HTML in table cells. `<br>` renders as literal text. Use ` / ` as a visual separator for multi-item cells, or switch to grid table format (`+---+---+`) for multi-line cell content.
 

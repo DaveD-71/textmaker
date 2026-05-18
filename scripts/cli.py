@@ -285,6 +285,12 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Deprecated. Semantic formatting is off by default; use --apply-semantic-labels to enable it.',
     )
     parser.add_argument(
+        '--tag-style',
+        choices=['filled', 'outline'],
+        default='filled',
+        help='Which tag icon variant to insert before Div label text (default: filled).',
+    )
+    parser.add_argument(
         '--building-block-template',
         help='Word template containing Quick Parts to insert during postprocessing.',
     )
@@ -387,6 +393,7 @@ def main(argv: list[str] | None = None) -> int:
             reference_doc_path=reference_path,
             apply_semantic_labels=args.apply_semantic_labels,
             building_block_template=args.building_block_template,
+            tag_style=args.tag_style,
         )
         print('Wrote', dest_path)
     finally:

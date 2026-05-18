@@ -1872,6 +1872,23 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
                     if current in (None, 'Table Normal', 'Normal Table'):
                         tbl.style = table_style
                         changed += 1
+                    # Enforce 100% width and autofit directly on the table element
+                    # (Pandoc sets explicit tblW which overrides style-level defaults)
+                    tbl_pr = child.find(qn('w:tblPr'))
+                    if tbl_pr is None:
+                        tbl_pr = OxmlElement('w:tblPr')
+                        child.insert(0, tbl_pr)
+                    tbl_w = tbl_pr.find(qn('w:tblW'))
+                    if tbl_w is None:
+                        tbl_w = OxmlElement('w:tblW')
+                        tbl_pr.append(tbl_w)
+                    tbl_w.set(qn('w:w'), '5000')
+                    tbl_w.set(qn('w:type'), 'pct')
+                    tbl_lay = tbl_pr.find(qn('w:tblLayout'))
+                    if tbl_lay is None:
+                        tbl_lay = OxmlElement('w:tblLayout')
+                        tbl_pr.append(tbl_lay)
+                    tbl_lay.set(qn('w:type'), 'autofit')
                 except Exception:
                     pass
 
