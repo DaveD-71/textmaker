@@ -132,6 +132,16 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 
 **Pipe table `<br>` tags (2026-05-18)**: `markdown+fancy_lists` does not process raw HTML in table cells. `<br>` renders as literal text. Use ` / ` as a visual separator for multi-item cells, or switch to grid table format (`+---+---+`) for multi-line cell content.
 
+**AW Table styles — final architecture (2026-05-18 session 10)**: Word's table-style `rPr` is overridden by paragraph styles in cell content. The solution is two dedicated paragraph styles — `AW Table Header` (Roboto Condensed Medium 11pt, white, bold) and `AW Table Body` (Noto Sans Condensed Light 11pt, after=60, suppressAutoHyphens, keepLines) — applied by the postprocessor to header-row and body-row cells respectively. Table styles handle borders (single 1pt `sz=8`, auto color), cell margins (top/bottom=57, left/right=142 twips), 100% width, autofit, and tblLook firstRow=1. Header fill `31849B` is in the firstRow conditional `tcPr`. Direct `tblW`/`tblLayout` enforcement on each table element remains in `apply_table_styles()` to override Pandoc's generated values.
+
+**`apply_example_block_styles()` prose tracking (2026-05-18 session 10)**: uses `_example_seen_prose` flag to distinguish example body text from post-example task instructions. First non-italic `Body Text` paragraph after the label is example content (styled). Second non-italic `Body Text` stops styling. List paragraphs inside the example are always styled. italic Body Text paragraphs are always styled. This correctly handles: procedure-body examples (single non-italic block), numbered-list examples (title + list items), and mixed italic/non-italic worked examples.
+
+**Misplaced div fence pattern (2026-05-18 session 10)**: two `rewrite` divs had their setup instruction + `example` sub-div inside the div instead of before it (L2143, L7323). Fixed by moving the setup line and example outside the `:::rewrite` open. The `notice` divs with "Read the following..." are correctly structured — those lines are task instructions that belong inside the div.
+
+**HTML underline tags in markdown**: malformed `<uTEXT</u` tags (missing `>`) render as literal text in Pandoc. Correct form is `[TEXT]{.underline}` (Pandoc native span syntax). Fixed 5 instances at L2450–2454.
+
+**Placeholder spacer (2026-05-18 session 10)**: `SPACER_HEIGHT` increased from `'140'` (7pt) to `'280'` (14pt) for clearer visual separation between consecutive placeholder tables.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

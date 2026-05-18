@@ -359,3 +359,33 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 
 - Tight-cropped all 9 `tag_outline_*` PNGs in `adv/md/working/div-tags-icons-2_assets/` to content bounds + 1px padding (matching the existing `tag_filled_*` treatment). Height reduced from 59px to ~55px.
 
+## 2026-05-18 (session 10 — AW Table redesign, example block fixes, div fence fixes)
+
+### AW Table style redesign
+
+- User deleted all 4 AW Table styles from reference DOCX after Word refused to apply font/color overrides — root cause: Word's style cascade means table-style `rPr` is always overridden by paragraph styles in cell content.
+- New architecture: 4 table styles handle borders/width/margins/firstRow fill only; two new paragraph styles `AW Table Header` and `AW Table Body` carry the font/size/spacing and are applied by the postprocessor to header-row and body-row cells respectively.
+- Specs read from sample table created by user in `adv/md/bak/aw-adv-styleref_0515.docx`: header fill `31849B`, header font Roboto Condensed Medium 11pt white bold; body font Noto Sans Condensed Light 11pt, after=60 (3pt), suppressAutoHyphens, keepLines; borders single sz=8 all sides; cell margins top/bottom=57, left/right=142 twips.
+- `apply_table_styles()` updated: applies `AW Table Header` to first-row cells and `AW Table Body` to all other cells for any AW-styled table.
+
+### `apply_example_block_styles()` refinement
+
+- Added `_example_seen_prose` flag: first non-italic `Body Text` after a DivLabel is example body content (styled); subsequent non-italic `Body Text` is task instruction (stops styling).
+- List paragraphs inside example divs always receive example style — fixes numbered/bullet lists inside `example-good` boxes not being styled.
+- Correctly handles: procedure-body examples, numbered-list worked examples, and mixed italic/prose examples without pulling post-example task instructions into the styled box.
+
+### Source markdown fixes
+
+- Fixed 2 misplaced `rewrite` div fences (L2143, L7323): setup instruction + `example` sub-div moved outside the `:::rewrite` open. Div balance remains 585/585.
+- Fixed 5 malformed HTML underline tags `<uTEXT</u` → `[TEXT]{.underline}` at L2450–2454.
+
+### Other changes
+
+- Placeholder spacer height increased from 140 (7pt) to 280 (14pt) twips for clearer visual separation between consecutive placeholder tables.
+- Working folder cleaned: removed 4 stale backup files; now contains only `aw-adv-all_0516.md`, `aw-adv-all_0518.docx`, `aw-adv-styleref.docx`, `div-tags-icons-2_assets/`.
+
+### Build result (session 10)
+
+- Pandoc: clean, no warnings. 597 div labels (458 icon + 61 emoji + 78 example). 378 example block paragraphs. All other counts stable.
+- Validation: exit 0.
+

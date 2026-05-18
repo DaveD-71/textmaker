@@ -547,6 +547,12 @@ def _is_heading(paragraph) -> bool:
     return bool(style and getattr(style, 'name', '').startswith('Heading'))
 
 
+def _is_paragraph_italic(paragraph) -> bool:
+    """Return True if all non-empty runs in the paragraph are italic."""
+    runs = [r for r in paragraph.runs if r.text.strip()]
+    return bool(runs) and all(r.italic for r in runs)
+
+
 def _is_list_paragraph(paragraph) -> bool:
     style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
     if style_name.startswith('List '):
@@ -1784,29 +1790,49 @@ def apply_example_block_styles(doc) -> int:
     paragraphs = list(doc.paragraphs)
     changed = 0
     target_style = None
+    _example_seen_prose = False
 
     for para in paragraphs:
         style_id = _paragraph_style_id(para)
 
         if style_id == 'DivLabelExampleGood':
             target_style = good_style
+            _example_seen_prose = False
             continue
         if style_id == 'DivLabelExampleBad':
             target_style = bad_style
+            _example_seen_prose = False
             continue
         if style_id == 'DivLabelExample':
             target_style = neutral_style
+            _example_seen_prose = False
             continue
 
         if target_style is not None:
             style_name = getattr(para.style, 'name', '') if para.style else ''
             if _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
                 target_style = None
-            elif style_name in NEUTRAL_MODEL_SOURCE_STYLES | {'Body Text', 'Normal'} or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
+            elif style_name in NEUTRAL_MODEL_SOURCE_STYLES or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
+                # Block Text / Quote / quoted italics — model text proper
                 para.style = target_style
                 changed += 1
-            elif _normalize_text(para.text):
-                target_style = None
+            elif _is_paragraph_italic(para) and style_name in ('Body Text', 'Normal'):
+                # Italic body text — rendered model paragraphs from Pandoc
+                para.style = target_style
+                changed += 1
+            elif style_name in ('Body Text', 'Normal') and not _is_paragraph_italic(para) and _normalize_text(para.text):
+                if not _example_seen_prose:
+                    # First non-italic prose after label — example body text (e.g. procedure paragraph)
+                    para.style = target_style
+                    changed += 1
+                    _example_seen_prose = True
+                else:
+                    # Subsequent plain prose — task instructions after the example body; stop
+                    target_style = None
+            elif _is_list_paragraph(para):
+                # Numbered/bullet lists are content inside the example block — keep applying
+                para.style = target_style
+                changed += 1
 
     return changed
 
@@ -1844,14 +1870,24 @@ def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
     return changed
 
 
+AW_TABLE_STYLE_IDS = frozenset({
+    'AWStandardTable', 'AWComparisonTable', 'AWPhraseBankTable', 'AWRubricTable',
+})
+
+
 def apply_table_styles(doc, default_style: str = 'AW Standard Table',
                        space_after_twips: int = 280) -> int:
     """Apply AW Standard Table style to all tables that have no custom style set.
 
-    Also adds space-before on the paragraph immediately following each table so
-    there is visual breathing room after tables (matching the list spacing policy).
+    Also applies AW Table Body paragraph style to all body-row cell paragraphs so
+    that Noto Sans Condensed Light 10.5pt is reliably rendered regardless of which
+    paragraph style the cell content inherited from Pandoc.  The first row is
+    skipped — it gets white text from the firstRow conditional table format.
+
+    Also adds space-before on the paragraph immediately following each table.
     """
     table_style = _get_style_by_name_or_id(doc.styles, default_style)
+    cell_body_style = _get_style_by_name_or_id(doc.styles, 'AW Table Body')
     changed = 0
 
     body = doc._body._body  # lxml element
@@ -1872,6 +1908,26 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
                     if current in (None, 'Table Normal', 'Normal Table'):
                         tbl.style = table_style
                         changed += 1
+
+                    # Apply AW Table Body to all body-row cell paragraphs so the
+                    # font/size/spacing is set at the paragraph level (Word's table-
+                    # style rPr is overridden by paragraph styles in the cascade).
+                    tbl_style_id = tbl.style.style_id if tbl.style else None
+                    if tbl_style_id in AW_TABLE_STYLE_IDS:
+                        cell_header_style = _get_style_by_name_or_id(doc.styles, 'AW Table Header')
+                        rows = tbl.rows
+                        for row_idx, row in enumerate(rows):
+                            is_header = (row_idx == 0)
+                            target = cell_header_style if is_header else cell_body_style
+                            if target is None:
+                                continue
+                            for cell in row.cells:
+                                for para in cell.paragraphs:
+                                    if para.style and para.style.name not in (
+                                        'AW Table Body', 'AW Table Header'
+                                    ):
+                                        para.style = target
+
                     # Enforce 100% width and autofit directly on the table element
                     # (Pandoc sets explicit tblW which overrides style-level defaults)
                     tbl_pr = child.find(qn('w:tblPr'))
@@ -1937,7 +1993,7 @@ def apply_response_placeholders(doc) -> int:
     RULE_COLOR = 'AAAAAA'
     HEADER_FILL = 'F0F0F0'
     HEADER_FONT_SIZE = '18'     # 9pt in half-points
-    SPACER_HEIGHT = '140'       # ~7pt spacer paragraph between consecutive tables
+    SPACER_HEIGHT = '280'       # ~14pt spacer paragraph between consecutive tables
 
     PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+):\s*([^}]+)\}\}\s*$')
     # Tag to identify our placeholder tables so apply_table_styles skips them
