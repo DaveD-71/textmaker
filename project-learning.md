@@ -100,11 +100,31 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - `replace_unit_headings_with_title_tables()` ungated from `apply_semantic_labels` — now runs whenever `--reference-doc` is supplied.
 - Duplicate `apply_semantic_div_labels` call removed from flow.
 
-**Div style naming convention (2026-05-17)**: all Div paragraph/character style pairs in the reference DOCX are named `Div Label *` (10-char prefix). `style_bridge.lua` `is_div_label_style()` checks `style_name:sub(1, 10) == "Div Label "`. Any new Div styles must follow this prefix.
+**Div style naming convention (2026-05-17)**: all Div paragraph styles in the reference DOCX are named `Div Label *` (10-char prefix). `style_bridge.lua` `is_div_label_style()` checks `style_name:sub(1, 10) == "Div Label "`. Any new Div styles must follow this prefix.
 
 **Reference DOCX `Div Label Example Good/Bad` (2026-05-17)**: added paragraph styles (`2C9167` green for Good, `E36C0A` orange for Bad) and linked character styles. `apply_example_block_styles()` applies body text to content paragraphs after the label.
 
 **`Body Text` style name**: reference DOCX uses `Body Text` (styleId `BodyText`). Any source that generates `Body Text1` or `AW Body Text` must be corrected; postprocessor maps normal paragraphs to this style by name.
+
+**OOXML caps toggle property (2026-05-18)**: bare `<w:caps/>` in a character style is treated as "not set" by Word. Must be `<w:caps w:val="1"/>` to honour all-caps. This applies to all toggle properties in character styles — underline was unaffected because `<w:u>` already required `w:val="single"` by spec. Fix: patch reference DOCX char styles directly via XML.
+
+**Section break page size (2026-05-18)**: any `sectPr` inserted by the postprocessor must copy `w:pgSz` and `w:pgMar` from the document-level `sectPr`. Without this, Word uses its application default (US Letter) for the new section regardless of the document's paper size. Both `_insert_section_break_before_paragraph()` and `_apply_next_page_section_to_paragraph()` now copy these elements.
+
+**H1 section break skip (2026-05-18)**: `insert_section_breaks_before_h1()` must always use `skip_first=True`. The first H1 is the cover title — inserting a section break before it pushes the title onto a new page. The `skip_first=has_toc` logic was incorrect; when no TOC is present `has_toc=False` and the cover title was getting a spurious section break.
+
+**Div label icon table layout (2026-05-18)**: `apply_semantic_div_labels()` now performs a single-pass replacement: each `DivLabel*` paragraph is replaced with a 2-column `<w:tbl>` (icon left, label text right) in one step. Table uses `TableGrid` style with explicit `none` borders (suppresses visible borders, preserves gridlines toggle). Left cell uses `DivTag` paragraph style (inherits spacing from `Div Label Base`) — never hardcode spacing values. Example divs (neutral/good/bad) are excluded from icon tables.
+
+**Pandoc fenced div spacing rule (2026-05-18)**: a `:::` open fence must be preceded by a blank line when the preceding line is non-empty. Violations cause Pandoc to emit the fence as literal text. The systematic pattern to watch: bold label lines (`**Input N — ...**`) immediately followed by `:::` with no blank line. Also: a list must not immediately follow a `:::` open fence without a blank line gap.
+
+**Nested div policy (2026-05-18)**: Pandoc does not support nested fenced divs — an inner `:::` close terminates the outer div. Thin nested divs (title-only, no body) that add no student learning value should be removed: confirmed removals are `learn "Functions"`, `language "Learn — Sentences"`, `language "Learn — Useful Language"`, `language "Learn — Patterns"`, `learn "Statements"`, `learn "Annotations"`, `learn "Discuss"`, `learn "Revision Checklist"`. Meaningful sub-labels (`Version A/B`, `Original`, `Proposed Changes`, `Scenario`) are kept. 233 substantive nested divs remain unresolved — full fix requires content-level decisions.
+
+**Div Label style architecture (2026-05-18)**: linked paragraph+character style pairs have been replaced by paragraph-only styles. All 12 `DivLabel*Char` character styles and `w:link` references have been removed from the reference DOCX. `postprocess_docx.py` reads color directly from paragraph style `rPr` and applies color + `Noto Sans Condensed Medium` font directly to label runs. `Div Label Base` is the single source of truth for font, size, and spacing.
+
+**DivTag style (2026-05-18)**: `DivTag` must be a character style (not paragraph) with `w:position w:val="-8"` so Word applies the 4pt baseline lowering to icon runs via `w:rStyle`. Defining it as a paragraph style causes `w:rStyle` references to be silently ignored.
+
+**AW Table styles (2026-05-18)**: all 4 AW Table styles (`AWStandardTable`, `AWComparisonTable`, `AWPhraseBankTable`, `AWRubricTable`) use 100% width (`pct`), `autofit` layout, left-aligned paragraphs, `suppressAutoHyphens`, and first-row bold/white/`2D4155` fill.
+
+**Pipe table `<br>` tags (2026-05-18)**: `markdown+fancy_lists` does not process raw HTML in table cells. `<br>` renders as literal text. Use ` / ` as a visual separator for multi-item cells, or switch to grid table format (`+---+---+`) for multi-line cell content.
 
 ## Roadmap From README
 

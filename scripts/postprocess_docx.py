@@ -17,8 +17,10 @@ import csv
 import ctypes
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import Iterable
 
@@ -133,8 +135,8 @@ DIV_TAG_ICON_STEMS = {
 }
 
 # Height (in EMU) at which to render the tag icon inline.
-# 190500 EMU = 15pt — slightly taller than 12pt cap height, readable inline with text.
-DIV_TAG_ICON_HEIGHT_EMU = 190500
+# 198000 EMU = 0.55 cm
+DIV_TAG_ICON_HEIGHT_EMU = 198000
 
 # distR (EMU) gap to the right of the inline image before label text.
 # 114300 EMU = 9pt
@@ -166,26 +168,24 @@ def _resolve_div_tag_icon(
 
 def build_semantic_div_label_styles(reference_doc_path=None):
     """
-    Build a mapping from paragraph style ID to character style name for semantic Div label runs.
+    Build a mapping from paragraph style ID to hex color string for semantic Div label runs.
 
-    Keys are paragraph style IDs (e.g. 'DivLabelProcess'); values are the linked character
-    style names (e.g. 'Div Label Process Char') used to colour the label run.
+    Reads color directly from the paragraph style's rPr — no linked char styles required.
+    Keys are paragraph style IDs (e.g. 'DivLabelNotice'); values are hex color strings (e.g. 'DB4351').
     """
     if not reference_doc_path:
         return {}
 
     ref_doc = Document(reference_doc_path)
-    styles = ref_doc.styles
     mapping = {}
-    for style in styles:
+    for style in ref_doc.styles:
         if style.type != WD_STYLE_TYPE.PARAGRAPH:
             continue
         if not style.name.startswith('Div Label '):
             continue
-        char_style_name = style.name + ' Char'
-        char_style = _get_style_by_name_or_id(styles, char_style_name, WD_STYLE_TYPE.CHARACTER)
-        if char_style is not None:
-            mapping[style.style_id] = char_style_name
+        color = _style_color_value(style)
+        if color:
+            mapping[style.style_id] = color
     return mapping
 
 
@@ -251,12 +251,25 @@ def _insert_section_break_before_paragraph(paragraph, restart_numbering=False, s
         pg_num_type.set(qn('w:start'), str(start_page))
         sect_pr.append(pg_num_type)
 
+    # Copy page size and margins from document-level sectPr so inserted
+    # section inherits the correct paper size instead of defaulting to Letter.
+    doc_sect = doc_element.find(qn('w:sectPr')) if doc_element is not None else None
+    if doc_sect is not None:
+        for tag in (qn('w:pgSz'), qn('w:pgMar')):
+            el = doc_sect.find(tag)
+            if el is not None:
+                sect_pr.append(copy.deepcopy(el))
+
     p_pr.append(sect_pr)
     return True
 
 
 def _apply_next_page_section_to_paragraph(paragraph, start_page=None):
-    """Attach a nextPage sectPr (and optional page-number restart) to an existing paragraph."""
+    """Attach a nextPage sectPr (and optional page-number restart) to an existing paragraph.
+
+    Copies w:pgSz and w:pgMar from the document's main sectPr so the inserted
+    section break never falls back to the application default page size.
+    """
     p_pr = paragraph._p.find(qn('w:pPr'))
     if p_pr is None:
         p_pr = OxmlElement('w:pPr')
@@ -272,6 +285,15 @@ def _apply_next_page_section_to_paragraph(paragraph, start_page=None):
     type_el = OxmlElement('w:type')
     type_el.set(qn('w:val'), 'nextPage')
     sect_pr.append(type_el)
+
+    # Copy page size and margins from the document-level sectPr
+    body = paragraph._p.getparent()
+    doc_sect = body.find(qn('w:sectPr')) if body is not None else None
+    if doc_sect is not None:
+        for tag in (qn('w:pgSz'), qn('w:pgMar')):
+            el = doc_sect.find(tag)
+            if el is not None:
+                sect_pr.append(copy.deepcopy(el))
 
     if start_page is not None:
         pg_num_type = OxmlElement('w:pgNumType')
@@ -581,6 +603,14 @@ def _find_previous_text_paragraph(paragraphs, index):
     return None
 
 
+def _find_next_text_paragraph(paragraphs, index):
+    for offset in range(index + 1, len(paragraphs)):
+        para = paragraphs[offset]
+        if _normalize_text(para.text):
+            return para
+    return None
+
+
 def _apply_style_if_available(paragraph, style_name: str) -> bool:
     style = _get_style_by_name_or_id(paragraph.part.styles, style_name)
     if not style:
@@ -752,32 +782,42 @@ def _normalize_learn_label_text(style_id: str, run) -> bool:
 def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV_TAG_ICON_STYLE) -> int:
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
+
+    For Div styles with a tag icon, replaces the body-level label paragraph with a
+    1-row 2-column borderless autofit table in a single pass:
+      - Left cell: icon image, spacing from the DivLabel paragraph style, vAlign center
+      - Right cell: original label paragraph with its style and runs, vAlign center
+    Example divs (neutral/good/bad) have no icon and are handled by apply_example_block_styles.
+    For any remaining SEMANTIC_DIV_EMOJI styles without an icon, inserts emoji+tab inline.
     """
     changed = 0
     learn_base = _get_style_by_name_or_id(doc.styles, 'Learn Base')
-    # Use reference styles if available
-    if reference_doc_path:
-        ref_doc = Document(reference_doc_path)
-        styles = ref_doc.styles
-    else:
-        styles = doc.styles
-    
-    # Build the mapping from reference styles
     semantic_div_label_styles = build_semantic_div_label_styles(reference_doc_path)
-    for para in doc.paragraphs:
+    body = doc.element.body
+
+    # Snapshot of direct body <w:p> children only — we will replace some with <w:tbl>.
+    # Use doc._body as the parent proxy so Paragraph.style can resolve via doc.part.
+    body_paras = [
+        (child, Paragraph(child, doc._body))
+        for child in list(body)
+        if child.tag == qn('w:p')
+    ]
+
+    icon_count = 0
+    emoji_count = 0
+
+    for p_el, para in body_paras:
         style_id = _paragraph_style_id(para)
-        emoji = SEMANTIC_DIV_EMOJI.get(style_id)
         has_icon = style_id in DIV_TAG_ICON_STEMS
-        if not emoji and not has_icon:
+        emoji = SEMANTIC_DIV_EMOJI.get(style_id)
+        if not has_icon and not emoji:
             continue
 
-        runs = para.runs
-        if not runs:
+        if not para.runs:
             continue
 
-        label_index, label_run = _find_semantic_label_run(para)
+        _, label_run = _find_semantic_label_run(para)
         if label_run is None:
-            # No bold run found — take the first non-empty run (plain label text)
             for idx, run in enumerate(para.runs):
                 if run.text and run.text.strip():
                     label_index, label_run = idx, run
@@ -788,46 +828,72 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
         if _normalize_learn_label_text(style_id, label_run):
             changed += 1
 
-        label_style_name = semantic_div_label_styles.get(style_id)
-        label_color = _run_color_value(label_run)
-        if label_style_name:
-            label_style = _get_style_by_name_or_id(styles, label_style_name, WD_STYLE_TYPE.CHARACTER)
-            if label_style is None:
-                print(f'Warning: Character style "{label_style_name}" not found in reference DOCX, skipping.')
-                continue
-            label_color = label_color or _style_color_value(label_style)
-            if label_style and getattr(label_run.style, 'name', None) != label_style.name:
-                label_run.style = label_style
-                changed += 1
+        # Get color from paragraph style map (no char style needed)
+        label_color = semantic_div_label_styles.get(style_id) or _run_color_value(label_run)
+        # Apply color and font directly to the label run
+        if label_color:
+            _set_run_color(label_run, label_color)
+        _set_run_font(label_run, 'Noto Sans Condensed Medium')
         _set_run_non_italic(label_run)
 
-        # Insert icon inline before label text (same line).
-        # Detection: first <w:r> after <w:pPr> already contains a <w:drawing>.
-        icon_path = _resolve_div_tag_icon(style_id, reference_doc_path, tag_style)
-        p_children = list(para._p)
-        first_run_el = next((el for el in p_children if el.tag == qn('w:r')), None)
-        already_has_icon = (
-            first_run_el is not None
-            and first_run_el.find(qn('w:drawing')) is not None
-        )
+        if has_icon:
+            icon_path = _resolve_div_tag_icon(style_id, reference_doc_path, tag_style)
 
-        if not already_has_icon:
+            # Insert icon image + 2× NBSP inline before the label text.
+            # The DivTag style (set to lowered by 4pt in the reference DOCX) aligns
+            # the icon baseline with the label text without needing a 2-column table.
             if icon_path:
-                img_run = para.add_run()
+                tmp_para = doc.add_paragraph()
+                img_run = tmp_para.add_run()
                 img_run.add_picture(str(icon_path), height=DIV_TAG_ICON_HEIGHT_EMU)
-                _insert_run_after_properties(para, img_run)
+                icon_r = img_run._r
+                body.remove(tmp_para._p)
 
-                wp_ns = 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing'
-                drawing_el = img_run._r.find(qn('w:drawing'))
-                if drawing_el is not None:
-                    inline_el = drawing_el.find(f'{{{wp_ns}}}inline')
-                    if inline_el is not None:
-                        inline_el.set('distT', '0')
-                        inline_el.set('distB', '0')
-                        inline_el.set('distL', '0')
-                        inline_el.set('distR', str(DIV_TAG_ICON_DIST_R_EMU))
-            else:
-                # Fallback: emoji + tab
+                # Apply DivTag character style to icon run so spacing is style-driven
+                icon_rpr = icon_r.find(qn('w:rPr'))
+                if icon_rpr is None:
+                    icon_rpr = OxmlElement('w:rPr')
+                    icon_r.insert(0, icon_rpr)
+                icon_style_el = OxmlElement('w:rStyle')
+                icon_style_el.set(qn('w:val'), 'DivTag')
+                icon_rpr.insert(0, icon_style_el)
+
+                # Build a run containing 2× NBSP as spacer
+                nbsp_r = OxmlElement('w:r')
+                nbsp_rpr = OxmlElement('w:rPr')
+                nbsp_style_el = OxmlElement('w:rStyle')
+                nbsp_style_el.set(qn('w:val'), 'DivTag')
+                nbsp_rpr.append(nbsp_style_el)
+                nbsp_r.append(nbsp_rpr)
+                nbsp_t = OxmlElement('w:t')
+                nbsp_t.text = '  '
+                nbsp_t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
+                nbsp_r.append(nbsp_t)
+
+                # Prepend icon run and NBSP run before the first existing run
+                first_r = p_el.find(qn('w:r'))
+                if first_r is not None:
+                    idx = list(p_el).index(first_r)
+                    p_el.insert(idx, nbsp_r)
+                    p_el.insert(idx, icon_r)
+                else:
+                    p_el.append(icon_r)
+                    p_el.append(nbsp_r)
+
+            icon_count += 1
+            changed += 1
+
+        else:
+            # Emoji fallback for any SEMANTIC_DIV_EMOJI style that has no icon
+            p_children = list(para._p)
+            first_run_el = next((el for el in p_children if el.tag == qn('w:r')), None)
+            already_has_emoji = (
+                first_run_el is not None
+                and first_run_el.find(qn('w:drawing')) is None
+                and first_run_el.find(qn('w:t')) is not None
+                and (first_run_el.find(qn('w:t')).text or '').strip() in set(SEMANTIC_DIV_EMOJI.values())
+            )
+            if not already_has_emoji:
                 emoji_run = para.add_run()
                 emoji_run.text = emoji
                 _set_run_font(emoji_run, 'Noto Emoji')
@@ -835,23 +901,25 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
                 _set_run_non_italic(emoji_run)
                 _set_run_non_bold(emoji_run)
                 _insert_run_after_properties(para, emoji_run)
-
                 tab_run = para.add_run()
                 tab_run.text = '\t'
                 emoji_idx = list(para._p).index(emoji_run._r)
                 para._p.remove(tab_run._r)
                 para._p.insert(emoji_idx + 1, tab_run._r)
-            changed += 1
+                emoji_count += 1
+                changed += 1
 
-        if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
-            para.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            changed += 1
+            if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
+                para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                changed += 1
 
         if style_id in LEARN_SEMANTIC_STYLE_IDS:
             if learn_base is not None and getattr(para.style, 'name', None) != learn_base.name:
                 para.style = learn_base
                 changed += 1
 
+    if icon_count or emoji_count:
+        print(f'  apply_semantic_div_labels: {icon_count} icon labels, {emoji_count} emoji labels')
     return changed
 
 
@@ -1732,35 +1800,33 @@ def apply_example_block_styles(doc) -> int:
 
         if target_style is not None:
             style_name = getattr(para.style, 'name', '') if para.style else ''
-            if style_name in NEUTRAL_MODEL_SOURCE_STYLES or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
+            if _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
+                target_style = None
+            elif style_name in NEUTRAL_MODEL_SOURCE_STYLES | {'Body Text', 'Normal'} or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
                 para.style = target_style
                 changed += 1
-            elif _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
-                target_style = None
-            elif _normalize_text(para.text) and style_name not in ('Body Text', 'Normal'):
+            elif _normalize_text(para.text):
                 target_style = None
 
     return changed
 
 
-def apply_spacing_after_lists(doc, space_before_twips: int = 120) -> int:
-    """Add space-before to prose paragraphs that immediately follow list paragraphs.
+def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
+    """Add space-after to the last list paragraph in each list run.
 
-    Replaces the deleted 'After List' style by injecting w:spacing/@w:before directly,
-    creating a visual gap between the last list item and the first prose paragraph.
-    Only applies to Body Text / Normal paragraphs that immediately follow a list.
+    Sets w:spacing/@w:after on the last list item directly rather than modifying
+    the following prose paragraph, which avoids overriding existing space-before
+    values on non-list styles.
     """
     paragraphs = list(doc.paragraphs)
     changed = 0
 
     for idx, para in enumerate(paragraphs):
-        if not _is_candidate_after_list(_normalize_text(para.text)):
+        if not _is_list_paragraph(para):
             continue
-        if not _can_apply_after_list_to_paragraph(para):
-            continue
-        prev = _find_previous_text_paragraph(paragraphs, idx)
-        if prev is None or not _is_list_paragraph(prev):
-            continue
+        next_para = _find_next_text_paragraph(paragraphs, idx)
+        if next_para is not None and _is_list_paragraph(next_para):
+            continue  # not the last item in the run
 
         p_pr = para._p.find(qn('w:pPr'))
         if p_pr is None:
@@ -1770,28 +1836,235 @@ def apply_spacing_after_lists(doc, space_before_twips: int = 120) -> int:
         if spacing is None:
             spacing = OxmlElement('w:spacing')
             p_pr.append(spacing)
-        current = spacing.get(qn('w:before'))
-        if current != str(space_before_twips):
-            spacing.set(qn('w:before'), str(space_before_twips))
+        current = spacing.get(qn('w:after'))
+        if current != str(space_after_twips):
+            spacing.set(qn('w:after'), str(space_after_twips))
             changed += 1
 
     return changed
 
 
-def apply_table_styles(doc, default_style: str = 'AW Standard Table') -> int:
-    """Apply AW Standard Table style to all tables that have no custom style set."""
+def apply_table_styles(doc, default_style: str = 'AW Standard Table',
+                       space_after_twips: int = 280) -> int:
+    """Apply AW Standard Table style to all tables that have no custom style set.
+
+    Also adds space-before on the paragraph immediately following each table so
+    there is visual breathing room after tables (matching the list spacing policy).
+    """
     table_style = _get_style_by_name_or_id(doc.styles, default_style)
-    if not table_style:
-        return 0
     changed = 0
-    for table in doc.tables:
-        try:
-            current = table.style.name if table.style else None
-            if current in (None, 'Table Normal', 'Normal Table'):
-                table.style = table_style
-                changed += 1
-        except Exception:
-            pass
+
+    body = doc._body._body  # lxml element
+    children = list(body)
+
+    for idx, child in enumerate(children):
+        # Apply default style to unstyled tables
+        if child.tag == qn('w:tbl') and table_style:
+            # Skip response placeholder tables (tagged with tblDescription)
+            desc = child.find(f'.//{qn("w:tblDescription")}')
+            if desc is not None and desc.get(qn('w:val')) == 'ResponsePlaceholder':
+                pass
+            else:
+                from docx.table import Table as DTable
+                try:
+                    tbl = DTable(child, doc._body)
+                    current = tbl.style.name if tbl.style else None
+                    if current in (None, 'Table Normal', 'Normal Table'):
+                        tbl.style = table_style
+                        changed += 1
+                except Exception:
+                    pass
+
+            # Add space-before to the paragraph immediately following the table
+            for next_child in children[idx + 1:]:
+                if next_child.tag == qn('w:p'):
+                    p_pr = next_child.find(qn('w:pPr'))
+                    if p_pr is None:
+                        p_pr = OxmlElement('w:pPr')
+                        next_child.insert(0, p_pr)
+                    spacing = p_pr.find(qn('w:spacing'))
+                    if spacing is None:
+                        spacing = OxmlElement('w:spacing')
+                        p_pr.append(spacing)
+                    if spacing.get(qn('w:before')) != str(space_after_twips):
+                        spacing.set(qn('w:before'), str(space_after_twips))
+                    break
+                elif next_child.tag == qn('w:tbl'):
+                    break  # next element is another table, skip
+
+    return changed
+
+
+def apply_response_placeholders(doc) -> int:
+    """Replace {{PH-N: label}} marker paragraphs with ruled-line Word tables.
+
+    Each placeholder is a full-width (fit-to-window) table with:
+    - a shaded header row (vertically centered) containing the label text
+    - N ruled rows (bottom border only, fixed height, single line spacing)
+
+    Consecutive placeholder tables get a thin spacer paragraph between them.
+
+    Row counts per type:
+      PH-1:  2 rows  (~2 cm)
+      PH-2:  5 rows  (~5 cm)
+      PH-3:  9 rows  (~9 cm)
+      PH-4: 15 rows (~15 cm)
+      PH-5: 22 rows (~22 cm)
+    """
+    import re
+    from lxml import etree
+
+    PH_ROWS = {'PH-1': 2, 'PH-2': 5, 'PH-3': 9, 'PH-4': 15, 'PH-5': 22}
+    ROW_HEIGHT_TWIPS = 567      # ~1 cm per row
+    HEADER_HEIGHT_TWIPS = 454   # ~0.8 cm header
+    RULE_COLOR = 'AAAAAA'
+    HEADER_FILL = 'F0F0F0'
+    HEADER_FONT_SIZE = '18'     # 9pt in half-points
+    SPACER_HEIGHT = '140'       # ~7pt spacer paragraph between consecutive tables
+
+    PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+):\s*([^}]+)\}\}\s*$')
+    # Tag to identify our placeholder tables so apply_table_styles skips them
+    PH_TAG = 'ResponsePlaceholder'
+
+    W_NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+    XML_SPACE = '{http://www.w3.org/XML/1998/namespace}space'
+
+    def w(tag): return f'{{{W_NS}}}{tag}'
+    def sa(el, attr, val): el.set(f'{{{W_NS}}}{attr}', val)
+
+    def make_spacer_para():
+        p = etree.Element(w('p'))
+        pPr = etree.SubElement(p, w('pPr'))
+        sp = etree.SubElement(pPr, w('spacing'))
+        sa(sp, 'before', SPACER_HEIGHT)
+        sa(sp, 'after', '0')
+        sa(sp, 'line', '240')
+        sa(sp, 'lineRule', 'auto')
+        return p
+
+    def make_tbl(label, n_rows):
+        tbl = etree.Element(w('tbl'))
+
+        # tblPr — fit to window (pct type, 5000 = 100%)
+        tbl_pr = etree.SubElement(tbl, w('tblPr'))
+        # Mark as placeholder so apply_table_styles skips it
+        tbl_desc = etree.SubElement(tbl_pr, w('tblDescription'))
+        sa(tbl_desc, 'val', PH_TAG)
+        tbl_w = etree.SubElement(tbl_pr, w('tblW'))
+        sa(tbl_w, 'w', '5000'); sa(tbl_w, 'type', 'pct')  # 100% of text width
+        tbl_layout = etree.SubElement(tbl_pr, w('tblLayout'))
+        sa(tbl_layout, 'type', 'fixed')
+        # No outer borders
+        tbl_borders = etree.SubElement(tbl_pr, w('tblBorders'))
+        for side in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
+            el = etree.SubElement(tbl_borders, w(side))
+            sa(el, 'val', 'none'); sa(el, 'sz', '0'); sa(el, 'space', '0'); sa(el, 'color', 'auto')
+        # No spacing before/after the table itself
+        tbl_look = etree.SubElement(tbl_pr, w('tblLook'))
+        sa(tbl_look, 'val', '0000')
+
+        def make_row(height_twips, is_header=False, label_text=''):
+            tr = etree.Element(w('tr'))
+            trPr = etree.SubElement(tr, w('trPr'))
+            trH = etree.SubElement(trPr, w('trHeight'))
+            sa(trH, 'val', str(height_twips)); sa(trH, 'hRule', 'exact')
+
+            tc = etree.SubElement(tr, w('tc'))
+            tcPr = etree.SubElement(tc, w('tcPr'))
+            tcW = etree.SubElement(tcPr, w('tcW'))
+            sa(tcW, 'w', '5000'); sa(tcW, 'type', 'pct')
+            # Vertical centering
+            vAlign = etree.SubElement(tcPr, w('vAlign'))
+            sa(vAlign, 'val', 'center')
+            # Cell borders: only bottom ruled line
+            tc_borders = etree.SubElement(tcPr, w('tcBorders'))
+            for side in ('top', 'left', 'right'):
+                el = etree.SubElement(tc_borders, w(side))
+                sa(el, 'val', 'none'); sa(el, 'sz', '0'); sa(el, 'space', '0'); sa(el, 'color', 'auto')
+            bot = etree.SubElement(tc_borders, w('bottom'))
+            sa(bot, 'val', 'single'); sa(bot, 'sz', '4')
+            sa(bot, 'space', '0'); sa(bot, 'color', RULE_COLOR)
+            if is_header:
+                shd = etree.SubElement(tcPr, w('shd'))
+                sa(shd, 'val', 'clear'); sa(shd, 'color', 'auto'); sa(shd, 'fill', HEADER_FILL)
+
+            p = etree.SubElement(tc, w('p'))
+            pPr = etree.SubElement(p, w('pPr'))
+            sp = etree.SubElement(pPr, w('spacing'))
+            sa(sp, 'before', '0'); sa(sp, 'after', '0')
+            sa(sp, 'line', '240'); sa(sp, 'lineRule', 'auto')
+            jc = etree.SubElement(pPr, w('jc')); sa(jc, 'val', 'left')
+
+            if is_header and label_text:
+                r = etree.SubElement(p, w('r'))
+                rPr = etree.SubElement(r, w('rPr'))
+                b = etree.SubElement(rPr, w('b')); sa(b, 'val', '1')
+                sz = etree.SubElement(rPr, w('sz')); sa(sz, 'val', HEADER_FONT_SIZE)
+                szCs = etree.SubElement(rPr, w('szCs')); sa(szCs, 'val', HEADER_FONT_SIZE)
+                color = etree.SubElement(rPr, w('color')); sa(color, 'val', '444444')
+                t = etree.SubElement(r, w('t'))
+                t.text = label_text
+                t.set(XML_SPACE, 'preserve')
+            return tr
+
+        tbl.append(make_row(HEADER_HEIGHT_TWIPS, is_header=True, label_text=label))
+        for _ in range(n_rows):
+            tbl.append(make_row(ROW_HEIGHT_TWIPS))
+        return tbl
+
+    body = doc._body._body
+    # First pass: collect marker paragraphs
+    markers = []
+    for child in list(body):
+        if child.tag != qn('w:p'):
+            continue
+        text = ''.join(t.text or '' for t in child.iter(qn('w:t'))).strip()
+        m = PH_RE.match(text)
+        if not m:
+            continue
+        prefix_label = m.group(1).strip()
+        ph_type = m.group(2)
+        id_label = m.group(3).strip()
+        if ph_type not in PH_ROWS:
+            continue
+        if prefix_label:
+            display_label = prefix_label
+        else:
+            parts = id_label.split('-')
+            display_label = ' '.join(p.capitalize() for p in parts[2:]) if len(parts) > 2 else id_label
+        markers.append((child, ph_type, display_label))
+
+    # Second pass: replace in reverse order so indices stay valid
+    changed = 0
+    for child, ph_type, display_label in reversed(markers):
+        n_rows = PH_ROWS[ph_type]
+        tbl_el = make_tbl(display_label, n_rows)
+        idx = list(body).index(child)
+        body.remove(child)
+        body.insert(idx, tbl_el)
+        changed += 1
+
+    # Third pass: insert spacer paragraphs between consecutive placeholder tables
+    children = list(body)
+    inserts = []
+    for i, child in enumerate(children):
+        if child.tag != qn('w:tbl'):
+            continue
+        desc = child.find(f'.//{w("tblDescription")}')
+        if desc is None or desc.get(f'{{{W_NS}}}val') != PH_TAG:
+            continue
+        # Check if the next sibling is also a placeholder table
+        if i + 1 < len(children):
+            nxt = children[i + 1]
+            if nxt.tag == qn('w:tbl'):
+                nxt_desc = nxt.find(f'.//{w("tblDescription")}')
+                if nxt_desc is not None and nxt_desc.get(f'{{{W_NS}}}val') == PH_TAG:
+                    inserts.append((i + 1, make_spacer_para()))
+
+    # Insert spacers in reverse so positions stay correct
+    for pos, spacer in reversed(inserts):
+        body.insert(pos, spacer)
+
     return changed
 
 
@@ -1865,8 +2138,8 @@ def insert_section_after_toc(
         try:
             sections_added = insert_section_breaks_before_h1(
                 doc,
-                skip_first=has_toc,
-                restart_first=not has_toc,
+                skip_first=True,
+                restart_first=False,
             )
             if sections_added > 0:
                 print(f'Inserted {sections_added} section break(s) before H1 headings')
@@ -1902,6 +2175,11 @@ def insert_section_after_toc(
     table_style_changes = apply_table_styles(doc)
     if table_style_changes > 0:
         print(f'Applied table styles to {table_style_changes} table(s)')
+        made_change = True
+
+    placeholder_changes = apply_response_placeholders(doc)
+    if placeholder_changes > 0:
+        print(f'Inserted {placeholder_changes} response placeholder(s)')
         made_change = True
 
     if apply_semantic_labels:
@@ -1946,7 +2224,6 @@ def insert_section_after_toc(
         made_change = True
 
     if made_change:
-        import tempfile, shutil
         tmp_fd, tmp_path = tempfile.mkstemp(suffix='.docx', dir=Path(docx_path).parent)
         os.close(tmp_fd)
         try:

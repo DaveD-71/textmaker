@@ -201,6 +201,79 @@ All items completed in session 4 and session 5 — see below.
 - Validation: exit 0.
 - PDF: 3.3 MB. Both repos committed and pushed.
 
+## 2026-05-18 (session 7 — icon table layout, caps fix, section break fix, div structure audit)
+
+### Context and starting state
+
+Continuing from session 6. The div label icon table layout (2-column borderless table with icon left, label text right) had been partially implemented but not yet verified against a clean build. Several issues were outstanding from the previous session: all-caps not rendering on div label char styles, page 1 rendering as Letter size with a spurious section break after the H1, and a file lock preventing the final rebuild.
+
+### Reference DOCX patch: all-caps on DivLabel char styles
+
+- All 12 `DivLabel*Char` styles in `aw-adv-styleref.docx` had bare `<w:caps/>` (no `w:val` attribute). Per OOXML spec, toggle properties in character styles require explicit `w:val="1"` to be honoured; bare elements are treated as "not set".
+- Patched all 12 char styles to `<w:caps w:val="1"/>` using `C:\Temp\fix_caps_val.py`. Backup saved as `aw-adv-styleref.bak_caps` (moved to `adv/md/bak/` after session).
+- Note: underline worked because `<w:u>` requires `w:val="single"` by spec and was already present; caps was the only property affected.
+- Confirmed caps rendering in PDF output after patch.
+
+### Postprocessor fixes (`postprocess_docx.py`)
+
+**Section break / page size fixes:**
+
+- `_insert_section_break_before_paragraph()`: added copy of `w:pgSz` and `w:pgMar` from document-level `sectPr` into every inserted `sectPr`, so section breaks inherit correct paper size (A4) instead of defaulting to Word's application default (US Letter).
+- `insert_section_breaks_before_h1()` call site: changed `skip_first=has_toc` to `skip_first=True` so the first H1 (the cover title) is always skipped. Previously, when `has_toc=False`, the first H1 got a section break attached to the preceding YAML front-matter paragraph, effectively pushing the H1 off page 1.
+- Confirmed via PDF MediaBox inspection that all pages are A4 (210×297mm) after fixes.
+
+**Div label icon table layout (single-pass rewrite):**
+
+- Rewrote `apply_semantic_div_labels()` as a single-pass function: builds the 2-column borderless table and inserts the icon in the same step, replacing each `DivLabel*` paragraph with a `<w:tbl>` in-place.
+- Table config: `tblStyle=TableGrid`, `tblW type=auto` (autofit), explicit `tblBorders` with all sides `none`/`sz=0` to suppress visible borders while preserving gridlines toggle. `TableNormal` was tried but rejected because it has no border definition and the gridlines toggle couldn't be controlled.
+- Left cell uses `DivTag` paragraph style (user-created, based on `Div Label Base`) so spacing inherits from the style rather than being hardcoded.
+- Icon height changed to 190500 EMU (15pt) for inline rendering; `distR=114300` EMU (9pt) gap to label text.
+- Example divs (neutral/good/bad) excluded from icon table — they use a different visual treatment.
+- Fixed `AttributeError: 'CT_Body' object has no attribute 'part'` by using `Paragraph(child, doc._body)` instead of `Paragraph(child, body)`.
+
+**`_apply_next_page_section_to_paragraph()` fix:**
+
+- Added copy of `w:pgSz` and `w:pgMar` from document-level `sectPr` (same fix as `_insert_section_break_before_paragraph`).
+
+### Working folder cleanup
+
+- Moved `aw-adv-styleref.bak_caps` to `adv/md/bak/`.
+- Removed stale `.tmp` file.
+- Working folder now contains only: `aw-adv-all_0516.md`, `aw-adv-styleref.docx`, `aw-adv-all_0518.docx`, `aw-adv-all_0518.pdf`, `div-tags-icons-2_assets/`.
+
+### Source markdown fixes (`aw-adv-all_0516.md`)
+
+**Div spacing fixes (Pandoc compatibility):**
+
+- Fixed 7 missing blank lines before `:::` open fences: all were bold `**Input N / Source N**` label lines immediately followed by `:::` with no blank line. Pandoc requires a blank line before a fenced div when preceded by non-empty content.
+- Fixed 1 missing blank line between `:::` open fence and an immediately-following numbered list (`edit` div at L7317).
+- Fixed 1 spurious extra `:::` close fence (triple `:::` at lines 2997–2999 reduced to double).
+- Fixed unclosed `notice` div at L2951: inner `example-bad`/`example-good` divs were terminating the outer `notice` early; added explicit `:::` close before the sibling `learn "Why This Works"` block.
+
+**Nested div audit and cleanup:**
+
+- Audited all 244 nested div instances across the file. Two categories identified:
+  - **Thin nested divs** (title-only, no body): 16 total, all nested. 11 removed as pure sub-labels adding no student learning value: `learn "Functions"` (×2), `language "Learn — Sentences"`, `language "Learn — Useful Language"` (×3), `language "Learn — Patterns"`, `learn "Statements"`, `learn "Annotations"`, `learn "Discuss"`, `learn "Revision Checklist"`.
+  - **Kept** (meaningful labels): `learn "Version A"`, `learn "Version B"`, `learn "Original"`, `learn "Proposed Changes"`, `learn "Scenario"` — these label distinct content sections within the outer div.
+- Remaining nested divs (233) are structural patterns where sub-divs are genuinely separate content blocks (e.g. `example-bad`/`example-good`/`learn "Why This Works"` sequences inside `notice` wrappers). These are known to cause early termination of the outer div in Pandoc; full resolution is pending — see decisions below.
+
+**Table cell `<br>` tag fixes:**
+
+- Replaced malformed `<br*` and `<br>` tags in pipe table cells with ` / ` separator. Pandoc's `markdown+fancy_lists` format does not process raw HTML in table cells without the `+raw_html` extension, so these were rendering as literal text.
+- Affected: "Useful Phrases" language table (L1102–1106) and "Clarity Patterns" table (L196–198).
+
+### Build results (session 7 final)
+
+- Pandoc: clean, no warnings.
+- Postprocess: 1678 list styles, 21 alpha markers, 145 checklist items, 92 example block paragraphs, 180 post-list spacing, 39 table styles, 458 icon tables + 61 emoji labels, 1113 div label updates, 243 body text, 513 fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
+- PDF: 201 pages, all A4 (210×297mm confirmed via MediaBox). 3.9 MB.
+
+### Outstanding issues
+
+- **All-caps on div labels**: Caps patch applied to reference DOCX and confirmed in PDF. LibreOffice may render caps differently from Word — to be verified in Word.
+- **Nested divs**: 233 remaining nested div instances. Most are `example-bad`/`example-good`/`learn` blocks inside `notice` wrappers — a deep structural issue requiring content-level decisions about which blocks are genuinely inside the outer activity vs. siblings. Not addressed this session.
+- **Page 1 H1 visibility**: H1 "Administrative Writing, Advanced" is present in the DOCX body (confirmed via XML) but uses a white-text style in the reference DOCX (designed for use inside colored module title tables). The cover page layout is a placeholder ("Textbook description goes here") — not a pipeline issue.
+
 ## 2026-05-17 (session 6 — icon colors, alignment, and pipeline fixes)
 
 ### Reference DOCX color updates
@@ -228,4 +301,42 @@ All items completed in session 4 and session 5 — see below.
 - Postprocess: 1676 list styles, 21 alpha markers, 145 checklist items, 85 example block paragraphs, 180 post-list spacing, 39 table styles, 589 div labels (469 with icons), 243 body text, 513 Pandoc fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
 - Validation: exit 0.
 - Both repos committed and pushed. PDF not exported (LibreOffice not installed on current machine).
+
+## 2026-05-18 (session 8 — style architecture simplification and reference DOCX cleanup)
+
+### DivTag character style fix
+
+- Diagnosed root cause of div label icon misalignment: `DivTag` was defined as a paragraph style, so `w:rStyle` references to it on icon runs were silently ignored by Word (rStyle only resolves character styles). Icon inherited raw paragraph style properties with no baseline lowering.
+- Changed `DivTag` from paragraph type to character type in reference DOCX with `w:position w:val="-8"` (4pt lower) and `w:u val="none"`. Removed `basedOn` and `next` (not valid on character styles).
+- Icon run now correctly receives the 4pt baseline lowering via the character style.
+
+### Icon height
+
+- Changed `DIV_TAG_ICON_HEIGHT_EMU` from 152400 (12pt) to 198000 (0.55 cm) to account for internal PNG padding and baseline repositioning, keeping icon label text legible.
+
+### Div Label style architecture — dropped linked char styles
+
+- Removed all 12 `DivLabel*Char` character styles from reference DOCX.
+- Removed `w:link` from all 12 `DivLabel*` paragraph styles.
+- Replaced `build_semantic_div_label_styles()` in `postprocess_docx.py`: now reads color directly from paragraph style `rPr` instead of looking up linked char styles.
+- Updated `apply_semantic_div_labels()`: applies color and `Noto Sans Condensed Medium` font directly to label runs via `_set_run_color` / `_set_run_font` — no char style assignment.
+- Result: reference DOCX reduced from 24 DivLabel styles to 12 (paragraph only); single source of truth for font/size/spacing in `Div Label Base`.
+
+### Reference DOCX — font update
+
+- Set `Noto Sans Condensed Medium` (ascii + hAnsi) on all 12 `DivLabel*Char` styles before they were removed. Font is now applied directly by postprocessor.
+
+### Reference DOCX — AW Table style updates
+
+- All 4 AW Table styles (`AWStandardTable`, `AWComparisonTable`, `AWPhraseBankTable`, `AWRubricTable`) updated:
+  - Width: 100% (`pct` type) — fit to text column
+  - Layout: `autofit`
+  - Paragraph alignment: left (was centered)
+  - Paragraph hyphenation: `suppressAutoHyphens` = 1
+  - First row: bold, white text, `2D4155` dark blue fill (was already present on AWStandardTable; applied consistently to all four)
+
+### Build result (session 8)
+
+- Pandoc: clean, no warnings.
+- Postprocess: 1678 list styles, 21 alpha markers, 145 checklist items, 244 example block paragraphs, 395 post-list spacing, 39 table styles, 127 placeholders, 458 icon labels + 61 emoji labels, 595 div label updates, 219 body text, 513 fallback replacements, 31 non-reference styles purged, 29 page breaks, 3 running headers, 23 unit title tables, 23 Unit Overview headings.
 
