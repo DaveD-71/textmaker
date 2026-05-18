@@ -6,7 +6,7 @@ Post-process a DOCX produced by Pandoc to ensure:
 - section breaks (nextPage) are inserted before each H1 heading
 - Quick Parts are inserted through Word COM from a real template when available
 
-Semantic label rendering (emoji, character styles, unit title tables) is opt-in;
+Semantic label rendering (icon tables, character styles, unit title tables) is opt-in;
 pass --apply-semantic-labels to enable it. Style definitions are never created or
 redefined here — all style management belongs in manage_docx_styles.py.
 """
@@ -96,30 +96,6 @@ MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
     re.IGNORECASE,
 )
 
-SEMANTIC_DIV_EMOJI = {
-    # Style IDs match reference DOCX "Div Label *" paragraph styles
-    'DivLabelProcess': '🧭',
-    'DivLabelLanguage': '💬',
-    'DivLabelPrinciple': '💡',
-    'DivLabelTransfer': '🔁',
-    'DivLabelTeaching': '📘',
-    'DivLabelNote': '🗒️',
-    'DivLabelBase': 'ℹ️',           # fallback for guidance-step, reference-support, etc.
-    'DivLabelActivityInput': '📥',
-    'DivLabelActivityAnalysis': '🔎',
-    'DivLabelActivityLanguageControl': '🔤',
-    'DivLabelActivityRewrite': '🔄',
-    'DivLabelActivityEdit': '✏️',
-    'DivLabelActivityDraft': '📝',
-    'DivLabelWorkedExample': '🧩',
-    'DivLabelExample': '📌',
-    'DivLabelPlaceholder': '⬜',
-    'DivLabelSelfStudy': '📚',
-    'DivLabelAnnotation': '🏷️',
-    'DivLabelModel': '📄',
-    'DivLabelBad': '❌',
-    'DivLabelGood': '✅',
-}
 
 # Maps paragraph style ID → tag_filled_*.png filename stem.
 # example-good and example-bad share the example tag image.
@@ -193,7 +169,6 @@ def build_semantic_div_label_styles(reference_doc_path=None):
 
 LEARN_SEMANTIC_STYLE_IDS: set[str] = set()  # Learn base conversion removed
 
-SEMANTIC_DIV_STYLE_IDS = set(SEMANTIC_DIV_EMOJI)
 
 DEFAULT_BUILDING_BLOCK_TEMPLATE = (
     Path(os.environ.get('APPDATA', str(Path.home() / 'AppData' / 'Roaming')))
@@ -523,6 +498,35 @@ def _require_style(styles, target):
     return style
 
 
+def _ensure_styles_from_reference(doc, reference_doc_path, style_names):
+    """Copy named styles from reference DOCX into doc if they are not already present.
+
+    Copies the raw <w:style> XML element from the reference DOCX styles part directly
+    into the output DOCX styles part.  Only copies styles that are absent from doc.
+    Returns the list of style names that were actually copied.
+    """
+    if not reference_doc_path:
+        return []
+    missing = [n for n in style_names if _get_style_by_name_or_id(doc.styles, n) is None]
+    if not missing:
+        return []
+
+    ref_doc = Document(reference_doc_path)
+    ref_styles_el = ref_doc.styles.element   # <w:styles> element
+    out_styles_el = doc.styles.element
+
+    copied = []
+    for name in missing:
+        ref_style = _get_style_by_name_or_id(ref_doc.styles, name)
+        if ref_style is None:
+            continue
+        # Deep-copy the <w:style> element and append to output styles part
+        out_styles_el.append(copy.deepcopy(ref_style.element))
+        copied.append(name)
+
+    return copied
+
+
 def _require_character_style(styles, target):
     style = _get_style_by_name_or_id(styles, target, WD_STYLE_TYPE.CHARACTER)
     if not style:
@@ -789,12 +793,8 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
 
-    For Div styles with a tag icon, replaces the body-level label paragraph with a
-    1-row 2-column borderless autofit table in a single pass:
-      - Left cell: icon image, spacing from the DivLabel paragraph style, vAlign center
-      - Right cell: original label paragraph with its style and runs, vAlign center
+    For Div styles with a tag icon, inserts the PNG icon inline before the label text.
     Example divs (neutral/good/bad) have no icon and are handled by apply_example_block_styles.
-    For any remaining SEMANTIC_DIV_EMOJI styles without an icon, inserts emoji+tab inline.
     """
     changed = 0
     learn_base = _get_style_by_name_or_id(doc.styles, 'Learn Base')
@@ -810,13 +810,11 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
     ]
 
     icon_count = 0
-    emoji_count = 0
 
     for p_el, para in body_paras:
         style_id = _paragraph_style_id(para)
         has_icon = style_id in DIV_TAG_ICON_STEMS
-        emoji = SEMANTIC_DIV_EMOJI.get(style_id)
-        if not has_icon and not emoji:
+        if not has_icon:
             continue
 
         if not para.runs:
@@ -889,43 +887,13 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
             icon_count += 1
             changed += 1
 
-        else:
-            # Emoji fallback for any SEMANTIC_DIV_EMOJI style that has no icon
-            p_children = list(para._p)
-            first_run_el = next((el for el in p_children if el.tag == qn('w:r')), None)
-            already_has_emoji = (
-                first_run_el is not None
-                and first_run_el.find(qn('w:drawing')) is None
-                and first_run_el.find(qn('w:t')) is not None
-                and (first_run_el.find(qn('w:t')).text or '').strip() in set(SEMANTIC_DIV_EMOJI.values())
-            )
-            if not already_has_emoji:
-                emoji_run = para.add_run()
-                emoji_run.text = emoji
-                _set_run_font(emoji_run, 'Noto Emoji')
-                _set_run_color(emoji_run, label_color)
-                _set_run_non_italic(emoji_run)
-                _set_run_non_bold(emoji_run)
-                _insert_run_after_properties(para, emoji_run)
-                tab_run = para.add_run()
-                tab_run.text = '\t'
-                emoji_idx = list(para._p).index(emoji_run._r)
-                para._p.remove(tab_run._r)
-                para._p.insert(emoji_idx + 1, tab_run._r)
-                emoji_count += 1
-                changed += 1
-
-            if para.alignment != WD_ALIGN_PARAGRAPH.LEFT:
-                para.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                changed += 1
-
         if style_id in LEARN_SEMANTIC_STYLE_IDS:
             if learn_base is not None and getattr(para.style, 'name', None) != learn_base.name:
                 para.style = learn_base
                 changed += 1
 
-    if icon_count or emoji_count:
-        print(f'  apply_semantic_div_labels: {icon_count} icon labels, {emoji_count} emoji labels')
+    if icon_count:
+        print(f'  apply_semantic_div_labels: {icon_count} icon labels')
     return changed
 
 
@@ -940,7 +908,7 @@ def apply_body_text_to_normal_paragraphs(doc) -> int:
         if _is_heading(para) or _is_list_paragraph(para):
             continue
         style_id = _paragraph_style_id(para)
-        if style_id in SEMANTIC_DIV_EMOJI:
+        if style_id and style_id.startswith('DivLabel'):
             continue
         style_name = _paragraph_style_name(para)
         if style_name == 'Body Text':
@@ -1279,7 +1247,10 @@ def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int
         table = Table(tbl, para._parent)
         _replace_cell_text_preserve_format(table.cell(0, 0), str(int(match.group(1))))
         _replace_cell_text_preserve_format(table.cell(0, 1), match.group(2))
-        _make_page_break_paragraph_like(para)
+        # Remove the original heading — page break is handled by w:pageBreakBefore
+        # on the AWUnitNumber style in the reference DOCX (avoids a spurious empty
+        # paragraph above the title table that pushes it down the page).
+        para._p.getparent().remove(para._p)
         changed += 1
     return changed
 
@@ -1775,11 +1746,25 @@ def apply_checklist_style(doc) -> int:
 
 
 def apply_example_block_styles(doc) -> int:
-    """Apply AW Example Good / AW Example Bad body styles to content after div label paragraphs.
+    """Apply AW Example Good / AW Example Bad / AW Example styles after div label paragraphs.
 
-    When a DivLabelExampleGood or DivLabelExampleBad label paragraph is found,
-    apply the corresponding AW Example Good / AW Example Bad style to immediately
-    following Block Text / Body Text paragraphs until the next heading or div label.
+    Styles every paragraph (quoted text, italic prose, lists) from a DivLabelExample*
+    label up to but not including the first non-italic Body Text / Normal paragraph,
+    which is treated as the task instruction following the example. Stops immediately
+    at the next DivLabel* or heading.
+
+    Rule:
+    - italic Body Text / Normal → example content, continue
+    - list paragraph → example content, continue (unless closing quote already seen)
+    - Block Text / quoted styles → example content; if text ends with closing quote,
+      set closing-quote-seen flag so the NEXT non-empty paragraph stops styling
+    - non-italic Body Text / Normal with text → task instruction boundary; stop
+    - empty paragraph → skip (do not style, do not stop)
+    - heading or DivLabel* → stop
+
+    Closing-quote rule: a paragraph whose text ends with " or " signals the end of
+    the quoted example body. Anything after it (lists, task instructions) is not part
+    of the example and should not receive example formatting.
     """
     good_style = _get_style_by_name_or_id(doc.styles, 'AW Example Good')
     bad_style = _get_style_by_name_or_id(doc.styles, 'AW Example Bad')
@@ -1790,49 +1775,64 @@ def apply_example_block_styles(doc) -> int:
     paragraphs = list(doc.paragraphs)
     changed = 0
     target_style = None
-    _example_seen_prose = False
+    _after_closing_quote = False
 
     for para in paragraphs:
         style_id = _paragraph_style_id(para)
 
         if style_id == 'DivLabelExampleGood':
             target_style = good_style
-            _example_seen_prose = False
+            _after_closing_quote = False
             continue
         if style_id == 'DivLabelExampleBad':
             target_style = bad_style
-            _example_seen_prose = False
+            _after_closing_quote = False
             continue
         if style_id == 'DivLabelExample':
             target_style = neutral_style
-            _example_seen_prose = False
+            _after_closing_quote = False
             continue
 
-        if target_style is not None:
-            style_name = getattr(para.style, 'name', '') if para.style else ''
-            if _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
-                target_style = None
-            elif style_name in NEUTRAL_MODEL_SOURCE_STYLES or bool(QUOTED_MODEL_RE.match(_normalize_text(para.text))):
-                # Block Text / Quote / quoted italics — model text proper
-                para.style = target_style
-                changed += 1
-            elif _is_paragraph_italic(para) and style_name in ('Body Text', 'Normal'):
-                # Italic body text — rendered model paragraphs from Pandoc
-                para.style = target_style
-                changed += 1
-            elif style_name in ('Body Text', 'Normal') and not _is_paragraph_italic(para) and _normalize_text(para.text):
-                if not _example_seen_prose:
-                    # First non-italic prose after label — example body text (e.g. procedure paragraph)
-                    para.style = target_style
-                    changed += 1
-                    _example_seen_prose = True
-                else:
-                    # Subsequent plain prose — task instructions after the example body; stop
-                    target_style = None
-            elif _is_list_paragraph(para):
-                # Numbered/bullet lists are content inside the example block — keep applying
-                para.style = target_style
-                changed += 1
+        if target_style is None:
+            continue
+
+        if _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
+            target_style = None
+            _after_closing_quote = False
+            continue
+
+        style_name = getattr(para.style, 'name', '') if para.style else ''
+        text = _normalize_text(para.text)
+
+        if not text:
+            # Empty paragraph — skip without stopping
+            continue
+
+        # After a closing quote, stop styling — lists and task instructions that
+        # follow the quoted block are not part of the example.
+        if _after_closing_quote:
+            target_style = None
+            _after_closing_quote = False
+            continue
+
+        if _is_list_paragraph(para):
+            para.style = target_style
+            changed += 1
+        elif style_name in NEUTRAL_MODEL_SOURCE_STYLES or bool(QUOTED_MODEL_RE.match(text)):
+            para.style = target_style
+            changed += 1
+            # If this paragraph ends with a closing quote, flag the boundary
+            if text.endswith(('”', '"')):
+                _after_closing_quote = True
+        elif style_name in ('Body Text', 'Normal') and _is_paragraph_italic(para):
+            para.style = target_style
+            changed += 1
+            if text.endswith(('”', '"')):
+                _after_closing_quote = True
+        elif style_name in ('Body Text', 'Normal') and not _is_paragraph_italic(para):
+            # Non-italic prose — task instruction boundary; stop without styling it
+            target_style = None
+            _after_closing_quote = False
 
     return changed
 
@@ -1876,16 +1876,24 @@ AW_TABLE_STYLE_IDS = frozenset({
 
 
 def apply_table_styles(doc, default_style: str = 'AW Standard Table',
-                       space_after_twips: int = 280) -> int:
+                       space_after_twips: int = 280,
+                       reference_doc_path=None) -> int:
     """Apply AW Standard Table style to all tables that have no custom style set.
 
-    Also applies AW Table Body paragraph style to all body-row cell paragraphs so
-    that Noto Sans Condensed Light 10.5pt is reliably rendered regardless of which
-    paragraph style the cell content inherited from Pandoc.  The first row is
-    skipped — it gets white text from the firstRow conditional table format.
+    Also applies AW Table Header / AW Table Body paragraph styles to cell paragraphs
+    so that font/size/spacing is set at the paragraph level (Word's table-style rPr
+    is overridden by paragraph styles in the cascade).
+
+    Copies AW Table Header and AW Table Body from the reference DOCX into the output
+    if they are missing — Pandoc only propagates styles that appear in the source
+    markdown, so these paragraph styles are never present unless explicitly copied.
 
     Also adds space-before on the paragraph immediately following each table.
     """
+    # Ensure the cell paragraph styles exist in the output DOCX
+    _ensure_styles_from_reference(
+        doc, reference_doc_path, ['AW Table Header', 'AW Table Body']
+    )
     table_style = _get_style_by_name_or_id(doc.styles, default_style)
     cell_body_style = _get_style_by_name_or_id(doc.styles, 'AW Table Body')
     changed = 0
@@ -2245,7 +2253,7 @@ def insert_section_after_toc(
         print(f'Applied post-list spacing to {spacing_changes} paragraph(s)')
         made_change = True
 
-    table_style_changes = apply_table_styles(doc)
+    table_style_changes = apply_table_styles(doc, reference_doc_path=reference_doc_path)
     if table_style_changes > 0:
         print(f'Applied table styles to {table_style_changes} table(s)')
         made_change = True
@@ -2352,7 +2360,7 @@ def _build_parser() -> argparse.ArgumentParser:
         '--apply-semantic-labels',
         action='store_true',
         help=(
-            'Apply semantic Div label rendering: insert emoji, set label character styles, '
+            'Apply semantic Div label rendering: insert icons, set label character styles, '
             'normalize label text, and replace unit headings with title tables (Phase C). '
             'Off by default — structural cleanup runs regardless.'
         ),

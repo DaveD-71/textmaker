@@ -389,3 +389,40 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Pandoc: clean, no warnings. 597 div labels (458 icon + 61 emoji + 78 example). 378 example block paragraphs. All other counts stable.
 - Validation: exit 0.
 
+## 2026-05-19 (session 11 — inline icon rewrite, emoji removal, example block refinement)
+
+### `apply_semantic_div_labels()` rewrite — inline icon approach
+
+- Replaced the session 7 single-pass 2-column table approach with direct inline icon insertion.
+- Icon run and 2× NBSP spacer run are prepended before the first existing run in the `DivLabel*` paragraph — no table created.
+- `DivTag` character style applied to icon run via `w:rStyle` for style-driven 4pt baseline lowering.
+- Removed `SEMANTIC_DIV_EMOJI` dict and all emoji fallback logic (61 emoji labels from session 10 are gone; divs with no icon file are now skipped silently).
+
+### `apply_example_block_styles()` rewrite — closing-quote boundary detection
+
+- Added `_after_closing_quote` flag: when a styled paragraph ends with `"` or `"`, the next paragraph is treated as post-example task instruction and stops styling.
+- Added `NEUTRAL_MODEL_SOURCE_STYLES` (`Block Text`, `Quote`, `Intense Quote`) — these are always styled regardless of italic state.
+- Added `QUOTED_MODEL_RE` — matches paragraphs enclosed in curly/straight quotes as model content.
+- Correctly handles: procedure-body examples, numbered-list worked examples, mixed italic/prose examples, and quoted model text without pulling post-example instructions into the styled block.
+
+### `apply_table_styles()` — reference DOCX style copy
+
+- Added `reference_doc_path` parameter.
+- Calls `_ensure_styles_from_reference()` to copy `AW Table Header` and `AW Table Body` into output DOCX if missing — Pandoc never propagates these styles since they don't appear in source markdown.
+- `reference_doc_path` wired through from `insert_section_after_toc()` call site.
+
+### Other postprocessor fixes
+
+- `replace_unit_headings_with_title_tables()`: removes the original heading paragraph entirely (was converting to a page-break paragraph). Page break is now handled by `w:pageBreakBefore` on `AWUnitNumber` style in reference DOCX — avoids a spurious empty paragraph above the title table.
+- `apply_body_text_to_normal_paragraphs()`: checks `style_id.startswith('DivLabel')` instead of checking against the now-deleted emoji dict.
+
+### New: `docx-to-pdf` CLI command
+
+- Added `scripts/docx_to_pdf.py`: converts DOCX to PDF using `docx2pdf` (Word COM on Windows).
+- Registered as `docx-to-pdf` in `__main__.py`.
+
+### Operational notes
+
+- `textmaker.cmd` path corrected: was pointing to an old location. Updated system PATH and documented the OneDrive sync copy convention in `project-learning.md`.
+- Session ended mid-process after VS Code reload required for PATH change to take effect. No build run this session.
+

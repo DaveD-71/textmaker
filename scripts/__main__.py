@@ -5,6 +5,7 @@ import sys
 
 _COMMANDS = {
     "docx-to-markdown": "docx_to_markdown",
+    "docx-to-pdf": "docx_to_pdf",
     "split-docx-units": "split_docx_units",
     "markdown-to-docx": "cli",
     "generate-reference": "generate_reference_docx",

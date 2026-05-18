@@ -36,7 +36,8 @@ Current durable project facts, constraints, and decisions for this workspace.
 
 ## Operational Conventions
 
-- The Windows entry point is `textmaker.cmd`, which wraps the module CLI commands.
+- The Windows entry point is `textmaker.cmd`, which wraps the module CLI commands. It runs `python -m scripts` from the repo root and prepends the local Pandoc path automatically.
+- `c:\Dev\Code\textmaker` is on the system PATH as the canonical entry point on the primary PC. The OneDrive copy (`C:\Users\daved\OneDrive\Documents\Code\textmaker`) is a sync copy for the second PC; its `textmaker.cmd` uses `%~dp0` so it works regardless of clone location. Both `textmaker.cmd` and `scripts\__main__.py` should be kept in sync between both copies when scripts change.
 - Markdown folders passed to `markdown-to-docx` are merged in sorted order, with section breaks inserted between files.
 - When `--toc` is used for DOCX generation, the output gets a separate TOC section and page numbering restarts at 1 for the content.
 - DOCX-to-Markdown defaults to Heading 1 unit splitting, extracts package media into assets folders, and writes numbered Markdown unit files such as `01-<slug>.md`.
