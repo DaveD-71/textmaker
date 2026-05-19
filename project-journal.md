@@ -1,5 +1,29 @@
 # Project Journal
 
+## 2026-05-19 (session 15 — module introductions, example-bad restructuring, postprocessor fix)
+
+### Work completed
+
+**INT book (`aw-int-all_0519.md`)**
+- Added per-unit description bullet list to all 6 `## Module Guide` introductions — new section inserted between opening paragraph and "By the end of this module" outcomes list.
+- Detected 26 edit/rewrite/revise/notice divs containing untagged weak-example labels (`**Original:**`, `**Weak draft**`, `**Weak version**`, `**Original Email:**`); extracted all 26 as preceding `:::example-bad` divs using automated script (`tag_example_bad_blocks.py`).
+- Manually fixed 4 cases where instruction text was incorrectly included in the example-bad block (revise, notice, and 2 rewrite cases).
+- Div balance: 532 opens / 532 closes (Match: True, 0 unclosed). PH markers: 255.
+- Final example-bad div count: 40 (was 14 before this session).
+
+**ADV book (`aw-adv-all_0516.md`)**
+- Converted prose unit-description paragraphs in Modules 2–6 to bullet lists (one bullet per unit), matching the reference format already established in Module 1.
+
+**Postprocessor (`apply_example_block_styles()` in `postprocess_docx.py`)**
+- Added `_seen_italic` tracking flag: if no italic content has been seen in the current example div, non-italic Body Text paragraphs are styled (INT-style); if italic content has been seen, the first non-italic paragraph acts as a task instruction boundary (ADV-style). Fixes the INT book example styling that was only producing 14 styled paragraphs (now 179).
+
+### Build results
+
+- INT: 2263 list styles, 179 example block paragraphs (was 14), 40 example-bad divs, 255 placeholders, 465 icon labels. Clean build.
+- ADV: 1698 list styles, 234 example block paragraphs (was 148), clean build.
+- Both PDFs exported and opened.
+- Both repos committed and pushed.
+
 ## 2026-03-24
 
 - Startup bootstrap executed for the `textmaker` workspace.
