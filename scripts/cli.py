@@ -241,6 +241,45 @@ def normalize_markdown(md_text: str, *, ignore_horizontal_rules: bool = False) -
     return '\n'.join(out) + ('\n' if md_text.endswith('\n') else '')
 
 
+def archive_previous_outputs(dest_path: Path) -> None:
+    """Move any existing DOCX/PDF files in dest_path's folder that share the
+    same base stem (ignoring trailing _outline or similar suffixes) into a
+    sibling 'bak' folder, keeping the working folder clean.
+
+    Pattern: files whose stem starts with the dest stem up to the date portion
+    (everything up to and including the _MMDD component) are treated as prior
+    outputs and archived.  The current dest_path itself is not yet written, so
+    it is safe to match on existence.
+    """
+    folder = dest_path.parent
+    bak_dir = folder.parent / 'bak'
+
+    # Derive the date-prefix from the dest stem, e.g. "aw-int-all_0519"
+    # by taking everything up to and including an _MMDD or _MMDD_ segment.
+    import re as _re
+    stem = dest_path.stem
+    m = _re.match(r'^(.+_\d{4})', stem)
+    date_prefix = m.group(1) if m else stem
+
+    targets = [
+        p for p in folder.iterdir()
+        if p.suffix.lower() in ('.docx', '.pdf')
+        and p.stem.startswith(date_prefix)
+        and p != dest_path
+    ]
+    if not targets:
+        return
+
+    bak_dir.mkdir(parents=True, exist_ok=True)
+    for p in targets:
+        dest = bak_dir / p.name
+        # Avoid silently overwriting an identically named bak file
+        if dest.exists():
+            dest = bak_dir / (p.stem + '_prev' + p.suffix)
+        shutil.move(str(p), str(dest))
+        print(f'Archived {p.name} → bak/')
+
+
 def merge_markdown_files(
     files: Iterable[Path],
     dest: Path,
@@ -381,6 +420,7 @@ def main(argv: list[str] | None = None) -> int:
 
         print('Running:', ' '.join(map(str, pandoc_cmd)))
         dest_path.parent.mkdir(parents=True, exist_ok=True)
+        archive_previous_outputs(dest_path)
         subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
         try:
