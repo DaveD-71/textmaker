@@ -1776,6 +1776,13 @@ def apply_example_block_styles(doc) -> int:
     changed = 0
     target_style = None
     _after_closing_quote = False
+    # Track whether italic content has been seen in the current example div.
+    # ADV-style examples use italic for example text; stopping at the first
+    # non-italic paragraph correctly separates example from task instruction.
+    # INT-style examples use plain (non-italic) text throughout; in that case
+    # _seen_italic stays False and non-italic paragraphs are styled until the
+    # next DivLabel or heading.
+    _seen_italic = False
 
     for para in paragraphs:
         style_id = _paragraph_style_id(para)
@@ -1783,14 +1790,17 @@ def apply_example_block_styles(doc) -> int:
         if style_id == 'DivLabelExampleGood':
             target_style = good_style
             _after_closing_quote = False
+            _seen_italic = False
             continue
         if style_id == 'DivLabelExampleBad':
             target_style = bad_style
             _after_closing_quote = False
+            _seen_italic = False
             continue
         if style_id == 'DivLabelExample':
             target_style = neutral_style
             _after_closing_quote = False
+            _seen_italic = False
             continue
 
         if target_style is None:
@@ -1799,6 +1809,7 @@ def apply_example_block_styles(doc) -> int:
         if _is_heading(para) or (style_id and style_id.startswith('DivLabel')):
             target_style = None
             _after_closing_quote = False
+            _seen_italic = False
             continue
 
         style_name = getattr(para.style, 'name', '') if para.style else ''
@@ -1813,6 +1824,7 @@ def apply_example_block_styles(doc) -> int:
         if _after_closing_quote:
             target_style = None
             _after_closing_quote = False
+            _seen_italic = False
             continue
 
         if _is_list_paragraph(para):
@@ -1822,17 +1834,26 @@ def apply_example_block_styles(doc) -> int:
             para.style = target_style
             changed += 1
             # If this paragraph ends with a closing quote, flag the boundary
-            if text.endswith(('”', '"')):
+            if text.endswith(('”', '”')):
                 _after_closing_quote = True
         elif style_name in ('Body Text', 'Normal') and _is_paragraph_italic(para):
             para.style = target_style
             changed += 1
-            if text.endswith(('”', '"')):
+            _seen_italic = True
+            if text.endswith(('”', '”')):
                 _after_closing_quote = True
         elif style_name in ('Body Text', 'Normal') and not _is_paragraph_italic(para):
-            # Non-italic prose — task instruction boundary; stop without styling it
-            target_style = None
-            _after_closing_quote = False
+            if _seen_italic:
+                # ADV-style: italic content seen earlier — this non-italic paragraph
+                # is the task instruction boundary; stop without styling it.
+                target_style = None
+                _after_closing_quote = False
+                _seen_italic = False
+            else:
+                # INT-style: no italic seen yet — plain-text example content;
+                # style it and keep going until the next DivLabel or heading.
+                para.style = target_style
+                changed += 1
 
     return changed
 
