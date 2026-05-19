@@ -450,3 +450,36 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Output: `int/md/working/aw-int-all_0519_stage7b.docx` and `.pdf`
 - Both repos committed and pushed.
 
+## 2026-05-19 (session 14 — placeholder insertion, example div splits, heading/div title cleanup)
+
+### Work completed
+
+- **Placeholder insertion**: ran `C:\Temp\insert_placeholders.py` to insert ~71 `{{PH-N: code}}` response markers. One NOT FOUND (M2 revision lab — actual div title was `Revision Lab` not `Module 2 Revision Lab`); fixed manually. Final total: 255 PH markers across the INT book.
+
+- **Example div identification and splitting**: identified 13 `:::notice`/`:::learn` divs containing Email A/B, Version A/B, and Summary A/B comparison pairs embedded as plain text. Each split into: original div (intro instruction only) + `:::example-bad` (Version A) + `:::example-good` (Version B). Script: `C:\Temp\split_examples.py`. 12 splits automatic; Module 4 Reader-Trust Clinic required manual fix (was `:::notice` not `:::learn`).
+
+- **Heading restoration and div title renames**: `fix_heading_duplication.py` was run in error — it removed 135 `###` structural headings (A–F letter-sections and module-review sections). User correctly rejected this approach: structural headings must remain. Wrote and ran `C:\Temp\restore_headings_rename_divs.py` which:
+  - Restored 83 letter-prefix headings (`### F. Reflection`, etc.)
+  - Restored 41 module-prefix headings (`### module 2 email control checklist`, etc.)
+  - Restored 11 special headings (6× Key Lessons to Keep, 5 comparison review sections)
+  - Renamed 123 div titles to describe activity purpose instead of repeating heading text (e.g., `Reflection` → `Reflect on This Unit`, `Homework` → `Homework Task`, `What Is a Paragraph?` → `Definition`, `Notice Control Board` → `Control Board`, etc.)
+  - Module-prefix headings: heading retains module number + full name in lowercase; div title becomes the short type name (e.g., `Email Control Checklist`)
+  - Comparison sections renamed: `Email Comparison Review` → heading `### Email comparison review` + div title `Email Comparison`
+
+### Key decision: div titles should describe activity purpose, not repeat heading text
+
+- Confirmed user rule: "The structural headings (A–F) and above must remain. If the div title matches the heading, rewrite the div title based on the activity purpose."
+- Addendum: "Headings can be shortened if they are long, and the specific detail removed from the heading can become the div title."
+
+### Build result (session 14)
+
+- Source: `int/md/working/aw-int-all_0519.md` — +671 lines net
+- Div balance: 506 opens / 506 closes (confirmed via nesting stack check)
+- Postprocess: 2240 list styles, 92 alpha markers, 68 checklist items, 14 example block paragraphs, 612 post-list spacing, 21 table styles, 255 placeholders, 465 icon labels, 369 body text, 33 fallback replacements, 31 non-reference styles purged, 23 page breaks, 3 running headers, 23 unit title tables.
+- Output: `int/md/working/aw-int-all_0519.docx` and `.pdf` (outline tag style)
+- Both repos committed and pushed.
+
+### Outstanding issue: example block styling
+
+- `apply_example_block_styles()` styled only 14 paragraphs — the `_example_seen_prose` boundary logic stops styling when it hits a non-italic `Body Text` paragraph after the first. INT book example bodies often use bold text (not italic), causing premature style cutoff. Pending fix.
+
