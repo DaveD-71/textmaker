@@ -87,8 +87,8 @@ WORD_COUNT_RE = re.compile(
     r'\b(?:approximately|about|around)?\s*\d+\s*(?:[-\u2013\u2014]\s*\d+)?\s*words?\b',
     re.IGNORECASE,
 )
-UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)\s+[-\u2013\u2014]\s+(.+)$')
-MODULE_HEADING_RE = re.compile(r'^Module\s+\d+\s+[-\u2013\u2014]\s+.+$')
+UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+)(.+)$')
+MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$')
 ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])\.\s+\S+')
 ACTIVITY_CODE_SUFFIX_RE = re.compile(r'\s+\(([A-H]\d)(?:[^)]*)\)\s*(?:[★*])?\s*$')
 MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
