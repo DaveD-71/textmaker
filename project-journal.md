@@ -426,3 +426,27 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - `textmaker.cmd` path corrected: was pointing to an old location. Updated system PATH and documented the OneDrive sync copy convention in `project-learning.md`.
 - Session ended mid-process after VS Code reload required for PATH change to take effect. No build run this session.
 
+## 2026-05-19 (session 13 — Intermediate book scan corrections)
+
+### Issues corrected (from full PDF scan of aw-int-all_0519_stage7a.pdf)
+
+- **F. Reflection wrapping (Issue 2)**: wrapped 22 F. Reflection numbered lists in `:::write` divs with "Reflection" title (Units 2-23). Unit 1 was already wrapped. Pattern: `### F. Reflection` heading followed by bare numbered list — added `:::write\nReflection\n\n` before and `:::\n` after.
+- **Lowercase div labels (Issue 3)**: fixed 5 labels with incorrect title case:
+  - L2557: `Politeness Scale (from direct ->most polite)` → `Politeness Scale (From Direct to Most Polite)`
+  - L4039: `Before you explain a problem, ask` → `Before You Explain a Problem, Ask`
+  - L4749: `Module 3 self-edit routine` → `Module 3 Self-Edit Routine`
+  - L5147: `Teaching point` → `Teaching Point`
+  - L6183: `To keep email style consistent, check` → `To Keep Email Style Consistent, Check`
+- **Module 6 Key Lessons (Issue 8)**: added `:::learn` wrapper around Module 6 Review "Key lessons to keep" bullet list — the only module review without a div wrapper.
+- **Issues 1, 6 already resolved**: "Example (Part of...)" headings in A sections were already inside `example-good` divs (correct orange rendering). Unit 15 example split was already `example-bad` + `example-good`.
+- **AW Table Header (Issue 4, previous session)**: added `AW Table Header` paragraph style (styleId `AWTableHeader`, Roboto Condensed Medium 11pt bold white) to `aw-adv-styleref.docx` — was completely absent, causing all planning/grid table headers to be invisible.
+
+### Build result (session 13)
+
+- Source: `int/md/working/aw-int-all.md` — 10403 lines (up from 10288; +115 from div fence insertions)
+- Div balance: 480 opens / 480 closes (Match: True)
+- Postprocess: 2291 list styles, 92 alpha markers, 68 checklist items, 8 example block paragraphs, 620 post-list spacing, 18 table styles, 163 placeholders, 465 icon labels, 377 body text, 33 fallback replacements, 31 non-reference styles purged, 23 page breaks, 3 running headers, 23 unit title tables.
+- Validation: exit 0.
+- Output: `int/md/working/aw-int-all_0519_stage7b.docx` and `.pdf`
+- Both repos committed and pushed.
+
