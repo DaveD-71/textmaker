@@ -1236,6 +1236,8 @@ def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int
     table prototype. This avoids slow Word COM Quick Part insertion.
     """
     prototype_tbl = _find_unit_tile_prototype(reference_doc_path)
+    if prototype_tbl is None:
+        return 0
     changed = 0
     for para in list(doc.paragraphs):
         match = UNIT_HEADING_RE.match(_normalize_text(para.text))

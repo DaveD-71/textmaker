@@ -340,6 +340,12 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Additional Pandoc Lua filter path. Can be supplied multiple times.',
     )
     parser.add_argument(
+        '--h1-sections',
+        action='store_true',
+        default=False,
+        help='Insert nextPage section breaks before H1 headings (opt-in). Omit when the reference DOCX already sets pageBreakBefore on Heading 1.',
+    )
+    parser.add_argument(
         '--no-pagebreak-filter',
         action='store_true',
         help='Do not apply textmaker built-in pagebreak.lua during Pandoc conversion.',
@@ -430,6 +436,7 @@ def main(argv: list[str] | None = None) -> int:
         insert_section_after_toc(
             dest_path,
             has_toc=args.toc,
+            insert_h1_sections=args.h1_sections,
             reference_doc_path=reference_path,
             apply_semantic_labels=args.apply_semantic_labels,
             building_block_template=args.building_block_template,
