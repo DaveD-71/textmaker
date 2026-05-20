@@ -1,9 +1,9 @@
 """
 Post-process a DOCX produced by Pandoc to ensure:
-- a section break is inserted immediately after the Table of Contents
-- page numbering restarts at 1 for the following section
-- page numbers are removed from TOC pages
-- section breaks (nextPage) are inserted before each H1 heading
+- (opt-in, --toc) a section break is inserted immediately after the Table of Contents,
+  page numbering restarts at 1, and page numbers are removed from TOC pages
+- (opt-in, --h1-sections) section breaks (nextPage) are inserted before each H1 heading;
+  omit this when the reference DOCX already sets pageBreakBefore on Heading 1
 - Quick Parts are inserted through Word COM from a real template when available
 
 Semantic label rendering (icon tables, character styles, unit title tables) is opt-in;
@@ -2363,7 +2363,7 @@ def insert_section_after_toc(
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument('docx', help='DOCX file to postprocess')
-    parser.add_argument('--toc', action='store_true', default=True, help='Document has TOC')
+    parser.add_argument('--toc', action='store_true', default=False, help='Document has a Table of Contents (opt-in)')
     parser.add_argument(
         '--reference-doc',
         help='Reference DOCX used as the canonical source for styles and document properties.',
@@ -2373,9 +2373,10 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Word template containing BuildingBlockEntries used for Quick Part insertion.',
     )
     parser.add_argument(
-        '--no-h1-sections',
+        '--h1-sections',
         action='store_true',
-        help='Skip inserting section breaks before H1s',
+        default=False,
+        help='Insert nextPage section breaks before H1 headings (opt-in; use when the styleref does not set pageBreakBefore on Heading 1)',
     )
     parser.add_argument(
         '--apply-semantic-labels',
@@ -2407,7 +2408,7 @@ def main(argv: list[str] | None = None) -> int:
     did_update = insert_section_after_toc(
         args.docx,
         has_toc=args.toc,
-        insert_h1_sections=not args.no_h1_sections,
+        insert_h1_sections=args.h1_sections,
         reference_doc_path=args.reference_doc,
         apply_semantic_labels=args.apply_semantic_labels,
         building_block_template=args.building_block_template,
