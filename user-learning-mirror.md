@@ -7,6 +7,7 @@ Sync rule:
 - compare this file with `%USERPROFILE%\.codex\memories\user-learning.md` at session start when both exist
 - prefer this mirror as the portable source in this workspace
 - dual-write new cross-project lessons to both files when both are available
+- prefer literal UNC workspace paths in memory and troubleshooting notes when the project root is on a network share; avoid drive-letter or shell-variable path shortcuts for UNC-backed projects
 - merge duplicates instead of appending near-identical entries
 
 ## Entries
@@ -44,6 +45,14 @@ Sync rule:
   - validation passes from both repo-root and sibling-project launch locations
 - Additional note: make this warning prominent in future debugging because it can masquerade as a missing dependency issue when the real problem is path rebasing
 
+### 2026-05-21 - Use literal UNC paths in user memory notes
+
+- Status: `workaround`
+- Scope: `user/workflow`
+- Pattern: documenting project locations and file paths in memory files
+- Preferred behavior: record workspace paths literally as UNC paths, for example `\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker`, rather than using mapped drives, `file:` shortcuts, or `%USERPROFILE%` placeholders for UNC-backed workspaces
+- Rationale: literal UNC paths are less ambiguous in this environment and avoid shell path rebasing issues when cross-checking notes, logs, and command outputs
+
 ### 2026-05-09T23:55:00+09:00 - Preserve DOCX XML Root Namespaces Exactly When Rewriting Word Package Parts
 
 - Status: `workaround`
@@ -61,7 +70,7 @@ Sync rule:
 - Status: `open` with workaround
 - Symptom: local file links generated in the Codex VS Code sidebar resolve through the webview/browser path instead of opening in a VS Code editor tab
 - Workaround: prefer plain file paths for local references in affected environments; reserve clickable markdown links for web URLs unless local link handling is verified working
-- External reference: `openai/codex#12661` - https://github.com/openai/codex/issues/12661
+- External reference: `openai/codex#12661` - <https://github.com/openai/codex/issues/12661>
 - Recheck triggers:
   - installed `openai.chatgpt` extension version changes
   - VS Code updates on this machine
@@ -300,11 +309,11 @@ Sync rule:
 - Version observed: pandoc 3.8.2.1 at C:\Users\d-dobson\AppData\Local\Pandoc\pandoc.exe
 - Date first noticed: 2026-04-14
 - Status: workaround
-- Symptom: 	extmaker.cmd markdown-to-docx fails with Error: pandoc binary not found on PATH when the shell PATH does not include the local Pandoc install directory.
+- Symptom:  extmaker.cmd markdown-to-docx fails with Error: pandoc binary not found on PATH when the shell PATH does not include the local Pandoc install directory.
 - Workaround: prepend C:\Users\d-dobson\AppData\Local\Pandoc to PATH in-session before running textmaker conversion commands.
 - Recheck triggers:
   - user/system PATH updates
   - Pandoc reinstallation or version change
 - Exit criteria:
   - where pandoc resolves in a fresh shell without manual PATH edits
-  - 	extmaker.cmd markdown-to-docx runs successfully without in-session PATH modification
+  -  extmaker.cmd markdown-to-docx runs successfully without in-session PATH modification

@@ -66,7 +66,16 @@ def color_format_to_hex(color: ColorFormat | None) -> str | None:
 
 def extract_image(shape: Any, slide_num: int, image_num: int, output_dir: Path) -> str:
     """Extract image from shape and save to output_dir/images/."""
-    image = shape.image
+    try:
+        image = shape.image
+    except Exception as exc:
+        LOGGER.warning(
+            "Skipping non-embedded image shape on slide %s: %s",
+            slide_num,
+            exc,
+        )
+        return ""
+
     extension = image.ext
     filename = f"slide{slide_num}_image{image_num}.{extension}"
     filepath = output_dir / "images" / filename
@@ -385,9 +394,10 @@ def convert_pptx(pptx_path: Path, output_dir: Path, overwrite: bool = False) -> 
             if kind == "image":
                 counters["img"] += 1
                 obj_id = f"img_{counters['img']}"
-                total_images += 1
                 source = extract_image(shape, slide_idx, counters["img"], out_dir)
-                slide_entry["objects"].append({"id": obj_id, "type": "image", "source": source})
+                if source:
+                    total_images += 1
+                    slide_entry["objects"].append({"id": obj_id, "type": "image", "source": source})
             elif kind == "table":
                 counters["table"] += 1
                 obj_id = f"table_{counters['table']}"
