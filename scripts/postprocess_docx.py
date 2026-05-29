@@ -2009,24 +2009,30 @@ def apply_response_placeholders(doc) -> int:
     Consecutive placeholder tables get a thin spacer paragraph between them.
 
     Row counts per type:
-      PH-1:  2 rows  (~2 cm)
-      PH-2:  5 rows  (~5 cm)
-      PH-3:  9 rows  (~9 cm)
-      PH-4: 15 rows (~15 cm)
-      PH-5: 22 rows (~22 cm)
+      PH-1a:  1 row  (~0.8 cm)
+      PH-1b:  2 rows (~1.6 cm)
+      PH-1c:  3 rows (~2.4 cm)
+      PH-1:   4 rows (~3.2 cm)
+      PH-2:   6 rows (~4.8 cm)
+      PH-3:  11 rows (~8.8 cm)
+      PH-4:  19 rows (~15.2 cm)
+      PH-5:  28 rows (~22.4 cm)
     """
     import re
     from lxml import etree
 
-    PH_ROWS = {'PH-1': 2, 'PH-2': 5, 'PH-3': 9, 'PH-4': 15, 'PH-5': 22}
-    ROW_HEIGHT_TWIPS = 567      # ~1 cm per row
-    HEADER_HEIGHT_TWIPS = 454   # ~0.8 cm header
+    PH_ROWS = {
+        'PH-1a': 1, 'PH-1b': 2, 'PH-1c': 3,
+        'PH-1': 4, 'PH-2': 6, 'PH-3': 11, 'PH-4': 19, 'PH-5': 28,
+    }
+    ROW_HEIGHT_TWIPS = 454      # ~0.8 cm per row
+    HEADER_HEIGHT_TWIPS = 340   # ~0.6 cm header
     RULE_COLOR = 'AAAAAA'
     HEADER_FILL = 'F0F0F0'
     HEADER_FONT_SIZE = '18'     # 9pt in half-points
     SPACER_HEIGHT = '280'       # ~14pt spacer paragraph between consecutive tables
 
-    PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+):\s*([^}]+)\}\}\s*$')
+    PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+[a-z]?):\s*([^}]+)\}\}\s*$')
     # Tag to identify our placeholder tables so apply_table_styles skips them
     PH_TAG = 'ResponsePlaceholder'
 
