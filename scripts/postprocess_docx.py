@@ -2002,13 +2002,14 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
 def apply_response_placeholders(doc) -> int:
     """Replace {{PH-N: label}} marker paragraphs with ruled-line Word tables.
 
-    Each placeholder is a full-width (fit-to-window) table with:
-    - a shaded header row (vertically centered) containing the label text
-    - N ruled rows (bottom border only, fixed height, single line spacing)
+    Each placeholder is a full-width (fit-to-window) table with N ruled rows
+    (bottom border only, fixed height, single line spacing). No header row —
+    the writing instruction appears as normal text above the marker in the
+    source document, so rows= directly equals the number of writing lines.
 
     Consecutive placeholder tables get a thin spacer paragraph between them.
 
-    Row counts per type:
+    Row counts per type (fallback defaults when rows= is absent):
       PH-1a:  1 row  (~0.8 cm)
       PH-1b:  2 rows (~1.6 cm)
       PH-1c:  3 rows (~2.4 cm)
@@ -2026,10 +2027,7 @@ def apply_response_placeholders(doc) -> int:
         'PH-1': 4, 'PH-2': 6, 'PH-3': 11, 'PH-4': 19, 'PH-5': 28,
     }
     ROW_HEIGHT_TWIPS = 454      # ~0.8 cm per row
-    HEADER_HEIGHT_TWIPS = 340   # ~0.6 cm header
     RULE_COLOR = 'AAAAAA'
-    HEADER_FILL = 'F0F0F0'
-    HEADER_FONT_SIZE = '18'     # 9pt in half-points
     SPACER_HEIGHT = '280'       # ~14pt spacer paragraph between consecutive tables
 
     PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+[a-z]?):\s*([^}]+)\}\}\s*$')
@@ -2052,7 +2050,7 @@ def apply_response_placeholders(doc) -> int:
         sa(sp, 'lineRule', 'auto')
         return p
 
-    def make_tbl(label, n_rows):
+    def make_tbl(n_rows):
         tbl = etree.Element(w('tbl'))
 
         # tblPr — fit to window (pct type, 5000 = 100%)
@@ -2073,11 +2071,11 @@ def apply_response_placeholders(doc) -> int:
         tbl_look = etree.SubElement(tbl_pr, w('tblLook'))
         sa(tbl_look, 'val', '0000')
 
-        def make_row(height_twips, is_header=False, label_text=''):
+        def make_row():
             tr = etree.Element(w('tr'))
             trPr = etree.SubElement(tr, w('trPr'))
             trH = etree.SubElement(trPr, w('trHeight'))
-            sa(trH, 'val', str(height_twips)); sa(trH, 'hRule', 'exact')
+            sa(trH, 'val', str(ROW_HEIGHT_TWIPS)); sa(trH, 'hRule', 'exact')
 
             tc = etree.SubElement(tr, w('tc'))
             tcPr = etree.SubElement(tc, w('tcPr'))
@@ -2094,9 +2092,6 @@ def apply_response_placeholders(doc) -> int:
             bot = etree.SubElement(tc_borders, w('bottom'))
             sa(bot, 'val', 'single'); sa(bot, 'sz', '4')
             sa(bot, 'space', '0'); sa(bot, 'color', RULE_COLOR)
-            if is_header:
-                shd = etree.SubElement(tcPr, w('shd'))
-                sa(shd, 'val', 'clear'); sa(shd, 'color', 'auto'); sa(shd, 'fill', HEADER_FILL)
 
             p = etree.SubElement(tc, w('p'))
             pPr = etree.SubElement(p, w('pPr'))
@@ -2104,22 +2099,10 @@ def apply_response_placeholders(doc) -> int:
             sa(sp, 'before', '0'); sa(sp, 'after', '0')
             sa(sp, 'line', '240'); sa(sp, 'lineRule', 'auto')
             jc = etree.SubElement(pPr, w('jc')); sa(jc, 'val', 'left')
-
-            if is_header and label_text:
-                r = etree.SubElement(p, w('r'))
-                rPr = etree.SubElement(r, w('rPr'))
-                b = etree.SubElement(rPr, w('b')); sa(b, 'val', '1')
-                sz = etree.SubElement(rPr, w('sz')); sa(sz, 'val', HEADER_FONT_SIZE)
-                szCs = etree.SubElement(rPr, w('szCs')); sa(szCs, 'val', HEADER_FONT_SIZE)
-                color = etree.SubElement(rPr, w('color')); sa(color, 'val', '444444')
-                t = etree.SubElement(r, w('t'))
-                t.text = label_text
-                t.set(XML_SPACE, 'preserve')
             return tr
 
-        tbl.append(make_row(HEADER_HEIGHT_TWIPS, is_header=True, label_text=label))
         for _ in range(n_rows):
-            tbl.append(make_row(ROW_HEIGHT_TWIPS))
+            tbl.append(make_row())
         return tbl
 
     body = doc._body._body
@@ -2148,7 +2131,7 @@ def apply_response_placeholders(doc) -> int:
     changed = 0
     for child, ph_type, display_label in reversed(markers):
         n_rows = PH_ROWS[ph_type]
-        tbl_el = make_tbl(display_label, n_rows)
+        tbl_el = make_tbl(n_rows)
         idx = list(body).index(child)
         body.remove(child)
         body.insert(idx, tbl_el)
