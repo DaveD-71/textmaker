@@ -2107,18 +2107,37 @@ def apply_response_placeholders(doc) -> int:
         sa(ind, 'left', str(LIST_TEXT_INDENT_TWIPS))
         sa(ind, 'hanging', str(LIST_TEXT_INDENT_TWIPS))
 
-    def normalize_preceding_list_run(body_children, marker_idx) -> bool:
-        """Normalize the whole list run before a response table, not just the last item."""
+    def normalize_single_item_placeholder_list(body_children, marker_idx) -> bool:
+        """Apply list/table alignment only when a placeholder follows one list item.
+
+        Case 1: one placeholder after each list item. The table should align with
+        that item's hanging text indent, and the item number should sit at the
+        left margin.
+
+        Case 2: one placeholder after a complete multi-item list. Leave the list
+        and table in their normal positions.
+        """
         if marker_idx <= 0:
             return False
         prev = body_children[marker_idx - 1]
         if not is_list_paragraph(prev):
             return False
         key = list_key(prev)
-        j = marker_idx - 1
-        while j >= 0 and is_list_paragraph(body_children[j]) and list_key(body_children[j]) == key:
-            set_flush_number_list_indent(body_children[j])
-            j -= 1
+
+        run_start = marker_idx - 1
+        while (
+            run_start - 1 >= 0
+            and is_list_paragraph(body_children[run_start - 1])
+            and list_key(body_children[run_start - 1]) == key
+        ):
+            run_start -= 1
+
+        run_end = marker_idx - 1
+        run_length = run_end - run_start + 1
+        if run_length != 1:
+            return False
+
+        set_flush_number_list_indent(prev)
         return True
 
     def text_width_twips() -> int:
@@ -2225,7 +2244,7 @@ def apply_response_placeholders(doc) -> int:
         n_rows = explicit_rows or PH_ROWS[ph_type]
         body_children = list(body)
         idx = body_children.index(child)
-        follows_list = normalize_preceding_list_run(body_children, idx)
+        follows_list = normalize_single_item_placeholder_list(body_children, idx)
         tbl_el = make_tbl(n_rows, LIST_TEXT_INDENT_TWIPS if follows_list else 0)
         body.remove(child)
         body.insert(idx, tbl_el)

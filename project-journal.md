@@ -515,3 +515,10 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Action: replaced the `docx-to-pdf` dependency on `docx2pdf.SaveAs(FileFormat=17)` with direct Word COM `ExportAsFixedFormat`.
 - Verification: `python -m py_compile scripts/postprocess_docx.py scripts/docx_to_pdf.py` passes. A full temporary book build was started but stopped after it ran too long; Dave regenerated the DOCX/PDF manually afterward.
 
+## 2026-06-01 - Case-Specific List Placeholder Policy
+
+- Scope: `scripts/postprocess_docx.py`.
+- Trigger: Dave clarified that list indentation should differ between one-placeholder-per-list-item activities and one-placeholder-after-the-whole-list activities.
+- Action: changed placeholder replacement so the flush-number/hanging-indent/table-indent policy applies only when the placeholder follows a single-item list run. If the placeholder follows a contiguous multi-item list, the list and table retain normal positioning.
+- Verification: `python -m py_compile scripts/postprocess_docx.py` passes.
+
