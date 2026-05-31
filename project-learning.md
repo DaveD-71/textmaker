@@ -143,6 +143,15 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 
 **Placeholder spacer (2026-05-18 session 10)**: `SPACER_HEIGHT` increased from `'140'` (7pt) to `'280'` (14pt) for clearer visual separation between consecutive placeholder tables.
 
+## 2026-06-01 - INT Placeholder Tables And PDF Export
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: `apply_response_placeholders()` now honors explicit marker payloads such as `{{PH-1: id | rows=5}}`; `rows=N` overrides the PH fallback row count and is not treated as part of the display label.
+- Decision: when a response placeholder follows a numbered/bulleted/checklist list, the postprocessor normalizes the whole contiguous preceding list run so list numbers sit at the left margin and list text uses a hanging indent at 357 twips. The placeholder table left border aligns to that list text indent and the table width is absolute, extending to the right margin.
+- Decision: `docx-to-pdf` no longer delegates to `docx2pdf.SaveAs(FileFormat=17)`. It uses Word COM `ExportAsFixedFormat`, matching Word's manual Export path more closely after the automated PDF showed list-numbering restarts that were not present in the DOCX or a manual Word-exported PDF.
+- Preferred behavior: for print-readiness validation, treat DOCX numbering as source of truth first. If a generated PDF shows list numbering that differs from the DOCX and manual Word Export, debug the PDF export path before changing manuscript source.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

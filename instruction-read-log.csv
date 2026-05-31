@@ -84,3 +84,8 @@
 2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\user-learning-mirror.md,startup bootstrap read
 2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\project-learning.md,startup bootstrap read
 2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\project-journal.md,startup bootstrap read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\AGENTS.md,startup instruction read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\AGENTS.md,startup instruction read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\memories\user-learning.md,startup memory read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-learning.md,startup memory read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-journal.md,startup memory read

@@ -2007,7 +2007,8 @@ def apply_response_placeholders(doc) -> int:
     the writing instruction appears as normal text above the marker in the
     source document, so rows= directly equals the number of writing lines.
 
-    Consecutive placeholder tables get a thin spacer paragraph between them.
+    Placeholder tables get a thin spacer paragraph after them so following
+    prompts or list items do not run tight against the writing lines.
 
     Row counts per type (fallback defaults when rows= is absent):
       PH-1a:  1 row  (~0.8 cm)
@@ -2028,9 +2029,11 @@ def apply_response_placeholders(doc) -> int:
     }
     ROW_HEIGHT_TWIPS = 454      # ~0.8 cm per row
     RULE_COLOR = 'AAAAAA'
-    SPACER_HEIGHT = '280'       # ~14pt spacer paragraph between consecutive tables
+    SPACER_HEIGHT = '80'        # ~4pt spacer paragraph around response tables
+    LIST_TEXT_INDENT_TWIPS = 357
 
     PH_RE = re.compile(r'^(.*?)\s*\{\{(PH-\d+[a-z]?):\s*([^}]+)\}\}\s*$')
+    ROWS_RE = re.compile(r'\brows\s*=\s*(\d+)\b')
     # Tag to identify our placeholder tables so apply_table_styles skips them
     PH_TAG = 'ResponsePlaceholder'
 
@@ -2039,6 +2042,8 @@ def apply_response_placeholders(doc) -> int:
 
     def w(tag): return f'{{{W_NS}}}{tag}'
     def sa(el, attr, val): el.set(f'{{{W_NS}}}{attr}', val)
+
+    body = doc._body._body
 
     def make_spacer_para():
         p = etree.Element(w('p'))
@@ -2050,7 +2055,88 @@ def apply_response_placeholders(doc) -> int:
         sa(sp, 'lineRule', 'auto')
         return p
 
-    def make_tbl(n_rows):
+    def parse_placeholder_payload(payload: str):
+        parts = [part.strip() for part in payload.split('|')]
+        id_label = parts[0]
+        explicit_rows = None
+        for part in parts[1:]:
+            rows_match = ROWS_RE.search(part)
+            if rows_match:
+                explicit_rows = max(1, int(rows_match.group(1)))
+                break
+        return id_label, explicit_rows
+
+    def is_list_paragraph(el) -> bool:
+        if el is None or el.tag != qn('w:p'):
+            return False
+        pPr = el.find(w('pPr'))
+        if pPr is None:
+            return False
+        if pPr.find(w('numPr')) is not None:
+            return True
+        p_style = pPr.find(w('pStyle'))
+        if p_style is None:
+            return False
+        style_val = p_style.get(f'{{{W_NS}}}val') or ''
+        return style_val.startswith(('ListNumber', 'ListBullet', 'Checklist'))
+
+    def list_key(el):
+        if not is_list_paragraph(el):
+            return None
+        pPr = el.find(w('pPr'))
+        p_style = pPr.find(w('pStyle')) if pPr is not None else None
+        numpr = pPr.find(w('numPr')) if pPr is not None else None
+        numid = numpr.find(w('numId')) if numpr is not None else None
+        ilvl = numpr.find(w('ilvl')) if numpr is not None else None
+        return (
+            p_style.get(f'{{{W_NS}}}val') if p_style is not None else '',
+            numid.get(f'{{{W_NS}}}val') if numid is not None else '',
+            ilvl.get(f'{{{W_NS}}}val') if ilvl is not None else '',
+        )
+
+    def set_flush_number_list_indent(el) -> None:
+        """Align list number to the margin and keep text on a hanging indent."""
+        if not is_list_paragraph(el):
+            return
+        pPr = el.find(w('pPr'))
+        if pPr is None:
+            pPr = etree.SubElement(el, w('pPr'))
+        ind = pPr.find(w('ind'))
+        if ind is None:
+            ind = etree.SubElement(pPr, w('ind'))
+        sa(ind, 'left', str(LIST_TEXT_INDENT_TWIPS))
+        sa(ind, 'hanging', str(LIST_TEXT_INDENT_TWIPS))
+
+    def normalize_preceding_list_run(body_children, marker_idx) -> bool:
+        """Normalize the whole list run before a response table, not just the last item."""
+        if marker_idx <= 0:
+            return False
+        prev = body_children[marker_idx - 1]
+        if not is_list_paragraph(prev):
+            return False
+        key = list_key(prev)
+        j = marker_idx - 1
+        while j >= 0 and is_list_paragraph(body_children[j]) and list_key(body_children[j]) == key:
+            set_flush_number_list_indent(body_children[j])
+            j -= 1
+        return True
+
+    def text_width_twips() -> int:
+        sectPr = body.find(w('sectPr'))
+        if sectPr is None:
+            return 9360
+        pgSz = sectPr.find(w('pgSz'))
+        pgMar = sectPr.find(w('pgMar'))
+        if pgSz is None or pgMar is None:
+            return 9360
+        page_w = int(pgSz.get(f'{{{W_NS}}}w') or 12240)
+        left = int(pgMar.get(f'{{{W_NS}}}left') or 1440)
+        right = int(pgMar.get(f'{{{W_NS}}}right') or 1440)
+        return max(1000, page_w - left - right)
+
+    TEXT_WIDTH_TWIPS = text_width_twips()
+
+    def make_tbl(n_rows, left_indent_twips: int = 0):
         tbl = etree.Element(w('tbl'))
 
         # tblPr — fit to window (pct type, 5000 = 100%)
@@ -2058,8 +2144,15 @@ def apply_response_placeholders(doc) -> int:
         # Mark as placeholder so apply_table_styles skips it
         tbl_desc = etree.SubElement(tbl_pr, w('tblDescription'))
         sa(tbl_desc, 'val', PH_TAG)
+        if left_indent_twips:
+            tbl_ind = etree.SubElement(tbl_pr, w('tblInd'))
+            sa(tbl_ind, 'w', str(left_indent_twips)); sa(tbl_ind, 'type', 'dxa')
         tbl_w = etree.SubElement(tbl_pr, w('tblW'))
-        sa(tbl_w, 'w', '5000'); sa(tbl_w, 'type', 'pct')  # 100% of text width
+        if left_indent_twips:
+            sa(tbl_w, 'w', str(max(1000, TEXT_WIDTH_TWIPS - left_indent_twips)))
+            sa(tbl_w, 'type', 'dxa')
+        else:
+            sa(tbl_w, 'w', '5000'); sa(tbl_w, 'type', 'pct')  # 100% of text width
         tbl_layout = etree.SubElement(tbl_pr, w('tblLayout'))
         sa(tbl_layout, 'type', 'fixed')
         # No outer borders
@@ -2105,7 +2198,6 @@ def apply_response_placeholders(doc) -> int:
             tbl.append(make_row())
         return tbl
 
-    body = doc._body._body
     # First pass: collect marker paragraphs
     markers = []
     for child in list(body):
@@ -2117,7 +2209,7 @@ def apply_response_placeholders(doc) -> int:
             continue
         prefix_label = m.group(1).strip()
         ph_type = m.group(2)
-        id_label = m.group(3).strip()
+        id_label, explicit_rows = parse_placeholder_payload(m.group(3).strip())
         if ph_type not in PH_ROWS:
             continue
         if prefix_label:
@@ -2125,19 +2217,21 @@ def apply_response_placeholders(doc) -> int:
         else:
             parts = id_label.split('-')
             display_label = ' '.join(p.capitalize() for p in parts[2:]) if len(parts) > 2 else id_label
-        markers.append((child, ph_type, display_label))
+        markers.append((child, ph_type, display_label, explicit_rows))
 
     # Second pass: replace in reverse order so indices stay valid
     changed = 0
-    for child, ph_type, display_label in reversed(markers):
-        n_rows = PH_ROWS[ph_type]
-        tbl_el = make_tbl(n_rows)
-        idx = list(body).index(child)
+    for child, ph_type, display_label, explicit_rows in reversed(markers):
+        n_rows = explicit_rows or PH_ROWS[ph_type]
+        body_children = list(body)
+        idx = body_children.index(child)
+        follows_list = normalize_preceding_list_run(body_children, idx)
+        tbl_el = make_tbl(n_rows, LIST_TEXT_INDENT_TWIPS if follows_list else 0)
         body.remove(child)
         body.insert(idx, tbl_el)
         changed += 1
 
-    # Third pass: insert spacer paragraphs between consecutive placeholder tables
+    # Third pass: insert spacer paragraphs after placeholder tables
     children = list(body)
     inserts = []
     for i, child in enumerate(children):
@@ -2146,13 +2240,12 @@ def apply_response_placeholders(doc) -> int:
         desc = child.find(f'.//{w("tblDescription")}')
         if desc is None or desc.get(f'{{{W_NS}}}val') != PH_TAG:
             continue
-        # Check if the next sibling is also a placeholder table
-        if i + 1 < len(children):
-            nxt = children[i + 1]
-            if nxt.tag == qn('w:tbl'):
-                nxt_desc = nxt.find(f'.//{w("tblDescription")}')
-                if nxt_desc is not None and nxt_desc.get(f'{{{W_NS}}}val') == PH_TAG:
-                    inserts.append((i + 1, make_spacer_para()))
+        if i + 1 >= len(children):
+            continue
+        nxt = children[i + 1]
+        if nxt.tag == qn('w:sectPr'):
+            continue
+        inserts.append((i + 1, make_spacer_para()))
 
     # Insert spacers in reverse so positions stay correct
     for pos, spacer in reversed(inserts):
