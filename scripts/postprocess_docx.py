@@ -1087,7 +1087,7 @@ def _make_page_break_paragraph_like(paragraph) -> None:
         p_pr.append(OxmlElement('w:pageBreakBefore'))
 
 
-def _hide_heading_paragraph_keep_for_styleref(paragraph) -> None:
+def _hide_heading_paragraph_keep_for_styleref(paragraph, keep_page_break: bool = True) -> None:
     """Hide a heading visually while keeping its text available to STYLEREF."""
     p_pr = paragraph._p.get_or_add_pPr()
     spacing = p_pr.find(qn('w:spacing'))
@@ -1096,7 +1096,7 @@ def _hide_heading_paragraph_keep_for_styleref(paragraph) -> None:
         p_pr.append(spacing)
     spacing.set(qn('w:before'), '0')
     spacing.set(qn('w:after'), '0')
-    if p_pr.find(qn('w:pageBreakBefore')) is None:
+    if keep_page_break and p_pr.find(qn('w:pageBreakBefore')) is None:
         p_pr.append(OxmlElement('w:pageBreakBefore'))
 
     r_pr = p_pr.find(qn('w:rPr'))
@@ -1249,10 +1249,10 @@ def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int
         table = Table(tbl, para._parent)
         _replace_cell_text_preserve_format(table.cell(0, 0), str(int(match.group(1))))
         _replace_cell_text_preserve_format(table.cell(0, 1), match.group(2))
-        # Remove the original heading — page break is handled by w:pageBreakBefore
-        # on the AWUnitNumber style in the reference DOCX (avoids a spurious empty
-        # paragraph above the title table that pushes it down the page).
-        para._p.getparent().remove(para._p)
+        # Keep a hidden Heading 2 paragraph in place so the even-page header's
+        # STYLEREF field can still resolve the current unit title after the
+        # visible heading is replaced by the title table.
+        _hide_heading_paragraph_keep_for_styleref(para, keep_page_break=False)
         changed += 1
     return changed
 
