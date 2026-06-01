@@ -834,6 +834,10 @@ def _is_list_item_line(line: str) -> bool:
         return False
     if _is_alpha_option_line(s):
         return True
+    if re.match(r'^[\u30a2-\u30f3\uff71-\uff9d]\s+\S+', s):
+        return True
+    if re.match(r'^[\(（][\u30a1-\u30f6\uff66-\uff9fA-Za-z][\)）]\s*\S+', s):
+        return True
     if re.match(r'^[\-\*\+]\s+\S+', s):
         return True
     if re.match(r'^\d+\.\s+\S+', s):
@@ -859,6 +863,10 @@ def _list_item_kind(line: str) -> str | None:
         return None
     if _is_alpha_option_line(s):
         return 'alpha-option'
+    if re.match(r'^[\u30a2-\u30f3\uff71-\uff9d]\s+\S+', s):
+        return 'jp-kana'
+    if re.match(r'^[\(（][\u30a1-\u30f6\uff66-\uff9fA-Za-z][\)）]\s*\S+', s):
+        return 'jp-kana-paren'
     if re.match(r'^[\-\*\+]\s+\S+', s):
         return 'bullet'
     if re.match(r'^\d+\.\s+\S+', s):
@@ -1226,6 +1234,60 @@ def _normalize_option_indentation(md_text: str) -> str:
     return '\n'.join(out).strip() + '\n'
 
 
+def _normalize_parenthesized_marker_spacing(md_text: str) -> str:
+    lines = md_text.splitlines()
+    out: list[str] = []
+    for line in lines:
+        updated = re.sub(r'^(\s*\(\d+\))(\S)', r'\1 \2', line)
+        updated = re.sub(r'^(\s*[（\(][\u30a1-\u30f6\uff66-\uff9fA-Za-z][）\)])(\S)', r'\1 \2', updated)
+        out.append(updated)
+    return '\n'.join(out).strip() + '\n'
+
+
+def _restore_mixed_list_structure(md_text: str) -> str:
+    lines = md_text.splitlines()
+    out: list[str] = []
+
+    inline_kana_re = re.compile(r'^(\s*\(\d+\)\s+.*?)([\u30a2-\u30aa\uff71-\uff75])\s{2,}(.*)$')
+    inline_kana_paren_re = re.compile(
+        r'^(\s*\(\d+\)\s+.*?)([\(（][\u30a1-\u30f6\uff66-\uff9fA-Za-z][\)）])\s{2,}(.*)$'
+    )
+    bare_kana_re = re.compile(r'^\s*([\u30a2-\u30aa\uff71-\uff75])\s+(.*)$')
+    bare_kana_paren_re = re.compile(r'^\s*([\(（][\u30a1-\u30f6\uff66-\uff9fA-Za-z][\)）])\s*(.*)$')
+
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            out.append(line)
+            continue
+
+        m_inline = inline_kana_re.match(line)
+        if m_inline:
+            out.append(m_inline.group(1).rstrip())
+            out.append(f'    - {m_inline.group(2)} {m_inline.group(3).lstrip()}')
+            continue
+
+        m_inline_paren = inline_kana_paren_re.match(line)
+        if m_inline_paren:
+            out.append(m_inline_paren.group(1).rstrip())
+            out.append(f'    - {m_inline_paren.group(2)} {m_inline_paren.group(3).lstrip()}')
+            continue
+
+        m_kana = bare_kana_re.match(line)
+        if m_kana:
+            out.append(f'    - {m_kana.group(1)} {m_kana.group(2).lstrip()}')
+            continue
+
+        m_kana_paren = bare_kana_paren_re.match(line)
+        if m_kana_paren and not re.match(r'^[\(（]\d+[\)）]', stripped):
+            out.append(f'    - {m_kana_paren.group(1)} {m_kana_paren.group(2).lstrip()}')
+            continue
+
+        out.append(line)
+
+    return '\n'.join(out).strip() + '\n'
+
+
 def _build_layout_manifest(
     structured_blocks: list[tuple[float, list[tuple[float, str]]]],
 ) -> dict[str, Any]:
@@ -1350,6 +1412,8 @@ def build_markdown_from_pages(
     result = _normalize_spacing_around_lists(result)
     result = _tighten_audio_ref_spacing(result)
     result = _strip_speaker_accent_hints(result)
+    result = _normalize_parenthesized_marker_spacing(result)
+    result = _restore_mixed_list_structure(result)
     result = _normalize_option_indentation(result)
     result = _strip_placeholder_markers(result)
     return result
