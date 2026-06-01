@@ -1,5 +1,9 @@
 # Project Journal
 
+## 2026-06-01
+
+- Updated `textmaker.cmd` so Windows dependency discovery is environment-aware rather than tied to one machine. The wrapper now probes common active-machine install roots for Pandoc, Poppler, and Tesseract before launch, while keeping the existing UNC-safe `pushd` behavior.
+
 ## 2026-05-19 (session 15 — module introductions, example-bad restructuring, postprocessor fix)
 
 ### Work completed
@@ -506,4 +510,3 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 ### Outstanding issue: example block styling
 
 - `apply_example_block_styles()` styled only 14 paragraphs — the `_example_seen_prose` boundary logic stops styling when it hits a non-italic `Body Text` paragraph after the first. INT book example bodies often use bold text (not italic), causing premature style cutoff. Pending fix.
-

@@ -120,7 +120,7 @@ Windows wrapper:
 
 - `textmaker.cmd` is UNC-aware and uses `pushd` to remap the script location to a temporary drive when launched from a network share.
 - `cmd.exe` still emits the standard `UNC paths are not supported` startup warning when the shell itself begins in a UNC working directory; this is expected noise and does not by itself mean the conversion failed.
-- The wrapper prepends the common local Pandoc install path (`%USERPROFILE%\AppData\Local\Pandoc`) automatically when present.
+- The wrapper prepends dependency directories only when they exist on the active machine. It probes common local Windows install locations for Pandoc, Poppler (`pdfimages`, `pdftotext`, `pdftoppm`), and Tesseract under `%USERPROFILE%`, `%LOCALAPPDATA%`, `%ProgramFiles%`, and `%ProgramFiles(x86)%`.
 - Relative `--input`, `--reference`, and `--output` paths are normalized against the caller context and nearby project roots so that conversions remain stable from sibling project folders on UNC-backed workspaces.
 
 ## Reverse conversion: DOCX → Markdown (units) + assets + styles
