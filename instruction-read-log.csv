@@ -78,6 +78,17 @@
 "2026-05-29T10:01:36.0444012+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","repo","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\user-learning-mirror.md","startup read: repo user mirror"
 "2026-05-29T10:01:36.0444012+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","repo","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\project-learning.md","startup read: repo project memory"
 "2026-05-29T10:01:36.0444012+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","repo","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\project-journal.md","startup read: repo recent journal"
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,user-agents,C:\Users\daved\.codex\AGENTS.md,startup bootstrap read
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-agents,C:\Dev\Code\textmaker\AGENTS.md,startup bootstrap read
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,user-memory,C:\Users\daved\.codex\memories\user-learning.md,startup bootstrap read
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\user-learning-mirror.md,startup bootstrap read
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\project-learning.md,startup bootstrap read
+2026-05-31T19:30:29.1503235+09:00,C:\Dev\Code\textmaker,repo-memory,C:\Dev\Code\textmaker\project-journal.md,startup bootstrap read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\AGENTS.md,startup instruction read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\AGENTS.md,startup instruction read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,user,C:\Users\daved\.codex\memories\user-learning.md,startup memory read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-learning.md,startup memory read
+2026-06-01T01:11:04.2959988+09:00,C:\Dev\Code\textmaker,project,C:\Dev\Code\textmaker\project-journal.md,startup memory read
 "2026-06-01T12:38:01.5695088+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","user","C:\Users\d-dobson\.codex\AGENTS.md","startup read: user-level bootstrap instructions while diagnosing pdf-to-markdown dependency resolution"
 "2026-06-01T12:38:01.5695088+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","repo","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker\AGENTS.md","startup read: repo bootstrap instructions while diagnosing pdf-to-markdown dependency resolution"
 "2026-06-01T12:38:01.5695088+09:00","\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\04. Projects\code\textmaker","user","C:\Users\d-dobson\.codex\memories\user-learning.md","startup read: canonical user memory while diagnosing pdf-to-markdown dependency resolution"

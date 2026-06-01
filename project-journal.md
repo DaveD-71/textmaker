@@ -510,3 +510,18 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 ### Outstanding issue: example block styling
 
 - `apply_example_block_styles()` styled only 14 paragraphs — the `_example_seen_prose` boundary logic stops styling when it hits a non-italic `Body Text` paragraph after the first. INT book example bodies often use bold text (not italic), causing premature style cutoff. Pending fix.
+
+## 2026-06-01 - INT Print-Readiness Tooling Fixes
+
+- Scope: `scripts/postprocess_docx.py` and `scripts/docx_to_pdf.py`.
+- Trigger: INT Unit 1 PDF/DOCX review found response tables after lists with inconsistent indentation, excessive gaps, narrow table width, and an automated-PDF-only numbered-list restart.
+- Action: updated placeholder replacement to parse `rows=N`, remove the extra pre-table spacer, add small post-table spacing, normalize contiguous list runs before list-adjacent placeholders, align placeholder tables to the list text indent, and make list-adjacent placeholder tables extend to the right margin.
+- Action: replaced the `docx-to-pdf` dependency on `docx2pdf.SaveAs(FileFormat=17)` with direct Word COM `ExportAsFixedFormat`.
+- Verification: `python -m py_compile scripts/postprocess_docx.py scripts/docx_to_pdf.py` passes. A full temporary book build was started but stopped after it ran too long; Dave regenerated the DOCX/PDF manually afterward.
+
+## 2026-06-01 - Case-Specific List Placeholder Policy
+
+- Scope: `scripts/postprocess_docx.py`.
+- Trigger: Dave clarified that list indentation should differ between one-placeholder-per-list-item activities and one-placeholder-after-the-whole-list activities.
+- Action: changed placeholder replacement so the flush-number/hanging-indent/table-indent policy applies only when the placeholder follows a single-item list run. If the placeholder follows a contiguous multi-item list, the list and table retain normal positioning.
+- Verification: `python -m py_compile scripts/postprocess_docx.py` passes.
