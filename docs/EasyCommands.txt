@@ -1,48 +1,63 @@
-".\Writing textbook\Advanced\md"
+Textmaker quick commands
+========================
 
-".\Writing textbook\Intermediate\md"
+Run these from the repository or project folder that owns the input/output paths.
 
-python -m textmaker markdown-to-docx `
-  --input `
-  <file-or-folder> `
-  --output `
-  output.docx `
+
+Administrative Writing INT DOCX
+-------------------------------
+
+textmaker.cmd markdown-to-docx `
+  --input int\md\working\aw-int-all_0519.md `
+  --reference adv\md\working\aw-adv-styleref.docx `
+  --lua-filter ..\textmaker\scripts\style_bridge.lua `
+  --output int\md\working\aw-int-all_0530.docx `
+  --no-pagebreak-filter `
+  --apply-semantic-labels `
+  --tag-style outline
+
+
+Administrative Writing INT DOCX with timing profile
+---------------------------------------------------
+
+textmaker.cmd markdown-to-docx `
+  --input int\md\working\aw-int-all_0519.md `
+  --reference adv\md\working\aw-adv-styleref.docx `
+  --lua-filter ..\textmaker\scripts\style_bridge.lua `
+  --output int\md\working\aw-int-all_0530.docx `
+  --no-pagebreak-filter `
+  --apply-semantic-labels `
+  --tag-style outline `
+  --profile
+
+
+DOCX to PDF
+-----------
+
+textmaker.cmd docx-to-pdf `
+  --input  "..\book_administrative-writing\int\md\working\aw-int-all_0530.docx" `
+  --output "..\book_administrative-writing\int\md\working\aw-int-all_0530.pdf"
+
+
+Generic Markdown to DOCX
+------------------------
+
+textmaker.cmd markdown-to-docx `
+  --input <file-or-folder> `
   --reference reference.docx `
-  --toc `
-  --toc-depth 1
+  --lua-filter scripts\style_bridge.lua `
+  --output output.docx `
+  --apply-semantic-labels
 
 
-Intermediate
---------------
+Useful optional flags
+---------------------
 
-python -m textmaker markdown-to-docx `
-  --input `
-  ".\Writing textbook\Intermediate\md" `
-  --output `
-  "\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\02. Clients\(K) JPO\Specs\Proposal\(5) English Writing Course (Private)\Writing textbook\Intermediate\adminwritingint.docx" `
-  --reference `
-  "\\prod-fs-gen01\WorkFile\04_在宅勤務\★グローバルビジネス推進部（在宅）\ランゲージサービス課\Dobson（在宅）\02. Clients\(K) JPO\Specs\Proposal\(5) English Writing Course (Private)\Writing textbook\Intermediate\adminwritingint-styleref.docx" `
-  --toc `
-  --toc-depth 2
+--profile
+Print timing information for Markdown normalization, Pandoc, and DOCX postprocess passes.
 
-Advanced
-----------
+--progress-warn-seconds 30
+Print a still-running warning after this many seconds for each stage. Use 0 to disable warnings.
 
-python -m textmaker markdown-to-docx `
-  --input `
-  ".\Writing textbook\Advanced\md" `
-  --output `
-  ".\Writing textbook\Advanced\advW.docx" `
-  --reference reference.docx `
-  --toc `
-  --toc-depth 2
-
-
-IP R&D_intermediate
-------------
-
-  python -m textmaker markdown-to-docx `
-  --input `
-  ".\IP_R&D\IP_R&D_intermediate.md" `
-  --output `
-  ".\IP_R&D\IP_R&D_intermediate.docx"
+--tag-style outline
+Use outline semantic tag icons instead of the default filled icons.
