@@ -525,3 +525,11 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Trigger: Dave clarified that list indentation should differ between one-placeholder-per-list-item activities and one-placeholder-after-the-whole-list activities.
 - Action: changed placeholder replacement so the flush-number/hanging-indent/table-indent policy applies only when the placeholder follows a single-item list run. If the placeholder follows a contiguous multi-item list, the list and table retain normal positioning.
 - Verification: `python -m py_compile scripts/postprocess_docx.py` passes.
+
+## 2026-06-02 - List Spacing And Alphabetic List Regression Patch
+
+- Scope: `scripts/postprocess_docx.py`.
+- Trigger: Dave reported that list spacing edits appeared not to be applied and alphabetic lists were not being converted after the DOCX conversion refactor.
+- Action: extended alphabetic marker detection/stripping from `A.` only to both `A.` and `A)`, and updated list detection so `Checklist` style paragraphs count as list paragraphs for spacing and placeholder policy checks.
+- Verification: targeted temporary Markdown-to-DOCX probe showed `list styles`, `post-list spacing`, and `response placeholders` passes running with changed counts; `python -m compileall scripts` and `pytest -q` passed.
+- Note: the probe also showed that Pandoc's DOCX writer can strip `- [ ]` checkbox markers before postprocess, leaving plain bullet paragraphs; true source-preserved checkbox styling needs an earlier pipeline marker rather than Word-stage guessing.

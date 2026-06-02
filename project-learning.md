@@ -173,6 +173,15 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Performance note: measured INT temp DOCX conversion improved from ~258s total to ~117s total after adding source-driven example styles, skipping heuristic semantic passes, optimizing list-spacing traversal, and converting body-text normalization to direct XML style assignment.
 - Preferred behavior: if content needs a semantic style, add the correct div class and `div_content_style_map` entry in source front matter instead of adding another postprocessor guess.
 
+## 2026-06-02 - List Spacing And Alphabetic List Regression Check
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: `_is_list_paragraph()` must treat `Checklist` styles as list paragraphs for spacing and placeholder-adjacent policy decisions; otherwise checkbox/checklist runs can miss post-list spacing.
+- Decision: alphabetic option conversion must accept both `A.` and `A)` literal source markers. Pandoc may emit `UpperAlpha/OneParen` lists for `A)` source text, but the postprocessor should still support literal-marker fallback and marker stripping for both forms.
+- Validation: targeted temporary DOCX probe confirmed `list styles`, `post-list spacing`, and `response placeholders` passes still run after the profiling/source-driven refactor; repo tests passed afterward.
+- Constraint: Pandoc DOCX output may strip `- [ ]` task-list checkbox markers before postprocessing, leaving ordinary bullet paragraphs. Do not rely on postprocess-only text inspection to recover checkbox intent; preserve checkbox intent earlier in the pipeline if true `Checklist` styling is required beyond contextual edit-div inference.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

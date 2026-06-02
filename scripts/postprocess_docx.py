@@ -95,7 +95,7 @@ WORD_COUNT_RE = re.compile(
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+)(.+)$')
 MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$', re.IGNORECASE)
 MODULE_REVIEW_HEADING_RE = re.compile(r'^Module\s+\d+\s+Review\s+Workshop$', re.IGNORECASE)
-ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])\.\s+\S+')
+ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])[\.)]\s+\S+')
 ACTIVITY_CODE_SUFFIX_RE = re.compile(r'\s+\(([A-H]\d)(?:[^)]*)\)\s*(?:[★*])?\s*$')
 MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
     r'\s+\(Units?\s+\d+\s*[-\u2013\u2014]\s*\d+\)\s*$',
@@ -719,7 +719,7 @@ def _is_paragraph_italic(paragraph) -> bool:
 
 def _is_list_paragraph(paragraph) -> bool:
     style_name = getattr(paragraph.style, 'name', '') if paragraph.style else ''
-    if style_name.startswith('List '):
+    if style_name.startswith('List ') or style_name.startswith('Checklist'):
         return True
     p_pr = paragraph._p.find(qn('w:pPr'))
     if p_pr is None:
@@ -1762,7 +1762,7 @@ def strip_literal_alpha_markers(doc, alpha_style='List Number 3') -> int:
     changed = 0
     alpha_style_id = getattr(alpha, 'style_id', None)
     alpha_style_name = getattr(alpha, 'name', None)
-    marker_re = re.compile(r'^\s*[A-Z]\.\s+')
+    marker_re = re.compile(r'^\s*[A-Z][\.)]\s+')
     for para in doc.paragraphs:
         para_style = para.style
         if para_style is None:
