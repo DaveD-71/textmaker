@@ -8,8 +8,13 @@
 --     learn: "Div Label Learn"
 --     write: "Div Label Write"
 --     ...
+--   div_content_style_map:
+--     example: "AW Example"
+--     example-good: "AW Example Good"
+--     example-bad: "AW Example Bad"
 --
--- "Div Label *" styles: first Para gets the label style; remaining blocks left unstyled.
+-- "Div Label *" styles: first Para gets the label style; remaining blocks get
+-- the matching div_content_style_map style when configured.
 -- All other styles: applied to every paragraph in the Div.
 --
 -- Two-pass approach: Meta is read first, then Div/HorizontalRule use the loaded values.
@@ -17,6 +22,7 @@
 local stringify = pandoc.utils.stringify
 
 local style_map = {}
+local content_style_map = {}
 local remove_hr = false
 local preserve_lb = true
 
@@ -45,6 +51,15 @@ local function wrap_para(block, custom_style)
   return inner
 end
 
+local function wrap_block(block, custom_style)
+  local inner = pandoc.Div(pandoc.Blocks { block })
+  inner.attributes["custom-style"] = custom_style
+  if preserve_lb then
+    inner = softbreak_to_linebreak(inner)
+  end
+  return inner
+end
+
 return {
   -- Pass 1: load configuration from document metadata
   {
@@ -52,6 +67,11 @@ return {
       if meta.style_map and type(meta.style_map) == "table" then
         for k, v in pairs(meta.style_map) do
           style_map[k] = stringify(v)
+        end
+      end
+      if meta.div_content_style_map and type(meta.div_content_style_map) == "table" then
+        for k, v in pairs(meta.div_content_style_map) do
+          content_style_map[k] = stringify(v)
         end
       end
       if meta.style_bridge and type(meta.style_bridge) == "table" then
@@ -84,7 +104,9 @@ return {
             return el
           end
 
-          -- "Div Label *" styles: first Para/Plain → label style; rest left unstyled
+          -- "Div Label *" styles: first Para/Plain → label style; rest gets an
+          -- explicit content style only when the source YAML says so.
+          local content_style = content_style_map[class]
           local result = {}
           local label_done = false
           for _, block in ipairs(el.content) do
@@ -93,11 +115,19 @@ return {
                 table.insert(result, wrap_para(block, style))
                 label_done = true
               else
-                table.insert(result, block)
+                if content_style and content_style ~= "" then
+                  table.insert(result, wrap_para(block, content_style))
+                else
+                  table.insert(result, block)
+                end
               end
             else
-              -- Lists and other block elements: leave unstyled so list formatting survives
-              table.insert(result, block)
+              if content_style and content_style ~= "" then
+                table.insert(result, wrap_block(block, content_style))
+              else
+                -- Lists and other block elements: leave unstyled so list formatting survives
+                table.insert(result, block)
+              end
             end
           end
           return pandoc.Blocks(result)

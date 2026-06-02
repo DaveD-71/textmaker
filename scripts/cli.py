@@ -10,17 +10,86 @@ python scripts/cli.py --input "chapter1.md" --output "Book.docx" --reference ref
 from __future__ import annotations
 
 import argparse
+from contextlib import contextmanager
 import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import threading
+import time
 from pathlib import Path
 from typing import Iterable, List
 
 
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
+
+
+class StepProfiler:
+    """Progress logger with optional timing summary for conversion stages."""
+
+    def __init__(
+        self,
+        enabled: bool = False,
+        *,
+        progress: bool = True,
+        warn_after_seconds: float = 30.0,
+    ):
+        self.enabled = enabled
+        self.progress = progress
+        self.warn_after_seconds = max(0.0, warn_after_seconds)
+        self.records: list[tuple[str, float]] = []
+
+    @contextmanager
+    def step(self, name: str):
+        if self.progress:
+            print(f'[progress] {name}: started', flush=True)
+        start = time.perf_counter()
+        stop_event = threading.Event()
+        watchdog = self._start_watchdog(name, start, stop_event)
+        try:
+            yield
+        except Exception:
+            elapsed = time.perf_counter() - start
+            if self.progress:
+                print(f'[error] {name}: failed after {elapsed:.3f}s', flush=True)
+            raise
+        finally:
+            stop_event.set()
+            if watchdog is not None:
+                watchdog.join(timeout=0.2)
+            elapsed = time.perf_counter() - start
+            if self.progress:
+                print(f'[progress] {name}: done in {elapsed:.3f}s', flush=True)
+            if self.enabled:
+                self.records.append((name, elapsed))
+                print(f'[profile] {name}: {elapsed:.3f}s')
+
+    def _start_watchdog(self, name: str, start: float, stop_event: threading.Event):
+        if not self.progress or self.warn_after_seconds <= 0:
+            return None
+
+        def watch() -> None:
+            while not stop_event.wait(self.warn_after_seconds):
+                elapsed = time.perf_counter() - start
+                print(
+                    f'[warn] {name}: still running after {elapsed:.1f}s',
+                    flush=True,
+                )
+
+        thread = threading.Thread(target=watch, daemon=True)
+        thread.start()
+        return thread
+
+    def summary(self) -> None:
+        if not self.enabled or not self.records:
+            return
+        total = sum(elapsed for _, elapsed in self.records)
+        print('[profile] markdown-to-docx summary:')
+        for name, elapsed in self.records:
+            print(f'[profile]   {name}: {elapsed:.3f}s')
+        print(f'[profile]   total measured: {total:.3f}s')
 
 
 def check_pandoc() -> None:
@@ -350,35 +419,49 @@ def _build_parser() -> argparse.ArgumentParser:
         action='store_true',
         help='Do not apply textmaker built-in pagebreak.lua during Pandoc conversion.',
     )
+    parser.add_argument(
+        '--profile',
+        action='store_true',
+        help='Print timing information for Markdown normalization, Pandoc, and DOCX postprocessing.',
+    )
+    parser.add_argument(
+        '--progress-warn-seconds',
+        type=float,
+        default=30.0,
+        help='Print a warning when a conversion stage runs longer than this many seconds (default: 30; use 0 to disable warnings).',
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
+    profiler = StepProfiler(args.profile, warn_after_seconds=args.progress_warn_seconds)
 
-    check_pandoc()
+    with profiler.step('check pandoc'):
+        check_pandoc()
 
-    caller_cwd = get_caller_cwd()
-    preferred_base = caller_cwd
-    if is_windows_fallback_cwd(preferred_base):
-        preferred_base = WORKSPACE_ROOT
+    with profiler.step('resolve paths'):
+        caller_cwd = get_caller_cwd()
+        preferred_base = caller_cwd
+        if is_windows_fallback_cwd(preferred_base):
+            preferred_base = WORKSPACE_ROOT
 
-    src_path, src_base = resolve_existing_path(args.input, base_dir=preferred_base)
-    reference_path, reference_base = resolve_existing_path(args.reference, base_dir=preferred_base)
-    lua_filter_paths = [
-        resolve_existing_path(raw_filter, base_dir=preferred_base)[0]
-        for raw_filter in args.lua_filter
-    ]
+        src_path, src_base = resolve_existing_path(args.input, base_dir=preferred_base)
+        reference_path, reference_base = resolve_existing_path(args.reference, base_dir=preferred_base)
+        lua_filter_paths = [
+            resolve_existing_path(raw_filter, base_dir=preferred_base)[0]
+            for raw_filter in args.lua_filter
+        ]
 
-    output_base = preferred_base
-    if src_base and reference_base and src_base == reference_base:
-        output_base = src_base
-    elif src_base:
-        output_base = src_base
-    elif reference_base:
-        output_base = reference_base
-    dest_path = resolve_user_path(args.output, base_dir=output_base)
+        output_base = preferred_base
+        if src_base and reference_base and src_base == reference_base:
+            output_base = src_base
+        elif src_base:
+            output_base = src_base
+        elif reference_base:
+            output_base = reference_base
+        dest_path = resolve_user_path(args.output, base_dir=output_base)
 
     temp_dir = None
     try:
@@ -389,11 +472,12 @@ def main(argv: list[str] | None = None) -> int:
                 sys.exit(1)
             temp_dir = tempfile.TemporaryDirectory()
             temp_md = Path(temp_dir.name) / 'merged.md'
-            merge_markdown_files(
-                md_files,
-                temp_md,
-                ignore_horizontal_rules=args.ignore_horizontal_rules,
-            )
+            with profiler.step('normalize markdown'):
+                merge_markdown_files(
+                    md_files,
+                    temp_md,
+                    ignore_horizontal_rules=args.ignore_horizontal_rules,
+                )
             pandoc_cmd = build_pandoc_cmd(
                 temp_md,
                 dest_path,
@@ -406,14 +490,15 @@ def main(argv: list[str] | None = None) -> int:
         else:
             temp_dir = tempfile.TemporaryDirectory()
             temp_md = Path(temp_dir.name) / src_path.name
-            source = src_path.read_text(encoding='utf-8')
-            temp_md.write_text(
-                normalize_markdown(
-                    source,
-                    ignore_horizontal_rules=args.ignore_horizontal_rules,
-                ),
-                encoding='utf-8',
-            )
+            with profiler.step('normalize markdown'):
+                source = src_path.read_text(encoding='utf-8')
+                temp_md.write_text(
+                    normalize_markdown(
+                        source,
+                        ignore_horizontal_rules=args.ignore_horizontal_rules,
+                    ),
+                    encoding='utf-8',
+                )
             pandoc_cmd = build_pandoc_cmd(
                 temp_md,
                 dest_path,
@@ -426,26 +511,33 @@ def main(argv: list[str] | None = None) -> int:
 
         print('Running:', ' '.join(map(str, pandoc_cmd)))
         dest_path.parent.mkdir(parents=True, exist_ok=True)
-        archive_previous_outputs(dest_path)
-        subprocess.run(pandoc_cmd, check=True)
+        with profiler.step('archive previous outputs'):
+            archive_previous_outputs(dest_path)
+        with profiler.step('pandoc'):
+            subprocess.run(pandoc_cmd, check=True)
         # Post-process: add section breaks for TOC/units/file boundaries
         try:
             from .postprocess_docx import insert_section_after_toc
         except ImportError:
             from postprocess_docx import insert_section_after_toc
-        insert_section_after_toc(
-            dest_path,
-            has_toc=args.toc,
-            insert_h1_sections=args.h1_sections,
-            reference_doc_path=reference_path,
-            apply_semantic_labels=args.apply_semantic_labels,
-            building_block_template=args.building_block_template,
-            tag_style=args.tag_style,
-        )
+        with profiler.step('postprocess docx'):
+            insert_section_after_toc(
+                dest_path,
+                has_toc=args.toc,
+                insert_h1_sections=args.h1_sections,
+                reference_doc_path=reference_path,
+                apply_semantic_labels=args.apply_semantic_labels,
+                building_block_template=args.building_block_template,
+                tag_style=args.tag_style,
+                profile=args.profile,
+                progress=True,
+                progress_warn_seconds=args.progress_warn_seconds,
+            )
         print('Wrote', dest_path)
     finally:
         if temp_dir:
             temp_dir.cleanup()
+        profiler.summary()
     return 0
 
 

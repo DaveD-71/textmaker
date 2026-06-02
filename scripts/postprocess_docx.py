@@ -11,6 +11,8 @@ pass --apply-semantic-labels to enable it. Style definitions are never created o
 redefined here — all style management belongs in manage_docx_styles.py.
 """
 # pylint: disable=protected-access,broad-exception-caught
+from __future__ import annotations
+
 import argparse
 import copy
 import csv
@@ -21,6 +23,9 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import threading
+import time
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterable
 
@@ -88,7 +93,8 @@ WORD_COUNT_RE = re.compile(
     re.IGNORECASE,
 )
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+)(.+)$')
-MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$')
+MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$', re.IGNORECASE)
+MODULE_REVIEW_HEADING_RE = re.compile(r'^Module\s+\d+\s+Review\s+Workshop$', re.IGNORECASE)
 ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])\.\s+\S+')
 ACTIVITY_CODE_SUFFIX_RE = re.compile(r'\s+\(([A-H]\d)(?:[^)]*)\)\s*(?:[★*])?\s*$')
 MODULE_UNIT_RANGE_SUFFIX_RE = re.compile(
@@ -142,13 +148,15 @@ def _resolve_div_tag_icon(
     return icon_path if icon_path.exists() else None
 
 
-def build_semantic_div_label_styles(reference_doc_path=None):
+def build_semantic_div_label_styles(reference_doc_path=None, context: PostprocessContext | None = None):
     """
     Build a mapping from paragraph style ID to hex color string for semantic Div label runs.
 
     Reads color directly from the paragraph style's rPr — no linked char styles required.
     Keys are paragraph style IDs (e.g. 'DivLabelNotice'); values are hex color strings (e.g. 'DB4351').
     """
+    if context is not None:
+        return context.semantic_div_label_styles()
     if not reference_doc_path:
         return {}
 
@@ -186,6 +194,151 @@ WORD_DO_NOT_SAVE_CHANGES = 0
 WORD_SAVE_CHANGES = -1
 
 
+class PostprocessProfiler:
+    """Progress logger with optional timing summary for DOCX postprocess passes."""
+
+    def __init__(
+        self,
+        enabled: bool = False,
+        *,
+        progress: bool = True,
+        warn_after_seconds: float = 30.0,
+    ):
+        self.enabled = enabled
+        self.progress = progress
+        self.warn_after_seconds = max(0.0, warn_after_seconds)
+        self.records: list[tuple[str, float, int | None, str]] = []
+
+    @contextmanager
+    def step(self, name: str, *, changed: int | None = None, status: str = 'done'):
+        if self.progress:
+            print(f'[progress] postprocess:{name}: started', flush=True)
+        start = time.perf_counter()
+        result = {'changed': changed, 'status': status}
+        stop_event = threading.Event()
+        watchdog = self._start_watchdog(name, start, stop_event)
+        try:
+            yield result
+        except Exception:
+            result['status'] = 'error'
+            elapsed = time.perf_counter() - start
+            if self.progress:
+                print(
+                    f'[error] postprocess:{name}: failed after {elapsed:.3f}s',
+                    flush=True,
+                )
+            raise
+        finally:
+            stop_event.set()
+            if watchdog is not None:
+                watchdog.join(timeout=0.2)
+            elapsed = time.perf_counter() - start
+            if self.progress:
+                changed_value = result['changed']
+                status_value = result['status']
+                count_text = '' if changed_value is None else f' count={changed_value}'
+                print(
+                    f'[progress] postprocess:{name}: {status_value} in {elapsed:.3f}s{count_text}',
+                    flush=True,
+                )
+            if self.enabled:
+                changed_value = result['changed']
+                status_value = result['status']
+                self.records.append((name, elapsed, changed_value, status_value))
+                count_text = '' if changed_value is None else f' count={changed_value}'
+                print(f'[profile] postprocess:{name}: {elapsed:.3f}s status={status_value}{count_text}')
+
+    def skip(self, name: str) -> None:
+        if self.progress:
+            print(f'[progress] postprocess:{name}: skipped', flush=True)
+        if self.enabled:
+            self.records.append((name, 0.0, 0, 'skipped'))
+            print(f'[profile] postprocess:{name}: 0.000s skipped changed=0')
+
+    def _start_watchdog(self, name: str, start: float, stop_event: threading.Event):
+        if not self.progress or self.warn_after_seconds <= 0:
+            return None
+
+        def watch() -> None:
+            while not stop_event.wait(self.warn_after_seconds):
+                elapsed = time.perf_counter() - start
+                print(
+                    f'[warn] postprocess:{name}: still running after {elapsed:.1f}s',
+                    flush=True,
+                )
+
+        thread = threading.Thread(target=watch, daemon=True)
+        thread.start()
+        return thread
+
+    def summary(self) -> None:
+        if not self.enabled or not self.records:
+            return
+        total = sum(elapsed for _, elapsed, _, status in self.records if status != 'skipped')
+        print('[profile] postprocess summary:')
+        for name, elapsed, changed, status in self.records:
+            count_text = '' if changed is None else f' count={changed}'
+            print(f'[profile]   {name}: {elapsed:.3f}s status={status}{count_text}')
+        print(f'[profile]   total measured: {total:.3f}s')
+
+
+class PostprocessContext:
+    """Cached resources shared across postprocess passes."""
+
+    def __init__(self, reference_doc_path=None):
+        self.reference_doc_path = Path(reference_doc_path) if reference_doc_path else None
+        self._reference_doc = None
+        self._reference_style_ids: set[str] | None = None
+        self._semantic_div_label_styles: dict[str, str] | None = None
+        self._unit_tile_prototype = None
+
+    def reference_doc(self):
+        if not self.reference_doc_path or not self.reference_doc_path.exists():
+            return None
+        if self._reference_doc is None:
+            self._reference_doc = Document(self.reference_doc_path)
+        return self._reference_doc
+
+    def reference_style_ids(self) -> set[str]:
+        if self._reference_style_ids is None:
+            ref_doc = self.reference_doc()
+            self._reference_style_ids = _style_ids(ref_doc.styles) if ref_doc is not None else set()
+        return self._reference_style_ids
+
+    def semantic_div_label_styles(self) -> dict[str, str]:
+        if self._semantic_div_label_styles is None:
+            mapping = {}
+            ref_doc = self.reference_doc()
+            if ref_doc is not None:
+                for style in ref_doc.styles:
+                    if style.type != WD_STYLE_TYPE.PARAGRAPH:
+                        continue
+                    if not style.name.startswith('Div Label '):
+                        continue
+                    color = _style_color_value(style)
+                    if color:
+                        mapping[style.style_id] = color
+            self._semantic_div_label_styles = mapping
+        return self._semantic_div_label_styles
+
+    def unit_tile_prototype(self):
+        if self._unit_tile_prototype is not None:
+            return copy.deepcopy(self._unit_tile_prototype)
+        ref_doc = self.reference_doc()
+        if ref_doc is None:
+            return None
+        for table in ref_doc.tables:
+            try:
+                first = _clean_word_text(table.cell(0, 0).text)
+                second = _clean_word_text(table.cell(0, 1).text)
+            except Exception:
+                continue
+            if re.match(r'^(?:U0|U#|#|\d+)$', first) and 'Unit Title' in second:
+                self._unit_tile_prototype = copy.deepcopy(table._tbl)
+                return copy.deepcopy(self._unit_tile_prototype)
+        return None
+
+
 def _insert_section_break_before_paragraph(paragraph, restart_numbering=False, start_page=1):
     """
     Insert a nextPage section break BEFORE a paragraph by attaching sectPr
@@ -204,7 +357,14 @@ def _insert_section_break_before_paragraph(paragraph, restart_numbering=False, s
     if current_index == 0:
         return False
 
-    prev_p = paragraphs[current_index - 1]
+    prev_p = None
+    for candidate in reversed(paragraphs[:current_index]):
+        if candidate.tag == qn('w:p'):
+            prev_p = candidate
+            break
+    if prev_p is None:
+        return False
+
     p_pr = prev_p.find(qn('w:pPr'))
     if p_pr is None:
         p_pr = OxmlElement('w:pPr')
@@ -789,7 +949,12 @@ def _normalize_learn_label_text(style_id: str, run) -> bool:
     return True
 
 
-def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV_TAG_ICON_STYLE) -> int:
+def apply_semantic_div_labels(
+    doc,
+    reference_doc_path=None,
+    tag_style: str = DIV_TAG_ICON_STYLE,
+    context: PostprocessContext | None = None,
+) -> int:
     """
     Add visual labels to semantic Div paragraphs emitted by the Pandoc Lua filter.
 
@@ -798,7 +963,7 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
     """
     changed = 0
     learn_base = _get_style_by_name_or_id(doc.styles, 'Learn Base')
-    semantic_div_label_styles = build_semantic_div_label_styles(reference_doc_path)
+    semantic_div_label_styles = build_semantic_div_label_styles(reference_doc_path, context)
     body = doc.element.body
 
     # Snapshot of direct body <w:p> children only — we will replace some with <w:tbl>.
@@ -900,22 +1065,39 @@ def apply_semantic_div_labels(doc, reference_doc_path=None, tag_style: str = DIV
 def apply_body_text_to_normal_paragraphs(doc) -> int:
     """Make ordinary prose explicit Body Text instead of implicit/explicit Normal."""
     body_text = _require_style(doc.styles, 'Body Text')
+    body_text_style_id = getattr(body_text, 'style_id', 'BodyText')
 
     changed = 0
-    for para in doc.paragraphs:
-        if not _normalize_text(para.text):
+    for p_el in doc.element.body.iterchildren():
+        if p_el.tag != qn('w:p'):
             continue
-        if _is_heading(para) or _is_list_paragraph(para):
+
+        text = _normalize_text(''.join(t.text or '' for t in p_el.iter(qn('w:t'))))
+        if not text:
             continue
-        style_id = _paragraph_style_id(para)
-        if style_id and style_id.startswith('DivLabel'):
+
+        p_pr = p_el.find(qn('w:pPr'))
+        p_style = p_pr.find(qn('w:pStyle')) if p_pr is not None else None
+        style_id = p_style.get(qn('w:val')) if p_style is not None else ''
+        num_pr = p_pr.find(qn('w:numPr')) if p_pr is not None else None
+
+        if num_pr is not None:
             continue
-        style_name = _paragraph_style_name(para)
-        if style_name == 'Body Text':
+        if style_id == body_text_style_id:
             continue
-        if style_name == 'Normal' or not _has_explicit_paragraph_style(para):
-            para.style = body_text
-            changed += 1
+        if style_id.startswith(('Heading', 'DivLabel', 'List', 'Checklist')):
+            continue
+        if style_id and style_id != 'Normal':
+            continue
+
+        if p_pr is None:
+            p_pr = OxmlElement('w:pPr')
+            p_el.insert(0, p_pr)
+        if p_style is None:
+            p_style = OxmlElement('w:pStyle')
+            p_pr.insert(0, p_style)
+        p_style.set(qn('w:val'), body_text_style_id)
+        changed += 1
     return changed
 
 
@@ -970,15 +1152,20 @@ def _style_ids(styles) -> set[str]:
     }
 
 
-def purge_styles_not_in_reference(doc, reference_doc_path) -> int:
+def purge_styles_not_in_reference(
+    doc,
+    reference_doc_path,
+    context: PostprocessContext | None = None,
+) -> int:
     """
     Remove generated DOCX style references and style definitions that are not
     present in the reference DOCX.
     """
     if not reference_doc_path:
         return 0
-    reference_doc = Document(reference_doc_path)
-    allowed_style_ids = _style_ids(reference_doc.styles)
+    allowed_style_ids = context.reference_style_ids() if context is not None else _style_ids(Document(reference_doc_path).styles)
+    if not allowed_style_ids:
+        return 0
     body_text = _require_style(doc.styles, 'Body Text')
     changed = 0
 
@@ -1005,33 +1192,61 @@ def purge_styles_not_in_reference(doc, reference_doc_path) -> int:
     return changed
 
 
-def apply_page_breaks_before_modules_and_units(doc) -> int:
-    """Start every Module and Unit heading on a new page."""
+def disable_heading_style_page_breaks(doc) -> int:
+    """Let section breaks, not heading styles, control module/unit page starts."""
     changed = 0
+    for style_name in ('Heading 1', 'Heading 2'):
+        style = _get_style_by_name_or_id(doc.styles, style_name)
+        if style is None:
+            continue
+        style_el = getattr(style, '_element', None)
+        if style_el is None:
+            continue
+        p_pr = style_el.find(qn('w:pPr'))
+        page_break = p_pr.find(qn('w:pageBreakBefore')) if p_pr is not None else None
+        if p_pr is not None and page_break is not None:
+            p_pr.remove(page_break)
+            changed += 1
+    return changed
+
+
+def insert_section_breaks_before_modules_and_units(doc) -> int:
+    """Start every module and unit in its own Word section."""
+    boundaries = []
     for para in doc.paragraphs:
         if _paragraph_style_name(para) not in {'Heading 1', 'Heading 2'}:
             continue
         text = _normalize_text(para.text)
-        if not (MODULE_HEADING_RE.match(text) or UNIT_HEADING_RE.match(text)):
+        if not (
+            MODULE_HEADING_RE.match(text)
+            or UNIT_HEADING_RE.match(text)
+            or MODULE_REVIEW_HEADING_RE.match(text)
+        ):
             continue
-        p_pr = para._p.get_or_add_pPr()
-        if p_pr.find(qn('w:pageBreakBefore')) is not None:
-            continue
-        p_pr.append(OxmlElement('w:pageBreakBefore'))
-        changed += 1
+        boundaries.append(para)
+
+    changed = 0
+    for para in reversed(boundaries[1:]):
+        if _insert_section_break_before_paragraph(para):
+            changed += 1
     return changed
 
 
+def apply_page_breaks_before_modules_and_units(doc) -> int:
+    """Backward-compatible wrapper for the old page-start function name."""
+    return insert_section_breaks_before_modules_and_units(doc)
+
+
 def normalize_module_headings(doc) -> int:
-    """Strip unit ranges from module titles while preserving Heading 2 level."""
-    heading_2 = _require_style(doc.styles, 'Heading 2')
+    """Strip unit ranges from module titles while preserving Heading 1 level."""
+    heading_1 = _require_style(doc.styles, 'Heading 1')
     changed = 0
     for para in doc.paragraphs:
         text = _normalize_text(para.text)
         if not MODULE_HEADING_RE.match(text):
             continue
-        if _paragraph_style_name(para) != 'Heading 2':
-            para.style = heading_2
+        if _paragraph_style_name(para) != 'Heading 1':
+            para.style = heading_1
             changed += 1
         cleaned = MODULE_UNIT_RANGE_SUFFIX_RE.sub('', text)
         if cleaned != text and _replace_paragraph_text_preserve_format(para, cleaned):
@@ -1039,7 +1254,9 @@ def normalize_module_headings(doc) -> int:
     return changed
 
 
-def _find_unit_tile_prototype(reference_doc_path) -> object | None:
+def _find_unit_tile_prototype(reference_doc_path, context: PostprocessContext | None = None) -> object | None:
+    if context is not None:
+        return context.unit_tile_prototype()
     if not reference_doc_path:
         return None
     ref_path = Path(reference_doc_path)
@@ -1201,41 +1418,56 @@ def _module_unit_contexts(doc) -> list[tuple[str, str]]:
     current_module = ''
     current_unit = ''
     for para in doc.paragraphs:
-        if _paragraph_style_name(para) != 'Heading 2':
+        style_name = _paragraph_style_name(para)
+        if style_name not in {'Heading 1', 'Heading 2'}:
             continue
         text = _normalize_text(para.text)
-        if text.startswith('Module '):
+        if style_name == 'Heading 1' and MODULE_HEADING_RE.match(text):
             current_module = text
             current_unit = ''
             contexts.append((current_module, current_unit))
-        elif text.startswith('Unit '):
+        elif style_name == 'Heading 2' and UNIT_HEADING_RE.match(text):
             current_unit = text
             contexts.append((current_module, current_unit))
+        elif style_name == 'Heading 2' and MODULE_REVIEW_HEADING_RE.match(text):
+            contexts.append((current_module, text))
     return contexts
 
 
 def update_running_headers(doc) -> int:
-    """Use separate STYLEREF fields for module and unit running headers."""
+    """Write module/unit running headers directly into each Word section."""
+    contexts = _module_unit_contexts(doc)
+    if not contexts:
+        return 0
+
     changed = 0
-    for section in doc.sections:
+    for idx, section in enumerate(doc.sections):
+        module_title, unit_title = contexts[min(idx, len(contexts) - 1)]
+        odd_header = module_title or unit_title
+        even_header = unit_title or module_title
+
         section.header.is_linked_to_previous = False
         section.even_page_header.is_linked_to_previous = False
         section.first_page_header.is_linked_to_previous = False
-        if _set_header_styleref(section.header, 'Heading 1'):
+        if _set_header_text(section.header, odd_header):
             changed += 1
-        if _set_header_styleref(section.first_page_header, 'Heading 1'):
+        if _set_header_text(section.first_page_header, odd_header):
             changed += 1
-        if _set_header_styleref(section.even_page_header, 'Heading 2'):
+        if _set_header_text(section.even_page_header, even_header):
             changed += 1
     return changed
 
 
-def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int:
+def replace_unit_headings_with_title_tables(
+    doc,
+    reference_doc_path=None,
+    context: PostprocessContext | None = None,
+) -> int:
     """
     Replace `Unit N - Title` Heading 2 paragraphs with the reference unit-title
     table prototype. This avoids slow Word COM Quick Part insertion.
     """
-    prototype_tbl = _find_unit_tile_prototype(reference_doc_path)
+    prototype_tbl = _find_unit_tile_prototype(reference_doc_path, context)
     if prototype_tbl is None:
         return 0
     changed = 0
@@ -1249,10 +1481,7 @@ def replace_unit_headings_with_title_tables(doc, reference_doc_path=None) -> int
         table = Table(tbl, para._parent)
         _replace_cell_text_preserve_format(table.cell(0, 0), str(int(match.group(1))))
         _replace_cell_text_preserve_format(table.cell(0, 1), match.group(2))
-        # Keep a hidden Heading 2 paragraph in place so the even-page header's
-        # STYLEREF field can still resolve the current unit title after the
-        # visible heading is replaced by the title table.
-        _hide_heading_paragraph_keep_for_styleref(para, keep_page_break=False)
+        para._element.getparent().remove(para._element)
         changed += 1
     return changed
 
@@ -1347,13 +1576,16 @@ def apply_semantic_styles(doc):
     inserted as real Building Blocks from the template.
     """
     changed = 0
-    paragraphs = list(doc.paragraphs)
     model_mode = None
+    prev_text_para = None
 
-    for idx, para in enumerate(paragraphs):
+    for para in doc.paragraphs:
         text = _normalize_text(para.text)
         if not text:
             continue
+
+        prev_para = prev_text_para
+        prev_text_para = para
 
         if text in BAD_MODEL_HEADINGS:
             model_mode = 'bad'
@@ -1381,14 +1613,15 @@ def apply_semantic_styles(doc):
             changed += 1
             continue
 
-        if _is_module_homework_target(paragraphs, idx, text) and _apply_style_if_available(
-            para,
-            'Homework Target',
-        ):
+        is_homework_target = False
+        if prev_para is not None and WORD_COUNT_RE.search(text) and 'homework target:' in text.lower():
+            prev_style_name = getattr(prev_para.style, 'name', '') if prev_para.style else ''
+            is_homework_target = _is_heading(prev_para) and prev_style_name == 'Heading 2'
+
+        if is_homework_target and _apply_style_if_available(para, 'Homework Target'):
             changed += 1
             continue
 
-        prev_para = _find_previous_text_paragraph(paragraphs, idx)
         if prev_para is not None:
             should_apply_after_list = False
             if _is_list_paragraph(prev_para) and _is_candidate_after_list(text):
@@ -1869,12 +2102,18 @@ def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
     """
     paragraphs = list(doc.paragraphs)
     changed = 0
+    next_text_para = None
 
-    for idx, para in enumerate(paragraphs):
+    for para in reversed(paragraphs):
+        text = _normalize_text(para.text)
         if not _is_list_paragraph(para):
+            if text:
+                next_text_para = para
             continue
-        next_para = _find_next_text_paragraph(paragraphs, idx)
-        if next_para is not None and _is_list_paragraph(next_para):
+
+        if next_text_para is not None and _is_list_paragraph(next_text_para):
+            if text:
+                next_text_para = para
             continue  # not the last item in the run
 
         p_pr = para._p.find(qn('w:pPr'))
@@ -1889,6 +2128,9 @@ def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
         if current != str(space_after_twips):
             spacing.set(qn('w:after'), str(space_after_twips))
             changed += 1
+
+        if text:
+            next_text_para = para
 
     return changed
 
@@ -2094,6 +2336,22 @@ def apply_response_placeholders(doc) -> int:
             ilvl.get(f'{{{W_NS}}}val') if ilvl is not None else '',
         )
 
+    def is_checklist_paragraph(el) -> bool:
+        if not is_list_paragraph(el):
+            return False
+        pPr = el.find(w('pPr'))
+        p_style = pPr.find(w('pStyle')) if pPr is not None else None
+        style_val = p_style.get(f'{{{W_NS}}}val') if p_style is not None else ''
+        return style_val.startswith('Checklist')
+
+    def is_ordered_list_paragraph(el) -> bool:
+        if not is_list_paragraph(el):
+            return False
+        pPr = el.find(w('pPr'))
+        p_style = pPr.find(w('pStyle')) if pPr is not None else None
+        style_val = p_style.get(f'{{{W_NS}}}val') if p_style is not None else ''
+        return style_val.startswith('ListNumber')
+
     def set_flush_number_list_indent(el) -> None:
         """Align list number to the margin and keep text on a hanging indent."""
         if not is_list_paragraph(el):
@@ -2121,6 +2379,8 @@ def apply_response_placeholders(doc) -> int:
             return False
         prev = body_children[marker_idx - 1]
         if not is_list_paragraph(prev):
+            return False
+        if not is_ordered_list_paragraph(prev) or is_checklist_paragraph(prev):
             return False
         key = list_key(prev)
 
@@ -2281,6 +2541,9 @@ def insert_section_after_toc(
     apply_semantic_labels=False,
     building_block_template=None,
     tag_style: str = DIV_TAG_ICON_STYLE,
+    profile: bool = False,
+    progress: bool = True,
+    progress_warn_seconds: float = 30.0,
 ):
     """
     Post-process `docx_path` to:
@@ -2290,176 +2553,235 @@ def insert_section_after_toc(
     3. Apply semantic label rendering when apply_semantic_labels=True
     4. Insert Quick Parts with Word COM when available
     """
-    doc = Document(docx_path)
+    profiler = PostprocessProfiler(
+        profile,
+        progress=progress,
+        warn_after_seconds=progress_warn_seconds,
+    )
+    context = PostprocessContext(reference_doc_path)
+    docx_path = Path(docx_path)
+
+    def save_and_reopen(doc_to_save, name: str):
+        with profiler.step(name) as timing:
+            tmp_fd, tmp_path = tempfile.mkstemp(suffix='.docx', dir=docx_path.parent)
+            os.close(tmp_fd)
+            try:
+                doc_to_save.save(tmp_path)
+                shutil.move(tmp_path, docx_path)
+                timing['status'] = 'saved'
+                return Document(docx_path)
+            except Exception:
+                try:
+                    os.unlink(tmp_path)
+                except OSError:
+                    pass
+                raise
+
+    def run_pass(name: str, func, message: str | None = None, *, enabled: bool = True) -> int:
+        nonlocal made_change
+        if not enabled:
+            profiler.skip(name)
+            return 0
+        with profiler.step(name) as timing:
+            count = func()
+            timing['changed'] = count
+            timing['status'] = 'changed' if count else 'no-change'
+        if count > 0:
+            if message:
+                print(message.format(count=count))
+            made_change = True
+        return count
+
+    with profiler.step('load docx'):
+        doc = Document(docx_path)
     paragraphs = list(doc.paragraphs)
 
     toc_par_index = None
     if has_toc:
-        for index, paragraph in enumerate(paragraphs):
-            fld_simples = paragraph._p.findall('.//w:fldSimple', NS)
-            for fld in fld_simples:
-                instr = fld.get(qn('w:instr')) or fld.get('instr')
-                if instr and instr.strip().upper().startswith('TOC'):
-                    toc_par_index = index
-            fld_chars = paragraph._p.findall('.//w:fldChar', NS)
-            if fld_chars:
-                instr_texts = paragraph._p.findall('.//w:instrText', NS)
-                for instr_text in instr_texts:
-                    if instr_text.text and instr_text.text.strip().upper().startswith('TOC'):
+        with profiler.step('scan toc') as timing:
+            for index, paragraph in enumerate(paragraphs):
+                fld_simples = paragraph._p.findall('.//w:fldSimple', NS)
+                for fld in fld_simples:
+                    instr = fld.get(qn('w:instr')) or fld.get('instr')
+                    if instr and instr.strip().upper().startswith('TOC'):
                         toc_par_index = index
+                fld_chars = paragraph._p.findall('.//w:fldChar', NS)
+                if fld_chars:
+                    instr_texts = paragraph._p.findall('.//w:instrText', NS)
+                    for instr_text in instr_texts:
+                        if instr_text.text and instr_text.text.strip().upper().startswith('TOC'):
+                            toc_par_index = index
+            timing['changed'] = 1 if toc_par_index is not None else 0
+            timing['status'] = 'found' if toc_par_index is not None else 'not-found'
+    else:
+        profiler.skip('scan toc')
 
     made_change = False
 
     if toc_par_index is not None:
         toc_par = paragraphs[toc_par_index]
-        try:
-            _apply_next_page_section_to_paragraph(toc_par, start_page=1)
-            made_change = True
-            print('Inserted section break after TOC with page numbering restart at 1')
-        except Exception as exc:
-            print(f'Warning: Could not insert section break after TOC: {exc}')
+        with profiler.step('toc section break') as timing:
+            try:
+                _apply_next_page_section_to_paragraph(toc_par, start_page=1)
+                timing['changed'] = 1
+                timing['status'] = 'changed'
+                made_change = True
+                print('Inserted section break after TOC with page numbering restart at 1')
+            except Exception as exc:
+                timing['changed'] = 0
+                timing['status'] = 'warning'
+                print(f'Warning: Could not insert section break after TOC: {exc}')
 
         try:
-            doc.save(docx_path)
-            doc = Document(docx_path)
+            doc = save_and_reopen(doc, 'save/reopen after toc')
             if len(doc.sections) > 0:
                 toc_section = doc.sections[0]
-                _remove_page_numbers_from_footer(toc_section.footer)
-                try:
-                    _remove_page_numbers_from_footer(toc_section.first_page_footer)
-                except Exception:
-                    pass
+                with profiler.step('remove toc page numbers') as timing:
+                    _remove_page_numbers_from_footer(toc_section.footer)
+                    try:
+                        _remove_page_numbers_from_footer(toc_section.first_page_footer)
+                    except Exception:
+                        pass
+                    timing['changed'] = 1
+                    timing['status'] = 'changed'
                 print('Removed page numbers from TOC section')
                 made_change = True
         except Exception as exc:
             print(f'Warning: Could not remove page numbers from TOC: {exc}')
+    else:
+        profiler.skip('toc section break')
+        profiler.skip('save/reopen after toc')
+        profiler.skip('remove toc page numbers')
 
-    module_heading_changes = normalize_module_headings(doc)
-    if module_heading_changes > 0:
-        print(f'Normalized {module_heading_changes} module heading item(s)')
-        made_change = True
+    run_pass(
+        'normalize module headings',
+        lambda: normalize_module_headings(doc),
+        'Normalized {count} module heading item(s)',
+    )
 
-    if insert_h1_sections:
+    def h1_sections_pass() -> int:
         try:
-            sections_added = insert_section_breaks_before_h1(
+            return insert_section_breaks_before_h1(
                 doc,
                 skip_first=True,
                 restart_first=False,
             )
-            if sections_added > 0:
-                print(f'Inserted {sections_added} section break(s) before H1 headings')
-                made_change = True
         except Exception as exc:
             print(f'Warning: Could not insert H1 section breaks: {exc}')
+            return 0
 
-    applied = apply_list_styles(doc)
-    if applied > 0:
-        print(f'Applied list styles to {applied} paragraph(s)')
-        made_change = True
+    run_pass(
+        'h1 section breaks',
+        h1_sections_pass,
+        'Inserted {count} section break(s) before H1 headings',
+        enabled=insert_h1_sections,
+    )
 
-    alpha_marker_changes = strip_literal_alpha_markers(doc)
-    if alpha_marker_changes > 0:
-        print(f'Removed literal alphabetic markers from {alpha_marker_changes} list paragraph(s)')
-        made_change = True
-
-    checklist_changes = apply_checklist_style(doc)
-    if checklist_changes > 0:
-        print(f'Applied Checklist style to {checklist_changes} item(s)')
-        made_change = True
-
-    example_block_changes = apply_example_block_styles(doc)
-    if example_block_changes > 0:
-        print(f'Applied example block styles to {example_block_changes} paragraph(s)')
-        made_change = True
-
-    spacing_changes = apply_spacing_after_lists(doc)
-    if spacing_changes > 0:
-        print(f'Applied post-list spacing to {spacing_changes} paragraph(s)')
-        made_change = True
-
-    table_style_changes = apply_table_styles(doc, reference_doc_path=reference_doc_path)
-    if table_style_changes > 0:
-        print(f'Applied table styles to {table_style_changes} table(s)')
-        made_change = True
-
-    placeholder_changes = apply_response_placeholders(doc)
-    if placeholder_changes > 0:
-        print(f'Inserted {placeholder_changes} response placeholder(s)')
-        made_change = True
-
-    if apply_semantic_labels:
-        semantic_changes = apply_semantic_styles(doc)
-        if semantic_changes > 0:
-            print(f'Applied semantic paragraph styles to {semantic_changes} item(s)')
-            made_change = True
-
-        div_label_changes = apply_semantic_div_labels(doc, reference_doc_path, tag_style)
-        if div_label_changes > 0:
-            print(f'Updated semantic Div labels in {div_label_changes} place(s)')
-            made_change = True
-
-    body_text_changes = apply_body_text_to_normal_paragraphs(doc)
-    if body_text_changes > 0:
-        print(f'Applied Body Text to {body_text_changes} normal paragraph(s)')
-        made_change = True
-
-    heading_code_changes = strip_activity_codes_from_headings(doc)
-    if heading_code_changes > 0:
-        print(f'Removed activity codes from {heading_code_changes} heading(s)')
-        made_change = True
-
-    pandoc_style_changes = remove_pandoc_generated_styles(doc)
-    if pandoc_style_changes > 0:
-        print(f'Replaced Pandoc fallback styles in {pandoc_style_changes} place(s)')
-        made_change = True
-
-    purged_style_changes = purge_styles_not_in_reference(doc, reference_doc_path)
-    if purged_style_changes > 0:
-        print(f'Removed non-reference style usage/definitions in {purged_style_changes} place(s)')
-        made_change = True
-
-    page_break_changes = apply_page_breaks_before_modules_and_units(doc)
-    if page_break_changes > 0:
-        print(f'Applied page breaks before {page_break_changes} module/unit heading(s)')
-        made_change = True
-
-    header_changes = update_running_headers(doc)
-    if header_changes > 0:
-        print(f'Updated running headers in {header_changes} place(s)')
-        made_change = True
+    run_pass('list styles', lambda: apply_list_styles(doc), 'Applied list styles to {count} paragraph(s)')
+    run_pass(
+        'strip alpha markers',
+        lambda: strip_literal_alpha_markers(doc),
+        'Removed literal alphabetic markers from {count} list paragraph(s)',
+    )
+    run_pass('checklist style', lambda: apply_checklist_style(doc), 'Applied Checklist style to {count} item(s)')
+    profiler.skip('example block styles (source-driven)')
+    run_pass(
+        'post-list spacing',
+        lambda: apply_spacing_after_lists(doc),
+        'Applied post-list spacing to {count} paragraph(s)',
+    )
+    run_pass(
+        'table styles',
+        lambda: apply_table_styles(doc, reference_doc_path=reference_doc_path),
+        'Applied table styles to {count} table(s)',
+    )
+    run_pass(
+        'response placeholders',
+        lambda: apply_response_placeholders(doc),
+        'Inserted {count} response placeholder(s)',
+    )
+    profiler.skip('semantic paragraph styles (source-driven)')
+    run_pass(
+        'semantic div labels',
+        lambda: apply_semantic_div_labels(doc, reference_doc_path, tag_style, context),
+        'Updated semantic Div labels in {count} place(s)',
+        enabled=apply_semantic_labels,
+    )
+    run_pass(
+        'body text normalization',
+        lambda: apply_body_text_to_normal_paragraphs(doc),
+        'Applied Body Text to {count} normal paragraph(s)',
+    )
+    run_pass(
+        'strip heading activity codes',
+        lambda: strip_activity_codes_from_headings(doc),
+        'Removed activity codes from {count} heading(s)',
+    )
+    run_pass(
+        'remove pandoc fallback styles',
+        lambda: remove_pandoc_generated_styles(doc),
+        'Replaced Pandoc fallback styles in {count} place(s)',
+    )
+    run_pass(
+        'purge non-reference styles',
+        lambda: purge_styles_not_in_reference(doc, reference_doc_path, context),
+        'Removed non-reference style usage/definitions in {count} place(s)',
+    )
+    run_pass(
+        'disable heading page breaks',
+        lambda: disable_heading_style_page_breaks(doc),
+        'Disabled page-break-before on {count} heading style(s)',
+    )
+    run_pass(
+        'module/unit section breaks',
+        lambda: insert_section_breaks_before_modules_and_units(doc),
+        'Inserted {count} module/unit section break(s)',
+    )
 
     if made_change:
-        tmp_fd, tmp_path = tempfile.mkstemp(suffix='.docx', dir=Path(docx_path).parent)
-        os.close(tmp_fd)
-        try:
-            doc.save(tmp_path)
-            doc = Document(tmp_path)
-            shutil.move(tmp_path, docx_path)
-        except Exception:
-            try:
-                os.unlink(tmp_path)
-            except OSError:
-                pass
-            raise
+        doc = save_and_reopen(doc, 'save/reopen after main passes')
+    else:
+        profiler.skip('save/reopen after main passes')
+
+    final_change = False
+    header_changes = run_pass(
+        'running headers',
+        lambda: update_running_headers(doc),
+        'Updated running headers in {count} place(s)',
+    )
+    if header_changes > 0:
+        final_change = True
 
     # Unit title table substitution — runs whenever reference_doc is available,
     # independent of apply_semantic_labels.
-    unit_tile_changes = replace_unit_headings_with_title_tables(
-        doc,
-        reference_doc_path=reference_doc_path,
+    unit_tile_changes = run_pass(
+        'unit title tables',
+        lambda: replace_unit_headings_with_title_tables(
+            doc,
+            reference_doc_path=reference_doc_path,
+            context=context,
+        ),
+        'Inserted {count} unit title table(s)',
     )
     if unit_tile_changes > 0:
-        doc.save(docx_path)
-        print(f'Inserted {unit_tile_changes} unit title table(s)')
-        made_change = True
-        doc = Document(docx_path)
-        restored_headings = restore_unit_overview_headings_after_unit_tiles(doc)
-        if restored_headings > 0:
-            doc.save(docx_path)
-            print(
-                f'Restored {restored_headings} Unit Overview heading(s) after unit tiles'
-            )
+        final_change = True
 
+    restored_headings = run_pass(
+        'restore unit overview headings',
+        lambda: restore_unit_overview_headings_after_unit_tiles(doc),
+        'Restored {count} Unit Overview heading(s) after unit tiles',
+        enabled=unit_tile_changes > 0,
+    )
+    if restored_headings > 0:
+        final_change = True
+
+    if final_change:
+        doc = save_and_reopen(doc, 'save/reopen final changes')
+        made_change = True
+    else:
+        profiler.skip('save/reopen final changes')
+
+    profiler.summary()
     return made_change
 
 
@@ -2501,6 +2823,17 @@ def _build_parser() -> argparse.ArgumentParser:
         default=DIV_TAG_ICON_STYLE,
         help='Which tag icon variant to insert before Div label text (default: filled).',
     )
+    parser.add_argument(
+        '--profile',
+        action='store_true',
+        help='Print timing information for each DOCX postprocess pass and save/reopen step.',
+    )
+    parser.add_argument(
+        '--progress-warn-seconds',
+        type=float,
+        default=30.0,
+        help='Print a warning when a postprocess pass runs longer than this many seconds (default: 30; use 0 to disable warnings).',
+    )
     return parser
 
 
@@ -2516,6 +2849,9 @@ def main(argv: list[str] | None = None) -> int:
         apply_semantic_labels=args.apply_semantic_labels,
         building_block_template=args.building_block_template,
         tag_style=args.tag_style,
+        profile=args.profile,
+        progress=True,
+        progress_warn_seconds=args.progress_warn_seconds,
     )
 
     if did_update:

@@ -148,10 +148,30 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Status: `active`
 - Scope: project/tooling
 - Decision: `apply_response_placeholders()` now honors explicit marker payloads such as `{{PH-1: id | rows=5}}`; `rows=N` overrides the PH fallback row count and is not treated as part of the display label.
-- Decision: when a response placeholder follows a numbered/bulleted/checklist list, the postprocessor normalizes the whole contiguous preceding list run so list numbers sit at the left margin and list text uses a hanging indent at 357 twips. The placeholder table left border aligns to that list text indent and the table width is absolute, extending to the right margin.
+- Decision: when a response placeholder follows a numbered list item in Case 1, the postprocessor normalizes that item so the list number sits at the left margin and the list text uses a hanging indent at 357 twips. The placeholder table left border aligns to that list text indent and the table width is absolute, extending to the right margin.
 - Update: the list-indent/table-indent rule applies only to Case 1, where each list item is followed by its own placeholder. Case 2, where one placeholder follows a complete multi-item list, keeps the list and table in their normal positions.
+- Update: bullet lists and checklist lists are excluded from the special Case 1 placeholder-alignment rule. Pandoc/Word may assign separate numbering IDs to checklist rows, which can make the final checkbox look like a one-item list; forcing the Case 1 indent on that final checkbox causes visible misalignment.
 - Decision: `docx-to-pdf` no longer delegates to `docx2pdf.SaveAs(FileFormat=17)`. It uses Word COM `ExportAsFixedFormat`, matching Word's manual Export path more closely after the automated PDF showed list-numbering restarts that were not present in the DOCX or a manual Word-exported PDF.
 - Preferred behavior: for print-readiness validation, treat DOCX numbering as source of truth first. If a generated PDF shows list numbering that differs from the DOCX and manual Word Export, debug the PDF export path before changing manuscript source.
+
+## 2026-06-02 - Section-Based Running Headers Replace Hidden Heading Anchors
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: running headers should not depend on hidden `Heading 2` paragraphs kept only for `STYLEREF`. Hidden heading anchors interact badly with `Heading 2` styles that have `pageBreakBefore`, causing blank pages before units.
+- Implementation: `postprocess_docx.py` now removes `pageBreakBefore` from generated Heading 1/2 styles, inserts real section breaks before module/unit boundaries, writes literal module/unit header text into each section header, and removes the original Unit Heading 2 paragraph after inserting the unit title table.
+- Validation: targeted DOCX test produced separate module/unit sections, no hidden body paragraphs, no remaining Heading 2 body anchors after unit-title replacement, no direct heading page breaks, and literal module/unit text in section headers.
+- Preferred behavior: use section context for running headers. Do not reintroduce hidden heading text as a header anchor unless section-based headers are proven impossible.
+
+## 2026-06-02 - DOCX Conversion Profiling And Source-Driven Div Content Styles
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: `markdown-to-docx` and `postprocess-docx` now emit routine `[progress]` start/end logs, watchdog `[warn]` messages for long stages, and optional `[profile]` timing summaries. Use `--progress-warn-seconds N` to tune warning cadence.
+- Decision: example/model paragraph styling must be driven by explicit Markdown div classification. `style_bridge.lua` supports `div_content_style_map` in YAML front matter so `example`, `example-good`, and `example-bad` content can receive `AW Example`, `AW Example Good`, and `AW Example Bad` during Pandoc conversion.
+- Decision: phrase/quotation-based semantic style inference is retired for the INT source-driven path. `apply_example_block_styles` and the old semantic paragraph style inference are skipped in the postprocess pipeline; do not reintroduce model styling based only on text such as `Original Version`, quotation marks, or incidental Word quote styles.
+- Performance note: measured INT temp DOCX conversion improved from ~258s total to ~117s total after adding source-driven example styles, skipping heuristic semantic passes, optimizing list-spacing traversal, and converting body-text normalization to direct XML style assignment.
+- Preferred behavior: if content needs a semantic style, add the correct div class and `div_content_style_map` entry in source front matter instead of adding another postprocessor guess.
 
 ## Roadmap From README
 
