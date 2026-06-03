@@ -339,7 +339,86 @@ class PostprocessContext:
         return None
 
 
-def _insert_section_break_before_paragraph(paragraph, restart_numbering=False, start_page=1):
+def _copy_page_layout_and_footers(source_sect, target_sect, *, copy_footers=False):
+    """Copy stable section properties needed by generated section breaks.
+
+    Pandoc/reference DOCX output usually keeps page-number fields in footer
+    parts referenced from the document-level ``sectPr``. New section breaks
+    need their own footer references after the postprocessor unlinks and
+    rewrites headers section-by-section; otherwise Word can treat later
+    sections as having no active footer and page numbers disappear.
+    """
+    if source_sect is None:
+        return
+    if copy_footers:
+        insert_at = 0
+        for ref in source_sect.findall(qn('w:footerReference')):
+            ref_type = ref.get(qn('w:type'))
+            # Do not propagate a first-page footer unless titlePg is also
+            # deliberately copied. In this book the first footer is used to
+            # suppress page numbers on front/TOC pages; copying it into every
+            # generated section would hide first-page numbers throughout.
+            if ref_type == 'first':
+                continue
+            target_sect.insert(insert_at, copy.deepcopy(ref))
+            insert_at += 1
+    for tag in (qn('w:pgSz'), qn('w:pgMar')):
+        el = source_sect.find(tag)
+        if el is not None:
+            target_sect.append(copy.deepcopy(el))
+
+
+def ensure_section_footer_references(doc, *, skip_first_section=False) -> int:
+    """Ensure generated sections retain normal odd/even footer page numbers.
+
+    Re-running the postprocessor or un-linking headers can leave many section
+    properties with explicit header references but no footer references. Word
+    then renders those sections without the reference footer PAGE field. This
+    pass backfills the document's normal odd/even footer references into any
+    section that lacks them.
+    """
+    body = doc.element.body
+    sect_prs = list(body.findall('.//' + qn('w:sectPr')))
+    if not sect_prs:
+        return 0
+
+    template_refs = []
+    for sect_pr in reversed(sect_prs):
+        refs = [
+            ref for ref in sect_pr.findall(qn('w:footerReference'))
+            if ref.get(qn('w:type')) in {'default', 'even'}
+        ]
+        if refs:
+            template_refs = refs
+            break
+    if not template_refs:
+        return 0
+
+    changed = 0
+    start_index = 1 if skip_first_section else 0
+    for sect_pr in sect_prs[start_index:]:
+        existing_types = {
+            ref.get(qn('w:type'))
+            for ref in sect_pr.findall(qn('w:footerReference'))
+        }
+        insert_at = 0
+        for ref in template_refs:
+            ref_type = ref.get(qn('w:type'))
+            if ref_type in existing_types:
+                continue
+            sect_pr.insert(insert_at, copy.deepcopy(ref))
+            insert_at += 1
+            existing_types.add(ref_type)
+            changed += 1
+    return changed
+
+
+def _insert_section_break_before_paragraph(
+    paragraph,
+    restart_numbering=False,
+    start_page=1,
+    copy_footers=True,
+):
     """
     Insert a nextPage section break BEFORE a paragraph by attaching sectPr
     to the PREVIOUS paragraph (that's how Word section breaks work).
@@ -386,20 +465,17 @@ def _insert_section_break_before_paragraph(paragraph, restart_numbering=False, s
         pg_num_type.set(qn('w:start'), str(start_page))
         sect_pr.append(pg_num_type)
 
-    # Copy page size and margins from document-level sectPr so inserted
-    # section inherits the correct paper size instead of defaulting to Letter.
+    # Copy page size/margins and normal footer references from document-level
+    # sectPr so inserted sections inherit the correct paper size and page
+    # numbering instead of defaulting to a footerless section.
     doc_sect = doc_element.find(qn('w:sectPr')) if doc_element is not None else None
-    if doc_sect is not None:
-        for tag in (qn('w:pgSz'), qn('w:pgMar')):
-            el = doc_sect.find(tag)
-            if el is not None:
-                sect_pr.append(copy.deepcopy(el))
+    _copy_page_layout_and_footers(doc_sect, sect_pr, copy_footers=copy_footers)
 
     p_pr.append(sect_pr)
     return True
 
 
-def _apply_next_page_section_to_paragraph(paragraph, start_page=None):
+def _apply_next_page_section_to_paragraph(paragraph, start_page=None, copy_footers=False):
     """Attach a nextPage sectPr (and optional page-number restart) to an existing paragraph.
 
     Copies w:pgSz and w:pgMar from the document's main sectPr so the inserted
@@ -421,14 +497,13 @@ def _apply_next_page_section_to_paragraph(paragraph, start_page=None):
     type_el.set(qn('w:val'), 'nextPage')
     sect_pr.append(type_el)
 
-    # Copy page size and margins from the document-level sectPr
+    # Copy page size and margins from the document-level sectPr. Footer
+    # references are intentionally optional because the TOC/front-matter
+    # section may need page numbers suppressed without mutating the shared
+    # body footer parts.
     body = paragraph._p.getparent()
     doc_sect = body.find(qn('w:sectPr')) if body is not None else None
-    if doc_sect is not None:
-        for tag in (qn('w:pgSz'), qn('w:pgMar')):
-            el = doc_sect.find(tag)
-            if el is not None:
-                sect_pr.append(copy.deepcopy(el))
+    _copy_page_layout_and_footers(doc_sect, sect_pr, copy_footers=copy_footers)
 
     if start_page is not None:
         pg_num_type = OxmlElement('w:pgNumType')
@@ -2093,6 +2168,152 @@ def apply_example_block_styles(doc) -> int:
     return changed
 
 
+EXAMPLE_CONTENT_STYLE_NAMES = frozenset({
+    'AW Example',
+    'AW Example Good',
+    'AW Example Bad',
+    # Pandoc/reference DOCX block quotes can remain standard Block Text when
+    # the source has not mapped them to an AW Example style. Treat them as the
+    # same kind of boxed/quoted content for follow-on spacing only.
+    'Block Text',
+})
+
+EXAMPLE_CONTENT_STYLE_IDS = frozenset({
+    'AWExample',
+    'AWExampleGood',
+    'AWExampleBad',
+    'BlockText',
+})
+
+BODY_LIKE_STYLE_NAMES = frozenset({
+    'Normal',
+    'Body Text',
+    'After List',
+})
+
+
+def _is_example_content_paragraph(paragraph) -> bool:
+    style_name = _paragraph_style_name(paragraph)
+    style_id = _paragraph_style_id(paragraph)
+    return style_name in EXAMPLE_CONTENT_STYLE_NAMES or style_id in EXAMPLE_CONTENT_STYLE_IDS
+
+
+def _spacing_before_twips_from_ppr(p_pr) -> int | None:
+    if p_pr is None:
+        return None
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        return None
+    before = spacing.get(qn('w:before'))
+    if before is None:
+        return None
+    try:
+        return int(before)
+    except ValueError:
+        return None
+
+
+def _style_spacing_before_twips(style) -> int | None:
+    """Return the nearest explicit style-level space-before value in twips."""
+    seen = set()
+    current = style
+    while current is not None:
+        style_id = getattr(current, 'style_id', None)
+        if style_id in seen:
+            break
+        if style_id is not None:
+            seen.add(style_id)
+        p_pr = current.element.find(qn('w:pPr')) if current.element is not None else None
+        value = _spacing_before_twips_from_ppr(p_pr)
+        if value is not None:
+            return value
+        current = getattr(current, 'base_style', None)
+    return None
+
+
+def _paragraph_direct_spacing_before_twips(paragraph) -> int | None:
+    p_pr = paragraph._p.find(qn('w:pPr'))
+    return _spacing_before_twips_from_ppr(p_pr)
+
+
+def _paragraph_effective_spacing_before_twips(paragraph) -> int | None:
+    direct = _paragraph_direct_spacing_before_twips(paragraph)
+    if direct is not None:
+        return direct
+    style = paragraph.style
+    if style is None:
+        return None
+    return _style_spacing_before_twips(style)
+
+
+def _set_paragraph_spacing_before_twips(paragraph, before_twips: int) -> None:
+    p_pr = paragraph._p.find(qn('w:pPr'))
+    if p_pr is None:
+        p_pr = OxmlElement('w:pPr')
+        paragraph._p.insert(0, p_pr)
+    spacing = p_pr.find(qn('w:spacing'))
+    if spacing is None:
+        spacing = OxmlElement('w:spacing')
+        p_pr.append(spacing)
+    spacing.set(qn('w:before'), str(before_twips))
+
+
+def _is_example_following_spacing_candidate(paragraph) -> bool:
+    if _is_heading(paragraph) or _is_list_paragraph(paragraph):
+        return False
+    style_id = _paragraph_style_id(paragraph)
+    if style_id and style_id.startswith('DivLabel'):
+        return False
+    if _is_example_content_paragraph(paragraph):
+        return False
+    style_name = _paragraph_style_name(paragraph)
+    if style_name in BODY_LIKE_STYLE_NAMES:
+        return True
+    # Some source titles, prompts, or fallback styles are still ordinary prose.
+    # They can receive spacing if their own style does not already specify a
+    # larger gap; semantic labels and headings are excluded above.
+    return not style_name.startswith(('Heading', 'List ', 'Checklist'))
+
+
+def apply_spacing_after_example_blocks(doc, space_before_twips: int = 120) -> int:
+    """Add a small gap before body prose that follows an example block.
+
+    The example content itself may render as bordered paragraphs or table-like
+    boxes, so paragraph space-after on AW Example styles is not reliable. Apply
+    direct space-before to the first following prose paragraph instead, while
+    preserving headings and any style/direct formatting that already creates a
+    larger gap.
+    """
+    paragraphs = list(doc.paragraphs)
+    changed = 0
+    after_example = False
+
+    for para in paragraphs:
+        text = _normalize_text(para.text)
+        if not text:
+            continue
+
+        if _is_example_content_paragraph(para):
+            after_example = True
+            continue
+
+        if not after_example:
+            continue
+
+        after_example = False
+        if not _is_example_following_spacing_candidate(para):
+            continue
+
+        existing = _paragraph_effective_spacing_before_twips(para)
+        if existing is not None and existing >= space_before_twips:
+            continue
+
+        _set_paragraph_spacing_before_twips(para, space_before_twips)
+        changed += 1
+
+    return changed
+
+
 def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
     """Add space-after to the last list paragraph in each list run.
 
@@ -2713,6 +2934,11 @@ def insert_section_after_toc(
         'Applied Body Text to {count} normal paragraph(s)',
     )
     run_pass(
+        'post-example spacing',
+        lambda: apply_spacing_after_example_blocks(doc),
+        'Applied post-example spacing to {count} paragraph(s)',
+    )
+    run_pass(
         'strip heading activity codes',
         lambda: strip_activity_codes_from_headings(doc),
         'Removed activity codes from {count} heading(s)',
@@ -2750,6 +2976,14 @@ def insert_section_after_toc(
         'Updated running headers in {count} place(s)',
     )
     if header_changes > 0:
+        final_change = True
+
+    footer_changes = run_pass(
+        'section footer references',
+        lambda: ensure_section_footer_references(doc, skip_first_section=has_toc),
+        'Restored section footer references in {count} place(s)',
+    )
+    if footer_changes > 0:
         final_change = True
 
     # Unit title table substitution — runs whenever reference_doc is available,
