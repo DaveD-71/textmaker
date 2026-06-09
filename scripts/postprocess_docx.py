@@ -92,6 +92,7 @@ WORD_COUNT_RE = re.compile(
     r'\b(?:approximately|about|around)?\s*\d+\s*(?:[-\u2013\u2014]\s*\d+)?\s*words?\b',
     re.IGNORECASE,
 )
+NO_TITLE_MARKER_RE = re.compile(r'^\s*no\s+title\s*$', re.IGNORECASE)
 UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+)(.+)$')
 MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$', re.IGNORECASE)
 MODULE_REVIEW_HEADING_RE = re.compile(r'^Module\s+\d+\s+Review\s+Workshop$', re.IGNORECASE)
@@ -2075,6 +2076,10 @@ def apply_example_block_styles(doc) -> int:
     Closing-quote rule: a paragraph whose text ends with " or " signals the end of
     the quoted example body. Anything after it (lists, task instructions) is not part
     of the example and should not receive example formatting.
+
+    Hidden-label rule: if the DivLabelExample* paragraph text is exactly `No Title`,
+    treat it as a control marker only. Remove that label paragraph from the document,
+    but keep the neutral/good/bad example style active for the following content.
     """
     good_style = _get_style_by_name_or_id(doc.styles, 'AW Example Good')
     bad_style = _get_style_by_name_or_id(doc.styles, 'AW Example Bad')
@@ -2096,21 +2101,31 @@ def apply_example_block_styles(doc) -> int:
 
     for para in paragraphs:
         style_id = _paragraph_style_id(para)
+        text = _normalize_text(para.text)
 
         if style_id == 'DivLabelExampleGood':
             target_style = good_style
             _after_closing_quote = False
             _seen_italic = False
+            if NO_TITLE_MARKER_RE.match(text):
+                para._element.getparent().remove(para._element)
+                changed += 1
             continue
         if style_id == 'DivLabelExampleBad':
             target_style = bad_style
             _after_closing_quote = False
             _seen_italic = False
+            if NO_TITLE_MARKER_RE.match(text):
+                para._element.getparent().remove(para._element)
+                changed += 1
             continue
         if style_id == 'DivLabelExample':
             target_style = neutral_style
             _after_closing_quote = False
             _seen_italic = False
+            if NO_TITLE_MARKER_RE.match(text):
+                para._element.getparent().remove(para._element)
+                changed += 1
             continue
 
         if target_style is None:
@@ -2123,7 +2138,6 @@ def apply_example_block_styles(doc) -> int:
             continue
 
         style_name = getattr(para.style, 'name', '') if para.style else ''
-        text = _normalize_text(para.text)
 
         if not text:
             # Empty paragraph — skip without stopping

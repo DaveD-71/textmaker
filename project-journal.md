@@ -533,3 +533,10 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Action: extended alphabetic marker detection/stripping from `A.` only to both `A.` and `A)`, and updated list detection so `Checklist` style paragraphs count as list paragraphs for spacing and placeholder policy checks.
 - Verification: targeted temporary Markdown-to-DOCX probe showed `list styles`, `post-list spacing`, and `response placeholders` passes running with changed counts; `python -m compileall scripts` and `pytest -q` passed.
 - Note: the probe also showed that Pandoc's DOCX writer can strip `- [ ]` checkbox markers before postprocess, leaving plain bullet paragraphs; true source-preserved checkbox styling needs an earlier pipeline marker rather than Word-stage guessing.
+
+## 2026-06-09 - Hidden `No Title` Marker For Example Divs
+
+- Scope: `scripts/postprocess_docx.py`.
+- Trigger: Dave wanted neutral/good/bad example blocks to keep their semantic example styling while allowing selected visible example titles to be suppressed when redundant.
+- Action: added `NO_TITLE_MARKER_RE` and updated `apply_example_block_styles()` so a `DivLabelExample`, `DivLabelExampleGood`, or `DivLabelExampleBad` paragraph containing exactly `No Title` is removed from the DOCX output but still activates the following example-content styling.
+- Verification: `python -m py_compile scripts/postprocess_docx.py` passed.

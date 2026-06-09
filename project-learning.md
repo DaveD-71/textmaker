@@ -182,6 +182,13 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Validation: targeted temporary DOCX probe confirmed `list styles`, `post-list spacing`, and `response placeholders` passes still run after the profiling/source-driven refactor; repo tests passed afterward.
 - Constraint: Pandoc DOCX output may strip `- [ ]` task-list checkbox markers before postprocessing, leaving ordinary bullet paragraphs. Do not rely on postprocess-only text inspection to recover checkbox intent; preserve checkbox intent earlier in the pipeline if true `Checklist` styling is required beyond contextual edit-div inference.
 
+## 2026-06-09 - Hidden Example Label Marker
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: example divs may use a visible label paragraph containing exactly `No Title` as a hidden control marker. `apply_example_block_styles()` removes that `DivLabelExample*` paragraph from the DOCX output while preserving the active `AW Example` / `AW Example Good` / `AW Example Bad` styling state for the following example content.
+- Preferred behavior: use `No Title` only for neutral/good/bad example divs where the example formatting should remain but the visible label is redundant. Do not rely on blank-line count in Markdown as a control signal; Pandoc does not preserve it at the block-structure level needed here.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.
