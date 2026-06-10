@@ -540,3 +540,10 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Trigger: Dave wanted neutral/good/bad example blocks to keep their semantic example styling while allowing selected visible example titles to be suppressed when redundant.
 - Action: added `NO_TITLE_MARKER_RE` and updated `apply_example_block_styles()` so a `DivLabelExample`, `DivLabelExampleGood`, or `DivLabelExampleBad` paragraph containing exactly `No Title` is removed from the DOCX output but still activates the following example-content styling.
 - Verification: `python -m py_compile scripts/postprocess_docx.py` passed.
+
+## 2026-06-10 - `No Title` Regression Fix For Source-Driven Pipeline
+
+- Scope: `scripts/postprocess_docx.py`.
+- Trigger: Dave reported that all `No Title` labels were still visible in DOCX output. Diagnosis showed the suppression logic existed only inside `apply_example_block_styles()`, but that pass is intentionally skipped in the source-driven INT pipeline.
+- Action: added a separate active `strip_hidden_example_labels()` pass and wired it into the main postprocess pipeline immediately after the skipped heuristic note. The new pass removes `DivLabelExample*` paragraphs whose text is exactly `No Title` while leaving source-driven `AW Example*` content styling untouched.
+- Verification: `python -m py_compile scripts/postprocess_docx.py` passed.

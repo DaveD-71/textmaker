@@ -2182,6 +2182,24 @@ def apply_example_block_styles(doc) -> int:
     return changed
 
 
+def strip_hidden_example_labels(doc) -> int:
+    """Remove `No Title` example labels while preserving source-driven example styling."""
+    changed = 0
+    for para in list(doc.paragraphs):
+        style_id = _paragraph_style_id(para)
+        if style_id not in {'DivLabelExample', 'DivLabelExampleGood', 'DivLabelExampleBad'}:
+            continue
+        text = _normalize_text(para.text)
+        if not NO_TITLE_MARKER_RE.match(text):
+            continue
+        parent = para._element.getparent()
+        if parent is None:
+            continue
+        parent.remove(para._element)
+        changed += 1
+    return changed
+
+
 EXAMPLE_CONTENT_STYLE_NAMES = frozenset({
     'AW Example',
     'AW Example Good',
@@ -2920,6 +2938,11 @@ def insert_section_after_toc(
     )
     run_pass('checklist style', lambda: apply_checklist_style(doc), 'Applied Checklist style to {count} item(s)')
     profiler.skip('example block styles (source-driven)')
+    run_pass(
+        'hidden example labels',
+        lambda: strip_hidden_example_labels(doc),
+        'Removed {count} hidden example label paragraph(s)',
+    )
     run_pass(
         'post-list spacing',
         lambda: apply_spacing_after_lists(doc),

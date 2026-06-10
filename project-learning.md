@@ -189,6 +189,14 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Decision: example divs may use a visible label paragraph containing exactly `No Title` as a hidden control marker. `apply_example_block_styles()` removes that `DivLabelExample*` paragraph from the DOCX output while preserving the active `AW Example` / `AW Example Good` / `AW Example Bad` styling state for the following example content.
 - Preferred behavior: use `No Title` only for neutral/good/bad example divs where the example formatting should remain but the visible label is redundant. Do not rely on blank-line count in Markdown as a control signal; Pandoc does not preserve it at the block-structure level needed here.
 
+## 2026-06-10 - Hidden Example Label Pass Moved Out Of Skipped Heuristic Path
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: in the source-driven INT pipeline, `apply_example_block_styles()` remains intentionally skipped, so `No Title` suppression must not live only inside that function.
+- Implementation: added a separate active `strip_hidden_example_labels()` pass in `postprocess_docx.py`. It removes `DivLabelExample`, `DivLabelExampleGood`, and `DivLabelExampleBad` paragraphs whose normalized text is exactly `No Title`, without re-enabling the retired heuristic example-styling pass.
+- Preferred behavior: keep example body styling source-driven via div classification and `div_content_style_map`; use the dedicated hidden-label pass only to suppress redundant visible labels.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.
