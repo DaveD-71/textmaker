@@ -1462,6 +1462,20 @@ def _set_header_text(header, text: str) -> bool:
     return changed
 
 
+def _set_header_alignment(header, alignment) -> bool:
+    target = None
+    for paragraph in header.paragraphs:
+        if _normalize_text(paragraph.text):
+            target = paragraph
+            break
+    if target is None:
+        target = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+    if target.alignment == alignment:
+        return False
+    target.alignment = alignment
+    return True
+
+
 def _set_header_styleref(header, style_name: str = 'Heading 2') -> bool:
     target = None
     for paragraph in header.paragraphs:
@@ -1516,6 +1530,9 @@ def update_running_headers(doc) -> int:
     if not contexts:
         return 0
 
+    if hasattr(doc.settings, 'odd_and_even_pages_header_footer'):
+        doc.settings.odd_and_even_pages_header_footer = True
+
     changed = 0
     for idx, section in enumerate(doc.sections):
         module_title, unit_title = contexts[min(idx, len(contexts) - 1)]
@@ -1527,9 +1544,15 @@ def update_running_headers(doc) -> int:
         section.first_page_header.is_linked_to_previous = False
         if _set_header_text(section.header, odd_header):
             changed += 1
+        if _set_header_alignment(section.header, WD_ALIGN_PARAGRAPH.RIGHT):
+            changed += 1
         if _set_header_text(section.first_page_header, odd_header):
             changed += 1
+        if _set_header_alignment(section.first_page_header, WD_ALIGN_PARAGRAPH.RIGHT):
+            changed += 1
         if _set_header_text(section.even_page_header, even_header):
+            changed += 1
+        if _set_header_alignment(section.even_page_header, WD_ALIGN_PARAGRAPH.LEFT):
             changed += 1
     return changed
 
