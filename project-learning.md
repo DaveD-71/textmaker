@@ -197,6 +197,14 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Implementation: added a separate active `strip_hidden_example_labels()` pass in `postprocess_docx.py`. It removes `DivLabelExample`, `DivLabelExampleGood`, and `DivLabelExampleBad` paragraphs whose normalized text is exactly `No Title`, without re-enabling the retired heuristic example-styling pass.
 - Preferred behavior: keep example body styling source-driven via div classification and `div_content_style_map`; use the dedicated hidden-label pass only to suppress redundant visible labels.
 
+## 2026-06-19 - PPTX Generation Requires Source-Verified Object Construction
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: before making non-trivial PPTX edits, especially for animation-ready objects, research and confirm the correct PowerPoint/PptxGenJS construction method from official docs, local library source, or a minimal generated-file probe.
+- Lesson: avoid quick visual fixes that create the wrong PowerPoint object model. For example, a tag that must animate as one object should be created as a single text-bearing shape with `slide.addText("label", { shape: pptx.ShapeType.roundRect, ... })`, not as `addShape()` plus a separate overlaid `addText()`.
+- Preferred behavior: validate generated PPTX files by opening/exporting with PowerPoint COM when Office compatibility matters, and inspect the generated XML or object count when object structure matters for animation/editing.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

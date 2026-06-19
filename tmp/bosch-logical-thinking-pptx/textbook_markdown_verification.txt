@@ -1,0 +1,29 @@
+PDF pages: 28
+PDF chars: 33414 / Markdown chars: 38531
+Normalized similarity: 0.6932
+
+Heading presence:
+- An Introduction to Logical Speaking: pdf=True; md=True
+- Expressing Your Opinion: pdf=True; md=True
+- Reasoning 1: pdf=True; md=True
+- Reasoning 2: pdf=True; md=True
+- Supporting Evidence 1: pdf=True; md=True
+- Supporting Evidence 2: pdf=True; md=True
+- Argument Model 1: PBSR: pdf=True; md=True
+- Writing an Argument 1: pdf=True; md=True
+- Argument Model 2: PCAF: pdf=True; md=True
+- Writing an Argument 2: pdf=True; md=True
+- A Business Meeting 1: pdf=True; md=True
+- A Business Meeting 2: pdf=True; md=True
+- Language Bank: pdf=True; md=True
+
+Key phrase presence:
+- Logical speaking is the combination of two things: pdf=True; md=True
+- Opinion is defined in the Oxford Learner: pdf=True; md=True
+- Logical reasoning makes clear and strong connections: pdf=True; md=True
+- The information you share in your argument must be presented in a logical order: pdf=True; md=True
+- Evidence is the information which causes us to believe something is true: pdf=True; md=True
+- Facts vs. Fake News: pdf=True; md=True
+- Problem-Background-Solution-Result: pdf=True; md=True
+- Point-Counterpoint-Against-For: pdf=True; md=True
+- Were you able to clearly share your opinion: pdf=True; md=True
