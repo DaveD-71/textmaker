@@ -1,0 +1,24 @@
+
+
+===== PAGE 1 =====
+ 
+Mini Logic Puzzle Answer Key  
+(Instructor Only — delete this section before sending it to students) 
+ 
+Aiko — R&D — Chat 
+Ben — Purchasing — Email 
+Carlos — Manufacturing — Face-to-face 
+Dita — Sales — Call 
+ 
+Explanation of Solution 
+1. From Clue 3, Ben is in Purchasing. 
+2. Clue 7 says the Sales colleague prefers Call. 
+3. Clue 6 says Dita is not in R&D, so Dita must be in Sales (since Sales is still open). 
+Thus, Dita → Sales → Call. 
+4. Clue 2 says the R&D colleague prefers Chat. Clue 1 says Aiko doesn’t work in Sales 
+and doesn’t prefer Call, leaving R&D–Chat as Aiko’s match. 
+5. The Manufacturing colleague isn’t Aiko (Clue 5) and Sales is already taken, so Carlos 
+must be Manufacturing. Clue 4 confirms Carlos prefers Face-to-face. 
+6. That leaves Ben, who must therefore use Email (the only remaining style). 
+7. The final matches are therefore: Aiko – R&D – Chat; Ben – Purchasing – Email; Carlos – 
+Manufacturing – Face-to-face; Dita – Sales – Call. 

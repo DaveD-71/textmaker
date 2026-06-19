@@ -1,0 +1,232 @@
+
+
+===== PAGE 1 =====
+Balancing Automation and Workforce Retention 
+Introduction: Understanding the Issue 
+Japan is facing one of the tightest labor markets in its modern history. Unemployment is 
+around 2.6%, and there are about 1.25 jobs available for every job seeker. Many 
+manufacturing companies—including Bosch and its suppliers—are struggling to find enough 
+qualified workers to meet production needs. At the same time, automation and AI 
+technologies are becoming more affordable and more widely used across the country. 
+Robots are already common in the automotive and electronics industries, but the pace of 
+digital transformation varies greatly between companies and plants. 
+For Bosch, this situation creates a difficult balance. On one hand, increasing automation 
+could solve many labor and productivity problems. On the other hand, relying too heavily on 
+machines might increase costs, reduce employee motivation, or harm the company’s 
+reputation for human-centered innovation. Some divisions believe that hiring and developing 
+more staff will maintain quality and morale, while others argue that faster automation is the 
+only way to stay competitive in Japan’s shrinking workforce environment. 
+You need to decide a future plan for your organisation regarding automation and staffing. 
+ 
+Meeting procedure 
+Stage 1: 
+1. Put students into 3 groups: Pro-automation, pro-staffing, and a hybrid approach.  
+2. Give the pro-automation group Information Sheet A: Automation in Japan. Give the 
+pro-staff group Information Sheet B: Hiring and Labor Shortages in Japan: Give the 
+hybrid group both information sheets.  
+3. Get them to create their own PBSR argument supporting their preferred approach. If 
+they cannot create an argument, show them the two ideas below to help elicit their 
+own idea, or let them choose one of the arguments. 
+Stage 2:  
+1. In a large group meeting, each group presents their PBSR argument.  
+2. A winning approach is chosen with reasons given. 
+3. In a debrief session, feedback is focused on the strengths and weaknesses of the 
+arguments presented. 
+ 
+ 
+
+
+===== PAGE 2 =====
+Balancing Automation and Workforce Retention 
+Information Sheet A: Automation in Japan 
+Robots and factory automation  
+• 
+Japan is one of the most automated countries in the world. There are about 435,000 
+industrial robots working in Japanese factories. This number grew by 5% in one year. 
+• 
+ In 2023, about 46,000 new robots were installed. This is the second highest number 
+in the world after China. Most of these robots are used in electronics, car 
+manufacturing, and machinery. 
+• 
+There are about 419 robots for every 10,000 workers in Japan’s manufacturing 
+industry. This puts Japan in 5th place globally, after South Korea, Singapore, China, 
+and Germany. 
+• 
+In the car industry, the number is even higher — about 1,500 robots per 10,000 
+workers, which is the 4th highest in the world. 
+Artificial Intelligence (AI) and Smart Factories 
+• 
+A 2024 survey showed that about 1 in 4 companies in Japan already use AI. Another 1 
+in 3 plan to use it soon. 
+• 
+The main reasons for using AI are labor shortages and the need to reduce costs. 
+• 
+However, many companies still hesitate because of high costs, lack of skills, and 
+employee worries about AI. 
+• 
+The use of generative AI (for example, ChatGPT-type tools) is growing quickly — from 
+33% of workers in 2024 to 42% in 2025. 
+What this means for Bosch 
+• 
+Japan already uses a lot of automation, especially in electronics and automotive 
+industries. 
+• 
+There is still room to add more automation, but companies need to train employees 
+and help them adjust to new systems. 
+ 
+ 
+
+
+===== PAGE 3 =====
+Balancing Automation and Workforce Retention 
+Information Sheet B: Hiring and Labor Shortages in Japan  
+Key statistics 
+• 
+Japan’s unemployment rate is only 2.6%, which means almost everyone who wants a 
+job has one. 
+• 
+For every job seeker, there are about 1.25 open positions, so companies compete 
+hard to find people. 
+Worker shortages and business impact 
+• 
+About two-thirds of Japanese companies say they are seriously affected by not having 
+enough workers. 
+• 
+In 2024, 342 companies went bankrupt because they couldn’t find enough staff. This 
+was the highest number ever recorded. 
+• 
+The total number of company bankruptcies is expected to go over 10,000 in 2024, the 
+highest level in more than ten years. 
+How companies are coping 
+• 
+Most companies allow employees to work until age 65, but only about 30% keep 
+employees longer than that. 
+• 
+The Specified Skilled Worker (SSW) visa program is expanding. It lets foreign workers 
+fill jobs in industries like construction, manufacturing, and care services. 
+• 
+The OECD says Japan’s job market is very tight, and foreign workers will play a growing 
+role in the future. 
+What this means for Bosch 
+• 
+It is very difficult to hire in Japan now because there are more jobs than workers. 
+• 
+Bosch may need a balanced approach: increase automation, retrain current staff, 
+keep older workers longer, and hire skilled foreign employees when possible. 
+• 
+The company should also watch its suppliers, since smaller firms might fail if they 
+can’t find enough workers. 
+ 
+
+
+===== PAGE 4 =====
+Balancing Automation and Workforce Retention 
+Pro-Automation 1: Cost and Efficiency Focus 
+Problem 
+Rising labor costs and staff shortages are slowing production and 
+increasing expenses. 
+Background 
+Japan’s job market is extremely tight, with only 2.6% 
+unemployment and 1.25 jobs per applicant. Recruiting takes 
+longer, and some suppliers cannot fill critical roles. 
+Solution 
+Introduce more robots and AI systems in repetitive tasks such as 
+inspection, packaging, and logistics. This reduces dependency 
+on human labor for routine work. 
+Result 
+Production speed and consistency improve. The company lowers 
+long-term labor costs and becomes less vulnerable to labor 
+shortages, though short-term training costs increase. 
+ 
+Pro-Automation 2: Quality and Innovation Focus 
+Problem 
+Product quality and delivery schedules are inconsistent because 
+of human error and low workforce availability. 
+Background 
+Automation technologies such as smart sensors and AI-based 
+quality control are becoming more affordable and reliable. 
+Competitors are already using them. 
+Solution 
+Expand automation to focus on quality control and data analysis, 
+allowing faster detection of defects and smarter decision-
+making. 
+Result 
+Fewer quality problems, faster decision-making, and improved 
+competitiveness in high-precision markets like automotive parts 
+and electronics. 
+ 
+ 
+
+
+===== PAGE 5 =====
+Balancing Automation and Workforce Retention 
+Pro-Staffing 1: Human Expertise Focus 
+Problem 
+Automation can handle routine work but not creative or 
+judgment-based decisions that rely on human experience. 
+Background 
+Bosch’s reputation for reliability and innovation depends on 
+skilled engineers and technicians who can adapt quickly to 
+change. 
+Solution 
+Invest in recruiting and developing highly skilled workers. Offer 
+better career paths, training, and flexible work systems to attract 
+younger workers and retain older ones. 
+Result 
+A stronger and more loyal workforce improves innovation, 
+problem-solving, and company culture. Employee satisfaction 
+and retention increase. 
+ 
+Pro-Staffing 2: Customer Relationship Focus 
+Problem 
+Automation reduces human interaction, which can hurt 
+customer relationships and service quality. 
+Background 
+Japanese customers often value personal trust and direct 
+communication more than low cost or speed. 
+Solution 
+Increase hiring in customer-facing departments and invest in 
+relationship-based sales and service teams. Provide 
+communication training to strengthen client trust. 
+Result 
+Bosch maintains a strong human connection with clients, 
+protecting its brand image and ensuring long-term partnerships 
+despite rising automation elsewhere. 
+ 
+ 
+
+
+===== PAGE 6 =====
+Balancing Automation and Workforce Retention 
+Hybrid 1: Smart Automation with Human Oversight 
+Problem 
+Labor shortages limit productivity, but full automation could 
+cause morale problems and high costs. 
+Background 
+Japan is a world leader in robotics, yet many companies lack 
+skilled workers to manage automated systems. 
+Solution 
+Introduce automation for repetitive processes, but ensure that 
+trained employees manage, maintain, and optimize the systems. 
+Pair each robot with a human supervisor. 
+Result 
+Production becomes faster, and employees develop new skills 
+managing technology. The balance between people and 
+machines increases stability and efficiency. 
+ 
+Hybrid 2: Regional and Task-Based Strategy 
+Problem 
+Different factories face different challenges—some lack workers, 
+while others already have strong teams. 
+Background 
+A one-size-fits-all automation policy is risky and may waste 
+money in areas where staffing is stable. 
+Solution 
+Apply automation selectively in plants with severe labor 
+shortages or high-cost operations. In other locations, strengthen 
+training and flexible work systems to retain staff. 
+Result 
+Each site gets a customized solution. Overall costs stay under 
+control, productivity rises, and both automation and staffing 
+investments are used where they deliver the most benefit. 
+ 

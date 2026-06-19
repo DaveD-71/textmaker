@@ -1,0 +1,371 @@
+
+
+===== PAGE 1 =====
+1 
+The EV Supply Chain Dilemma 
+Bosch Logical Thinking & Discussion Course 
+Discussion 
+Before starting the simulation, review and discuss these key terms and ideas. Understanding 
+them will help you take part in the meeting more effectively.
+Competitiveness – How a company 
+compares to others in its industry. A 
+competitive company offers high-
+quality products at a good price and 
+can adapt quickly to market changes. 
+ESG (Environmental, Social, and 
+Governance) – A framework 
+companies use to measure their 
+impact on the planet, how they treat 
+people, and how responsibly they are 
+managed. ESG is becoming a major 
+factor in investment and business 
+decisions. 
+Ethical sourcing – Buying materials and 
+products from suppliers that respect 
+people, communities, and the 
+environment. It means checking that 
+suppliers do not use unfair labor 
+practices or harm the environment. 
+Supply chain transparency – The ability to 
+see and understand every step in the 
+supply chain—from raw materials to 
+final product—so the company can 
+confirm that partners follow laws and 
+ethical standards. 
+Due diligence – The careful investigation a 
+company must do before working with 
+another company. It means checking 
+legal, environmental, and social risks 
+before signing a contract. 
+CSDDD (Corporate Sustainability Due 
+Diligence Directive) – A new rule from 
+the European Union that will require 
+large companies to check their entire 
+supply chain for environmental and 
+human rights risks. It aims to make 
+global business more responsible and 
+transparent.
+Discuss with your classmates: 
+1. Why do you think ESG and ethical sourcing have become important in global 
+business? 
+2. What might happen if a company ignores due diligence or hides supply chain 
+problems? 
+3. How could strong supply chain transparency help Bosch maintain its 
+competitiveness and reputation?
+
+
+===== PAGE 2 =====
+2 
+The Situation 
+Bosch Japan is preparing to launch a new line of high-efficiency electric vehicle (EV) 
+components for both domestic and international markets. The project is part of Bosch’s 
+global initiative to expand its role in sustainable mobility and reduce its carbon footprint. 
+However, the production of one key component — a lithium-ion battery module — faces a 
+serious supply chain challenge. 
+A major European supplier has recently increased prices by 30% due to higher energy and 
+labor costs. Meanwhile, a new supplier based in Southeast Asia has offered to supply the 
+same component at a much lower price. On paper, this alternative supplier meets technical 
+specifications and delivery schedules. However, early research suggests that the supplier’s 
+environmental and labor practices may not meet Bosch’s ESG (Environmental, Social, and 
+Governance) standards. Independent auditors have raised questions about factory 
+emissions, worker safety, and transparency in sourcing materials. 
+Senior management has called an emergency meeting to decide whether Bosch should:  
+1. Continue with the current European supplier, despite the high cost; 
+2. Switch to the Southeast Asian supplier, gaining a strong cost advantage but 
+potential ethical and brand risks; or 
+3. Adopt a temporary hybrid solution, dividing production between the two suppliers 
+while gathering more data. 
+Your task in this meeting is to: 
+1. Discuss the problems and brainstorm options to solve them, 
+2. Evaluate the risks and benefits of each option, and  
+3. Decide the best course of action. 
+The decision will affect production schedules, pricing strategy, brand reputation, and 
+Bosch’s long-term ESG commitments. 
+ 
+Note 
+All facts, figures, and sources in this simulation are fictionalized for educational 
+purposes. They are designed to resemble realistic business data and to help students 
+practice assessing credibility, reliability, and logical reasoning. 
+
+
+===== PAGE 3 =====
+3 
+Role A: Managing Director (Chair)
+You are chairing the meeting and must 
+guide the discussion toward a decision 
+today. Your main goal is to ensure Bosch 
+maintains profitability while protecting its 
+brand image. You are under pressure from 
+headquarters in Germany to reduce 
+production costs by at least 10% by Q4, 
+but you are also responsible for upholding 
+Bosch’s sustainability commitments.  
+Global media attention on corporate ESG 
+compliance has been increasing — in 
+2023, 78% of Japanese consumers said 
+they would stop buying from a company 
+linked to unethical suppliers (Nikkei 
+survey).
+Evidence you can use: Bosch’s 2024 
+Annual Report highlights a 9% profit 
+margin target for its EV division. Any 
+supply change that lowers production 
+costs by more than 5% could significantly 
+support this goal. 
+Personal view: You prefer to make 
+decisions based on data and risk analysis. 
+You are concerned about long-term 
+reputation and compliance, but you must 
+also meet financial targe
+ 
+Role B: Purchasing Manager
+Your role is to manage supplier contracts 
+and cost efficiency. You have verified that 
+the Southeast Asian supplier can meet all 
+technical and logistical requirements and 
+deliver on time. The supplier’s price per 
+battery module is ¥27,000, compared to 
+¥40,000 from the European partner — a 
+cost reduction of nearly 33%. The cost 
+savings could reach ¥1.2 billion per year 
+across all production lines. 
+You argue that Bosch cannot stay 
+competitive in the EV market if it 
+continues to pay European prices, 
+especially with strong competition from 
+China and Korea.  
+Evidence you can use: Bloomberg data 
+shows lithium-ion battery prices have 
+fallen 14% globally in 2024, yet Bosch’s 
+current supplier has raised costs. 
+Additional info: You believe ESG risks can 
+be managed through regular audits and 
+clear supplier contracts with penalties for 
+violations. You have prepared a draft 12-
+month monitoring plan. 
+ 
+ 
+
+
+===== PAGE 4 =====
+4 
+Role C: Sustainability Officer 
+You are responsible for ensuring all 
+operations comply with Bosch’s global 
+ESG policy. You are alarmed by reports 
+from an NGO indicating that the 
+Southeast Asian supplier’s factory emits 
+30% more CO₂ per unit than industry 
+standards and that its subcontractors have 
+been cited for poor worker safety.  
+Bosch’s global sustainability report is due 
+in three months, and any negative findings 
+could have serious reputational 
+consequences. 
+Evidence you can use: Bosch has pledged 
+to achieve carbon neutrality (Scope 1 & 2) 
+by 2030 and a 15% reduction in Scope 3 
+emissions by 2027. Partnering with a non-
+compliant supplier could put these targets 
+at risk. 
+Additional info: You believe customers 
+and investors increasingly prioritize ethical 
+production — a 2023 Deloitte survey 
+showed that 65% of global investors 
+consider ESG performance a key factor in 
+long-term company value.
+ 
+Role D: Legal Counsel
+Your responsibility is to evaluate the legal 
+and compliance risks. If Bosch knowingly 
+contracts a supplier that violates labor or 
+environmental regulations, it could face 
+fines, lawsuits, and international trade 
+restrictions.  
+You also know that the EU Corporate 
+Sustainability Due Diligence Directive 
+(CSDDD) will come into effect in 2026, 
+requiring full supply chain transparency for 
+all companies operating in the EU. 
+Evidence you can use: Non-compliance 
+penalties under similar EU laws can reach 
+up to 5% of global annual turnover. The 
+Southeast Asian supplier’s emissions 
+reports lack third-party verification, which 
+would be required under these 
+regulations. 
+Additional info: If Bosch signs a contract 
+now and problems arise later, the 
+company may be held liable for failing to 
+perform adequate due diligence, even if 
+violations occur abroad.
+ 
+ 
+
+
+===== PAGE 5 =====
+5 
+Role E: Customer Sales Manager
+You manage relationships with Bosch’s 
+main automotive OEM customers in Japan. 
+If Bosch changes the battery supplier, you 
+must coordinate with customers, since this 
+could affect their production and quality 
+control. You often balance internal cost 
+goals with customer expectations. 
+Main concerns: Maintaining customer 
+trust, preventing production delays, and 
+giving clear explanations for any supplier 
+change. 
+Evidence you can use: Japanese OEM 
+customers increasingly value ethical 
+sourcing—72% of automotive buyers say 
+ESG factors influence their decisions 
+(Dentsu Research, 2024). But they also 
+demand stability and consistent quality. 
+Additional info: Customers will likely need 
+formal documentation and testing 
+approval before accepting a new supplier. 
+Personal view: The supplier must cut costs 
+while maintaining Bosch’s reliability and 
+customer confidence. You prefer a 
+cautious approach that protects long-term 
+relationships. 
+ 
+Role F: Head of R&D (Technical Expert)
+You are responsible for product quality 
+and innovation. Both suppliers meet 
+Bosch’s basic engineering standards, but 
+the European supplier has a 12-year 
+partnership record with Bosch and a 99.2% 
+on-time delivery rate.  
+Their failure rate per batch is below 0.3%, 
+compared to the Southeast Asian 
+supplier’s trial rate of 2.1%. 
+Evidence you can use: Delays or quality 
+issues could add ¥300 million in warranty 
+and recall costs if products fail in the 
+market. 
+Additional info: You also know that the 
+European supplier is testing a new 
+recycling process that could reduce 
+production emissions by 10% by 2026 — 
+aligning closely with Bosch’s carbon goals.
+ 
+ 
+
+
+===== PAGE 6 =====
+6 
+Evidence Summary Sheet 
+Use this sheet after the simulation to review factual evidence, evaluate how it was applied in 
+discussion, and connect data points to the final decision. 
+Category 
+Fact / Statistic 
+Source or Context 
+Profit target 
+Bosch’s 2024 Annual Report shows a 9% 
+profit margin goal for its EV division. 
+Bosch Corporate 
+Report 2024 
+Cost comparison 
+European supplier: ¥40,000 per unit; 
+Southeast Asian supplier: ¥27,000 per unit 
+(33% cheaper). 
+Purchasing 
+Department Estimates 
+Annual savings 
+Potential ¥1.2 billion cost reduction per 
+year if switching supplier. 
+Purchasing Manager 
+data 
+Global battery 
+prices 
+Lithium-ion battery prices fell 14% globally 
+in 2024. 
+Bloomberg 2024 
+Energy Market Data 
+Consumer ethics 
+78% of Japanese consumers would stop 
+buying from unethical companies. 
+Nikkei Survey 2023 
+ESG investor 
+trends 
+65% of global investors prioritize ESG 
+performance. 
+Deloitte ESG Survey 
+2023 
+Emissions concern 
+Southeast Asian supplier emits 30% more 
+CO₂ per unit than standard. 
+NGO Environmental 
+Report 2024 
+Bosch 
+sustainability goals 
+Bosch aims for carbon neutrality (Scope 1 
+& 2) by 2030 and 15% Scope 3 reduction 
+by 2027. 
+Bosch Sustainability 
+Policy 
+Legal risk 
+EU CSDDD to require full supply chain 
+transparency by 2026. 
+European 
+Commission Directive 
+Summary 
+Legal penalties 
+Fines up to 5% of global annual turnover 
+for ESG violations. 
+EU Compliance 
+Guidelines 
+
+
+===== PAGE 7 =====
+7 
+Category 
+Fact / Statistic 
+Source or Context 
+Consumer 
+behavior 
+72% of Japanese consumers prefer ethical 
+brands; 15% boost in brand favorability 
+among Gen Z engineers. 
+Dentsu Research 
+2024 / Bosch HR 
+Report 
+Market 
+competition 
+Nissan and Panasonic have reduced EV 
+battery costs by 20–25%. 
+Nikkei Industry 
+Analysis 2024 
+Quality control 
+European supplier failure rate 0.3%, 
+Southeast Asian trial 2.1%. 
+R&D Quality Audit 
+2024 
+Production risk 
+Delays or failures could cost ¥300 million 
+in warranty/recalls. 
+R&D Risk Report 
+Innovation 
+opportunity 
+European supplier’s new recycling process 
+may reduce emissions by 10% by 2026. 
+R&D Collaboration 
+Memo 
+ 
+
+
+===== PAGE 8 =====
+8 
+Follow-Up 
+After the simulation, discuss:  
+- 
+Which argument was the most persuasive? Why?  
+- 
+How well did participants use reasons and evidence to support their points?  
+- 
+What would you do differently next time to improve logical structure and 
+communication clarity? 
+ 

@@ -547,3 +547,10 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Trigger: Dave reported that all `No Title` labels were still visible in DOCX output. Diagnosis showed the suppression logic existed only inside `apply_example_block_styles()`, but that pass is intentionally skipped in the source-driven INT pipeline.
 - Action: added a separate active `strip_hidden_example_labels()` pass and wired it into the main postprocess pipeline immediately after the skipped heuristic note. The new pass removes `DivLabelExample*` paragraphs whose text is exactly `No Title` while leaving source-driven `AW Example*` content styling untouched.
 - Verification: `python -m py_compile scripts/postprocess_docx.py` passed.
+
+## 2026-06-19 - Bosch Meeting 3a Evidence Holder Source Copy
+
+- Created an editable revised DOCX copy of the Meeting 3a EV Dilemma simulation source with a new Evidence Summary holder column identifying which role had each item before the meeting.
+- Cross-check result: most rows map directly to Roles A-F; Consumer behavior is a partial wording match to Role E, and Market competition has no exact matching role-sheet data point in the current source.
+- Validation: Microsoft Word opened the revised DOCX and exported it to PDF; rendered evidence pages were visually checked for table readability.
+

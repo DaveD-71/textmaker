@@ -317,3 +317,12 @@ Sync rule:
 - Exit criteria:
   - where pandoc resolves in a fresh shell without manual PATH edits
   -  extmaker.cmd markdown-to-docx runs successfully without in-session PATH modification
+
+### 2026-06-19T19:43:35.4984139+09:00 - Word PDF Export Can Hang On VPN Printer Verification
+
+- Status: workaround
+- Scope: user/workflow
+- Pattern: Microsoft Word DOCX-to-PDF export on the company VPN
+- Failure: Word PDF export can hang or fail when the default printer driver tries to verify a network/company printer through VPN.
+- Preferred workaround: before exporting PDFs through Word/COM, switch the default printer to a local driver such as Microsoft Print to PDF, or avoid Word's printer-dependent export path when possible.
+- Recheck trigger: revisit if Word/Office printer handling changes or if exports hang again despite a local default printer.

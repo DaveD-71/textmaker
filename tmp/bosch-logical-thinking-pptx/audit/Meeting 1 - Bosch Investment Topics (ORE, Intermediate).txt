@@ -1,0 +1,165 @@
+
+
+===== PAGE 1 =====
+Meeting 1 — Bosch Investment Opportunities (ORE) 
+Procedure: 
+Students are tasked with choosing a project Bosch should invest in. 
+Stage 1: 
+Students work in pairs. Give each pair two project options from the list. Tell them 
+they must choose one project and prepare an ORE argument supporting their 
+decision. 
+ 
+Stage 2: 
+• Before the meeting a begins, the decision-making method to be used in this 
+meeting is explained (consensus vs authority). 
+• Each group presents their chosen project and argues for it using the ORE 
+argument approach. 
+• The winning project is chosen, and a rationale for choosing the winner is given. 
+• Time is spent at the end on a meeting debrief session. 
+ 
+ 
+
+
+===== PAGE 2 =====
+1) Heat pumps for homes and buildings 
+Why it matters:  
+Heat pumps replace gas or oil boilers and can heat and cool homes efficiently 
+using electricity. They help reduce carbon emissions and energy bills while 
+supporting global climate goals. Many countries now offer government incentives 
+to encourage installation.  
+Evidence ideas:  
+• According to the International Energy Agency (IEA), global heat pump sales 
+grew by 11% in 2022, with particularly strong growth in Europe.  
+• The U.S. Department of Energy reported that in 2022, heat pump sales 
+exceeded gas furnaces for the first time.  
+• Germany’s government aims for 6 million heat pumps by 2030, supported 
+by financial subsidies.  
+2) EV charging solutions (hardware + software) 
+Why it matters:  
+As electric vehicles become more common, there is an urgent need for charging 
+stations at home, at work, and in public places. Investing in reliable charging 
+infrastructure positions Bosch to support the EV revolution and reduce 
+transportation emissions.  
+Evidence ideas:  
+• Global EV sales grew 35% in 2023 to reach 14 million units, according to 
+the IEA Global EV Outlook 2024.  
+• Europe alone now has more than 750,000 public charging points (European 
+Alternative Fuels Observatory).  
+• Governments across the EU, Japan, and the U.S. have committed billions 
+of dollars to charging infrastructure.  
+ 
+ 
+
+
+===== PAGE 3 =====
+3) Battery recycling and second‑life storage 
+Why it matters:  
+When EV batteries lose capacity, they can still be reused for stationary energy 
+storage. Recycling also recovers valuable metals like lithium, nickel, and cobalt, 
+reducing waste and dependence on mining.  
+Evidence ideas:  
+• Recycling firms such as Li‑Cycle and Redwood Materials report recovery 
+rates of up to 95% of battery materials.  
+• The EU Battery Regulation (2023) requires at least 50% lithium recovery by 
+2027 and rising thereafter.  
+• Nissan’s “4R Energy” project reuses used EV batteries to power streetlights 
+and solar systems in Japan.  
+4) Hydrogen components (fuel cells and H₂ engines) 
+Why it matters:  
+Hydrogen power provides a clean alternative to fossil fuels, especially for 
+industries and heavy vehicles where full electrification is difficult. Hydrogen fuel 
+cells emit only water vapor and could help reduce global CO₂ emissions.  
+Evidence ideas:  
+• The German National Hydrogen Strategy allocates €9 billion for hydrogen 
+technology development.  
+• Toyota and Hyundai already sell fuel‑cell cars, and Bosch announced 
+investment in hydrogen fuel‑cell production in Stuttgart and Chongqing.  
+• The IEA projects hydrogen demand could triple by 2030 under current 
+plans.  
+ 
+ 
+
+
+===== PAGE 4 =====
+5) Smart‑home energy management 
+Why it matters:  
+Smart systems connect household devices like solar panels, thermostats, and 
+batteries to automatically save energy and money. They help homeowners reduce 
+bills and support the transition to renewable power.  
+Evidence ideas:  
+• The global smart‑home market exceeded $100 billion in 2023 (Statista).  
+• Google Nest reports that smart thermostats save customers 10–12% on 
+heating and 15% on cooling costs.  
+• Utility companies in the U.S. and EU offer rebates to users who install 
+energy‑saving smart devices.  
+6) E‑bike and micro‑mobility drive systems 
+Why it matters:  
+Cities want to reduce car use and traffic congestion. E‑bikes and scooters provide 
+clean, efficient travel for short distances. Bosch’s proven technology in e‑bike 
+motors and batteries makes it a natural leader in this market.  
+Evidence ideas:  
+• The European Cyclists’ Federation reports that over 5.5 million e‑bikes 
+were sold in Europe in 2022.  
+• In Germany, e‑bikes now account for 48% of all new bicycle sales (ZIV 
+report 2023).  
+• Cities like Paris and Amsterdam are investing heavily in bike‑friendly 
+infrastructure.  
+ 
+ 
+
+
+===== PAGE 5 =====
+7) “AI retrofit kits” for factories (sensors + predictive maintenance) 
+Why it matters:  
+Many older machines are reliable but lack smart monitoring. By adding sensors 
+and AI software, companies can predict maintenance needs before breakdowns 
+occur—saving costs and improving productivity.  
+Evidence ideas:  
+• According to Deloitte, predictive maintenance can reduce downtime by 20–
+50% and increase equipment life by 20–40%.  
+• Bosch Rexroth’s own pilot projects reported up to 25% lower maintenance 
+costs after installing AI‑based monitoring systems.  
+• The World Economic Forum notes predictive maintenance could save 
+industries $630 billion annually worldwide.  
+8) On‑demand 3D printing for spare parts 
+Why it matters:  
+3D printing lets manufacturers produce spare parts locally, reducing delivery 
+times and storage costs. It supports sustainability by cutting waste and emissions 
+from transport.  
+Evidence ideas:  
+• Siemens Mobility reduced lead times for replacement train parts from six 
+weeks to 13 hours using 3D printing.  
+• The global additive manufacturing market is valued at $20 billion (2024) 
+and projected to double by 2030.  
+• Aerospace firms like Airbus and Boeing use printed components to reduce 
+material waste by up to 50%.  
+ 
+ 
+
+
+===== PAGE 6 =====
+9) Cybersecurity for connected products and vehicles 
+Why it matters:  
+More Bosch products are internet‑connected—from cars to appliances—creating 
+risk of hacking or data theft. Strong cybersecurity builds trust and ensures 
+compliance with new international regulations.  
+Evidence ideas:  
+• The EU Cyber Resilience Act (2024) and UNECE R155 require automotive 
+cybersecurity management systems.  
+• Cybersecurity Ventures predicts global cybercrime damage will reach 
+$10.5 trillion annually by 2025.  
+• Bosch already operates internal programs ensuring secure software 
+updates for connected products.  
+10) Warehouse and last‑mile robotics modules 
+Why it matters:  
+E‑commerce growth increases pressure on logistics. Robots that lift, move, and 
+sort packages help warehouses work faster, safer, and more efficiently, 
+addressing labor shortages.  
+Evidence ideas:  
+• McKinsey estimates that warehouse automation can improve productivity 
+by 25–50%.  
+• Amazon operates over 750,000 robots in fulfillment centers worldwide, 
+cutting delivery time and cost.  
+• The global warehouse robotics market is expected to reach $20 billion by 
+2030 (MarketsandMarkets).  
+ 
