@@ -554,3 +554,34 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Cross-check result: most rows map directly to Roles A-F; Consumer behavior is a partial wording match to Role E, and Market competition has no exact matching role-sheet data point in the current source.
 - Validation: Microsoft Word opened the revised DOCX and exported it to PDF; rendered evidence pages were visually checked for table readability.
 
+
+## 2026-06-22 - Bosch PPTX Formatting Pass
+
+- Updated the Bosch Logical Thinking & Discussion training slide deck in the client course folder using PowerPoint COM rather than regenerating the PPTX.
+- Removed repeated footer text boxes from all slides, converted dense review/summary text to real PowerPoint bullet/numbered list structures, and increased body text sizes where appropriate.
+- Preserved Slide 7 animation targets; XML validation found 60 Slide 7 animation targets and no missing shape IDs after the edit.
+- Validation: exported 39 slide PNGs, created a contact sheet for layout review, and ran a PowerPoint text-bound overflow check with no remaining overflow issues.
+- Backup created: Bosch 2026 - Logical Thinking & Discussion - Training Slides_bak20260622_before-formatting.pptx.
+
+
+## 2026-06-22 - Bosch PPTX Bottom Bars And Typography Rebalance
+
+- Removed remaining bottom blue bar shapes from the Bosch training PPTX after first deleting their text content.
+- Rebalanced non-body text after body/list font enlargement: slide titles, top labels, section transition subtitles, framework labels, table headers, and Slide 7 labels.
+- Validation: PowerPoint text-bound overflow check reports no issues; Slide 7 animation target XML still has 60 targets with no missing shape IDs; rendered contact sheet and spot-checked Slide 7 and a transition slide.
+
+
+## 2026-06-22 - Bosch PPTX Reduced To Slide 7
+
+- Per user request, deleted all slides from the Bosch training PPTX except the former Slide 7 mini logic puzzle slide.
+- Backup created before deletion: Bosch 2026 - Logical Thinking & Discussion - Training Slides_bak20260622_before-delete-all-but-slide7.pptx.
+- Validation: current one-slide deck contains the former Slide 7 as slide1.xml; animation target IDs and timing node count match the immediate pre-deletion backup, with no missing target shapes.
+
+
+## 2026-06-22 - Bosch PPTX Argument Model Slides Added
+
+- Added three slides after the preserved mini logic puzzle slide: ORE puzzle explanation, PBSR puzzle process explanation, and PCAF discussion question slide.
+- Textbook references used on slides: ORE pp. 1-3, PBSR p. 16, PCAF p. 19.
+- PCAF slide is framed as a discussion prompt rather than an applied solution model because the puzzle resolves logically to one outcome rather than two debatable sides.
+- Validation: deck now has 4 slides; preserved puzzle slide animation targets remain valid with no missing target shapes; PowerPoint text overflow check reports no issues; rendered slides were visually checked.
+
