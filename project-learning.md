@@ -205,6 +205,17 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Lesson: avoid quick visual fixes that create the wrong PowerPoint object model. For example, a tag that must animate as one object should be created as a single text-bearing shape with `slide.addText("label", { shape: pptx.ShapeType.roundRect, ... })`, not as `addShape()` plus a separate overlaid `addText()`.
 - Preferred behavior: validate generated PPTX files by opening/exporting with PowerPoint COM when Office compatibility matters, and inspect the generated XML or object count when object structure matters for animation/editing.
 
+## 2026-07-03 - Thematic Series Consolidation Methodology Established
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: created a reusable, LLM-agnostic methodology for consolidating a cluster of thematically related textbooks (e.g. audience-forked or medium-forked book pairs) into a single unified book offered at multiple course-length tiers. Documented at `docs/thematic-series-consolidation-methodology.md`.
+- Process summary: (1) inventory source books and reuse existing `docx-to-markdown` `out/.md/` conversions rather than reconverting; (2) map each book's content in parallel via one background agent per book, producing per-unit reports on frameworks, language content, model scenarios, audience-specificity, and tier judgment; (3) synthesize a cross-book framework table plus a list of each book's distinctive non-duplicated content; (4) raise explicit design decisions for user sign-off (framework naming/synthesis, audience-fork handling, modernization scope, tier-inclusion granularity, manuscript structure) rather than assuming defaults; (5) record the resolved plan in a project-specific `docs/<series-name>-consolidation-plan.md`.
+- First applied instance: Presentation Skills series (`Speaking with PowerPoint`, `Making Speeches`, `Business Presentations Essentials for Businesspeople`, `Business Presentations Essentials for Government Officials`) being consolidated into a single "Presentation Skills" book with Essentials/Standard/Long tiers. Plan recorded at `docs/presentation-skills-consolidation-plan.md`.
+- Key empirical finding (Presentation Skills instance, expected to generalize but must be re-verified per series): in audience-forked book pairs, only ~2 of 7-8 units per book carried genuine audience-specific content, and even then mostly just scenario/employer dressing on an otherwise identical skill — audience distinction should fold into paired model speeches/examples within shared units, not separate books.
+- Next planned application: Meeting Skills book series, using the same methodology.
+- Preferred behavior: this methodology document and any per-series plan files are project memory, not Claude-specific memory — keep them in `docs/` as plain markdown so they remain usable by any LLM or human working in this repo, and update `project-learning.md`/`project-journal.md` (not a tool-specific memory store) when durable decisions are made during this kind of project.
+
 ## Roadmap From README
 
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.

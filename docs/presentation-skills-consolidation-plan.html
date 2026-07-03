@@ -1,0 +1,1096 @@
+<title>Presentation Skills Consolidation Plan</title>
+<style>
+@font-face {
+  font-family: 'Roboto Slab';
+  font-weight: 400 700;
+  font-display: swap;
+  src: local('Roboto Slab');
+}
+
+:root {
+  --paper: #F7F4EC;
+  --paper-raised: #FBF9F3;
+  --ink: #1C1B19;
+  --ink-soft: #3A3733;
+  --meta: #6E6A5F;
+  --rule: #D9D2BF;
+  --rule-strong: #B99A5B;
+  --brick: #8B3A2E;
+  --brick-soft: #C98A7C;
+  --sage: #5B6B5E;
+  --sage-soft: #A9B9AC;
+  --tag-open-bg: #F3E4DF;
+  --tag-open-fg: #7A3226;
+  --tag-resolved-bg: #E4E9E2;
+  --tag-resolved-fg: #46543E;
+  --code-bg: #EDE8D9;
+
+  --font-display: 'Roboto Slab', 'Rokkitt', Georgia, 'Noto Serif', serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Roboto Mono', 'Consolas', 'SFMono-Regular', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1C1B19;
+    --paper-raised: #232120;
+    --ink: #EFEAE0;
+    --ink-soft: #C9C3B5;
+    --meta: #99927F;
+    --rule: #3C382F;
+    --rule-strong: #9C7C42;
+    --brick: #D08A78;
+    --brick-soft: #8B3A2E;
+    --sage: #9FB09F;
+    --sage-soft: #46543E;
+    --tag-open-bg: #3A2620;
+    --tag-open-fg: #E7B7A9;
+    --tag-resolved-bg: #263028;
+    --tag-resolved-fg: #B7CBB4;
+    --code-bg: #26241E;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1C1B19;
+  --paper-raised: #232120;
+  --ink: #EFEAE0;
+  --ink-soft: #C9C3B5;
+  --meta: #99927F;
+  --rule: #3C382F;
+  --rule-strong: #9C7C42;
+  --brick: #D08A78;
+  --brick-soft: #8B3A2E;
+  --sage: #9FB09F;
+  --sage-soft: #46543E;
+  --tag-open-bg: #3A2620;
+  --tag-open-fg: #E7B7A9;
+  --tag-resolved-bg: #263028;
+  --tag-resolved-fg: #B7CBB4;
+  --code-bg: #26241E;
+}
+:root[data-theme="light"] {
+  --paper: #F7F4EC;
+  --paper-raised: #FBF9F3;
+  --ink: #1C1B19;
+  --ink-soft: #3A3733;
+  --meta: #6E6A5F;
+  --rule: #D9D2BF;
+  --rule-strong: #B99A5B;
+  --brick: #8B3A2E;
+  --brick-soft: #C98A7C;
+  --sage: #5B6B5E;
+  --sage-soft: #A9B9AC;
+  --tag-open-bg: #F3E4DF;
+  --tag-open-fg: #7A3226;
+  --tag-resolved-bg: #E4E9E2;
+  --tag-resolved-fg: #46543E;
+  --code-bg: #EDE8D9;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sheet {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 64px 32px 96px;
+}
+
+/* ---- Masthead ---- */
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 24px;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+}
+.masthead .kicker {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brick);
+  margin: 0 0 10px;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(30px, 4.4vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+.masthead .subtitle {
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  margin: 10px 0 0;
+  max-width: 60ch;
+}
+.masthead .status-block {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--meta);
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+.masthead .status-block .doc-status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 9px;
+  border-radius: 3px;
+  background: var(--tag-open-bg);
+  color: var(--tag-open-fg);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.byline-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--meta);
+  padding: 12px 0 40px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 40px;
+}
+.byline-strip a { color: var(--sage); text-decoration: none; border-bottom: 1px dotted var(--sage-soft); }
+.byline-strip a:hover { text-decoration: none; border-bottom-style: solid; }
+
+/* ---- Sections ---- */
+.section {
+  margin-bottom: 52px;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.section-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--rule-strong);
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  padding: 1px 7px;
+  flex: none;
+}
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+.section-note {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: -6px 0 20px;
+  max-width: 68ch;
+}
+
+p { max-width: 70ch; }
+
+/* ---- Tables ---- */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--paper-raised);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13.5px;
+  min-width: 640px;
+}
+thead th {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--meta);
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--ink);
+  white-space: nowrap;
+}
+tbody td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: var(--code-bg); }
+td.center, th.center { text-align: center; font-variant-numeric: tabular-nums; }
+.unit-list td:first-child { font-family: var(--font-mono); color: var(--meta); font-size: 12.5px; }
+.unit-list td:nth-child(2) { font-weight: 600; }
+
+.tier-yes { color: var(--sage); font-weight: 700; }
+.tier-abridged { color: var(--rule-strong); font-weight: 600; font-size: 12px; }
+.tier-no { color: var(--rule); }
+.online-note { font-size: 12.5px; color: var(--sage); }
+.online-note.dash { color: var(--rule); font-family: var(--font-mono); }
+.tier-boundary td {
+  background: var(--tag-open-bg);
+  color: var(--tag-open-fg);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.appendix-note {
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  background: var(--tag-open-bg);
+  border-left: 3px solid var(--brick);
+  padding: 12px 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ---- Activity cards ---- */
+.activity-grid {
+  display: grid;
+  gap: 12px;
+}
+.activity-card {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 4px 16px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 14px 18px;
+}
+.activity-num {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--rule-strong);
+  font-weight: 700;
+  padding-top: 2px;
+}
+.activity-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.activity-head h4 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+.activity-type {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sage);
+  background: var(--tag-resolved-bg);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.activity-origin {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+.activity-origin.new { color: var(--brick); }
+.activity-body {
+  grid-column: 2;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.activity-tiers {
+  grid-column: 2;
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--meta);
+  border-top: 1px dashed var(--rule);
+  padding-top: 8px;
+}
+.activity-tiers b { color: var(--ink); font-family: var(--font-mono); font-size: 11px; }
+
+/* ---- Production checklist ---- */
+.checklist-intro {
+  font-size: 14px;
+  color: var(--ink-soft);
+  max-width: 72ch;
+  margin-bottom: 24px;
+}
+.stage {
+  margin-bottom: 22px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--paper-raised);
+}
+.stage-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--code-bg);
+  border-bottom: 1px solid var(--rule);
+}
+.stage-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--paper);
+  background: var(--ink);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.stage-head h3 {
+  font-family: var(--font-display);
+  font-size: 15.5px;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+.stage-progress {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--meta);
+  white-space: nowrap;
+}
+.stage-note {
+  font-size: 13px;
+  color: var(--ink-soft);
+  padding: 10px 18px 0;
+  margin: 0;
+}
+.check-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 18px 16px;
+  display: grid;
+  gap: 9px;
+}
+.check-list li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.check-list input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--sage);
+  cursor: pointer;
+}
+.check-list code { font-size: 0.9em; }
+
+/* ---- Decisions list ---- */
+.decision {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 4px 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.decision:last-child { border-bottom: none; }
+.decision-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--meta);
+  padding-top: 2px;
+}
+.decision-title {
+  font-weight: 700;
+  font-size: 15.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.tag-resolved { background: var(--tag-resolved-bg); color: var(--tag-resolved-fg); }
+.tag-open { background: var(--tag-open-bg); color: var(--tag-open-fg); }
+.decision-body {
+  grid-column: 2;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  max-width: 66ch;
+}
+.decision-body code { font-size: 0.92em; }
+
+/* ---- Distinctive-content cards ---- */
+.book-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.book-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--rule-strong);
+  border-radius: 4px;
+  padding: 16px 18px;
+}
+.book-card h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.book-card p {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.book-card p + p { margin-top: 6px; }
+
+/* ---- Flags list ---- */
+.flags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.flags li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.flags li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brick-soft);
+  margin-top: 6px;
+}
+.flags strong { color: var(--ink); font-weight: 600; }
+
+code, .mono { font-family: var(--font-mono); }
+code {
+  background: var(--code-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+.counts-strip {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--rule);
+}
+.counts-strip div { font-size: 13px; color: var(--meta); }
+.counts-strip b { display: block; font-family: var(--font-display); font-size: 22px; color: var(--ink); font-weight: 700; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 3px solid var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--meta);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .sheet { padding: 40px 18px 64px; }
+  .masthead { grid-template-columns: 1fr; }
+  .masthead .status-block { text-align: left; }
+}
+</style>
+
+<div class="sheet">
+
+  <div class="masthead">
+    <div>
+      <p class="kicker">Textmaker &middot; Curriculum Design Plan</p>
+      <h1>Presentation Skills Consolidation</h1>
+      <p class="subtitle">Merging four books into one unified title across Essentials, Standard, and Long course tiers &mdash; audience split retired to the model-speech level.</p>
+    </div>
+    <div class="status-block">
+      Rev. 2026&#8209;07&#8209;03<br>
+      <span class="doc-status">10 of 10 resolved &mdash; ready for Stage 2</span>
+    </div>
+  </div>
+
+  <div class="byline-strip">
+    <span>Applies <a href="#">thematic-series-consolidation-methodology.md</a></span>
+    <span>Instance of a repeatable process &mdash; next: Meeting Skills series</span>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Source inventory</h2>
+    </div>
+    <p class="section-note">All four books already had <code>docx-to-markdown</code> unit output in <code>out/.md/</code> &mdash; nothing was reconverted. Content mapped via four parallel background agents, one per book.</p>
+    <div class="table-wrap">
+      <table class="unit-list">
+        <thead>
+          <tr><th>Book</th><th>Location</th><th class="center">Units</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono">01</td>
+            <td>Speaking with PowerPoint</td>
+            <td class="center">13 <span class="mono" style="color:var(--meta)">(1 image skip)</span></td>
+            <td>Only source with slide-design / PowerPoint-delivery content</td>
+          </tr>
+          <tr>
+            <td class="mono">02</td>
+            <td>Making Speeches</td>
+            <td class="center">14 <span class="mono" style="color:var(--meta)">(5 image skip)</span></td>
+            <td>Richest &ldquo;social role&rdquo; content &mdash; chairing, team presentations</td>
+          </tr>
+          <tr>
+            <td class="mono">03</td>
+            <td>Business Presentations Essentials &mdash; Businesspeople</td>
+            <td class="center">8</td>
+            <td>Compact essentials-tier treatment, business audience</td>
+          </tr>
+          <tr>
+            <td class="mono">04</td>
+            <td>Business Presentations Essentials &mdash; Government Officials</td>
+            <td class="center">7</td>
+            <td>Near-mirror of 03, government audience</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Cross-book framework synthesis</h2>
+    </div>
+    <p class="section-note">The same frameworks recur under near-identical names across sources &mdash; each will be merged into one canonical, best-of version rather than picked from a single book.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Framework</th><th>Speaking w/ PPT</th><th>Making Speeches</th><th>BPE Business</th><th>BPE Govt</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3-part structure (Intro / Body / Conclusion)</td>
+            <td>Yes</td><td>Yes &mdash; + Theme/Message, strongest</td><td>Yes</td><td>Yes</td>
+          </tr>
+          <tr>
+            <td>Flag Expressions (signposting language)</td>
+            <td>Yes &mdash; fullest usage notes</td><td>Yes &mdash; near-identical</td><td>Yes &mdash; condensed</td><td>Yes &mdash; condensed, gender-neutral &ldquo;M___&rdquo;</td>
+          </tr>
+          <tr>
+            <td>Logic Tree (roots / trunk / branches / leaves / fruit)</td>
+            <td>Yes &mdash; 2 worked samples</td><td>Yes &mdash; 2 worked samples, cross-ref&rsquo;d</td><td>Template only</td><td>Template only</td>
+          </tr>
+          <tr>
+            <td>Delivery Skills checklist</td>
+            <td>Yes &mdash; 7 categories</td><td>Yes &mdash; more prescriptive</td><td>Yes &mdash; 6, condensed</td><td>Yes &mdash; 6, condensed</td>
+          </tr>
+          <tr>
+            <td>Chairing / moderator language</td>
+            <td>&mdash;</td><td>Yes &mdash; + meeting protocol notes</td><td>Yes &mdash; condensed</td><td>Yes &mdash; fullest, + unique &ldquo;Introducing the Speaker&rdquo;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>What each book alone contributes</h2>
+    </div>
+    <p class="section-note">Content with no duplicate elsewhere in the series &mdash; the parts that would be lost if a book were simply retired rather than harvested.</p>
+    <div class="book-cards">
+      <div class="book-card">
+        <h3>Speaking with PowerPoint</h3>
+        <p><strong>Slide design</strong> &mdash; Rule of 1 / Rule of 7, template &amp; font &amp; animation guidance.</p>
+        <p><strong>PowerPoint delivery</strong> &mdash; pointing, slide-advance choreography, handout pacing.</p>
+        <p><strong>&ldquo;6 Keys&rdquo;</strong> framework; <strong>7 Elements for Speaking Clearly</strong> (prosody notation); claim&ndash;evidence&ndash;analysis persuasion unit.</p>
+      </div>
+      <div class="book-card">
+        <h3>Making Speeches</h3>
+        <p><strong>&ldquo;Four Keys&rdquo;</strong> framework; cleanest <strong>Theme vs. Message</strong> distinction.</p>
+        <p><strong>Analyze &amp; Propose / Argue &amp; Defend</strong> persuasive genres.</p>
+        <p><strong>Team Presentations</strong> &mdash; unique across all four; <strong>Quick Draw Presentations</strong> timed drill.</p>
+      </div>
+      <div class="book-card">
+        <h3>BPE &mdash; Businesspeople / Government</h3>
+        <p>Leanest essentials-tier treatment of the shared spine.</p>
+        <p>Government edition adds <strong>Introducing the Speaker</strong> and a substantive <strong>policy-speech genre</strong> (Cool Biz) &mdash; real ministry content, not a relabeled scenario.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2>Design decisions</h2>
+    </div>
+    <p class="section-note">Per the consolidation methodology, every decision is logged and signed off explicitly &mdash; none are assumed defaults.</p>
+
+    <div class="decision">
+      <div class="decision-num">01</div>
+      <div class="decision-title">Framework naming &amp; synthesis <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Best-of synthesis per framework, not single-book-as-base. E.g. Making Speeches&rsquo; Theme/Message + Speaking with PowerPoint&rsquo;s fuller Logic Tree examples and Flag Expressions usage notes.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">02</div>
+      <div class="decision-title">Audience-fork handling <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Eliminate the businessperson / government split at book level. Only 2 of 7&ndash;8 units per BPE book carried real audience flavor; variants fold into paired models within shared units (see Units 3, 8, 15 below).</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">03</div>
+      <div class="decision-title">Modernization scope <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Online presenting is now common enough to be a cross-cutting consideration, not a single bolt-on module. Revised: nearly every unit gets a woven-in &ldquo;online consideration&rdquo; (pacing, webcam framing, screen-share legibility, virtual hand-raise, and so on); a narrower Unit 13 remains for mechanics that don&rsquo;t fit inside another unit &mdash; platform controls, recording, connectivity fallback. Other dated references stay in-scope fixes, not deferred.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">04</div>
+      <div class="decision-title">Model speech placement <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Model speeches move out of the main unit list into Appendices (&sect;05a). Skill units keep their instruction and exercises and point to a paired business/government model instead of hosting it &mdash; the direct mechanism for retiring the audience split at book level (Decision 02).</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">05</div>
+      <div class="decision-title">Tier-inclusion granularity <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Which units belong to which tier is settled by the &sect;05 table itself &mdash; hard caps (E&le;8, S&le;12, L=all), Standard-too-close-to-Long fixed by splitting former Units 10&ndash;11 into four (Logic &rarr; Persuasion, Long-only &rarr; Analyze &rarr; Propose, Long-only). Counts: Essentials 8/15, Standard 12/15, Long 15/15. The table <em>is</em> the decision record &mdash; no separate sign-off needed.</div>
+      <div class="decision-body" style="grid-column:2; margin-top:8px; padding-top:8px; border-top:1px dashed var(--rule);">&sect;05b&rsquo;s <strong>activity tier-scaling</strong> (how each activity&rsquo;s depth changes between tiers) is now also approved as written <span class="tag tag-resolved" style="margin-left:6px;">Resolved</span> &mdash; approved at the planning stage without waiting for drafts. This is approval of design intent; Stage 6 (Content &amp; pedagogy review) remains the checkpoint for verifying drafted activities actually deliver the scaling described.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">06</div>
+      <div class="decision-title">Manuscript structure <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Three separate manuscripts &mdash; one each for Essentials, Standard, and Long &mdash; not a single tagged/filtered source. Consequence: drafting and building happen three times, and any future content fix propagates to up to three files, not one shared fragment.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">07</div>
+      <div class="decision-title">&ldquo;Keys&rdquo; framework naming <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">User rejected a bare A-or-B choice, asking whether the frameworks actually overlap. Read both source units word-for-word rather than assuming &mdash; found they cover the <strong>same four ideas at different granularity</strong>, plus one genuinely additional item. A combined &ldquo;10 Keys&rdquo; would double-count and was not adopted. Resolved: 6 keys at Speaking with PowerPoint&rsquo;s granularity (Purpose, Content, Structure, Language, Delivery, Visual Aids); canonical name <strong>&ldquo;Keys to Successful Presentations&rdquo;</strong> (number dropped from the brand name). See the comparison table below.</div>
+      <div class="decision-body" style="grid-column:2; margin-top:10px;">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Making Speeches (4 keys)</th><th>Speaking w/ PPT (6 keys)</th><th>Relationship</th></tr></thead>
+            <tbody>
+              <tr><td>1. Purpose &amp; Content</td><td>1. Purpose + 2. Content</td><td>Same idea, MS merges what SwPPT splits</td></tr>
+              <tr><td>2. Structure</td><td>3. Structure</td><td>Identical &mdash; near-verbatim wording</td></tr>
+              <tr><td>3. Language (Flag Expressions)</td><td>4. Language (Flag Expressions)</td><td>Identical &mdash; same definition, same two bullets, word-for-word</td></tr>
+              <tr><td>4. Delivery Skills</td><td>6. Delivery</td><td>Identical &mdash; same core sentence</td></tr>
+              <tr><td><em>(not present)</em></td><td>5. PowerPoint</td><td><strong>The only genuinely additional item</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">08</div>
+      <div class="decision-title">Learner-audience framing <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">Generalize away from Japanese-L1-specific framing (pronunciation notes tied to &ldquo;overcoming katakana,&rdquo; etc.) for a broader non-native-English-speaker audience. Genuinely cross-L1 pronunciation/prosody content can stay; content that only makes sense to a Japanese L1 reader needs rewriting or removal during Stage 2 drafting.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">09</div>
+      <div class="decision-title">New model-speech content <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">All appendix model speeches will be <strong>freshly written</strong>, not refreshed/updated versions of the Ventura car pitch (Appendix B) or Cool Biz speech (Appendix C). Both need fully current contexts, not a data/date patch &mdash; applies to every appendix model, business and government variants alike.</div>
+    </div>
+    <div class="decision">
+      <div class="decision-num">10</div>
+      <div class="decision-title">Learning activities per unit <span class="tag tag-resolved">Resolved</span></div>
+      <div class="decision-body">The source books read as instructor/reference guides, not learner-facing textbooks &mdash; most units were pure exposition with no built-in developmental activity. Every one of the 15 taught units now gets a designed, tier-scaled activity (&sect;05b): 7 extend a genuine source precedent, 8 are newly designed where no source activity existed.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2>Proposed unit list &amp; tier map</h2>
+    </div>
+    <p class="section-note">E &mdash; Essentials &middot; S &mdash; Standard &middot; L &mdash; Long. Hard caps now enforce unit <em>count</em>, not just depth: Essentials &le; 8 taught units, Standard &le; 12, Long = all 15. &ldquo;Abridged&rdquo; describes reduced depth within a unit a tier already includes &mdash; it no longer counts as a way to fit a unit under the cap. Model speeches don&rsquo;t anchor a unit &mdash; see &sect;05a.</p>
+    <p class="section-note">Essentials is rebuilt from the existing BPE Essentials books&rsquo; actual unit set (Structure, Delivery, Flag Expressions, Logic Tree, Chairing, capstone), not a fresh guess &mdash; plus Slide Design, since visual aids are now baseline even at essentials level. The standalone Online &amp; Hybrid Delivery Mechanics unit is cut entirely and folded into Delivery Skills, since Decision 03 already committed to weaving online considerations through every unit rather than housing them in one module.</p>
+    <p class="section-note"><strong>Units 10&ndash;13 (Logic, Persuasion, Analyze, Propose, in that order) replace the former Units 10&ndash;11</strong> (&ldquo;Description, Logic &amp; Persuasion&rdquo; and &ldquo;Critical Thinking&rdquo;). Order groups by topic, not source book: Persuasion sits directly after Logic (its Long-only extension), and Propose sits directly after Analyze (its Long-only extension). Standard keeps exactly the 2 units it always had from this cluster (Logic, Analyze), while Persuasion and Propose are new Long-only units &mdash; Standard's count is unaffected, just non-contiguous.</p>
+    <div class="table-wrap">
+      <table class="unit-list">
+        <thead>
+          <tr><th>#</th><th>Unit</th><th class="center">E</th><th class="center">S</th><th class="center">L</th><th>Online consideration</th><th>Primary source(s)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Why Presentations Matter / orientation</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Purpose/audience analysis differs in-person vs. online</td><td>Making Speeches U1 + &ldquo;Keys to Successful Presentations&rdquo;</td></tr>
+          <tr><td>2</td><td>Structure of a Speech (+ Theme vs. Message)</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Pacing for shorter video attention spans; front-load the message</td><td>All four &middot; model &rarr; Appx A</td></tr>
+          <tr><td>3</td><td>Flag Expressions</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>All four</td></tr>
+          <tr><td>4</td><td>Delivery Skills (incl. webcam/online basics)</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Webcam framing, audio basics, platform/recording mechanics folded in here</td><td>All four &middot; absorbs former mechanics unit</td></tr>
+          <tr><td>5</td><td>Logic Tree</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>Speaking w/ PPT + Making Speeches</td></tr>
+          <tr><td>6</td><td>Slide Design (visual aids)</td><td class="center tier-abridged">abr. (core)</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Legibility on a shared/thumbnail screen; accessibility/contrast</td><td>Speaking w/ PPT &mdash; only source</td></tr>
+          <tr><td>7</td><td>Chairing a Session</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Virtual hand-raise/mute management; chat Q&amp;A</td><td>Making Speeches + both BPE</td></tr>
+          <tr><td>8</td><td>Capstone Practice Activity</td><td class="center tier-abridged">abr. (short)</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Adaptable to a video-call format</td><td>&ldquo;Quick Draw Presentations&rdquo;</td></tr>
+          <tr class="tier-boundary"><td colspan="7">Essentials boundary &mdash; 8 of 8 units above</td></tr>
+          <tr><td>9</td><td>Speaking Clearly (pronunciation / prosody)</td><td class="center tier-no">&mdash;</td><td class="center tier-abridged">abr.</td><td class="center tier-yes">&#9679;</td><td class="online-note">Mic technique; pacing for audio compression/latency</td><td>Speaking w/ PPT + Making Speeches</td></tr>
+          <tr><td>10</td><td>Logic (description + reasoning)</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>Speaking w/ PPT &middot; model &rarr; Appx B</td></tr>
+          <tr><td>11</td><td>Persuasion</td><td class="center tier-no">&mdash;</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>Speaking w/ PPT &middot; model &rarr; Appx B, Long-exclusive, immediately after Logic</td></tr>
+          <tr><td>12</td><td>Analyze (problem-solving / reporting)</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>Making Speeches &middot; model &rarr; Appx C</td></tr>
+          <tr><td>13</td><td>Propose (incl. argue &amp; defend)</td><td class="center tier-no">&mdash;</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="online-note dash">&mdash;</td><td>Making Speeches &middot; model &rarr; Appx C, Long-exclusive, immediately after Analyze</td></tr>
+          <tr><td>14</td><td>Delivering with Slides &amp; Handouts</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Screen-share mechanics; digital materials replace paper</td><td>Speaking w/ PPT &mdash; only source</td></tr>
+          <tr><td>15</td><td>Team Presentations</td><td class="center tier-no">&mdash;</td><td class="center tier-no">&mdash;</td><td class="center tier-yes">&#9679;</td><td class="online-note">Coordinating handoffs/timing across a distributed team</td><td>Making Speeches &mdash; unique, Long-exclusive</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-note" style="margin-top:14px;"><strong>Expressions Reference Appendix</strong> (outside the unit-count cap, like the model-speech appendices): abridged/core subset at Essentials, full at Standard and Long.</p>
+    <div class="counts-strip">
+      <div><b>8 / 15</b>Essentials taught units + appendix</div>
+      <div><b>12 / 15</b>Standard taught units + appendix</div>
+      <div><b>15 / 15</b>Long taught units + appendix</div>
+    </div>
+    <p class="appendix-note">Standard is non-contiguous across Units 9&ndash;14 (present at 10, 12, 14; absent at 11, 13, and 9 is abridged) rather than one clean block &mdash; a deliberate tradeoff so Persuasion sits directly after Logic and Propose sits directly after Analyze, rather than grouping all four new units by source book. Long now has 3 genuinely exclusive units (11, 13, 15) instead of 1.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">05a</span>
+      <h2>Appendices &mdash; model speeches</h2>
+    </div>
+    <p class="section-note">Replaces standalone &ldquo;Model Speech&rdquo; units. Each appendix pairs a business exemplar and a government/public-sector exemplar for the same skill &mdash; the direct mechanism for retiring the audience split at book level (Decision 02).</p>
+    <div class="book-cards">
+      <div class="book-card">
+        <h3>Appendix A &middot; Self-Introduction Models</h3>
+        <p>Paired with Unit 2 (Structure)</p>
+        <p><strong>Business</strong> &mdash; refresh of the bank-employee scenario.</p>
+        <p><strong>Government</strong> &mdash; refresh of the agency-officer scenario.</p>
+      </div>
+      <div class="book-card">
+        <h3>Appendix B &middot; Organizational / Product Models</h3>
+        <p>Paired with Units 10 &amp; 11 (Logic; Persuasion)</p>
+        <p><strong>Business</strong> &mdash; refresh of the Ventura product-launch speech.</p>
+        <p><strong>Government</strong> &mdash; new: introducing an agency or program.</p>
+      </div>
+      <div class="book-card">
+        <h3>Appendix C &middot; Persuasive / Policy Models</h3>
+        <p>Paired with Units 12 &amp; 13 (Analyze; Propose)</p>
+        <p><strong>Business</strong> &mdash; new: a business case or proposal.</p>
+        <p><strong>Government</strong> &mdash; refresh of the Cool Biz policy speech.</p>
+      </div>
+    </div>
+    <p class="appendix-note">Adding a third audience variant later, or updating a dated scenario, is an appendix edit &mdash; it doesn&rsquo;t touch unit numbering or structure.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">05b</span>
+      <h2>Learning activities per unit</h2>
+    </div>
+    <p class="section-note"><strong>Gap identified by user:</strong> the source books read as instructor/reference guides, not learner-facing textbooks &mdash; most units are pure exposition with no built-in developmental activity, and where one existed it was often a single throwaway line. Every unit below gets a designed, tier-scaled activity.</p>
+    <div class="activity-grid">
+      <div class="activity-card">
+        <div class="activity-num">01</div>
+        <div>
+          <div class="activity-head"><h4>Why Presentations Matter</h4><span class="activity-type">Self-assessment</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">Learner completes a short &ldquo;presentation history&rdquo; inventory (past presentations given, what worked/didn&rsquo;t) and states one personal goal for the course. No source precedent &mdash; keeps Unit 1 from being pure lecture.</p>
+          <div class="activity-tiers"><b>E</b> 5-minute written checklist &nbsp;&middot;&nbsp; <b>S/L</b> adds a peer share-out to start the speaking-practice habit immediately</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">02</div>
+        <div>
+          <div class="activity-head"><h4>Structure of a Speech</h4><span class="activity-type">Critique &rarr; draft</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Extends Making Speeches&rsquo; &ldquo;Deciding the Message&rdquo; critique (evaluate weak vs. strong candidate messages) into a two-step task: critique first, then draft an Introduction/Body/Conclusion outline for Appendix A&rsquo;s self-introduction model.</p>
+          <div class="activity-tiers"><b>E</b> critique step + 3-line outline &nbsp;&middot;&nbsp; <b>S</b> full critique + outline + theme/message pair &nbsp;&middot;&nbsp; <b>L</b> adds a peer-review swap before Unit 3</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">03</div>
+        <div>
+          <div class="activity-head"><h4>Flag Expressions</h4><span class="activity-type">Drill &rarr; application</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">Fill-in-the-blank drill on the flag-expression table (source books had zero practice activity here &mdash; pure reference), then learner inserts flag expressions into the Unit 2 outline already drafted.</p>
+          <div class="activity-tiers"><b>E</b> drill only, reduced phrase set &nbsp;&middot;&nbsp; <b>S</b> drill + application to own outline &nbsp;&middot;&nbsp; <b>L</b> adds a timed flag-spotting listening exercise</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">04</div>
+        <div>
+          <div class="activity-head"><h4>Delivery Skills</h4><span class="activity-type">Peer observation</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Extends the source books&rsquo; teacher-modeled practice into a paired activity: learner delivers 60 seconds of the Unit 2 draft while a partner checks a delivery-skills observation sheet, then swaps. Adds a webcam self-review pass for the online consideration.</p>
+          <div class="activity-tiers"><b>E</b> single pass, 3 core skills &nbsp;&middot;&nbsp; <b>S</b> full checklist, peer + self-review &nbsp;&middot;&nbsp; <b>L</b> second round after applying feedback</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">05</div>
+        <div>
+          <div class="activity-head"><h4>Logic Tree</h4><span class="activity-type">Build-your-own</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Makes the blank-template-plus-worked-sample pattern (present in all four source books) explicit: learner completes their own Logic Tree for a topic of choice, using Appendix B&rsquo;s worked example as a model.</p>
+          <div class="activity-tiers"><b>E</b> 3 branches, pre-labeled template &nbsp;&middot;&nbsp; <b>S</b> blank template &nbsp;&middot;&nbsp; <b>L</b> adds a &ldquo;tree swap&rdquo; reconstruction exercise</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">06</div>
+        <div>
+          <div class="activity-head"><h4>Slide Design</h4><span class="activity-type">Redesign / critique</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">No source activity existed (only a pre-presentation checklist). Learner is given a deliberately bad slide and redesigns it against the Rule of 1/Rule of 7 and accessibility guidance.</p>
+          <div class="activity-tiers"><b>E</b> single slide, guided checklist &nbsp;&middot;&nbsp; <b>S</b> 3-slide mini-deck &nbsp;&middot;&nbsp; <b>L</b> redesigns twice &mdash; projection and remote screen-share thumbnail</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">07</div>
+        <div>
+          <div class="activity-head"><h4>Chairing a Session</h4><span class="activity-type">Role-play</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Extends the rotating-chair mechanic already in the source books&rsquo; capstone activities into its own drill: small groups rotate chairperson, speaker, and questioner roles using the Unit 3 phrase banks.</p>
+          <div class="activity-tiers"><b>E</b> intro one speaker + one question &nbsp;&middot;&nbsp; <b>S</b> full session cycle &nbsp;&middot;&nbsp; <b>L</b> adds virtual hand-raise/mute practice on a live call</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">08</div>
+        <div>
+          <div class="activity-head"><h4>Capstone Practice Activity</h4><span class="activity-type">Timed circuit</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Already a full activity in source (&ldquo;Quick Draw Presentations&rdquo;, &ldquo;Quick Speech&rdquo;) &mdash; the one unit where activity and content are the same thing. Only needs tier-scaling.</p>
+          <div class="activity-tiers"><b>E</b> single round, ~10 min &nbsp;&middot;&nbsp; <b>S</b> full clocked circuit, ~15 min &nbsp;&middot;&nbsp; <b>L</b> two rounds, second on a self-chosen topic</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">09</div>
+        <div>
+          <div class="activity-head"><h4>Speaking Clearly</h4><span class="activity-type">Annotated practice</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Extends the source books&rsquo; annotated-transcript method (mark pause/stress notation on a model, then on your own text) &mdash; already real, just needs tier scaling.</p>
+          <div class="activity-tiers"><b>E</b> markup on Unit 2 self-intro only &nbsp;&middot;&nbsp; <b>S</b> markup + recorded read-aloud &nbsp;&middot;&nbsp; <b>L</b> adds mic-technique practice for online delivery</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">10</div>
+        <div>
+          <div class="activity-head"><h4>Logic</h4><span class="activity-type">Evidence chain</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">No source activity (pure exposition). Learner builds a Statement &rarr; Evidence &rarr; Analysis &rarr; Conclusion chain for a claim in their Appendix B model, mirroring the source&rsquo;s Ventura worked example &mdash; structural/reasoning only, no persuasive-appeal content.</p>
+          <div class="activity-tiers"><b>S</b> one chain, guided template &nbsp;&middot;&nbsp; <b>L</b> same, plus the chain feeds directly into Unit 11&rsquo;s persuasion activity</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">11</div>
+        <div>
+          <div class="activity-head"><h4>Persuasion</h4><span class="activity-type">Persuasive reframe</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">Long-exclusive: learner takes the Unit 10 evidence chain for the same Appendix B model and reframes it using the 3 Elements / 5 Stages of Persuasion &mdash; same content, now built for persuasive effect, making the Logic/Persuasion distinction concrete.</p>
+          <div class="activity-tiers"><b>L only</b> full 5-stage persuasive reframe of the Unit 10 chain, done immediately after Logic</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">12</div>
+        <div>
+          <div class="activity-head"><h4>Analyze (problem-solving / reporting)</h4><span class="activity-type">Problem analysis task</span><span class="activity-origin">Extends source</span></div>
+          <p class="activity-body">Extends the source&rsquo;s point-form sample framing (the Tokyo crowded-trains example) into a full learner task: pick a real problem, apply Background/Situation/Results to explain it and report findings &mdash; stops short of recommending action, that&rsquo;s Unit 13.</p>
+          <div class="activity-tiers"><b>S</b> problem from a short list, guided template &nbsp;&middot;&nbsp; <b>L</b> learner sources their own problem</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">13</div>
+        <div>
+          <div class="activity-head"><h4>Propose (incl. argue &amp; defend)</h4><span class="activity-type">Recommendation + defense</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">Long-exclusive, continuing directly from Unit 12: using the same problem analyzed there, learner proposes a recommended action and defends it against a counterargument &mdash; the source&rsquo;s &ldquo;Argue &amp; Defend&rdquo; genre folded in as the defense component.</p>
+          <div class="activity-tiers"><b>L only</b> recommendation + defense on the learner&rsquo;s own Unit 12 problem, done immediately after Analyze</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">14</div>
+        <div>
+          <div class="activity-head"><h4>Delivering with Slides &amp; Handouts</h4><span class="activity-type">Rehearsal + feedback</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">No direct source activity (rules and stage directions only, no rehearsal task). Learner delivers their Unit 6 redesigned slides aloud; partner gives feedback on speech/slide synchronization.</p>
+          <div class="activity-tiers"><b>S</b> single rehearsal pass &nbsp;&middot;&nbsp; <b>L</b> adds a handout-pacing variant of the same content</div>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-num">15</div>
+        <div>
+          <div class="activity-head"><h4>Team Presentations</h4><span class="activity-type">Group project</span><span class="activity-origin new">New</span></div>
+          <p class="activity-body">No source activity (language/structure guidance only). Teams of 2&ndash;3 divide a topic, each member drafts their section using Units 2&ndash;4 skills, then deliver together using the handoff language from the unit.</p>
+          <div class="activity-tiers"><b>L only</b> full team-planning-to-delivery cycle, including team-intro and colleague-reference requirements from source content</div>
+        </div>
+      </div>
+    </div>
+    <p class="appendix-note">7 of 15 activities extend a genuine source-book precedent (Units 2, 4, 5, 7, 8, 9, 12); 8 of 15 are newly designed because no source activity existed for that content (Units 1, 3, 6, 10, 11, 13, 14, 15) &mdash; flagged per-card above so drafting knows which have prior art to adapt. Units 11 and 13 deliberately reuse Unit 10&rsquo;s and Unit 12&rsquo;s work rather than starting fresh.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2>Modernization flags</h2>
+    </div>
+    <p class="section-note">Raised independently across all four content maps &mdash; named here rather than silently fixed or silently dropped.</p>
+    <ul class="flags">
+      <li><span><strong>PowerPoint UI references</strong> &mdash; describes an old template-picker workflow no longer accurate.</span></li>
+      <li><span><strong>Pre-cloud backup advice</strong> &mdash; thumb drives, emailing files to yourself.</span></li>
+      <li><span><strong>Infrared pointer warnings</strong> &mdash; dated hardware concern.</span></li>
+      <li><span><strong>Dress-code framing</strong> &mdash; &ldquo;check your tie, jacket collar&rdquo; skews dated and gendered.</span></li>
+      <li><span><strong>No accessibility guidance</strong> in slide design &mdash; contrast, colorblind-safe palettes.</span></li>
+      <li><span><strong>No virtual/hybrid content anywhere</strong> &mdash; addressed by weaving online considerations through every relevant unit, with platform/recording mechanics folded into Delivery Skills rather than a standalone module (Decision 03).</span></li>
+      <li><span><strong>Dated set-piece scenarios</strong> &mdash; Ventura car pitch (2014 hybrid sedan, Appendix B), Cool Biz speech (2005&ndash;2011 policy data, Appendix C). See Decision 09.</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">07</span>
+      <h2>Production checklist</h2>
+    </div>
+    <p class="checklist-intro">Stage-by-stage QA gate for turning this plan into three shipped DOCX/PDF textbooks. Content drafting (Stage 2) and style infrastructure (Stage 3) can run in parallel &mdash; neither blocks the other. Unlike the Administrative Writing books, this project has <strong>no existing reference DOCX</strong>: style infrastructure is being built from scratch, so Stage 3 is not optional groundwork to skip.</p>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">1</span>
+        <h3>Design sign-off</h3>
+        <span class="stage-progress">this document</span>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox" checked><span>All 10 decisions in Section 4 fully resolved, including Decision 05&rsquo;s &sect;05b activity tier-scaling (approved as written at planning stage)</span></li>
+        <li><input type="checkbox" checked><span>Unit list and tier map (&sect;05) confirmed as final &mdash; no further splits/merges/renumbering expected once drafting starts</span></li>
+        <li><input type="checkbox" checked><span>Appendix pairings (&sect;05a) confirmed &mdash; which unit(s) each appendix serves</span></li>
+        <li><input type="checkbox" checked><span>Learning activities (&sect;05b) reviewed unit-by-unit &mdash; activity type and tier-scaling approved, not just existence</span></li>
+        <li><input type="checkbox" checked><span>Manuscript structure decided (Decision 06): three separate manuscripts (Essentials, Standard, Long) &mdash; not a single tagged source</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">2</span>
+        <h3>Content drafting</h3>
+        <span class="stage-progress">Markdown source</span>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>Front matter written (title, authorship, version history &mdash; follow the convention in all four source books&rsquo; <code>00-front-matter.md</code>)</span></li>
+        <li><input type="checkbox"><span>All 15 units drafted, each tagged with its tier membership per &sect;05&rsquo;s table (or split into per-tier files, per Decision 06)</span></li>
+        <li><input type="checkbox"><span>Framework naming finalized per Decision 01 (best-of synthesis) and Decision 07 (Keys merge) &mdash; final canonical names used, not source-book variants</span></li>
+        <li><input type="checkbox"><span>Every unit&rsquo;s &sect;05b activity is actually present in the drafted unit, not just planned</span></li>
+        <li><input type="checkbox"><span>Appendix A/B/C model speeches drafted per Decision 09&rsquo;s resolution &mdash; both business and government variants present for each</span></li>
+        <li><input type="checkbox"><span>Modernization flags (&sect;06) individually resolved in drafted text, not just noted as &ldquo;addressed in principle&rdquo;</span></li>
+        <li><input type="checkbox"><span>Online consideration content present in every unit flagged for it in &sect;05&rsquo;s table</span></li>
+        <li><input type="checkbox"><span>Learner-audience framing decided (Decision 08) and applied consistently across all drafted units</span></li>
+        <li><input type="checkbox"><span>YAML front-matter / <code>style_map</code> entries drafted for every Div class used (per <code>style_bridge.lua</code> convention)</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">3</span>
+        <h3>Style infrastructure</h3>
+        <span class="stage-progress">reference DOCX</span>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>New reference DOCX created for this title &mdash; confirm explicitly, don&rsquo;t assume an AW-book reference can be repurposed</span></li>
+        <li><input type="checkbox"><span>Paragraph/character styles defined for every semantic element used: Div Label styles, business/government model distinction, activity-instruction styling, tier-scaling callouts</span></li>
+        <li><input type="checkbox"><span>Div style naming follows the established <code>Div Label *</code> prefix convention, or a new documented convention if not reused</span></li>
+        <li><input type="checkbox"><span>Table styles defined for tabular content (Flag Expressions bank, Logic Tree template, tier-scaling tables) via the header/body paragraph-style split pattern</span></li>
+        <li><input type="checkbox"><span>Running headers configured per tier/unit structure</span></li>
+        <li><input type="checkbox"><span><code>audit_docx_styles.py</code> run against the new reference DOCX &mdash; no orphaned or color-mismatched linked styles</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">4</span>
+        <h3>Build</h3>
+        <span class="stage-progress">per tier &mdash; 3 passes</span>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>Essentials build: <code>markdown-to-docx</code> against the Essentials-tagged/filtered source with the new reference DOCX</span></li>
+        <li><input type="checkbox"><span>Standard build: same, Standard-tagged/filtered source</span></li>
+        <li><input type="checkbox"><span>Long build: same, full source</span></li>
+        <li><input type="checkbox"><span>Postprocess flags confirmed correct for this title &mdash; don&rsquo;t assume AW-book flags transfer unchanged</span></li>
+        <li><input type="checkbox"><span>Pandoc conversion clean for all three builds &mdash; no warnings, no dropped content</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">5</span>
+        <h3>Validation</h3>
+        <span class="stage-progress">per tier</span>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span><code>validate_docx_against_reference.py</code> passes (exit 0) for all three tier builds</span></li>
+        <li><input type="checkbox"><span>Div balance check (open/close fence count) clean for the source Markdown of all three tiers</span></li>
+        <li><input type="checkbox"><span>Spot-check: every unit that should be present per &sect;05&rsquo;s table is present in each tier&rsquo;s build, none excluded leaked through</span></li>
+        <li><input type="checkbox"><span>Spot-check: abridged units are genuinely abridged, not identical to their full-tier counterpart with a label change</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">6</span>
+        <h3>Content &amp; pedagogy review</h3>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>Every learning activity (&sect;05b) reviewed in its built/rendered form &mdash; reads as a usable instructor activity, not planning-stage prose</span></li>
+        <li><input type="checkbox"><span>Business/government model pairs (Appendix A/B/C) reviewed side-by-side for genuine parity</span></li>
+        <li><input type="checkbox"><span>Long-exclusive units (Persuasion, Propose, Team Presentations) read as a natural continuation of their Standard-tier predecessor</span></li>
+        <li><input type="checkbox"><span>Cross-references between units resolve correctly (e.g. Unit 11 referencing &ldquo;the Unit 10 evidence chain&rdquo; &mdash; confirm it&rsquo;s actually there)</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">7</span>
+        <h3>PDF export &amp; final check</h3>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>PDF exported for all three tiers via <code>docx-to-pdf</code> (Word COM <code>ExportAsFixedFormat</code>, not <code>docx2pdf.SaveAs</code>)</span></li>
+        <li><input type="checkbox"><span>List numbering, section breaks, running headers visually verified per tier (known failure modes from prior books)</span></li>
+        <li><input type="checkbox"><span>Page-count sanity check: Essentials visibly shorter than Standard, Standard visibly shorter than Long (8/12/15 unit split)</span></li>
+        <li><input type="checkbox"><span>All three PDFs opened and visually reviewed start-to-finish, not just spot-checked</span></li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <span class="stage-num">8</span>
+        <h3>Sign-off &amp; delivery</h3>
+      </div>
+      <ul class="check-list">
+        <li><input type="checkbox"><span>Final decision log (&sect;04) matches what was actually built &mdash; no drift between planned and shipped content</span></li>
+        <li><input type="checkbox"><span>Both this plan and the project&rsquo;s <code>project-learning.md</code>/<code>project-journal.md</code> entries updated to reflect completed status</span></li>
+        <li><input type="checkbox"><span>Source files (Markdown, reference DOCX, style specs) committed/backed up per this repo&rsquo;s normal conventions</span></li>
+        <li><input type="checkbox"><span>Client/course-delivery handoff format confirmed (DOCX, PDF, or both per tier)</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <span>docs/presentation-skills-consolidation-plan.md</span>
+    <span>Rev. 2026-07-03 &middot; all 10 decisions resolved &mdash; plan ready for Stage 2 content drafting</span>
+  </footer>
+
+</div>

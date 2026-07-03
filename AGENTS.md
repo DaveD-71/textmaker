@@ -378,3 +378,30 @@ Archive guidance:
 - resolve user-level Codex paths from `%USERPROFILE%` on each machine rather than assuming a fixed Windows username
 - resolve project memory files from the active repository root rather than assuming a fixed local clone path
 - treat older absolute project-path references in memory as historical snapshots unless they explicitly claim to define the current workspace root
+
+## File Creation And Storage (All Assistants)
+
+This repo is worked on by multiple AI assistants (Codex, Claude Code, and others). File placement
+rules apply equally to all of them and must not depend on any single tool's default working
+directories.
+
+Two categories, two locations:
+
+- **Durable/project content** — anything meant to be found again later: plans, design decisions,
+  methodology documents, generated manuscript content, reports the user will reference or share.
+  These belong inside the repository itself (e.g. `docs/`, alongside the relevant book folder, or
+  another repo location that fits the content), tracked like any other project file. Do not create
+  durable content in a tool-specific memory or session store (for example, an assistant's own
+  `~/.claude/projects/...` folder or equivalent) — those locations are invisible to other
+  assistants and to the user's own file browsing, which breaks the LLM-agnostic goal of this repo's
+  shared memory system (see `Repo-Tracked Memory Files` above).
+- **Temporary/working files** — intermediate conversion output, exploratory drafts, scratch
+  artifacts that exist only to support the current task and are not meant to be kept. These belong
+  in the environment TEMP folder (resolve from `%TEMP%`/`%TMP%`, or an assistant's own designated
+  scratch directory when one is provided), never inside the repository. Do not leave working files
+  behind in the repo tree "just in case" — if a scratch file turns out to be worth keeping, move it
+  into its proper repo location deliberately rather than leaving it where it was first created.
+
+When a file starts as scratch and becomes something the user asks to keep, view, or share (for
+example, a rendered report or artifact), move it into the repository at that point — do not leave
+the durable copy sitting in a temp directory with only a link pointing to it.
