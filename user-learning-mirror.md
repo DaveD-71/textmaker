@@ -318,6 +318,21 @@ Sync rule:
   - where pandoc resolves in a fresh shell without manual PATH edits
   -  extmaker.cmd markdown-to-docx runs successfully without in-session PATH modification
 
+### ISSUE 2026-07-06-WORKFLOW-01 - `Workflow` Tool Unavailable Across Sessions In This Environment
+
+- Issue type: `workflow`
+- Component: Claude Code `Workflow` tool (multi-agent orchestration with `phase()`/`parallel()`/`agent()` helpers)
+- Version observed: n/a (tool-availability issue, not a version bug)
+- Date first noticed: 2026-07-06
+- Status: `open` with workaround
+- Symptom: a `Workflow` script launched successfully and partially completed (5 of 19 agents finished, cached results in `subagents/workflows/<run-id>/journal.jsonl`), then failed the remaining agents with a session-limit error. On attempting to resume via `Workflow({scriptPath, resumeFromRunId})` in a later session (same day) and again three days later in a brand-new session, the `Workflow` tool itself was not present at all — not callable directly, and `ToolSearch` for `"Workflow"` returned no matching deferred tool either time.
+- Workaround: completed agent results are not lost — they persist on disk as individual `agent-*.jsonl` transcripts plus a shared `journal.jsonl` with one `{"type":"result",...}` line per finished agent, keyed by `agentId` (no explicit unit/task label in the journal itself; match by inspecting each result's content). Extract completed results directly from the journal (e.g. via a small Node/Python script parsing the JSONL) and continue the remaining work as sequential/parallel plain `Agent` tool calls instead of waiting for `Workflow` to become available again.
+- Preferred behavior: before starting a large multi-agent task, do not assume `Workflow` will remain available for a resume days later. If a multi-phase task depends on shared context across many agents (e.g. a common style/voice guide), extract and persist that shared context to durable files as soon as it's produced, so a fallback to plain sequential `Agent` calls can reuse it without regenerating it.
+- Recheck triggers:
+  - `Workflow` reappears as a directly-callable or `ToolSearch`-discoverable tool in a fresh session
+  - Claude Code client/version update that might restore or explain the gating
+- Exit criteria: `Workflow({scriptPath, resumeFromRunId})` succeeds in resuming a previously-interrupted run without the tool being reported unavailable.
+
 ### 2026-06-19T19:43:35.4984139+09:00 - Word PDF Export Can Hang On VPN Printer Verification
 
 - Status: workaround
