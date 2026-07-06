@@ -1,8 +1,8 @@
 # Presentation Skills Consolidation Plan
 
 Applies [thematic-series-consolidation-methodology.md](thematic-series-consolidation-methodology.md).
-Status: **all 10 design decisions resolved (Section 4) — ready for Stage 2 content drafting**
-(Section 7).
+Status: **Stage 2 (content drafting) substantially complete (Section 7) — 3 manuscripts drafted
+and assembled; front matter and DOCX style-map entries still open before Stage 3.**
 
 ## 1. Source inventory
 
@@ -327,21 +327,31 @@ not optional groundwork to skip.
 
 - [ ] Front matter written (title, authorship, version history — follow the front-matter
       convention visible in all four source books' `00-front-matter.md`)
-- [ ] All 15 units drafted in Markdown, each unit tagged with its tier membership per Section 5's
-      table (or split into per-tier files, depending on Decision 6)
-- [ ] Framework naming finalized per Decision 1 (best-of synthesis) and Decision 7 (Keys
+- [x] All 15 units drafted in Markdown, each unit tagged with its tier membership per Section 5's
+      table (or split into per-tier files, depending on Decision 6) — drafted as per-unit JSON
+      (`books/Presentation Skills/units/unit-N.json`) with per-tier text, then assembled into three
+      separate manuscript files (`Essentials.md`, `Standard.md`, `Long.md`) per Decision 6
+- [x] Framework naming finalized per Decision 1 (best-of synthesis) and Decision 7 (Keys
       framework merge) — drafted units use the final canonical names, not source-book variants
-- [ ] Every unit's Section 5b activity is actually present in the drafted unit, not just planned
-      — spot-check against the Section 5b table unit-by-unit
-- [ ] Appendix A/B/C model speeches drafted per Decision 9's resolution (freshly written vs.
+- [x] Every unit's Section 5b activity is actually present in the drafted unit, not just planned
+      — spot-check against the Section 5b table unit-by-unit — confirmed during assembly pass
+- [x] Appendix A/B/C model speeches drafted per Decision 9's resolution (freshly written vs.
       refreshed-in-place) — both business and government variants present for each
-- [ ] Modernization flags (Section 6) individually resolved in the drafted text — check off each
+- [x] Modernization flags (Section 6) individually resolved in the drafted text — check off each
       flag as its replacement content is written, not just noted as "addressed in principle"
-- [ ] Online consideration content present in every unit flagged for it in Section 5's table
-- [ ] Learner-audience framing decided (Decision 8) and applied consistently across all drafted
+- [x] Online consideration content present in every unit flagged for it in Section 5's table
+- [x] Learner-audience framing decided (Decision 8) and applied consistently across all drafted
       units — no leftover Japan-specific asides if the decision was to generalize, or vice versa
 - [ ] YAML front-matter / `style_map` entries drafted for every Div class used (per
       `style_bridge.lua` convention — see `project-learning.md` Style-Safe DOCX Pipeline notes)
+
+**2026-07-06 note:** All 15 units drafted and assembled (see `project-journal.md` entry
+2026-07-06). Two defects caught by user review post-assembly were fixed before committing:
+appendices were originally interleaved mid-manuscript instead of collected at the end (fixed via
+a reordering pass across all 3 files), and Unit 12's Long-tier text was drafted far thinner
+(319 words) than its own Standard-tier text and sibling Long units — redrafted to 1,621 words to
+match Long-tier voice/depth. Remaining open Stage 2 items (front matter, YAML style-map entries)
+block moving fully into Stage 3.
 
 ### Stage 3 — Style infrastructure (reference DOCX)
 
