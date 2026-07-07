@@ -10,7 +10,8 @@
 - Unit 6: Slide Design (Visual Aids)
 - Unit 7: Chairing a Session
 - Unit 8: Capstone Practice Activity (Timed Impromptu Circuit)
-- Appendix A: Self-Introduction Models
+- Appendix: Self-Introduction Models
+- Appendix: Logic Tree Worked Models
 
 ---
 
@@ -70,8 +71,6 @@ Keep this page. You'll check it again later.
 
 ---
 
----
-
 # Unit 2: Structure of a Speech (+ Theme vs. Message)
 
 ## Essentials
@@ -121,7 +120,7 @@ Online audiences drop off fast. Adjust your structure:
 
 Answer: C. It takes a position and backs it with a reason. A and B are just restated themes — no opinion, no proposal.
 
-**Step 2 — Draft.** Using the self-introduction model in Appendix A, write your own three-line outline:
+**Step 2 — Draft.** Using the self-introduction model in the Self-Introduction Models appendix, write your own three-line outline:
 
 1. Introduction line — your message in one sentence.
 2. Body line — your one supporting point.
@@ -190,8 +189,6 @@ Fill in each blank with the correct Flag Expression from the table.
 **Answers:** 1. Today 2. First / Second 3. Now 4. First / Finally 5. "I think we need to improve our onboarding process."
 
 Check your answers against the table. Get every one right before you move on.
-
----
 
 ---
 
@@ -279,8 +276,6 @@ No skipping the playback. Watching yourself is the part that actually changes wh
 
 ---
 
----
-
 # Unit 5: The Logic Tree
 
 ## Essentials
@@ -345,7 +340,7 @@ Notice the shape: one theme, three branches, each branch loaded with its own pro
 
 Fifteen minutes. Pick a topic you'd actually present.
 
-1. Look at the Appendix B model first. Two full examples there — copy the shape, not the content.
+1. Look at the Logic Tree Worked Models appendix. Two more filled-in trees there — copy the shape, not the content.
 2. Use the template below. It's pre-labeled — just fill it in.
 
 ```
@@ -365,8 +360,6 @@ ROOTS (audience, purpose, research):
 5. Every branch needs at least two leaves. No leaves, no proof.
 
 Keep this tree. You'll build your outline straight from it.
-
----
 
 ---
 
@@ -423,8 +416,6 @@ Redesign it using this checklist:
 4. Shrink it to thumbnail size. Still readable? If not, fix it.
 
 Redesign the slide. Then compare your version against the checklist one more time before you move on.
-
----
 
 ---
 
@@ -485,8 +476,6 @@ Chair's checklist for each round: intro said, one question managed, done. That's
 
 ---
 
----
-
 # Unit 8: Capstone Practice Activity (Timed Impromptu Circuit)
 
 This is the drill. No new theory. You use what you've already got: the Logic Tree (Unit 5) to structure fast, and Chairing (Unit 7) to run the room.
@@ -513,9 +502,7 @@ Done. Next learner draws.
 
 ---
 
----
-
-# Appendix A: Self-Introduction Models
+# Appendix: Self-Introduction Models
 
 ## Model 1: Business Context
 
@@ -537,7 +524,7 @@ My third point is what this means here. I've spent my first two weeks mostly lis
 
 So to bring this back to where I started: I believe the fastest way to improve how we operate isn't a sweeping overhaul, it's finding the handful of places where delay starts and fixing those first. I've done this before, it worked, and I think the same approach applies here. Over the next month, I'll be reaching out to many of you directly to learn more about where you see friction in your own part of the process. Thank you for the warm welcome, and I'm looking forward to working with all of you.
 
-# Appendix A: Self-Introduction Models
+# Appendix: Self-Introduction Models
 
 ## Model 2: Government / Public-Sector Context
 
@@ -558,5 +545,57 @@ My third point is what I'd like to propose here. Over my first ninety days, I in
 **Conclusion**
 
 To return to where I began: I believe our most urgent task isn't adding new services, it's making the services we already provide genuinely easy to find and use. Cities that have taken this on have seen real results, and I believe we can do the same here. I'll be holding office hours and community sessions over the next several weeks to hear directly from you about where our current system is hardest to navigate, and I'd welcome your input. Thank you again for being here tonight.
+
+---
+
+# Appendix: Logic Tree Worked Models
+
+Two more filled-in trees. Study the shape before you build your own.
+
+## Model 1: Business Context
+
+Topic: pitching a remote-work stipend to leadership as a new employee benefit.
+
+**Roots.** Audience is the executive team. They care about retention and cost, not perks for their own sake. Purpose: get approval to pilot the stipend for one quarter.
+
+**Trunk.** "A $75 monthly stipend will cut our turnover costs by more than it costs us."
+
+**Branch 1 — It solves a real problem.**
+- Leaf: Exit interviews cite home-office costs in 40% of resignations this year.
+- Leaf: Three of our five open roles have been vacant over 60 days.
+
+**Branch 2 — It's cheap next to the alternative.**
+- Leaf: Stipend costs $900 per employee per year.
+- Leaf: Replacing one mid-level hire costs about $18,000 in recruiting and lost productivity.
+
+**Branch 3 — It's easy to run.**
+- Leaf: Paid through existing payroll software, no new vendor.
+- Leaf: Other teams in our industry already do this — it's not experimental.
+
+**Fruit.** "Approve a one-quarter pilot with our engineering team. Review the retention numbers in 90 days."
+
+## Model 2: Government / Public-Sector Context
+
+Topic: proposing a pedestrian-safety upgrade for a dangerous intersection, to city council.
+
+**Roots.** Audience is council members and nearby residents. They care about safety and cost to taxpayers. Purpose: get the intersection added to next year's capital budget.
+
+**Trunk.** "One intersection is causing most of our pedestrian injuries — fix that one first."
+
+**Branch 1 — The danger is concentrated, not spread out.**
+- Leaf: 6 pedestrian collisions at Fifth and Main in the last two years — more than any other intersection in the district.
+- Leaf: A school and a senior center both sit within two blocks of it.
+
+**Branch 2 — The fix is proven elsewhere.**
+- Leaf: A raised crosswalk and shorter crossing distance cut injuries 50% at a similar intersection three years ago.
+- Leaf: Design already used in two other cities in this state.
+
+**Branch 3 — The cost fits inside the existing budget.**
+- Leaf: Estimated cost is $140,000, fully covered by unused state safety-grant funds.
+- Leaf: No new tax increase required.
+
+**Fruit.** "Add this intersection to next year's capital plan. Construction can begin next summer."
+
+Same shape both times: one trunk, three branches, two-plus leaves each, one fruit. Build yours the same way.
 
 ---

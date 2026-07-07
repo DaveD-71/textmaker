@@ -243,6 +243,17 @@ Appendices A–C are the direct mechanism for Decision 2 (retiring the business/
 book level) — adding a third audience variant later, or updating a scenario, is an appendix edit
 and does not touch unit numbering or structure.
 
+**2026-07-07 addendum:** a 4th appendix was added during Stage 2 drafting: **Logic Tree Worked
+Models**, paired with Unit 5 (The Logic Tree), containing two freshly written worked-tree
+examples (business: a remote-work stipend pitch; government: a pedestrian-safety intersection
+upgrade) in the Roots/Trunk/Branches/Leaves/Fruit template format. This fixes a drafting-time
+defect where Unit 5's activity incorrectly pointed to Appendix B (which is paired with Units 10
+& 11, not Unit 5, and appears later in reading order — see the Stage 2 checklist's 2026-07-07
+note). Because this new appendix's correct reading-order position (right after
+Self-Introduction Models) sorts before the original Appendix B and Appendix C, the lettering
+scheme (A/B/C) was retired in favor of referring to every appendix by name only, in both
+learner-facing text and this table's own future updates.
+
 ### 5b. Learning activities per unit
 
 **Gap identified by user:** the four source books read more as instructor/reference guides than
@@ -335,8 +346,12 @@ not optional groundwork to skip.
       framework merge) — drafted units use the final canonical names, not source-book variants
 - [x] Every unit's Section 5b activity is actually present in the drafted unit, not just planned
       — spot-check against the Section 5b table unit-by-unit — confirmed during assembly pass
-- [x] Appendix A/B/C model speeches drafted per Decision 9's resolution (freshly written vs.
-      refreshed-in-place) — both business and government variants present for each
+- [x] Model-speech appendices drafted per Decision 9's resolution (freshly written vs.
+      refreshed-in-place) — both business and government variants present for each. Now 4
+      appendices, not 3 (see 2026-07-07 note below); as of that note, appendices are referred to
+      by name only in learner-facing text, not by letter (A/B/C/D), since a 4th appendix
+      (Logic Tree Worked Models, paired with Unit 5) sorts before the original Appendix B/C in
+      reading order, which made lettering misleading
 - [x] Modernization flags (Section 6) individually resolved in the drafted text — check off each
       flag as its replacement content is written, not just noted as "addressed in principle"
 - [x] Online consideration content present in every unit flagged for it in Section 5's table
@@ -352,6 +367,25 @@ a reordering pass across all 3 files), and Unit 12's Long-tier text was drafted 
 (319 words) than its own Standard-tier text and sibling Long units — redrafted to 1,621 words to
 match Long-tier voice/depth. Remaining open Stage 2 items (front matter, YAML style-map entries)
 block moving fully into Stage 3.
+
+**2026-07-07 note:** A full content read-through (Long.md end-to-end, then Standard.md and
+Essentials.md) surfaced two more defects, both fixed before committing. (1) A cosmetic doubled
+`---` separator between units, left over from the appendix-reordering script, was cleaned up
+across all 3 manuscripts. (2) A real cross-reference defect: Unit 5's build-your-own-tree
+activity told learners in all three tiers to consult "Appendix B" for two additional worked
+examples, but Appendix B is paired with Units 10 & 11 (per Section 5a below), not Unit 5 — in
+Essentials that appendix doesn't exist at all, and in Standard/Long, Unit 5 comes before Unit 10
+in reading order, so the reference pointed at content the learner hadn't reached yet. Rather than
+just removing the reference, a proper fix was written: a new appendix ("Logic Tree Worked
+Models," paired with Unit 5) with two freshly written worked Logic Tree examples (business:
+a remote-work stipend pitch; government: a pedestrian-safety intersection upgrade), in the
+correct filled-in Roots/Trunk/Branches/Leaves/Fruit template format — distinct from the flowing
+model speeches in the other appendices. Because this new appendix's correct reading-order
+position (right after the Self-Introduction Models appendix) sorts before the original "Appendix
+B" and "Appendix C," continuing to use sequential letters would have been misleading — appendices
+are now referred to by name only, with letters dropped entirely, across all unit text and
+manuscripts (production `notes` fields, which are not learner-facing, retain old lettered
+references as historical documentation and were not rewritten).
 
 ### Stage 3 — Style infrastructure (reference DOCX)
 

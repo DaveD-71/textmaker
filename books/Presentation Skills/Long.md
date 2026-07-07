@@ -17,9 +17,10 @@
 - Unit 13: Propose (Recommended Actions, Including Argue & Defend)
 - Unit 14: Delivering with Slides & Handouts
 - Unit 15: Team Presentations
-- Appendix A: Self-Introduction Models
-- Appendix B: Organizational/Product Presentation Models
-- Appendix C: Persuasive/Policy Presentation Models
+- Appendix: Self-Introduction Models
+- Appendix: Logic Tree Worked Models
+- Appendix: Organizational/Product Presentation Models
+- Appendix: Persuasive/Policy Presentation Models
 
 ---
 
@@ -72,8 +73,6 @@ Hold onto this inventory. Later units will ask you to return to it, both to trac
 
 ---
 
----
-
 # Unit 2: Structure of a Speech (+ Theme vs. Message)
 
 ## Long
@@ -122,7 +121,7 @@ Option C holds up as a genuine message — it takes a specific position (double 
 
 **Step 2 — Build your own theme/message pair.** Pick a theme from your own work context and write two versions: a theme-only statement, and a real message that takes an evaluative position on it. Run it through the disagreement test from earlier in this unit — could someone reasonably argue the other side? If not, it's probably still a theme.
 
-**Step 3 — Draft your outline.** Using the self-introduction model in Appendix A as a reference point rather than a template to copy exactly, draft your own Introduction/Body/Conclusion outline for a self-introduction:
+**Step 3 — Draft your outline.** Using the self-introduction model in the Self-Introduction Models appendix as a reference point rather than a template to copy exactly, draft your own Introduction/Body/Conclusion outline for a self-introduction:
 
 - **Introduction:** your message, plus a preview of the two or three points that support it.
 - **Body:** each point, developed enough to support the message without wandering.
@@ -206,8 +205,6 @@ One more point on register, which applies throughout this table rather than to a
 
 ---
 
----
-
 # Unit 4: Delivery Skills (incl. webcam/online basics)
 
 ## Long
@@ -273,8 +270,6 @@ The second round is doing something different from the first: the first pass is 
 
 ---
 
----
-
 # Unit 5: The Logic Tree
 
 ## Long
@@ -337,7 +332,7 @@ Think for a moment about a talk you've sat through where the speaker's points fe
 
 ### Activity: Build your own tree — and try a tree swap
 
-The Appendix B model is worth looking at closely before you start: it contains two full worked examples — a business speech and a government one — which between them show how the same five-part shape adapts to fairly different purposes and audiences. Use them to calibrate depth and tone, not as a script to imitate line for line.
+The Logic Tree Worked Models appendix is worth looking at closely before you start: it contains two full worked examples — a business scenario and a government one — which between them show how the same five-part shape adapts to fairly different purposes and audiences. Use them to calibrate depth and tone, not as a script to imitate line for line.
 
 1. Choose a topic for a talk you could genuinely give — something you're actually preparing is more useful here than a purely hypothetical exercise, since real stakes tend to sharpen your choices.
 2. Copy the blank template and complete it yourself, working from Roots up through Fruit rather than starting with a conclusion and working backward.
@@ -362,8 +357,6 @@ ROOTS (audience, purpose, research notes):
 The swap is doing more work than it might first appear. A tree you can only understand once its author explains it out loud hasn't actually done its job as a planning document — it's really just a private note to yourself. A tree that a partner can pick up cold and turn into a reasonably accurate outline is one that will also serve you well later, when you come back to your own tree a week from now and need it to still make sense.
 
 Keep the finished tree. The next unit builds your full speech outline directly from it, so time spent now getting the branches and leaves right — rather than vague or overlapping — pays off directly in how smoothly that next step goes.
-
----
 
 ---
 
@@ -430,8 +423,6 @@ When you're done, compare your two redesigns side by side. Where did they end up
 
 ---
 
----
-
 # Unit 7: Chairing a Session
 
 ### Chairing a Session
@@ -467,8 +458,6 @@ Work in small groups, and make sure every learner rotates through all three role
 
 ---
 
----
-
 # Unit 8: Capstone Practice Activity (Timed Impromptu Circuit)
 
 Every unit up to this point has isolated a single skill — the Logic Tree for structuring an argument, chairing for running a room, and whatever else you've picked up along the way — and let you practice it on its own, without much else competing for your attention. That's a reasonable way to learn a skill, but it's not a very good simulation of what presenting actually feels like, because in the real world nothing arrives one skill at a time. You get a topic you didn't choose, a clock you don't control, and questions you didn't prepare for, all at once. This unit is built to put you in that position on purpose, which is why it doesn't introduce anything new: it's a facilitation script for a timed impromptu circuit, and the circuit itself is the content.
@@ -491,8 +480,6 @@ Every unit up to this point has isolated a single skill — the Logic Tree for s
 **On timing.** A full circuit runs about fifteen minutes per learner across both rounds combined, though groups vary in how tightly they can hold the clock, and that's worth naming rather than pretending the timings are exact. If a group runs long, the instinct is usually to cut the feedback round short to catch up — resist that. The prepare and present steps are useful, but the Q&A and feedback steps are where most of the actual learning in this unit happens, so if something has to give, look there last.
 
 **A note on the chair's role.** Chairing this circuit isn't just administrative timekeeping, even though it can look that way from the outside. The chair decides, in real time, how firmly to enforce the clock, how to keep a rambling question from eating the round, and how to phrase feedback so it lands as useful rather than personal — all judgment calls, not a checklist. If you haven't chaired yet in this course, treat your turn in the rotation as its own mini-exercise in the skills from Unit 7, not just a break from being the speaker.
-
----
 
 ---
 
@@ -557,8 +544,6 @@ Read your marked-up self-introduction aloud and record it, ideally through whate
 
 ---
 
----
-
 # Unit 10: Logic (Description + Reasoning)
 
 ## Long Tier
@@ -600,7 +585,7 @@ It's worth sitting with the difference between a chain that has analysis and one
 
 ### Activity: Evidence-Chain Construction — and Setting Up Unit 11
 
-Using the organizational or product presentation model you built for Appendix B, construct one full Statement → Evidence → Analysis → Conclusion chain for a claim that matters to that model. The template:
+Using the organizational or product presentation model you built for the Organizational/Product Presentation Models appendix, construct one full Statement → Evidence → Analysis → Conclusion chain for a claim that matters to that model. The template:
 
 1. **Statement** — one sentence, specific enough to be arguable rather than just agreeable.
 2. **Evidence** — the concrete support: a figure, a documented outcome, a specific case. If real evidence isn't available to you right now, note what would be needed and where you'd go to get it — that's a legitimate placeholder, not a cop-out.
@@ -651,7 +636,7 @@ A brief example, built just to illustrate the shape rather than to represent any
 
 ## Learning Activity: The Persuasive Reframe
 
-Here's where you put this to work directly on the chain you already built. Go back to the Statement → Evidence → Analysis → Conclusion chain you constructed in Unit 10 for your chosen Appendix B model speech — either the product or service launch, or the agency and program introduction. You're not starting over, and you're not inventing new content. The facts, the evidence, the reasoning: all of that stays exactly as sound as you left it. What changes is what you're building it toward.
+Here's where you put this to work directly on the chain you already built. Go back to the Statement → Evidence → Analysis → Conclusion chain you constructed in Unit 10 for your chosen model speech from the Organizational/Product Presentation Models appendix — either the product or service launch, or the agency and program introduction. You're not starting over, and you're not inventing new content. The facts, the evidence, the reasoning: all of that stays exactly as sound as you left it. What changes is what you're building it toward.
 
 Work through the following, using your own Unit 10 material as the raw content:
 
@@ -667,8 +652,6 @@ Work through the following, using your own Unit 10 material as the raw content:
 - **Compare the two versions side by side.** This is the part worth genuinely reflecting on rather than rushing past: read your Unit 10 chain and your persuasive reframe back to back. What did the persuasive version have to add that logic alone didn't require? What, if anything, did it cost you — did sharpening the emotional pull or the call to action put any pressure on the precision you had in Unit 10? Good persuasive work shouldn't have to sacrifice the rigor underneath it, and if you notice it did, that's worth going back and fixing rather than accepting as the price of persuasion.
 
 There's no single correct reframe here, and two learners working from equally strong Unit 10 chains might reasonably produce quite different persuasive versions — because the right emotional register, the right level of stage-two urgency, the right call to action all depend on who you're picturing in the room. That dependence on audience and context isn't a weakness in the framework; it's the entire reason the five stages are a lens and not a form.
-
----
 
 ---
 
@@ -812,8 +795,6 @@ Once you've run through it, it's worth reflecting honestly on which step gave yo
 
 ---
 
----
-
 # Unit 14: Delivering with Slides & Handouts
 
 ## Long Tier
@@ -853,8 +834,6 @@ Go back to the redesigned slides you produced in Unit 6 — you'll be using that
 **Part two: the handout-pacing variant.** Now deliver the same content again, but this time as if it were a shared digital handout rather than projected slides — walk your partner through the material section by section, announcing where you are and pausing to let them find the spot, the way you would with a small audience working from a document you'd sent ahead. Notice what changes when you're not relying on a projected visual to carry the pacing for you: you have to do more of that signposting work verbally, since there's no slide advance to mark the transition for you automatically.
 
 After both passes, ask your partner for feedback focused specifically on synchronization — not on your content or your confidence, but on whether your speech and your visual (or verbal) transitions were actually lining up. Where did they feel like they were reading ahead of you, or waiting for you to catch up? Which of the two formats felt better synchronized, and is that because of something about the format itself, or something about how you delivered each one? It's worth treating that last question as a real one rather than a rhetorical one — the answer might tell you more about your own habits than about slides versus handouts as formats.
-
----
 
 ---
 
@@ -932,9 +911,7 @@ The point of running the full cycle — division, individual drafting, seam-buil
 
 ---
 
----
-
-# Appendix A: Self-Introduction Models
+# Appendix: Self-Introduction Models
 
 ## Model 1: Business Context
 
@@ -956,7 +933,7 @@ My third point is what this means here. I've spent my first two weeks mostly lis
 
 So to bring this back to where I started: I believe the fastest way to improve how we operate isn't a sweeping overhaul, it's finding the handful of places where delay starts and fixing those first. I've done this before, it worked, and I think the same approach applies here. Over the next month, I'll be reaching out to many of you directly to learn more about where you see friction in your own part of the process. Thank you for the warm welcome, and I'm looking forward to working with all of you.
 
-# Appendix A: Self-Introduction Models
+# Appendix: Self-Introduction Models
 
 ## Model 2: Government / Public-Sector Context
 
@@ -980,9 +957,59 @@ To return to where I began: I believe our most urgent task isn't adding new serv
 
 ---
 
+# Appendix: Logic Tree Worked Models
+
+Unit 5 worked through a single populated Logic Tree in detail — the budgeting-app product launch — largely because seeing one tree fully built out is more useful early on than seeing several sketched thinly. But one example can only tell you so much about how the shape generalizes, so this appendix collects two more fully worked trees: one business scenario and one government scenario. Both follow the exact same five-part structure taught in Unit 5 — Roots, Trunk, Branches, Leaves, Fruit — and it's worth reading them with an eye toward what stays constant across very different subject matter and what naturally changes.
+
+## Model 1: Business Context
+
+The scenario here is an internal pitch: proposing a remote-work stipend as a new employee benefit, presented to a company's leadership team.
+
+**Roots:** The audience is the executive team, and it matters that they evaluate a proposal like this primarily through retention and cost rather than through goodwill toward employees as an end in itself — a pitch that leads with "employees would appreciate this" is weaker here than one that leads with what it saves the company. The purpose of the talk is narrow and concrete: get approval for a one-quarter pilot, not a permanent company-wide policy on the first ask.
+
+**Trunk:** "A $75 monthly stipend will cut our turnover costs by more than it costs us." Notice that the trunk is framed as a cost comparison rather than a benefits description — that framing is doing real work, because it tells the audience up front what kind of claim they're about to be asked to evaluate.
+
+**Branch 1 — The problem is already costing the company money, not a hypothetical future risk.** A proposal lands very differently when the problem it solves is demonstrably already happening.
+- Leaf: Exit interviews cite home-office costs as a factor in 40% of this year's resignations.
+- Leaf: Three of the company's five currently open roles have sat vacant for more than 60 days.
+
+**Branch 2 — The stipend is inexpensive relative to what it prevents.** The comparison that actually matters to this audience isn't the stipend's cost in isolation — a raw number like "$900 a year" means little without something to weigh it against.
+- Leaf: The stipend costs approximately $900 per employee per year.
+- Leaf: Replacing one mid-level hire costs roughly $18,000, once recruiting time and lost productivity during the vacancy are counted.
+
+**Branch 3 — The stipend is simple to administer, not a new operational burden.** A proposal that would require new systems, new vendors, or new approval workflows tends to draw skepticism regardless of its merits, simply because of the implementation cost it implies.
+- Leaf: It can be paid through the company's existing payroll software, with no new vendor contract required.
+- Leaf: Several comparable companies in the same industry already offer an equivalent benefit, which reframes this from an experimental idea to a catch-up move.
+
+**Fruit:** "Approve a one-quarter pilot with the engineering team, and review the retention numbers after 90 days." Notice that the fruit doesn't ask for a permanent commitment — it asks for a bounded trial with a built-in review point, which is generally an easier yes to get from a leadership audience than an open-ended policy change, even when the underlying case is strong.
+
+## Model 2: Government / Public-Sector Context
+
+The scenario here shifts to a public-sector setting: proposing a pedestrian-safety upgrade at a specific, named intersection, delivered to a city council with residents in attendance.
+
+**Roots:** The audience is council members, but it's worth noting that nearby residents attending the session are effectively a second audience in the room, and both groups weigh the proposal along a similar axis — safety benefit against cost to taxpayers — even though only the council actually votes. The purpose is deliberately specific: get this one intersection added to next year's capital improvement budget, rather than arguing for pedestrian safety as a general priority.
+
+**Trunk:** "One intersection accounts for most of our pedestrian injuries in this district — fixing it first is where the safety budget will do the most good." This trunk is doing something worth noticing: it isn't just asserting that safety matters, which almost no one in the room would disagree with anyway. It's making a prioritization claim, which is the part that actually needs the branches to support it.
+
+**Branch 1 — The risk is concentrated at one location, not spread evenly across the district.** This distinction matters more than it might first appear, because a vague district-wide safety concern is hard to fund, while a specific, well-evidenced trouble spot is something a council can act on directly.
+- Leaf: The intersection of Fifth and Main has recorded six pedestrian collisions in the past two years — more than any other intersection in the district over the same period.
+- Leaf: A school and a senior center both sit within two blocks of that intersection, meaning the population most exposed to the risk includes two particularly vulnerable groups.
+
+**Branch 2 — The proposed fix already has a track record, rather than being a first attempt.** A council is generally more willing to approve a redesign that has already been shown to work than one being proposed as a novel experiment.
+- Leaf: A raised crosswalk paired with a shortened crossing distance reduced injuries by 50% at a comparable intersection in this same district three years ago.
+- Leaf: The same design is already in active use in two other cities within the state, so this isn't unproven outside a single pilot.
+
+**Branch 3 — The cost fits inside funding the district can already access, rather than requiring new revenue.** Removing the need for a tax increase or bond measure tends to lower the political cost of a yes vote considerably, independent of the safety case itself.
+- Leaf: The estimated cost is $140,000, fully coverable by an existing, currently unused state safety grant.
+- Leaf: No new local tax increase or bond measure is required to fund the project.
+
+**Fruit:** "Add this intersection to next year's capital improvement plan, with construction beginning next summer." As with the business model above, notice that the fruit names a specific, trackable action rather than closing on something diffuse like "let's keep pedestrian safety in mind going forward" — a vague fruit gives an audience nothing concrete to approve or decline.
+
+It's worth pausing on what's identical between these two trees despite how different the subject matter is: both trunks make a specific, arguable claim rather than a bland statement of good intentions; both sets of branches are backed by genuine numbers rather than adjectives ('a lot of collisions,' 'fairly cheap'); and both fruits ask for a bounded, specific action rather than trailing off into vague aspiration. That consistency — not the topic — is what makes a Logic Tree a Logic Tree. When you build your own tree in Unit 5's activity, it's that underlying discipline you're practicing, regardless of whether your topic ends up closer to the business model here or the government one.
+
 ---
 
-# Appendix B — Model Speech: Business (Product/Service Launch)
+# Appendix: Organizational/Product Presentation Models — Business (Product/Service Launch)
 
 ## "Introducing Ledgerline" — Launch Address to Small-Business Partners and Press
 
@@ -1006,7 +1033,7 @@ Over the next few months, you'll hear more from us about specific industry confi
 
 Thank you. I'm glad to take questions.
 
-# Appendix B — Model Speech: Government (Agency/Program Launch)
+# Appendix: Organizational/Product Presentation Models — Government (Agency/Program Launch)
 
 ## Introducing the Regional Small Business Advisory Service — Remarks at Program Launch
 
@@ -1036,9 +1063,7 @@ Thank you, and I'm happy to take questions.
 
 ---
 
----
-
-# Appendix C — Model Speech (Business): "What's Behind the Return Rate"
+# Appendix: Persuasive/Policy Presentation Models — Business: "What's Behind the Return Rate"
 
 Good afternoon, everyone. I want to walk you through what we've found over the last six weeks looking into our online return numbers. I'm here to explain what's happening and what the data shows — I'm not going to propose a fix today.
 
@@ -1052,7 +1077,7 @@ Each of these returns costs us an average of $14.20 in reverse logistics and res
 
 What we choose to do about the size charts or the vendor relationship is a decision for next week's session. I'm happy to take questions on the data itself.
 
-# Appendix C — Model Speech (Government): "Preventable Readmissions: What the Review Found"
+# Appendix: Persuasive/Policy Presentation Models — Government: "Preventable Readmissions: What the Review Found"
 
 Thank you for the opportunity to present the findings of the six-month review into hospital readmission rates. My mandate was to investigate and report, not to recommend a specific policy response.
 
