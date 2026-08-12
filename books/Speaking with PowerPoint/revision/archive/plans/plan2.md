@@ -2,7 +2,7 @@
 
 ## Summary
 
-Replace `books/Speaking with PowerPoint/plan.md` with a production-ready Plan 2 for rebuilding the existing `books/Presentation Skills` series from the 2026 revision requirements.
+Replace `books/Speaking with PowerPoint/revision/archive/plans/plan.md` with a production-ready Plan 2 for rebuilding the existing `books/Presentation Skills` series from the 2026 revision requirements.
 
 This is not a standalone edit of the 39-page *Speaking with PowerPoint* PDF. It is a rebuild of the existing Presentation Skills series, using *Speaking with PowerPoint* as the main modernization trigger and source of visual-presentation content.
 

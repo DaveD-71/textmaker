@@ -10,18 +10,18 @@ Scope: read-only review of the first draft appendix presentation models.
 
 Reviewed appendix drafts:
 
-- `books/Speaking with PowerPoint/drafts/appendices/process-improvement-briefing-models.md`
-- `books/Speaking with PowerPoint/drafts/appendices/product-service-program-launch-models.md`
-- `books/Speaking with PowerPoint/drafts/appendices/project-results-briefing-models.md`
+- `books/Speaking with PowerPoint/revision/drafts/appendices/process-improvement-briefing-models.md`
+- `books/Speaking with PowerPoint/revision/drafts/appendices/product-service-program-launch-models.md`
+- `books/Speaking with PowerPoint/revision/drafts/appendices/project-results-briefing-models.md`
 
 Control files used:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
 - `books/Presentation Skills/canon/voice-S.md`
 
 ## Agent assignments

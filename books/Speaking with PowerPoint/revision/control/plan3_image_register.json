@@ -5,7 +5,7 @@
     "prepared": "2026-08-12",
     "scope": "Plan 3 rebuild of Speaking with PowerPoint / Presentation Skills 2026",
     "status": "planning",
-    "schema_source": "books/Speaking with PowerPoint/plan3-asset-register-template.md",
+    "schema_source": "books/Speaking with PowerPoint/revision/control/plan3-asset-register-template.md",
     "notes": "This register is specific to the Plan 3 rebuild. It does not replace books/Presentation Skills/images/image_register.json until final asset location and reuse decisions are approved."
   },
   "style_lock": {

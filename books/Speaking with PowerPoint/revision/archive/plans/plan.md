@@ -134,17 +134,17 @@ Both ClaudeAI and ChatGPT were asked to review the two main files and provide fe
 
 ### Main files
 
-'books\Speaking with PowerPoint\Speaking with PowerPoint - 2026 Consolidated Revision Task List.md'
+'books\Speaking with PowerPoint\revision\Speaking with PowerPoint - 2026 Consolidated Revision Task List.md'
 
-'books\Speaking with PowerPoint\plan.md'
+'books\Speaking with PowerPoint\revision\archive\plans\plan.md'
 
 ### ChatGPT says
 
-'books\Speaking with PowerPoint\ChatGPT\chatgpt_plan_feedback.md'
+'books\Speaking with PowerPoint\revision\feedback\ChatGPT\chatgpt_plan_feedback.md'
 
 ### ClaudeAI says
 
-'books\Speaking with PowerPoint\Claude.ai\claudeai_plan_feedback.md'
+'books\Speaking with PowerPoint\revision\feedback\Claude.ai\claudeai_plan_feedback.md'
 
 ### Codex says
 

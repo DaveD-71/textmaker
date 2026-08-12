@@ -6,9 +6,9 @@ Purpose: consolidate the revision issues and recommendations from the source PDF
 
 Source files reviewed:
 
-- `books/Speaking with PowerPoint/Speaking with PowerPoint.pdf`
-- `books/Speaking with PowerPoint/Claude.ai/Speaking_with_PowerPoint_2026_Revision_Audit.md`
-- `books/Speaking with PowerPoint/ChatGPT/Speaking-with-PowerPoint-Revision-Audit.md`
+- `books/Speaking with PowerPoint/old/source/Speaking with PowerPoint.pdf`
+- `books/Speaking with PowerPoint/revision/feedback/Claude.ai/Speaking_with_PowerPoint_2026_Revision_Audit.md`
+- `books/Speaking with PowerPoint/revision/feedback/ChatGPT/Speaking-with-PowerPoint-Revision-Audit.md`
 
 External verification used:
 

@@ -8,7 +8,7 @@ Purpose: durable record for drafting the six Standard appendix presentation mode
 
 Output folder:
 
-- `books/Speaking with PowerPoint/drafts/appendices/`
+- `books/Speaking with PowerPoint/revision/drafts/appendices/`
 
 Required appendix model files:
 
@@ -34,12 +34,12 @@ Each file must contain:
 
 ## Control Files
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
 - `books/Presentation Skills/canon/voice-S.md`
 
 ## Shared Rules
@@ -65,9 +65,9 @@ Each file must contain:
 
 | Agent | Agent ID | Assignment | Result | Files Changed |
 |---|---|---|---|---|
-| Process Improvement Model Agent / Kierkegaard | `019ff4df-9a32-7610-b143-6b5745e5aa61` | Draft paired business-client and government-agency process improvement briefing models. | Complete. Drafted two paired process improvement models: Seika Capital Operations trade confirmation delay workflow pilot and Midori Ward returned application forms intake checklist trial. Constraint scan found no unit terminology issue, no AI promotion, and restricted finance/government terms only in guardrail language. | `books/Speaking with PowerPoint/drafts/appendices/process-improvement-briefing-models.md` |
-| Launch Model Agent / Carson | `019ff4df-d234-7651-affa-362ae3030874` | Draft paired business-client and government-agency launch briefing models. | Complete. Drafted two paired launch models: Koyo Markets Client Services reporting dashboard pilot and Aoba City Administrative Support Center application support desk pilot. Constraint scan found no unit terminology issue, no AI promotion, and restricted finance/government terms only in guardrail language. | `books/Speaking with PowerPoint/drafts/appendices/product-service-program-launch-models.md` |
-| Project Results Model Agent / Avicenna | `019ff4e0-0453-7f00-b610-ffef4a5cfa9c` | Draft paired business-client and government-agency project results briefing models. | Complete. Drafted two paired project results models: Seika Capital Operations exception resolution pilot results and Midori Ward intake checklist trial results. Constraint checks found no `Lesson` terminology, no AI promotion, and all required sections present. Restriction terms appear only as guardrails. | `books/Speaking with PowerPoint/drafts/appendices/project-results-briefing-models.md` |
+| Process Improvement Model Agent / Kierkegaard | `019ff4df-9a32-7610-b143-6b5745e5aa61` | Draft paired business-client and government-agency process improvement briefing models. | Complete. Drafted two paired process improvement models: Seika Capital Operations trade confirmation delay workflow pilot and Midori Ward returned application forms intake checklist trial. Constraint scan found no unit terminology issue, no AI promotion, and restricted finance/government terms only in guardrail language. | `books/Speaking with PowerPoint/revision/drafts/appendices/process-improvement-briefing-models.md` |
+| Launch Model Agent / Carson | `019ff4df-d234-7651-affa-362ae3030874` | Draft paired business-client and government-agency launch briefing models. | Complete. Drafted two paired launch models: Koyo Markets Client Services reporting dashboard pilot and Aoba City Administrative Support Center application support desk pilot. Constraint scan found no unit terminology issue, no AI promotion, and restricted finance/government terms only in guardrail language. | `books/Speaking with PowerPoint/revision/drafts/appendices/product-service-program-launch-models.md` |
+| Project Results Model Agent / Avicenna | `019ff4e0-0453-7f00-b610-ffef4a5cfa9c` | Draft paired business-client and government-agency project results briefing models. | Complete. Drafted two paired project results models: Seika Capital Operations exception resolution pilot results and Midori Ward intake checklist trial results. Constraint checks found no `Lesson` terminology, no AI promotion, and all required sections present. Restriction terms appear only as guardrails. | `books/Speaking with PowerPoint/revision/drafts/appendices/project-results-briefing-models.md` |
 
 ## Content Architect Integration Notes
 

@@ -1,4 +1,4 @@
-﻿# Plan 3 Drafting Round 1
+# Plan 3 Drafting Round 1
 
 Date: 2026-08-12
 
@@ -10,17 +10,17 @@ Tier: Standard only.
 
 Output folder:
 
-- `books/Speaking with PowerPoint/drafts/standard/`
+- `books/Speaking with PowerPoint/revision/drafts/standard/`
 
 Source control files:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
-- `books/Speaking with PowerPoint/standard-unit-1-drafting-package.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/standard-unit-1-drafting-package.md`
 
 ## Shared Drafting Rules
 

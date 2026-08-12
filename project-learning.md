@@ -246,3 +246,10 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/content
 - Decision: appendix presentation models must demonstrate only teaching points that logically belong to the model topic. Do not add data, charts, visuals, document roles, or Q&A pressure just to satisfy a unit reference.
 - Preferred behavior: use project results models for measured outcomes/data explanation; process improvement models for workflow, audience outcome, problem-solution structure, document roles, and implementation-risk Q&A; launch models for value-focused openings, visual hierarchy, rollout timelines, adoption questions, and next-step language. If a unit needs a skill that does not fit the appendix model, create a short role-agnostic practice item in the unit instead of distorting the model.
+
+## 2026-08-12 - Speaking with PowerPoint Folder Layout
+
+- Status: `active`
+- Scope: project/files
+- Decision: the book folder is organized into `books/Speaking with PowerPoint/revision/` for current 2026 revision work and `books/Speaking with PowerPoint/old/` for preserved original-source material.
+- Preferred behavior: place current plans, control files, draft units, appendix model source packs, AI feedback, archived revision plans, and agent/review records under `revision/`. Keep original PDF/DOCX source files and extracted conversion output under `old/`.

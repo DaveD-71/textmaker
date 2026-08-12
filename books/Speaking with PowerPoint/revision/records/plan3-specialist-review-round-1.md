@@ -1,4 +1,4 @@
-﻿# Plan 3 Specialist Review Round 1
+# Plan 3 Specialist Review Round 1
 
 Date: 2026-08-12
 
@@ -16,12 +16,12 @@ Review mode: read-only. Agents were instructed not to edit files, create assets,
 
 Files under review:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
 - `books/Presentation Skills/images/image_register.json` for the Asset and QA Specialist where useful
 
 ## Agent 1: Language Editor
@@ -118,12 +118,12 @@ After the three reviews returned, the Content Architect integrated the findings 
 
 Updated files:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
 - `project-journal.md`
 
 Integrated changes:

@@ -8,28 +8,28 @@ Purpose: durable record for the first specialist review of the 12 Standard unit 
 
 Draft files reviewed:
 
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-01.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-02.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-03.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-04.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-05.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-06.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-07.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-08.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-09.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-10.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-11.md`
-- `books/Speaking with PowerPoint/drafts/standard/standard-unit-12.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-01.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-02.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-03.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-04.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-05.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-06.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-07.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-08.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-09.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-10.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-11.md`
+- `books/Speaking with PowerPoint/revision/drafts/standard/standard-unit-12.md`
 
 Control files:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-unit-drafting-brief.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/standard-unit-drafting-brief.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
 - `books/Presentation Skills/canon/voice-S.md`
 
 ## Agent Assignments

@@ -8,19 +8,19 @@ Purpose: shared drafting instructions for the first Standard-tier unit draft rou
 
 Drafting agents must use these files as the source of truth:
 
-- `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
-- `books/Speaking with PowerPoint/plan3-style-sheet.md`
-- `books/Speaking with PowerPoint/plan3-case-model-brief.md`
-- `books/Speaking with PowerPoint/plan3-traceability.md`
-- `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
+- `books/Speaking with PowerPoint/revision/control/plan3.md`
+- `books/Speaking with PowerPoint/revision/control/standard-12-unit-curriculum-spec.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-style-sheet.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-traceability.md`
+- `books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md`
 - `books/Presentation Skills/canon/voice-S.md`
 
 ## Output Location
 
 Create learner-facing Standard draft files in:
 
-- `books/Speaking with PowerPoint/drafts/standard/`
+- `books/Speaking with PowerPoint/revision/drafts/standard/`
 
 Use these filenames:
 
