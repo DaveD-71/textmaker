@@ -5,6 +5,7 @@
 Create `books/Speaking with PowerPoint/Speaking with PowerPoint - 2026 Rewrite and Asset Plan.md` as a series-feeder implementation plan for rebuilding the existing `books/Presentation Skills` series units and assets using the consolidated 2026 task list.
 
 Default decisions:
+
 - Treat this as a rebuild of the existing Presentation Skills series units, not a standalone book.
 - Defer final title until content decisions are complete.
 - Use a lean multi-agent workflow: 4 bounded agents, no open-ended parallel drafting.
@@ -126,3 +127,41 @@ The main agent consolidates all outputs, resolves conflicts, and writes the fina
 - OpenAI Images API is acceptable for high-value assets, but usage should be batched and minimized.
 - Canva may be considered, but only where output quality, business appropriateness, and licensing are clear.
 - The plan file itself will be saved during execution mode, not while still in Plan Mode.
+
+## Feedback and plan revision
+
+Both ClaudeAI and ChatGPT were asked to review the two main files and provide feedback.
+
+### Main files
+
+'books\Speaking with PowerPoint\Speaking with PowerPoint - 2026 Consolidated Revision Task List.md'
+
+'books\Speaking with PowerPoint\plan.md'
+
+### ChatGPT says
+
+'books\Speaking with PowerPoint\ChatGPT\chatgpt_plan_feedback.md'
+
+### ClaudeAI says
+
+'books\Speaking with PowerPoint\Claude.ai\claudeai_plan_feedback.md'
+
+### Codex says
+
+Both sets of feedback from the two AIs were shared with Codex. Here is the response.
+
+Read both feedback files.
+
+Main takeaway: Claude.ai and ChatGPT agree that `plan.md` is not execution-ready yet. The core issue is not asset generation or agents; it is that the plan does not yet define the actual textbook/curriculum product clearly enough.
+
+Their shared criticisms:
+
+- `plan.md` silently shifts scope from revising *Speaking with PowerPoint* to rebuilding the broader `Presentation Skills` series. That may be correct, but it needs to be explicit and reconciled with the task list.
+- The plan lacks a real unit/curriculum map: outcomes, business task, language focus, activity, asset needs, and assessment evidence per unit.
+- The original two-day sprint framing is incompatible with the current multi-tier series rebuild plan. The plan needs separate tracks for editorial rewrite vs. later production/build.
+- P0 decisions are not closed, especially the new model/case strategy and target learner statement.
+- Assets are too prominent too early. Instructional design should come first; asset creation should follow approved unit/case design.
+- The plan needs target CEFR level, course duration, learner journey, model answers/trainer notes, final task, rubric, and accessibility QA for both textbook and assets.
+- Tool-agnostic is right, but ChatGPT warns against turning the book into a software survey. Better principle: teach durable visual communication; PowerPoint is one common example, not the course concept.
+
+My recommendation: revise `plan.md` substantially before implementation. The next version should start with a product specification and curriculum map, then define the model case, then plan assets and agent workflow around that. The current plan is useful as a production/agent workflow draft, but not yet as the master rewrite plan.
