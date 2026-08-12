@@ -232,3 +232,10 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Improve `reference.docx` to support running headers with chapter titles and page numbers.
 - Add automated merging of multiple chapters plus front and back matter.
 - Add automated image handling for placement, captions, and numbering.
+
+## 2026-08-12 - Speaking with PowerPoint Component Terminology
+
+- Status: `active`
+- Scope: project/content
+- Decision: textbook components in the Speaking with PowerPoint / Presentation Skills rebuild are `Units`, not `Lessons`.
+- Preferred behavior: use `Unit`, `unit`, `units`, `standard-12-unit-curriculum-spec.md`, `standard-unit-*`, `unit_use`, and `p3-uNN-*` asset IDs/filenames in authored planning, drafting, QA, and asset-register documents. Do not use `Lesson` for course components unless quoting or preserving external/source feedback.

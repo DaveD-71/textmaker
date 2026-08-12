@@ -1,4 +1,4 @@
-# Standard 12-Lesson Curriculum Spec
+﻿# Standard 12-Unit Curriculum Spec
 
 Prepared: 2026-08-12
 
@@ -31,7 +31,7 @@ By the end of Standard, learners can:
 
 ## Recurring Business Cases
 
-Use three recurring cases across lessons. These cases replace the old Ventura-only spine unless a specific old example is deliberately reused as historical contrast.
+Use three recurring cases across Units. These cases replace the old Ventura-only spine unless a specific old example is deliberately reused as historical contrast.
 
 | Case | Purpose | Typical Audience | Main Teaching Use |
 |---|---|---|---|
@@ -41,11 +41,11 @@ Use three recurring cases across lessons. These cases replace the old Ventura-on
 
 Each model must be traceable to language points, visual-design points, delivery behaviors, and assessment criteria.
 
-Concrete model variants must follow `plan3-case-model-brief.md`: business-client examples should focus on finance/trading operations, reporting, client-service, workflow, or control contexts; government-agency examples should focus on administrative service, process, reporting, coordination, or service-delivery contexts. Main lesson explanations should remain role-agnostic.
+Concrete model variants must follow `plan3-case-model-brief.md`: business-client examples should focus on finance/trading operations, reporting, client-service, workflow, or control contexts; government-agency examples should focus on administrative service, process, reporting, coordination, or service-delivery contexts. Main unit explanations should remain role-agnostic.
 
-## Lesson Specs
+## Unit Specs
 
-### Lesson 1: Audience, Purpose, and Business Context
+### Unit 1: Audience, Purpose, and Business Context
 
 Learner outcomes:
 - Identify the audience, occasion, and business purpose of a presentation.
@@ -67,11 +67,11 @@ Core tasks:
 
 Assessment link: message clarity and audience fit.
 
-Essentials note: keep as a compact planning lesson.
+Essentials note: keep as a compact planning unit.
 
 Long note: expand with stakeholder adaptation and competing audience needs.
 
-### Lesson 2: Message, Objective, and Relevance
+### Unit 2: Message, Objective, and Relevance
 
 Learner outcomes:
 - Write a core message as a claim, not only a topic.
@@ -99,7 +99,7 @@ Essentials note: keep the message/opening sequence.
 
 Long note: add executive relevance and stakeholder resistance.
 
-### Lesson 3: Structure and Flow
+### Unit 3: Structure and Flow
 
 Learner outcomes:
 - Choose a structure that fits the presentation purpose.
@@ -125,7 +125,7 @@ Essentials note: keep fewer structure options.
 
 Long note: add executive-summary and decision-deck structures.
 
-### Lesson 4: Business English for Signposting
+### Unit 4: Business English for Signposting
 
 Learner outcomes:
 - Use natural phrases to preview, transition, refer back, refer forward, emphasize, summarize, and close.
@@ -152,7 +152,7 @@ Essentials note: keep a core phrase bank.
 
 Long note: add register shifts for senior leaders, clients, and technical audiences.
 
-### Lesson 5: Clear Visual Communication
+### Unit 5: Clear Visual Communication
 
 Learner outcomes:
 - Design visual support around one main message.
@@ -182,7 +182,7 @@ Essentials note: keep the core readability/accessibility checklist.
 
 Long note: add advanced visual hierarchy and document-style visuals.
 
-### Lesson 6: Data, Charts, and Evidence
+### Unit 6: Data, Charts, and Evidence
 
 Learner outcomes:
 - Choose an appropriate chart or evidence format for a simple business point.
@@ -211,7 +211,7 @@ Essentials note: keep one simple chart task.
 
 Long note: expand into data storytelling, uncertainty, and decision-deck evidence.
 
-### Lesson 7: Tool-Neutral Slide and Document Workflow
+### Unit 7: Tool-Neutral Slide and Document Workflow
 
 Learner outcomes:
 - Choose an appropriate visual/document format for the audience and setting.
@@ -241,7 +241,7 @@ Essentials note: compress to slides, notes, PDF fallback, and basic handout choi
 
 Long note: add collaboration, templates, governance, and complex document ecosystems.
 
-### Lesson 8: Delivery: Voice, Presence, Movement, and Notes
+### Unit 8: Delivery: Voice, Presence, Movement, and Notes
 
 Learner outcomes:
 - Use voice, pace, pauses, thought groups, and stress to improve intelligibility.
@@ -269,7 +269,7 @@ Essentials note: keep voice, notes, and basic rehearsal.
 
 Long note: add room dynamics, executive presence, and difficult-room conditions.
 
-### Lesson 9: Online, Hybrid, and Async Delivery
+### Unit 9: Online, Hybrid, and Async Delivery
 
 Learner outcomes:
 - Adapt a presentation for online or hybrid delivery.
@@ -297,7 +297,7 @@ Essentials note: mention online basics if space is limited.
 
 Long note: expand into recorded presentation, async review, and hybrid facilitation.
 
-### Lesson 10: Q&A, Challenge Handling, and Interaction
+### Unit 10: Q&A, Challenge Handling, and Interaction
 
 Learner outcomes:
 - Listen for the purpose behind a question.
@@ -326,7 +326,7 @@ Essentials note: keep core Q&A phrases and short role play.
 
 Long note: add stakeholder challenge, hostile questions, and facilitation moves.
 
-### Lesson 11: Final Rehearsal and Peer Feedback
+### Unit 11: Final Rehearsal and Peer Feedback
 
 Learner outcomes:
 - Rehearse the full presentation using visuals and notes.
@@ -342,7 +342,7 @@ Model/case: learner's own final presentation.
 Learner deliverable: revised full presentation.
 
 Core tasks:
-- Revisit the Lesson 1 presentation history inventory and personal goal.
+- Revisit the Unit 1 presentation history inventory and personal goal.
 - Rehearse with timing and peer checklist.
 - Revise slides/visuals, opening, transitions, data explanation, and Q&A bank.
 - Separate peer feedback from formal assessment.
@@ -353,7 +353,7 @@ Essentials note: one focused rehearsal cycle.
 
 Long note: add second rehearsal cycle and instructor conference.
 
-### Lesson 12: Final Presentation and Reflection
+### Unit 12: Final Presentation and Reflection
 
 Learner outcomes:
 - Deliver a business presentation with visuals.
@@ -413,11 +413,11 @@ Long:
 
 ## Approval Checks Before Drafting
 
-Do not begin lesson rewriting until these are accepted:
+Do not begin unit rewriting until these are accepted:
 
 | Check | Status | Notes |
 |---|---|---|
-| The 12 Standard lessons are approved as the master spine |  |  |
+| The 12 Standard Units are approved as the master spine |  |  |
 | The three recurring business cases are approved |  |  |
 | AI policy is approved as cautious critical literacy only |  |  |
 | Assessment categories are approved |  |  |

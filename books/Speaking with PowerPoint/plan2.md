@@ -8,7 +8,7 @@ This is not a standalone edit of the 39-page *Speaking with PowerPoint* PDF. It 
 
 Default decisions:
 - Product target: `books/Presentation Skills` tiered series.
-- Main design anchor: Standard tier = 12 lessons.
+- Main design anchor: Standard tier = 12 units.
 - Target learner: B1-B2 adult business ESL learners in Japan.
 - Final title: defer until content architecture is stable.
 - Model strategy: use three recurring model strands, not one Ventura replacement.
@@ -32,7 +32,7 @@ Deliver three tiered manuscripts from the same rebuilt curriculum:
    - Output: learner can deliver a short business update with one or two clear visuals.
 
 2. Standard
-   - Canonical 12-lesson course.
+   - Canonical 12-unit course.
    - Focus: one progressively developed business presentation.
    - Output: learner can plan, design, deliver, and discuss a 5-7 minute business presentation with visuals.
 
@@ -45,9 +45,9 @@ The old two-day sprint framing is retired for this series rebuild. Use it only a
 
 ## Curriculum Map
 
-Standard tier is the canonical 12-lesson map.
+Standard tier is the canonical 12-unit map.
 
-| # | Lesson | Learner outcome | Business task | Language / skill focus | Key activity | Asset needed |
+| # | Unit | Learner outcome | Business task | Language / skill focus | Key activity | Asset needed |
 |---|---|---|---|---|---|---|
 | 1 | Presentations as Business Decisions | Define audience, purpose, and desired outcome | Diagnose a weak brief | purpose, audience, decision/action | Rewrite weak briefs into audience-outcome briefs | planning form |
 | 2 | Message and Evidence | State a key message supported by evidence | Build a claim from facts | key message, claim/evidence, concise wording | Turn raw notes into a message-evidence chain | message map |
@@ -69,7 +69,7 @@ Long-tier extensions:
 - More complex data/evidence tasks.
 
 Essentials compression:
-- Combine Lessons 1-2, 3-4, 5-7, 8-10, then finish with a short presentation task.
+- Combine Units 1-2, 3-4, 5-7, 8-10, then finish with a short presentation task.
 - Keep only core model examples and the simplest visuals.
 
 ## Model Case Strategy
@@ -109,7 +109,7 @@ No 2014 Ventura material carries forward except as an internal example of what n
 Plan execution should produce these files or artifacts:
 
 1. Product specification and decision log.
-2. 12-lesson curriculum map.
+2. 12-unit curriculum map.
 3. Three model-case packs.
 4. Updated unit JSON for `books/Presentation Skills`.
 5. Regenerated Essentials, Standard, and Long manuscripts.
@@ -168,7 +168,7 @@ Every asset must include:
 Use lean concurrent development: 4 bounded agents, then main-agent consolidation.
 
 1. Curriculum Architecture Agent
-   - Audits existing units against the 12-lesson map.
+   - Audits existing units against the 12-unit map.
    - Outputs: keep/rewrite/merge/remove table and tier impact.
 
 2. Model Case Agent
@@ -196,7 +196,7 @@ Rules:
    - Outcome: decision log.
 
 2. Build curriculum map
-   - Convert the 12-lesson table into final tier mapping.
+   - Convert the 12-unit table into final tier mapping.
    - Outcome: approved unit architecture.
 
 3. Build model cases
@@ -231,8 +231,8 @@ Rules:
 ## QA Checklist
 
 Content:
-- Standard tier has exactly 12 lessons.
-- Each lesson has outcome, business task, model/example, practice, application, and assessment evidence.
+- Standard tier has exactly 12 units.
+- Each unit has outcome, business task, model/example, practice, application, and assessment evidence.
 - Learners build toward one final presentation.
 - Three model strands are used intentionally, not randomly.
 - B1-B2 language support is visible.
@@ -276,7 +276,7 @@ Production:
 - The old *Speaking with PowerPoint* file remains an archival source unless separately requested.
 - Standard tier is the design spine; Essentials and Long are derived from it.
 - B1-B2 is the default level.
-- Twelve lessons means twelve Standard-tier lessons, not necessarily twelve files.
+- Twelve units means twelve Standard-tier units, not necessarily twelve files.
 - Final title is intentionally deferred.
 - OpenAI Images API is available but used after asset approval only.
 - Official sources should be used for current tool claims; do not rely on memory for software features.

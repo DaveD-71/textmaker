@@ -1,4 +1,4 @@
-# Plan 3 Specialist Review Round 1
+﻿# Plan 3 Specialist Review Round 1
 
 Date: 2026-08-12
 
@@ -12,12 +12,12 @@ The round used the Plan 3 roles that can work concurrently without changing the 
 - Business Presentation Specialist
 - Asset and QA Specialist
 
-Review mode: read-only. Agents were instructed not to edit files, create assets, or draft lessons.
+Review mode: read-only. Agents were instructed not to edit files, create assets, or draft Units.
 
 Files under review:
 
 - `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-lesson-curriculum-spec.md`
+- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
 - `books/Speaking with PowerPoint/plan3-style-sheet.md`
 - `books/Speaking with PowerPoint/plan3-case-model-brief.md`
 - `books/Speaking with PowerPoint/plan3-traceability.md`
@@ -32,15 +32,15 @@ Nickname: `Lagrange`
 
 Assignment:
 
-Review for B1-B2 ESL fit, English language-development focus, presentation-English syllabus coverage, Japanese-learner support, and AI caution. Check whether any wording risks promoting AI as a replacement for language growth. Check whether tasks are feasible for adult business English learners. Return concise findings with file/section references and concrete proposed fixes. Do not rewrite the files and do not draft lessons.
+Review for B1-B2 ESL fit, English language-development focus, presentation-English syllabus coverage, Japanese-learner support, and AI caution. Check whether any wording risks promoting AI as a replacement for language growth. Check whether tasks are feasible for adult business English learners. Return concise findings with file/section references and concrete proposed fixes. Do not rewrite the files and do not draft Units.
 
 Returned findings:
 
-1. Medium: Lessons 5 and 7 could drift from English development into design/workflow training. `standard-12-lesson-curriculum-spec.md` has strong visual/tool content, but the learner deliverables are mainly artifacts. Proposed fix: add required spoken micro-outputs, such as explaining a visual choice in 45-60 seconds and justifying a format choice using target language for handouts, pre-reads, backup files, confidentiality, and follow-up.
+1. Medium: Units 5 and 7 could drift from English development into design/workflow training. `standard-12-unit-curriculum-spec.md` has strong visual/tool content, but the learner deliverables are mainly artifacts. Proposed fix: add required spoken micro-outputs, such as explaining a visual choice in 45-60 seconds and justifying a format choice using target language for handouts, pre-reads, backup files, confidentiality, and follow-up.
 
-2. Medium: Japanese-learner support is good in the style sheet but under-mapped in the lesson spine. Proposed fix: add placement notes for Lesson 2 bilingual planning, Lesson 5/6 article-plural slide text, Lesson 8 katakana/stress/thought groups, and Lesson 10 polite direct disagreement. Also expand traceability beyond Lessons 4 and 8.
+2. Medium: Japanese-learner support is good in the style sheet but under-mapped in the unit spine. Proposed fix: add placement notes for Unit 2 bilingual planning, Unit 5/6 article-plural slide text, Unit 8 katakana/stress/thought groups, and Unit 10 polite direct disagreement. Also expand traceability beyond Units 4 and 8.
 
-3. Medium: Some Standard tasks are feasible for adult B1-B2 learners only if tightly scaffolded. Lesson 7 asks learners to choose among many formats and check export/security issues; Lesson 9 combines online, hybrid, and async delivery. Proposed fix: state that Standard uses constrained choice menus, short scenarios, sentence frames, and one chosen output per learner; reserve multi-format comparison and full async production for Long.
+3. Medium: Some Standard tasks are feasible for adult B1-B2 learners only if tightly scaffolded. Unit 7 asks learners to choose among many formats and check export/security issues; Unit 9 combines online, hybrid, and async delivery. Proposed fix: state that Standard uses constrained choice menus, short scenarios, sentence frames, and one chosen output per learner; reserve multi-format comparison and full async production for Long.
 
 4. Low: AI caution is mostly strong, but "rewrite output into learner-owned English" could be misread as AI-assisted composition. Proposed fix: specify that AI tasks use short flawed sample outputs for critique only, not the learner's final presentation, and that learners must produce their own assessed message, slides, notes, rehearsal, and delivery.
 
@@ -50,7 +50,7 @@ Returned findings:
 
 Overall conclusion:
 
-Plan 3 is suitable for adult B1-B2 business English learners and does not broadly promote AI as a replacement for language growth. The main implementation risk is drift: visual/tool lessons need mandatory spoken-English outputs and tighter B1-B2 scaffolding.
+Plan 3 is suitable for adult B1-B2 business English learners and does not broadly promote AI as a replacement for language growth. The main implementation risk is drift: visual/tool Units need mandatory spoken-English outputs and tighter B1-B2 scaffolding.
 
 ## Agent 2: Business Presentation Specialist
 
@@ -60,15 +60,15 @@ Nickname: `Kuhn`
 
 Assignment:
 
-Review for business-presentation realism, finance/trading business-client fit, government-agency administrative-task fit, role-agnostic main-text strategy, appendix model usefulness, tool-neutral workflow, document roles, delivery contexts, and Q&A realism. Return concise findings with file/section references and concrete proposed fixes. Do not edit files and do not draft lessons.
+Review for business-presentation realism, finance/trading business-client fit, government-agency administrative-task fit, role-agnostic main-text strategy, appendix model usefulness, tool-neutral workflow, document roles, delivery contexts, and Q&A realism. Return concise findings with file/section references and concrete proposed fixes. Do not edit files and do not draft Units.
 
 Returned findings:
 
-1. Traceability does not yet enforce the new business/government audience split. The case/model brief correctly says main text stays role-agnostic and variants carry finance/trading and government-agency specificity, but traceability only tracks recurring cases generally. Proposed fix: add explicit traceability rows for audience-variant rule, finance/trading operations fit, government administrative-task fit, appendix model parity, and main lesson body remaining role-agnostic.
+1. Traceability does not yet enforce the new business/government audience split. The case/model brief correctly says main text stays role-agnostic and variants carry finance/trading and government-agency specificity, but traceability only tracks recurring cases generally. Proposed fix: add explicit traceability rows for audience-variant rule, finance/trading operations fit, government administrative-task fit, appendix model parity, and main unit body remaining role-agnostic.
 
 2. The Standard spec still reads too generic in the case table. Proposed fix: keep the Standard table role-agnostic, but add a note that concrete model variants must follow the case/model brief: finance/trading operations, reporting, client-service, or control contexts for business-client examples; administrative service/process/reporting contexts for government examples.
 
-3. Appendix model system is promising but not operational enough for drafting. What is missing is the promised trace from each model to language points, visual-design points, delivery behaviors, and assessment criteria. Proposed fix: add a compact matrix per model set with columns for lesson reference, excerpt to reuse, target language, visual principle, delivery behavior, Q&A skill, and rubric category.
+3. Appendix model system is promising but not operational enough for drafting. What is missing is the promised trace from each model to language points, visual-design points, delivery behaviors, and assessment criteria. Proposed fix: add a compact matrix per model set with columns for unit reference, excerpt to reuse, target language, visual principle, delivery behavior, Q&A skill, and rubric category.
 
 4. Q&A realism is under-specified. The plan gives pressure points, but does not require model answers, follow-up moves, or realistic constraints such as lacking a number, needing policy confirmation, or requiring risk/control approval. Proposed fix: require each appendix model to include 4-6 Q&A pairs tagged by function: clarify, answer directly, bridge to evidence, defer safely, acknowledge risk, and confirm follow-up.
 
@@ -92,7 +92,7 @@ Review for asset feasibility, accessibility coverage, source/factual QA, privacy
 
 Returned findings:
 
-1. Asset register is not release-ready against Plan 3 requirements. The style sheet and Phase 6 checklist require source, license status, alt text, captions, lesson/tier use, and replacement rationale, but the existing `books/Presentation Skills/images/image_register.json` currently has prompts/descriptions only. Proposed fix: define a required asset schema and add QA rows that fail any asset missing `file_path`, `source`, `license_status`, `generated_or_original`, `alt_text`, `decorative`, `caption`, `lesson_tier_use`, `replacement_rationale`, `visual_restriction_check`, and `approved_by`.
+1. Asset register is not release-ready against Plan 3 requirements. The style sheet and Phase 6 checklist require source, license status, alt text, captions, unit/tier use, and replacement rationale, but the existing `books/Presentation Skills/images/image_register.json` currently has prompts/descriptions only. Proposed fix: define a required asset schema and add QA rows that fail any asset missing `file_path`, `source`, `license_status`, `generated_or_original`, `alt_text`, `decorative`, `caption`, `unit_tier_use`, `replacement_rationale`, `visual_restriction_check`, and `approved_by`.
 
 2. Phase 6 checklist is too thin operationally for QA execution. It says Repair/Defer items need file/location, owner, and next action, but the tables only have `Check | Status | Notes`. Proposed fix: use an execution format with `Check | Tier/Deliverable | Status | Evidence/File | Owner | Repair/Defer Action | Recheck Result`.
 
@@ -119,7 +119,7 @@ After the three reviews returned, the Content Architect integrated the findings 
 Updated files:
 
 - `books/Speaking with PowerPoint/plan3.md`
-- `books/Speaking with PowerPoint/standard-12-lesson-curriculum-spec.md`
+- `books/Speaking with PowerPoint/standard-12-unit-curriculum-spec.md`
 - `books/Speaking with PowerPoint/plan3-style-sheet.md`
 - `books/Speaking with PowerPoint/plan3-traceability.md`
 - `books/Speaking with PowerPoint/plan3-phase6-qa-checklist.md`
@@ -130,13 +130,13 @@ Integrated changes:
 
 - Removed the saved Codex annotation marker from `plan3.md`.
 - Cleaned `QA and Acceptance`, `AI use policy`, `license status`, and `the OpenAI image generation API` wording.
-- Added spoken micro-outputs to visual/tool lessons so they remain anchored in English development.
+- Added spoken micro-outputs to visual/tool Units so they remain anchored in English development.
 - Added B1-B2 scaffolding constraints for Standard, especially constrained choices and one chosen output per learner.
 - Added Japanese-learner placement notes for bilingual planning, slide-text articles/plurals, thought groups/stress, and polite direct disagreement.
 - Strengthened AI policy so AI tasks use short flawed samples for critique only and cannot become a drafting workflow for assessed work.
 - Added contingency language categories for technical problems, screen sharing, audio/caption issues, timing recovery, and backup-file transitions.
 - Added traceability rows for audience-variant rule, finance/trading business-client focus, government-agency administrative focus, and appendix model parity.
-- Expanded the case/model brief with six concrete appendix model briefs, delivery context profiles, required Q&A functions, and a model-to-lesson trace matrix.
+- Expanded the case/model brief with six concrete appendix model briefs, delivery context profiles, required Q&A functions, and a model-to-unit trace matrix.
 - Added finance/trading and government-agency guardrails to the curriculum spec, style sheet, traceability matrix, and QA checklist.
 - Hardened Phase 6 QA with an execution evidence format, concrete accessibility checks, asset schema requirements, generated-image inspection, privacy/security mockup checks, and metadata checks.
 

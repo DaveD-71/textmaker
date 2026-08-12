@@ -1,8 +1,8 @@
-# Plan 3 Case and Model Brief
+﻿# Plan 3 Case and Model Brief
 
 Prepared: 2026-08-12
 
-Purpose: define the reusable case and appendix model system for the Plan 3 rebuild before lesson drafting. The core lesson body remains role-agnostic; business-client and government-agency specificity belongs in examples, models, appendices, teacher notes, or optional variants.
+Purpose: define the reusable case and appendix model system for the Plan 3 rebuild before unit drafting. The core unit body remains role-agnostic; business-client and government-agency specificity belongs in examples, models, appendices, teacher notes, or optional variants.
 
 ## Audience Variant Rule
 
@@ -11,7 +11,7 @@ The main textbook body should teach general presentation skills without assuming
 - Business-client variants should focus mainly on finance or trading industry contexts.
 - Government-agency variants should focus mainly on administrative tasks, service delivery, internal process improvement, reporting, coordination, or public-facing administrative communication.
 
-Do not create separate government and business lesson tracks. Add the specificity through examples and models that the main lesson references.
+Do not create separate government and business unit tracks. Add the specificity through examples and models that the main unit references.
 
 Government-agency examples should stay in administrative improvement, service delivery, reporting, coordination, and service communication. Do not turn them into political advocacy, legislation, budget campaigning, or public-policy argument unless explicitly approved.
 
@@ -35,7 +35,7 @@ Government-agency variant:
 - Decision/action: approve a revised procedure, trial a new checklist, or standardize handoff timing.
 - Data type: processing time, backlog volume, returned documents, inquiry count, number of approval steps.
 
-Likely lesson references: Lessons 1, 2, 3, 7, 10, 12.
+Likely unit references: Units 1, 2, 3, 7, 10, 12.
 
 Appendix model requirement: include one business-client model and one government-agency model showing the same underlying problem-solution-recommendation skill.
 
@@ -59,7 +59,7 @@ Government-agency variant:
 - Decision/action: approve rollout, train staff, use the new process, or communicate the change to users.
 - Data type: number of users served, inquiry categories, processing time, staff workload, user satisfaction, implementation schedule.
 
-Likely lesson references: Lessons 2, 4, 5, 7, 10, 12.
+Likely unit references: Units 2, 4, 5, 7, 10, 12.
 
 Appendix model requirement: include one business-client model and one government-agency model showing the same underlying value-explanation and launch-plan skill.
 
@@ -83,7 +83,7 @@ Government-agency variant:
 - Decision/action: continue the pilot, expand to another section, revise procedure, allocate staff time, or publish guidance.
 - Data type: before/after comparison, backlog count, response time, processing time, returned forms, user inquiry categories.
 
-Likely lesson references: Lessons 3, 4, 6, 9, 10, 12.
+Likely unit references: Units 3, 4, 6, 9, 10, 12.
 
 Appendix model requirement: include one business-client model and one government-agency model showing the same underlying results-evidence-next steps skill.
 
@@ -93,11 +93,11 @@ Use appendix model names rather than letters in learner-facing text.
 
 Required model appendices:
 
-| Appendix Model Set | Main Lessons Referenced | Business-Client Model | Government-Agency Model |
+| Appendix Model Set | Main Units Referenced | Business-Client Model | Government-Agency Model |
 |---|---|---|---|
-| Process Improvement Briefing Models | Lessons 1, 2, 3, 7, 10, 12 | Finance/trading operations workflow improvement | Administrative process improvement |
-| Product, Service, or Program Launch Models | Lessons 2, 4, 5, 7, 10, 12 | Finance/trading client or internal service launch | Administrative service or program launch |
-| Project Results Briefing Models | Lessons 3, 4, 6, 9, 10, 12 | Finance/trading project results briefing | Administrative project results briefing |
+| Process Improvement Briefing Models | Units 1, 2, 3, 7, 10, 12 | Finance/trading operations workflow improvement | Administrative process improvement |
+| Product, Service, or Program Launch Models | Units 2, 4, 5, 7, 10, 12 | Finance/trading client or internal service launch | Administrative service or program launch |
+| Project Results Briefing Models | Units 3, 4, 6, 9, 10, 12 | Finance/trading project results briefing | Administrative project results briefing |
 
 Each model set should include:
 - short scenario brief
@@ -109,7 +109,7 @@ Each model set should include:
 - at least one visual or data point where relevant
 - short excerpt for language analysis
 - 4-6 Q&A pairs tagged by function
-- notes showing which lesson skills it demonstrates
+- notes showing which unit skills it demonstrates
 
 Required Q&A functions:
 - clarify the question
@@ -160,7 +160,7 @@ Likely Q&A pressure points:
 - Who owns the log?
 - How will we know the pilot worked?
 
-Primary lesson uses: Lessons 1, 2, 3, 7, 10, 12.
+Primary unit uses: Units 1, 2, 3, 7, 10, 12.
 
 ### 2. Process Improvement Briefing: Government-Agency Variant
 
@@ -199,7 +199,7 @@ Likely Q&A pressure points:
 - How will temporary staff learn the checklist?
 - What if applicants still submit incomplete forms?
 
-Primary lesson uses: Lessons 1, 2, 3, 7, 10, 12.
+Primary unit uses: Units 1, 2, 3, 7, 10, 12.
 
 ### 3. Product, Service, or Program Launch: Business-Client Variant
 
@@ -238,7 +238,7 @@ Likely Q&A pressure points:
 - Can client names or sensitive data appear?
 - What if teams use different reporting cycles?
 
-Primary lesson uses: Lessons 2, 4, 5, 7, 10, 12.
+Primary unit uses: Units 2, 4, 5, 7, 10, 12.
 
 ### 4. Product, Service, or Program Launch: Government-Agency Variant
 
@@ -277,7 +277,7 @@ Likely Q&A pressure points:
 - How will we support users who do not use online forms?
 - What will we measure after three months?
 
-Primary lesson uses: Lessons 2, 4, 5, 7, 10, 12.
+Primary unit uses: Units 2, 4, 5, 7, 10, 12.
 
 ### 5. Project Results Briefing: Business-Client Variant
 
@@ -316,7 +316,7 @@ Likely Q&A pressure points:
 - What controls prevent incorrect log updates?
 - What changes before expansion?
 
-Primary lesson uses: Lessons 3, 4, 6, 9, 10, 12.
+Primary unit uses: Units 3, 4, 6, 9, 10, 12.
 
 ### 6. Project Results Briefing: Government-Agency Variant
 
@@ -355,38 +355,38 @@ Likely Q&A pressure points:
 - Who updates the checklist when requirements change?
 - How do we train staff who rotate into the counter?
 
-Primary lesson uses: Lessons 3, 4, 6, 9, 10, 12.
+Primary unit uses: Units 3, 4, 6, 9, 10, 12.
 
 ## Appendix Cross-Reference Rules
 
-Main lesson references should use the model-set names, not appendix letters. Example wording:
+Main unit references should use the model-set names, not appendix letters. Example wording:
 
 - "For a business-client version of this structure, see the Process Improvement Briefing Models."
 - "For a government-agency version, compare the administrative process example in the same model set."
 - "Use either model as a reference, but adapt the audience, data, and action request to your own situation."
 
-Do not place long role-specific model text inside the main lesson body. Use short excerpts only when a language or design point needs to be visible on the same page.
+Do not place long role-specific model text inside the main unit body. Use short excerpts only when a language or design point needs to be visible on the same page.
 
-## Model-to-Lesson Trace Matrix
+## Model-to-unit Trace Matrix
 
-| Model Set | Lesson Reference | Excerpt or Artifact to Reuse | Target Language | Visual Principle | Delivery Behavior | Q&A Skill | Rubric Category |
+| Model Set | unit Reference | Excerpt or Artifact to Reuse | Target Language | Visual Principle | Delivery Behavior | Q&A Skill | Rubric Category |
 |---|---|---|---|---|---|---|---|
-| Process Improvement Briefing Models | Lesson 1 | Scenario brief and audience-purpose box | purpose, audience outcome, "By the end..." | none or simple context box | audience-aware framing | none | audience fit, message clarity |
-| Process Improvement Briefing Models | Lesson 2 | Core message and opening | relevance, problem statement, action request | none | concise opening | none | message clarity, opening effectiveness |
-| Process Improvement Briefing Models | Lesson 3 | Problem-solution-recommendation outline | preview, transitions, forward references | planning map | logical flow | none | structure |
-| Process Improvement Briefing Models | Lesson 7 | Workflow visual and backup-material choice | referring to handouts, pre-read, backup, confidentiality | before/after process visual | document handling | clarify material role | professionalism, visual effectiveness |
-| Process Improvement Briefing Models | Lesson 10 | Q&A pressure points and model answers | clarify, defer, acknowledge risk, follow up | evidence reference | calm response under challenge | defer safely, confirm next action | Q&A, professionalism |
-| Product, Service, or Program Launch Models | Lesson 2 | Value-focused opening | relevance, benefit, launch purpose | none | concise opening | none | message clarity, audience fit |
-| Product, Service, or Program Launch Models | Lesson 4 | Launch-plan transitions | signposting, next steps, action close | none | listener guidance | none | spoken English, structure |
-| Product, Service, or Program Launch Models | Lesson 5 | Dashboard or service-flow visual | introducing visuals, directing attention | hierarchy, contrast, readable labels | point-pause-speak | answer visual-clarity question | visual effectiveness, accessibility |
-| Product, Service, or Program Launch Models | Lesson 7 | Rollout timeline and document-role choices | explaining pre-read, leave-behind, follow-up | timeline, document set | material management | clarify who receives what | professionalism |
-| Product, Service, or Program Launch Models | Lesson 10 | Q&A pressure points and model answers | bridge to evidence, acknowledge limitation | evidence reference | calm response under skepticism | direct answer, follow-up | Q&A |
-| Project Results Briefing Models | Lesson 3 | Results briefing outline | preview, sequence, summary | planning map | logical flow | none | structure |
-| Project Results Briefing Models | Lesson 4 | Summary and recommendation close | summarizing, recommending, action close | none | confident close | none | spoken English, professionalism |
-| Project Results Briefing Models | Lesson 6 | Before/after chart | trend, comparison, source/fictional-data note | takeaway title, clear labels | explain chart in 60-90 seconds | answer evidence challenge | evidence, visual effectiveness |
-| Project Results Briefing Models | Lesson 9 | Online adaptation or async storyboard | online housekeeping, backup transition | screen-share legibility | camera/mic/screen-share control | remote Q&A | delivery, accessibility |
-| Project Results Briefing Models | Lesson 10 | Q&A pressure points and model answers | defer, clarify, disagreement, follow-up | evidence reference | calm response under challenge | bridge to evidence | Q&A |
-| All model sets | Lesson 12 | Final model review and rubric link | final opening, transitions, action close, reflection | complete visual pack | full delivery | required Q&A | all final rubric categories |
+| Process Improvement Briefing Models | Unit 1 | Scenario brief and audience-purpose box | purpose, audience outcome, "By the end..." | none or simple context box | audience-aware framing | none | audience fit, message clarity |
+| Process Improvement Briefing Models | Unit 2 | Core message and opening | relevance, problem statement, action request | none | concise opening | none | message clarity, opening effectiveness |
+| Process Improvement Briefing Models | Unit 3 | Problem-solution-recommendation outline | preview, transitions, forward references | planning map | logical flow | none | structure |
+| Process Improvement Briefing Models | Unit 7 | Workflow visual and backup-material choice | referring to handouts, pre-read, backup, confidentiality | before/after process visual | document handling | clarify material role | professionalism, visual effectiveness |
+| Process Improvement Briefing Models | Unit 10 | Q&A pressure points and model answers | clarify, defer, acknowledge risk, follow up | evidence reference | calm response under challenge | defer safely, confirm next action | Q&A, professionalism |
+| Product, Service, or Program Launch Models | Unit 2 | Value-focused opening | relevance, benefit, launch purpose | none | concise opening | none | message clarity, audience fit |
+| Product, Service, or Program Launch Models | Unit 4 | Launch-plan transitions | signposting, next steps, action close | none | listener guidance | none | spoken English, structure |
+| Product, Service, or Program Launch Models | Unit 5 | Dashboard or service-flow visual | introducing visuals, directing attention | hierarchy, contrast, readable labels | point-pause-speak | answer visual-clarity question | visual effectiveness, accessibility |
+| Product, Service, or Program Launch Models | Unit 7 | Rollout timeline and document-role choices | explaining pre-read, leave-behind, follow-up | timeline, document set | material management | clarify who receives what | professionalism |
+| Product, Service, or Program Launch Models | Unit 10 | Q&A pressure points and model answers | bridge to evidence, acknowledge limitation | evidence reference | calm response under skepticism | direct answer, follow-up | Q&A |
+| Project Results Briefing Models | Unit 3 | Results briefing outline | preview, sequence, summary | planning map | logical flow | none | structure |
+| Project Results Briefing Models | Unit 4 | Summary and recommendation close | summarizing, recommending, action close | none | confident close | none | spoken English, professionalism |
+| Project Results Briefing Models | Unit 6 | Before/after chart | trend, comparison, source/fictional-data note | takeaway title, clear labels | explain chart in 60-90 seconds | answer evidence challenge | evidence, visual effectiveness |
+| Project Results Briefing Models | Unit 9 | Online adaptation or async storyboard | online housekeeping, backup transition | screen-share legibility | camera/mic/screen-share control | remote Q&A | delivery, accessibility |
+| Project Results Briefing Models | Unit 10 | Q&A pressure points and model answers | defer, clarify, disagreement, follow-up | evidence reference | calm response under challenge | bridge to evidence | Q&A |
+| All model sets | Unit 12 | Final model review and rubric link | final opening, transitions, action close, reflection | complete visual pack | full delivery | required Q&A | all final rubric categories |
 
 ## Data and Source Rules
 
@@ -418,15 +418,15 @@ People-containing visuals should follow the existing Presentation Skills represe
 
 ## QA Checks for Model Development
 
-Before lesson drafting:
+Before unit drafting:
 - Confirm each case family has both business-client and government-agency variant potential.
 - Confirm business-client cases focus on finance/trading operations, services, reporting, or process work.
 - Confirm government-agency cases focus on administrative tasks, service delivery, reporting, coordination, or process improvement.
 
 During drafting:
-- Keep main lesson explanation role-agnostic.
+- Keep main unit explanation role-agnostic.
 - Reference appendix models by skill and case family.
-- Use short inline examples only when they do not pull the lesson into one client type.
+- Use short inline examples only when they do not pull the unit into one client type.
 
 During Phase 6 QA:
 - Review business/government model pairs side by side for parity.

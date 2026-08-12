@@ -1,4 +1,4 @@
-# Plan 3 Style Sheet
+﻿# Plan 3 Style Sheet
 
 Prepared: 2026-08-12
 
@@ -74,7 +74,7 @@ PowerPoint, Google Slides, Keynote, Canva, Figma Slides, Pitch, Gamma, PDFs, das
 
 ## 5. Presentation English Coverage
 
-The language syllabus must be visible across lessons. Include learner-facing language for:
+The language syllabus must be visible across Units. Include learner-facing language for:
 
 - stating purpose and audience relevance
 - opening a presentation
@@ -212,7 +212,7 @@ Every final asset must have:
 - alt text
 - decorative flag
 - caption, if needed
-- lesson/tier use
+- unit/tier use
 - replacement rationale
 - visual restriction check
 - approval owner
@@ -319,12 +319,12 @@ Known cleanup items:
 
 ## 15. Pre-Drafting Gate
 
-Before rewriting lesson content, these files should exist:
+Before rewriting unit content, these files should exist:
 
 - `plan3.md`
 - `plan3-traceability.md`
 - `plan3-phase6-qa-checklist.md`
-- `standard-12-lesson-curriculum-spec.md`
+- `standard-12-unit-curriculum-spec.md`
 - `plan3-style-sheet.md`
 
 The next required planning artifact is the case/model brief for the three recurring business cases.

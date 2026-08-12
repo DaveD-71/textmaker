@@ -25,13 +25,13 @@ Do not reuse existing `books/Presentation Skills/images/` assets for Plan 3 unle
 
 | Field | Required | Description |
 |---|---|---|
-| `asset_id` | Yes | Stable unique ID, e.g. `p3-l05-visual-hierarchy-01` |
+| `asset_id` | Yes | Stable unique ID, e.g. `p3-u05-visual-hierarchy-01` |
 | `asset_title` | Yes | Human-readable title |
 | `file_path` | Yes | Final or planned repository path |
 | `asset_type` | Yes | `diagram`, `chart`, `icon`, `mockup`, `screenshot`, `photo`, `illustration`, `decorative`, `other` |
 | `status` | Yes | `planned`, `draft`, `approved`, `repair`, `rejected`, `deferred` |
 | `tier_use` | Yes | `Essentials`, `Standard`, `Long`, or combined use |
-| `lesson_use` | Yes | Lesson number/name, appendix model, front matter, or teacher notes |
+| `unit_use` | Yes | Unit number/name, appendix model, front matter, or teacher notes |
 | `source` | Yes | `original`, `OpenAI generated`, `PIL/editable generated`, `legacy textbook extract`, `third-party`, `screenshot`, or other |
 | `source_detail` | Yes | Prompt file, source file, URL, generation note, or source explanation |
 | `license_status` | Yes | Usage status and any restriction |
@@ -55,7 +55,7 @@ Do not reuse existing `books/Presentation Skills/images/` assets for Plan 3 unle
 
 Use this table format if the register is maintained in Markdown.
 
-| Asset ID | Title | Type | Status | Tier/Lesson Use | File Path | Source | License Status | Alt Text / Decorative | Caption | Key Checks | Approved By | Notes |
+| Asset ID | Title | Type | Status | Tier/Unit Use | File Path | Source | License Status | Alt Text / Decorative | Caption | Key Checks | Approved By | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |  |  |  | planned |  |  |  |  |  |  |  |  |  |
 
@@ -71,7 +71,7 @@ Use this object shape if the register is maintained as JSON.
   "asset_type": "",
   "status": "planned",
   "tier_use": [],
-  "lesson_use": [],
+  "unit_use": [],
   "source": "",
   "source_detail": "",
   "license_status": "",
@@ -215,7 +215,7 @@ If only text, labels, counts, or simple layout are wrong, prefer editable/PIL re
 ## Approval Workflow
 
 1. Add asset as `planned`.
-2. Record source and intended lesson/tier use.
+2. Record source and intended unit/tier use.
 3. Create or collect draft asset.
 4. Complete accessibility, restriction, privacy/security, and generated-image checks.
 5. Mark `repair` if any required check fails.

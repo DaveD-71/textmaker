@@ -1,8 +1,8 @@
-# Plan 3 Phase 6 QA Checklist
+﻿# Plan 3 Phase 6 QA Checklist
 
 Prepared: 2026-08-12
 
-Purpose: provide the operational QA checklist for Phase 6 of Plan 3: "Run QA, repair, and final consistency passes." This file is used after lesson content, assets, and tier adaptations exist. It complements `plan3-traceability.md`, which maps requirements before implementation.
+Purpose: provide the operational QA checklist for Phase 6 of Plan 3: "Run QA, repair, and final consistency passes." This file is used after unit content, assets, and tier adaptations exist. It complements `plan3-traceability.md`, which maps requirements before implementation.
 
 ## QA Status Legend
 
@@ -30,28 +30,28 @@ The simplified tables below define the checks. The execution log must add the ev
 | No Plan 3 requirement was dropped because it was absent from the old two-day task list |  |  |
 | The final books still match the Plan 3 scope: tool-neutral business presentation skills for B1-B2 learners |  |  |
 
-## 2. Curriculum and Lesson QA
+## 2. Curriculum and unit QA
 
 | Check | Status | Notes |
 |---|---|---|
-| Standard has 12 lessons matching the approved spine |  |  |
-| Essentials has 8 lessons and compresses Standard without contradicting it |  |  |
-| Long has 15 lessons and expands Standard without adding conflicting pedagogy |  |  |
-| Each lesson has 1-3 measurable learner outcomes |  |  |
-| Each lesson includes a clear learner deliverable or cumulative portfolio step |  |  |
+| Standard has 12 Units matching the approved spine |  |  |
+| Essentials has 8 Units and compresses Standard without contradicting it |  |  |
+| Long has 15 Units and expands Standard without adding conflicting pedagogy |  |  |
+| Each unit has 1-3 measurable learner outcomes |  |  |
+| Each unit includes a clear learner deliverable or cumulative portfolio step |  |  |
 | Each major teaching point has a learner task, not only explanation |  |  |
-| Model presentations are mapped to lessons, language points, visual-design points, delivery behaviors, and assessment criteria |  |  |
+| Model presentations are mapped to Units, language points, visual-design points, delivery behaviors, and assessment criteria |  |  |
 | The three recurring business cases are used consistently: process improvement, product/service launch, project results briefing |  |  |
-| Final presentation task is clearly connected to earlier lesson outputs |  |  |
+| Final presentation task is clearly connected to earlier unit outputs |  |  |
 | Teacher notes, answer keys, or sample answers exist where learners or instructors need them |  |  |
 
 ## 2a. Example, Model, and Appendix Audience QA
 
 | Check | Status | Notes |
 |---|---|---|
-| Main lesson body is role-agnostic between government-agency clients and business clients |  |  |
-| Government-agency and business-client specificity appears in examples, models, appendices, teacher notes, or optional variants rather than changing the core lesson sequence |  |  |
-| Appendix models are referenced from the main lesson body where they support the taught skill |  |  |
+| Main unit body is role-agnostic between government-agency clients and business clients |  |  |
+| Government-agency and business-client specificity appears in examples, models, appendices, teacher notes, or optional variants rather than changing the core unit sequence |  |  |
+| Appendix models are referenced from the main unit body where they support the taught skill |  |  |
 | Business-client and government-agency variants teach the same underlying skill with comparable quality and depth |  |  |
 | Government-agency examples are genuinely public-sector appropriate, not business examples with names swapped |  |  |
 | Business-client examples are genuinely business appropriate, not public-sector examples with names swapped |  |  |
@@ -93,7 +93,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Tool mentions are practical and business-appropriate for Japanese business learners |  |  |
 | Tool-choice guidance covers audience, collaboration, data source, visual complexity, accessibility, export, and confidentiality |  |  |
 | Format-choice guidance includes slides, PDF, document walkthroughs, dashboards, handouts, and screen sharing where relevant |  |  |
-| Visual-design lessons teach message-led visuals, hierarchy, alignment, contrast, whitespace, consistency, branding, and delivery environment |  |  |
+| Visual-design Units teach message-led visuals, hierarchy, alignment, contrast, whitespace, consistency, branding, and delivery environment |  |  |
 | Old 7x7-style slide-text rules are replaced with better readability and hierarchy guidance |  |  |
 | Font guidance is current, screen-appropriate, and spells "sans serif" correctly |  |  |
 | Visual types include charts, tables, diagrams, timelines, photos, screenshots, process visuals, and unsuitable-use cases |  |  |
@@ -133,7 +133,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Check | Status | Notes |
 |---|---|---|
 | Every final asset appears in the asset or image register |  |  |
-| Every asset has file path, source, license status, generated/original status, alt text, decorative flag, caption where needed, lesson/tier use, replacement rationale, visual-restriction check, and approval owner |  |  |
+| Every asset has file path, source, license status, generated/original status, alt text, decorative flag, caption where needed, unit/tier use, replacement rationale, visual-restriction check, and approval owner |  |  |
 | Generated images or mockups are marked as generated/original where applicable |  |  |
 | Stock or third-party assets are not used unless licensing is clear |  |  |
 | Old dated clip art and repeated male presenter imagery are removed or intentionally replaced |  |  |
@@ -177,7 +177,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Title, front matter, back matter, revision date, credits, and copyright/production lines are current |  |  |
 | DOCX/PDF metadata matches the final title and no longer says "Making Speeches" |  |  |
 | Old PowerPoint-prescriptive headings and metadata are removed unless referring to PowerPoint as an example |  |  |
-| Internal unit, lesson, page, figure, and activity references are correct |  |  |
+| Internal unit, unit, page, figure, and activity references are correct |  |  |
 | Known typo list is cleared: deliver your message, sans serif, after a while, at least 16, Ventura/Venture, spacing and punctuation |  |  |
 | Capitalization, bullets, indentation, punctuation, table style, and heading levels are consistent |  |  |
 | No accidental blank or near-blank pages remain |  |  |
