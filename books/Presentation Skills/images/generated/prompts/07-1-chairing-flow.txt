@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector horizontal process diagram with three connected stages, left to right, labeled: Introduce, Manage Q&A, Close. Simple icon above each stage (a handshake/welcome icon, a speech-bubble-with-question-mark icon, a closing-door or checkmark icon).

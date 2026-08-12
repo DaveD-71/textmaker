@@ -35,20 +35,27 @@ Ignore any one of the three and the speech falls flat.
 
 A toast is not a sales pitch. A team update is not a conference keynote. Same skills, different shape. Check the occasion before you plan the content.
 
-### The 6 Keys
+### Three Phases of Preparation
 
-Six things make a presentation work. Learn the list. Use it every time you prepare.
+Every talk gets built in three phases, in this order. Learn the phases. Use them every time you prepare.
 
-1. **Purpose** — what change you want.
-2. **Content** — what's true and useful, for this audience.
-3. **Structure** — the order it comes in.
-4. **Language** — words that work when heard, not just read.
-5. **Delivery** — how you say it — voice, body, pace.
-6. **Visual Aids** — slides or props that support you, not replace you.
+**1. Planning** — decide what you're going to say before you write a word of it.
+1. **Purpose** — the change you want in your audience.
+2. **Message** — the one thing you want them to remember after.
+3. **Content** — the facts and examples that support your message.
+4. **Structure** — the order you present that content in.
+5. **Visual Aids** — what you'll show to support the message, not replace it.
 
-Weak spot in any one key sinks the whole talk. Check all six, every time.
+**2. Writing** — turn the plan into actual words.
+1. **Drafting** — write the script.
+2. **Honing** — edit it. Cut anything that reads well but doesn't say well out loud.
 
-### Online changes two of the keys
+**3. Practice** — turn the script into a spoken talk.
+1. **Delivery** — voice, body, pace. How you actually say it.
+
+Weak spot in any phase sinks the whole talk. Check all three, every time.
+
+### Online changes part of Planning
 
 Purpose and audience analysis shift online. A muted, half-watching audience on a screen is not the same room as people sitting in front of you.
 

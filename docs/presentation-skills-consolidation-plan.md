@@ -133,6 +133,23 @@ Per methodology Step 4. Resolved items are marked; open items need your sign-off
    implementation detail, not part of the brand name, so it doesn't need updating if the key count
    changes later).
 
+   **2026-07-07 revision (supersedes the flat 6-key list above):** during content review, the
+   user identified real conceptual problems with the flat six-key checklist: "Language" was too
+   vague a label for what the drafted text actually described (a narrow script-editing pass), and
+   ordering Visual Aids last implied slides get decided after Delivery, which is backwards — what
+   goes on a screen constrains what Delivery can do, so Visual Aids has to be planned first. The
+   discussion also surfaced that "Message" (already load-bearing in Unit 2's Theme-vs-Message
+   content) had never been formally defined against Purpose or Content, despite the three terms
+   sounding related. Resolved: the flat 6-key list is replaced by a **3 Phases of Preparation**
+   framework — **Planning** (Purpose → Message → Content → Structure → Visual Aids), **Writing**
+   (Drafting → Honing), **Practice** (Delivery) — 8 named elements across 3 sequential phases,
+   with an explicit rationale for the ordering (Message distinguished from Purpose/Content;
+   Structure requires Content to exist first; Visual Aids precedes Delivery because it constrains
+   it; Honing is a distinct pass from Drafting because spoken and written language behave
+   differently). Unit 1 (all 3 tiers) has been rewritten accordingly. This is a genuine framework
+   change, not a relabeling — "the 6 Keys" and "Language" as a named key should not appear
+   anywhere else in the manuscript going forward.
+
 8. **Learner-audience framing** — **Resolved: generalize.** Drop the Japanese-L1-specific framing
    (pronunciation notes tied to "overcoming katakana," etc.) and write for a broader non-native-
    English-speaker audience. Content that is genuinely about common cross-L1 pronunciation/prosody
@@ -198,7 +215,7 @@ slot.
 
 | # | Unit | E | S | L | Primary source(s) | Online consideration | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | Why Presentations Matter / orientation | ✓ | ✓ | ✓ | Making Speeches U1 + "Keys to Successful Presentations" framework | Framing: in-person vs. online changes purpose/audience analysis | Per Decision 7: 6 keys (Purpose, Content, Structure, Language, Delivery, Visual Aids), SwPPT granularity |
+| 1 | Why Presentations Matter / orientation | ✓ | ✓ | ✓ | Making Speeches U1 + "Keys to Successful Presentations" framework | Framing: in-person vs. online changes purpose/audience analysis | Per Decision 7 (revised 2026-07-07): 3 Phases of Preparation — Planning (Purpose, Message, Content, Structure, Visual Aids), Writing (Drafting, Honing), Practice (Delivery) |
 | 2 | Structure of a Speech (+ Theme vs. Message) | ✓ | ✓ | ✓ | All four | Pacing for shorter attention spans on video; front-loading the message | Model → Appendix A |
 | 3 | Flag Expressions | ✓ | ✓ | ✓ | All four | — (language is medium-agnostic) | Adopt Speaking w/ PPT's usage-error notes; gender-neutral "M___" throughout |
 | 4 | Delivery Skills (incl. webcam/online basics) | ✓ | ✓ | ✓ | All four | Webcam eye-contact/framing, audio basics, platform/recording mechanics folded in here | Modernize dress-code framing; absorbs former Unit 13 mechanics content |

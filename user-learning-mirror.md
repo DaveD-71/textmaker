@@ -341,3 +341,15 @@ Sync rule:
 - Failure: Word PDF export can hang or fail when the default printer driver tries to verify a network/company printer through VPN.
 - Preferred workaround: before exporting PDFs through Word/COM, switch the default printer to a local driver such as Microsoft Print to PDF, or avoid Word's printer-dependent export path when possible.
 - Recheck trigger: revisit if Word/Office printer handling changes or if exports hang again despite a local default printer.
+
+### ISSUE 2026-07-07-NETWORK-01 - `openai` Python Package Cannot Be Reliably Installed In This Workspace's `.venv`
+
+- Issue type: `network` / `workflow`
+- Component: `openai` PyPI package install into this repo's `.venv` (network-drive-backed: `\\prod-fs-gen01\...\textmaker\.venv`)
+- Version observed: failed identically across `openai==1.59.9`, `2.38.0`, and `2.44.0`
+- Date first noticed: 2026-07-07 (recurred across multiple attempts same day)
+- Status: `workaround`
+- Symptom: `pip install` reports success (sometimes even reporting the wrong final installed version in its own log output), but `import openai` then fails with `ModuleNotFoundError`/`ImportError` on an internal submodule -- different missing submodule each time (`openai.types.responses.response_input_text_content`, `openai.lib.streaming._deltas`, `cannot import name 'omit' from openai._types`). Consistent with partial/corrupted file copy onto the SMB-backed venv during install.
+- Workaround: do not depend on the `openai` SDK for API access in this repo. Use raw HTTP via `requests` directly against `https://api.openai.com/v1/...` endpoints instead -- confirmed stable across many calls. See `scripts_local/generate_presentation_skills_images.py` and `scripts_local/generate_image_transparent.py` for the working pattern (including the `background: "transparent"` parameter for `gpt-image-1`, which requires SDK 2.x to access via the SDK but is trivially available via raw HTTP regardless of SDK version/state).
+- Recheck triggers: a different venv location (local disk, not network share); pip/venv tooling changes that address partial-copy corruption on network-drive targets.
+- Exit criteria: `import openai; openai.__version__` succeeds cleanly immediately after a fresh install, verified directly (not inferred from pip's log text) at least twice in separate sessions.

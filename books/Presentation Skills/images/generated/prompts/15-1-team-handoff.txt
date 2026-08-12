@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector diagram showing three simple standing-figure icons in a horizontal row, each inside its own labeled section box (labels: 'Problem,' 'Approach,' 'Cost & Close'), connected by curved handoff arrows passing between adjacent figures. Consistent figure style across all three.

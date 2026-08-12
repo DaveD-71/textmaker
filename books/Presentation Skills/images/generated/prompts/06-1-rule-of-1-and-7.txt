@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A side-by-side comparison of two mock presentation slide thumbnails in a clean flat-vector illustration style. Left slide, labeled 'Before,' is visually dense with many small lines of placeholder scribble text and a cluttered layout. Right slide, labeled 'After,' shows one large clear headline placeholder and a single simple icon or chart, with generous white space. Abstract scribble lines are fine for the dense slide, no real readable text needed.

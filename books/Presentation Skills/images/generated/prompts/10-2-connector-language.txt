@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector 2x2 grid graphic with four labeled quadrants: 'Comparison' (two parallel same-direction arrows), 'Contrast' (two opposing arrows), 'Sequence' (three small numbered circles connected left to right), 'Causal' (one arrow leading into a lightning-bolt or gear icon representing effect).

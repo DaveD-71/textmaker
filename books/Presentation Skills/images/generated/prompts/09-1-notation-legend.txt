@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector reference-key graphic with four rows, each showing one notation symbol and its meaning: a single forward slash labeled 'short pause,' a double forward slash labeled 'long pause,' an underlined letter labeled 'lengthened vowel,' and a bold word labeled 'primary stress.' Simple, legible, textbook reference-card style, monospace-style symbol rendering.

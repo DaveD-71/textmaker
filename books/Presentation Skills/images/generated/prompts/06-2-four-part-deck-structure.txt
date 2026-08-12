@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector horizontal row of four simple mock slide thumbnails connected by arrows, labeled in order: Title, Index, Content, Conclusion. Each thumbnail shows a distinct simple abstract layout suggesting its function (Title: centered large text block; Index: a short vertical list; Content: a chart/body layout; Conclusion: one bold centered statement).

@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector two-panel comparison graphic. Left panel labeled 'Theme' shows a plain gray tag icon. Right panel labeled 'Message' shows a tag icon with a small pair of opposing arrows or a debate/disagreement icon next to it, in an accent color.

@@ -35,22 +35,32 @@ That change is shaped by three factors working together, not by the speaker alon
 
 No, and treating them as if they were is a common early mistake. A toast, a project update, and a conference keynote all draw on the same underlying skill set, but they differ enormously in purpose, tone, and structure, so a plan built for one will often feel wrong in another. Before you prepare content, it's worth explicitly naming the type of speech you're giving and what "success" looks like for that specific occasion, rather than defaulting to a general-purpose template.
 
-### The 6 Keys to a successful presentation
+### Three Phases of Preparation
 
-A useful way to check whether a presentation is likely to work is to run it against six components, each of which addresses a different way a talk can fail. The six are: **Purpose**, **Content**, **Structure**, **Language**, **Delivery**, and **Visual Aids**.
+A useful way to organize how you get ready for a talk is to think of preparation as three sequential phases, each with its own components, rather than a flat list of things to check. Sequencing it this way solves a real problem: it's hard to know what to say before you know why you're saying it, and it's hard to know how you'll say it before you've actually written it down.
+
+**Phase 1: Planning.** This is where you decide what the talk is actually going to be, before you draft a single sentence of it.
 
 - **Purpose** is the specific change you want in your audience by the end — not a topic, but an outcome.
-- **Content** is the material itself, filtered for what's true, relevant, and useful to this particular audience rather than everything you know.
+- **Message** is the one thing you want your audience to walk away remembering. It's the single sentence your entire talk is organized around, and it's worth getting precise about early, since everything else in Planning is built to support it. (Unit 2 covers how to test whether you actually have a real message, rather than just a restated topic.)
+- **Content** is the material itself — the facts, examples, and evidence that support your message — filtered for what's true, relevant, and useful to this particular audience rather than everything you know.
 - **Structure** is the order and shape that content takes, so the audience can follow the logic rather than just receive facts.
-- **Language** is word choice suited to being heard in real time, which behaves differently from language written to be read.
-- **Delivery** covers voice, pacing, and body language — the physical and vocal execution of the talk.
-- **Visual Aids** are the slides, props, or other visual support you use, which should reinforce your message rather than substitute for it.
+- **Visual Aids** are the slides, props, or other visual support you'll use, planned now because they shape what you'll actually be able to do later, during Delivery — you can't practice standing beside a screen you haven't designed yet.
 
-A talk can have strong content and still fail on delivery, or have a clear purpose and still lose the room through poor structure — the six keys work as a checklist precisely because weakness in any single one can undercut the rest.
+**Phase 2: Writing.** This is where the plan becomes actual words on a page.
+
+- **Drafting** is writing the script out in full, working from the plan rather than starting from a blank page.
+- **Honing** is editing that draft specifically for the ear rather than the eye — cutting sentences that read fine on paper but sound stiff or overlong out loud, since spoken and written language behave differently.
+
+**Phase 3: Practice.** This is where the written script becomes an actual spoken talk.
+
+- **Delivery** covers voice, pacing, and body language — the physical and vocal execution of the talk, built on top of everything decided in the first two phases.
+
+A talk can have a strong plan and still fail in Delivery, or have a clear purpose and still lose the room through weak Structure — the three-phase framework works as a checklist precisely because weakness at any stage can undercut everything that came before it.
 
 ### Purpose and audience analysis look different online
 
-Two of these keys — Purpose and the audience analysis that feeds into Content and Structure — need to be reconsidered specifically for online delivery, because an online audience is not simply an in-person audience viewed through a screen. In person, you can read faces and body language in real time and adjust your pacing or emphasis accordingly; online, that feedback loop is largely gone, and attention is competing with notifications, other browser tabs, and the general fatigue of screen-based meetings.
+Two of these elements — Purpose and the audience analysis that feeds into Content and Structure, both part of Planning — need to be reconsidered specifically for online delivery, because an online audience is not simply an in-person audience viewed through a screen. In person, you can read faces and body language in real time and adjust your pacing or emphasis accordingly; online, that feedback loop is largely gone, and attention is competing with notifications, other browser tabs, and the general fatigue of screen-based meetings.
 
 Practically, this means your purpose statement and your read of the audience need to build in shorter attention spans and more fragmented focus from the outset, rather than assuming the same plan will simply transfer. Ask explicitly, for every talk you prepare: is this being delivered in person or on a screen, and what does that change about what the audience can actually absorb?
 

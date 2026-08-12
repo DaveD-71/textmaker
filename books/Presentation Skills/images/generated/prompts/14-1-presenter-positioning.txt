@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector top-down floor-plan-style diagram of a presentation room, shown as two side-by-side panels. Left panel labeled with a red X or 'Avoid' shows a simple figure standing directly in front of a screen rectangle, blocking it, facing away from audience seating. Right panel labeled with a green check or 'Do' shows the figure standing beside the screen, angled toward rows of audience seating.

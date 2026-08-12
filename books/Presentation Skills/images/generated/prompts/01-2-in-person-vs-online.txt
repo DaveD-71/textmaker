@@ -1,0 +1,4 @@
+Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.
+
+Specific illustration to create:
+A clean flat-vector split illustration, left side showing a presenter speaking to a small engaged in-person audience with visible attentive body language, right side showing the same presenter on a laptop video call with a grid of muted/distracted participant tiles and a notification icon. A thin center divider line, no other text labels.

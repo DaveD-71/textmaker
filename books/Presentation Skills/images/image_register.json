@@ -1,0 +1,397 @@
+{
+  "style_lock": {
+    "diagram_style": "Clean flat-vector educational diagram style, muted professional color palette (blues, grays, one warm accent color), no photographic texture, no gradients, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No readable body text beyond short labels explicitly specified in the prompt. No logos, no watermarks.",
+    "photo_style": "IMPORTANT: every person depicted must be Japanese/East Asian in appearance -- straight black or dark brown hair, East Asian facial features, light-to-medium skin tone. This is for a textbook used by Japanese students and professionals in Japan, so all figures (presenters and audience members alike) should look Japanese, not Black, not South Asian, not Middle Eastern, not White/Western. Warm, professional flat-vector illustration style (not photorealistic, not cartoon), generic non-identifiable figures, professional business-casual attire, muted professional color palette consistent with the diagram style, welcoming but not overly stylized tone. No readable text anywhere in the image. No logos, no watermarks, no brand names. absolutely NO flags of any kind, no national emblems, no seals, no stars-and-stripes or similar patriotic imagery -- if a banner or signage element is wanted for a civic/government setting, use a completely plain solid-color rectangular banner or panel with no pattern, no stripes, no stars, no crest, no text."
+  },
+  "images": [
+    {
+      "id": "01-1-three-phases",
+      "unit": 1,
+      "type": "diagram",
+      "batch": "style_lock",
+      "title": "The 3 Phases of Preparation vertical stack",
+      "description": "REVISED MULTIPLE TIMES -- FINAL METHOD DIFFERS FROM SIMPLE GENERATION. v1: three separate phase containers, left empty space in sparser Writing/Practice boxes. v2: asked the model to render all 8 text labels itself -- missing element, wrong phase boundaries, messy artifacts. v3: pure-PIL hand-drawn -- functionally correct but 'cheap looking' (generic icons, bad proportions, dead whitespace). v4: OpenAI-generated unlabeled 8-box scaffold in one shot -- genuinely well-designed icons, but only rendered 7 boxes (Drafting+Honing merged), breaking the 5/2/1 color grouping. v5: retried the 8-box scaffold with heavy explicit counting language -- got WORSE (6 boxes, missing Delivery entirely). CONCLUSION: the model cannot reliably generate 8 correctly-separated, correctly-grouped boxes in a single connected-flowchart image, no matter how the prompt is worded. FINAL WORKING METHOD (v6): generate the 8 icons ONCE as a simple 2x4 GRID SHEET instead (a grid is much easier for the model to keep separated than a tall connected stack) -- see the 'icon_sheet_prompt' field below -- then slice the sheet into 8 individual icons and build the entire stack (boxes, arrows, phase-color bars grouped 5/2/1, text labels) deterministically in PIL via scripts_local/build_three_phases_final.py. This guarantees correct count/grouping/spacing while still getting OpenAI's genuinely well-designed icon artwork. Generate via: python scripts_local/generate_image_transparent.py --prompt \"<icon_sheet_prompt>\" --out raw/01-1-icon-sheet.png --size 1024x1536, then python scripts_local/build_three_phases_final.py.",
+      "icon_sheet_prompt": "A clean flat-vector icon sheet, transparent background (no background at all, artwork only), showing exactly 8 icons arranged in a strict 2-column by 4-row grid, evenly spaced with generous equal padding between every icon so each one is clearly isolated from its neighbors. Professional published-textbook icon style, consistent stroke weight, consistent muted blue-gray color, consistent visual size (all 8 icons should occupy roughly the same bounding-box footprint, none dramatically bigger or smaller than another). Reading order left-column-top-to-bottom then right-column-top-to-bottom: (1) a target/bullseye. (2) a speech-bubble containing a small star. (3) a document/page with horizontal text lines. (4) three stacked/overlapping cube building blocks. (5) a presentation slide or bar-chart-on-easel icon. (6) a single pencil, alone, no other object near it. (7) a single pair of scissors, alone, in its own grid cell, not touching or overlapping the pencil icon in cell 6. (8) a person shown mid-speech with a small sound/speech indicator near their mouth. Each of the 8 icons must be fully separate and isolated in its own grid cell with visible padding on all sides -- no two icons should touch, overlap, or share a cell. No text, letters, numbers, or words anywhere in the image. No grid lines, no cell borders, no background shapes -- just the 8 icons floating in their implied grid positions. NOTE: actual rendered sheet came out in ROW-MAJOR order (row0: target,message | row1: document,blocks | row2: chart,pencil | row3: scissors,person), not the column-major order requested -- build_three_phases_final.py's SHEET_POSITIONS_ROW_MAJOR list already accounts for this.",
+      "size": "1024x1536",
+      "generation_method": "composited_from_icon_sheet",
+      "build_script": "scripts_local/build_three_phases_final.py",
+      "labels": [
+        {"text": "Purpose", "box_index": 1},
+        {"text": "Message", "box_index": 2},
+        {"text": "Content", "box_index": 3},
+        {"text": "Structure", "box_index": 4},
+        {"text": "Visual Aids", "box_index": 5},
+        {"text": "Drafting", "box_index": 6},
+        {"text": "Honing", "box_index": 7},
+        {"text": "Delivery", "box_index": 8}
+      ],
+      "phase_labels": [
+        {"text": "PLANNING", "box_range": [1, 5]},
+        {"text": "WRITING", "box_range": [6, 7]},
+        {"text": "PRACTICE", "box_range": [8, 8]}
+      ],
+      "layout_hint": "vertical_stack_8"
+    },
+    {
+      "id": "01-2-in-person-vs-online",
+      "unit": 1,
+      "type": "diagram",
+      "batch": "core",
+      "title": "In-person vs. online audience comparison",
+      "description": "Split image contrasting an engaged in-person audience with a distracted/muted online video-call audience.",
+      "prompt": "A clean flat-vector split illustration, left side showing a presenter speaking to a small engaged in-person audience with visible attentive body language, right side showing the same presenter on a laptop video call with a grid of muted/distracted participant tiles and a notification icon. A thin center divider line, no other text labels.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "02-1-three-part-structure",
+      "unit": 2,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Introduction/Body/Conclusion structure diagram",
+      "description": "Three-part horizontal flow: Introduction to Body to Conclusion, with a dashed loop back to Introduction showing the message echo.",
+      "prompt": "A clean flat-vector horizontal flow diagram with three connected boxes labeled Introduction, Body, and Conclusion, left to right, connected by arrows. A subtle curved dashed arrow loops from the Conclusion box back to the Introduction box, suggesting an echo of the same message.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "02-2-theme-vs-message",
+      "unit": 2,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Theme vs. Message contrast graphic",
+      "description": "Two-column comparison: a neutral Theme tag vs. a Message tag with a disagreement/debate icon.",
+      "prompt": "A clean flat-vector two-panel comparison graphic. Left panel labeled 'Theme' shows a plain gray tag icon. Right panel labeled 'Message' shows a tag icon with a small pair of opposing arrows or a debate/disagreement icon next to it, in an accent color.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "03-1-tour-guide-flag",
+      "unit": 3,
+      "type": "scenario",
+      "batch": "core",
+      "title": "Tour guide flag metaphor illustration",
+      "description": "A tour guide holding a raised flag with a small group following, anchoring the Flag Expression metaphor.",
+      "prompt": "A simple, warm flat-vector illustration of a tour guide holding a small raised flag, walking ahead of a small group of people following closely behind through a city street or plaza. No readable text on the flag.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "04-1-gesture-zone",
+      "unit": 4,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Gesture zone diagram",
+      "description": "A presenter silhouette with a highlighted waist-to-chest band labeled Gesture Zone.",
+      "prompt": "A simple flat-vector silhouette of a person standing in a neutral presenting posture, with a highlighted horizontal band overlaid between the waist and chest labeled 'Gesture Zone.' No facial detail needed.",
+      "size": "1024x1536"
+    },
+    {
+      "id": "04-2-webcam-eye-contact",
+      "unit": 4,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Webcam eye-contact diagram (lens vs. screen)",
+      "description": "Side-view diagram showing where a presenter naturally looks (screen) vs. where they should look (webcam lens).",
+      "prompt": "A simple flat-vector side-view diagram of a person sitting in front of a laptop with a webcam. Two dotted lines originate from the person's eyes: one pointing toward the laptop screen labeled 'natural instinct,' one pointing toward the webcam lens labeled 'actual eye contact.'",
+      "size": "1536x1024"
+    },
+    {
+      "id": "04-3-delivery-icon-set",
+      "unit": 4,
+      "type": "icon_set",
+      "batch": "core",
+      "title": "Delivery-skills observation checklist icon set",
+      "description": "Six small icons for eye contact, voice, gestures, posture, notes-handling, clothing.",
+      "prompt": "A set of six small simple flat-vector line icons in a single row, consistent stroke width and style, representing: an eye (eye contact), a sound wave (voice), a hand gesture (gestures), a standing figure (posture), a small notecard (notes-handling), and a shirt/collar (clothing). Minimal, monochrome or single-accent-color.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "05-1-logic-tree-blank",
+      "unit": 5,
+      "type": "diagram",
+      "batch": "style_lock",
+      "title": "The Logic Tree diagram (core framework — highest priority)",
+      "description": "A literal tree illustration with five conceptual parts bottom to top: Roots, Trunk, Branches (3), Leaves, Fruit. ISSUES FOUND ACROSS PREVIOUS ATTEMPTS: (1) the image model's own text/callout placement was unreliable (mismatched labels) -- fixed by removing all text from the prompt and adding labels afterward via a separate PIL script (draw_logic_tree_labels.py) at exact hand-specified coordinates; (2) asking for a 'flat, texture-free background' in prompt TEXT backfired badly -- the model added a dramatic vignette/glow gradient and drifted the leaf color off-green; (3) FIXED PROPERLY this time via the native API parameter `background: \"transparent\"` (gpt-image-1 feature, called via generate_image_transparent.py using raw HTTP since the installed openai SDK version doesn't expose this param) rather than prompt wording -- no keying/flood-fill step needed at all, no enclosed-patch artifacts possible, since there's no background color to begin with.",
+      "prompt": "A clean flat-vector illustration of a simple stylized tree used as an educational diagram, with NO text, letters, numbers, or words anywhere in the image, and NO background of any kind -- the image should contain only the tree artwork itself. The tree has, from bottom to top: an underground root system below a horizontal ground line (roots visible, spreading downward and outward), a single vertical trunk rising from the ground line, exactly three branches splitting off from the upper trunk, leaves clustered on those branches filling most of the canopy, and a small cluster of 2-3 rounded fruit shapes nestled among the leaves on the right-hand side of the canopy, near the top, in a warm accent color distinct from the green leaves. Muted natural color palette: browns for the roots and trunk, natural greens for the leaves, one warm accent color (e.g. orange or soft red) for the fruit. Leave clear open space to the right of the entire tree (roughly the right third of the image) completely empty, with no leaves, branches, or decoration extending into it -- that space is reserved for text labels to be added afterward. Center the tree in the left two-thirds of the image, ground line roughly two-thirds of the way down the image height.",
+      "size": "1024x1536",
+      "generation_method": "raw_http_transparent_background",
+      "labels": [
+        {"text": "FRUIT", "target": "top-right of canopy, where the fruit shapes are", "approx_y_ratio": 0.20},
+        {"text": "BRANCHES", "target": "one of the three branches (the woody stem, not a leaf)", "approx_y_ratio": 0.42},
+        {"text": "LEAVES", "target": "a leaf shape in the canopy", "approx_y_ratio": 0.30},
+        {"text": "TRUNK", "target": "the vertical trunk, between the ground line and the lowest branch", "approx_y_ratio": 0.62},
+        {"text": "ROOTS", "target": "the underground root system, below the ground line", "approx_y_ratio": 0.80}
+      ]
+    },
+    {
+      "id": "05-2-logic-tree-worked-budgetapp",
+      "unit": 5,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Populated worked-example tree (budgeting-app)",
+      "description": "Same tree template as 05-1, filled in with the budgeting-app example content.",
+      "prompt": "Using the same tree diagram template and style as the blank Logic Tree diagram, populate it with short text labels: Trunk reads 'This app gives you your evenings back'; three branches read 'Fast,' 'Accurate,' 'Affordable'; small leaf labels under each branch show one supporting detail each; the fruit is labeled '30-day free trial.' Same flat-vector educational diagram style, muted natural palette.",
+      "size": "1024x1536",
+      "reference_image": "05-1-logic-tree-blank"
+    },
+    {
+      "id": "06-1-rule-of-1-and-7",
+      "unit": 6,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Rule of 1 / Rule of 7 before-after slide mockups",
+      "description": "Side-by-side dense/cluttered slide vs. clean single-idea slide.",
+      "prompt": "A side-by-side comparison of two mock presentation slide thumbnails in a clean flat-vector illustration style. Left slide, labeled 'Before,' is visually dense with many small lines of placeholder scribble text and a cluttered layout. Right slide, labeled 'After,' shows one large clear headline placeholder and a single simple icon or chart, with generous white space. Abstract scribble lines are fine for the dense slide, no real readable text needed.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "06-2-four-part-deck-structure",
+      "unit": 6,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Four-part deck structure diagram",
+      "description": "Horizontal sequence of four mock slide thumbnails: Title, Index, Content, Conclusion.",
+      "prompt": "A clean flat-vector horizontal row of four simple mock slide thumbnails connected by arrows, labeled in order: Title, Index, Content, Conclusion. Each thumbnail shows a distinct simple abstract layout suggesting its function (Title: centered large text block; Index: a short vertical list; Content: a chart/body layout; Conclusion: one bold centered statement).",
+      "size": "1536x1024"
+    },
+    {
+      "id": "06-3-colorblind-contrast",
+      "unit": 6,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Colorblind-safe contrast illustration",
+      "description": "Side-by-side chart comparison: typical vision vs. simulated color vision deficiency.",
+      "prompt": "An educational side-by-side comparison graphic showing the same simple bar chart twice: left labeled 'Typical vision' with clearly distinct red and green bars, right labeled 'Color vision deficiency (simulated)' showing the same chart with the red and green bars appearing nearly identical brownish-gray tones. Clean, factual illustration style, not alarming.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "07-1-chairing-flow",
+      "unit": 7,
+      "type": "process",
+      "batch": "core",
+      "title": "Three-function chairing flow diagram",
+      "description": "Introduce -> Manage Q&A -> Close horizontal process diagram.",
+      "prompt": "A clean flat-vector horizontal process diagram with three connected stages, left to right, labeled: Introduce, Manage Q&A, Close. Simple icon above each stage (a handshake/welcome icon, a speech-bubble-with-question-mark icon, a closing-door or checkmark icon).",
+      "size": "1536x1024"
+    },
+    {
+      "id": "07-2-online-chairing-scene",
+      "unit": 7,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Online chairing scene (hands, mute, chat)",
+      "description": "Video-call grid with a raised-hand icon, a muted-mic icon, and a visible chat panel.",
+      "prompt": "A clean flat-vector illustration of a video conferencing interface mockup: a grid of 6 generic participant video tiles, one tile showing a small raised-hand icon overlay, another tile showing a muted-microphone icon overlay, and a chat panel with a few abstract message bubbles visible on the right side. No readable text in the chat bubbles.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "08-1-circuit-cycle",
+      "unit": 8,
+      "type": "process",
+      "batch": "core",
+      "title": "Circuit cycle diagram",
+      "description": "Circular process: Draw Topic -> Prepare -> Present -> Q&A -> Feedback -> Rotate Chair -> loop.",
+      "prompt": "A clean flat-vector circular process diagram with six stages arranged clockwise around a circle, connected by curved arrows: Draw Topic, Prepare, Present, Q&A, Feedback, Rotate Chair -- with the arrow from Rotate Chair looping back to Draw Topic. Simple icon per stage.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "09-1-notation-legend",
+      "unit": 9,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Notation system legend/key",
+      "description": "Reference key for the four prosody notation marks: slash, double-slash, underline, bold.",
+      "prompt": "A clean flat-vector reference-key graphic with four rows, each showing one notation symbol and its meaning: a single forward slash labeled 'short pause,' a double forward slash labeled 'long pause,' an underlined letter labeled 'lengthened vowel,' and a bold word labeled 'primary stress.' Simple, legible, textbook reference-card style, monospace-style symbol rendering.",
+      "size": "1024x1536"
+    },
+    {
+      "id": "10-1-claim-evidence-chain",
+      "unit": 10,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Statement-Evidence-Analysis-Conclusion chain diagram",
+      "description": "Four-link chain diagram with Analysis highlighted as the critical link.",
+      "prompt": "A clean flat-vector chain-link diagram with four connected links in a horizontal row, labeled in order: Statement, Evidence, Analysis, Conclusion. The third link (Analysis) is rendered in a distinct accent color or with a subtle highlight glow to visually suggest it's the critical connecting piece.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "10-2-connector-language",
+      "unit": 10,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Connector language relationship diagram",
+      "description": "2x2 grid: Comparison, Contrast, Sequence, Causal, each with a visual metaphor.",
+      "prompt": "A clean flat-vector 2x2 grid graphic with four labeled quadrants: 'Comparison' (two parallel same-direction arrows), 'Contrast' (two opposing arrows), 'Sequence' (three small numbered circles connected left to right), 'Causal' (one arrow leading into a lightning-bolt or gear icon representing effect).",
+      "size": "1024x1024"
+    },
+    {
+      "id": "11-1-three-elements-persuasion",
+      "unit": 11,
+      "type": "diagram",
+      "batch": "core",
+      "title": "3 Elements of Persuasion Venn diagram",
+      "description": "Three overlapping circles: Credibility & Logic, Emotional Connection, Sufficient Information, overlap = Persuasion.",
+      "prompt": "A clean flat-vector three-circle Venn diagram with each circle labeled: 'Credibility & Logic,' 'Emotional Connection,' 'Sufficient Information.' The central overlapping region where all three circles meet is highlighted in an accent color and labeled 'Persuasion.'",
+      "size": "1024x1024"
+    },
+    {
+      "id": "11-2-five-stages-persuasion",
+      "unit": 11,
+      "type": "process",
+      "batch": "core",
+      "title": "5 Stages of Persuasion diagram",
+      "description": "Five-stage horizontal flow: Get Attention -> Felt Need -> Proposal -> Image of Results -> Call to Action.",
+      "prompt": "A clean flat-vector horizontal five-stage process diagram connected by arrows, labeled in order: Get Attention, Felt Need, Proposal, Image of Results, Call to Action. Simple icon above each stage. Visually consistent with (but distinguishable from) a companion 3-Elements Venn diagram.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "12-1-bsr-diagram",
+      "unit": 12,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Background-Situation-Results (B-S-R) diagram",
+      "description": "Three-part flow ending in a stop sign before a grayed-out Recommendation box.",
+      "prompt": "A clean flat-vector horizontal diagram with three connected boxes labeled Background, Situation, Results, left to right, connected by arrows. After the Results box, a small stop-sign or barrier icon is shown, with a grayed-out, dashed-outline box beyond it labeled 'Recommendation (later)' to visually show the deliberate stopping point, clearly de-emphasized.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "13-1-recommendation-structure",
+      "unit": 13,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Recommendation structure diagram",
+      "description": "Three inputs (Specific Action, Link to Evidence, Named Cost/Tradeoff) converging into one Recommendation.",
+      "prompt": "A clean flat-vector diagram showing three labeled input boxes ('Specific Action,' 'Link to Evidence,' 'Named Cost/Tradeoff') each with an arrow converging into a single output box labeled 'Recommendation.'",
+      "size": "1536x1024"
+    },
+    {
+      "id": "13-2-counterargument-defense",
+      "unit": 13,
+      "type": "process",
+      "batch": "core",
+      "title": "Counterargument-defense three-step diagram",
+      "description": "State Fairly -> Acknowledge Truth -> Explain Why It Holds.",
+      "prompt": "A clean flat-vector three-step horizontal process diagram connected by arrows, labeled: 'State Fairly,' 'Acknowledge Truth,' 'Explain Why It Holds.' Simple speech-bubble icon motif throughout to suggest dialogue/argument.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "14-1-presenter-positioning",
+      "unit": 14,
+      "type": "diagram",
+      "batch": "core",
+      "title": "Presenter positioning diagram (stand beside the screen)",
+      "description": "Top-down do/don't room diagram: blocking the screen vs. standing beside it.",
+      "prompt": "A clean flat-vector top-down floor-plan-style diagram of a presentation room, shown as two side-by-side panels. Left panel labeled with a red X or 'Avoid' shows a simple figure standing directly in front of a screen rectangle, blocking it, facing away from audience seating. Right panel labeled with a green check or 'Do' shows the figure standing beside the screen, angled toward rows of audience seating.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "14-2-point-pause-speak",
+      "unit": 14,
+      "type": "process",
+      "batch": "core",
+      "title": "Point-pause-speak sequencing diagram",
+      "description": "Three-beat timeline: slide-change icon, pause icon, speech-bubble icon.",
+      "prompt": "A clean flat-vector timeline graphic showing three sequential beats left to right: a slide-change icon, a pause icon (simple ellipsis or clock), and a speech-bubble icon, connected by a thin timeline with small time-tick marks. Suggests rhythm/pacing.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "15-1-team-handoff",
+      "unit": 15,
+      "type": "process",
+      "batch": "core",
+      "title": "Team handoff diagram",
+      "description": "Three speaker figures in sequence with handoff arrows, each labeled with their section.",
+      "prompt": "A clean flat-vector diagram showing three simple standing-figure icons in a horizontal row, each inside its own labeled section box (labels: 'Problem,' 'Approach,' 'Cost & Close'), connected by curved handoff arrows passing between adjacent figures. Consistent figure style across all three.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "15-2-team-presentation-scene",
+      "unit": 15,
+      "type": "scenario",
+      "batch": "core",
+      "title": "Team presentation scene (illustrative)",
+      "description": "2-3 presenters at the front of a room, one speaking, others standing supportively.",
+      "prompt": "A warm, professional flat-vector illustration of three colleagues standing together at the front of a meeting room, one person actively gesturing and speaking toward an audience (only partially visible, seated), the other two standing attentively to the side near a presentation screen showing an abstract chart. Generic, non-identifiable figures, professional business-casual attire.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appA-1-business-scenario",
+      "unit": "Appendix: Self-Introduction Models",
+      "type": "scenario",
+      "batch": "style_lock",
+      "title": "Business scenario illustration - operations lead all-hands",
+      "description": "New operations lead addressing an all-hands meeting at a logistics company. Wider shot with comfortable distance between presenter and audience; presenter stands closer to the screen and gestures at a concrete visible chart on it (not an empty screen).",
+      "prompt": "A warm, professional flat-vector illustration of a wide interior shot of a casual all-hands meeting space (visible warehouse or office elements in the background, like shelving or a whiteboard). A woman stands confidently near a presentation screen showing a simple upward-trending bar chart, gesturing toward the chart with one hand as she speaks. The seated audience of colleagues is a comfortable distance away, several meters back, with clear open floor space between the front row and the presenter -- not close or crowded. Generic, non-identifiable audience, professional business-casual attire, welcoming tone.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appA-2-government-scenario",
+      "unit": "Appendix: Self-Introduction Models",
+      "type": "scenario",
+      "batch": "core",
+      "title": "Government scenario illustration - public-health director town hall",
+      "description": "Newly appointed public-health division director speaking at a community town hall.",
+      "prompt": "A warm, professional flat-vector illustration of a wide interior shot of a plain community hall. A woman stands beside a simple table, speaking to a seated audience of residents several meters back across an open floor gap -- comfortable distance, not crowded, not close. No podium seal, no emblem, no crest, no flag of any kind, no signage of any kind -- just plain walls. Generic, non-identifiable figures, East Asian/Japanese in appearance, approachable tone.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appD-1-tree-stipend-pitch",
+      "unit": "Appendix: Logic Tree Worked Models",
+      "type": "diagram",
+      "batch": "core",
+      "title": "Populated tree - remote-work stipend pitch (business)",
+      "description": "Same tree template as 05-1, filled in with the stipend-pitch example content.",
+      "prompt": "Using the same tree diagram template and style as the core Logic Tree diagram, populate it with: Trunk labeled 'Cuts turnover costs,' three branches labeled 'Real Problem,' 'Cheap Alternative,' 'Easy to Run,' and Fruit labeled 'Approve pilot.'",
+      "size": "1024x1536",
+      "reference_image": "05-1-logic-tree-blank"
+    },
+    {
+      "id": "appD-2-tree-intersection-pitch",
+      "unit": "Appendix: Logic Tree Worked Models",
+      "type": "diagram",
+      "batch": "core",
+      "title": "Populated tree - pedestrian-safety intersection pitch (government)",
+      "description": "Same tree template as 05-1, filled in with the intersection-pitch example content.",
+      "prompt": "Using the same tree diagram template and style as the core Logic Tree diagram, populate it with: Trunk labeled 'Fix the worst intersection first,' three branches labeled 'Concentrated Risk,' 'Proven Fix,' 'Fits Budget,' and Fruit labeled 'Add to capital plan.'",
+      "size": "1024x1536",
+      "reference_image": "05-1-logic-tree-blank"
+    },
+    {
+      "id": "appB-1-software-launch",
+      "unit": "Appendix: Organizational/Product Presentation Models",
+      "type": "scenario",
+      "batch": "core",
+      "title": "Business scenario illustration - software launch address",
+      "description": "Product launch address to small-business partners and press (Ledgerline).",
+      "prompt": "A warm, professional flat-vector illustration of a presenter standing at the front of a modern conference or launch-event space, gesturing toward a large screen showing an abstract app/software interface graphic, addressing a seated audience of business professionals and a couple of visible press/camera elements. Generic, non-identifiable figures, energetic but professional tone.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appB-2-advisory-service-launch",
+      "unit": "Appendix: Organizational/Product Presentation Models",
+      "type": "scenario",
+      "batch": "core",
+      "title": "Government scenario illustration - advisory service program launch",
+      "description": "Regional Small Business Advisory Service launch remarks setting.",
+      "prompt": "A warm, professional flat-vector illustration of a wide interior shot of a plain seminar room. A presenter stands beside a simple table a comfortable distance from a seated audience of business owners and colleagues (clear open floor gap, not crowded). Plain walls, no podium, no seal, no emblem, no crest, no flag of any kind, no signage. Generic, non-identifiable figures, East Asian/Japanese in appearance, formal but approachable tone.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appC-1-return-rate-briefing",
+      "unit": "Appendix: Persuasive/Policy Presentation Models",
+      "type": "scenario",
+      "batch": "core",
+      "title": "Business scenario illustration - return-rate findings briefing",
+      "description": "Internal findings briefing, analytical tone, no persuasive call to action.",
+      "prompt": "A warm but understated flat-vector illustration of a presenter standing beside a screen showing a simple line chart trending upward, addressing a small seated group of colleagues in a plain conference room, in a calm analytical/briefing tone rather than an energetic pitch tone. Generic, non-identifiable figures.",
+      "size": "1536x1024"
+    },
+    {
+      "id": "appC-2-readmissions-review",
+      "unit": "Appendix: Persuasive/Policy Presentation Models",
+      "type": "scenario",
+      "batch": "core",
+      "title": "Government scenario illustration - hospital readmissions policy review",
+      "description": "Policy review presentation to a governing body, analytical/investigative tone.",
+      "prompt": "A warm, professional flat-vector illustration of a presenter standing at a lectern in a formal government/committee-hearing-style room, addressing a panel of seated officials at a raised dais, with a simple chart on a screen showing a rising trend line. Generic, non-identifiable figures, formal analytical tone.",
+      "size": "1536x1024"
+    }
+  ]
+}
