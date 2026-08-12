@@ -13,6 +13,8 @@ The original *Speaking with PowerPoint* source has already been exported and com
 - Export baseline commit: `34235c5` - `added new ref.docx files for each teactbook`
 - Plan 3 baseline commit: `f8127e9` - `'Speaking with Powerpoint' Plan3 added`
 
+Commit messages above are recorded verbatim for rollback lookup.
+
 Rollback rule: before changing unit JSON, manuscripts, or generated assets, preserve the current committed state. If a rewrite path fails, restore from the committed source export in `out` and the Plan 3 baseline commit rather than reconstructing from memory.
 
 ## Scope Translation
