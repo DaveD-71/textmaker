@@ -91,6 +91,21 @@ Appendix model requirement: include one business-client model and one government
 
 Use appendix model names rather than letters in learner-facing text.
 
+## Teaching-Point Fit Rule
+
+Appendix models must demonstrate teaching points that logically belong to the presentation topic.
+
+Do not force every model to demonstrate every presentation skill. A model should be referenced from a unit only when the model task naturally requires that skill, language, visual, data point, delivery behavior, or Q&A pattern.
+
+For example:
+- Use project results models for chart/data explanation because those presentations report measured outcomes.
+- Use process improvement models for audience outcome, problem-solution structure, workflow visuals, document roles, and Q&A about ownership, risk, or implementation.
+- Use launch models for value-focused openings, visual hierarchy, rollout timelines, audience relevance, adoption questions, and next-step language.
+- Do not add a chart or data explanation to a model only to satisfy a unit reference if the presentation topic does not need data.
+- Do not reference a model in a unit if the unit's teaching point would feel artificial in that model.
+
+When a unit needs a skill that does not fit the appendix model topic, create a short role-agnostic practice item in the unit instead of distorting the appendix model.
+
 Required model appendices:
 
 | Appendix Model Set | Main Units Referenced | Business-Client Model | Government-Agency Model |
@@ -369,24 +384,24 @@ Do not place long role-specific model text inside the main unit body. Use short 
 
 ## Model-to-unit Trace Matrix
 
-| Model Set | unit Reference | Excerpt or Artifact to Reuse | Target Language | Visual Principle | Delivery Behavior | Q&A Skill | Rubric Category |
+| Model Set | Unit Reference | Excerpt or Artifact to Reuse | Target Language | Visual Principle | Delivery Behavior | Q&A Skill | Rubric Category |
 |---|---|---|---|---|---|---|---|
 | Process Improvement Briefing Models | Unit 1 | Scenario brief and audience-purpose box | purpose, audience outcome, "By the end..." | none or simple context box | audience-aware framing | none | audience fit, message clarity |
 | Process Improvement Briefing Models | Unit 2 | Core message and opening | relevance, problem statement, action request | none | concise opening | none | message clarity, opening effectiveness |
 | Process Improvement Briefing Models | Unit 3 | Problem-solution-recommendation outline | preview, transitions, forward references | planning map | logical flow | none | structure |
 | Process Improvement Briefing Models | Unit 7 | Workflow visual and backup-material choice | referring to handouts, pre-read, backup, confidentiality | before/after process visual | document handling | clarify material role | professionalism, visual effectiveness |
-| Process Improvement Briefing Models | Unit 10 | Q&A pressure points and model answers | clarify, defer, acknowledge risk, follow up | evidence reference | calm response under challenge | defer safely, confirm next action | Q&A, professionalism |
+| Process Improvement Briefing Models | Unit 10 | Q&A pressure points and model answers | clarify, defer, acknowledge implementation risk, follow up | workflow or pilot-detail reference, not forced chart evidence | calm response under challenge | defer safely, confirm next action | Q&A, professionalism |
 | Product, Service, or Program Launch Models | Unit 2 | Value-focused opening | relevance, benefit, launch purpose | none | concise opening | none | message clarity, audience fit |
 | Product, Service, or Program Launch Models | Unit 4 | Launch-plan transitions | signposting, next steps, action close | none | listener guidance | none | spoken English, structure |
 | Product, Service, or Program Launch Models | Unit 5 | Dashboard or service-flow visual | introducing visuals, directing attention | hierarchy, contrast, readable labels | point-pause-speak | answer visual-clarity question | visual effectiveness, accessibility |
 | Product, Service, or Program Launch Models | Unit 7 | Rollout timeline and document-role choices | explaining pre-read, leave-behind, follow-up | timeline, document set | material management | clarify who receives what | professionalism |
-| Product, Service, or Program Launch Models | Unit 10 | Q&A pressure points and model answers | bridge to evidence, acknowledge limitation | evidence reference | calm response under skepticism | direct answer, follow-up | Q&A |
+| Product, Service, or Program Launch Models | Unit 10 | Q&A pressure points and model answers | answer directly, bridge to launch rationale, acknowledge adoption limits | dashboard, service-flow, rollout, or user-need reference as appropriate | calm response under skepticism | direct answer, follow-up | Q&A |
 | Project Results Briefing Models | Unit 3 | Results briefing outline | preview, sequence, summary | planning map | logical flow | none | structure |
 | Project Results Briefing Models | Unit 4 | Summary and recommendation close | summarizing, recommending, action close | none | confident close | none | spoken English, professionalism |
 | Project Results Briefing Models | Unit 6 | Before/after chart | trend, comparison, source/fictional-data note | takeaway title, clear labels | explain chart in 60-90 seconds | answer evidence challenge | evidence, visual effectiveness |
 | Project Results Briefing Models | Unit 9 | Online adaptation or async storyboard | online housekeeping, backup transition | screen-share legibility | camera/mic/screen-share control | remote Q&A | delivery, accessibility |
-| Project Results Briefing Models | Unit 10 | Q&A pressure points and model answers | defer, clarify, disagreement, follow-up | evidence reference | calm response under challenge | bridge to evidence | Q&A |
-| All model sets | Unit 12 | Final model review and rubric link | final opening, transitions, action close, reflection | complete visual pack | full delivery | required Q&A | all final rubric categories |
+| Project Results Briefing Models | Unit 10 | Q&A pressure points and model answers | defer, clarify, disagreement, follow-up | chart/evidence reference because the model reports measured results | calm response under challenge | bridge to evidence | Q&A |
+| All model sets | Unit 12 | Final model review and rubric link | final opening, transitions, action close, reflection | appropriate presentation materials for the model purpose, not a forced full visual pack | full delivery | required Q&A | all final rubric categories |
 
 ## Data and Source Rules
 

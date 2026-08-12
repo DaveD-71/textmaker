@@ -14,6 +14,8 @@ Course frame: business presentation skills, not PowerPoint training and not gene
 
 AI policy: AI is mentioned only as critical literacy, checking, critique, ethics, confidentiality, copyright, and limitation awareness. The course must not promote AI as a replacement for English language development, learner-owned message work, rehearsal, or final spoken performance.
 
+Standard final delivery target: 5-7 minutes plus required Q&A, unless a client/teacher sets a different local requirement.
+
 ## Standard Course Outcomes
 
 By the end of Standard, learners can:
@@ -369,7 +371,7 @@ Model/case: learner's own final presentation.
 Learner deliverable: delivered presentation plus self-review.
 
 Core tasks:
-- Deliver final presentation with required Q&A.
+- Deliver a 5-7 minute final presentation with required Q&A, unless a client/teacher sets a different local requirement.
 - Submit visual pack or equivalent presentation materials.
 - Complete self-review using the final rubric.
 - Identify one next-step language goal and one next-step presentation-skill goal.

@@ -239,3 +239,10 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/content
 - Decision: textbook components in the Speaking with PowerPoint / Presentation Skills rebuild are `Units`, not `Lessons`.
 - Preferred behavior: use `Unit`, `unit`, `units`, `standard-12-unit-curriculum-spec.md`, `standard-unit-*`, `unit_use`, and `p3-uNN-*` asset IDs/filenames in authored planning, drafting, QA, and asset-register documents. Do not use `Lesson` for course components unless quoting or preserving external/source feedback.
+
+## 2026-08-12 - Speaking with PowerPoint Appendix Model Teaching-Point Fit
+
+- Status: `active`
+- Scope: project/content
+- Decision: appendix presentation models must demonstrate only teaching points that logically belong to the model topic. Do not add data, charts, visuals, document roles, or Q&A pressure just to satisfy a unit reference.
+- Preferred behavior: use project results models for measured outcomes/data explanation; process improvement models for workflow, audience outcome, problem-solution structure, document roles, and implementation-risk Q&A; launch models for value-focused openings, visual hierarchy, rollout timelines, adoption questions, and next-step language. If a unit needs a skill that does not fit the appendix model, create a short role-agnostic practice item in the unit instead of distorting the model.
