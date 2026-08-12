@@ -43,7 +43,7 @@ This order helps you avoid reading every number on the chart.
 | Function | Useful phrases |
 |---|---|
 | Increase | "The number increased from 68 to 86." |
-| Decrease | "Late confirmations fell from 38 to 27." |
+| Decrease | "Late document handoffs fell from 38 to 27." |
 | No major change | "The total stayed almost the same." |
 | Approximation | "This is about a 25 percent decrease." |
 | Comparison | "The second process took six minutes less on average." |
@@ -147,7 +147,7 @@ Write a takeaway title for each data set. The data is fictional for practice.
 
 | Data | Topic title | Takeaway title |
 |---|---|---|
-| Late confirmations fell from 38 to 27 after a workflow pilot. | "Late confirmations" |  |
+| Late document handoffs fell from 38 to 27 after a workflow pilot. | "Late document handoffs" |  |
 | Repeated status-check messages fell by 30 percent during a dashboard pilot. | "Messages" |  |
 | Returned applications fell, but intake time increased by 40 seconds. | "Application trial" |  |
 | User satisfaction improved from 3.6 to 4.1 out of 5. | "Feedback results" |  |
@@ -160,7 +160,7 @@ Option A: workflow data, fictional for practice
 
 | Measure | Before pilot | After pilot |
 |---|---:|---:|
-| Late confirmations | 38 | 27 |
+| Late document handoffs | 38 | 27 |
 | Average rework time | 22 min | 16 min |
 | Users reporting clearer ownership | 48% | 82% |
 
@@ -220,7 +220,7 @@ Evidence is not only numbers on a page. It is a spoken business point supported 
 ## Teacher Notes
 
 - Use fictional data unless a verified source is already available and appropriate.
-- For finance/trading examples, keep the focus on operations, reporting, workflow, service quality, or control escalation. Do not allow trade recommendations, market predictions, client/account details, or regulatory advice.
+- For banking/leasing or general trading-company examples, keep the focus on operations, reporting, workflow, service quality, or control escalation. Do not allow securities trading recommendations, securities-market predictions, client/account, shipment, or transaction details, or legal or regulatory advice.
 - For government-agency examples, keep the focus on administrative service, process, reporting, coordination, or service delivery.
 - Spoken output is required in this unit. Learners should explain a chart in 60-90 seconds.
 - Check for overclaims such as "prove," "guarantee," and "solve." Encourage cautious claims when the evidence is limited.

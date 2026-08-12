@@ -47,10 +47,10 @@ Use `Unit`, `unit`, and `units` for textbook components.
 - Keep teacher notes short and clearly separated under `## Teacher Notes`.
 - Use Standard voice: practical, adult, explanatory, and direct.
 - Keep the main unit body role-agnostic between business clients and government agencies.
-- Put finance/trading and government-agency references in short optional model references, not as the only main-text context.
-- Business-client examples should focus on finance/trading operations, reporting, workflow, client service, service quality, or control escalation.
+- Put banking/leasing or general trading-company and government-agency references in short optional model references, not as the only main-text context.
+- Business-client examples should focus on banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation.
 - Government examples should focus on administrative service, process, reporting, coordination, or service delivery.
-- Do not create trade recommendations, market predictions, regulatory advice, client/account examples, or confidential data.
+- Do not create securities trading recommendations, securities-market predictions, legal or regulatory advice, client/account, shipment, or transaction examples, or confidential data.
 - Use fictional data only unless a verified source is already present in the control files.
 - AI may be mentioned only as critical literacy, checking, critique, ethics, confidentiality, copyright, or limitations. Do not promote AI as a way to replace English development.
 - Include spoken English output in visual, tool, data, delivery, and Q&A units.
@@ -79,7 +79,7 @@ Before returning, each drafting agent must check its files for:
 
 - AI promotion or AI-as-shortcut framing
 - PowerPoint-prescriptive framing
-- finance/trading advice risks
+- banking/leasing or general trading-company advice risks
 - government-symbol or political-policy drift
 - missing spoken English output where required
 - missing learner deliverable

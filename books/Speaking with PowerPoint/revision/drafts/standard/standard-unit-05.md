@@ -79,7 +79,7 @@ Slide or visual text should not be a script. It should support your speaking.
 
 Instead of:
 
-"We are planning to launch a new dashboard that will help relationship managers check client reporting issues more quickly and reduce the number of status-check emails they need to send to other teams."
+"We are planning to launch a new dashboard that will help account managers check supplier-status issues more quickly and reduce the number of status-check emails they need to send to other teams."
 
 Use:
 
@@ -175,7 +175,7 @@ Change each topic title into a takeaway title.
 
 | Topic title | Takeaway title |
 |---|---|
-| "Client Reporting Dashboard" |  |
+| "Supplier Status Dashboard" |  |
 | "Pilot Timeline" |  |
 | "Application Support Desk" |  |
 | "Process Change" |  |
@@ -277,7 +277,7 @@ Clear visuals make the spoken message easier to understand. They do not replace 
 ## Teacher Notes
 
 - Accept slides, PDFs, document sections, dashboard mockups, or other visual formats if the learner can justify the choice.
-- Keep the main task role-agnostic. Learners who need finance/trading or government-agency contexts can refer to the Product, Service, or Program Launch Models.
+- Keep the main task role-agnostic. Learners who need banking/leasing or general trading-company or government-agency contexts can refer to the Product, Service, or Program Launch Models.
 - Check slide text for missing articles, missing plurals, and over-compressed noun phrases.
 - The optional AI task is critical literacy only. Do not let it become a slide-generation workflow for assessed work.
 - Spoken output is required in this unit. Learners should explain the visual aloud, not only submit the visual.

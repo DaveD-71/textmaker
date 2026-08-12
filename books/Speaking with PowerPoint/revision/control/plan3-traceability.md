@@ -1,4 +1,4 @@
-﻿# Plan 3 Traceability Matrix
+# Plan 3 Traceability Matrix
 
 Prepared: 2026-08-12
 
@@ -106,7 +106,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 |---|---|---|---|
 | Three recurring business cases | Model case bank; Units 1-12 | Process improvement, product/service launch, and project results briefing cases | Each model maps to Units, language points, visual points, delivery behaviors, and rubric criteria |
 | Audience-variant rule | Main Units, appendix models, QA | Main unit body stays role-agnostic between business-client and government-agency contexts | Role-specific content appears in models, appendices, teacher notes, or optional variants rather than changing the core sequence |
-| Business-client model focus | Appendix models and examples | Finance/trading operations, reporting, workflow, client service, service quality, or control escalation examples | No investment advice, market prediction, real client/account data, regulatory advice, real firm logos, exchange names, or ticker symbols |
+| Business-client model focus | Appendix models and examples | Banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation examples | No investment advice, securities-market prediction, real customer, account, shipment, or transaction data, legal or regulatory advice, real firm logos, securities exchange names, or stock ticker symbols |
 | Government-agency model focus | Appendix models and examples | Administrative task, service delivery, reporting, coordination, or process improvement examples | No superficial relabeling of business examples; no political advocacy, legislation, budget campaigning, flags, seals, emblems, or crests unless approved |
 | Appendix model parity | Appendix model sets and QA | Paired business-client and government-agency models for each case family | Each pair teaches the same underlying skill with comparable depth and quality |
 | Three-tier series | Tier strategy and manuscripts | Essentials 8, Standard 12, Long 15 | Essentials compresses, Standard is source of truth, Long expands without contradiction |

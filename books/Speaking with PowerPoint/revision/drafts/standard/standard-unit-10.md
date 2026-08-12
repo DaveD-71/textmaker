@@ -86,7 +86,7 @@ The following examples use fictional workplace situations for practice.
 |---|---|---|
 | Will this add another reporting task? | Maybe, but it is not too much. | The short answer is no. The pilot uses the existing weekly summary, but adds one shared status field so ownership is clearer. |
 | Why should we trust this result? | Because the chart shows improvement. | The result is limited because it is only a four-week pilot. However, the before-and-after comparison shows fewer delays and lower rework time, so I recommend a controlled expansion. |
-| Can we use real client examples in the dashboard? | I think that is fine. | I would not include real client names in a practice or shared sample. We should use fictional or approved sanitized data and follow company policy. |
+| Can we use real client examples in the dashboard? | I think that is fine. | I would not include real customer names in a practice or shared sample. We should use fictional or approved sanitized data and follow company policy. |
 | What if the checklist slows down the counter line? | It probably will not. | That is a real risk. For the trial, we should measure both returned forms and intake time. If waiting time increases too much, we should revise the checklist. |
 
 Notice that the stronger answers do not avoid the problem. They answer, limit the claim, and explain the next action.
@@ -135,7 +135,7 @@ Use skeptical questions that are realistic, not hostile. The goal is to practise
 
 ## Optional model references
 
-For a business-client version, see the Process Improvement Briefing Models or Project Results Briefing Models. Use only fictional or sanitized finance/trading operations examples, such as workflow timing, reporting quality, or control handoff. Do not create investment advice, market predictions, client/account details, or regulatory interpretation.
+For a business-client version, see the Process Improvement Briefing Models or Project Results Briefing Models. Use only fictional or sanitized banking/leasing or general trading-company operations examples, such as workflow timing, reporting quality, or control handoff. Do not create investment advice, securities-market predictions, client/account, shipment, or transaction details, or regulatory interpretation.
 
 For a government-agency version, see the Administrative Process Improvement or Administrative Project Results examples in the same model sets. Keep the focus on service delivery, process, reporting, coordination, or administrative follow-up.
 
@@ -167,7 +167,7 @@ This unit supports the final rubric categories for Q&A, spoken English, professi
 
 Keep role plays professional. Do not reward aggressive questioning. The aim is controlled challenge handling, not debate performance.
 
-For finance/trading variants, check that learners do not give trade recommendations, market predictions, real account details, or legal/regulatory interpretations. For government-agency variants, keep questions administrative and service-focused.
+For banking/leasing or general trading-company variants, check that learners do not give securities trading recommendations, securities-market predictions, real account details, or legal/regulatory interpretations. For government-agency variants, keep questions administrative and service-focused.
 
 Suggested quick feedback codes:
 

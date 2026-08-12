@@ -150,7 +150,7 @@ Your spoken English output for this unit is the final presentation, the required
 
 ## Optional model references
 
-For a business-client model, compare your work with the finance/trading operations, service launch, or project results models. Use these only for structure, language, and delivery reference. Avoid investment advice, market predictions, real client/account examples, or regulatory/legal interpretation.
+For a business-client model, compare your work with the banking/leasing or general trading-company operations, service launch, or project results models. Use these only for structure, language, and delivery reference. Avoid investment advice, securities-market predictions, real client/account, shipment, or transaction examples, or regulatory/legal interpretation.
 
 For a government-agency model, compare your work with the administrative process, service launch, or results briefing models. Keep the focus on administrative tasks, service delivery, reporting, coordination, or process improvement.
 

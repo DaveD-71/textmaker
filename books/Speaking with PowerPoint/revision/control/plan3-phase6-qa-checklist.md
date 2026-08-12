@@ -1,4 +1,4 @@
-﻿# Plan 3 Phase 6 QA Checklist
+# Plan 3 Phase 6 QA Checklist
 
 Prepared: 2026-08-12
 
@@ -56,7 +56,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Government-agency examples are genuinely public-sector appropriate, not business examples with names swapped |  |  |
 | Business-client examples are genuinely business appropriate, not public-sector examples with names swapped |  |  |
 | Government-facing visuals avoid real national flags, seals, emblems, crests, and country-specific iconography unless intentionally required and verified |  |  |
-| Business-client finance/trading examples avoid investment advice, market prediction, client/account data, regulatory/legal advice, real firm names, exchange names, and ticker symbols |  |  |
+| Business-client banking/leasing or general trading-company examples avoid investment advice, securities-market prediction, customer, account, shipment, or transaction data, regulatory/legal advice, real firm names, securities exchange names, and stock ticker symbols |  |  |
 | Government-agency examples stay within administrative tasks, service delivery, reporting, coordination, process improvement, and service communication unless explicitly approved |  |  |
 
 ## 3. ESL and Business English QA

@@ -227,4 +227,4 @@ Signposting is the language of structure. It does not replace a strong message, 
 - Accept different register choices if learners can explain the audience and situation.
 - Correct false absolute rules carefully. `At first`, `then`, `let's`, and `that's all` are not always grammatically wrong, but they may be weak or unsuitable in some presentation contexts.
 - For Japanese learners, watch for article and plural omissions in slide or outline text, and for sentence-by-sentence translation that creates long, indirect signposting.
-- Keep role-specific examples short. Use the appendix model sets for finance/trading and government-agency variants rather than turning the main unit into one client context.
+- Keep role-specific examples short. Use the appendix model sets for banking/leasing or general trading-company and government-agency variants rather than turning the main unit into one client context.

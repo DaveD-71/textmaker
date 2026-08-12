@@ -41,7 +41,7 @@ Do not reuse existing `books/Presentation Skills/images/` assets for Plan 3 unle
 | `caption` | If needed | Learner-facing caption or figure label |
 | `replacement_rationale` | Yes | Why this asset exists or replaces an old one |
 | `accessibility_check` | Yes | Contrast/readability/color/alt-text outcome |
-| `visual_restriction_check` | Yes | Finance/trading, government-symbol, logo, privacy, and representation checks |
+| `visual_restriction_check` | Yes | Banking/leasing or general trading-company, government-symbol, logo, privacy, and representation checks |
 | `privacy_security_check` | Yes | Confirms no confidential, client, account, trade, or real personal data |
 | `text_accuracy_check` | If asset contains text | Confirms text is correct, readable, and intentional |
 | `element_count_check` | If diagram/process | Confirms count/order of boxes, icons, arrows, labels, etc. |
@@ -88,7 +88,7 @@ Use this object shape if the register is maintained as JSON.
     "notes": ""
   },
   "visual_restriction_check": {
-    "finance_trading_clear": "",
+    "business_client_clear": "",
     "government_symbols_clear": "",
     "logos_watermarks_clear": "",
     "representation_checked": "",
@@ -96,7 +96,7 @@ Use this object shape if the register is maintained as JSON.
   },
   "privacy_security_check": {
     "no_real_client_data": "",
-    "no_account_or_trade_ids": "",
+    "no_account_or_transaction_ids": "",
     "no_real_personal_data": "",
     "metadata_checked": "",
     "notes": ""
@@ -123,29 +123,29 @@ Use this object shape if the register is maintained as JSON.
 | Chart | source/fictional-data label, takeaway title, readable labels, color-not-alone, no misleading scale |
 | Diagram/process | element count, arrow direction, label placement, readable text, color-not-alone |
 | Icon | clear meaning, consistent style, no logo resemblance, alt/decorative decision |
-| Mockup/dashboard | fictional/sanitized data, no real client/account/trade/person identifiers, no proprietary UI, readable labels |
+| Mockup/dashboard | fictional/sanitized data, no real client/account/transaction/person identifiers, no proprietary UI, readable labels |
 | Screenshot | current, permission-cleared, no confidential data, no unstable UI dependency unless necessary |
 | Illustration/photo | representation check, no logos/watermarks, no flags/seals/crests, no accidental text |
 | Decorative element | decorative flag, no required meaning, no distracting or misleading symbolism |
 
-## Finance/Trading Restrictions
+## Business-Client Restrictions
 
-Business-client finance/trading visuals must not contain:
+Business-client banking/leasing or general trading-company visuals must not contain:
 
 - real firm names
-- bank logos
-- exchange names
-- ticker symbols
-- real client names
-- account numbers
-- trade IDs
+- real bank logos
+- securities exchange names
+- stock ticker symbols
+- real customer names
+- account, shipment, or order numbers
+- shipment IDs
 - proprietary screens
-- market predictions
-- trade recommendations
+- securities-market predictions
+- securities trading recommendations
 - investment advice
 - compliance/legal advice
 
-Preferred finance/trading visuals:
+Preferred banking/leasing or general trading-company visuals:
 
 - generic workflow diagrams
 - reporting dashboards with fictional labels

@@ -58,7 +58,7 @@ Sample explanation:
 
 "I sent the one-page background note yesterday, so I will not read it today. In the live presentation, I will focus on the current workflow, the proposed change, and the pilot decision. The detailed cause table is in the appendix if we need it during Q&A."
 
-Optional model reference: For a finance/trading version, see the Process Improvement Briefing Models on trade confirmation delays. For a government-agency version, compare the administrative process example on returned application forms.
+Optional model reference: For a banking/leasing or general trading-company version, see the Process Improvement Briefing Models on import document handoff delays. For a government-agency version, compare the administrative process example on returned application forms.
 
 ## Practice 1: choose the format
 
@@ -138,4 +138,4 @@ Good presentation materials are chosen, not assumed. A clear workflow helps you 
 
 ## Teacher Notes
 
-Keep the focus on decision-making, not software features. Accept slides, PDFs, documents, dashboards, worksheets, or other formats if the learner can justify the choice. For finance/trading examples, require fictional or sanitized workflow/reporting data and stop any investment advice, market prediction, client-account detail, or regulatory interpretation. For government-agency examples, keep the context administrative and avoid political or policy advocacy.
+Keep the focus on decision-making, not software features. Accept slides, PDFs, documents, dashboards, worksheets, or other formats if the learner can justify the choice. For banking/leasing or general trading-company examples, require fictional or sanitized workflow/reporting data and stop any investment advice, securities-market prediction, client/account, shipment, or transaction detail, or regulatory interpretation. For government-agency examples, keep the context administrative and avoid political or policy advocacy.

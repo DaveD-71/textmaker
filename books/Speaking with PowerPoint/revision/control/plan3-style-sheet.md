@@ -1,4 +1,4 @@
-﻿# Plan 3 Style Sheet
+# Plan 3 Style Sheet
 
 Prepared: 2026-08-12
 
@@ -193,7 +193,7 @@ Case rules:
 - Use realistic but simple business situations.
 - Avoid volatile, high-risk, or highly technical claims unless sourced.
 - Do not reuse the old Ventura case as the main spine unless it is intentionally rebuilt and approved.
-- Business-client examples should focus on finance/trading operations, reporting, workflow, client service, service quality, or control escalation; do not create trade recommendations, market predictions, client/account examples, or regulatory/legal advice.
+- Business-client examples should focus on banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation; do not create securities trading recommendations, securities-market predictions, client/account, shipment, or transaction examples, or regulatory/legal advice.
 - Government-agency examples should focus on administrative tasks, service delivery, reporting, coordination, process improvement, and service communication; do not drift into political advocacy, legislation, budget campaigning, or public-policy argument unless explicitly approved.
 
 Data rules:

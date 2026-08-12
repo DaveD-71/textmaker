@@ -1,4 +1,4 @@
-﻿# Plan 3 Case and Model Brief
+# Plan 3 Case and Model Brief
 
 Prepared: 2026-08-12
 
@@ -8,7 +8,7 @@ Purpose: define the reusable case and appendix model system for the Plan 3 rebui
 
 The main textbook body should teach general presentation skills without assuming the learner works for a business client or a government agency. When a role-specific context is useful, provide paired or parallel variants:
 
-- Business-client variants should focus mainly on finance or trading industry contexts.
+- Business-client variants should reflect the user's broad client base: banking/leasing, general trading-company/import-export, manufacturing/industrial, operations, reporting, client service, procurement, supply chain, and internal process contexts.
 - Government-agency variants should focus mainly on administrative tasks, service delivery, internal process improvement, reporting, coordination, or public-facing administrative communication.
 
 Do not create separate government and business unit tracks. Add the specificity through examples and models that the main unit references.
@@ -22,8 +22,8 @@ Core skill: recommend a workflow or process change.
 Role-agnostic core: a team has a recurring operational problem. The presenter recommends a change, explains why it matters, and asks for approval or cooperation.
 
 Business-client variant:
-- Context: finance/trading operations team.
-- Example scenario: reduce delays and manual errors in trade confirmation or client reporting.
+- Context: banking/leasing or general trading-company operations team.
+- Example scenario: reduce delays and manual errors in import documentation or supplier-status reporting.
 - Typical audience: operations manager, risk/control colleague, team lead, or cross-functional project group.
 - Decision/action: approve a revised workflow, pilot an automation step, or standardize a handoff process.
 - Data type: processing time, error rate, rework volume, missed deadline count, client inquiry volume.
@@ -46,10 +46,10 @@ Core skill: explain value, plan, and next steps for a new offering or service.
 Role-agnostic core: a new service, product, program, or internal support process is being introduced. The presenter explains what it is, who it helps, why it matters, and what should happen next.
 
 Business-client variant:
-- Context: finance or trading service environment.
-- Example scenario: launch a new client reporting dashboard, trade-support workflow, compliance reporting service, or market-data briefing product.
-- Typical audience: client-facing team, operations staff, relationship managers, internal stakeholders, or selected clients.
-- Decision/action: approve launch, adopt the workflow, brief clients, or join a pilot.
+- Context: banking/leasing or general trading-company service environment.
+- Example scenario: launch a new supplier-status dashboard, supplier-support workflow, compliance reporting service, or supplier-status briefing product.
+- Typical audience: account-facing team, operations staff, account managers, internal stakeholders, or selected customers.
+- Decision/action: approve launch, adopt the workflow, brief customers or internal users, or join a pilot.
 - Data type: user needs, service uptake, time saved, inquiry reduction, client satisfaction, reporting frequency.
 
 Government-agency variant:
@@ -70,11 +70,11 @@ Core skill: report results, explain evidence, and recommend next steps.
 Role-agnostic core: a project or initiative has produced results. The presenter explains what changed, what the data means, what limitations remain, and what should happen next.
 
 Business-client variant:
-- Context: finance/trading project, operations improvement, risk-control initiative, client-service improvement, or reporting upgrade.
-- Example scenario: report results of a pilot that shortened trade exception resolution time or improved accuracy in client reporting.
+- Context: banking/leasing or general trading-company project, operations improvement, risk-control initiative, account-service improvement, or reporting upgrade.
+- Example scenario: report results of a pilot that shortened import document exception resolution time or improved accuracy in supplier-status reporting.
 - Typical audience: leadership, sponsors, project team, risk/control stakeholders, operations managers.
 - Decision/action: continue the project, expand the pilot, allocate resources, revise policy, or close the project with follow-up actions.
-- Data type: before/after comparison, trend, cost/time savings, exception volume, turnaround time, control findings.
+- Data type: before/after comparison, trend, cost/time savings, exception volume, turnaround time, internal control findings.
 
 Government-agency variant:
 - Context: administrative improvement project, service-delivery review, internal coordination project, or reporting-process change.
@@ -110,9 +110,9 @@ Required model appendices:
 
 | Appendix Model Set | Main Units Referenced | Business-Client Model | Government-Agency Model |
 |---|---|---|---|
-| Process Improvement Briefing Models | Units 1, 2, 3, 7, 10, 12 | Finance/trading operations workflow improvement | Administrative process improvement |
-| Product, Service, or Program Launch Models | Units 2, 4, 5, 7, 10, 12 | Finance/trading client or internal service launch | Administrative service or program launch |
-| Project Results Briefing Models | Units 3, 4, 6, 9, 10, 12 | Finance/trading project results briefing | Administrative project results briefing |
+| Process Improvement Briefing Models | Units 1, 2, 3, 7, 10, 12 | Banking/leasing or general trading-company operations workflow improvement | Administrative process improvement |
+| Product, Service, or Program Launch Models | Units 2, 4, 5, 7, 10, 12 | Banking/leasing or general trading-company client or internal service launch | Administrative service or program launch |
+| Project Results Briefing Models | Units 3, 4, 6, 9, 10, 12 | Banking/leasing or general trading-company project results briefing | Administrative project results briefing |
 
 Each model set should include:
 - short scenario brief
@@ -140,34 +140,34 @@ Use the following six model briefs as the default appendix model set. Organizati
 
 ### 1. Process Improvement Briefing: Business-Client Variant
 
-Working title: Reducing Trade Confirmation Delays
+Working title: Reducing Import Document Handoff Delays
 
-Fictional organization: Seika Capital Operations
+Fictional organization: Seika Global Trading Operations
 
-Scenario: A finance operations team has too many same-day trade confirmation delays because exception checks are split across email, spreadsheet tracking, and manual handoff messages. The presenter recommends a shared exception log and a fixed handoff checkpoint before the market close preparation window.
+Scenario: A general trading-company operations team has too many same-day import document handoff delays because exception checks are split across email, spreadsheet tracking, and manual handoff messages. The presenter recommends a shared exception log and a fixed handoff checkpoint before the daily shipping cutoff preparation window.
 
-Audience: operations manager, risk/control representative, settlement team lead, and client-service representative.
+Audience: operations manager, risk/control representative, documentation team lead, and account-service representative.
 
 Purpose: request approval for a four-week pilot of the revised workflow.
 
-Core message: A shared exception log and fixed handoff checkpoint will reduce avoidable confirmation delays without changing the control process.
+Core message: A shared exception log and fixed handoff checkpoint will reduce avoidable document handoff delays without changing the control process.
 
-Delivery context profile: internal approval meeting; 6-minute presentation plus 4-minute Q&A; required materials are a one-page workflow visual and pilot summary; optional backup material is a cause breakdown table; confidentiality check required because no real client names, account numbers, ticket IDs, or trade details may appear.
+Delivery context profile: internal approval meeting; 6-minute presentation plus 4-minute Q&A; required materials are a one-page workflow visual and pilot summary; optional backup material is a cause breakdown table; confidentiality check required because no real customer names, account, shipment, or order numbers, ticket IDs, or shipment or order details may appear.
 
 Suggested outline:
 1. Current problem: delays cluster around unclear handoffs.
 2. Evidence: delay count and rework time have increased.
 3. Recommendation: pilot a shared exception log and daily checkpoint.
-4. Expected result: fewer late confirmations and clearer ownership.
+4. Expected result: fewer late document handoffs and clearer ownership.
 5. Action: approve the four-week pilot and review results.
 
 Fictional data:
-- 38 late confirmations last month
+- 38 late document handoffs last month
 - 61% involved missing or unclear handoff notes
 - average rework time: 22 minutes per exception
-- target for pilot: 25% fewer late confirmations
+- target for pilot: 25% fewer late document handoffs
 
-Likely visual: simple before/after workflow diagram plus one small bar chart showing late confirmations by cause.
+Likely visual: simple before/after workflow diagram plus one small bar chart showing late document handoffs by cause.
 
 Likely Q&A pressure points:
 - Will this add another reporting task?
@@ -218,22 +218,22 @@ Primary unit uses: Units 1, 2, 3, 7, 10, 12.
 
 ### 3. Product, Service, or Program Launch: Business-Client Variant
 
-Working title: Launching a Client Reporting Dashboard
+Working title: Launching a Supplier Status Dashboard
 
-Fictional organization: Koyo Markets Client Services
+Fictional organization: Koyo Trading Client Services
 
-Scenario: A finance/trading client-service team plans to launch a dashboard that gives relationship managers a clearer weekly view of client inquiry status, reporting deadlines, and unresolved requests. The presenter explains the value, rollout plan, and support process.
+Scenario: A banking/leasing or general trading-company account-service team plans to launch a dashboard that gives account managers a clearer weekly view of supplier inquiry status, shipment reporting deadlines, and unresolved requests. The presenter explains the value, rollout plan, and support process.
 
-Audience: relationship managers, client-service staff, reporting operations, and team leadership.
+Audience: account managers, account-service staff, reporting operations, and team leadership.
 
-Purpose: secure agreement for a pilot launch with two client teams.
+Purpose: secure agreement for a pilot launch with two account teams.
 
-Core message: The dashboard will help relationship managers see client-reporting issues earlier and reduce last-minute status checks.
+Core message: The dashboard will help account managers see supplier-status issues earlier and reduce last-minute status checks.
 
 Delivery context profile: internal launch briefing; 7-minute presentation plus 5-minute Q&A; required materials are a dashboard mockup and rollout timeline; optional backup material is a data-field list; confidentiality check required because dashboard examples must use fictional clients and sanitized fields only.
 
 Suggested outline:
-1. Why now: status checks are increasing near reporting deadlines.
+1. Why now: status checks are increasing near shipment reporting deadlines.
 2. What changes: one dashboard view for inquiry status and deadlines.
 3. How it helps: earlier visibility, fewer repeated messages, clearer ownership.
 4. Rollout: two-team pilot, weekly feedback, revised dashboard.
@@ -245,12 +245,12 @@ Fictional data:
 - estimated time spent answering status checks: 9 staff-hours per week
 - pilot target: 30% reduction in repeated status-check messages
 
-Likely visual: dashboard mockup with no real client names, plus rollout timeline.
+Likely visual: dashboard mockup with no real customer names, plus rollout timeline.
 
 Likely Q&A pressure points:
 - Will this replace existing reports?
 - Who updates the dashboard?
-- Can client names or sensitive data appear?
+- Can customer names or sensitive data appear?
 - What if teams use different reporting cycles?
 
 Primary unit uses: Units 2, 4, 5, 7, 10, 12.
@@ -298,27 +298,27 @@ Primary unit uses: Units 2, 4, 5, 7, 10, 12.
 
 Working title: Reporting Results from the Exception Resolution Pilot
 
-Fictional organization: Seika Capital Operations
+Fictional organization: Seika Global Trading Operations
 
-Scenario: After the trade-confirmation workflow pilot, the presenter reports the results and recommends expanding the process to two more desks.
+Scenario: After the import-document handoff workflow pilot, the presenter reports the results and recommends expanding the process to two more desks.
 
-Audience: operations leadership, risk/control representative, settlement team lead, and client-service manager.
+Audience: operations leadership, risk/control representative, documentation team lead, and account-service manager.
 
 Purpose: report pilot results and request approval for controlled expansion.
 
-Core message: The pilot reduced late confirmations and clarified ownership, so we should extend it to two more desks with minor adjustments.
+Core message: The pilot reduced late document handoffs and clarified ownership, so we should extend it to two more desks with minor adjustments.
 
-Delivery context profile: internal project-results briefing; 8-minute presentation plus 5-minute Q&A; required materials are a before/after chart and recommendation summary; optional backup material is a volume-adjusted result table; confidentiality check required because no real desk names, client names, trade IDs, or control findings may appear.
+Delivery context profile: internal project-results briefing; 8-minute presentation plus 5-minute Q&A; required materials are a before/after chart and recommendation summary; optional backup material is a volume-adjusted result table; confidentiality check required because no real desk names, customer names, shipment IDs, or internal control findings may appear.
 
 Suggested outline:
 1. Pilot objective: reduce delays from unclear handoffs.
-2. Results: fewer late confirmations and less rework time.
+2. Results: fewer late document handoffs and less rework time.
 3. What we learned: ownership improved, but morning updates need tightening.
 4. Recommendation: expand to two more desks.
 5. Action: approve expansion and review again after six weeks.
 
 Fictional data:
-- late confirmations fell from 38 to 27
+- late document handoffs fell from 38 to 27
 - average rework time fell from 22 to 16 minutes
 - 82% of pilot users said ownership was clearer
 - two unresolved issues: morning update timing and duplicate log entries
@@ -382,6 +382,33 @@ Main unit references should use the model-set names, not appendix letters. Examp
 
 Do not place long role-specific model text inside the main unit body. Use short excerpts only when a language or design point needs to be visible on the same page.
 
+## Model Structure and Phrase Variety Map
+
+The appendix models must not imply that every business presentation uses one rigid structure or one repeated phrase set. Each model should connect to the unit teaching points while showing a different valid structure, opening style, transition pattern, close, and Q&A emphasis.
+
+The business-client and government-agency variants inside one model family must still demonstrate the same core teaching point at comparable depth. Vary the structure and phrase choices enough to avoid a template effect, but do not make one variant teach a different skill from the other.
+
+Use this map when drafting or repairing full model scripts.
+
+| Model | Main Structure Option | Opening Style | Preview / Transition Style | Close Style | Q&A Emphasis | Unit Links |
+|---|---|---|---|---|---|---|
+| Process Improvement: Business Client | problem-risk-recommendation-decision | direct recommendation with operational risk | problem location, risk, controlled change, decision | explicit approval request | workload, control risk, ownership, pilot evidence | Units 1, 2, 3, 7, 10, 12 |
+| Process Improvement: Government Agency | service-impact-trial-plan-approval | user/staff impact opening | current service effect, trial design, staff role, approval | service improvement and trial approval | workload, service line impact, update ownership | Units 1, 2, 3, 7, 10, 12 |
+| Product/Service Launch: Business Client | opportunity-change-adoption-next steps | launch purpose plus audience benefit | why now, what changes, adoption support, next steps | nominate users and confirm launch | adoption, confidentiality, update ownership | Units 2, 4, 5, 7, 10, 12 |
+| Product/Service Launch: Government Agency | user need-service design-staffing-review | service need opening | user need, service design, staffing limits, review measures | approve schedule and staffing | staff capacity, user access, service scope | Units 2, 4, 5, 7, 10, 12 |
+| Project Results: Business Client | objective-results-limitations-controlled expansion | sponsor update with result headline | objective, evidence, limitation, controlled expansion | approve controlled expansion | evidence challenge, control limits, volume effects | Units 3, 4, 6, 9, 10, 12 |
+| Project Results: Government Agency | before/after-service impact-next application types | service review with before/after headline | what changed, what improved, what needs attention, next application types | approve limited expansion and update owner | waiting time, rotating staff, update ownership | Units 3, 4, 6, 9, 10, 12 |
+
+Phrase-variety rules:
+
+- Do not start every model with `Today I would like to...`.
+- Do not use `By the end of this briefing...` in every model. Use alternatives such as `The decision I need today is...`, `Please keep one question in mind...`, `I will focus on...`, or `The recommendation is...`.
+- Do not use only `Let me start`, `Now I will move`, and `Next, I will explain` for transitions. Vary with purpose-based transitions such as `The risk appears here`, `The service effect is visible in this step`, `The rollout has three support points`, or `The evidence changes the decision in two ways`.
+- The same model pair may teach the same underlying skill, but business and government variants should not be word-for-word structural mirrors.
+- The same model pair must preserve teaching-point parity: comparable audience outcome, comparable structural skill, comparable visual/document role where relevant, comparable Q&A challenge level, and comparable final action request.
+- Unit 3 should use these models to show structure choice, not a single universal template.
+- Unit 4 should use these models to show a phrase bank with alternatives by purpose, register, and presentation type.
+
 ## Model-to-unit Trace Matrix
 
 | Model Set | Unit Reference | Excerpt or Artifact to Reuse | Target Language | Visual Principle | Delivery Behavior | Q&A Skill | Rubric Category |
@@ -411,18 +438,18 @@ Fictional data must be:
 - realistic
 - simple enough for B1-B2 learners
 - clearly labeled as fictional for practice
-- free from real company names, client names, confidential information, or implied real claims
+- free from real company names, customer names, confidential information, or implied real claims
 
 Real data, if used, must have a stable source and be recorded in source notes.
 
-Avoid volatile finance/trading claims, market predictions, investment advice, regulatory interpretation, or legal/compliance instructions. The cases may be about operations, reporting, workflow, service quality, communication, or administrative process, but not about recommending trades or financial products.
+Avoid volatile banking/leasing or general trading-company claims, securities-market predictions, investment advice, regulatory interpretation, or legal/compliance instructions. The cases may be about operations, reporting, workflow, service quality, communication, or administrative process, but not about recommending securities trades, investments, or financial products.
 
 ## Visual Rules
 
 Business-client visuals:
 - may use generic office, operations, reporting, dashboard, or meeting contexts
-- must avoid real company logos, bank names, exchange names, trading symbols, or proprietary-looking screens
-- should not imply investment advice or market prediction
+- must avoid real company logos, real bank names, securities exchange names, stock trading symbols, or proprietary-looking screens
+- should not imply investment advice or securities-market prediction
 
 Government-agency visuals:
 - may use plain administrative offices, meeting rooms, counters, forms, workflow diagrams, or service-delivery settings
@@ -435,7 +462,7 @@ People-containing visuals should follow the existing Presentation Skills represe
 
 Before unit drafting:
 - Confirm each case family has both business-client and government-agency variant potential.
-- Confirm business-client cases focus on finance/trading operations, services, reporting, or process work.
+- Confirm business-client cases focus on banking/leasing or general trading-company operations, services, reporting, or process work.
 - Confirm government-agency cases focus on administrative tasks, service delivery, reporting, coordination, or process improvement.
 
 During drafting:

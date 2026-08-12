@@ -65,7 +65,7 @@ Presenter notes:
 - action: short pilot
 - delivery reminder: pause before contrast
 
-Optional model reference: For a finance/trading version, use the process improvement example on trade confirmation delays. For a government-agency version, use the administrative process example on returned application forms.
+Optional model reference: For a banking/leasing or general trading-company version, use the process improvement example on import document handoff delays. For a government-agency version, use the administrative process example on returned application forms.
 
 ## Practice 1: mark thought groups
 

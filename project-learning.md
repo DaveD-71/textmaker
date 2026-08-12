@@ -253,3 +253,24 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/files
 - Decision: the book folder is organized into `books/Speaking with PowerPoint/revision/` for current 2026 revision work and `books/Speaking with PowerPoint/old/` for preserved original-source material.
 - Preferred behavior: place current plans, control files, draft units, appendix model source packs, AI feedback, archived revision plans, and agent/review records under `revision/`. Keep original PDF/DOCX source files and extracted conversion output under `old/`.
+
+## 2026-08-12 - Speaking with PowerPoint Model Script Timing
+
+- Status: `active`
+- Scope: project/content
+- Decision: use about 115-125 words per minute as the working timing range for practiced B1-B2 model presentation scripts, including pauses and visual handling.
+- Preferred behavior: do not label model scripts with timings that require rushed reading. If a timing target is important, check script-only word count and adjust the label or trim the script.
+
+## 2026-08-12 - Speaking with PowerPoint Model Variety and Parity
+
+- Status: `active`
+- Scope: project/content
+- Decision: appendix model scripts must demonstrate varied presentation structures and phrase families; they must not imply that every business presentation follows one rigid template.
+- Preferred behavior: use the `Model Structure and Phrase Variety Map` in `books/Speaking with PowerPoint/revision/control/plan3-case-model-brief.md` before drafting or repairing model scripts. Preserve government/non-government teaching-point parity inside each model family: comparable core skill, visual/document role where relevant, Q&A challenge level, and final action request, while varying opening style, transition patterns, and close.
+
+## 2026-08-12 - Speaking with PowerPoint Client Contexts
+
+- Status: `active`
+- Scope: project/content
+- Decision: client examples should reflect a broad Japanese professional client base, including banking/leasing, general trading companies, manufacturing/industrial companies, and government/public-safety agencies. Named examples from the user include Mizuho Bank, Mizuho Leasing, Marubeni, Bosch, NRA, PSIA, and the Tokyo Metropolitan Police.
+- Preferred behavior: business-client examples may include banking, leasing, general trading-company/import-export, manufacturing, operations, reporting, client service, supply chain, procurement, compliance-support, and internal process contexts. Do not treat `trading` as financial-market trading by default. Avoid stock/securities trading, investment advice, market predictions, ticker symbols, exchange names, financial trading desks, real client/account data, regulatory/legal advice, or real-company claims unless explicitly approved and sourced. Government examples should remain administrative, service-delivery, coordination, reporting, training, public-safety administration, or process-improvement focused, without political advocacy or sensitive operational/security detail.

@@ -1,4 +1,4 @@
-﻿# Standard 12-Unit Curriculum Spec
+# Standard 12-Unit Curriculum Spec
 
 Prepared: 2026-08-12
 
@@ -43,7 +43,7 @@ Use three recurring cases across Units. These cases replace the old Ventura-only
 
 Each model must be traceable to language points, visual-design points, delivery behaviors, and assessment criteria.
 
-Concrete model variants must follow `plan3-case-model-brief.md`: business-client examples should focus on finance/trading operations, reporting, client-service, workflow, or control contexts; government-agency examples should focus on administrative service, process, reporting, coordination, or service-delivery contexts. Main unit explanations should remain role-agnostic.
+Concrete model variants must follow `plan3-case-model-brief.md`: business-client examples should focus on banking/leasing or general trading-company operations, reporting, client-service, workflow, or control contexts; government-agency examples should focus on administrative service, process, reporting, coordination, or service-delivery contexts. Main unit explanations should remain role-agnostic.
 
 ## Unit Specs
 
@@ -204,7 +204,7 @@ Core tasks:
 - Improve a cluttered or misleading chart.
 - Practice explaining a chart in 60-90 seconds.
 - Label fictional data clearly and cite real data where used.
-- For finance/trading examples, keep the task to workflow, reporting, evidence, service quality, or control escalation; do not create trade recommendations, market predictions, client/account examples, or regulatory advice.
+- For banking/leasing or general trading-company examples, keep the task to workflow, reporting, evidence, service quality, or control escalation; do not create securities trading recommendations, securities-market predictions, client/account, shipment, or transaction examples, or legal or regulatory advice.
 - Check chart titles and labels for article/plural problems and unclear compressed English.
 
 Assessment link: evidence, visual effectiveness, spoken explanation.
@@ -235,7 +235,7 @@ Core tasks:
 - Discuss purposeful builds, transitions, audio, and video versus decorative effects.
 - Justify one format choice in 45-60 seconds using target language for handouts, pre-reads, backup files, confidentiality, and follow-up materials.
 - Use constrained choice menus and short scenarios in Standard. Reserve full multi-format comparison and complex workflow governance for Long.
-- For finance/trading examples, use fictional or sanitized workflow/reporting data only; do not use real client names, account data, trade recommendations, market predictions, or regulatory advice.
+- For banking/leasing or general trading-company examples, use fictional or sanitized workflow/reporting data only; do not use real customer names, account or transaction data, securities trading recommendations, securities-market predictions, or legal or regulatory advice.
 
 Assessment link: professionalism, visual effectiveness, preparation quality.
 
@@ -320,7 +320,7 @@ Core tasks:
 - Practice skeptical-question role plays.
 - Build a personal Q&A response bank for the final presentation.
 - Practice polite direct disagreement and safe deferral phrases, including cases where the presenter lacks a number, needs policy confirmation, or must follow up after checking with another team.
-- For finance/trading examples, avoid investment advice, market predictions, client/account details, and legal or regulatory interpretation.
+- For banking/leasing or general trading-company examples, avoid investment advice, securities-market predictions, client/account, shipment, or transaction details, and legal or regulatory interpretation.
 
 Assessment link: Q&A, spoken English, professionalism.
 

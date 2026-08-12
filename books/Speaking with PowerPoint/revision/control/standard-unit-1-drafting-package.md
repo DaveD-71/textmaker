@@ -1,4 +1,4 @@
-﻿# Standard Unit 1 Drafting Package
+# Standard Unit 1 Drafting Package
 
 Prepared: 2026-08-12
 
@@ -65,14 +65,14 @@ Use in Unit 1:
 - no long role-specific model text in the main body
 
 Business-client reference:
-- Seika Capital Operations: reducing trade confirmation delays
+- Seika Global Trading Operations: reducing import document handoff delays
 
 Government-agency reference:
 - Midori Ward Administrative Services Office: reducing returned application forms
 
 Main-text wording should say something like:
 
-"For two versions of this planning problem, see the Process Improvement Briefing Models: one from a finance operations team and one from an administrative services office."
+"For two versions of this planning problem, see the Process Improvement Briefing Models: one from a general trading-company operations team and one from an administrative services office."
 
 ## Required Learner Deliverable
 
@@ -153,7 +153,7 @@ Include notes on:
 Do not:
 - write a generic motivational public-speaking introduction
 - frame this as a PowerPoint unit
-- make the main examples only finance/trading or only government
+- make the main examples only banking/leasing or general trading-company or only government
 - include a long model presentation
 - introduce AI as a learner workflow
 - overcomplicate the first unit with full case data

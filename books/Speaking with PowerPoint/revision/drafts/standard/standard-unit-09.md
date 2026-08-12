@@ -60,7 +60,7 @@ Sample transition:
 
 "I will pause here because this is the main result. If you are joining live, please add questions in the chat. If you are watching the recorded version, the supporting table is linked in the follow-up note."
 
-Optional model reference: For a finance/trading version, see the Project Results Briefing Models on exception resolution results. For a government-agency version, compare the administrative results model on an intake checklist trial.
+Optional model reference: For a banking/leasing or general trading-company version, see the Project Results Briefing Models on exception resolution results. For a government-agency version, compare the administrative results model on an intake checklist trial.
 
 ## Practice 1: online and hybrid checklist
 
@@ -155,4 +155,4 @@ Remote and recorded delivery works best when the presenter designs for access, a
 
 ## Teacher Notes
 
-Standard learners should adapt one selected mode, not compare every possible platform in detail. Keep tool references general and avoid step-by-step interface instructions. For finance/trading examples, use fictional or sanitized project-results data only and avoid market predictions, trade recommendations, real client details, or regulatory advice. For government-agency examples, keep the context administrative and avoid flags, seals, emblems, or political-policy framing. Async work can be a storyboard if recording is not practical.
+Standard learners should adapt one selected mode, not compare every possible platform in detail. Keep tool references general and avoid step-by-step interface instructions. For banking/leasing or general trading-company examples, use fictional or sanitized project-results data only and avoid securities-market predictions, securities trading recommendations, real customer or transaction details, or legal or regulatory advice. For government-agency examples, keep the context administrative and avoid flags, seals, emblems, or political-policy framing. Async work can be a storyboard if recording is not practical.

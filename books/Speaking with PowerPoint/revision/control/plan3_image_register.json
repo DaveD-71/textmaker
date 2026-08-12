@@ -11,7 +11,7 @@
   "style_lock": {
     "diagram_style": "Clean flat-vector educational diagram style, muted professional color palette, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No photographic texture, no gradients, no logos, no watermarks. No readable body text beyond short labels explicitly specified in the prompt.",
     "scenario_style": "Warm professional flat-vector illustration style, generic non-identifiable figures, predominantly Japanese/East Asian in appearance for Japan-based learner material, professional business-casual attire, muted professional palette, no logos, no watermarks, no brand names, no real national flags, no seals, no emblems, no crests, no country-specific patriotic imagery, no accidental readable text.",
-    "finance_trading_visual_rule": "Use fictional or sanitized operational visuals only. No real firm names, bank logos, exchange names, ticker symbols, client names, account numbers, trade IDs, proprietary UI, market predictions, trade recommendations, investment advice, or compliance/legal advice.",
+    "business_client_visual_rule": "Use fictional or sanitized operational visuals only. No real firm names, real bank logos, securities exchange names, stock ticker symbols, customer names, account, shipment, or order numbers, shipment IDs, proprietary UI, securities-market predictions, securities trading recommendations, investment advice, or compliance/legal advice.",
     "government_visual_rule": "Use plain administrative offices, meeting rooms, counters, forms, workflow diagrams, or service-delivery settings. No real national flags, seals, emblems, crests, official insignia, political campaign symbols, party symbols, or country-specific iconography."
   },
   "required_fields": [
@@ -72,7 +72,7 @@
         "notes": ""
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable unless people are added",
@@ -80,7 +80,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -122,7 +122,7 @@
         "notes": ""
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
@@ -130,7 +130,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -149,21 +149,21 @@
       "recheck_status": ""
     },
     {
-      "asset_id": "p3-u06-trade-confirmation-results-chart",
-      "asset_title": "Trade confirmation pilot results chart",
-      "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-trade-confirmation-results-chart.png",
+      "asset_id": "p3-u06-import-document-handoff-results-chart",
+      "asset_title": "Import document handoff pilot results chart",
+      "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-import-document-handoff-results-chart.png",
       "asset_type": "chart",
       "status": "planned",
       "tier_use": ["Standard", "Long"],
       "unit_use": ["Unit 6: Data, Charts, and Evidence", "Project Results Briefing Models"],
       "source": "planned original",
-      "source_detail": "Use fictional data from plan3-case-model-brief.md: late confirmations fell from 38 to 27; rework time fell from 22 to 16 minutes.",
+      "source_detail": "Use fictional data from plan3-case-model-brief.md: late document handoffs fell from 38 to 27; rework time fell from 22 to 16 minutes.",
       "license_status": "original fictional teaching data",
       "generated_or_original": "original",
-      "alt_text": "Before-and-after chart showing fewer late confirmations after the pilot.",
+      "alt_text": "Before-and-after chart showing fewer late document handoffs after the pilot.",
       "decorative": false,
-      "caption": "Fictional practice data: late confirmations decreased during the pilot.",
-      "replacement_rationale": "Supports finance/trading project results briefing without real client or market data.",
+      "caption": "Fictional practice data: late document handoffs decreased during the pilot.",
+      "replacement_rationale": "Supports banking/leasing or general trading-company project results briefing without real customer, shipment, or transaction data.",
       "accessibility_check": {
         "contrast_checked": "pending",
         "readability_checked": "pending",
@@ -172,15 +172,15 @@
         "notes": "Must include fictional-data label and takeaway title."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "not applicable",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
-        "notes": "No ticker symbols, trade IDs, firm names, market prediction, or investment advice."
+        "notes": "No stock ticker symbols, shipment IDs, firm names, securities-market predictions, or investment advice."
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -222,7 +222,7 @@
         "notes": "Must include fictional-data label and takeaway title."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "not applicable",
+        "business_client_clear": "not applicable",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
@@ -230,7 +230,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "not applicable",
+        "no_account_or_transaction_ids": "not applicable",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -249,21 +249,21 @@
       "recheck_status": ""
     },
     {
-      "asset_id": "p3-u07-trade-confirmation-workflow",
+      "asset_id": "p3-u07-import-document-handoff-workflow",
       "asset_title": "Trade confirmation workflow before and after",
-      "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-trade-confirmation-workflow.png",
+      "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-import-document-handoff-workflow.png",
       "asset_type": "diagram",
       "status": "planned",
       "tier_use": ["Standard", "Long"],
       "unit_use": ["Unit 7: Tool-Neutral Slide and Document Workflow", "Process Improvement Briefing Models"],
       "source": "planned original",
-      "source_detail": "Create as editable workflow diagram from the Seika Capital Operations process-improvement model.",
+      "source_detail": "Create as editable workflow diagram from the Seika Global Trading Operations process-improvement model.",
       "license_status": "original fictional teaching data",
       "generated_or_original": "original",
       "alt_text": "Before-and-after workflow showing how a shared exception log clarifies handoffs.",
       "decorative": false,
       "caption": "The revised workflow makes handoff ownership visible before the deadline.",
-      "replacement_rationale": "Supports finance/trading process improvement model and tool-neutral workflow unit.",
+      "replacement_rationale": "Supports banking/leasing or general trading-company process improvement model and tool-neutral workflow unit.",
       "accessibility_check": {
         "contrast_checked": "pending",
         "readability_checked": "pending",
@@ -272,15 +272,15 @@
         "notes": "Must not depend on color alone for before/after distinction."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "not applicable",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
-        "notes": "No real firm names, exchange names, ticker symbols, trade IDs, or proprietary UI."
+        "notes": "No real firm names, securities exchange names, stock ticker symbols, shipment IDs, or proprietary UI."
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -322,7 +322,7 @@
         "notes": "Must not depend on color alone for before/after distinction."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "not applicable",
+        "business_client_clear": "not applicable",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
@@ -330,7 +330,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "not applicable",
+        "no_account_or_transaction_ids": "not applicable",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -357,13 +357,13 @@
       "tier_use": ["Standard", "Long"],
       "unit_use": ["Unit 5: Clear Visual Communication", "Unit 7: Tool-Neutral Slide and Document Workflow", "Product, Service, or Program Launch Models"],
       "source": "planned original",
-      "source_detail": "Create as fictional dashboard mockup for Koyo Markets Client Services launch model.",
+      "source_detail": "Create as fictional dashboard mockup for Koyo Trading Client Services launch model.",
       "license_status": "original fictional teaching data",
       "generated_or_original": "original",
-      "alt_text": "Mockup dashboard showing fictional inquiry status, reporting deadlines, and unresolved requests.",
+      "alt_text": "Mockup dashboard showing fictional inquiry status, shipment reporting deadlines, and unresolved requests.",
       "decorative": false,
       "caption": "A dashboard can support a launch briefing when it shows the information users need first.",
-      "replacement_rationale": "Supports finance/trading service launch model without using real client or system data.",
+      "replacement_rationale": "Supports banking/leasing or general trading-company service launch model without using real client or system data.",
       "accessibility_check": {
         "contrast_checked": "pending",
         "readability_checked": "pending",
@@ -372,15 +372,15 @@
         "notes": "Dashboard labels must be readable and fictional."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "not applicable",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable",
-        "notes": "No real client names, firm logos, exchange names, tickers, account data, trade IDs, or proprietary UI."
+        "notes": "No real customer names, firm logos, securities exchange names, stock tickers, account or transaction data, shipment IDs, or proprietary UI."
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -422,7 +422,7 @@
         "notes": "Must use readable labels and clear step order."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "not applicable",
+        "business_client_clear": "not applicable",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "not applicable unless people are added",
@@ -430,7 +430,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "not applicable",
+        "no_account_or_transaction_ids": "not applicable",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""
@@ -472,7 +472,7 @@
         "notes": "Keep labels short and readable."
       },
       "visual_restriction_check": {
-        "finance_trading_clear": "pending",
+        "business_client_clear": "pending",
         "government_symbols_clear": "pending",
         "logos_watermarks_clear": "pending",
         "representation_checked": "pending if people are included",
@@ -480,7 +480,7 @@
       },
       "privacy_security_check": {
         "no_real_client_data": "pending",
-        "no_account_or_trade_ids": "pending",
+        "no_account_or_transaction_ids": "pending",
         "no_real_personal_data": "pending",
         "metadata_checked": "pending",
         "notes": ""

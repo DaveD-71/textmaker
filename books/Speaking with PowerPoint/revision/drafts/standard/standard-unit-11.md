@@ -151,7 +151,7 @@ Answer without reading full sentences from your notes. You may look at keywords,
 
 ## Optional model references
 
-For a business-client rehearsal, you may compare your presentation with the finance/trading operations models for workflow improvement, service launch, or project results. Keep examples focused on operations, reporting, workflow, service quality, or control handoff.
+For a business-client rehearsal, you may compare your presentation with the banking/leasing or general trading-company operations models for workflow improvement, service launch, or project results. Keep examples focused on operations, reporting, workflow, service quality, or control handoff.
 
 For a government-agency rehearsal, you may compare your presentation with the administrative service or process models. Keep examples focused on administrative tasks, service delivery, reporting, coordination, or process improvement.
 
