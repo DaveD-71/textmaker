@@ -94,6 +94,11 @@ The language syllabus must be visible across lessons. Include learner-facing lan
 - handling disagreement
 - following up
 - reflecting on performance
+- handling technical problems
+- managing screen-sharing transitions
+- explaining audio, caption, or connection problems
+- recovering timing
+- moving to a backup file or follow-up document
 
 Correct false or over-absolute rules from the source book. In particular:
 - "At first" is not used for list sequencing, but it is not always wrong.
@@ -136,6 +141,8 @@ Allowed learner-facing uses:
 - rewrite output into learner-owned English
 - compare AI output with the course rubric
 
+AI activities should use short flawed sample outputs supplied by the course. They should not use the learner's final presentation as AI source material, and they should not become a drafting workflow for assessed work.
+
 Do not tell learners to:
 - outsource their final message to AI
 - read AI-generated text
@@ -148,6 +155,7 @@ Required framing whenever AI appears:
 - AI output must be checked.
 - Company policy comes first.
 - The course goal is English development through presentation practice.
+- Assessed message, slides/visuals, notes, rehearsal, delivery, and Q&A must be learner-owned.
 
 ## 8. Accessibility Rules
 
@@ -185,6 +193,8 @@ Case rules:
 - Use realistic but simple business situations.
 - Avoid volatile, high-risk, or highly technical claims unless sourced.
 - Do not reuse the old Ventura case as the main spine unless it is intentionally rebuilt and approved.
+- Business-client examples should focus on finance/trading operations, reporting, workflow, client service, service quality, or control escalation; do not create trade recommendations, market predictions, client/account examples, or regulatory/legal advice.
+- Government-agency examples should focus on administrative tasks, service delivery, reporting, coordination, process improvement, and service communication; do not drift into political advocacy, legislation, budget campaigning, or public-policy argument unless explicitly approved.
 
 Data rules:
 - Every real data claim needs a source.
@@ -198,10 +208,14 @@ Every final asset must have:
 - file path
 - source
 - license status
+- generated/original status
 - alt text
+- decorative flag
 - caption, if needed
 - lesson/tier use
 - replacement rationale
+- visual restriction check
+- approval owner
 
 Preferred asset types:
 - editable diagrams
@@ -217,7 +231,9 @@ Avoid:
 - generic stock-like business imagery
 - tool UI screenshots that will date quickly
 
-Use OpenAI image generation API only for custom business visuals where original assets are needed and licensing clarity matters. Do not add Canva or another external design workflow unless the user explicitly chooses it.
+Generated-image inspection must check text accuracy, element count, label placement, no stray readable text, no logos/watermarks, no flags/seals/crests, representation requirements for people, and transparent-background quality where applicable. Existing Presentation Skills assets may be reused only after reapproval against Plan 3 restrictions.
+
+Use the OpenAI image generation API only for custom business visuals where original assets are needed and licensing clarity matters. Do not add Canva or another external design workflow unless the user explicitly chooses it.
 
 ## 11. Tool-Neutral Workflow Rules
 

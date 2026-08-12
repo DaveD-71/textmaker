@@ -13,6 +13,13 @@ Purpose: provide the operational QA checklist for Phase 6 of Plan 3: "Run QA, re
 
 Every Repair and Defer item must include a note, file/location, owner, and next action.
 
+When Phase 6 is executed, each checklist row must be tracked with this evidence format:
+
+| Check | Tier/Deliverable | Status | Evidence/File | Owner | Repair/Defer Action | Recheck Result |
+|---|---|---|---|---|---|---|
+
+The simplified tables below define the checks. The execution log must add the evidence, owner, action, and recheck fields.
+
 ## 1. Requirement Coverage QA
 
 | Check | Status | Notes |
@@ -49,6 +56,8 @@ Every Repair and Defer item must include a note, file/location, owner, and next 
 | Government-agency examples are genuinely public-sector appropriate, not business examples with names swapped |  |  |
 | Business-client examples are genuinely business appropriate, not public-sector examples with names swapped |  |  |
 | Government-facing visuals avoid real national flags, seals, emblems, crests, and country-specific iconography unless intentionally required and verified |  |  |
+| Business-client finance/trading examples avoid investment advice, market prediction, client/account data, regulatory/legal advice, real firm names, exchange names, and ticker symbols |  |  |
+| Government-agency examples stay within administrative tasks, service delivery, reporting, coordination, process improvement, and service communication unless explicitly approved |  |  |
 
 ## 3. ESL and Business English QA
 
@@ -114,18 +123,26 @@ Every Repair and Defer item must include a note, file/location, owner, and next 
 | Charts and visuals do not rely on color alone to communicate meaning |  |  |
 | Exported PDF receives a minimum accessibility/tool check where available |  |  |
 | Accessibility limitations that tooling cannot verify are documented for manual review |  |  |
+| Text/background contrast is checked against WCAG 2.2 AA target of at least 4.5:1 for normal text and 3:1 for large text where practical |  |  |
+| Every chart has a takeaway title or clear chart title, readable labels, and does not depend on color alone |  |  |
+| Recorded or async materials have caption, transcript, or transcript-awareness guidance |  |  |
+| Word accessibility check and PDF accessibility check are run where available, with manual limitations documented |  |  |
 
 ## 8. Asset QA
 
 | Check | Status | Notes |
 |---|---|---|
 | Every final asset appears in the asset or image register |  |  |
-| Every asset has source, license status, alt text, caption where needed, and replacement rationale |  |  |
+| Every asset has file path, source, license status, generated/original status, alt text, decorative flag, caption where needed, lesson/tier use, replacement rationale, visual-restriction check, and approval owner |  |  |
 | Generated images or mockups are marked as generated/original where applicable |  |  |
 | Stock or third-party assets are not used unless licensing is clear |  |  |
 | Old dated clip art and repeated male presenter imagery are removed or intentionally replaced |  |  |
 | Sample A/B or equivalent readability examples are editable and legible |  |  |
 | Model visuals demonstrate the visual principles being taught |  |  |
+| Generated images are visually inspected for text accuracy, element count, label placement, stray readable text, logos, watermarks, flags, seals, crests, and representation issues |  |  |
+| Transparent-background assets are checked for unwanted background artifacts or hidden RGB ghosting where applicable |  |  |
+| Existing Presentation Skills assets are not reused for Plan 3 unless their prompts/register entries are revised or the asset is visually reapproved against Plan 3 restrictions |  |  |
+| Any image defect has a regenerate-versus-edit decision; precise text/count/layout repairs should prefer editable/PIL overlay where feasible |  |  |
 
 ## 9. Factual, Source, Privacy, and Security QA
 
@@ -137,6 +154,10 @@ Every Repair and Defer item must include a note, file/location, owner, and next 
 | Tool-specific guidance avoids unstable step-by-step UI instructions unless verified |  |  |
 | Confidentiality and company security policy are mentioned in AI, tool-choice, export, and sharing guidance |  |  |
 | Copyright/licensing caution appears where learners use images, templates, AI outputs, or external data |  |  |
+| Dashboard mockups, screenshots, filenames, and metadata contain no real client, company, person, account, ticket, or trade identifiers |  |  |
+| No real screenshots are used unless they are current, permission-cleared, and necessary |  |  |
+| All dashboard/mockup data is fictional or sanitized and labeled appropriately |  |  |
+| Final DOCX/PDF metadata contains no legacy title, client-confidential residue, authoring comments, or unintended hidden data |  |  |
 
 ## 10. Assessment QA
 

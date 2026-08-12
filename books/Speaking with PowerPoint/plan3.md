@@ -5,7 +5,7 @@ Rebuild *Speaking with PowerPoint* into a 2026 business presentation-skills seri
 
 This plan assumes the project has moved beyond a two-day surface revision into a fuller series rebuild. The working title remains provisional until the final content structure is approved.
 
-AI will be mentioned only as a critical-literacy topic, not promoted as a presentation shortcut. Learners must develop their own English, message structure, delivery, and interaction skills; any AI examples are used for checking, critique, rewriting, ethics, confidentiality, and limitations. :codex-annotation{index="1"}
+AI will be mentioned only as a critical literacy topic, not promoted as a presentation shortcut. Learners must develop their own English, message structure, delivery, and interaction skills; any AI examples are used for checking, critique, rewriting, ethics, confidentiality, and limitations.
 
 ## Curriculum Architecture
 Use the Standard course as the master curriculum: 12 lessons, each producing one part of a cumulative business presentation portfolio.
@@ -80,10 +80,10 @@ Suggested effort budget:
 - Assets and accessibility pass: 3-5 working days
 - QA, build checks, and external review repair: 2-4 working days
 
-Use OpenAI image generation API for custom business visuals when original assets are needed and licensing clarity matters. Prefer editable diagrams, generated screenshots/mockups, or simple original charts over stock imagery. Canva can be considered only if the user wants a GUI design workflow; otherwise avoid adding platform dependency. Every asset must have a source, license/status, alt text, and replacement rationale in the image register.
+Use the OpenAI image generation API for custom business visuals when original assets are needed and licensing clarity matters. Prefer editable diagrams, generated screenshots/mockups, or simple original charts over stock imagery. Canva can be considered only if the user wants a GUI design workflow; otherwise avoid adding platform dependency. Every asset must have a source, license status, alt text, and replacement rationale in the image register.
 
-## QA And Acceptance
-Create a style sheet before drafting. It must define title conventions, level targets, terminology, slide/tool vocabulary, AI-use policy, accessibility rules, citation/source handling, file naming, tone, and recurring case names.
+## QA and Acceptance
+Create a style sheet before drafting. It must define title conventions, level targets, terminology, slide/tool vocabulary, AI use policy, accessibility rules, citation/source handling, file naming, tone, and recurring case names.
 
 Assessment must include rubric categories for message clarity, audience fit, structure, visual effectiveness, spoken English, delivery, Q&A, and professionalism. Use B1/B2 descriptors where language is assessed. Q&A is compulsory in Standard and Long. Separate peer feedback from formal assessment.
 
@@ -98,7 +98,5 @@ After Plan 3 implementation, if Claude.ai or ChatGPT identifies a significant is
 The project priority is English language development through presentation tasks, not automation.
 
 The series should remain tool-neutral while still teaching practical workflows for common workplace tools.
-
-The user will save this plan manually, so this response does not write files.
 
 The implementer must preserve existing user-created files and avoid destructive rewrites without a rollback snapshot.

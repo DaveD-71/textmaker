@@ -41,6 +41,8 @@ Use three recurring cases across lessons. These cases replace the old Ventura-on
 
 Each model must be traceable to language points, visual-design points, delivery behaviors, and assessment criteria.
 
+Concrete model variants must follow `plan3-case-model-brief.md`: business-client examples should focus on finance/trading operations, reporting, client-service, workflow, or control contexts; government-agency examples should focus on administrative service, process, reporting, coordination, or service-delivery contexts. Main lesson explanations should remain role-agnostic.
+
 ## Lesson Specs
 
 ### Lesson 1: Audience, Purpose, and Business Context
@@ -89,6 +91,7 @@ Core tasks:
 - Test messages using "So what?" and "What should they do with this?"
 - Improve a flawed opening.
 - Optional AI-literacy task: critique a generic or risky AI-written opening and rewrite it in learner-owned English.
+- Add a bilingual-planning note: learners may plan ideas efficiently, but the assessed message and opening must be drafted and rehearsed in natural learner-owned English.
 
 Assessment link: message clarity, audience fit, opening effectiveness.
 
@@ -170,6 +173,8 @@ Core tasks:
 - Rebuild Sample A/B or equivalent readability comparison as editable text.
 - Apply accessibility checklist: readable text, contrast, color not as the only signal, alt-text awareness, cognitive load.
 - Optional AI-literacy task: critique a flawed AI-generated slide for generic language, factual risk, and readability.
+- Explain the revised visual in 45-60 seconds using target language for introducing visuals and directing attention.
+- Check slide text for article/plural problems, unclear noun phrases, and over-compressed English.
 
 Assessment link: visual effectiveness and accessibility.
 
@@ -197,6 +202,8 @@ Core tasks:
 - Improve a cluttered or misleading chart.
 - Practice explaining a chart in 60-90 seconds.
 - Label fictional data clearly and cite real data where used.
+- For finance/trading examples, keep the task to workflow, reporting, evidence, service quality, or control escalation; do not create trade recommendations, market predictions, client/account examples, or regulatory advice.
+- Check chart titles and labels for article/plural problems and unclear compressed English.
 
 Assessment link: evidence, visual effectiveness, spoken explanation.
 
@@ -224,6 +231,9 @@ Core tasks:
 - Choose between slides, PDF, document walkthrough, dashboard, worksheet, leave-behind, and appendix.
 - Prepare a backup/export checklist: approved cloud, offline copy, PDF fallback, fonts/media/links, venue/platform testing, company security.
 - Discuss purposeful builds, transitions, audio, and video versus decorative effects.
+- Justify one format choice in 45-60 seconds using target language for handouts, pre-reads, backup files, confidentiality, and follow-up materials.
+- Use constrained choice menus and short scenarios in Standard. Reserve full multi-format comparison and complex workflow governance for Long.
+- For finance/trading examples, use fictional or sanitized workflow/reporting data only; do not use real client names, account data, trade recommendations, market predictions, or regulatory advice.
 
 Assessment link: professionalism, visual effectiveness, preparation quality.
 
@@ -251,6 +261,7 @@ Core tasks:
 - Convert a full script into usable speaker notes.
 - Practice a 3-minute segment with peer feedback.
 - Practice pointer/cursor choices: safe laser use, cursor highlight, annotation, zoom, and avoiding pointing at people.
+- Include a brief Japan-specific intelligibility note where useful: katakana-influenced pronunciation risk, word stress, thought groups, and avoiding a flat read-aloud script.
 
 Assessment link: spoken English, delivery, professionalism.
 
@@ -278,6 +289,7 @@ Core tasks:
 - Practice opening and transition language for online delivery.
 - Plan camera, microphone, lighting, screen share, notes, chat, captions, timing, and contingency.
 - Record or storyboard a short async version with captions or transcript awareness.
+- Use constrained Standard tasks: learners adapt one chosen presentation mode, not every possible mode. Reserve full async production and multi-platform comparison for Long.
 
 Assessment link: delivery, interaction, professionalism, accessibility.
 
@@ -305,6 +317,8 @@ Core tasks:
 - Improve weak Q&A responses.
 - Practice skeptical-question role plays.
 - Build a personal Q&A response bank for the final presentation.
+- Practice polite direct disagreement and safe deferral phrases, including cases where the presenter lacks a number, needs policy confirmation, or must follow up after checking with another team.
+- For finance/trading examples, avoid investment advice, market predictions, client/account details, and legal or regulatory interpretation.
 
 Assessment link: Q&A, spoken English, professionalism.
 

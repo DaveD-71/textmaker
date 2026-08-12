@@ -103,6 +103,10 @@ The old priorities remain source requirements, but the acceptance target is now 
 | Requirement | Placement | Deliverable | QA Check |
 |---|---|---|---|
 | Three recurring business cases | Model case bank; Lessons 1-12 | Process improvement, product/service launch, and project results briefing cases | Each model maps to lessons, language points, visual points, delivery behaviors, and rubric criteria |
+| Audience-variant rule | Main lessons, appendix models, QA | Main lesson body stays role-agnostic between business-client and government-agency contexts | Role-specific content appears in models, appendices, teacher notes, or optional variants rather than changing the core sequence |
+| Business-client model focus | Appendix models and examples | Finance/trading operations, reporting, workflow, client service, service quality, or control escalation examples | No investment advice, market prediction, real client/account data, regulatory advice, real firm logos, exchange names, or ticker symbols |
+| Government-agency model focus | Appendix models and examples | Administrative task, service delivery, reporting, coordination, or process improvement examples | No superficial relabeling of business examples; no political advocacy, legislation, budget campaigning, flags, seals, emblems, or crests unless approved |
+| Appendix model parity | Appendix model sets and QA | Paired business-client and government-agency models for each case family | Each pair teaches the same underlying skill with comparable depth and quality |
 | Three-tier series | Tier strategy and manuscripts | Essentials 8, Standard 12, Long 15 | Essentials compresses, Standard is source of truth, Long expands without contradiction |
 | Four-role production workflow | Project workflow notes | Content Architect, Language Editor, Business Presentation Specialist, Asset and QA Specialist role briefs | Every task has an owner during implementation |
 | Style sheet before drafting | QA and Acceptance | Style sheet covering title, level, terminology, AI policy, accessibility, citations, file naming, tone, case names | No lesson rewrite begins before the style sheet exists |
