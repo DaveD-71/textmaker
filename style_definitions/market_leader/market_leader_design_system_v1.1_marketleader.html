@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Leader Design System v1.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Tinos:ital,wght@0,400;0,700;1,400&family=Caveat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Structural colours */
+  --body_text: #000000;
+  --audio_ref: #3F3F3F;
+  --grey_tab: #E5E5E5;
+  --production_slug: #000000;
+
+  /* Level accent colours */
+  --lvl-elem: #E58900;
+  --lvl-preint: #00B235;
+  --lvl-int: #A52142;
+  --lvl-upint: #2B6CD8;
+  --lvl-adv: #2B6CD8;
+  --accent: #2B6CD8;  /* default to Advanced */
+
+  /* Fonts */
+  --font-sans: 'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;
+  --font-body: 'Tinos', 'Times New Roman', Times, Georgia, serif;
+  --font-hand: 'Caveat', 'Segoe Script', cursive;
+
+  /* Type scale (scaled to target page) */
+  --fs-unit_title: 41.81px;
+  --fs-unit_label: 16.15px;
+  --fs-unit_number: 57.01px;
+  --fs-article_headline: 37.06px;
+  --fs-section_head: 13.30px;
+  --fs-box_title: 12.35px;
+  --fs-sidebar_subhead: 11.40px;
+  --fs-activity_lead: 10.45px;
+  --fs-handwritten: 10.45px;
+  --fs-body_serif: 9.03px;
+  --fs-body_sans: 9.02px;
+  --fs-body_italic: 9.03px;
+  --fs-accent_letter: 9.03px;
+  --fs-accent_number: 9.50px;
+  --fs-running_header: 8.55px;
+  --fs-audio_track: 8.55px;
+  --fs-form_text: 8.08px;
+  --fs-table_body: 8.55px;
+  --fs-table_header: 8.55px;
+  --fs-caption: 8.55px;
+  --fs-tiny_scale: 5.26px;
+  --fs-production_slug: 5.70px;
+
+  /* Spacing */
+  --sp-xs: 4px; --sp-sm: 8px; --sp-md: 12px; --sp-lg: 20px; --sp-xl: 32px;
+
+  /* UI */
+  --off-white: #F8F8F6;
+  --body-text: #1A1A1A;
+  --dark: #262626;
+  --grey: #3F3F3F;
+  --accent-main: #2B6CD8;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;
+       font-size: 11.5px; color: var(--body-text); background: var(--off-white); line-height: 1.5; }
+a { color: var(--accent-main); text-decoration: none; }
+
+.sg-wrap { max-width: 1100px; margin: 0 auto; padding: 32px 40px 80px; }
+.sg-section { margin-bottom: 60px; scroll-margin-top: 20px; }
+
+.sg-cover { background: var(--dark); color: #fff; padding: 40px 52px 36px;
+             border-top: 6px solid var(--accent-main); margin-bottom: 40px; position: relative; }
+.sg-cover::after { content: 'v1.1'; position: absolute; top: 16px; right: 24px;
+                    font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+                    background: var(--accent-main); color: #fff; padding: 3px 10px; }
+.sg-cover h1 { font-size: 28px; font-weight: 400; line-height: 1.2; }
+.sg-cover h1 strong { font-weight: 700; }
+.sg-cover-sub { font-size: 12px; color: #B0B0B0; margin-top: 8px; }
+.sg-cover-meta { display: grid; grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+                  gap: 20px; border-top: 1px solid rgba(255,255,255,.15);
+                  padding-top: 20px; margin-top: 24px; }
+.sg-cover-meta dt { font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
+                     color: #999; margin-bottom: 3px; }
+.sg-cover-meta dd { font-size: 12px; color: #fff; }
+
+.sg-nav { background: #fff; border-left: 4px solid var(--accent-main); padding: 18px 22px;
+           margin-bottom: 48px; display: grid;
+           grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 4px 24px; }
+.sg-nav-label { grid-column: 1/-1; font-size: 9px; letter-spacing: .15em;
+                 text-transform: uppercase; color: var(--accent-main); font-weight: 700; margin-bottom: 10px; }
+.sg-nav a { font-size: 11.5px; color: var(--dark); padding: 2px 0; display: block; }
+.sg-nav a:hover { color: var(--accent-main); }
+
+.sg-section-hdr { display: flex; align-items: center; gap: 14px;
+                   border-bottom: 2px solid var(--dark); padding-bottom: 10px; margin-bottom: 28px; }
+.sg-section-num { background: var(--dark); color: #fff; font-size: 10px; font-weight: 700;
+                   letter-spacing: .1em; padding: 4px 10px; flex-shrink: 0; }
+.sg-section-hdr h2 { font-size: 20px; font-weight: 400; color: var(--dark); }
+.sg-sub { margin-bottom: 32px; }
+.sg-sub h3 { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+              color: var(--accent-main); margin-bottom: 14px; padding-bottom: 4px;
+              border-bottom: 1px solid #DDD; }
+
+.sg-table { width: 100%; border-collapse: collapse; font-size: 11.5px; margin-bottom: 20px; }
+.sg-table th { background: var(--dark); color: #fff; text-align: left; padding: 7px 12px;
+                font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+.sg-table td { padding: 7px 12px; border-bottom: 1px solid #E8E8E8; vertical-align: top; }
+.sg-table tr:nth-child(even) td { background: #FAFAFA; }
+.sg-table tr:hover td { background: #F5F5F5; }
+td.lbl { font-weight: 600; color: #333; min-width: 160px; }
+td.val { font-family: 'Courier New', monospace; font-size: 10.5px; color: var(--accent-main); }
+td.note { font-size: 10.5px; color: #666; font-style: italic; }
+td.mono { font-family: 'Courier New', monospace; font-size: 10px; }
+.src-v { font-size: 9px; letter-spacing: .06em; text-transform: uppercase;
+          color: #4CAF50; font-weight: 700; }
+.src-e { font-size: 9px; letter-spacing: .06em; text-transform: uppercase;
+          color: #FF6B00; font-weight: 700; }
+
+.notice { padding: 12px 16px; border-left: 4px solid; font-size: 11px;
+           line-height: 1.6; margin-bottom: 16px; }
+.notice.blue   { border-color: #2B6CD8; background: #EDF3FA; color: #06264F; }
+.notice.amber  { border-color: #E58900; background: #FFF8EE; color: #5A3800; }
+.notice.green  { border-color: #00B235; background: #F0FFF3; color: #0F3A1A; }
+.notice.red    { border-color: #A52142; background: #FDF0F3; color: #4A0018; }
+
+.sg-swatches { display: grid; grid-template-columns: repeat(auto-fill,minmax(148px,1fr));
+                gap: 10px; margin-bottom: 20px; }
+.swatch { border: 1px solid #DDD; overflow: hidden; }
+.swatch-color { height: 52px; }
+.swatch-info { padding: 8px 10px; background: #fff; }
+.swatch-name { font-size: 10px; font-weight: 700; display: block; margin-bottom: 2px; }
+.swatch-hex  { font-size: 10px; font-family: monospace; color: var(--accent-main); display: block; }
+.swatch-cmyk { font-size: 9px; color: #888; display: block; }
+.swatch-role { font-size: 9px; color: #555; margin-top: 3px; line-height: 1.4; }
+
+.level-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+               gap: 12px; margin-bottom: 28px; }
+.level-card { border: 1px solid #DDD; overflow: hidden; background: #fff; }
+.level-card-accent { height: 60px; }
+.level-card-body { padding: 10px 12px; }
+.level-card-name { font-size: 11px; font-weight: 700; margin-bottom: 4px; }
+.level-card-hex  { font-size: 10px; font-family: monospace; color: var(--accent-main); }
+.level-card-cmyk { font-size: 9px; color: #888; margin-top: 3px; }
+.level-card-src  { font-size: 8.5px; color: #4CAF50; font-weight: 700;
+                    margin-top: 6px; line-height: 1.4; }
+
+.type-row { background: #fff; border: 1px solid #E0E0E0; padding: 18px 20px;
+             margin-bottom: 10px; display: grid;
+             grid-template-columns: 1fr 240px; gap: 16px; align-items: center; }
+.type-meta { font-size: 10px; color: #555; }
+.type-meta strong { color: var(--dark); font-size: 11px; display: block; margin-bottom: 4px; }
+.type-meta code { display: block; background: #F0F0F0; padding: 6px 10px; font-size: 9px;
+                   font-family: 'Courier New',monospace; margin-top: 6px; color: #333; white-space: pre; }
+.src-badge { font-size: 8px; text-transform: uppercase; letter-spacing: .06em;
+              display: block; margin-top: 4px; }
+
+pre { background: #1A1A2A; color: #C8DCE8; padding: 20px 24px; overflow-x: auto;
+       font-family: 'Courier New',monospace; font-size: 11px; line-height: 1.7; margin-bottom: 20px; }
+.cv { color: #9CC8D0; }
+.cs { color: #C8E880; }
+.cm { color: #708088; font-style: italic; }
+
+.sg-footer { border-top: 2px solid var(--dark); margin-top: 60px; padding-top: 14px;
+              font-size: 10px; color: #888; display: flex;
+              justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="sg-wrap">
+<div class="sg-cover">
+  <div style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#999;margin-bottom:10px">Publisher Design System</div>
+  <h1><strong>Market Leader</strong></h1>
+  <div class="sg-cover-sub">Pearson · Business English Course Series</div>
+  <dl class="sg-cover-meta">
+    <div><dt>Version</dt><dd>v1.1 (2026-08-13)</dd></div>
+    <div><dt>Source page</dt><dd>209.9 × 297.0 mm</dd></div>
+    <div><dt>Target page</dt><dd>210.0 × 297.0 mm</dd></div>
+    <div><dt>Scale</dt><dd>1.0002×</dd></div>
+    <div><dt>Note</dt><dd>Corrected Upper-Intermediate to genuine Course Book sample (was Practice File)</dd></div>
+  </dl>
+</div>
+<nav class="sg-nav">
+  <div class="sg-nav-label">Contents</div>
+  <a href="#s1">01 · Page Dimensions</a>
+  <a href="#s2">02 · Typography</a>
+  <a href="#s3">03 · Colour System</a>
+  <a href="#s4">04 · Level Accents</a>
+  <a href="#s5">05 · Spacing</a>
+  <a href="#s6">06 · Word Style Map</a>
+  <a href="#s7">07 · CSS Reference</a>
+  <a href="#s8">08 · PowerPoint Notes</a>
+</nav>
+
+<section class="sg-section" id="s1">
+  <div class="sg-section-hdr"><div class="sg-section-num">01</div><h2>Page Dimensions &amp; Geometry</h2></div>
+<div class="notice green">Source page: <strong>209.9 × 297.0 mm</strong> — confirmed identical across all 5 sample PDFs, no promotional wrapper. Effectively already A4, so scale factor ≈ 1.</div>
+<div class="sg-sub"><h3>Page Geometry</h3><table class="sg-table"><tr><th>Property</th><th>mm</th><th>%</th><th>Source</th><th>Notes</th></tr>
+<tr><td class="lbl">Source page (PDF)</td><td class="val"><strong>209.9 × 297.0 mm</strong></td><td class="val">W × H</td><td><span class="src-v">VECTOR</span></td><td class="note">Page canvas, confirmed identical in all 5 files</td></tr>
+<tr><td class="lbl">Target page (output)</td><td class="val"><strong>210.0 × 297.0 mm</strong></td><td class="val">W × H</td><td>—</td><td class="note">A4</td></tr>
+<tr><td class="lbl">Scale factor</td><td class="val"><strong>1.0002×</strong></td><td class="val">uniform</td><td>—</td><td class="note">Applied to all sizes and measurements</td></tr>
+<tr><td class="lbl">Page width</td><td class="val">209.95mm</td><td class="val">100.00% W</td><td><span class="src-v">VECTOR</span></td><td class="note">Confirmed identical all 5 PDFs — effectively A4</td></tr>
+<tr><td class="lbl">Page height</td><td class="val">297.07mm</td><td class="val">100.00% H</td><td><span class="src-v">VECTOR</span></td><td class="note">A4</td></tr>
+<tr><td class="lbl">Unit-opening photo band height</td><td class="val">48.21mm</td><td class="val">16.23% H</td><td><span class="src-v">VECTOR</span></td><td class="note">Full-bleed photo strip behind unit title, ADV measured</td></tr>
+<tr><td class="lbl">Unit number block width</td><td class="val">43.71mm</td><td class="val">20.82% W</td><td><span class="src-v">VECTOR</span></td><td class="note">Dark tag block containing "UNIT" + big number, ADV</td></tr>
+<tr><td class="lbl">Left sidebar column width</td><td class="val">44.21mm</td><td class="val">21.06% W</td><td><span class="src-v">VECTOR</span></td><td class="note">OVERVIEW sidebar column on unit-opening page</td></tr>
+<tr><td class="lbl">Activity tag box size</td><td class="val">4.7mm</td><td class="val">2.24% W</td><td><span class="src-v">VECTOR</span></td><td class="note">Square "A" "B" "C" activity-letter tag — same on all levels</td></tr>
+<tr><td class="lbl">Main text column left edge</td><td class="val">~68.02mm</td><td class="val">32.40% W</td><td><span class="src-v">VECTOR</span></td><td class="note">Approximate — body text/activity instructions start position, ADV interior page</td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Component Positions (y from page top, Advanced sample)</h3><div class="notice blue">"% height" = component physical size. "% from top" = where it sits on the page.</div>
+<table class="sg-table"><tr><th>Component</th><th>y top</th><th>y bottom</th><th>Height</th><th>%</th><th>Note</th><th>Source</th></tr>
+<tr><td class="lbl">Unit number/title band</td><td class="val">0.0mm</td><td class="val">36.51mm</td><td class="val">36.51mm</td><td class="val">12.29% height</td><td class="note">Photo band + "UNIT 1" + title, ADV measured</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Overview sidebar</td><td class="val">36.51mm</td><td class="val">161.04mm</td><td class="val">124.53mm</td><td class="val">41.92% height</td><td class="note">Left column below unit tag, runs down to photo bottom</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">First activity tag (A)</td><td class="val">169.54mm</td><td class="val">174.24mm</td><td class="val">4.7mm</td><td class="val">1.58% height</td><td class="note">First "A" tag box top position, ADV</td><td><span class="src-v">VECTOR</span></td></tr>
+</table>
+</div>
+</section>
+
+<section class="sg-section" id="s2">
+  <div class="sg-section-hdr"><div class="sg-section-num">02</div><h2>Typography</h2></div>
+<div class="sg-sub"><h3>Font Families</h3><div class="notice blue">Meta and Times are the fixed families used across all 5 levels. Google Fonts alternatives are free for all uses — install from <a href="https://fonts.google.com">fonts.google.com</a>.</div>
+<table class="sg-table"><tr><th>Key</th><th>Pearson original</th><th>Word name</th><th>Google Font</th><th>CSS stack</th><th>Source</th></tr>
+<tr><td class="lbl">Sans</td><td class="val">Meta (Normal/Bold/Medium × Roman/Italic/Caps)</td><td class="">Meta (fallback: Segoe UI)</td><td class=""><em>Fira Sans</em></td><td class="mono">'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Body</td><td class="val">Times (Roman/Bold/Italic)</td><td class="">Times New Roman</td><td class=""><em>Tinos</em></td><td class="mono">'Tinos', 'Times New Roman', Times, Georgia, serif</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Hand</td><td class="val">ZemkeHandITC</td><td class="">Segoe Script (fallback)</td><td class=""><em>Caveat</em></td><td class="mono">'Caveat', 'Segoe Script', cursive</td><td><span class="src-v">VECTOR</span></td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Editorial Display Fonts (vary by level)</h3><div class="notice amber">No single fixed display face — each level book draws its editorial feature headings from a different face (Rockwell / DIN / Frutiger Condensed / Beton / Impact). Unit titles themselves use the same MetaPlusMedium-Roman as body sans, just at 42pt.</div>
+</div>
+<div class="sg-sub"><h3>Type Scale</h3><div class="notice green">Sizes exact from PDF vector layer (Tier A: ADV/INT/UPINT). ELEM/PREINT use the same roles at a confirmed ×1.0101 scale (e.g. 9.02pt → 9.12pt) — a real difference between print runs, not measurement noise.</div>
+<table class="sg-table"><tr><th>Role</th><th>Font</th><th>Source (pt)</th><th>At 210×297mm (pt)</th><th>Colour</th><th>Notes</th></tr>
+<tr><td class="lbl">Unit title (on photo band)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Medium</td><td class="val">41.80pt</td><td class="val">41.81pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 4px">#FFFFFF</span></td><td class="note">MetaPlusMedium-Roman; ELEM/PREINT ~42.2pt</td></tr>
+<tr><td class="lbl">"UNIT" label above number</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Medium</td><td class="val">16.15pt</td><td class="val">16.15pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 4px">#FFFFFF</span></td><td class="note">MetaPlusMedium-Caps, small-caps tracking</td></tr>
+<tr><td class="lbl">Big unit number (e.g. "1")</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">57.00pt</td><td class="val">57.01pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 4px">#FFFFFF</span></td><td class="note">MetaPlusBold-Caps; confirmed identical in ADV/INT/UPINT Course Books</td></tr>
+<tr><td class="lbl">FT-style reading article headline</td><td class="">Times (Roman/Bold/Italic) Regular</td><td class="val">37.05pt</td><td class="val">37.06pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Times-Roman — used for headlines like "It's not what you know"</td></tr>
+<tr><td class="lbl">Unit-part section heading (Networking, Writing:…)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">13.30pt</td><td class="val">13.30pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">MetaPlusBold-Roman</td></tr>
+<tr><td class="lbl">Boxed feature title ("Useful language" etc.)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">12.35pt</td><td class="val">12.35pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 4px">#FFFFFF</span></td><td class="note">MetaPlusBold-Caps, on colour-band fill</td></tr>
+<tr><td class="lbl">Overview sidebar sub-labels (white on dark)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">11.40pt</td><td class="val">11.40pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 4px">#FFFFFF</span></td><td class="note">MetaPlusBold-Caps</td></tr>
+<tr><td class="lbl">Activity instruction lead-in (bold)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">10.45pt</td><td class="val">10.45pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">MetaPlusBold-Roman</td></tr>
+<tr><td class="lbl">Facsimile handwritten model answer</td><td class="">ZemkeHandITC Regular</td><td class="val">10.45pt</td><td class="val">10.45pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">ZemkeHandITC — often tinted level-accent colour</td></tr>
+<tr><td class="lbl">Reading article body text</td><td class="">Times (Roman/Bold/Italic) Regular</td><td class="val">9.03pt</td><td class="val">9.03pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Times-Roman, justified columns</td></tr>
+<tr><td class="lbl">General body / answer text</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">9.02pt</td><td class="val">9.02pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">MetaPlusNormal-Roman</td></tr>
+<tr><td class="lbl">Italicised terms/definitions</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">9.03pt</td><td class="val">9.03pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">MetaPlusNormal-Italic</td></tr>
+<tr><td class="lbl">Lettered sub-items a) b) c)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">9.03pt</td><td class="val">9.03pt</td><td class=""><span style="color:#2B6CD8;background:transparent;padding:0 4px">#2B6CD8</span></td><td class="note">MetaPlusMedium-Roman, level-accent colour (ADV shown; swaps per level)</td></tr>
+<tr><td class="lbl">Exercise number sequences (1 2 3…)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Medium</td><td class="val">9.50pt</td><td class="val">9.50pt</td><td class=""><span style="color:#2B6CD8;background:transparent;padding:0 4px">#2B6CD8</span></td><td class="note">MetaPlusMedium-Caps, level-accent colour (ADV shown; swaps per level)</td></tr>
+<tr><td class="lbl">Page-top running header ("UNIT 1 •• …")</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">8.55pt</td><td class="val">8.55pt</td><td class=""><span style="color:#2B6CD8;background:transparent;padding:0 4px">#2B6CD8</span></td><td class="note">MetaPlusBold-Caps, level-accent colour (ADV shown; swaps per level)</td></tr>
+<tr><td class="lbl">CD/audio track reference ("CD1.2")</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">8.55pt</td><td class="val">8.55pt</td><td class=""><span style="color:#3F3F3F;background:transparent;padding:0 4px">#3F3F3F</span></td><td class="note">MetaPlusBold-Caps, fixed grey — all levels</td></tr>
+<tr><td class="lbl">Letter/e-mail template body</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">8.08pt</td><td class="val">8.08pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">ArialMT — used for realia/form exercises</td></tr>
+<tr><td class="lbl">Table cell text</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">8.55pt</td><td class="val">8.55pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Helvetica</td></tr>
+<tr><td class="lbl">Table header row</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Bold</td><td class="val">8.55pt</td><td class="val">8.55pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Helvetica-Bold</td></tr>
+<tr><td class="lbl">Photo caption / credit line</td><td class="">Times (Roman/Bold/Italic) Bold</td><td class="val">8.55pt</td><td class="val">8.55pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Times-Bold</td></tr>
+<tr><td class="lbl">Tiny numeric scale labels (10 20 30…)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">5.26pt</td><td class="val">5.26pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">MetaPlusNormal-Caps</td></tr>
+<tr><td class="lbl">Production/imprint code (gutter)</td><td class="">Meta (Normal/Bold/Medium × Roman/Italic/Caps) Regular</td><td class="val">5.70pt</td><td class="val">5.70pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 4px">#000000</span></td><td class="note">Helvetica — not reader-facing</td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Type Specimens</h3><div class="notice amber">Specimens shown at approximately 1.3× print size for screen legibility.</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:46px;font-weight:500;color:#FFFFFF;background:#333;padding:4px;">Unit title (on photo band)</div>
+  <div class="type-meta">
+    <strong>T1 · Unit title (on photo band)</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 41.81pt · #FFFFFF
+    <code>font: 500 41.81px 'Fira Sans'; color:#FFFFFF;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusMedium-Roman; ELEM/PREINT ~42.2pt</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:18px;font-weight:500;color:#FFFFFF;background:#333;padding:4px;">"UNIT" label above number</div>
+  <div class="type-meta">
+    <strong>T2 · "UNIT" label above number</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 16.15pt · #FFFFFF
+    <code>font: 500 16.15px 'Fira Sans'; color:#FFFFFF;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusMedium-Caps, small-caps tracking</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:60px;font-weight:700;color:#FFFFFF;background:#333;padding:4px;">Big unit number (e.g. "1")</div>
+  <div class="type-meta">
+    <strong>T3 · Big unit number (e.g. "1")</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 57.01pt · #FFFFFF
+    <code>font: 700 57.01px 'Fira Sans'; color:#FFFFFF;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusBold-Caps; confirmed identical in ADV/INT/UPINT Course Books</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Tinos', 'Times New Roman', Times, Georgia, serif;font-size:30px;font-weight:400;color:#000000;background:transparent;padding:4px;">FT-style reading article headline</div>
+  <div class="type-meta">
+    <strong>T4 · FT-style reading article headline</strong>
+    Times (Roman/Bold/Italic) · 37.06pt · #000000
+    <code>font: 400 37.06px 'Tinos'; color:#000000;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">Times-Roman — used for headlines like "It's not what you know"</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:16px;font-weight:700;color:#000000;background:transparent;padding:4px;">Unit-part section heading (Networking, Writing:…)</div>
+  <div class="type-meta">
+    <strong>T5 · Unit-part section heading (Networking, Writing:…)</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 13.30pt · #000000
+    <code>font: 700 13.30px 'Fira Sans'; color:#000000;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusBold-Roman</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:700;color:#FFFFFF;background:#333;padding:4px;">Boxed feature title ("Useful language" etc.)</div>
+  <div class="type-meta">
+    <strong>T6 · Boxed feature title ("Useful language" etc.)</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 12.35pt · #FFFFFF
+    <code>font: 700 12.35px 'Fira Sans'; color:#FFFFFF;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusBold-Caps, on colour-band fill</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:13px;font-weight:700;color:#FFFFFF;background:#333;padding:4px;">Overview sidebar sub-labels (white on dark)</div>
+  <div class="type-meta">
+    <strong>T7 · Overview sidebar sub-labels (white on dark)</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 11.40pt · #FFFFFF
+    <code>font: 700 11.40px 'Fira Sans'; color:#FFFFFF;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusBold-Caps</span>
+  </div>
+</div>
+<div class="type-row">
+  <div style="font-family:'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif;font-size:13px;font-weight:700;color:#000000;background:transparent;padding:4px;">Activity instruction lead-in (bold)</div>
+  <div class="type-meta">
+    <strong>T8 · Activity instruction lead-in (bold)</strong>
+    Meta (Normal/Bold/Medium × Roman/Italic/Caps) · 10.45pt · #000000
+    <code>font: 700 10.45px 'Fira Sans'; color:#000000;</code>
+    <span class="src-badge src-v">● VECTOR</span>
+    <span style="font-size:9px;color:#888;font-style:italic">MetaPlusBold-Roman</span>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="sg-section" id="s3">
+  <div class="sg-section-hdr"><div class="sg-section-num">03</div><h2>Colour System</h2></div>
+<div class="notice green">Structural colours confirmed by finding the identical hex recurring for the same functional role across independently-typeset PDFs from different levels.</div>
+<div class="sg-sub"><h3>Structural Colours (fixed across all levels)</h3><div class="sg-swatches"><div class="swatch">
+  <div class="swatch-color" style="background:#000000"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">Body Text</span>
+    <span class="swatch-hex">#000000</span>
+    <span class="swatch-cmyk">C0 M0 Y0 K100</span><div class="swatch-role">Primary body text, instructions, answers — all levels</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#3F3F3F"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">Audio Ref</span>
+    <span class="swatch-hex">#3F3F3F</span>
+    <span class="swatch-cmyk">C0 M0 Y0 K75 (approx, greyscale)</span><div class="swatch-role">CD/audio track references (e.g. "CD1.2") and running-header footer text — confirmed identical hex in ADV, ELEM, INT, PREINT, UPINT</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#E5E5E5"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">Grey Tab</span>
+    <span class="swatch-hex">#E5E5E5</span>
+    <span class="swatch-cmyk">C0 M0 Y0 K10</span><div class="swatch-role">Sidebar section tab background (e.g. vertical "LANGUAGE WORK" tab in Practice File); generic 10% grey utility fill for tables/rules — confirmed in ELEM (x133), UPINT (vertical tab)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#000000"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">Production Slug</span>
+    <span class="swatch-hex">#000000</span>
+    <div class="swatch-role">Tiny 5.7pt Helvetica production/imprint code in page gutter (e.g. "ML_ADV_U1, 03.indd") — not part of the reader-facing design</div>
+  </div>
+</div></div></div>
+<div class="sg-sub"><h3>Editorial/Feature Accent Colours (observed, NOT systematic)</h3><div class="notice amber">These one-off colours style individual feature boxes/headlines per unit — they vary unit-to-unit within a level too, so they are documented for reference only and excluded from the token system below.</div>
+<table class="sg-table"><tr><th>Level sample</th><th>Hex</th><th>Font used</th><th>Where observed</th></tr>
+<tr><td class="lbl">ADV</td><td class="val">#D80000</td><td class="">AvenirLTStd-Heavy</td><td class="note">"Decoding the silent signals" box title</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">ELEM</td><td class="val">#00E062</td><td class="">RockwellStd-Bold</td><td class="note">Business-card mini-graphic accent</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">INT</td><td class="val">#2CB2B2</td><td class="">DIN-Bold</td><td class="note">"A luxury luggage manufacturer…" intro</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">PREINT</td><td class="val">#FF4C0C</td><td class="">DIN-Bold</td><td class="note">"An international drinks company…" intro</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">UPINT</td><td class="val">#BFFF7A</td><td class="">Impact</td><td class="note">"The price of success" case-study cover headline (68.26pt, on photo)</td><td><span class="src-v">VECTOR</span></td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Level Accent + Background Tint Family</h3><div class="sg-swatches"><div class="swatch">
+  <div class="swatch-color" style="background:#E58900"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">100%</span>
+    <span class="swatch-hex">#E58900</span>
+    <span class="swatch-cmyk">C0 M40 Y100 K10</span><div class="swatch-role">Elementary — full accent</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#FCF2E3"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">12%</span>
+    <span class="swatch-hex">#FCF2E3</span>
+    <div class="swatch-role">Elementary — background tint (approx.)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#00B235"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">100%</span>
+    <span class="swatch-hex">#00B235</span>
+    <span class="swatch-cmyk">C100 M0 Y70 K30</span><div class="swatch-role">Pre-intermediate — full accent</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#DEF7E6"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">12%</span>
+    <span class="swatch-hex">#DEF7E6</span>
+    <div class="swatch-role">Pre-intermediate — background tint (approx.)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#A52142"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">100%</span>
+    <span class="swatch-hex">#A52142</span>
+    <span class="swatch-cmyk">C0 M80 Y60 K35</span><div class="swatch-role">Intermediate — full accent</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#F6E2E7"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">12%</span>
+    <span class="swatch-hex">#F6E2E7</span>
+    <div class="swatch-role">Intermediate — background tint (approx.)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#2B6CD8"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">100%</span>
+    <span class="swatch-hex">#2B6CD8</span>
+    <span class="swatch-cmyk">C80 M50 Y0 K15</span><div class="swatch-role">Upper-intermediate — full accent (identical to Advanced)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#E7EEFB"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">12%</span>
+    <span class="swatch-hex">#E7EEFB</span>
+    <div class="swatch-role">Upper-intermediate — background tint (approx.)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#2B6CD8"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">100%</span>
+    <span class="swatch-hex">#2B6CD8</span>
+    <span class="swatch-cmyk">C80 M50 Y0 K15</span><div class="swatch-role">Advanced — full accent (identical to Upper-intermediate)</div>
+  </div>
+</div><div class="swatch">
+  <div class="swatch-color" style="background:#E7EEFB"></div>
+  <div class="swatch-info">
+    <span class="swatch-name">12%</span>
+    <span class="swatch-hex">#E7EEFB</span>
+    <div class="swatch-role">Advanced — background tint (approx.)</div>
+  </div>
+</div></div></div>
+</section>
+
+<section class="sg-section" id="s4">
+  <div class="sg-section-hdr"><div class="sg-section-num">04</div><h2>Level Accent Palette</h2></div>
+<div class="notice red">Confirmed VECTOR-exact from the flat-filled 4.7×4.7mm activity-letter tag boxes ("A" "B" "C"…) — the single most reliable source, cross-checked against running-header text and exercise-number colour (identical hex in every case). These are pure vector fills, not photo-blended, so CMYK→sRGB is reliable here (unlike photographic header bands).</div>
+<div class="sg-sub"><h3>All Levels</h3><div class="level-grid">
+<div class="level-card">
+  <div class="level-card-accent" style="background:#E58900"></div>
+  <div class="level-card-body">
+    <div class="level-card-name">Elementary</div>
+    <div class="level-card-hex">#E58900</div>
+    <div class="level-card-cmyk">C0 M40 Y100 K10 · Orange/amber</div>
+    <div class="level-card-src"><span class="src-v">VECTOR</span> — VECTOR — 4.7×4.7mm tag-box rects (×33) + running header text + MetaPlusMedium-Caps exercise numbers, all identical hex</div>
+  </div>
+</div>
+<div class="level-card">
+  <div class="level-card-accent" style="background:#00B235"></div>
+  <div class="level-card-body">
+    <div class="level-card-name">Pre-intermediate</div>
+    <div class="level-card-hex">#00B235</div>
+    <div class="level-card-cmyk">C100 M0 Y70 K30 · Green</div>
+    <div class="level-card-src"><span class="src-v">VECTOR</span> — VECTOR — 4.7×4.7mm tag-box rects (×29) + running header text + exercise numbers, all identical hex</div>
+  </div>
+</div>
+<div class="level-card">
+  <div class="level-card-accent" style="background:#A52142"></div>
+  <div class="level-card-body">
+    <div class="level-card-name">Intermediate</div>
+    <div class="level-card-hex">#A52142</div>
+    <div class="level-card-cmyk">C0 M80 Y60 K35 · Crimson/maroon</div>
+    <div class="level-card-src"><span class="src-v">VECTOR</span> — VECTOR — 4.7×4.7mm tag-box rects (×19) + running header text + exercise numbers, all identical hex</div>
+  </div>
+</div>
+<div class="level-card">
+  <div class="level-card-accent" style="background:#2B6CD8"></div>
+  <div class="level-card-body">
+    <div class="level-card-name">Upper-intermediate</div>
+    <div class="level-card-hex">#2B6CD8</div>
+    <div class="level-card-cmyk">C80 M50 Y0 K15 · Royal blue — CONFIRMED IDENTICAL to Advanced's accent (exact same CMYK tuple, not a rounding coincidence; see note below)</div>
+    <div class="level-card-src"><span class="src-v">VECTOR</span> — VECTOR — Course Book sample (Market_Leader_UPINT_-_Course_Book.pdf), 4.7×4.7mm tag-box rects (×31) + running header text + MetaPlusMedium-Caps exercise numbers, all identical hex</div>
+  </div>
+</div>
+<div class="level-card">
+  <div class="level-card-accent" style="background:#2B6CD8"></div>
+  <div class="level-card-body">
+    <div class="level-card-name">Advanced</div>
+    <div class="level-card-hex">#2B6CD8</div>
+    <div class="level-card-cmyk">C80 M50 Y0 K15 · Royal blue</div>
+    <div class="level-card-src"><span class="src-v">VECTOR</span> — VECTOR — 4.7×4.7mm tag-box rects (×25) + running header text + exercise numbers, all identical hex</div>
+  </div>
+</div>
+</div>
+</div>
+<div class="sg-sub"><h3>Level Data</h3><table class="sg-table"><tr><th>Level</th><th>CEFR</th><th>CMYK (print)</th><th>Screen hex</th><th>BG tint</th><th>Source</th></tr>
+<tr><td class="lbl">Elementary</td><td>A2 (approx.)</td><td class="val">C0 M40 Y100 K10</td><td class="val">#E58900</td><td class="val">#FCF2E3</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Pre-intermediate</td><td>B1 (approx.)</td><td class="val">C100 M0 Y70 K30</td><td class="val">#00B235</td><td class="val">#DEF7E6</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Intermediate</td><td>B1+ (approx.)</td><td class="val">C0 M80 Y60 K35</td><td class="val">#A52142</td><td class="val">#F6E2E7</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Upper-intermediate</td><td>B2 (approx.)</td><td class="val">C80 M50 Y0 K15</td><td class="val">#2B6CD8</td><td class="val">#E7EEFB</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Advanced</td><td>C1 (approx.)</td><td class="val">C80 M50 Y0 K15</td><td class="val">#2B6CD8</td><td class="val">#E7EEFB</td><td><span class="src-v">VECTOR</span></td></tr>
+</table>
+</div>
+<div class="notice blue">All 5 levels are now sampled from genuine Course Books. Upper-Intermediate and Advanced share the exact same accent — confirmed via matching raw CMYK float tuples from the vector layer of both PDFs, not a rounding coincidence, and cross-checked by rendering both unit-opening pages. Elementary, Pre-Intermediate and Intermediate each have a distinct, unique hue.</div>
+<div class="notice amber"><strong>Companion-book note:</strong> Practice File / Language Work sections are monochrome by design (black + #E5E5E5 grey only) — confirmed in the Upper-Intermediate Practice File sample. Not yet confirmed whether this holds for Practice Files at other levels. Also uses a smaller big-unit-number size (45.15pt vs 57.00pt in Course Books) — a distinct, reduced cover template for this companion book type.</div>
+</section>
+
+<section class="sg-section" id="s5">
+  <div class="sg-section-hdr"><div class="sg-section-num">05</div><h2>Spacing</h2></div>
+<div class="notice green">All values from vector PDF (Advanced sample). Scaled to 210×297mm target.</div>
+<div class="sg-sub"><h3>Line Spacing (Leading)</h3><div class="notice amber">Market Leader uses noticeably generous leading for a workbook — space is left for handwritten answers between lines in many exercises.</div>
+<table class="sg-table"><tr><th>Context</th><th>mm</th><th>% of H</th><th>pt</th><th>Source</th></tr>
+<tr><td class="lbl">Body/exercise text (generous, workbook-style)</td><td class="val">5.92mm</td><td class="val">1.99% H</td><td class="val">16.78pt</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">List item spacing (tighter)</td><td class="val">4.36mm</td><td class="val">1.47% H</td><td class="val">12.36pt</td><td><span class="src-v">VECTOR</span></td></tr>
+<tr><td class="lbl">Dense table rows</td><td class="val">3.52mm</td><td class="val">1.18% H</td><td class="val">9.98pt</td><td><span class="src-v">VECTOR</span></td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Vertical Spacing Between Components</h3><table class="sg-table"><tr><th>From → To</th><th>mm</th><th>% of H</th><th>pt</th><th>Source</th></tr>
+<tr><td class="lbl">Table row height (5-row response grid)</td><td class="val">9.1mm</td><td class="val">3.06%</td><td class="val">25.81pt</td><td><span class="src-v">VECTOR</span> — ADV p.8 agree/disagree table, VECTOR-measured</td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Horizontal Positions — Text X Coordinates</h3><table class="sg-table"><tr><th>Element</th><th>x recto</th><th>x verso</th><th>% of W</th><th>Source</th></tr>
+<tr><td class="lbl">Activity tag box (A/B/C…)</td><td class="val">55.71mm</td><td class="val">55.71mm</td><td class="val">26.53%</td><td><span class="src-v">VECTOR</span> — Constant left position for all activity letters, ADV</td></tr>
+<tr><td class="lbl">Main text column start</td><td class="val">68.22mm</td><td class="val">68.22mm</td><td class="val">32.49%</td><td><span class="src-v">VECTOR</span> — Approx. body/instruction text left edge</td></tr>
+</table>
+</div>
+</section>
+
+<section class="sg-section" id="s6">
+  <div class="sg-section-hdr"><div class="sg-section-num">06</div><h2>Word Style Map</h2></div>
+<div class="notice blue">Use these styles in Microsoft Word to approximate the design at 210×297mm. All sizes scaled from source PDF. Swap the level-accent colour per LEVELS entry in Section 04.</div>
+<div class="sg-sub"><h3>Paragraph Styles</h3><table class="sg-table"><tr><th>Style Name</th><th>Font</th><th>Size</th><th>Colour</th><th>Spacing B/A</th><th>Other</th></tr>
+<tr><td class="lbl">ML_Unit_Title</td><td class="">Meta (fallback: Segoe UI) Medium / <em>Fira Sans Medium</em></td><td class="val">41.81pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 2px">#FFFFFF</span></td><td class="val">0/0</td><td class="note">On photo band; page break before</td></tr>
+<tr><td class="lbl">ML_Section_Head</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">13.30pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">20/8</td><td class="note">Unit-part heading e.g. "Networking"</td></tr>
+<tr><td class="lbl">ML_Box_Title</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">12.35pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 2px">#FFFFFF</span></td><td class="val">0/6</td><td class="note">Shading = level accent colour</td></tr>
+<tr><td class="lbl">ML_Body_Text</td><td class="">Meta (fallback: Segoe UI) / <em>Fira Sans</em></td><td class="val">9.02pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">0/8</td><td class="note">Line spacing ~16.8pt (generous, workbook style)</td></tr>
+<tr><td class="lbl">ML_Activity_Lead</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">10.45pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">12/4</td><td class="note">Bold instruction lead-in after tag box</td></tr>
+<tr><td class="lbl">ML_Activity_Tag</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">10.40pt</td><td class=""><span style="color:#FFFFFF;background:#333;padding:0 2px">#FFFFFF</span></td><td class="val">0/0</td><td class="note">White letter on 4.7×4.7mm level-accent square</td></tr>
+<tr><td class="lbl">ML_Reading_Body</td><td class="">Times New Roman / <em>Tinos</em></td><td class="val">9.03pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">0/8</td><td class="note">Times-Roman justified column, FT-style articles</td></tr>
+<tr><td class="lbl">ML_Reading_Headline</td><td class="">Times New Roman / <em>Tinos</em></td><td class="val">37.06pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">0/10</td><td class="note">Times-Roman large headline</td></tr>
+<tr><td class="lbl">ML_Running_Header</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">8.55pt</td><td class=""><span style="color:#000;background:transparent;padding:0 2px">[level accent]</span></td><td class="val">0/0</td><td class="note">Level-accent colour; "UNIT N •• TITLE"</td></tr>
+<tr><td class="lbl">ML_Audio_Ref</td><td class="">Meta (fallback: Segoe UI) Bold / <em>Fira Sans Bold</em></td><td class="val">8.55pt</td><td class=""><span style="color:#3F3F3F;background:transparent;padding:0 2px">#3F3F3F</span></td><td class="val">0/0</td><td class="note">Fixed grey — CD/audio track number</td></tr>
+<tr><td class="lbl">ML_Handwritten</td><td class="">Segoe Script (fallback) / <em>Caveat</em></td><td class="val">10.45pt</td><td class=""><span style="color:#000000;background:transparent;padding:0 2px">#000000</span></td><td class="val">0/0</td><td class="note">Facsimile handwriting for model answers</td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Character Styles</h3><table class="sg-table"><tr><th>Style Name</th><th>Properties</th><th>Usage</th></tr>
+<tr><td class="lbl">ML_Accent_Letter</td><td class="">Meta (fallback: Segoe UI) [level accent]</td><td class="note">a) b) c) list markers — level accent colour</td></tr>
+<tr><td class="lbl">ML_Accent_Number</td><td class="">Meta (fallback: Segoe UI) [level accent]</td><td class="note">Exercise numbers 1 2 3… — level accent colour</td></tr>
+<tr><td class="lbl">ML_Bold_Term</td><td class="">Meta (fallback: Segoe UI) Bold #000000</td><td class="note">Bold key terms within instructions</td></tr>
+<tr><td class="lbl">ML_Italic_Term</td><td class="">Meta (fallback: Segoe UI) #000000</td><td class="note">Italicised technical terms</td></tr>
+</table>
+</div>
+</section>
+
+<section class="sg-section" id="s7">
+  <div class="sg-section-hdr"><div class="sg-section-num">07</div><h2>CSS Reference</h2></div>
+<div class="sg-sub"><h3>Design Tokens</h3><pre><span class="cm">/* Market Leader Design Tokens v1.1 (2026-08-13) */</span>
+<span class="cm">/* Source: 209.9 × 297.0mm · Target: 210.0 × 297.0mm · Scale: 1.0002× */</span>
+
+:root {
+  <span class="cm">/* ── Structural colours ── */</span>
+  <span class="cv">--body_text</span>: <span class="cs">#000000</span>;  <span class="cm">/* C0 M0 Y0 K100 — Primary body text, instructions, answers — all lev */</span>
+  <span class="cv">--audio_ref</span>: <span class="cs">#3F3F3F</span>;  <span class="cm">/* C0 M0 Y0 K75 (approx, greyscale) — CD/audio track references (e.g. "CD1.2") and runni */</span>
+  <span class="cv">--grey_tab</span>: <span class="cs">#E5E5E5</span>;  <span class="cm">/* C0 M0 Y0 K10 — Sidebar section tab background (e.g. vertical "LAN */</span>
+  <span class="cv">--production_slug</span>: <span class="cs">#000000</span>;  <span class="cm">/* Tiny 5.7pt Helvetica production/imprint code in page gutter  */</span>
+
+  <span class="cm">/* ── Level accent colours ── */</span>
+  <span class="cv">--lvl-elem</span>: <span class="cs">#E58900</span>;  <span class="cm">/* C0 M40 Y100 K10 — Elementary A2 (approx.) */</span>
+  <span class="cv">--lvl-preint</span>: <span class="cs">#00B235</span>;  <span class="cm">/* C100 M0 Y70 K30 — Pre-intermediate B1 (approx.) */</span>
+  <span class="cv">--lvl-int</span>: <span class="cs">#A52142</span>;  <span class="cm">/* C0 M80 Y60 K35 — Intermediate B1+ (approx.) */</span>
+  <span class="cv">--lvl-upint</span>: <span class="cs">#2B6CD8</span>;  <span class="cm">/* C80 M50 Y0 K15 — Upper-intermediate B2 (approx.) */</span>
+  <span class="cv">--lvl-adv</span>: <span class="cs">#2B6CD8</span>;  <span class="cm">/* C80 M50 Y0 K15 — Advanced C1 (approx.) */</span>
+  <span class="cv">--accent</span>: <span class="cs">#2B6CD8</span>;  <span class="cm">/* default: Advanced — set to desired level */</span>
+
+  <span class="cm">/* ── Fonts ── */</span>
+  <span class="cv">--font-sans</span>: <span class="cs">'Fira Sans', 'Meta', 'Segoe UI', Arial, sans-serif</span>;
+  <span class="cv">--font-body</span>: <span class="cs">'Tinos', 'Times New Roman', Times, Georgia, serif</span>;
+  <span class="cv">--font-hand</span>: <span class="cs">'Caveat', 'Segoe Script', cursive</span>;
+
+  <span class="cm">/* ── Type scale (scaled to target page) ── */</span>
+  <span class="cv">--fs-unit_title</span>: <span class="cs">41.81px</span>;  <span class="cm">/* Unit title (on photo band) */</span>
+  <span class="cv">--fs-unit_label</span>: <span class="cs">16.15px</span>;  <span class="cm">/* "UNIT" label above number */</span>
+  <span class="cv">--fs-unit_number</span>: <span class="cs">57.01px</span>;  <span class="cm">/* Big unit number (e.g. "1") */</span>
+  <span class="cv">--fs-article_headline</span>: <span class="cs">37.06px</span>;  <span class="cm">/* FT-style reading article headline */</span>
+  <span class="cv">--fs-section_head</span>: <span class="cs">13.30px</span>;  <span class="cm">/* Unit-part section heading (Networking, Writing:…) */</span>
+  <span class="cv">--fs-box_title</span>: <span class="cs">12.35px</span>;  <span class="cm">/* Boxed feature title ("Useful language" etc.) */</span>
+  <span class="cv">--fs-sidebar_subhead</span>: <span class="cs">11.40px</span>;  <span class="cm">/* Overview sidebar sub-labels (white on dark) */</span>
+  <span class="cv">--fs-activity_lead</span>: <span class="cs">10.45px</span>;  <span class="cm">/* Activity instruction lead-in (bold) */</span>
+  <span class="cv">--fs-handwritten</span>: <span class="cs">10.45px</span>;  <span class="cm">/* Facsimile handwritten model answer */</span>
+  <span class="cv">--fs-body_serif</span>: <span class="cs">9.03px</span>;  <span class="cm">/* Reading article body text */</span>
+  <span class="cv">--fs-body_sans</span>: <span class="cs">9.02px</span>;  <span class="cm">/* General body / answer text */</span>
+  <span class="cv">--fs-body_italic</span>: <span class="cs">9.03px</span>;  <span class="cm">/* Italicised terms/definitions */</span>
+  <span class="cv">--fs-accent_letter</span>: <span class="cs">9.03px</span>;  <span class="cm">/* Lettered sub-items a) b) c) */</span>
+  <span class="cv">--fs-accent_number</span>: <span class="cs">9.50px</span>;  <span class="cm">/* Exercise number sequences (1 2 3…) */</span>
+  <span class="cv">--fs-running_header</span>: <span class="cs">8.55px</span>;  <span class="cm">/* Page-top running header ("UNIT 1 •• …") */</span>
+  <span class="cv">--fs-audio_track</span>: <span class="cs">8.55px</span>;  <span class="cm">/* CD/audio track reference ("CD1.2") */</span>
+  <span class="cv">--fs-form_text</span>: <span class="cs">8.08px</span>;  <span class="cm">/* Letter/e-mail template body */</span>
+  <span class="cv">--fs-table_body</span>: <span class="cs">8.55px</span>;  <span class="cm">/* Table cell text */</span>
+  <span class="cv">--fs-table_header</span>: <span class="cs">8.55px</span>;  <span class="cm">/* Table header row */</span>
+  <span class="cv">--fs-caption</span>: <span class="cs">8.55px</span>;  <span class="cm">/* Photo caption / credit line */</span>
+  <span class="cv">--fs-tiny_scale</span>: <span class="cs">5.26px</span>;  <span class="cm">/* Tiny numeric scale labels (10 20 30…) */</span>
+  <span class="cv">--fs-production_slug</span>: <span class="cs">5.70px</span>;  <span class="cm">/* Production/imprint code (gutter) */</span>
+}</pre></div>
+</section>
+
+<section class="sg-section" id="s8">
+  <div class="sg-section-hdr"><div class="sg-section-num">08</div><h2>PowerPoint Notes</h2></div>
+<div class="sg-sub"><h3>Slide Size &amp; Fonts</h3><table class="sg-table"><tr><th>Setting</th><th>Value</th><th>Notes</th></tr>
+<tr><td class="lbl">Major font</td><td class="">Meta Bold / <em>Fira Sans</em></td><td class="note">Headings, unit titles, labels</td></tr>
+<tr><td class="lbl">Minor font</td><td class="">Meta / <em>Fira Sans</em></td><td class="note">Body sans text, activity instructions</td></tr>
+<tr><td class="lbl">Serif font</td><td class="">Times New Roman / <em>Tinos</em></td><td class="note">Reading article body + headlines</td></tr>
+<tr><td class="lbl">Slide size (source)</td><td class="val">209.9 × 297.0 mm</td><td class="note">Original PDF page canvas (already ~A4)</td></tr>
+<tr><td class="lbl">Slide size (target)</td><td class="val">210.0 × 297.0 mm</td><td class="note">Your target paper size</td></tr>
+</table>
+</div>
+<div class="sg-sub"><h3>Theme Colour Slots</h3><pre><span class="cm">/* Market Leader PowerPoint Theme Slots v1.1 */</span>
+
+  <span class="cv">dk1</span> = <span class="cs">#000000</span>
+  <span class="cv">lt1</span> = <span class="cs">#FFFFFF</span>
+  <span class="cv">dk2</span> = <span class="cs">#3F3F3F</span>
+  <span class="cv">lt2</span> = <span class="cs">#E5E5E5</span>
+  <span class="cv">accent1</span> = <span class="cs">[level accent — see below]</span>
+  <span class="cv">accent2</span> = <span class="cs">#E58900</span>
+  <span class="cv">accent3</span> = <span class="cs">#00B235</span>
+  <span class="cv">accent4</span> = <span class="cs">#A52142</span>
+  <span class="cv">accent5</span> = <span class="cs">#2B6CD8</span>
+  <span class="cv">accent6</span> = <span class="cs">#3F3F3F</span>
+  <span class="cv">hyperlink</span> = <span class="cs">#2B6CD8</span>
+
+<span class="cm">/* ── Level accent values ── */</span>
+  <span class="cm">/* Elementary A2 (approx.): #E58900  C0 M40 Y100 K10 */</span>
+  <span class="cm">/* Pre-intermediate B1 (approx.): #00B235  C100 M0 Y70 K30 */</span>
+  <span class="cm">/* Intermediate B1+ (approx.): #A52142  C0 M80 Y60 K35 */</span>
+  <span class="cm">/* Upper-intermediate B2 (approx.): #2B6CD8  C80 M50 Y0 K15 */</span>
+  <span class="cm">/* Advanced C1 (approx.): #2B6CD8  C80 M50 Y0 K15 */</span></pre></div>
+</section>
+
+<footer class="sg-footer">
+  <span>Market Leader Design System v1.1 (2026-08-13) · market_leader_data_marketleader.py · market_leader_generate_marketleader.py v1.0</span>
+  <span>
+    <span class="src-v">VECTOR</span> exact from PDF ·
+    <span class="src-e">ESTIMATE</span> not yet confirmed
+  </span>
+</footer>
+</div>
+</body>
+</html>
