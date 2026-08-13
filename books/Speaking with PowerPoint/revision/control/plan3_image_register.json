@@ -4,9 +4,9 @@
     "title": "Plan 3 Image Register",
     "prepared": "2026-08-12",
     "scope": "Plan 3 rebuild of Speaking with PowerPoint / Presentation Skills 2026",
-    "status": "Phase 5 SDK/Pillow draft assets created",
+    "status": "Phase 5 visual asset repair in progress - unusable PNGs removed; editable PPTX model decks drafted",
     "schema_source": "books/Speaking with PowerPoint/revision/control/plan3-asset-register-template.md",
-    "notes": "This register is specific to the Plan 3 rebuild. It does not replace books/Presentation Skills/images/image_register.json until final asset location and reuse decisions are approved. Phase 5 was rerun on 2026-08-13 using OpenAI SDK-generated 2K text-free source panels staged in local TEMP to avoid UNC path issues, then deterministic Pillow composition for exact visible text, charts, and slide layouts. Earlier programmatic-only and platform-import batches are superseded reference material."
+    "notes": "The previous PNG core assets and model slide PNGs were rejected by user review on 2026-08-13 as unprofessional/unusable. Unusable PNG output folders images/planned/ and images/model-slides/ were deleted. Model presentation replacements are now editable PPTX decks under revision/assets/model-slide-decks/. Core textbook image assets still require a new approved design workflow before Phase 5 can be closed."
   },
   "style_lock": {
     "diagram_style": "Clean flat-vector educational diagram style, muted professional color palette, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No photographic texture, no gradients, no logos, no watermarks. No readable body text beyond short labels explicitly specified in the prompt.",
@@ -53,7 +53,7 @@
       "asset_title": "Visual hierarchy comparison",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u05-visual-hierarchy-comparison.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long",
@@ -97,19 +97,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u05-sample-ab-readability",
       "asset_title": "Sample A/B readability comparison",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u05-sample-ab-readability.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long",
@@ -153,19 +153,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u06-import-document-handoff-results-chart",
       "asset_title": "Import document handoff pilot results chart",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-import-document-handoff-results-chart.png",
       "asset_type": "chart",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -209,19 +209,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u06-application-intake-results-chart",
       "asset_title": "Application intake checklist trial results chart",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-application-intake-results-chart.png",
       "asset_type": "chart",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -265,19 +265,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u07-import-document-handoff-workflow",
       "asset_title": "Import document handoff workflow before and after",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-import-document-handoff-workflow.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -321,19 +321,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u07-application-intake-workflow",
       "asset_title": "Application intake workflow before and after",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-application-intake-workflow.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -377,19 +377,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u07-client-reporting-dashboard-mockup",
       "asset_title": "Client reporting dashboard mockup",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-client-reporting-dashboard-mockup.png",
       "asset_type": "mockup",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -434,19 +434,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u07-application-support-service-flow",
       "asset_title": "Application support desk service flow",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-application-support-service-flow.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long"
@@ -491,19 +491,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-u09-online-delivery-setup",
       "asset_title": "Online delivery setup checklist visual",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u09-online-delivery-setup.png",
       "asset_type": "diagram",
-      "status": "draft",
+      "status": "rejected",
       "tier_use": [
         "Standard",
         "Long",
@@ -547,26 +547,19 @@
         "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
         "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
         "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
-        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
+        "repair_or_regenerate_decision": "Reject previous PNG. Rebuild with professional editable/vector or deck-based workflow before final textbook use."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Rejected by user review on 2026-08-13 for poor text alignment/visual quality. Deleted from images/planned/. Requires professional rebuild before approval.",
+      "recheck_status": "rejected; source PNG deleted; replacement required"
     },
     {
       "asset_id": "p3-app-process-business-slide-set",
       "asset_title": "Business-client process improvement model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/process-business/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/process-business.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -579,10 +572,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the business-client process-improvement model presentation.",
       "decorative": false,
       "caption": "Sample slides for the business-client process-improvement model.",
@@ -609,31 +602,25 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     },
     {
       "asset_id": "p3-app-process-government-slide-set",
       "asset_title": "Government-agency process improvement model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/process-government/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/process-government.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -646,10 +633,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the government-agency process-improvement model presentation.",
       "decorative": false,
       "caption": "Sample slides for the government-agency process-improvement model.",
@@ -676,31 +663,25 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     },
     {
       "asset_id": "p3-app-launch-business-slide-set",
       "asset_title": "Business-client launch model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/launch-business/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/launch-business.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -713,10 +694,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the business-client launch model presentation.",
       "decorative": false,
       "caption": "Sample slides for the business-client launch model.",
@@ -743,31 +724,25 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     },
     {
       "asset_id": "p3-app-launch-government-slide-set",
       "asset_title": "Government-agency launch model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/launch-government/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/launch-government.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -780,10 +755,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the government-agency launch model presentation.",
       "decorative": false,
       "caption": "Sample slides for the government-agency launch model.",
@@ -810,31 +785,25 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     },
     {
       "asset_id": "p3-app-results-business-slide-set",
       "asset_title": "Business-client results briefing model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/results-business/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/results-business.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -848,10 +817,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the business-client results briefing model presentation.",
       "decorative": false,
       "caption": "Sample slides for the business-client results briefing model.",
@@ -878,31 +847,25 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     },
     {
       "asset_id": "p3-app-results-government-slide-set",
       "asset_title": "Government-agency results briefing model slide set",
-      "file_path": "books/Speaking with PowerPoint/images/model-slides/results-government/",
-      "slide_files": [
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s01.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s02.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s03.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s04.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s05.png",
-        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s06.png"
-      ],
-      "asset_type": "model slide set",
+      "file_path": "books/Speaking with PowerPoint/revision/assets/model-slide-decks/results-government.pptx",
+      "slide_files": [],
+      "asset_type": "editable model slide deck",
       "status": "draft",
       "tier_use": [
         "Standard",
@@ -916,10 +879,10 @@
         "Unit 10",
         "Unit 12"
       ],
-      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
-      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
-      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
-      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "source": "PptxGenJS editable PPTX generated from agent-approved slide-content plan",
+      "source_detail": "Generated with PptxGenJS from books/Speaking with PowerPoint/revision/records/plan3-model-slide-content-agent-scan.md. The deck uses editable PowerPoint-native text boxes, shapes, workflow strips, data cards, timelines, and simple bar-chart shapes. Any photographic or generated imagery can be added later after approval.",
+      "license_status": "original project-created editable teaching deck; pending final user approval",
+      "generated_or_original": "original editable PPTX",
       "alt_text": "Six sample slides for the government-agency results briefing model presentation.",
       "decorative": false,
       "caption": "Sample slides for the government-agency results briefing model.",
@@ -946,17 +909,18 @@
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
-        "element_count": "pass - six sample slides present for the model set",
-        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
-        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
-        "background_artifacts": "pass - sparse low-contrast support motifs only",
-        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+        "text_accuracy": "pass at source level - text is editable PowerPoint text generated from the approved slide-content plan",
+        "element_count": "pass at source level - six slides per deck validated by PPTX inspection",
+        "label_placement": "pending visual render/manual PowerPoint review",
+        "stray_text": "not applicable - no image-model-rendered text in deck",
+        "background_artifacts": "not applicable - no generated background imagery used",
+        "repair_or_regenerate_decision": "Use editable PPTX as draft replacement for rejected PNG slide assets; export screenshots only after visual approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
-      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+      "repair_or_defer_note": "Replaces rejected PNG model-slide screenshots. Draft PPTX created 2026-08-13; visual rendering could not be completed because LibreOffice/soffice is not on PATH.",
+      "recheck_status": "PPTX zip/slide-count validation passed; visual render pending",
+      "slide_count": 6
     }
   ]
 }

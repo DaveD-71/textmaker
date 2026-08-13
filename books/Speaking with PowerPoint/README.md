@@ -11,7 +11,7 @@ The textbook manuscript drafts under `revision/drafts/standard/` and `revision/d
 
 ## Current Handoff Status
 
-Updated: 2026-08-13 14:35 JST
+Updated: 2026-08-13 15:20 JST
 
 - Latest synced baseline before today's edits: commit `357ec3e Reframe appendix models for client context`.
 - Current uncommitted Speaking with PowerPoint edits:
@@ -44,9 +44,11 @@ Updated: 2026-08-13 14:35 JST
   - Phase 4 Agent 2 repairs are now integrated: Units 1, 4, 5, 7, and 9 have first-use `Useful terms` support; Unit 1 now uses `workplace` wording instead of stale `business` context wording; Unit 9 defines `asynchronous (async)` before learner use; the launch appendix vocabulary now includes `pre-read` and `rollout`; the launch appendix AI note is learner-facing classroom wording.
   - Phase 5 asset creation was rerun through the OpenAI Python SDK, using `gpt-image-2` at 2560x1440 high-quality opaque PNG. To avoid the persistent UNC/network-path issue, generation was staged in local `%TEMP%` and copied back into the repo.
   - OpenAI output is now used only as sparse, text-free source-panel art. Final visible text, chart values, headings, and slide layouts are composed deterministically with Pillow so the textbook does not depend on image-model text rendering.
-  - SDK source panels are in `images/source/openai-sdk-2k-final/`. Final core textbook assets are in `images/planned/`. Six-slide model presentation sample sets are in `images/model-slides/`.
-  - Each of the six appendix model presentations now includes a learner-facing `Sample Slide Set` section with six sample slide images.
-  - `revision/control/plan3_image_register.json` now records the 9 core assets plus 6 model slide-set entries. Status remains `draft` pending user/editor approval.
+  - Correction after user review: the generated PNG assets in `images/planned/` and `images/model-slides/` were rejected as visually unprofessional and deleted from the active project tree. Keep `images/source/openai-sdk-2k-final/` only as source/provenance material unless the user decides otherwise.
+  - The appendix model files now link to editable PPTX slide-deck drafts instead of embedding the rejected PNG slide images.
+  - New slide-deck direction: use standard PowerPoint-native slide layouts/placeholders so PowerPoint Designer can improve the deck. Do not build bespoke PptxGenJS shape systems for these model decks unless the user explicitly changes this decision.
+  - One readable test deck exists for inspection: `revision/assets/model-slide-decks/process-business-standard-template-v2.pptx`, with PDF/contact-sheet exports under `revision/assets/model-slide-decks/pdf/`.
+  - `revision/control/plan3_image_register.json` records the rejected core image assets and draft editable model slide-deck entries. Status remains `draft` pending user/editor approval.
 - Script timing check after edits:
   - Process model scripts: 811 and 779 words, about 6.2-7.1 minutes at 115-125 wpm.
   - Launch model scripts: 911 and 843 words, about 6.7-7.9 minutes at 115-125 wpm.
@@ -58,8 +60,8 @@ Validation completed in this pass:
 - Script-only timing check against the approved 115-125 wpm range.
 - Scan for stale `lesson` terminology, old `backup detail` wording, and vague appendix-model references in current control files, Standard drafts, and appendix model files.
 - `plan3_image_register.json` validates with `python -m json.tool`.
-- Phase 5 asset validation: 9 core assets, 36 model-slide PNGs, and 9 SDK source panels are all 2560x1440 RGB PNGs with no embedded PNG text metadata reported by PIL.
-- Appendix image-link validation found no missing image files across the three model appendix documents.
+- Earlier Phase 5 PNG validation was superseded by user review. The visible PNG slide/core assets were rejected and removed; the current acceptable direction is the readable native PowerPoint test deck.
+- The current standard-template test deck has six slides using native PowerPoint layouts only: Title Slide, Title and Text, and Comparison.
 - Remaining hits for stock/securities/ticker language are guardrail notes, not model contexts.
 - Scan confirms no teacher/editor-facing labels remain in learner draft files under `revision/drafts/standard/` or `revision/drafts/appendices/`; the separate teacher-notes file is the only teacher-facing draft document.
 - Teacher Notes Language Editor pass completed: `leave-behind` is not recommended for learner-facing text; use `follow-up handout`, `takeaway document`, or `supporting document` unless explicitly teaching the industry noun.
@@ -70,5 +72,5 @@ Validation completed in this pass:
 - Targeted Phase 4 repair scans found no remaining Unit 1 stale phrases: `business purpose`, `business reason`, `business problem`, `Main business context`, or `business relevance`.
 - Launch appendix scan confirms `If your class discusses AI...` is now the active learner-facing AI note and the old `If AI is mentioned with these models...` wording is gone.
 
-Next recommended step: review the Phase 5 draft visuals in `images/planned/` and `images/model-slides/`. If approved, continue to Phase 6 QA and DOCX/layout preparation; keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user chooses to add that model before layout work.
+Next recommended step: inspect `revision/assets/model-slide-decks/process-business-standard-template-v2.pptx` in PowerPoint, try Designer on it, then decide the standard-template pattern before rebuilding the other five appendix model slide decks. Keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user chooses to add that model before layout work.
 

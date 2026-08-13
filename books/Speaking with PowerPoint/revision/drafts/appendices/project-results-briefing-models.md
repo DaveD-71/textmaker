@@ -57,25 +57,9 @@ Suggested chart title: **Pilot reduced late document handoffs and rework time**.
 
 ### Sample Slide Set
 
-Sample slides for the business-client results model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+Editable sample slide deck: [Results Business-Client Deck](../../assets/model-slide-decks/results-business.pptx)
 
-![Sample slide 1 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s01.png)
-![Sample slide 2 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s02.png)
-![Sample slide 3 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s03.png)
-![Sample slide 4 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s04.png)
-![Sample slide 5 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s05.png)
-![Sample slide 6 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s06.png)
-
-*Fictional practice data: late document handoffs decreased during the pilot.*
-
-Fictional practice data:
-
-| Measure | Before pilot | After pilot | Change |
-|---|---:|---:|---:|
-| Late document handoffs | 38 | 27 | down 29% |
-| Average rework time per exception | 22 minutes | 16 minutes | down 6 minutes |
-| Users who said ownership was clearer | not measured | 82% | new measure |
-| Duplicate log entries | not tracked | 9 cases | issue to repair |
+The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
 
 ### Key Vocabulary Before Listening
 
@@ -263,25 +247,9 @@ Suggested chart title: **Checklist trial reduced returns and repeat inquiries**.
 
 ### Sample Slide Set
 
-Sample slides for the government-agency results model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+Editable sample slide deck: [Results Government-Agency Deck](../../assets/model-slide-decks/results-government.pptx)
 
-![Sample slide 1 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s01.png)
-![Sample slide 2 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s02.png)
-![Sample slide 3 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s03.png)
-![Sample slide 4 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s04.png)
-![Sample slide 5 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s05.png)
-![Sample slide 6 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s06.png)
-
-*Fictional practice data: returned applications decreased during the checklist trial.*
-
-Fictional practice data:
-
-| Measure | Before trial | After trial | Change |
-|---|---:|---:|---:|
-| Returned applications | 142 | 111 | down 22% |
-| Repeat inquiries | 86 | 68 | down 21% |
-| Attachment-related returns | 77 | 58 | down 24% |
-| Added counter time | not measured | about 40 seconds per intake | issue to monitor |
+The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
 
 ### Key Vocabulary Before Listening
 

@@ -60,16 +60,9 @@ Visual notes:
 
 ### Sample Slide Set
 
-Sample slides for the business-client launch model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+Editable sample slide deck: [Launch Business-Client Deck](../../assets/model-slide-decks/launch-business.pptx)
 
-![Sample slide 1 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s01.png)
-![Sample slide 2 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s02.png)
-![Sample slide 3 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s03.png)
-![Sample slide 4 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s04.png)
-![Sample slide 5 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s05.png)
-![Sample slide 6 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s06.png)
-
-*A dashboard can support a launch briefing when it shows the information users need first.*
+The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
 
 ### Key Vocabulary Before Listening
 
@@ -280,16 +273,9 @@ Visual notes:
 
 ### Sample Slide Set
 
-Sample slides for the government-agency launch model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+Editable sample slide deck: [Launch Government-Agency Deck](../../assets/model-slide-decks/launch-government.pptx)
 
-![Sample slide 1 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s01.png)
-![Sample slide 2 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s02.png)
-![Sample slide 3 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s03.png)
-![Sample slide 4 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s04.png)
-![Sample slide 5 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s05.png)
-![Sample slide 6 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s06.png)
-
-*The support desk helps users before submission, reducing repeat inquiries later.*
+The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
 
 ### Key Vocabulary Before Listening
 
