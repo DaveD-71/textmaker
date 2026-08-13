@@ -30,7 +30,8 @@ try {
 $pp = New-Object -ComObject PowerPoint.Application
 $pp.Visible = [Microsoft.Office.Core.MsoTriState]::msoTrue
 $pres = $pp.Presentations.Add([Microsoft.Office.Core.MsoTriState]::msoTrue)
-$pres.PageSetup.SlideSize = 13
+$pres.PageSetup.SlideWidth = 960
+$pres.PageSetup.SlideHeight = 540
 
 # Slide 1. Emphasis: decision request and limited pilot.
 $s = $pres.Slides.Add(1, $ppLayoutTitle)
