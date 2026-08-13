@@ -6,7 +6,7 @@ Purpose: define the controlled drafting brief for Standard Unit 1 before writing
 
 ## Unit Identity
 
-Unit title: Audience, Purpose, and Business Context
+Unit title: Audience, Purpose, and Workplace Context
 
 Course tier: Standard
 

@@ -1,4 +1,4 @@
-# Unit 1: Audience, Purpose, and Business Context
+﻿# Unit 1: Audience, Purpose, and Workplace Context
 
 Good presentations are planned from the listener's needs, not from the speaker's material. Before you decide what to show or say, define who will listen, why they are listening, and what should be different after the presentation.
 
@@ -8,11 +8,11 @@ In this unit, you prepare a short presentation brief. This brief will become the
 
 By the end of this unit, you can:
 
-- identify the audience, occasion, and business purpose of a presentation
+- identify the audience, occasion, and workplace purpose of a presentation
 - state what the audience should know, decide, or do by the end
 - distinguish a presentation from a document, update, briefing, or informal explanation
 
-## Core Skill: Plan From the Audience Outcome
+## Core Skill: Plan from the Audience Outcome
 
 A topic tells people what the presentation is about. A purpose tells people why it matters now. An audience outcome tells you what the audience should know, decide, or do after listening.
 
@@ -37,7 +37,15 @@ Use clear purpose and outcome language at the planning stage.
 | State the audience outcome | By the end, you should be able to... / By the end, we need to decide... / After this presentation, the team should know... |
 | Show relevance | This matters because... / This affects... / The main reason this is important is... |
 
-Notice the difference between "I will talk about..." and "By the end, we need to decide...". The second version gives the presentation a business reason.
+Notice the difference between "I will talk about..." and "By the end, we need to decide...". The second version gives the presentation a workplace reason.
+
+Useful terms:
+
+| Term | Simple meaning |
+|---|---|
+| audience outcome | what listeners should know, decide, or do after the presentation |
+| workplace context | the work situation, meeting, problem, or decision behind the presentation |
+| handoff | the point where responsibility moves from one person or team to another |
 
 ## Worked Example
 
@@ -47,12 +55,12 @@ The presenter needs to give a short internal briefing about a repeated workflow 
 |---|---|
 | Who is the audience? | A manager and two team members who can approve or test a workflow change. |
 | What is the occasion? | A short meeting after several delays in the same process. |
-| What is the business problem? | Information is not being handed off clearly between two steps. |
+| What is the workplace problem? | Information is not being handed off clearly between two steps. |
 | What should the audience know? | Most delays come from unclear handoff notes. |
 | What should the audience decide or do? | Approve a small trial of a shared checklist. |
 | What is the presentation purpose? | Recommend a trial workflow change and get agreement on next steps. |
 
-Optional model reference: for a business-client version, see the Process Improvement Briefing Models. For a government-agency version, compare the administrative process example in the same model set.
+Optional model reference: for a business-client version, see the business-client model in the Process Improvement Briefing Models. For a government-agency version, compare the government-agency model in the same model set.
 
 ## Practice 1: Identify the Real Purpose
 
@@ -96,7 +104,7 @@ Complete the brief for a presentation you may give in class.
 | Audience |  |
 | Occasion or meeting type |  |
 | Time limit |  |
-| Main business context |  |
+| Main workplace context |  |
 | What the audience already knows |  |
 | What the audience needs to know |  |
 | What the audience should decide or do |  |
@@ -128,7 +136,7 @@ Your partner listens and asks one clarification question:
 
 ## Learner Deliverable
 
-Submit a one-paragraph presentation brief. It should include the audience, purpose, audience outcome, and business relevance.
+Submit a one-paragraph presentation brief. It should include the audience, purpose, audience outcome, and workplace relevance.
 
 ## Unit Wrap-Up
 
@@ -136,12 +144,3 @@ A clear presentation begins before you write the opening or design visuals. If y
 
 Before the next unit, keep your brief. You will use it to write a core message and opening.
 
-## Teacher Notes
-
-Suggested answers for Practice 1: 1B, 2A, 3C.
-
-For Practice 2, accept any answer that moves from a topic to a listener outcome. Check that learners do not write only "I will explain..." without a result for the audience.
-
-For B1 learners, allow sentence frames and short notes. For B2 learners, ask for a clearer business action, such as approve, compare, prepare, adopt, revise, or follow up.
-
-Keep role-specific examples short. If learners need context, refer them to the Process Improvement Briefing Models rather than expanding the main unit into one industry or agency setting.

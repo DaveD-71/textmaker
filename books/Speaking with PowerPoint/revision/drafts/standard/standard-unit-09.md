@@ -1,18 +1,20 @@
-# Unit 9: Online, hybrid, and async delivery
+﻿# Unit 9: Online, Hybrid, and Asynchronous (Async) Delivery
 
 Online, hybrid, and recorded presentations need more than the same slides on a different screen. The audience may have weaker attention, different audio quality, chat messages, screen-share limits, or no chance to ask live questions. This unit helps you adapt one presentation for a remote or recorded setting.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
-- adapt an in-person presentation plan for online, hybrid, or async delivery
+- adapt an in-person presentation plan for online, hybrid, or asynchronous (async) delivery
 - use clear language for screen sharing, chat, captions, remote Q&A, and technical problems
 - prepare a short recorded or storyboarded version with accessibility and timing in mind
 
-## Core concept: design for attention and access
+## Core Concept: Design for Attention and Access
 
 In a room, listeners can see you, the screen, and the group atmosphere. Online or hybrid audiences receive less context. Recorded audiences receive even less because they cannot ask you to clarify in real time.
+
+In this unit, asynchronous (async) means recorded or prepared for people to use later, without live interaction.
 
 Adapt your delivery by checking three things:
 
@@ -20,9 +22,18 @@ Adapt your delivery by checking three things:
 2. Attention: Is the structure clear enough for a screen-based audience?
 3. Interaction: How will people ask questions, respond, or follow up?
 
-## Presentation English focus
+## Presentation English Focus
 
 Use practical online language before, during, and after screen sharing.
+
+Useful terms:
+
+| Term | Simple meaning |
+|---|---|
+| asynchronous (async) | recorded or prepared for people to use later, without live interaction |
+| screen share | showing your screen to the audience in an online meeting |
+| transcript | written text of spoken words |
+| fallback | another option you can use if the first plan does not work |
 
 | Function | Useful language |
 |---|---|
@@ -35,7 +46,7 @@ Use practical online language before, during, and after screen sharing.
 | Handle a technical problem | "The screen share seems delayed, so I will switch to the PDF version." |
 | Close async | "If you have questions after watching, please send them by Friday." |
 
-## Model: adapting a results briefing
+## Model: Adapting a Results Briefing
 
 Original situation: You planned an 8-minute in-person results briefing with one before/after chart and a short recommendation.
 
@@ -60,9 +71,9 @@ Sample transition:
 
 "I will pause here because this is the main result. If you are joining live, please add questions in the chat. If you are watching the recorded version, the supporting table is linked in the follow-up note."
 
-Optional model reference: For a banking/leasing or general trading-company version, see the Project Results Briefing Models on exception resolution results. For a government-agency version, compare the administrative results model on an intake checklist trial.
+Optional model reference: For a banking/leasing or general trading-company version, see the business-client model in the Project Results Briefing Models. For a government-agency version, compare the government-agency model in the same model set.
 
-## Practice 1: online and hybrid checklist
+## Practice 1: Online and Hybrid Checklist
 
 Choose one presentation you have planned. Mark each item: Ready, Need to check, or Not needed.
 
@@ -79,7 +90,7 @@ Choose one presentation you have planned. Mark each item: Ready, Need to check, 
 | A PDF or backup file is ready. |  |
 | Timing is shorter or more structured than the in-person version. |  |
 
-## Practice 2: adapt the opening
+## Practice 2: Adapt the Opening
 
 Rewrite the in-person opening for an online or hybrid audience.
 
@@ -95,7 +106,7 @@ Async version:
 
 "This short recording explains ___. By the end, you should know ___. If you have questions after watching, ___."
 
-## Practice 3: plan a short async version
+## Practice 3: Plan a Short Async Version
 
 A recorded version usually needs to be shorter and more explicit than a live version. Complete the storyboard for a 3-4 minute recording.
 
@@ -114,7 +125,7 @@ Accessibility check:
 - Is any chart readable on a laptop screen?
 - Is confidential or restricted information removed?
 
-## Practice 4: remote Q&A language
+## Practice 4: Remote Q&A Language
 
 Match the situation to a useful response.
 
@@ -127,7 +138,7 @@ Match the situation to a useful response.
 
 Now write two remote Q&A responses for your own topic.
 
-## Speaking task
+## Speaking Task
 
 Practice a 2-minute online or hybrid segment. Include:
 
@@ -138,7 +149,7 @@ Practice a 2-minute online or hybrid segment. Include:
 
 If you choose async delivery, record or rehearse a 2-minute segment and prepare a one-sentence follow-up instruction.
 
-## Learner deliverable
+## Learner Deliverable
 
 Submit one adapted online, hybrid, or async version of your presentation plan:
 
@@ -149,10 +160,7 @@ Submit one adapted online, hybrid, or async version of your presentation plan:
 - one backup or contingency phrase
 - a short storyboard or rehearsal note
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Remote and recorded delivery works best when the presenter designs for access, attention, and interaction. Clear language, readable visuals, planned pauses, and backup materials help the audience stay with the message even when the setting changes.
 
-## Teacher Notes
-
-Standard learners should adapt one selected mode, not compare every possible platform in detail. Keep tool references general and avoid step-by-step interface instructions. For banking/leasing or general trading-company examples, use fictional or sanitized project-results data only and avoid securities-market predictions, securities trading recommendations, real customer or transaction details, or legal or regulatory advice. For government-agency examples, keep the context administrative and avoid flags, seals, emblems, or political-policy framing. Async work can be a storyboard if recording is not practical.

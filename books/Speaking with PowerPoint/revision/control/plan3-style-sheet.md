@@ -1,4 +1,4 @@
-# Plan 3 Style Sheet
+﻿# Plan 3 Style Sheet
 
 Prepared: 2026-08-12
 
@@ -65,7 +65,7 @@ Use these terms consistently:
 | presenter notes | Speaker notes or private notes | script, unless full script is intended |
 | pre-read | Document sent before a meeting | handout before presentation, if vague |
 | worksheet | Material used during a session | handout, if vague |
-| leave-behind | Material sent or given after a presentation | handout, if vague |
+| follow-up handout | Material sent or given after a presentation | Use instead of the opaque workplace noun `leave-behind` unless teaching that term explicitly |
 | appendix or backup slides | Supporting detail used if needed | extra slides, if vague |
 | screen share | Showing material in an online meeting | projected slides, for online context |
 | dashboard walkthrough | Presenting data directly from a dashboard | PowerPoint presentation |
@@ -193,7 +193,7 @@ Case rules:
 - Use realistic but simple business situations.
 - Avoid volatile, high-risk, or highly technical claims unless sourced.
 - Do not reuse the old Ventura case as the main spine unless it is intentionally rebuilt and approved.
-- Business-client examples should focus on banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation; do not create securities trading recommendations, securities-market predictions, client/account, shipment, or transaction examples, or regulatory/legal advice.
+- Business-client examples should focus on banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, procurement, supplier coordination, shipment reporting, or control escalation. Fictional or sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Do not create securities trading recommendations, securities-market predictions, real identifying client/account/order/shipment/transaction details, or regulatory/legal advice.
 - Government-agency examples should focus on administrative tasks, service delivery, reporting, coordination, process improvement, and service communication; do not drift into political advocacy, legislation, budget campaigning, or public-policy argument unless explicitly approved.
 
 Data rules:
@@ -248,7 +248,7 @@ Teach tool choice by context:
 - confidentiality
 - company policy
 
-Do not prescribe one tool or one file format. Slides, PDFs, documents, dashboards, worksheets, pre-reads, leave-behinds, and backup slides each have legitimate uses.
+Do not prescribe one tool or one file format. Slides, PDFs, documents, dashboards, worksheets, pre-reads, follow-up handouts, and backup slides each have legitimate uses.
 
 Preparation checklists should include:
 - approved cloud location
@@ -305,7 +305,7 @@ Preferred file locations:
 
 Markdown style:
 - use ATX headings
-- use sentence-style headings unless a file already has another convention
+- use Chicago-style title case for titles, headings, and subheadings; capitalize the first word after a colon when the colon introduces a subtitle or subheading; following CMOS 18, capitalize prepositions of five letters or more and lowercase articles, coordinating conjunctions, `to`, and prepositions of four letters or fewer unless first or last
 - use simple tables for matrices and checklists
 - keep blank lines around headings and tables
 - use ASCII punctuation unless existing content requires otherwise
@@ -328,3 +328,4 @@ Before rewriting unit content, these files should exist:
 - `plan3-style-sheet.md`
 
 The next required planning artifact is the case/model brief for the three recurring business cases.
+

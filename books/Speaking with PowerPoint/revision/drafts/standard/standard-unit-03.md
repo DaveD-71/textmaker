@@ -1,4 +1,4 @@
-# Unit 3: Structure and Flow
+﻿# Unit 3: Structure and Flow
 
 Structure helps listeners follow your thinking in real time. A document can be reread, but a presentation moves forward, so the audience needs a clear path from context to evidence to action.
 
@@ -75,7 +75,7 @@ Match each purpose to a useful structure.
 | 3. Compare two possible tools or formats | C. Question - evidence - meaning - implication |
 | 4. Give a project update | D. Situation - options - criteria - recommendation |
 
-## Practice 2: Convert a Weak List Into an Outline
+## Practice 2: Convert a Weak List into an Outline
 
 Weak list:
 
@@ -100,18 +100,21 @@ Complete the planning map for your own presentation.
 
 | Planning area | Your notes |
 |---|---|
-| Audience |  |
-| Audience outcome |  |
-| Core message |  |
-| Best structure |  |
-| Main point 1 |  |
-| Evidence or example |  |
-| Main point 2 |  |
-| Evidence or example |  |
-| Main point 3 or next section |  |
-| Evidence or example |  |
-| Action, decision, or close |  |
-| Backup detail that may not belong in the main flow |  |
+| **Introduction** |  |
+| 1. Audience |  |
+| 2. Audience outcome |  |
+| 3. Core message |  |
+| 4. Best structure |  |
+| **Body** |  |
+| 1. Main point 1 |  |
+| 2. Evidence or example |  |
+| 3. Main point 2 |  |
+| 4. Evidence or example |  |
+| 5. Main point 3 or next section |  |
+| 6. Evidence or example |  |
+| **Conclusion** |  |
+| 1. Summary of key points |  |
+| 2. Action, decision, or close |  |
 
 Check your map with these questions:
 
@@ -151,7 +154,7 @@ Submit a full presentation outline with:
 - main sections in order
 - evidence or examples for each section
 - action, decision, or closing point
-- one backup detail you may move to an appendix or follow-up document
+- one detail you will keep ready for Q&A, an appendix, or a follow-up document
 
 ## Unit Wrap-Up
 
@@ -159,12 +162,3 @@ Structure is not decoration. It is how you make your thinking visible to the aud
 
 In the next unit, you will add signposting language so the structure is clear when you speak.
 
-## Teacher Notes
-
-Suggested answers for Practice 1: 1B, 2C, 3D, 4A.
-
-For Practice 2, accept several possible structures if the sequence is logical. The key requirement is that learners move from a loose list to a purposeful flow.
-
-For B1 learners, allow a simple three- or four-part outline with sentence frames. For B2 learners, ask them to justify why the chosen structure fits the audience and purpose.
-
-Role-specific models can be used for comparison, but the main task should remain transferable across workplace contexts.

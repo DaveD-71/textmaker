@@ -1,10 +1,10 @@
-# Unit 10: Q&A, challenge handling, and interaction
+﻿# Unit 10: Q&A, Challenge Handling, and Interaction
 
 Questions are part of the presentation, not an interruption after it. In a workplace presentation, the audience may need to check details, test your recommendation, compare risks, or understand what should happen next. A strong presenter listens for the purpose behind the question and answers in a way that keeps the discussion useful.
 
 This unit helps you prepare for questions before the final presentation. You will build a response bank, practise short answers, and handle disagreement without becoming defensive.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 - clarify, answer, defer, and follow up using professional English
 - respond to skepticism or disagreement while keeping control of the interaction
 
-## Core concept: answer the real question
+## Core Concept: Answer the Real Question
 
 Audience questions often have two layers. The surface question is the exact words you hear. The real question is the concern behind those words.
 
@@ -26,59 +26,59 @@ Audience questions often have two layers. The surface question is the exact word
 
 Before you answer, pause for one full breath. This gives you time to decide whether you should answer directly, clarify first, defer, or check satisfaction after your answer.
 
-## Presentation English focus
+## Presentation English Focus
 
 Use short, controlled phrases. Long answers often sound less confident because the listener has to search for your main point.
 
-### Clarifying the question
+### Clarifying the Question
 
 - Could I check what you mean by "timeline" here?
 - Are you asking about the pilot period or the full rollout?
 - Do you mean the cost for our team, or the cost for the whole department?
 - Just to confirm, your main concern is the extra workload. Is that right?
 
-### Answering directly
+### Answering Directly
 
 - The short answer is yes, but only for the pilot stage.
 - No, this will not replace the current report. It will support it.
 - We expect the first review to take about two weeks.
 - Based on the fictional practice data, the largest issue is handoff timing.
 
-### Structuring a longer answer
+### Structuring a Longer Answer
 
 - There are two points to consider. First, ... Second, ...
 - I would separate that into cost and timing.
 - Let me answer that in three steps: what changes, what stays the same, and what we will measure.
 
-### Bridging to evidence
+### Bridging to Evidence
 
 - The reason I recommend this is the pattern in the data.
 - If we look at the before-and-after comparison, the main change is clear.
 - This is why the pilot result matters.
 - The evidence does not prove everything, but it does support a controlled next step.
 
-### Deferring safely
+### Deferring Safely
 
 - I do not have that number with me, so I should not guess.
 - I need to check that with the process owner before I give you a final answer.
 - That depends on company policy, so I will confirm it and follow up.
 - I can answer the general point now, and I will send the exact figure after the meeting.
 
-### Handling disagreement
+### Handling Disagreement
 
 - I see your concern. My recommendation is still to start with a limited pilot.
 - That is a fair challenge. The reason I would not stop here is ...
 - I agree that the risk exists. The question is how we control it.
 - We may be looking at different priorities. From the audience outcome we agreed on, the key point is ...
 
-### Checking satisfaction and follow-up
+### Checking Satisfaction and Follow-Up
 
 - Does that answer your question?
 - Is that the level of detail you needed?
 - I will send the source note after the meeting.
 - I will confirm the owner and come back to you by Friday.
 
-## Model: improving weak Q&A responses
+## Model: Improving Weak Q&A Responses
 
 The following examples use fictional workplace situations for practice.
 
@@ -91,7 +91,7 @@ The following examples use fictional workplace situations for practice.
 
 Notice that the stronger answers do not avoid the problem. They answer, limit the claim, and explain the next action.
 
-## Practice task 1: classify the question
+## Practice Task 1: Classify the Question
 
 Read each question and choose the main function.
 
@@ -106,14 +106,14 @@ Functions: clarify details, challenge evidence, ask about workload, ask about ri
 
 Now write one sentence you could use before answering each question.
 
-## Practice task 2: build a response bank
+## Practice Task 2: Build a Response Bank
 
 Use your own developing presentation. Prepare answers for six likely questions.
 
 | Question type | Likely question for my presentation | My first response sentence |
 |---|---|---|
 | Clarification |  |  |
-| Evidence challenge |  |  |
+| Evidence Challenge |  |  |
 | Workload or cost |  |  |
 | Risk or limitation |  |  |
 | Ownership or next step |  |  |
@@ -121,7 +121,7 @@ Use your own developing presentation. Prepare answers for six likely questions.
 
 Keep each first response sentence short. You can add details after the first sentence, but the first sentence should show control.
 
-## Practice task 3: skeptical-question role play
+## Practice Task 3: Skeptical-Question Role Play
 
 Work in groups of three: presenter, questioner, observer.
 
@@ -133,13 +133,13 @@ Work in groups of three: presenter, questioner, observer.
 
 Use skeptical questions that are realistic, not hostile. The goal is to practise pressure without turning the exchange into an argument.
 
-## Optional model references
+## Optional Model References
 
-For a business-client version, see the Process Improvement Briefing Models or Project Results Briefing Models. Use only fictional or sanitized banking/leasing or general trading-company operations examples, such as workflow timing, reporting quality, or control handoff. Do not create investment advice, securities-market predictions, client/account, shipment, or transaction details, or regulatory interpretation.
+For a business-client version, see the Process Improvement Briefing Models or Project Results Briefing Models. Use only fictional or sanitized banking/leasing or general trading-company operations examples, such as workflow timing, reporting quality, procurement coordination, shipment reporting, or control handoff. Do not create investment advice, securities-market predictions, real identifying client/account/order/shipment/transaction details, or regulatory interpretation.
 
-For a government-agency version, see the Administrative Process Improvement or Administrative Project Results examples in the same model sets. Keep the focus on service delivery, process, reporting, coordination, or administrative follow-up.
+For a government-agency version, see the government-agency models in the Process Improvement Briefing Models or Project Results Briefing Models. Keep the focus on service delivery, process, reporting, coordination, or administrative follow-up.
 
-## Learner deliverable: Q&A response bank
+## Learner Deliverable: Q&A Response Bank
 
 Submit a response bank for your final presentation. It should include:
 
@@ -149,30 +149,17 @@ Submit a response bank for your final presentation. It should include:
 - one evidence point, limitation, or follow-up action for each answer
 - two safe deferral phrases you can use if you do not know an answer
 
-## Speaking task: Q&A rehearsal
+## Speaking Task: Q&A Rehearsal
 
 Give a 2-minute preview of your final presentation and answer three questions from classmates. After each answer, ask a short satisfaction check, such as "Does that answer your question?" or "Would you like more detail on that point?"
 
 Your spoken English output for this unit is the recorded or observed Q&A exchange plus your revised response bank.
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Good Q&A is not about having an instant answer for every possible question. It is about listening accurately, answering what you can answer, limiting what you cannot prove, and following up professionally. Your final presentation will require Q&A, so your response bank is part of your preparation, not an optional extra.
 
-## Assessment alignment
+## How This Helps Your Final Presentation
 
-This unit supports the final rubric categories for Q&A, spoken English, professionalism, evidence, and audience fit. In the final assessment, you will be evaluated on whether you understand the question, answer clearly, handle limits honestly, and use appropriate business English under pressure.
+This unit helps you prepare for the Q&A part of your final presentation. You need to show that you understand the question, answer clearly, handle limits honestly, and use appropriate business English under pressure.
 
-## Teacher notes
-
-Keep role plays professional. Do not reward aggressive questioning. The aim is controlled challenge handling, not debate performance.
-
-For banking/leasing or general trading-company variants, check that learners do not give securities trading recommendations, securities-market predictions, real account details, or legal/regulatory interpretations. For government-agency variants, keep questions administrative and service-focused.
-
-Suggested quick feedback codes:
-
-- D = answered directly
-- C = clarified before answering
-- E = used evidence
-- L = limited an over-strong claim
-- F = confirmed follow-up

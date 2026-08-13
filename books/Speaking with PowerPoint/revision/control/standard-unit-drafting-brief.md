@@ -50,7 +50,7 @@ Use `Unit`, `unit`, and `units` for textbook components.
 - Put banking/leasing or general trading-company and government-agency references in short optional model references, not as the only main-text context.
 - Business-client examples should focus on banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation.
 - Government examples should focus on administrative service, process, reporting, coordination, or service delivery.
-- Do not create securities trading recommendations, securities-market predictions, legal or regulatory advice, client/account, shipment, or transaction examples, or confidential data.
+- Do not create securities trading recommendations, securities-market predictions, legal or regulatory advice, real identifying client/account/order/shipment/transaction details, or confidential data. Fictional or sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable for general trading-company contexts.
 - Use fictional data only unless a verified source is already present in the control files.
 - AI may be mentioned only as critical literacy, checking, critique, ethics, confidentiality, copyright, or limitations. Do not promote AI as a way to replace English development.
 - Include spoken English output in visual, tool, data, delivery, and Q&A units.

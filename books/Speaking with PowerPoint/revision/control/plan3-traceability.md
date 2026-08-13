@@ -42,7 +42,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 | 9 | Online, hybrid, and async delivery | Adapted online or recorded version |
 | 10 | Q&A, challenge handling, and interaction | Q&A response bank |
 | 11 | Final rehearsal and peer feedback | Revised full presentation |
-| 12 | Final presentation and reflection | Delivered presentation plus self-review |
+| 12 | Final presentation, textbook wrap-up, and reflection | Delivered presentation plus wrap-up quiz and self-review |
 
 ## Full Task Traceability
 
@@ -55,7 +55,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 | P1-01 | All Units; style sheet | Terminology rewrite from speech frame to business presentation frame | Headings, instructions, models, and rubrics use presentation/briefing/proposal/update language appropriately | Required |
 | P1-02 | Units 1, 2, 12 | Audience-outcome planning box | Learners answer what the audience should know, decide, or do; this is referenced again in final reflection | Required |
 | P1-03 | Units 2, 3 | Flexible business structure toolkit | Includes opening/development/close plus problem-solution, situation-analysis-recommendation, options-recommendation, project update, and data story | Required |
-| P1-04 | Units 2, 3; planning templates | Presentation planning map | No template implies every presentation needs exactly three points; audience, outcome, evidence, and action are included | Required |
+| P1-04 | Units 2, 3; planning templates | Presentation planning map | No template implies every presentation needs exactly three points; audience, outcome, evidence, and action are included; Unit 3 planning map uses Introduction, Body, and Conclusion with summary before action/close | Required |
 | P1-05 | All Units | Unit-level learner outcomes | Each unit has 1-3 measurable "can do" outcomes aligned to the deliverable | Required |
 | P1-06 | Units 10-12; teacher notes | Final presentation rubric | Rubric covers message, audience, structure, evidence, visuals, English, delivery, interaction/Q&A, timing, professionalism | Required |
 | P1-07 | All Units | Noticing, editing, planning, speaking, and peer-feedback tasks | No major teaching point is explanation-only; each has a learner action | Required |
@@ -76,7 +76,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 | P1-22 | Unit 8 | Modern in-person delivery section | Covers room size, hybrid audiences, cultural context, movement, natural body language, voice, notes, and eye contact | Required |
 | P1-23 | Units 8, 9 | Pointer/cursor guidance | Removes "infrared pointer"; covers laser safety, cursor highlight, annotation, zooming, and not pointing at people | Required |
 | P1-24 | Units 7, 9; preparation checklist | Backup/export/security checklist | Covers approved cloud, offline copy, PDF fallback, export tests, fonts/media/links, venue/platform test, company security | Required |
-| P1-25 | Unit 7 | Document role decision task | Learners choose pre-read, live slides, worksheet, leave-behind, appendix/backup slides, or detailed handout by purpose/timing | Required |
+| P1-25 | Unit 7 | Document role decision task | Learners choose pre-read, live slides, worksheet, follow-up handout, appendix/backup slides, or detailed handout by purpose/timing | Required |
 | P2-01 | Unit 4; teacher notes | Updated phrase bank with register notes | Expressions include current neutral, formal, and conversational business options | Required |
 | P2-02 | Units 3, 4, 10; style sheet | Contextual language-warning notes | No false absolutes about "Let's," "That is all," "At first," or "then" remain | Required |
 | P2-03 | Unit 4 | Role/responsibility vocabulary note | Explains responsible for, manage, lead, take care of, and in charge of with business examples | Required |
@@ -93,7 +93,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 | P2-14 | Front/back matter; metadata QA | Updated title, date, credits, copyright/production lines, document properties | PDF/DOCX metadata matches final title and no longer says "Making Speeches" or old revision date | Required |
 | P2-15 | Proofreading QA | Known typo correction list | Confirms "deliver your message," "sans serif," "after a while," spacing, Ventura/Venture, and punctuation are fixed | Required |
 | P2-16 | Cross-reference QA | Corrected unit/page references | All unit/page references match final Essentials, Standard, and Long structures | Required |
-| P2-17 | Style sheet; all Units | Terminology list | Terms are consistent: presentation, visuals, deck/slides, handout, leave-behind, agenda/overview, presenter notes, screen share, dashboard, document walkthrough | Required |
+| P2-17 | Style sheet; all Units | Terminology list | Terms are consistent: presentation, visuals, deck/slides, handout, follow-up handout, agenda/overview, presenter notes, screen share, dashboard, document walkthrough | Required |
 | P2-18 | Final editorial QA | Formatting/style pass | Capitalization, bullets, indentation, punctuation, spacing, headings, and tables follow one style | Required |
 | P3-01 | Standard Unit spine | 12-unit master course | The future-edition idea is promoted into Plan 3 Standard, then adapted to Essentials and Long | Promoted |
 | P3-02 | Unit 1; Long expansion | Audience adaptation task | Learners adapt message for at least one audience/time-limit variation; Long expands stakeholder variation | Required |
@@ -106,7 +106,7 @@ The old priorities remain source requirements, but the acceptance target is now 
 |---|---|---|---|
 | Three recurring business cases | Model case bank; Units 1-12 | Process improvement, product/service launch, and project results briefing cases | Each model maps to Units, language points, visual points, delivery behaviors, and rubric criteria |
 | Audience-variant rule | Main Units, appendix models, QA | Main unit body stays role-agnostic between business-client and government-agency contexts | Role-specific content appears in models, appendices, teacher notes, or optional variants rather than changing the core sequence |
-| Business-client model focus | Appendix models and examples | Banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, or control escalation examples | No investment advice, securities-market prediction, real customer, account, shipment, or transaction data, legal or regulatory advice, real firm logos, securities exchange names, or stock ticker symbols |
+| Business-client model focus | Appendix models and examples | Banking/leasing or general trading-company operations, reporting, workflow, client service, service quality, procurement, supplier coordination, shipment reporting, or control escalation examples | Fictional or sanitized shipment/order/procurement/supplier-status examples are allowed; no investment advice, securities-market prediction, real identifying customer/account/order/shipment/transaction data, legal or regulatory advice, real firm logos, securities exchange names, or stock ticker symbols |
 | Government-agency model focus | Appendix models and examples | Administrative task, service delivery, reporting, coordination, or process improvement examples | No superficial relabeling of business examples; no political advocacy, legislation, budget campaigning, flags, seals, emblems, or crests unless approved |
 | Appendix model parity | Appendix model sets and QA | Paired business-client and government-agency models for each case family | Each pair teaches the same underlying skill with comparable depth and quality |
 | Three-tier series | Tier strategy and manuscripts | Essentials 8, Standard 12, Long 15 | Essentials compresses, Standard is source of truth, Long expands without contradiction |

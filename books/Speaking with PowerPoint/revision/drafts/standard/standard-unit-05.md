@@ -1,10 +1,10 @@
-# Unit 5: Clear Visual Communication
+﻿# Unit 5: Clear Visual Communication
 
 Visuals should help the audience understand your spoken message. A good visual does not repeat every sentence you say. It shows the point, supports the explanation, and reduces the effort needed to follow you.
 
 In this unit, you will redesign a visual so that it has one clear message, readable structure, and basic accessibility.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 2. Improve readability through hierarchy, contrast, spacing, and concise text.
 3. Apply basic accessibility principles to slides or visual materials.
 
-## Core concept: one visual, one main message
+## Core Concept: One Visual, One Main Message
 
 A visual needs a job. Before you design it, decide what the audience should notice or understand. Then make that message visible through the title, layout, and emphasis.
 
@@ -27,7 +27,7 @@ Use this sequence:
 
 This works for slides, PDFs, dashboards, one-page documents, worksheets, and screen-shared materials.
 
-## Presentation English focus
+## Presentation English Focus
 
 When you show a visual, do not say only "This is a chart" or "Please look at this." Tell the audience where to look and what to understand.
 
@@ -39,9 +39,9 @@ When you show a visual, do not say only "This is a chart" or "Please look at thi
 | State the message | "The main point is that the new step catches problems earlier." |
 | Connect to action | "This is why I recommend a short trial before full rollout." |
 
-## Visual design principles
+## Visual Design Principles
 
-### 1. Takeaway title
+### 1. Takeaway Title
 
 A topic title names the subject. A takeaway title states the message.
 
@@ -52,6 +52,14 @@ A topic title names the subject. A takeaway title states the message.
 | "Timeline" | "The pilot can start with a low-risk three-month rollout" |
 
 Use sentence-style capitalization unless your organization requires another style.
+
+Watch article, plural, and noun-phrase problems in short visual text.
+
+| Weak title | Improved title | Why it is clearer |
+|---|---|---|
+| "Supplier dashboard status" | "The supplier-status dashboard reduces repeated questions" | Adds `the`, makes the noun phrase natural, and states the message |
+| "Application return reason" | "Most returned applications have one missing attachment" | Uses plural `applications` and gives a clear finding |
+| "Pilot schedule confirmation" | "The pilot can start next month after access is confirmed" | Turns an unclear noun phrase into a complete message |
 
 ### 2. Hierarchy
 
@@ -73,7 +81,7 @@ Weak hierarchy:
 - crowded labels
 - no clear starting point
 
-### 3. Concise text
+### 3. Concise Text
 
 Slide or visual text should not be a script. It should support your speaking.
 
@@ -91,6 +99,17 @@ Then explain the full idea aloud.
 
 Accessibility improves quality for everyone, not only for people with declared needs.
 
+In this unit, `accessibility` means making the visual usable for people in the real presentation setting. A visual may be difficult to use because of small text, weak contrast, color-only meaning, a noisy background, missing alt text in a shared file, or missing captions/transcript support in recorded material.
+
+Useful terms:
+
+| Term | Simple meaning |
+|---|---|
+| dashboard | one screen or visual page that shows key status information |
+| takeaway title | a title that states the main message of a visual |
+| accessibility | making material usable for people in the real presentation setting |
+| rollout | the planned introduction of a new process, service, or tool |
+
 Check:
 
 - Is the text readable from the expected viewing distance?
@@ -101,7 +120,7 @@ Check:
 - If the file is shared, does the meaningful visual need alt text?
 - For recorded material, is there a transcript or caption plan?
 
-## Model: visual redesign
+## Model: Visual Redesign
 
 Weak visual text:
 
@@ -137,13 +156,13 @@ Why it is stronger:
 
 For business-client and government-agency versions of this visual skill, see the Product, Service, or Program Launch Models.
 
-## Spoken model: explaining the visual
+## Spoken Model: Explaining the Visual
 
 "This visual shows the revised support flow. Please focus on the three steps in the middle. First, the user checks the requirements before submission. Then the support desk answers common questions, especially about attachments and required fields. Finally, the review team receives fewer incomplete forms. The main point is that support happens earlier in the process. That is why I recommend a three-month pilot with monthly data review."
 
 This model is about 45-60 seconds when spoken at a clear pace.
 
-## Practice 1: diagnose the weak visual
+## Practice 1: Diagnose the Weak Visual
 
 Read the visual description below. Mark each issue.
 
@@ -169,7 +188,7 @@ Checklist:
 | Contrast may be weak |  |  |
 | The visual does not support spoken explanation |  |  |
 
-## Practice 2: rewrite the visual title
+## Practice 2: Rewrite the Visual Title
 
 Change each topic title into a takeaway title.
 
@@ -183,7 +202,7 @@ Change each topic title into a takeaway title.
 
 Use a complete message, but keep it short.
 
-## Practice 3: rebuild a readability comparison
+## Practice 3: Rebuild a Readability Comparison
 
 Create two text-only versions of the same visual.
 
@@ -211,7 +230,7 @@ Use one of these role-agnostic topics:
 
 Do not use confidential or real company data.
 
-## Practice 4: explain your revised visual aloud
+## Practice 4: Explain Your Revised Visual Aloud
 
 Prepare a 45-60 second explanation of your improved visual.
 
@@ -234,7 +253,7 @@ Partner feedback:
 - Did the spoken explanation add value beyond the visual text?
 - Was the visual accessible enough for the likely setting?
 
-## Optional AI critical-literacy task
+## Optional AI Critical-Literacy Task
 
 Some tools can produce slides or visual drafts quickly, but the output may be generic, inaccurate, unreadable, or unsuitable for company information. The presenter remains responsible for the message, accuracy, language, confidentiality, copyright, and final spoken explanation.
 
@@ -256,7 +275,7 @@ Questions:
 
 Do not use this task to create your final assessed visual. Use it to practice critique and revision.
 
-## Learner deliverable
+## Learner Deliverable
 
 Submit one accessible slide, document section, dashboard mockup, or other visual draft for your presentation.
 
@@ -270,14 +289,7 @@ Include:
 - alt-text awareness note if the file will be shared
 - 45-60 second spoken explanation notes
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Clear visuals make the spoken message easier to understand. They do not replace the presenter. Design the visual around one main message, check that it is readable and accessible, and practice explaining what the audience should notice.
 
-## Teacher Notes
-
-- Accept slides, PDFs, document sections, dashboard mockups, or other visual formats if the learner can justify the choice.
-- Keep the main task role-agnostic. Learners who need banking/leasing or general trading-company or government-agency contexts can refer to the Product, Service, or Program Launch Models.
-- Check slide text for missing articles, missing plurals, and over-compressed noun phrases.
-- The optional AI task is critical literacy only. Do not let it become a slide-generation workflow for assessed work.
-- Spoken output is required in this unit. Learners should explain the visual aloud, not only submit the visual.

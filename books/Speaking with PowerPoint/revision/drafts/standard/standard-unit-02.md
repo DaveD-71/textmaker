@@ -1,4 +1,4 @@
-# Unit 2: Message, Objective, and Relevance
+﻿# Unit 2: Message, Objective, and Relevance
 
 An effective presentation is not only a topic with information. It has a message: the main point you want the audience to remember, believe, or act on. When your message is clear, your opening becomes easier to write and your visuals have a purpose.
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 - connect the message to audience relevance
 - draft a short opening that gives context, purpose, and value
 
-## Core Skill: Turn a Topic Into a Message
+## Core Skill: Turn a Topic into a Message
 
 A topic names the area. A message says what you want to communicate about that area.
 
@@ -158,10 +158,3 @@ A strong message helps the audience understand your direction early. It also hel
 
 In the next unit, you will organize your message into a clear structure.
 
-## Teacher Notes
-
-In Practice 1, sentences 1, 3, and 5 are topics. Sentences 2 and 4 are messages.
-
-For the AI critical-literacy task, keep the discussion short and focused on responsibility. The sample is intentionally vague. Learners should not be encouraged to use AI as a drafting shortcut for assessed work.
-
-For B1 learners, accept openings that use the frame accurately. For B2 learners, push for a more precise action request and less repeated wording.

@@ -1,10 +1,10 @@
-# Unit 4: Business English for Signposting
+﻿# Unit 4: Business English for Signposting
 
 Good presentations are easy to follow while people are listening. Signposting helps your audience understand where you are, why a point matters, and what comes next. It is not decoration. It is listener support.
 
 In this unit, you will build the language that connects your outline into a clear spoken presentation.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 2. Choose formal, neutral, or conversational business register.
 3. Avoid common false rules and translation traps in presentation English.
 
-## Core concept: guide the listener
+## Core Concept: Guide the Listener
 
 Your audience cannot reread your spoken message in real time, so your language needs to show the route. A strong outline is not enough if the connections are hidden.
 
@@ -28,9 +28,9 @@ Use signposting when you need to:
 
 Signposting should sound natural. Too little signposting makes the presentation hard to follow. Too much signposting can sound mechanical.
 
-## Presentation English focus
+## Presentation English Focus
 
-### Previewing structure
+### Previewing Structure
 
 Use a preview when the audience needs a simple map.
 
@@ -42,7 +42,7 @@ Use a preview when the audience needs a simple map.
 
 `First` is the normal word for the first item in a sequence. `At first` usually means "in the beginning, but later something changed." For example: "At first, the process worked well, but volumes increased."
 
-### Moving between points
+### Moving Between Points
 
 Transitions tell the audience that one part is finished and another part is starting.
 
@@ -52,10 +52,32 @@ Transitions tell the audience that one part is finished and another part is star
 | Connect cause and result | "Because of this delay, the team needs a clearer handoff." |
 | Add a related point | "This also affects the review schedule." |
 | Contrast two points | "However, the second option creates less extra work." |
+| Acknowledge a risk or limit | "There is one limitation we should keep in mind." |
 
 `Then` is acceptable when it shows sequence clearly. It is weak only when every point starts with "then" and the logic is unclear.
 
-### Referring back and forward
+### Explaining Limits and Risk
+
+Good business presentations do not hide weak points. Use clear language to show what the data can and cannot prove, or what risk the audience should consider.
+
+Useful terms:
+
+| Term | Simple meaning |
+|---|---|
+| risk | something that may cause a problem |
+| ownership | who is responsible for the next action |
+| rollout | the planned introduction of a new process, service, or tool |
+| controlled expansion | making a change wider in a careful, limited way |
+
+| Function | Useful phrases |
+|---|---|
+| Limit a claim | "This suggests improvement, but it does not prove the full cause." |
+| Show uncertainty | "The result is positive, but we should be careful about one point." |
+| Name a risk | "The main implementation risk is staff workload." |
+| Explain a safeguard | "To reduce that risk, we will start with a limited pilot." |
+| Connect risk to action | "For that reason, I recommend a controlled expansion, not a full rollout." |
+
+### Referring Back and Forward
 
 References help the audience connect ideas across the presentation.
 
@@ -65,7 +87,7 @@ References help the audience connect ideas across the presentation.
 | Refer forward | "I will come back to the cost estimate in the final section." |
 | Link to a visual | "This is the same process you can see in the diagram." |
 
-### Emphasizing a key point
+### Emphasizing a Key Point
 
 Use emphasis to mark the information that the audience should remember.
 
@@ -75,7 +97,7 @@ Use emphasis to mark the information that the audience should remember.
 | Focus attention | "Please notice the change in the middle of the process." |
 | State the business meaning | "This matters because it affects timing, ownership, and follow-up." |
 
-### Summarizing and closing
+### Summarizing and Closing
 
 A close should not only signal that you are finished. It should leave the audience with the message and next action.
 
@@ -87,7 +109,7 @@ A close should not only signal that you are finished. It should leave the audien
 
 `Let's` can sound collaborative, but it may be too vague for a recommendation. In business presentations, make the requested action clear.
 
-## Register choices
+## Register Choices
 
 Different audiences need different levels of formality. The same function can be expressed in several ways.
 
@@ -100,7 +122,7 @@ Different audiences need different levels of formality. The same function can be
 
 Neutral business English is usually safest. It is clear, professional, and not too distant.
 
-## Role and responsibility vocabulary
+## Role and Responsibility Vocabulary
 
 Presentations often explain who does what. These phrases are similar, but they are not identical.
 
@@ -114,7 +136,7 @@ Presentations often explain who does what. These phrases are similar, but they a
 
 `In charge of` is not wrong. Use it when you mean that someone has control or main responsibility. Use `responsible for` when you want a more neutral business phrase.
 
-## Model: adding signposting to an outline
+## Model: Adding Signposting to an Outline
 
 Bare outline:
 
@@ -133,9 +155,9 @@ Spoken version:
 
 "To summarize, the change is small, but it gives the team a clearer handoff. My recommendation is to trial it for one month and review the result."
 
-For role-specific versions of this language, see the Product, Service, or Program Launch Models and the Project Results Briefing Models.
+For examples in business-client and government-agency contexts, see the Product, Service, or Program Launch Models and the Project Results Briefing Models.
 
-## Practice 1: replace stiff phrases
+## Practice 1: Replace Stiff Phrases
 
 Rewrite each phrase in more natural business English.
 
@@ -155,7 +177,14 @@ Use these options if you need support:
 - "To close, I would like to summarize the next action."
 - "My recommendation is that we approve the proposal."
 
-## Practice 2: add signposting to your outline
+Spoken drill:
+
+1. Choose two improved phrases from your answers.
+2. Mark thought groups with slashes.
+3. Underline the most important word in each phrase.
+4. Say each phrase twice: once slowly, and once at presentation speed.
+
+## Practice 2: Add Signposting to Your Outline
 
 Use the outline you made in Unit 3. Add one phrase for each function.
 
@@ -168,7 +197,7 @@ Use the outline you made in Unit 3. Add one phrase for each function.
 | Emphasize your key message |  |
 | Summarize and close |  |
 
-## Practice 3: choose the register
+## Practice 3: Choose the Register
 
 Choose the best phrase for each situation. Then compare your choices with a partner.
 
@@ -187,7 +216,7 @@ Choose the best phrase for each situation. Then compare your choices with a part
    - "To close, the next action is to confirm the schedule by Friday."
    - "I have nothing more."
 
-## Speaking task: signposting rehearsal
+## Speaking Task: Signposting Rehearsal
 
 Prepare a 60-second spoken preview and transition sequence for your presentation.
 
@@ -205,7 +234,7 @@ Partner feedback:
 - Did any phrase sound too formal, too casual, or unclear?
 - Did the close include a clear action?
 
-## Learner deliverable
+## Learner Deliverable
 
 Submit the preview, transitions, references, and close for your presentation outline.
 
@@ -218,13 +247,7 @@ Minimum submission:
 - one emphasis phrase
 - one summary and action close
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Signposting is the language of structure. It does not replace a strong message, but it helps the audience hear the structure as you speak. Choose phrases that fit the audience, and make the next action clear.
 
-## Teacher Notes
-
-- Accept different register choices if learners can explain the audience and situation.
-- Correct false absolute rules carefully. `At first`, `then`, `let's`, and `that's all` are not always grammatically wrong, but they may be weak or unsuitable in some presentation contexts.
-- For Japanese learners, watch for article and plural omissions in slide or outline text, and for sentence-by-sentence translation that creates long, indirect signposting.
-- Keep role-specific examples short. Use the appendix model sets for banking/leasing or general trading-company and government-agency variants rather than turning the main unit into one client context.

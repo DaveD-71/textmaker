@@ -29,7 +29,7 @@ The language syllabus must be explicit, not incidental. Include opening, relevan
 
 Include in-person delivery as real learner content: eye contact, stance, natural gesture, movement, notes, pointer/cursor discipline, slide interaction, room setup, cultural expectations, and safe handling of technical interruptions.
 
-Include document roles and contingency planning: live slides, presenter notes, pre-reads, worksheets, leave-behinds, appendix/backup slides, PDF fallback, offline copy, font/media/link checks, venue/platform testing, export checks, company security, confidentiality, and copyright.
+Include document roles and contingency planning: live slides, presenter notes, pre-reads, worksheets, follow-up handouts, appendix/backup slides, PDF fallback, offline copy, font/media/link checks, venue/platform testing, export checks, company security, confidentiality, and copyright.
 
 ## Tier Strategy
 Create all three books from the Standard 12-unit spine.
@@ -64,6 +64,9 @@ Owns business realism, cases, data examples, tool-neutral workflows, slide/docum
 
 Asset and QA Specialist:
 Owns image register, alt text, captions, permissions, accessibility checks, factual checks, export tests, and consistency across Essentials, Standard, and Long.
+
+Review sequencing rule:
+Agent 2 and Agent 3 must not run concurrently for final content review. The order matters because business/context changes can introduce or preserve specialized terminology, scenario assumptions, data claims, and workplace-process details that affect learner comprehension. Run Agent 3, the Business Presentation Specialist, first. Integrate the business-presentation findings. Then run Agent 2, the Language Editor, as the final specialist review because English language development is the highest-priority goal of the textbook. The final Language Editor pass must check first-use definitions, glossary needs, B1-B2 load, Japanese-learner support, spoken naturalness, and whether terms such as `handoff`, `exception`, `pre-read`, `follow-up handout`, `takeaway document`, `fallback option`, `asynchronous`, `sanitized`, `accessibility`, and `confidentiality` are explained before learners need to use them.
 
 Use this phase order:
 1. Snapshot current files and create a rollback/version note before changing unit JSON or manuscripts.

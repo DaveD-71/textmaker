@@ -1,10 +1,10 @@
-# Unit 12: Final presentation and reflection
+﻿# Unit 12: Final Presentation and Reflection
 
 The final presentation brings together the work from the course: audience purpose, core message, structure, visuals, evidence, tool choice, delivery, Q&A, and reflection. The goal is not a perfect performance. The goal is a complete business presentation that shows clear thinking, learner-owned English, and professional preparation.
 
 In this unit, you will deliver your final presentation with visuals or equivalent presentation materials, answer audience questions, and reflect on your next development steps.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 - handle required Q&A using prepared strategies and natural spoken English
 - evaluate your performance and set specific next-step goals
 
-## Core concept: complete the communication cycle
+## Core Concept: Complete the Communication Cycle
 
 A presentation is complete only when the audience understands the message and knows what should happen next. The final task therefore includes three parts:
 
@@ -22,7 +22,7 @@ A presentation is complete only when the audience understands the message and kn
 
 The reflection matters because presentation skill develops through evidence. You need to notice what worked, what did not work, and what you should practise next.
 
-## Final presentation requirements
+## Final Presentation Requirements
 
 Your teacher will confirm the exact time limit and format. Unless your course has different instructions, prepare a 5-7 minute presentation plus required Q&A:
 
@@ -35,13 +35,13 @@ Your teacher will confirm the exact time limit and format. Unless your course ha
 - required Q&A
 - a short self-review after delivery
 
-Use fictional or sanitized data unless your teacher has approved a real source. Do not include confidential company, client, account, ticket, trade, staff, applicant, or personal data.
+Use fictional or sanitized data unless your teacher has approved a real source. Do not include confidential company, client, account, order, shipment, transaction, ticket, staff, applicant, or personal data.
 
-## Presentation English focus
+## Presentation English Focus
 
 Use language that helps the audience follow the complete presentation.
 
-### Final opening
+### Final Opening
 
 - Today I will explain the current issue, the evidence, and the action I recommend.
 - My purpose today is to request approval for a limited pilot.
@@ -55,14 +55,14 @@ Use language that helps the audience follow the complete presentation.
 - The next point is what this means for our workflow.
 - Before I close, I want to explain the expected risk and follow-up plan.
 
-### Evidence and visual explanation
+### Evidence and Visual Explanation
 
 - This chart uses fictional data for practice.
 - The main takeaway is shown in the title.
 - The comparison suggests improvement, but it does not prove the full-year result.
 - Please focus on the change between the first and second columns.
 
-### Recommendation or action close
+### Recommendation or Action Close
 
 - For these reasons, I recommend starting with a controlled pilot.
 - The action I am asking for today is approval to test this process for four weeks.
@@ -85,7 +85,7 @@ Use language that helps the audience follow the complete presentation.
 - My next language goal is ...
 - My next presentation-skill goal is ...
 
-## Model: final task checklist
+## Model: Final Task Checklist
 
 Use this checklist before you present.
 
@@ -103,7 +103,7 @@ Use this checklist before you present.
 | Q&A | I have prepared likely questions and safe deferral phrases. |
 | Professionalism | My data, names, and examples are fictional, sanitized, sourced, or approved. |
 
-## Practice task 1: final preparation review
+## Practice Task 1: Final Preparation Review
 
 Complete the table before your final presentation.
 
@@ -119,7 +119,7 @@ Complete the table before your final presentation.
 | What question am I most likely to receive? |  |
 | What will I do if I do not know an answer? |  |
 
-## Practice task 2: one-minute readiness check
+## Practice Task 2: One-Minute Readiness Check
 
 Before the final presentation, give a one-minute readiness check to a partner.
 
@@ -133,7 +133,7 @@ Include:
 
 Your partner should listen for clarity, not content detail. If the partner cannot identify your main message after one minute, revise your opening.
 
-## Final presentation task
+## Final Presentation Task
 
 Deliver your final presentation using your chosen visuals or presentation materials. Unless your teacher gives different instructions, aim for 5-7 minutes plus required Q&A. Your presentation should show the cumulative work from the course.
 
@@ -148,13 +148,13 @@ During Q&A:
 
 Your spoken English output for this unit is the final presentation, the required Q&A exchange, and the reflection discussion or written self-review.
 
-## Optional model references
+## Optional Model References
 
-For a business-client model, compare your work with the banking/leasing or general trading-company operations, service launch, or project results models. Use these only for structure, language, and delivery reference. Avoid investment advice, securities-market predictions, real client/account, shipment, or transaction examples, or regulatory/legal interpretation.
+For a business-client model, compare your work with the business-client models in the Process Improvement Briefing Models, Product, Service, or Program Launch Models, or Project Results Briefing Models. Use these only for structure, language, and delivery reference. Sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Avoid investment advice, securities-market predictions, real identifying client/account/order/shipment/transaction details, or regulatory/legal interpretation.
 
-For a government-agency model, compare your work with the administrative process, service launch, or results briefing models. Keep the focus on administrative tasks, service delivery, reporting, coordination, or process improvement.
+For a government-agency model, compare your work with the government-agency models in the Process Improvement Briefing Models, Product, Service, or Program Launch Models, or Project Results Briefing Models. Keep the focus on administrative tasks, service delivery, reporting, coordination, or process improvement.
 
-## Self-review
+## Self-Review
 
 Complete the self-review after your presentation.
 
@@ -172,7 +172,46 @@ Complete the self-review after your presentation.
 | Professionalism | Did I protect confidentiality and use appropriate examples? |  |
 | Accessibility | Were my visuals and delivery easy to follow? |  |
 
-## Next-step goals
+## Practice Task 3: Textbook Wrap-Up Quiz
+
+Use this quiz to review the main learning points from the course.
+
+### Part A: Choose the Best Answer
+
+Choose the best word or phrase to complete each sentence.
+
+| Question | A | B | C |
+|---|---|---|---|
+| 1. Before you prepare content, decide the ____: what the audience should know, decide, or do. | audience outcome | font size | animation |
+| 2. A strong presentation needs a clear ____, not only a topic. | software tool | core message | background color |
+| 3. To recommend a small workflow change, a useful structure is ____. | problem - cause - solution - action | question - evidence - meaning - implication | random list - examples - close |
+| 4. A good chart title should often state the ____. | takeaway | file format | speaker's opinion only |
+| 5. A short document sent before a meeting so people can prepare is a ____. | pre-read | fallback file | Q&A |
+| 6. If you do not know an answer in Q&A, use a ____. | safe deferral | stronger claim | new main point |
+
+### Part B: Repair the Language
+
+Rewrite each sentence so it is clearer and more professional.
+
+1. "I will use PowerPoint because presentations always need PowerPoint."
+2. "This chart proves our project is successful forever."
+3. "I don't know. Next question."
+4. "That's all."
+
+### Part C: Check the Presentation Plan
+
+Read the short plan. Then answer the questions.
+
+> Topic: new shared checklist  
+> Opening: "I will explain many things about our current work."  
+> Body: current process, examples, staff comments, new checklist, schedule, possible risks  
+> Close: "Please think about it."
+
+1. What is weak about the opening?
+2. Which Unit 3 structure would fit this topic?
+3. What vocabulary might need explanation before the presentation?
+
+## Next-Step Goals
 
 Write two goals for your next presentation.
 
@@ -188,9 +227,9 @@ One presentation-skill goal:
 
 Make each goal specific enough to practise. "Speak better" is too general. "Use clearer transitions between evidence and recommendation" is specific.
 
-## Assessment alignment
+## Final Presentation Checklist
 
-The final assessment covers:
+Your final presentation should show these qualities:
 
 | Category | Evidence |
 |---|---|
@@ -209,12 +248,7 @@ The final assessment covers:
 
 Peer feedback from Unit 11 is formative. The final assessment is based on the delivered presentation, required Q&A, submitted materials, and self-review.
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 You have built the final presentation step by step: audience, message, structure, visuals, evidence, format, delivery, Q&A, rehearsal, and revision. The final task asks you to use those parts together in learner-owned English. After the presentation, the reflection helps you turn one performance into the starting point for the next one.
 
-## Teacher notes
-
-Confirm time limits, Q&A requirements, allowed materials, and submission format before learners present. The Standard default is 5-7 minutes plus required Q&A, but client or class conditions may require a shorter or longer local format. If learners present online or asynchronously, keep the same rubric categories but adjust the delivery evidence: camera, microphone, captions or transcript awareness, screen sharing, and response format may replace room movement or physical eye contact.
-
-For final assessment, separate English control from presentation effectiveness. A learner may have a clear structure with language problems, or accurate English with weak audience fit. Use the rubric to make both visible.

@@ -1,10 +1,10 @@
-# Unit 6: Data, Charts, and Evidence
+﻿# Unit 6: Data, Charts, and Evidence
 
 Data becomes useful in a presentation only when the audience understands the point. A chart should not make people search for the message. It should support a clear spoken explanation.
 
 In this unit, you will choose a simple evidence format, write a takeaway title, and explain a chart aloud with careful business English.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -12,7 +12,7 @@ By the end of this unit, you can:
 2. State the takeaway of a chart before explaining details.
 3. Explain trends, comparisons, and limits clearly.
 
-## Core concept: takeaway before detail
+## Core Concept: Takeaway Before Detail
 
 Many presenters start with chart details: numbers, axes, colors, and categories. The audience first needs the business meaning.
 
@@ -26,9 +26,9 @@ Use this order:
 
 This order helps you avoid reading every number on the chart.
 
-## Presentation English focus
+## Presentation English Focus
 
-### Introducing evidence
+### Introducing Evidence
 
 | Function | Useful phrases |
 |---|---|
@@ -38,7 +38,7 @@ This order helps you avoid reading every number on the chart.
 | Label fictional data | "The data in this practice chart is fictional." |
 | Mention a source | "The figures come from our internal monthly summary." |
 
-### Trends and changes
+### Trends and Changes
 
 | Function | Useful phrases |
 |---|---|
@@ -48,7 +48,7 @@ This order helps you avoid reading every number on the chart.
 | Approximation | "This is about a 25 percent decrease." |
 | Comparison | "The second process took six minutes less on average." |
 
-### Careful claims
+### Careful Claims
 
 Use cautious language when the data is limited.
 
@@ -60,7 +60,7 @@ Use cautious language when the data is limited.
 
 Careful language is especially important when the audience may challenge the evidence.
 
-## Choosing the right evidence format
+## Choosing the Right Evidence Format
 
 Choose the format that matches the question.
 
@@ -75,7 +75,7 @@ Choose the format that matches the question.
 
 Do not use a complex chart because it looks impressive. Use the simplest format that makes the point clear.
 
-## Model: before/after chart explanation
+## Model: Before/After Chart Explanation
 
 Practice chart data: fictional for classroom use.
 
@@ -97,9 +97,9 @@ Spoken explanation:
 
 This explanation gives the message first, explains the most important numbers, and includes a limitation.
 
-For role-specific versions of this data skill, see the Project Results Briefing Models.
+For examples in business-client and government-agency contexts, see the Project Results Briefing Models.
 
-## Practice 1: match the chart type
+## Practice 1: Match the Chart Type
 
 Choose the best format for each purpose.
 
@@ -119,7 +119,7 @@ Options:
 - process diagram
 - timeline
 
-## Practice 2: improve a weak chart
+## Practice 2: Improve a Weak Chart
 
 Weak chart description:
 
@@ -141,7 +141,7 @@ Repair the chart plan.
 | Missing data note |  |
 | Weak spoken explanation |  |
 
-## Practice 3: write a takeaway title
+## Practice 3: Write a Takeaway Title
 
 Write a takeaway title for each data set. The data is fictional for practice.
 
@@ -152,7 +152,7 @@ Write a takeaway title for each data set. The data is fictional for practice.
 | Returned applications fell, but intake time increased by 40 seconds. | "Application trial" |  |
 | User satisfaction improved from 3.6 to 4.1 out of 5. | "Feedback results" |  |
 
-## Practice 4: explain a chart in 60-90 seconds
+## Practice 4: Explain a Chart in 60-90 Seconds
 
 Use your own simple chart or one of the fictional data sets below.
 
@@ -189,7 +189,7 @@ Partner feedback:
 - Did the speaker include a source or fictional-data note?
 - Did the speaker use careful language for limits?
 
-## Evidence challenge
+## Evidence Challenge
 
 In Q&A, someone may question your data. Prepare one response for each situation.
 
@@ -200,7 +200,7 @@ In Q&A, someone may question your data. Prepare one response for each situation.
 | "Where did the figures come from?" | "The figures come from..." |
 | "Can we rely on this result?" | "We should treat it as an early result because..." |
 
-## Learner deliverable
+## Learner Deliverable
 
 Submit one chart explanation for your presentation.
 
@@ -213,14 +213,7 @@ Include:
 - one limitation or caution sentence
 - one possible Q&A response about the evidence
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Evidence is not only numbers on a page. It is a spoken business point supported by clear data. Choose a simple format, write the message in the title, explain the key comparison, and state limits honestly.
 
-## Teacher Notes
-
-- Use fictional data unless a verified source is already available and appropriate.
-- For banking/leasing or general trading-company examples, keep the focus on operations, reporting, workflow, service quality, or control escalation. Do not allow securities trading recommendations, securities-market predictions, client/account, shipment, or transaction details, or legal or regulatory advice.
-- For government-agency examples, keep the focus on administrative service, process, reporting, coordination, or service delivery.
-- Spoken output is required in this unit. Learners should explain a chart in 60-90 seconds.
-- Check for overclaims such as "prove," "guarantee," and "solve." Encourage cautious claims when the evidence is limited.

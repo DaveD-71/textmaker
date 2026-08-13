@@ -1,8 +1,8 @@
-# Unit 8: Delivery: voice, presence, movement, and notes
+﻿# Unit 8: Delivery: Voice, Presence, Movement, and Notes
 
 Strong content needs clear delivery. Listeners follow your message more easily when your voice, pauses, posture, and notes support the structure of the presentation. This unit helps you rehearse a short segment so you sound prepared without reading every word.
 
-## Learning outcomes
+## Learning Outcomes
 
 By the end of this unit, you can:
 
@@ -10,7 +10,7 @@ By the end of this unit, you can:
 - turn a full script into usable presenter notes
 - deliver a rehearsed 3-minute segment with professional presence in person, online, or hybrid
 
-## Core concept: delivery makes structure audible
+## Core Concept: Delivery Makes Structure Audible
 
 Listeners cannot reread your spoken message. They need signals while you speak. Your voice can show what is important, where one point ends, and where the next point begins.
 
@@ -22,7 +22,7 @@ Example:
 
 The slash marks are not for the final notes. They are a rehearsal tool.
 
-## Presentation English focus
+## Presentation English Focus
 
 Use delivery to support these common presentation moves.
 
@@ -34,7 +34,7 @@ Use delivery to support these common presentation moves.
 | Recovery | "Let me say that another way." | Calm pace, short pause |
 | Closing | "So I recommend a four-week pilot." | Clear stress on the action |
 
-## Notes, not a reading script
+## Notes, Not a Reading Script
 
 A full script can help you prepare, but it is usually too heavy for delivery. Presenter notes should remind you of the message, not replace speaking.
 
@@ -51,7 +51,7 @@ Useful note format:
 - transition phrase
 - warning: slow down, pause, show visual
 
-## Model: marked delivery segment
+## Model: Marked Delivery Segment
 
 Text for rehearsal:
 
@@ -65,9 +65,9 @@ Presenter notes:
 - action: short pilot
 - delivery reminder: pause before contrast
 
-Optional model reference: For a banking/leasing or general trading-company version, use the process improvement example on import document handoff delays. For a government-agency version, use the administrative process example on returned application forms.
+Optional model reference: For both a banking/leasing or general trading-company version and a government-agency version, compare the Process Improvement Briefing Models. Notice how both scripts use pauses, contrast, and a clear pilot request.
 
-## Practice 1: mark thought groups
+## Practice 1: Mark Thought Groups
 
 Mark the thought groups with slashes. Then underline the words you want to stress.
 
@@ -81,7 +81,7 @@ After marking, practice each sentence twice:
 - first slowly, with clear pauses
 - then at a natural meeting pace
 
-## Practice 2: reduce a script to notes
+## Practice 2: Reduce a Script to Notes
 
 Change the script into presenter notes.
 
@@ -97,7 +97,7 @@ Presenter notes:
 - Cause:
 - Delivery reminder:
 
-## Practice 3: presence in different settings
+## Practice 3: Presence in Different Settings
 
 Delivery changes with the room and platform, but the goal is the same: help people follow you.
 
@@ -115,7 +115,7 @@ Pointer and cursor control:
 - Do not move the cursor constantly while speaking.
 - Pause before pointing, point to the area, then explain the meaning.
 
-## Speaking task
+## Speaking Task
 
 Prepare a 3-minute segment from your own presentation or a course case. Your segment should include:
 
@@ -136,7 +136,7 @@ Partner feedback:
 | One delivery strength was... |  |
 | One next improvement is... |  |
 
-## Learner deliverable
+## Learner Deliverable
 
 Submit a rehearsed 3-minute segment plan:
 
@@ -146,10 +146,7 @@ Submit a rehearsed 3-minute segment plan:
 - one delivery goal for posture, eye contact, cursor use, or movement
 - peer feedback notes
 
-## Unit wrap-up
+## Unit Wrap-Up
 
 Delivery is not performance decoration. It is how your message becomes easy to understand in real time. Good notes, clear thought groups, and controlled movement help you sound prepared and natural.
 
-## Teacher Notes
-
-For Japanese learners, word stress and thought groups may need more attention than individual sounds. Avoid telling learners only to speak slowly; instead, have them pause between thought groups and stress content words. In online or hybrid practice, include camera, microphone, screen-share, and remote-audience checks. Keep peer feedback focused on intelligibility and message control, not personality.

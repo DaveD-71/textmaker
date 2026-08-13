@@ -43,6 +43,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Model presentations are mapped to Units, language points, visual-design points, delivery behaviors, and assessment criteria |  |  |
 | The three recurring business cases are used consistently: process improvement, product/service launch, project results briefing |  |  |
 | Final presentation task is clearly connected to earlier unit outputs |  |  |
+| Unit 12 includes a textbook wrap-up task for consolidation, especially for 1-to-1 classes where final presentation time is short |  |  |
 | Teacher notes, answer keys, or sample answers exist where learners or instructors need them |  |  |
 
 ## 2a. Example, Model, and Appendix Audience QA
@@ -52,11 +53,12 @@ The simplified tables below define the checks. The execution log must add the ev
 | Main unit body is role-agnostic between government-agency clients and business clients |  |  |
 | Government-agency and business-client specificity appears in examples, models, appendices, teacher notes, or optional variants rather than changing the core unit sequence |  |  |
 | Appendix models are referenced from the main unit body where they support the taught skill |  |  |
+| Missing options-based decision presentation model is tracked for deferral or future repair |  | Unit 3 teaches `Situation - options - criteria - recommendation`, but the current appendix model set does not yet include a full model presentation for that structure. Defer or add a short model/excerpt before final release. |
 | Business-client and government-agency variants teach the same underlying skill with comparable quality and depth |  |  |
 | Government-agency examples are genuinely public-sector appropriate, not business examples with names swapped |  |  |
 | Business-client examples are genuinely business appropriate, not public-sector examples with names swapped |  |  |
 | Government-facing visuals avoid real national flags, seals, emblems, crests, and country-specific iconography unless intentionally required and verified |  |  |
-| Business-client banking/leasing or general trading-company examples avoid investment advice, securities-market prediction, customer, account, shipment, or transaction data, regulatory/legal advice, real firm names, securities exchange names, and stock ticker symbols |  |  |
+| Business-client banking/leasing or general trading-company examples allow fictional or sanitized procurement, supplier-status, shipment, order, workflow, and reporting contexts, while avoiding investment advice, securities-market prediction, real identifying customer/account/order/shipment/transaction data, regulatory/legal advice, real firm names, securities exchange names, and stock ticker symbols |  |  |
 | Government-agency examples stay within administrative tasks, service delivery, reporting, coordination, process improvement, and service communication unless explicitly approved |  |  |
 
 ## 3. ESL and Business English QA
@@ -67,6 +69,9 @@ The simplified tables below define the checks. The execution log must add the ev
 | Instructions are clear, direct, and not overloaded with advanced vocabulary |  |  |
 | Presentation English syllabus is explicit: openings, relevance, previews, transitions, references, emphasis, summaries, recommendations, action closes |  |  |
 | Q&A language includes clarifying, answering directly, structuring, checking satisfaction, deferring, disagreement, and follow-up |  |  |
+| Business Presentation Specialist review is completed and integrated before the final Language Editor review |  |  |
+| Agent 2 and Agent 3 are not run concurrently for final content review because the language review depends on the settled business/context wording |  |  |
+| Specialized business/process terms are defined before learner use, with glossary or before-listening support where needed |  |  |
 | Register notes distinguish formal, neutral, and conversational business expressions |  |  |
 | False absolute language rules from the old book have been corrected |  |  |
 | Role/responsibility vocabulary is accurate, including responsible for, manage, lead, take care of, and in charge of |  |  |
@@ -98,7 +103,7 @@ The simplified tables below define the checks. The execution log must add the ev
 | Font guidance is current, screen-appropriate, and spells "sans serif" correctly |  |  |
 | Visual types include charts, tables, diagrams, timelines, photos, screenshots, process visuals, and unsuitable-use cases |  |  |
 | Animation, transition, audio, and video guidance distinguishes purposeful use from decoration |  |  |
-| Document-role guidance covers live slides, presenter notes, pre-reads, worksheets, leave-behinds, appendices/backup slides, and PDF fallback |  |  |
+| Document-role guidance covers live slides, presenter notes, pre-reads, worksheets, follow-up handouts, appendices/backup slides, and PDF fallback |  |  |
 
 ## 6. Delivery, Q&A, and Interaction QA
 

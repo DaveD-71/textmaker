@@ -377,7 +377,7 @@ Primary unit uses: Units 3, 4, 6, 9, 10, 12.
 Main unit references should use the model-set names, not appendix letters. Example wording:
 
 - "For a business-client version of this structure, see the Process Improvement Briefing Models."
-- "For a government-agency version, compare the administrative process example in the same model set."
+- "For a government-agency version, compare the government-agency model in the same model set."
 - "Use either model as a reference, but adapt the audience, data, and action request to your own situation."
 
 Do not place long role-specific model text inside the main unit body. Use short excerpts only when a language or design point needs to be visible on the same page.
@@ -421,7 +421,7 @@ Phrase-variety rules:
 | Product, Service, or Program Launch Models | Unit 2 | Value-focused opening | relevance, benefit, launch purpose | none | concise opening | none | message clarity, audience fit |
 | Product, Service, or Program Launch Models | Unit 4 | Launch-plan transitions | signposting, next steps, action close | none | listener guidance | none | spoken English, structure |
 | Product, Service, or Program Launch Models | Unit 5 | Dashboard or service-flow visual | introducing visuals, directing attention | hierarchy, contrast, readable labels | point-pause-speak | answer visual-clarity question | visual effectiveness, accessibility |
-| Product, Service, or Program Launch Models | Unit 7 | Rollout timeline and document-role choices | explaining pre-read, leave-behind, follow-up | timeline, document set | material management | clarify who receives what | professionalism |
+| Product, Service, or Program Launch Models | Unit 7 | Rollout timeline and document-role choices | explaining pre-read, follow-up handout, follow-up | timeline, document set | material management | clarify who receives what | professionalism |
 | Product, Service, or Program Launch Models | Unit 10 | Q&A pressure points and model answers | answer directly, bridge to launch rationale, acknowledge adoption limits | dashboard, service-flow, rollout, or user-need reference as appropriate | calm response under skepticism | direct answer, follow-up | Q&A |
 | Project Results Briefing Models | Unit 3 | Results briefing outline | preview, sequence, summary | planning map | logical flow | none | structure |
 | Project Results Briefing Models | Unit 4 | Summary and recommendation close | summarizing, recommending, action close | none | confident close | none | spoken English, professionalism |

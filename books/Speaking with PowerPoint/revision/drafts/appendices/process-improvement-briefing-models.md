@@ -1,8 +1,14 @@
-# Process Improvement Briefing Models
+﻿# Process Improvement Briefing Models
 
 These two model presentations show how a presenter can recommend a practical workflow change. Use them as references for audience outcome, problem-solution-recommendation structure, workflow visuals, document choices, implementation-risk Q&A, and a clear final action request.
 
 The data in both models is fictional for practice. Do not replace it with real client, account, transaction, applicant, staff, or personal information.
+
+## How to Use These Models
+
+Read the full spoken model first. Then use the notes, vocabulary, visuals, and Q&A examples to understand how the presentation is built.
+
+When you prepare your own presentation, do not copy the script word for word. Use it as a model for structure, useful phrases, clear visuals, and handling questions.
 
 ## Model 1: Business Client - Reducing Import Document Handoff Delays
 
@@ -50,6 +56,17 @@ Expected delivery time:
 | 6. Decision and review | Close with action | Approve pilot, confirm owner, review late document handoffs and rework time |
 
 Visual note: use a before/after workflow diagram as the main visual. A small evidence box is enough. Do not make this a data-heavy chart presentation.
+
+### Key Vocabulary Before Listening
+
+| Term | Simple meaning |
+|---|---|
+| exception | a case that does not follow the normal process and needs extra checking |
+| handoff | the point where responsibility moves from one person or team to another |
+| checkpoint | a fixed time or step when people check status |
+| rework | work that must be done again because something was unclear or incomplete |
+| pilot | a small test before wider use |
+| control process | the required checking and approval steps |
 
 ### Full Spoken Model Script
 
@@ -139,7 +156,6 @@ Language focus:
 - Use "I recommend..." or "My recommendation is..." for a direct but polite proposal.
 - Use "does not change" to reduce concern about risk, authority, or workload.
 - Use "pilot" when the action is limited and temporary.
-- Use "fictional practice data" when numbers are invented for learning.
 
 Vocabulary:
 
@@ -228,11 +244,11 @@ Contingency:
 - If time is cut, deliver only the opening, recommendation, pilot plan, and decision request.
 - If a question needs confidential detail, defer it to a closed follow-up with the appropriate owner.
 
-### Teaching-Point Map to Standard Units
+### Skills You Can Practise
 
-| Standard unit | Skill shown in this model |
+| Unit connection | Skill shown in this model |
 |---|---|
-| Unit 1: Audience, Purpose, and Business Context | Audience outcome, decision need, business purpose |
+| Unit 1: Audience, Purpose, and Workplace Context | Audience outcome, decision need, workplace purpose |
 | Unit 2: Message, Objective, and Relevance | Core message, relevance, and action-focused opening |
 | Unit 3: Structure and Flow | Problem-solution-recommendation structure |
 | Unit 7: Tool-neutral Slide and Document Workflow | Workflow visual, backup material, confidentiality checks, PDF fallback |
@@ -285,6 +301,17 @@ Expected delivery time:
 | 6. Decision and review | Close with action | Approve trial, agree checklist fields, assign FAQ owner |
 
 Visual note: use a process-flow visual as the main visual. Do not use flags, seals, emblems, crests, or country-specific government symbols.
+
+### Key Vocabulary Before Listening
+
+| Term | Simple meaning |
+|---|---|
+| intake | the first step when an office receives an application or request |
+| formal review | the official check after intake |
+| returned application | an application sent back because information is missing or incorrect |
+| FAQ | a list of frequently asked questions and standard answers |
+| high-volume | handled many times or in large numbers |
+| trial | a small test before wider use |
 
 ### Full Spoken Model Script
 
@@ -352,7 +379,7 @@ The backup material includes a return-reason table, draft checklist fields, and 
 
 Here is the service case for the trial.
 
-Returned applications create delay for applicants and extra work for staff. In this practice case, most returns come from a small number of preventable errors. A short intake checklist and shared FAQ can help staff catch these errors before formal review.
+Returned applications create delay for applicants and extra work for staff. In this scenario, most returns come from a small number of preventable errors. A short intake checklist and shared FAQ can help staff catch these errors before formal review.
 
 The approval I need today is for the one-month trial, the first checklist fields, and one owner for the FAQ update process.
 
@@ -467,23 +494,24 @@ Contingency:
 - If the meeting runs short, give only the problem, recommendation, trial plan, and decision request.
 - If a question asks for personal or case-specific details, answer at process level and offer a private follow-up with authorized staff.
 
-### Teaching-Point Map to Standard Units
+### Skills You Can Practise
 
-| Standard unit | Skill shown in this model |
+| Unit connection | Skill shown in this model |
 |---|---|
-| Unit 1: Audience, Purpose, and Business Context | Audience outcome, administrative purpose, decision need |
+| Unit 1: Audience, Purpose, and Workplace Context | Audience outcome, administrative purpose, decision need |
 | Unit 2: Message, Objective, and Relevance | Core message, applicant/staff relevance, action-focused opening |
 | Unit 3: Structure and Flow | Problem-solution-recommendation structure |
 | Unit 7: Tool-neutral Slide and Document Workflow | Process visual, trial plan, backup material, accessibility checks |
 | Unit 10: Q&A, Challenge Handling, and Interaction | Clarifying, direct answers, workload risk, limits, follow-up |
 | Unit 12: Final Presentation and Reflection | Decision-oriented workplace presentation with a clear close |
 
-## Comparison Note for Teachers
+## Compare the Two Models
 
 Both variants teach the same presentation skill: identify a repeated process problem, recommend a limited pilot or trial, explain the expected benefit, and ask for a specific decision.
 
-The business-client version focuses on operational handoff risk in banking/leasing or general trading-company operations. Keep it away from investment advice, securities-market prediction, stock ticker symbols, real firm names, customer, account, shipment, or transaction data, and legal or regulatory advice.
+The business-client version focuses on operational handoff risk in banking/leasing or general trading-company operations. If you adapt this model, sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Do not use investment advice, securities-market prediction, stock ticker symbols, real firm names, real identifying customer/account/order/shipment/transaction data, or legal or regulatory advice.
 
-The government-agency version focuses on administrative intake quality and service consistency. Keep it away from politics, public-policy advocacy, legislation, budget campaigning, and official symbols such as flags, seals, emblems, and crests.
+The government-agency version focuses on administrative intake quality and service consistency. If you adapt this model, do not use politics, public-policy advocacy, legislation, budget campaigning, or official symbols such as flags, seals, emblems, and crests.
 
 Both models use simple fictional evidence because a process-improvement briefing needs enough support to justify a pilot. Do not add heavy chart teaching here unless a unit specifically asks learners to compare this model with a data-focused project results briefing.
+

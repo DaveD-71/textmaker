@@ -47,7 +47,7 @@ Concrete model variants must follow `plan3-case-model-brief.md`: business-client
 
 ## Unit Specs
 
-### Unit 1: Audience, Purpose, and Business Context
+### Unit 1: Audience, Purpose, and Workplace Context
 
 Learner outcomes:
 - Identify the audience, occasion, and business purpose of a presentation.
@@ -119,7 +119,7 @@ Learner deliverable: full presentation outline.
 Core tasks:
 - Match business purposes to structures: problem-solution, situation-analysis-recommendation, options-criteria-recommendation, project update, data story.
 - Convert a weak list into a structured outline.
-- Build a planning map with audience, outcome, message, evidence, and action.
+- Build a planning map with Introduction, Body, and Conclusion sections; include audience, outcome, message, evidence, summary of key points, and action/close.
 
 Assessment link: organization and logic.
 
@@ -204,7 +204,7 @@ Core tasks:
 - Improve a cluttered or misleading chart.
 - Practice explaining a chart in 60-90 seconds.
 - Label fictional data clearly and cite real data where used.
-- For banking/leasing or general trading-company examples, keep the task to workflow, reporting, evidence, service quality, or control escalation; do not create securities trading recommendations, securities-market predictions, client/account, shipment, or transaction examples, or legal or regulatory advice.
+- For banking/leasing or general trading-company examples, keep the task to workflow, reporting, evidence, service quality, procurement, supplier coordination, shipment reporting, or control escalation. Fictional or sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Do not create securities trading recommendations, securities-market predictions, real identifying client/account/order/shipment/transaction details, or legal or regulatory advice.
 - Check chart titles and labels for article/plural problems and unclear compressed English.
 
 Assessment link: evidence, visual effectiveness, spoken explanation.
@@ -217,7 +217,7 @@ Long note: expand into data storytelling, uncertainty, and decision-deck evidenc
 
 Learner outcomes:
 - Choose an appropriate visual/document format for the audience and setting.
-- Decide the role of slides, notes, pre-reads, worksheets, leave-behinds, and backup materials.
+- Decide the role of slides, notes, pre-reads, worksheets, follow-up handouts, and backup materials.
 - Prepare export, compatibility, and security checks.
 
 Main business skill: choosing the right medium and workflow rather than defaulting to one software product.
@@ -230,7 +230,7 @@ Learner deliverable: visual pack plus notes.
 
 Core tasks:
 - Use a tool-choice checklist: audience, collaboration, data source, visual complexity, accessibility, export, confidentiality.
-- Choose between slides, PDF, document walkthrough, dashboard, worksheet, leave-behind, and appendix.
+- Choose between slides, PDF, document walkthrough, dashboard, worksheet, follow-up handout, and appendix.
 - Prepare a backup/export checklist: approved cloud, offline copy, PDF fallback, fonts/media/links, venue/platform testing, company security.
 - Discuss purposeful builds, transitions, audio, and video versus decorative effects.
 - Justify one format choice in 45-60 seconds using target language for handouts, pre-reads, backup files, confidentiality, and follow-up materials.
@@ -320,7 +320,7 @@ Core tasks:
 - Practice skeptical-question role plays.
 - Build a personal Q&A response bank for the final presentation.
 - Practice polite direct disagreement and safe deferral phrases, including cases where the presenter lacks a number, needs policy confirmation, or must follow up after checking with another team.
-- For banking/leasing or general trading-company examples, avoid investment advice, securities-market predictions, client/account, shipment, or transaction details, and legal or regulatory interpretation.
+- For banking/leasing or general trading-company examples, fictional or sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Avoid investment advice, securities-market predictions, real identifying client/account/order/shipment/transaction details, and legal or regulatory interpretation.
 
 Assessment link: Q&A, spoken English, professionalism.
 
@@ -360,23 +360,25 @@ Long note: add second rehearsal cycle and instructor conference.
 Learner outcomes:
 - Deliver a business presentation with visuals.
 - Handle Q&A using prepared strategies and learner-owned English.
+- Review and consolidate the main learning points from the textbook.
 - Reflect on strengths, weaknesses, and next development steps.
 
 Main business skill: delivering a complete business presentation and evaluating performance.
 
 Presentation English focus: final opening, transitions, recommendation/action close, Q&A, reflection language.
 
-Model/case: learner's own final presentation.
+Model/case: learner's own final presentation plus textbook wrap-up review.
 
-Learner deliverable: delivered presentation plus self-review.
+Learner deliverable: delivered presentation, textbook wrap-up quiz, and self-review.
 
 Core tasks:
 - Deliver a 5-7 minute final presentation with required Q&A, unless a client/teacher sets a different local requirement.
 - Submit visual pack or equivalent presentation materials.
+- Complete a textbook wrap-up quiz covering audience outcome, message, structure, visual/evidence choices, document roles, and Q&A handling.
 - Complete self-review using the final rubric.
 - Identify one next-step language goal and one next-step presentation-skill goal.
 
-Assessment link: final rubric: message clarity, audience fit, structure, evidence, visual effectiveness, spoken English, delivery, Q&A, timing, professionalism, accessibility.
+Assessment link: final rubric: message clarity, audience fit, structure, evidence, visual effectiveness, spoken English, delivery, Q&A, timing, professionalism, accessibility; textbook wrap-up quiz for consolidation and review.
 
 Essentials note: shorter final presentation and simpler rubric.
 

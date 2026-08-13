@@ -274,3 +274,59 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/content
 - Decision: client examples should reflect a broad Japanese professional client base, including banking/leasing, general trading companies, manufacturing/industrial companies, and government/public-safety agencies. Named examples from the user include Mizuho Bank, Mizuho Leasing, Marubeni, Bosch, NRA, PSIA, and the Tokyo Metropolitan Police.
 - Preferred behavior: business-client examples may include banking, leasing, general trading-company/import-export, manufacturing, operations, reporting, client service, supply chain, procurement, compliance-support, and internal process contexts. Do not treat `trading` as financial-market trading by default. Avoid stock/securities trading, investment advice, market predictions, ticker symbols, exchange names, financial trading desks, real client/account data, regulatory/legal advice, or real-company claims unless explicitly approved and sourced. Government examples should remain administrative, service-delivery, coordination, reporting, training, public-safety administration, or process-improvement focused, without political advocacy or sensitive operational/security detail.
+
+## 2026-08-13 - Speaking with PowerPoint Handoff Discipline
+
+- Status: `active`
+- Scope: project/workflow
+- Decision: because the user reported limited remaining weekly Codex token capacity, Speaking with PowerPoint work needs frequent durable handoff updates in both repo memory and `books/Speaking with PowerPoint/README.md`.
+- Preferred behavior: after each meaningful content/control-file step, update the book README with current status, touched files, validation results, unrelated dirty-worktree warnings, and the next recommended step. Use project journal for chronology and project learning for durable decisions.
+
+## 2026-08-13 - Speaking with PowerPoint Review Sequencing
+
+- Status: `active`
+- Scope: project/workflow
+- Decision: Agent 2 and Agent 3 must not run concurrently for final content review. English language development is the textbook's highest priority, and business/context revisions can introduce specialized terms that the Language Editor needs to catch after the wording is settled.
+- Preferred behavior: run Agent 3, the Business Presentation Specialist, first; integrate business/context findings; then run Agent 2, the Language Editor, as the final specialist pass. The final language pass must check first-use definitions, glossary needs, B1-B2 load, Japanese-learner support, spoken naturalness, and specialized terms such as `handoff`, `exception`, `pre-read`, `follow-up handout`, `takeaway document`, `fallback option`, `asynchronous`, `sanitized`, `accessibility`, and `confidentiality`.
+
+## 2026-08-13 - Speaking with PowerPoint Learner-Facing Manuscript Rule
+
+- Status: `active`
+- Scope: project/content
+- Decision: the textbook manuscript, including appendices, must be completely learner-facing. Teacher-facing notes should not appear inside learner unit or appendix drafts.
+- Preferred behavior: keep teacher-facing guidance in the separate printable file `books/Speaking with PowerPoint/revision/drafts/Teacher Notes.md`, with clear Unit or Appendix references. If a note belongs in the learner manuscript, rewrite it directly to the learner; otherwise move it to the teacher-notes file.
+
+## 2026-08-13 - Speaking with PowerPoint Role-Agnostic Manuscript vs Client-Specific Teaching
+
+- Status: `active`
+- Scope: project/content
+- Decision: the printed textbook should be role-agnostic, but classroom delivery does not need to be role-agnostic. The user's classes are not mixed-client classes, so it is acceptable and often preferable for teachers to focus examples and practice on the specific learners' work roles, company, organization, and communication needs.
+- Preferred behavior: keep learner manuscript units transferable across business and government clients, but write teacher notes that invite client-specific adaptation. For business clients, adapt toward banking/leasing, general trading-company/import-export, manufacturing, operations, reporting, service, procurement, or coordination contexts as appropriate. For government clients, adapt toward administrative service, reporting, coordination, training, and process-improvement contexts while respecting confidentiality and avoiding political advocacy or sensitive operational/security detail.
+
+## 2026-08-13 - Speaking with PowerPoint Learner Terminology
+
+- Status: `active`
+- Scope: project/content
+- Decision: do not rely on the workplace compound noun `leave-behind` in learner-facing text. `Leave behind` without a hyphen is the phrasal verb; `leave-behind` as a noun is style-dependent and opaque for many B1-B2 learners.
+- Preferred behavior: use `follow-up handout`, `takeaway document`, or `supporting document` in learner-facing manuscript unless explicitly teaching the industry noun. Teacher notes may mention the distinction when checking terminology.
+
+## 2026-08-13 - Speaking with PowerPoint Unit 12 Private-Lesson Timing
+
+- Status: `active`
+- Scope: project/content
+- Decision: many classes are 1-to-1 private lessons, so Unit 12 should not rely only on final-presentation delivery time. A single learner's 5-7 minute final presentation plus Q&A can make the unit too short.
+- Preferred behavior: Unit 12 should include a textbook wrap-up quiz or equivalent consolidation task covering major course learning points, with an answer key in `books/Speaking with PowerPoint/revision/drafts/Teacher Notes.md`. Use the quiz to extend 1-to-1 Unit 12 lessons and consolidate learning before or after the final presentation.
+
+## 2026-08-13 - Speaking with PowerPoint Heading Capitalization
+
+- Status: `active`
+- Scope: project/style
+- Decision: current draft titles, headings, and subheadings should use Chicago-style title case, not sentence case.
+- Preferred behavior: capitalize the first and last word, major words, and the first word after a colon when the colon introduces a subtitle/subheading. Following CMOS 18, capitalize prepositions of five letters or more and lowercase articles, coordinating conjunctions, `to`, and prepositions of four letters or fewer unless first or last.
+
+## 2026-08-13 - Speaking with PowerPoint Phase 4 Completion
+
+- Status: `active`
+- Scope: project/milestone
+- Decision: Phase 4 Standard manuscript rewrite/integration is complete enough to move to Phase 5 asset creation/replacement.
+- Preferred behavior: start Phase 5 from `books/Speaking with PowerPoint/revision/control/plan3_image_register.json`. Do not create or replace assets outside the register without updating the register. Keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user decides to add that model before asset work.

@@ -1,22 +1,28 @@
-# Product, Service, or Program Launch Models
+﻿# Product, Service, or Program Launch Models
 
 These two models show how to launch a new service, support process, or program in a clear workplace briefing. The main skills are a value-focused opening, audience benefit, simple visual hierarchy, rollout timing, adoption questions, and clear next steps.
 
 Both organizations, names, situations, and figures are fictional for practice. Do not copy the names, figures, or situations into a real workplace presentation.
 
-## Appendix timing note
+## Appendix Timing Note
 
-Each model is designed for about 7 to 8 minutes of spoken delivery plus 5 minutes of Q&A at a practiced B1-B2 pace of about 115 to 125 words per minute. Teachers may shorten the script by removing one example from the benefit section or one detail from the rollout section.
+Each model is designed for about 7 to 8 minutes of spoken delivery plus 5 minutes of Q&A at a clear, practiced pace. If you need a shorter presentation, remove one example from the benefit section or one detail from the rollout section.
 
-## Model 1: Launching a supplier-status dashboard
+## How to Use These Models
 
-### Scenario brief
+Read the full spoken model first. Then use the notes, vocabulary, visuals, and Q&A examples to understand how the presentation is built.
+
+When you prepare your own presentation, do not copy the script word for word. Use it as a model for structure, useful phrases, clear visuals, and handling questions.
+
+## Model 1: Business Client - Launching a Supplier-Status Dashboard
+
+### Scenario Brief
 
 Koyo Trading Client Services is preparing a pilot launch of an internal supplier-status dashboard. The dashboard will give account managers one weekly view of supplier inquiry status, shipment reporting deadlines, and unresolved reporting requests.
 
 This is a banking/leasing or general trading-company account-service operations example. It is not a securities-trading tool. It does not give investment advice, securities-market predictions, or legal or regulatory advice.
 
-### Audience and purpose
+### Audience and Purpose
 
 Audience:
 
@@ -29,13 +35,13 @@ Purpose: secure agreement for a four-week pilot launch with two account teams.
 
 Audience action: nominate pilot users, confirm the launch date, and agree how feedback will be collected.
 
-### Expected delivery time
+### Expected Delivery Time
 
 Spoken script: about 7 to 8 minutes.
 
 Q&A: 5 minutes.
 
-### Suggested visual sequence
+### Suggested Visual Sequence
 
 1. Title and decision needed: `Supplier Status Dashboard Pilot`
 2. Why now: three simple figures from the last reporting cycle
@@ -50,7 +56,20 @@ Visual notes:
 - Keep the dashboard mockup simple: top status bar, request status, deadline panel, and owner column.
 - Use a clear title for each visual. Do not show real company names, customer names, account, shipment, or order numbers, ticket IDs, shipment IDs, stock ticker symbols, or proprietary system screens.
 
-### Full spoken model script
+### Key Vocabulary Before Listening
+
+| Term | Simple meaning |
+|---|---|
+| pilot | a small test before wider use |
+| pre-read | short material sent before a meeting or presentation |
+| dashboard | one screen or visual page that shows key status information |
+| rollout | the planned introduction of a new process, service, or tool |
+| status-check message | a message asking what has happened or what is still open |
+| ownership | who is responsible for the next action |
+| sanitized | changed to remove sensitive or identifying information |
+| follow-up handout | material sent or given after a presentation |
+
+### Full Spoken Model Script
 
 Good morning, everyone. This briefing is about a small launch with a practical goal: fewer repeated status checks before shipment reporting deadlines.
 
@@ -96,7 +115,7 @@ Support is part of the launch, not an afterthought.
 
 Reporting operations will update the status fields once a week. Each pilot team will have one account manager as the main user contact. Account-service will collect feedback using a short form. If there is a data question or a confidentiality concern, we will pause that field and check it before continuing.
 
-For materials, I have prepared four items. The pre-read is a one-page summary of the dashboard purpose and pilot schedule. Today's live visual is the dashboard mockup and rollout timeline. The leave-behind is the pilot user guide, with support contact and feedback form. The backup material is the data-field list and confidentiality rules, which we will use only if needed during Q&A.
+For materials, I have prepared four items. The pre-read is a one-page summary of the dashboard purpose and pilot schedule. Today's live visual is the dashboard mockup and rollout timeline. The follow-up handout is the pilot user guide, with support contact and feedback form. The backup material is the data-field list and confidentiality rules, which we will use only if needed during Q&A.
 
 In short, this is not a new reporting process. It is a shared weekly view that helps people see issues earlier, reduce repeated messages, and clarify ownership before shipment deadlines.
 
@@ -104,7 +123,7 @@ The next step is to confirm the two pilot teams today. After that, I will send t
 
 Thank you. I am happy to take your questions.
 
-### Language notes
+### Language Notes
 
 Useful launch phrases:
 
@@ -122,15 +141,17 @@ First-use vocabulary:
 | Term | Simple meaning |
 |---|---|
 | pilot | a small test before wider use |
+| pre-read | short material sent before a meeting or presentation |
 | dashboard | one screen or visual page that shows key status information |
+| rollout | the planned introduction of a new process, service, or tool |
 | status-check message | a message asking what has happened or what is still open |
 | ownership | who is responsible for the next action |
 | sanitized | changed to remove sensitive or identifying information |
-| leave-behind | material sent or given after a presentation |
+| follow-up handout | material sent or given after a presentation |
 
 Register note: `I would like us to agree on...` is polite and direct. It is stronger than only saying `I will explain...` because it tells the audience what decision is needed.
 
-### Pronunciation and intelligibility notes
+### Pronunciation and Intelligibility Notes
 
 Thought groups for the opening:
 
@@ -155,7 +176,7 @@ Pause after limits language:
 
 `It will not replace official reports. [pause] It will not replace the account-service process. [pause] It will not be sent to clients during this pilot.`
 
-### Q&A model answers
+### Q&A Model Answers
 
 | Function | Question | Model answer |
 |---|---|---|
@@ -166,7 +187,7 @@ Pause after limits language:
 | Defer safely | Can real customer names appear in the dashboard later? | I cannot confirm that today. For the pilot, we will use sanitized labels only. I will check data and confidentiality requirements before any wider launch. |
 | Confirm follow-up | Who updates the dashboard after launch? | Reporting operations will update the status fields each week. I will send the owner list after this meeting and include it in the pilot guide. |
 
-### Privacy, security, accessibility, and contingency notes
+### Privacy, Security, Accessibility, and Contingency Notes
 
 Privacy and security:
 
@@ -187,26 +208,26 @@ Contingency:
 - Keep an offline copy.
 - If the dashboard screen cannot be shown, present from the PDF and send the link after the meeting.
 
-### Teaching-point map to Standard units
+### Skills You Can Practise
 
-| Standard unit | Teaching point demonstrated |
+| Unit connection | Skill shown in this model |
 |---|---|
 | Unit 2 | Value-focused opening, audience relevance, action request |
 | Unit 4 | Launch-plan signposting, contrast language, next-step language |
 | Unit 5 | Dashboard visual hierarchy, readable labels, what-to-notice explanation |
-| Unit 7 | Pre-read, live visual, leave-behind, backup material, confidentiality check |
+| Unit 7 | Pre-read, live visual, follow-up handout, backup material, confidentiality check |
 | Unit 10 | Adoption-limit Q&A, direct answers, clarification, safe deferral, follow-up |
 | Unit 12 | Final workplace presentation model with clear action and required Q&A |
 
-## Model 2: Launching an application support desk
+## Model 2: Government Agency - Launching an Application Support Desk
 
-### Scenario brief
+### Scenario Brief
 
 Aoba City Administrative Support Center is preparing a three-month pilot of an application support desk. The desk will help residents complete online forms before submission, especially when they have questions about attachments or required fields.
 
 This is an administrative service-delivery example. It is not a political proposal, policy campaign, legislation briefing, or budget advocacy presentation.
 
-### Audience and purpose
+### Audience and Purpose
 
 Audience:
 
@@ -219,13 +240,13 @@ Purpose: gain approval for a three-month pilot of the support desk.
 
 Audience action: approve the pilot schedule, confirm staffing, and agree what service data will be reviewed after three months.
 
-### Expected delivery time
+### Expected Delivery Time
 
 Spoken script: about 7 to 8 minutes.
 
 Q&A: 5 minutes.
 
-### Suggested visual sequence
+### Suggested Visual Sequence
 
 1. Title and decision needed: `Application Support Desk Pilot`
 2. Why now: common inquiry types and repeat inquiry issue
@@ -240,7 +261,20 @@ Visual notes:
 - Avoid flags, seals, emblems, crests, national symbols, party colors, or country-specific iconography.
 - Keep the service-flow diagram readable without color alone. Use labels and arrows.
 
-### Full spoken model script
+### Key Vocabulary Before Listening
+
+| Term | Simple meaning |
+|---|---|
+| support desk | a service point where users can ask for help |
+| submission | sending or giving in a form |
+| pre-read | short material sent before a meeting or presentation |
+| rollout | the planned introduction of a new process, service, or tool |
+| repeat inquiry | a second or later question about the same issue |
+| guidance sheet | a short document that explains what to do |
+| counter capacity | the amount of staff time available at the service counter |
+| screen reader | software that reads digital text aloud for accessibility |
+
+### Full Spoken Model Script
 
 Good afternoon, everyone. I want to focus on one service need today: helping residents complete online forms before problems become repeat inquiries.
 
@@ -284,7 +318,7 @@ The desk will start with limited hours, not full-day coverage. This protects cou
 
 We will review four measures after three months: repeat inquiries, common question categories, staff workload, and user comments. These measures will help us decide whether to continue, revise, or stop the service.
 
-For materials, I have prepared four items. The pre-read is a one-page pilot proposal for managers. Today's live visual is the service-flow diagram and pilot timeline. The leave-behind is the staff guidance sheet and inquiry-log categories. The backup material is the draft staffing schedule and plain-language notes.
+For materials, I have prepared four items. The pre-read is a one-page pilot proposal for managers. Today's live visual is the service-flow diagram and pilot timeline. The follow-up handout is the staff guidance sheet and inquiry-log categories. The backup material is the draft staffing schedule and plain-language notes.
 
 Accessibility also matters here. The support desk is part of public-facing communication, so the guidance must be plain, readable, and usable for residents with different levels of confidence using online forms. The guidance sheet should use short sentences, clear headings, and large enough text. If we share the material digitally, it should also be readable by screen readers where possible.
 
@@ -294,7 +328,7 @@ The next step is to approve the pilot schedule and staffing plan today. If we ag
 
 Thank you. I welcome your questions.
 
-### Language notes
+### Language Notes
 
 Useful launch phrases:
 
@@ -313,6 +347,8 @@ First-use vocabulary:
 |---|---|
 | support desk | a service point where users can ask for help |
 | submission | sending or giving in a form |
+| pre-read | short material sent before a meeting or presentation |
+| rollout | the planned introduction of a new process, service, or tool |
 | repeat inquiry | a second or later question about the same issue |
 | guidance sheet | a short document that explains what to do |
 | counter capacity | the amount of staff time available at the service counter |
@@ -320,7 +356,7 @@ First-use vocabulary:
 
 Register note: `This is a target for review, not a promise` is useful when presenting pilot goals. It sounds honest and professional.
 
-### Pronunciation and intelligibility notes
+### Pronunciation and Intelligibility Notes
 
 Thought groups for the core message:
 
@@ -345,7 +381,7 @@ Use pauses to separate limits:
 
 `The support desk does not complete the form for the resident. [pause] It does not make a decision on the application. [pause] It does not change the requirements.`
 
-### Q&A model answers
+### Q&A Model Answers
 
 | Function | Question | Model answer |
 |---|---|---|
@@ -356,7 +392,7 @@ Use pauses to separate limits:
 | Defer safely | Can we use the same desk for other application types? | Possibly, but I do not want to assume that today. After the three-month review, we can decide which application types are suitable for expansion. |
 | Confirm follow-up | What will we measure after the pilot? | We will review repeat inquiries, common question categories, staff workload, and user comments. I will include these measures in the pilot review note. |
 
-### Privacy, security, accessibility, and contingency notes
+### Privacy, Security, Accessibility, and Contingency Notes
 
 Privacy and security:
 
@@ -379,20 +415,20 @@ Contingency:
 - Bring a printed one-page timeline for the meeting room.
 - If the projector or screen share fails, describe the process in five steps and send the visual after the meeting.
 
-### Teaching-point map to Standard units
+### Skills You Can Practise
 
-| Standard unit | Teaching point demonstrated |
+| Unit connection | Skill shown in this model |
 |---|---|
 | Unit 2 | Value-focused opening, audience relevance, clear action request |
 | Unit 4 | Signposting, limits language, sequence language, next-step language |
 | Unit 5 | Service-flow visual hierarchy, readable process labels, accessibility |
-| Unit 7 | Pre-read, live visual, leave-behind, backup material, plain-language check |
+| Unit 7 | Pre-read, live visual, follow-up handout, backup material, plain-language check |
 | Unit 10 | Adoption-limit Q&A, direct answers, clarification, safe deferral, follow-up |
 | Unit 12 | Final workplace presentation model with clear action and required Q&A |
 
-## Comparing the two launch models
+## Comparing the Two Launch Models
 
-| Shared teaching point | Business-client model | Government-agency model |
+| Skill | Business-client model | Government-agency model |
 |---|---|---|
 | Value-focused opening | Reduces repeated status checks before shipment reporting deadlines | Reduces incomplete submissions and repeat inquiries |
 | Audience relevance | Account managers need earlier visibility and clearer ownership | Staff and managers need a practical support process |
@@ -402,6 +438,7 @@ Contingency:
 | Adoption-limit Q&A | Dashboard scope, data confidentiality, update ownership | Service scope, staff workload, user access |
 | Next-step language | Nominate users and confirm launch date | Approve schedule and staffing plan |
 
-## Teacher note: AI critical literacy
+## AI Critical-Literacy Note
 
-If AI is mentioned with these models, use it only for checking and critique. For example, learners can review a short flawed AI-style launch opening and identify generic claims, missing limits, confidentiality risk, or unclear audience benefit. Do not ask learners to generate their final script or final visuals with AI. The presentation, language, visuals, Q&A preparation, and final delivery must remain learner-owned.
+If your class discusses AI, use it only for checking and critique. For example, you can review a short flawed AI-style launch opening and identify generic claims, missing limits, confidentiality risk, or unclear audience benefit. Do not use AI to generate your final script or final visuals. Your presentation, language, visuals, Q&A preparation, and final delivery must remain your own work.
+
