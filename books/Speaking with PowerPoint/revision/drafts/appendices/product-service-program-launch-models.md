@@ -18,7 +18,7 @@ When you prepare your own presentation, do not copy the script word for word. Us
 
 ### Scenario Brief
 
-Koyo Trading Client Services is preparing a pilot launch of an internal supplier-status dashboard. The dashboard will give account managers one weekly view of supplier inquiry status, shipment reporting deadlines, and unresolved reporting requests.
+Koyo Trading Client Services is preparing a pilot launch of an internal supplier-status dashboard for two fictional client-service teams: Team North and Team West. The dashboard will give client-service account managers one weekly view of supplier inquiry status, shipment reporting deadlines, and unresolved reporting requests for imported machinery parts. In this model, `account manager` means the person who manages client-service communication, not a securities or investment account manager.
 
 This is a banking/leasing or general trading-company account-service operations example. It is not a securities-trading tool. It does not give investment advice, securities-market predictions, or legal or regulatory advice.
 
@@ -26,7 +26,7 @@ This is a banking/leasing or general trading-company account-service operations 
 
 Audience:
 
-- account managers
+- client-service account managers
 - account-service staff
 - reporting operations
 - team leadership
@@ -56,13 +56,9 @@ Visual notes:
 - Keep the dashboard mockup simple: top status bar, request status, deadline panel, and owner column.
 - Use a clear title for each visual. Do not show real company names, customer names, account, shipment, or order numbers, ticket IDs, shipment IDs, stock ticker symbols, or proprietary system screens.
 
-![Mockup dashboard showing fictional inquiry status, shipment reporting deadlines, and unresolved requests.](../../../images/planned/p3-u07-client-reporting-dashboard-mockup.png)
-
 ### Sample Slide Set
 
-Editable sample slide deck: [Launch Business-Client Deck](../../assets/model-slide-decks/launch-business.pptx)
-
-The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
+Sample slide deck: [Launch Business-Client Deck](../../assets/model-slide-decks/launch-business.pptx)
 
 ### Key Vocabulary Before Listening
 
@@ -71,6 +67,7 @@ The deck is a draft planning asset. Images or final textbook screenshots can be 
 | pilot | a small test before wider use |
 | pre-read | short material sent before a meeting or presentation |
 | dashboard | one screen or visual page that shows key status information |
+| client-service account manager | a person who manages client-service communication and follow-up, not securities trading |
 | rollout | the planned introduction of a new process, service, or tool |
 | status-check message | a message asking what has happened or what is still open |
 | ownership | who is responsible for the next action |
@@ -83,11 +80,11 @@ Good morning, everyone. This briefing is about a small launch with a practical g
 
 I will introduce the pilot version of our supplier-status dashboard and ask you to confirm three launch decisions: the two pilot teams, the launch date, and how we will collect feedback during the first four weeks.
 
-The reason for the launch is simple: the dashboard will help account managers see reporting issues earlier, reduce repeated status-check messages, and give each team a clearer view of ownership before shipment deadlines.
+The reason for the launch is simple: the dashboard will help client-service account managers see reporting issues earlier, reduce repeated status-check messages, and give each team a clearer view of ownership before shipment deadlines.
 
 The opportunity is clearest if we look at the last reporting cycle.
 
-In the last reporting cycle, we had 74 status-check messages between account service, sales coordination, and reporting operations. Almost half of those messages asked for information that another team already had. We also estimate that repeated status checks took about 9 staff-hours each week.
+In the last reporting cycle, we had 74 status-check messages between account service, sales coordination, and reporting operations. Almost half of those messages asked for information that another team already had. For example, three people asked whether the same supplier inquiry for imported pump parts had been answered before the Friday shipment-reporting deadline. We also estimate that repeated status checks took about 9 staff-hours each week.
 
 These figures show a common problem. The problem is not that people are careless. The problem is that the current information is spread across several places. One team may know that a request is waiting. Another team may know that the deadline is close. A third person may know who owns the next action. But the full picture is not easy to see.
 
@@ -103,9 +100,9 @@ The key information is at the top because the user needs to answer one question 
 
 The value depends on the user group.
 
-For account managers, the first benefit is earlier visibility. Instead of asking several people for status near the deadline, they can check one shared weekly view and see which requests need attention.
+For client-service account managers, the first benefit is earlier visibility. Instead of asking several people for status near the deadline, they can check one shared weekly view and see which requests need attention.
 
-For account-service staff, the second benefit is fewer repeated messages. If the status is visible in one place, the same question does not need to move through three different email threads.
+For account-service staff, the second benefit is fewer repeated messages. If the status is visible in one place, the same question does not need to move through three different email threads. For example, if Team North can see that a supplier reply is due by Thursday noon, they do not need to ask reporting operations again on Friday morning.
 
 For reporting operations, the third benefit is clearer ownership. The dashboard does not solve every reporting issue, but it shows who owns the next action. That makes the handoff easier to manage.
 
@@ -113,7 +110,7 @@ There is also one important limit. This dashboard is not a record of shipment in
 
 The rollout is designed to support adoption, not force a wide launch.
 
-The pilot will run for four weeks. In Week 0, before launch, we confirm the pilot users and access. We also send a one-page user guide. In Week 1, the dashboard goes live for two teams, and we collect the first issues in a simple issue log. In Week 2, we review repeated questions and adjust the labels if users are confused. In Week 3, we check the owner and deadline fields carefully, because these fields are the main value of the dashboard. In Week 4, we review the pilot and decide whether to continue, revise, or stop.
+The pilot will run for four weeks. In Week 0, before launch, we confirm the pilot users and access for Team North and Team West. We also send a one-page user guide. In Week 1, the dashboard goes live for the two teams, and we collect the first issues in a simple issue log. In Week 2, we review repeated questions and adjust the labels if users are confused. In Week 3, we check the owner and deadline fields carefully, because these fields are the main value of the dashboard. In Week 4, we review the pilot and decide whether to continue, revise, or stop.
 
 During the pilot, we will check three things. First, are repeated status-check messages reduced? Second, do users understand the fields? Third, does the update process create too much work for reporting operations?
 
@@ -121,7 +118,7 @@ The pilot target is a 30 percent reduction in repeated status-check messages. Th
 
 Support is part of the launch, not an afterthought.
 
-Reporting operations will update the status fields once a week. Each pilot team will have one account manager as the main user contact. Account-service will collect feedback using a short form. If there is a data question or a confidentiality concern, we will pause that field and check it before continuing.
+Reporting operations will update the status fields once a week. Each pilot team will have one client-service account manager as the main user contact. Account-service will collect feedback using a short form. If there is a data question or a confidentiality concern, we will pause that field and check it before continuing.
 
 For materials, I have prepared four items. The pre-read is a one-page summary of the dashboard purpose and pilot schedule. Today's live visual is the dashboard mockup and rollout timeline. The follow-up handout is the pilot user guide, with support contact and feedback form. The backup material is the data-field list and confidentiality rules, which we will use only if needed during Q&A.
 
@@ -193,7 +190,7 @@ Pause after limits language:
 | Bridge to rationale | Why do we need a dashboard instead of more email updates? | The issue is not only the number of updates. The issue is that ownership and status are hard to see across teams. The dashboard gives one shared view before the deadline. |
 | Acknowledge limitation | What if different teams use different reporting cycles? | That is a real limitation. For the pilot, we will include only two teams with similar reporting cycles. Then we will check what changes are needed before wider use. |
 | Defer safely | Can real customer names appear in the dashboard later? | I cannot confirm that today. For the pilot, we will use sanitized labels only. I will check data and confidentiality requirements before any wider launch. |
-| Confirm follow-up | Who updates the dashboard after launch? | Reporting operations will update the status fields each week. I will send the owner list after this meeting and include it in the pilot guide. |
+| Confirm follow-up | Who updates the dashboard after launch? | Reporting operations will update the status fields each week. Team North and Team West will each have one client-service account manager as the user contact. I will send the owner list after this meeting and include it in the pilot guide. |
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
@@ -231,7 +228,7 @@ Contingency:
 
 ### Scenario Brief
 
-Aoba City Administrative Support Center is preparing a three-month pilot of an application support desk. The desk will help residents complete online forms before submission, especially when they have questions about attachments or required fields.
+Aoba City Administrative Support Center is preparing a three-month pilot of an application support desk for the resident certificate support form. The desk will be open on Tuesday and Thursday mornings during the pilot. It will help residents complete online forms before submission, especially when they have questions about attachments or required fields. Counter staff and call-center staff will use the same guidance sheet so residents receive consistent answers.
 
 This is an administrative service-delivery example. It is not a political proposal, policy campaign, legislation briefing, or budget advocacy presentation.
 
@@ -269,19 +266,16 @@ Visual notes:
 - Avoid flags, seals, emblems, crests, national symbols, party colors, or country-specific iconography.
 - Keep the service-flow diagram readable without color alone. Use labels and arrows.
 
-![Service flow showing how an application support desk helps users before submission.](../../../images/planned/p3-u07-application-support-service-flow.png)
-
 ### Sample Slide Set
 
-Editable sample slide deck: [Launch Government-Agency Deck](../../assets/model-slide-decks/launch-government.pptx)
-
-The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
+Sample slide deck: [Launch Government-Agency Deck](../../assets/model-slide-decks/launch-government.pptx)
 
 ### Key Vocabulary Before Listening
 
 | Term | Simple meaning |
 |---|---|
 | support desk | a service point where users can ask for help |
+| resident certificate | a document that confirms basic resident-registration information |
 | submission | sending or giving in a form |
 | pre-read | short material sent before a meeting or presentation |
 | rollout | the planned introduction of a new process, service, or tool |
@@ -300,7 +294,7 @@ My recommendation is to test a small application support desk because it gives r
 
 The user need is already visible in our inquiry pattern.
 
-More residents are starting online forms, but many still need help before they can submit the forms correctly. Last month, there were 312 online form inquiries. About 47 percent were about attachments or field entry. About 28 percent led to a repeat visit or a follow-up call.
+More residents are starting online forms, but many still need help before they can submit the forms correctly. Last month, there were 312 inquiries about the resident certificate support form. About 47 percent were about attachments or field entry. About 28 percent led to a repeat visit or a follow-up call.
 
 These figures show a realistic service problem. When a form is incomplete, staff must answer another inquiry. The resident may need to call again, visit again, or wait longer for the next step. This creates extra work for staff and a frustrating experience for users.
 
@@ -324,7 +318,7 @@ The third benefit is clearer guidance. During the pilot, we will record common q
 
 The staffing plan keeps the pilot limited.
 
-The pilot will run for three months. Before launch, we will train assigned staff and prepare a short guidance sheet. In Month 1, the support desk will open during limited hours. Staff will record inquiry categories, but they will not record unnecessary personal details in the pilot log. In Month 2, we will review common questions and adjust the guidance sheet if needed. In Month 3, we will review repeat inquiries, staff workload, and user comments.
+The pilot will run for three months. Before launch, we will train assigned staff and prepare a short guidance sheet for the resident certificate support form. In Month 1, the support desk will open on Tuesday and Thursday mornings. Staff will record inquiry categories, but they will not record unnecessary personal details in the pilot log. In Month 2, we will review common questions with the call-center team and adjust the guidance sheet if needed. In Month 3, we will review repeat inquiries, staff workload, and user comments.
 
 The pilot target is a 15 percent reduction in repeat inquiries for the selected online form process. This is a target for review, not a promise. If the desk reduces repeat inquiries but creates too much pressure at the counter, we need to know that. If the desk helps only a small group of users, we need to know that too.
 
@@ -457,4 +451,5 @@ Contingency:
 ## AI Critical-Literacy Note
 
 If your class discusses AI, use it only for checking and critique. For example, you can review a short flawed AI-style launch opening and identify generic claims, missing limits, confidentiality risk, or unclear audience benefit. Do not use AI to generate your final script or final visuals. Your presentation, language, visuals, Q&A preparation, and final delivery must remain your own work.
+
 

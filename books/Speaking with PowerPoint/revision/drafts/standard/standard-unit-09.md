@@ -77,9 +77,7 @@ Optional model reference: For a banking/leasing or general trading-company versi
 
 Choose one presentation you have planned. Mark each item: Ready, Need to check, or Not needed.
 
-![Checklist-style visual showing camera, microphone, screen share, notes, captions, and backup file preparation.](../../../images/planned/p3-u09-online-delivery-setup.png)
-
-*Online delivery needs setup checks before the presentation begins.*
+Online delivery needs setup checks before the presentation begins.
 
 | Check | Status |
 |---|---|

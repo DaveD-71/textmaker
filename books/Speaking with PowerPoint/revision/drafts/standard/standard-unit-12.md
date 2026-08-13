@@ -103,6 +103,19 @@ Use this checklist before you present.
 | Q&A | I have prepared likely questions and safe deferral phrases. |
 | Professionalism | My data, names, and examples are fictional, sanitized, sourced, or approved. |
 
+## Language-Level Check: B1 and B2
+
+Use this table to check the English in your final presentation. Your teacher may adapt these descriptions for your class.
+
+| Area | B1 performance | B2 performance |
+|---|---|---|
+| Structure language | Uses clear prepared phrases for opening, sequence, and close. | Uses signposting flexibly and connects points smoothly. |
+| Evidence language | Explains one simple evidence point with basic numbers or examples. | Explains evidence, limits the claim, and connects it to the recommendation. |
+| Interaction | Answers expected questions with prepared phrases and asks for clarification when needed. | Handles follow-up questions, limits claims, and confirms next actions more independently. |
+| Spoken control | Speaks clearly enough to follow, with pauses and some repaired mistakes. | Speaks with better pace, stress, and recovery when wording becomes difficult. |
+
+The goal is not to use difficult English. The goal is to make your message clear, accurate enough, and useful for the audience.
+
 ## Practice Task 1: Final Preparation Review
 
 Complete the table before your final presentation.
@@ -147,6 +160,16 @@ During Q&A:
 - confirm follow-up where appropriate
 
 Your spoken English output for this unit is the final presentation, the required Q&A exchange, and the reflection discussion or written self-review.
+
+## Learner Deliverable
+
+Submit or complete:
+
+- your final presentation materials
+- the delivered presentation
+- the required Q&A exchange
+- the textbook wrap-up quiz
+- the self-review or reflection notes
 
 ## Optional Model References
 

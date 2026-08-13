@@ -345,3 +345,10 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/environment
 - Decision: when using the OpenAI Python SDK from this network-drive workspace, avoid reading/writing live API inputs and outputs directly on the UNC repo path.
 - Preferred behavior: create a local staging directory under `%TEMP%`, run SDK generation there, write manifests/prompts/outputs locally, validate locally, then copy only durable approved outputs back into the repo. Use .NET/PowerShell full-path normalization such as `[System.IO.Path]::GetFullPath(...)` when safety-checking UNC paths before cleanup because `Resolve-Path` may add provider prefixes or formatting that breaks simple string comparisons.
+
+## 2026-08-13 - Speaking with PowerPoint Phase 6 Control Repair
+
+- Status: `active`
+- Scope: project/milestone
+- Decision: Phase 6 control-layer repair is complete for the current Standard-draft review. `books/Speaking with PowerPoint/revision/control/plan3-traceability.md` now has Phase 6 execution tracking, `plan3-phase6-defer-log.md` records formal deferrals, and `plan3-phase6-issue-classification-log.md` classifies significant issues.
+- Preferred behavior: Phase 6 non-visual repair is complete for the current Standard Markdown source. Manuscript repair round 1 passed final Language Editor recheck; QA-085 source verification is saved; source-level proof/style/reference scans passed. Current QA count: 87 Pass, 15 Repair, 19 Defer, 1 N/A. Remaining Repair rows are visual/asset-related except QA-120, which remains the summary open-issues row until visual/asset issues are resolved or formally deferred. Resume next with the separate visual/deck-production workstream, using Canva plugin/MCP and/or Default templates only after the user chooses that direction.

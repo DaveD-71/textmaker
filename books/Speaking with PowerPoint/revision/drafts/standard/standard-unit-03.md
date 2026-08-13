@@ -26,6 +26,28 @@ Different business purposes need different structures. A simple list is often no
 
 There is no rule that every presentation needs exactly three points. Three points can be useful, but the structure should come from the purpose, audience, and evidence.
 
+## Core Skill: Use Examples and Evidence Well
+
+Every main point needs support. In a presentation, support usually comes from an example, evidence, or both.
+
+| Support type | What it does | Example |
+|---|---|---|
+| Example | Makes the point concrete | "Last Friday, three people asked who owned the same supplier reply before the reporting deadline." |
+| Evidence | Shows that the point is not only an opinion | "There were 38 late document handoffs last month, and 61% involved unclear handoff notes." |
+| Explanation | Connects the support to the message | "This matters because the team loses time checking the same information in different places." |
+
+A useful example is specific enough to picture, but not so detailed that it distracts from the message. Use fictional or sanitized details when you practise. Do not use real client, account, order, shipment, applicant, staff, ticket, or personal information.
+
+Place details carefully:
+
+| Detail type | Best place |
+|---|---|
+| Essential example that proves the main point | Main body |
+| Small number or simple comparison | Main body |
+| Detailed data table | Appendix, backup material, or Q&A |
+| Confidential or identifying detail | Do not include it |
+| New idea that changes the recommendation | Earlier in the body, not only in the conclusion |
+
 ## Presentation English Focus
 
 Use preview and transition language to guide the audience.
@@ -63,6 +85,19 @@ Sample preview:
 > I will cover four points. First, I will show where the delays occur. Then I will explain the main cause. After that, I will recommend a one-month checklist trial. Finally, I will ask for your approval and confirm the next step.
 
 Optional model reference: for another structure, compare the Project Results Briefing Models. Results briefings often move from objective to evidence to recommendation.
+
+Mini example: Options-based decision structure
+
+Purpose: ask which format to use for a short decision meeting.
+
+| Section | Example content |
+|---|---|
+| Situation | The audience has 15 minutes and must approve one next step. |
+| Options | Option A: live slide summary. Option B: one-page pre-read plus short live summary. |
+| Criteria | The format must be quick, easy to read before the meeting, and safe to share. |
+| Recommendation | Use the one-page pre-read plus short live summary because the audience needs time to review the detail before deciding. |
+
+This is a short model, not a full appendix presentation. Use it to understand the structure.
 
 ## Practice 1: Match Purpose and Structure
 
@@ -119,6 +154,7 @@ Complete the planning map for your own presentation.
 Check your map with these questions:
 
 - Does every section support the core message?
+- Does every main point have an example, evidence, or clear explanation?
 - Is the order easy for a listener to follow?
 - Is any detail too small for the main presentation?
 - Is the action or decision clear?

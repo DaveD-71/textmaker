@@ -70,13 +70,14 @@ Sample explanation:
 
 Optional model reference: For a banking/leasing or general trading-company version, see the business-client model in the Process Improvement Briefing Models. For a government-agency version, compare the government-agency model in the same model set.
 
-![Before-and-after workflow showing how a shared exception log clarifies handoffs.](../../../images/planned/p3-u07-import-document-handoff-workflow.png)
+Example visual messages:
 
-*The revised workflow makes handoff ownership visible before the deadline.*
+| Context | Useful visual | Message the visual should make clear |
+|---|---|---|
+| Business-client process improvement | Before/after workflow | The revised workflow makes handoff ownership visible before the deadline. |
+| Government-agency process improvement | Before/after intake process | The checklist moves error prevention to the first contact point. |
 
-![Before-and-after workflow showing how an intake checklist catches errors earlier.](../../../images/planned/p3-u07-application-intake-workflow.png)
-
-*The checklist moves error prevention to the first contact point.*
+When you create your own version, show only the steps that help the audience understand the decision. Keep detailed process rules, screenshots, or data tables as backup material.
 
 ## Practice 1: Choose the Format
 

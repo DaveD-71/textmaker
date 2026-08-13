@@ -75,6 +75,16 @@ Choose the format that matches the question.
 
 Do not use a complex chart because it looks impressive. Use the simplest format that makes the point clear.
 
+Useful terms:
+
+| Term | Simple meaning |
+|---|---|
+| checkpoint | a fixed time or step when people check status |
+| rollout | the planned introduction of a new process, service, or tool |
+| dashboard | one screen or visual page that shows key status information |
+| status-check message | a message asking what has happened or what is still open |
+| intake | the first step when an office receives an application or request |
+
 ## Model: Before/After Chart Explanation
 
 Practice chart data: fictional for classroom use.
@@ -158,8 +168,6 @@ Use your own simple chart or one of the fictional data sets below.
 
 Option A: workflow data, fictional for practice
 
-![Before-and-after chart showing fewer late document handoffs after the pilot.](../../../images/planned/p3-u06-import-document-handoff-results-chart.png)
-
 *Fictional practice data: late document handoffs decreased during the pilot.*
 
 | Measure | Before pilot | After pilot |
@@ -169,8 +177,6 @@ Option A: workflow data, fictional for practice
 | Users reporting clearer ownership | 48% | 82% |
 
 Option B: service data, fictional for practice
-
-![Before-and-after chart showing fewer returned applications after the intake checklist trial.](../../../images/planned/p3-u06-application-intake-results-chart.png)
 
 *Fictional practice data: returned applications decreased during the checklist trial.*
 

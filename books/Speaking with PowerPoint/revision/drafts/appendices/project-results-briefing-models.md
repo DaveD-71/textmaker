@@ -21,9 +21,9 @@ When you prepare your own presentation, do not copy the script word for word. Us
 
 ### Scenario and Purpose
 
-Seika Global Trading Operations tested a new exception resolution process for import document handoffs. The old process used separate email threads and manual handoff messages, so some exceptions were not owned clearly before the end-of-day preparation window.
+Seika Global Trading Operations tested a new exception resolution process for import document handoffs at the Yokohama Import Documentation Desk. The old process used separate email threads and manual handoff messages, so some exceptions, such as missing supplier packing-list confirmations, were not owned clearly before the 3:00 p.m. preparation cutoff.
 
-The pilot used a shared exception log and a fixed daily checkpoint. After four weeks, the presenter reports the results and recommends expanding the process to two more desks.
+The pilot used a shared exception log and a fixed daily checkpoint. After four weeks, the presenter reports the results and recommends expanding the process to two more fictional desks: Kansai Machinery Imports and Nagoya Parts Coordination.
 
 All organization names and data in this model are fictional for practice.
 
@@ -36,7 +36,7 @@ Audience:
 
 Purpose: report pilot results and request approval for controlled expansion.
 
-Core message: The pilot reduced late document handoffs and made ownership clearer, so the process should expand to two more desks with two small controls: a morning log check and one owner for duplicate entries.
+Core message: The pilot reduced late document handoffs and made ownership clearer, so the process should expand to the Kansai Machinery Imports and Nagoya Parts Coordination desks with two small controls: a morning log check and one owner for duplicate entries.
 
 Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
@@ -53,13 +53,9 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 Suggested chart title: **Pilot reduced late document handoffs and rework time**.
 
-![Before-and-after chart showing fewer late document handoffs after the pilot.](../../../images/planned/p3-u06-import-document-handoff-results-chart.png)
-
 ### Sample Slide Set
 
-Editable sample slide deck: [Results Business-Client Deck](../../assets/model-slide-decks/results-business.pptx)
-
-The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
+Sample slide deck: [Results Business-Client Deck](../../assets/model-slide-decks/results-business.pptx)
 
 ### Key Vocabulary Before Listening
 
@@ -71,6 +67,7 @@ The deck is a draft planning asset. Images or final textbook screenshots can be 
 | controlled expansion | a wider trial with clear limits and safeguards |
 | rollout | introducing a process to all target teams |
 | volume-adjusted view | a check that compares results after considering workload size |
+| duplicate entry | the same item entered more than once |
 
 ### Full Spoken Model Presentation
 
@@ -80,7 +77,7 @@ Good morning. The short answer from the exception resolution pilot is positive, 
 
 The pilot had one main goal: to reduce late import document handoffs caused by unclear handoffs.
 
-I will focus on the decision evidence: what improved, what remains uncertain, and why I recommend a controlled expansion to two more desks.
+I will focus on the decision evidence: what improved, what remains uncertain, and why I recommend a controlled expansion to the Kansai Machinery Imports and Nagoya Parts Coordination desks.
 
 The approval request is a six-week expansion with two small controls before we scale the process further.
 
@@ -88,7 +85,7 @@ The approval request is a six-week expansion with two small controls before we s
 
 The objective was narrow.
 
-Before the pilot, exception checks were handled through separate email threads, spreadsheet notes, and manual handoff messages. This made ownership unclear, especially before the end-of-day preparation window.
+Before the pilot, exception checks were handled through separate email threads, spreadsheet notes, and manual handoff messages. This made ownership unclear, especially before the 3:00 p.m. preparation cutoff.
 
 The project team did not change the approval process. We also did not change the control steps. The change was narrower than that. We introduced a shared exception log and a fixed daily checkpoint so that each open exception had a visible owner.
 
@@ -102,7 +99,7 @@ The first result is late document handoffs. Before the pilot, we had 38 late doc
 
 The second result is rework time. Before the pilot, average rework time was 22 minutes per exception. After the pilot, it fell to 16 minutes. That is six minutes less per exception.
 
-These results are positive, but I want to be careful about the claim. The chart does not prove that the shared log caused every improvement. Volume, staffing, and the type of exceptions can also affect the result. However, the improvement appears in both measures, and the user feedback supports the same story.
+These results are positive, but I want to be careful about the claim. The chart does not prove that the shared log caused every improvement. Volume, staffing, and the type of exceptions can also affect the result. We checked a simple volume-adjusted view as backup: late handoffs fell from 5.2 to 3.9 per 100 open exceptions. The improvement is smaller in that view, but it is still visible. The user feedback also supports the same story.
 
 In the user check, 82% of pilot users said ownership was clearer. That is important because ownership was the main problem we were trying to solve.
 
@@ -116,13 +113,13 @@ At the same time, the pilot showed two issues that we should fix before expansio
 
 The first issue is morning updates. Some entries were not refreshed early enough, so the first checkpoint sometimes started with old information. This did not break the process, but it reduced trust in the log.
 
-The second issue is duplicate entries. We found 9 duplicate log entries during the pilot. This happened when two people entered the same exception from different message threads.
+The second issue is duplicate entries. We found 9 duplicate log entries during the pilot. This happened when two people entered the same exception from different message threads. For example, one supplier packing-list delay appeared once under the supplier name and once under the document type.
 
 These issues are manageable. They do not mean we should stop the process. But they do mean we should expand with controls, not move directly to full rollout.
 
 #### Recommendation
 
-Based on the evidence, I recommend expanding the process to two more desks for six weeks.
+Based on the evidence, I recommend expanding the process to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks.
 
 My recommendation has two conditions.
 
@@ -138,7 +135,7 @@ The result changes the decision in two ways. It is strong enough to continue, bu
 
 The result is positive, but not perfect. For that reason, I am not asking for full rollout today.
 
-I am asking for approval to expand the process to two more desks for six weeks, with a morning log check and duplicate-entry ownership. After six weeks, I will report the result again with the same measures and a volume-adjusted view.
+I am asking for approval to expand the process to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks, with a morning log check and duplicate-entry ownership. After six weeks, I will report the result again with the same measures and a volume-adjusted view.
 
 Thank you. I am ready to take your questions.
 
@@ -186,7 +183,7 @@ Cautious claim language:
 | Bridge to evidence | Could this be because volume was lower during the pilot? | That is possible, so we checked the result against average daily volume. The improvement was still visible, although the exact percentage was smaller. That is why I recommend expansion, not full rollout. |
 | Acknowledge risk or limitation | Does the shared log create a control risk? | It could create a risk if ownership is unclear. To reduce that risk, each exception needs one named owner, and duplicate entries must be checked each morning. |
 | Defer safely | Can you confirm whether this meets all control requirements? | I cannot confirm the full control position today. I can say that the pilot did not change the approval process. I will confirm the control review result with the risk/control team before expansion. |
-| Confirm follow-up or next action | What do you need from us today? | Today I need approval to expand the pilot to two more desks for six weeks, with the two controls shown on the final slide. I will report the next result after the six-week review. |
+| Confirm follow-up or next action | What do you need from us today? | Today I need approval to expand the pilot to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks, with the two controls shown on the final slide. I will report the next result after the six-week review. |
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
@@ -211,9 +208,9 @@ Cautious claim language:
 
 ### Scenario and Purpose
 
-Midori Ward Administrative Services Office tested a new intake checklist for application forms. Before the trial, many forms were returned because attachments were missing or key fields were incomplete. Returned applications created delays, repeat inquiries, and extra staff work.
+Midori Ward Administrative Services Office tested a new intake checklist for housing support certificate applications. Before the trial, many forms were returned because attachments were missing or key fields were incomplete. Returned applications created delays, repeat inquiries, and extra staff work.
 
-The trial used a short front-counter checklist and a shared FAQ sheet. After one month, the presenter reports the results and recommends expanding the checklist to two more high-volume application types.
+The trial used a short front-counter checklist and a shared FAQ sheet. After one month, the presenter reports the results and recommends expanding the checklist to two more high-volume application types: childcare fee reduction applications and elderly transport pass applications.
 
 All organization names and data in this model are fictional for practice.
 
@@ -226,7 +223,7 @@ Audience:
 
 Purpose: report trial results and request approval to expand the checklist.
 
-Core message: The intake checklist reduced preventable returned applications, so it should expand to two more high-volume application types with one owner for checklist updates.
+Core message: The intake checklist reduced preventable returned applications, so it should expand to childcare fee reduction applications and elderly transport pass applications with one owner for checklist updates.
 
 Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
@@ -243,13 +240,9 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 Suggested chart title: **Checklist trial reduced returns and repeat inquiries**.
 
-![Before-and-after chart showing fewer returned applications after the intake checklist trial.](../../../images/planned/p3-u06-application-intake-results-chart.png)
-
 ### Sample Slide Set
 
-Editable sample slide deck: [Results Government-Agency Deck](../../assets/model-slide-decks/results-government.pptx)
-
-The deck is a draft planning asset. Images or final textbook screenshots can be added later after visual approval.
+Sample slide deck: [Results Government-Agency Deck](../../assets/model-slide-decks/results-government.pptx)
 
 ### Key Vocabulary Before Listening
 
@@ -261,6 +254,7 @@ The deck is a draft planning asset. Images or final textbook screenshots can be 
 | high-volume application type | an application type that the office receives often |
 | update owner | the person or role responsible for keeping a document current |
 | waiting time | how long users wait before receiving service |
+| rotating staff | staff who move between different duties or counters |
 
 ### Full Spoken Model Presentation
 
@@ -320,9 +314,9 @@ For these reasons, the next step should be limited expansion, not office-wide ro
 
 #### Recommendation
 
-Based on the trial, I recommend expanding the checklist to two more high-volume application types.
+Based on the trial, I recommend expanding the checklist to two more high-volume application types: childcare fee reduction applications and elderly transport pass applications.
 
-I also recommend assigning one update owner in the document-review team. Counter-service staff should be able to send change requests, but one person or role should approve and update the checklist.
+I also recommend assigning one update owner in the document-review team. Counter-service staff should be able to send change requests, but one person or role should approve and update the checklist. Rotating staff should receive a 15-minute reminder before they first use the revised checklist.
 
 During the expansion, we should measure three things: returned applications, repeat inquiries, and waiting time at the counter. This will show both the benefit and the service impact.
 
@@ -332,7 +326,7 @@ The service result is encouraging: returned applications fell, repeat inquiries 
 
 At the same time, we should monitor counter time and keep the checklist short.
 
-My recommendation is limited expansion: two more high-volume application types, one update owner, and another review after one month.
+My recommendation is limited expansion: childcare fee reduction applications, elderly transport pass applications, one update owner, and another review after one month.
 
 Thank you. I am ready to take your questions.
 
@@ -377,7 +371,7 @@ Cautious claim language:
 
 | Function | Question | Model answer |
 |---|---|---|
-| Clarify the question | Do you mean the checklist should be used for every application type? | Not yet. My recommendation is limited expansion to two more high-volume application types. After that, we should review the result again. |
+| Clarify the question | Do you mean the checklist should be used for every application type? | Not yet. My recommendation is limited expansion to childcare fee reduction applications and elderly transport pass applications. After that, we should review the result again. |
 | Answer directly | Did the checklist reduce returned applications? | Yes. In the trial, returned applications fell from 142 to 111. That is a reduction of about 22%. |
 | Bridge to evidence | Why do you think the checklist caused the improvement? | The main improvement was in attachment-related returns, which the checklist directly targeted. That does not prove every change came from the checklist, but the link is strong enough to justify the next trial. |
 | Acknowledge risk or limitation | Will this make the counter line longer? | It may add some time. Staff reported about 40 seconds per intake. That is why we should monitor waiting time during the expansion, not only returned applications. |
@@ -409,7 +403,7 @@ The two variants teach the same presentation skill, but the workplace pressures 
 
 | Skill | Banking/leasing or general trading-company operations variant | Government administrative variant |
 |---|---|---|
-| Main decision | Expand an exception resolution process to two more desks. | Expand an intake checklist to two more application types. |
+| Main decision | Expand an exception resolution process to the Kansai Machinery Imports and Nagoya Parts Coordination desks. | Expand an intake checklist to childcare fee reduction applications and elderly transport pass applications. |
 | Evidence type | Late document handoffs, rework time, ownership feedback. | Returned applications, repeat inquiries, attachment-related returns. |
 | Main limitation | Volume effects and duplicate log entries. | Short trial period and added counter time. |
 | Sensitive information risk | Client names, account or transaction data, shipment IDs, desk names, internal control findings. | Applicant information, ID fields, case numbers, staff records, public-facing guidance. |
@@ -417,4 +411,5 @@ The two variants teach the same presentation skill, but the workplace pressures 
 | Q&A pressure | Is the result large enough and controlled enough to expand? | Does the result justify expansion without slowing service? |
 
 Neither model should be used for investment advice, securities-market prediction, legal advice, policy argument, or political advocacy. Both models are about operational results, evidence, limitations, and next steps.
+
 

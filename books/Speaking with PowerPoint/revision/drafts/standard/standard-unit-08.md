@@ -110,9 +110,10 @@ Delivery changes with the room and platform, but the goal is the same: help peop
 
 Pointer and cursor control:
 
-- Use a pointer, cursor highlight, annotation, or zoom only when it helps the listener find information.
-- Do not point a laser at people.
-- Do not move the cursor constantly while speaking.
+- Use a pointer, cursor highlight, digital pen, highlighter, annotation, or zoom only when it helps the listener find information.
+- If you use a laser pointer in a room, point only at the screen or wall. Do not point it at people, cameras, reflective surfaces, or screens close to someone's eyes.
+- In online or hybrid delivery, use the cursor, highlight tool, or zoom briefly. Do not move the cursor constantly while speaking.
+- If you write or annotate during the presentation, write only a few words or marks. Do not cover important text or data.
 - Pause before pointing, point to the area, then explain the meaning.
 
 ## Speaking Task

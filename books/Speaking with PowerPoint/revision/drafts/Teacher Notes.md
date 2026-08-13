@@ -25,7 +25,7 @@ The printed textbook should be role-agnostic, but classroom delivery does not ha
 
 When specialist review is used, run the Business Presentation Specialist first, integrate business/context changes, and then run the Language Editor last. The final language pass matters most because the goal is English development. It should check first-use definitions, glossary needs, B1-B2 load, Japanese-learner support, spoken naturalness, and specialized workplace terms.
 
-Watch recurring business/process terms that may need explanation before learners use them: `handoff`, `exception`, `pre-read`, `follow-up handout`, `takeaway document`, `fallback option`, `asynchronous`, `sanitized`, `accessibility`, and `confidentiality`.
+Watch recurring business/process terms that may need explanation before learners use them: `handoff`, `exception`, `checkpoint`, `control process`, `cutoff`, `desk`, `client-service account manager`, `supplier-status`, `dashboard`, `reporting cycle`, `status-check message`, `shipment reporting deadline`, `ownership`, `sanitized`, `rollout`, `pre-read`, `follow-up handout`, `takeaway document`, `fallback option`, `data-field list`, `intake`, `formal review`, `repeat inquiry`, `counter capacity`, `public-facing`, `screen reader`, `alt text`, `metadata`, `PDF fallback`, `volume-adjusted`, `duplicate entry`, `high-volume application type`, `update owner`, `asynchronous`, `accessibility`, and `confidentiality`.
 
 Terminology note: use `leave behind` without a hyphen only as the phrasal verb, as in "Please do not leave important data behind." Some business writers use `leave-behind` as a compound noun for material given after a meeting, but this is not transparent for B1-B2 learners. Prefer `follow-up handout`, `takeaway document`, or `supporting document` in learner-facing text unless the industry term is explicitly taught.
 
@@ -56,6 +56,8 @@ Suggested answers for Practice 1: 1B, 2C, 3D, 4A.
 For Practice 2, accept several possible structures if the sequence is logical. The key requirement is that learners move from a loose list to a purposeful flow.
 
 Practice 3 now uses a planning map grouped into Introduction, Body, and Conclusion. Reinforce that the conclusion should summarize key points and state the action, decision, or close. Backup details should be prepared for Q&A, appendices, or follow-up documents, not introduced as new content in the conclusion.
+
+The learner draft now includes a short section on examples and evidence. Reinforce the difference: an example makes a point concrete; evidence shows the point is not only an opinion; explanation connects the support to the core message. For B1 learners, one clear example may be enough. For B2 learners, ask them to explain why the example or evidence is relevant to the audience decision.
 
 For B1 learners, allow a simple three- or four-part outline with sentence frames. For B2 learners, ask them to justify why the chosen structure fits the audience and purpose.
 
@@ -102,6 +104,8 @@ For government-agency examples, keep the focus on administrative service, proces
 Spoken output is required in this unit. Learners should explain a chart in 60-90 seconds.
 
 Check for overclaims such as "prove," "guarantee," and "solve." Encourage cautious claims when the evidence is limited.
+
+Unit 6 now includes a useful-terms box for `checkpoint`, `rollout`, `dashboard`, `status-check message`, and `intake`. Check these terms before learners present their own evidence, especially if they are using client-specific process examples.
 
 ## Unit 7: Tool-Neutral Slide and Document Workflow
 
@@ -166,6 +170,8 @@ The current course default is 5-7 minutes plus required Q&A, but client or class
 If learners present online or asynchronously, keep the same rubric categories but adjust the delivery evidence: camera, microphone, captions or transcript awareness, screen sharing, and response format may replace room movement or physical eye contact.
 
 For final assessment, separate English control from presentation effectiveness. A learner may have a clear structure with language problems, or accurate English with weak audience fit. Use the rubric to make both visible.
+
+Use the learner-facing B1/B2 language-level table as guidance, not as a rigid scoring formula. At B1, look for clear prepared structure, simple accurate evidence language, expected Q&A handling, and intelligible pauses. At B2, look for more flexible signposting, clearer claim limits, stronger audience adaptation, and more independent Q&A handling.
 
 Use the textbook wrap-up quiz to extend 1-to-1 Unit 12 lessons and to consolidate learning after final presentations. It can be done before the final presentation as a warm-up, after the final presentation as review, or partly as homework.
 

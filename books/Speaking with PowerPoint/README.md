@@ -11,7 +11,32 @@ The textbook manuscript drafts under `revision/drafts/standard/` and `revision/d
 
 ## Current Handoff Status
 
-Updated: 2026-08-13 15:20 JST
+Updated: 2026-08-13 20:15 JST
+
+Latest Phase 6 control update:
+
+- Phase 6 repair-agent review round 1 is recorded at `revision/records/plan3-phase6-repair-agent-review-round-1.md`.
+- Phase 6 manuscript repair round 1 is recorded at `revision/records/plan3-phase6-manuscript-repair-round-1.md`.
+- Phase 6 control-layer repair is now complete for traceability/defer/classification:
+  - `revision/control/plan3-traceability.md` now has a Phase 6 execution tracking section covering all consolidated task IDs and Plan 3-specific requirements.
+  - `revision/control/plan3-phase6-defer-log.md` now records deferred work with reason, impact, owner, future action, and recheck trigger.
+  - `revision/control/plan3-phase6-issue-classification-log.md` now classifies significant current issues by type, affected QA IDs, status, owner, and disposition.
+  - `revision/control/plan3-phase6-qa-checklist.md` now marks QA-001, QA-002, QA-003, QA-119, and QA-121 as Pass because the supporting control files exist.
+- Phase 6 manuscript repair round 1 completed:
+  - six appendix model scripts now include concrete fictional business-client and government-agency details;
+  - deleted-image embeds and production-facing draft-deck notes were removed from learner-facing drafts;
+  - Unit 3 now teaches examples/evidence/detail placement and includes an options-based decision mini example;
+  - Unit 6 has useful-terms support;
+  - Unit 8 has expanded pointer/cursor/laser/annotation/zoom guidance;
+  - Unit 12 has an explicit Learner Deliverable section and B1/B2 language-level descriptors;
+  - Teacher Notes has expanded terminology and B1/B2 assessor guidance.
+- Final Language Editor recheck after manuscript repair passed with no blocking language issues.
+- QA-085 source verification is recorded at `revision/records/plan3-phase6-source-verification.md`.
+- Final source-level proof/style/reference scans are complete for current Markdown source.
+- Current Phase 6 QA count after non-visual Phase 6 repair: 87 Pass, 15 Repair, 19 Defer, 1 N/A.
+- Visual/asset repair remains intentionally paused. Canva plugin/MCP and the `Default templates` plugin are pinned for later visual/deck-production exploration.
+- Remaining Repair rows: QA-012, QA-024, QA-053, QA-066, QA-067, QA-071, QA-074, QA-075, QA-079, QA-080, QA-081, QA-091, QA-093, QA-114, QA-120.
+- Next step: resume the visual/deck-production workstream when ready. Remaining Repair rows are visual/asset-related, except QA-120, which stays Repair as the summary row until the visual/asset issues are repaired or formally deferred.
 
 - Latest synced baseline before today's edits: commit `357ec3e Reframe appendix models for client context`.
 - Current uncommitted Speaking with PowerPoint edits:
