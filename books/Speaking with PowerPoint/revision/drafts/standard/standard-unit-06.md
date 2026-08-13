@@ -158,6 +158,10 @@ Use your own simple chart or one of the fictional data sets below.
 
 Option A: workflow data, fictional for practice
 
+![Before-and-after chart showing fewer late document handoffs after the pilot.](../../../images/planned/p3-u06-import-document-handoff-results-chart.png)
+
+*Fictional practice data: late document handoffs decreased during the pilot.*
+
 | Measure | Before pilot | After pilot |
 |---|---:|---:|
 | Late document handoffs | 38 | 27 |
@@ -165,6 +169,10 @@ Option A: workflow data, fictional for practice
 | Users reporting clearer ownership | 48% | 82% |
 
 Option B: service data, fictional for practice
+
+![Before-and-after chart showing fewer returned applications after the intake checklist trial.](../../../images/planned/p3-u06-application-intake-results-chart.png)
+
+*Fictional practice data: returned applications decreased during the checklist trial.*
 
 | Measure | Before pilot | After pilot |
 |---|---:|---:|

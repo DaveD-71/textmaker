@@ -4,9 +4,9 @@
     "title": "Plan 3 Image Register",
     "prepared": "2026-08-12",
     "scope": "Plan 3 rebuild of Speaking with PowerPoint / Presentation Skills 2026",
-    "status": "planning",
+    "status": "Phase 5 SDK/Pillow draft assets created",
     "schema_source": "books/Speaking with PowerPoint/revision/control/plan3-asset-register-template.md",
-    "notes": "This register is specific to the Plan 3 rebuild. It does not replace books/Presentation Skills/images/image_register.json until final asset location and reuse decisions are approved."
+    "notes": "This register is specific to the Plan 3 rebuild. It does not replace books/Presentation Skills/images/image_register.json until final asset location and reuse decisions are approved. Phase 5 was rerun on 2026-08-13 using OpenAI SDK-generated 2K text-free source panels staged in local TEMP to avoid UNC path issues, then deterministic Pillow composition for exact visible text, charts, and slide layouts. Earlier programmatic-only and platform-import batches are superseded reference material."
   },
   "style_lock": {
     "diagram_style": "Clean flat-vector educational diagram style, muted professional color palette, generous white space, thin consistent line weights, simple geometric icons, textbook-infographic quality. No photographic texture, no gradients, no logos, no watermarks. No readable body text beyond short labels explicitly specified in the prompt.",
@@ -53,450 +53,910 @@
       "asset_title": "Visual hierarchy comparison",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u05-visual-hierarchy-comparison.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long", "Essentials"],
-      "unit_use": ["Unit 5: Clear Visual Communication"],
-      "source": "planned original",
-      "source_detail": "Create as editable/PIL or generated+edited diagram after Unit 5 text stabilizes.",
-      "license_status": "pending; must be original or OpenAI-generated under project account",
-      "generated_or_original": "planned",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long",
+        "Essentials"
+      ],
+      "unit_use": [
+        "Unit 5: Clear Visual Communication"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Side-by-side comparison of a cluttered visual and a clearer visual with stronger hierarchy.",
       "decorative": false,
       "caption": "A clearer visual guides the audience to the main point first.",
       "replacement_rationale": "Supports Unit 5 visual hierarchy teaching and replaces dated slide-rule examples.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": ""
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable unless people are added",
         "notes": ""
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": ""
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u05-sample-ab-readability",
       "asset_title": "Sample A/B readability comparison",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u05-sample-ab-readability.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long", "Essentials"],
-      "unit_use": ["Unit 5: Clear Visual Communication"],
-      "source": "planned original",
-      "source_detail": "Recreate the legacy Sample A/B concept as editable text or vector/PIL layout.",
-      "license_status": "pending; must be original",
-      "generated_or_original": "planned",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long",
+        "Essentials"
+      ],
+      "unit_use": [
+        "Unit 5: Clear Visual Communication"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Two versions of the same slide text, one hard to read and one revised for better readability.",
       "decorative": false,
       "caption": "Readable slide text helps listeners understand the message while listening.",
       "replacement_rationale": "Replaces low-resolution legacy readability comparison.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": ""
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": ""
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer editable/PIL repair for all text."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u06-import-document-handoff-results-chart",
       "asset_title": "Import document handoff pilot results chart",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-import-document-handoff-results-chart.png",
       "asset_type": "chart",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 6: Data, Charts, and Evidence", "Project Results Briefing Models"],
-      "source": "planned original",
-      "source_detail": "Use fictional data from plan3-case-model-brief.md: late document handoffs fell from 38 to 27; rework time fell from 22 to 16 minutes.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 6: Data, Charts, and Evidence",
+        "Project Results Briefing Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Before-and-after chart showing fewer late document handoffs after the pilot.",
       "decorative": false,
       "caption": "Fictional practice data: late document handoffs decreased during the pilot.",
       "replacement_rationale": "Supports banking/leasing or general trading-company project results briefing without real customer, shipment, or transaction data.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
-        "chart_label_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
+        "chart_label_checked": "pass - values, before/after labels, and fictional-data label included",
         "notes": "Must include fictional-data label and takeaway title."
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
         "government_symbols_clear": "not applicable",
-        "logos_watermarks_clear": "pending",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": "No stock ticker symbols, shipment IDs, firm names, securities-market predictions, or investment advice."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "not applicable if produced as editable chart",
-        "repair_or_regenerate_decision": "Prefer editable chart/PIL output."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u06-application-intake-results-chart",
       "asset_title": "Application intake checklist trial results chart",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u06-application-intake-results-chart.png",
       "asset_type": "chart",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 6: Data, Charts, and Evidence", "Project Results Briefing Models"],
-      "source": "planned original",
-      "source_detail": "Use fictional data from plan3-case-model-brief.md: returned applications fell from 142 to 111; repeat inquiries fell from 86 to 68.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 6: Data, Charts, and Evidence",
+        "Project Results Briefing Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Before-and-after chart showing fewer returned applications after the intake checklist trial.",
       "decorative": false,
       "caption": "Fictional practice data: returned applications decreased during the checklist trial.",
       "replacement_rationale": "Supports government-agency administrative results briefing.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
-        "chart_label_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
+        "chart_label_checked": "pass - values, before/after labels, and fictional-data label included",
         "notes": "Must include fictional-data label and takeaway title."
       },
       "visual_restriction_check": {
         "business_client_clear": "not applicable",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": "No flags, seals, emblems, crests, or country-specific symbols."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
         "no_account_or_transaction_ids": "not applicable",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "not applicable if produced as editable chart",
-        "repair_or_regenerate_decision": "Prefer editable chart/PIL output."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u07-import-document-handoff-workflow",
       "asset_title": "Import document handoff workflow before and after",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-import-document-handoff-workflow.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 7: Tool-Neutral Slide and Document Workflow", "Process Improvement Briefing Models"],
-      "source": "planned original",
-      "source_detail": "Create as editable workflow diagram from the Seika Global Trading Operations process-improvement model.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 7: Tool-Neutral Slide and Document Workflow",
+        "Process Improvement Briefing Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Before-and-after workflow showing how a shared exception log clarifies handoffs.",
       "decorative": false,
       "caption": "The revised workflow makes handoff ownership visible before the deadline.",
       "replacement_rationale": "Supports banking/leasing or general trading-company process improvement model and tool-neutral workflow unit.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": "Must not depend on color alone for before/after distinction."
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
         "government_symbols_clear": "not applicable",
-        "logos_watermarks_clear": "pending",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": "No real firm names, securities exchange names, stock ticker symbols, shipment IDs, or proprietary UI."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer editable/PIL layout for exact text and arrows."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u07-application-intake-workflow",
       "asset_title": "Application intake workflow before and after",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-application-intake-workflow.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 7: Tool-Neutral Slide and Document Workflow", "Process Improvement Briefing Models"],
-      "source": "planned original",
-      "source_detail": "Create as editable workflow diagram from the Midori Ward administrative process-improvement model.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 7: Tool-Neutral Slide and Document Workflow",
+        "Process Improvement Briefing Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Before-and-after workflow showing how an intake checklist catches errors earlier.",
       "decorative": false,
       "caption": "The checklist moves error prevention to the first contact point.",
       "replacement_rationale": "Supports government-agency administrative process model and document-role teaching.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": "Must not depend on color alone for before/after distinction."
       },
       "visual_restriction_check": {
         "business_client_clear": "not applicable",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": "No flags, seals, emblems, crests, or country-specific iconography."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
         "no_account_or_transaction_ids": "not applicable",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer editable/PIL layout for exact text and arrows."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u07-client-reporting-dashboard-mockup",
       "asset_title": "Client reporting dashboard mockup",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-client-reporting-dashboard-mockup.png",
       "asset_type": "mockup",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 5: Clear Visual Communication", "Unit 7: Tool-Neutral Slide and Document Workflow", "Product, Service, or Program Launch Models"],
-      "source": "planned original",
-      "source_detail": "Create as fictional dashboard mockup for Koyo Trading Client Services launch model.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 5: Clear Visual Communication",
+        "Unit 7: Tool-Neutral Slide and Document Workflow",
+        "Product, Service, or Program Launch Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Mockup dashboard showing fictional inquiry status, shipment reporting deadlines, and unresolved requests.",
       "decorative": false,
       "caption": "A dashboard can support a launch briefing when it shows the information users need first.",
       "replacement_rationale": "Supports banking/leasing or general trading-company service launch model without using real client or system data.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
-        "chart_label_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
+        "chart_label_checked": "not applicable",
         "notes": "Dashboard labels must be readable and fictional."
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
         "government_symbols_clear": "not applicable",
-        "logos_watermarks_clear": "pending",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable",
         "notes": "No real customer names, firm logos, securities exchange names, stock tickers, account or transaction data, shipment IDs, or proprietary UI."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer editable/PIL or HTML-to-image mockup for exact labels."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u07-application-support-service-flow",
       "asset_title": "Application support desk service flow",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u07-application-support-service-flow.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long"],
-      "unit_use": ["Unit 5: Clear Visual Communication", "Unit 7: Tool-Neutral Slide and Document Workflow", "Product, Service, or Program Launch Models"],
-      "source": "planned original",
-      "source_detail": "Create as fictional administrative service-flow diagram for Aoba City support desk model.",
-      "license_status": "original fictional teaching data",
-      "generated_or_original": "original",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Unit 5: Clear Visual Communication",
+        "Unit 7: Tool-Neutral Slide and Document Workflow",
+        "Product, Service, or Program Launch Models"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching data and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Service flow showing how an application support desk helps users before submission.",
       "decorative": false,
       "caption": "The support desk helps users before submission, reducing repeat inquiries later.",
       "replacement_rationale": "Supports government-agency service launch model.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": "Must use readable labels and clear step order."
       },
       "visual_restriction_check": {
         "business_client_clear": "not applicable",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
         "representation_checked": "not applicable unless people are added",
         "notes": "No flags, seals, emblems, crests, or country-specific iconography."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
         "no_account_or_transaction_ids": "not applicable",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer editable/PIL layout for exact text and arrows."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     },
     {
       "asset_id": "p3-u09-online-delivery-setup",
       "asset_title": "Online delivery setup checklist visual",
       "file_path": "books/Speaking with PowerPoint/images/planned/p3-u09-online-delivery-setup.png",
       "asset_type": "diagram",
-      "status": "planned",
-      "tier_use": ["Standard", "Long", "Essentials"],
-      "unit_use": ["Unit 9: Online, Hybrid, and Async Delivery"],
-      "source": "planned original",
-      "source_detail": "Create as tool-neutral online/hybrid delivery setup visual.",
-      "license_status": "pending; must be original or OpenAI-generated under project account",
-      "generated_or_original": "planned",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long",
+        "Essentials"
+      ],
+      "unit_use": [
+        "Unit 9: Online, Hybrid, and Asynchronous (Async) Delivery"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Source panel generated with OpenAI SDK using gpt-image-2, 2560x1440, high quality, opaque PNG, with no intended readable text. Final textbook asset composed locally with Pillow so visible text, chart values, and layout are exact and reproducible. Source panels are stored in books/Speaking with PowerPoint/images/source/openai-sdk-2k-final/.",
+      "license_status": "OpenAI-generated source panel plus original local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
       "alt_text": "Checklist-style visual showing camera, microphone, screen share, notes, captions, and backup file preparation.",
       "decorative": false,
       "caption": "Online delivery needs setup checks before the presentation begins.",
       "replacement_rationale": "Supports online/hybrid delivery without relying on one platform UI.",
       "accessibility_check": {
-        "contrast_checked": "pending",
-        "readability_checked": "pending",
-        "color_not_alone_checked": "pending",
+        "contrast_checked": "pass - muted professional palette with dark text on light backgrounds",
+        "readability_checked": "pass - 2560x1440 final draft checked by contact sheet; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - labels and values identify meaning without color alone",
         "chart_label_checked": "not applicable",
         "notes": "Keep labels short and readable."
       },
       "visual_restriction_check": {
-        "business_client_clear": "pending",
-        "government_symbols_clear": "pending",
-        "logos_watermarks_clear": "pending",
-        "representation_checked": "pending if people are included",
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "not applicable - no people included",
         "notes": "No platform logos or proprietary UI."
       },
       "privacy_security_check": {
-        "no_real_client_data": "pending",
-        "no_account_or_transaction_ids": "pending",
-        "no_real_personal_data": "pending",
-        "metadata_checked": "pending",
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
         "notes": ""
       },
       "generated_image_check": {
-        "text_accuracy": "pending",
-        "element_count": "pending",
-        "label_placement": "pending",
-        "stray_text": "pending",
-        "background_artifacts": "pending",
-        "repair_or_regenerate_decision": "Prefer icons plus editable labels."
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - expected chart/diagram/mockup elements present",
+        "label_placement": "pass - final contact sheet checked after SDK/Pillow repair pass",
+        "stray_text": "pass - SDK source panels were prompted to avoid readable text; final visible text is intentional",
+        "background_artifacts": "pass - sparse source panels used only as low-contrast visual support behind deterministic content",
+        "repair_or_regenerate_decision": "Regenerated via OpenAI SDK plus local composition after earlier programmatic/platform batches were too busy or had alignment issues; pending user/editor approval."
       },
       "approved_by": "",
       "approval_date": "",
-      "repair_or_defer_note": "",
-      "recheck_status": ""
+      "repair_or_defer_note": "Regenerated 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-process-business-slide-set",
+      "asset_title": "Business-client process improvement model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/process-business/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-business/p3-model-process-business-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Process Improvement Briefing Models",
+        "Unit 5",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the business-client process-improvement model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the business-client process-improvement model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "not applicable",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-process-government-slide-set",
+      "asset_title": "Government-agency process improvement model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/process-government/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/process-government/p3-model-process-government-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Process Improvement Briefing Models",
+        "Unit 5",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the government-agency process-improvement model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the government-agency process-improvement model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "not applicable",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-launch-business-slide-set",
+      "asset_title": "Business-client launch model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/launch-business/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-business/p3-model-launch-business-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Product, Service, or Program Launch Models",
+        "Unit 5",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the business-client launch model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the business-client launch model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "not applicable",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-launch-government-slide-set",
+      "asset_title": "Government-agency launch model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/launch-government/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/launch-government/p3-model-launch-government-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Product, Service, or Program Launch Models",
+        "Unit 5",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the government-agency launch model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the government-agency launch model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "not applicable",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-results-business-slide-set",
+      "asset_title": "Business-client results briefing model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/results-business/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-business/p3-model-results-business-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Project Results Briefing Models",
+        "Unit 5",
+        "Unit 6",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the business-client results briefing model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the business-client results briefing model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "pass - fictional/sanitized operational labels only",
+        "government_symbols_clear": "not applicable",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
+    },
+    {
+      "asset_id": "p3-app-results-government-slide-set",
+      "asset_title": "Government-agency results briefing model slide set",
+      "file_path": "books/Speaking with PowerPoint/images/model-slides/results-government/",
+      "slide_files": [
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s01.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s02.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s03.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s04.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s05.png",
+        "books/Speaking with PowerPoint/images/model-slides/results-government/p3-model-results-government-s06.png"
+      ],
+      "asset_type": "model slide set",
+      "status": "draft",
+      "tier_use": [
+        "Standard",
+        "Long"
+      ],
+      "unit_use": [
+        "Project Results Briefing Models",
+        "Unit 5",
+        "Unit 6",
+        "Unit 7",
+        "Unit 10",
+        "Unit 12"
+      ],
+      "source": "OpenAI SDK source panel plus deterministic Pillow composition",
+      "source_detail": "Six-screenshot model slide set composed locally with Pillow from sparse 2K OpenAI SDK source panels. Exact slide text, numbers, headings, and support notes are deterministic local composition.",
+      "license_status": "OpenAI-generated source panel plus original fictional teaching content and local composition; pending final user approval",
+      "generated_or_original": "OpenAI-generated source plus original deterministic composition",
+      "alt_text": "Six sample slides for the government-agency results briefing model presentation.",
+      "decorative": false,
+      "caption": "Sample slides for the government-agency results briefing model.",
+      "replacement_rationale": "Adds visual model support so the appendix demonstrates presenting with visuals, not only spoken scripts.",
+      "accessibility_check": {
+        "contrast_checked": "pass - dark text on light background with restrained accent color",
+        "readability_checked": "pass - 2560x1440 slide-set contact sheets checked; final DOCX print proof still required",
+        "color_not_alone_checked": "pass - meaning is carried by headings, labels, and sequence, not color alone",
+        "chart_label_checked": "pass where data appears; numerical claims are locally composed",
+        "notes": "Sample slides are intentionally sparse so learners can see visual support without duplicating the spoken script."
+      },
+      "visual_restriction_check": {
+        "business_client_clear": "not applicable",
+        "government_symbols_clear": "pass - no flags, seals, emblems, crests, or official insignia",
+        "logos_watermarks_clear": "pass - no logos or watermarks",
+        "representation_checked": "pass - no identifiable people",
+        "notes": "No real client names, proprietary UI, official insignia, or sensitive identifiers."
+      },
+      "privacy_security_check": {
+        "no_real_client_data": "pass - fictional labels/data only",
+        "no_account_or_transaction_ids": "pass - no account, transaction, shipment, order, or ticket IDs",
+        "no_real_personal_data": "pass - no personal data",
+        "metadata_checked": "pass - PNG files checked with PIL; no embedded metadata keys reported",
+        "notes": ""
+      },
+      "generated_image_check": {
+        "text_accuracy": "pass - all visible text and numerical values are locally composed, not rendered by the image model",
+        "element_count": "pass - six sample slides present for the model set",
+        "label_placement": "pass - contact-sheet visual check completed after correcting two result-slide message/value mismatches",
+        "stray_text": "pass - no accidental readable text from source panels visible as learner content",
+        "background_artifacts": "pass - sparse low-contrast support motifs only",
+        "repair_or_regenerate_decision": "Draft slide set accepted for Phase 5 internal use; pending user/editor approval."
+      },
+      "approved_by": "",
+      "approval_date": "",
+      "repair_or_defer_note": "Created 2026-08-13 via SDK/Pillow workflow; pending user/editor approval before final release.",
+      "recheck_status": "created; 2560x1440 validation and contact-sheet control check completed"
     }
   ]
 }

@@ -1,0 +1,19 @@
+Create a minimal textbook source panel about clear visual hierarchy.
+
+Visual motif: two very simple abstract slide thumbnails side by side. The left thumbnail should look slightly cluttered using placeholder rectangles and lines only. The right thumbnail should look clearer with fewer blocks, more spacing, and one emphasized area.
+
+Composition: keep the two thumbnails in the center, occupying no more than 35 percent of the image. Leave a large blank title area at the top and blank caption areas below each thumbnail for later exact text overlay.
+
+Avoid: readable text, letters, numbers, realistic screenshots, dense dashboards, many colors, logos, or fake labels.
+
+Hard requirements:
+- 16:9 landscape source panel for later textbook slide composition.
+- Minimal, sparse design: at least 75 percent clean blank space.
+- One simple visual motif only; no dense dashboards, no multi-panel icon clusters, no busy sidebars.
+- Leave a large uninterrupted blank area near the top for later title overlay.
+- Leave a large uninterrupted blank area in the lower third for later explanation overlay.
+- No readable text, no letters, no numbers, no fake labels, no pseudo-writing.
+- No logos, no watermarks, no real UI screenshots, no brand colors tied to a specific platform.
+- No people.
+- No flags, seals, emblems, crests, badges, official insignia, or country-specific symbols.
+- Clean flat-vector textbook style; muted professional palette; high print quality.

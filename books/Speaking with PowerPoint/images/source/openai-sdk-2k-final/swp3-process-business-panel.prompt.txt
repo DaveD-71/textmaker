@@ -1,0 +1,19 @@
+Create a minimal source panel for an internal business operations workflow improvement briefing.
+
+Visual motif: a simple horizontal document handoff flow with three or four abstract document cards, one shared process board, and one checkpoint marker. It should clearly feel like internal corporate operations, not public-service administration.
+
+Composition: place the small workflow motif across the center-left, occupying no more than 25 percent of the image. Keep the upper-left, upper-center, and lower third mostly blank for later exact text overlay.
+
+Avoid: public counter windows, service desks, government-office imagery, shield icons, badge icons, finance trading visuals, shipping vehicles, ports, dense dashboards, vertical icon strips, or sidebar menus.
+
+Hard requirements:
+- 16:9 landscape source panel for later textbook slide composition.
+- Minimal, sparse design: at least 75 percent clean blank space.
+- One simple visual motif only; no dense dashboards, no multi-panel icon clusters, no busy sidebars.
+- Leave a large uninterrupted blank area near the top for later title overlay.
+- Leave a large uninterrupted blank area in the lower third for later explanation overlay.
+- No readable text, no letters, no numbers, no fake labels, no pseudo-writing.
+- No logos, no watermarks, no real UI screenshots, no brand colors tied to a specific platform.
+- No people.
+- No flags, seals, emblems, crests, badges, official insignia, or country-specific symbols.
+- Clean flat-vector textbook style; muted professional palette; high print quality.

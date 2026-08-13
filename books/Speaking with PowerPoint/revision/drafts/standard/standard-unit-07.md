@@ -70,6 +70,14 @@ Sample explanation:
 
 Optional model reference: For a banking/leasing or general trading-company version, see the business-client model in the Process Improvement Briefing Models. For a government-agency version, compare the government-agency model in the same model set.
 
+![Before-and-after workflow showing how a shared exception log clarifies handoffs.](../../../images/planned/p3-u07-import-document-handoff-workflow.png)
+
+*The revised workflow makes handoff ownership visible before the deadline.*
+
+![Before-and-after workflow showing how an intake checklist catches errors earlier.](../../../images/planned/p3-u07-application-intake-workflow.png)
+
+*The checklist moves error prevention to the first contact point.*
+
 ## Practice 1: Choose the Format
 
 Choose the best main format for each situation. Then explain your choice in one sentence.

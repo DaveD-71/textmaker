@@ -1,0 +1,19 @@
+Create a minimal source panel for launching an internal supplier-status dashboard.
+
+Visual motif: one abstract dashboard card plus a very simple three-step rollout line. The dashboard must be symbolic only, with blank rectangles and simple chart-like blocks that contain no labels or numbers.
+
+Composition: place the dashboard motif on the right half but keep it light and sparse. Leave the upper-left and lower-left mostly blank for later title and explanation overlay. Total visual motif should occupy no more than 30 percent of the image.
+
+Avoid: dense dashboard screens, fake UI text, financial charts, stock tickers, customer records, account data, shipment IDs, sidebars, icon clusters, or real software interface styling.
+
+Hard requirements:
+- 16:9 landscape source panel for later textbook slide composition.
+- Minimal, sparse design: at least 75 percent clean blank space.
+- One simple visual motif only; no dense dashboards, no multi-panel icon clusters, no busy sidebars.
+- Leave a large uninterrupted blank area near the top for later title overlay.
+- Leave a large uninterrupted blank area in the lower third for later explanation overlay.
+- No readable text, no letters, no numbers, no fake labels, no pseudo-writing.
+- No logos, no watermarks, no real UI screenshots, no brand colors tied to a specific platform.
+- No people.
+- No flags, seals, emblems, crests, badges, official insignia, or country-specific symbols.
+- Clean flat-vector textbook style; muted professional palette; high print quality.

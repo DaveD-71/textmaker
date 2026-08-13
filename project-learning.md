@@ -330,3 +330,17 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/milestone
 - Decision: Phase 4 Standard manuscript rewrite/integration is complete enough to move to Phase 5 asset creation/replacement.
 - Preferred behavior: start Phase 5 from `books/Speaking with PowerPoint/revision/control/plan3_image_register.json`. Do not create or replace assets outside the register without updating the register. Keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user decides to add that model before asset work.
+
+## 2026-08-13 - Speaking with PowerPoint Asset Generation Workflow
+
+- Status: `active`
+- Scope: project/assets
+- Decision: use OpenAI-generated images only as sparse, text-free source-panel art for this textbook. Compose all final readable text, chart numbers, headings, labels, and slide layouts deterministically in local code, currently Pillow, so visual assets remain editable/checkable and do not depend on image-model text accuracy.
+- Preferred behavior: run OpenAI SDK generation from a local `%TEMP%` staging folder, then copy final source panels into the repo. This avoids recurring UNC/network-path issues. Record prompts/source panels under `books/Speaking with PowerPoint/images/source/`, final core assets under `books/Speaking with PowerPoint/images/planned/`, model slide sets under `books/Speaking with PowerPoint/images/model-slides/`, and update `books/Speaking with PowerPoint/revision/control/plan3_image_register.json` whenever assets are created, superseded, or approved.
+
+## 2026-08-13 - OpenAI SDK UNC Path Workaround
+
+- Status: `active`
+- Scope: project/environment
+- Decision: when using the OpenAI Python SDK from this network-drive workspace, avoid reading/writing live API inputs and outputs directly on the UNC repo path.
+- Preferred behavior: create a local staging directory under `%TEMP%`, run SDK generation there, write manifests/prompts/outputs locally, validate locally, then copy only durable approved outputs back into the repo. Use .NET/PowerShell full-path normalization such as `[System.IO.Path]::GetFullPath(...)` when safety-checking UNC paths before cleanup because `Resolve-Path` may add provider prefixes or formatting that breaks simple string comparisons.

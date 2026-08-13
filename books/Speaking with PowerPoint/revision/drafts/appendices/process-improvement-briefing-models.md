@@ -57,6 +57,21 @@ Expected delivery time:
 
 Visual note: use a before/after workflow diagram as the main visual. A small evidence box is enough. Do not make this a data-heavy chart presentation.
 
+![Before-and-after workflow showing how a shared exception log clarifies handoffs.](../../../images/planned/p3-u07-import-document-handoff-workflow.png)
+
+### Sample Slide Set
+
+Sample slides for the business-client process-improvement model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s01.png)
+![Sample slide 2 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s02.png)
+![Sample slide 3 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s03.png)
+![Sample slide 4 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s04.png)
+![Sample slide 5 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s05.png)
+![Sample slide 6 for the process business model.](../../../images/model-slides/process-business/p3-model-process-business-s06.png)
+
+*The revised workflow makes handoff ownership visible before the deadline.*
+
 ### Key Vocabulary Before Listening
 
 | Term | Simple meaning |
@@ -301,6 +316,21 @@ Expected delivery time:
 | 6. Decision and review | Close with action | Approve trial, agree checklist fields, assign FAQ owner |
 
 Visual note: use a process-flow visual as the main visual. Do not use flags, seals, emblems, crests, or country-specific government symbols.
+
+![Before-and-after workflow showing how an intake checklist catches errors earlier.](../../../images/planned/p3-u07-application-intake-workflow.png)
+
+### Sample Slide Set
+
+Sample slides for the government-agency process-improvement model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s01.png)
+![Sample slide 2 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s02.png)
+![Sample slide 3 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s03.png)
+![Sample slide 4 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s04.png)
+![Sample slide 5 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s05.png)
+![Sample slide 6 for the process government model.](../../../images/model-slides/process-government/p3-model-process-government-s06.png)
+
+*The checklist moves error prevention to the first contact point.*
 
 ### Key Vocabulary Before Listening
 

@@ -81,6 +81,10 @@ Weak hierarchy:
 - crowded labels
 - no clear starting point
 
+![Side-by-side comparison of a cluttered visual and a clearer visual with stronger hierarchy.](../../../images/planned/p3-u05-visual-hierarchy-comparison.png)
+
+*A clearer visual guides the audience to the main point first.*
+
 ### 3. Concise Text
 
 Slide or visual text should not be a script. It should support your speaking.
@@ -205,6 +209,10 @@ Use a complete message, but keep it short.
 ## Practice 3: Rebuild a Readability Comparison
 
 Create two text-only versions of the same visual.
+
+![Two versions of the same slide text, one hard to read and one revised for better readability.](../../../images/planned/p3-u05-sample-ab-readability.png)
+
+*Readable slide text helps listeners understand the message while listening.*
 
 Sample A: weak version
 

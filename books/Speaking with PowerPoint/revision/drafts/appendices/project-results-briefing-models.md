@@ -53,6 +53,21 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 Suggested chart title: **Pilot reduced late document handoffs and rework time**.
 
+![Before-and-after chart showing fewer late document handoffs after the pilot.](../../../images/planned/p3-u06-import-document-handoff-results-chart.png)
+
+### Sample Slide Set
+
+Sample slides for the business-client results model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s01.png)
+![Sample slide 2 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s02.png)
+![Sample slide 3 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s03.png)
+![Sample slide 4 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s04.png)
+![Sample slide 5 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s05.png)
+![Sample slide 6 for the results business model.](../../../images/model-slides/results-business/p3-model-results-business-s06.png)
+
+*Fictional practice data: late document handoffs decreased during the pilot.*
+
 Fictional practice data:
 
 | Measure | Before pilot | After pilot | Change |
@@ -243,6 +258,21 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 | Backup. Staff feedback summary | The checklist added about 40 seconds per intake. | Use only if asked about waiting time or staff workload. |
 
 Suggested chart title: **Checklist trial reduced returns and repeat inquiries**.
+
+![Before-and-after chart showing fewer returned applications after the intake checklist trial.](../../../images/planned/p3-u06-application-intake-results-chart.png)
+
+### Sample Slide Set
+
+Sample slides for the government-agency results model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s01.png)
+![Sample slide 2 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s02.png)
+![Sample slide 3 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s03.png)
+![Sample slide 4 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s04.png)
+![Sample slide 5 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s05.png)
+![Sample slide 6 for the results government model.](../../../images/model-slides/results-government/p3-model-results-government-s06.png)
+
+*Fictional practice data: returned applications decreased during the checklist trial.*
 
 Fictional practice data:
 

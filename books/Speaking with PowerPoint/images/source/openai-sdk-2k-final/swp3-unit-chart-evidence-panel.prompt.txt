@@ -1,0 +1,19 @@
+Create a minimal textbook source panel about clear data and evidence presentation.
+
+Visual motif: one clean abstract before-and-after bar chart with a small caution or source-note icon area. The chart must contain no numbers, no axis labels, and no readable text.
+
+Composition: place the chart in the center, occupying no more than 30 percent of the image. Leave a clean blank area near the top for later title overlay and a clean blank area near the bottom for later source note and spoken explanation text.
+
+Avoid: stock charts, candlestick charts, finance dashboards, dense tables, fake labels, readable text, letters, numbers, screenshots, or logos.
+
+Hard requirements:
+- 16:9 landscape source panel for later textbook slide composition.
+- Minimal, sparse design: at least 75 percent clean blank space.
+- One simple visual motif only; no dense dashboards, no multi-panel icon clusters, no busy sidebars.
+- Leave a large uninterrupted blank area near the top for later title overlay.
+- Leave a large uninterrupted blank area in the lower third for later explanation overlay.
+- No readable text, no letters, no numbers, no fake labels, no pseudo-writing.
+- No logos, no watermarks, no real UI screenshots, no brand colors tied to a specific platform.
+- No people.
+- No flags, seals, emblems, crests, badges, official insignia, or country-specific symbols.
+- Clean flat-vector textbook style; muted professional palette; high print quality.

@@ -11,7 +11,7 @@ The textbook manuscript drafts under `revision/drafts/standard/` and `revision/d
 
 ## Current Handoff Status
 
-Updated: 2026-08-13 12:32 JST
+Updated: 2026-08-13 14:35 JST
 
 - Latest synced baseline before today's edits: commit `357ec3e Reframe appendix models for client context`.
 - Current uncommitted Speaking with PowerPoint edits:
@@ -42,6 +42,11 @@ Updated: 2026-08-13 12:32 JST
   - `revision/drafts/standard/standard-unit-01.md` through `standard-unit-12.md`: removed embedded teacher-note sections so learner units remain learner-facing.
   - `revision/drafts/appendices/*.md`: converted teacher/editor-facing labels such as `learner-facing`, `support material`, `Teaching-Point Map`, and `Comparison Note for Teachers` into learner-facing instructions and headings.
   - Phase 4 Agent 2 repairs are now integrated: Units 1, 4, 5, 7, and 9 have first-use `Useful terms` support; Unit 1 now uses `workplace` wording instead of stale `business` context wording; Unit 9 defines `asynchronous (async)` before learner use; the launch appendix vocabulary now includes `pre-read` and `rollout`; the launch appendix AI note is learner-facing classroom wording.
+  - Phase 5 asset creation was rerun through the OpenAI Python SDK, using `gpt-image-2` at 2560x1440 high-quality opaque PNG. To avoid the persistent UNC/network-path issue, generation was staged in local `%TEMP%` and copied back into the repo.
+  - OpenAI output is now used only as sparse, text-free source-panel art. Final visible text, chart values, headings, and slide layouts are composed deterministically with Pillow so the textbook does not depend on image-model text rendering.
+  - SDK source panels are in `images/source/openai-sdk-2k-final/`. Final core textbook assets are in `images/planned/`. Six-slide model presentation sample sets are in `images/model-slides/`.
+  - Each of the six appendix model presentations now includes a learner-facing `Sample Slide Set` section with six sample slide images.
+  - `revision/control/plan3_image_register.json` now records the 9 core assets plus 6 model slide-set entries. Status remains `draft` pending user/editor approval.
 - Script timing check after edits:
   - Process model scripts: 811 and 779 words, about 6.2-7.1 minutes at 115-125 wpm.
   - Launch model scripts: 911 and 843 words, about 6.7-7.9 minutes at 115-125 wpm.
@@ -53,6 +58,8 @@ Validation completed in this pass:
 - Script-only timing check against the approved 115-125 wpm range.
 - Scan for stale `lesson` terminology, old `backup detail` wording, and vague appendix-model references in current control files, Standard drafts, and appendix model files.
 - `plan3_image_register.json` validates with `python -m json.tool`.
+- Phase 5 asset validation: 9 core assets, 36 model-slide PNGs, and 9 SDK source panels are all 2560x1440 RGB PNGs with no embedded PNG text metadata reported by PIL.
+- Appendix image-link validation found no missing image files across the three model appendix documents.
 - Remaining hits for stock/securities/ticker language are guardrail notes, not model contexts.
 - Scan confirms no teacher/editor-facing labels remain in learner draft files under `revision/drafts/standard/` or `revision/drafts/appendices/`; the separate teacher-notes file is the only teacher-facing draft document.
 - Teacher Notes Language Editor pass completed: `leave-behind` is not recommended for learner-facing text; use `follow-up handout`, `takeaway document`, or `supporting document` unless explicitly teaching the industry noun.
@@ -63,5 +70,5 @@ Validation completed in this pass:
 - Targeted Phase 4 repair scans found no remaining Unit 1 stale phrases: `business purpose`, `business reason`, `business problem`, `Main business context`, or `business relevance`.
 - Launch appendix scan confirms `If your class discusses AI...` is now the active learner-facing AI note and the old `If AI is mentioned with these models...` wording is gone.
 
-Next recommended step: Phase 4 Standard manuscript integration is complete enough to move to Phase 5 asset creation/replacement. Start Phase 5 from `revision/control/plan3_image_register.json`; keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user chooses to add that model before asset work.
+Next recommended step: review the Phase 5 draft visuals in `images/planned/` and `images/model-slides/`. If approved, continue to Phase 6 QA and DOCX/layout preparation; keep the missing options-based decision model as a tracked Phase 6 QA/defer item unless the user chooses to add that model before layout work.
 

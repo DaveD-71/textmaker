@@ -1,0 +1,46 @@
+{
+  "model": "gpt-image-2",
+  "size": "2560x1440",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "output_dir": "C:\\Users\\d-dobson\\AppData\\Local\\Temp\\swp3_openai_sdk_2k_final",
+  "jobs": [
+    {
+      "file": "swp3-process-business-panel.png",
+      "prompt": "Create a minimal source panel for an internal business operations workflow improvement briefing.\n\nVisual motif: a simple horizontal document handoff flow with three or four abstract document cards, one shared process board, and one checkpoint marker. It should clearly feel like internal corporate operations, not public-service administration.\n\nComposition: place the small workflow motif across the center-left, occupying no more than 25 percent of the image. Keep the upper-left, upper-center, and lower third mostly blank for later exact text overlay.\n\nAvoid: public counter windows, service desks, government-office imagery, shield icons, badge icons, finance trading visuals, shipping vehicles, ports, dense dashboards, vertical icon strips, or sidebar menus."
+    },
+    {
+      "file": "swp3-process-government-panel.png",
+      "prompt": "Create a minimal source panel for a plain administrative process-improvement briefing.\n\nVisual motif: a simple application intake flow with a form card, checklist card, review card, and service counter represented abstractly. Neutral administrative service feeling, not official or political.\n\nComposition: place the small process motif across the center-left, occupying no more than 25 percent of the image. Keep the upper-left, upper-center, and lower third mostly blank for later exact text overlay.\n\nAvoid: official-looking seals, flags, badges, crests, podiums, national symbols, city hall imagery, real forms, or dense process maps."
+    },
+    {
+      "file": "swp3-launch-business-panel.png",
+      "prompt": "Create a minimal source panel for launching an internal supplier-status dashboard.\n\nVisual motif: one abstract dashboard card plus a very simple three-step rollout line. The dashboard must be symbolic only, with blank rectangles and simple chart-like blocks that contain no labels or numbers.\n\nComposition: place the dashboard motif on the right half but keep it light and sparse. Leave the upper-left and lower-left mostly blank for later title and explanation overlay. Total visual motif should occupy no more than 30 percent of the image.\n\nAvoid: dense dashboard screens, fake UI text, financial charts, stock tickers, customer records, account data, shipment IDs, sidebars, icon clusters, or real software interface styling."
+    },
+    {
+      "file": "swp3-launch-government-panel.png",
+      "prompt": "Create a minimal source panel for launching an application support desk in a plain administrative service setting.\n\nVisual motif: one simple service-flow line with a form card, neutral help/support circle, and guidance-sheet card. Use neutral service support symbolism only.\n\nComposition: place the service-flow motif across the center-right, occupying no more than 25 percent of the image. Leave the upper-left and lower third mostly blank for later exact text overlay.\n\nAvoid: shields, badges, seals, emblems, crests, flags, official insignia, national symbols, political symbols, security icons, people, real forms, or dense icon clusters."
+    },
+    {
+      "file": "swp3-results-business-panel.png",
+      "prompt": "Create a minimal source panel for reporting fictional operational results from an import-document handoff pilot.\n\nVisual motif: one simple abstract before-and-after bar chart shape plus a small document-flow card. The chart should have no numbers, no axis labels, and no readable text.\n\nComposition: place the chart motif in the center-right, occupying no more than 25 percent of the image. Keep the upper-left and lower third mostly blank for later exact title, chart labels, and explanation overlay.\n\nAvoid: stock market imagery, candlestick charts, trading screens, financial dashboards, ports, ships, trucks, real company names, customer data, account IDs, order IDs, shipment IDs, or dense data tables."
+    },
+    {
+      "file": "swp3-results-government-panel.png",
+      "prompt": "Create a minimal source panel for reporting fictional results from an administrative intake checklist trial.\n\nVisual motif: one simple before-and-after bar chart shape with a small checklist card. The chart should be abstract, with no numbers, no axis labels, and no readable text.\n\nComposition: place the chart and checklist motif in the center-right, occupying no more than 25 percent of the image. Keep the upper-left and lower third mostly blank for later exact title, labels, and explanation overlay.\n\nAvoid: flags, seals, emblems, crests, official insignia, national symbols, political symbols, badges, real forms, or dense tables."
+    },
+    {
+      "file": "swp3-unit-visual-design-panel.png",
+      "prompt": "Create a minimal textbook source panel about clear visual hierarchy.\n\nVisual motif: two very simple abstract slide thumbnails side by side. The left thumbnail should look slightly cluttered using placeholder rectangles and lines only. The right thumbnail should look clearer with fewer blocks, more spacing, and one emphasized area.\n\nComposition: keep the two thumbnails in the center, occupying no more than 35 percent of the image. Leave a large blank title area at the top and blank caption areas below each thumbnail for later exact text overlay.\n\nAvoid: readable text, letters, numbers, realistic screenshots, dense dashboards, many colors, logos, or fake labels."
+    },
+    {
+      "file": "swp3-unit-chart-evidence-panel.png",
+      "prompt": "Create a minimal textbook source panel about clear data and evidence presentation.\n\nVisual motif: one clean abstract before-and-after bar chart with a small caution or source-note icon area. The chart must contain no numbers, no axis labels, and no readable text.\n\nComposition: place the chart in the center, occupying no more than 30 percent of the image. Leave a clean blank area near the top for later title overlay and a clean blank area near the bottom for later source note and spoken explanation text.\n\nAvoid: stock charts, candlestick charts, finance dashboards, dense tables, fake labels, readable text, letters, numbers, screenshots, or logos."
+    },
+    {
+      "file": "swp3-unit-online-setup-panel.png",
+      "prompt": "Create a minimal textbook source panel about online and hybrid presentation setup.\n\nVisual motif: six simple abstract icons for camera, microphone, screen share, presenter notes, captions or transcript, and backup file. The icons should be simple, evenly spaced, and tool-neutral.\n\nComposition: arrange the six icons in a balanced 3-by-2 grid, occupying no more than 35 percent of the image. Leave clean blank space near the top for later title overlay and space under each icon for exact labels added later.\n\nAvoid: platform logos, real UI screenshots, brand colors associated with Zoom, Teams, Google, or other platforms, fake labels, readable text, letters, numbers, watermarks, or dense interface panels."
+    }
+  ]
+}

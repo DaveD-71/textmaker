@@ -1,0 +1,19 @@
+Create a minimal textbook source panel about online and hybrid presentation setup.
+
+Visual motif: six simple abstract icons for camera, microphone, screen share, presenter notes, captions or transcript, and backup file. The icons should be simple, evenly spaced, and tool-neutral.
+
+Composition: arrange the six icons in a balanced 3-by-2 grid, occupying no more than 35 percent of the image. Leave clean blank space near the top for later title overlay and space under each icon for exact labels added later.
+
+Avoid: platform logos, real UI screenshots, brand colors associated with Zoom, Teams, Google, or other platforms, fake labels, readable text, letters, numbers, watermarks, or dense interface panels.
+
+Hard requirements:
+- 16:9 landscape source panel for later textbook slide composition.
+- Minimal, sparse design: at least 75 percent clean blank space.
+- One simple visual motif only; no dense dashboards, no multi-panel icon clusters, no busy sidebars.
+- Leave a large uninterrupted blank area near the top for later title overlay.
+- Leave a large uninterrupted blank area in the lower third for later explanation overlay.
+- No readable text, no letters, no numbers, no fake labels, no pseudo-writing.
+- No logos, no watermarks, no real UI screenshots, no brand colors tied to a specific platform.
+- No people.
+- No flags, seals, emblems, crests, badges, official insignia, or country-specific symbols.
+- Clean flat-vector textbook style; muted professional palette; high print quality.

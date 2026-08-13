@@ -56,6 +56,21 @@ Visual notes:
 - Keep the dashboard mockup simple: top status bar, request status, deadline panel, and owner column.
 - Use a clear title for each visual. Do not show real company names, customer names, account, shipment, or order numbers, ticket IDs, shipment IDs, stock ticker symbols, or proprietary system screens.
 
+![Mockup dashboard showing fictional inquiry status, shipment reporting deadlines, and unresolved requests.](../../../images/planned/p3-u07-client-reporting-dashboard-mockup.png)
+
+### Sample Slide Set
+
+Sample slides for the business-client launch model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s01.png)
+![Sample slide 2 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s02.png)
+![Sample slide 3 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s03.png)
+![Sample slide 4 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s04.png)
+![Sample slide 5 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s05.png)
+![Sample slide 6 for the launch business model.](../../../images/model-slides/launch-business/p3-model-launch-business-s06.png)
+
+*A dashboard can support a launch briefing when it shows the information users need first.*
+
 ### Key Vocabulary Before Listening
 
 | Term | Simple meaning |
@@ -260,6 +275,21 @@ Visual notes:
 - Use plain administrative visuals: service-flow diagram, timeline, and guidance-sheet sample.
 - Avoid flags, seals, emblems, crests, national symbols, party colors, or country-specific iconography.
 - Keep the service-flow diagram readable without color alone. Use labels and arrows.
+
+![Service flow showing how an application support desk helps users before submission.](../../../images/planned/p3-u07-application-support-service-flow.png)
+
+### Sample Slide Set
+
+Sample slides for the government-agency launch model. Notice how each slide keeps one main message and leaves space for the spoken explanation.
+
+![Sample slide 1 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s01.png)
+![Sample slide 2 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s02.png)
+![Sample slide 3 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s03.png)
+![Sample slide 4 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s04.png)
+![Sample slide 5 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s05.png)
+![Sample slide 6 for the launch government model.](../../../images/model-slides/launch-government/p3-model-launch-government-s06.png)
+
+*The support desk helps users before submission, reducing repeat inquiries later.*
 
 ### Key Vocabulary Before Listening
 
