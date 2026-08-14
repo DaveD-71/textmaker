@@ -41,17 +41,17 @@ Initial margin specification:
 
 | Area | Size | Rationale |
 |---|---:|---|
-| Top | `18 mm` | Allows a running header without crowding the unit title area |
-| Bottom | `18 mm` | Allows page number/footer line and learner writing space |
-| Inside/left | `17 mm` minimum | Readable office-print margin; increase to `20-22 mm` if bound |
-| Outside/right | `17 mm` minimum | Keeps tables wide enough for learner notes |
+| Top | `20 mm` | Allows a running header without crowding the unit title area |
+| Bottom | `25 mm` | Allows page number/footer line and learner writing space |
+| Inside/left | `40 mm` | Binding/annotation margin requested for the production sample |
+| Outside/right | `25 mm` | Keeps a stable outside margin for office printing |
 | Header from edge | `9-10 mm` | Keeps running head clear of body text |
 | Footer from edge | `9-10 mm` | Keeps page number clear of body text |
 
 Binding note:
 
-- If the book will be comb-bound or stapled, use the `17 mm` left/right margins.
-- If the book will be perfect-bound or hole-punched, add a gutter or increase the inside margin before final export.
+- Current production sample uses asymmetric margins: top `20 mm`, bottom `25 mm`, left `40 mm`, right `25 mm`.
+- Recheck margins after the first full-unit print proof because the left margin is intentionally generous.
 
 Word-compatible font-size rule:
 
@@ -71,17 +71,18 @@ Line spacing / leading:
 - Full spoken model scripts: `11 pt` with slightly more open leading, approximately `1.15`.
 - All headings, running heads, cover titles, TOC headings, appendix/model headings, and other heading-like styles use single line spacing.
 - All heading styles must have `Keep with next` enabled in Word paragraph settings.
+- All heading styles must be left-aligned and suppress automatic hyphenation.
 - Avoid fully justified text unless hyphenation and line breaks are checked in Word.
 
 Spacing around headings:
 
 | Style | Before | After | Rule |
 |---|---:|---:|---|
-| Unit title / `PS Heading 1` | `0 pt` | `10-12 pt` | Starts a new unit page or unit block |
-| Main section / `PS Heading 2` | `14-16 pt` | `6 pt` | Keep with following paragraph/table |
-| Local subhead / `PS Heading 3` | `10-12 pt` | `4-5 pt` | Keep with following paragraph/table |
-| Script subhead / `PS Heading 4` | `8 pt` | `3-4 pt` | Keep with following script paragraph |
-| Practice heading | `10-12 pt` | `5-6 pt` | Keep with task instruction |
+| Unit title / `PS Heading 1` | `0 pt` | `16 pt` | Starts a new unit page or unit block |
+| Main section / `PS Heading 2` | `20 pt` | `8 pt` | Keep with following paragraph/table |
+| Local subhead / `PS Heading 3` | `16 pt` | `6 pt` | Keep with following paragraph/table |
+| Script subhead / `PS Heading 4` | `12 pt` | `4 pt` | Keep with following script paragraph |
+| Practice heading | `16 pt` | `6 pt` | Keep with task instruction |
 
 Page-break and keep rules:
 
@@ -95,46 +96,72 @@ Page-break and keep rules:
 
 ## Print Color Scheme
 
-Use the following palette for the reference DOCX. Tints are deliberately stronger than near-white web tints so they remain visible when printed.
+Use a formula-derived palette based on three user-supplied colors from Sanzo Wada's *A Dictionary of Color Combinations* published by Seigensha. Tints are deliberately print-visible but should avoid the harsh, saturated look of screen-first palettes.
+
+Base colors:
+
+| Base | CMYK | RGB/Hex Conversion | Role |
+|---|---:|---:|---|
+| Eupatorium purple | `(25, 79, 12, 0)` | `#BF36E0` | Primary accent family |
+| Cream yellow | `(0, 28, 68, 0)` | `#FFB852` | Warm support/caution/action family |
+| Blue | `(95, 54, 0, 0)` | `#0D75FF` | Navigation/model/reference family |
+
+Formula rules:
+
+- CMYK-to-RGB conversion: `rgb_channel = round(255 * (1 - cmy_channel / 100) * (1 - k / 100))`.
+- Shade/tint mixing: `mix(base, target, amount) = round(base * (1 - amount) + target * amount)` per RGB channel.
+- Derivations must be tracked in `presentations_style.yaml` under `color_system` so the base colors can be changed after print testing and the palette recalculated.
 
 | Role | Hex | Use |
 |---|---:|---|
-| Deep ink | `#1F2933` | Main headings, running headers, strong text |
-| Graphite | `#374151` | Secondary headings and strong neutral text |
-| Slate | `#64748B` | Table rules, labels, secondary lines |
-| Professional teal | `#008C8C` | Core skill, section rules, key learning labels |
-| Business blue | `#1D4ED8` | Tool/workflow notes, model/reference links, document roles |
-| Amber | `#D97706` | Cautions, timing, decision/action prompts |
-| Teal tint | `#CDEDEA` | Core skill / language box background |
-| Blue tint | `#DCEBFF` | Model/example background |
-| Amber tint | `#FBE3B0` | Tip/caution background |
-| Grey tint | `#E5E7EB` | Table headers, worksheet rows |
-| Light grey | `#F1F5F9` | Alternating rows and light planning areas |
+| Deep ink | `#031A38` | Main text, running headers, strong text; formula `mix(blue, black, 0.78)` |
+| Graphite | `#052C61` | Secondary headings and strong neutral text; formula `mix(blue, black, 0.62)` |
+| Slate | `#073D85` | Table rules, labels, secondary lines; formula `mix(blue, black, 0.48)` |
+| Eupatorium purple | `#BF36E0` | Primary accent; base color |
+| Purple dark | `#691E7B` | Core skill, section rules, key learning labels; formula `mix(eupatorium_purple, black, 0.45)` |
+| Blue dark | `#084BA3` | Model/reference links and document-role accents; formula `mix(blue, black, 0.36)` |
+| Yellow dark | `#996E31` | Cautions, timing, decision/action prompts; formula `mix(cream_yellow, black, 0.40)` |
+| Purple tint | `#F5DFFA` | Core skill / language box background; formula `mix(eupatorium_purple, white, 0.84)` |
+| Blue tint | `#E2EEFF` | Model/example background; formula `mix(blue, white, 0.88)` |
+| Yellow tint | `#FFEBCF` | Tip/caution background; formula `mix(cream_yellow, white, 0.72)` |
+| Grey tint | `#ECF4FF` | Table headers, worksheet rows; formula `mix(blue, white, 0.92)` |
+| Light grey | `#F5F9FF` | Alternating rows and light planning areas; formula `mix(blue, white, 0.96)` |
 | White | `#FFFFFF` | Page base and reversed text |
 
-Do not rely on fill color alone. Any colored box must also use at least one structural cue: a top rule, left rule, bold label, border, icon/label text, or clear spacing.
+Do not rely on fill color alone. Any colored box must also use at least one structural cue: a top rule, left rule, medium/semibold label, border, icon/label text, or clear spacing.
+
+Compatibility note: the current YAML still contains legacy semantic keys such as `teal`, `amber`, and `plum` because existing style rules reference them. These are now aliases to Wada-derived colors, not independent palette choices.
 
 ## Font Family Rules
 
 Primary body:
 
-- Word font: `Palatino Linotype`
-- Design equivalent: `Lora`
+- Word font: `Noto Serif`
+- Medium/emphasis face: `Noto Serif Medium`
 - Use for body text, activity instructions, model scripts, examples, and learner-facing prose.
 
 Primary sans:
 
-- Word font: `News Gothic MT` if available.
-- Fallback: `Arial Narrow`, then `Arial`.
-- Design equivalent: `Barlow Condensed`.
+- Word font: `Noto Sans`
+- Medium face: `Noto Sans Medium`
+- Semibold face: `Noto Sans SemiBold`
 - Use for headings, labels, activity numbers, table headers, running headers, callout labels, and navigation elements.
 
-Accent slab:
+Display:
 
-- Word font: `PMN Caecilia` if available.
-- Fallback: `Rockwell`, then `Georgia`.
-- Design equivalent: `Rokkitt`.
-- Use sparingly for major model/appendix display treatments only if it improves hierarchy.
+- Word font: `Noto Sans Display SemiBold`
+- Use for cover and unit-title display treatment only.
+
+Japanese support:
+
+- Word font: `Noto Sans JP`
+- Use for any Japanese glosses, bilingual planning support, or Japanese learner notes that remain in the final document.
+
+Weight rule:
+
+- Prefer real `Medium` or `SemiBold` font faces over synthetic Word bold.
+- Avoid bold for routine hierarchy. Use spacing, size, color, rules, and Medium/SemiBold faces first.
+- Reserve true bold for rare cover/display cases only if a Medium/SemiBold face is not strong enough.
 
 ## Book-Level Layout System
 
@@ -159,6 +186,7 @@ Page-number rules:
 - Main units: restart at Arabic page `1`, or continue from front matter if a single continuous scheme is preferred for printing.
 - Appendices: continue Arabic page numbering from main units.
 - Back cover: no visible page number.
+- Each generated section should include odd/even footer references. Page numbers are right-aligned on both odd and even pages unless the final print layout changes.
 
 Open decision: choose final page-numbering scheme after the final title, table of contents, and appendix count are fixed.
 
@@ -186,6 +214,7 @@ Visual treatment:
 
 - Running heads use `PS Running Head` or a plainer dark-text variant.
 - Page numbers use `PS Page Number`.
+- `PS Page Number` is right-aligned in both odd and even footers.
 - Use a thin rule or small color block only when it improves navigation.
 - Keep header/footer text short enough to survive narrow margins.
 
@@ -327,16 +356,16 @@ Final DOCX/PDF QA must include:
 
 | Style name | Basis | Size | Font | Color | Intended use |
 |---|---|---:|---|---|---|
-| `PS Body Text` | BR body scaled to 11 | 11 pt | Palatino Linotype | Deep ink | Default textbook prose |
-| `PS Body Text Small` | BR key line scaled | 10 pt | Palatino Linotype | Deep ink | Dense notes, table body where space is tight |
-| `PS Heading 1` | Unit title adapted | 30-34 pt | News Gothic MT | White | Unit-opening title on colored background |
-| `PS Heading 2` | Section head scaled | 16 pt | News Gothic MT bold | Professional teal | Main section headings |
-| `PS Heading 3` | Subhead adapted | 13.5 pt | News Gothic MT bold | Graphite | Local subheads |
-| `PS Heading 4` | Script-section head | 12 pt | News Gothic MT bold | Slate | Model script sections such as Opening, Evidence, Close |
-| `PS Running Head` | Running header | 10.5-11 pt | News Gothic MT | White | Header band text |
-| `PS Page Number` | Page number | 12 pt | Georgia bold | White or Deep ink | Page number in footer/header system |
-| `PS Caption` | Caption | 9.5 pt | Palatino Linotype | Slate | Captions, figure notes, source notes |
-| `PS Cross Reference` | Crossref | 12 pt | News Gothic MT bold | Business blue | Appendix/model references |
+| `PS Body Text` | BR body scaled to 11 | 11 pt | Noto Serif | Deep ink | Default textbook prose |
+| `PS Body Text Small` | BR key line scaled | 10 pt | Noto Serif | Deep ink | Dense notes, table body where space is tight |
+| `PS Heading 1` | Unit title adapted | 28 pt | Noto Sans Display SemiBold | White | Unit-opening title on colored background |
+| `PS Heading 2` | Section head scaled | 16 pt | Noto Sans SemiBold | Muted teal | Main section headings |
+| `PS Heading 3` | Subhead adapted | 13.5 pt | Noto Sans SemiBold | Graphite | Local subheads |
+| `PS Heading 4` | Script-section head | 12 pt | Noto Sans SemiBold | Slate | Model script sections such as Opening, Evidence, Close |
+| `PS Running Head` | Running header | 10.5-11 pt | Noto Sans SemiBold | White | Header band text |
+| `PS Page Number` | Page number | 12 pt | Noto Sans Medium | White or Deep ink | Page number in footer/header system |
+| `PS Caption` | Caption | 9.5 pt | Noto Sans | Slate | Captions, figure notes, source notes |
+| `PS Cross Reference` | Crossref | 12 pt | Noto Sans Medium | Soft business blue | Appendix/model references |
 
 Note: The BR2e scaled unit-title size of `47.5 pt` is too large for this book unless used for a cover or part opener. Use a smaller, cleaner unit-opening title treatment for normal units.
 
@@ -355,6 +384,7 @@ Treatment:
 
 - Top or side band in Deep ink or Professional teal.
 - White unit title text.
+- Current unit title size is `28 pt`; if titles still wrap badly in the specimen build, shorten unit titles rather than increasing compression.
 - Small accent stripe in Amber or Business blue.
 - Outcomes box below the title band using Teal tint with a visible teal top rule.
 - Keep the unit-opening treatment clean enough for office printing.
@@ -386,6 +416,9 @@ Treatment:
 - Numbered practice heading should be visually distinct from ordinary section heads.
 - Use a small colored number capsule or square in Professional teal.
 - Heading text remains black/graphite.
+- Shaded task-heading styles retain normal heading space before. If Word paragraph shading visually fills the space above a heading in the produced DOCX, correct that during DOCX cleanup rather than removing the heading spacing from the style definition.
+- Do not stack ordinary headings back to back in manuscript source. Put learner-facing text, an instruction, or a table between headings unless a designed component explicitly handles the spacing.
+- Filled paragraph styles need visible internal breathing room; use at least `5 mm` left/right paragraph indent for box-style paragraphs, and at least `3 mm` for short shaded task heads.
 - Do not use rounded decorative pill labels unless the shape has a clear functional role.
 
 ## Callout and Box Styles
@@ -440,7 +473,8 @@ List-block spacing rule:
 - Do not add vertical spacing after every list paragraph.
 - Middle list items should have `0 pt` before and `0 pt` after.
 - Add space before the first item in a list block and after the last item in a list block.
-- Target spacing: `4-6 pt` before a list block and `6 pt` after a list block, adjusted by context.
+- Target spacing: about `3 pt` before and `3 pt` after ordinary list blocks, adjusted by context.
+- Do not add extra spacing between a parent list paragraph and child list paragraphs.
 - List paragraphs should be left-aligned, not justified.
 - List paragraphs should suppress automatic hyphenation, even when document-level hyphenation is enabled.
 - This requires build/postprocess handling because a single Word paragraph style cannot know whether the paragraph is the first, middle, or final item in a list.
@@ -464,6 +498,20 @@ Checklist treatment:
 ## Table Style Families
 
 The current drafts contain 115 Markdown tables. They should not all receive the same table style.
+
+The reference DOCX table styles must not look like default/undefined Word tables. The YAML generator creates the base table-style names, then `scripts/refine_presentations_reference_docx.py` applies richer table-style XML and saves the file through Microsoft Word COM. This is required because `python-docx` exposes only a limited part of Word's table-style model.
+
+Required table-style differences:
+
+- distinct header-row fill and text color by table family;
+- white or light header-row text whenever the header fill is dark;
+- single-spaced header-row text;
+- first-column emphasis where the first column carries functional labels;
+- banded-row treatment where it improves scanning;
+- family-specific top rule color;
+- consistent cell margins;
+- visible but restrained internal rules;
+- no reliance on color alone for weak/improved/status meanings.
 
 ### `PS Phrase Bank Table`
 
@@ -507,7 +555,7 @@ Detected examples:
 
 Treatment:
 
-- Header row: Grey tint.
+- Header row: Slate fill with white text.
 - Blank response cells: white with visible Slate or Grey rules.
 - Increase row height for handwriting.
 - Avoid heavy color fills in learner-writing areas.

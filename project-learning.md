@@ -381,3 +381,31 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Scope: project/tooling
 - Decision: `textmaker.cmd generate-reference` now supports a structured YAML input via `--spec <styles.yaml>` in addition to the existing default and `--input source.docx` modes.
 - Preferred behavior: for new textbook style systems, prefer a YAML style specification over a hand-built source DOCX when practical. `--input` and `--spec` are mutually exclusive. The YAML mode supports page setup, font aliases, color aliases, defaults, paragraph styles, character styles, simple table-style XML properties, paragraph shading/borders, and optional specimen content to keep styles visible in the reference file. The README documents the minimal schema.
+
+## 2026-08-14 - Speaking with PowerPoint Component Library
+
+- Status: `active`
+- Scope: project/production
+- Decision: `books/Speaking with PowerPoint/revision/control/presentations-component-library.md` is the control source for repeatable textbook components during DOCX production.
+- Preferred behavior: do not rely on Markdown structure alone when generating the textbook. Markdown gives content headings, tables, lists, and image references, but final DOCX production must also create document-level components such as page sections, headers, footers, page numbers, unit opener shapes, section rules, callout frames, table-family formatting, list-block spacing, learner writing areas, figure placement, appendix model layout, teacher-notes layout, and style specimen/QA pages. Components should be mapped to the appropriate implementation layer: reference DOCX style, Pandoc mapping, Lua filter, DOCX postprocess, or manual/design-tool pass.
+
+## 2026-08-14 - Speaking with PowerPoint Noto Style Direction
+
+- Status: `active`
+- Scope: project/production
+- Decision: the presentations textbook reference DOCX should use the installed Noto font family instead of Arial or older commercial-textbook font approximations.
+- Preferred behavior: use `Noto Serif` for body prose, `Noto Serif Medium` for body emphasis, `Noto Sans Medium` / `Noto Sans SemiBold` for headings and labels, `Noto Sans Display SemiBold` for cover/unit display treatment, and `Noto Sans JP` for any Japanese support text. Avoid synthetic Word bold for routine hierarchy; prefer real Medium/SemiBold font faces, spacing, size, color, and rules.
+
+## 2026-08-14 - Speaking with PowerPoint Word-COM Table Style Refinement
+
+- Status: `active`
+- Scope: project/production
+- Decision: table styles in `presentations_style.docx` must be visibly differentiated by table family, not just named aliases of a basic/default table style.
+- Preferred behavior: after generating `presentations_style.docx` from `presentations_style.yaml`, run `scripts/refine_presentations_reference_docx.py <docx> --word-com-save` with system Python. The repo venv does not currently have `win32com`, but system Python does. The script reads color aliases from the adjacent `presentations_style.yaml` by default, adds Word-native table-style conditional XML for header rows, first columns, and banded rows, then opens/saves the DOCX through Microsoft Word COM to normalize the package.
+
+## 2026-08-14 - Speaking with PowerPoint Wada-Derived Palette
+
+- Status: `active`
+- Scope: project/production
+- Decision: the textbook palette is based on three user-supplied colors from Sanzo Wada's `A Dictionary of Color Combinations` published by Seigensha: Eupatorium purple `(25,79,12,0)`, cream yellow `(0,28,68,0)`, and blue `(95,54,0,0)`.
+- Preferred behavior: do not introduce unrelated arbitrary colors into `presentations_style.yaml`. Derive shades/tints by formula and track formulas under `color_system`: CMYK-to-RGB uses `rgb_channel = round(255 * (1 - cmy_channel / 100) * (1 - k / 100))`; shade/tint mixing uses `mix(base, target, amount) = round(base * (1 - amount) + target * amount)` per RGB channel. The base yellow and base blue may not appear directly in Word styles because visible document components use darker/tinted derivatives for readability and print contrast.

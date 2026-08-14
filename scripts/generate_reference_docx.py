@@ -163,6 +163,50 @@ def _set_on_off_settings(doc, tag: str, enabled: bool):
     settings.append(el)
 
 
+def _clear_paragraph_content(paragraph):
+    """Remove runs/fields from a paragraph while preserving paragraph properties."""
+    for child in list(paragraph._p):
+        if child.tag != qn('w:pPr'):
+            paragraph._p.remove(child)
+
+
+def _add_page_field(paragraph):
+    fld_simple = OxmlElement('w:fldSimple')
+    fld_simple.set(qn('w:instr'), 'PAGE')
+    run_elem = OxmlElement('w:r')
+    run_elem.append(fld_simple)
+    paragraph._p.append(run_elem)
+
+
+def _set_page_number_footer(section, styles, alignment='right', odd_even=True):
+    alignment_map = {
+        'left': WD_PARAGRAPH_ALIGNMENT.LEFT,
+        'center': WD_PARAGRAPH_ALIGNMENT.CENTER,
+        'centre': WD_PARAGRAPH_ALIGNMENT.CENTER,
+        'right': WD_PARAGRAPH_ALIGNMENT.RIGHT,
+    }
+    target_alignment = alignment_map.get(str(alignment).lower(), WD_PARAGRAPH_ALIGNMENT.RIGHT)
+    try:
+        section.different_odd_and_even_pages_header_footer = bool(odd_even)
+    except Exception:
+        pass
+
+    footers = [section.footer]
+    if odd_even:
+        try:
+            footers.append(section.even_page_footer)
+        except Exception:
+            pass
+
+    for footer in footers:
+        paragraph = footer.paragraphs[0]
+        _clear_paragraph_content(paragraph)
+        paragraph.alignment = target_alignment
+        if 'PS Page Number' in styles:
+            paragraph.style = styles['PS Page Number']
+        _add_page_field(paragraph)
+
+
 def _set_p_borders(style, borders):
     """Apply paragraph borders to a style using w:pBdr."""
     p_pr = _ensure_paragraph_properties(style)
@@ -430,15 +474,15 @@ def create_reference_from_spec(spec_path: str, out_path: str):
     hdr_p.text = str(header_text)
     hdr_p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
 
-    footer = section.footer
-    f_p = footer.paragraphs[0]
-    f_p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-    if spec.get('footer', {}).get('page_number', True):
-        fld_simple = OxmlElement('w:fldSimple')
-        fld_simple.set(qn('w:instr'), 'PAGE')
-        run_elem = OxmlElement('w:r')
-        run_elem.append(fld_simple)
-        f_p._p.append(run_elem)
+    footer_spec = spec.get('footer', {})
+    if footer_spec.get('page_number', True):
+        _set_on_off_settings(doc, 'evenAndOddHeaders', bool(footer_spec.get('odd_even_page_numbers', True)))
+        _set_page_number_footer(
+            section,
+            doc.styles,
+            alignment=footer_spec.get('page_number_alignment', 'right'),
+            odd_even=footer_spec.get('odd_even_page_numbers', True),
+        )
 
     sample = spec.get('sample', {})
     if sample.get('include', True):

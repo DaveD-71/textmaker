@@ -27,7 +27,7 @@ import threading
 import time
 from contextlib import contextmanager
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Optional, Tuple
 
 try:
     from docx import Document  # type: ignore[reportMissingImports]
@@ -37,6 +37,7 @@ try:
     from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
     from docx.oxml.table import CT_Tbl  # type: ignore[reportMissingImports]
     from docx.oxml.text.paragraph import CT_P  # type: ignore[reportMissingImports]
+    from docx.shared import Pt, RGBColor  # type: ignore[reportMissingImports]
     from docx.table import Table  # type: ignore[reportMissingImports]
     from docx.text.paragraph import Paragraph  # type: ignore[reportMissingImports]
 except ImportError as exc:
@@ -2369,12 +2370,12 @@ def apply_spacing_after_example_blocks(doc, space_before_twips: int = 120) -> in
     return changed
 
 
-def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
-    """Add space-after to the last list paragraph in each list run.
+def apply_spacing_after_lists(doc, space_after_twips: int = 0) -> int:
+    """Normalize space-after on the last list paragraph in each list run.
 
-    Sets w:spacing/@w:after on the last list item directly rather than modifying
-    the following prose paragraph, which avoids overriding existing space-before
-    values on non-list styles.
+    Sets w:spacing/@w:after directly rather than modifying the following prose
+    paragraph. The presentation textbook style keeps list blocks tight and uses
+    surrounding paragraph styles for vertical rhythm, so the default is zero.
     """
     paragraphs = list(doc.paragraphs)
     changed = 0
@@ -2386,6 +2387,12 @@ def apply_spacing_after_lists(doc, space_after_twips: int = 280) -> int:
             if text:
                 next_text_para = para
             continue
+
+        fmt = para.paragraph_format
+        fmt.line_spacing = 1.1
+        fmt.space_before = Pt(0)
+        para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        _set_paragraph_auto_hyphenation(para, False)
 
         if next_text_para is not None and _is_list_paragraph(next_text_para):
             if text:
@@ -2415,9 +2422,205 @@ AW_TABLE_STYLE_IDS = frozenset({
     'AWStandardTable', 'AWComparisonTable', 'AWPhraseBankTable', 'AWRubricTable',
 })
 
+TABLE_STYLE_MARKER_RE = re.compile(r'^\[table-style:\s*([^\]]+?)\s*\]$')
+PS_TABLE_STYLE_NAMES = frozenset({
+    'PS Phrase Bank Table',
+    'PS Vocabulary Table',
+    'PS Planning Table',
+    'PS Comparison Table',
+    'PS Checklist Table',
+    'PS Rubric Table',
+    'PS Model Support Table',
+    'PS Visual Sequence Table',
+    'PS Key Vocabulary Table',
+    'PS QA Model Table',
+    'PS Skills Practised Table',
+    'PS Answer Key Table',
+    'PS Quiz Table',
+})
+
+PS_TABLE_BORDER_COLORS = {
+    'PS Phrase Bank Table': 'A24F71',
+    'PS Vocabulary Table': 'A24F71',
+    'PS Planning Table': '3366A8',
+    'PS Comparison Table': '3366A8',
+    'PS Checklist Table': '8FA4BD',
+    'PS Rubric Table': '8FA4BD',
+    'PS Model Support Table': 'A24F71',
+    'PS Visual Sequence Table': '3366A8',
+    'PS Key Vocabulary Table': 'A24F71',
+    'PS QA Model Table': '8FA4BD',
+    'PS Skills Practised Table': '8FA4BD',
+    'PS Answer Key Table': '3366A8',
+    'PS Quiz Table': '8FA4BD',
+}
+
+
+def _set_on_off_document_setting(doc, tag: str, enabled: bool) -> None:
+    settings = doc.settings._element
+    for existing in list(settings.findall(qn(f'w:{tag}'))):
+        settings.remove(existing)
+    el = OxmlElement(f'w:{tag}')
+    el.set(qn('w:val'), '1' if enabled else '0')
+    settings.append(el)
+
+
+def _clear_paragraph_content(paragraph) -> None:
+    for child in list(paragraph._p):
+        if child.tag != qn('w:pPr'):
+            paragraph._p.remove(child)
+
+
+def _add_page_field(paragraph) -> None:
+    fld_simple = OxmlElement('w:fldSimple')
+    fld_simple.set(qn('w:instr'), 'PAGE')
+    run_elem = OxmlElement('w:r')
+    run_elem.append(fld_simple)
+    paragraph._p.append(run_elem)
+
+
+def apply_presentation_page_number_footers(doc) -> int:
+    """Apply PS page-number footer rules to every section when the style exists."""
+    page_style = _get_style_by_name_or_id(doc.styles, 'PS Page Number')
+    if page_style is None:
+        return 0
+    _set_on_off_document_setting(doc, 'evenAndOddHeaders', True)
+    changed = 0
+    for section in doc.sections:
+        footers = [section.footer]
+        try:
+            footers.append(section.even_page_footer)
+        except Exception:
+            pass
+        for footer in footers:
+            para = footer.paragraphs[0]
+            _clear_paragraph_content(para)
+            para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            para.style = page_style
+            _add_page_field(para)
+            changed += 1
+    return changed
+
+
+def _paragraph_text_from_element(p_el, parent) -> str:
+    try:
+        return _normalize_text(Paragraph(p_el, parent).text)
+    except Exception:
+        return ''
+
+
+def _remove_body_child(child) -> None:
+    parent = child.getparent()
+    if parent is not None:
+        parent.remove(child)
+
+
+def _find_table_style_marker(children, table_index: int, parent) -> Tuple[Optional[str], Optional[object]]:
+    """Return explicit table style marker immediately before a table, if present.
+
+    Markdown source should place a marker paragraph directly before the table:
+
+        [table-style: PS Planning Table]
+
+    Empty paragraphs between the marker and table are ignored and removed with
+    the marker so source spacing does not leak into the final DOCX.
+    """
+    skipped_empty = []
+    for prev_index in range(table_index - 1, -1, -1):
+        prev = children[prev_index]
+        if prev.tag != qn('w:p'):
+            return None, None
+        text = _paragraph_text_from_element(prev, parent)
+        if not text:
+            skipped_empty.append(prev)
+            continue
+        match = TABLE_STYLE_MARKER_RE.match(text)
+        if not match:
+            return None, None
+        for empty in skipped_empty:
+            _remove_body_child(empty)
+        return match.group(1).strip(), prev
+    return None, None
+
+
+def _normalize_marked_table_header(tbl, style_name: str) -> None:
+    """Apply direct header-row paragraph settings that table styles cannot own reliably."""
+    if style_name not in PS_TABLE_STYLE_NAMES:
+        return
+    if not tbl.rows:
+        return
+    header_row = tbl.rows[0]
+    for cell in header_row.cells:
+        for para in cell.paragraphs:
+            fmt = para.paragraph_format
+            fmt.line_spacing = 1.0
+            fmt.space_before = Pt(0)
+            fmt.space_after = Pt(0)
+            para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            _set_paragraph_auto_hyphenation(para, False)
+            for run in para.runs:
+                run.font.color.rgb = RGBColor(255, 255, 255)
+
+
+def _set_paragraph_auto_hyphenation(para, enabled: bool) -> None:
+    p_pr = para._p.find(qn('w:pPr'))
+    if p_pr is None:
+        p_pr = OxmlElement('w:pPr')
+        para._p.insert(0, p_pr)
+    for existing in list(p_pr.findall(qn('w:suppressAutoHyphens'))):
+        p_pr.remove(existing)
+    el = OxmlElement('w:suppressAutoHyphens')
+    el.set(qn('w:val'), '0' if enabled else '1')
+    p_pr.append(el)
+
+
+def _normalize_marked_table_body(tbl, style_name: str) -> None:
+    """Apply readable paragraph settings to body cells in PS table families."""
+    if style_name not in PS_TABLE_STYLE_NAMES:
+        return
+    _normalize_table_body(tbl)
+
+
+def _normalize_table_body(tbl) -> None:
+    """Apply readable paragraph settings to all table body cells."""
+    for row in list(tbl.rows)[1:]:
+        for cell in row.cells:
+            for para in cell.paragraphs:
+                fmt = para.paragraph_format
+                fmt.line_spacing = 1.1
+                fmt.space_before = Pt(0)
+                fmt.space_after = Pt(0)
+                para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                _set_paragraph_auto_hyphenation(para, False)
+
+
+def _set_table_border(tbl_pr, side: str, color: str, sz: str = '8') -> None:
+    borders = tbl_pr.find(qn('w:tblBorders'))
+    if borders is None:
+        borders = OxmlElement('w:tblBorders')
+        tbl_pr.append(borders)
+    for existing in list(borders.findall(qn(f'w:{side}'))):
+        borders.remove(existing)
+    border = OxmlElement(f'w:{side}')
+    border.set(qn('w:val'), 'single')
+    border.set(qn('w:sz'), sz)
+    border.set(qn('w:space'), '0')
+    border.set(qn('w:color'), color)
+    borders.append(border)
+
+
+def _apply_marked_table_borders(tbl, style_name: str) -> None:
+    """Apply visible direct borders to PS tables after style assignment."""
+    if style_name not in PS_TABLE_STYLE_NAMES:
+        return
+    color = PS_TABLE_BORDER_COLORS.get(style_name, '8FA4BD')
+    tbl_pr = tbl._tbl.tblPr
+    for side in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
+        _set_table_border(tbl_pr, side, color)
+
 
 def apply_table_styles(doc, default_style: str = 'AW Standard Table',
-                       space_after_twips: int = 280,
+                       space_after_twips: int = 160,
                        reference_doc_path=None) -> int:
     """Apply AW Standard Table style to all tables that have no custom style set.
 
@@ -2433,7 +2636,7 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
     """
     # Ensure the cell paragraph styles exist in the output DOCX
     _ensure_styles_from_reference(
-        doc, reference_doc_path, ['AW Table Header', 'AW Table Body']
+        doc, reference_doc_path, ['AW Table Header', 'AW Table Body', *sorted(PS_TABLE_STYLE_NAMES)]
     )
     table_style = _get_style_by_name_or_id(doc.styles, default_style)
     cell_body_style = _get_style_by_name_or_id(doc.styles, 'AW Table Body')
@@ -2443,8 +2646,8 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
     children = list(body)
 
     for idx, child in enumerate(children):
-        # Apply default style to unstyled tables
-        if child.tag == qn('w:tbl') and table_style:
+        # Apply explicit source marker style, then fallback default style to unstyled tables.
+        if child.tag == qn('w:tbl'):
             # Skip response placeholder tables (tagged with tblDescription)
             desc = child.find(f'.//{qn("w:tblDescription")}')
             if desc is not None and desc.get(qn('w:val')) == 'ResponsePlaceholder':
@@ -2454,7 +2657,21 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
                 try:
                     tbl = DTable(child, doc._body)
                     current = tbl.style.name if tbl.style else None
-                    if current in (None, 'Table Normal', 'Normal Table'):
+                    marker_style_name, marker_para = _find_table_style_marker(children, idx, doc._body)
+                    marker_style = (
+                        _get_style_by_name_or_id(doc.styles, marker_style_name)
+                        if marker_style_name else None
+                    )
+                    if marker_style:
+                        if current != marker_style.name:
+                            tbl.style = marker_style
+                            changed += 1
+                        _normalize_marked_table_header(tbl, marker_style.name)
+                        _normalize_marked_table_body(tbl, marker_style.name)
+                        _apply_marked_table_borders(tbl, marker_style.name)
+                        if marker_para is not None:
+                            _remove_body_child(marker_para)
+                    elif current in (None, 'Table Normal', 'Normal Table') and table_style:
                         tbl.style = table_style
                         changed += 1
 
@@ -2476,6 +2693,7 @@ def apply_table_styles(doc, default_style: str = 'AW Standard Table',
                                         'AW Table Body', 'AW Table Header'
                                     ):
                                         para.style = target
+                    _normalize_table_body(tbl)
 
                     # Enforce 100% width and autofit directly on the table element
                     # (Pandoc sets explicit tblW which overrides style-level defaults)
@@ -3036,6 +3254,14 @@ def insert_section_after_toc(
         'Updated running headers in {count} place(s)',
     )
     if header_changes > 0:
+        final_change = True
+
+    page_number_changes = run_pass(
+        'presentation page number footers',
+        lambda: apply_presentation_page_number_footers(doc),
+        'Applied presentation page-number footers to {count} footer(s)',
+    )
+    if page_number_changes > 0:
         final_change = True
 
     footer_changes = run_pass(
