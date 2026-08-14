@@ -76,6 +76,21 @@ Use this phase order:
 5. Create or replace assets only after unit content is stable.
 6. Run QA, repair, and final consistency passes.
 
+DOCX style creation workstream:
+Before final DOCX production, create a `presentations_style.docx` reference file from a reusable YAML style source and a documented style set. The DOCX style system must include not only paragraph and table styles, but also reusable page components, layout rules, and production QA requirements derived from the Business Result 2e style analysis where useful.
+
+Add these BR2e-derived style and layout requirements:
+1. Define a formal component library showing how styles combine into repeatable textbook elements such as running headers, unit openings, practice tasks, language boxes, model boxes, cross-reference lines, contents/course-map blocks, and review/checklist areas.
+2. Define an activity number plus instruction pairing system so practice tasks have consistent numbering, title, short instruction text, and learner response space.
+3. Define a cross-reference line style for appendix/model references, with clear placement rules and a visible rule/marker treatment.
+4. Define contents, course-map, and unit-overview styling, not only an automatic TOC style.
+5. Define section-family accent logic so core skill, language, visual/tool workflow, delivery, model/appendix, and assessment/review material are visually distinct but still part of one system.
+6. Define image placement specifications for full-width figures, half-width figures, screenshots/mockups, diagrams, cover images, and appendix slide images, including expected caption and register requirements.
+7. Define standard rule weights for section underlines, callout top/left rules, table outer borders, table inner grid lines, learner-writing lines, and cross-reference rules.
+8. Define fill-in and learner-writing line treatment for printed workbook tasks and planning tables.
+9. Define source/provenance discipline for styles and assets, including source, license, generation tool/prompt where applicable, edit history, final path, and approval state.
+10. Define shared theme tokens for DOCX, slide decks, and any Canva/template work so colors, fonts, and accent roles remain consistent across print and presentation assets.
+
 Suggested effort budget:
 - Planning, traceability, and style sheet: 1-2 working days
 - Standard curriculum rewrite: 4-6 working days

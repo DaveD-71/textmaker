@@ -1,0 +1,54 @@
+Model 2: Government Agency - Launching an Application Support Desk
+==================================================================
+
+Good afternoon, everyone. I want to focus on one service need today: helping residents complete online forms before problems become repeat inquiries.
+
+The decision I need is whether we can approve the pilot schedule, confirm the staffing plan, and agree what we will measure after three months.
+
+My recommendation is to test a small application support desk because it gives residents practical help before they submit a form.
+
+The user need is already visible in our inquiry pattern.
+
+More residents are starting online forms, but many still need help before they can submit the forms correctly. Last month, there were 312 inquiries about the resident certificate support form. About 47 percent were about attachments or field entry. About 28 percent led to a repeat visit or a follow-up call.
+
+These figures show a realistic service problem. When a form is incomplete, staff must answer another inquiry. The resident may need to call again, visit again, or wait longer for the next step. This creates extra work for staff and a frustrating experience for users.
+
+The support desk is designed to help before submission.
+
+The service design adds one support point before submission.
+
+Please look at the service-flow diagram. In the current process, the user opens the online form, completes it alone, submits it, and then staff review it. If an attachment is missing or a field is incomplete, staff must contact the user again or return the form.
+
+In the pilot process, there is one extra support point before submission. The user can ask the support desk about required attachments, unclear fields, or common entry problems. The user still submits the form. Staff still review the form. The application rules do not change.
+
+This point is important. The support desk does not complete the form for the resident. It does not make a decision on the application. It does not change the requirements. It gives practical guidance so the resident can submit a more complete form.
+
+That design creates three practical benefits.
+
+The first benefit is fewer preventable errors. Many incomplete forms are not difficult cases. They are common problems such as a missing attachment, an incomplete contact field, or uncertainty about which document is needed.
+
+The second benefit is fewer repeat contacts. If users can ask a question before submission, some repeat visits and follow-up calls can be avoided. This helps users, and it also protects staff time.
+
+The third benefit is clearer guidance. During the pilot, we will record common questions each week. That record will show us where the form guidance is unclear. It may help us improve the guidance sheet later.
+
+The staffing plan keeps the pilot limited.
+
+The pilot will run for three months. Before launch, we will train assigned staff and prepare a short guidance sheet for the resident certificate support form. In Month 1, the support desk will open on Tuesday and Thursday mornings. Staff will record inquiry categories, but they will not record unnecessary personal details in the pilot log. In Month 2, we will review common questions with the call-center team and adjust the guidance sheet if needed. In Month 3, we will review repeat inquiries, staff workload, and user comments.
+
+The pilot target is a 15 percent reduction in repeat inquiries for the selected online form process. This is a target for review, not a promise. If the desk reduces repeat inquiries but creates too much pressure at the counter, we need to know that. If the desk helps only a small group of users, we need to know that too.
+
+On staffing, I recommend limited hours first.
+
+The desk will start with limited hours, not full-day coverage. This protects counter capacity while we test the service. Assigned staff will use the same guidance sheet, so users receive consistent information. The call-center team will also receive the guidance sheet, because some residents may ask the same questions by phone.
+
+We will review four measures after three months: repeat inquiries, common question categories, staff workload, and user comments. These measures will help us decide whether to continue, revise, or stop the service.
+
+For materials, I have prepared four items. The pre-read is a one-page pilot proposal for managers. Today's live visual is the service-flow diagram and pilot timeline. The follow-up handout is the staff guidance sheet and inquiry-log categories. The backup material is the draft staffing schedule and plain-language notes.
+
+Accessibility also matters here. The support desk is part of public-facing communication, so the guidance must be plain, readable, and usable for residents with different levels of confidence using online forms. The guidance sheet should use short sentences, clear headings, and large enough text. If we share the material digitally, it should also be readable by screen readers where possible.
+
+So the service case is this: the desk helps users before submission, keeps the application rules unchanged, and gives us better information about where users need support.
+
+The next step is to approve the pilot schedule and staffing plan today. If we agree, the team can prepare the guidance sheet next week and start the three-month pilot at the beginning of next month.
+
+Thank you. I welcome your questions.

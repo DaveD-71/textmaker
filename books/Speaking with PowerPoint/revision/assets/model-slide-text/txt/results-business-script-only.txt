@@ -1,0 +1,70 @@
+Model 1: Business Client - Reporting Results from the Exception Resolution Pilot
+================================================================================
+
+Opening and Preview
+
+Good morning. The short answer from the exception resolution pilot is positive, but it is not yet a full-rollout case.
+
+The pilot had one main goal: to reduce late import document handoffs caused by unclear handoffs.
+
+I will focus on the decision evidence: what improved, what remains uncertain, and why I recommend a controlled expansion to the Kansai Machinery Imports and Nagoya Parts Coordination desks.
+
+The approval request is a six-week expansion with two small controls before we scale the process further.
+
+Pilot Objective
+
+The objective was narrow.
+
+Before the pilot, exception checks were handled through separate email threads, spreadsheet notes, and manual handoff messages. This made ownership unclear, especially before the 3:00 p.m. preparation cutoff.
+
+The project team did not change the approval process. We also did not change the control steps. The change was narrower than that. We introduced a shared exception log and a fixed daily checkpoint so that each open exception had a visible owner.
+
+The target was simple: fewer late document handoffs, less rework time, and clearer ownership.
+
+Main Results
+
+The evidence is shown in the before/after chart.
+
+The first result is late document handoffs. Before the pilot, we had 38 late document handoffs in the measured month. After the pilot, this fell to 27. That is a reduction of about 29%.
+
+The second result is rework time. Before the pilot, average rework time was 22 minutes per exception. After the pilot, it fell to 16 minutes. That is six minutes less per exception.
+
+These results are positive, but I want to be careful about the claim. The chart does not prove that the shared log caused every improvement. Volume, staffing, and the type of exceptions can also affect the result. We checked a simple volume-adjusted view as backup: late handoffs fell from 5.2 to 3.9 per 100 open exceptions. The improvement is smaller in that view, but it is still visible. The user feedback also supports the same story.
+
+In the user check, 82% of pilot users said ownership was clearer. That is important because ownership was the main problem we were trying to solve.
+
+What We Learned
+
+The evidence is useful, but the limitations matter.
+
+The shared log helped teams see who owned each exception. It also reduced repeated messages because the current status was easier to find.
+
+At the same time, the pilot showed two issues that we should fix before expansion.
+
+The first issue is morning updates. Some entries were not refreshed early enough, so the first checkpoint sometimes started with old information. This did not break the process, but it reduced trust in the log.
+
+The second issue is duplicate entries. We found 9 duplicate log entries during the pilot. This happened when two people entered the same exception from different message threads. For example, one supplier packing-list delay appeared once under the supplier name and once under the document type.
+
+These issues are manageable. They do not mean we should stop the process. But they do mean we should expand with controls, not move directly to full rollout.
+
+Recommendation
+
+Based on the evidence, I recommend expanding the process to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks.
+
+My recommendation has two conditions.
+
+First, each desk should complete a morning log check by a named person. This will make sure the log is current before the daily work becomes busy.
+
+Second, one person should own duplicate-entry checks. This does not need to be a new full-time role. It can be a clear daily responsibility inside the team.
+
+This approach gives us a wider test, but it still limits the risk. It also gives the risk/control team a clear point to review before any larger rollout.
+
+Action Close
+
+The result changes the decision in two ways. It is strong enough to continue, but not strong enough for full rollout.
+
+The result is positive, but not perfect. For that reason, I am not asking for full rollout today.
+
+I am asking for approval to expand the process to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks, with a morning log check and duplicate-entry ownership. After six weeks, I will report the result again with the same measures and a volume-adjusted view.
+
+Thank you. I am ready to take your questions.

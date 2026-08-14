@@ -1,0 +1,91 @@
+Slide 1
+
+Before launch, we need to confirm:
+
+1. Pilot teams
+   - Team North
+   - Team West
+2. Launch date
+3. Feedback owner
+
+---
+
+Slide 2
+
+Last reporting cycle:
+
+- 74 status-check messages
+- About 9 staff-hours per week
+- Many questions repeated information another team already had.
+
+Why it matters:
+
+- Status, deadlines, and ownership are not easy to see in one place.
+
+---
+
+Slide 3
+
+The dashboard should answer one question:
+
+What needs attention before the next deadline?
+
+Show only the key fields:
+
+- Reporting cycle
+- Request status
+  - Open
+  - Waiting
+  - Complete
+- Next reporting deadline
+- Current owner
+
+---
+
+Slide 4
+
+The pilot should help teams in three ways:
+
+1. Earlier visibility
+2. Fewer repeated messages
+3. Clearer ownership
+
+Important limit:
+
+- The dashboard does not replace official reports.
+
+---
+
+Slide 5
+
+Four-week rollout:
+
+1. Week 0
+   - Confirm users and access.
+2. Week 1
+   - Launch and collect issues.
+3. Week 2
+   - Adjust confusing labels.
+4. Week 3
+   - Check owner and deadline fields.
+5. Week 4
+   - Continue, revise, or stop.
+
+---
+
+Slide 6
+
+Next steps:
+
+1. Today
+   - Nominate pilot users.
+2. Friday
+   - Send access plan and feedback form.
+3. Monday
+   - Start pilot.
+
+Review during the pilot:
+
+- Repeated messages
+- Field clarity
+- Update workload

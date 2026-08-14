@@ -1,0 +1,72 @@
+Model 1: Business Client - Reducing Import Document Handoff Delays
+==================================================================
+
+Opening
+
+Good morning. I am asking for one decision today: approval for a four-week pilot to reduce same-day import document handoff delays.
+
+The issue is not one large failure. It is a repeated handoff problem. At the moment, exception checks are recorded in several places: email, a spreadsheet, and short handoff messages. For example, when Supplier A has not confirmed a packing-list item by early afternoon, one person may see the email, another person may update the spreadsheet, and a third person may ask about the next action in chat. Because the information is spread across these places, ownership is not always clear before the 3:00 p.m. shipping-document preparation cutoff.
+
+The decision has three parts: should we approve the pilot, who should own the daily checkpoint, and what result should we review at the end?
+
+My main message is simple. A shared exception log and one fixed handoff checkpoint can reduce avoidable document handoff delays without changing the control process.
+
+Current Problem
+
+The risk appears in the current workflow.
+
+Please look at the left side of the workflow visual. Today, an exception may first appear in an email, such as a missing packing-list confirmation. Then a team member may add a note in the tracking spreadsheet. Later, another person may send a short message to ask who owns the next action.
+
+Each of these steps is understandable. The problem is that the handoff note is not in one reliable place. When the team is busy, people spend time checking where the latest information is. That creates rework, and it can delay the confirmation process.
+
+So the main problem is not the number of checks. We still need the checks. The main problem is where the handoff information sits and when ownership is confirmed.
+
+Evidence
+
+Last month, there were 38 late document handoffs. Of those, 61% involved missing or unclear handoff notes. Also, the average rework time was 22 minutes per exception.
+
+This does not mean every delay came from the same cause. Some delays have different reasons. But the handoff issue is large enough and repeated enough to justify a small pilot.
+
+For that reason, I do not recommend a large system change now. I recommend a limited workflow change that we can test quickly and control carefully.
+
+Recommendation
+
+The proposed pilot changes that handoff point, not the control process.
+
+The pilot has two parts.
+
+First, we use one shared exception log. Every open exception has three required fields: the issue, the owner, and the next action. This is not a new management report. It is a shared handoff record.
+
+Second, we set one fixed checkpoint at 2:15 p.m., before the 3:00 p.m. shipping-document preparation cutoff. At that checkpoint, the documentation lead checks the open items, confirms ownership, and asks each owner to update the next action.
+
+The control process does not change. Approval authority does not change. The pilot only standardizes where the handoff note is recorded and when ownership is checked.
+
+Expected Benefit
+
+The expected benefit is clearer ownership before the busy part of the day.
+
+If ownership is clear earlier, the team should spend less time searching email threads or asking the same question again. For instance, if the Supplier A packing-list issue already has an owner and next action in the log, the account-service representative does not need to send another status-check message at 2:45 p.m. We should also reduce avoidable late document handoffs. The pilot target is a 25% reduction in late document handoffs during the four-week period.
+
+I want to be careful about this target. It is not a promise, and it is not a market or client result. It is an operational test target. The purpose is to see whether the workflow change reduces delay and rework in a controlled way.
+
+Pilot Plan
+
+Here is the proposed pilot plan.
+
+In week zero, before the pilot starts, the risk/control representative reviews the log fields. This check is important because we do not want the log to create a new control risk.
+
+In weeks one to four, the documentation lead runs the daily 2:15 p.m. checkpoint. Each exception owner updates their own item before the checkpoint. The account-service representative can view the log to understand status, but customer names, account, shipment, or order numbers, shipment IDs, and ticket IDs must not appear in the pilot material.
+
+At the end of week four, we review three things: the number of late document handoffs, the average rework time, and user feedback on ownership clarity.
+
+The backup material is a simple cause breakdown table and a short roles list. I will not go through those now, but they are available if we need them during Q&A.
+
+Close
+
+The decision is limited, but useful.
+
+We have a repeated handoff problem. The information is spread across email, spreadsheets, and short messages. The proposed pilot keeps the control process unchanged, but moves the handoff note into one shared exception log and checks ownership at a fixed time.
+
+So my request is approval for the four-week pilot, confirmation that the documentation lead owns the daily checkpoint, and agreement that we will review late document handoffs and rework time at the end of the pilot.
+
+If we agree today, we can prepare the log fields this week and start the pilot next Monday. Thank you. I am happy to take your questions.

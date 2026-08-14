@@ -1,0 +1,54 @@
+Model 1: Business Client - Launching a Supplier-Status Dashboard
+================================================================
+
+Good morning, everyone. This briefing is about a small launch with a practical goal: fewer repeated status checks before shipment reporting deadlines.
+
+I will introduce the pilot version of our supplier-status dashboard and ask you to confirm three launch decisions: the two pilot teams, the launch date, and how we will collect feedback during the first four weeks.
+
+The reason for the launch is simple: the dashboard will help client-service account managers see reporting issues earlier, reduce repeated status-check messages, and give each team a clearer view of ownership before shipment deadlines.
+
+The opportunity is clearest if we look at the last reporting cycle.
+
+In the last reporting cycle, we had 74 status-check messages between account service, sales coordination, and reporting operations. Almost half of those messages asked for information that another team already had. For example, three people asked whether the same supplier inquiry for imported pump parts had been answered before the Friday shipment-reporting deadline. We also estimate that repeated status checks took about 9 staff-hours each week.
+
+These figures show a common problem. The problem is not that people are careless. The problem is that the current information is spread across several places. One team may know that a request is waiting. Another team may know that the deadline is close. A third person may know who owns the next action. But the full picture is not easy to see.
+
+That is why we are proposing a small pilot dashboard.
+
+Here is what will change during the pilot.
+
+The dashboard is an internal weekly view. It will not replace official reports. It will not replace the account-service process. It will not be sent to clients during this pilot.
+
+Please look at the dashboard mockup on the screen. At the top, you can see the reporting cycle and the current week. On the left, there is a short list of account teams in the pilot. In the middle, there are request status fields: open, waiting, and complete. On the right, there is the next reporting deadline and the current owner for the next action.
+
+The key information is at the top because the user needs to answer one question quickly: "What needs attention before the next deadline?" The supporting details appear below it. The owner field is separate because it tells people who should act next.
+
+The value depends on the user group.
+
+For client-service account managers, the first benefit is earlier visibility. Instead of asking several people for status near the deadline, they can check one shared weekly view and see which requests need attention.
+
+For account-service staff, the second benefit is fewer repeated messages. If the status is visible in one place, the same question does not need to move through three different email threads. For example, if Team North can see that a supplier reply is due by Thursday noon, they do not need to ask reporting operations again on Friday morning.
+
+For reporting operations, the third benefit is clearer ownership. The dashboard does not solve every reporting issue, but it shows who owns the next action. That makes the handoff easier to manage.
+
+There is also one important limit. This dashboard is not a record of shipment instructions, shipment or order details, or account information. For the pilot, all examples must be sanitized, and all fields must follow our internal data rules. If a field is sensitive or not approved for this view, it will not be included.
+
+The rollout is designed to support adoption, not force a wide launch.
+
+The pilot will run for four weeks. In Week 0, before launch, we confirm the pilot users and access for Team North and Team West. We also send a one-page user guide. In Week 1, the dashboard goes live for the two teams, and we collect the first issues in a simple issue log. In Week 2, we review repeated questions and adjust the labels if users are confused. In Week 3, we check the owner and deadline fields carefully, because these fields are the main value of the dashboard. In Week 4, we review the pilot and decide whether to continue, revise, or stop.
+
+During the pilot, we will check three things. First, are repeated status-check messages reduced? Second, do users understand the fields? Third, does the update process create too much work for reporting operations?
+
+The pilot target is a 30 percent reduction in repeated status-check messages. That target is not a promise. It is a practical test point. If the number does not improve, or if the dashboard creates more confusion, we will revise the approach before any wider launch.
+
+Support is part of the launch, not an afterthought.
+
+Reporting operations will update the status fields once a week. Each pilot team will have one client-service account manager as the main user contact. Account-service will collect feedback using a short form. If there is a data question or a confidentiality concern, we will pause that field and check it before continuing.
+
+For materials, I have prepared four items. The pre-read is a one-page summary of the dashboard purpose and pilot schedule. Today's live visual is the dashboard mockup and rollout timeline. The follow-up handout is the pilot user guide, with support contact and feedback form. The backup material is the data-field list and confidentiality rules, which we will use only if needed during Q&A.
+
+In short, this is not a new reporting process. It is a shared weekly view that helps people see issues earlier, reduce repeated messages, and clarify ownership before shipment deadlines.
+
+The next step is to confirm the two pilot teams today. After that, I will send the final user list, access plan, and feedback form by Friday. If we agree today, the pilot can start next Monday.
+
+Thank you. I am happy to take your questions.

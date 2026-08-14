@@ -1,0 +1,77 @@
+Slide 1
+
+Today, we need to agree on three points:
+
+1. Approve a shared exception log pilot.
+2. Confirm the 2:15 p.m. checkpoint owner.
+3. Agree to review late document handoffs and average rework time after four weeks.
+
+---
+
+Slide 2
+
+A Supplier A packing-list issue can move through three separate channels:
+
+1. Email
+2. Spreadsheet
+3. Handoff message
+
+Result:
+
+- Ownership is unclear before the 3:00 p.m. cutoff.
+
+---
+
+Slide 3
+
+Last month, the team saw:
+
+- 38 late document handoffs
+- 61% linked to unclear handoff notes
+- 22 minutes average rework time per exception
+
+Note:
+
+- Fictional data for practice
+
+---
+
+Slide 4
+
+The pilot changes the handoff point:
+
+- Shared exception log
+  - Issue
+  - Owner
+  - Next action
+- Fixed 2:15 p.m. checkpoint
+- Control process unchanged
+
+---
+
+Slide 5
+
+Pilot schedule:
+
+1. Week 0
+   - Control review of log fields
+2. Weeks 1-4
+   - Daily 2:15 p.m. checkpoint
+3. End Review
+   - Late document handoffs
+   - Average rework time
+   - Ownership feedback
+
+Target:
+
+- 25% fewer late document handoffs
+
+---
+
+Slide 6
+
+If we agree today, we can start next Monday:
+
+1. Approve the four-week pilot.
+2. Confirm the documentation lead as checkpoint owner.
+3. Review late handoffs and rework time at the end of the pilot.

@@ -47,14 +47,71 @@ pip install -r .\docs\requirements.txt
   --out ".\style-ref\reference.docx" `
   --preserve-headers
 
+# generate from a YAML style specification
+.\textmaker.cmd generate-reference `
+  --spec ".\path\to\styles.yaml" `
+  --out ".\style-ref\reference.docx"
+
 # show all flags
 .\textmaker.cmd generate-reference --help
 ```
 
 - `--input <path>`: optional source `.docx` to extract styles/themes/numbering from.
+- `--spec <path>`: optional YAML style specification for creating a reference DOCX from structured page, font, color, paragraph, character, and table-style data. Use either `--input` or `--spec`, not both.
 - `--out <path>`: output path for the generated reference file (default `reference.docx`).
 - `--preserve-headers`: when `--input` is used, keep source header/footer parts in the reference DOCX.
 - `-h, --help`: show the built-in help for the generator script.
+
+Minimal YAML style-spec shape:
+
+```yaml
+page:
+  size: A4
+  margins_mm: {top: 20, bottom: 20, left: 18, right: 18}
+fonts:
+  body: Palatino Linotype
+  sans: Arial
+colors:
+  deep_ink: "#1F2933"
+  teal: "#008C8C"
+  teal_tint: "#CDEDEA"
+defaults:
+  font: body
+  size_pt: 11
+  color: deep_ink
+  paragraph: {space_after_pt: 6, line_spacing: 1.25}
+styles:
+  - name: PS Body Text
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+  - name: PS Section Head
+    type: paragraph
+    base: Normal
+    font: sans
+    size_pt: 16
+    bold: true
+    color: teal
+    paragraph: {space_before_pt: 12, space_after_pt: 6, keep_with_next: true}
+    borders:
+      bottom: {val: single, sz: 12, space: 2, color: teal}
+  - name: PS Model Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: teal_tint
+  - name: PS Key Term
+    type: character
+    font: sans
+    bold: true
+    color: teal
+sample:
+  include: true
+```
 
 ## Markdown → DOCX CLI usage and options
 
@@ -128,6 +185,17 @@ div_content_style_map:
 ```
 
 - When `scripts\style_bridge.lua` is used, `style_map` applies the Div label style and `div_content_style_map` applies the content paragraph style for configured div classes.
+- `scripts\style_bridge.lua` can also add DOCX-only spacing around list blocks when Markdown metadata includes:
+
+```yaml
+style_bridge:
+  list_block_spacing:
+    enabled: true
+    before_pt: 6
+    after_pt: 6
+```
+
+  This is for spacing before and after the list block, not spacing after every list item.
 - Quick Parts are currently used only for unit title tables. They are inserted through a dedicated Word COM instance created with `DispatchEx`, so the automation does not attach to or close unrelated user `WINWORD.exe` sessions.
 - Use `--profile` to identify slow conversion stages. Routine `[progress]` logs are printed by default, and `[warn]` messages indicate stages that run longer than `--progress-warn-seconds`.
 

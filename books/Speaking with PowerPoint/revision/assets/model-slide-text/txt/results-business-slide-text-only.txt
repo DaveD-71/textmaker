@@ -1,0 +1,99 @@
+Slide 1
+
+The pilot result supports expansion, but not full rollout.
+
+Approval request:
+
+1. Expand to two desks.
+   - Kansai Machinery Imports
+   - Nagoya Parts Coordination
+2. Run the expansion for six weeks.
+3. Add two controls.
+   - Morning log check
+   - Duplicate-entry owner
+
+---
+
+Slide 2
+
+Before the pilot:
+
+- Separate email threads
+- Spreadsheet notes
+- Manual handoff messages
+
+Pilot change:
+
+- Shared exception log
+- Fixed daily checkpoint
+
+Goal:
+
+- Fewer late handoffs
+- Less rework time
+- Clearer ownership
+
+---
+
+Slide 3
+
+Main results:
+
+- Late document handoffs
+  - 38 -> 27
+- Average rework time
+  - 22 min -> 16 min
+- Ownership clearer
+  - 82% of pilot users
+
+Note:
+
+- Fictional data for practice
+
+---
+
+Slide 4
+
+What improved:
+
+- Clearer ownership
+- Fewer repeated messages
+
+What still needs control:
+
+1. Morning updates
+   - Some entries were not refreshed early enough.
+2. Duplicate entries
+   - 9 duplicate log entries found.
+
+---
+
+Slide 5
+
+Recommendation:
+
+1. Expand for six weeks.
+2. Use the same measures.
+   - Late document handoffs
+   - Rework time
+   - Ownership feedback
+3. Add a volume-adjusted view.
+4. Report again after six weeks.
+
+---
+
+Slide 6
+
+Backup question:
+
+- Was volume lower during the pilot?
+
+Volume-adjusted check:
+
+- Late handoffs per 100 open exceptions
+  - Before: 5.2
+  - After: 3.9
+
+Conclusion:
+
+- Improvement was smaller, but still visible.

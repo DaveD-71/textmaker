@@ -193,6 +193,21 @@ The simplified tables below define the checks. The execution log must add the ev
 | QA-109 | Final DOCX exports open correctly | Defer | No final DOCX export exists. |
 | QA-110 | Final PDF exports open correctly and visual layout is checked page by page or with contact sheets | Defer | No final PDF export exists. |
 
+## 11a. DOCX Style Creation QA
+
+| ID | Check | Status | Notes |
+| --- | --- | --- | --- |
+| QA-123 | `presentations_style.docx` is generated from a reusable YAML style source and documented style set rather than built only by manual Word formatting | Defer | YAML source and style-set notes exist, but the final reference DOCX has not yet been approved for production. |
+| QA-124 | A formal component library defines how styles combine into repeatable textbook elements such as running headers, unit openings, practice tasks, language boxes, model boxes, cross-reference lines, contents/course-map blocks, and review/checklist areas | Defer | Component-library requirements have been added to Plan 3; final component specimens still need to be created and checked. |
+| QA-125 | Practice-task layout includes a consistent activity number plus instruction pairing system with task number, task title, short instruction text, and learner response space | Defer | The requirement is now tracked; final DOCX component styling and postprocess behavior remain to be built. |
+| QA-126 | Cross-reference lines for appendix/model references have a defined style, placement rule, visible marker/rule treatment, and consistent learner-facing wording | Defer | `PS Cross Reference` exists, but final cross-reference component behavior has not been validated in DOCX. |
+| QA-127 | Contents, course-map, and unit-overview styling are defined separately from the automatic TOC styles | Defer | TOC styles exist; course-map and unit-overview component specs still need final specimens. |
+| QA-128 | Section-family accent logic distinguishes core skill, language, visual/tool workflow, delivery, model/appendix, and assessment/review material without creating an inconsistent palette | Defer | Accent roles are partly defined; final component specimens and theme-token validation remain. |
+| QA-129 | Image placement specifications cover full-width figures, half-width figures, screenshots/mockups, diagrams, cover images, and appendix slide images, including caption and register requirements | Defer | Image placement rules are noted in the style set; final image/register integration has not been completed. |
+| QA-130 | Standard rule weights are defined for section underlines, callout rules, table borders, table grids, learner-writing lines, and cross-reference rules | Defer | Rule-weight requirements are now tracked; final DOCX style values and rendered-page checks remain. |
+| QA-131 | Fill-in and learner-writing line treatment is defined and checked for printed workbook tasks and planning tables | Defer | Planning-table styles exist, but final writable-line treatment has not been validated in rendered output. |
+| QA-132 | Source/provenance and shared theme-token discipline is applied across DOCX, slide decks, and any Canva/template work, including source, license, generation prompt/tool where applicable, edit history, final path, and approval state | Defer | Asset registers and theme colors exist, but final cross-tool token/provenance QA remains incomplete. |
+
 ## 12. Cross-Series Consistency QA
 
 | ID | Check | Status | Notes |
@@ -224,3 +239,4 @@ Do not treat Phase 6 as complete until:
 3. All Defer rows have a reason, impact statement, and future action.
 4. Final exports have been opened and visually checked.
 5. External review issues have been classified and resolved or deferred.
+6. DOCX style creation rows `QA-123` through `QA-132` have been completed, repaired, or explicitly deferred before final DOCX/PDF release.

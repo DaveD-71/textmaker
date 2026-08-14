@@ -1,0 +1,72 @@
+Model 2: Government Agency - Reducing Returned Application Forms
+================================================================
+
+Opening
+
+Good afternoon. Please keep one question in mind as I speak: can a short intake checklist reduce returned forms without slowing the counter too much?
+
+At the moment, many housing support certificate forms are returned after formal review because one attachment is missing or one field is incomplete. This creates extra work for staff, and it also creates a longer wait for applicants.
+
+At the end, I will ask you to approve a one-month trial, agree on the first checklist fields, and assign one owner for the FAQ update process.
+
+My main message is this. A front-counter checklist can reduce returned applications and shorten processing time by catching common errors before formal review.
+
+Current Problem
+
+The service impact starts in the current intake process.
+
+Please look at the first process flow. An applicant submits the form at the counter or online. Counter staff receive it and send it to formal review. Review staff then find missing information, such as a missing income certificate attachment or an incomplete contact field. The application is returned, and the applicant often contacts the office again.
+
+This means the problem appears late in the process. By the time review staff find the missing item, the applicant has already left the counter or finished the online submission. Staff then need to explain the problem again, and the applicant needs to send or bring the missing information later.
+
+The process is careful, but it is not efficient for common preventable errors.
+
+Evidence
+
+Last month, there were 142 returned housing support certificate applications. Of those, 54% were missing one required attachment. Another 31% had an incomplete contact or ID field.
+
+These numbers show that many returns come from a small number of common problems. We do not need to redesign the whole application process first. We can start with the most common preventable errors at intake.
+
+The target for the trial is a 20% reduction in returned applications for one high-volume application type. This is a trial target, not a guarantee. We will review the result after one month.
+
+Recommendation
+
+The trial design is small on purpose.
+
+The proposal has two parts.
+
+First, counter staff use a short intake checklist before the form goes to formal review. The checklist is not a second full review. It covers only the income certificate attachment, the contact field, the ID field, and one confirmation item.
+
+Second, staff use one shared FAQ sheet for common explanations. The FAQ helps staff explain missing attachments and incomplete fields in the same way. This should make the guidance clearer for applicants and more consistent for staff.
+
+The formal review process does not change. Review staff still make the official review decision. The checklist only helps us catch simple errors earlier.
+
+Expected Benefit
+
+The expected benefit is fewer returned forms and fewer repeat inquiries.
+
+If staff catch common errors at the counter, applicants can correct some problems earlier. For example, an applicant who forgot the income certificate can receive the same clear explanation before the file goes to formal review. Review staff should receive more complete forms. The inquiry desk should also receive fewer repeat questions about the same missing information.
+
+There is one important risk. The checklist may add time at the counter. For that reason, the checklist must be short. During the trial, we should measure both returned applications and counter time. If the checklist slows the line too much, we should shorten it before wider use.
+
+Trial Plan
+
+Here is the proposed trial plan.
+
+In week zero, we agree the checklist fields and prepare the shared FAQ. The document-review team confirms the required items, and the inquiry desk representative prepares the first FAQ version.
+
+In weeks one to four, counter staff use the checklist for housing support certificate applications. Temporary staff receive a short reminder sheet before the Monday morning peak, and the section manager checks any repeated questions once a week.
+
+At the end of the month, we review four points: the number of returned applications, the main reasons for return, repeat inquiry volume, and staff comments on counter time.
+
+The backup material includes a return-reason table, draft checklist fields, and a proposed FAQ update schedule. I will not show all of that detail now, but it is available if we need it during Q&A.
+
+Close
+
+Here is the service case for the trial.
+
+Returned applications create delay for applicants and extra work for staff. In this scenario, most returns come from a small number of preventable errors. A short intake checklist and shared FAQ can help staff catch these errors before formal review.
+
+The approval I need today is for the one-month trial, the first checklist fields, and one owner for the FAQ update process.
+
+If we approve the trial today, we can prepare the checklist this week, brief staff next week, and review the result after one month. Thank you. I am happy to take your questions.

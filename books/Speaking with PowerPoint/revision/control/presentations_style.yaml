@@ -1,0 +1,830 @@
+page:
+  size: A4
+  margins_mm:
+    top: 18
+    bottom: 18
+    left: 17
+    right: 17
+
+document:
+  language: en-US
+  hyphenation: true
+
+fonts:
+  body: Palatino Linotype
+  sans: Arial
+  accent: Georgia
+
+colors:
+  deep_ink: "#1F2933"
+  graphite: "#374151"
+  slate: "#64748B"
+  teal: "#008C8C"
+  blue: "#1D4ED8"
+  amber: "#D97706"
+  teal_tint: "#CDEDEA"
+  blue_tint: "#DCEBFF"
+  amber_tint: "#FBE3B0"
+  grey_tint: "#E5E7EB"
+  light_grey: "#F1F5F9"
+  white: "#FFFFFF"
+
+defaults:
+  font: body
+  size_pt: 11
+  color: deep_ink
+  language: en-US
+  alignment: justify
+  widow_control: true
+  snap_to_grid: false
+
+styles:
+  - name: Normal
+    type: paragraph
+    font: body
+    size_pt: 11
+    color: deep_ink
+    space_after_pt: 6
+    line_spacing: 1.12
+    alignment: justify
+    widow_control: true
+    sample_text: Normal body text for learner-facing explanations.
+
+  - name: PS Body Text
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    space_after_pt: 6
+    line_spacing: 1.12
+    alignment: justify
+    widow_control: true
+    sample_text: Main textbook prose and activity instructions.
+
+  - name: PS Body Text Small
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10
+    color: deep_ink
+    space_after_pt: 4
+    line_spacing: 1.08
+    alignment: justify
+    widow_control: true
+    sample_text: Dense notes, compact explanations, and table body text.
+
+  - name: PS Heading 1
+    type: paragraph
+    base: Heading 1
+    font: sans
+    size_pt: 32
+    bold: true
+    color: white
+    shading: teal
+    space_before_pt: 0
+    space_after_pt: 10
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: "Unit 1: Presentation Purpose and Audience"
+
+  - name: PS Heading 2
+    type: paragraph
+    base: Heading 2
+    font: sans
+    size_pt: 16
+    bold: true
+    color: teal
+    space_before_pt: 14
+    space_after_pt: 6
+    line_spacing: 1.0
+    keep_with_next: true
+    borders:
+      bottom: {val: single, sz: 8, space: 3, color: teal}
+    sample_text: "Core Skill: Make the Message Useful"
+
+  - name: PS Heading 3
+    type: paragraph
+    base: Heading 3
+    font: sans
+    size_pt: 13.5
+    bold: true
+    color: graphite
+    space_before_pt: 10
+    space_after_pt: 4
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: "Practice Task 1: Audience Outcome Check"
+
+  - name: PS Heading 4
+    type: paragraph
+    base: Heading 4
+    font: sans
+    size_pt: 12
+    bold: true
+    color: slate
+    space_before_pt: 8
+    space_after_pt: 3
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: Opening
+
+  - name: PS Running Head
+    type: paragraph
+    font: sans
+    size_pt: 10.5
+    bold: true
+    color: white
+    shading: deep_ink
+    space_after_pt: 0
+    line_spacing: 1.0
+    sample_text: Presenting with Visuals
+
+  - name: PS Page Number
+    type: paragraph
+    font: accent
+    size_pt: 12
+    bold: true
+    color: deep_ink
+    alignment: center
+    line_spacing: 1.0
+    sample_text: "12"
+
+  - name: PS Caption
+    type: paragraph
+    font: body
+    size_pt: 9.5
+    color: slate
+    italic: true
+    space_before_pt: 2
+    space_after_pt: 6
+    sample_text: Figure note or source note.
+
+  - name: PS Cross Reference
+    type: paragraph
+    font: sans
+    size_pt: 11
+    bold: true
+    color: blue
+    space_after_pt: 4
+    sample_text: See Appendix A for a full model.
+
+  - name: PS Cover Title
+    type: paragraph
+    font: sans
+    size_pt: 34
+    bold: true
+    color: deep_ink
+    space_before_pt: 0
+    space_after_pt: 8
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: Business Presentations with Visuals
+
+  - name: PS Cover Subtitle
+    type: paragraph
+    font: body
+    size_pt: 16
+    color: graphite
+    space_before_pt: 0
+    space_after_pt: 12
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: A practical English course for clear workplace presentations.
+
+  - name: PS Cover Meta
+    type: paragraph
+    font: sans
+    size_pt: 11
+    color: slate
+    space_after_pt: 4
+    line_spacing: 1.0
+    sample_text: 2026 revision.
+
+  - name: PS Front Matter Title
+    type: paragraph
+    base: Heading 1
+    font: sans
+    size_pt: 22
+    bold: true
+    color: teal
+    space_before_pt: 0
+    space_after_pt: 8
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: How to Use This Book
+
+  - name: PS Front Matter Text
+    type: paragraph
+    base: PS Body Text
+    font: body
+    size_pt: 11
+    color: deep_ink
+    space_after_pt: 6
+    line_spacing: 1.12
+    sample_text: Learner-facing front matter text.
+
+  - name: PS TOC Title
+    type: paragraph
+    base: Heading 1
+    font: sans
+    size_pt: 24
+    bold: true
+    color: teal
+    space_before_pt: 0
+    space_after_pt: 10
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: Contents
+
+  - name: PS TOC Level 1
+    type: paragraph
+    font: sans
+    size_pt: 11.5
+    bold: true
+    color: deep_ink
+    space_after_pt: 3
+    line_spacing: 1.0
+    sample_text: "Unit 1: Audience and Purpose"
+
+  - name: PS TOC Level 2
+    type: paragraph
+    font: body
+    size_pt: 10.5
+    color: graphite
+    left_indent_mm: 4
+    space_after_pt: 2
+    line_spacing: 1.0
+    sample_text: "Appendix A: Model Presentations"
+
+  - name: PS TOC Page Number
+    type: character
+    font: sans
+    size_pt: 10.5
+    bold: true
+    color: slate
+    line_spacing: 1.0
+    sample_text: "24"
+
+  - name: PS Section Head
+    type: paragraph
+    base: PS Heading 2
+    font: sans
+    size_pt: 16
+    bold: true
+    color: teal
+    borders:
+      bottom: {val: single, sz: 8, space: 3, color: teal}
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: Presentation English Focus
+
+  - name: PS Practice Head
+    type: paragraph
+    base: PS Heading 3
+    font: sans
+    size_pt: 13.5
+    bold: true
+    color: graphite
+    shading: grey_tint
+    space_before_pt: 10
+    space_after_pt: 5
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: "Practice Task 2: Build a Planning Map"
+
+  - name: PS Bullet List
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    left_indent_mm: 5
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.1
+    alignment: left
+    suppress_auto_hyphens: true
+    sample_text: Bullet list item for non-sequential points.
+
+  - name: PS Bullet List 2
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: graphite
+    left_indent_mm: 10
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.08
+    alignment: left
+    suppress_auto_hyphens: true
+    sample_text: Nested bullet item with supporting detail.
+
+  - name: PS Numbered List
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    left_indent_mm: 5
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.1
+    alignment: left
+    suppress_auto_hyphens: true
+    sample_text: Numbered list item for chronological steps.
+
+  - name: PS Numbered List 2
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: graphite
+    left_indent_mm: 10
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.08
+    alignment: left
+    suppress_auto_hyphens: true
+    sample_text: Nested numbered item for a substep.
+
+  - name: PS Checklist
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    left_indent_mm: 5
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.1
+    alignment: left
+    suppress_auto_hyphens: true
+    sample_text: Checklist item for readiness or review.
+
+  - name: PS Sequence List
+    type: paragraph
+    base: Normal
+    font: sans
+    size_pt: 11
+    bold: true
+    color: deep_ink
+    shading: light_grey
+    left_indent_mm: 6
+    first_line_indent_mm: -3
+    space_before_pt: 0
+    space_after_pt: 0
+    line_spacing: 1.08
+    alignment: left
+    suppress_auto_hyphens: true
+    borders:
+      left: {val: single, sz: 10, space: 4, color: teal}
+    sample_text: Important sequence step with a stronger visual treatment.
+
+  - name: PS Core Skill Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: teal_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 6
+    space_after_pt: 6
+    borders:
+      top: {val: single, sz: 12, space: 3, color: teal}
+    sample_text: Core skill text with a clear learning point.
+
+  - name: PS Useful Language Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: teal_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      left: {val: single, sz: 18, space: 4, color: teal}
+    sample_text: Useful language for presenting clearly.
+
+  - name: PS Model Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: blue_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      left: {val: single, sz: 18, space: 4, color: blue}
+    sample_text: Model excerpt with learner-facing support.
+
+  - name: PS Tip Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: amber_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      top: {val: single, sz: 10, space: 3, color: amber}
+    sample_text: Short tip or reminder.
+
+  - name: PS Caution Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: amber_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      left: {val: single, sz: 18, space: 4, color: amber}
+    sample_text: Caution about privacy, evidence, or overclaiming.
+
+  - name: PS AI Literacy Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: light_grey
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      left: {val: single, sz: 12, space: 4, color: slate}
+    sample_text: Neutral AI critical-literacy task.
+
+  - name: PS Reflection Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: light_grey
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      top: {val: single, sz: 8, space: 3, color: slate}
+    sample_text: Reflection or next-step goal.
+
+  - name: PS Block Example
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: blue_tint
+    left_indent_mm: 5
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      left: {val: single, sz: 12, space: 4, color: blue}
+    sample_text: Example language from a presentation.
+
+  - name: PS Spoken Model
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    left_indent_mm: 4
+    right_indent_mm: 2
+    space_before_pt: 4
+    space_after_pt: 4
+    line_spacing: 1.15
+    borders:
+      left: {val: single, sz: 8, space: 4, color: slate}
+    sample_text: Spoken model script text for learners to study and practise.
+
+  - name: PS Weak Example
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: amber_tint
+    left_indent_mm: 4
+    right_indent_mm: 2
+    space_before_pt: 4
+    space_after_pt: 4
+    borders:
+      left: {val: single, sz: 12, space: 4, color: amber}
+    sample_text: Weak example.
+
+  - name: PS Improved Example
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: teal_tint
+    left_indent_mm: 4
+    right_indent_mm: 2
+    space_before_pt: 4
+    space_after_pt: 4
+    borders:
+      left: {val: single, sz: 12, space: 4, color: teal}
+    sample_text: Improved example.
+
+  - name: PS Script Section Head
+    type: paragraph
+    base: PS Heading 4
+    font: sans
+    size_pt: 12
+    bold: true
+    color: blue
+    space_before_pt: 8
+    space_after_pt: 3
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: Evidence
+
+  - name: PS Script Text
+    type: paragraph
+    base: PS Spoken Model
+    font: body
+    size_pt: 11
+    color: deep_ink
+    line_spacing: 1.15
+    sample_text: Full presentation script text.
+
+  - name: PS Presenter Notes
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: graphite
+    shading: light_grey
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 4
+    space_after_pt: 4
+    sample_text: Learner-facing note about delivery or visual support.
+
+  - name: PS Appendix Title
+    type: paragraph
+    base: Heading 1
+    font: sans
+    size_pt: 24
+    bold: true
+    color: blue
+    space_before_pt: 0
+    space_after_pt: 8
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: "Appendix A: Model Presentations"
+
+  - name: PS Model Title
+    type: paragraph
+    base: Heading 2
+    font: sans
+    size_pt: 18
+    bold: true
+    color: blue
+    space_before_pt: 10
+    space_after_pt: 5
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: "Model 1: Recommend a Change"
+
+  - name: PS Scenario Brief
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: blue_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_before_pt: 5
+    space_after_pt: 5
+    borders:
+      top: {val: single, sz: 10, space: 3, color: blue}
+    sample_text: Scenario brief for the model presentation.
+
+  - name: PS Language Notes
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: deep_ink
+    shading: teal_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_after_pt: 4
+    sample_text: Language note for study and practice.
+
+  - name: PS Pronunciation Notes
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: deep_ink
+    shading: light_grey
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_after_pt: 4
+    sample_text: Pronunciation and intelligibility note.
+
+  - name: PS Security Notes
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: deep_ink
+    shading: amber_tint
+    left_indent_mm: 3
+    right_indent_mm: 3
+    space_after_pt: 4
+    sample_text: Privacy, security, accessibility, or contingency note.
+
+  - name: PS Glossary Term
+    type: paragraph
+    font: sans
+    size_pt: 11
+    bold: true
+    color: teal
+    space_before_pt: 5
+    space_after_pt: 1
+    line_spacing: 1.0
+    keep_with_next: true
+    sample_text: stakeholder
+
+  - name: PS Glossary Definition
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 10.5
+    color: deep_ink
+    left_indent_mm: 4
+    space_after_pt: 4
+    sample_text: A person or group affected by a decision or project.
+
+  - name: PS Credits Text
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 9.5
+    color: slate
+    space_after_pt: 3
+    line_spacing: 1.05
+    sample_text: Credits, sources, licenses, and production notes.
+
+  - name: PS Back Cover Text
+    type: paragraph
+    font: body
+    size_pt: 11
+    color: deep_ink
+    space_after_pt: 6
+    line_spacing: 1.12
+    sample_text: Back-cover description and skill summary.
+
+  - name: PS Key Term
+    type: character
+    font: sans
+    size_pt: 11
+    bold: true
+    color: teal
+    sample_text: key term
+
+  - name: PS Task Verb
+    type: character
+    font: sans
+    size_pt: 11
+    bold: true
+    color: amber
+    sample_text: explain
+
+  - name: PS Inline Cross Reference
+    type: character
+    font: sans
+    size_pt: 11
+    bold: true
+    color: blue
+    sample_text: Appendix A
+
+  - name: PS Stress Mark
+    type: character
+    font: body
+    size_pt: 11
+    bold: true
+    color: amber
+    sample_text: stress
+
+  - name: PS Phrase Bank Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.4, bottom: 1.4, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: teal}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Phrase bank table.
+
+  - name: PS Vocabulary Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.4, bottom: 1.4, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: graphite}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Vocabulary table.
+
+  - name: PS Planning Table
+    type: table
+    table:
+      cell_margins_mm: {top: 2.2, bottom: 2.2, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 6, color: slate}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Planning table.
+
+  - name: PS Comparison Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.5, bottom: 1.5, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: slate}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Comparison table.
+
+  - name: PS Checklist Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.8, bottom: 1.8, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: graphite}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Checklist table.
+
+  - name: PS Rubric Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.4, bottom: 1.4, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 10, color: deep_ink}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Rubric table.
+
+  - name: PS Model Support Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.4, bottom: 1.4, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: blue}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Model support table.
+
+  - name: PS Quiz Table
+    type: table
+    table:
+      cell_margins_mm: {top: 1.5, bottom: 1.5, left: 2, right: 2}
+      borders:
+        top: {val: single, sz: 8, color: graphite}
+        bottom: {val: single, sz: 6, color: slate}
+        insideH: {val: single, sz: 4, color: grey_tint}
+        insideV: {val: single, sz: 4, color: grey_tint}
+    sample_text: Quiz table.
+
+sample:
+  include: true
+  title: Presentations Textbook Style Specimen

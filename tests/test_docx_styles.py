@@ -19,6 +19,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from manage_docx_styles import find_style_by_name, fix_div_label_base_next, update_color  # noqa: E402
 from audit_docx_styles import audit_docx  # noqa: E402
+from generate_reference_docx import create_reference_from_spec  # noqa: E402
 
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 W14_NS = "http://schemas.microsoft.com/office/word/2010/wordml"
@@ -295,3 +296,126 @@ def test_audit_no_error_when_expected_style_present():
     finally:
         os.unlink(path)
     assert not any("Div Label Language" in e for e in errors)
+
+
+# ---------------------------------------------------------------------------
+# 6. YAML style-spec reference generation
+# ---------------------------------------------------------------------------
+
+def test_generate_reference_from_yaml_spec_creates_requested_styles(tmp_path):
+    spec_path = tmp_path / "styles.yaml"
+    out_path = tmp_path / "reference.docx"
+    spec_path.write_text(
+        """
+page:
+  size: A4
+  margins_mm:
+    top: 20
+    bottom: 20
+    left: 18
+    right: 18
+fonts:
+  body: Palatino Linotype
+  sans: Arial
+colors:
+  deep_ink: "#1F2933"
+  teal: "#008C8C"
+  teal_tint: "#CDEDEA"
+  slate: "#64748B"
+defaults:
+  font: body
+  size_pt: 11
+  color: deep_ink
+  paragraph:
+    space_after_pt: 6
+    line_spacing: 1.25
+    snap_to_grid: false
+styles:
+  - name: PS Body Text
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    paragraph:
+      space_after_pt: 6
+      line_spacing: 1.25
+  - name: PS Section Head
+    type: paragraph
+    base: Normal
+    font: sans
+    size_pt: 16
+    bold: true
+    color: teal
+    paragraph:
+      keep_with_next: true
+      space_before_pt: 12
+      space_after_pt: 6
+    borders:
+      bottom:
+        val: single
+        sz: 12
+        space: 2
+        color: teal
+  - name: PS Model Box
+    type: paragraph
+    base: Normal
+    font: body
+    size_pt: 11
+    color: deep_ink
+    shading: teal_tint
+  - name: PS Key Term
+    type: character
+    font: sans
+    bold: true
+    color: teal
+  - name: PS Planning Table
+    type: table
+    table:
+      cell_margins_mm:
+        top: 1.5
+        bottom: 1.5
+        left: 2
+        right: 2
+      borders:
+        top: {val: single, sz: 4, color: slate}
+        left: {val: single, sz: 4, color: slate}
+        bottom: {val: single, sz: 4, color: slate}
+        right: {val: single, sz: 4, color: slate}
+        insideH: {val: single, sz: 4, color: slate}
+        insideV: {val: single, sz: 4, color: slate}
+sample:
+  include: true
+""",
+        encoding="utf-8",
+    )
+
+    create_reference_from_spec(str(spec_path), str(out_path))
+
+    with zipfile.ZipFile(out_path) as zf:
+        styles_xml = etree.fromstring(zf.read("word/styles.xml"))
+
+    assert find_style_by_name(styles_xml, "PS Body Text") is not None
+    body_text = find_style_by_name(styles_xml, "PS Body Text")
+    snap = body_text.find(f".//{{{W_NS}}}snapToGrid")
+    assert snap is not None
+    assert snap.get(f"{{{W_NS}}}val") == "0"
+    section_head = find_style_by_name(styles_xml, "PS Section Head")
+    assert section_head is not None
+    assert section_head.find(f".//{{{W_NS}}}keepNext") is not None
+    border = section_head.find(f".//{{{W_NS}}}pBdr/{{{W_NS}}}bottom")
+    assert border is not None
+    assert border.get(f"{{{W_NS}}}color") == "008C8C"
+
+    model_box = find_style_by_name(styles_xml, "PS Model Box")
+    shading = model_box.find(f".//{{{W_NS}}}shd")
+    assert shading is not None
+    assert shading.get(f"{{{W_NS}}}fill") == "CDEDEA"
+
+    key_term = find_style_by_name(styles_xml, "PS Key Term")
+    assert key_term is not None
+    assert key_term.get(f"{{{W_NS}}}type") == "character"
+
+    planning_table = find_style_by_name(styles_xml, "PS Planning Table")
+    assert planning_table is not None
+    assert planning_table.get(f"{{{W_NS}}}type") == "table"

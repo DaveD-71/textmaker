@@ -11,6 +11,24 @@ The textbook manuscript drafts under `revision/drafts/standard/` and `revision/d
 
 ## Current Handoff Status
 
+Updated: 2026-08-14 09:00 JST
+
+Morning slide-text reset:
+
+- The previous combined presentation slide-content scan was archived at `revision/records/archive/plan3-model-slide-content-agent-scan-archived-2026-08-14.md`.
+- `revision/records/plan3-model-slide-content-agent-scan.md` is now a short index pointing to the rebuilt slide-text review files.
+- Six new slide-text plans were created under `revision/assets/model-slide-text/`:
+  - `process-business-slide-text.md`
+  - `process-government-slide-text.md`
+  - `launch-business-slide-text.md`
+  - `launch-government-slide-text.md`
+  - `results-business-slide-text.md`
+  - `results-government-slide-text.md`
+- These files are the current review source for slide titles, exact on-slide text, emphasis points, and visual direction. They must be reviewed before any PPTX/Canva/template slide-building work resumes.
+- `revision/control/plan3_image_register.json` was updated so the six model-deck entries refer to the rebuilt slide-text plans instead of the rejected PptxGenJS/generated-slide workflow. JSON validation passes.
+- `revision/control/presentations-style-set.md` defines the planned `presentations_style.docx` reference-DOCX style set. It is based on the scalable Business Result 2e style definition, recalibrated to `11 pt` body text with Word-safe half-point sizes, a print-safe contemporary palette, and styles for the manuscript elements found in the current unit/appendix scan.
+- Textmaker now supports YAML-based reference DOCX generation through `textmaker.cmd generate-reference --spec <styles.yaml> --out <reference.docx>`. Use this route for `presentations_style.docx` rather than creating a hand-built source DOCX, unless a later limitation requires a specimen DOCX fallback.
+
 Updated: 2026-08-13 20:15 JST
 
 Latest Phase 6 control update:

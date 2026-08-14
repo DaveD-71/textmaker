@@ -1,0 +1,74 @@
+Model 2: Government Agency - Reporting Results from the Intake Checklist Trial
+==============================================================================
+
+Opening and Preview
+
+Good afternoon. The intake checklist trial gives us a clear before-and-after service result.
+
+The trial focused on one practical administrative problem: too many applications were returned because preventable errors were found after formal review. This caused delays for applicants, repeat inquiries for staff, and extra work for the document-review team.
+
+I will use a service-review structure: what changed, what improved, what still needs attention, and which application types should come next.
+
+The decision today is whether to expand the checklist and assign one update owner.
+
+Trial Objective
+
+First, here is what changed.
+
+Before the trial, staff checked applications at intake, but the check was not always the same. Some missing attachments and incomplete fields were found only after formal review. When that happened, the application had to be returned, and the applicant often contacted the office again.
+
+The trial introduced a short front-counter checklist and a shared FAQ sheet. The purpose was not to make the counter process complicated. The purpose was to catch common errors earlier, before formal review started.
+
+The target was to reduce returned applications and repeat inquiries while keeping the counter process practical for staff.
+
+Process Note
+
+The process note shows where the checklist fits.
+
+The checklist is used at the intake step, before the application moves to formal document review. Staff check the most common preventable issues: required attachment, contact field, ID field, and signature field.
+
+If something is missing, staff can explain the point immediately using the FAQ sheet. If the application is complete, it moves to formal review as before.
+
+This is a small process change, but it changes the timing of the check. We are trying to find simple problems earlier, not add another full review stage.
+
+Main Results
+
+The improvement is visible in the result chart.
+
+The first result is returned applications. Before the trial, 142 applications were returned in the measured month. After the trial, this fell to 111. That is a reduction of about 22%.
+
+The second result is repeat inquiries. Before the trial, there were 86 repeat inquiries. After the trial, this fell to 68. That is a reduction of about 21%.
+
+The third result is more specific. Attachment-related returns fell from 77 to 58, a reduction of about 24%. This matters because missing attachments were one of the exact problems the checklist was designed to catch.
+
+The result is useful, but we should be careful. The trial was only one month. Also, staff reported that the checklist added about 40 seconds to each intake. That is not a large amount of time for one case, but it may affect waiting time when the counter is busy.
+
+What We Learned
+
+The trial suggests three points.
+
+First, the checklist works best when it is short. Staff said they could use it when the points were limited to common errors. A long checklist would probably slow down the counter too much.
+
+Second, the FAQ sheet helped staff give the same explanation to applicants. This reduced repeated questions and made the guidance more consistent.
+
+Third, update ownership is important. If application requirements change, the checklist must change quickly. If no one owns updates, staff may use an old version.
+
+For these reasons, the next step should be limited expansion, not office-wide rollout.
+
+Recommendation
+
+Based on the trial, I recommend expanding the checklist to two more high-volume application types: childcare fee reduction applications and elderly transport pass applications.
+
+I also recommend assigning one update owner in the document-review team. Counter-service staff should be able to send change requests, but one person or role should approve and update the checklist. Rotating staff should receive a 15-minute reminder before they first use the revised checklist.
+
+During the expansion, we should measure three things: returned applications, repeat inquiries, and waiting time at the counter. This will show both the benefit and the service impact.
+
+Action Close
+
+The service result is encouraging: returned applications fell, repeat inquiries fell, and attachment-related returns also fell.
+
+At the same time, we should monitor counter time and keep the checklist short.
+
+My recommendation is limited expansion: childcare fee reduction applications, elderly transport pass applications, one update owner, and another review after one month.
+
+Thank you. I am ready to take your questions.

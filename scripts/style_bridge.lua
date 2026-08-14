@@ -4,6 +4,10 @@
 --   style_bridge:
 --     remove_horizontal_rules: true
 --     preserve_div_line_breaks: true
+--     list_block_spacing:
+--       enabled: true
+--       before_pt: 6
+--       after_pt: 6
 --   style_map:
 --     learn: "Div Label Learn"
 --     write: "Div Label Write"
@@ -25,11 +29,21 @@ local style_map = {}
 local content_style_map = {}
 local remove_hr = false
 local preserve_lb = true
+local list_block_spacing = false
+local list_space_before_pt = 6
+local list_space_after_pt = 6
 
 local function bool_from_meta(val, default)
   if val == nil then return default end
   local s = stringify(val)
   return s == "true" or s == "1" or s == "yes"
+end
+
+local function number_from_meta(val, default)
+  if val == nil then return default end
+  local n = tonumber(stringify(val))
+  if n == nil then return default end
+  return n
 end
 
 local function is_div_label_style(style_name)
@@ -60,6 +74,24 @@ local function wrap_block(block, custom_style)
   return inner
 end
 
+local function spacing_paragraph(before_pt, after_pt)
+  local before_twips = math.floor((before_pt or 0) * 20 + 0.5)
+  local after_twips = math.floor((after_pt or 0) * 20 + 0.5)
+  local xml = '<w:p><w:pPr><w:spacing w:before="' ..
+    tostring(before_twips) .. '" w:after="' .. tostring(after_twips) ..
+    '"/></w:pPr></w:p>'
+  return pandoc.RawBlock('openxml', xml)
+end
+
+local function add_list_block_spacing(el)
+  if FORMAT ~= "docx" or not list_block_spacing then return el end
+  return pandoc.Blocks({
+    spacing_paragraph(list_space_before_pt, 0),
+    el,
+    spacing_paragraph(0, list_space_after_pt)
+  })
+end
+
 return {
   -- Pass 1: load configuration from document metadata
   {
@@ -77,6 +109,12 @@ return {
       if meta.style_bridge and type(meta.style_bridge) == "table" then
         remove_hr = bool_from_meta(meta.style_bridge.remove_horizontal_rules, false)
         preserve_lb = bool_from_meta(meta.style_bridge.preserve_div_line_breaks, true)
+        if meta.style_bridge.list_block_spacing and type(meta.style_bridge.list_block_spacing) == "table" then
+          local cfg = meta.style_bridge.list_block_spacing
+          list_block_spacing = bool_from_meta(cfg.enabled, false)
+          list_space_before_pt = number_from_meta(cfg.before_pt, 6)
+          list_space_after_pt = number_from_meta(cfg.after_pt, 6)
+        end
       end
       return meta
     end
@@ -86,6 +124,14 @@ return {
     HorizontalRule = function(el)
       if remove_hr then return {} end
       return el
+    end,
+
+    BulletList = function(el)
+      return add_list_block_spacing(el)
+    end,
+
+    OrderedList = function(el)
+      return add_list_block_spacing(el)
     end,
 
     Div = function(el)

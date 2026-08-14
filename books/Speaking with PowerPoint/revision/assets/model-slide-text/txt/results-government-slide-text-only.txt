@@ -1,0 +1,101 @@
+Slide 1
+
+The checklist reduced preventable returns, but expansion should stay limited.
+
+Approval request:
+
+1. Expand to two high-volume application types.
+   - Childcare fee reduction applications
+   - Elderly transport pass applications
+2. Assign one checklist update owner.
+3. Review again after one month.
+
+---
+
+Slide 2
+
+Before the trial:
+
+- Common errors were found after formal review.
+
+Trial change:
+
+- Front-counter checklist
+- Shared FAQ
+
+Aim:
+
+- Fewer returned applications
+- Fewer repeat inquiries
+- Practical counter process
+
+---
+
+Slide 3
+
+Intake check:
+
+1. Check the common error points.
+   - Attachment
+   - Contact field
+   - ID field
+   - Signature field
+2. If something is missing, explain it immediately with the FAQ.
+3. If the application is complete, move it to formal review.
+
+What does not change:
+
+- Formal review authority stays the same.
+
+---
+
+Slide 4
+
+Main results:
+
+- Returned applications
+  - 142 -> 111
+- Repeat inquiries
+  - 86 -> 68
+- Attachment-related returns
+  - 77 -> 58
+
+Note:
+
+- Fictional data for practice
+
+---
+
+Slide 5
+
+Recommendation:
+
+1. Expand to two application types.
+   - Childcare fee reduction applications
+   - Elderly transport pass applications
+2. Assign one update owner in the document-review team.
+3. Monitor service impact.
+   - Returned applications
+   - Repeat inquiries
+   - Waiting time
+
+---
+
+Slide 6
+
+Backup question:
+
+- Will the counter line get longer?
+
+Staff feedback:
+
+- About 40 seconds per intake
+
+Risk:
+
+- Busy counter periods
+
+Response:
+
+- Keep the checklist short.
+- Monitor waiting time.

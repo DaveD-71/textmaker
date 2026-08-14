@@ -323,7 +323,14 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Status: `active`
 - Scope: project/style
 - Decision: current draft titles, headings, and subheadings should use Chicago-style title case, not sentence case.
-- Preferred behavior: capitalize the first and last word, major words, and the first word after a colon when the colon introduces a subtitle/subheading. Following CMOS 18, capitalize prepositions of five letters or more and lowercase articles, coordinating conjunctions, `to`, and prepositions of four letters or fewer unless first or last.
+- Preferred behavior: capitalize the first and last word, major words, and the first word after a colon when the colon introduces a subtitle/subheading. Following CMOS 18, capitalize prepositions of five letters or more and lowercase articles, coordinating conjunctions, `to`, and prepositions of four letters or fewer unless first or last. Do not leave sentence-case words after colons in titles, headings, subheadings, slide labels, or slide-text plan labels unless the colon introduces a full sentence that is deliberately sentence-style prose.
+
+## 2026-08-14 - Speaking with PowerPoint Slide-Text Composition Rule
+
+- Status: `active`
+- Scope: project/content
+- Decision: slide-text plans must describe slide composition and hierarchy, not just transfer script sentences into flat bullet lists.
+- Preferred behavior: each model slide-text plan should use a clear lead sentence or parent label, then structured content. Use numbered lists for decisions, action sequences, timelines, process steps, and any chronology. Use nested subpoints when details belong under a parent item. Reword script language freely when needed for natural slide wording, as long as the meaning and teaching point from the model script are preserved. Avoid standalone labels such as `Decision today`; use natural phrasing such as `Today, we need to...`, `Approval request:`, or `To start the pilot, we need to...`.
 
 ## 2026-08-13 - Speaking with PowerPoint Phase 4 Completion
 
@@ -346,9 +353,31 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Decision: when using the OpenAI Python SDK from this network-drive workspace, avoid reading/writing live API inputs and outputs directly on the UNC repo path.
 - Preferred behavior: create a local staging directory under `%TEMP%`, run SDK generation there, write manifests/prompts/outputs locally, validate locally, then copy only durable approved outputs back into the repo. Use .NET/PowerShell full-path normalization such as `[System.IO.Path]::GetFullPath(...)` when safety-checking UNC paths before cleanup because `Resolve-Path` may add provider prefixes or formatting that breaks simple string comparisons.
 
+## 2026-08-14 - VS Code CLI File Opening From UNC Workspaces
+
+- Status: `active`
+- Scope: project/environment
+- Decision: when opening repo files in VS Code from this UNC-backed workspace, do not run `code.cmd` with the UNC repo as the current working directory.
+- Preferred behavior: build absolute UNC file paths, `Push-Location C:\` or another local directory, then invoke `C:\Users\d-dobson\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd --reuse-window <absolute UNC files>`, and finally return to the original location. This avoids the `cmd.exe` UNC working-directory fallback and successfully opens the requested files.
+- Failed pattern: invoking `Code.exe` directly or running `code.cmd` from the UNC current directory either misinterpreted CLI flags or failed to open the files reliably.
+
 ## 2026-08-13 - Speaking with PowerPoint Phase 6 Control Repair
 
 - Status: `active`
 - Scope: project/milestone
 - Decision: Phase 6 control-layer repair is complete for the current Standard-draft review. `books/Speaking with PowerPoint/revision/control/plan3-traceability.md` now has Phase 6 execution tracking, `plan3-phase6-defer-log.md` records formal deferrals, and `plan3-phase6-issue-classification-log.md` classifies significant issues.
 - Preferred behavior: Phase 6 non-visual repair is complete for the current Standard Markdown source. Manuscript repair round 1 passed final Language Editor recheck; QA-085 source verification is saved; source-level proof/style/reference scans passed. Current QA count: 87 Pass, 15 Repair, 19 Defer, 1 N/A. Remaining Repair rows are visual/asset-related except QA-120, which remains the summary open-issues row until visual/asset issues are resolved or formally deferred. Resume next with the separate visual/deck-production workstream, using Canva plugin/MCP and/or Default templates only after the user chooses that direction.
+
+## 2026-08-14 - Speaking with PowerPoint DOCX Style Set
+
+- Status: `active`
+- Scope: project/production
+- Decision: create a new title-specific reference DOCX named `presentations_style.docx`, based on the scalable Business Result 2e design definition in `style_definitions/business_result_2/2026-08-13/`, but adapted rather than copied.
+- Preferred behavior: use `books/Speaking with PowerPoint/revision/control/presentations-style-set.md` as the control source for reference-DOCX generation. Main body text must be `11 pt`; scale BR2e A4-derived type sizes proportionally from BR2e's `9.5 pt` body size, then round all sizes to Word-safe half-point values. Use the print-safe contemporary palette in that file, and include styles for all scanned manuscript elements: unit/opening shapes, section heading rules/backgrounds, practice headings, callouts, block examples, model scripts, phrase/vocabulary/planning/comparison/checklist/rubric/model-support/quiz tables, numbered-sequence backgrounds, teacher notes, and appendix model support material.
+
+## 2026-08-14 - YAML Reference DOCX Generation
+
+- Status: `active`
+- Scope: project/tooling
+- Decision: `textmaker.cmd generate-reference` now supports a structured YAML input via `--spec <styles.yaml>` in addition to the existing default and `--input source.docx` modes.
+- Preferred behavior: for new textbook style systems, prefer a YAML style specification over a hand-built source DOCX when practical. `--input` and `--spec` are mutually exclusive. The YAML mode supports page setup, font aliases, color aliases, defaults, paragraph styles, character styles, simple table-style XML properties, paragraph shading/borders, and optional specimen content to keep styles visible in the reference file. The README documents the minimal schema.
