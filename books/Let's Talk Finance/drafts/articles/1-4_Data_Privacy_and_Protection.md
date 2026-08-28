@@ -1,0 +1,46 @@
+## 1.4. Data Privacy and Protection
+
+### 1.4.1. Goal
+
+Explain how personal financial data is protected by law, and why moving that data between countries is the hardest part.
+
+### 1.4.2. Reading
+
+In 2023 an Irish regulator fined the technology company Meta €1.2 billion — the largest privacy fine ever imposed in the European Union [1]. Meta's mistake was not losing the data or selling it. It was moving Facebook users' personal information from Europe to the United States without enough legal protection against access by US authorities. The case shows what modern data-privacy law is mainly about: not just keeping data safe, but controlling where it goes and who can reach it.
+
+Financial firms hold large amounts of sensitive personal data — account numbers, transaction histories, credit records, copies of identity documents. They want to use it, for credit scoring, fraud checks and new services. Privacy law sets the limits.
+
+The European Union's rules, the GDPR, have applied since 2018 and allow regulators to impose heavy fines. Other regions protect financial data through breach penalties: after the 2017 attack on the US credit bureau Equifax, which exposed the records of about 147 million people, the company agreed to pay up to US$700 million in a settlement with US regulators and states [2]. The United States still has no single national privacy law; California and other states have written their own.
+
+Japan was an early mover. Its Act on the Protection of Personal Information dates from 2003, with major updates in 2017 and 2022 that strengthened individual rights and made serious data breaches reportable to the Personal Information Protection Commission. In 2019 the EU and Japan recognised each other's systems as offering "adequate" protection, so personal data can flow both ways without extra paperwork — the first such mutual arrangement the EU concluded [3]. Newer laws elsewhere, such as India's Digital Personal Data Protection Act of 2023, are following similar lines [4].
+
+The unresolved tension is cross-border transfer. Data moves around the world in seconds, but privacy rules stop at national borders. A company that is careful and lawful at home can still break the law by sending the same data to a country whose protections, or whose government surveillance powers, are judged too weak — which is exactly what the Meta fine was about.
+
+### 1.4.3. Vocabulary Focus
+
+**New terms:** personal data, data breach, data protection authority, consent, cross-border data transfer, adequacy decision, regulatory fine, breach notification
+
+**Recycled terms:** regulator, consumer protection, credit rating, supervision
+
+### 1.4.4. Reading Questions
+
+1. What exactly did Meta do wrong, according to the reading?
+2. Why do financial firms want access to large amounts of personal data?
+3. How does the United States protect financial data differently from the European Union?
+4. What did the EU and Japan agree in 2019, and why does it matter?
+5. What does the reading mean when it says "privacy rules stop at national borders"?
+
+### 1.4.5. Discussion Questions
+
+1. The reading describes a tension between using data and protecting it. Where would you draw the line for a bank that wants to use customer data to detect fraud?
+2. Is a very large fine, like the one imposed on Meta, an effective way to change how big companies handle data? Explain.
+3. Compare protecting data through strict rules (the EU approach) with protecting it through breach penalties (the US approach). Which is likely to work better, and for whom?
+4. Should a person be able to refuse to let their bank share their data, even if that means fewer services or a worse credit offer? Give your view.
+5. Advise two countries that want to allow data to flow freely between them. What would each need to check about the other first?
+
+### 1.4.6. Source Notes
+
+1. Data Protection Commission (Ireland): Data Protection Commission announces conclusion of inquiry into Meta Ireland, 22 May 2023 — https://www.dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland
+2. Consumer Financial Protection Bureau (US): CFPB, FTC and States Announce Settlement with Equifax Over 2017 Data Breach, 22 July 2019 — https://www.consumerfinance.gov/archive/newsroom/cfpb-ftc-states-announce-settlement-with-equifax-over-2017-data-breach/
+3. European Commission: Commission Implementing Decision (EU) 2019/419 of 23 January 2019 on the adequate protection of personal data by Japan (EUR-Lex) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019D0419
+4. Future of Privacy Forum: The Digital Personal Data Protection Act of India, Explained — https://fpf.org/blog/the-digital-personal-data-protection-act-of-india-explained/
