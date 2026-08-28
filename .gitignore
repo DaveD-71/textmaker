@@ -2,6 +2,9 @@
 .venv/
 __pycache__/
 
+# Windows Explorer thumbnail cache
+Thumbs.db
+
 # Local audio/model artifacts
 scripts/piper_voices/
 textmaker/piper_voices/
