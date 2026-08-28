@@ -1,5 +1,27 @@
 # Project Journal
 
+## 2026-08-28 - Let's Talk Finance two-book rebuild: planning, prototypes, Batch 1 drafted
+
+**Session summary.** Speaking with PowerPoint put on hold. Started the Let's Talk Finance track: two books to be produced to the standard of the completed "Let's Talk: Investor Relations" project (separate repo, `02. Clients/Marubeni/Ishida, Tetsuya`). See `project-learning.md` 2026-08-28 entry for the durable decision record; `books/Let's Talk Finance/PROJECT-PLAN.md` is the controlling document.
+
+**What was done:**
+- Read the whole IR project (process guide, project plan, QA checklist and its 6 audit passes, vocabulary map, glossary, teacher answer book, sample articles) to extract the standard. Measured the IR articles' actual shipped Reading length (422–487 words; the QA checklist's "450–550" was aspirational and not held to).
+- Resolved all 8 project decisions (D1–D8) with the user across the session. Key ones: B1+/B2 level; write from a Japanese reader's vantage point but keep every topic genuinely global (≥3 regions, no country dominant); Reading fills one A4 2-column page under the Goal; every fact cited to a live URL; Book A keeps its 20 topics (fix the 3 defective ones); Book B's 20 new topics approved.
+- Built the repo scaffold: `books/_lets-talk-finance-shared/` (house-style, per-article checklist, topic ledger, process guide, term bank), per-book `drafts/{articles,control,output}/`, archived old Book A material to `books/Let's Talk Finance/_archive/`, gitignored `Thumbs.db`.
+- **Phase 2 — 2 calibration prototypes drafted, reviewed through several rounds, APPROVED by the user:** `Let's Talk Finance/drafts/articles/1-1_Cryptocurrency_Regulation.md` and `Let's Talk Finance 2/drafts/articles/1-1_The_Cost_of_Living_and_Inflation.md`. The review rounds fixed: dead/guessed URLs (3 of 4 in the first crypto draft were invalid), the Japanese-vantage-point framing (got it wrong twice — too non-Japanese, then over-corrected too Japan-centric), and the paragraph-writing rule (carried from IR: no mid-idea breaks, no single-sentence kicker endings).
+- Added `books/_lets-talk-finance-shared/article-checklist.md` — a per-article minimum gate distinct from the whole-book `qa-checklist-full.md`.
+- **Phase 4 Batch 1 started.** 8 background research agents delivered fact/source briefs (all URLs opened and verified) for A 1.2–1.5 and B 1.2–1.5, saved to `books/_lets-talk-finance-shared/research-briefs/`. 4 agents hit session/rate limits mid-run and were re-launched successfully after reset.
+- Drafted all 8 Batch-1 Readings from the briefs, then did one revision pass. Committed as `0b7c65a` (briefs + first drafts) and `16b318c` (revision pass).
+
+**State at session end — Batch 1 is NOT finished:**
+- All 8 Readings: structure complete (6 subsections, 5+5 questions), citation integrity OK (marker count = Source Note count; fixed 4 attribution errors in the revision pass), all long sentences split (were 42–51 words, now ≤36), global spread and Japanese vantage point OK.
+- **Outstanding: 7 of 8 Readings are ~60–90 words short of the ~440–475 target** (they sit at 357–381; A 1.2 is in range at 433). Each needs one short expansion from unused brief material (the briefs have plenty spare — SPIVA caveats, Pix scale figures, Japan "grey zone" detail, BIS global house-price context, UK APP-fraud numbers, etc.).
+- **Not yet done for Batch 1:** run the full `article-checklist.md` on each of the 8; populate `vocabulary-map.md` (New/Recycled terms) in both books; record Batch-1 primary-evidence cases in `topic-ledger.md`'s cross-topic evidence register; hand the batch to the user for review.
+
+**To resume:** (1) expand the 7 short Readings to target length; (2) run the per-article checklist on all 8; (3) update both vocabulary maps + the topic-ledger evidence register; (4) user review of Batch 1; (5) then Batch 2 = Parts 2 of both books (launch research agents first, same pattern).
+
+**Batch-1 shape/opening plan** (for designed variety) is at `books/_lets-talk-finance-shared/research-briefs/_batch1-shape-plan.md`.
+
 ## 2026-07-07 - Presentation Skills Visual Generation: Representation Fixes And Batch Progress
 
 - Continuing Stage-3-prep visual generation (36-image register at `books/Presentation Skills/images/image_register.json`). Prior work this week had already established the OpenAI-vs-PIL technique split, native transparency handling, and produced 9 approved images (8 scenarios + `01-1-three-phases` icon-sheet-composite diagram + the `05-1-logic-tree` pair) -- see `project-learning.md` entry same date for the durable technique/decision summary.
