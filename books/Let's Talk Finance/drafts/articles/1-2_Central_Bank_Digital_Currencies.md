@@ -6,7 +6,7 @@ Explain what a central bank digital currency is, why most central banks are stud
 
 ### 1.2.2. Reading
 
-Nearly nine in ten of the world's central banks are working on a digital version of their national money. In a 2024 survey by the Bank for International Settlements, 85 of 93 central banks said they were exploring one [1]. Yet by 2026 only three small economies had actually launched one for everyday public use, and use in all three has been very low.
+More than nine in ten of the world's central banks are working on a digital version of their national money. In a 2024 survey by the Bank for International Settlements, 85 of the 93 central banks that replied said they were exploring one [1]. Yet by 2026 only three small economies had actually launched one for everyday public use, and use in all three has been very low.
 
 A central bank digital currency, or CBDC, is official money issued in digital form by the central bank itself. The cash in your pocket is already a claim on the central bank. The money in your bank account, by contrast, is a claim on a commercial bank. A "retail" CBDC would be central-bank money that ordinary people could hold directly, without a bank in between, and use for daily payments. A separate "wholesale" type, used only for settlement between financial institutions, is less controversial and further along.
 
