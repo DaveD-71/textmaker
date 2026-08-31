@@ -20,6 +20,17 @@
 
 **Batch-1 shape/opening plan** (for designed variety) is at `books/_lets-talk-finance-shared/research-briefs/_batch1-shape-plan.md`.
 
+## 2026-08-31 (later) - Let's Talk Finance Batch 2 started; session limit hit early
+
+- **Batch 1 fully committed and closed** — `7ac050f`, `b96e722`, `7e8a167`, `2e4f1df`. All 10 Batch-1 Readings pass the per-article mechanical checklist; all 48 Source Note URLs verified (4 are the known 403 bot-block on real primary pages — BLS, CFPB archive, IMF Fintech Note; RBA FSR was removed and its Australia sentence dropped from B 1.2). DDobson caught one phrasing error post-review: A 1.2 "nearly nine in ten" -> "more than nine in ten" (85/93 = 91.4%). **Batch 1 still awaits DDobson's full editorial read.**
+- **Batch 2 = Part 2 of both books.** Shape/opening plan at `books/_lets-talk-finance-shared/research-briefs/_batch2-shape-plan.md` (committed `650da7f`). Topics — Book A: 2.1 Market Volatility, 2.2 Credit Rating Oversight, 2.3 Insurance Regulation, 2.4 Stress Testing, 2.5 Sovereign Debt Management (leads with Japan — highest debt/GDP, ~90% domestically held). Book B: 2.1 How Companies Raise Money, 2.2 Startups & VC, 2.3 Gig Economy, 2.4 Executive Pay (inside-firm inequality), 2.5 Banks & How They Fail.
+- **10 Batch-2 research-brief agents launched.** As of session end, **2 of 10 delivered and committed** (`3df74f1`): `A-2-1_Market_Volatility.md`, `A-2-4_Stress_Testing.md`. The other 8 (A-2-2, A-2-3, A-2-5, B-2-1 … B-2-5) were still running when the 5-hour session limit was reached early (heavy agent use). Their transcripts are saved but partial-run agents are NOT cleanly resumable — **re-launch the 8 missing briefs with the same prompts** (agent prompts are in this session's history / reconstruct from `_batch2-shape-plan.md` + the Batch-1 brief prompt pattern).
+- Also this session: Book A loose cover/description files were tidied into `books/Let's Talk Finance/cover/` (committed `3df74f1`).
+
+**To resume Batch 2:** (1) re-launch the 8 missing research briefs (A 2.2, A 2.3, A 2.5, B 2.1, B 2.2, B 2.3, B 2.4, B 2.5); (2) when all 10 briefs are in, draft the 10 Readings from them; (3) expand to ~440–475 words; (4) run `_lets-talk-finance-shared/article-checklist.md` on each; (5) update both `vocabulary-map.md` Part-2 rows + the topic-ledger evidence register; (6) DDobson review. Same pipeline as Batch 1.
+
+**Lesson for next time:** 10 parallel research agents per batch is too heavy for a 5-hour window — it burned the session before drafting could start. Next batch: run agents in smaller waves (e.g. 4–5 at a time), or accept that a batch spans two sessions (agents in session 1, drafting in session 2).
+
 ## 2026-08-31 - Let's Talk Finance Batch 1: expansion + checklist pass complete
 
 Resumed Batch 1. Commits `7ac050f` (length expansion) and `b96e722` (checklist/vocab/ledger).
