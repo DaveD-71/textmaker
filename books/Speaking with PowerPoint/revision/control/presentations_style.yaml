@@ -115,6 +115,36 @@ styles:
   alignment: left
   widow_control: true
   sample_text: Normal body text for learner-facing explanations.
+- name: FirstParagraph
+  type: paragraph
+  base: Normal
+  font: body
+  size_pt: 11
+  color: deep_ink
+  space_after_pt: 6
+  line_spacing: 1.2
+  alignment: left
+  widow_control: true
+  sample_text: First paragraph fallback used by Pandoc-generated DOCX XML.
+- name: BlockText
+  type: paragraph
+  base: Normal
+  font: body
+  size_pt: 10.5
+  color: deep_ink
+  space_before_pt: 4
+  space_after_pt: 6
+  line_spacing: 1.2
+  alignment: left
+  widow_control: true
+  sample_text: Block text fallback used by Pandoc-generated DOCX XML.
+- name: Hyperlink
+  type: character
+  font: body
+  size_pt: 11
+  color: blue
+  underline: true
+  sample_text: Hyperlink fallback used by Pandoc-generated DOCX XML.
 - name: PS Body Text
   type: paragraph
   base: Normal
@@ -137,6 +167,65 @@ styles:
   alignment: left
   widow_control: true
   sample_text: Dense notes, compact explanations, and table body text.
+- name: Heading 1
+  type: paragraph
+  font: display
+  size_pt: 28
+  bold: false
+  color: white
+  shading: blue
+  space_before_pt: 0
+  space_after_pt: 16
+  line_spacing: 1.0
+  keep_with_next: true
+  sample_text: 'Unit 1: Presentation Purpose and Audience'
+  alignment: left
+  suppress_auto_hyphens: true
+- name: Heading 2
+  type: paragraph
+  font: sans_semibold
+  size_pt: 16
+  bold: false
+  color: purple
+  space_before_pt: 20
+  space_after_pt: 8
+  line_spacing: 1.0
+  keep_with_next: true
+  borders: &id001
+    bottom:
+      val: single
+      sz: 8
+      space: 3
+      color: purple
+  sample_text: 'Core Skill: Make the Message Useful'
+  alignment: left
+  suppress_auto_hyphens: true
+- name: Heading 3
+  type: paragraph
+  font: sans_semibold
+  size_pt: 13.5
+  bold: false
+  color: blue
+  space_before_pt: 16
+  space_after_pt: 6
+  line_spacing: 1.0
+  keep_with_next: true
+  sample_text: 'Practice Task 1: Audience Outcome Check'
+  alignment: left
+  suppress_auto_hyphens: true
+- name: Heading 4
+  type: paragraph
+  font: sans_semibold
+  size_pt: 12
+  bold: false
+  color: amber
+  space_before_pt: 12
+  space_after_pt: 4
+  line_spacing: 1.0
+  keep_with_next: true
+  sample_text: Opening
+  alignment: left
+  suppress_auto_hyphens: true
 - name: PS Heading 1
   type: paragraph
   base: Heading 1
@@ -163,12 +252,7 @@ styles:
   space_after_pt: 8
   line_spacing: 1.0
   keep_with_next: true
-  borders:
-    bottom:
-      val: single
-      sz: 8
-      space: 3
-      color: purple
+  borders: *id001
   sample_text: 'Core Skill: Make the Message Useful'
   alignment: left
   suppress_auto_hyphens: true
