@@ -120,8 +120,7 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | Japan cashless ratio ~43% in 2024 (METI); Japan Post Bank (1875, ~24,000 branches) | A 1.5 Financial Inclusion | — | Japan-different-meaning anchor |
 | US card APR ~21% vs 30-yr mortgage ~6.7% (2026; Fed G.19 / Freddie Mac) | B 1.2 Consumer Debt | — | secured-vs-unsecured anchor |
 | US household debt US$18.8tn / cards US$1.26tn (NY Fed Q2 2026) | B 1.2 Consumer Debt | — | |
-| South Korea household debt >2,000tn won (2026) | B 1.2 Consumer Debt | — | high-leverage contrast |
-| Australia household debt ~180% of disposable income (RBA FSR Apr 2025) | B 1.2 Consumer Debt | — | |
+| South Korea household debt >2,000tn won (2026), mostly home loans | B 1.2 Consumer Debt | — | high-leverage contrast |
 | UK BNPL regulation from July 2026; ~1 in 5 UK adults; £0.1bn→£13bn market (FCA) | B 1.2 Consumer Debt | — | contested-regulation anchor |
 | Japan 2006 Money Lending Business Act reform (20% cap, one-third-income limit, grey zone) | B 1.2 Consumer Debt | — | Japan anchor |
 | Global equities ~5% real p.a. 1900–2024 (UBS/DMS Yearbook); ~3.5% for 2000–2024 | B 1.3 Saving & Investing | — | long-run-return anchor |
