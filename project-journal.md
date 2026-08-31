@@ -18,9 +18,22 @@
 - **Outstanding: 7 of 8 Readings are ~60–90 words short of the ~440–475 target** (they sit at 357–381; A 1.2 is in range at 433). Each needs one short expansion from unused brief material (the briefs have plenty spare — SPIVA caveats, Pix scale figures, Japan "grey zone" detail, BIS global house-price context, UK APP-fraud numbers, etc.).
 - **Not yet done for Batch 1:** run the full `article-checklist.md` on each of the 8; populate `vocabulary-map.md` (New/Recycled terms) in both books; record Batch-1 primary-evidence cases in `topic-ledger.md`'s cross-topic evidence register; hand the batch to the user for review.
 
-**To resume:** (1) expand the 7 short Readings to target length; (2) run the per-article checklist on all 8; (3) update both vocabulary maps + the topic-ledger evidence register; (4) user review of Batch 1; (5) then Batch 2 = Parts 2 of both books (launch research agents first, same pattern).
-
 **Batch-1 shape/opening plan** (for designed variety) is at `books/_lets-talk-finance-shared/research-briefs/_batch1-shape-plan.md`.
+
+## 2026-08-31 - Let's Talk Finance Batch 1: expansion + checklist pass complete
+
+Resumed Batch 1. Commits `7ac050f` (length expansion) and `b96e722` (checklist/vocab/ledger).
+
+- **Expanded all 10 Batch-1 Readings to target length.** Were 357–433 words; now 428–457. Facts added from the research briefs (nothing new researched): GDPR cumulative fine total, India account-dormancy point, Japan grey-zone/multiple-debtor detail, 2000–24 return window + diversification, BIS global house-price level + Singapore HDB, UNODC SE-Asia scale + Japan SNS-fraud category. New sources added: DLA Piper GDPR survey, RBA FSR, FRBSF Asia Focus, BIS RPP, Cowles working paper (Auckland), gov.sg, UNODC. All sentences now ≤38 words.
+- **URL verification pass.** Fixed 2 broken links in B 1.4 (BIS `pp_residential.htm` 404 → `data.bis.org/topics/RPP`; ScienceDirect 400/paywall → open Cowles PDF). Three 403s remain (CFPB archive, IMF Fintech Note, RBA FSR) — the known bot-block pattern on real primary pages; cite as-is.
+- **Vocabulary Focus cleaned up.** All 10 trimmed to exactly 6 New terms (several were 8–10). Recycled lists set honestly (0–3 terms). **Design finding:** Book A Part 1 topics barely share vocabulary, so recycled lists are thin and drawn from a core-recurring set rather than the preceding topic. Documented in both `vocabulary-map.md` files; flagged for the Phase-1 Part-grouping review. Book B Part 1 shares a bit more (money-basics core).
+- **Both `vocabulary-map.md` Part-1 rows populated**; Core Recurring Terms set for both books.
+- **Topic-ledger cross-topic evidence register populated** with all ~44 Batch-1 primary-evidence cases. No collisions (India appears as primary evidence in A 1.3 / A 1.4 / A 1.5 but with a different fact each time — allowed).
+- **All 10 Batch-1 Readings pass the per-article mechanical checklist** (`_lets-talk-finance-shared/article-checklist.md`): 428–457 words, longest sentence ≤38, citation markers sequential and = Source Note count, 5+5 questions, 6 New terms, ≥3 regions, no country dominant.
+
+**Batch 1 = 10 Readings ready for DDobson review** (2 approved prototypes A 1.1 / B 1.1, + the 8 new). Not yet done: a close editorial read for prose quality / paragraph rules / question quality (only the mechanical checklist has run); teacher answer book entries; glossary. Those come after review or in Phase 5.
+
+**To resume:** (1) DDobson reviews Batch 1 (all of `books/*/drafts/articles/1-*.md`); (2) apply review feedback; (3) Batch 2 = Part 2 of both books — Book A: 2.1 Market Volatility, 2.2 Credit Rating Oversight, 2.3 Insurance Regulation, 2.4 Stress Testing, 2.5 Sovereign Debt; Book B: 2.1 How Companies Raise Money, 2.2 Startups & VC, 2.3 Gig Economy, 2.4 Executive Pay, 2.5 Banks & How They Fail. Launch 10 research-brief agents first (same pattern as Batch 1), then draft, expand, checklist.
 
 ## 2026-07-07 - Presentation Skills Visual Generation: Representation Fixes And Batch Progress
 
