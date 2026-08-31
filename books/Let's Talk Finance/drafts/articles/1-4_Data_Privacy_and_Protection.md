@@ -18,9 +18,9 @@ The unresolved problem is cross-border transfer. Data moves around the world in 
 
 ### 1.4.3. Vocabulary Focus
 
-**New terms:** personal data, data breach, data protection authority, consent, cross-border data transfer, adequacy decision, regulatory fine, breach notification
+**New terms:** personal data, data breach, data protection authority, consent, cross-border data transfer, adequacy decision
 
-**Recycled terms:** regulator, consumer protection, credit rating, supervision
+**Recycled terms:** regulator, supervision, consumer protection
 
 ### 1.4.4. Reading Questions
 

@@ -18,9 +18,9 @@ Japan is the clearest exception to "houses always go up". There, the building an
 
 ### 1.4.3. Vocabulary Focus
 
-**New terms:** affordability, house price-to-income ratio, housing supply, zoning, upzoning, rent control, depreciation, housing starts
+**New terms:** affordability, housing supply, zoning, upzoning, rent control, depreciation
 
-**Recycled terms:** interest rate, mortgage, real (vs nominal), central bank
+**Recycled terms:** interest rate, central bank, inflation
 
 ### 1.4.4. Reading Questions
 
@@ -41,8 +41,8 @@ Japan is the clearest exception to "houses always go up". There, the building an
 ### 1.4.6. Source Notes
 
 1. Reserve Bank of New Zealand: Update on the housing market (Financial Stability Report special topic), November 2024 — https://www.rbnz.govt.nz/hub/publications/financial-stability-report/2024/november-special-topic-1/update-on-the-housing-market
-2. Bank for International Settlements: Residential property prices — selected series (Q3 2025 update), 19 February 2026 — https://www.bis.org/statistics/pp_residential.htm
-3. Greenaway-McGrevy, R.: The impact of upzoning on housing construction in Auckland, Journal of Urban Economics, 2023 — https://www.sciencedirect.com/science/article/abs/pii/S0094119023000244
+2. Bank for International Settlements: Residential property prices statistics (RPP) — https://data.bis.org/topics/RPP
+3. Greenaway-McGrevy, R. & Phillips, P. C. B.: The Impact of Upzoning on Housing Construction in Auckland (Cowles Foundation Discussion Paper 1863) — https://cowles.yale.edu/sites/default/files/2024-02/p1863.pdf
 4. Bundesverfassungsgericht (German Federal Constitutional Court): Act Governing the Rent Cap for Residential Premises in Berlin is void (press release, decision of 25 March 2021) — https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/EN/2021/bvg21-028.html
 5. Government of Singapore: Evolution of public housing in Singapore, 30 December 2024 — https://www.gov.sg/explainers/evolution-of-public-housing-in-singapore
 6. Ministry of Land, Infrastructure, Transport and Tourism (Japan): Housing Starts Statistics, FY2023 (via e-Stat) — https://www.e-stat.go.jp/en/stat-search/files?page=1&layout=dataset&toukei=00600120

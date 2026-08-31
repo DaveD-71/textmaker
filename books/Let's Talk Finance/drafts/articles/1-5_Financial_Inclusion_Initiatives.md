@@ -20,9 +20,9 @@ In a rich country the problem is different again. Japan is effectively fully ban
 
 ### 1.5.3. Vocabulary Focus
 
-**New terms:** financial inclusion, the unbanked, mobile money, agent banking, instant payment system, financial infrastructure, cashless payment, digital financial services
+**New terms:** financial inclusion, the unbanked, mobile money, agent banking, instant payment system, cashless payment
 
-**Recycled terms:** central bank, payment system, know-your-customer, financial system
+**Recycled terms:** central bank, payment system
 
 ### 1.5.4. Reading Questions
 

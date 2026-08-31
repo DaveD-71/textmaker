@@ -18,9 +18,9 @@ Governments encourage long-term investing through tax-advantaged accounts. Money
 
 ### 1.3.3. Vocabulary Focus
 
-**New terms:** saving, investing, return, real return, compounding, diversification, index fund, actively managed fund, time horizon, tax-advantaged account
+**New terms:** investing, diversification, index fund, actively managed fund, time horizon, tax-advantaged account
 
-**Recycled terms:** inflation, interest rate, volatility, purchasing power
+**Recycled terms:** inflation, compounding, purchasing power
 
 ### 1.3.4. Reading Questions
 

@@ -20,9 +20,9 @@ Because each of these frameworks is written into national law, they do not trave
 
 ### 1.3.3. Vocabulary Focus
 
-**New terms:** fintech, regulatory sandbox, open banking, application programming interface (API), e-money, licensing, payment service provider, money transmitter
+**New terms:** fintech, regulatory sandbox, open banking, application programming interface (API), licensing, real-time payment system
 
-**Recycled terms:** regulator, consumer protection, register, supervision
+**Recycled terms:** central bank, supervision, consumer protection
 
 ### 1.3.4. Reading Questions
 

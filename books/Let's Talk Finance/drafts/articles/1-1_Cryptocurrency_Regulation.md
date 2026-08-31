@@ -18,7 +18,7 @@ The hard part is timing and balance. Rules that are too strict, or that arrive t
 
 ### 1.1.3. Vocabulary Focus
 
-**New terms:** cryptocurrency, crypto-asset, blockchain, crypto exchange, register, stablecoin, issuer, reserve, supervision
+**New terms:** cryptocurrency, blockchain, crypto exchange, stablecoin, issuer, supervision
 
 **Recycled terms:** none yet
 

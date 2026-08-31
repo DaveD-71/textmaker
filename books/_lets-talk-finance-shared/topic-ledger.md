@@ -96,4 +96,46 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 
 | Company / case / statistic | Book.Part.Topic (primary) | Also referenced (light) | Notes |
 |---|---|---|---|
-| _(none yet)_ | | | |
+| FTX collapse (Nov 2022, ~US$8bn missing, founder 25 years) | A 1.1 Cryptocurrency Regulation | — | crypto-failure anchor case |
+| Mt. Gox (2014) + Coincheck (2018, ~US$530m) hacks; Japan 2016–17 exchange registration | A 1.1 Cryptocurrency Regulation | — | Japan-early-mover anchor |
+| EU MiCA (stablecoin rules 30 Jun 2024; CASP rules 30 Dec 2024) | A 1.1 Cryptocurrency Regulation | — | |
+| US GENIUS Act (signed July 2025, payment stablecoins) | A 1.1 Cryptocurrency Regulation | — | |
+| BIS 2024 CBDC survey (85 of 93 central banks / 91%) | A 1.2 CBDCs | — | |
+| Bahamas Sand Dollar (2020) / Jamaica JAM-DEX (2022) / Nigeria eNaira (2021); IMF finding most eNaira wallets unused | A 1.2 CBDCs | — | three-live-CBDC anchor |
+| China e-CNY (7 trillion yuan cumulative by mid-2024, 17 regions) | A 1.2 CBDCs | — | |
+| ECB digital euro (preparation phase 2023; next phase Oct 2025; issuance not before 2029) | A 1.2 CBDCs | — | |
+| UK FCA regulatory sandbox (opened 2016, world's first) | A 1.3 Fintech Regulation | — | |
+| EU PSD2 (2018) / PSD3 agreed late 2025 | A 1.3 Fintech Regulation | — | |
+| India UPI (launched 2016; >240bn transactions FY2025–26) | A 1.3 Fintech Regulation | — | also world's-largest-real-time-payments anchor |
+| Japan 2017 Banking Act open-API amendment; 2020 three-tier funds-transfer licences | A 1.3 Fintech Regulation | — | |
+| Meta €1.2bn GDPR transfer fine (Ireland DPC, 2023) | A 1.4 Data Privacy | — | largest-EU-privacy-fine anchor |
+| Equifax 2017 breach (~147m people; up to US$700m settlement) | A 1.4 Data Privacy | — | financial-sector breach anchor |
+| EU–Japan mutual adequacy decision (2019) | A 1.4 Data Privacy | — | |
+| India DPDP Act (2023) | A 1.4 Data Privacy | — | |
+| World Bank Global Findex 2025 (~80% of adults banked 2024; ~1.3bn unbanked; 8 countries hold most) | A 1.5 Financial Inclusion | — | headline-scale anchor |
+| M-Pesa (Safaricom, Kenya, 2007) | A 1.5 Financial Inclusion | — | mobile-money anchor |
+| Kenya FinAccess 2024 (~85% formal access) | A 1.5 Financial Inclusion | — | |
+| India Jan Dhan (2014, >500m accounts); ~16% India account dormancy | A 1.5 Financial Inclusion | — | access-vs-use anchor |
+| Brazil Pix (central bank, 2020; two-thirds of adults within ~1 year) | A 1.5 Financial Inclusion | — | regulator-as-builder anchor |
+| Japan cashless ratio ~43% in 2024 (METI); Japan Post Bank (1875, ~24,000 branches) | A 1.5 Financial Inclusion | — | Japan-different-meaning anchor |
+| US card APR ~21% vs 30-yr mortgage ~6.7% (2026; Fed G.19 / Freddie Mac) | B 1.2 Consumer Debt | — | secured-vs-unsecured anchor |
+| US household debt US$18.8tn / cards US$1.26tn (NY Fed Q2 2026) | B 1.2 Consumer Debt | — | |
+| South Korea household debt >2,000tn won (2026) | B 1.2 Consumer Debt | — | high-leverage contrast |
+| Australia household debt ~180% of disposable income (RBA FSR Apr 2025) | B 1.2 Consumer Debt | — | |
+| UK BNPL regulation from July 2026; ~1 in 5 UK adults; £0.1bn→£13bn market (FCA) | B 1.2 Consumer Debt | — | contested-regulation anchor |
+| Japan 2006 Money Lending Business Act reform (20% cap, one-third-income limit, grey zone) | B 1.2 Consumer Debt | — | Japan anchor |
+| Global equities ~5% real p.a. 1900–2024 (UBS/DMS Yearbook); ~3.5% for 2000–2024 | B 1.3 Saving & Investing | — | long-run-return anchor |
+| S&P SPIVA (≈88% of US large-cap active funds trailed the index over 15 yrs to mid-2025) | B 1.3 Saving & Investing | — | index-beats-active anchor |
+| Japan new NISA (Jan 2024; ~27m accounts by mid-2025) | B 1.3 Saving & Investing | — | Japan anchor |
+| Japan/US/euro-area household cash-and-deposits share (~50% JP vs ~12% US; BOJ Flow of Funds) | B 1.3 Saving & Investing | — | |
+| New Zealand real house prices >doubled 2000–07; –14% (cities ~–20%) from 2021 peak (RBNZ) | B 1.4 Housing | — | rise-then-fall anchor |
+| BIS: advanced-economy real house prices ~20% above end-2008–09 crisis level | B 1.4 Housing | — | global-context anchor |
+| Auckland 2016 upzoning (consents roughly doubled; rents rose slower than rest of NZ) | B 1.4 Housing | — | supply-policy anchor |
+| Berlin Mietendeckel struck down by German Constitutional Court (2021) | B 1.4 Housing | — | rent-control anchor |
+| Singapore ~80% of resident households in government-built (HDB) flats | B 1.4 Housing | — | public-housing anchor |
+| Japan: ~22-year tax life for wooden houses; ~800,000 FY2023 housing starts; ~9m vacant homes / 13.8% (2023 survey) | B 1.4 Housing | — | Japan depreciating-housing anchor |
+| US reported fraud losses US$12.5bn in 2024, investment fraud largest (FTC) | B 1.5 Scams & Fraud | — | scale anchor |
+| UK mandatory APP-fraud reimbursement from Oct 2024 (£85,000 cap; PSR) | B 1.5 Scams & Fraud | — | victim-protection anchor |
+| Australia reported scam losses fell ~26% in 2024 (NASC) | B 1.5 Scams & Fraud | — | countermeasures-working anchor |
+| UNODC: East/SE Asia scam losses tens of US$bn in 2023; compounds using trafficked workers | B 1.5 Scams & Fraud | — | where-it's-run-from anchor |
+| Japan "special fraud" record ¥72bn in 2024 (~45% victims 75+); SNS investment/romance fraud ¥127bn | B 1.5 Scams & Fraud | — | Japan anchor |

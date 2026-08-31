@@ -18,9 +18,9 @@ Self-defence comes down to a few habits. Treat any unexpected contact about mone
 
 ### 1.5.3. Vocabulary Focus
 
-**New terms:** fraud, scam, phishing, authorised push payment, impersonation, investment fraud, romance scam, reimbursement, transaction friction
+**New terms:** fraud, scam, phishing, authorised push payment, investment fraud, reimbursement
 
-**Recycled terms:** consumer protection, regulator, bank transfer, purchasing power
+**Recycled terms:** bank transfer, savings, consumer protection
 
 ### 1.5.4. Reading Questions
 

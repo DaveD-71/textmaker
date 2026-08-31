@@ -14,13 +14,13 @@ The launches so far are small and disappointing. The Bahamas issued the world's 
 
 The larger economies are still testing. China has run by far the biggest trial. Its digital yuan had handled a cumulative 7 trillion yuan, about US$1 trillion, in transactions by mid-2024, across 17 regions [3]. But much of that use was pushed by the government, through things like staff payments, rather than chosen by shoppers, who already rely on Alipay and WeChat Pay. The European Central Bank ran a "preparation phase" from 2023 and moved to the next stage in October 2025. Even so, a digital euro cannot be issued unless EU lawmakers pass a new law, and a first issuance would not come before 2029 [4]. The Bank of Japan has run a pilot since 2023 and says no decision to issue has been made. Sweden's Riksbank studied an e-krona for years and then concluded there was not yet enough need for one.
 
-The reasons given for the work are mostly defensive. Central banks want to keep a public form of money available as cash use falls, to make payments faster and cheaper, and to reduce dependence on a few large private payment firms. The reasons for caution are just as practical: people might pull money out of banks in a crisis, a digital record raises privacy questions, and the public has so far shown little appetite for it.
+The reasons given for the work are mostly defensive. Central banks want to keep a public form of money available as cash use falls, to make payments faster and cheaper, and to reduce dependence on a few large private payment firms and on privately issued stablecoins. The reasons for caution are just as practical: people might pull money out of banks in a crisis, a digital record raises privacy questions, and the public has so far shown little appetite for it.
 
 ### 1.2.3. Vocabulary Focus
 
-**New terms:** central bank digital currency (CBDC), retail CBDC, wholesale CBDC, claim (on the central bank), pilot, disintermediation, legal tender, payment system
+**New terms:** central bank digital currency (CBDC), retail CBDC, wholesale CBDC, claim (on the central bank), pilot, disintermediation
 
-**Recycled terms:** central bank, stablecoin, crypto-asset, consumer protection
+**Recycled terms:** central bank, stablecoin
 
 ### 1.2.4. Reading Questions
 

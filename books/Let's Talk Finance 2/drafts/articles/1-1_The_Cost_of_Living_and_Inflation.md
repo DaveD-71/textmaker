@@ -18,7 +18,7 @@ Why aim for 2% rather than 0%? The European Central Bank, like the Bank of Engla
 
 ### 1.1.3. Vocabulary Focus
 
-**New terms:** inflation, cost of living, consumer prices, deflation, central bank, inflation target, interest rate, currency devaluation, purchasing power
+**New terms:** inflation, deflation, central bank, inflation target, interest rate, purchasing power
 
 **Recycled terms:** none yet
 

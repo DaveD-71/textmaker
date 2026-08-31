@@ -18,9 +18,9 @@ Japan has usually carried lighter household debt than the US or UK. Most Japanes
 
 ### 1.2.3. Vocabulary Focus
 
-**New terms:** consumer credit, interest rate, compounding, principal, secured loan, unsecured loan, mortgage, revolving credit, over-indebtedness, buy-now-pay-later
+**New terms:** consumer credit, compounding, secured loan, unsecured loan, over-indebtedness, buy-now-pay-later
 
-**Recycled terms:** none yet
+**Recycled terms:** interest rate
 
 ### 1.2.4. Reading Questions
 
