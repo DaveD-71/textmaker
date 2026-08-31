@@ -254,7 +254,248 @@ _HTML_ONLY_LINE_RE = re.compile(r'^\s*(?:<[^>]+>\s*)+$')
 _HORIZONTAL_RULE_RE = re.compile(r'^\s{0,3}(?:-{3,}|\*{3,}|_{3,})\s*$')
 _BULLET_LIST_RE = re.compile(r'^\s*[-+*]\s+')
 _ORDERED_LIST_RE = re.compile(r'^\s*\d+[.)]\s+')
-_HEADING_RE = re.compile(r'^\s*#{1,6}\s+')
+_HEADING_RE = re.compile(r'^\s*(#{1,6})\s+(.+?)\s*$')
+
+
+SWP_STYLE_MAP = {
+    'ps-accessibility-note-box': 'PS Accessibility Note Box',
+    'ps-ai-literacy-box': 'PS AI Literacy Box',
+    'ps-appendix-title': 'PS Appendix Title',
+    'ps-bilingual-planning-note': 'PS Bilingual Planning Note',
+    'ps-block-example': 'PS Block Example',
+    'ps-caution-box': 'PS Caution Box',
+    'ps-front-matter-title': 'PS Front Matter Title',
+    'ps-heading-1': 'PS Heading 1',
+    'ps-heading-3': 'PS Heading 3',
+    'ps-heading-4': 'PS Heading 4',
+    'ps-improved-example': 'PS Improved Example',
+    'ps-language-notes': 'PS Language Notes',
+    'ps-learner-deliverable-head': 'PS Learner Deliverable Head',
+    'ps-practice-head': 'PS Practice Head',
+    'ps-presenter-notes': 'PS Presenter Notes',
+    'ps-privacy-security-note-box': 'PS Privacy Security Note Box',
+    'ps-pronunciation-note-box': 'PS Pronunciation Note Box',
+    'ps-section-head': 'PS Section Head',
+    'ps-section-label': 'PS Section Label',
+    'ps-scenario-brief': 'PS Scenario Brief',
+    'ps-speaking-task-head': 'PS Speaking Task Head',
+    'ps-spoken-model': 'PS Spoken Model',
+    'ps-unit-outcomes-box': 'PS Unit Outcomes Box',
+    'ps-visual-notes': 'PS Visual Notes',
+    'ps-weak-example': 'PS Weak Example',
+}
+
+
+SWP_FRONT_MATTER_H1 = {
+    'how to use this book',
+    'course map',
+    'contents',
+}
+
+
+def _strip_trailing_heading_id(text: str) -> str:
+    """Remove Pandoc heading ID syntax while preserving the visible heading."""
+    return re.sub(r'\s+\{#[^}]+\}\s*$', '', text).strip()
+
+
+def _swp_heading_class(level: int, heading_text: str) -> str:
+    text = _strip_trailing_heading_id(heading_text)
+    lowered = text.lower()
+    if level == 1:
+        if lowered in SWP_FRONT_MATTER_H1:
+            return 'ps-front-matter-title'
+        if not lowered.startswith('unit '):
+            return 'ps-appendix-title'
+        return 'ps-heading-1'
+    if level == 2:
+        if lowered.startswith('practice'):
+            return 'ps-practice-head'
+        if lowered.startswith('speaking task'):
+            return 'ps-speaking-task-head'
+        if lowered.startswith('learner deliverable'):
+            return 'ps-learner-deliverable-head'
+        if lowered.startswith('ai critical literacy'):
+            return 'ps-ai-literacy-box'
+        if lowered.startswith('bilingual planning note'):
+            return 'ps-bilingual-planning-note'
+        return 'ps-section-head'
+    if level == 3:
+        return 'ps-heading-3'
+    return 'ps-heading-4'
+
+
+def _swp_label_class(label_text: str) -> str:
+    label = label_text.strip().rstrip(':').lower()
+    if label == 'by the end of this unit, you can':
+        return 'ps-unit-outcomes-box'
+    if label in {'privacy and security', 'privacy note', 'security notes'}:
+        return 'ps-privacy-security-note-box'
+    if label in {'accessibility', 'accessibility check', 'accessibility note'}:
+        return 'ps-accessibility-note-box'
+    if label in {'pronunciation', 'word stress', 'katakana risk'} or 'stress' in label:
+        return 'ps-pronunciation-note-box'
+    if label in {'visual notes', 'visual note'}:
+        return 'ps-visual-notes'
+    if label in {'presenter notes', 'presenter note'}:
+        return 'ps-presenter-notes'
+    if label in {'language focus', 'useful phrases', 'useful launch phrases', 'first-use vocabulary'}:
+        return 'ps-language-notes'
+    if label in {'contingency', 'checklist'}:
+        return 'ps-caution-box'
+    return 'ps-section-label'
+
+
+def _swp_quote_class(previous_label: str) -> str:
+    label = previous_label.strip().rstrip(':').lower()
+    if 'weak' in label or 'instead of' in label:
+        return 'ps-weak-example'
+    if 'improved' in label or label in {'use', 'revised version', 'revised'}:
+        return 'ps-improved-example'
+    if any(token in label for token in ('opening', 'script', 'spoken', 'preview', 'explanation')):
+        return 'ps-spoken-model'
+    return 'ps-block-example'
+
+
+def _is_standalone_label(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped.endswith(':'):
+        return False
+    if stripped.startswith('|') or stripped.startswith('>'):
+        return False
+    if len(stripped) > 80:
+        return False
+    return bool(re.match(r'^[A-Z][A-Za-z0-9 /&?.,()"-]+:$', stripped))
+
+
+def _inject_style_map(md_text: str, style_map: dict[str, str]) -> str:
+    """Add style_bridge style_map entries to Markdown YAML front matter."""
+    if not style_map:
+        return md_text
+    lines = md_text.splitlines()
+    insert_lines = ['style_map:'] + [
+        f'  {key}: "{value}"' for key, value in sorted(style_map.items())
+    ]
+
+    if lines and lines[0].strip() == '---':
+        closing_idx = None
+        for idx in range(1, len(lines)):
+            if lines[idx].strip() == '---':
+                closing_idx = idx
+                break
+        if closing_idx is not None:
+            existing_keys = set()
+            in_style_map = False
+            style_map_idx = None
+            style_map_end_idx = closing_idx
+            for absolute_idx in range(1, closing_idx):
+                line = lines[absolute_idx]
+                if re.match(r'^\S', line):
+                    if in_style_map and line.strip() != 'style_map:':
+                        style_map_end_idx = absolute_idx
+                    in_style_map = line.strip() == 'style_map:'
+                    if in_style_map:
+                        style_map_idx = absolute_idx
+                    continue
+                if in_style_map:
+                    match = re.match(r'^\s{2,}([A-Za-z0-9_-]+)\s*:', line)
+                    if match:
+                        existing_keys.add(match.group(1))
+            new_entries = [
+                f'  {key}: "{value}"'
+                for key, value in sorted(style_map.items())
+                if key not in existing_keys
+            ]
+            if not new_entries:
+                return md_text
+            if style_map_idx is not None:
+                insert_at = style_map_end_idx or closing_idx
+                return '\n'.join(lines[:insert_at] + new_entries + lines[insert_at:]) + (
+                    '\n' if md_text.endswith('\n') else ''
+                )
+            new_lines = ['style_map:'] + new_entries
+            return '\n'.join(lines[:closing_idx] + new_lines + lines[closing_idx:]) + (
+                '\n' if md_text.endswith('\n') else ''
+            )
+
+    return '\n'.join(['---'] + insert_lines + ['---', '', md_text.rstrip('\n')]) + (
+        '\n' if md_text.endswith('\n') else ''
+    )
+
+
+def apply_swp_style_tags(md_text: str) -> str:
+    """Convert SWP Markdown headings into silent Div class style tags.
+
+    The generated Divs are style-only wrappers used by scripts/style_bridge.lua.
+    They deliberately do not use Div Label styles and therefore do not insert
+    visible labels into the manuscript.
+    """
+    used_classes: set[str] = set()
+    lines = md_text.splitlines()
+    front_matter: list[str] = []
+    if lines and lines[0].strip() == '---':
+        for closing_idx in range(1, len(lines)):
+            if lines[closing_idx].strip() == '---':
+                front_matter = lines[:closing_idx + 1]
+                lines = lines[closing_idx + 1:]
+                break
+
+    out: list[str] = []
+    previous_label = ''
+    idx = 0
+    while idx < len(lines):
+        line = lines[idx]
+        match = _HEADING_RE.match(line)
+        if match:
+            level = min(len(match.group(1)), 4)
+            heading_text = _strip_trailing_heading_id(match.group(2))
+            if not heading_text:
+                out.append(line)
+                idx += 1
+                continue
+            class_name = _swp_heading_class(level, heading_text)
+            used_classes.add(class_name)
+            if out and out[-1].strip():
+                out.append('')
+            out.extend([f'::: {{.{class_name}}}', heading_text, ':::', ''])
+            previous_label = heading_text
+            idx += 1
+            continue
+
+        if line.startswith('>'):
+            quote_lines = []
+            while idx < len(lines) and lines[idx].startswith('>'):
+                quote_lines.append(re.sub(r'^>\s?', '', lines[idx]).rstrip())
+                idx += 1
+            class_name = _swp_quote_class(previous_label)
+            used_classes.add(class_name)
+            if out and out[-1].strip():
+                out.append('')
+            out.append(f'::: {{.{class_name}}}')
+            out.extend(quote_lines)
+            out.extend([':::', ''])
+            continue
+
+        if _is_standalone_label(line):
+            class_name = _swp_label_class(line)
+            used_classes.add(class_name)
+            if out and out[-1].strip():
+                out.append('')
+            out.extend([f'::: {{.{class_name}}}', line.strip(), ':::', ''])
+            previous_label = line.strip()
+            idx += 1
+            continue
+
+        out.append(line)
+        if line.strip():
+            previous_label = line.strip()
+        idx += 1
+    transformed = '\n'.join(front_matter + out)
+    if md_text.endswith('\n') and not transformed.endswith('\n'):
+        transformed += '\n'
+    return _inject_style_map(
+        transformed,
+        {key: SWP_STYLE_MAP[key] for key in used_classes},
+    )
 
 
 def _is_list_item(line: str) -> bool:
@@ -276,7 +517,12 @@ def _needs_blank_line_before_list(prev_line: str, current_line: str) -> bool:
     return True
 
 
-def normalize_markdown(md_text: str, *, ignore_horizontal_rules: bool = False) -> str:
+def normalize_markdown(
+    md_text: str,
+    *,
+    ignore_horizontal_rules: bool = False,
+    swp_style_tags: bool = False,
+) -> str:
     """
     Normalize markdown for Pandoc by:
     - optionally removing standalone horizontal-rule lines
@@ -287,6 +533,11 @@ def normalize_markdown(md_text: str, *, ignore_horizontal_rules: bool = False) -
     Pandoc can otherwise treat the following markdown as part of the HTML block,
     e.g. '<a id="x"></a>' followed by '## Heading' on the next line.
     """
+    if md_text.startswith('\ufeff'):
+        md_text = md_text[1:]
+    if swp_style_tags:
+        md_text = apply_swp_style_tags(md_text)
+
     lines = md_text.splitlines()
     out: list[str] = []
     for idx, line in enumerate(lines):
@@ -354,6 +605,7 @@ def merge_markdown_files(
     dest: Path,
     *,
     ignore_horizontal_rules: bool = False,
+    swp_style_tags: bool = False,
 ) -> None:
     with dest.open('w', encoding='utf-8') as out:
         for f in files:
@@ -362,6 +614,7 @@ def merge_markdown_files(
                 normalize_markdown(
                     source,
                     ignore_horizontal_rules=ignore_horizontal_rules,
+                    swp_style_tags=swp_style_tags,
                 )
             )
             out.write('\n\n')
@@ -378,6 +631,15 @@ def _build_parser() -> argparse.ArgumentParser:
         '--ignore-horizontal-rules',
         action='store_true',
         help='Drop standalone markdown horizontal-rule lines such as --- before conversion.',
+    )
+    parser.add_argument(
+        '--swp-style-tags',
+        action='store_true',
+        help=(
+            'Convert Speaking with PowerPoint markdown headings to silent Div '
+            'style classes before DOCX conversion. This is an SWP production '
+            'option; it does not insert visible Div labels.'
+        ),
     )
     parser.add_argument(
         '--apply-semantic-labels',
@@ -477,6 +739,7 @@ def main(argv: list[str] | None = None) -> int:
                     md_files,
                     temp_md,
                     ignore_horizontal_rules=args.ignore_horizontal_rules,
+                    swp_style_tags=args.swp_style_tags,
                 )
             pandoc_cmd = build_pandoc_cmd(
                 temp_md,
@@ -496,6 +759,7 @@ def main(argv: list[str] | None = None) -> int:
                     normalize_markdown(
                         source,
                         ignore_horizontal_rules=args.ignore_horizontal_rules,
+                        swp_style_tags=args.swp_style_tags,
                     ),
                     encoding='utf-8',
                 )

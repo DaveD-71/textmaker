@@ -1,6 +1,6 @@
 ---
-title: "Presentation Skills: Standard Draft"
-subtitle: "Text-first DOCX draft for review"
+title: "Presentation Skills"
+subtitle: "Speaking with PowerPoint"
 style_bridge:
   remove_horizontal_rules: true
   preserve_div_line_breaks: true
@@ -10,9 +10,9 @@ style_bridge:
     after_pt: 0
 ---
 
-# How to Use This Draft
+# How to Use This Book
 
-This is a text-first production draft for review. Visual assets, final cover design, and final slide-deck artwork are intentionally not included in this pass.
+This book helps you plan, design, and deliver clear workplace presentations with visuals.
 
 The textbook is designed for B1-B2 business English learners who need to plan, design, and deliver clear workplace presentations with visuals. Work through the units in order. Each unit builds one part of a final presentation portfolio.
 
@@ -4360,7 +4360,3 @@ Remember: a good slide or visual supports the presenter. It does not replace the
 ## Source and Privacy Note
 
 The workplace examples and figures in this draft are fictional or sanitized for classroom use. Do not add real client names, account information, personal data, confidential project details, or unreleased business figures to a classroom presentation unless your organization has approved their use.
-
-## Visual Work Deferred
-
-Final visual assets and model slide decks are outside this text-first DOCX pass. They remain part of the separate visual/deck-production workstream.

@@ -158,6 +158,7 @@ Windows wrapper:
 - `--toc-depth`: TOC heading depth (default `2`).
 - `--lua-filter`: optional Pandoc Lua filter path. Can be supplied multiple times. Use `scripts\style_bridge.lua` when Markdown div classes should drive custom Word styles.
 - `--ignore-horizontal-rules`: drop standalone markdown horizontal-rule lines such as `---` before conversion.
+- `--swp-style-tags`: Speaking with PowerPoint production option. It converts standard Markdown headings, standalone component labels, and blockquote model/example blocks into silent Div style classes before DOCX conversion. Use with `scripts\style_bridge.lua`. It does not insert visible labels.
 - `--apply-semantic-labels`: enable semantic Div label rendering, tag icons, unit title tables, and related label cleanup. Off by default.
 - `--tag-style`: semantic tag icon style, either `filled` or `outline` (default `filled`).
 - `--h1-sections`: opt in to next-page section breaks before H1 headings when the reference DOCX does not already handle this.
@@ -174,6 +175,7 @@ Windows wrapper:
 - When merging multiple markdown files, they are concatenated in sorted order.
 - The reference DOCX acts as the canonical formatting baseline for page setup, margins, headers/footers, built-in Word styles, and custom textbook styles.
 - Structural cleanup always runs after Pandoc conversion, including list styles, checklist styles, table styles, response placeholder insertion, body-text normalization, running headers, and non-reference style cleanup.
+- Speaking with PowerPoint uses `--swp-style-tags` for style-only semantic classes. This is distinct from `--apply-semantic-labels`: SWP tags apply custom Word styles such as `PS Heading 1`, `PS Section Head`, `PS Practice Head`, `PS Block Example`, and callout/note styles without adding visible labels.
 - Semantic label rendering runs only when `--apply-semantic-labels` is passed. It uses explicit Markdown div classes and the reference DOCX styles; it does not infer example/model styles from phrases such as `Original Version` or from quotation marks.
 - Source-driven div content styling is configured in Markdown front matter with `div_content_style_map`, for example:
 

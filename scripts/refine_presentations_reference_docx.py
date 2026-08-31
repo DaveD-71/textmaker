@@ -12,8 +12,10 @@ import argparse
 from pathlib import Path
 
 from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+from docx.shared import RGBColor
 
 
 COLORS = {
@@ -291,6 +293,41 @@ def apply_table_style_refinements(path: Path) -> None:
     doc.save(str(path))
 
 
+def normalize_specimen_table_headers(path: Path) -> None:
+    """Make generated reference specimen table headers readable in PDF exports."""
+    doc = Document(str(path))
+    changed = False
+    for table in doc.tables:
+        style_name = table.style.name if table.style is not None else ""
+        if style_name not in TABLE_STYLES or not table.rows:
+            continue
+        spec = TABLE_STYLES[style_name]
+        fill = spec.get("header_fill")
+        text = color(spec.get("header_text", "white"))
+        for cell in table.rows[0].cells:
+            if fill:
+                tc_pr = cell._tc.get_or_add_tcPr()
+                remove_children(tc_pr, "w:shd")
+                shd = OxmlElement("w:shd")
+                shd.set(qn("w:val"), "clear")
+                shd.set(qn("w:color"), "auto")
+                shd.set(qn("w:fill"), color(fill))
+                tc_pr.append(shd)
+            for para in cell.paragraphs:
+                para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                para.paragraph_format.space_after = 0
+                para.paragraph_format.line_spacing = 1.0
+                for run in para.runs:
+                    run.font.color.rgb = RGBColor(
+                        int(text[0:2], 16),
+                        int(text[2:4], 16),
+                        int(text[4:6], 16),
+                    )
+            changed = True
+    if changed:
+        doc.save(str(path))
+
+
 def load_colors_from_yaml(spec_path: Path) -> None:
     """Update color aliases from the YAML style spec when available."""
     try:
@@ -341,6 +378,7 @@ def main() -> int:
     spec_path = args.spec or path.with_name("presentations_style.yaml")
     load_colors_from_yaml(spec_path)
     apply_table_style_refinements(path)
+    normalize_specimen_table_headers(path)
     used_com = False
     if args.word_com_save:
         used_com = normalize_with_word_com(path)

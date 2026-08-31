@@ -11,6 +11,18 @@ The textbook manuscript drafts under `revision/drafts/standard/` and `revision/d
 
 ## Current Handoff Status
 
+Updated: 2026-08-31 17:35 JST
+
+DOCX draft/readability pass:
+
+- A text-first Standard draft exists at `revision/output/docx-draft/swp-standard-text-first-draft.docx`, with Markdown source at `revision/output/docx-draft/swp-standard-text-first-draft.md` and PDF export at `revision/output/docx-draft/swp-standard-text-first-draft.pdf`.
+- The style reference file is `revision/control/presentations_style.docx`, generated from `revision/control/presentations_style.yaml` through `textmaker.cmd generate-reference --spec`, then refined with `scripts/refine_presentations_reference_docx.py <docx> --word-com-save`.
+- Current style decisions: Noto font family; body text `11 pt`; main title/unit-title styles reduced to `24 pt`; global auto-hyphenation disabled for learner readability; ordinary prose is remapped to `PS Body Text`; lists are remapped to `PS Bullet List` / `PS Numbered List`; table-cell text is remapped programmatically to `PS Table Header Text` / `PS Table Body Text` using Noto Sans, left alignment, and no hyphenation.
+- Current SWP DOCX builds should pass `--swp-style-tags` to `textmaker.cmd markdown-to-docx` with `scripts/style_bridge.lua`. This Textmaker preprocessing step converts standard Markdown headings, standalone component labels, and blockquote model/example blocks into silent style-only Div classes. It does not add visible labels. The current generated DOCX uses `PS Heading 1`, `PS Section Head`, `PS Practice Head`, `PS Speaking Task Head`, `PS Learner Deliverable Head`, `PS Section Label`, and model/callout note styles; standard Word `Heading 1` through `Heading 4` are not used in the body.
+- Page setup is enforced after Pandoc conversion: A4 portrait, mirror margins, top `2.5 cm`, bottom `2.0 cm`, inside `4.0 cm`, outside `2.5 cm`, header from edge `1.0 cm`, footer from edge `0.8 cm`, odd/even headers and footers enabled, odd-page header/footer alignment right, even-page header/footer alignment left.
+- Current base colors are China Rose `#A24F71`, Geebung `#C98F21`, and Green Blue `#3366A8`; formulas and derived tints/shades are tracked in `revision/control/presentations_style.yaml`.
+- PDF visual spot-check passed for viewability/readability on representative unit, appendix, and checklist pages before the latest style-tag expansion. A custom contents component is acceptable for the final book; do not depend on Pandoc's generated multi-level TOC if it produces too many pages. Remaining known production limits: some very long appendix/unit titles still wrap, and final visual assets/model slide decks remain paused for a later workstream.
+
 Updated: 2026-08-14 09:00 JST
 
 Morning slide-text reset:
@@ -29,7 +41,7 @@ Morning slide-text reset:
 - `revision/control/presentations-style-set.md` defines the planned `presentations_style.docx` reference-DOCX style set. It is based on the scalable Business Result 2e style definition, recalibrated to `11 pt` body text with Word-safe half-point sizes, a print-safe contemporary palette, and styles for the manuscript elements found in the current unit/appendix scan.
 - `revision/control/presentations-component-library.md` now defines the textbook component library as a production-oriented specification, not only an inventory. It covers learner content components and DOCX-only production components such as page sections, running heads, page numbers, unit opener shapes, task blocks, callouts, table families, list-block spacing, figures, appendices, teacher notes, specimens, and QA requirements.
 - Textmaker now supports YAML-based reference DOCX generation through `textmaker.cmd generate-reference --spec <styles.yaml> --out <reference.docx>`. Use this route for `presentations_style.docx` rather than creating a hand-built source DOCX, unless a later limitation requires a specimen DOCX fallback.
-- Current `presentations_style.docx` generation uses a Noto-based font system and a formula-derived palette from three Sanzo Wada base colors supplied by the user: Eupatorium purple `(25,79,12,0)`, cream yellow `(0,28,68,0)`, and blue `(95,54,0,0)`. Derived shades/tints and formulas are tracked under `color_system` in `revision/control/presentations_style.yaml`. After YAML generation, run `scripts/refine_presentations_reference_docx.py <docx> --word-com-save` with system Python to add richer Word-native table-style conditions and normalize the package through Microsoft Word COM. The script reads color aliases from the adjacent `presentations_style.yaml` by default.
+- Historical note: `presentations_style.docx` originally used a formula-derived CMYK Wada palette, but the current active style file now uses the later fixed hex palette listed above.
 
 Updated: 2026-08-13 20:15 JST
 

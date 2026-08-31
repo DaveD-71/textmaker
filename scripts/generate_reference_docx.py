@@ -191,17 +191,17 @@ def _set_page_number_footer(section, styles, alignment='right', odd_even=True):
     except Exception:
         pass
 
-    footers = [section.footer]
+    footers = [(section.footer, target_alignment)]
     if odd_even:
         try:
-            footers.append(section.even_page_footer)
+            footers.append((section.even_page_footer, WD_PARAGRAPH_ALIGNMENT.LEFT))
         except Exception:
             pass
 
-    for footer in footers:
+    for footer, footer_alignment in footers:
         paragraph = footer.paragraphs[0]
         _clear_paragraph_content(paragraph)
-        paragraph.alignment = target_alignment
+        paragraph.alignment = footer_alignment
         if 'PS Page Number' in styles:
             paragraph.style = styles['PS Page Number']
         _add_page_field(paragraph)
@@ -442,6 +442,12 @@ def create_reference_from_spec(spec_path: str, out_path: str):
             section.left_margin = Mm(float(margins['left']))
         if margins.get('right') is not None:
             section.right_margin = Mm(float(margins['right']))
+    if page.get('header_from_edge_mm') is not None:
+        section.header_distance = Mm(float(page['header_from_edge_mm']))
+    if page.get('footer_from_edge_mm') is not None:
+        section.footer_distance = Mm(float(page['footer_from_edge_mm']))
+    if page.get('mirror_margins') is not None:
+        _set_on_off_settings(doc, 'mirrorMargins', bool(page['mirror_margins']))
 
     fonts = spec.get('fonts', {})
     colors = {name: _clean_hex(value) for name, value in spec.get('colors', {}).items()}

@@ -808,3 +808,18 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - Follow-up sample-feedback pass: updated the style spec to top `20 mm`, bottom `25 mm`, left `40 mm`, right `25 mm`; added odd/even right-aligned page-number footer generation; tightened list-block spacing; removed table-header space after in marked tables; changed `PS Planning Table` to a darker Slate header with white text; increased inset on filled paragraph styles used in the sample; and documented the rule against ordinary back-to-back headings.
 - Second follow-up sample-feedback pass: removed artificial Lua list-block spacer paragraphs from the sample metadata; changed DOCX postprocessing so post-list spacing normalizes to `0` by default; removed paragraph indents from task-heading styles so headings align with body text; standardized the filled callout/body box family to a shared `5 mm` inset; added direct visible borders to marked PS table families in `scripts/postprocess_docx.py`; regenerated `presentations_style.docx`, refined it through Word COM, rebuilt `presentations_style_sample.docx` through `textmaker.cmd markdown-to-docx` with `presentations_style.docx` and `scripts/style_bridge.lua`, and exported `presentations_style_sample.pdf`.
 - Third follow-up sample-feedback pass: changed the fixed base palette to China Rose `#A24F71`, Geebung `#C98F21`, and Green Blue `#3366A8`; updated `presentations_style.yaml` so main headings use the base colors directly; normalized non-heading/non-table paragraph text styles to `1.2` line spacing; normalized list paragraphs to `1.1`, left alignment, and no automatic hyphenation; added table-body postprocessing so body cells are `1.1`, left aligned, and no-hyphenation while table header rows remain single-spaced. Regenerated `presentations_style.docx`, refined it through Word COM, rebuilt the sample DOCX through the Textmaker Markdown-to-DOCX route with `scripts/style_bridge.lua`, exported the PDF, and verified the generated DOCX XML.
+
+## 2026-08-31 - SWP text-first DOCX draft readability pass
+
+- Generated and committed the first text-first Standard DOCX/PDF draft under `books/Speaking with PowerPoint/revision/output/docx-draft/`.
+- After PDF inspection, repaired style readability issues: reduced H1/unit-title styles from `28 pt` to `24 pt`, disabled global auto-hyphenation for learner readability, removed the draft-only `Visual Work Deferred` back-matter block from the learner-facing draft, and patched `scripts/refine_presentations_reference_docx.py` so reference/specimen table headers export with readable light text on dark fills.
+- Regenerated `presentations_style.docx` via `textmaker.cmd generate-reference --spec`, refined through Word COM, rebuilt `swp-standard-text-first-draft.docx` with `scripts/style_bridge.lua`, validated the DOCX against the reference, exported updated PDFs, and spot-checked rendered pages.
+
+## 2026-08-31 - SWP TOC depth adjustment
+
+- Recorded the user's TOC decision: production DOCX/PDF builds should use Textmaker --toc --toc-depth 1 unless a later custom/manual contents page replaces the automatic TOC.
+
+## 2026-08-31 - SWP DOCX style and page setup enforcement
+
+- Updated the SWP style pipeline so `presentations_style.yaml` defines screenshot-matching mirror margins and explicit `PS Table Header Text` / `PS Table Body Text` styles. Updated reference generation and postprocessing so the generated DOCX applies PS body/list/table-cell paragraph styles programmatically after Pandoc conversion. Rebuilt `presentations_style.docx`, `presentations_style.pdf`, and the current text-first DOCX/PDF draft.
+

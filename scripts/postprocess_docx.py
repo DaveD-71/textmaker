@@ -37,7 +37,7 @@ try:
     from docx.oxml.ns import qn  # type: ignore[reportMissingImports]
     from docx.oxml.table import CT_Tbl  # type: ignore[reportMissingImports]
     from docx.oxml.text.paragraph import CT_P  # type: ignore[reportMissingImports]
-    from docx.shared import Pt, RGBColor  # type: ignore[reportMissingImports]
+    from docx.shared import Mm, Pt, RGBColor  # type: ignore[reportMissingImports]
     from docx.table import Table  # type: ignore[reportMissingImports]
     from docx.text.paragraph import Paragraph  # type: ignore[reportMissingImports]
 except ImportError as exc:
@@ -94,7 +94,7 @@ WORD_COUNT_RE = re.compile(
     re.IGNORECASE,
 )
 NO_TITLE_MARKER_RE = re.compile(r'^\s*no\s+title\s*$', re.IGNORECASE)
-UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+)(.+)$')
+UNIT_HEADING_RE = re.compile(r'^Unit\s+(\d+)(?:\s+[-\u2013\u2014]\s+|\.\s+|:\s+)(.+)$')
 MODULE_HEADING_RE = re.compile(r'^Module\s+\d+(?:\s+[-\u2013\u2014]\s+|\.\s+).+$', re.IGNORECASE)
 MODULE_REVIEW_HEADING_RE = re.compile(r'^Module\s+\d+\s+Review\s+Workshop$', re.IGNORECASE)
 ALPHA_ORDINAL_RE = re.compile(r'^([A-Z])[\.)]\s+\S+')
@@ -1140,8 +1140,8 @@ def apply_semantic_div_labels(
 
 
 def apply_body_text_to_normal_paragraphs(doc) -> int:
-    """Make ordinary prose explicit Body Text instead of implicit/explicit Normal."""
-    body_text = _require_style(doc.styles, 'Body Text')
+    """Make ordinary prose explicit project body text instead of standard styles."""
+    body_text = _get_style_by_name_or_id(doc.styles, 'PS Body Text') or _require_style(doc.styles, 'Body Text')
     body_text_style_id = getattr(body_text, 'style_id', 'BodyText')
 
     changed = 0
@@ -1164,7 +1164,9 @@ def apply_body_text_to_normal_paragraphs(doc) -> int:
             continue
         if style_id.startswith(('Heading', 'DivLabel', 'List', 'Checklist')):
             continue
-        if style_id and style_id != 'Normal':
+        if style_id.startswith('PS'):
+            continue
+        if style_id and style_id not in {'Normal', 'BodyText', 'FirstParagraph'}:
             continue
 
         if p_pr is None:
@@ -1200,7 +1202,7 @@ def strip_activity_codes_from_headings(doc) -> int:
 
 def remove_pandoc_generated_styles(doc) -> int:
     """Replace Pandoc fallback styles that are not part of the reference DOCX."""
-    body_text = _require_style(doc.styles, 'Body Text')
+    body_text = _get_style_by_name_or_id(doc.styles, 'PS Body Text') or _require_style(doc.styles, 'Body Text')
     body_text_char = _require_style(doc.styles, 'Body Text Char')
     changed = 0
 
@@ -1243,7 +1245,7 @@ def purge_styles_not_in_reference(
     allowed_style_ids = context.reference_style_ids() if context is not None else _style_ids(Document(reference_doc_path).styles)
     if not allowed_style_ids:
         return 0
-    body_text = _require_style(doc.styles, 'Body Text')
+    body_text = _get_style_by_name_or_id(doc.styles, 'PS Body Text') or _require_style(doc.styles, 'Body Text')
     changed = 0
 
     for para in _iter_story_paragraphs(doc):
@@ -1289,9 +1291,15 @@ def disable_heading_style_page_breaks(doc) -> int:
 
 def insert_section_breaks_before_modules_and_units(doc) -> int:
     """Start every module and unit in its own Word section."""
+    paragraphs = list(doc.paragraphs)
     boundaries = []
-    for para in doc.paragraphs:
-        if _paragraph_style_name(para) not in {'Heading 1', 'Heading 2'}:
+    for para in paragraphs:
+        if _paragraph_style_name(para) not in {
+            'Heading 1',
+            'Heading 2',
+            'PS Heading 1',
+            'PS Section Head',
+        }:
             continue
         text = _normalize_text(para.text)
         if not (
@@ -1302,8 +1310,17 @@ def insert_section_breaks_before_modules_and_units(doc) -> int:
             continue
         boundaries.append(para)
 
+    if boundaries:
+        first_boundary_idx = paragraphs.index(boundaries[0])
+        has_prior_content = any(
+            _normalize_text(p.text) for p in paragraphs[:first_boundary_idx]
+        )
+        target_boundaries = boundaries if has_prior_content else boundaries[1:]
+    else:
+        target_boundaries = []
+
     changed = 0
-    for para in reversed(boundaries[1:]):
+    for para in reversed(target_boundaries):
         if _insert_section_break_before_paragraph(para):
             changed += 1
     return changed
@@ -1510,17 +1527,17 @@ def _module_unit_contexts(doc) -> list[tuple[str, str]]:
     current_unit = ''
     for para in doc.paragraphs:
         style_name = _paragraph_style_name(para)
-        if style_name not in {'Heading 1', 'Heading 2'}:
+        if style_name not in {'Heading 1', 'Heading 2', 'PS Heading 1', 'PS Section Head'}:
             continue
         text = _normalize_text(para.text)
         if style_name == 'Heading 1' and MODULE_HEADING_RE.match(text):
             current_module = text
             current_unit = ''
             contexts.append((current_module, current_unit))
-        elif style_name == 'Heading 2' and UNIT_HEADING_RE.match(text):
+        elif style_name in {'Heading 1', 'Heading 2', 'PS Heading 1'} and UNIT_HEADING_RE.match(text):
             current_unit = text
             contexts.append((current_module, current_unit))
-        elif style_name == 'Heading 2' and MODULE_REVIEW_HEADING_RE.match(text):
+        elif style_name in {'Heading 2', 'PS Section Head'} and MODULE_REVIEW_HEADING_RE.match(text):
             contexts.append((current_module, text))
     return contexts
 
@@ -1741,9 +1758,9 @@ def apply_semantic_styles(doc):
 
 def apply_list_styles(
     doc,
-    bullet_style='List Bullet 2',
-    number_style='List Number 2',
-    alpha_style='List Number 3',
+    bullet_style='PS Bullet List',
+    number_style='PS Numbered List',
+    alpha_style='PS Numbered List 2',
 ):
     """Apply specific styles to bullet and numbered list paragraphs."""
     num_map = _build_num_format_map(doc)
@@ -2465,6 +2482,46 @@ def _set_on_off_document_setting(doc, tag: str, enabled: bool) -> None:
     settings.append(el)
 
 
+def _remove_section_on_off_setting(section, tag: str) -> None:
+    sect_pr = section._sectPr
+    for existing in list(sect_pr.findall(qn(f'w:{tag}'))):
+        sect_pr.remove(existing)
+
+
+def _set_section_start_next_page(section) -> None:
+    sect_pr = section._sectPr
+    sect_type = sect_pr.find(qn('w:type'))
+    if sect_type is None:
+        sect_type = OxmlElement('w:type')
+        sect_pr.insert(0, sect_type)
+    sect_type.set(qn('w:val'), 'nextPage')
+
+
+def _set_section_gutter(section, value: str = '0') -> None:
+    pg_mar = section._sectPr.find(qn('w:pgMar'))
+    if pg_mar is not None:
+        pg_mar.set(qn('w:gutter'), value)
+
+
+def apply_presentation_page_setup(doc) -> int:
+    """Enforce SWP page setup after Pandoc conversion."""
+    _set_on_off_document_setting(doc, 'mirrorMargins', True)
+    _set_on_off_document_setting(doc, 'evenAndOddHeaders', True)
+    changed = 0
+    for section in doc.sections:
+        section.top_margin = Mm(25)
+        section.bottom_margin = Mm(20)
+        section.left_margin = Mm(40)
+        section.right_margin = Mm(25)
+        section.header_distance = Mm(10)
+        section.footer_distance = Mm(8)
+        _set_section_gutter(section, '0')
+        _remove_section_on_off_setting(section, 'titlePg')
+        _set_section_start_next_page(section)
+        changed += 1
+    return changed
+
+
 def _clear_paragraph_content(paragraph) -> None:
     for child in list(paragraph._p):
         if child.tag != qn('w:pPr'):
@@ -2487,15 +2544,15 @@ def apply_presentation_page_number_footers(doc) -> int:
     _set_on_off_document_setting(doc, 'evenAndOddHeaders', True)
     changed = 0
     for section in doc.sections:
-        footers = [section.footer]
+        footers = [(section.footer, WD_ALIGN_PARAGRAPH.RIGHT)]
         try:
-            footers.append(section.even_page_footer)
+            footers.append((section.even_page_footer, WD_ALIGN_PARAGRAPH.LEFT))
         except Exception:
             pass
-        for footer in footers:
+        for footer, alignment in footers:
             para = footer.paragraphs[0]
             _clear_paragraph_content(para)
-            para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            para.alignment = alignment
             para.style = page_style
             _add_page_field(para)
             changed += 1
@@ -2552,6 +2609,9 @@ def _normalize_marked_table_header(tbl, style_name: str) -> None:
     header_row = tbl.rows[0]
     for cell in header_row.cells:
         for para in cell.paragraphs:
+            table_header_style = _get_style_by_name_or_id(para.part.styles, 'PS Table Header Text')
+            if table_header_style is not None:
+                para.style = table_header_style
             fmt = para.paragraph_format
             fmt.line_spacing = 1.0
             fmt.space_before = Pt(0)
@@ -2559,6 +2619,7 @@ def _normalize_marked_table_header(tbl, style_name: str) -> None:
             para.alignment = WD_ALIGN_PARAGRAPH.LEFT
             _set_paragraph_auto_hyphenation(para, False)
             for run in para.runs:
+                _set_run_font_name(run, 'Noto Sans SemiBold')
                 run.font.color.rgb = RGBColor(255, 255, 255)
 
 
@@ -2574,6 +2635,17 @@ def _set_paragraph_auto_hyphenation(para, enabled: bool) -> None:
     p_pr.append(el)
 
 
+def _set_run_font_name(run, font_name: str) -> None:
+    run.font.name = font_name
+    r_pr = run._r.get_or_add_rPr()
+    r_fonts = r_pr.rFonts
+    if r_fonts is None:
+        r_fonts = OxmlElement('w:rFonts')
+        r_pr.append(r_fonts)
+    for attr in ('ascii', 'hAnsi', 'eastAsia', 'cs'):
+        r_fonts.set(qn(f'w:{attr}'), font_name)
+
+
 def _normalize_marked_table_body(tbl, style_name: str) -> None:
     """Apply readable paragraph settings to body cells in PS table families."""
     if style_name not in PS_TABLE_STYLE_NAMES:
@@ -2586,12 +2658,17 @@ def _normalize_table_body(tbl) -> None:
     for row in list(tbl.rows)[1:]:
         for cell in row.cells:
             for para in cell.paragraphs:
+                table_body_style = _get_style_by_name_or_id(para.part.styles, 'PS Table Body Text')
+                if table_body_style is not None:
+                    para.style = table_body_style
                 fmt = para.paragraph_format
                 fmt.line_spacing = 1.1
                 fmt.space_before = Pt(0)
                 fmt.space_after = Pt(0)
                 para.alignment = WD_ALIGN_PARAGRAPH.LEFT
                 _set_paragraph_auto_hyphenation(para, False)
+                for run in para.runs:
+                    _set_run_font_name(run, 'Noto Sans')
 
 
 def _set_table_border(tbl_pr, side: str, color: str, sz: str = '8') -> None:
@@ -2814,7 +2891,7 @@ def apply_response_placeholders(doc) -> int:
         if p_style is None:
             return False
         style_val = p_style.get(f'{{{W_NS}}}val') or ''
-        return style_val.startswith(('ListNumber', 'ListBullet', 'Checklist'))
+        return style_val.startswith(('ListNumber', 'ListBullet', 'PSNumberedList', 'PSBulletList', 'Checklist'))
 
     def list_key(el):
         if not is_list_paragraph(el):
@@ -2844,7 +2921,7 @@ def apply_response_placeholders(doc) -> int:
         pPr = el.find(w('pPr'))
         p_style = pPr.find(w('pStyle')) if pPr is not None else None
         style_val = p_style.get(f'{{{W_NS}}}val') if p_style is not None else ''
-        return style_val.startswith('ListNumber')
+        return style_val.startswith(('ListNumber', 'PSNumberedList'))
 
     def set_flush_number_list_indent(el) -> None:
         """Align list number to the margin and keep text on a hanging indent."""
@@ -3240,6 +3317,11 @@ def insert_section_after_toc(
         'module/unit section breaks',
         lambda: insert_section_breaks_before_modules_and_units(doc),
         'Inserted {count} module/unit section break(s)',
+    )
+    run_pass(
+        'presentation page setup',
+        lambda: apply_presentation_page_setup(doc),
+        'Applied presentation page setup to {count} section(s)',
     )
 
     if made_change:

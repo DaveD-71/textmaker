@@ -410,6 +410,13 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - Decision: the textbook palette is based on three user-supplied colors from Sanzo Wada's `A Dictionary of Color Combinations` published by Seigensha: Eupatorium purple `(25,79,12,0)`, cream yellow `(0,28,68,0)`, and blue `(95,54,0,0)`.
 - Preferred behavior: do not introduce unrelated arbitrary colors into `presentations_style.yaml`. Derive shades/tints by formula and track formulas under `color_system`: CMYK-to-RGB uses `rgb_channel = round(255 * (1 - cmy_channel / 100) * (1 - k / 100))`; shade/tint mixing uses `mix(base, target, amount) = round(base * (1 - amount) + target * amount)` per RGB channel. The base yellow and base blue may not appear directly in Word styles because visible document components use darker/tinted derivatives for readability and print contrast.
 
+## 2026-08-31 - Speaking with PowerPoint DOCX Readability Repairs
+
+- Status: `active`
+- Scope: project/production
+- Decision: the current SWP DOCX reference uses the later fixed hex palette from Sanzo Wada source colors: China Rose `#A24F71`, Geebung `#C98F21`, and Green Blue `#3366A8`. The earlier CMYK Eupatorium/Cream/Blue palette is superseded for the current style file.
+- Preferred behavior: generate `presentations_style.docx` only from `revision/control/presentations_style.yaml` using `textmaker.cmd generate-reference --spec`, then run `scripts/refine_presentations_reference_docx.py <docx> --word-com-save`. Keep global auto-hyphenation off for the learner-facing SWP draft because Word's justified-text hyphenation created awkward B1-B2 reading breaks. Keep H1/unit-title styles at `24 pt` unless visual review shows more reduction is needed. The refinement script also normalizes specimen table-header cells directly so exported reference PDFs show readable light text on dark header fills.
+
 ## 2026-08-28 - Let's Talk Finance: two-book rebuild established
 
 - Status: `active`
@@ -432,3 +439,13 @@ The `markdown-to-docx` pipeline for content books now follows a strict style-saf
 - **Currency/number style:** non-USD = ISO code + space + number (`JPY 45,095.3 billion`); USD = `US$` symbol no space (`US$6.395 billion`); no spelled-out currency name as a code substitute.
 - **Subagent division of labour (what worked this session):** background `general-purpose` agents do per-topic fact/source research well (one brief per topic, every URL opened and verified) and can run the per-article checklist; they must NOT draft the Readings (voice consistency across 40 articles needs one hand — the IR project's own memory records multi-agent drafting drifting in register). Agents hit session/rate limits mid-run twice; re-launching with the same prompt after reset works, partial transcripts are not cleanly resumable.
 - **Known environment note:** many primary sites (US BLS, DOJ, NY Fed, Bank of England, FTC, FBI IC3, METI, OECD, S&P, RBNZ, MAS, PIB India) return HTTP 403 to the automated fetch/curl tools but load fine in a browser. A 403 in a link-check is NOT evidence the page is dead — the user confirmed the BLS link opens normally. Cite the primary page; verify the exact figure in a browser where the tool is blocked.
+
+## 2026-08-31 - SWP TOC Build Depth
+
+- 2026-08-31T17:05:19+09:00 - status: active; scope: Speaking with PowerPoint DOCX production; decision: generate the learner draft TOC with Textmaker/Pandoc --toc --toc-depth 1; reason: level 2/3 generated TOCs are too long for this textbook and can run to many pages; next-time behavior: do not regenerate SWP DOCX/PDF with --toc-depth 2 or deeper unless the user explicitly changes this decision.
+
+## 2026-08-31 - SWP DOCX Style Application
+
+- 2026-08-31T17:40:00+09:00 - status: active; scope: Speaking with PowerPoint DOCX production; decision: do not rely on Pandoc/reference-DOCX style inheritance to apply semantic `PS ...` styles. Postprocess the generated DOCX so ordinary prose uses `PS Body Text`, lists use `PS Bullet List` / `PS Numbered List`, and table-cell paragraphs use `PS Table Header Text` / `PS Table Body Text`. Because the body font is serif, table-cell text should use Noto Sans and be applied programmatically after conversion.
+- 2026-08-31T17:40:00+09:00 - status: active; scope: Speaking with PowerPoint page setup; decision: enforce A4 portrait mirror margins after Pandoc conversion: top `2.5 cm`, bottom `2.0 cm`, inside `4.0 cm`, outside `2.5 cm`, gutter `0`, header `1.0 cm`, footer `0.8 cm`, odd/even headers and footers enabled, odd pages aligned right and even pages aligned left.
+

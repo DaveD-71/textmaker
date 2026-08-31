@@ -41,16 +41,17 @@ Initial margin specification:
 
 | Area | Size | Rationale |
 |---|---:|---|
-| Top | `20 mm` | Allows a running header without crowding the unit title area |
-| Bottom | `25 mm` | Allows page number/footer line and learner writing space |
+| Top | `25 mm` | Matches the current Word page setup and gives room for the running header |
+| Bottom | `20 mm` | Matches the current Word page setup while preserving printable space |
 | Inside/left | `40 mm` | Binding/annotation margin requested for the production sample |
 | Outside/right | `25 mm` | Keeps a stable outside margin for office printing |
-| Header from edge | `9-10 mm` | Keeps running head clear of body text |
-| Footer from edge | `9-10 mm` | Keeps page number clear of body text |
+| Header from edge | `10 mm` | Keeps running head clear of body text |
+| Footer from edge | `8 mm` | Keeps page number clear of body text |
 
 Binding note:
 
-- Current production sample uses asymmetric margins: top `20 mm`, bottom `25 mm`, left `40 mm`, right `25 mm`.
+- Current production sample uses mirror margins: top `25 mm`, bottom `20 mm`, inside `40 mm`, outside `25 mm`, gutter `0 mm`.
+- Enforce different odd/even headers and footers after Pandoc conversion. Odd pages align header/footer content right; even pages align header/footer content left, so running information sits on the outside edge when printed.
 - Recheck margins after the first full-unit print proof because the left margin is intentionally generous.
 
 Word-compatible font-size rule:
@@ -60,7 +61,7 @@ Word-compatible font-size rule:
 - Do not use arbitrary decimals such as `11.3 pt`.
 - Disable Word's `snap to grid` paragraph setting for the entire book. This applies to Normal and every paragraph style in the generated reference DOCX.
 - Set proofing language to English (US), `en-US`, for the whole reference style set.
-- Enable document hyphenation for prose-heavy pages.
+- Disable document hyphenation for the learner-facing draft unless a later print proof shows that the justified-text tradeoff is worth restoring.
 - Body text and Normal-style prose use justified alignment.
 - Body text and Normal-style prose must have widow/orphan control enabled.
 
@@ -68,6 +69,7 @@ Line spacing / leading:
 
 - Main body: `11 pt` type with approximately `1.12-1.15` line spacing.
 - Dense notes and table text: `10-10.5 pt` with `1.05-1.10` line spacing.
+- Table-cell text should use Noto Sans, not the serif body font. Apply `PS Table Header Text` and `PS Table Body Text` programmatically after Pandoc conversion because Word table-style text settings are not reliably applied from the reference DOCX.
 - Full spoken model scripts: `11 pt` with slightly more open leading, approximately `1.15`.
 - All headings, running heads, cover titles, TOC headings, appendix/model headings, and other heading-like styles use single line spacing.
 - All heading styles must have `Keep with next` enabled in Word paragraph settings.
@@ -229,6 +231,7 @@ TOC requirements:
 - Include appendices and model presentations.
 - Include the slide design checklist and wrap-up quiz if kept as appendices.
 - Do not include every practice task; the TOC should not become too long.
+- Generate the production TOC with Textmaker/Pandoc `--toc --toc-depth 1` unless a later manual/custom contents page replaces the automatic TOC.
 - Use leader dots only if they render cleanly in Word/PDF.
 - Update the TOC in Word before final PDF export.
 

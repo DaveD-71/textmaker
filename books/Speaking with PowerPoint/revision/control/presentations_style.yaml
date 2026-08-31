@@ -1,13 +1,16 @@
 page:
   size: A4
   margins_mm:
-    top: 20
-    bottom: 25
+    top: 25
+    bottom: 20
     left: 40
     right: 25
+  mirror_margins: true
+  header_from_edge_mm: 10
+  footer_from_edge_mm: 8
 document:
   language: en-US
-  hyphenation: true
+  hyphenation: false
 footer:
   page_number: true
   odd_even_page_numbers: true
@@ -167,10 +170,33 @@ styles:
   alignment: left
   widow_control: true
   sample_text: Dense notes, compact explanations, and table body text.
+- name: PS Table Header Text
+  type: paragraph
+  base: Normal
+  font: sans_semibold
+  size_pt: 10
+  color: white
+  space_after_pt: 0
+  line_spacing: 1.0
+  alignment: left
+  suppress_auto_hyphens: true
+  sample_text: Table header text.
+- name: PS Table Body Text
+  type: paragraph
+  base: Normal
+  font: sans
+  size_pt: 10
+  color: deep_ink
+  space_after_pt: 0
+  line_spacing: 1.1
+  alignment: left
+  widow_control: true
+  suppress_auto_hyphens: true
+  sample_text: Table body text.
 - name: Heading 1
   type: paragraph
   font: display
-  size_pt: 28
+  size_pt: 24
   bold: false
   color: white
   shading: blue
@@ -230,7 +256,7 @@ styles:
   type: paragraph
   base: Heading 1
   font: display
-  size_pt: 28
+  size_pt: 24
   bold: false
   color: white
   shading: blue
@@ -470,7 +496,7 @@ styles:
   type: paragraph
   base: PS Heading 1
   font: display
-  size_pt: 28
+  size_pt: 24
   bold: false
   color: white
   shading: blue
