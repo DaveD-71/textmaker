@@ -625,6 +625,20 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 
 ### Key decision: div titles should describe activity purpose, not repeat heading text
 
+## 2026-09-10 - LTF Batch 3 research briefs: local handoff, verification pass + 3 new briefs
+
+- Cloud session "Let's Talk Finance Batch 3" (branch `claude/compassionate-dirac-67bepn`) had WebFetch blocked by an org egress proxy and drafted all Batch 3 research briefs with facts verified from WebSearch snippets only. It committed through 25751eb, then handed off to a local session with working WebFetch.
+- **Verification pass** over the 7 already-drafted briefs (A-3-1..A-3-5, B-3-1, B-3-2): re-checked against primary sources; added a dated "Live-fetch verification pass" note to each. No fabrications found — forward-dated 2025-26 anchors (Feb 2026 SCOTUS IEEPA ruling *Learning Resources v. Trump*, June 2026 BOJ hike to 1% + Nikkei ¥70,000, S&P 500 top-10 concentration 40.7%) all confirmed across multiple independent outlets.
+  - Correction: A-3-2 anchor 1 — GI Hub's own figure is a ~US$18tn gap on a US$97tn need; the US$15tn figure is the narrower WEF framing off the US$94tn base.
+  - A-3-2 anchor 6 and A-3-5 fact 10 upgraded from single-source caution.
+  - Recorded which primary sites block automated fetch (congress.gov CRS, ssa.gov, oecd.org, adb.org, imf.org, bls.gov) but remain stable public pages; their facts corroborated via cited news co-sources.
+- **Drafted the 3 missing Batch 3 briefs** with WebFetch-verified anchors, following the B-3-2 template and the `_batch3-shape-plan.md` shape/opening assignments:
+  - `B-3-3_Commodities.md` — 2022 oil/food/nickel shocks, 2020 negative WTI, Black Sea Grain Initiative, copper/electrification, China critical-minerals concentration, Japan import dependence (energy 15.2% FY2023 self-sufficiency, food 38% calorie basis).
+  - `B-3-4_Currencies_and_Exchange_Rates.md` — weak yen 2022-24 (~161/USD, 38-yr low), Japan FX interventions (JPY 2.8tn/6.3tn 2022, JPY 9.79tn Apr-May 2024), dollar reserve role (~58%), euro-dollar parity 2022, Argentina Dec-2023 devaluation, Swiss franc de-peg 2015. Lead per shape plan.
+  - `B-3-5_Emerging_Markets_and_Development_Finance.md` — India as 4th-largest economy 2025 vs Egypt/Pakistan distress; sudden stops & the Fed; IMF EFF (Pakistan US$7bn Sep 2024); SDR US$650bn allocation Aug 2021; Egypt US$8bn IMF + UAE Ras El-Hekma US$35bn + pound float; World Bank IDA/IBRD; China ~US$1.1tn as top bilateral creditor / rescue lending; remittances US$685bn 2024; Japan/JICA/ADB as creditor.
+  - Ledger checks done per brief: B-3-5 deliberately avoids Sri Lanka/Zambia/Ghana (A 2.5 primary evidence) and the WB/ADB FY2025 commitment figures (A 3.2 primary evidence); Argentina's Dec-2023 devaluation is used in B-3-4 only, and B-3-5 records it as excluded there to avoid double use within Book B; the weak yen is B-3-4's primary evidence and is kept to a one-sentence amplifier in B-3-3.
+- Batch 3 research-brief set is now complete (10/10): A 3.1-3.5, B 3.1-3.5.
+
 - Confirmed user rule: "The structural headings (A–F) and above must remain. If the div title matches the heading, rewrite the div title based on the activity purpose."
 - Addendum: "Headings can be shortened if they are long, and the specific detail removed from the heading can become the div title."
 
