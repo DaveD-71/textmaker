@@ -2,6 +2,12 @@
 
 Prepared 2026-09-10. Compiled by research assistant; WebFetch/direct URL access is blocked in this environment (org network policy) — all facts verified via 2+ independent corroborating WebSearch results unless marked otherwise.
 
+**Live-fetch verification pass — 2026-09-10 (local session, working WebFetch).**
+- **Fact 1 confirmed.** S&P 500 top-10 weight reached a record **40.7% in 2025** (highest since at least 1972; above the dot-com peak), roughly double the 18–23% range stable over 1990–2015; top-10 hold ~41% of weight but only ~32% of index earnings (RBC Wealth Management, Pensions & Investments, Firstrade, Visual Capitalist).
+- **Fact 8 / Japanese angle confirmed — not fabricated.** The BOJ raised its policy rate to **1.0%** on **16 June 2026** (25 bp; 7–1 vote, Asada dissenting), highest since 1995; the **Nikkei 225 broke ¥70,000 intraday for the first time the same day**, led by Kioxia and Advantest, with the hike read as removing uncertainty rather than hurting exporters (CNBC 16 Jun 2026, BigGo Finance, KenMacro, informedclearly — multiple independent outlets).
+- **Fact 4 stays flagged as effectively single-sourced** (Nvidia single-earnings-report index swing — Reuters-derived, resets quarterly). Use the mechanism, not the number.
+- **Data-vintage flags** (Magnificent Seven share ~a third; MSCI EM 2025 return) still stand — pick one dated snapshot at drafting time.
+
 ## What the topic covers (2-3 sentences, plain)
 
 Why stock market indexes rise and fall day to day and year to year: company earnings and other fundamentals, central-bank interest-rate decisions, investor sentiment (fear and confidence), and — increasingly — how much of an index's movement comes from just a handful of giant ("mega-cap") companies rather than the market broadly. This is the *mechanics* article (how prices actually move); it deliberately stays away from the regulator's toolbox (circuit breakers, trading halts, short-selling bans), which is Book A 2.1 Regulatory Responses to Market Volatility.

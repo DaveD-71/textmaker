@@ -2,6 +2,13 @@
 
 Prepared 2026-09-10. Compiled by research assistant; WebFetch/direct URL access is blocked in this environment (org network policy) — all facts verified via 2+ independent corroborating WebSearch results unless marked otherwise.
 
+**Live-fetch verification pass — 2026-09-10 (local session, working WebFetch).**
+- **Anchor 1 correction.** The GI Hub's own page states the gap as **US$18 trillion (almost 19%)** of the US$97tn need "if current spending trends continue" (US$97tn need vs ~US$79tn projected). The "US$15 trillion" figure is the older WEF framing measured off the US$94tn base (excl. the water/electricity SDG add-on). Lead with the GI Hub figure — **~US$18tn gap on a US$97tn need** — and treat US$15tn as the narrower alternative, not an equal variant. (gihub.org fetched successfully.)
+- **Anchor 2 confirmed.** ASCE 2025 Report Card: overall **C**, up from **C- in 2021**; **US$3.7 trillion** investment gap, "an increase from the US$2.59 trillion gap reported four years ago" (asce.org fetched successfully).
+- **Anchor 3 confirmed.** EIB ~EUR 335 billion/year infrastructure investment gap, >30% of it in energy (CaixaBank Research + Visual Capitalist/GIIA).
+- **Anchor 6 upgraded from [SINGLE SOURCE].** The JPY 71.6–76.1 trillion / 30-year road maintenance projection is corroborated by two independent secondary sources citing MLIT (We Build Value; Lundgreen's). One MLIT-cited figure gives a 47% lifetime-cost saving from preventive maintenance (vs the brief's "roughly 30–50%" range — keep the range or use "roughly half"). The primary MLIT white paper still was not opened; treat the specific yen figure as solid-but-secondary.
+- **Not fetchable to automated tools (bot-blocked, but stable public pages):** adb.org (ADB US$29.3bn 2025 release — figures dual-corroborated via The Financial Express / Devdiscourse), worldbank.org annual-report pages. A human browser reaches both.
+
 ## What the topic covers (2-3 sentences, plain)
 
 How the roads, bridges, power grids, ports, and water systems a country depends on actually get funded. Governments have never been the sole builder — a persistent "funding gap" between what is invested and what is needed is filled by a mix of public budgets, private capital, multilateral development banks, and public-private partnerships (PPPs), in which a private company designs, builds, finances, and operates a public asset — often a toll road, airport, or power plant — in exchange for revenue (tolls, fees, or government payments) over a fixed concession period before ownership reverts to the state. A second, related problem in wealthy countries is that infrastructure built decades ago is now ageing and needs costly repair or replacement, competing for funding with new projects.

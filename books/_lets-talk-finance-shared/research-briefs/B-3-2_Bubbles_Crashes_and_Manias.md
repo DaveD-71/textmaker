@@ -2,6 +2,11 @@
 
 Prepared 2026-09-10. Compiled by research assistant; WebFetch/direct URL access is blocked in this environment (org network policy) — all facts verified via 2+ independent corroborating WebSearch results unless marked otherwise.
 
+**Live-fetch verification pass — 2026-09-10 (local session, working WebFetch).**
+- **Anchor 2 confirmed directly.** Federal Reserve History (federalreservehistory.org, fetched successfully): Dow "381 in September 1929"; closed "at 41.22 ... 89 percent below its peak" in summer 1932; "did not return to its pre-crash heights until November 1954." Matches the brief.
+- **Anchor 5 land-price figure — flag refined.** BOJ research citing Japan Real Estate Institute data gives big-city commercial land "about 80 percent below its 1990 peak" by 1999; the **87%** six-major-cities commercial figure is at the high end of the range and is a specific JREI-index measure. Recommendation firmed up: in the Reading use **"roughly 80%"** with the broader-urban 1991–2002 window, OR cite the JREI six-city commercial index explicitly for 87% — do not blend. (The brief's existing caution already says this; treat it as settled guidance now.)
+- Anchors 3, 4, 6, 7, 8 (dot-com, Nikkei 1989 / Feb 2024 reclaim, GameStop, Terra/Luna, "This Time Is Different") not individually re-fetched this pass but each already carried 2 independent publishers; no fabrication indicators.
+
 ## What the topic covers (2-3 sentences, plain)
 
 How the price of an asset — tulip bulbs, tech stocks, real estate, a cryptocurrency — can rise far beyond any reasonable estimate of its worth, and then collapse quickly once buyers stop believing the price will keep rising. The same ingredients recur across centuries: cheap or easy credit (leverage), herd behaviour (buying because everyone else is buying), and "this time is different" thinking that dismisses the lessons of earlier crashes. The aftermath — how long a market or an economy takes to recover — often matters more than the crash itself.

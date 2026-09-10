@@ -2,6 +2,12 @@
 
 Prepared 2026-09-10. Compiled by research assistant; WebFetch/direct URL access is blocked in this environment (org network policy) — all facts verified via 2+ independent corroborating WebSearch results unless marked otherwise.
 
+**Live-fetch verification pass — 2026-09-10 (local session, working WebFetch).**
+- **Fact 10 upgraded from single-study caution.** World Bank *Global Economic Prospects*, January 2026: "about one in four developing economies had lower per capita incomes" than 2019 at end-2025, while "nearly all advanced economies" exceeded their 2019 level — confirmed on the World Bank press release (13 Jan 2026) and multiple independent summaries. The "more than a third of low-income economies" sub-figure is consistent with the report but was not separately isolated; cite the GEP report itself.
+- **Fact 1 confirmed.** 1929 recovery anchor cross-checked separately: Fed Reserve History gives Dow peak 381 (Sep 1929), low 41.22 (1932, "89 percent below its peak"), recovery Nov 1954 — matches the framing used elsewhere in Batch 3 (B-3-2).
+- **Not fetchable to automated tools (bot-blocked, stable public pages):** imf.org, bls.gov, ec.europa.eu/eurostat PDFs, ssa.gov. The keystone figures (IMF −3.3% global 2020; US −3.5%, CARES US$2.2tn; euro area −6.8%, NGEU EUR 750bn; US CPI 9.1% Jun 2022; euro-area 10.6% Oct 2022; Japan core CPI 4.2% Jan 2023) are each corroborated across the news co-sources already cited inline.
+- Data-vintage flags in Notes/cautions (Japan −4.6% FY vs −4.7% CY; 2026 US inflation re-acceleration) still stand.
+
 ## What the topic covers (2-3 sentences, plain)
 
 In 2020 the COVID-19 pandemic caused the sharpest short-term contraction in the world economy since the Great Depression, as lockdowns shut down trade, travel and daily commerce almost everywhere at once. Governments and central banks answered with an unprecedented combination of fiscal stimulus (direct spending, loans, subsidies) and monetary easing (near-zero interest rates, large-scale bond buying) to keep households and firms afloat. The recovery that followed was fast in some places and slow in others — a pattern economists call a "K-shaped" or divergent recovery — and by the mid-2020s the story has shifted from "how fast did we bounce back" to "who was left permanently behind" and what lasting lessons this episode holds for handling the next shock.

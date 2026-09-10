@@ -2,6 +2,12 @@
 
 Prepared 2026-09-10. Compiled by research assistant; WebFetch/direct URL access is blocked in this environment (org network policy) — all facts verified via 2+ independent corroborating WebSearch results unless marked otherwise.
 
+**Live-fetch verification pass — 2026-09-10 (local session, working WebFetch).**
+- **Anchor 2 confirmed exactly.** French National Assembly, 12 November 2025, voted **255–146** to suspend the pension-age rise until after the 2027 presidential election, freezing the minimum age at **62 years 9 months**; labour minister's cost estimate **~EUR 0.3 billion (2026)** and **EUR 1.9 billion (2027)**, with EU-fiscal-rule concerns (France 24, Euronews, Jurist, Il Sole 24 Ore).
+- **Anchor 6 confirmed, with cause.** 2026 SS Trustees Report: OASI reserves deplete **Q4 2032** (one quarter earlier than the 2025 projection), **78%** of scheduled benefits payable thereafter; combined OASDI deplete **2034** (~83% payable). The one-quarter move is attributed to the 2025 "One Big Beautiful Bill Act" reducing income-tax revenue on benefits (CNBC, Bipartisan Policy Center, J.P. Morgan AM). ssa.gov press page itself is bot-blocked (403).
+- **Anchor 11 remains [SINGLE SOURCE].** oecd.org "Pensions at a Glance 2025" pages block automated fetch (403). Not independently re-verified this pass; the OECD-average old-age/working-age ratio path (22→33→52) is widely cited in pension literature and low-risk, but the Japan/Korea 2050 crossover projection still rests on the OECD page alone — spot-check in a browser before citing.
+- No fabrications found; France/US/China/Korea/Japan anchors all consistent with primary framing.
+
 ## What the topic covers (2-3 sentences, plain)
 
 How a country's public (and sometimes mandatory occupational) pension system pays for the retirement of an ageing population: whether it is pay-as-you-go (today's workers' contributions fund today's retirees) or funded (money is invested in advance), and the levers governments pull when the sums stop working — raising the retirement age, raising contribution rates, cutting the benefit formula, or widening who must pay in. This is the policy/system level, not an individual's personal choice about how to save for their own retirement.
