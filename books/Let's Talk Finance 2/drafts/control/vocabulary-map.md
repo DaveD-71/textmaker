@@ -2,7 +2,7 @@
 
 Tracks first introduction and recycling of finance vocabulary across the 20 topics. Numbered Part.Topic. Must always match each article's own `### Vocabulary Focus` section exactly; every listed term must have an entry in `../glossary.md`. Shared terms kept consistent with `../../_lets-talk-finance-shared/shared-term-bank.md`.
 
-Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts.
+Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts.
 
 ## Core Recurring Terms
 
@@ -26,11 +26,11 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 2.3 The Gig Economy and Income Security | platform work; the gig economy; self-employed; independent contractor; worker status; collective bargaining | employee; minimum wage; pension contribution |
 | 2.4 Executive Pay and Inequality Inside Firms | executive compensation; base salary; stock-based pay; pay ratio; say-on-pay vote; disclosure | shareholder; board; median |
 | 2.5 Banks: What They Do and How They Fail | deposit; maturity transformation; bank run; deposit insurance; lender of last resort; collateral | central bank; regulator; bond |
-| 3.1 What Moves Stock Markets | | |
-| 3.2 Bubbles, Crashes and Manias | | |
-| 3.3 Commodities: Oil, Metals and Food | | |
-| 3.4 Currencies and Exchange Rates | | |
-| 3.5 Emerging Markets and Development Finance | | |
+| 3.1 What Moves Stock Markets | stock index; market capitalisation; fundamentals; index concentration; investor sentiment; volatility | interest rate; central bank; bond; return |
+| 3.2 Bubbles, Crashes and Manias | asset bubble; speculative mania; herd behaviour; leverage; "this time is different" thinking; peak-to-trough decline | collateral; valuation; risk |
+| 3.3 Commodities: Oil, Metals and Food | commodity; benchmark price; supply shock; strategic reserve; price-taker; self-sufficiency rate | risk; inflation; purchasing power |
+| 3.4 Currencies and Exchange Rates | exchange rate; floating exchange rate; fixed exchange rate; currency intervention; interest rate differential; currency peg | central bank; inflation; interest rate; purchasing power |
+| 3.5 Emerging Markets and Development Finance | emerging market; capital outflow; foreign direct investment; currency mismatch; development finance institution; sudden stop | bond; central bank; interest rate; default |
 | 4.1 Tax: How Governments Raise Money | | |
 | 4.2 Government Debt and Deficits | | |
 | 4.3 The Business of Sport, Art and Culture | | |
