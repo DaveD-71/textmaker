@@ -1,5 +1,37 @@
 # Project Journal
 
+## 2026-09-10 - Let's Talk Finance Batch 2 drafted and mechanically checked
+
+Resumed Batch 2 (Part 2 of both books). The 8 missing research briefs from the 2026-08-31 session were re-run and delivered; combined with the 2 already on disk, all 10 Batch-2 briefs are in `books/_lets-talk-finance-shared/research-briefs/` and committed.
+
+**All 10 Batch-2 Readings drafted** from the briefs, per `_batch2-shape-plan.md`:
+- Book A: 2.1 Regulatory Responses to Market Volatility, 2.2 Credit Rating Agencies Oversight, 2.3 Insurance Market Regulation, 2.4 Stress Testing and Risk Management, 2.5 Sovereign Debt Management (leads with Japan — ~206% debt/GDP per IMF WEO Apr 2026, BOJ holds ~48% of JGBs, foreigners ~8%).
+- Book B: 2.1 How Companies Raise Money, 2.2 Startups, Venture Capital and Failure, 2.3 The Gig Economy and Income Security, 2.4 Executive Pay and Inequality Inside Firms, 2.5 Banks: What They Do and How They Fail.
+
+**Mechanical checklist — all 10 pass:** Readings 435–490 words (slightly above Batch 1's 428–457 but within the D3 ~490 ceiling); longest sentence ≤38 words in every article; citations sequential and in order-of-first-appearance, marker count == Source Note count; 5 Reading + 5 Discussion questions each; 6 New terms + 3–4 Recycled (all Recycled terms verified to appear in the Reading/questions text).
+
+**URL verification — all 31 Source Note URLs checked this pass.** Fixes made:
+- A 2.1: JPX page corrected to the circuit-breaker rules page; Brady report -> SEC Historical Society PDF; SEC trading-halts page (404) -> investor.gov circuit-breakers glossary.
+- A 2.2: SEC OCR report -> OCR reports-and-studies index (specific PDF URL kept 404ing); DOJ release -> `/archives/` path; ESMA -> CRA activities page.
+- A 2.3: Japan FSA -> "Capital Requirements for Insurance Companies in Japan" page.
+- A 2.4: EBA -> the dedicated 2025 stress-test results release.
+- A 2.5: split into 4 sources — IMF WEO DataMapper now carries the 206% claim (was wrongly on CRS); CRS RS22331 moved to [4] for the US foreign-holdings numbers.
+- B 2.1: India IPO sentence reworded to what DD News actually says (record 268 NSE IPOs / ~US$19.5bn, "among the busiest markets", not "second-largest").
+- B 2.2: venture figure US$425bn -> US$440bn (Crunchbase 2025 recap); Crunchbase and IMF "Riding Unicorns" URLs corrected to live pages.
+- B 2.3: ILO platform-count sentence softened to "about five-fold in the decade to 2020" (matches the cited release, which does not carry the 142/777 breakdown).
+- B 2.5: added a DICJ source [3] for the Japan ¥10m limit (was leaning on the FDIC page, which only covers the US$250k figure).
+- Known 403 bot-blocks left as canonical primaries (all cross-corroborated in the briefs): congress.gov, epi.org, imf.org, sechistorical.org, sec.gov press pages, mof.go.jp / dmo.gov.uk PDFs, dic.go.jp, jftc.go.jp.
+
+**Vocab maps + topic ledger updated.** Both `vocabulary-map.md` Part-2 rows populated. Known-limitation notes extended to Parts 1–2: Book A's Part-2 opener 2.1 recycles only core-set terms (regulator/exchange/market) because a circuit-breaker mechanics piece shares little settled vocabulary with Part 1; Recycled lists list only terms that genuinely appear. `topic-ledger.md` evidence register got ~40 Batch-2 rows.
+
+**Cross-topic overlap to flag at review:** Silicon Valley Bank (Mar 2023) is primary evidence in BOTH A 2.4 (below-threshold / interest-rate-losses angle — "the risk the test missed") and B 2.5 (one-day-run / maturity-transformation angle — opening dated event). Different facts/angle, so within the §10 "same company, different fact" allowance, but borderline — ledger rows now cross-reference each other.
+
+**Also for the editorial read:** A 2.3 cites the EIOPA Solvency II landing page for the "1-in-200-year" capital calibration; that exact phrasing is in the Directive, not the landing page (standard Solvency II framing, but not on the cited page).
+
+**Batch 2 still awaits DDobson's full editorial read** (prose quality, paragraph rules, question quality — only the mechanical checklist has run). Batch 1 also still awaits that read.
+
+**To resume:** (1) DDobson reviews Batch 1 + Batch 2 (`books/*/drafts/articles/1-*.md` and `2-*.md`); (2) apply feedback; (3) Batch 3 = Part 3 of both books — Book A: 3.1 Green Finance, 3.2 Infrastructure Investment, 3.3 Trade Policies & Tariffs, 3.4 Pension Reform, 3.5 Global Economic Recovery Post-COVID; Book B: 3.1 What Moves Stock Markets, 3.2 Bubbles Crashes & Manias, 3.3 Commodities, 3.4 Currencies & Exchange Rates, 3.5 Emerging Markets & Development Finance. Same pipeline: research-brief agents (smaller waves — 10 at once burned a session in Batch 2's first attempt), then draft, expand, checklist, verify URLs, update maps + ledger.
+
 ## 2026-08-28 - Let's Talk Finance two-book rebuild: planning, prototypes, Batch 1 drafted
 
 **Session summary.** Speaking with PowerPoint put on hold. Started the Let's Talk Finance track: two books to be produced to the standard of the completed "Let's Talk: Investor Relations" project (separate repo, `02. Clients/Marubeni/Ishida, Tetsuya`). See `project-learning.md` 2026-08-28 entry for the durable decision record; `books/Let's Talk Finance/PROJECT-PLAN.md` is the controlling document.

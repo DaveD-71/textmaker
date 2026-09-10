@@ -138,3 +138,43 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | Australia reported scam losses fell ~26% in 2024 (NASC) | B 1.5 Scams & Fraud | — | countermeasures-working anchor |
 | UNODC: East/SE Asia scam losses tens of US$bn in 2023; compounds using trafficked workers | B 1.5 Scams & Fraud | — | where-it's-run-from anchor |
 | Japan "special fraud" record ¥72bn in 2024 (~45% victims 75+); SNS investment/romance fraud ¥127bn | B 1.5 Scams & Fraud | — | Japan anchor |
+| Nikkei 225 −4,451 pts / −12.4% on 5 Aug 2024 (record one-day points fall); Osaka Exchange futures halt; Korea halt same day | A 2.1 Market Volatility | — | opening market-event anchor |
+| US circuit breakers 7/13/20% S&P 500 (post-1987 Brady Report origin); triggered 4× March 2020 | A 2.1 Market Volatility | — | main-tool anchor |
+| US 2010 "flash crash" → single-stock limit-up/limit-down; EU short-selling bans March 2020 | A 2.1 Market Volatility | — | |
+| China market-wide circuit breaker Jan 2016, scrapped after 4 days ("magnet effect") | A 2.1 Market Volatility | — | tool-backfired anchor |
+| Big Three (S&P/Moody's/Fitch) ~94% of US ratings outstanding, end-2023 (SEC OCR staff report) | A 2.2 Credit Ratings | — | concentration anchor |
+| S&P US$1.375bn DOJ settlement over pre-crisis mortgage ratings (3 Feb 2015) | A 2.2 Credit Ratings | — | conflict-of-interest anchor |
+| EU CRA Regulation 2009; ESMA sole supervisor since 2011, with fining power | A 2.2 Credit Ratings | — | EU-oversight anchor |
+| Sovereign downgrades: S&P cut US from AAA 2011; Fitch/Moody's followed; France 2025; Japan FSA rating-agency registration regime since 2010 (JCR, R&I home-grown) | A 2.2 Credit Ratings | — | sovereign-rating + Japan anchor |
+| Nissan Mutual Life ordered to stop selling policies April 1997 (first postwar Japanese life-insurer failure); Chiyoda/Kyoei 2000–01 | A 2.3 Insurance Regulation | — | opening-failure + Japan anchor |
+| EU Solvency II (in force 2016; capital = survive 1-in-200-year loss); Japan solvency margin ratio (200% intervention trigger), ESR regime from FY2026 | A 2.3 Insurance Regulation | — | solvency-rule anchor |
+| US state-based insurance regulation; NAIC risk-based capital; guaranty associations (~US$300k death-benefit limit) | A 2.3 Insurance Regulation | — | US-model anchor |
+| AIG 2008 near-collapse (~US$180bn government support, one division); IAIS global Insurance Capital Standard agreed 2024 | A 2.3 Insurance Regulation | — | systemic + international anchor |
+| US 2009 SCAP stress test (19 banks; 10 needed ~US$75bn); published results restored confidence | A 2.4 Stress Testing | — | test-that-worked anchor |
+| EBA 2025 EU-wide stress test (64 banks, 17 countries, ~370bps / 3.7pp capital depletion) | A 2.4 Stress Testing | — | current-scale anchor |
+| Silicon Valley Bank failed 10 Mar 2023 (~US$209bn assets, below annual-test threshold; interest-rate bond losses; >US$40bn one-day outflow) | A 2.4 Stress Testing | B 2.5 Banks (bank-run mechanics, different facts) | risk-the-test-missed anchor |
+| Japan BOJ + FSA joint stress tests in the semiannual Financial System Report | A 2.4 Stress Testing | — | Japan anchor |
+| Japan general govt gross debt ~206% of GDP (IMF WEO Apr 2026), highest of any large advanced economy; BOJ holds ~48% of JGBs, foreigners ~8% (MOF, Mar 2026) | A 2.5 Sovereign Debt | — | lead Japan anchor |
+| US federal debt held by public ~31% foreign-owned (Japan largest); ~US$282bn interest to foreign holders in 2025 (CRS RS22331) | A 2.5 Sovereign Debt | — | US-contrast anchor |
+| UK DMO gilt portfolio average maturity ~14 years (DMO Annual Review 2024–25) | A 2.5 Sovereign Debt | — | maturity-management anchor |
+| Sri Lanka default 2022, ~25% bond haircut in 2024 deal; Zambia/Ghana restructured via G20 Common Framework (Zambia ~US$840m written off) | A 2.5 Sovereign Debt | — | restructuring/default anchor |
+| Figma NYSE IPO 2025 (~US$1.2bn raised) vs SpaceX private at ~US$400bn (July 2025) | B 2.1 How Companies Raise Money | — | opening list-vs-stay-private contrast |
+| US listed companies >8,000 in 1996 → ~half now (Doidge–Karolyi–Stulz "listing gap") | B 2.1 How Companies Raise Money | — | listings-decline anchor |
+| Global private capital ~US$22tn AUM by 2024 (BofA Research, via Fortune) | B 2.1 How Companies Raise Money | — | private-capital-rise anchor |
+| ~1,145 IPOs worldwide 2024; India a record 268 NSE listings raising ~US$19.5bn; TSE April 2022 Prime/Standard/Growth restructuring + March 2023 below-book-value push | B 2.1 How Companies Raise Money | — | global + Japan anchor |
+| US business survival ~78% year 1 / ~50% year 5 / ~33% year 10 (BLS BED); ~75% of venture-backed startups never return investor cash | B 2.2 Startups & VC | — | attrition anchor |
+| Global venture funding ~US$440bn in 2025 (~half to AI), after 2022–23 fall (Crunchbase) | B 2.2 Startups & VC | — | funding-cycle anchor |
+| WeWork: ~US$47bn valuation early 2019 → failed IPO → Chapter 11 in 2023 | B 2.2 Startups & VC | — | notable-failure anchor |
+| Japan ~7 unicorns in 2023 vs >600 US (IMF WP/24/246); "Startup Development Five-Year Plan" (Cabinet, Nov 2022) | B 2.2 Startups & VC | — | Japan anchor |
+| UK Supreme Court: Uber drivers are "workers" (Uber v Aslam, [2021] UKSC 5, 19 Feb 2021) | B 2.3 Gig Economy | — | opening court-ruling anchor |
+| EU Platform Work Directive (2024/2831; presumption of employment; transpose by Dec 2026; ~40m platform workers) | B 2.3 Gig Economy | — | legislation anchor |
+| California AB5 (2019) → Prop 22 (Nov 2020, ~US$200m industry spend) upheld by Cal. Supreme Court 2024 | B 2.3 Gig Economy | — | contractor-status-kept anchor |
+| Japan Freelance Act in force 1 Nov 2024 (written terms, 60-day payment, 30-day notice); Tokyo labour board recognises Uber Eats couriers as "workers" (Nov 2022, under appeal) | B 2.3 Gig Economy | — | Japan anchor |
+| US CEO-to-typical-worker pay ratio ~281:1 in 2024 vs 21:1 in 1965 (EPI) | B 2.4 Executive Pay | — | opening scale-number anchor |
+| US SEC pay-ratio disclosure rule (adopted 2015, first reported 2018); UK pay-ratio reporting since 2020 | B 2.4 Executive Pay | — | disclosure anchor |
+| Say-on-pay: binding in UK/much of EU, advisory in US; Switzerland banned sign-on/severance bonuses by 2013 referendum; Netflix 2023 pay package rejected (advisory) | B 2.4 Executive Pay | — | votes/rules anchor |
+| Japan median executive-to-employee pay ratio ~10×; 100m-yen individual-disclosure rule since 2010; record 1,345 executives at 606 firms in FY to Mar 2025 (Tokyo Shoko Research) | B 2.4 Executive Pay | — | Japan anchor |
+| Silicon Valley Bank closed 10 Mar 2023 (>US$40bn one-day withdrawal attempt; 2nd-largest US bank failure at the time) | B 2.5 Banks | A 2.4 Stress Testing (test-threshold angle, different facts) | opening dated-event anchor |
+| FDIC deposit-insurance limit US$250,000 per depositor per bank; Japan DICJ ¥10m plus interest, settlement accounts in full | B 2.5 Banks | — | safety-net anchor |
+| UBS–Credit Suisse takeover 19 Mar 2023 (SNB funding + government guarantee; AT1 bondholders and shareholders lost heavily) | B 2.5 Banks | — | rescued-whole anchor |
+| Northern Rock run 2007 (queues, government deposit guarantee); Japan 1997–98 (Hokkaido Takushoku Bank, Yamaichi; two banks nationalised, public-money injections) | B 2.5 Banks | — | historical-run + Japan anchor |

@@ -233,12 +233,13 @@ Done:
    - Book A `drafts/articles/1-1_Cryptocurrency_Regulation.md` — 428-word Reading, 4 live sources
    - Book B `drafts/articles/1-1_The_Cost_of_Living_and_Inflation.md` — 439-word Reading, 5 live sources
 
-**Next — Phase 4, parallel batch drafting.** Per Part-sized batch, interleaved A then B:
-- **Batch 1:** Book A Part 1 (1.2–1.5) + Book B Part 1 (1.2–1.5). 1.1 of each is done.
+**Phase 4 — parallel batch drafting. In progress.** Per Part-sized batch, interleaved A then B:
+- **Batch 1 (Part 1):** ✅ drafted, expanded, mechanical checklist passed, 48 URLs verified. Awaits DDobson editorial read.
+- **Batch 2 (Part 2):** ✅ drafted 2026-09-10 (A 2.1–2.5, B 2.1–2.5), 435–490-word Readings, all pass the per-article mechanical checklist, all 31 Source Note URLs verified this pass, `vocabulary-map.md` Part-2 rows + `topic-ledger.md` evidence register updated. Awaits DDobson editorial read. See 2026-09-10 journal entry for URL fixes and two review flags (SVB used as primary in both A 2.4 and B 2.5 with different angles; A 2.3 Solvency II "1-in-200" phrasing not on the cited landing page).
+- **Batch 3 (Part 3), Batch 4 (Part 4):** not started.
 - Before drafting each batch: assign an article shape and an opening style per topic (log in that book's `control/` — `house-style.md` §6), so the set has variety by design.
 - During drafting: research and live-verify every fact and URL; keep `vocabulary-map.md`, `company-and-geography-audit.md`, and the shared `topic-ledger.md` evidence register current as each topic lands.
 - Run `_lets-talk-finance-shared/article-checklist.md` on **every** article as it lands. After each batch: confirm no cross-topic evidence collision against the ledger; confirm global spread and Japanese vantage point across the batch.
-- Then Batches 2–4 (Parts 2, 3, 4 of each book).
 
 After Phase 4: Phase 5 full QA per book → Phase 6 assemble → Phase 7 PDF page-fit loop (needs a 2-column A4 reference DOCX built first — no inherited one) → Phase 8 sign-off.
 

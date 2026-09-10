@@ -2,7 +2,7 @@
 
 Tracks first introduction and recycling of finance vocabulary across the 20 topics. Numbered Part.Topic. Must always match each article's own `### Vocabulary Focus` section exactly; every listed term must have an entry in `../glossary.md`. Shared terms kept consistent with `../../_lets-talk-finance-shared/shared-term-bank.md`.
 
-Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts.
+Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts.
 
 ## Core Recurring Terms
 
@@ -10,7 +10,7 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 
 **inflation, interest rate, compounding, purchasing power, saving, risk, return, central bank.**
 
-**Known limitation (Part 1):** Book B's Part 1 topics (cost of living, consumer debt, saving & investing, housing, scams) share more than Book A's, but the recycled lists are still modest — 1–3 terms per topic, mostly the money-basics core (inflation, interest rate, compounding). This builds naturally from Part 2 (companies, work, banks) onward.
+**Known limitation (Parts 1–2):** Book B's Part 1 topics (cost of living, consumer debt, saving & investing, housing, scams) share more than Book A's, but the recycled lists are still modest — 1–3 terms per topic, mostly the money-basics core (inflation, interest rate, compounding). Part 2 (companies, startups, gig work, executive pay, banks) opens a new subject area, so 2.1, 2.3 and 2.4 recycle general finance vocabulary the learner has met informally (bond, stock exchange, shareholder, employee, board) rather than earlier formal New terms; from 2.2 and 2.5 onward the Part's own vocabulary (equity, listing, valuation, IPO) starts carrying forward. Recycled lists list only terms that genuinely appear in each Reading.
 
 ## Topic Map
 
@@ -21,11 +21,11 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 1.3 Saving and Investing for the Long Term | investing; diversification; index fund; actively managed fund; time horizon; tax-advantaged account | inflation; compounding; purchasing power |
 | 1.4 Housing Markets and Affordability | affordability; housing supply; zoning; upzoning; rent control; depreciation | interest rate; central bank; inflation |
 | 1.5 Scams, Fraud and Financial Self-Defence | fraud; scam; phishing; authorised push payment; investment fraud; reimbursement | bank transfer; savings; consumer protection |
-| 2.1 How Companies Raise Money | | |
-| 2.2 Startups, Venture Capital and Failure | | |
-| 2.3 The Gig Economy and Income Security | | |
-| 2.4 Executive Pay and Inequality Inside Firms | | |
-| 2.5 Banks: What They Do and How They Fail | | |
+| 2.1 How Companies Raise Money | equity; debt; initial public offering (IPO); listing; private equity; venture capital | bond; stock exchange; valuation |
+| 2.2 Startups, Venture Capital and Failure | startup; seed funding; funding round; down round; exit; unicorn | venture capital; equity; listing; valuation |
+| 2.3 The Gig Economy and Income Security | platform work; the gig economy; self-employed; independent contractor; worker status; collective bargaining | employee; minimum wage; pension contribution |
+| 2.4 Executive Pay and Inequality Inside Firms | executive compensation; base salary; stock-based pay; pay ratio; say-on-pay vote; disclosure | shareholder; board; median |
+| 2.5 Banks: What They Do and How They Fail | deposit; maturity transformation; bank run; deposit insurance; lender of last resort; collateral | central bank; regulator; bond |
 | 3.1 What Moves Stock Markets | | |
 | 3.2 Bubbles, Crashes and Manias | | |
 | 3.3 Commodities: Oil, Metals and Food | | |
