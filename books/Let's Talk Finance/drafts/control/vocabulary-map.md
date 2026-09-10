@@ -2,7 +2,7 @@
 
 Tracks first introduction and recycling of finance vocabulary across the 20 topics. Numbered Part.Topic. This table must always match each article's own `### Vocabulary Focus` section exactly, and every listed term must have an entry in `../glossary.md`. Shared terms are kept consistent with `../../_lets-talk-finance-shared/shared-term-bank.md`.
 
-Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts.
+Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts.
 
 ## Core Recurring Terms
 
@@ -26,11 +26,11 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 2.3 Insurance Market Regulation | insurer; premium; claim; solvency rule; capital; policyholder | regulator; financial system; cross-border; risk |
 | 2.4 Stress Testing and Risk Management | stress test; scenario; capital buffer; recession; basis point; risk model | regulator; supervision; financial crisis; bank run |
 | 2.5 Sovereign Debt Management | sovereign debt; government bond; debt management office; bond auction; debt restructuring; haircut | central bank; default; exchange rate |
-| 3.1 Green Finance Initiatives | | |
-| 3.2 Infrastructure Investment | | |
-| 3.3 Trade Policies and Tariffs | | |
-| 3.4 Pension Reform | | |
-| 3.5 Global Economic Recovery Post-COVID | | |
+| 3.1 Green Finance Initiatives | green bond; use of proceeds; taxonomy; greenwashing; transition bond; external review | bond; issuer; regulator |
+| 3.2 Infrastructure Investment | public-private partnership (PPP); infrastructure funding gap; multilateral development bank (MDB); concession; blended finance; institutional investor | government bond; capital; risk |
+| 3.3 Trade Policies and Tariffs | tariff; importer of record; pass-through; most-favoured-nation (MFN) tariff; free trade agreement; effective tariff rate | cross-border; market; risk |
+| 3.4 Pension Reform | pay-as-you-go (PAYG); statutory retirement age; contribution rate; replacement rate; old-age dependency ratio; automatic adjustment mechanism | government bond; capital; risk |
+| 3.5 Global Economic Recovery Post-COVID | fiscal stimulus; monetary easing; quantitative easing (QE); K-shaped recovery; scarring effect; output gap | recession; central bank; government bond; financial crisis |
 | 4.1 Anti-Money Laundering (AML) Regulations | | |
 | 4.2 Financial Literacy Programs | | |
 | 4.3 Wealth Inequality and Redistribution Policies | | |

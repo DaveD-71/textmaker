@@ -158,6 +158,31 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | US federal debt held by public ~31% foreign-owned (Japan largest); ~US$282bn interest to foreign holders in 2025 (CRS RS22331) | A 2.5 Sovereign Debt | — | US-contrast anchor |
 | UK DMO gilt portfolio average maturity ~14 years (DMO Annual Review 2024–25) | A 2.5 Sovereign Debt | — | maturity-management anchor |
 | Sri Lanka default 2022, ~25% bond haircut in 2024 deal; Zambia/Ghana restructured via G20 Common Framework (Zambia ~US$840m written off) | A 2.5 Sovereign Debt | — | restructuring/default anchor |
+| EIB first green bond 2007; ICMA Green Bond Principles (2014, four pillars); green bond market ~US$2.9tn, ~US$700bn issued 2024 (BIS Mar 2025) | A 3.1 Green Finance | — | market-scale + standard anchor |
+| EU Green Bond Standard (Reg (EU) 2023/2631, applies since Dec 2024; ≥85% taxonomy-aligned; external review) | A 3.1 Green Finance | — | regulator-defines-green anchor |
+| Japan sovereign climate transition bonds (Feb 2024, 2× JPY 800bn tranches; ~JPY 20tn programme; carbon-pricing repayment) | A 3.1 Green Finance | — | Japan first-sovereign-transition-bond anchor |
+| Chile first Latin-America sovereign green bond (2019); ~US$56bn labelled sustainable debt outstanding by Q4 2025, largest EM issuer | A 3.1 Green Finance | — | EM anchor |
+| Global Infrastructure Hub: ~US$97tn need by 2040 vs ~US$79tn projected, ~US$18tn gap | A 3.2 Infrastructure Investment | — | headline funding-gap anchor |
+| ASCE 2025 Infrastructure Report Card: overall C (up from C- 2021); US$3.7tn 10-year shortfall | A 3.2 Infrastructure Investment | — | US ageing-infrastructure anchor |
+| Bruegel/Bloomberg: EU ~EUR 481bn/yr strategic-investment shortfall (2024) | A 3.2 Infrastructure Investment | — | EU gap anchor |
+| Japan MLIT: ~60% of ~730,000 road bridges 50+ years old by 2033; public-works spend shifting to maintenance/resilience | A 3.2 Infrastructure Investment | — | Japan ageing-assets anchor |
+| Kenya Nairobi Expressway (27 km toll road, opened 2022; PPP/BOT with China Road and Bridge Corp; ~US$668m, ~80/20 financing; ~3-decade concession) | A 3.2 Infrastructure Investment | — | EM PPP anchor |
+| World Bank Group FY2025: US$118.5bn committed, US$69.9bn private capital mobilized | A 3.2 Infrastructure Investment | — | MDB / blended-finance anchor |
+| Tariff cost incidence: NY Fed ~90% on US firms/consumers vs Freund ~47% absorbed by foreign exporters (2025-26 US tariffs) | A 3.3 Trade Policies and Tariffs | — | who-pays anchor |
+| US average effective tariff rate 2.4% (Jan 2025) → ~28% peak → ~17% (autumn 2025), highest since 1930s (Yale Budget Lab) | A 3.3 Trade Policies and Tariffs | — | scale anchor |
+| Learning Resources, Inc. v. Trump (US SCOTUS, 20 Feb 2026, 6-3): IEEPA does not authorise tariffs; avg rate fell to ~7% by mid-2026 | A 3.3 Trade Policies and Tariffs | — | legal-reversal anchor |
+| US-Japan July 2025 framework: 15% tariff (from threatened 25%), autos 25%→15%; Japan pledged up to US$550bn US investment by 2029 | A 3.3 Trade Policies and Tariffs | — | negotiated-deal anchor; also Japan export exposure (~18.6% of exports to US in 2025) |
+| US 50% tariff on India (25% + 25% Russian-oil penalty, eff. Aug 2025; ~US$48bn exports hit; India called it "unfair, unjustified and unreasonable") | A 3.3 Trade Policies and Tariffs | — | imposed-tariff anchor |
+| CPTPP: in force for Japan 30 Dec 2018; removes tariffs on ~95% of tariff lines among members | A 3.3 Trade Policies and Tariffs | — | free-trade-agreement contrast anchor |
+| France pension age 62→64 (law Apr 2023, eff. Sep 2023) then suspended late 2025 until after 2027 election (frozen at 62y9m) | A 3.4 Pension Reform | — | opening concrete-case anchor |
+| US 1983 reform: full retirement age 65→67; 2026 Trustees Report — main trust fund depletes late 2032, ~78% of benefits payable after | A 3.4 Pension Reform | — | "how it was done before" + unresolved-pressure anchor |
+| South Korea: first pension contribution-rate rise in ~28 years (Mar 2025), 9%→13% of wages by 2033 | A 3.4 Pension Reform | — | contribution-lever anchor |
+| Japan pension: age 60→65 phase-in (1990s laws, men complete 2025); contribution rate fixed at 18.3% since 2017; "macroeconomic slide" (2004); replacement rate ~61%→~50% by 2057; June 2025 coverage-widening law (~1.8m more) | A 3.4 Pension Reform | — | Japan continuous-reform anchor |
+| OECD old-age dependency ratio 22 (2000) → 33 (2025) → 52 projected (2050) | A 3.4 Pension Reform | — | demographic-pressure anchor |
+| Global GDP −3.3% in 2020 (IMF), deeper than 2008; euro area −6.8% (Eurostat), ~2× the US fall | A 3.5 Global Economic Recovery Post-COVID | — | shock-scale anchor |
+| ECB PEPP: EUR 750bn (Mar 2020) → EUR 1,850bn | A 3.5 Global Economic Recovery Post-COVID | — | monetary-response anchor |
+| Inflation peaks: US 9.1% (Jun 2022, BLS); euro area >10% (2022); Japan core CPI 4.2% (Jan 2023), fastest since 1981 | A 3.5 Global Economic Recovery Post-COVID | — | divergent-inflation anchor; Japan mid-article |
+| World Bank GEP Jan 2026: ~1/4 of developing economies still poorer per capita than 2019; nearly all advanced economies richer | A 3.5 Global Economic Recovery Post-COVID | — | durable-divergence anchor (aggregate, no single country) |
 | Figma NYSE IPO 2025 (~US$1.2bn raised) vs SpaceX private at ~US$400bn (July 2025) | B 2.1 How Companies Raise Money | — | opening list-vs-stay-private contrast |
 | US listed companies >8,000 in 1996 → ~half now (Doidge–Karolyi–Stulz "listing gap") | B 2.1 How Companies Raise Money | — | listings-decline anchor |
 | Global private capital ~US$22tn AUM by 2024 (BofA Research, via Fortune) | B 2.1 How Companies Raise Money | — | private-capital-rise anchor |
