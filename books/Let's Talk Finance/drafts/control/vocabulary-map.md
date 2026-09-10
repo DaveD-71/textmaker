@@ -2,7 +2,7 @@
 
 Tracks first introduction and recycling of finance vocabulary across the 20 topics. Numbered Part.Topic. This table must always match each article's own `### Vocabulary Focus` section exactly, and every listed term must have an entry in `../glossary.md`. Shared terms are kept consistent with `../../_lets-talk-finance-shared/shared-term-bank.md`.
 
-Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts.
+Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts. Part 4 (topics 4.1–4.5) populated 2026-09-11 from Batch 4 drafts.
 
 ## Core Recurring Terms
 
@@ -31,11 +31,11 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 3.3 Trade Policies and Tariffs | tariff; importer of record; pass-through; most-favoured-nation (MFN) tariff; free trade agreement; effective tariff rate | cross-border; market; risk |
 | 3.4 Pension Reform | pay-as-you-go (PAYG); statutory retirement age; contribution rate; replacement rate; old-age dependency ratio; automatic adjustment mechanism | government bond; capital; risk |
 | 3.5 Global Economic Recovery Post-COVID | fiscal stimulus; monetary easing; quantitative easing (QE); K-shaped recovery; scarring effect; output gap | recession; central bank; government bond; financial crisis |
-| 4.1 Anti-Money Laundering (AML) Regulations | | |
-| 4.2 Financial Literacy Programs | | |
-| 4.3 Wealth Inequality and Redistribution Policies | | |
-| 4.4 Corporate Governance and Accountability | | |
-| 4.5 Economic Diplomacy and International Cooperation | | |
+| 4.1 Anti-Money Laundering (AML) Regulations | money laundering; anti-money-laundering (AML); Financial Action Task Force (FATF); mutual evaluation; suspicious-transaction report; the "travel rule" | regulator; supervision; cross-border; financial system |
+| 4.2 Financial Literacy Programs | financial literacy; meta-analysis; randomised controlled trial (RCT); "just-in-time" education; national financial-education strategy; default option | risk; regulator; consumer protection |
+| 4.3 Wealth Inequality and Redistribution Policies | wealth (net worth); Gini coefficient; progressive / regressive tax; transfer payment; net wealth tax; effective tax rate | capital; risk; cross-border |
+| 4.4 Corporate Governance and Accountability | corporate governance; board of directors; non-executive (independent) director; "comply or explain"; cross-shareholding; shareholder activism | institutional investor; regulator; capital; market |
+| 4.5 Economic Diplomacy and International Cooperation | economic diplomacy; sanctions; asset freeze; SWIFT; secondary sanctions; price cap | central bank; cross-border; debt restructuring; financial crisis |
 
 ## Recycling Pattern
 
