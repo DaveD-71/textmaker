@@ -2,7 +2,7 @@
 
 Tracks first introduction and recycling of finance vocabulary across the 20 topics. Numbered Part.Topic. Must always match each article's own `### Vocabulary Focus` section exactly; every listed term must have an entry in `../glossary.md`. Shared terms kept consistent with `../../_lets-talk-finance-shared/shared-term-bank.md`.
 
-Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts.
+Created 2026-08-28. Part 1 (topics 1.1–1.5) populated 2026-08-31 from Batch 1 drafts. Part 2 (topics 2.1–2.5) populated 2026-09-10 from Batch 2 drafts. Part 3 (topics 3.1–3.5) populated 2026-09-11 from Batch 3 drafts. Part 4 (topics 4.1–4.5) populated 2026-09-11 from Batch 4 drafts.
 
 ## Core Recurring Terms
 
@@ -31,11 +31,11 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 3.3 Commodities: Oil, Metals and Food | commodity; benchmark price; supply shock; strategic reserve; price-taker; self-sufficiency rate | risk; inflation; purchasing power |
 | 3.4 Currencies and Exchange Rates | exchange rate; floating exchange rate; fixed exchange rate; currency intervention; interest rate differential; currency peg | central bank; inflation; interest rate; purchasing power |
 | 3.5 Emerging Markets and Development Finance | emerging market; capital outflow; foreign direct investment; currency mismatch; development finance institution; sudden stop | bond; central bank; interest rate; default |
-| 4.1 Tax: How Governments Raise Money | | |
-| 4.2 Government Debt and Deficits | | |
-| 4.3 The Business of Sport, Art and Culture | | |
-| 4.4 Philanthropy, Foundations and Impact | | |
-| 4.5 The Future of Money | | |
+| 4.1 Tax: How Governments Raise Money | tax-to-GDP ratio; value-added tax (VAT) / consumption tax; social-security contributions; progressive / regressive tax; tax incidence; global minimum tax ("Pillar Two") | bond; shareholder; employee |
+| 4.2 Government Debt and Deficits | budget deficit / surplus; government (sovereign) debt; debt-to-GDP ratio; bond yield; sovereign credit rating; market discipline | bond; central bank; inflation; interest rate |
+| 4.3 The Business of Sport, Art and Culture | media / broadcast rights; sponsorship; sovereign wealth fund; "soft power"; philanthropy; "cost disease" (Baumol) | market; return; capital |
+| 4.4 Philanthropy, Foundations and Impact | foundation; endowment; payout rule; donor-advised fund (DAF); spend-down (sunset) foundation; impact investing | philanthropy; capital; return |
+| 4.5 The Future of Money | fiat money; money supply; cashless society; stablecoin; tokenised deposit; central-bank digital currency (CBDC) | central bank; interest rate; inflation; deposit |
 
 ## Recycling Pattern
 

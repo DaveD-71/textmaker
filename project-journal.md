@@ -1,5 +1,27 @@
 # Project Journal
 
+## 2026-09-11 - LTF Batch 3 + Batch 4 Readings drafted from the research briefs
+
+Picked up a step that had been missed: Batch 3 (2026-09-10) and Batch 4 (2026-09-11) had only reached step 1 of the per-batch pipeline — research briefs on disk, no article Readings. Drafted all 20 outstanding Readings from the briefs, following `_batch3-shape-plan.md` / `_batch4-shape-plan.md` and `house-style.md`, committing per book-part.
+
+**Batch 3 (Part 3 of both books):**
+- Book A: 3.1 Green Finance Initiatives, 3.2 Infrastructure Investment, 3.3 Trade Policies and Tariffs, 3.4 Pension Reform, 3.5 Global Economic Recovery Post-COVID. Commit `962667d`.
+- Book B: 3.1 What Moves Stock Markets, 3.2 Bubbles, Crashes and Manias, 3.3 Commodities: Oil, Metals and Food, 3.4 Currencies and Exchange Rates, 3.5 Emerging Markets and Development Finance. Commit `df64b2d`.
+
+**Batch 4 (Part 4 of both books):**
+- Book A: 4.1 Anti-Money Laundering (AML) Regulations, 4.2 Financial Literacy Programs, 4.3 Wealth Inequality and Redistribution Policies, 4.4 Corporate Governance and Accountability, 4.5 Economic Diplomacy and International Cooperation. Commit `8129276`.
+- Book B: 4.1 Tax: How Governments Raise Money, 4.2 Government Debt and Deficits, 4.3 The Business of Sport, Art and Culture, 4.4 Philanthropy, Foundations and Impact, 4.5 The Future of Money. (This commit.)
+
+Each Reading: six-subsection template matched to `2-5_Sovereign_Debt_Management.md`; assigned article shape + opening style + lead regions + Japan placement from the batch shape plan; ~440–475 words; 4–6 `[N]` markers, each to a URL from the brief's verified "Suggested source list"; New terms drawn from the brief candidates and confirmed to appear; Recycled terms confirmed to genuinely appear (short lists kept short, per the vocab-map known-limitation note — Book A/B Part 4 topics are policy pieces with thin carry-over from Parts 1–3).
+
+**Source-note discipline where the briefs lacked a verified deep URL:** substituted a different verified anchor, dropped the figure, or named the case without a citation as pattern context. Examples: A 4.4 names Sarbanes-Oxley and Satyam as dated context without their own markers; A 4.5 leans on the CFR frozen-assets explainer and AIIB's own About page; B 4.1 gives the EU high-VAT point qualitatively (no uncited 27%-Hungary anchor); B 4.3 gives the Germany-vs-US arts-funding contrast qualitatively (no uncited NEA budget figure).
+
+**Vocab maps + topic ledger updated.** Book A and Book B `vocabulary-map.md` Part-3 and Part-4 rows populated and the "populated" header lines extended. `topic-ledger.md` cross-topic evidence register got ~28 rows for Batch 3 Book A, ~24 for Batch 3 Book B, ~28 for Batch 4 Book A, ~30 for Batch 4 Book B, each cross-referencing where a case is light-referenced in another topic (e.g. Japan debt "well over 200%" in B 4.2 vs the precise ~206%/BOJ-48%/foreign-8% figures reserved to A 2.5; TSE March 2023 cost-of-capital push in A 4.4 vs TSE April 2022 market restructuring in B 2.1; Kenya 2024 finance bill framed as domestic politics in B 4.2 vs IMF mechanics in B 3.5).
+
+**Still to do for all 20:** run `article-checklist.md` on each Reading (deferred, noted in each commit message); a WebFetch verification pass over the new prose and Source Note URLs. Flagged for that pass: A-3-4 Source Note [4] cited for the France pension-age suspension; B-3-2 Source Note [6] Princeton UP URL slug; B-3-1 Source Note [4] CNBC URL segment; B-4-4 the Rob Reich *Just Giving* reference (named, uncited).
+
+**To resume:** DDobson editorial read of Batches 1–4 (`books/*/drafts/articles/*.md`); then apply feedback; then the checklist + URL verification pass on Batches 3–4.
+
 ## 2026-09-10 - Let's Talk Finance Batch 2 drafted and mechanically checked
 
 Resumed Batch 2 (Part 2 of both books). The 8 missing research briefs from the 2026-08-31 session were re-run and delivered; combined with the 2 already on disk, all 10 Batch-2 briefs are in `books/_lets-talk-finance-shared/research-briefs/` and committed.
