@@ -12,7 +12,7 @@ About 1.3 billion adults worldwide still have no bank account of any kind. That 
 
 Mobile money has been the biggest change in Sub-Saharan Africa. M-Pesa was launched by the telecoms company Safaricom in Kenya in 2007. It lets people hold and send money using a basic phone, with cash paid in and out through local shop agents rather than bank branches. Sub-Saharan Africa is now the only region where more adults have a mobile money account than a bank account [1]. In Kenya itself, the share of adults with access to formal financial services has reached about 85% [2].
 
-Governments have also built the infrastructure directly. India's Jan Dhan programme, started in 2014, had opened more than 500 million basic bank accounts by the mid-2020s. Most are held by women and rural residents. Brazil's central bank launched an instant-payment system called Pix in 2020. Within about a year, two-thirds of Brazilian adults were using it, including millions who had never made an electronic transfer before [3].
+Governments have also built the infrastructure directly. India's Jan Dhan programme, started in 2014, had opened more than 500 million basic bank accounts by the mid-2020s. Most are held by women and rural residents. In Brazil, the central bank acted as regulator and infrastructure builder at once, launching an instant-payment system called Pix in 2020. Within about a year, two-thirds of Brazilian adults were using it, including millions who had never made an electronic transfer before [3].
 
 Having an account, though, is not the same as using one. In India, about 16% of account holders have an inactive account — roughly four times the rate in other middle-income countries [1]. A programme can put a card in someone's hand and still not change how they manage money.
 
@@ -22,7 +22,7 @@ In a rich country the problem is different again. Japan is effectively fully ban
 
 **New terms:** financial inclusion, the unbanked, mobile money, agent banking, instant payment system, cashless payment
 
-**Recycled terms:** central bank, payment system
+**Recycled terms:** central bank, payment system, regulator
 
 ### 1.5.4. Reading Questions
 

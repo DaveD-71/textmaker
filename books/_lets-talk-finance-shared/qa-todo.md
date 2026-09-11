@@ -40,11 +40,10 @@ Ordered by priority (most significant first).
 - [x] Two remaining bare-symbol hits (Book A `3-2_Infrastructure_Investment.md`, Book B `4-3_The_Business_of_Sport_Art_and_Culture.md`) are inside Source Note citation titles quoting the original article headline verbatim ("EU Faces €481 Billion...", "...record UK£6.7bn...") — correctly left as-is, not house-style violations.
 - [x] Verified all 4 edited articles: citation markers == Source Notes, word counts unaffected (439-451w, all in range), zero bare currency symbols remaining in any Reading body.
 
-## 5. Resolve the recycled-vocabulary floor gap — Book A only
+## 5. Resolve the recycled-vocabulary floor gap — Book A only ✅ DONE 2026-09-12
 
-- [ ] `1.2` Central Bank Digital Currencies — only 2 recycled terms (*central bank, stablecoin*) against the checklist's 3–5 floor.
-- [ ] `1.5` Financial Inclusion Initiatives — only 2 recycled terms (*central bank, payment system*).
-- [ ] Decide: add one more genuinely-appearing recycled term to each, **or** formally document an accepted exception in `vocabulary-map.md` (it already self-notes this as a known limitation, but the rule itself is still technically unmet).
+- [x] `1.5` Financial Inclusion Initiatives — had a genuine 4-topic pool to draw from (1.1–1.4). Added "regulator" to the Pix sentence ("the central bank acted as regulator and infrastructure builder at once") — a real, non-forced addition. Now 3 recycled terms (*central bank, payment system, regulator*), meeting the floor. Updated the article's Vocabulary Focus line and `vocabulary-map.md`'s Topic Map row to match. Verified: word count 467 (in range), citation markers == Source Notes, all 3 recycled terms present verbatim.
+- [x] `1.2` Central Bank Digital Currencies — user-approved decision: **document as an accepted exception**, not fix by forcing an unrelated term. It is the book's second topic; its only prior topic (1.1)'s term set (cryptocurrency, blockchain, crypto exchange, stablecoin, issuer, supervision) has almost no genuine overlap with 1.2's CBDC-mechanics content beyond the one term already recycled (*stablecoin*). Documented in `vocabulary-map.md`'s "Known limitation" section as a formal accepted exception — future audits should not re-flag this as an unresolved defect.
 
 ## 6. Build the missing Phase 5/6 deliverables (both books)
 

@@ -1,5 +1,15 @@
 # Project Journal
 
+## 2026-09-12 (very latest) - LTF QA TODO item 5 fixed: recycled-vocabulary floor gap, Book A
+
+Fixed item 5 from `qa-todo.md`: Book A topics 1.2 and 1.5 each had only 2 recycled terms against the checklist's 3-5 floor.
+
+**User decision (asked directly, since the two topics warranted different treatment):** fix 1.5 by adding a genuine term; document 1.2 as an accepted exception rather than force an unrelated term into the prose.
+
+**1.5 Financial Inclusion Initiatives - fixed.** Had a real 4-topic pool to draw from (1.1-1.4's cumulative term set). Added "regulator" to the Brazil/Pix sentence — "In Brazil, the central bank acted as regulator and infrastructure builder at once, launching an instant-payment system called Pix in 2020" — a genuine, non-forced addition that fits the sentence's own point about a government-built payment system. Now 3 recycled terms (*central bank, payment system, regulator*). Updated the article's Vocabulary Focus line and `vocabulary-map.md`'s Topic Map row. Verified: word count 467 (still in range), citation markers == Source Notes, all 3 recycled terms present verbatim in the Reading.
+
+**1.2 Central Bank Digital Currencies - documented as an exception, not edited.** It is the book's second topic, so its only possible recycling source is 1.1 (Cryptocurrency Regulation), whose term set (cryptocurrency, blockchain, crypto exchange, stablecoin, issuer, supervision) has almost no genuine overlap with 1.2's CBDC-mechanics content beyond the one term already recycled (*stablecoin*). Forcing a third term in would have been padding, not real recycling. Added a formal "Accepted exception" note to `vocabulary-map.md` (distinct from the pre-existing general "Known limitation" note) so future QA passes treat this as resolved-by-decision rather than re-flagging it.
+
 ## 2026-09-12 (latest) - LTF QA TODO item 4 fixed: currency-style violations, both books
 
 Fixed item 4 from `qa-todo.md`: bare `¥`/`£` symbols in prose instead of the required ISO-code format (`house-style.md` §3: ISO 4217 code + space + number, e.g. `JPY 45,095.3 billion`).
