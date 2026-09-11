@@ -1,0 +1,584 @@
+Operation,Data,"Document 1"
+Statistics,"Sentence count",183
+Statistics,"Token count",8077
+Statistics,"Type count",1949
+Statistics,"Syllable count",14410
+Statistics,"Type/token ratio",0.24
+Statistics,"Words with more than 2 syllables",1419
+Statistics,"Words with more than 2 syllables - Percentage",17.57
+Statistics,"Average syllables per sentence",78.74
+Statistics,"Average syllables per word",1.78
+Statistics,"Syllables per 100 words",178.41
+Statistics,"Flesch Reading Ease",11.10
+Statistics,"Flesch-Kincaid Grade",22.68
+Statistics,"Gunning Fog Index",24.68
+Statistics,"Average Sentence Length",44.14
+"Lexical Diversity","Lexical diversity (VOCD)",151.24
+"Lexical Diversity","Lexical diversity (MTLD)",134.62
+Tagger,"Coverage %",100.00
+Tagger,"Coverage count",8077
+Tagger,"Coverage not counted",0
+Tagger,"Token count",8077
+Tagger,"Type count",1949
+Tagger,Elements,2262
+Tagger,"Type/token ratio",0.24
+Tagger,"Tokens per type",4.14
+Tagger,"Total Verbal Elements",599
+Tagger,"Verbal Elements per Sentence",3.27
+Tagger,"Total Noun Elements",1171
+Tagger,"Noun Elements per Sentence",6.40
+Tagger,"Token count ($)",0
+Tagger,"Token count (,)",0
+Tagger,"Token count (:)",0
+Tagger,"Token count (???)",0
+Tagger,"Token count (CD)",115
+Tagger,"Token count (CO)",283
+Tagger,"Token count (DAT)",764
+Tagger,"Token count (DT)",122
+Tagger,"Token count (DTW)",28
+Tagger,"Token count (EX)",0
+Tagger,"Token count (FW)",0
+Tagger,"Token count (GE)",0
+Tagger,"Token count (IN)",842
+Tagger,"Token count (JJ)",600
+Tagger,"Token count (JJR)",65
+Tagger,"Token count (JJS)",38
+Tagger,"Token count (LS)",0
+Tagger,"Token count (MD)",71
+Tagger,"Token count (NN)",1445
+Tagger,"Token count (NNS)",609
+Tagger,"Token count (NP)",921
+Tagger,"Token count (NPS)",80
+Tagger,"Token count (PDT)",0
+Tagger,"Token count (PN)",4
+Tagger,"Token count (PP)",128
+Tagger,"Token count (PP$)",56
+Tagger,"Token count (PWH)",69
+Tagger,"Token count (PWS)",85
+Tagger,"Token count (QQ)",19
+Tagger,"Token count (RB)",261
+Tagger,"Token count (RBR)",26
+Tagger,"Token count (RBS)",8
+Tagger,"Token count (STOP)",0
+Tagger,"Token count (SYM)",0
+Tagger,"Token count (THAT)",34
+Tagger,"Token count (TO)",155
+Tagger,"Token count (UH)",0
+Tagger,"Token count (VB)",12
+Tagger,"Token count (VBD)",34
+Tagger,"Token count (VBG)",1
+Tagger,"Token count (VBN)",7
+Tagger,"Token count (VBP)",25
+Tagger,"Token count (VBZ)",106
+Tagger,"Token count (VD)",4
+Tagger,"Token count (VDD)",18
+Tagger,"Token count (VDG)",3
+Tagger,"Token count (VDN)",1
+Tagger,"Token count (VDP)",12
+Tagger,"Token count (VDZ)",31
+Tagger,"Token count (VH)",2
+Tagger,"Token count (VHD)",8
+Tagger,"Token count (VHG)",0
+Tagger,"Token count (VHN)",0
+Tagger,"Token count (VHP)",11
+Tagger,"Token count (VHZ)",23
+Tagger,"Token count (VV)",214
+Tagger,"Token count (VVD)",157
+Tagger,"Token count (VVG)",155
+Tagger,"Token count (VVN)",157
+Tagger,"Token count (VVP)",104
+Tagger,"Token count (VVZ)",143
+Tagger,"Token count (WRB)",0
+Tagger,"Token count (XX)",21
+Tagger,"Type count ($)",0
+Tagger,"Type count (,)",0
+Tagger,"Type count (:)",0
+Tagger,"Type count (???)",0
+Tagger,"Type count (CD)",11
+Tagger,"Type count (CO)",9
+Tagger,"Type count (DAT)",3
+Tagger,"Type count (DT)",14
+Tagger,"Type count (DTW)",3
+Tagger,"Type count (EX)",0
+Tagger,"Type count (FW)",0
+Tagger,"Type count (GE)",0
+Tagger,"Type count (IN)",45
+Tagger,"Type count (JJ)",236
+Tagger,"Type count (JJR)",24
+Tagger,"Type count (JJS)",14
+Tagger,"Type count (LS)",0
+Tagger,"Type count (MD)",9
+Tagger,"Type count (NN)",523
+Tagger,"Type count (NNS)",235
+Tagger,"Type count (NP)",386
+Tagger,"Type count (NPS)",27
+Tagger,"Type count (PDT)",0
+Tagger,"Type count (PN)",4
+Tagger,"Type count (PP)",8
+Tagger,"Type count (PP$)",3
+Tagger,"Type count (PWH)",2
+Tagger,"Type count (PWS)",5
+Tagger,"Type count (QQ)",5
+Tagger,"Type count (RB)",92
+Tagger,"Type count (RBR)",8
+Tagger,"Type count (RBS)",3
+Tagger,"Type count (STOP)",0
+Tagger,"Type count (SYM)",0
+Tagger,"Type count (THAT)",1
+Tagger,"Type count (TO)",1
+Tagger,"Type count (UH)",0
+Tagger,"Type count (VB)",1
+Tagger,"Type count (VBD)",2
+Tagger,"Type count (VBG)",1
+Tagger,"Type count (VBN)",1
+Tagger,"Type count (VBP)",1
+Tagger,"Type count (VBZ)",1
+Tagger,"Type count (VD)",1
+Tagger,"Type count (VDD)",1
+Tagger,"Type count (VDG)",1
+Tagger,"Type count (VDN)",1
+Tagger,"Type count (VDP)",1
+Tagger,"Type count (VDZ)",1
+Tagger,"Type count (VH)",1
+Tagger,"Type count (VHD)",1
+Tagger,"Type count (VHG)",0
+Tagger,"Type count (VHN)",0
+Tagger,"Type count (VHP)",1
+Tagger,"Type count (VHZ)",1
+Tagger,"Type count (VV)",115
+Tagger,"Type count (VVD)",101
+Tagger,"Type count (VVG)",102
+Tagger,"Type count (VVN)",102
+Tagger,"Type count (VVP)",59
+Tagger,"Type count (VVZ)",94
+Tagger,"Type count (WRB)",0
+Tagger,"Type count (XX)",1
+Errors,"Spelling errors total",107
+Errors,"Spelling errors per sentence",0.58
+Errors,"Spelling errors per 100 words",1.32
+Errors,"ALL errors total",107
+Errors,"Total errors per sentence",0.58
+Errors,"Total errors per 100 words",1.32
+"Lexis: EVP","A1 type count",338
+"Lexis: EVP","A2 type count",328
+"Lexis: EVP","B1 type count",379
+"Lexis: EVP","B2 type count",310
+"Lexis: EVP","C1 type count",102
+"Lexis: EVP","C2 type count",54
+"Lexis: EVP","Known Words type count",0
+"Lexis: EVP","Unlisted type count",468
+"Lexis: EVP","A1 token count",3900
+"Lexis: EVP","A2 token count",1046
+"Lexis: EVP","B1 token count",994
+"Lexis: EVP","B2 token count",833
+"Lexis: EVP","C1 token count",221
+"Lexis: EVP","C2 token count",112
+"Lexis: EVP","Known Words token count",0
+"Lexis: EVP","Unlisted token count",907
+"Lexis: EVP","A1 type %",17.08
+"Lexis: EVP","A2 type %",16.57
+"Lexis: EVP","B1 type %",19.15
+"Lexis: EVP","B2 type %",15.66
+"Lexis: EVP","C1 type %",5.15
+"Lexis: EVP","C2 type %",2.73
+"Lexis: EVP","Known Words type %",0.00
+"Lexis: EVP","Unlisted type %",23.65
+"Lexis: EVP","A1 token %",48.67
+"Lexis: EVP","A2 token %",13.05
+"Lexis: EVP","B1 token %",12.40
+"Lexis: EVP","B2 token %",10.40
+"Lexis: EVP","C1 token %",2.76
+"Lexis: EVP","C2 token %",1.40
+"Lexis: EVP","Known Words token %",0.00
+"Lexis: EVP","Unlisted token %",11.32
+"Lexis: BC-ES","Coverage %",55.99
+"Lexis: BC-ES","Coverage count",4522
+"Lexis: BC-ES","Coverage not counted",3555
+"Lexis: BC-ES","Token count",8077
+"Lexis: BC-ES","Type count",1949
+"Lexis: BC-ES",Elements,2143
+"Lexis: BC-ES","Total Lexical Frequency Count (tokens)",11273786
+"Lexis: BC-ES","Total Lexical Frequency Count (types)",4251661
+"Lexis: BC-ES","Mean LFC per token",2493.10
+"Lexis: BC-ES","Mean LFC per type",2181.46
+"Lexis: BC-ES","Mean LFC per 100 tokens",249309.73
+"Lexis: BC-ES","Mean LFC per 100 types",218145.77
+"Lexis: BC-ES","50th Percentile (types)",1440
+"Lexis: BC-ES","60th Percentile (types)",2350
+"Lexis: BC-ES","70th Percentile (types)",3370
+"Lexis: BC-ES","80th Percentile (types)",4460
+"Lexis: BC-ES","50th Percentile (tokens)",1860
+"Lexis: BC-ES","60th Percentile (tokens)",2700
+"Lexis: BC-ES","70th Percentile (tokens)",3640
+"Lexis: BC-ES","80th Percentile (tokens)",4510
+"Lexis: BC-ES","Type count (0-500)",217
+"Lexis: BC-ES","Type count (500-1K)",149
+"Lexis: BC-ES","Type count (1K-1.5K)",145
+"Lexis: BC-ES","Type count (1.5K-2K)",121
+"Lexis: BC-ES","Type count (2K-2.5K)",114
+"Lexis: BC-ES","Type count (2.5K-3K)",110
+"Lexis: BC-ES","Type count (3K-3.5K)",93
+"Lexis: BC-ES","Type count (3.5K-4K)",93
+"Lexis: BC-ES","Type count (4K-4.5K)",89
+"Lexis: BC-ES","Type count (4.5K-5K)",87
+"Lexis: BC-ES","Type count (5K-5.5K)",70
+"Lexis: BC-ES","Type count (5.5K-6K)",69
+"Lexis: BC-ES","Type count (6K-6.5K)",65
+"Lexis: BC-ES","Type count (6.5K-7K)",49
+"Lexis: BC-ES","Type count (7K-7.5K)",68
+"Lexis: BC-ES","Type count (7.5K-8K)",1
+"Lexis: BC-ES","Type count (Known Words)",0
+"Lexis: BC-ES","Type count (Off-list)",603
+"Lexis: BC-ES","Type percent (0-500)",10.13
+"Lexis: BC-ES","Type percent (500-1K)",6.95
+"Lexis: BC-ES","Type percent (1K-1.5K)",6.77
+"Lexis: BC-ES","Type percent (1.5K-2K)",5.65
+"Lexis: BC-ES","Type percent (2K-2.5K)",5.32
+"Lexis: BC-ES","Type percent (2.5K-3K)",5.13
+"Lexis: BC-ES","Type percent (3K-3.5K)",4.34
+"Lexis: BC-ES","Type percent (3.5K-4K)",4.34
+"Lexis: BC-ES","Type percent (4K-4.5K)",4.15
+"Lexis: BC-ES","Type percent (4.5K-5K)",4.06
+"Lexis: BC-ES","Type percent (5K-5.5K)",3.27
+"Lexis: BC-ES","Type percent (5.5K-6K)",3.22
+"Lexis: BC-ES","Type percent (6K-6.5K)",3.03
+"Lexis: BC-ES","Type percent (6.5K-7K)",2.29
+"Lexis: BC-ES","Type percent (7K-7.5K)",3.17
+"Lexis: BC-ES","Type percent (7.5K-8K)",0.05
+"Lexis: BC-ES","Type percent (Known Words)",0.00
+"Lexis: BC-ES","Type percent (Off-list)",28.14
+"Lexis: BC-ES","Token count (0-500)",1026
+"Lexis: BC-ES","Token count (500-1K)",522
+"Lexis: BC-ES","Token count (1K-1.5K)",417
+"Lexis: BC-ES","Token count (1.5K-2K)",352
+"Lexis: BC-ES","Token count (2K-2.5K)",305
+"Lexis: BC-ES","Token count (2.5K-3K)",295
+"Lexis: BC-ES","Token count (3K-3.5K)",206
+"Lexis: BC-ES","Token count (3.5K-4K)",198
+"Lexis: BC-ES","Token count (4K-4.5K)",284
+"Lexis: BC-ES","Token count (4.5K-5K)",178
+"Lexis: BC-ES","Token count (5K-5.5K)",146
+"Lexis: BC-ES","Token count (5.5K-6K)",183
+"Lexis: BC-ES","Token count (6K-6.5K)",147
+"Lexis: BC-ES","Token count (6.5K-7K)",113
+"Lexis: BC-ES","Token count (7K-7.5K)",148
+"Lexis: BC-ES","Token count (7.5K-8K)",2
+"Lexis: BC-ES","Token count (Known Words)",0
+"Lexis: BC-ES","Token count (Off-list)",3555
+"Lexis: BC-ES","Token percent (0-500)",12.70
+"Lexis: BC-ES","Token percent (500-1K)",6.46
+"Lexis: BC-ES","Token percent (1K-1.5K)",5.16
+"Lexis: BC-ES","Token percent (1.5K-2K)",4.36
+"Lexis: BC-ES","Token percent (2K-2.5K)",3.78
+"Lexis: BC-ES","Token percent (2.5K-3K)",3.65
+"Lexis: BC-ES","Token percent (3K-3.5K)",2.55
+"Lexis: BC-ES","Token percent (3.5K-4K)",2.45
+"Lexis: BC-ES","Token percent (4K-4.5K)",3.52
+"Lexis: BC-ES","Token percent (4.5K-5K)",2.20
+"Lexis: BC-ES","Token percent (5K-5.5K)",1.81
+"Lexis: BC-ES","Token percent (5.5K-6K)",2.27
+"Lexis: BC-ES","Token percent (6K-6.5K)",1.82
+"Lexis: BC-ES","Token percent (6.5K-7K)",1.40
+"Lexis: BC-ES","Token percent (7K-7.5K)",1.83
+"Lexis: BC-ES","Token percent (7.5K-8K)",0.02
+"Lexis: BC-ES","Token percent (Known Words)",0.00
+"Lexis: BC-ES","Token percent (Off-list)",44.01
+"Lexis: BNC","Coverage %",94.35
+"Lexis: BNC","Coverage count",7621
+"Lexis: BNC","Coverage not counted",456
+"Lexis: BNC","Token count",8077
+"Lexis: BNC","Type count",1949
+"Lexis: BNC",Elements,2256
+"Lexis: BNC","Total Lexical Frequency Count (tokens)",23331937
+"Lexis: BNC","Total Lexical Frequency Count (types)",11803126
+"Lexis: BNC","Mean LFC per token",3061.53
+"Lexis: BNC","Mean LFC per type",6055.99
+"Lexis: BNC","Mean LFC per 100 tokens",306153.22
+"Lexis: BNC","Mean LFC per 100 types",605599.08
+"Lexis: BNC","50th Percentile (types)",1920
+"Lexis: BNC","60th Percentile (types)",3080
+"Lexis: BNC","70th Percentile (types)",4560
+"Lexis: BNC","80th Percentile (types)",7280
+"Lexis: BNC","50th Percentile (tokens)",400
+"Lexis: BNC","60th Percentile (tokens)",790
+"Lexis: BNC","70th Percentile (tokens)",1610
+"Lexis: BNC","80th Percentile (tokens)",3120
+"Lexis: BNC","Type count (0-1K)",605
+"Lexis: BNC","Type count (1K-2K)",312
+"Lexis: BNC","Type count (2K-3K)",206
+"Lexis: BNC","Type count (3K-4K)",164
+"Lexis: BNC","Type count (4K-5K)",117
+"Lexis: BNC","Type count (5K-6K)",90
+"Lexis: BNC","Type count (6K-7K)",66
+"Lexis: BNC","Type count (7K-8K)",54
+"Lexis: BNC","Type count (8K-9K)",48
+"Lexis: BNC","Type count (9K-10K)",34
+"Lexis: BNC","Type count (10K-20K)",165
+"Lexis: BNC","Type count (20K-30K)",55
+"Lexis: BNC","Type count (30K-40K)",34
+"Lexis: BNC","Type count (40K-50K)",14
+"Lexis: BNC","Type count (50K-60K)",9
+"Lexis: BNC","Type count (60K-70K)",6
+"Lexis: BNC","Type count (70K-80K)",9
+"Lexis: BNC","Type count (80K-90K)",8
+"Lexis: BNC","Type count (90K-100K)",11
+"Lexis: BNC","Type count (100K+)",0
+"Lexis: BNC","Type count (Known Words)",0
+"Lexis: BNC","Type count (Off-list)",249
+"Lexis: BNC","Type percent (0-1K)",26.82
+"Lexis: BNC","Type percent (1K-2K)",13.83
+"Lexis: BNC","Type percent (2K-3K)",9.13
+"Lexis: BNC","Type percent (3K-4K)",7.27
+"Lexis: BNC","Type percent (4K-5K)",5.19
+"Lexis: BNC","Type percent (5K-6K)",3.99
+"Lexis: BNC","Type percent (6K-7K)",2.93
+"Lexis: BNC","Type percent (7K-8K)",2.39
+"Lexis: BNC","Type percent (8K-9K)",2.13
+"Lexis: BNC","Type percent (9K-10K)",1.51
+"Lexis: BNC","Type percent (10K-20K)",7.31
+"Lexis: BNC","Type percent (20K-30K)",2.44
+"Lexis: BNC","Type percent (30K-40K)",1.51
+"Lexis: BNC","Type percent (40K-50K)",0.62
+"Lexis: BNC","Type percent (50K-60K)",0.40
+"Lexis: BNC","Type percent (60K-70K)",0.27
+"Lexis: BNC","Type percent (70K-80K)",0.40
+"Lexis: BNC","Type percent (80K-90K)",0.35
+"Lexis: BNC","Type percent (90K-100K)",0.49
+"Lexis: BNC","Type percent (100K+)",0.00
+"Lexis: BNC","Type percent (Known Words)",0.00
+"Lexis: BNC","Type percent (Off-list)",11.04
+"Lexis: BNC","Token count (0-1K)",4814
+"Lexis: BNC","Token count (1K-2K)",736
+"Lexis: BNC","Token count (2K-3K)",496
+"Lexis: BNC","Token count (3K-4K)",338
+"Lexis: BNC","Token count (4K-5K)",222
+"Lexis: BNC","Token count (5K-6K)",156
+"Lexis: BNC","Token count (6K-7K)",123
+"Lexis: BNC","Token count (7K-8K)",79
+"Lexis: BNC","Token count (8K-9K)",71
+"Lexis: BNC","Token count (9K-10K)",68
+"Lexis: BNC","Token count (10K-20K)",290
+"Lexis: BNC","Token count (20K-30K)",91
+"Lexis: BNC","Token count (30K-40K)",40
+"Lexis: BNC","Token count (40K-50K)",19
+"Lexis: BNC","Token count (50K-60K)",15
+"Lexis: BNC","Token count (60K-70K)",9
+"Lexis: BNC","Token count (70K-80K)",19
+"Lexis: BNC","Token count (80K-90K)",14
+"Lexis: BNC","Token count (90K-100K)",21
+"Lexis: BNC","Token count (100K+)",0
+"Lexis: BNC","Token count (Known Words)",0
+"Lexis: BNC","Token count (Off-list)",456
+"Lexis: BNC","Token percent (0-1K)",59.60
+"Lexis: BNC","Token percent (1K-2K)",9.11
+"Lexis: BNC","Token percent (2K-3K)",6.14
+"Lexis: BNC","Token percent (3K-4K)",4.18
+"Lexis: BNC","Token percent (4K-5K)",2.75
+"Lexis: BNC","Token percent (5K-6K)",1.93
+"Lexis: BNC","Token percent (6K-7K)",1.52
+"Lexis: BNC","Token percent (7K-8K)",0.98
+"Lexis: BNC","Token percent (8K-9K)",0.88
+"Lexis: BNC","Token percent (9K-10K)",0.84
+"Lexis: BNC","Token percent (10K-20K)",3.59
+"Lexis: BNC","Token percent (20K-30K)",1.13
+"Lexis: BNC","Token percent (30K-40K)",0.50
+"Lexis: BNC","Token percent (40K-50K)",0.24
+"Lexis: BNC","Token percent (50K-60K)",0.19
+"Lexis: BNC","Token percent (60K-70K)",0.11
+"Lexis: BNC","Token percent (70K-80K)",0.24
+"Lexis: BNC","Token percent (80K-90K)",0.17
+"Lexis: BNC","Token percent (90K-100K)",0.26
+"Lexis: BNC","Token percent (100K+)",0.00
+"Lexis: BNC","Token percent (Known Words)",0.00
+"Lexis: BNC","Token percent (Off-list)",5.65
+"Lexis: AWL","AWL All Types count",299
+"Lexis: AWL","AWL 1 type count",89
+"Lexis: AWL","AWL 2 type count",46
+"Lexis: AWL","AWL 3 type count",32
+"Lexis: AWL","AWL 4 type count",37
+"Lexis: AWL","AWL 5 type count",27
+"Lexis: AWL","AWL 6 type count",22
+"Lexis: AWL","AWL 7 type count",18
+"Lexis: AWL","AWL 8 type count",10
+"Lexis: AWL","AWL 9 type count",10
+"Lexis: AWL","AWL 10 type count",8
+"Lexis: AWL","K1 type count",11
+"Lexis: AWL","K2 type count",12
+"Lexis: AWL","K3 type count",8
+"Lexis: AWL","K4 type count",9
+"Lexis: AWL","K5 type count",3
+"Lexis: AWL","Unlisted type count",1641
+"Lexis: AWL","AWL All Tokens count",803
+"Lexis: AWL","AWL 1 token count",271
+"Lexis: AWL","AWL 2 token count",117
+"Lexis: AWL","AWL 3 token count",76
+"Lexis: AWL","AWL 4 token count",95
+"Lexis: AWL","AWL 5 token count",51
+"Lexis: AWL","AWL 6 token count",89
+"Lexis: AWL","AWL 7 token count",42
+"Lexis: AWL","AWL 8 token count",34
+"Lexis: AWL","AWL 9 token count",17
+"Lexis: AWL","AWL 10 token count",11
+"Lexis: AWL","K1 token count",37
+"Lexis: AWL","K2 token count",18
+"Lexis: AWL","K3 token count",12
+"Lexis: AWL","K4 token count",9
+"Lexis: AWL","K5 token count",3
+"Lexis: AWL","Unlisted token count",7114
+"Lexis: AWL","AWL All Types %",15.08
+"Lexis: AWL","AWL 1 type %",4.49
+"Lexis: AWL","AWL 2 type %",2.32
+"Lexis: AWL","AWL 3 type %",1.61
+"Lexis: AWL","AWL 4 type %",1.87
+"Lexis: AWL","AWL 5 type %",1.36
+"Lexis: AWL","AWL 6 type %",1.11
+"Lexis: AWL","AWL 7 type %",0.91
+"Lexis: AWL","AWL 8 type %",0.50
+"Lexis: AWL","AWL 9 type %",0.50
+"Lexis: AWL","AWL 10 type %",0.40
+"Lexis: AWL","K1 type %",0.55
+"Lexis: AWL","K2 type %",0.61
+"Lexis: AWL","K3 type %",0.40
+"Lexis: AWL","K4 type %",0.45
+"Lexis: AWL","K5 type %",0.15
+"Lexis: AWL","Unlisted type %",82.75
+"Lexis: AWL","AWL All Tokens %",10.04
+"Lexis: AWL","AWL 1 token %",3.39
+"Lexis: AWL","AWL 2 token %",1.46
+"Lexis: AWL","AWL 3 token %",0.95
+"Lexis: AWL","AWL 4 token %",1.19
+"Lexis: AWL","AWL 5 token %",0.64
+"Lexis: AWL","AWL 6 token %",1.11
+"Lexis: AWL","AWL 7 token %",0.53
+"Lexis: AWL","AWL 8 token %",0.43
+"Lexis: AWL","AWL 9 token %",0.21
+"Lexis: AWL","AWL 10 token %",0.14
+"Lexis: AWL","K1 token %",0.46
+"Lexis: AWL","K2 token %",0.23
+"Lexis: AWL","K3 token %",0.15
+"Lexis: AWL","K4 token %",0.11
+"Lexis: AWL","K5 token %",0.04
+"Lexis: AWL","Unlisted token %",88.97
+Metadiscourse,"Total type count",68
+Metadiscourse,"Total type %",3.48
+Metadiscourse,"Announce Goals type count",0
+Metadiscourse,"Attitude marker type count",7
+Metadiscourse,"Code gloss type count",5
+Metadiscourse,"Emphatic type count",5
+Metadiscourse,"Endophoric type count",1
+Metadiscourse,"Evidential type count",10
+Metadiscourse,"Hedge type count",12
+Metadiscourse,"Label stage type count",0
+Metadiscourse,"Logical connective type count",14
+Metadiscourse,"Person marker type count",0
+Metadiscourse,"Relational marker type count",4
+Metadiscourse,"Sequencing type count",9
+Metadiscourse,"Topic shift type count",1
+Metadiscourse,"Unlisted type count",1888
+Metadiscourse,"Total token count",627
+Metadiscourse,"Total token %",7.78
+Metadiscourse,"Announce Goals token count",0
+Metadiscourse,"Attitude marker token count",16
+Metadiscourse,"Code gloss token count",17
+Metadiscourse,"Emphatic token count",32
+Metadiscourse,"Endophoric token count",4
+Metadiscourse,"Evidential token count",29
+Metadiscourse,"Hedge token count",59
+Metadiscourse,"Label stage token count",0
+Metadiscourse,"Logical connective token count",314
+Metadiscourse,"Person marker token count",0
+Metadiscourse,"Relational marker token count",79
+Metadiscourse,"Sequencing token count",75
+Metadiscourse,"Topic shift token count",2
+Metadiscourse,"Unlisted token count",7433
+Metadiscourse,"Announce Goals type %",0.00
+Metadiscourse,"Attitude marker type %",0.36
+Metadiscourse,"Code gloss type %",0.26
+Metadiscourse,"Emphatic type %",0.26
+Metadiscourse,"Endophoric type %",0.05
+Metadiscourse,"Evidential type %",0.51
+Metadiscourse,"Hedge type %",0.61
+Metadiscourse,"Label stage type %",0.00
+Metadiscourse,"Logical connective type %",0.72
+Metadiscourse,"Person marker type %",0.00
+Metadiscourse,"Relational marker type %",0.20
+Metadiscourse,"Sequencing type %",0.46
+Metadiscourse,"Topic shift type %",0.05
+Metadiscourse,"Unlisted type %",96.52
+Metadiscourse,"Announce Goals token %",0.00
+Metadiscourse,"Attitude marker token %",0.20
+Metadiscourse,"Code gloss token %",0.21
+Metadiscourse,"Emphatic token %",0.40
+Metadiscourse,"Endophoric token %",0.05
+Metadiscourse,"Evidential token %",0.36
+Metadiscourse,"Hedge token %",0.73
+Metadiscourse,"Label stage token %",0.00
+Metadiscourse,"Logical connective token %",3.90
+Metadiscourse,"Person marker token %",0.00
+Metadiscourse,"Relational marker token %",0.98
+Metadiscourse,"Sequencing token %",0.93
+Metadiscourse,"Topic shift token %",0.02
+Metadiscourse,"Unlisted token %",92.22
+Scorecard,"OVERALL RATING"," "
+Scorecard,Percentage,78.22
+Scorecard,"Number of metrics used",15
+Scorecard,"CEFR level",C2+
+Scorecard,"READING METRICS"," "
+Scorecard,Statistics,
+Scorecard,"Statistics - CEFR level",
+Scorecard,"Average Syllables per sentence",78.74
+Scorecard,"Average Syllables per sentence - CEFR level",D1
+Scorecard,"Average words per sentence",44.14
+Scorecard,"Average words per sentence - CEFR level",D1
+Scorecard,Readability,
+Scorecard,"Readability - CEFR level",
+Scorecard,"Flesch Kincaid Reading Ease",11.10
+Scorecard,"Flesch Kincaid Reading Ease - CEFR level",D1
+Scorecard,"Flesch Kincaid Reading Grade",22.68
+Scorecard,"Flesch Kincaid Reading Grade - CEFR level",D1
+Scorecard,"Gunning Fog",24.68
+Scorecard,"Gunning Fog - CEFR level",D1
+Scorecard,"Propositional Density",
+Scorecard,"Propositional Density - CEFR level",
+Scorecard,"Verbal elements per sentence",3.27
+Scorecard,"Verbal elements per sentence - CEFR level","Not calculated"
+Scorecard,"Nominal elements per sentence",6.40
+Scorecard,"Nominal elements per sentence - CEFR level",C2+
+Scorecard,"Lexical Sophistication",
+Scorecard,"Lexical Sophistication - CEFR level",
+Scorecard,"EVP: % of words (types) at A1 level",31.92
+Scorecard,"EVP: % of words (types) at A1 level - CEFR level",C2+
+Scorecard,"EVP: % of words (types) at B2 level",13.02
+Scorecard,"EVP: % of words (types) at B2 level - CEFR level",C2+
+Scorecard,"EVP: % of words (types) at C1 level",3.55
+Scorecard,"EVP: % of words (types) at C1 level - CEFR level",C2
+Scorecard,"BNC 50th percentile (Types)",856.43
+Scorecard,"BNC 50th percentile (Types) - CEFR level",C2+
+Scorecard,"BNC 60th percentile (Types)",1512.86
+Scorecard,"BNC 60th percentile (Types) - CEFR level",C2
+Scorecard,"COCA 50th percentile (Types)",941.43
+Scorecard,"COCA 50th percentile (Types) - CEFR level",C2+
+Scorecard,"COCA 60th percentile (Types)",1509.29
+Scorecard,"COCA 60th percentile (Types) - CEFR level",C2
+Scorecard,"Lexical Sophistication (academic)",
+Scorecard,"Lexical Sophistication (academic) - CEFR level",
+Scorecard,"Academic Word List: % of all AWL words (types) in the text",15.08
+Scorecard,"Academic Word List: % of all AWL words (types) in the text - CEFR level",C2+
+Scorecard,Metadiscourse,
+Scorecard,"Metadiscourse - CEFR level",
+Scorecard,"Metadiscourse: % of Logical Connectives (tokens)",3.90
+Scorecard,"Metadiscourse: % of Logical Connectives (tokens) - CEFR level",B1+
+Scorecard,"PARSER SUMMARIES"," "
+Scorecard,"Diversity - Lexical Diversity (MTLD)",134.62
+Scorecard,"LEXIS: EVP - A1 Type %",31.92
+Scorecard,"LEXIS: EVP - B1 Type %",16.22
+Scorecard,"LEXIS: EVP - B2 Type %",13.02
+Scorecard,"LEXIS: EVP - C1 Type %",3.55
+Scorecard,"LEXIS: EVP - A1 Token %",48.60
+Scorecard,"LEXIS: EVP - B2 Token %",10.36
+Scorecard,"LEXIS: BNC - Mean LFC per 100 types",605599.08
+Scorecard,"LEXIS: COCA - Mean LFC per type",5951.20
+Scorecard,"LEXIS: AWL - All Types %",15.08
+Scorecard,"LEXIS: AWL - AWL 1 Type %",4.49
+Scorecard,"LEXIS: AWL - All Tokens %",10.04
+Scorecard,"LEXIS: AWL - AWL 1 Tokens %",3.39
