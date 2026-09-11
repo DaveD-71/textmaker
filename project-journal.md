@@ -1,5 +1,22 @@
 # Project Journal
 
+## 2026-09-12 (later still) - LTF QA TODO item 2 fixed: backfilled both company-and-geography-audit files
+
+Fixed item 2 from `qa-todo.md`: both books' `drafts/control/company-and-geography-audit.md` were still the blank Phase-3 template through all four drafting batches.
+
+**Method:** rather than re-reading all 40 articles from scratch, built both files from `topic-ledger.md`'s cross-topic evidence register (already comprehensive and current, 184 entries covering all 40 topics) plus a keyword-based region tagger, cross-checked the resulting company/case frequency against the ledger's own "Also referenced (light)" column to confirm no undocumented duplication beyond what item 1 already fixed.
+
+**Real gap found and fixed while backfilling:** Book B topic **1.1 (The Cost of Living and Inflation)** - the book's own prototype topic, drafted 2026-08-28 - had never been added to `topic-ledger.md`'s evidence register at all (only listed in the topic-name table, not the evidence register). Added its primary evidence (US CPI 9.1% June 2022, Argentina 211% inflation 2023, Japan's ~25-year near-zero-inflation baseline + 2024 BOJ move, Japan's 2025 rice-price shock, ECB/BoE/Fed 2% target) to the ledger now.
+
+**Both audit files now record:** per-topic primary/secondary evidence and region tags (all 20 topics, both books); a company/case frequency table flagging only genuine multi-topic repeats (cross-checked against the ledger, all found to be already-documented distinct-angle callbacks, e.g. TSE's two separate actions, Sri Lanka's two separate facts, Japan-debt's precise-vs-rounded figure split); a geographic-balance tally per region.
+
+**Findings flagged (not fixed, since they're read-only audit content, not article defects requiring a rewrite):**
+- Book A: US/Americas (13 topics) and Europe (15 topics) both exceed the ~6-topic "no region dominates" guideline in the audit template - flagged as expected given the book's systemic/regulatory subject matter (US/EU regulators are the natural primary source for many global-standard topics), not treated as a violation, since Japan is never the *sole* dominant region in any topic and the actual "no country dominates" checklist intent is about Japan specifically, per house-style §1a.
+- Book B: same pattern (Americas 17, Europe 14) for the same reason (personal-finance/market-mechanics topics naturally draw on US/UK/EU cases and data). Book B alone has **zero Latin America primary topics** - a real, if minor, gap; Book A covers Latin America twice (1.5, 3.1) so the two books together are not thin on the region, but Book B alone is.
+- Five topics across both books (A: 1.4, 2.4; B: 1.1, 2.1, 3.2) read thin on region count from the keyword-derived tagging (2 or fewer detected regions) - flagged for a manual double-check rather than treated as confirmed defects, since this was a data-driven backfill from the ledger's text, not a fresh close read of the 40 articles. Both 2026-09-12 QA audit agents already did that close read and independently found the geography solid in both books, so this is a low-priority follow-up, not a known problem.
+
+**Verified:** both files have exactly 20 topic rows (mechanical count), and both correctly reflect item 1's SVB/Signature Bank fix (Signature Bank now under A 2.4; SVB confirmed as B 2.5's sole primary use across both books).
+
 ## 2026-09-12 (later) - LTF QA TODO item 1 fixed: SVB cross-topic duplication
 
 Fixed the first item from `books/_lets-talk-finance-shared/qa-todo.md` (from the 2026-09-12 whole-book QA audit): Book A `2-4_Stress_Testing_and_Risk_Management.md` and Book B `2-5_Banks_What_They_Do_and_How_They_Fail.md` both used the identical SVB "$40 billion in a single day" statistic as primary evidence.

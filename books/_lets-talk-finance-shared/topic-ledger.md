@@ -118,6 +118,7 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | India Jan Dhan (2014, >500m accounts); ~16% India account dormancy | A 1.5 Financial Inclusion | — | access-vs-use anchor |
 | Brazil Pix (central bank, 2020; two-thirds of adults within ~1 year) | A 1.5 Financial Inclusion | — | regulator-as-builder anchor |
 | Japan cashless ratio ~43% in 2024 (METI); Japan Post Bank (1875, ~24,000 branches) | A 1.5 Financial Inclusion | — | Japan-different-meaning anchor |
+| US CPI 9.1% June 2022 (BLS, 40-year high); Argentina 211% annual inflation 2023; Japan near-zero/deflation ~25 years then BOJ 2024 rate move above zero; Japan 2025 rice-price shock (~¥4,260/5kg, ~2x YoY); ECB/BoE/Fed 2% inflation target | B 1.1 Cost of Living and Inflation | — | opening-topic anchor; backfilled 2026-09-12 (was missing from the register entirely — never added when the register was created after this prototype topic was drafted) |
 | US card APR ~21% vs 30-yr mortgage ~6.7% (2026; Fed G.19 / Freddie Mac) | B 1.2 Consumer Debt | — | secured-vs-unsecured anchor |
 | US household debt US$18.8tn / cards US$1.26tn (NY Fed Q2 2026) | B 1.2 Consumer Debt | — | |
 | South Korea household debt >2,000tn won (2026), mostly home loans | B 1.2 Consumer Debt | — | high-leverage contrast |

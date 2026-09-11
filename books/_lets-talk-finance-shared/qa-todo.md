@@ -15,11 +15,12 @@ Ordered by priority (most significant first).
 - [x] Updated `topic-ledger.md`'s evidence register: Signature Bank now has its own primary-evidence row under A 2.4; the SVB row is annotated as B 2.5's sole primary use across both books.
 - [ ] Not yet done: `company-and-geography-audit.md` backfill (item 2 below) should record Signature Bank under A 2.4 once that file is populated.
 
-## 2. Backfill the company-and-geography-audit control files
+## 2. Backfill the company-and-geography-audit control files ✅ DONE 2026-09-12
 
-- [ ] `Let's Talk Finance/drafts/control/company-and-geography-audit.md` — still the blank Phase-3 template. Populate retroactively from the 20 articles (both audit agents already did this rebuild by hand this session — reuse their per-topic tables rather than redoing the work from scratch).
-- [ ] `Let's Talk Finance 2/drafts/control/company-and-geography-audit.md` — same, still blank.
-- [ ] Once populated, this becomes the standing guard against a repeat of item 1 — treat an unpopulated control file as a red flag to check explicitly at the end of every future batch, not just at final QA.
+- [x] `Let's Talk Finance/drafts/control/company-and-geography-audit.md` — backfilled from `topic-ledger.md`'s evidence register (all 20 topics, geographic-balance tally, company/case frequency cross-check against the ledger's own "Also referenced" column). Region tags are keyword-derived from the ledger text, not a fresh re-read — two topics (1.4, 2.4) flagged as reading thin (only 2 detected regions) for a manual double-check, not treated as confirmed gaps.
+- [x] `Let's Talk Finance 2/drafts/control/company-and-geography-audit.md` — same treatment. Found and fixed a real gap while backfilling: **topic 1.1 (the book's own prototype topic) had never been added to `topic-ledger.md`'s evidence register at all** — added it now. Three topics (2.1, 3.2, 1.1) flagged thin for a manual double-check. Also flagged: Book B alone has zero Latin America primary topics (Book A covers it twice, so the two books together are fine, but Book B alone is thin there).
+- [x] Both files now record Signature Bank (A 2.4) and confirm SVB is used as primary evidence only in B 2.5 — consistent with the item-1 fix.
+- [ ] Not yet done: a full manual re-read to confirm the keyword-derived region tags on the ~5 flagged "thin" topics above (this was a data-driven backfill from the ledger, not a fresh close read of all 40 articles — the two QA audit agents already did that close read and found the geography solid in both books, so this is a low-priority follow-up, not a known defect).
 
 ## 3. Editorial pass: word count and sentence length in Parts 3–4 (both books)
 
