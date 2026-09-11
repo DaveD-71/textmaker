@@ -1,5 +1,36 @@
 # Project Journal
 
+## 2026-09-11 (later) - LTF Batch 3-4: article-checklist + URL verification pass run
+
+Ran the deferred checks on all 20 Batch-3/4 Readings (Books A + B, Parts 3-4): `_lets-talk-finance-shared/article-checklist.md` mechanically, plus a WebFetch/WebSearch verification pass over prose and every Source Note URL. Commit `1f79710`.
+
+**Checklist - all 20 pass on:** 6-subsection template + numbering, exactly 5+5 questions, citation-marker integrity (distinct `[N]` == Source Note count, no gaps), >=1 anchor case + >=2 factual anchors, >=3 regions with no country dominant, 6 New terms, all Recycled terms verified present in the Reading/questions, vocab-map rows match the articles exactly (all 20), article shape + opening match the batch shape-plans, endings article-specific, no self-reference, no kicker endings.
+
+**Checklist - issues found:**
+- **Word count over the D3 ~490 ceiling in 14 of 20 Readings; 6 are 540-590** (worst: A 4-5 = 586, B 3-3 = 589 [594 after edits], B 3-5-COVID recovery A 3-5 = 547; also B 4-2 552, B 4-5 561, B 4-1 542, B 4-3 576, B 4-4 546, A 4-3 538, A 4-4 527). In range: A 3-1 484, A 4-1 479, A 4-2 496, B 3-5 497. Real gate is the Phase-7 rendered-PDF page-fit check (no 2-column A4 reference DOCX exists yet); at draft stage this is the main failure. **Not fixed this pass** - folds into DDobson's editorial read of Batches 1-4.
+- **Over-long sentences** (house-style: mostly 15-25 words; Batch-2 working ceiling <=38). Genuine offenders, worst first: A 4-5 (63w Sakhalin sentence + four more 47-54w), A 4-3 (69w Zucman sentence + 47w Japan-tax + 47w toolkit), B 3-3 (51w), A 3-5 (47w QE sentence + 42w output-gap), B 4-4 (60w + 55w), B 4-1 (53w revenue-mix chain-list). Several have 3+ subordinate clauses - need splitting, not just trimming. **Not fixed this pass.**
+- **Recycled-term lists at the floor (3)** in A 3-1, A 4-2, A 4-3, B 3-2, B 4-3, B 4-4 - checklist minimum is 3 so they pass. Extended the "known limitation" note in both `vocabulary-map.md` files to cover Parts 3-4.
+
+**URL verification - the 4 journal-flagged items all resolved:** A 3-4 [4] (SSA International Update June 2023 confirmed at that URL, covers France 62->64), B 3-2 [6] (Princeton UP - exact title/subtitle confirmed), B 3-1 [4] (CNBC `decpoint18` slug is real, content matches), B 4-4 Rob Reich *Just Giving* (already reworded - text names Reich as a critic, no book title, no citation needed).
+
+**URL verification - 6 real citation defects found and fixed (commit `1f79710`):**
+1. **A 3-3 [1]** - "foreign exporters absorbed nearly half" was cited to NY Fed Source [1], which found the OPPOSITE (~90% on US firms). The "nearly half" is Caroline Freund's study (CEPR/VoxEU, DP 21798, 2026). Added as a distinct source; renumbered markers 2-7 to keep first-appearance order (7 sources now, integrity re-verified).
+2. **B 3-3 [1]** - cited DOE page was a *2026* SPR release of 172m barrels ("President Trump authorized..."), not the March 2022 release of 180m. Swapped to DOE "History of SPR Releases"; reworded sentence ("largest drawdown in the reserve's history", released over six months).
+3. **B 3-2 [4]** - nippon.com "Heisei Blues" URL 404'd (stored URL had a plain apostrophe; live URL uses `%E2%80%99s`). Fixed. Content fully verified (six cities, 87% peak-to-trough, 15 years, 2005 upturn).
+4. **B 3-2 [5]** - the Luna figures ("~$87 -> fraction of a cent, >$40bn erased") were not in cited Source [5] (Richmond Fed, which says "$31 -> $0.01"). Reworded to the sourced range ("near US$120 in early April 2022 ... from about US$80 to almost nothing over three days") and added Harvard Law CorpGov "Anatomy of a Run" as [7]. Topic-ledger row updated.
+5. **B 3-1 [1]** - RBC "Great Narrowing" supports the 40.7% concentration figure but NOT the "2025 S&P 500 ~18%, mostly from earnings" claim also cited to it. Added First Trust "S&P 500 Index 2025 Recap" (8 Jan 2026: ~17.9% total return, >75% from EPS) as [7]. Also softened "passing 70,000 for the first time" -> "in intraday trading" (Nikkei closed ~69,404 on 16 June 2026).
+6. **B 4-4 [5]** - Alliance Magazine URL (slug "29-billion") didn't support the article's GBP 37.6bn Wellcome endowment figure. Swapped to Wellcome's own 2024/25 annual report page (endowment ~GBP 37.6bn at 30 Sep 2025 - current, correct).
+
+**URL verification - minor / accepted as context (not changed):**
+- B 3-2 [1] - NY Fed tulip page supports the Feb 1637 Haarlem crash but not the "rarest bulb ~ price of an Amsterdam canal house" trope (page cites a 1633 Hoorn house-for-tulips exchange). Left as widely-attested context.
+- B 4-4 [1] - Regulatory Review page supports the DAF-vs-foundation payout contrast but doesn't state "5%" explicitly (standard IRC §4942). Could add an IRS source later.
+- B 3-1 [5] - Japan Times slug `nikkei-70000-first-time-june` unverifiable (402 paywall); the confirmed Japan Times article on the same event is at `.../2026/06/16/markets/boj-meeting-june-2026/`. Consider switching.
+- First-appearance marker order is loose in the original B 3-1 / B 3-2 / B 3-3 drafts (e.g. B 3-1 had `[3]` before `[2]` from the start). Checklist "no gaps 1,2,3..." is satisfied; strict reordering deferred to the editorial pass.
+
+**URL verification - confirmed good (spot-checks):** A 3-3 [1] (NY Fed, exact), A 3-4 [3] & [5] (SSA press release, Korea Herald - exact), B 3-1 [6] (CNBC BOJ - exact), B 3-2 [2] [3] (Fed History 1929, nippon.com Nikkei - exact), B 4-4 [1] [3] (Regulatory Review, CEP - confirmed). Known 403 bot-blocks (not defects, per the standing memory note): congress.gov, IMF, BLS, OECD, mof.go.jp / mhlw PDFs, SEC, Bloomberg, Japan Times, France24, Alliance/Wellcome; Reuters is fully tool-blocked (B 3-4 [1] [4] unverifiable by tool, events well documented).
+
+**To resume:** (1) DDobson editorial read of Batches 1-4 (`books/*/drafts/articles/*.md`), which should absorb the word-count trim (heaviest on A 4-5, A 4-3, B 3-3, A 3-5, B 4-4) and the long-sentence splits; (2) apply feedback; (3) Batch 5 = Part 5 of both books.
+
 ## 2026-09-11 - LTF Batch 3 + Batch 4 Readings drafted from the research briefs
 
 Picked up a step that had been missed: Batch 3 (2026-09-10) and Batch 4 (2026-09-11) had only reached step 1 of the per-batch pipeline — research briefs on disk, no article Readings. Drafted all 20 outstanding Readings from the briefs, following `_batch3-shape-plan.md` / `_batch4-shape-plan.md` and `house-style.md`, committing per book-part.
