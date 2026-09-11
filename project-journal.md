@@ -1,5 +1,17 @@
 # Project Journal
 
+## 2026-09-12 (later) - LTF QA TODO item 1 fixed: SVB cross-topic duplication
+
+Fixed the first item from `books/_lets-talk-finance-shared/qa-todo.md` (from the 2026-09-12 whole-book QA audit): Book A `2-4_Stress_Testing_and_Risk_Management.md` and Book B `2-5_Banks_What_They_Do_and_How_They_Fail.md` both used the identical SVB "$40 billion in a single day" statistic as primary evidence.
+
+**Decision:** fix Book A, not Book B. SVB is load-bearing in Book B 2.5 (the Goal, the whole Reading, Reading Questions 1-2, and Discussion Question 2 all build on it directly) but only illustrative in Book A 2.4 (supporting the "a test only measures what it's designed to measure" point). Replaced Book A's case with **Signature Bank** (failed 12 Mar 2023, ~US$110bn assets, well below the US$250bn mandatory-annual-stress-test threshold, lost ~20% of deposits in a matter of hours on 10 Mar via contagion from SVB's collapse two days earlier - confirmed via FDIC Chairman Gruenberg's 27 Mar 2023 remarks) - a distinct, independently-sourced case that makes the same teaching point without reusing Book B's evidence.
+
+**Also fixed while editing:** Reading Questions 3-4 (renamed SVB->Signature Bank), Source Note [3] (now the FDIC speech, replacing the old Fed SVB-supervision-review link), added Source Note [4] for the article's separate, unrelated BOJ/FSA joint-stress-test sentence (which had been mis-piggybacking on the old [3] even before this fix - a pre-existing minor citation slip caught in passing). Updated the Book A teacher-answer-book 2.4 section (Reading answers 3-4, Discussion answers 2, 3, 4, 5) to match the new case. Updated `topic-ledger.md`'s evidence register: new Signature Bank row under A 2.4; SVB row annotated as B 2.5's sole primary use across both books as of this fix.
+
+**Verified after editing** (script, not inspection): word count 463 (was 456, negligible change), citation markers [1-4] match Source Notes [1-4] exactly, 5+5 questions intact, Book A teacher-book Aim==Goal still exact match, Reading/Discussion answer counts still 5+5, zero remaining "Silicon Valley"/"SVB" references in either file, Target vocabulary and confidentiality note untouched.
+
+**Not yet done:** `company-and-geography-audit.md` backfill (qa-todo.md item 2) should record Signature Bank under A 2.4 once that file is populated - deferred to that item rather than done piecemeal here.
+
 ## 2026-09-12 - LTF Phase 5: whole-book QA audit run on both books (findings, not yet fixed)
 
 Ran the Phase 5 whole-book audit (`<book>/drafts/control/qa-checklist-full.md`, 89 lines) on both books via two parallel background agents, one per book, each reading all 20 articles in full against the checklist + `house-style.md` + `topic-ledger.md` + `vocabulary-map.md` + `teacher-answer-book.md`. This followed the textinspector.com side-investigation (see below) and precedes any fix work — **nothing has been changed yet**, this is a findings-only pass.

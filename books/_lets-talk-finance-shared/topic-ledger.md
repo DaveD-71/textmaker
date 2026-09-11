@@ -152,7 +152,7 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | AIG 2008 near-collapse (~US$180bn government support, one division); IAIS global Insurance Capital Standard agreed 2024 | A 2.3 Insurance Regulation | — | systemic + international anchor |
 | US 2009 SCAP stress test (19 banks; 10 needed ~US$75bn); published results restored confidence | A 2.4 Stress Testing | — | test-that-worked anchor |
 | EBA 2025 EU-wide stress test (64 banks, 17 countries, ~370bps / 3.7pp capital depletion) | A 2.4 Stress Testing | — | current-scale anchor |
-| Silicon Valley Bank failed 10 Mar 2023 (~US$209bn assets, below annual-test threshold; interest-rate bond losses; >US$40bn one-day outflow) | A 2.4 Stress Testing | B 2.5 Banks (bank-run mechanics, different facts) | risk-the-test-missed anchor |
+| Signature Bank failed 12 Mar 2023 (~US$110bn assets, well below the US$250bn mandatory-stress-test threshold; contagion from SVB's collapse two days earlier; lost ~20% of deposits in hours on 10 Mar) | A 2.4 Stress Testing | — | risk-the-test-missed anchor; replaces the earlier SVB anchor, which duplicated B 2.5's primary evidence (2026-09-12 QA audit fix) |
 | Japan BOJ + FSA joint stress tests in the semiannual Financial System Report | A 2.4 Stress Testing | — | Japan anchor |
 | Japan general govt gross debt ~206% of GDP (IMF WEO Apr 2026), highest of any large advanced economy; BOJ holds ~48% of JGBs, foreigners ~8% (MOF, Mar 2026) | A 2.5 Sovereign Debt | — | lead Japan anchor |
 | US federal debt held by public ~31% foreign-owned (Japan largest); ~US$282bn interest to foreign holders in 2025 (CRS RS22331) | A 2.5 Sovereign Debt | — | US-contrast anchor |
@@ -226,7 +226,7 @@ Fill in as drafting proceeds: every real company / case / named statistic used a
 | US SEC pay-ratio disclosure rule (adopted 2015, first reported 2018); UK pay-ratio reporting since 2020 | B 2.4 Executive Pay | — | disclosure anchor |
 | Say-on-pay: binding in UK/much of EU, advisory in US; Switzerland banned sign-on/severance bonuses by 2013 referendum; Netflix 2023 pay package rejected (advisory) | B 2.4 Executive Pay | — | votes/rules anchor |
 | Japan median executive-to-employee pay ratio ~10×; 100m-yen individual-disclosure rule since 2010; record 1,345 executives at 606 firms in FY to Mar 2025 (Tokyo Shoko Research) | B 2.4 Executive Pay | — | Japan anchor |
-| Silicon Valley Bank closed 10 Mar 2023 (>US$40bn one-day withdrawal attempt; 2nd-largest US bank failure at the time) | B 2.5 Banks | A 2.4 Stress Testing (test-threshold angle, different facts) | opening dated-event anchor |
+| Silicon Valley Bank closed 10 Mar 2023 (>US$40bn one-day withdrawal attempt; 2nd-largest US bank failure at the time) | B 2.5 Banks | — | opening dated-event anchor; sole primary use of SVB across both books as of 2026-09-12 (A 2.4 now uses Signature Bank instead, see above) |
 | FDIC deposit-insurance limit US$250,000 per depositor per bank; Japan DICJ ¥10m plus interest, settlement accounts in full | B 2.5 Banks | — | safety-net anchor |
 | UBS–Credit Suisse takeover 19 Mar 2023 (SNB funding + government guarantee; AT1 bondholders and shareholders lost heavily) | B 2.5 Banks | — | rescued-whole anchor |
 | Northern Rock run 2007 (queues, government deposit guarantee); Japan 1997–98 (Hokkaido Takushoku Bank, Yamaichi; two banks nationalised, public-money injections) | B 2.5 Banks | — | historical-run + Japan anchor |

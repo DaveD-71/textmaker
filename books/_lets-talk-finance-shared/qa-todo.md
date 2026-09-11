@@ -6,12 +6,14 @@ Ordered by priority (most significant first).
 
 ---
 
-## 1. Fix cross-topic evidence duplication — Silicon Valley Bank
+## 1. Fix cross-topic evidence duplication — Silicon Valley Bank ✅ DONE 2026-09-12
 
-- [ ] **Book A** `drafts/articles/2-4_Stress_Testing_and_Risk_Management.md` and **Book B** `drafts/articles/2-5_Banks_What_They_Do_and_How_They_Fail.md` both use "more than US$40 billion in a single day" (SVB, 10 March 2023) as **primary opening evidence**. Confirmed by direct read — same fact, same anchoring role in each.
-- [ ] `topic-ledger.md` flagged this as "borderline" during Batch 2 drafting; the flag was never acted on.
-- [ ] Fix: either swap one book's opening anchor to a different bank-failure case, **or** rewrite one occurrence as an explicit light callback that cites the other topic instead of standing as independent primary evidence.
-- [ ] Update `topic-ledger.md`'s evidence register row once resolved.
+- [x] **Book A** `drafts/articles/2-4_Stress_Testing_and_Risk_Management.md` used the same SVB "$40 billion in a single day" statistic as **Book B** `drafts/articles/2-5_Banks_What_They_Do_and_How_They_Fail.md`'s primary opening evidence. Confirmed by direct read.
+- [x] Fixed: replaced the SVB case in Book A 2.4 with **Signature Bank** (failed 12 Mar 2023, ~US$110bn assets, well below the US$250bn mandatory-stress-test threshold, lost ~20% of deposits in hours on 10 Mar via contagion from SVB's collapse two days earlier) — a distinct, independently-sourced case making the same teaching point (a test only measures the risk it's designed to measure). Book B's SVB-anchored article was left untouched, since SVB is load-bearing there (Goal, Reading, both Reading Questions 1-2, and Discussion Question 2 all build on it).
+- [x] Updated Reading Questions 3-4 (Silicon Valley Bank → Signature Bank), Source Note [3] (now FDIC's 27 Mar 2023 remarks on the 2023 bank failures), added Source Note [4] (BOJ Financial System Report, for the unrelated Japan joint-stress-test sentence that had been mis-piggybacking on the old [3]).
+- [x] Updated the Book A teacher-answer-book 2.4 section (Reading answers 3-4, Discussion answers 2-5) to match — verified Goal==Aim, 5+5 answer counts, citation integrity, zero remaining SVB references.
+- [x] Updated `topic-ledger.md`'s evidence register: Signature Bank now has its own primary-evidence row under A 2.4; the SVB row is annotated as B 2.5's sole primary use across both books.
+- [ ] Not yet done: `company-and-geography-audit.md` backfill (item 2 below) should record Signature Bank under A 2.4 once that file is populated.
 
 ## 2. Backfill the company-and-geography-audit control files
 
