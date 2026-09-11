@@ -58,6 +58,7 @@ Ordered by priority (most significant first).
 
 - [ ] Book B — several topics cite Source Notes out of strict numeric order (e.g. `3-1_What_Moves_Stock_Markets.md` cites `[7]` before `[1]`). Every marker still resolves correctly and no note is orphaned — cosmetic only, renumber to sequential order if doing a pass on these files anyway.
 - [ ] Book B `4.5. The Future of Money` — leans on essentially two countries (Sweden, Japan) for its comparative weight; not a violation but thinner than the "≥3 regions" spirit. Consider whether a third region needs slightly more presence at the next edit pass.
+- [ ] **Deferred idea (2026-09-12):** consider adding a `**Recycled vocabulary:**` line to both books' `teacher-answer-book.md` files, alongside the existing `**Target vocabulary:**` line, so the teacher-book reflects the article's full Vocabulary Focus section rather than only New terms. Checked against the IR project's own teacher answer book as precedent — the IR file uses only a single `**Target vocabulary:**` line per topic (New/target terms only), no separate Recycled line, so this would be a new enhancement beyond the IR precedent, not something to bring into parity with it. Not needed to resolve item 5 above (that only touched the article's own Vocabulary Focus line and `vocabulary-map.md`). Revisit only if the user asks for it explicitly.
 
 ---
 
