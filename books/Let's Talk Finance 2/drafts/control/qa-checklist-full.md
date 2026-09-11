@@ -76,7 +76,7 @@ Companion: `../../Let's Talk Finance/drafts/control/qa-checklist-full.md` (struc
 - [ ] No leftover company names from superseded drafts anywhere in the glossary (sweep for names dropped during rebalancing).
 - [ ] Every term in any topic's Vocabulary Focus has a glossary entry.
 - [ ] Glossary intro's claim ("terms found across all 20 topics") holds: every topic 1.1–4.5 has ≥1 glossary term tagged to it.
-- [ ] Letter headers present and complete (A, B, C, … — no missing letters for letters that have entries). [The old flat LTF glossary was missing its `F` header.]
+- [ ] N/A — dropped 2026-09-12. This line referenced a superseded draft glossary attempt that used letter headers and was found missing its `F` header. The actual house-style precedent, the IR project's own `IR industry glossary.md`, uses a flat alphabetical list under a single `## Terms` heading with no letter dividers at all — both LTF glossaries correctly follow that precedent. Retained here (rather than deleted) so a future editor sees why the line is inactive instead of wondering if it was silently skipped.
 
 ## Whole-book, Phase 5
 

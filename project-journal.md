@@ -1,5 +1,27 @@
 # Project Journal
 
+## 2026-09-12 (absolute final) - LTF: full Phase 5 whole-book re-audit, both books clean
+
+Ran the "After all of the above" re-audit from `qa-todo.md` — a fresh full Phase 5 whole-book QA pass on both books, to confirm all 7 numbered fix items actually hold and catch anything missed, before moving to Phase 6 assembly.
+
+**First attempt failed on cost, not content.** Launched two background agents (one per book). Both hit this session's monthly spend limit mid-run (`rate_limit`, HTTP 429) and were terminated — one of them had also spawned 4 further sub-agents splitting its own work by Part, none of which finished either, all failing the same way. No files were touched (these were read-only audits), so nothing was corrupted, but no report was produced. Waited for the spend-limit reset (7:50pm Asia/Tokyo per the error message), then relaunched both agents with explicit instructions to work in a single lean pass — read all 20 articles directly, no sub-agent splitting, no elaborate scripted sentence-counting — to avoid repeating the same budget exhaustion. Both completed successfully on the retry.
+
+**Result: both books' whole-book audits are clean.** All 7 previously-fixed items (SVB/Signature Bank swap, company-and-geography-audit backfill, Parts 3-4 word-count/sentence-length trim, currency-style fixes, recycled-vocabulary floor, glossary/front-matter creation, citation renumbering) confirmed PASS in both books with zero regressions.
+
+**Three new minor findings, all fixed immediately:**
+
+1. **Book A — stale vocabulary-map.md row.** `vocabulary-map.md`'s 2.4 (Stress Testing) row still listed "bank run" as a recycled term, left over from before the Signature Bank rewrite (item 1) and never re-synced after. The article's own Vocabulary Focus line was already correct (3 terms, no "bank run" — confirmed the term doesn't appear anywhere in 2.4's current text); only the control file had drifted. Fixed the map row to match. Also retagged the glossary's "Bank run" entry from `[2.4]` to `[2.3, 2.4]`, since the term itself is genuinely used in 2.3 (Insurance Market Regulation)'s Reading and Discussion Question 1 ("Unlike a bank run, an insurer's trouble usually builds slowly...") even though 2.3's own Vocabulary Focus line doesn't list it as a tracked term either — the glossary entry's actual content (the Signature Bank case) is specifically anchored to 2.4, so both topics are now credited.
+
+2. **Book B — genuine new run-on sentence.** A 55-word run-on in `1-5_Scams_Fraud_and_Financial_Self_Defence.md`, introduced when the "consumer protection" phrase was added during item 6 earlier this session and never re-checked for sentence length afterward (a gap in that fix's own verification — word count and citation integrity were checked then, but not sentence length, since the edit looked like a small insertion). Split the sentence at its colon into two clean sentences ("...not just the victim's problem. It now requires them to reimburse..."). Verified: longest sentence in the article dropped from 55 to 32 words, word count unaffected (469), citations still sequential and correct.
+
+3. **Book B — duplicate glossary entry.** `"this time is different" thinking` had been added to `glossary.md` twice independently: once by the background glossary-drafting agent's own internal completeness self-check (during item 6), and again by me during item 6's verification pass when I found the same apparent gap without checking whether the agent had already closed it in a spot I hadn't re-read. Both entries were tagged `[3.2]` with different wording. Removed the weaker duplicate, kept the version better anchored to the article's specific "three forces" framing and named historical examples (tulip mania, the 2022 Luna crash).
+
+**Checklist correction, not a content fix.** Both books' `qa-checklist-full.md` had a line requiring glossary letter-headers (A, B, C...), citing a different, superseded draft glossary attempt as the reason for the rule. Checked the actual house-style precedent directly — the IR project's own `IR industry glossary.md` — and confirmed it uses a flat alphabetical list with no letter headers at all. Asked the user whether to add headers to match the checklist as written, or correct the checklist to match the real precedent; user chose the latter. Marked the line N/A in both books' checklist copies, with an explanatory note, rather than silently deleting it.
+
+**One item deliberately left as a soft note, not fixed:** Book A has 5 of 20 topics (1.4, 2.1, 2.3, 3.4, 3.5) opening with a dated-event first clause, against the house-style guideline of roughly 3 per book. The audit judged each opening independently well-written and not verbatim-similar to the others — not the severity the original rule was written to catch (an 8/20 case in the IR project) — so this was logged as worth a look at a future revision pass rather than forced into a rewrite now.
+
+**All 7 `qa-todo.md` items plus this final re-audit are now complete.** Per `qa-todo.md`'s own closing note, the project is ready to proceed to Phase 6 (assembly: Part dividers, front matter, numbering) per `PROJECT-PLAN.md` §5, whenever the user chooses to start that phase.
+
 ## 2026-09-12 (final) - LTF QA TODO item 7 fixed: citation renumbering + Book B 4.5 third region
 
 Fixed item 7, the last item on `qa-todo.md`'s numbered list, closing out the full QA-fix pass that started with item 1 (SVB duplication) earlier this session.

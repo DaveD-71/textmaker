@@ -26,7 +26,7 @@ Terms that should recur through the book for reinforcement. Set from Part 1; ext
 | 2.1 Regulatory Responses to Market Volatility | market volatility; circuit breaker; trading halt; stock index; short selling; daily price limit | regulator; exchange; market |
 | 2.2 Credit Rating Agencies Oversight | credit rating; credit rating agency; default; conflict of interest; sovereign rating; investment grade | regulator; bond; financial crisis |
 | 2.3 Insurance Market Regulation | insurer; premium; claim; solvency rule; capital; policyholder | regulator; financial system; cross-border; risk |
-| 2.4 Stress Testing and Risk Management | stress test; scenario; capital buffer; recession; basis point; risk model | regulator; supervision; financial crisis; bank run |
+| 2.4 Stress Testing and Risk Management | stress test; scenario; capital buffer; recession; basis point; risk model | regulator; supervision; financial crisis |
 | 2.5 Sovereign Debt Management | sovereign debt; government bond; debt management office; bond auction; debt restructuring; haircut | central bank; default; exchange rate |
 | 3.1 Green Finance Initiatives | green bond; use of proceeds; taxonomy; greenwashing; transition bond; external review | bond; issuer; regulator |
 | 3.2 Infrastructure Investment | public-private partnership (PPP); infrastructure funding gap; multilateral development bank (MDB); concession; blended finance; institutional investor | government bond; capital; risk |
