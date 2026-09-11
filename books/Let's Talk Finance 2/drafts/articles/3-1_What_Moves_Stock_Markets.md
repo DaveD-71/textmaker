@@ -6,7 +6,7 @@ Explain the main forces that move stock market indexes — earnings, interest ra
 
 ### 3.1.2. Reading
 
-Why did the market fall today? Financial news answers this every evening, usually by naming one cause: an interest-rate decision, a disappointing profit report, a change in mood. All three are real drivers, and a fourth has grown more important — how much of an index depends on just a few very large companies. A stock index is a single number tracking a basket of shares, weighted by market capitalisation, which is the total value of each company's shares. What moves the index is whatever moves the shares inside it.
+Why did the market fall today? Financial news answers this every evening, usually naming one cause: an interest-rate decision, a disappointing profit report, a change in mood. All three are real drivers, and a fourth has grown more important — how much of an index depends on just a few very large companies. A stock index is a single number tracking a basket of shares, weighted by market capitalisation, the total value of each company's shares.
 
 The most durable driver is company earnings, the actual profits firms make. A share is ultimately a claim on a company's future profits, so a higher expected profit stream is worth more. In 2025 the S&P 500, the main US index, returned about 18%, and more than three-quarters of that came from higher earnings rather than investors paying more per dollar of profit [7]. When a large company's quarterly report misses expectations, its shares, and the index, can drop the same day. Earnings and interest rates together are what analysts call fundamentals.
 
