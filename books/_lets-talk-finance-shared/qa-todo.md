@@ -31,12 +31,14 @@ Ordered by priority (most significant first).
 - [x] Caught and restored factual anchors accidentally dropped mid-trim: Book B `3.3`'s "revealing exception" phrase (needed for Reading Question 5's wording) and "purchasing power" (a Recycled term); Book B `4.5`'s Swedish legal-duty-for-essential-goods-shops detail.
 - [x] Verified on every edited article in both books: word count in range, citation markers == Source Notes (set comparison), all Recycled terms still present verbatim, Reading/Discussion Question wording still matches the edited text.
 
-## 4. Fix currency-style violations — Book B only
+## 4. Fix currency-style violations ✅ DONE 2026-09-12
 
-- [ ] `1-1_The_Cost_of_Living_and_Inflation.md` — "¥4,260" → `JPY 4,260`.
-- [ ] `1-2_Debt_Credit_Cards_Mortgages_and_Loans.md` — "under £0.1 billion... more than £13 billion" → `GBP 0.1 billion` / `GBP 13 billion`.
-- [ ] `1-5_Scams_Fraud_and_Financial_Self_Defence.md` — "up to £85,000 per claim" → `GBP 85,000`; "a record ¥72 billion... a further ¥127 billion" → `JPY 72 billion` / `JPY 127 billion`.
-- [ ] Check no other bare `¥`/`£`/`€` symbols were missed elsewhere in Book B (Book A had zero violations on the same check).
+- [x] Book B `1-1_The_Cost_of_Living_and_Inflation.md` — "¥4,260" → `JPY 4,260`.
+- [x] Book B `1-2_Debt_Credit_Cards_Mortgages_and_Loans.md` — "under £0.1 billion... more than £13 billion" → `GBP 0.1 billion` / `GBP 13 billion`.
+- [x] Book B `1-5_Scams_Fraud_and_Financial_Self_Defence.md` — "up to £85,000 per claim" → `GBP 85,000`; "a record ¥72 billion... a further ¥127 billion" → `JPY 72 billion` / `JPY 127 billion`.
+- [x] Full sweep of both books' `drafts/articles/` for bare `¥`/`£`/`€` found one violation the original audit missed: **Book A** `1-4_Data_Privacy_and_Protection.md` had bare `€1.2 billion` and `€6 billion` in prose — fixed to `EUR 1.2 billion` / `EUR 6 billion`. (Book A's audit had wrongly reported zero violations; this was caught by re-running the check rather than trusting the earlier finding.)
+- [x] Two remaining bare-symbol hits (Book A `3-2_Infrastructure_Investment.md`, Book B `4-3_The_Business_of_Sport_Art_and_Culture.md`) are inside Source Note citation titles quoting the original article headline verbatim ("EU Faces €481 Billion...", "...record UK£6.7bn...") — correctly left as-is, not house-style violations.
+- [x] Verified all 4 edited articles: citation markers == Source Notes, word counts unaffected (439-451w, all in range), zero bare currency symbols remaining in any Reading body.
 
 ## 5. Resolve the recycled-vocabulary floor gap — Book A only
 

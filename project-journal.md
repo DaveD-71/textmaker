@@ -1,5 +1,17 @@
 # Project Journal
 
+## 2026-09-12 (latest) - LTF QA TODO item 4 fixed: currency-style violations, both books
+
+Fixed item 4 from `qa-todo.md`: bare `¥`/`£` symbols in prose instead of the required ISO-code format (`house-style.md` §3: ISO 4217 code + space + number, e.g. `JPY 45,095.3 billion`).
+
+**Book B (3 topics, as originally flagged):** `1-1_The_Cost_of_Living_and_Inflation.md` ("¥4,260" -> "JPY 4,260"), `1-2_Debt_Credit_Cards_Mortgages_and_Loans.md` ("£0.1 billion"/"£13 billion" -> "GBP 0.1 billion"/"GBP 13 billion"), `1-5_Scams_Fraud_and_Financial_Self_Defence.md` ("£85,000" -> "GBP 85,000"; "¥72 billion"/"¥127 billion" -> "JPY 72 billion"/"JPY 127 billion").
+
+**Extra violation caught by re-running the check rather than trusting the earlier audit finding:** the 2026-09-12 QA audit had reported Book A as having zero currency-style violations. A full sweep for this fix found that was wrong — Book A `1-4_Data_Privacy_and_Protection.md` has bare "€1.2 billion" and "€6 billion" in prose. Fixed to "EUR 1.2 billion" / "EUR 6 billion". Lesson: re-verify a prior audit's negative findings mechanically when doing the actual fix pass, don't just carry them forward.
+
+**Correctly left alone:** two more bare-symbol hits (Book A `3-2_Infrastructure_Investment.md`, Book B `4-3_The_Business_of_Sport_Art_and_Culture.md`) are inside Source Note citation titles quoting the original article headline verbatim — not a style violation, since those are direct quotations of external source titles, not our own prose.
+
+**Verified:** all 4 edited articles — citation markers == Source Notes (both books), word counts unaffected (439-451w, unchanged from before this fix since these were in-place symbol swaps not trims), zero bare `¥`/`£`/`€` remaining in any Reading body across either book.
+
 ## 2026-09-12 (even later) - LTF QA TODO item 3 fixed: Parts 3-4 word-count/sentence-length editorial pass, both books
 
 Fixed item 3 from `qa-todo.md`: Parts 3-4 Readings in both books had drifted up to 497-544 words against the ~440-475 target (soft ~490 ceiling in practice), with several sentences running 40-62 words.
