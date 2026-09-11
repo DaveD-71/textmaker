@@ -16,7 +16,9 @@ Followed up the checklist run with the editorial length/sentence pass it had fla
 
 **Not pushed further:** most articles still sit at 497-544 words, above the ~490 D3 target, but cutting further risks losing factual anchors from articles that are already dense with 3-4 regions of evidence. Per the existing decision record, the real gate is the Phase-7 rendered-PDF page-fit check once a 2-column A4 reference DOCX exists for this series - word count at draft stage is a proxy, and Batch 2's own shipped range (428-490) already showed 490 was aspirational, not hard.
 
-**To resume:** DDobson's editorial read of Batches 1-4 (prose quality, paragraph rules, question quality - this pass only checked mechanics); then Batch 5 = Part 5 of both books.
+**To resume:** DDobson's editorial read of Batches 1-4 (prose quality, paragraph rules, question quality - this pass only checked mechanics); then Phase 5 (whole-book QA), per below.
+
+**Correction (caught next session):** there is no Batch 5. Both books are exactly 4 Parts x 5 topics = 20 topics each (PROJECT-PLAN.md D2, D8, §3), and Batches 1-4 cover Parts 1-4 in full for both books. **All 40 topics across both books are now drafted.** "Batch 5" above wrongly extrapolated the batch pattern without checking the plan. Per PROJECT-PLAN.md §5, what actually follows Phase 4 (drafting, now complete) is: Phase 5 - full whole-book QA per book against `control/qa-checklist-full.md` (plus DDobson's editorial read, not yet done for any batch); Phase 6 - assemble each book (Part dividers, front matter, numbering); Phase 7 - build the 2-column A4 reference DOCX (does not exist yet) and run the PDF page-fit loop; Phase 8 - sign-off and delivery.
 
 ## 2026-09-11 (later) - LTF Batch 3-4: article-checklist + URL verification pass run
 
