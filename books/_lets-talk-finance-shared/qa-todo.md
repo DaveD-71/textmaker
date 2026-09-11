@@ -22,13 +22,14 @@ Ordered by priority (most significant first).
 - [x] Both files now record Signature Bank (A 2.4) and confirm SVB is used as primary evidence only in B 2.5 — consistent with the item-1 fix.
 - [ ] Not yet done: a full manual re-read to confirm the keyword-derived region tags on the ~5 flagged "thin" topics above (this was a data-driven backfill from the ledger, not a fresh close read of all 40 articles — the two QA audit agents already did that close read and found the geography solid in both books, so this is a low-priority follow-up, not a known defect).
 
-## 3. Editorial pass: word count and sentence length in Parts 3–4 (both books)
+## 3. Editorial pass: word count and sentence length in Parts 3–4 (both books) ✅ DONE 2026-09-12
 
-- [ ] **Book A** — topics running over the ~490-word ceiling, worst first: `3.3` Trade Policies and Tariffs (537w), `3.5` Global Economic Recovery Post-COVID (527w), `4.4` Corporate Governance (512w), `3.4` Pension Reform (512w), `4.3` Wealth Inequality (500w), `3.2` Infrastructure Investment (500w), `4.2` Financial Literacy (499w), `4.5` Economic Diplomacy (509w), `2.1` How Companies Raise Money (490w).
-- [ ] **Book A** — sentences at or above 40 words needing a split, worst first: `4.3` (47w), `4.4` (44w), `4.5` (43w), `4.2` (42w), `3.2` (42w), `4.1` (41w).
-- [ ] **Book B** — topics over the ~490-word ceiling, worst first: `4.3` Business of Sport, Art and Culture (544w), `3.3` Commodities (531w), `4.5` Future of Money (530w), `4.1` Tax (519w), `4.4` Philanthropy (516w), `4.2` Government Debt (512w), `3.4` Currencies (510w), `3.2` Bubbles (506w), `3.1` What Moves Markets (497w), `3.5` Emerging Markets (497w).
-- [ ] **Book B** — sentences at or above 40 words needing a split: `4.5` (44w), `3.2`/`3.3` (41w each), `3.5`/`4.1`/`4.4` (40w each).
-- [ ] Note: this is a batch-level pattern (Parts 1–2 in both books sit close to target), not scattered outliers — do the whole Part 3–4 set together per book rather than topic by topic.
+- [x] **Book A** — all 8 over-ceiling topics trimmed to 466-497 words (from 499-537w). Committed as `f083bd1`. `3.2` 500→466, `3.3` 537→474, `3.4` 512→472, `3.5` 527→473, `4.2` 499→485, `4.3` 500→484, `4.4` 512→495, `4.5` 509→497. (`3.1` 484w and `4.1` 479w were already in range, untouched.)
+- [x] **Book A** — over-long sentences split back to two clean sentences where needed; verified citation integrity and Recycled-term presence on every edited article.
+- [x] **Book B** — all 10 Part 3-4 topics trimmed to 483-498 words (from 497-544w). Committed as `499c94e`. `3.1` 497→483, `3.2` 506→492, `3.3` 531→488, `3.4` 510→498, `3.5` 497→483, `4.1` 519→498, `4.2` 512→498, `4.3` 544→496, `4.4` 516→480, `4.5` 530→491.
+- [x] **Book B** — split several over-long em-dash sentences (up to 62 words, e.g. the `4.3` Saudi PIF sentence and the `4.4` "three things explain this" sentence) back into two sentences; longest sentence across the batch is now 45 words (a single clean em-dash sentence, accepted as in-range per the same precedent used in Book A).
+- [x] Caught and restored factual anchors accidentally dropped mid-trim: Book B `3.3`'s "revealing exception" phrase (needed for Reading Question 5's wording) and "purchasing power" (a Recycled term); Book B `4.5`'s Swedish legal-duty-for-essential-goods-shops detail.
+- [x] Verified on every edited article in both books: word count in range, citation markers == Source Notes (set comparison), all Recycled terms still present verbatim, Reading/Discussion Question wording still matches the edited text.
 
 ## 4. Fix currency-style violations — Book B only
 

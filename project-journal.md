@@ -1,5 +1,27 @@
 # Project Journal
 
+## 2026-09-12 (even later) - LTF QA TODO item 3 fixed: Parts 3-4 word-count/sentence-length editorial pass, both books
+
+Fixed item 3 from `qa-todo.md`: Parts 3-4 Readings in both books had drifted up to 497-544 words against the ~440-475 target (soft ~490 ceiling in practice), with several sentences running 40-62 words.
+
+**Method (established this pass, reused for every article):** for each article, trim the Reading body toward ~485-498 words, then re-verify by script: word count (Reading-body-minus-`[N]`-markers), citation-marker-to-Source-Note integrity (set comparison), every Recycled term still present verbatim in the Reading+Questions text, and a naive sentence-boundary split to flag anything >=40 words for manual read-through (the naive splitter has known false positives at quote-mark/em-dash boundaries, so every flagged "long sentence" was read manually before deciding whether it was a real defect).
+
+**Book A (10 topics touched, committed as `f083bd1`):** `3.2` Infrastructure Investment 500->466w, `3.3` Trade Policies and Tariffs 537->474w, `3.4` Pension Reform 512->472w, `3.5` Global Economic Recovery Post-COVID 527->473w, `4.2` Financial Literacy Programs 499->485w, `4.3` Wealth Inequality 500->484w, `4.4` Corporate Governance 512->495w, `4.5` Economic Diplomacy 509->497w. (`3.1` at 484w and `4.1` at 479w were already in range, left untouched.)
+
+**Book B (10 topics touched, committed as `499c94e`):** `3.1` What Moves Stock Markets 497->483w, `3.2` Bubbles, Crashes and Manias 506->492w, `3.3` Commodities 531->488w, `3.4` Currencies and Exchange Rates 510->498w, `3.5` Emerging Markets and Development Finance 497->483w, `4.1` Tax 519->498w, `4.2` Government Debt and Deficits 512->498w, `4.3` Business of Sport, Art and Culture 544->496w, `4.4` Philanthropy, Foundations and Impact 516->480w, `4.5` The Future of Money 530->491w.
+
+**Sentence-length fixes:** several over-long sentences (up to 62 words - Book B 4.3's Saudi PIF sentence, Book B 4.4's "three things explain this" sentence, Book A 4.3/4.4/4.5 in the 44-47w range) were split back into two clean sentences rather than trimmed in place, even where that cost a few extra words, to stay within the "two subordinate clauses is the ceiling" guideline. A handful of em-dash sentences in the low-40s were judged acceptable as single clean sentences and left as-is (precedent set with Book A's first pass, applied consistently to Book B).
+
+**Content-consistency catches during trimming (same failure pattern recurred across both books - always re-verify after every trim, never assume a shortening edit is safe):**
+- Book A `4.5`: dropped the "12.5% and 10%" stake figures mid-trim; restored.
+- Book B `3.3`: dropped "purchasing power" (a Recycled term) and the exact phrase "revealing exception" (Reading Question 5's wording depends on it); both restored.
+- Book B `4.5`: dropped the Swedish "legal duty for essential-goods shops to accept cash" fact mid-trim; restored.
+- Book B `4.4`: deliberately dropped "the first rewrite of the relevant law in over a century" (Japan philanthropy-law aside) to control length - confirmed via `qa-todo.md`/checklist that no question or cross-reference depends on this clause, so this one drop was kept rather than restored.
+
+**Verified on every one of the 20 edited articles:** final word count in target range, citation markers == Source Notes (set comparison, both books), all Recycled terms present verbatim, longest sentence 35-45 words with each manually confirmed as a single genuine sentence (not a splitter false positive).
+
+**Not yet done:** re-run the full Phase 5 whole-book audit to confirm items 1-3 collectively resolved the checklist findings and nothing regressed (see qa-todo.md's "After all of the above" section) - deferred until items 4-7 are also addressed, per the user's one-item-at-a-time pacing this session.
+
 ## 2026-09-12 (later still) - LTF QA TODO item 2 fixed: backfilled both company-and-geography-audit files
 
 Fixed item 2 from `qa-todo.md`: both books' `drafts/control/company-and-geography-audit.md` were still the blank Phase-3 template through all four drafting batches.
