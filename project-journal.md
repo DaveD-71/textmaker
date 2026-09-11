@@ -1,5 +1,23 @@
 # Project Journal
 
+## 2026-09-12 (newest) - LTF QA TODO item 6 fixed: glossaries and front-matter files, both books
+
+Fixed item 6 from `qa-todo.md`: both books were missing `glossary.md` and `00_How_This_Resource_Is_Organized.md`, the two remaining Phase 5/6 deliverables.
+
+**Front matter:** wrote both `00_How_This_Resource_Is_Organized.md` files directly, following the IR project's precedent format exactly (title, short intro explaining `Part.Topic` numbering, then one paragraph per Part naming its 5 topics' shared theme). Committed as `7ec72a5`.
+
+**Glossaries:** given the scale (roughly 120 entries per book, each needing to be sourced from the actual article rather than guessed from the term name), delegated to two background agents running in parallel, one per book, each briefed to read the IR project's own glossary as the format precedent, read all 20 of their book's articles, and mechanically cross-check every New/Target term in `vocabulary-map.md` against their draft before finishing.
+
+**Book A result:** 133 entries. Verified directly (not just trusting the agent's self-report): read a sample of entries for quality, ran an independent mechanical completeness check against `vocabulary-map.md` (two apparent gaps were false positives from my own check script's quote-handling, confirmed by direct grep). Spot-checked the agent's two flagged disambiguation calls — "claim" (insurance) vs "claim (on the central bank)", and "default" (credit rating) vs "default option" (behavioural) — both correctly kept as separate entries since they are genuinely different concepts sharing a headword.
+
+**Book B result:** 122 entries (120 initial + 2 added by me after verification). My independent completeness check found two real gaps the agent's own self-check had missed: (1) `"this time is different" thinking` (3.2) existed only as a passing mention inside two other entries ("Herd behaviour", "Leverage (bubbles)"), not as its own headword — added it as a standalone entry. (2) `consumer protection`, listed as a Recycled term in `1-5_Scams_Fraud_and_Financial_Self_Defence.md`'s own Vocabulary Focus line, did not actually appear anywhere in the article's body text — a genuine pre-existing drift between the vocabulary line and the prose, most likely dating from the item-3 length-trim pass on this same file. Fixed at the source rather than papering over it in the glossary alone: added the phrase naturally into the article's UK bank-reimbursement sentence ("the United Kingdom has treated this as a consumer protection matter for banks to fix, not just the victim's problem"), re-verified word count (469, still in range) and citation integrity, then added the glossary entry.
+
+**Three-way vocabulary check:** with both glossaries now existing, ran the full check (article New/Recycled terms <-> teacher-answer-book Target vocabulary <-> glossary coverage) across all 40 topics in both books. Found zero real defects beyond the one consumer-protection gap above (already fixed) — every apparent "mismatch" my check script flagged was a trailing-period parsing artifact in the script itself, confirmed by direct inspection before treating anything as a false alarm or a real defect.
+
+**Shared term bank:** `shared-term-bank.md` had existed since project setup but was still empty. Cross-checked all headwords across both new glossaries and found exactly 7 exact collisions (bank run, central bank, consumer protection, exchange rate, progressive/regressive tax, stablecoin, stock index). Verified all 7 consistent in meaning, scope and register between the two books — each book illustrates with its own real example (e.g. Book A's Signature Bank vs Book B's Silicon Valley Bank for "bank run", correctly kept as distinct cases per the item-1 fix, but the *definition* of the shared concept itself matches) — and added aligned reference entries for all 7.
+
+**Not yet done:** the Phase 5 QA checklist's Glossary section and front-matter line of the Whole-book section were N/A for lack of these files; now that they exist, a fresh checklist pass could evaluate them, but this is deferred to the "After all of the above" full re-audit once items 4-7 are complete, consistent with this session's one-item-at-a-time pacing.
+
 ## 2026-09-12 (very latest) - LTF QA TODO item 5 fixed: recycled-vocabulary floor gap, Book A
 
 Fixed item 5 from `qa-todo.md`: Book A topics 1.2 and 1.5 each had only 2 recycled terms against the checklist's 3-5 floor.
