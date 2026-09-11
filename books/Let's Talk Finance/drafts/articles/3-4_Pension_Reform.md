@@ -6,17 +6,17 @@ Explain why ageing populations force governments to change public pension system
 
 ### 3.4.2. Reading
 
-In April 2023, after months of strikes, France passed a law raising its minimum retirement age from 62 to 64, phased in by year of birth [4]. It was meant to be complete by 2030. Instead, in late 2025, under budget pressure and renewed protests, France's parliament suspended the increase until after the 2027 election, freezing the minimum age at 62 years and 9 months [4]. Even pausing a reform has a cost, and France's stop-start attempt shows how hard this lever is to pull.
+In April 2023, after months of strikes, France passed a law raising its minimum retirement age from 62 to 64, phased in by year of birth [1]. It was meant to be complete by 2030. Instead, in late 2025, under budget pressure and renewed protests, France's parliament suspended the increase until after the 2027 election, freezing the minimum age at 62 years and 9 months [1]. Even pausing a reform has a cost, and France's stop-start attempt shows how hard this lever is to pull.
 
 Most public pensions are pay-as-you-go: today's workers' contributions pay today's retirees, with little capital saved in advance. A funded system instead invests contributions ahead of time, often in government bonds and shares. When retirees grow faster than workers, a pay-as-you-go system's sums stop balancing. Governments then have four levers: raise the retirement age, raise the contribution rate, cut the benefit formula, or bring more people into the system.
 
-The United States acted early and then stalled. In 1983 it raised the statutory full retirement age from 65 to 67, a change still phasing in today [3], and no major reform has followed. Its main retirement trust fund is now projected to run down in late 2032, after which payroll taxes would cover only about 78% of promised benefits unless Congress acts [3].
+The United States acted early and then stalled. In 1983 it raised the statutory full retirement age from 65 to 67, a change still phasing in today [2], and no major reform has followed. Its main retirement trust fund is now projected to run down in late 2032, after which payroll taxes would cover only about 78% of promised benefits unless Congress acts [2].
 
-South Korea pulled a different lever. In March 2025 its National Assembly approved the first increase in the pension contribution rate in nearly three decades, raising it in yearly steps from 9% of wages toward 13% by 2033 [5]. Raising contributions spreads the cost onto today's workers rather than delaying their retirement, but it is politically easier to pass than a higher pension age.
+South Korea pulled a different lever. In March 2025 its National Assembly approved the first increase in the pension contribution rate in nearly three decades, raising it in yearly steps from 9% of wages toward 13% by 2033 [3]. Raising contributions spreads the cost onto today's workers rather than delaying their retirement, but it is politically easier to pass than a higher pension age.
 
-Japan has been adjusting continuously for 30 years. It legislated a rise in the pension age from 60 to 65 in the 1990s, only finishing the phase-in for men in 2025, and lifted the contribution rate to a fixed 18.3% of salary by 2017. Since 2004 an automatic mechanism, nicknamed the "macroeconomic slide," quietly trims benefit growth as the workforce shrinks. The replacement rate — pension income as a share of working-age income — is projected to fall from about 61% now toward a legal floor of 50% by 2057 [6]. Its most recent reform, in 2025, uses the fourth lever: widening coverage to draw an estimated 1.8 million more part-time workers into the system [1].
+Japan has been adjusting continuously for 30 years. It legislated a rise in the pension age from 60 to 65 in the 1990s, only finishing the phase-in for men in 2025, and lifted the contribution rate to a fixed 18.3% of salary by 2017. Since 2004 an automatic mechanism, nicknamed the "macroeconomic slide," quietly trims benefit growth as the workforce shrinks. The replacement rate — pension income as a share of working-age income — is projected to fall from about 61% now toward a legal floor of 50% by 2057 [4]. Its most recent reform, in 2025, uses the fourth lever: widening coverage to draw an estimated 1.8 million more part-time workers into the system [5].
 
-The pressure behind all these changes is the same. That measure, the old-age dependency ratio, stood at 33 people aged 65 or older for every 100 of working age across the OECD in 2025, up from 22 in 2000, and is projected to reach 52 by 2050 [2]. The retirement age is the lever that matches that arithmetic most directly, and the one governments find hardest to hold in place, as France has just shown.
+The pressure behind all these changes is the same. That measure, the old-age dependency ratio, stood at 33 people aged 65 or older for every 100 of working age across the OECD in 2025, up from 22 in 2000, and is projected to reach 52 by 2050 [6]. The retirement age is the lever that matches that arithmetic most directly, and the one governments find hardest to hold in place, as France has just shown.
 
 ### 3.4.3. Vocabulary Focus
 
@@ -42,9 +42,9 @@ The pressure behind all these changes is the same. That measure, the old-age dep
 
 ### 3.4.6. Source Notes
 
-1. Ministry of Health, Labour and Welfare, Japan: "Overview of the 2025 Pension System Reform Act" (English summary) — https://www.mhlw.go.jp/english/policy/pension/pension/dl/act_250926a.pdf
-2. OECD: "Pensions at a Glance 2025" — demographic old-age to working-age ratio — https://www.oecd.org/en/publications/2025/11/pensions-at-a-glance-2025_76510fe4/full-report/demographic-old-age-to-working-age-ratio_25476b96.html
-3. U.S. Social Security Administration: press release on the 2026 Social Security Trustees Report, 9 June 2026 — https://www.ssa.gov/news/en/press/releases/2026-06-09.html
-4. U.S. Social Security Administration: "International Update," June 2023 (France's 2023 pension reform) — https://www.ssa.gov/policy/docs/progdesc/intl_update/2023-06/index.html
-5. The Korea Herald: "Assembly passes bill for first hike in pension payments in 28 years," 20 March 2025 — https://www.koreaherald.com/article/10446290
-6. The Japan Times: "Japan public pension benefit rate seen falling to 50% in fiscal 2057," 3 July 2024 — https://www.japantimes.co.jp/news/2024/07/03/japan/society/pension-funds/
+1. U.S. Social Security Administration: "International Update," June 2023 (France's 2023 pension reform) — https://www.ssa.gov/policy/docs/progdesc/intl_update/2023-06/index.html
+2. U.S. Social Security Administration: press release on the 2026 Social Security Trustees Report, 9 June 2026 — https://www.ssa.gov/news/en/press/releases/2026-06-09.html
+3. The Korea Herald: "Assembly passes bill for first hike in pension payments in 28 years," 20 March 2025 — https://www.koreaherald.com/article/10446290
+4. The Japan Times: "Japan public pension benefit rate seen falling to 50% in fiscal 2057," 3 July 2024 — https://www.japantimes.co.jp/news/2024/07/03/japan/society/pension-funds/
+5. Ministry of Health, Labour and Welfare, Japan: "Overview of the 2025 Pension System Reform Act" (English summary) — https://www.mhlw.go.jp/english/policy/pension/pension/dl/act_250926a.pdf
+6. OECD: "Pensions at a Glance 2025" — demographic old-age to working-age ratio — https://www.oecd.org/en/publications/2025/11/pensions-at-a-glance-2025_76510fe4/full-report/demographic-old-age-to-working-age-ratio_25476b96.html

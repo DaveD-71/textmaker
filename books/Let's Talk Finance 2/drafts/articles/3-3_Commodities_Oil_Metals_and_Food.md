@@ -6,11 +6,11 @@ Explain why the prices of raw materials swing so sharply, and contrast a sudden 
 
 ### 3.3.2. Reading
 
-In March 2022, a bakery in Tokyo that had paid a steady price for flour for years received a new quote: about a third higher, with no promise it would hold. Its wheat came from abroad, and two weeks earlier Russia had invaded Ukraine — together the two countries supplied roughly 30% of the world's wheat exports, so the price jumped on every market at once [2]. The bakery could not negotiate with the war; it could only pay the new world price or use less.
+In March 2022, a bakery in Tokyo that had paid a steady price for flour for years received a new quote: about a third higher, with no promise it would hold. Its wheat came from abroad, and two weeks earlier Russia had invaded Ukraine — together the two countries supplied roughly 30% of the world's wheat exports, so the price jumped on every market at once [1]. The bakery could not negotiate with the war; it could only pay the new world price or use less.
 
-This is the defining feature of commodities — raw materials such as oil, wheat and metals, traded in bulk and largely interchangeable between suppliers. Their prices are set globally, so a shock anywhere reaches buyers everywhere and feeds quickly into inflation. Oil showed it in the same weeks: Brent crude, the main benchmark price for oil, rose above US$120 a barrel, its highest since 2008. At the end of March 2022 the US released 180 million barrels from its strategic reserve, the largest drawdown in its history, to ease the shock [1].
+This is the defining feature of commodities — raw materials such as oil, wheat and metals, traded in bulk and largely interchangeable between suppliers. Their prices are set globally, so a shock anywhere reaches buyers everywhere and feeds quickly into inflation. Oil showed it in the same weeks: Brent crude, the main benchmark price for oil, rose above US$120 a barrel, its highest since 2008. At the end of March 2022 the US released 180 million barrels from its strategic reserve, the largest drawdown in its history, to ease the shock [2].
 
-The food side ran in parallel but was fixed differently. The UN Food and Agriculture Organization's Food Price Index hit an all-time high in March 2022, up almost 13% in a month [2]. Rather than wait for prices to draw out new supply, the UN and Türkiye brokered a shipping corridor. It moved about 33 million tonnes of grain out of Ukraine's Black Sea ports over the following year [3], and the index fell back: a supply shock can sometimes be reversed by a specific arrangement.
+The food side ran in parallel but was fixed differently. The UN Food and Agriculture Organization's Food Price Index hit an all-time high in March 2022, up almost 13% in a month [1]. Rather than wait for prices to draw out new supply, the UN and Türkiye brokered a shipping corridor. It moved about 33 million tonnes of grain out of Ukraine's Black Sea ports over the following year [3], and the index fell back: a supply shock can sometimes be reversed by a specific arrangement.
 
 Metals show a different price risk. In March 2022 the London Metal Exchange suspended nickel trading and cancelled about US$12 billion of trades after the price doubled within hours, driven by supply fears and one producer's large losing bet [4]. Even a commodity exchange, it turns out, can stop working under stress. For some metals the risk is a government's policy: China mines roughly 60% of the world's rare earths and processes about 90%, with export controls since 2023 on a widening list of critical minerals [5].
 
@@ -40,8 +40,8 @@ Japan feels all of this more sharply than most, producing almost none of it. It 
 
 ### 3.3.6. Source Notes
 
-1. U.S. Department of Energy: "History of SPR Releases" (2022 coordinated release: 180 million barrels, largest in SPR history) — https://www.energy.gov/hgeo/opr/history-spr-releases
-2. UN News: "Ukraine war drives international food prices to 'new all-time high'" (FAO Food Price Index, March 2022) — https://news.un.org/en/story/2022/04/1115852
+1. UN News: "Ukraine war drives international food prices to 'new all-time high'" (FAO Food Price Index, March 2022) — https://news.un.org/en/story/2022/04/1115852
+2. U.S. Department of Energy: "History of SPR Releases" (2022 coordinated release: 180 million barrels, largest in SPR history) — https://www.energy.gov/hgeo/opr/history-spr-releases
 3. Council of the European Union: "Ukrainian grain exports explained" (Black Sea Grain Initiative) — https://www.consilium.europa.eu/en/infographics/ukrainian-grain-exports-explained/
 4. U.S. Office of Financial Research: "Central Clearing and Trade Cancellation: The Case of LME Nickel Contracts on March 8, 2022" — https://www.financialresearch.gov/working-papers/2024/12/10/central-clearing-and-trade-cancellation/
 5. Center for Strategic and International Studies: "The Consequences of China's New Rare Earths Export Restrictions" — https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions
