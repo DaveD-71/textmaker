@@ -1,5 +1,23 @@
 # Project Journal
 
+## 2026-09-11 (later still) - LTF Batch 3-4: length trim and long-sentence splits complete
+
+Followed up the checklist run with the editorial length/sentence pass it had flagged as outstanding. Commit `3b2880f`.
+
+**Result:** all 20 Batch-3/4 Readings edited except the 6 already in range (A 3-1, A 4-1, B 3-4, B 3-5, plus B 3-1 and A 3-4 which only needed light trims). Word-count range is now 479-544 (mean 511), down from 479-589 (mean ~530). Longest sentence per article is now <=47 words everywhere, most <=44, down from as high as 76 words (A 4-3) and 63 words (A 4-5).
+
+**Method:** split every 3+-clause sentence the checklist run flagged, then trimmed adjectives/restated clauses to bring word counts down further, always re-checking that (1) every cited factual anchor survived with its marker, (2) every Recycled/New vocabulary term for that topic still appears literally in the body, and (3) citation markers stayed distinct/sequential/gap-free and matching the Source Note count. Caught two cases where a first cut had accidentally dropped a Recycled term or a cited figure (B 3-3 "purchasing power", A 4-3 the JPY 100m-wall figure) and restored them before moving on.
+
+**Two pre-existing content slips fixed while editing (not part of the original checklist findings):**
+- B 3-3 Discussion Q4 asked to compare an oil shock with "the slow rise in copper demand," but the Reading never mentions copper - reworded to the rare-earth/critical-minerals case the Reading actually makes.
+- B 3-2's tulip-mania opening claimed a bulb traded for "the price of a canal house in Amsterdam," which the cited NY Fed source doesn't support (it describes an earlier 1633 house-for-tulips exchange, not a crash-time canal-house price) - reworded to match the source.
+
+**Verification:** wrote a script to re-check all 20 articles after editing (vocab-map exact match, Recycled terms present, 5+5 questions, citation integrity) rather than trusting inspection alone - all 20 pass clean.
+
+**Not pushed further:** most articles still sit at 497-544 words, above the ~490 D3 target, but cutting further risks losing factual anchors from articles that are already dense with 3-4 regions of evidence. Per the existing decision record, the real gate is the Phase-7 rendered-PDF page-fit check once a 2-column A4 reference DOCX exists for this series - word count at draft stage is a proxy, and Batch 2's own shipped range (428-490) already showed 490 was aspirational, not hard.
+
+**To resume:** DDobson's editorial read of Batches 1-4 (prose quality, paragraph rules, question quality - this pass only checked mechanics); then Batch 5 = Part 5 of both books.
+
 ## 2026-09-11 (later) - LTF Batch 3-4: article-checklist + URL verification pass run
 
 Ran the deferred checks on all 20 Batch-3/4 Readings (Books A + B, Parts 3-4): `_lets-talk-finance-shared/article-checklist.md` mechanically, plus a WebFetch/WebSearch verification pass over prose and every Source Note URL. Commit `1f79710`.
