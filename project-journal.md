@@ -1,5 +1,17 @@
 # Project Journal
 
+## 2026-09-11 (latest) - LTF: both teacher answer books drafted (40 topics)
+
+User asked where teacher answer books fit in the schedule. Investigated the model this whole project is based on -- `IR teacher answer book.md` in the Marubeni/Ishida repo -- and its own revision-audit history (`IR revision audit report.md`). Finding: the IR answer book was NOT a Phase-6/assembly deliverable. It was created 2026-08-18, close to when the articles themselves were drafted, went through its own revision passes (mismatches found/fixed 2026-08-20) and an expansion (2026-08-24), and from then on a **three-way vocabulary cross-check (articles / answer book / glossary)** became a standing audit re-run after every structural change to the articles. The answer book is a first-class artifact kept in permanent lockstep with the articles, not something built once at the end. This resolved an inconsistency in `PROJECT-PLAN.md` §4 (Phase 5's QA checklist item checks the answer book against articles, implying it exists by then, but Phase 6 "Assemble" lists it as being built there) -- the correct reading is Phase 5, not Phase 6.
+
+Conclusion: since all 40 topics (both books) are now drafted with no `teacher-answer-book.md` for either book, this was a real gap. User asked to draft both now. Commits `1a5190a` (Book A) and `8a3d7f7` (Book B).
+
+**Both `<book>/drafts/teacher-answer-book.md` files are now complete** (per PROJECT-PLAN.md D6 repo layout). Per topic, each contains: `**Aim:**` (must match the article's Goal sentence word-for-word), `**Target vocabulary:**` (must match the article's New terms line exactly), 5 Reading answers verified against final article text and question wording, 5 Discussion answers in the IR model's style -- what a strong response covers and why, naming the legitimate alternative view where a question is genuinely open, not a single fixed answer -- and a per-topic confidentiality note.
+
+**Verification method:** wrote a script (not inspection) to check, for every one of the 40 topics: Aim == article Goal sentence exactly; Target vocabulary set-equal to New terms (punctuation-normalized); Reading-answer count == 5 Reading Questions; Discussion-answer count == 5 Discussion Questions; confidentiality note present. All 40 topics pass clean in both books.
+
+**To resume:** per the IR precedent, treat the three-way cross-check (articles / answer book / glossary) as a standing audit to re-run after any future article edit -- most immediately relevant once DDobson's editorial read of Batches 1-4 produces article changes, since those would need propagating into the just-written Aim/Target-vocabulary lines and Reading answers. No glossary exists yet for either book (also a D5/D6 deliverable, not yet started) -- the three-way check can only run in full once that exists too.
+
 ## 2026-09-11 (later still) - LTF Batch 3-4: length trim and long-sentence splits complete
 
 Followed up the checklist run with the editorial length/sentence pass it had flagged as outstanding. Commit `3b2880f`.
