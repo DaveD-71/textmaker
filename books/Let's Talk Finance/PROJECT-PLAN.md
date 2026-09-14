@@ -207,8 +207,9 @@ Full QA checklist against every topic + teacher book + vocabulary map + glossary
 - Jurisdiction labels applied inconsistently to the same rule.
 - Glossary going stale after any example-rebalancing pass.
 
-### Phase 6 — Assemble (per book)
+### Phase 6 — Assemble (per book) — COMPLETE 2026-09-14
 Consistent layout, Part.Topic numbering, section structure. Build student edition, glossary, teacher answer book.
+Glossary and teacher-answer-book already existed per book (Phase 5/6 deliverables built during the QA-fix pass, `qa-todo.md` item 6). Student edition built this phase: `drafts/output/<Book Title> - Student Edition.md`, one file per book — front matter (`00_How_This_Resource_Is_Organized.md`'s content) followed by all 20 topics in strict Part.Topic order with `# Part N: Title` divider headings inserted before each Part's first topic. Verified: exactly 20 `## X.Y.` topic headings and 4 `# Part N` headings per book, correct order, no truncation, no stray/duplicate H1s. This markdown file is the Phase 7 input — the reference-DOCX build and PDF page-fit loop are separate, not yet started.
 
 ### Phase 7 — PDF-check production loop (per book)
 Editorial pass → export to PDF (Word COM: `Documents.Open → Fields.Update() → ExportAsFixedFormat($pdf, 17) → Close → Quit`) → programmatically check the rendered result (page-fit test: "does the next heading appear within N pages", not total span) → fix precisely → re-check.

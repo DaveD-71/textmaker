@@ -1,5 +1,17 @@
 # Project Journal
 
+## 2026-09-14 - LTF Phase 6: assembled student edition for both books
+
+Started Phase 6 (assemble) per `PROJECT-PLAN.md`. The glossary and teacher-answer-book deliverables it calls for already existed (built during the QA-fix pass's item 6), so the remaining work was the student edition itself.
+
+**Scoping question resolved first.** The plan's Phase 6 description ("consistent layout, Part.Topic numbering, section structure") is vague about the concrete deliverable, and the IR project's own process guide confirmed a DOCX build did happen there (Pandoc + `--reference-doc` + Word COM PDF export), but that work maps to our own Phase 7, not Phase 6 — and no 2-column reference DOCX exists yet for the rebuilt LTF drafts (only archived ones from the pre-rebuild old Book A). Asked the user to confirm scope rather than assume; agreed Phase 6 today is the merged-markdown step only, with the reference-DOCX build and PDF loop left as a separate Phase 7.
+
+**Built:** a Python merge script that, per book, sorts all 20 topic files by Part.Topic order, inserts a `# Part N: Title` divider heading (with the Part's own one-line description) before each Part's first topic, and prepends the front-matter file's content under a `## How This Resource Is Organized` heading below the book's own H1 title. Output: `drafts/output/<Book Title> - Student Edition.md` for each book.
+
+**Verified:** both files have exactly 20 `## X.Y. Title` topic headings and 4 `# Part N` headings, in correct order, with no truncation and no stray/duplicate top-level headings. Book A: 16,818 words total across all 20 Readings plus front matter. Book B: 16,704 words. Both files end cleanly at topic 4.5's Source Notes.
+
+**Not yet done:** the reference DOCX (2-column A4 layout) and the Pandoc/Word-COM PDF-check loop are Phase 7, not started. The student-edition markdown built today is exactly the input Phase 7 will consume.
+
 ## 2026-09-12 (absolute final) - LTF: full Phase 5 whole-book re-audit, both books clean
 
 Ran the "After all of the above" re-audit from `qa-todo.md` — a fresh full Phase 5 whole-book QA pass on both books, to confirm all 7 numbered fix items actually hold and catch anything missed, before moving to Phase 6 assembly.
