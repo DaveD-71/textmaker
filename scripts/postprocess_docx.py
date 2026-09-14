@@ -1203,7 +1203,9 @@ def strip_activity_codes_from_headings(doc) -> int:
 def remove_pandoc_generated_styles(doc) -> int:
     """Replace Pandoc fallback styles that are not part of the reference DOCX."""
     body_text = _get_style_by_name_or_id(doc.styles, 'PS Body Text') or _require_style(doc.styles, 'Body Text')
-    body_text_char = _require_style(doc.styles, 'Body Text Char')
+    body_text_char = _get_style_by_name_or_id(doc.styles, 'Body Text Char')
+    if body_text_char is None:
+        print('Warning: reference DOCX has no Body Text Char; leaving VerbatimChar runs unchanged')
     changed = 0
 
     for para in _iter_all_paragraphs(doc):
@@ -1213,6 +1215,8 @@ def remove_pandoc_generated_styles(doc) -> int:
             para.style = body_text
             changed += 1
 
+        if body_text_char is None:
+            continue
         for run in para.runs:
             r_pr = run._r.find(qn('w:rPr'))
             r_style = r_pr.find(qn('w:rStyle')) if r_pr is not None else None
@@ -1777,12 +1781,21 @@ def apply_list_styles(
         styles,
         alpha_style.replace(' ', ''),
     )
-    if not bullet:
-        raise RuntimeError(f'Required style is missing from the reference DOCX: {bullet_style}')
-    if not number:
-        raise RuntimeError(f'Required style is missing from the reference DOCX: {number_style}')
-    if not alpha:
-        raise RuntimeError(f'Required style is missing from the reference DOCX: {alpha_style}')
+    if not bullet or not number or not alpha:
+        missing = [
+            name
+            for name, style in (
+                (bullet_style, bullet),
+                (number_style, number),
+                (alpha_style, alpha),
+            )
+            if not style
+        ]
+        print(
+            'Warning: skipping list-style pass, reference DOCX is missing: '
+            + ', '.join(missing)
+        )
+        return 0
 
     applied = 0
     alpha_base_num_id = _num_id_from_style(alpha)
@@ -1874,7 +1887,8 @@ def strip_literal_alpha_markers(doc, alpha_style='List Number 3') -> int:
         alpha_style.replace(' ', ''),
     )
     if not alpha:
-        raise RuntimeError(f'Required style is missing from the reference DOCX: {alpha_style}')
+        print(f'Warning: skipping alpha-marker strip, reference DOCX is missing: {alpha_style}')
+        return 0
 
     changed = 0
     alpha_style_id = getattr(alpha, 'style_id', None)
@@ -3115,6 +3129,8 @@ def insert_section_after_toc(
     profile: bool = False,
     progress: bool = True,
     progress_warn_seconds: float = 30.0,
+    enforce_presentation_page_setup: bool = True,
+    disable_heading_page_breaks: bool = True,
 ):
     """
     Post-process `docx_path` to:
@@ -3312,6 +3328,7 @@ def insert_section_after_toc(
         'disable heading page breaks',
         lambda: disable_heading_style_page_breaks(doc),
         'Disabled page-break-before on {count} heading style(s)',
+        enabled=disable_heading_page_breaks,
     )
     run_pass(
         'module/unit section breaks',
@@ -3322,6 +3339,7 @@ def insert_section_after_toc(
         'presentation page setup',
         lambda: apply_presentation_page_setup(doc),
         'Applied presentation page setup to {count} section(s)',
+        enabled=enforce_presentation_page_setup,
     )
 
     if made_change:

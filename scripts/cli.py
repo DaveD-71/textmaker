@@ -682,6 +682,19 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Do not apply textmaker built-in pagebreak.lua during Pandoc conversion.',
     )
     parser.add_argument(
+        '--no-presentation-page-setup',
+        action='store_true',
+        help='Do not override page margins/mirroring with the Speaking with PowerPoint project defaults. '
+             'Use this for any reference DOCX whose own page setup should be kept as-is.',
+    )
+    parser.add_argument(
+        '--keep-heading-page-breaks',
+        action='store_true',
+        help='Do not strip pageBreakBefore from Heading 1/2 styles inherited from the reference DOCX. '
+             'Use this when the reference DOCX relies on the style-level page break (not explicit '
+             'section breaks) to start each Heading 1/2 on a new page.',
+    )
+    parser.add_argument(
         '--profile',
         action='store_true',
         help='Print timing information for Markdown normalization, Pandoc, and DOCX postprocessing.',
@@ -796,6 +809,8 @@ def main(argv: list[str] | None = None) -> int:
                 profile=args.profile,
                 progress=True,
                 progress_warn_seconds=args.progress_warn_seconds,
+                enforce_presentation_page_setup=not args.no_presentation_page_setup,
+                disable_heading_page_breaks=not args.keep_heading_page_breaks,
             )
         print('Wrote', dest_path)
     finally:
