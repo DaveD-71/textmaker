@@ -682,17 +682,25 @@ def _build_parser() -> argparse.ArgumentParser:
         help='Do not apply textmaker built-in pagebreak.lua during Pandoc conversion.',
     )
     parser.add_argument(
-        '--no-presentation-page-setup',
+        '--swp-presentation-page-setup',
         action='store_true',
-        help='Do not override page margins/mirroring with the Speaking with PowerPoint project defaults. '
-             'Use this for any reference DOCX whose own page setup should be kept as-is.',
+        help='Speaking with PowerPoint (SWP) project only: override page margins/mirroring with the '
+             'SWP-specific defaults (A4 mirrored margins tuned for that book). Off by default; every '
+             'other project should rely on the reference DOCX\'s own page setup.',
     )
     parser.add_argument(
-        '--keep-heading-page-breaks',
+        '--swp-disable-heading-page-breaks',
         action='store_true',
-        help='Do not strip pageBreakBefore from Heading 1/2 styles inherited from the reference DOCX. '
-             'Use this when the reference DOCX relies on the style-level page break (not explicit '
-             'section breaks) to start each Heading 1/2 on a new page.',
+        help='Speaking with PowerPoint (SWP) project only: strip pageBreakBefore from Heading 1/2 styles '
+             'inherited from the reference DOCX, so explicit section breaks control page starts instead. '
+             'Off by default; every other project should keep the reference DOCX\'s own heading behavior.',
+    )
+    parser.add_argument(
+        '--swp-list-styles',
+        action='store_true',
+        help='Speaking with PowerPoint (SWP) project only: remap bullet/numbered/alphabetic lists to the '
+             'SWP-specific "PS Bullet List" / "PS Numbered List" / "PS Numbered List 2" styles. Off by '
+             'default; every other project should rely on the reference DOCX\'s own list styles.',
     )
     parser.add_argument(
         '--profile',
@@ -809,8 +817,9 @@ def main(argv: list[str] | None = None) -> int:
                 profile=args.profile,
                 progress=True,
                 progress_warn_seconds=args.progress_warn_seconds,
-                enforce_presentation_page_setup=not args.no_presentation_page_setup,
-                disable_heading_page_breaks=not args.keep_heading_page_breaks,
+                enforce_presentation_page_setup=args.swp_presentation_page_setup,
+                disable_heading_page_breaks=args.swp_disable_heading_page_breaks,
+                apply_swp_list_styles=args.swp_list_styles,
             )
         print('Wrote', dest_path)
     finally:

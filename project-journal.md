@@ -1,5 +1,20 @@
 # Project Journal
 
+## 2026-09-14 (even later) - Isolated SWP-specific pipeline behavior behind opt-in flags
+
+User flagged that the previous session's fix (`--no-presentation-page-setup`, `--keep-heading-page-breaks`) had the polarity backwards: SWP-specific behavior was running by default for every project using `markdown-to-docx`, requiring non-SWP projects (like LTF) to opt out, when it should be the reverse — SWP is one project among several sharing this tool, so its specific behavior should require an explicit opt-in.
+
+**Inverted three defaults in `scripts/postprocess_docx.py` / `scripts/cli.py`:**
+- `apply_presentation_page_setup` (A4 mirror-margin override): was always-on with a `--no-presentation-page-setup` opt-out; now always-off with a `--swp-presentation-page-setup` opt-in.
+- `disable_heading_style_page_breaks` (strips `pageBreakBefore` from Heading 1/2 in favor of explicit section breaks): was always-on with `--keep-heading-page-breaks`; now always-off with `--swp-disable-heading-page-breaks`.
+- `apply_list_styles` / `strip_literal_alpha_markers` (remaps lists to `PS Bullet List` / `PS Numbered List` / `PS Numbered List 2`): was always-on (silently no-op for reference docs without those styles); now always-off with a new `--swp-list-styles` opt-in, consistent with the existing `--swp-style-tags` flag's naming.
+
+**Verified the inversion is behaviorally neutral for LTF**: rebuilt all 6 deliverables (student edition, glossary, teacher answer book x 2 books) using the simplified command (no longer needs any opt-out flags) and confirmed identical paragraph-restyling counts to the previous build (101/99 article_body_text, 20/20 First Paragraph, 299/302 Compact, 40/40 section breaks, 133/121 glossary entries, 40+200 teacher-book paragraphs) — same result, cleaner command line.
+
+**Updated `books/Speaking with PowerPoint/README.md`** (the only place SWP's build invocation is documented — there is no committed build script) to note the three new required opt-in flags alongside the existing `--swp-style-tags`, so a future SWP build doesn't silently lose its page setup/list styling/heading-page-break behavior.
+
+Regenerated both books' student-edition PDFs from the rebuilt DOCX files.
+
 ## 2026-09-14 (later) - LTF Phase 6 extended: DOCX build matching the IR project's actual style, both books
 
 User provided the three real "Let's Talk: Investor Relations" output DOCX files as the style reference for the LTF DOCX build (student edition, glossary, teacher answer book), rather than starting from scratch. Built all 6 deliverables for both books using `textmaker.cmd markdown-to-docx --reference <IR docx>`.

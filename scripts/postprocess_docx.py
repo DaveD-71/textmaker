@@ -3129,8 +3129,9 @@ def insert_section_after_toc(
     profile: bool = False,
     progress: bool = True,
     progress_warn_seconds: float = 30.0,
-    enforce_presentation_page_setup: bool = True,
-    disable_heading_page_breaks: bool = True,
+    enforce_presentation_page_setup: bool = False,
+    disable_heading_page_breaks: bool = False,
+    apply_swp_list_styles: bool = False,
 ):
     """
     Post-process `docx_path` to:
@@ -3264,11 +3265,17 @@ def insert_section_after_toc(
         enabled=insert_h1_sections,
     )
 
-    run_pass('list styles', lambda: apply_list_styles(doc), 'Applied list styles to {count} paragraph(s)')
+    run_pass(
+        'list styles',
+        lambda: apply_list_styles(doc),
+        'Applied list styles to {count} paragraph(s)',
+        enabled=apply_swp_list_styles,
+    )
     run_pass(
         'strip alpha markers',
         lambda: strip_literal_alpha_markers(doc),
         'Removed literal alphabetic markers from {count} list paragraph(s)',
+        enabled=apply_swp_list_styles,
     )
     run_pass('checklist style', lambda: apply_checklist_style(doc), 'Applied Checklist style to {count} item(s)')
     profiler.skip('example block styles (source-driven)')
