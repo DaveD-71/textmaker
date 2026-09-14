@@ -17,11 +17,13 @@ How large flows of capital — green finance, infrastructure, trade, pensions, r
 How financial systems address fairness, accountability and cooperation across borders.
 
 
----
+\pagebreak
 
 # Part 1: Money, Payments and Financial Technology
 
-How new forms of money and payment technology are changing, and how regulators are responding.
+Money, Payments and Financial Technology looks at what happens when a payment system changes faster than the rules built to govern it. Cryptocurrency moved from a niche curiosity to a market large enough that governments in Japan, the European Union and the United States each felt compelled to write dedicated rules, though they chose very different approaches. Central bank digital currencies raise a related but distinct question: not whether private money needs supervision, but whether central banks should offer a public digital alternative at all, and almost every country studying one has so far chosen not to launch.
+
+The same tension between innovation and oversight runs through fintech regulation, where regulatory sandboxes let new payment models prove themselves under supervision before rules are finalised. It also runs through data privacy, where the same personal information that makes a service convenient becomes a liability the moment it crosses a border without adequate protection, and through financial inclusion, where mobile money and agent banking have brought hundreds of millions of previously unbanked adults into the formal financial system while a fully banked country like Japan faces a very different inclusion problem: keeping cash and branch access available as both quietly disappear. Across all five topics, the same question recurs: does a new technology need its own new rulebook, or can it be supervised inside the old one?
 
 
 ## 1.1. Cryptocurrency Regulation
@@ -280,11 +282,13 @@ financial inclusion, the unbanked, mobile money, agent banking, instant payment 
 [https://www.meti.go.jp/english/press/2025/0331_001.html](https://www.meti.go.jp/english/press/2025/0331_001.html)
 
 
----
+\pagebreak
 
 # Part 2: Markets, Institutions and Financial Stability
 
-How markets, credit ratings, insurers and banks are supervised, and what happens when the system comes under stress.
+Markets, Institutions and Financial Stability turns to the machinery that is supposed to catch trouble before it spreads. Circuit breakers and daily price limits exist to slow a market panic down long enough for information, not fear, to set prices again, while credit rating agencies translate a borrower's complex financial position into a single letter grade that investors around the world rely on, sometimes too heavily. Insurance regulation asks a related question over a much longer time horizon: whether an insurer holds enough capital today to make good on promises it will not have to pay out for decades.
+
+Stress testing brings these ideas together directly, deliberately imagining a bank's worst plausible future to check whether its capital buffer would survive it, a test that only measures the risk it is designed to measure, as Signature Bank's failure showed. Sovereign debt management closes the part by moving from private institutions to governments themselves, examining how a country manages, restructures and, when necessary, defaults on debt owed not to one lender but to thousands of bondholders. Each of these five topics is really the same argument told through a different institution: a financial system is only as stable as the assumptions behind the safeguards nobody hopes to actually use.
 
 
 ## 2.1. Regulatory Responses to Market Volatility
@@ -523,11 +527,13 @@ sovereign debt, government bond, debt management office, bond auction, debt rest
 [https://www.congress.gov/crs-product/RS22331](https://www.congress.gov/crs-product/RS22331)
 
 
----
+\pagebreak
 
 # Part 3: Capital, Investment and Public Policy
 
-How large flows of capital — green finance, infrastructure, trade, pensions, recovery spending — are directed and governed.
+Capital, Investment and Public Policy examines how governments direct large, long-lived flows of money toward public goals rather than private returns alone. Green finance channels capital toward environmental projects through green bonds and an increasingly strict taxonomy of what counts as genuinely sustainable, while infrastructure investment asks a more basic question: how a country pays for the roads, ports and power grids that no single investor would build alone, often through public-private partnerships that split the risk between them. Trade policy and tariffs cover a third form of government intervention, one that raises prices for consumers as a deliberate tool of economic or political strategy rather than a market failure to correct.
+
+Pension reform and the post-COVID economic recovery close the part by looking at how public policy manages long-run demographic and economic shocks: an ageing population that slowly outgrows a pension system designed for a younger one, and a global pandemic recovery that left some economies richer than before and others permanently behind. These five topics share a common thread: each is a case where markets alone would produce an outcome society has decided not to accept, and government policy is the tool used to change it.
 
 
 ## 3.1. Green Finance Initiatives
@@ -804,11 +810,13 @@ fiscal stimulus, monetary easing, quantitative easing (QE), K-shaped recovery, s
 [https://www.japantimes.co.jp/news/2023/02/24/business/inflation-record-high/](https://www.japantimes.co.jp/news/2023/02/24/business/inflation-record-high/)
 
 
----
+\pagebreak
 
 # Part 4: Finance, Fairness and Global Cooperation
 
-How financial systems address fairness, accountability and cooperation across borders.
+Finance, Fairness and Global Cooperation asks who bears the cost when the financial system is misused, and how far countries are willing to cooperate to stop it. Anti-money-laundering rules make banks the front line against criminals who try to disguise illegal money as legitimate, a system that only works if every country enforces it, since a gap in one jurisdiction can undermine strict rules everywhere else. Financial literacy programmes tackle a quieter version of the same fairness question: whether ordinary people have the knowledge to make sound financial decisions, or whether the system's complexity itself is a source of disadvantage.
+
+Wealth inequality and corporate governance examine fairness from two more angles, one asking whether the very richest bear a fair share of the tax burden when their income is taxed differently from wages, the other asking whether a company's board genuinely represents shareholders or quietly serves management instead. Economic diplomacy closes the resource by taking the same fairness question to the level of nations, where sanctions and coordinated financial pressure are used as tools of foreign policy. Across all five topics, the resource ends where finance ultimately answers to something outside itself: not just markets, but law, ethics and international cooperation.
 
 
 ## 4.1. Anti-Money Laundering (AML) Regulations

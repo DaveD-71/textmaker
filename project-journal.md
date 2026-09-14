@@ -1,5 +1,17 @@
 # Project Journal
 
+## 2026-09-14 (latest) - Fixed Part descriptors and guaranteed Part-page starts, both books
+
+User inspected the built DOCX/PDFs and flagged two real issues (a third suspected issue, articles overflowing a page, was checked again by the user and found not to actually be happening — no fix needed there):
+
+1. **Part descriptors were one-liners; the IR reference has two substantial paragraphs per Part.** Confirmed by direct inspection of `Investor Relations Resource - Articles.docx`: each Part divider carries two `Normal`-styled paragraphs, roughly 100-130 words each, naming the Part's actual topics and connecting them thematically (not generic filler). Also discovered while checking this: the IR document has no separate front-matter/"how this is organized" section at all — it opens directly with "Part 1" and its two-paragraph description. Wrote genuine two-paragraph descriptions for all 8 Parts (4 per book), each naming that Part's specific topics by title and closing on a unifying point, matching the IR style directly rather than padding with generic phrasing.
+
+2. **Part headings did not reliably start on a fresh page.** Investigated the IR reference's own mechanism first rather than guessing: found no explicit page-break markup before Parts 2-4 at all — they land on fresh pages purely because the preceding topic's content happens to fill its page(s) exactly. Replicating that precisely would require exact page-fill control, so instead added an explicit hard page break (`\pagebreak`, recognized by the repo's existing `pagebreak.lua` filter) before each Part in the merge script, guaranteeing the behavior regardless of how the preceding content lands. Verified via Word COM page-number inspection: all 4 Parts in both books now land on their own dedicated page, immediately followed by their first topic on the next page, with no wasted blank pages from double-breaking (the Heading 1 style's own inherited `pageBreakBefore` was not re-enabled this pass, since it wasn't needed on top of the explicit break).
+
+**New tooling**: `scripts_local/build_ltf_student_edition_merge.py` (promoted from a scratchpad script), the actual Phase 6 "assemble" merge step, now includes the 8 hand-written two-paragraph Part descriptions and inserts a real hard page break before each Part instead of a `---` marker.
+
+Rebuilt both books' student-edition markdown and DOCX end to end with the fixes; regenerated both PDFs.
+
 ## 2026-09-14 (even later) - Isolated SWP-specific pipeline behavior behind opt-in flags
 
 User flagged that the previous session's fix (`--no-presentation-page-setup`, `--keep-heading-page-breaks`) had the polarity backwards: SWP-specific behavior was running by default for every project using `markdown-to-docx`, requiring non-SWP projects (like LTF) to opt out, when it should be the reverse — SWP is one project among several sharing this tool, so its specific behavior should require an explicit opt-in.

@@ -17,11 +17,13 @@ What moves markets, commodities and currencies, and how developing economies man
 How governments tax and borrow, how money supports culture and philanthropy, and where money itself is heading.
 
 
----
+\pagebreak
 
 # Part 1: Personal Finance and Household Money
 
-How individuals and households experience inflation, debt, saving, housing and financial fraud.
+Personal Finance and Household Money starts where finance is most immediately felt: in a household's own budget. Inflation and the cost of living set the backdrop for everything else in this part, since a sustained rise in prices quietly erodes savings and wages alike unless a central bank's target keeps it in check, as Japan's decades of near-zero inflation and Argentina's 211% crisis show from opposite extremes. Debt follows naturally, from the everyday compounding on an unpaid credit-card balance to the newer, less regulated pull of buy-now-pay-later, while saving and investing for the long term asks the flip side of the same question: how compounding, given enough time, works in a saver's favour instead.
+
+Housing markets and affordability bring these threads together in the single largest purchase most households ever make, where interest rates, supply constraints and local policy all interact to decide whether a place to live is treated as shelter or as an investment. The part closes with scams, fraud and financial self-defence, a reminder that every one of these systems, credit, savings, housing, depends on trust, and that trust is exactly what organised fraud is designed to exploit. Across all five topics, the same lesson recurs: household financial wellbeing depends on forces, like inflation and interest rates, that no individual controls, and skills, like recognising a scam, that every individual can still learn.
 
 
 ## 1.1. The Cost of Living and Inflation
@@ -271,11 +273,13 @@ Self-defence comes down to a few habits. Treat any unexpected contact about mone
 5. Nippon.com (citing the National Police Agency): Financial Losses Soar as Cases of Scams Jump in Japan, 17 June 2025 — https://www.nippon.com/en/japan-data/h02424/
 
 
----
+\pagebreak
 
 # Part 2: Companies, Work and Money
 
-How companies raise money, how work and pay are changing, and how banks can fail.
+Companies, Work and Money moves from the household to the organisations that employ people and raise capital. How companies raise money lays the foundation, contrasting the public discipline of an IPO with the private flexibility that has let firms like SpaceX stay unlisted for years while still raising billions, and startups and venture capital extends the same theme into the highest-risk end of that spectrum, where most funded companies still fail and a rare few become unicorns. The gig economy and income security shifts from how companies raise money to how they organise work itself, asking what happens to benefits, pensions and job security when employment becomes platform-based and irregular.
+
+Executive pay and inequality inside firms turns to a different fault line, the growing gap between what a top executive earns and what a median employee does, and how shareholders can vote, even if only symbolically, on whether that gap is justified. The part ends with banks: what they do and how they fail, using cases from Silicon Valley Bank to the broader mechanics of deposit insurance to explain why a bank run can turn a solvent institution into a failed one within hours. These five topics together describe modern work and enterprise as a set of trade-offs between risk and reward, control and flexibility, that plays out differently for founders, workers and executives alike.
 
 
 ## 2.1. How Companies Raise Money
@@ -505,11 +509,13 @@ Sometimes a bank is judged too important to close. In March 2023 the Swiss autho
 4. Swiss Financial Market Supervisory Authority (FINMA): FINMA approves merger of UBS and Credit Suisse, 19 March 2023 — https://www.finma.ch/en/news/2023/03/20230319-mm-cs-ubs/
 
 
----
+\pagebreak
 
 # Part 3: Markets, Risk and the Global Economy
 
-What moves markets, commodities and currencies, and how developing economies manage risk.
+Markets, Risk and the Global Economy zooms out to the forces that move prices and capital across entire economies. What moves stock markets opens by naming the four real drivers behind any market move, earnings, interest rates, sentiment and index concentration, correcting the common habit of assigning a single tidy cause to what is usually several forces acting together. Bubbles, crashes and manias traces the same pattern across four centuries, from Dutch tulip bulbs to Japan's late-1980s property bubble to a 2022 cryptocurrency collapse, showing that cheap money, herd behaviour and the belief that "this time is different" recur in every era.
+
+Commodities, currencies and emerging markets close the part by looking at risk that crosses borders directly: a bakery in Tokyo paying more for flour because of a war fought thousands of kilometres away, a currency's value shifting because of a decision made by a foreign central bank, and a developing economy's access to capital drying up the moment global interest rates rise. These five topics share a single insight: in a genuinely global financial system, a shock rarely stays confined to the market or country where it started.
 
 
 ## 3.1. What Moves Stock Markets
@@ -760,11 +766,13 @@ The recurring danger is the sudden stop. Emerging markets depend on foreign capi
 4. International Monetary Fund: "Global Financial Stability Report, October 2022" — https://www.imf.org/en/Publications/GFSR/Issues/2022/10/11/global-financial-stability-report-october-2022
 
 
----
+\pagebreak
 
 # Part 4: Money, Society and the Future
 
-How governments tax and borrow, how money supports culture and philanthropy, and where money itself is heading.
+Money, Society and the Future closes the resource by asking what money is for beyond markets and firms. Tax and government debt open the part together, examining how governments raise the money that pays for public services and what happens when spending consistently outruns revenue, a tension that toppled a British prime minister in 2022 and that Japan has so far managed without a crisis for reasons that are still debated. The business of sport, art and culture turns to a less obvious kind of finance, where a single painting can sell for more than an orchestra's annual budget and Saudi Arabia's sovereign wealth fund buys football clubs partly for "soft power" rather than financial return alone.
+
+Philanthropy, foundations and impact examines how large-scale giving is structured, taxed and increasingly judged by measurable outcomes rather than good intentions alone, while the future of money closes the resource by asking where money itself is heading, from Sweden's now-reversing retreat from cash to central bank digital currencies still stuck at the pilot stage almost everywhere. Across all five topics, the resource ends on the same note it began: money is not only a tool for individual households or companies, but a shared system that societies continually choose, and re-choose, how to run.
 
 
 ## 4.1. Tax: How Governments Raise Money
