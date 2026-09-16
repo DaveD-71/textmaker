@@ -1,16 +1,16 @@
-# Codex Memory Bootstrap Instructions
+# Memory Bootstrap Instructions
 
 Bootstrap-Version: 2026-03-22T16:33:28.5113488+09:00
 
 Scope:
 
-- this file is the shared startup and memory bootstrap specification for Codex
-- the duplicated copies are expected at `%USERPROFILE%\.codex\AGENTS.md` and `<repo-root>\AGENTS.md` when the active workspace has a repository root
-- resolve Codex home from `%USERPROFILE%\.codex` unless `CODEX_HOME` is explicitly changed
+- this file is the shared startup and memory bootstrap specification for all LLM services
+- the duplicated copies are expected at `%USERPROFILE%\AGENTS.md` and `<repo-root>\AGENTS.md` when the active workspace has a repository root
+- resolve the user-level memory home from `%USERPROFILE%`
 
 ## Duplication Rule
 
-- `%USERPROFILE%\.codex\AGENTS.md` and `<repo-root>\AGENTS.md` must carry the same file contents when both files exist
+- `%USERPROFILE%\AGENTS.md` and `<repo-root>\AGENTS.md` must carry the same file contents when both files exist
 - do not rewrite, summarize, or manually reconstruct one file from the other
 - when one `AGENTS.md` file is missing, create it by direct file copy from the existing one
 - treat differences in line endings or filesystem metadata as incidental; the instruction content itself should remain the same
@@ -22,7 +22,7 @@ When determining the active workspace and which instructions apply, use this aut
 1. the user's explicit statement about the current workspace or workspace switch
 2. the current VS Code workspace or IDE context
 3. the repository-root `AGENTS.md` for the active workspace when a repository root exists
-4. the user-level `AGENTS.md` at `%USERPROFILE%\.codex\AGENTS.md`
+4. the user-level `AGENTS.md` at `%USERPROFILE%\AGENTS.md`
 5. shell cwd only as a fallback when the higher-priority signals are absent
 
 Do not let stale shell cwd, prior conversation context, or injected environment metadata override the current workspace.
@@ -35,9 +35,9 @@ Ask for confirmation only if the current IDE workspace itself is ambiguous.
 
 At session start, read:
 
-1. `%USERPROFILE%\.codex\AGENTS.md` if it exists
+1. `%USERPROFILE%\AGENTS.md` if it exists
 2. `<repo-root>\AGENTS.md` if it exists
-3. `%USERPROFILE%\.codex\memories\user-learning.md` if it exists
+3. `%USERPROFILE%\memories\user-learning.md` if it exists
 
 Then, if the active workspace has a repository root, read the repo companion files in this order when they exist:
 
@@ -63,7 +63,7 @@ Do not make startup handling implicit when the session depends on project instru
 For lightweight confirmation of instruction-file reads, append CSV rows for each file read:
 
 - use `<repo-root>\instruction-read-log.csv` when the workspace has a project memory scaffold
-- otherwise use `%USERPROFILE%\.codex\memories\instruction-read-log.csv`
+- otherwise use `%USERPROFILE%\memories\instruction-read-log.csv`
 
 CSV columns:
 
@@ -133,8 +133,8 @@ At session start, do not treat missing memory files as a reason to skip the work
 
 Create as needed:
 
-- `%USERPROFILE%\.codex\AGENTS.md`
-- `%USERPROFILE%\.codex\memories\user-learning.md`
+- `%USERPROFILE%\AGENTS.md`
+- `%USERPROFILE%\memories\user-learning.md`
 - `<repo-root>\AGENTS.md`
 - `<repo-root>\user-learning-mirror.md`
 - `<repo-root>\project-learning.md`
@@ -148,7 +148,7 @@ Bootstrap rule for `AGENTS.md`:
 
 Bootstrap rule for user-learning:
 
-- if one of `%USERPROFILE%\.codex\memories\user-learning.md` or `<repo-root>\user-learning-mirror.md` exists and the other does not, create the missing file by direct file copy
+- if one of `%USERPROFILE%\memories\user-learning.md` or `<repo-root>\user-learning-mirror.md` exists and the other does not, create the missing file by direct file copy
 
 Bootstrap rule for repo companion files:
 
@@ -209,7 +209,7 @@ Rules for discovered variants:
 
 Canonical user-level memory uses:
 
-- machine-local canonical file: `%USERPROFILE%\.codex\memories\user-learning.md`
+- machine-local canonical file: `%USERPROFILE%\memories\user-learning.md`
 
 Portable workspace mirror uses:
 
@@ -224,8 +224,8 @@ When both files exist:
 
 What must be synced and where:
 
-- cross-project user lessons belong in both `%USERPROFILE%\.codex\memories\user-learning.md` and `<repo-root>\user-learning-mirror.md`
-- `%USERPROFILE%\.codex\memories\user-learning.md` is the machine-local canonical working copy
+- cross-project user lessons belong in both `%USERPROFILE%\memories\user-learning.md` and `<repo-root>\user-learning-mirror.md`
+- `%USERPROFILE%\memories\user-learning.md` is the machine-local canonical working copy
 - `<repo-root>\user-learning-mirror.md` is the repo-tracked transport and mirror copy
 
 ## Repo-Tracked Memory Files
@@ -288,7 +288,7 @@ The goal is not to replay every past token each session. The goal is fast, accur
 
 ## User-Level Memory Policy
 
-Use `%USERPROFILE%\.codex\memories\user-learning.md` as a persistent user and environment memory file.
+Use `%USERPROFILE%\memories\user-learning.md` as a persistent user and environment memory file.
 
 Record only durable items that are likely to matter again across multiple folders or projects:
 
@@ -375,7 +375,7 @@ Archive guidance:
 
 ## Portability
 
-- resolve user-level Codex paths from `%USERPROFILE%` on each machine rather than assuming a fixed Windows username
+- resolve user-level memory paths from `%USERPROFILE%` on each machine rather than assuming a fixed Windows username
 - resolve project memory files from the active repository root rather than assuming a fixed local clone path
 - treat older absolute project-path references in memory as historical snapshots unless they explicitly claim to define the current workspace root
 
