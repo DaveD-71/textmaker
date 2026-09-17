@@ -14,7 +14,7 @@ Written 2026-08-28. Supersedes `EDIT-LIST.md` (patch-in-place, abandoned) and th
 | Standard | Both books built to the **IR resource standard** (see §1), following `Book_Draft_And_Edit_Process_Guide.md` | same |
 | Format identity | `Let's Talk` reading-and-discussion, 6-subsection topic template | same |
 | Relationship | Companion volumes: same format, same level, same glossary conventions, shared control layer. Each is a complete standalone book with its own glossary and teacher answer book; topic lists must not overlap. | same |
-| Location | `books/Let's Talk Finance/` | `books/Let's Talk Finance 2/` (new folder, same repo) |
+| Location | `books/Let's Talk Finance 1/` (renamed from `books/Let's Talk Finance/` 2026-09-17) | `books/Let's Talk Finance 2/` (new folder, same repo) |
 
 **Build order (agreed):** *prototype both, then parallel.* One calibration prototype covering both books → lock the shared spec → draft A and B in parallel Part-sized batches.
 
