@@ -1,5 +1,11 @@
 # Project Journal
 
+## 2026-09-17 - AS Online cover splitting; Book 1 folder renamed
+
+**Book 1 file/folder renaming completed.** All files under `books/Let's Talk Finance/` were renamed from "Let's Talk Finance ..." to "Let's Talk Finance 1 ..." (commit `5fa0166`), and the user then renamed the folder itself from `books/Let's Talk Finance/` to `books/Let's Talk Finance 1/` (commit `032f0f3`), superseding the 2026-09-16 entry below which had explicitly deferred the folder rename as "too risky." The Book 2 cover file that had been sitting in Book 1's folder was relocated to `books/Let's Talk Finance 2/cover/`. Fixed the one stale path reference this broke: `scripts_local/build_ltf_student_edition_merge.py`'s `BOOKS` entry for Book 1 (folder path and output filename).
+
+**AS Online cover splitting.** Added `scripts/split_cover_spread.py` (PyMuPDF-based, reusable across all in-house texts per user request) to split a combined A3 landscape front+back cover spread PDF into two single-page A4 portrait PDFs at the horizontal midline. Ran it on both books' cover PDFs, output to `cover/AS Online/<Title> - Front Cover.pdf` / `- Back Cover.pdf`. Verified visually (rendered to PNG) that both halves are clean A4 pages with no clipping at the split line. This is the first production step toward each book's "AS Online" edition.
+
 ## 2026-09-16 - Updated both books' covers; adopted "Let's Talk Finance 1 / 2" as the display naming
 
 **Naming decision:** going forward, the two books are referred to as "Let's Talk Finance 1" and "Let's Talk Finance 2" for display purposes (cover, title text) — the user confirmed this since the project folder for Book B is already named `Let's Talk Finance 2`, so calling Book A "1" makes the pair consistent. This is a display-naming decision only; the repo folder `books/Let's Talk Finance/` (Book A) is unchanged, to avoid a risky path rename across the whole tree.

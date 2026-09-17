@@ -52,10 +52,10 @@ Philanthropy, foundations and impact examines how large-scale giving is structur
 
 BOOKS = [
     {
-        "name": "Let's Talk Finance",
-        "title": "Let's Talk Finance",
-        "dir": r"books/Let's Talk Finance/drafts/articles",
-        "out": r"books/Let's Talk Finance/drafts/output/Let's Talk Finance - Student Edition.md",
+        "name": "Let's Talk Finance 1",
+        "title": "Let's Talk Finance 1",
+        "dir": r"books/Let's Talk Finance 1/drafts/articles",
+        "out": r"books/Let's Talk Finance 1/drafts/output/Let's Talk Finance 1 - Student Edition.md",
         "parts": {
             1: ("Money, Payments and Financial Technology", PART_DESC_A[1]),
             2: ("Markets, Institutions and Financial Stability", PART_DESC_A[2]),
