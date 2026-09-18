@@ -138,7 +138,7 @@ The United States has no single fintech law or regulator. A money-transfer firm 
 
 India built public infrastructure instead of a broad rulebook. Its Unified Payments Interface, launched in 2016 and overseen by the Reserve Bank of India, processed more than 240 billion transactions in the 2025–26 financial year [4]. That makes it the world's largest real-time payment system, and it is free to use for individuals. Private apps compete on top of it, but the underlying rails are public, so no single company controls access.
 
-Japan's Financial Services Agency uses a lighter, cooperation-based model. A 2017 amendment to the Banking Act, in force from 2018, required banks to publish open-API policies and to register the payment and data firms they connect with. A 2020 change then split non-bank money-transfer providers into three licence tiers by transfer size. Only the tier for the largest transfers needs full FSA authorisation; the two smaller tiers need registration only.
+Japan's Financial Services Agency uses a lighter, cooperation-based model. A 2017 amendment to the Banking Act, in force from 2018, created a registration system for the payment and data firms that connect to banks, and required banks to make best efforts to build open-API systems for them within two years [5]. A 2020 change then split non-bank money-transfer providers into three licence tiers by transfer size. Only the tier for the largest transfers needs full FSA authorisation; the two smaller tiers need registration only [6].
 
 Because each of these frameworks is written into national law, they do not travel. A payment firm licensed in London, Frankfurt, Mumbai or Tokyo must usually get a fresh authorisation before serving customers elsewhere. That is why fintech firms expand country by country, not all at once, and why a service that is normal in one market can be unavailable in the next.
 
@@ -170,6 +170,8 @@ Because each of these frameworks is written into national law, they do not trave
 2. World Bank Group: Global Experiences from Regulatory Sandboxes, 2020 — https://documents1.worldbank.org/curated/en/912001605241080935/txt/Global-Experiences-from-Regulatory-Sandboxes.txt
 3. European Commission: Payment services — https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services_en
 4. Business Standard (India): UPI completes 10 years, clocks nearly 13,000-fold rise in transaction volume, 24 August 2026 — https://www.business-standard.com/finance/news/upi-completes-10-years-clocks-nearly-13k-fold-rise-in-transaction-volume-126082400604_1.html
+5. Torys LLP: Update on Japanese Fintech Law, July 2017 — https://www.torys.com/insights/publications/2017/07/update-on-japanese-fintech-law
+6. Jones Day: Japan's New Regime for Fund Transfer Services, May 2021 — https://www.jonesday.com/en/insights/2021/05/japans-amended-payment-services-act-could-prompt-more-nonbank-entries-into-traditional-banking-services
 
 
 ## 1.4. Data Privacy and Protection
