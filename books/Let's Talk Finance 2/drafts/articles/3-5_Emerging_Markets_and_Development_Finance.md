@@ -14,7 +14,7 @@ Developing countries fund growth from three main sources, each with a catch. The
 
 Japan is one of the largest bilateral providers of this last kind of finance. Through the Japan International Cooperation Agency and its leading role at the Asian Development Bank, it funds transport, energy and water projects across South and Southeast Asia, often as long-term loans in yen at low interest [3]. Supporters say this builds lasting capacity; critics note it can tie borrowers to Japanese contractors and add to debt loads.
 
-The recurring danger is the sudden stop. Emerging markets depend on foreign capital that can reverse fast when global interest rates rise or risk appetite falls, as it did across 2022 when the US Federal Reserve tightened policy and investors pulled back from riskier assets worldwide [4]. Countries that had borrowed heavily in dollars, such as Sri Lanka, defaulted; countries with deeper local savings, larger reserves and credible central banks, such as India and Indonesia, absorbed the shock. The clearest lesson of development finance is that how a country borrows — the currency, the maturity, the lender — often matters more than how much.
+The recurring danger is the sudden stop. Emerging markets depend on foreign capital that can reverse fast when global interest rates rise or risk appetite falls, as it did across 2022 when the US Federal Reserve tightened policy and investors pulled back from riskier assets worldwide [4]. Countries that had borrowed heavily in dollars, such as Sri Lanka, defaulted; countries with deeper local savings, larger reserves and credible central banks, such as India and Indonesia, absorbed the shock [5]. The clearest lesson of development finance is that how a country borrows — the currency, the maturity, the lender — often matters more than how much.
 
 ### 3.5.3. Vocabulary Focus
 
@@ -44,3 +44,4 @@ The recurring danger is the sudden stop. Emerging markets depend on foreign capi
 2. International Monetary Fund: "IMF Executive Board Completes Review of Egypt's Extended Arrangement" — https://www.imf.org/en/News/Articles/2024/03/29/pr2494-egypt-imf-execboard-completes-first-and-second-reviews-eff-arrangement
 3. Asian Development Bank: "Japan and ADB" (fact sheet) — https://www.adb.org/publications/japan-fund-poverty-reduction-fact-sheet
 4. International Monetary Fund: "Global Financial Stability Report, October 2022" — https://www.imf.org/en/Publications/GFSR/Issues/2022/10/11/global-financial-stability-report-october-2022
+5. Federal Reserve Bank of Dallas: Emerging-market countries insulate themselves from Fed rate hikes, 8 August 2023 — https://www.dallasfed.org/research/economics/2023/0808

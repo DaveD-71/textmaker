@@ -36,7 +36,7 @@ Explain what inflation is, why it rose around the world after 2021, and why cent
 
 Inflation is the rate at which prices rise over time. If a basket of goods costs 3% more than it did a year ago, inflation is 3%. A low, steady rate is normal. The problem comes when the rate jumps, because wages and savings usually do not keep up.
 
-After 2021, prices rose sharply almost everywhere. In the United States, consumer prices in June 2022 were 9.1% higher than a year earlier, the largest 12-month increase in about 40 years [1]. Petrol was up 59.9% over the year and food was up 10.4% [1]. In the euro area, inflation reached 10.6% a few months later. The main causes were global: supply chains were still recovering from the pandemic, and energy and food prices rose sharply after Russia's invasion of Ukraine. In response, central banks in the United States, the euro area, the United Kingdom and many other countries raised interest rates quickly through 2022 and 2023.
+After 2021, prices rose sharply almost everywhere. In the United States, consumer prices in June 2022 were 9.1% higher than a year earlier, the largest 12-month increase in about 40 years [1]. Petrol was up 59.9% over the year and food was up 10.4% [1]. In the euro area, inflation reached 10.6% a few months later [6]. The main causes were global: supply chains were still recovering from the pandemic, and energy and food prices rose sharply after Russia's invasion of Ukraine [7]. In response, central banks in the United States, the euro area, the United Kingdom and many other countries raised interest rates quickly through 2022 and 2023 [8].
 
 The size of the shock still varied a lot by country. Japan had lived with near-zero inflation, and sometimes falling prices, for about 25 years. There, inflation rising above 2% was itself news. In 2024 the Bank of Japan raised its main interest rate above zero for the first time since 2007 [2]. Argentina was at the other extreme, with annual inflation of 211% in 2023 after years of economic crisis and a large fall in the value of its currency [3]. Most countries were somewhere in between.
 
@@ -76,6 +76,12 @@ inflation, deflation, central bank, inflation target, interest rate, purchasing 
 [https://www.nippon.com/en/japan-data/h02811/](https://www.nippon.com/en/japan-data/h02811/)
 5. European Central Bank: Two per cent inflation target  
 [https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html](https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html)
+6. Eurostat: Annual inflation up to 10.6% in the euro area, 17 November 2022  
+[https://ec.europa.eu/eurostat/web/products-euro-indicators/-/2-17112022-ap](https://ec.europa.eu/eurostat/web/products-euro-indicators/-/2-17112022-ap)
+7. Federal Reserve Bank of San Francisco: Global Supply Chain Pressures and U.S. Inflation, June 2023  
+[https://www.frbsf.org/research-and-insights/publications/economic-letter/2023/06/global-supply-chain-pressures-and-u-s-inflation/](https://www.frbsf.org/research-and-insights/publications/economic-letter/2023/06/global-supply-chain-pressures-and-u-s-inflation/)
+8. Federal Reserve Bank of Richmond: A Rate Cycle Unlike Any Other, 2023  
+[https://www.richmondfed.org/publications/research/economic_brief/2023/eb_23-26](https://www.richmondfed.org/publications/research/economic_brief/2023/eb_23-26)
 
 
 ## 1.2. Debt: Credit Cards, Mortgages and Loans
@@ -313,7 +319,7 @@ A company can raise money in two basic ways. It can sell equity, meaning shares 
 
 For decades, going public was the natural goal for a successful company. That has changed in the United States and parts of Europe. The number of American listed companies peaked at more than 8,000 in 1996 and is now roughly half that [2]. At the same time, a large pool of private capital, estimated at around US$22 trillion worldwide by 2024, now lets big companies raise billions and delay listing for years [1]. Public markets still work: in 2024 there were about 1,145 IPOs worldwide, and India was among the busiest markets, with a record 268 new listings on its main exchange raising some US$19.5 billion [3].
 
-In Japan and much of continental Europe and Asia, bank lending has long mattered more than share issues. Japanese firms traditionally relied on a "main bank" that lent to them, held their shares and watched over management. That arrangement is now slowly unwinding, as companies and banks sell off the cross-held shares that once locked ownership in place. The Tokyo Stock Exchange reorganised itself in 2022 into three segments, Prime, Standard and Growth. In 2023 it began pressing listed companies to set out plans to raise their share price, aiming especially at the many firms trading below the value of their own assets [2]. The mix of equity and debt, and of private and public money, differs from one country to the next. But every company faces the same first question: whose money to take, and what to give up for it.
+In Japan and much of continental Europe and Asia, bank lending has long mattered more than share issues. Japanese firms traditionally relied on a "main bank" that lent to them, held their shares and watched over management. That arrangement is now slowly unwinding, as companies and banks sell off the cross-held shares that once locked ownership in place. The Tokyo Stock Exchange reorganised itself in 2022 into three segments, Prime, Standard and Growth [4]. In 2023 it began pressing listed companies to set out plans to raise their share price, aiming especially at the many firms trading below the value of their own assets [2]. The mix of equity and debt, and of private and public money, differs from one country to the next. But every company faces the same first question: whose money to take, and what to give up for it.
 
 ### 2.1.3. Vocabulary Focus
 
@@ -343,6 +349,8 @@ equity, debt, initial public offering (IPO), listing, private equity, venture ca
 [https://corpgov.law.harvard.edu/2017/05/18/looking-behind-the-declining-number-of-public-companies/](https://corpgov.law.harvard.edu/2017/05/18/looking-behind-the-declining-number-of-public-companies/)
 3. DD News (Government of India): Indian stock market leads global IPO boom in 2024, NSE raises record $19.5 billion, January 2025  
 [https://ddnews.gov.in/en/indian-stock-market-leads-global-ipo-boom-in-2024-nse-raises-record-19-5-billion/](https://ddnews.gov.in/en/indian-stock-market-leads-global-ipo-boom-in-2024-nse-raises-record-19-5-billion/)
+4. Japan Exchange Group: Announcement of the Results of Market Segment Selection by Listed Companies, 11 January 2022  
+[https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20220111-01.html](https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20220111-01.html)
 
 
 ## 2.2. Startups, Venture Capital and Failure
@@ -353,13 +361,13 @@ Explain how young companies raise money in stages, why most of them fail, and wh
 
 ### 2.2.2. Reading
 
-Of every ten new businesses in the United States, about eight survive their first year, about five reach year five, and about three reach year ten [1]. Among companies backed by venture capital, the odds of a big payout are longer still: one widely cited study found that roughly three in four never return their investors' cash. Failure is not a rare accident in this part of finance. It is the normal outcome, and the whole model is built around that fact.
+Of every ten new businesses in the United States, about eight survive their first year, about five reach year five, and about three reach year ten [1]. Among companies backed by venture capital, the odds of a big payout are longer still: one widely cited study found that roughly three in four never return their investors' cash [4]. Failure is not a rare accident in this part of finance. It is the normal outcome, and the whole model is built around that fact.
 
 A startup usually raises money in stages, each tied to reaching a goal. The earliest money, often called seed funding, comes from founders, friends and specialist early investors. It buys the company time to build a product and find its first customers. If that works, a venture capital fund may lead a larger round, labelled Series A, then Series B, and so on. Each round buys a slice of ownership, usually at a higher price than the last, and the money is meant to last until the next milestone. Venture capital is money raised from pension funds, universities and wealthy individuals and placed in young, high-risk companies in exchange for equity. The investors know most of their bets will fail, so they need the rare winner to return many times its cost. The end goal, or exit, is a sale to a larger company or a stock market listing, which is how the fund turns its shares back into cash.
 
 The size of the funding pool rises and falls sharply. Global venture investment reached roughly US$440 billion in 2025, with nearly half going to artificial intelligence companies, after a steep fall in 2022 and 2023 [2]. When funding tightens, companies that raised money at a high valuation must often accept a lower one in the next round, a "down round" that dilutes founders and early staff. The most striking recent failure was WeWork, an office-space company valued at US$47 billion in early 2019, which then failed to list, lost billions and filed for bankruptcy in 2023 [2].
 
-Japan's venture scene is smaller but growing. One estimate put Japan at seven "unicorns", meaning private companies worth over US$1 billion, in 2023, against more than 600 in the United States [3]. In 2022 the government adopted a five-year plan to lift the number of startups and unicorns sharply, with public money and tax incentives behind it. Europe and India have both built up sizeable venture markets of their own over the same period. Whether in Tokyo, Bangalore or California, the arithmetic is the same: investors accept many total losses in exchange for a small chance of backing a company that becomes very large. That is why a single success, such as an early stake in a company that later lists, can carry a whole fund.
+Japan's venture scene is smaller but growing. One estimate put Japan at seven "unicorns", meaning private companies worth over US$1 billion, in 2023, against more than 600 in the United States [3]. In 2022 the government adopted a five-year plan to lift the number of startups and unicorns sharply, with public money and tax incentives behind it [5]. Europe and India have both built up sizeable venture markets of their own over the same period. Whether in Tokyo, Bangalore or California, the arithmetic is the same: investors accept many total losses in exchange for a small chance of backing a company that becomes very large. That is why a single success, such as an early stake in a company that later lists, can carry a whole fund.
 
 ### 2.2.3. Vocabulary Focus
 
@@ -389,6 +397,10 @@ startup, seed funding, funding round, down round, exit, unicorn
 [https://news.crunchbase.com/venture/north-american-startup-funding-2025-data-ai-us-investment/](https://news.crunchbase.com/venture/north-american-startup-funding-2025-data-ai-us-investment/)
 3. International Monetary Fund: Riding Unicorns — Startups and Venture Capital in Japan (Working Paper WP/24/246), December 2024  
 [https://www.imf.org/en/publications/wp/issues/2024/12/06/riding-unicorns-startups-and-venture-capital-in-japan-559169](https://www.imf.org/en/publications/wp/issues/2024/12/06/riding-unicorns-startups-and-venture-capital-in-japan-559169)
+4. Harvard Business School: The Venture Capital Secret: 3 Out of 4 Start-Ups Fail, 2012  
+[https://www.hbs.edu/news/Pages/item.aspx?num=487](https://www.hbs.edu/news/Pages/item.aspx?num=487)
+5. Cabinet Secretariat of Japan: Startup Development Five-year Plan, November 2022  
+[https://www.cas.go.jp/jp/seisaku/atarashii_sihonsyugi/pdf/sdfyplan2022en.pdf](https://www.cas.go.jp/jp/seisaku/atarashii_sihonsyugi/pdf/sdfyplan2022en.pdf)
 
 
 ## 2.3. The Gig Economy and Income Security
@@ -401,11 +413,11 @@ Explain what platform work is, why the "employee or self-employed" question matt
 
 A delivery rider logs into an app on Friday evening, accepts trips for four hours, and is paid for each one. There is no set shift, no manager, and no promise of work next week. The rider values the freedom to choose hours, but carries risks an employee does not: earnings that swing from week to week, and usually no paid holiday, no sick pay, no employer pension contribution and no unemployment cover. This is platform work, meaning paid tasks arranged through an app or website, and it has grown fast. The International Labour Organization estimates that the number of digital labour platforms worldwide grew about five-fold in the decade to 2020 [1].
 
-The core dispute is a legal one: are these workers really self-employed, as the platforms say, or are they employees entitled to labour protections? The answer decides who bears the cost of holidays, illness and old age. Courts and parliaments have reached different conclusions. In February 2021 the United Kingdom Supreme Court ruled that Uber drivers are "workers", a middle category that brings the minimum wage and paid leave. It also held that their working time counts from the moment the app is switched on [2]. The European Union adopted a directive in 2024 that presumes a platform worker is an employee unless the company can show otherwise, with member states to write it into national law by December 2026 [3]. Spain passed a law in 2021 making delivery couriers employees.
+The core dispute is a legal one: are these workers really self-employed, as the platforms say, or are they employees entitled to labour protections? The answer decides who bears the cost of holidays, illness and old age. Courts and parliaments have reached different conclusions. In February 2021 the United Kingdom Supreme Court ruled that Uber drivers are "workers", a middle category that brings the minimum wage and paid leave. It also held that their working time counts from the moment the app is switched on [2]. The European Union adopted a directive in 2024 that presumes a platform worker is an employee unless the company can show otherwise, with member states to write it into national law by December 2026 [3]. Spain passed a law in 2021 making delivery couriers employees [5].
 
-The United States has gone the other way, at least in its largest state. California passed a law in 2019 that would have made many gig drivers employees. Ride-hailing and delivery companies then funded a ballot measure, Proposition 22, that carved themselves out, spending more than US$200 million on the campaign. California's Supreme Court upheld the measure in 2024, so drivers there remain independent contractors with a limited set of benefits and no sick pay or unemployment cover. Most other United States states never adopted a test like California's in the first place.
+The United States has gone the other way, at least in its largest state. California passed a law in 2019 that would have made many gig drivers employees. Ride-hailing and delivery companies then funded a ballot measure, Proposition 22, that carved themselves out, spending more than US$200 million on the campaign. California's Supreme Court upheld the measure in 2024, so drivers there remain independent contractors with a limited set of benefits and no sick pay or unemployment cover [6]. Most other United States states never adopted a test like California's in the first place.
 
-Japan has taken two narrower routes rather than one big reclassification. A Freelance Act, in force from November 2024, does not make freelancers employees. Instead it puts duties on the companies that hire them: state the work and the fee in writing, pay within 60 days, guard against harassment, and give 30 days' notice before ending a continuing contract [4]. Separately, in 2022 a Tokyo labour board found that Uber Eats couriers are "workers" under union law and can bargain collectively, a decision the company has challenged. Across all these systems the same tension runs. The flexibility that makes platform work attractive is bound up with the absence of the protections that make an income secure.
+Japan has taken two narrower routes rather than one big reclassification. A Freelance Act, in force from November 2024, does not make freelancers employees. Instead it puts duties on the companies that hire them: state the work and the fee in writing, pay within 60 days, guard against harassment, and give 30 days' notice before ending a continuing contract [4]. Separately, in 2022 a Tokyo labour board found that Uber Eats couriers are "workers" under union law and can bargain collectively, a decision the company has challenged [7]. Across all these systems the same tension runs. The flexibility that makes platform work attractive is bound up with the absence of the protections that make an income secure.
 
 ### 2.3.3. Vocabulary Focus
 
@@ -437,6 +449,12 @@ platform work, the gig economy, self-employed, independent contractor, worker st
 [https://www.europarl.europa.eu/news/en/press-room/20240419IPR20584/parliament-adopts-platform-work-directive](https://www.europarl.europa.eu/news/en/press-room/20240419IPR20584/parliament-adopts-platform-work-directive)
 4. Japan Fair Trade Commission: Act on Ensuring Proper Transactions Involving Specified Entrusted Business Operators (tentative translation)  
 [https://www.jftc.go.jp/en/legislation_gls/index.html](https://www.jftc.go.jp/en/legislation_gls/index.html)
+5. European Agency for Safety and Health at Work (OSHA-EU): Policy Case Study — Spain: The "Riders' Law," 2022  
+[https://osha.europa.eu/sites/default/files/2022-01/Spain_Riders_Law_new_regulation_digital_platform_work.pdf](https://osha.europa.eu/sites/default/files/2022-01/Spain_Riders_Law_new_regulation_digital_platform_work.pdf)
+6. CalMatters: Prop. 22 gig-work law upheld by California Supreme Court, 25 July 2024  
+[https://calmatters.org/economy/2024/07/prop-22-california-gig-work-law-upheld/](https://calmatters.org/economy/2024/07/prop-22-california-gig-work-law-upheld/)
+7. Japan Today: Tokyo says Uber Eats labor union has collective bargaining rights, November 2022  
+[https://japantoday.com/category/business/tokyo-says-uber-eats-labor-union-has-collective-bargaining-rights](https://japantoday.com/category/business/tokyo-says-uber-eats-labor-union-has-collective-bargaining-rights)
 
 
 ## 2.4. Executive Pay and Inequality Inside Firms
@@ -451,7 +469,7 @@ In 2024 the chief executives of the 350 largest United States companies were pai
 
 Top executive pay usually has three parts. There is a base salary, fixed and relatively modest as a share of the total. There is an annual bonus tied to that year's results. And there is stock-based pay, meaning shares or options that vest over several years and now make up the large majority of a big American chief executive's package. Because so much of the pay is in stock, its final value depends on the share price, which is why supporters call it pay for performance and critics call it a windfall in a rising market.
 
-Two kinds of rule have grown up around the question. The first is disclosure. Since 2018, United States listed companies must publish the ratio of chief executive pay to the pay of their median employee, meaning the employee exactly in the middle of the pay range. The United Kingdom has required a similar figure since 2020. The second kind of rule is the shareholder vote, known as "say on pay". In the United Kingdom and much of Europe the vote on pay policy is binding, so a company may not pay outside an approved policy. In the United States the vote is only advisory, meaning the board can proceed even if shareholders vote no. Switzerland went furthest, banning sign-on and severance bonuses for listed-company executives by referendum in 2013. Votes against pay do happen: Netflix shareholders rejected the company's executive pay package in an advisory vote in 2023 [2].
+Two kinds of rule have grown up around the question. The first is disclosure. Since 2018, United States listed companies must publish the ratio of chief executive pay to the pay of their median employee, meaning the employee exactly in the middle of the pay range [4]. The United Kingdom has required a similar figure since 2020 [5]. The second kind of rule is the shareholder vote, known as "say on pay". In the United Kingdom and much of Europe the vote on pay policy is binding, so a company may not pay outside an approved policy. In the United States the vote is only advisory, meaning the board can proceed even if shareholders vote no. Switzerland went furthest, banning sign-on and severance bonuses for listed-company executives by referendum in 2013 [6]. Votes against pay do happen: Netflix shareholders rejected the company's executive pay package in an advisory vote in 2023 [2].
 
 Japan sits at the other end of the range. The median ratio of executive to employee pay across listed Japanese companies is roughly 10 times, far below the American figure [3]. Since 2010, any director paid 100 million yen or more must be named individually in the company's annual report. Fewer than 300 executives crossed that line in 2009; a record 1,345 did so at 606 companies in the year to March 2025, and the highest-paid were mostly foreign executives at Japanese firms [3]. The rise reflects the spread of stock-based pay rather than a jump in salaries. The underlying argument is the same everywhere: is very high pay the price of attracting and motivating rare talent, or is it simply what executives can command when boards decide their rewards?
 
@@ -483,6 +501,12 @@ executive compensation, base salary, stock-based pay, pay ratio, say-on-pay vote
 [https://www.sec.gov/newsroom/press-releases/2015-160](https://www.sec.gov/newsroom/press-releases/2015-160)
 3. Nippon.com (data from Tokyo Shoko Research): Foreign Executives Prominent in Japan's Top Earners List, 25 August 2026  
 [https://www.nippon.com/en/japan-data/h02867/](https://www.nippon.com/en/japan-data/h02867/)
+4. U.S. Securities and Exchange Commission: Pay Ratio Disclosure — Final Rule, adopted 2015, effective 2018  
+[https://www.sec.gov/rules/final/2015/33-9877.pdf](https://www.sec.gov/rules/final/2015/33-9877.pdf)
+5. UK Government (legislation.gov.uk): The Companies (Miscellaneous Reporting) Regulations 2018  
+[https://www.legislation.gov.uk/uksi/2018/860/contents/made](https://www.legislation.gov.uk/uksi/2018/860/contents/made)
+6. Library of Congress, Global Legal Monitor: Switzerland: Referendum on Executive Pay, 27 March 2013  
+[https://www.loc.gov/item/global-legal-monitor/2013-03-27/switzerland-referendum-on-executive-pay](https://www.loc.gov/item/global-legal-monitor/2013-03-27/switzerland-referendum-on-executive-pay)
 
 
 ## 2.5. Banks: What They Do and How They Fail
@@ -493,13 +517,13 @@ Explain the basic job of a bank, why that job makes every bank fragile, and how 
 
 ### 2.5.2. Reading
 
-On Friday 10 March 2023, Silicon Valley Bank in California was closed by regulators. The day before, its customers had tried to withdraw more than US$40 billion in a single day, faster than any bank run in modern records [1]. It was, at the time, the second-largest bank failure in United States history. What went wrong was not fraud or reckless lending. It was the ordinary business of banking, done at the wrong moment.
+On Friday 10 March 2023, Silicon Valley Bank in California was closed by regulators. The day before, its customers had tried to withdraw more than US$40 billion in a single day, faster than any bank run in modern records [1]. It was, at the time, the second-largest bank failure in United States history [5]. What went wrong was not fraud or reckless lending. It was the ordinary business of banking, done at the wrong moment.
 
 A bank takes in deposits, which customers can withdraw at any time, and lends most of that money out for years, as mortgages and business loans. Turning short-term deposits into long-term loans is called maturity transformation, and it is useful: it channels idle savings into productive use. But it leaves every bank unable to repay all its depositors at once. If enough customers ask for their money together, even a sound bank can be forced to sell assets at a loss and collapse. That is a bank run, and the fear of one can cause one.
 
-Governments try to break that logic in two ways. The first is deposit insurance: a government-backed promise that small savers will be repaid up to a limit even if their bank fails. In the United States the limit is US$250,000 per depositor per bank [2]. In Japan the Deposit Insurance Corporation covers ordinary deposits up to 10 million yen, plus interest, and covers everyday settlement accounts in full [3]. The point is to remove the reason for an ordinary saver to join a run. The second tool is the central bank acting as lender of last resort, lending cash to a sound bank against good collateral so it does not have to sell assets in a panic. When the British lender Northern Rock faced a run in 2007, queues formed outside its branches until the government guaranteed its deposits.
+Governments try to break that logic in two ways. The first is deposit insurance: a government-backed promise that small savers will be repaid up to a limit even if their bank fails. In the United States the limit is US$250,000 per depositor per bank [2]. In Japan the Deposit Insurance Corporation covers ordinary deposits up to 10 million yen, plus interest, and covers everyday settlement accounts in full [3]. The point is to remove the reason for an ordinary saver to join a run. The second tool is the central bank acting as lender of last resort, lending cash to a sound bank against good collateral so it does not have to sell assets in a panic. When the British lender Northern Rock faced a run in 2007, queues formed outside its branches until the government guaranteed its deposits [6].
 
-Sometimes a bank is judged too important to close. In March 2023 the Swiss authorities arranged for UBS to take over its troubled rival Credit Suisse over a single weekend. Central bank funding and a government guarantee stood behind the deal. Depositors lost nothing, but shareholders and holders of certain risky bonds lost heavily [4]. Japan faced a broader failure in 1997 and 1998, when Hokkaido Takushoku Bank and the Yamaichi securities house collapsed. The government eventually took two large banks into public ownership and injected public money to steady the rest, a slow and costly clean-up that took years. The lesson from all these cases is that a bank's stability rests less on its own vault than on the belief that the safety net behind it will hold.
+Sometimes a bank is judged too important to close. In March 2023 the Swiss authorities arranged for UBS to take over its troubled rival Credit Suisse over a single weekend. Central bank funding and a government guarantee stood behind the deal. Depositors lost nothing, but shareholders and holders of certain risky bonds lost heavily [4]. Japan faced a broader failure in 1997 and 1998, when Hokkaido Takushoku Bank and the Yamaichi securities house collapsed. The government eventually took two large banks into public ownership and injected public money to steady the rest, a slow and costly clean-up that took years [7]. The lesson from all these cases is that a bank's stability rests less on its own vault than on the belief that the safety net behind it will hold.
 
 ### 2.5.3. Vocabulary Focus
 
@@ -531,6 +555,12 @@ deposit, maturity transformation, bank run, deposit insurance, lender of last re
 [https://www.dic.go.jp/english/e_yokinsha/page_000017.html](https://www.dic.go.jp/english/e_yokinsha/page_000017.html)
 4. Swiss Financial Market Supervisory Authority (FINMA): FINMA approves merger of UBS and Credit Suisse, 19 March 2023  
 [https://www.finma.ch/en/news/2023/03/20230319-mm-cs-ubs/](https://www.finma.ch/en/news/2023/03/20230319-mm-cs-ubs/)
+5. CNBC: Here's how the second-biggest bank collapse in U.S. history happened in just 48 hours, 10 March 2023  
+[https://www.cnbc.com/2023/03/10/silicon-valley-bank-collapse-how-it-happened.html](https://www.cnbc.com/2023/03/10/silicon-valley-bank-collapse-how-it-happened.html)
+6. Bank of England: Ten years on — lessons from Northern Rock (speech), 2017  
+[https://www.bankofengland.co.uk/-/media/boe/files/speech/2017/ten-years-on-lessons-from-northern-rock](https://www.bankofengland.co.uk/-/media/boe/files/speech/2017/ten-years-on-lessons-from-northern-rock)
+7. Nippon.com: Lessons of the 1997 Financial Crisis in Japan  
+[https://www.nippon.com/en/currents/d00360/](https://www.nippon.com/en/currents/d00360/)
 
 
 \pagebreak
@@ -664,13 +694,13 @@ Explain why the prices of raw materials swing so sharply, and contrast a sudden 
 
 In March 2022, a bakery in Tokyo that had paid a steady price for flour for years received a new quote: about a third higher, with no promise it would hold. Its wheat came from abroad, and two weeks earlier Russia had invaded Ukraine — together the two countries supplied roughly 30% of the world's wheat exports, so the price jumped on every market at once [1]. The bakery could not negotiate with the war; it could only pay the new world price or use less.
 
-This is the defining feature of commodities — raw materials such as oil, wheat and metals, traded in bulk and largely interchangeable between suppliers. Their prices are set globally, so a shock anywhere reaches buyers everywhere and feeds quickly into inflation. Oil showed it in the same weeks: Brent crude, the main benchmark price for oil, rose above US$120 a barrel, its highest since 2008. At the end of March 2022 the US released 180 million barrels from its strategic reserve, the largest drawdown in its history, to ease the shock [2].
+This is the defining feature of commodities — raw materials such as oil, wheat and metals, traded in bulk and largely interchangeable between suppliers. Their prices are set globally, so a shock anywhere reaches buyers everywhere and feeds quickly into inflation. Oil showed it in the same weeks: Brent crude, the main benchmark price for oil, rose above US$120 a barrel, its highest since 2008 [7]. At the end of March 2022 the US released 180 million barrels from its strategic reserve, the largest drawdown in its history, to ease the shock [2].
 
 The food side ran in parallel but was fixed differently. The UN Food and Agriculture Organization's Food Price Index hit an all-time high in March 2022, up almost 13% in a month [1]. Rather than wait for prices to draw out new supply, the UN and Türkiye brokered a shipping corridor. It moved about 33 million tonnes of grain out of Ukraine's Black Sea ports over the following year [3], and the index fell back: a supply shock can sometimes be reversed by a specific arrangement.
 
 Metals show a different price risk. In March 2022 the London Metal Exchange suspended nickel trading and cancelled about US$12 billion of trades after the price doubled within hours, driven by supply fears and one producer's large losing bet [4]. Even a commodity exchange, it turns out, can stop working under stress. For some metals the risk is a government's policy: China mines roughly 60% of the world's rare earths and processes about 90%, with export controls since 2023 on a widening list of critical minerals [5].
 
-Japan feels all of this more sharply than most, producing almost none of it. It imports nearly all its oil, gas and coal, and its food self-sufficiency rate on a calorie basis was 38% in fiscal 2023, below the government's 45% target [6]. Too small a share of any market to move the price, Japan is close to a pure price-taker — and in 2022 the weakening yen cut into its purchasing power still further. Its usual defences are the ones every importer uses: long-term contracts, part-ownership of overseas fields, and large stockpiles, including well over 200 days of oil reserves. Rice is the revealing exception: Japan grows almost all its own, yet a domestic shortage still pushed prices up sharply in 2024. Producing something yourself lowers exposure to world prices; it does not remove price risk.
+Japan feels all of this more sharply than most, producing almost none of it. It imports nearly all its oil, gas and coal, and its food self-sufficiency rate on a calorie basis was 38% in fiscal 2023, below the government's 45% target [6]. Too small a share of any market to move the price, Japan is close to a pure price-taker — and in 2022 the weakening yen cut into its purchasing power still further. Its usual defences are the ones every importer uses: long-term contracts, part-ownership of overseas fields, and large stockpiles, including well over 200 days of oil reserves [8]. Rice is the revealing exception: Japan grows almost all its own, yet a domestic shortage still pushed prices up sharply in 2024 [9]. Producing something yourself lowers exposure to world prices; it does not remove price risk.
 
 ### 3.3.3. Vocabulary Focus
 
@@ -706,6 +736,12 @@ commodity, benchmark price, supply shock, strategic reserve, price-taker, self-s
 [https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions](https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions)
 6. The Japan Times: "Japan's food self-sufficiency rate remains at 38%," 10 October 2025  
 [https://www.japantimes.co.jp/news/2025/10/10/japan/food-self-sufficiency-rate/](https://www.japantimes.co.jp/news/2025/10/10/japan/food-self-sufficiency-rate/)
+7. U.S. Energy Information Administration: Europe Brent Spot Price FOB  
+[https://www.eia.gov/dnav/pet/hist/rbrtem.htm](https://www.eia.gov/dnav/pet/hist/rbrtem.htm)
+8. U.S. Energy Information Administration: China, the United States, and Japan hold most strategic oil inventories in 2025  
+[https://www.eia.gov/todayinenergy/detail.php?id=67504](https://www.eia.gov/todayinenergy/detail.php?id=67504)
+9. Nippon.com: Rice Shortages in Japan: Ongoing Cuts to Production at Fault  
+[https://www.nippon.com/en/in-depth/d01044/](https://www.nippon.com/en/in-depth/d01044/)
 
 
 ## 3.4. Currencies and Exchange Rates
@@ -722,7 +758,7 @@ That is exactly what happened to the yen. Through 2022 the US Federal Reserve ra
 
 The effects split the economy in two. A weak yen made Japanese exports cheaper abroad, and large exporters such as carmakers reported record profits, partly because foreign earnings converted into more yen [3]. But the same weak yen made imported oil, gas and food more expensive, pushing consumer prices up and cutting the real spending power of households and small firms that buy from abroad. This is the core trade-off of a floating exchange rate — one that markets set freely: it cannot be strong for exporters and strong for importers at the same time.
 
-Not every country lets its currency float. Some run a fixed exchange rate, promising to keep their currency at a set value against another, usually the dollar. Hong Kong has done this since 1983, and several Gulf states peg to the dollar too. A peg brings stability for trade, but it means importing the anchor country's monetary policy: when the Fed raised rates in 2022, Hong Kong's rates had to follow, whether or not its economy needed them. Other economies manage their rate loosely, intervening only at the edges.
+Not every country lets its currency float. Some run a fixed exchange rate, promising to keep their currency at a set value against another, usually the dollar. Hong Kong has done this since 1983, and several Gulf states peg to the dollar too. A peg brings stability for trade, but it means importing the anchor country's monetary policy: when the Fed raised rates in 2022, Hong Kong's rates had to follow, whether or not its economy needed them [5]. Other economies manage their rate loosely, intervening only at the edges.
 
 The wider lesson is that an exchange rate is a relative price, not a scoreboard. When the yen was at 160, headlines called it a national weakness, yet Japan's export sector was thriving and tourism hit record numbers because visitors found the country cheap. By mid-2025, as the Bank of Japan raised rates and the Fed began cutting, the gap narrowed and the yen recovered toward 140 [4]. A currency's level is rarely simply good or bad. It shifts value between groups — exporters and importers, producers and consumers, savers and borrowers — and which way you read it depends on which side you are on.
 
@@ -756,6 +792,8 @@ exchange rate, floating exchange rate, fixed exchange rate, currency interventio
 [https://www.japantimes.co.jp/business/2024/05/09/companies/toyota-honda-earnings-weak-yen/](https://www.japantimes.co.jp/business/2024/05/09/companies/toyota-honda-earnings-weak-yen/)
 4. Reuters: "Yen strengthens as BOJ-Fed policy gap narrows"  
 [https://www.reuters.com/markets/currencies/yen-strengthens-boj-fed-policy-gap-narrows-2025-07-15/](https://www.reuters.com/markets/currencies/yen-strengthens-boj-fed-policy-gap-narrows-2025-07-15/)
+5. Hong Kong Monetary Authority: Linked Exchange Rate System  
+[https://www.hkma.gov.hk/eng/key-functions/monetary-stability/linked-exchange-rate-system/](https://www.hkma.gov.hk/eng/key-functions/monetary-stability/linked-exchange-rate-system/)
 
 
 ## 3.5. Emerging Markets and Development Finance
@@ -774,7 +812,7 @@ Developing countries fund growth from three main sources, each with a catch. The
 
 Japan is one of the largest bilateral providers of this last kind of finance. Through the Japan International Cooperation Agency and its leading role at the Asian Development Bank, it funds transport, energy and water projects across South and Southeast Asia, often as long-term loans in yen at low interest [3]. Supporters say this builds lasting capacity; critics note it can tie borrowers to Japanese contractors and add to debt loads.
 
-The recurring danger is the sudden stop. Emerging markets depend on foreign capital that can reverse fast when global interest rates rise or risk appetite falls, as it did across 2022 when the US Federal Reserve tightened policy and investors pulled back from riskier assets worldwide [4]. Countries that had borrowed heavily in dollars, such as Sri Lanka, defaulted; countries with deeper local savings, larger reserves and credible central banks, such as India and Indonesia, absorbed the shock. The clearest lesson of development finance is that how a country borrows — the currency, the maturity, the lender — often matters more than how much.
+The recurring danger is the sudden stop. Emerging markets depend on foreign capital that can reverse fast when global interest rates rise or risk appetite falls, as it did across 2022 when the US Federal Reserve tightened policy and investors pulled back from riskier assets worldwide [4]. Countries that had borrowed heavily in dollars, such as Sri Lanka, defaulted; countries with deeper local savings, larger reserves and credible central banks, such as India and Indonesia, absorbed the shock [5]. The clearest lesson of development finance is that how a country borrows — the currency, the maturity, the lender — often matters more than how much.
 
 ### 3.5.3. Vocabulary Focus
 
@@ -806,6 +844,8 @@ emerging market, capital outflow, foreign direct investment, currency mismatch, 
 [https://www.adb.org/publications/japan-fund-poverty-reduction-fact-sheet](https://www.adb.org/publications/japan-fund-poverty-reduction-fact-sheet)
 4. International Monetary Fund: "Global Financial Stability Report, October 2022"  
 [https://www.imf.org/en/Publications/GFSR/Issues/2022/10/11/global-financial-stability-report-october-2022](https://www.imf.org/en/Publications/GFSR/Issues/2022/10/11/global-financial-stability-report-october-2022)
+5. Federal Reserve Bank of Dallas: Emerging-market countries insulate themselves from Fed rate hikes, 8 August 2023  
+[https://www.dallasfed.org/research/economics/2023/0808](https://www.dallasfed.org/research/economics/2023/0808)
 
 
 \pagebreak
@@ -879,7 +919,7 @@ Explain the difference between deficits, debt and debt-to-GDP, and why bond mark
 
 ### 4.2.2. Reading
 
-On 23 September 2022 the UK government announced about GBP 45 billion of tax cuts with no stated plan to pay for them. Government bonds, known as gilts, fell at their fastest rate in decades, the pound hit a record low near US$1.035, and forced selling by pension funds threatened a wider crash. On 28 September the Bank of England began emergency gilt purchases, authorised up to GBP 65 billion [1][2]. The finance minister was sacked, the prime minister resigned after 49 days, and almost every measure was reversed.
+On 23 September 2022 the UK government announced about GBP 45 billion of tax cuts with no stated plan to pay for them. Government bonds, known as gilts, fell at their fastest rate in decades, the pound hit a record low near US$1.035, and forced selling by pension funds threatened a wider crash. On 28 September the Bank of England began emergency gilt purchases, authorised up to GBP 65 billion [1][2]. The finance minister was sacked, the prime minister resigned after 49 days, and almost every measure was reversed [7].
 
 The episode turns on three linked ideas. A deficit is the gap in one year between what a government spends and what it raises in tax. Debt is the accumulated total of past deficits. The debt-to-GDP ratio compares that stock to a year's national output, because a larger economy can carry more debt. A government can lower the ratio by running surpluses or by growing — or inflating — GDP faster than the debt.
 
@@ -887,7 +927,7 @@ Governments run deficits routinely and can carry high debt for decades, but the 
 
 The euro area tried to prevent crises with rules — a 3%-of-GDP deficit limit and 60%-of-GDP debt limit, set in 1997, suspended during COVID and replaced in 2024 with country-specific spending paths [5]. Rules, though, meet politics. In 2024 Kenya's government proposed about US$2.6 billion of new taxes, partly to meet IMF targets, when interest payments alone already consumed about 37% of revenue. Mass protests forced the president to withdraw the bill [6]. Deficit reduction is a political problem before it is an arithmetic one.
 
-Japan is the puzzle that makes the topic interesting. Its government debt is well over 200% of GDP, comfortably the highest in the rich world, yet its bonds pay very low interest and there has been no run on them. The debt is held almost entirely by Japanese institutions and households, the Bank of Japan owns around half, and a quarter-century of deflation kept interest rates near zero. So Japan has never faced the market pressure that forces other governments to act — raising the consumption tax is so costly at the ballot box that it has happened only three times in 35 years, even as spending on an ageing population keeps rising. Japan shows a country can carry extraordinary debt for a long time when the conditions are right — and "the conditions are right" is not a plan.
+Japan is the puzzle that makes the topic interesting. Its government debt is well over 200% of GDP, comfortably the highest in the rich world, yet its bonds pay very low interest and there has been no run on them [8]. The debt is held almost entirely by Japanese institutions and households, the Bank of Japan owns around half, and a quarter-century of deflation kept interest rates near zero. So Japan has never faced the market pressure that forces other governments to act — raising the consumption tax is so costly at the ballot box that it has happened only three times in 35 years, even as spending on an ageing population keeps rising [9]. Japan shows a country can carry extraordinary debt for a long time when the conditions are right — and "the conditions are right" is not a plan.
 
 ### 4.2.3. Vocabulary Focus
 
@@ -923,6 +963,12 @@ budget deficit / surplus; government (sovereign) debt; debt-to-GDP ratio; bond y
 [https://economy-finance.ec.europa.eu/economic-and-fiscal-governance/economic-governance-review_en](https://economy-finance.ec.europa.eu/economic-and-fiscal-governance/economic-governance-review_en)
 6. France 24: "Kenya's Ruto says finance bill to be withdrawn after anti-tax protest deaths" (26 June 2024)  
 [https://www.france24.com/en/live-news/20240626-kenya-s-president-says-finance-bill-to-be-withdrawn-after-anti-tax-protest-deaths](https://www.france24.com/en/live-news/20240626-kenya-s-president-says-finance-bill-to-be-withdrawn-after-anti-tax-protest-deaths)
+7. CNBC: UK PM Liz Truss fires Finance Minister Kwasi Kwarteng, 14 October 2022  
+[https://www.cnbc.com/2022/10/14/uk-pm-liz-truss-fires-finance-minister-kwasi-kwarteng.html](https://www.cnbc.com/2022/10/14/uk-pm-liz-truss-fires-finance-minister-kwasi-kwarteng.html)
+8. Federal Reserve Bank of St. Louis: Why Is Japan's Government Debt So High?, 2025  
+[https://www.stlouisfed.org/on-the-economy/2025/apr/what-is-behind-japan-high-government-debt](https://www.stlouisfed.org/on-the-economy/2025/apr/what-is-behind-japan-high-government-debt)
+9. Nippon.com: The Political History of Japan's Consumption Tax  
+[https://www.nippon.com/en/features/h00013/the-political-history-of-japan%E2%80%99s-consumption-tax.html](https://www.nippon.com/en/features/h00013/the-political-history-of-japan%E2%80%99s-consumption-tax.html)
 
 
 ## 4.3. The Business of Sport, Art and Culture
@@ -939,11 +985,11 @@ At the commercial end, revenue comes from media rights, ticketing, sponsorship, 
 
 That scale draws in outside capital with mixed motives. Saudi Arabia's Public Investment Fund, a sovereign wealth fund, bought Newcastle United in 2021 for about GBP 305 million, four Saudi domestic-league clubs in 2023, and reportedly around US$5 billion into the breakaway LIV Golf circuit [3]. It states three aims at once: a financial return, "soft power" (influence gained through visibility rather than force), and building a domestic entertainment industry.
 
-The other model cannot cover its costs from tickets. US orchestras, on average, take more revenue from donations than ticket sales, and American concert tickets average close to US$80, which limits audiences [4]. Economist William Baumol named the reason: a string quartet still needs four players for the same length of time as in 1800, so as wages rise economy-wide, the relative cost of live performance keeps climbing. This "cost disease" is why orchestras, opera and theatre need subsidy or philanthropy indefinitely. Countries differ sharply in how much public money they give — Germany funds a dense network of civic theatres and opera houses, the US very little, relying instead on tax-deductible donations.
+The other model cannot cover its costs from tickets. US orchestras, on average, take more revenue from donations than ticket sales, and American concert tickets average close to US$80, which limits audiences [4]. Economist William Baumol named the reason: a string quartet still needs four players for the same length of time as in 1800, so as wages rise economy-wide, the relative cost of live performance keeps climbing [7]. This "cost disease" is why orchestras, opera and theatre need subsidy or philanthropy indefinitely. Countries differ sharply in how much public money they give — Germany funds a dense network of civic theatres and opera houses, the US very little, relying instead on tax-deductible donations.
 
 The art market sits at the commercial end but is concentrated and, lately, shrinking. Global sales were an estimated US$57.5 billion in 2024, down 12% for a second straight annual fall. The US took 43% of sales by value, the UK 18% and China 15% [5].
 
-Japan's cultural economy is lopsided in an instructive way. Its fine-art market is small, around 1% of world sales, and its orchestras and theatres rely on the same public-and-corporate mix as elsewhere. But one cultural industry is a genuine commercial powerhouse: animation. In 2023 the anime industry earned a record roughly JPY 3.3 trillion (about US$21 billion), and for the first time in a full year, overseas revenue exceeded domestic [6]. Anime works as a business the way a live orchestra cannot: it is reproduced at almost no extra cost, sold into every market at once, and earns from its characters for decades. The divide mirrors the topic's central split — culture that scales through reproduction can be a big business; culture performed live, each time, generally cannot pay for itself.
+Japan's cultural economy is lopsided in an instructive way. Its fine-art market is small, around 1% of world sales, and its orchestras and theatres rely on the same public-and-corporate mix as elsewhere [8]. But one cultural industry is a genuine commercial powerhouse: animation. In 2023 the anime industry earned a record roughly JPY 3.3 trillion (about US$21 billion), and for the first time in a full year, overseas revenue exceeded domestic [6]. Anime works as a business the way a live orchestra cannot: it is reproduced at almost no extra cost, sold into every market at once, and earns from its characters for decades. The divide mirrors the topic's central split — culture that scales through reproduction can be a big business; culture performed live, each time, generally cannot pay for itself.
 
 ### 4.3.3. Vocabulary Focus
 
@@ -979,6 +1025,10 @@ media / broadcast rights; sponsorship; sovereign wealth fund; "soft power"; phil
 [https://www.artbasel.com/news/the-art-basel-and-ubs-global-art-market-report-2025](https://www.artbasel.com/news/the-art-basel-and-ubs-global-art-market-report-2025)
 6. Screen Daily: "Japanese anime industry generated record $22bn in 2023 with overseas surpassing local takings"  
 [https://www.screendaily.com/news/japanese-anime-industry-generated-record-22bn-in-2023-with-overseas-surpassing-local-takings/5198698.article](https://www.screendaily.com/news/japanese-anime-industry-generated-record-22bn-in-2023-with-overseas-surpassing-local-takings/5198698.article)
+7. Chicago Booth Review: Diagnosing William Baumol's Cost Disease  
+[https://www.chicagobooth.edu/review/diagnosing-william-baumols-cost-disease](https://www.chicagobooth.edu/review/diagnosing-william-baumols-cost-disease)
+8. Artnet News: Japan Boasts the World's Third Largest Economy. So Why Does It Still Have a Disproportionately Small Share of the Global Art Market?, 2024  
+[https://news.artnet.com/market/japan-art-market-2205158](https://news.artnet.com/market/japan-art-market-2205158)
 
 
 ## 4.4. Philanthropy, Foundations and Impact
@@ -991,7 +1041,7 @@ Explain how large-scale institutional philanthropy is structured, why its accoun
 
 It is tempting to think of philanthropy as charity on a bigger scale — the same act, just more money. The structure is different, and the difference is what the debate is about. Charity is direct help given now. Modern institutional philanthropy is large sums held in an endowed foundation that gives away only a slice of its investment returns each year, backed by tax advantages, and increasingly judged on measurable "impact."
 
-That structure raises real questions. A private foundation can, in principle, exist forever: in the United States it must distribute only about 5% of its assets a year to keep its tax exemption. Donor-advised funds — accounts that give the donor an immediate tax deduction but let them recommend grants later — have no payout deadline at all [1]. Critics, notably the political theorist Rob Reich, add that big philanthropy is subsidised by every taxpayer through deductions, is accountable to no electorate, and lets very wealthy individuals set public priorities in health, education and science.
+That structure raises real questions. A private foundation can, in principle, exist forever: in the United States it must distribute only about 5% of its assets a year to keep its tax exemption. Donor-advised funds — accounts that give the donor an immediate tax deduction but let them recommend grants later — have no payout deadline at all [1]. Critics, notably the political theorist Rob Reich, add that big philanthropy is subsidised by every taxpayer through deductions, is accountable to no electorate, and lets very wealthy individuals set public priorities in health, education and science [7].
 
 The responses try to answer those objections. One is the spend-down foundation, which commits to giving everything away and closing. In May 2025 the Gates Foundation said it would spend roughly US$200 billion over the next 20 years, about double what it gave in its first 25, and shut permanently by the end of 2045 rather than last forever [2].
 
@@ -999,7 +1049,7 @@ A second response is unrestricted giving. Since 2019 MacKenzie Scott has given m
 
 A third response is the "impact" turn: formal metrics and impact investing, deploying capital for a measurable social return alongside a financial one, which had grown to an estimated US$1.57 trillion in assets by 2024 [4]. A fourth is regulation: the United Kingdom requires charities to demonstrate "public benefit" and is home to one of the world's largest foundations, the Wellcome Trust, whose roughly GBP 37.6 billion endowment funds health and science research [5].
 
-Japan's philanthropic sector is small relative to its economy. Individual giving was around 0.23% of GDP in 2020, roughly a seventh of the US share, and large private foundations of the Gates or Wellcome type are rare [6]. Three things explain this: tax incentives were weak until recent reforms; there is an expectation that the state and companies, not individuals, handle social provision; and until a 2008 reform, government ministries had wide discretion over which bodies served the public interest. Corporate giving is the stronger tradition, formalised in the Keidanren business federation's "1% Club." Recent large personal pledges by company founders suggest the picture may be shifting, but from a low base. The honest verdict on all these responses: partial answers, not a settled fix.
+Japan's philanthropic sector is small relative to its economy. Individual giving was around 0.23% of GDP in 2020, roughly a seventh of the US share, and large private foundations of the Gates or Wellcome type are rare [6]. Three things explain this: tax incentives were weak until recent reforms; there is an expectation that the state and companies, not individuals, handle social provision; and until a 2008 reform, government ministries had wide discretion over which bodies served the public interest [8]. Corporate giving is the stronger tradition, formalised in the Keidanren business federation's "1% Club" [9]. Recent large personal pledges by company founders suggest the picture may be shifting, but from a low base. The honest verdict on all these responses: partial answers, not a settled fix.
 
 ### 4.4.3. Vocabulary Focus
 
@@ -1035,6 +1085,12 @@ foundation; endowment; payout rule; donor-advised fund (DAF); spend-down (sunset
 [https://wellcome.org/insights/articles/wellcome-annual-report-and-financial-statements-202425](https://wellcome.org/insights/articles/wellcome-annual-report-and-financial-statements-202425)
 6. Alliance magazine: "Japanese philanthropy has fallen behind. Can it catch up?"  
 [https://www.alliancemagazine.org/analysis/japanese-philanthropy-has-fallen-behind-can-it-catch-up/](https://www.alliancemagazine.org/analysis/japanese-philanthropy-has-fallen-behind-can-it-catch-up/)
+7. Stanford Report: The problems with philanthropy, December 2018  
+[https://news.stanford.edu/stories/2018/12/the-problems-with-philanthropy](https://news.stanford.edu/stories/2018/12/the-problems-with-philanthropy)
+8. International Center for Not-for-Profit Law (ICNL): Public Interest Corporations in Japan  
+[https://www.icnl.org/wp-content/uploads/v18n1-revd-Deguchi.pdf](https://www.icnl.org/wp-content/uploads/v18n1-revd-Deguchi.pdf)
+9. Keidanren (Japan Business Federation): About the 1% Club / Corporate Philanthropic Activities Survey  
+[https://www.keidanren.or.jp/en/policy/2015/089_summary.pdf](https://www.keidanren.or.jp/en/policy/2015/089_summary.pdf)
 
 
 ## 4.5. The Future of Money
@@ -1051,11 +1107,11 @@ Its form has moved in stages: commodity money, then minted coins, then paper not
 
 One point matters before looking ahead: most money is already digital and private. In modern economies the large majority of the money supply is commercial-bank deposits — money created when a bank lends, existing only as entries in a ledger — not central-bank cash [3]. So "the future of money" is mostly a question about what backs and moves those deposits.
 
-The newest forms sit on top of that. Privately issued tokens pegged to a national currency, over 90% to the US dollar, reached a combined value of about US$250 billion by mid-2025 [4]. Reported transfer volume hit roughly US$33 trillion in 2025, though most is automated trading, not payments. Banks and central banks are separately piloting "tokenised deposits" on shared ledgers, so payment and settlement happen together, instantly [5]. Central-bank digital currencies, a digital form of public central-bank money, are being tested in many countries, China and India furthest along, but most remain at the pilot stage.
+The newest forms sit on top of that. Privately issued tokens pegged to a national currency, over 90% to the US dollar, reached a combined value of about US$250 billion by mid-2025 [4]. Reported transfer volume hit roughly US$33 trillion in 2025, though most is automated trading, not payments [4]. Banks and central banks are separately piloting "tokenised deposits" on shared ledgers, so payment and settlement happen together, instantly [5]. Central-bank digital currencies, a digital form of public central-bank money, are being tested in many countries, China and India furthest along, but most remain at the pilot stage [8].
 
 Sweden, having led the world toward cashlessness, is now legislating to protect cash. In November 2024 the authorities sent every household a brochure advising a week's worth of cash, around SEK 1,000 per adult, and backed a proposed legal duty for essential-goods shops to accept it [6]. Cash is now treated as resilience infrastructure, a backup if the electronic system fails, rather than a relic.
 
-Japan is the useful counter-example to the "cash is dying" story. QR-code wallets have spread quickly, yet Japan's demand for physical currency is around 19–20% of GDP, the highest the BIS tracks, and cash is still used in more than four in ten retail purchases [7]. Several things hold it in place: near-zero rates removed any cost to holding cash over deposits; the population is old and used to tangible money; and crime is rare, so cash feels safe. Japan issued its first redesigned banknotes in twenty years in 2024, and only recently has cash in circulation begun to fall. Whether a society goes cashless depends on interest rates, demographics, trust and habit, not just available technology — why the same decade produced near-cashless Sweden and cash-heavy Japan.
+Japan is the useful counter-example to the "cash is dying" story. QR-code wallets have spread quickly, yet Japan's demand for physical currency is around 19–20% of GDP, the highest the BIS tracks, and cash is still used in more than four in ten retail purchases [7]. Several things hold it in place: near-zero rates removed any cost to holding cash over deposits; the population is old and used to tangible money; and crime is rare, so cash feels safe. Japan issued its first redesigned banknotes in twenty years in 2024, and only recently has cash in circulation begun to fall [9]. Whether a society goes cashless depends on interest rates, demographics, trust and habit, not just available technology — why the same decade produced near-cashless Sweden and cash-heavy Japan.
 
 ### 4.5.3. Vocabulary Focus
 
@@ -1093,3 +1149,7 @@ fiat money; money supply; cashless society; stablecoin; tokenised deposit; centr
 [https://cashessentials.org/sweden-steps-up-efforts-to-reverse-the-decline-in-cash-usage/](https://cashessentials.org/sweden-steps-up-efforts-to-reverse-the-decline-in-cash-usage/)
 7. Bank of Japan: "Circulation Status of the New Series of Bank of Japan Notes" (July 2024 redesign; cash trends)  
 [https://www.boj.or.jp/en/research/wps_rev/rev_2025/data/rev25e09.pdf](https://www.boj.or.jp/en/research/wps_rev/rev_2025/data/rev25e09.pdf)
+8. Atlantic Council: "Central Bank Digital Currency Tracker"  
+[https://www.atlanticcouncil.org/cbdctracker/](https://www.atlanticcouncil.org/cbdctracker/)
+9. The Japan Times: "Japan releases new banknotes for first time in 20 years", 3 July 2024  
+[https://www.japantimes.co.jp/news/2024/07/03/japan/society/new-banknotes-debut/](https://www.japantimes.co.jp/news/2024/07/03/japan/society/new-banknotes-debut/)

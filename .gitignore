@@ -5,6 +5,9 @@ __pycache__/
 # Windows Explorer thumbnail cache
 Thumbs.db
 
+# Microsoft Office lock files (created while a file is open, transient)
+~$*
+
 # Local audio/model artifacts
 scripts/piper_voices/
 textmaker/piper_voices/

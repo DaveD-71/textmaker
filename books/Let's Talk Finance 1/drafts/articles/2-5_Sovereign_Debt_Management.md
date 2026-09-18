@@ -12,7 +12,7 @@ Most governments borrow the same basic way. A treasury or a specialist debt mana
 
 The United States shows a different balance. About 31% of United States federal debt held by the public is owned by foreign investors, with Japan the largest single holder, and the government paid roughly US$282 billion in interest to those foreign holders in 2025 [4]. That reliance on outside lenders is manageable for a country whose currency the world wants to hold, but it would be dangerous for a smaller economy.
 
-When debt genuinely cannot be paid, a government must restructure it. That means negotiating with creditors to stretch out repayment dates or reduce the amount owed, a reduction known as a haircut. Sri Lanka defaulted in 2022 and agreed a deal with bondholders in 2024 that cut the value of its bonds by roughly a quarter. Lower-income countries such as Zambia and Ghana have restructured through a shared process set up by the Group of Twenty, a body that brings together the world's largest economies. Zambia's 2024 deal wrote off about US$840 million of what it owed. These cases share a feature Japan lacks: debt owed to foreigners, often in dollars, which is the hardest kind to carry when trouble comes.
+When debt genuinely cannot be paid, a government must restructure it. That means negotiating with creditors to stretch out repayment dates or reduce the amount owed, a reduction known as a haircut. Sri Lanka defaulted in 2022 and agreed a deal with bondholders in 2024 that cut the value of its bonds by roughly a quarter[5]. Lower-income countries such as Zambia and Ghana have restructured through a shared process set up by the Group of Twenty, a body that brings together the world's largest economies. Zambia's 2024 deal wrote off about US$840 million of what it owed[6]. These cases share a feature Japan lacks: debt owed to foreigners, often in dollars, which is the hardest kind to carry when trouble comes.
 
 ### 2.5.3. Vocabulary Focus
 
@@ -42,3 +42,5 @@ When debt genuinely cannot be paid, a government must restructure it. That means
 2. Ministry of Finance (Japan): Breakdown by JGB and T-Bill Holders (March 2026, preliminary), from Bank of Japan Flow of Funds Accounts — https://www.mof.go.jp/english/policy/jgbs/reference/Others/holdings01.pdf
 3. UK Debt Management Office: DMO Annual Review 2024–25, 29 August 2025 — https://www.dmo.gov.uk/media/dmgaetip/gar2025a.pdf
 4. Congressional Research Service: Foreign Holdings of Federal Debt (RS22331), updated 22 April 2026 — https://www.congress.gov/crs-product/RS22331
+5. Bloomberg: Sri Lanka Strikes Restructuring Agreement With Bondholders, 3 July 2024 — https://www.bloomberg.com/news/articles/2024-07-03/sri-lanka-bondholders-agree-on-core-terms-of-debt-restructuring
+6. Debt Justice: Zambia reaches debt deal with bondholders, 25 March 2024 — https://debtjustice.org.uk/press-release/zambia-reaches-debt-deal-with-bondholders
