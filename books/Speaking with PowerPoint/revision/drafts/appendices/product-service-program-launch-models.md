@@ -24,7 +24,7 @@ This is a banking/leasing or general trading-company account-service operations 
 
 ### Audience and Purpose
 
-Audience:
+Audience
 
 - client-service account managers
 - account-service staff
@@ -43,14 +43,14 @@ Q&A: 5 minutes.
 
 ### Suggested Visual Sequence
 
-1. Title and decision needed: `Supplier Status Dashboard Pilot`
-2. Why now: three simple figures from the last reporting cycle
-3. What changes: dashboard mockup with sanitized labels
-4. How it helps: three benefit boxes, `Earlier view`, `Fewer repeated messages`, `Clearer ownership`
-5. Rollout: four-week timeline
-6. Next steps: pilot users, launch date, feedback owner
+1. **Title and decision needed** — `Supplier Status Dashboard Pilot`
+2. **Why now** — three simple figures from the last reporting cycle
+3. **What changes** — dashboard mockup with sanitized labels
+4. **How it helps** — three benefit boxes: `Earlier view`, `Fewer repeated messages`, `Clearer ownership`
+5. **Rollout** — four-week timeline
+6. **Next steps** — pilot users, launch date, feedback owner
 
-Visual notes:
+Visual notes
 
 - Use fictional client-team names only, such as `Account Team A`.
 - Keep the dashboard mockup simple: top status bar, request status, deadline panel, and owner column.
@@ -130,7 +130,7 @@ Thank you. I am happy to take your questions.
 
 ### Language Notes
 
-Useful launch phrases:
+Useful launch phrases
 
 - `This briefing is about...`
 - `I will introduce... and ask you to confirm...`
@@ -141,7 +141,7 @@ Useful launch phrases:
 - `There is also one important limit.`
 - `The next step is to confirm...`
 
-First-use vocabulary:
+First-use vocabulary
 
 | Term | Simple meaning |
 |---|---|
@@ -158,7 +158,7 @@ Register note: `I would like us to agree on...` is polite and direct. It is stro
 
 ### Pronunciation and Intelligibility Notes
 
-Thought groups for the opening:
+Thought groups for the opening
 
 `Today / I would like to introduce / the pilot version / of our supplier-status dashboard.`
 
@@ -171,13 +171,13 @@ Stress these key words:
 - `owner`
 - `next action`
 
-Katakana risk:
+Katakana risk
 
 - `client` has one syllable in natural English: /klai-uhnt/. Avoid adding an extra vowel after the final `t`.
 - `dashboard` has stress on the first syllable: `DASH-board`.
 - `reporting` has stress on the second syllable: `re-PORT-ing`.
 
-Pause after limits language:
+Pause after limits language
 
 `It will not replace official reports. [pause] It will not replace the account-service process. [pause] It will not be sent to clients during this pilot.`
 
@@ -194,20 +194,20 @@ Pause after limits language:
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
-Privacy and security:
+Privacy and security
 
 - Use fictional or sanitized labels only.
 - Do not show customer names, account, shipment, or order numbers, ticket IDs, shipment IDs, shipment or order details, proprietary screens, or confidential notes.
 - Confirm approved access before the pilot starts.
 - Check file metadata before sharing the user guide or mockup.
 
-Accessibility:
+Accessibility
 
 - Use readable labels and strong contrast in the dashboard mockup.
 - Do not rely on red, yellow, and green alone. Add text labels such as `Open`, `Waiting`, and `Complete`.
 - Add alt text if the mockup is shared as a file.
 
-Contingency:
+Contingency
 
 - Prepare a PDF fallback of the mockup and timeline.
 - Keep an offline copy.
@@ -234,7 +234,7 @@ This is an administrative service-delivery example. It is not a political propos
 
 ### Audience and Purpose
 
-Audience:
+Audience
 
 - administrative managers
 - counter-service staff
@@ -253,14 +253,14 @@ Q&A: 5 minutes.
 
 ### Suggested Visual Sequence
 
-1. Title and decision needed: `Application Support Desk Pilot`
-2. Why now: common inquiry types and repeat inquiry issue
-3. What changes: simple service-flow diagram
-4. How it helps: fewer incomplete submissions, fewer repeat visits, clearer guidance
-5. Rollout: three-month pilot timeline
-6. Next steps: schedule approval, staffing, review measures
+1. **Title and decision needed** — `Application Support Desk Pilot`
+2. **Why now** — common inquiry types and repeat inquiry issue
+3. **What changes** — simple service-flow diagram
+4. **How it helps** — fewer incomplete submissions, fewer repeat visits, clearer guidance
+5. **Rollout** — three-month pilot timeline
+6. **Next steps** — schedule approval, staffing, review measures
 
-Visual notes:
+Visual notes
 
 - Use plain administrative visuals: service-flow diagram, timeline, and guidance-sheet sample.
 - Avoid flags, seals, emblems, crests, national symbols, party colors, or country-specific iconography.
@@ -340,7 +340,7 @@ Thank you. I welcome your questions.
 
 ### Language Notes
 
-Useful launch phrases:
+Useful launch phrases
 
 - `I want to focus on one service need today...`
 - `The decision I need is whether...`
@@ -351,7 +351,7 @@ Useful launch phrases:
 - `The pilot target is...`
 - `This is a target for review, not a promise.`
 
-First-use vocabulary:
+First-use vocabulary
 
 | Term | Simple meaning |
 |---|---|
@@ -368,7 +368,7 @@ Register note: `This is a target for review, not a promise` is useful when prese
 
 ### Pronunciation and Intelligibility Notes
 
-Thought groups for the core message:
+Thought groups for the core message
 
 `A small application support desk / will reduce incomplete submissions / and make the online form process easier / for residents.`
 
@@ -381,7 +381,7 @@ Stress these key words:
 - `guidance`
 - `three months`
 
-Katakana risk:
+Katakana risk
 
 - `support` has stress on the second syllable: `sup-PORT`.
 - `application` has stress on the third syllable: `ap-pli-CA-tion`.
@@ -404,14 +404,14 @@ Use pauses to separate limits:
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
-Privacy and security:
+Privacy and security
 
 - Do not record unnecessary personal information in the pilot inquiry log.
 - Use inquiry categories, not detailed personal cases, for the review.
 - Store pilot files in an approved internal location.
 - Check document metadata before sharing the guidance sheet.
 
-Accessibility:
+Accessibility
 
 - Use plain-language headings and short steps in the staff guidance sheet.
 - Make the service-flow diagram understandable without color alone.
@@ -419,7 +419,7 @@ Accessibility:
 - Prepare alt text if the diagram is shared digitally.
 - Consider caption or transcript support if the briefing is recorded.
 
-Contingency:
+Contingency
 
 - Prepare a PDF fallback of the service-flow diagram and timeline.
 - Bring a printed one-page timeline for the meeting room.

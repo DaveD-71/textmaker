@@ -27,7 +27,7 @@ The pilot used a shared exception log and a fixed daily checkpoint. After four w
 
 All organization names and data in this model are fictional for practice.
 
-Audience:
+Audience
 
 - operations leadership
 - risk/control representative
@@ -42,14 +42,12 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 ### Suggested Visual Sequence
 
-| Visual | Main message | Presenter action |
-|---|---|---|
-| 1. Title and decision needed | We need a decision on controlled expansion. | State the purpose and preview the structure. |
-| 2. Pilot Objective | The pilot targeted unclear handoffs. | Remind listeners why the pilot was started. |
-| 3. Before/after chart | Late document handoffs and rework time both fell. | Explain the chart in 60 to 90 seconds. |
-| 4. What changed table | The shared log improved ownership, but two issues remain. | Connect results to operational learning. |
-| 5. Recommendation summary | Expand to two desks with two controls. | Ask for approval and define the next review point. |
-| Backup. Volume-adjusted table | The improvement was still visible after checking volume. | Use only if asked about volume effects. |
+1. **Title and decision needed** — We need a decision on controlled expansion. *Presenter action: state the purpose and preview the structure.*
+2. **Pilot Objective** — The pilot targeted unclear handoffs. *Presenter action: remind listeners why the pilot was started.*
+3. **Before/after chart** — Late document handoffs and rework time both fell. *Presenter action: explain the chart in 60 to 90 seconds.*
+4. **What changed table** — The shared log improved ownership, but two issues remain. *Presenter action: connect results to operational learning.*
+5. **Recommendation summary** — Expand to two desks with two controls. *Presenter action: ask for approval and define the next review point.*
+6. **Backup: volume-adjusted table** — The improvement was still visible after checking volume. *Presenter action: use only if asked about volume effects.*
 
 Suggested chart title: **Pilot reduced late document handoffs and rework time**.
 
@@ -141,7 +139,7 @@ Thank you. I am ready to take your questions.
 
 ### Language Notes
 
-Useful phrases:
+Useful phrases
 
 - "The pilot had one main goal: to..."
 - "The result is positive, but not perfect."
@@ -149,7 +147,7 @@ Useful phrases:
 - "Based on the evidence, I recommend..."
 - "I am not asking for full rollout today. I am asking for..."
 
-Vocabulary:
+Vocabulary
 
 | Term | Simple meaning in this model |
 |---|---|
@@ -159,7 +157,7 @@ Vocabulary:
 | controlled expansion | A wider trial with clear limits and safeguards. |
 | rollout | Introducing a process to all target teams. |
 
-Cautious claim language:
+Cautious claim language
 
 - Stronger: "The pilot reduced every delay." Avoid this. It overclaims.
 - Better: "The pilot appears to have reduced delays."
@@ -214,7 +212,7 @@ The trial used a short front-counter checklist and a shared FAQ sheet. After one
 
 All organization names and data in this model are fictional for practice.
 
-Audience:
+Audience
 
 - department leadership
 - section manager
@@ -229,14 +227,12 @@ Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 ### Suggested Visual Sequence
 
-| Visual | Main message | Presenter action |
-|---|---|---|
-| 1. Title and decision needed | We need a decision on limited expansion. | State the purpose and audience decision. |
-| 2. Trial Objective | The checklist targeted preventable intake errors. | Explain the problem without blaming staff or applicants. |
-| 3. Process Note | The checklist is used before formal review. | Show where the checklist fits in the intake process. |
-| 4. Before/after chart | Returned applications and repeat inquiries both fell. | Explain the chart in 60 to 90 seconds. |
-| 5. Recommendation summary | Expand to two application types and assign update ownership. | Ask for approval and confirm next actions. |
-| Backup. Staff feedback summary | The checklist added about 40 seconds per intake. | Use only if asked about waiting time or staff workload. |
+1. **Title and decision needed** — We need a decision on limited expansion. *Presenter action: state the purpose and audience decision.*
+2. **Trial Objective** — The checklist targeted preventable intake errors. *Presenter action: explain the problem without blaming staff or applicants.*
+3. **Process Note** — The checklist is used before formal review. *Presenter action: show where the checklist fits in the intake process.*
+4. **Before/after chart** — Returned applications and repeat inquiries both fell. *Presenter action: explain the chart in 60 to 90 seconds.*
+5. **Recommendation summary** — Expand to two application types and assign update ownership. *Presenter action: ask for approval and confirm next actions.*
+6. **Backup: staff feedback summary** — The checklist added about 40 seconds per intake. *Presenter action: use only if asked about waiting time or staff workload.*
 
 Suggested chart title: **Checklist trial reduced returns and repeat inquiries**.
 
@@ -332,7 +328,7 @@ Thank you. I am ready to take your questions.
 
 ### Language Notes
 
-Useful phrases:
+Useful phrases
 
 - "The trial focused on one practical problem..."
 - "The purpose was not to... The purpose was to..."
@@ -342,7 +338,7 @@ Useful phrases:
 - "The service result is encouraging..."
 - "My recommendation is limited expansion..."
 
-Vocabulary:
+Vocabulary
 
 | Term | Simple meaning in this model |
 |---|---|
@@ -352,7 +348,7 @@ Vocabulary:
 | high-volume application type | An application type that the office receives often. |
 | update owner | The person or role responsible for keeping a document current. |
 
-Cautious claim language:
+Cautious claim language
 
 - Stronger: "The checklist solved returned applications." Avoid this. It overclaims.
 - Better: "The checklist appears to have reduced preventable errors."

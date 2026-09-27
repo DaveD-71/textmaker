@@ -71,7 +71,7 @@ Presentation purpose: request approval for a four-week pilot of a revised workfl
 
 Time limit: 6 minutes plus Q&A.
 
-Rehearsal result:
+Rehearsal result
 
 | Area | Observation | Revision decision |
 |---|---|---|
@@ -88,17 +88,15 @@ Notice that each comment leads to a specific action. This is the difference betw
 
 Before you rehearse, complete this checklist.
 
-| Item | Ready? | Note |
-|---|---|---|
-| Presentation purpose is clear |  |  |
-| Core message is in the opening |  |  |
-| Structure has clear transitions |  |  |
-| Visual pack or equivalent materials are ready |  |  |
-| Data or evidence has a takeaway statement |  |  |
-| Presenter notes are short enough to use while speaking |  |  |
-| Q&A response bank has at least six likely questions |  |  |
-| Timing target is written down |  |  |
-| Backup or follow-up material is identified |  |  |
+- [ ] Presentation purpose is clear
+- [ ] Core message is in the opening
+- [ ] Structure has clear transitions
+- [ ] Visual pack or equivalent materials are ready
+- [ ] Data or evidence has a takeaway statement
+- [ ] Presenter notes are short enough to use while speaking
+- [ ] Q&A response bank has at least six likely questions
+- [ ] Timing target is written down
+- [ ] Backup or follow-up material is identified
 
 Choose two focus areas for peer feedback. For example: opening and timing, chart explanation and Q&A, or visual readability and transitions.
 
@@ -135,7 +133,7 @@ Choose three sentences from your opening, transitions, chart explanation, close,
 
 Read the revised sentences aloud. Mark thought groups with slashes and underline one stressed word in each thought group.
 
-Example:
+Example
 
 We recommend / a four-week pilot / because most delays / come from unclear handoffs.
 

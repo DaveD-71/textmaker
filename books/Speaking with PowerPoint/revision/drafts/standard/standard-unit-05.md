@@ -65,7 +65,7 @@ Watch article, plural, and noun-phrase problems in short visual text.
 
 Hierarchy means that the most important information is easiest to see first. Use size, position, spacing, and contrast to create hierarchy.
 
-Strong hierarchy:
+Strong hierarchy
 
 - one clear title
 - short labels
@@ -73,7 +73,7 @@ Strong hierarchy:
 - enough space between sections
 - one or two emphasized elements
 
-Weak hierarchy:
+Weak hierarchy
 
 - many equal boxes
 - long sentences inside small shapes
@@ -81,7 +81,7 @@ Weak hierarchy:
 - crowded labels
 - no clear starting point
 
-Comparison task:
+Comparison task
 
 | Weak visual | Clearer visual |
 |---|---|
@@ -109,7 +109,7 @@ Accessibility improves quality for everyone, not only for people with declared n
 
 In this unit, `accessibility` means making the visual usable for people in the real presentation setting. A visual may be difficult to use because of small text, weak contrast, color-only meaning, a noisy background, missing alt text in a shared file, or missing captions/transcript support in recorded material.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|
@@ -118,7 +118,7 @@ Useful terms:
 | accessibility | making material usable for people in the real presentation setting |
 | rollout | the planned introduction of a new process, service, or tool |
 
-Check:
+Check
 
 - Is the text readable from the expected viewing distance?
 - Is there enough contrast between text and background?
@@ -130,7 +130,7 @@ Check:
 
 ## Model: Visual Redesign
 
-Weak visual text:
+Weak visual text
 
 Title: "New service"
 
@@ -141,21 +141,21 @@ Title: "New service"
 - The pilot will be three months.
 - We need approval.
 
-Improved visual:
+Improved visual
 
 Title: "The support process helps users before submission"
 
-Three-step flow:
+Three-step flow
 
 1. User checks form requirements.
 2. Support desk answers common questions.
 3. Review team receives fewer incomplete forms.
 
-Action box:
+Action box
 
 "Approve a three-month pilot and review inquiry data monthly."
 
-Why it is stronger:
+Why it is stronger
 
 - The title states the message.
 - The steps show the process.
@@ -174,7 +174,7 @@ This model is about 45-60 seconds when spoken at a clear pace.
 
 Read the visual description below. Mark each issue.
 
-Weak visual:
+Weak visual
 
 Title: "Project Information"
 
@@ -185,7 +185,7 @@ Title: "Project Information"
 - small text in the bottom-right corner
 - background image behind text
 
-Checklist:
+Checklist
 
 | Issue | Yes/No | Repair idea |
 |---|---|---|
@@ -254,7 +254,7 @@ Use this frame:
 
 "This supports my recommendation because..."
 
-Partner feedback:
+Partner feedback
 
 - Could you understand the visual without reading every word?
 - Did the speaker direct attention clearly?
@@ -274,7 +274,7 @@ Title: "Amazing Results"
 - Efficiency will increase a lot.
 - The team should use AI for everything.
 
-Questions:
+Questions
 
 1. Which phrases are too generic?
 2. What information would need checking?

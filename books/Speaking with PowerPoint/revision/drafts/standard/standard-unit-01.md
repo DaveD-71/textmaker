@@ -39,7 +39,7 @@ Use clear purpose and outcome language at the planning stage.
 
 Notice the difference between "I will talk about..." and "By the end, we need to decide...". The second version gives the presentation a workplace reason.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|

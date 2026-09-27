@@ -16,7 +16,7 @@ Listeners cannot reread your spoken message. They need signals while you speak. 
 
 A thought group is a short group of words that expresses one idea. Marking thought groups helps you pause naturally instead of reading word by word.
 
-Example:
+Example
 
 "Today / I will explain the current problem, / show two causes, / and recommend a short pilot."
 
@@ -44,7 +44,7 @@ A full script can help you prepare, but it is usually too heavy for delivery. Pr
 | "This creates rework because staff have to check the same information again." | Effect: rework, repeated checks |
 | "For that reason, I recommend one shared handoff point." | Action: shared handoff point |
 
-Useful note format:
+Useful note format
 
 - keyword
 - number or evidence
@@ -53,11 +53,11 @@ Useful note format:
 
 ## Model: Marked Delivery Segment
 
-Text for rehearsal:
+Text for rehearsal
 
 "Today / I will explain why the current process is creating delays. / The main issue is not staff effort. / The issue is unclear ownership between steps. / I will show one workflow visual, / then recommend a short pilot."
 
-Presenter notes:
+Presenter notes
 
 - purpose: explain delays
 - key contrast: effort is not the issue; ownership is
@@ -85,11 +85,11 @@ After marking, practice each sentence twice:
 
 Change the script into presenter notes.
 
-Script:
+Script
 
 "The first point is the current situation. At the moment, the team spends too much time answering repeated status questions. This does not mean people are careless. It means the information is difficult to find quickly."
 
-Presenter notes:
+Presenter notes
 
 - Point 1:
 - Problem:
@@ -108,7 +108,7 @@ Delivery changes with the room and platform, but the goal is the same: help peop
 | Hybrid | Include both room and remote listeners. Repeat or summarize room questions for remote participants. |
 | Async recording | Use shorter sections, clearer transitions, and a transcript or caption plan where possible. |
 
-Pointer and cursor control:
+Pointer and cursor control
 
 - Use a pointer, cursor highlight, digital pen, highlighter, annotation, or zoom only when it helps the listener find information.
 - If you use a laser pointer in a room, point only at the screen or wall. Do not point it at people, cameras, reflective surfaces, or screens close to someone's eyes.
@@ -126,7 +126,7 @@ Prepare a 3-minute segment from your own presentation or a course case. Your seg
 - one recovery phrase in case you need it
 - notes with keywords, not full sentences
 
-Partner feedback:
+Partner feedback
 
 | Check | Feedback |
 |---|---|

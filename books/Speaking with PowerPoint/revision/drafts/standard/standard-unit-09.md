@@ -26,7 +26,7 @@ Adapt your delivery by checking three things:
 
 Use practical online language before, during, and after screen sharing.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|
@@ -50,7 +50,7 @@ Useful terms:
 
 Original situation: You planned an 8-minute in-person results briefing with one before/after chart and a short recommendation.
 
-Online adaptation:
+Online adaptation
 
 - reduce the opening background to 45 seconds
 - use a larger chart title and fewer labels
@@ -59,7 +59,7 @@ Online adaptation:
 - prepare a PDF fallback
 - repeat questions before answering
 
-Async adaptation:
+Async adaptation
 
 - record a 4-minute version
 - state the purpose and action request in the first 30 seconds
@@ -67,7 +67,7 @@ Async adaptation:
 - add captions or prepare a transcript
 - end with a follow-up instruction
 
-Sample transition:
+Sample transition
 
 "I will pause here because this is the main result. If you are joining live, please add questions in the chat. If you are watching the recorded version, the supporting table is linked in the follow-up note."
 
@@ -79,32 +79,30 @@ Choose one presentation you have planned. Mark each item: Ready, Need to check, 
 
 Online delivery needs setup checks before the presentation begins.
 
-| Check | Status |
-|---|---|
-| Camera and microphone are tested. |  |
-| Lighting makes the speaker visible. |  |
-| Screen share works with the correct file or window. |  |
-| Presenter notes are visible only to the presenter. |  |
-| The audience can read charts and small text on screen. |  |
-| Chat or reactions have a clear role. |  |
-| Captions, transcript, or accessibility support is considered. |  |
-| Remote Q&A plan is clear. |  |
-| A PDF or backup file is ready. |  |
-| Timing is shorter or more structured than the in-person version. |  |
+- [ ] Camera and microphone are tested.
+- [ ] Lighting makes the speaker visible.
+- [ ] Screen share works with the correct file or window.
+- [ ] Presenter notes are visible only to the presenter.
+- [ ] The audience can read charts and small text on screen.
+- [ ] Chat or reactions have a clear role.
+- [ ] Captions, transcript, or accessibility support is considered.
+- [ ] Remote Q&A plan is clear.
+- [ ] A PDF or backup file is ready.
+- [ ] Timing is shorter or more structured than the in-person version.
 
 ## Practice 2: Adapt the Opening
 
 Rewrite the in-person opening for an online or hybrid audience.
 
-In-person opening:
+In-person opening
 
 "Today I will report the pilot results and recommend the next step. I will start with the objective, then show the main result, and finish with my recommendation."
 
-Online or hybrid version:
+Online or hybrid version
 
 "Before I start, ___. Today I will ___. I will pause after ___ so you can ___."
 
-Async version:
+Async version
 
 "This short recording explains ___. By the end, you should know ___. If you have questions after watching, ___."
 
@@ -120,7 +118,7 @@ A recorded version usually needs to be shorter and more explicit than a live ver
 | 2:30-3:30 | Recommendation or next step |  |  |
 | Final 15 seconds | Follow-up action |  |  |
 
-Accessibility check:
+Accessibility check
 
 - Can the audience understand the recording without watching every visual detail?
 - Are captions or a transcript planned where possible?

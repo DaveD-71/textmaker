@@ -16,22 +16,20 @@ A presentation is not a file type. It is a communication event. Before you build
 
 Use this tool-choice checklist:
 
-| Question | What to check |
-|---|---|
-| Audience | Who will listen, and what do they need to decide or do? |
-| Delivery mode | Will the presentation be in person, online, hybrid, or recorded? |
-| Collaboration | Will other people edit, comment, or approve the material? |
-| Data source | Is the information stable, live, confidential, or still changing? |
-| Visual complexity | Do listeners need a simple overview, a chart, a workflow, or detailed evidence? |
-| Accessibility | Can people read, hear, and follow the material in the actual setting? |
-| Export | Do you need PDF, shared document, printed copy, or offline backup? |
-| Confidentiality | Does the material contain company, client, account, personal, or restricted information? |
+- **Audience** — Who will listen, and what do they need to decide or do?
+- **Delivery mode** — Will the presentation be in person, online, hybrid, or recorded?
+- **Collaboration** — Will other people edit, comment, or approve the material?
+- **Data source** — Is the information stable, live, confidential, or still changing?
+- **Visual complexity** — Do listeners need a simple overview, a chart, a workflow, or detailed evidence?
+- **Accessibility** — Can people read, hear, and follow the material in the actual setting?
+- **Export** — Do you need PDF, shared document, printed copy, or offline backup?
+- **Confidentiality** — Does the material contain company, client, account, personal, or restricted information?
 
 ## Presentation English Focus
 
 Use clear language to explain the role of each material.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|
@@ -64,13 +62,13 @@ Scenario: You need to present a process improvement proposal in a 20-minute inte
 | PDF fallback | Protects the meeting if the editable file or platform fails |
 | Follow-up summary | Confirms the decision and next steps |
 
-Sample explanation:
+Sample explanation
 
 "I sent the one-page background note yesterday, so I will not read it today. In the live presentation, I will focus on the current workflow, the proposed change, and the pilot decision. The detailed cause table is in the appendix if we need it during Q&A."
 
 Optional model reference: For a banking/leasing or general trading-company version, see the business-client model in the Process Improvement Briefing Models. For a government-agency version, compare the government-agency model in the same model set.
 
-Example visual messages:
+Example visual messages
 
 | Context | Useful visual | Message the visual should make clear |
 |---|---|---|
@@ -90,7 +88,7 @@ Choose the best main format for each situation. Then explain your choice in one 
 | A senior audience wants to review details before a short decision meeting. | pre-read plus short live summary / live demo only / informal chat |
 | A remote audience needs a short update they can watch later. | recorded briefing with captions or transcript / printed handout only / complex live dashboard |
 
-Sentence frame:
+Sentence frame
 
 "For this situation, I would use ___ because the audience needs ___."
 
@@ -116,29 +114,27 @@ Before an important presentation, a professional presenter checks the materials,
 
 Mark each item: Done, Not needed, or Still needed.
 
-| Check | Status |
-|---|---|
-| The file is saved in an approved location. |  |
-| A PDF fallback is ready. |  |
-| Fonts, charts, media, and links work after export. |  |
-| The file opens on the meeting device or platform. |  |
-| A copy is available offline if allowed by company policy. |  |
-| Sensitive information has been removed or masked. |  |
-| Images, charts, and templates have acceptable source or license status. |  |
-| Text is readable and does not depend on color alone. |  |
+- [ ] The file is saved in an approved location.
+- [ ] A PDF fallback is ready.
+- [ ] Fonts, charts, media, and links work after export.
+- [ ] The file opens on the meeting device or platform.
+- [ ] A copy is available offline if allowed by company policy.
+- [ ] Sensitive information has been removed or masked.
+- [ ] Images, charts, and templates have acceptable source or license status.
+- [ ] Text is readable and does not depend on color alone.
 
 ## Speaking Task
 
 Prepare a 45-60 second explanation of your material choices. Use at least three expressions from the language table.
 
-Structure:
+Structure
 
 1. State the presentation situation.
 2. Explain the main live material.
 3. Explain one support material.
 4. Mention one backup, access, or confidentiality check.
 
-Example start:
+Example start
 
 "For this presentation, I will use a short visual pack during the meeting because the audience needs to compare two options quickly..."
 

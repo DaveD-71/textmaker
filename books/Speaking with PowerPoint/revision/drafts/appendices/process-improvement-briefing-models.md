@@ -18,42 +18,40 @@ Seika Global Trading Operations is a fictional general trading-company operation
 
 This is an operations workflow briefing. It does not recommend securities trades, investment products, market predictions, or legal/regulatory action.
 
-Audience:
+Audience
 
 - operations manager
 - risk/control representative
 - documentation team lead
 - account-service representative
 
-Purpose:
+Purpose
 
 - request approval for a four-week pilot of the revised workflow
 - confirm who owns the shared exception log
 - agree how the pilot result will be reviewed
 
-Audience outcome:
+Audience outcome
 
 By the end of the presentation, the audience should decide whether to approve a four-week pilot and assign owners for the daily checkpoint.
 
-Core message:
+Core message
 
 A shared exception log and one fixed handoff checkpoint will reduce avoidable document handoff delays without changing the control process.
 
-Expected delivery time:
+Expected delivery time
 
 - Spoken presentation: about 6.5 to 7.5 minutes
 - Q&A: 4 minutes
 
 ### Suggested Visual Sequence
 
-| Visual | Purpose | Suggested content |
-|---|---|---|
-| 1. Title and decision | Set the purpose | "Decision today: approve a four-week workflow pilot" |
-| 2. Current workflow | Show where the problem happens | Supplier A packing-list issue moving through email, spreadsheet, and message channels before ownership is confirmed |
-| 3. Problem snapshot | Give simple fictional evidence | 38 late document handoffs; 61% linked to unclear handoff notes; 22 minutes average rework time |
-| 4. Proposed pilot workflow | Explain the change | One shared exception log; three required fields; fixed 2:15 p.m. checkpoint before cutoff preparation |
-| 5. Pilot plan and owners | Make the request practical | Four-week timing, documentation lead as checkpoint owner, exception owner, control review |
-| 6. Decision and review | Close with action | Approve pilot, confirm owner, review late document handoffs and rework time |
+1. **Title and decision** — set the purpose: "Decision today: approve a four-week workflow pilot"
+2. **Current workflow** — show where the problem happens: Supplier A packing-list issue moving through email, spreadsheet, and message channels before ownership is confirmed
+3. **Problem snapshot** — give simple fictional evidence: 38 late document handoffs; 61% linked to unclear handoff notes; 22 minutes average rework time
+4. **Proposed pilot workflow** — explain the change: one shared exception log; three required fields; fixed 2:15 p.m. checkpoint before cutoff preparation
+5. **Pilot plan and owners** — make the request practical: four-week timing, documentation lead as checkpoint owner, exception owner, control review
+6. **Decision and review** — close with action: approve pilot, confirm owner, review late document handoffs and rework time
 
 Visual note: use a before/after workflow diagram as the main visual. A small evidence box is enough. Do not make this a data-heavy chart presentation.
 
@@ -147,7 +145,7 @@ If we agree today, we can prepare the log fields this week and start the pilot n
 
 ### Language Notes
 
-Useful phrases:
+Useful phrases
 
 - "The issue is not one large failure. It is a repeated handoff problem."
 - "I am asking for one decision today..."
@@ -156,13 +154,13 @@ Useful phrases:
 - "I want to be careful about this target."
 - "Today I am asking for approval for..."
 
-Language focus:
+Language focus
 
 - Use "I recommend..." or "My recommendation is..." for a direct but polite proposal.
 - Use "does not change" to reduce concern about risk, authority, or workload.
 - Use "pilot" when the action is limited and temporary.
 
-Vocabulary:
+Vocabulary
 
 - exception: a case that does not follow the normal process and needs extra checking
 - handoff: the point where responsibility moves from one person or team to another
@@ -177,7 +175,7 @@ Chunk key sentences into short thought groups:
 - "The control process / does not change."
 - "Today / I am asking for approval / for the four-week pilot."
 
-Word stress:
+Word stress
 
 - confirmation: con-fir-MA-tion
 - exception: ex-CEP-tion
@@ -229,21 +227,21 @@ Answer: Today I need approval for the four-week pilot, confirmation of the check
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
-Privacy and security:
+Privacy and security
 
 - Use fictional desk names only.
 - Do not show real customer names, account, shipment, or order numbers, shipment IDs, ticket IDs, proprietary system names, or internal control findings.
 - Remove hidden comments and metadata before sharing slides or PDFs.
 - Keep the backup cause table sanitized.
 
-Accessibility:
+Accessibility
 
 - Make the workflow diagram readable without color alone.
 - Use labels such as "current" and "pilot" in addition to color.
 - Keep small numbers in a simple evidence box, not a dense table.
 - Provide a PDF fallback if the live deck does not open.
 
-Contingency:
+Contingency
 
 - If the workflow visual fails, describe the current process verbally as three channels: email, spreadsheet, and short messages.
 - If time is cut, deliver only the opening, recommendation, pilot plan, and decision request.
@@ -268,42 +266,40 @@ Midori Ward Administrative Services Office is a fictional government-agency admi
 
 This is an administrative process-improvement briefing. It does not discuss politics, legislation, public-policy advocacy, or budget campaigning.
 
-Audience:
+Audience
 
 - section manager
 - counter-service staff
 - document-review staff
 - inquiry desk representative
 
-Purpose:
+Purpose
 
 - request approval for a one-month trial of a new intake checklist
 - confirm how staff will use the checklist
 - assign ownership for updating the shared FAQ
 
-Audience outcome:
+Audience outcome
 
 By the end of the presentation, the audience should decide whether to approve the one-month trial and assign an owner for the FAQ update process.
 
-Core message:
+Core message
 
 A front-counter checklist will reduce returned applications and shorten processing time by catching common errors before formal review.
 
-Expected delivery time:
+Expected delivery time
 
 - Spoken presentation: about 6.5 to 7.5 minutes
 - Q&A: 4 minutes
 
 ### Suggested Visual Sequence
 
-| Visual | Purpose | Suggested content |
-|---|---|---|
-| 1. Title and decision | Set the purpose | "Decision today: approve a one-month intake checklist trial" |
-| 2. Current intake process | Show where delays begin | Counter or online submission, formal review, returned form, repeat inquiry |
-| 3. Problem snapshot | Give simple fictional evidence | 142 returned applications; 54% missing one attachment; 31% incomplete contact or ID field |
-| 4. Checklist-supported process | Explain the change | Quick intake check, complete forms to review, FAQ for common explanations |
-| 5. Trial plan and ownership | Make the request practical | Housing support certificate applications, one month, FAQ owner, staff reminders |
-| 6. Decision and review | Close with action | Approve trial, agree checklist fields, assign FAQ owner |
+1. **Title and decision** — set the purpose: "Decision today: approve a one-month intake checklist trial"
+2. **Current intake process** — show where delays begin: counter or online submission, formal review, returned form, repeat inquiry
+3. **Problem snapshot** — give simple fictional evidence: 142 returned applications; 54% missing one attachment; 31% incomplete contact or ID field
+4. **Checklist-supported process** — explain the change: quick intake check, complete forms to review, FAQ for common explanations
+5. **Trial plan and ownership** — make the request practical: housing support certificate applications, one month, FAQ owner, staff reminders
+6. **Decision and review** — close with action: approve trial, agree checklist fields, assign FAQ owner
 
 Visual note: use a process-flow visual as the main visual. Do not use flags, seals, emblems, crests, or country-specific government symbols.
 
@@ -397,7 +393,7 @@ If we approve the trial today, we can prepare the checklist this week, brief sta
 
 ### Language Notes
 
-Useful phrases:
+Useful phrases
 
 - "The process is careful, but it is not efficient for common preventable errors."
 - "The checklist is not a second full review."
@@ -408,14 +404,14 @@ Useful phrases:
 - "The trial design is small on purpose."
 - "The approval I need today is..."
 
-Language focus:
+Language focus
 
 - Use "not a second full review" to answer workload concerns.
 - Use "only" to limit the task: "It covers only..."
 - Use "before formal review" to show where the process changes.
 - Use "one high-volume application type" to make the trial limited and realistic.
 
-Vocabulary:
+Vocabulary
 
 - intake: the first step when an office receives an application or request
 - formal review: the official check after intake
@@ -431,7 +427,7 @@ Chunk key sentences into short thought groups:
 - "The formal review process / does not change."
 - "Today / I am asking for approval / for the one-month trial."
 
-Word stress:
+Word stress
 
 - application: ap-pli-CA-tion
 - attachment: at-TACH-ment
@@ -483,14 +479,14 @@ Answer: Today I need approval for the one-month trial, agreement on the checklis
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
-Privacy and security:
+Privacy and security
 
 - Use fictional applicant examples only.
 - Do not show real names, addresses, ID numbers, application numbers, staff names, or personal circumstances.
 - Do not include hidden comments or draft applicant data in shared files.
 - Keep the return-reason table general and sanitized.
 
-Accessibility:
+Accessibility
 
 - Write checklist items in plain language.
 - Make the process visual readable in grayscale.
@@ -498,7 +494,7 @@ Accessibility:
 - Avoid flags, seals, emblems, crests, and country-specific government symbols.
 - If the checklist becomes staff guidance later, check text size, contrast, and screen-reader-friendly file structure where practical.
 
-Contingency:
+Contingency
 
 - If the process visual fails, describe the current process verbally as four steps: submit, review, return, inquire again.
 - If the meeting runs short, give only the problem, recommendation, trial plan, and decision request.
