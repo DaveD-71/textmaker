@@ -1,0 +1,58 @@
+schema_version: 1
+repository_scope:
+  id: repository
+  name: Textmaker repository
+  strong_phrases:
+    - repository-wide
+    - repo-wide
+multi_scope_phrases:
+  - across workstreams
+scopes:
+  - id: shared-pipeline
+    name: Shared Textmaker pipeline
+    level: workstream
+    parent: repository
+    path_prefixes:
+      - textmaker/
+      - scripts/
+      - styles/
+    strong_phrases:
+      - textmaker pipeline
+      - shared pipeline
+      - markdown-to-docx
+      - postprocess_docx
+    weak_terms:
+      - textmaker
+      - docx pipeline
+      - conversion pipeline
+  - id: presentation-skills
+    name: Presentation Skills
+    level: workstream
+    parent: repository
+    path_prefixes:
+      - books/Presentation Skills/
+    strong_phrases:
+      - presentation skills
+    weak_terms: []
+  - id: speaking-with-powerpoint
+    name: Speaking with PowerPoint
+    level: workstream
+    parent: repository
+    path_prefixes:
+      - books/Speaking with PowerPoint/
+    strong_phrases:
+      - speaking with powerpoint
+    weak_terms:
+      - swp
+  - id: lets-talk-finance
+    name: Let's Talk Finance
+    level: workstream
+    parent: repository
+    path_prefixes:
+      - books/Let's Talk Finance 1/
+      - books/Let's Talk Finance 2/
+      - _lets-talk-finance-shared/
+    strong_phrases:
+      - let's talk finance
+    weak_terms:
+      - ltf
