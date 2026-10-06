@@ -45,15 +45,15 @@ For a business audience, avoid an opening that only says, "Today I will talk abo
 
 ## Worked Example: From Brief to Opening
 
-Presentation brief:
+Presentation brief
 
 > I will give a five-minute presentation for a small operations team. The purpose is to recommend a trial workflow change. By the end, the audience should understand why handoff delays are happening and approve a one-month checklist trial. This matters because repeated delays are creating extra work and making deadlines harder to meet.
 
-Core message:
+Core message
 
 > Most delays come from unclear handoffs, so a shared checklist should reduce repeated work and help the team meet deadlines.
 
-Short opening:
+Short opening
 
 > Over the last month, we have had several delays at the handoff stage of the process. My main point today is that many of these delays are avoidable. I will show where the problem appears, explain why a shared checklist is a practical first step, and ask for approval to test it for one month.
 
@@ -93,7 +93,7 @@ Use these frames if helpful:
 
 ## Practice 3: Improve a Weak Opening
 
-Weak opening:
+Weak opening
 
 > Hello. Today I will talk about the new workflow. First, I will explain the current situation. Next, I will explain the new workflow. Finally, I will explain the schedule.
 

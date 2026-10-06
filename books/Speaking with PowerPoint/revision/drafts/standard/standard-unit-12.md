@@ -89,19 +89,17 @@ Use language that helps the audience follow the complete presentation.
 
 Use this checklist before you present.
 
-| Area | Check |
-|---|---|
-| Audience and purpose | I know who the presentation is for and what I want them to know, decide, or do. |
-| Message | My core message appears early and clearly. |
-| Structure | The sequence matches the purpose: problem-solution, results-next steps, options-recommendation, or another clear structure. |
-| Evidence | I explain one or more evidence points with a clear takeaway and appropriate limits. |
-| Visuals or materials | My materials are readable, accessible, and useful for the spoken message. |
-| Tool and format | My format fits the setting, and I have a backup or follow-up plan. |
-| Spoken English | I have prepared openings, transitions, explanations, close, and Q&A phrases. |
-| Delivery | I can use notes without reading word for word. |
-| Timing | I have rehearsed within the 5-7 minute target or the time limit set by my teacher. |
-| Q&A | I have prepared likely questions and safe deferral phrases. |
-| Professionalism | My data, names, and examples are fictional, sanitized, sourced, or approved. |
+- [ ] **Audience and purpose** — I know who the presentation is for and what I want them to know, decide, or do.
+- [ ] **Message** — My core message appears early and clearly.
+- [ ] **Structure** — The sequence matches the purpose: problem-solution, results-next steps, options-recommendation, or another clear structure.
+- [ ] **Evidence** — I explain one or more evidence points with a clear takeaway and appropriate limits.
+- [ ] **Visuals or materials** — My materials are readable, accessible, and useful for the spoken message.
+- [ ] **Tool and format** — My format fits the setting, and I have a backup or follow-up plan.
+- [ ] **Spoken English** — I have prepared openings, transitions, explanations, close, and Q&A phrases.
+- [ ] **Delivery** — I can use notes without reading word for word.
+- [ ] **Timing** — I have rehearsed within the 5-7 minute target or the time limit set by my teacher.
+- [ ] **Q&A** — I have prepared likely questions and safe deferral phrases.
+- [ ] **Professionalism** — My data, names, and examples are fictional, sanitized, sourced, or approved.
 
 ## Language-Level Check: B1 and B2
 
@@ -150,7 +148,7 @@ Your partner should listen for clarity, not content detail. If the partner canno
 
 Deliver your final presentation using your chosen visuals or presentation materials. Unless your teacher gives different instructions, aim for 5-7 minutes plus required Q&A. Your presentation should show the cumulative work from the course.
 
-During Q&A:
+During Q&A
 
 - listen fully before answering
 - clarify if needed
@@ -238,12 +236,12 @@ Read the short plan. Then answer the questions.
 
 Write two goals for your next presentation.
 
-One language goal:
+One language goal
 
 - In my next presentation, I will improve ...
 - I will practise this by ...
 
-One presentation-skill goal:
+One presentation-skill goal
 
 - In my next presentation, I will improve ...
 - I will practise this by ...
@@ -254,20 +252,18 @@ Make each goal specific enough to practise. "Speak better" is too general. "Use 
 
 Your final presentation should show these qualities:
 
-| Category | Evidence |
-|---|---|
-| Message clarity | Core message, opening, final delivery |
-| Audience fit | Relevance to audience purpose and needs |
-| Structure | Clear sequence and signposting |
-| Evidence | Accurate, limited, and understandable evidence explanation |
-| Visual effectiveness | Readable and purposeful visuals or materials |
-| Spoken English | Intelligibility, register, transitions, explanations, Q&A language |
-| Delivery | Voice, pace, notes, posture, eye contact, movement, or online presence |
-| Q&A | Required question handling and response quality |
-| Timing | Delivery within the 5-7 minute target or the required local time limit |
-| Professionalism | Preparation, confidentiality, appropriate data and examples |
-| Accessibility | Materials and delivery are easy to follow |
-| Reflection | Honest self-review and specific next-step goals |
+- **Message clarity** — core message, opening, final delivery
+- **Audience fit** — relevance to audience purpose and needs
+- **Structure** — clear sequence and signposting
+- **Evidence** — accurate, limited, and understandable evidence explanation
+- **Visual effectiveness** — readable and purposeful visuals or materials
+- **Spoken English** — intelligibility, register, transitions, explanations, Q&A language
+- **Delivery** — voice, pace, notes, posture, eye contact, movement, or online presence
+- **Q&A** — required question handling and response quality
+- **Timing** — delivery within the 5-7 minute target or the required local time limit
+- **Professionalism** — preparation, confidentiality, appropriate data and examples
+- **Accessibility** — materials and delivery are easy to follow
+- **Reflection** — honest self-review and specific next-step goals
 
 Peer feedback from Unit 11 is formative. The final assessment is based on the delivered presentation, required Q&A, submitted materials, and self-review.
 

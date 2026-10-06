@@ -75,7 +75,7 @@ Choose the format that matches the question.
 
 Do not use a complex chart because it looks impressive. Use the simplest format that makes the point clear.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|
@@ -89,11 +89,11 @@ Useful terms:
 
 Practice chart data: fictional for classroom use.
 
-Title:
+Title
 
 "Returned Applications Fell After the Intake Checklist Trial"
 
-Data:
+Data
 
 | Measure | Before trial | After trial |
 |---|---:|---:|
@@ -101,7 +101,7 @@ Data:
 | Repeat inquiries | 86 | 68 |
 | Average intake time | 4 min 20 sec | 5 min 00 sec |
 
-Spoken explanation:
+Spoken explanation
 
 "This chart shows three results from the intake checklist trial. The data is fictional for practice. The main takeaway is that returned applications fell after the checklist was introduced. Returns decreased from 142 to 111, and repeat inquiries also fell from 86 to 68. There was one trade-off: average intake time increased by about 40 seconds. So the result is positive, but we need to monitor counter waiting time if we expand the checklist."
 
@@ -121,7 +121,7 @@ Choose the best format for each purpose.
 | Explain where a new checkpoint enters a workflow |  |  |
 | Show a three-month rollout plan |  |  |
 
-Options:
+Options
 
 - line chart
 - bar chart
@@ -131,7 +131,7 @@ Options:
 
 ## Practice 2: Improve a Weak Chart
 
-Weak chart description:
+Weak chart description
 
 - title: "Data"
 - five colors with no labels
@@ -195,7 +195,7 @@ Prepare your explanation with this frame:
 5. "One limit or caution is..."
 6. "This supports the next step because..."
 
-Partner feedback:
+Partner feedback
 
 - Did the speaker state the takeaway before the details?
 - Did the speaker explain the key number or comparison clearly?

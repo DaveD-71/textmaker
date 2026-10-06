@@ -60,7 +60,7 @@ Transitions tell the audience that one part is finished and another part is star
 
 Good business presentations do not hide weak points. Use clear language to show what the data can and cannot prove, or what risk the audience should consider.
 
-Useful terms:
+Useful terms
 
 | Term | Simple meaning |
 |---|---|
@@ -138,14 +138,14 @@ Presentations often explain who does what. These phrases are similar, but they a
 
 ## Model: Adding Signposting to an Outline
 
-Bare outline:
+Bare outline
 
 1. Current problem
 2. Proposed change
 3. Expected result
 4. Requested action
 
-Spoken version:
+Spoken version
 
 "I will cover four points today. First, I will explain the current problem. Then I will show the proposed change and the expected result. Finally, I will ask for approval for a short trial."
 
@@ -177,7 +177,7 @@ Use these options if you need support:
 - "To close, I would like to summarize the next action."
 - "My recommendation is that we approve the proposal."
 
-Spoken drill:
+Spoken drill
 
 1. Choose two improved phrases from your answers.
 2. Mark thought groups with slashes.
@@ -228,7 +228,7 @@ Include:
 - one sentence that emphasizes your key message
 - one closing action sentence
 
-Partner feedback:
+Partner feedback
 
 - Was the route easy to follow?
 - Did any phrase sound too formal, too casual, or unclear?
@@ -238,7 +238,7 @@ Partner feedback:
 
 Submit the preview, transitions, references, and close for your presentation outline.
 
-Minimum submission:
+Minimum submission
 
 - structure preview
 - two transition phrases

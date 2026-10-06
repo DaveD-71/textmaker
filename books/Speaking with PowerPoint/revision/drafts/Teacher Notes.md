@@ -145,7 +145,7 @@ For banking/leasing or general trading-company variants, check that learners do 
 
 For government-agency variants, keep questions administrative and service-focused.
 
-Suggested quick feedback codes:
+Suggested quick feedback codes
 
 - D = answered directly
 - C = clarified before answering
@@ -175,9 +175,9 @@ Use the learner-facing B1/B2 language-level table as guidance, not as a rigid sc
 
 Use the textbook wrap-up quiz to extend 1-to-1 Unit 12 lessons and to consolidate learning after final presentations. It can be done before the final presentation as a warm-up, after the final presentation as review, or partly as homework.
 
-Textbook wrap-up quiz answer key:
+Textbook wrap-up quiz answer key
 
-Practice 3, Part A:
+Practice 3, Part A
 
 1. audience outcome
 2. core message
@@ -186,14 +186,14 @@ Practice 3, Part A:
 5. pre-read
 6. safe deferral
 
-Practice 3, Part B:
+Practice 3, Part B
 
 1. Suggested answer: "I will use a short slide pack because the audience needs to compare the two options quickly."
 2. Suggested answer: "This chart shows a decrease from 38 late handoffs to 27, but it does not prove a full-year result."
 3. Suggested answer: "I do not have the exact number here, so I will check and follow up."
 4. Suggested answer: "For these reasons, I recommend starting with a four-week pilot."
 
-Practice 3, Part C:
+Practice 3, Part C
 
 1. The main message is late and unclear. A stronger opening should state the purpose and action request early.
 2. The structure is mostly a weak list. A better structure is `Problem - cause - solution - action`.

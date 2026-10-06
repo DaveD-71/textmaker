@@ -1,6 +1,6 @@
 # Memory Bootstrap Instructions
 
-Bootstrap-Version: 2026-03-22T16:33:28.5113488+09:00
+Bootstrap-Version: 2026-09-27T22:21:01.8939019+09:00
 
 Scope:
 
@@ -14,6 +14,14 @@ Scope:
 - do not rewrite, summarize, or manually reconstruct one file from the other
 - when one `AGENTS.md` file is missing, create it by direct file copy from the existing one
 - treat differences in line endings or filesystem metadata as incidental; the instruction content itself should remain the same
+
+## Tool-Specific Bootstrap Shims
+
+- the canonical user policy is `%USERPROFILE%\AGENTS.md`; it is not stored in an LLM-specific directory
+- when an assistant requires a tool-specific startup file, that file must be only a minimal bootstrap shim directing the assistant to read and follow `%USERPROFILE%\AGENTS.md`
+- tool-specific shims such as `%USERPROFILE%\.codex\AGENTS.md` or an equivalent Claude file are not policy replicas and must not participate in the canonical duplication or merge protocol
+- do not store durable user learning, project memory, or authoritative shared policy in `.codex`, `.claude`, or another assistant-specific location
+- a tool-specific memory-path shim may exist only to redirect the assistant to `%USERPROFILE%\memories\user-learning.md`
 
 ## Workspace Authority And Scope
 

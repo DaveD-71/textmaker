@@ -66,11 +66,11 @@ Do not overload the audience with too many signposts. Use them when the directio
 
 Purpose: recommend a trial workflow change.
 
-Core message:
+Core message
 
 > A shared checklist should reduce repeated handoff problems and make the process easier to manage.
 
-Possible structure:
+Possible structure
 
 | Section | Purpose | Example content |
 |---|---|---|
@@ -80,7 +80,7 @@ Possible structure:
 | 4. Expected result | Explain value | Fewer repeated questions and clearer responsibility. |
 | 5. Action request | Ask for the next step | Approve the trial and choose an owner. |
 
-Sample preview:
+Sample preview
 
 > I will cover four points. First, I will show where the delays occur. Then I will explain the main cause. After that, I will recommend a one-month checklist trial. Finally, I will ask for your approval and confirm the next step.
 
@@ -112,7 +112,7 @@ Match each purpose to a useful structure.
 
 ## Practice 2: Convert a Weak List into an Outline
 
-Weak list:
+Weak list
 
 - current workflow
 - staff comments
