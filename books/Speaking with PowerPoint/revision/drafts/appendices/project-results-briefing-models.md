@@ -4,7 +4,7 @@ These models show how a presenter can report project results, explain simple evi
 
 Use these models when you need to practise:
 
-- results-evidence-next steps structure
+- two results structures: question - evidence - meaning - implication, and objective - status - issue - next step
 - cautious claims
 - chart and data explanation
 - online or recorded delivery adaptation
@@ -38,16 +38,18 @@ Purpose: report pilot results and request approval for controlled expansion.
 
 Core message: The pilot reduced late document handoffs and made ownership clearer, so the process should expand to the Kansai Machinery Imports and Nagoya Parts Coordination desks with two small controls: a morning log check and one owner for duplicate entries.
 
+Structure: question - evidence - meaning - implication, with the answer given first.
+
 Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 ### Suggested Visual Sequence
 
 | Visual | Main message | Presenter action |
 |---|---|---|
-| 1. Title and decision needed | We need a decision on controlled expansion. | State the purpose and preview the structure. |
-| 2. Pilot Objective | The pilot targeted unclear handoffs. | Remind listeners why the pilot was started. |
-| 3. Before/after chart | Late document handoffs and rework time both fell. | Explain the chart in 60 to 90 seconds. |
-| 4. What changed table | The shared log improved ownership, but two issues remain. | Connect results to operational learning. |
+| 1. Question and short answer | The pilot reduced late handoffs, but the result is not yet a full-rollout case. | State the question, give the answer first, and preview the structure. |
+| 2. Before/after chart | Late document handoffs and rework time both fell, and 82% of pilot users said ownership was clearer. | Explain the chart in 60 to 90 seconds. |
+| 3. What the results show and do not show | The evidence is positive, but it does not prove the shared log caused every change. | Use cautious claim language. |
+| 4. What improved and what needs control | Ownership improved, but two issues remain. | Connect results to operational learning. |
 | 5. Recommendation summary | Expand to two desks with two controls. | Ask for approval and define the next review point. |
 | Backup. Volume-adjusted table | The improvement was still visible after checking volume. | Use only if asked about volume effects. |
 
@@ -71,67 +73,45 @@ Sample slide deck: [Results Business-Client Deck](../../assets/model-slide-decks
 
 ### Full Spoken Model Presentation
 
-#### Opening and Preview
+#### Question and Short Answer
 
-Good morning. The short answer from the exception resolution pilot is positive, but it is not yet a full-rollout case.
+Good morning. The question for today is simple: did the exception resolution pilot reduce late import document handoffs? The short answer is yes, but the result is not yet a full-rollout case.
 
-The pilot had one main goal: to reduce late import document handoffs caused by unclear handoffs.
+The pilot ran for four weeks at the Yokohama Import Documentation Desk. Before the pilot, exception checks were handled through separate email threads, spreadsheet notes, and manual handoff messages, so ownership was unclear, especially before the 3:00 p.m. preparation cutoff. We introduced a shared exception log and a fixed daily checkpoint so that each open exception had a visible owner. We did not change the approval process or the control steps.
 
-I will focus on the decision evidence: what improved, what remains uncertain, and why I recommend a controlled expansion to the Kansai Machinery Imports and Nagoya Parts Coordination desks.
+I will show the evidence, explain what it means and what it does not prove, and then recommend a controlled expansion to the Kansai Machinery Imports and Nagoya Parts Coordination desks.
 
-The approval request is a six-week expansion with two small controls before we scale the process further.
+#### The Evidence
 
-#### Pilot Objective
-
-The objective was narrow.
-
-Before the pilot, exception checks were handled through separate email threads, spreadsheet notes, and manual handoff messages. This made ownership unclear, especially before the 3:00 p.m. preparation cutoff.
-
-The project team did not change the approval process. We also did not change the control steps. The change was narrower than that. We introduced a shared exception log and a fixed daily checkpoint so that each open exception had a visible owner.
-
-The target was simple: fewer late document handoffs, less rework time, and clearer ownership.
-
-#### Main Results
-
-The evidence is shown in the before/after chart.
+The evidence is shown in the before/after chart. Let me take the three results one at a time.
 
 The first result is late document handoffs. Before the pilot, we had 38 late document handoffs in the measured month. After the pilot, this fell to 27. That is a reduction of about 29%.
 
 The second result is rework time. Before the pilot, average rework time was 22 minutes per exception. After the pilot, it fell to 16 minutes. That is six minutes less per exception.
 
-These results are positive, but I want to be careful about the claim. The chart does not prove that the shared log caused every improvement. Volume, staffing, and the type of exceptions can also affect the result. We checked a simple volume-adjusted view as backup: late handoffs fell from 5.2 to 3.9 per 100 open exceptions. The improvement is smaller in that view, but it is still visible. The user feedback also supports the same story.
+The third result is user feedback. In the user check, 82% of pilot users said ownership was clearer. That is important because ownership was the main problem we were trying to solve.
 
-In the user check, 82% of pilot users said ownership was clearer. That is important because ownership was the main problem we were trying to solve.
+#### What It Means
 
-#### What We Learned
+So what do these results mean?
 
-The evidence is useful, but the limitations matter.
+They suggest that the shared log helped teams see who owned each exception, and that it reduced repeated messages because the current status was easier to find. But I want to be careful about the claim. The chart does not prove that the shared log caused every improvement. Volume, staffing, and the type of exceptions can also affect the result. We checked a simple volume-adjusted view as backup: late handoffs fell from 5.2 to 3.9 per 100 open exceptions. The improvement is smaller in that view, but it is still visible.
 
-The shared log helped teams see who owned each exception. It also reduced repeated messages because the current status was easier to find.
+The pilot also showed two issues. The first is morning updates. Some entries were not refreshed early enough, so the first checkpoint sometimes started with old information. The second is duplicate entries. We found 9 duplicate log entries during the pilot. This happened when two people entered the same exception from different message threads. For example, one supplier packing-list delay appeared once under the supplier name and once under the document type.
 
-At the same time, the pilot showed two issues that we should fix before expansion.
+These issues are manageable. They do not mean we should stop the process. But they do matter, because a log that is not current at the first checkpoint loses the trust of the people who use it. That is why we should expand with controls, not move directly to full rollout.
 
-The first issue is morning updates. Some entries were not refreshed early enough, so the first checkpoint sometimes started with old information. This did not break the process, but it reduced trust in the log.
-
-The second issue is duplicate entries. We found 9 duplicate log entries during the pilot. This happened when two people entered the same exception from different message threads. For example, one supplier packing-list delay appeared once under the supplier name and once under the document type.
-
-These issues are manageable. They do not mean we should stop the process. But they do mean we should expand with controls, not move directly to full rollout.
-
-#### Recommendation
+#### What It Means for the Next Step
 
 Based on the evidence, I recommend expanding the process to the Kansai Machinery Imports and Nagoya Parts Coordination desks for six weeks.
 
-My recommendation has two conditions.
+My recommendation has two conditions. First, each desk should complete a morning log check by a named person. This will make sure the log is current before the daily work becomes busy. Second, one person should own duplicate-entry checks. This does not need to be a new full-time role. It can be a clear daily responsibility inside the team.
 
-First, each desk should complete a morning log check by a named person. This will make sure the log is current before the daily work becomes busy.
-
-Second, one person should own duplicate-entry checks. This does not need to be a new full-time role. It can be a clear daily responsibility inside the team.
+We would use the same three measures in the expansion: late document handoffs, rework time, and ownership feedback. We would also add a volume-adjusted view, so that we can check whether a change in workload affects the result.
 
 This approach gives us a wider test, but it still limits the risk. It also gives the risk/control team a clear point to review before any larger rollout.
 
 #### Action Close
-
-The result changes the decision in two ways. It is strong enough to continue, but not strong enough for full rollout.
 
 The result is positive, but not perfect. For that reason, I am not asking for full rollout today.
 
@@ -143,7 +123,9 @@ Thank you. I am ready to take your questions.
 
 Useful phrases:
 
-- "The pilot had one main goal: to..."
+- "The question for today is simple: did...?"
+- "The short answer is yes, but..."
+- "So what do these results mean?"
 - "The result is positive, but not perfect."
 - "This suggests that..., but it does not prove that..."
 - "Based on the evidence, I recommend..."
@@ -168,7 +150,7 @@ Cautious claim language:
 
 ### Pronunciation and Intelligibility Notes
 
-- Chunk the opening: "Today I will report the results / of the exception resolution pilot / and recommend the next step."
+- Chunk the short answer: "The short answer / is yes, / but it is not yet / a full-rollout case."
 - Stress key numbers: "from **38** to **27**" and "from **22** minutes to **16** minutes."
 - Watch katakana risk in these words: `exception`, `confirmation`, `process`, `control`, `volume`, `duplicate`.
 - Do not rush the chart explanation. Say one result, pause, then say the second result.
@@ -197,7 +179,7 @@ Cautious claim language:
 
 | Unit connection | Skill shown in this model |
 |---|---|
-| Unit 3 | Results briefing structure: objective, results, learning, recommendation, action |
+| Unit 3 | Question - evidence - meaning - implication structure |
 | Unit 4 | Preview, transitions, balanced summary, and action close |
 | Unit 6 | Before/after chart explanation and careful evidence language |
 | Unit 9 | Online or recorded adaptation for a chart-based briefing |
@@ -225,17 +207,19 @@ Purpose: report trial results and request approval to expand the checklist.
 
 Core message: The intake checklist reduced preventable returned applications, so it should expand to childcare fee reduction applications and elderly transport pass applications with one owner for checklist updates.
 
+Structure: objective - status - issue - next step, opened with a scorecard and closed with a watch-list.
+
 Expected delivery time: about 5.5 to 6.5 minutes, plus 5 minutes for Q&A.
 
 ### Suggested Visual Sequence
 
 | Visual | Main message | Presenter action |
 |---|---|---|
-| 1. Title and decision needed | We need a decision on limited expansion. | State the purpose and audience decision. |
+| 1. Scorecard and before/after chart | Returned applications and repeat inquiries both fell. | Give the three headline results and preview the four parts. Explain the chart in 60 to 90 seconds. |
 | 2. Trial Objective | The checklist targeted preventable intake errors. | Explain the problem without blaming staff or applicants. |
 | 3. Process Note | The checklist is used before formal review. | Show where the checklist fits in the intake process. |
-| 4. Before/after chart | Returned applications and repeat inquiries both fell. | Explain the chart in 60 to 90 seconds. |
-| 5. Recommendation summary | Expand to two application types and assign update ownership. | Ask for approval and confirm next actions. |
+| 4. Issues to Watch | Counter time, trial length, and update ownership need attention. | Use cautious language and connect each issue to the next step. |
+| 5. Next Step and Watch-List | Expand to two application types with one update owner and three measures to watch. | Ask for approval and confirm the review date. |
 | Backup. Staff feedback summary | The checklist added about 40 seconds per intake. | Use only if asked about waiting time or staff workload. |
 
 Suggested chart title: **Checklist trial reduced returns and repeat inquiries**.
@@ -258,73 +242,51 @@ Sample slide deck: [Results Government-Agency Deck](../../assets/model-slide-dec
 
 ### Full Spoken Model Presentation
 
-#### Opening and Preview
+#### Scorecard and Preview
 
-Good afternoon. The intake checklist trial gives us a clear before-and-after service result.
+Good afternoon. Here is the scorecard for the intake checklist trial. Returned applications fell from 142 to 111. Repeat inquiries fell from 86 to 68. Attachment-related returns fell from 77 to 58.
 
-The trial focused on one practical administrative problem: too many applications were returned because preventable errors were found after formal review. This caused delays for applicants, repeat inquiries for staff, and extra work for the document-review team.
+I will give this as a progress update in four parts: the objective, the current status, the issues that remain, and the next step. The decision today is whether to expand the checklist and assign one update owner.
 
-I will use a service-review structure: what changed, what improved, what still needs attention, and which application types should come next.
+#### The Objective
 
-The decision today is whether to expand the checklist and assign one update owner.
-
-#### Trial Objective
-
-First, here is what changed.
+First, the objective.
 
 Before the trial, staff checked applications at intake, but the check was not always the same. Some missing attachments and incomplete fields were found only after formal review. When that happened, the application had to be returned, and the applicant often contacted the office again.
 
-The trial introduced a short front-counter checklist and a shared FAQ sheet. The purpose was not to make the counter process complicated. The purpose was to catch common errors earlier, before formal review started.
+The trial introduced a short front-counter checklist and a shared FAQ sheet. The purpose was not to make the counter process complicated. The purpose was to catch common errors earlier, before formal review started. The target was to reduce returned applications and repeat inquiries while keeping the counter process practical for staff.
 
-The target was to reduce returned applications and repeat inquiries while keeping the counter process practical for staff.
+The process note shows where the checklist fits. Staff check the most common preventable issues: required attachment, contact field, ID field, and signature field. If something is missing, staff explain the point immediately using the FAQ sheet. If the application is complete, it moves to formal review as before. This is a small process change, but it changes the timing of the check. We are trying to find simple problems earlier, not add another full review stage.
 
-#### Process Note
+#### Current Status
 
-The process note shows where the checklist fits.
+Now, the current status. The improvement is visible in the result chart.
 
-The checklist is used at the intake step, before the application moves to formal document review. Staff check the most common preventable issues: required attachment, contact field, ID field, and signature field.
+Before the trial, 142 applications were returned in the measured month. After the trial, this fell to 111. That is a reduction of about 22%. Repeat inquiries fell from 86 to 68, a reduction of about 21%.
 
-If something is missing, staff can explain the point immediately using the FAQ sheet. If the application is complete, it moves to formal review as before.
+The third result is more specific. Attachment-related returns fell from 77 to 58, a reduction of about 25%. This matters because missing attachments were one of the exact problems the checklist was designed to catch.
 
-This is a small process change, but it changes the timing of the check. We are trying to find simple problems earlier, not add another full review stage.
+So the service result is encouraging: all three measures improved.
 
-#### Main Results
+#### The Issues
 
-The improvement is visible in the result chart.
+The result is useful, but we should be careful. Three issues need attention.
 
-The first result is returned applications. Before the trial, 142 applications were returned in the measured month. After the trial, this fell to 111. That is a reduction of about 22%.
+First, the trial was only one month. Second, staff reported that the checklist added about 40 seconds to each intake. That is not a large amount of time for one case, but it may affect waiting time when the counter is busy. Staff also said the checklist works best when it is short, so a longer checklist would probably slow the counter too much.
 
-The second result is repeat inquiries. Before the trial, there were 86 repeat inquiries. After the trial, this fell to 68. That is a reduction of about 21%.
+Third, update ownership is important. If application requirements change, the checklist must change quickly. If no one owns updates, staff may use an old version. The shared FAQ sheet did help staff give the same explanation to applicants, but it also needs an owner.
 
-The third result is more specific. Attachment-related returns fell from 77 to 58, a reduction of about 24%. This matters because missing attachments were one of the exact problems the checklist was designed to catch.
-
-The result is useful, but we should be careful. The trial was only one month. Also, staff reported that the checklist added about 40 seconds to each intake. That is not a large amount of time for one case, but it may affect waiting time when the counter is busy.
-
-#### What We Learned
-
-The trial suggests three points.
-
-First, the checklist works best when it is short. Staff said they could use it when the points were limited to common errors. A long checklist would probably slow down the counter too much.
-
-Second, the FAQ sheet helped staff give the same explanation to applicants. This reduced repeated questions and made the guidance more consistent.
-
-Third, update ownership is important. If application requirements change, the checklist must change quickly. If no one owns updates, staff may use an old version.
+#### The Next Step
 
 For these reasons, the next step should be limited expansion, not office-wide rollout.
 
-#### Recommendation
+I recommend expanding the checklist to two more high-volume application types: childcare fee reduction applications and elderly transport pass applications. I also recommend assigning one update owner in the document-review team. Counter-service staff should be able to send change requests, but one person or role should approve and update the checklist. Rotating staff should receive a 15-minute reminder before they first use the revised checklist.
 
-Based on the trial, I recommend expanding the checklist to two more high-volume application types: childcare fee reduction applications and elderly transport pass applications.
+This expansion is limited on purpose. Both application types are high-volume, so they will show quickly whether the checklist still works when the counter is busy. If it does, we can discuss wider use after the next review.
 
-I also recommend assigning one update owner in the document-review team. Counter-service staff should be able to send change requests, but one person or role should approve and update the checklist. Rotating staff should receive a 15-minute reminder before they first use the revised checklist.
+#### Close: The Watch-List
 
-During the expansion, we should measure three things: returned applications, repeat inquiries, and waiting time at the counter. This will show both the benefit and the service impact.
-
-#### Action Close
-
-The service result is encouraging: returned applications fell, repeat inquiries fell, and attachment-related returns also fell.
-
-At the same time, we should monitor counter time and keep the checklist short.
+During the expansion, we should watch three things: returned applications, repeat inquiries, and waiting time at the counter. If waiting time rises, we should shorten the checklist before going further.
 
 My recommendation is limited expansion: childcare fee reduction applications, elderly transport pass applications, one update owner, and another review after one month.
 
@@ -334,12 +296,13 @@ Thank you. I am ready to take your questions.
 
 Useful phrases:
 
-- "The trial focused on one practical problem..."
+- "Here is the scorecard for..."
+- "I will give this as a progress update in four parts: ..."
 - "The purpose was not to... The purpose was to..."
 - "This is a small process change, but..."
 - "The result is useful, but we should be careful."
 - "The decision today is whether to..."
-- "The service result is encouraging..."
+- "During the expansion, we should watch three things..."
 - "My recommendation is limited expansion..."
 
 Vocabulary:
@@ -361,7 +324,7 @@ Cautious claim language:
 
 ### Pronunciation and Intelligibility Notes
 
-- Chunk the opening: "I will report the results / of the intake checklist trial / and recommend the next step."
+- Chunk the scorecard: "Returned applications / fell from 142 / to 111."
 - Stress contrast: "The purpose was **not** to add a full review stage. The purpose was to catch common errors **earlier**."
 - Watch katakana risk in these words: `application`, `attachment`, `checklist`, `inquiry`, `review`, `administrative`.
 - Pause before limitations: "The result is useful, / but we should be careful."
@@ -390,7 +353,7 @@ Cautious claim language:
 
 | Unit connection | Skill shown in this model |
 |---|---|
-| Unit 3 | Results briefing structure: objective, process, results, learning, recommendation, action |
+| Unit 3 | Progress-update structure: objective - status - issue - next step |
 | Unit 4 | Preview, transitions, cautious summary, and action close |
 | Unit 6 | Before/after chart explanation with fictional-data labeling |
 | Unit 9 | Online or recorded adaptation for a results briefing |
@@ -399,17 +362,18 @@ Cautious claim language:
 
 ## Compare the Two Models
 
-The two variants teach the same presentation skill, but the workplace pressures are different.
+The two variants teach the same business skill, reporting results honestly and recommending a next step. They use different structures, and the workplace pressures are different.
 
 | Skill | Banking/leasing or general trading-company operations variant | Government administrative variant |
 |---|---|---|
+| Structure | Question - evidence - meaning - implication | Objective - status - issue - next step |
+| Opening | The question, then the short answer first | A scorecard of three headline results |
+| Close | Conditional recommendation: expand, but not full rollout | Watch-list of three measures and a review date |
 | Main decision | Expand an exception resolution process to the Kansai Machinery Imports and Nagoya Parts Coordination desks. | Expand an intake checklist to childcare fee reduction applications and elderly transport pass applications. |
 | Evidence type | Late document handoffs, rework time, ownership feedback. | Returned applications, repeat inquiries, attachment-related returns. |
 | Main limitation | Volume effects and duplicate log entries. | Short trial period and added counter time. |
 | Sensitive information risk | Client names, account or transaction data, shipment IDs, desk names, internal control findings. | Applicant information, ID fields, case numbers, staff records, public-facing guidance. |
-| Natural visual | Before/after bar chart plus "what changed" table. | Process Note plus before/after bar chart. |
+| Natural visual | Before/after bar chart plus "what changed" table. | Scorecard chart plus Process Note. |
 | Q&A pressure | Is the result large enough and controlled enough to expand? | Does the result justify expansion without slowing service? |
 
 Neither model should be used for investment advice, securities-market prediction, legal advice, policy argument, or political advocacy. Both models are about operational results, evidence, limitations, and next steps.
-
-

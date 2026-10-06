@@ -91,7 +91,7 @@ Practice chart data: fictional for classroom use.
 
 Title:
 
-"Returned applications fell after the intake checklist trial"
+"Returned Applications Fell After the Intake Checklist Trial"
 
 Data:
 

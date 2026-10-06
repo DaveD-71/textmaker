@@ -1,6 +1,6 @@
 ﻿# Process Improvement Briefing Models
 
-These two model presentations show how a presenter can recommend a practical workflow change. Use them as references for audience outcome, problem-solution-recommendation structure, workflow visuals, document choices, implementation-risk Q&A, and a clear final action request.
+These two model presentations show how a presenter can recommend a practical workflow change. They use two different structures on purpose. Model 1 uses problem - cause - solution - action and opens with a concrete incident. Model 2 uses situation - options - criteria - recommendation and opens with a question. Use them as references for audience outcome, structure choice, workflow visuals, document choices, implementation-risk Q&A, and a clear final action request.
 
 The data in both models is fictional for practice. Do not replace it with real client, account, transaction, applicant, staff, or personal information.
 
@@ -39,6 +39,10 @@ Core message:
 
 A shared exception log and one fixed handoff checkpoint will reduce avoidable document handoff delays without changing the control process.
 
+Structure:
+
+Problem - cause - solution - action, opened with a concrete incident before the decision request.
+
 Expected delivery time:
 
 - Spoken presentation: about 6.5 to 7.5 minutes
@@ -48,14 +52,14 @@ Expected delivery time:
 
 | Visual | Purpose | Suggested content |
 |---|---|---|
-| 1. Title and decision | Set the purpose | "Decision today: approve a four-week workflow pilot" |
-| 2. Current workflow | Show where the problem happens | Supplier A packing-list issue moving through email, spreadsheet, and message channels before ownership is confirmed |
-| 3. Problem snapshot | Give simple fictional evidence | 38 late document handoffs; 61% linked to unclear handoff notes; 22 minutes average rework time |
-| 4. Proposed pilot workflow | Explain the change | One shared exception log; three required fields; fixed 2:15 p.m. checkpoint before cutoff preparation |
+| 1. Opening incident | Make the problem concrete | A 2:45 p.m. Supplier A packing-list exception with no clear owner before the 3:00 p.m. cutoff |
+| 2. Problem snapshot | Show the problem is repeated | 38 late document handoffs; 61% linked to unclear handoff notes; 22 minutes average rework time |
+| 3. Cause | Explain why it happens | The checks are not the problem; the handoff note sits in three places: email, spreadsheet, and handoff message |
+| 4. Proposed pilot workflow | Explain the solution | One shared exception log; three required fields; fixed 2:15 p.m. checkpoint; control process unchanged |
 | 5. Pilot plan and owners | Make the request practical | Four-week timing, documentation lead as checkpoint owner, exception owner, control review |
 | 6. Decision and review | Close with action | Approve pilot, confirm owner, review late document handoffs and rework time |
 
-Visual note: use a before/after workflow diagram as the main visual. A small evidence box is enough. Do not make this a data-heavy chart presentation.
+Visual note: use a before/after workflow diagram as the main visual (visual 4). A small evidence box is enough. Do not make this a data-heavy chart presentation.
 
 ### Sample Slide Set
 
@@ -75,35 +79,35 @@ Sample slide deck: [Process Improvement Business-Client Deck](../../assets/model
 
 ### Full Spoken Model Script
 
-#### Opening
+#### Opening: One Afternoon
 
-Good morning. I am asking for one decision today: approval for a four-week pilot to reduce same-day import document handoff delays.
+Good morning. Please picture a typical afternoon at the Yokohama Import Documentation Desk.
 
-The issue is not one large failure. It is a repeated handoff problem. At the moment, exception checks are recorded in several places: email, a spreadsheet, and short handoff messages. For example, when Supplier A has not confirmed a packing-list item by early afternoon, one person may see the email, another person may update the spreadsheet, and a third person may ask about the next action in chat. Because the information is spread across these places, ownership is not always clear before the 3:00 p.m. shipping-document preparation cutoff.
+It is 2:45 p.m. Supplier A has not confirmed one packing-list item, and the 3:00 p.m. shipping-document preparation cutoff is fifteen minutes away. One person sees the email. Another person updates the spreadsheet. A third person asks in chat who owns the next action. Nobody is careless, but nobody can say clearly who owns this exception.
 
-The decision has three parts: should we approve the pilot, who should own the daily checkpoint, and what result should we review at the end?
+I am asking for one decision today: approval for a four-week pilot to reduce same-day import document handoff delays.
 
-My main message is simple. A shared exception log and one fixed handoff checkpoint can reduce avoidable document handoff delays without changing the control process.
+My main message is simple. A shared exception log and one fixed handoff checkpoint can reduce avoidable document handoff delays without changing the control process. I will explain the problem, its cause, the proposed solution, and the action I need from you.
 
-#### Current Problem
+#### The Problem
 
-The risk appears in the current workflow.
-
-Please look at the left side of the workflow visual. Today, an exception may first appear in an email, such as a missing packing-list confirmation. Then a team member may add a note in the tracking spreadsheet. Later, another person may send a short message to ask who owns the next action.
-
-Each of these steps is understandable. The problem is that the handoff note is not in one reliable place. When the team is busy, people spend time checking where the latest information is. That creates rework, and it can delay the confirmation process.
-
-So the main problem is not the number of checks. We still need the checks. The main problem is where the handoff information sits and when ownership is confirmed.
-
-#### Evidence
-
-Last month, there were 38 late document handoffs. Of those, 61% involved missing or unclear handoff notes. Also, the average rework time was 22 minutes per exception.
+That afternoon is not rare. Last month, there were 38 late document handoffs. Of those, 61% involved missing or unclear handoff notes. Also, the average rework time was 22 minutes per exception.
 
 This does not mean every delay came from the same cause. Some delays have different reasons. But the handoff issue is large enough and repeated enough to justify a small pilot.
 
 For that reason, I do not recommend a large system change now. I recommend a limited workflow change that we can test quickly and control carefully.
 
-#### Recommendation
+#### The Cause
+
+Why does this keep happening?
+
+Please look at the left side of the workflow visual. Today, an exception may first appear in an email, such as a missing packing-list confirmation. Then a team member may add a note in the tracking spreadsheet. Later, another person may send a short message to ask who owns the next action.
+
+Each of these steps is understandable. The problem is that the handoff note is not in one reliable place. When the team is busy, people spend time checking where the latest information is. That creates rework, and it can delay the confirmation process.
+
+So the cause is not the number of checks. We still need the checks. The cause is where the handoff information sits and when ownership is confirmed.
+
+#### The Solution
 
 The proposed pilot changes that handoff point, not the control process.
 
@@ -135,7 +139,7 @@ At the end of week four, we review three things: the number of late document han
 
 The backup material is a simple cause breakdown table and a short roles list. I will not go through those now, but they are available if we need them during Q&A.
 
-#### Close
+#### The Action
 
 The decision is limited, but useful.
 
@@ -149,15 +153,18 @@ If we agree today, we can prepare the log fields this week and start the pilot n
 
 Useful phrases:
 
-- "The issue is not one large failure. It is a repeated handoff problem."
+- "Please picture a typical afternoon at..."
+- "Nobody is careless, but nobody can say clearly who owns..."
 - "I am asking for one decision today..."
-- "The decision has three parts..."
+- "I will explain the problem, its cause, the proposed solution, and the action I need from you."
+- "Why does this keep happening?"
 - "The proposed pilot changes that handoff point, not the control process."
 - "I want to be careful about this target."
 - "Today I am asking for approval for..."
 
 Language focus:
 
+- Open with a short, concrete incident, then state the decision. The incident makes the problem easy to picture before the numbers arrive.
 - Use "I recommend..." or "My recommendation is..." for a direct but polite proposal.
 - Use "does not change" to reduce concern about risk, authority, or workload.
 - Use "pilot" when the action is limited and temporary.
@@ -254,8 +261,8 @@ Contingency:
 | Unit connection | Skill shown in this model |
 |---|---|
 | Unit 1: Audience, Purpose, and Workplace Context | Audience outcome, decision need, workplace purpose |
-| Unit 2: Message, Objective, and Relevance | Core message, relevance, and action-focused opening |
-| Unit 3: Structure and Flow | Problem-solution-recommendation structure |
+| Unit 2: Message, Objective, and Relevance | Core message, relevance, and an incident-led opening |
+| Unit 3: Structure and Flow | Problem - cause - solution - action structure |
 | Unit 7: Tool-neutral Slide and Document Workflow | Workflow visual, backup material, confidentiality checks, PDF fallback |
 | Unit 10: Q&A, Challenge Handling, and Interaction | Clarifying, direct answers, risk acknowledgement, safe deferral, follow-up |
 | Unit 12: Final Presentation and Reflection | Decision-oriented workplace presentation with a clear close |
@@ -264,7 +271,7 @@ Contingency:
 
 ### Scenario Brief
 
-Midori Ward Administrative Services Office is a fictional government-agency administrative office. The office receives many housing support certificate applications with missing attachments or incomplete fields. Some applications are submitted at the counter, and some are submitted online. Staff return the forms after review, which creates delays and repeat inquiries, especially during the Monday morning counter peak. The presenter recommends a front-counter checklist and a shared FAQ sheet for common errors.
+Midori Ward Administrative Services Office is a fictional government-agency administrative office. The office receives many housing support certificate applications with missing attachments or incomplete fields. Some applications are submitted at the counter, and some are submitted online. Staff return the forms after review, which creates delays and repeat inquiries, especially during the Monday morning counter peak. The presenter compares three ways to reduce returns and recommends a front-counter checklist and a shared FAQ sheet for common errors.
 
 This is an administrative process-improvement briefing. It does not discuss politics, legislation, public-policy advocacy, or budget campaigning.
 
@@ -287,7 +294,11 @@ By the end of the presentation, the audience should decide whether to approve th
 
 Core message:
 
-A front-counter checklist will reduce returned applications and shorten processing time by catching common errors before formal review.
+Of three options for reducing returned applications, a front-counter checklist is the only one that can start within a month and catch common errors before formal review. It only partly meets the third criterion, counter time, so the trial will measure it.
+
+Structure:
+
+Situation - options - criteria - recommendation, opened with a question.
 
 Expected delivery time:
 
@@ -298,14 +309,14 @@ Expected delivery time:
 
 | Visual | Purpose | Suggested content |
 |---|---|---|
-| 1. Title and decision | Set the purpose | "Decision today: approve a one-month intake checklist trial" |
-| 2. Current intake process | Show where delays begin | Counter or online submission, formal review, returned form, repeat inquiry |
-| 3. Problem snapshot | Give simple fictional evidence | 142 returned applications; 54% missing one attachment; 31% incomplete contact or ID field |
-| 4. Checklist-supported process | Explain the change | Quick intake check, complete forms to review, FAQ for common explanations |
-| 5. Trial plan and ownership | Make the request practical | Housing support certificate applications, one month, FAQ owner, staff reminders |
-| 6. Decision and review | Close with action | Approve trial, agree checklist fields, assign FAQ owner |
+| 1. Question and decision | Open with the question | "Which option should we test first?" and the decision needed today |
+| 2. Problem snapshot | Give simple fictional evidence | 142 returned applications; 54% missing one attachment; 31% incomplete contact or ID field |
+| 3. Three options | Show the choices | Option A: redesign the form. Option B: add an online pre-submission check. Option C: add a front-counter checklist and shared FAQ |
+| 4. Criteria comparison | Compare the options fairly | Three criteria across three options, answered with the words Yes, Partly, or No |
+| 5. Trial plan and ownership | Make the request practical | Housing support certificate applications, one month, FAQ owner, counter-time check |
+| 6. Recommendation and decision | Close with the recommendation | Choose Option C; approve trial, agree checklist fields, assign FAQ owner |
 
-Visual note: use a process-flow visual as the main visual. Do not use flags, seals, emblems, crests, or country-specific government symbols.
+Visual note: use a simple comparison table as the main visual. Show each answer as a word (Yes, Partly, No), not only a color. Do not use flags, seals, emblems, crests, or country-specific government symbols.
 
 ### Sample Slide Set
 
@@ -322,60 +333,54 @@ Sample slide deck: [Process Improvement Government-Agency Deck](../../assets/mod
 | FAQ | a list of frequently asked questions and standard answers |
 | high-volume | handled many times or in large numbers |
 | trial | a small test before wider use |
+| option | one possible way to solve a problem |
+| criterion (plural: criteria) | a standard used to compare options |
 
 ### Full Spoken Model Script
 
-#### Opening
+#### Opening: The Question
 
-Good afternoon. Please keep one question in mind as I speak: can a short intake checklist reduce returned forms without slowing the counter too much?
+Good afternoon. I have one question for today: of three possible ways to reduce returned housing support certificate applications, which one should we test first?
 
-At the moment, many housing support certificate forms are returned after formal review because one attachment is missing or one field is incomplete. This creates extra work for staff, and it also creates a longer wait for applicants.
+I will explain the situation, compare three options against three criteria, and then recommend one. At the end, I will ask you to approve a one-month trial, agree on the first checklist fields, and assign one owner for the FAQ update process.
 
-At the end, I will ask you to approve a one-month trial, agree on the first checklist fields, and assign one owner for the FAQ update process.
+#### The Situation
 
-My main message is this. A front-counter checklist can reduce returned applications and shorten processing time by catching common errors before formal review.
+At the moment, many housing support certificate forms are returned after formal review because one attachment is missing or one field is incomplete.
 
-#### Current Problem
+Please look at the first process flow. An applicant submits the form at the counter or online. Review staff then find missing information, such as a missing income certificate attachment or an incomplete contact field. The application is returned, and the applicant often contacts the office again. So the problem appears late in the process, and staff must explain it again.
 
-The service impact starts in the current intake process.
+Last month, there were 142 returned housing support certificate applications. Of those, 54% were missing one required attachment. Another 31% had an incomplete contact or ID field. These numbers show that many returns come from a small number of common problems.
 
-Please look at the first process flow. An applicant submits the form at the counter or online. Counter staff receive it and send it to formal review. Review staff then find missing information, such as a missing income certificate attachment or an incomplete contact field. The application is returned, and the applicant often contacts the office again.
+#### The Options
 
-This means the problem appears late in the process. By the time review staff find the missing item, the applicant has already left the counter or finished the online submission. Staff then need to explain the problem again, and the applicant needs to send or bring the missing information later.
+There are three realistic options.
 
-The process is careful, but it is not efficient for common preventable errors.
+Option A is to redesign the application form and the instruction sheet. Option B is to add an online pre-submission check that reminds applicants about missing fields. Option C is to add a short front-counter checklist and a shared FAQ sheet for common explanations.
 
-#### Evidence
+All three options leave formal review unchanged. Review staff still make the official review decision.
 
-Last month, there were 142 returned housing support certificate applications. Of those, 54% were missing one required attachment. Another 31% had an incomplete contact or ID field.
+#### The Criteria
 
-These numbers show that many returns come from a small number of common problems. We do not need to redesign the whole application process first. We can start with the most common preventable errors at intake.
+I compared the options against three criteria. Please look at the comparison table.
 
-The target for the trial is a 20% reduction in returned applications for one high-volume application type. This is a trial target, not a guarantee. We will review the result after one month.
+First, can it start within one month? Second, does it catch common errors before formal review? Third, does it add little staff time at the counter?
 
-#### Recommendation
+Option A does not start within one month, because design, approval, and printing take longer. It catches errors only partly, because applicants can still make the same mistakes. Option B does not start within one month either, because it needs a system change, and it covers online submissions only.
 
-The trial design is small on purpose.
+Option C is different. It can start within one month, and it catches common errors at the counter, before formal review. It only partly meets the third criterion, because a checklist can add time at the counter. It also covers counter submissions first, so online applications are a later question.
 
-The proposal has two parts.
+#### The Recommendation
 
-First, counter staff use a short intake checklist before the form goes to formal review. The checklist is not a second full review. It covers only the income certificate attachment, the contact field, the ID field, and one confirmation item.
+So my recommendation is Option C.
 
-Second, staff use one shared FAQ sheet for common explanations. The FAQ helps staff explain missing attachments and incomplete fields in the same way. This should make the guidance clearer for applicants and more consistent for staff.
+The checklist is not a second full review. It covers only four points: the attachment, the contact field, the ID field, and the signature field. The shared FAQ helps staff explain missing items in the same way. The formal review process does not change.
 
-The formal review process does not change. Review staff still make the official review decision. The checklist only helps us catch simple errors earlier.
+Counter time is the one important risk. For that reason, the checklist must be short, and during the trial we will measure counter time as well as returned applications. If the checklist slows the line too much, we should shorten it before wider use.
 
-#### Expected Benefit
+If staff catch common errors at the counter, applicants can correct them earlier. Review staff should receive more complete forms, and the inquiry desk should receive fewer repeat questions. The target for the trial is a 20% reduction in returned applications for one high-volume application type. This is a trial target, not a guarantee.
 
-The expected benefit is fewer returned forms and fewer repeat inquiries.
-
-If staff catch common errors at the counter, applicants can correct some problems earlier. For example, an applicant who forgot the income certificate can receive the same clear explanation before the file goes to formal review. Review staff should receive more complete forms. The inquiry desk should also receive fewer repeat questions about the same missing information.
-
-There is one important risk. The checklist may add time at the counter. For that reason, the checklist must be short. During the trial, we should measure both returned applications and counter time. If the checklist slows the line too much, we should shorten it before wider use.
-
-#### Trial Plan
-
-Here is the proposed trial plan.
+#### The Trial Plan
 
 In week zero, we agree the checklist fields and prepare the shared FAQ. The document-review team confirms the required items, and the inquiry desk representative prepares the first FAQ version.
 
@@ -387,9 +392,7 @@ The backup material includes a return-reason table, draft checklist fields, and 
 
 #### Close
 
-Here is the service case for the trial.
-
-Returned applications create delay for applicants and extra work for staff. In this scenario, most returns come from a small number of preventable errors. A short intake checklist and shared FAQ can help staff catch these errors before formal review.
+Let me return to the question. Option C is the only option that can start within one month and catch common errors before formal review. The trial will test the one criterion it only partly meets: counter time.
 
 The approval I need today is for the one-month trial, the first checklist fields, and one owner for the FAQ update process.
 
@@ -399,24 +402,28 @@ If we approve the trial today, we can prepare the checklist this week, brief sta
 
 Useful phrases:
 
-- "The process is careful, but it is not efficient for common preventable errors."
+- "I have one question for today..."
+- "I will compare three options against three criteria."
+- "Option A does not..., and Option B does not... either."
+- "Option C is different."
+- "It only partly meets the third criterion."
 - "The checklist is not a second full review."
 - "The formal review process does not change."
-- "There is one important risk."
-- "Please keep one question in mind as I speak..."
-- "At the end, I will ask you to..."
-- "The trial design is small on purpose."
+- "Let me return to the question."
 - "The approval I need today is..."
 
 Language focus:
 
-- Use "not a second full review" to answer workload concerns.
-- Use "only" to limit the task: "It covers only..."
+- Use "meets", "partly meets", and "does not meet" to compare options honestly.
+- Use "only" to limit a task or a claim: "It covers only four points."
+- Use "either" for a second negative: "Option B does not start within one month either."
 - Use "before formal review" to show where the process changes.
 - Use "one high-volume application type" to make the trial limited and realistic.
 
 Vocabulary:
 
+- option: one possible way to solve a problem
+- criterion (plural: criteria): a standard used to compare options
 - intake: the first step when an office receives an application or request
 - formal review: the official check after intake
 - returned application: an application sent back because information is missing or incorrect
@@ -429,7 +436,7 @@ Chunk key sentences into short thought groups:
 
 - "The checklist / is not a second full review."
 - "The formal review process / does not change."
-- "Today / I am asking for approval / for the one-month trial."
+- "Option C / is the only option / that can start within one month."
 
 Word stress:
 
@@ -441,7 +448,7 @@ Word stress:
 
 Japanese-learner note: "application" and "applicant" have different stress. Say ap-pli-CA-tion for the form or request, and AP-pli-cant for the person.
 
-Delivery note: when explaining the process flow, point to one step, pause, and then speak. Do not read every box on the visual.
+Delivery note: when explaining the comparison table, point to one criterion, pause, and then speak. Do not read every box on the visual. Pause before you name the recommended option.
 
 ### Q&A Model Answers
 
@@ -459,27 +466,27 @@ Answer: The inquiry desk representative should own the FAQ update, with monthly 
 
 **Bridge to evidence**
 
-Question: Why focus on attachments and contact fields?
+Question: Why not redesign the form instead?
 
-Answer: The return-reason data shows that these two issues explain many returns. Missing attachments were 54% of returns, and incomplete contact or ID fields were 31%, so the checklist should start there.
+Answer: Form redesign is still worth doing, but it does not meet the first criterion. Design, approval, and printing would take longer than one month, and applicants could still make the same mistakes. The checklist can start now, and it also shows us which form fields cause the most problems.
 
 **Acknowledge risk or limitation**
 
 Question: Will the checklist slow down the counter line?
 
-Answer: That is the main implementation risk. The trial should measure both returned applications and counter time. If the checklist adds too much time, we need to shorten it before any wider use.
+Answer: That is the main implementation risk, and it is the criterion Option C only partly meets. The trial should measure both returned applications and counter time. If the checklist adds too much time, we need to shorten it before any wider use.
 
 **Defer safely**
 
-Question: Can we use the checklist for all application types?
+Question: Could we also add an online pre-submission check?
 
-Answer: I would not recommend that yet. This trial should cover one high-volume application type first. After one month, we can decide whether it is suitable for other forms.
+Answer: Possibly, but I do not want to assume that today. It would need a system change, so it should be a separate decision after the trial.
 
 **Confirm follow-up or next action**
 
-Question: What decision do you need today?
+Question: How will we know whether the trial worked?
 
-Answer: Today I need approval for the one-month trial, agreement on the checklist fields, and one owner for the FAQ update process.
+Answer: After one month, we will review returned applications, the main return reasons, repeat inquiry volume, and staff comments on counter time. The target is a 20% reduction in returned applications for one high-volume application type. That is a trial target, not a guarantee.
 
 ### Privacy, Security, Accessibility, and Contingency Notes
 
@@ -500,6 +507,7 @@ Accessibility:
 
 Contingency:
 
+- If the comparison table fails, state the three options and the three criteria aloud, then give the recommendation.
 - If the process visual fails, describe the current process verbally as four steps: submit, review, return, inquire again.
 - If the meeting runs short, give only the problem, recommendation, trial plan, and decision request.
 - If a question asks for personal or case-specific details, answer at process level and offer a private follow-up with authorized staff.
@@ -509,20 +517,26 @@ Contingency:
 | Unit connection | Skill shown in this model |
 |---|---|
 | Unit 1: Audience, Purpose, and Workplace Context | Audience outcome, administrative purpose, decision need |
-| Unit 2: Message, Objective, and Relevance | Core message, applicant/staff relevance, action-focused opening |
-| Unit 3: Structure and Flow | Problem-solution-recommendation structure |
+| Unit 2: Message, Objective, and Relevance | Core message, applicant/staff relevance, question-led opening |
+| Unit 3: Structure and Flow | Situation - options - criteria - recommendation structure |
 | Unit 7: Tool-neutral Slide and Document Workflow | Process visual, trial plan, backup material, accessibility checks |
-| Unit 10: Q&A, Challenge Handling, and Interaction | Clarifying, direct answers, workload risk, limits, follow-up |
+| Unit 10: Q&A, Challenge Handling, and Interaction | Clarifying, defending a choice against an alternative, workload risk, safe deferral, follow-up |
 | Unit 12: Final Presentation and Reflection | Decision-oriented workplace presentation with a clear close |
 
 ## Compare the Two Models
 
-Both variants teach the same presentation skill: identify a repeated process problem, recommend a limited pilot or trial, explain the expected benefit, and ask for a specific decision.
+Both variants teach the same business purpose: recommend a limited change and ask for a specific decision. They teach it through two different structures.
+
+| Feature | Business-client model | Government-agency model |
+|---|---|---|
+| Structure | Problem - cause - solution - action | Situation - options - criteria - recommendation |
+| Opening | A concrete incident at 2:45 p.m. | A question: which option should we test first? |
+| Main visual | Before/after workflow diagram | Criteria comparison table |
+| Close | Decision request: pilot, owner, review | Recommendation justified against the criteria, then the approvals |
+| Q&A pressure | Control risk and whether it works for other desks | Why this option and not another |
 
 The business-client version focuses on operational handoff risk in banking/leasing or general trading-company operations. If you adapt this model, sanitized shipment, order, procurement, supplier-status, and workflow examples are acceptable. Do not use investment advice, securities-market prediction, stock ticker symbols, real firm names, real identifying customer/account/order/shipment/transaction data, or legal or regulatory advice.
 
 The government-agency version focuses on administrative intake quality and service consistency. If you adapt this model, do not use politics, public-policy advocacy, legislation, budget campaigning, or official symbols such as flags, seals, emblems, and crests.
 
 Both models use simple fictional evidence because a process-improvement briefing needs enough support to justify a pilot. Do not add heavy chart teaching here unless a unit specifically asks learners to compare this model with a data-focused project results briefing.
-
-

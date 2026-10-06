@@ -4,68 +4,41 @@ Source Model: `project-results-briefing-models.md`, Model 1.
 
 Presentation Context: Seika Global Trading Operations reports results from a four-week exception resolution pilot at the Yokohama Import Documentation Desk. The presenter recommends controlled six-week expansion to Kansai Machinery Imports and Nagoya Parts Coordination.
 
-Design Style: Evidence-review operations briefing. Use a PowerPoint-native template with simple editable charts, clear result numbers, and cautious recommendation language. Use five main slides plus one backup slide.
+Approach: Question - evidence - meaning - implication. Opens with the answer first. Closes with a conditional recommendation, not a full-rollout request. Five main slides plus one backup slide.
 
-## Slide 1: Approve Controlled Expansion of the Exception Resolution Pilot
+Design Style: Data-first editorial. White background, generous white space, one large editable native chart per data slide with direct annotations, large result numbers, one burnt-orange highlight on a charcoal-and-grey palette, serif headlines with a clean sans for numbers, thin hairline rules. Use real editable charts, not pictures of charts. Do not use stock photography, decorative icons, or generated text images.
+
+Capitalization: Slide titles use Title Case. List items and sentences use sentence case.
+
+## Slide 1: Did the Pilot Reduce Late Handoffs? Yes, With Limits
+
+Role: Question and short answer.
 
 On-Slide Composition:
 
 The pilot result supports expansion, but not full rollout.
 
-Approval request:
-
-1. Expand to two desks.
-   - Kansai Machinery Imports
-   - Nagoya Parts Coordination
-2. Run the expansion for six weeks.
-3. Add two controls.
-   - Morning log check
-   - Duplicate-entry owner
-
-Emphasis:
-
-- The result supports controlled expansion, not full rollout.
-- The two controls are part of the recommendation.
-
-Visual Direction:
-
-- Use a decision-summary layout.
-- Use hierarchy: Main conclusion, then approval request, then subpoints.
-- Keep the desk names readable but not oversized.
-
-## Slide 2: The Pilot Targeted Unclear Exception Ownership
-
-On-Slide Composition:
-
-Before the pilot:
-
-- Separate email threads
-- Spreadsheet notes
-- Manual handoff messages
-
-Pilot change:
+Four-week pilot at the Yokohama Import Documentation Desk:
 
 - Shared exception log
 - Fixed daily checkpoint
+- Control process unchanged
 
-Goal:
-
-- Fewer late handoffs
-- Less rework time
-- Clearer ownership
+Key Message Words: `yes, with limits`, `expansion`, `not full rollout`.
 
 Emphasis:
 
-- The pilot objective was narrow.
+- The answer comes first, before any evidence.
 - The control process did not change.
 
 Visual Direction:
 
-- Use a before/after comparison.
-- Use grouped hierarchy, not one flat list.
-- Avoid a detailed workflow diagram; this is a results briefing.
+- Use a large answer headline with a small three-line description beneath it.
+- Do not show a decision request or a numbered approval list on this slide.
 
-## Slide 3: Late Handoffs and Rework Both Fell
+## Slide 2: Late Handoffs and Rework Both Fell
+
+Role: Evidence.
 
 On-Slide Composition:
 
@@ -82,6 +55,8 @@ Note:
 
 - Fictional data for practice
 
+Key Message Words: `38 -> 27`, `22 min -> 16 min`, `82%`.
+
 Emphasis:
 
 - The main evidence is positive across more than one measure.
@@ -93,7 +68,38 @@ Visual Direction:
 - Add `82%` as a separate evidence card.
 - Keep explanation off the slide; the presenter explains the meaning aloud.
 
-## Slide 4: The Result Is Positive, but Two Controls Are Needed
+## Slide 3: What the Results Show and Do Not Show
+
+Role: Meaning.
+
+On-Slide Composition:
+
+The results show:
+
+- Late handoffs fell.
+- Rework time fell.
+- Pilot users found ownership clearer.
+
+The results do not prove:
+
+- That the shared log caused every change.
+- That volume, staffing, and exception type did not matter.
+
+Key Message Words: `show`, `do not prove`, `caused every change`.
+
+Emphasis:
+
+- The evidence is strong enough to justify a controlled expansion.
+- The presenter states the limit before the audience asks.
+
+Visual Direction:
+
+- Use a two-column layout: `Show` and `Do Not Prove`.
+- Keep each line short; the presenter explains the volume check aloud.
+
+## Slide 4: Ownership Improved, but Two Controls Are Needed
+
+Role: Meaning (limits).
 
 On-Slide Composition:
 
@@ -109,6 +115,8 @@ What still needs control:
 2. Duplicate entries
    - 9 duplicate log entries found.
 
+Key Message Words: `improved`, `needs control`, `9 duplicate log entries`.
+
 Emphasis:
 
 - Positive result plus limitation.
@@ -122,17 +130,26 @@ Visual Direction:
 
 ## Slide 5: Expand to Two More Desks Before Full Rollout
 
+Role: Implication (conditional recommendation).
+
 On-Slide Composition:
 
 Recommendation:
 
 1. Expand for six weeks.
-2. Use the same measures.
+   - Kansai Machinery Imports
+   - Nagoya Parts Coordination
+2. Add two controls.
+   - Morning log check
+   - Duplicate-entry owner
+3. Use the same measures.
    - Late document handoffs
    - Rework time
    - Ownership feedback
-3. Add a volume-adjusted view.
-4. Report again after six weeks.
+4. Add a volume-adjusted view.
+5. Report again after six weeks.
+
+Key Message Words: `six weeks`, `two controls`, `before full rollout`.
 
 Emphasis:
 
@@ -141,11 +158,12 @@ Emphasis:
 
 Visual Direction:
 
-- Use a recommendation panel or title-and-content layout.
-- Use a numbered list because this is an action plan.
+- Use a recommendation panel or title-and-content layout with a numbered action plan.
 - Do not introduce a new chart.
 
 ## Slide 6 Backup: Volume Check Still Shows Improvement
+
+Role: Backup.
 
 On-Slide Composition:
 
@@ -163,6 +181,8 @@ Conclusion:
 
 - Improvement was smaller, but still visible.
 
+Key Message Words: `smaller`, `still visible`.
+
 Emphasis:
 
 - This slide answers likely Q&A about volume effects.
@@ -173,4 +193,3 @@ Visual Direction:
 - Use a small table or simple paired-bar chart.
 - Label clearly as `Backup`.
 - Use nested values under the volume-adjusted measure.
-

@@ -4,57 +4,15 @@ Source Model: `product-service-program-launch-models.md`, Model 1.
 
 Presentation Context: Koyo Trading Client Services. The presenter asks account-service and reporting operations stakeholders to approve a four-week pilot launch of an internal supplier-status dashboard for Team North and Team West.
 
-Design Style: Clean operations-dashboard briefing. Use a PowerPoint-native business template with strong hierarchy, status-card layouts, and a dashboard mockup made from editable text/placeholders. Do not use dense fake UI text.
+Approach: Need - value - plan - next step. Opens by showing the dashboard itself, then explains why it is needed. Closes with dated next steps, not a general approval request.
 
-## Slide 1: Launch a Four-Week Supplier-Status Dashboard Pilot
+Design Style: Dark dashboard. Deep navy or charcoal background, light text, one bright teal accent plus amber and green status chips, compact tiles and status cards with large readable labels. Always show status with a text label as well as color. Do not use dense fake UI text, stock photography, generic growth imagery, or generated text images. Keep all shapes and text editable.
 
-On-Slide Composition:
+Capitalization: Slide titles use Title Case. List items and sentences use sentence case.
 
-Before launch, we need to confirm:
+## Slide 1: The Dashboard Shows What Needs Attention First
 
-1. Pilot teams
-   - Team North
-   - Team West
-2. Launch date
-3. Feedback owner
-
-Emphasis:
-
-- The launch requires three decisions.
-- The pilot is small: Two teams, four weeks.
-
-Visual Direction:
-
-- Use a title-and-content layout.
-- Use a numbered list because these are decision items.
-- Avoid standalone fragment labels; use the lead sentence to carry the slide purpose.
-
-## Slide 2: Repeated Status Checks Are Taking Time
-
-On-Slide Composition:
-
-Last reporting cycle:
-
-- 74 status-check messages
-- About 9 staff-hours per week
-- Many questions repeated information another team already had.
-
-Why it matters:
-
-- Status, deadlines, and ownership are not easy to see in one place.
-
-Emphasis:
-
-- The launch need is practical time loss.
-- The problem is scattered status visibility.
-
-Visual Direction:
-
-- Use two large-number cards plus one short explanation.
-- Make `74` and `9 staff-hours` dominant.
-- Do not over-chart this slide.
-
-## Slide 3: The Dashboard Shows What Needs Attention First
+Role: Show first.
 
 On-Slide Composition:
 
@@ -72,9 +30,11 @@ Show only the key fields:
 - Next reporting deadline
 - Current owner
 
+Key Message Words: `what needs attention`, `next deadline`, `current owner`.
+
 Emphasis:
 
-- The dashboard helps users prioritize attention.
+- The audience sees the product before hearing the argument.
 - Owner and deadline are the key fields.
 
 Visual Direction:
@@ -83,32 +43,65 @@ Visual Direction:
 - Keep labels large and sanitized.
 - Use text labels in addition to status colors.
 
-## Slide 4: The Pilot Creates Three Practical Benefits
+## Slide 2: Repeated Status Checks Are Taking Time
+
+Role: Need.
 
 On-Slide Composition:
 
-The pilot should help teams in three ways:
+Last reporting cycle:
 
-1. Earlier visibility
-2. Fewer repeated messages
-3. Clearer ownership
+- 74 status-check messages
+- About 9 staff-hours per week
+- Many questions repeated information another team already had.
+
+Why it matters:
+
+- Status, deadlines, and ownership are not easy to see in one place.
+
+Key Message Words: `74`, `9 staff-hours`, `one place`.
+
+Emphasis:
+
+- The launch need is practical time loss.
+- The problem is scattered status visibility.
+
+Visual Direction:
+
+- Use two large-number cards plus one short explanation.
+- Make `74` and `9 staff-hours` dominant.
+- Do not over-chart this slide.
+
+## Slide 3: Each Group Gets a Different Benefit
+
+Role: Value (by audience).
+
+On-Slide Composition:
+
+- Account managers: earlier visibility
+- Account-service staff: fewer repeated messages
+- Reporting operations: clearer ownership
 
 Important limit:
 
 - The dashboard does not replace official reports.
 
+Key Message Words: `earlier visibility`, `fewer repeated messages`, `clearer ownership`, `does not replace`.
+
 Emphasis:
 
-- Benefits differ by audience group but connect to one shared value.
-- Scope limits reduce risk and confusion.
+- Each user group has its own benefit, but all three connect to one shared view.
+- The scope limit reduces risk and confusion.
 
 Visual Direction:
 
-- Use three benefit cards or a three-column layout.
+- Use three benefit cards, each labeled with its audience group.
 - Put the scope limit in a small footer or callout.
-- Avoid generic growth/innovation imagery.
+- Avoid generic growth or innovation imagery.
 
-## Slide 5: The Rollout Tests Adoption Before Expansion
+## Slide 4: Week 4 Decides: Continue, Revise, or Stop
+
+Role: Plan.
 
 On-Slide Composition:
 
@@ -125,18 +118,48 @@ Four-week rollout:
 5. Week 4
    - Continue, revise, or stop.
 
+Test point:
+
+- 30% fewer repeated status-check messages
+
+Key Message Words: `Week 4`, `continue, revise, or stop`, `30%`.
+
 Emphasis:
 
 - Adoption is tested step by step.
-- The pilot can be revised or stopped.
+- The pilot can be revised or stopped, and the target is a test point, not a promise.
 
 Visual Direction:
 
-- Use a timeline layout.
-- Use numbered chronology because the slide follows time.
+- Use a timeline layout with numbered chronology.
 - Highlight Week 4 as the decision point.
 
-## Slide 6: Confirm Users, Access Plan, and Feedback Process
+## Slide 5: Four Documents Support the Launch
+
+Role: Plan (materials).
+
+On-Slide Composition:
+
+- Pre-read: one-page summary of purpose and schedule
+- Live visual: dashboard mockup and rollout timeline
+- Follow-up handout: pilot user guide
+- Backup: data-field list and confidentiality rules
+
+Key Message Words: `pre-read`, `live visual`, `follow-up handout`, `backup`.
+
+Emphasis:
+
+- Each document has a different job and a different time.
+- Backup material is used only if needed in Q&A.
+
+Visual Direction:
+
+- Use four cards, each with a document-role label.
+- Do not introduce new benefits or new evidence.
+
+## Slide 6: Three Dates Start the Pilot
+
+Role: Next steps (dated).
 
 On-Slide Composition:
 
@@ -155,6 +178,8 @@ Review during the pilot:
 - Field clarity
 - Update workload
 
+Key Message Words: `Today`, `Friday`, `Monday`.
+
 Emphasis:
 
 - The next steps are immediate.
@@ -162,6 +187,5 @@ Emphasis:
 
 Visual Direction:
 
-- Use a next-steps layout.
-- Use numbered chronology for Today, Friday, and Monday.
+- Use a three-step next-steps layout with large date labels.
 - Do not introduce new benefits or new evidence.

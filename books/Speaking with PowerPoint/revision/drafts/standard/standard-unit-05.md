@@ -47,19 +47,19 @@ A topic title names the subject. A takeaway title states the message.
 
 | Topic title | Takeaway title |
 |---|---|
-| "Dashboard Pilot" | "The dashboard can reduce repeated status checks" |
-| "Support Desk Flow" | "The support desk helps users before submission" |
-| "Timeline" | "The pilot can start with a low-risk three-month rollout" |
+| "Dashboard Pilot" | "The Dashboard Can Reduce Repeated Status Checks" |
+| "Support Desk Flow" | "The Support Desk Helps Users Before Submission" |
+| "Timeline" | "The Pilot Can Start With a Low-Risk Three-Month Rollout" |
 
-Use sentence-style capitalization unless your organization requires another style.
+In this textbook, slide titles use Title Case, and lists and full sentences on a slide use sentence case. Follow your organization's style if it requires another convention.
 
 Watch article, plural, and noun-phrase problems in short visual text.
 
 | Weak title | Improved title | Why it is clearer |
 |---|---|---|
-| "Supplier dashboard status" | "The supplier-status dashboard reduces repeated questions" | Adds `the`, makes the noun phrase natural, and states the message |
-| "Application return reason" | "Most returned applications have one missing attachment" | Uses plural `applications` and gives a clear finding |
-| "Pilot schedule confirmation" | "The pilot can start next month after access is confirmed" | Turns an unclear noun phrase into a complete message |
+| "Supplier dashboard status" | "The Supplier-Status Dashboard Reduces Repeated Questions" | Adds `the`, makes the noun phrase natural, and states the message |
+| "Application return reason" | "Most Returned Applications Have One Missing Attachment" | Uses plural `applications` and gives a clear finding |
+| "Pilot schedule confirmation" | "The Pilot Can Start Next Month After Access Is Confirmed" | Turns an unclear noun phrase into a complete message |
 
 ### 2. Hierarchy
 
@@ -143,7 +143,7 @@ Title: "New service"
 
 Improved visual:
 
-Title: "The support process helps users before submission"
+Title: "The Support Process Helps Users Before Submission"
 
 Three-step flow:
 

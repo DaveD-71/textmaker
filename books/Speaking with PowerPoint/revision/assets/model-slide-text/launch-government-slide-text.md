@@ -4,36 +4,40 @@ Source Model: `product-service-program-launch-models.md`, Model 2.
 
 Presentation Context: Aoba City Administrative Support Center. The presenter asks for approval of a three-month pilot application support desk for the resident certificate support form, open Tuesday and Thursday mornings.
 
-Design Style: Accessible public-service briefing. Use a clean PowerPoint-native template, high contrast, plain language, generous spacing, and simple service-flow layouts. Do not use flags, seals, emblems, crests, party colors, or country-specific iconography.
+Approach: Need - value - plan - next step, told as one resident's journey. Opens with the resident's moment of difficulty. Closes with what does not change, then the approvals.
 
-## Slide 1: Approve a Three-Month Application Support Desk Pilot
+Design Style: Service flow. Warm off-white background, deep teal and warm coral accents, rounded type, diagram-led layouts: numbered journey steps with arrows, a three-month timeline, and a simple weekly calendar strip for Tuesday and Thursday. Use plain geometric shapes and simple line icons only. High contrast, plain language, generous spacing. Do not use flags, seals, emblems, crests, party colors, country-specific iconography, stock photography, or generated text images. Keep all shapes and text editable.
+
+Capitalization: Slide titles use Title Case. List items and sentences use sentence case.
+
+## Slide 1: A Resident Gets Stuck Before Submission
+
+Role: Journey today.
 
 On-Slide Composition:
 
-To start the pilot, we need to agree on:
+A resident's journey today:
 
-1. Schedule
-   - Tuesday and Thursday mornings
-2. Staffing
-   - Assigned support-desk staff
-3. Review Measures
-   - Repeat inquiries
-   - Question categories
-   - Staff workload
-   - User comments
+1. Resident opens the online form.
+2. Resident is unsure about an attachment.
+3. Resident submits an incomplete form.
+4. Office contacts the resident, who calls again.
+
+Key Message Words: `unsure about an attachment`, `incomplete form`, `calls again`.
 
 Emphasis:
 
-- The decision is schedule, staffing, and review measures.
-- The pilot is limited before wider service decisions.
+- The deck opens with a person, not a request.
+- The problem starts before submission.
 
 Visual Direction:
 
-- Use a title-and-content layout.
-- Use a numbered list with subpoints because each decision item has details.
-- Keep the service name and decision items clear.
+- Use a four-step horizontal journey with numbered stops and arrows.
+- Keep the tone neutral. Avoid warning colors and blame language.
 
 ## Slide 2: Many Form Questions Happen Before Submission
+
+Role: Need (evidence).
 
 On-Slide Composition:
 
@@ -47,6 +51,12 @@ Service issue:
 
 - Residents need help before they submit the form.
 
+Note:
+
+- Fictional data for practice
+
+Key Message Words: `312`, `47%`, `before they submit`.
+
 Emphasis:
 
 - The service problem happens before users submit forms correctly.
@@ -56,9 +66,10 @@ Visual Direction:
 
 - Use three large-number cards.
 - Make the relationship between inquiries and repeat contact clear.
-- Add `Fictional data for practice` if this slide is exported separately.
 
 ## Slide 3: The Desk Helps Before Submission
+
+Role: Journey with the pilot.
 
 On-Slide Composition:
 
@@ -69,24 +80,21 @@ Pilot service flow:
 3. User submits form.
 4. Staff review form.
 
-What does not change:
-
-- Staff do not complete the form for the resident.
-- Staff do not make the application decision.
-- Application requirements stay the same.
+Key Message Words: `support desk`, `before submission`.
 
 Emphasis:
 
 - The support point comes before submission.
-- The desk guides users; it does not change rules or make decisions.
+- The desk guides users; it does not change the rules.
 
 Visual Direction:
 
-- Use a service-flow diagram.
-- Use numbered chronology because the slide shows a process.
-- Highlight the support desk as the added step.
+- Use the same four-step journey as slide 1, with step 2 highlighted as the added support desk step.
+- Use numbered chronology.
 
-## Slide 4: The Pilot Creates Three Service Benefits
+## Slide 4: The Desk Helps Residents and Protects Staff Time
+
+Role: Value.
 
 On-Slide Composition:
 
@@ -100,6 +108,8 @@ Learning benefit:
 
 - Common questions are recorded each week.
 
+Key Message Words: `fewer preventable errors`, `fewer repeat contacts`, `clearer guidance`.
+
 Emphasis:
 
 - The desk helps residents and protects staff time.
@@ -112,6 +122,8 @@ Visual Direction:
 
 ## Slide 5: Limited Hours Protect Counter Capacity
 
+Role: Plan.
+
 On-Slide Composition:
 
 Three-month pilot:
@@ -123,9 +135,11 @@ Three-month pilot:
 3. Month 3
    - Review workload and user comments.
 
-Target:
+Target for review:
 
 - 15% fewer repeat inquiries
+
+Key Message Words: `limited hours`, `Tuesday and Thursday mornings`, `target for review`.
 
 Emphasis:
 
@@ -134,29 +148,37 @@ Emphasis:
 
 Visual Direction:
 
-- Use a three-month timeline.
-- Use numbered chronology because the slide follows time.
+- Use a three-month timeline with a small weekly calendar strip marking Tuesday and Thursday mornings.
 - Pair the target with the workload review so it does not look like a guarantee.
 
-## Slide 6: Approve Schedule, Staffing, and Review Measures
+## Slide 6: What Does Not Change, and What We Need to Approve
+
+Role: Reassurance, then approvals.
 
 On-Slide Composition:
 
-If we agree today, the team can prepare the guidance sheet next week:
+What does not change:
 
-1. Approve the pilot schedule.
-2. Confirm assigned staff.
-3. Review repeat inquiries, question categories, workload, and user comments.
-4. Start at the beginning of next month.
+- Staff do not complete the form for the resident.
+- Staff do not make the application decision.
+- Application requirements stay the same.
+
+We need to approve:
+
+1. The pilot schedule.
+2. Assigned staff.
+3. Review measures: repeat inquiries, question categories, staff workload, and user comments.
+
+If we agree, we can prepare the guidance sheet next week and start at the beginning of next month.
+
+Key Message Words: `does not change`, `approve`, `review measures`.
 
 Emphasis:
 
+- The limits come before the request, so the request feels safe.
 - The close restates exactly what must be approved.
-- Review measures include service impact, not only inquiry reduction.
 
 Visual Direction:
 
-- Use a decision checklist layout.
-- Use a numbered list because these are action items.
+- Use two clear blocks: a calm "does not change" block, then a decision checklist.
 - Do not add new evidence.
-

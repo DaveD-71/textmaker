@@ -2,59 +2,45 @@
 
 Source Model: `process-improvement-briefing-models.md`, Model 2.
 
-Presentation Context: Midori Ward Administrative Services Office. The presenter asks for approval for a one-month trial of a front-counter intake checklist and shared FAQ for housing support certificate applications.
+Presentation Context: Midori Ward Administrative Services Office. The presenter compares three options for reducing returned housing support certificate applications and asks for approval of a one-month trial of a front-counter intake checklist and shared FAQ.
 
-Design Style: Plain public-service administrative briefing. Use high contrast, generous spacing, clear labels, and no official-looking flags, seals, emblems, crests, or country-specific symbols.
+Approach: Situation - options - criteria - recommendation. Opens with a question. The recommendation is justified against the criteria before the approvals are requested.
 
-## Slide 1: Approve a One-Month Intake Checklist Trial
+Design Style: High-contrast checklist and criteria matrix. White background, near-black text, one deep green accent, very large type (nothing small), thick horizontal rules, square tick-box motifs, no decoration. Show every answer as a word, not only a color. Use no flags, seals, emblems, crests, or country-specific symbols. Do not use real form images, personal data, stock photography, or generated text images. Keep all shapes and text editable.
 
-On-Slide Composition:
+Capitalization: Slide titles use Title Case. List items and sentences use sentence case.
 
-At the end of this presentation, I will ask you to:
+## Slide 1: Which Option Should Reduce Returned Applications?
 
-1. Approve a one-month trial.
-2. Agree on the first checklist fields.
-3. Assign one FAQ update owner.
-
-Emphasis:
-
-- The presentation asks for approval, not only discussion.
-- The trial is limited to one application type.
-
-Visual Direction:
-
-- Use a clean title-and-content layout.
-- Use a numbered list because the slide previews three decisions.
-- Use a checklist motif only if it stays professional and editable.
-
-## Slide 2: Errors Are Found Too Late in the Process
+Role: Situation and question.
 
 On-Slide Composition:
 
-Current intake problem:
+One question for today:
 
-1. Applicant submits form.
-2. Staff complete formal review.
-3. Office returns the form.
-4. Applicant makes a repeat inquiry.
+Which of three options should we test first to reduce returned housing support certificate applications?
 
-Service impact:
+Today I will:
 
-- Longer wait for applicants
-- Extra work for staff
+1. Compare three options.
+2. Recommend one.
+3. Ask you to approve a one-month trial.
+
+Key Message Words: `which option`, `test first`, `three options`.
 
 Emphasis:
 
-- The problem appears late, after the applicant has already submitted.
-- The service impact affects both applicants and staff.
+- The deck opens with a question, not a request.
+- The audience knows the structure from the start.
 
 Visual Direction:
 
-- Use a four-step service-flow layout.
-- Make `Returned form` and `Repeat inquiry` visually connected.
-- Avoid blame language or warning-style design.
+- Use a large question headline with three short numbered steps beneath it.
+- Keep the layout bare and high contrast.
 
-## Slide 3: Most Returns Come from Common Preventable Errors
+## Slide 2: Most Returns Come from Common Preventable Errors
+
+Role: Situation (evidence).
 
 On-Slide Composition:
 
@@ -68,10 +54,12 @@ Note:
 
 - Fictional data for practice
 
+Key Message Words: `54%`, `31%`, `common preventable errors`.
+
 Emphasis:
 
 - Many returns come from a small number of common problems.
-- The checklist should start with those common points.
+- The problem appears after formal review, which is late.
 
 Visual Direction:
 
@@ -79,31 +67,58 @@ Visual Direction:
 - Make `54%` and `31%` easy to compare.
 - Use labels, not color alone.
 
-## Slide 4: A Short Intake Check Catches Errors Earlier
+## Slide 3: Three Options Could Reduce Returns
+
+Role: Options.
 
 On-Slide Composition:
 
-The checklist is a quick intake check, not a second full review:
+- Option A: Redesign the application form and instruction sheet.
+- Option B: Add an online pre-submission check.
+- Option C: Add a front-counter checklist and shared FAQ.
 
-- Check only common preventable errors:
-  - Attachment
-  - Contact field
-  - ID field
-  - Signature field
-- Keep formal review unchanged.
+All three options keep formal review unchanged.
+
+Key Message Words: `Option A`, `Option B`, `Option C`, `formal review unchanged`.
 
 Emphasis:
 
-- The checklist is not a second full review.
-- The formal review process does not change.
+- The options are real alternatives, not a set-up for one answer.
+- Formal review is the same under every option.
 
 Visual Direction:
 
-- Use a process-flow layout showing the checklist before formal review.
-- Keep the checklist fields as short labels.
-- Do not show a realistic form or any personal data.
+- Use three equal rows or columns with a large letter for each option.
+- Do not highlight any option yet.
 
-## Slide 5: The Trial Measures Benefit and Counter Time
+## Slide 4: Option C Fits Best Against Three Criteria
+
+Role: Criteria (comparison).
+
+On-Slide Composition:
+
+| Criterion | Option A | Option B | Option C |
+|---|---|---|---|
+| Starts within one month | No | No | Yes |
+| Catches common errors before formal review | Partly | Partly | Yes |
+| Adds little counter time | Yes | Yes | Partly |
+
+Key Message Words: `Yes`, `Partly`, `No`, `starts within one month`.
+
+Emphasis:
+
+- Option C is the only option that starts within one month and catches common errors before formal review.
+- Counter time is the one criterion Option C only partly meets.
+
+Visual Direction:
+
+- Use a simple comparison table with large cell text.
+- Write each answer as a word. Do not rely on color or tick symbols alone.
+- Add a bold outline or label to the Option C column only after the table is read.
+
+## Slide 5: The One-Month Trial Is Short and Measured
+
+Role: Recommendation (trial plan).
 
 On-Slide Composition:
 
@@ -113,7 +128,7 @@ Trial schedule:
    - Agree fields and FAQ.
 2. Weeks 1-4
    - Use checklist for housing support certificates.
-3. End Review
+3. End review
    - Returned applications
    - Return reasons
    - Repeat inquiries
@@ -123,20 +138,25 @@ Target:
 
 - 20% fewer returned applications
 
+Key Message Words: `counter time`, `short`, `20% fewer`.
+
 Emphasis:
 
-- The trial measures both service benefit and workload risk.
-- Counter time is a known risk, not a hidden problem.
+- The trial measures benefit and workload risk.
+- The target is secondary to the plan.
 
 Visual Direction:
 
-- Use a timeline or staged-list layout.
-- Use numbered chronology because the slide follows trial timing.
-- Keep target language secondary to the trial plan.
+- Use a staged-list or timeline layout.
+- Make `counter time` visible as the measure that tests the weak criterion.
 
-## Slide 6: Approve the Trial and Assign the FAQ Owner
+## Slide 6: Choose Option C and Start the Trial
+
+Role: Recommendation and approvals.
 
 On-Slide Composition:
+
+Option C starts within one month and catches common errors before formal review. The trial will test counter time.
 
 To start the trial, we need to:
 
@@ -145,14 +165,14 @@ To start the trial, we need to:
 3. Assign one FAQ update owner.
 4. Review the result after one month.
 
+Key Message Words: `Option C`, `counter time`, `FAQ update owner`.
+
 Emphasis:
 
-- The close repeats the exact decision.
+- The close returns to the question and answers it.
 - Ownership for FAQ updates is part of approval.
 
 Visual Direction:
 
-- Use a decision checklist layout.
-- Use a numbered list because these are action items.
+- Use a decision checklist with large tick boxes.
 - Do not add new process details or new data.
-

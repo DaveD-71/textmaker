@@ -84,7 +84,7 @@ Sample preview:
 
 > I will cover four points. First, I will show where the delays occur. Then I will explain the main cause. After that, I will recommend a one-month checklist trial. Finally, I will ask for your approval and confirm the next step.
 
-Optional model reference: for another structure, compare the Project Results Briefing Models. Results briefings often move from objective to evidence to recommendation.
+Optional model references: the appendix models use different structures on purpose. The Process Improvement Briefing Models show problem - cause - solution - action (Model 1) and situation - options - criteria - recommendation (Model 2). The Project Results Briefing Models show question - evidence - meaning - implication (Model 1) and objective - status - issue - next step (Model 2). The Product, Service, or Program Launch Models show need - value - plan - next step.
 
 Mini example: Options-based decision structure
 
@@ -97,7 +97,7 @@ Purpose: ask which format to use for a short decision meeting.
 | Criteria | The format must be quick, easy to read before the meeting, and safe to share. |
 | Recommendation | Use the one-page pre-read plus short live summary because the audience needs time to review the detail before deciding. |
 
-This is a short model, not a full appendix presentation. Use it to understand the structure.
+This is a short model. For a full presentation that uses this structure, see the Process Improvement Briefing Models, Model 2. Use the mini example here to understand the structure first.
 
 ## Practice 1: Match Purpose and Structure
 
