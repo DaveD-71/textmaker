@@ -1215,3 +1215,10 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 
 - Updated the SWP style pipeline so `presentations_style.yaml` defines screenshot-matching mirror margins and explicit `PS Table Header Text` / `PS Table Body Text` styles. Updated reference generation and postprocessing so the generated DOCX applies PS body/list/table-cell paragraph styles programmatically after Pandoc conversion. Rebuilt `presentations_style.docx`, `presentations_style.pdf`, and the current text-first DOCX/PDF draft.
 
+## 2026-10-06 - Git sync diagnosis
+
+- GitHub access and SSH authentication were healthy, and `git fetch --prune origin` succeeded.
+- Local `main` was clean but had diverged from `origin/main`: one local-only commit and four remote-only commits.
+- A non-mutating `git merge-tree` check found content conflicts in three Speaking with PowerPoint appendix model files, so no automatic pull, merge, rebase, or push was attempted.
+- Startup audit also found the user-level and repository `AGENTS.md` copies at different bootstrap versions; this drift was reported rather than resolved during the Git-only diagnostic.
+
