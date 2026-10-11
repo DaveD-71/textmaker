@@ -1222,3 +1222,9 @@ Continuing from session 6. The div label icon table layout (2-column borderless 
 - A non-mutating `git merge-tree` check found content conflicts in three Speaking with PowerPoint appendix model files, so no automatic pull, merge, rebase, or push was attempted.
 - Startup audit also found the user-level and repository `AGENTS.md` copies at different bootstrap versions; this drift was reported rather than resolved during the Git-only diagnostic.
 
+## 2026-10-11 - Structured-memory pilot baseline refresh
+
+- Confirmed the three incoming commits did not overlap the untracked `memory/` scaffold, then safely fast-forwarded `main` from `a845d23` to `e53f523` without moving or rewriting legacy memory.
+- Re-read the post-sync instructions, project memory, and updated Speaking with PowerPoint model-deck records. Refreshed the structured-memory registry baseline and repository/workstream current-state summaries to the new source state.
+- Validation passed for five structured records, seven accountability events, the registry schema, and all registered source/artifact paths. A disposable hybrid SQLite index rebuilt with 185 records from 11 source files and no parse warnings; scope classification and scoped searches succeeded after the explicit classification stage.
+

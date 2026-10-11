@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/DaveD-71/textmaker/memory/schema/record.schema.json",
+  "title": "Textmaker durable memory record front matter",
+  "type": "object",
+  "required": ["schema_version", "id", "record_type", "scope_ids", "status", "created_at"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"},
+    "record_type": {"enum": ["decision", "learning", "issue", "procedure", "state"]},
+    "scope_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "status": {"type": "string"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "created_device_id": {"type": "string"},
+    "created_clone_id": {"type": "string"},
+    "created_session_id": {"type": "string"},
+    "tags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target_id"],
+        "properties": {
+          "type": {"enum": ["relates_to", "supersedes", "implements", "derived_from"]},
+          "target_id": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,107 @@
+schema_version: 1
+repository_id: https://github.com/DaveD-71/textmaker.git
+baseline_commit: e53f523703382f5858a8639927c5fab6c5c1e81d
+scope_registry: memory-scopes.yaml
+pilot_scope: speaking-with-powerpoint
+device_id: dev-01a0e327-e642-7c35-9db6-66e47c562356
+clone_id: clone-01a0e327-e642-79f5-afc9-cc04481cc1aa
+
+sources:
+  - path: project-learning.md
+    kind: legacy_learning
+    authority: authoritative
+    lifecycle: legacy-active
+    scope_ids: [repository]
+  - path: project-journal.md
+    kind: legacy_journal
+    authority: authoritative
+    lifecycle: legacy-active
+    scope_ids: [repository]
+  - path: user-learning-mirror.md
+    kind: universal_user_memory_transport
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [repository]
+  - path: memory/current-state.md
+    kind: current_state
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [repository]
+  - path: memory/workstreams/speaking-with-powerpoint/current-state.md
+    kind: current_state
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: memory/workstreams/speaking-with-powerpoint/decisions
+    kind: structured_record_root
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: memory/workstreams/speaking-with-powerpoint/learnings
+    kind: structured_record_root
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: memory/events
+    kind: accountability_event_root
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [repository]
+
+artifacts:
+  - path: memory-scopes.yaml
+    kind: scope_registry
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [repository]
+  - path: books/Speaking with PowerPoint/README.md
+    kind: workstream_entry_point
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: books/Speaking with PowerPoint/revision/control/plan3.md
+    kind: plan
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: books/Speaking with PowerPoint/revision/control/plan3-traceability.md
+    kind: traceability_register
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: books/Speaking with PowerPoint/revision/control/plan3-phase6-qa-checklist.md
+    kind: qa_register
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: books/Speaking with PowerPoint/revision/control/plan3-phase6-defer-log.md
+    kind: defer_register
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: books/Speaking with PowerPoint/revision/control/presentations_style.yaml
+    kind: style_source
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint, shared-pipeline]
+  - path: books/Speaking with PowerPoint/revision/drafts/Teacher Notes.md
+    kind: manuscript
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [speaking-with-powerpoint]
+  - path: scripts/generate_reference_docx.py
+    kind: implementation
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [shared-pipeline]
+  - path: scripts/postprocess_docx.py
+    kind: implementation
+    authority: authoritative
+    lifecycle: current
+    scope_ids: [shared-pipeline]
+
+generated:
+  index_kind: sqlite_fts5
+  authority: generated
+  tracked: false
+  default_external_path: ../memory/generated/textmaker.sqlite

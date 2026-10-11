@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/DaveD-71/textmaker/memory/schema/event.schema.json",
+  "title": "Textmaker accountability event",
+  "type": "object",
+  "required": ["schema_version", "event_id", "event_type", "timestamp", "repository_id", "actor"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "event_id": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"},
+    "event_type": {"enum": ["session_started", "session_completed", "record_created", "record_revised", "record_superseded", "synchronization_completed", "synchronization_conflicted", "change_applied", "verification_completed", "blocker_found", "blocker_cleared", "user_correction"]},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "repository_id": {"type": "string", "minLength": 1},
+    "actor": {
+      "type": "object",
+      "required": ["provider", "product"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "product": {"type": "string", "minLength": 1},
+        "model": {"type": "string"},
+        "agent_id": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "session_id": {"type": "string"},
+    "device_id": {"type": "string"},
+    "clone_id": {"type": "string"},
+    "record_id": {"type": "string"},
+    "git_revision": {"type": "string"},
+    "summary": {"type": "string"}
+  },
+  "additionalProperties": true
+}
